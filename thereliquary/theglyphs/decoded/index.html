@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Interpretation 002 | The Reliquary | BitPangea</title>
+
+  <!-- Favicons -->
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="/assets/favicon.svg">
+
+  <meta
+    name="description"
+    content="Interpretation 002 — a preserved but unresolved interpretation of Glyph 001 within the BitPangea Reliquary."
+  />
+
+  <!-- BitPangea Metadata -->
+  <meta name="theme-color" content="#00c8d7">
+  <meta name="robots" content="index,follow">
+
+  <link rel="canonical" href="https://bitpangea.com/thereliquary/theglyphs/decoded/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Interpretation 002 | The Reliquary | BitPangea">
+  <meta property="og:description" content="Glyph 001 remains unresolved. The truth is out there, waiting to be uncovered.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://bitpangea.com/thereliquary/theglyphs/decoded/">
+  <meta property="og:image" content="https://bitpangea.com/images/bitpangea-og.jpg">
+  <meta property="og:site_name" content="BitPangea">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter/X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Interpretation 002 | The Reliquary | BitPangea">
+  <meta name="twitter:description" content="Glyph 001 remains unresolved. The truth is out there, waiting to be uncovered.">
+  <meta name="twitter:image" content="https://bitpangea.com/images/bitpangea-og.jpg">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"CreativeWork",
+    "name":"Interpretation 002",
+    "url":"https://bitpangea.com/thereliquary/theglyphs/decoded/",
+    "description":"A preserved but unresolved interpretation of Glyph 001 within the BitPangea Reliquary.",
+    "isPartOf":{
+      "@type":"WebSite",
+      "name":"BitPangea",
+      "url":"https://bitpangea.com/"
+    }
+  }
+  </script>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #02050a;
+      --gold: #d4a938;
+      --cyan: #00c8d7;
+      --white: #ffffff;
+      --muted: rgba(255,255,255,.68);
+      --line: rgba(212,169,56,.18);
+    }
+
+    html, body {
+      width: 100%;
+      min-height: 100%;
+      background: var(--bg);
+      color: var(--white);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background:
+        radial-gradient(circle at 50% 18%, rgba(212,169,56,.08), transparent 30%),
+        radial-gradient(circle at 20% 80%, rgba(0,200,215,.05), transparent 34%),
+        #02050a;
+      line-height: 1.8;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 80px 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1040px;
+      border: 1px solid rgba(212,169,56,.18);
+      padding: clamp(40px, 7vw, 80px);
+      background:
+        linear-gradient(135deg, rgba(212,169,56,.035), rgba(0,0,0,.10)),
+        rgba(0,0,0,.35);
+      box-shadow:
+        0 0 80px rgba(0,0,0,.72),
+        inset 0 0 60px rgba(212,169,56,.018);
+    }
+
+    .eyebrow {
+      color: var(--cyan);
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-size: 11px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(3rem, 7vw, 5rem);
+      line-height: 1.04;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      text-shadow: 0 0 24px rgba(0,0,0,.94);
+    }
+
+    .subtitle {
+      color: var(--gold);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+    }
+
+    .divider {
+      width: 70px;
+      height: 2px;
+      background: var(--gold);
+      margin-bottom: 50px;
+      box-shadow: 0 0 16px rgba(212,169,56,.62);
+    }
+
+    .decoded {
+      border: 1px solid rgba(212,169,56,.18);
+      padding: clamp(30px, 5vw, 48px);
+      margin-bottom: 50px;
+      background:
+        radial-gradient(circle at 50% 42%, rgba(212,169,56,.10), transparent 36%),
+        rgba(0,0,0,.38);
+      box-shadow: inset 0 0 58px rgba(0,0,0,.62);
+      text-align: center;
+    }
+
+    .glyph {
+      color: rgba(212,169,56,.92);
+      font-size: clamp(110px, 22vw, 260px);
+      line-height: 1;
+      margin-bottom: 28px;
+      text-shadow:
+        0 0 18px rgba(212,169,56,.70),
+        0 0 50px rgba(212,169,56,.25),
+        0 0 90px rgba(0,200,215,.12);
+    }
+
+    .status {
+      color: var(--cyan);
+      font-size: 12px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+
+    .translation {
+      font-size: clamp(1.7rem, 4vw, 3rem);
+      line-height: 1.2;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: var(--white);
+      text-shadow: 0 0 20px rgba(0,0,0,.95);
+    }
+
+    .note {
+      color: rgba(255,255,255,.85);
+      max-width: 760px;
+      font-size: 18px;
+    }
+
+    .note p {
+      margin-bottom: 22px;
+    }
+
+    .assessment {
+      margin: 46px 0;
+      padding: 34px 36px;
+      border-left: 3px solid var(--gold);
+      background: rgba(0,0,0,.44);
+      color: rgba(255,255,255,.88);
+      font-size: 19px;
+      line-height: 1.75;
+    }
+
+    .assessment strong {
+      color: var(--gold);
+      font-weight: 400;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .truth {
+      margin-top: 46px;
+      color: var(--white);
+      font-size: clamp(1.6rem, 4vw, 3rem);
+      line-height: 1.28;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      text-shadow: 0 0 24px rgba(0,0,0,.95);
+    }
+
+    .truth span {
+      color: var(--gold);
+    }
+
+    .record {
+      margin-top: 60px;
+      padding-top: 25px;
+      border-top: 1px solid rgba(212,169,56,.12);
+      color: rgba(255,255,255,.45);
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      line-height: 2;
+    }
+
+    .record strong {
+      color: rgba(212,169,56,.72);
+      font-weight: 400;
+    }
+
+    @media (max-width: 768px) {
+      body { padding: 42px 16px; }
+      h1 { letter-spacing: 4px; }
+      .translation { letter-spacing: 3px; }
+      .assessment { padding: 28px 24px; }
+      .note { font-size: 16px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- INTERPRETATION 002: OPEN -->
+  <!-- GLYPH 001 HAS NOT BEEN DECODED. -->
+
+  <div class="container">
+
+    <div class="eyebrow">
+      Reliquary Interpretation · Foundation Period
+    </div>
+
+    <h1>Interpretation 002</h1>
+
+    <div class="subtitle">
+      Glyph 001
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="decoded">
+
+      <div class="glyph">
+        ◉
+      </div>
+
+      <div class="status">
+        Current Assessment
+      </div>
+
+      <div class="translation">
+        Unknown
+      </div>
+
+    </div>
+
+    <div class="note">
+
+      <p>
+        The origin, purpose, and meaning of Glyph 001 remain unresolved.
+      </p>
+
+      <p>
+        No authoritative interpretation currently exists.
+        No verified translation has been identified.
+        No historical context has been confirmed.
+      </p>
+
+    </div>
+
+    <div class="assessment">
+      <strong>Observed Characteristics</strong><br><br>
+      Circular. Deliberately preserved. Visually prominent. Meaning unresolved.
+      The glyph appears within The Reliquary, but its relationship to the broader
+      BitPangea record remains unknown.
+    </div>
+
+    <div class="truth">
+      The truth is out there,<br>
+      <span>waiting to be uncovered.</span>
+    </div>
+
+    <div class="record">
+      <div><strong>Record:</strong> Interpretation 002</div>
+      <div><strong>Source:</strong> Glyph 001</div>
+      <div><strong>Status:</strong> Open</div>
+    </div>
+
+  </div>
+
+</body>
+</html>

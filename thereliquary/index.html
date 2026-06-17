@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>The Reliquary | BitPangea</title>
+
+  <!-- Favicons -->
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="/assets/favicon.svg">
+
+  <meta name="description" content="The Reliquary — a hidden BitPangea preservation layer for artifacts, inscriptions, monuments, glyphs, interpretations, and fragments." />
+
+  <!-- BitPangea Metadata -->
+  <meta name="theme-color" content="#00c8d7">
+  <meta name="robots" content="index,follow">
+
+  <link rel="canonical" href="https://bitpangea.com/thereliquary/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="The Reliquary | BitPangea">
+  <meta property="og:description" content="Some records are not announced. The Reliquary confirms that paths exist.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://bitpangea.com/thereliquary/">
+  <meta property="og:image" content="https://bitpangea.com/images/bitpangea-og.jpg">
+  <meta property="og:site_name" content="BitPangea">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter/X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Reliquary | BitPangea">
+  <meta name="twitter:description" content="Some records are not announced. The Reliquary confirms that paths exist.">
+  <meta name="twitter:image" content="https://bitpangea.com/images/bitpangea-og.jpg">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"CreativeWork",
+    "name":"The Reliquary",
+    "url":"https://bitpangea.com/thereliquary/",
+    "description":"A hidden BitPangea preservation layer for artifacts, inscriptions, monuments, glyphs, interpretations, and fragments.",
+    "isPartOf":{
+      "@type":"WebSite",
+      "name":"BitPangea",
+      "url":"https://bitpangea.com/"
+    }
+  }
+  </script>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #02050a;
+      --gold: #d4a938;
+      --cyan: #00c8d7;
+      --white: #ffffff;
+    }
+
+    html, body {
+      width: 100%;
+      min-height: 100%;
+      background: var(--bg);
+      color: var(--white);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      position: relative;
+      min-height: 100vh;
+      overflow-x: hidden;
+      background: #000;
+      line-height: 1.7;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(circle at 50% 22%, rgba(212, 169, 56, 0.08), transparent 28%),
+        radial-gradient(circle at 22% 68%, rgba(0, 200, 215, 0.055), transparent 34%),
+        linear-gradient(180deg, rgba(2,5,10,.94), rgba(2,5,10,.99));
+      z-index: -2;
+      pointer-events: none;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(212,169,56,.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(212,169,56,.025) 1px, transparent 1px);
+      background-size: 64px 64px;
+      opacity: .34;
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 72px 22px;
+    }
+
+    .reliquary {
+      width: min(100%, 1040px);
+      padding: clamp(34px, 6vw, 72px);
+      border: 1px solid rgba(212, 169, 56, 0.18);
+      background:
+        linear-gradient(135deg, rgba(212,169,56,.045), rgba(0,0,0,.16)),
+        rgba(0,0,0,.42);
+      box-shadow:
+        0 0 80px rgba(0,0,0,.72),
+        inset 0 0 60px rgba(212,169,56,.025);
+      backdrop-filter: blur(3px);
+    }
+
+    .eyebrow {
+      color: var(--cyan);
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-size: 11px;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      color: var(--white);
+      font-size: clamp(42px, 8vw, 84px);
+      line-height: 1.02;
+      letter-spacing: 8px;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+      text-shadow: 0 0 24px rgba(0,0,0,.94);
+    }
+
+    .subtitle {
+      color: var(--gold);
+      font-size: 14px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 44px;
+    }
+
+    .divider {
+      width: 72px;
+      height: 2px;
+      background: var(--gold);
+      margin: 0 0 50px;
+      box-shadow: 0 0 16px rgba(212,169,56,.62);
+    }
+
+    .inscription {
+      margin: 48px 0;
+      padding: clamp(30px, 5vw, 56px);
+      border: 1px solid rgba(212, 169, 56, 0.24);
+      background: rgba(0,0,0,.48);
+      box-shadow: inset 0 0 42px rgba(0,0,0,.65);
+    }
+
+    .statement {
+      max-width: 780px;
+      color: rgba(255,255,255,.86);
+      font-size: clamp(18px, 2.2vw, 24px);
+      line-height: 1.75;
+      text-shadow: 0 0 12px rgba(0,0,0,.95);
+    }
+
+    .statement p {
+      margin-bottom: 26px;
+    }
+
+    .statement p:last-child {
+      margin-bottom: 0;
+    }
+
+    .threshold {
+      margin: 48px 0 0;
+      padding: clamp(28px, 4vw, 42px);
+      border-left: 3px solid var(--gold);
+      background: rgba(0,0,0,.50);
+      color: var(--white);
+      font-size: clamp(20px, 3vw, 32px);
+      line-height: 1.42;
+      letter-spacing: 1px;
+      box-shadow: 0 0 28px rgba(0,0,0,.45);
+    }
+
+    .threshold-label {
+      display: block;
+      color: var(--cyan);
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .plain {
+      margin-top: 48px;
+      color: rgba(255,255,255,.46);
+      font-size: 13px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .record {
+      margin-top: 52px;
+      padding-top: 26px;
+      border-top: 1px solid rgba(212,169,56,.14);
+      color: rgba(255,255,255,.46);
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      line-height: 2;
+    }
+
+    .record strong {
+      color: rgba(212,169,56,.72);
+      font-weight: 400;
+    }
+
+    @media (max-width: 768px) {
+      .page { padding: 42px 16px; }
+      .reliquary { padding: 32px 22px; }
+      h1 { letter-spacing: 5px; }
+      .statement { font-size: 17px; }
+      .threshold { font-size: 20px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Some records are not announced. -->
+  <!-- The Reliquary does not reveal the path. It confirms that paths exist. -->
+
+  <main class="page">
+    <article class="reliquary">
+      <div class="eyebrow">Reliquary Threshold · Foundation Period</div>
+
+      <h1>The Reliquary</h1>
+
+      <div class="subtitle">Preservation Layer</div>
+
+      <div class="divider"></div>
+
+      <section class="inscription" aria-label="The Reliquary threshold">
+
+        <div class="statement">
+          <p>Some records are not part of the visible world.</p>
+
+          <p>
+            They are preserved as artifacts, inscriptions, monuments,
+            glyphs, interpretations, and fragments.
+          </p>
+
+          <p>They may be found throughout BitPangea.</p>
+
+          <p>Not every artifact explains itself.</p>
+        </div>
+
+        <div class="threshold">
+          <span class="threshold-label">Threshold Record</span>
+          The Reliquary does not reveal the path.<br>
+          It confirms that paths exist.
+        </div>
+
+      </section>
+
+      <div class="plain">Discovery required.</div>
+
+      <div class="record">
+        <div><strong>Record:</strong> The Reliquary</div>
+        <div><strong>Location:</strong> Hidden Preservation Layer</div>
+        <div><strong>Status:</strong> Open</div>
+      </div>
+
+    </article>
+  </main>
+
+</body>
+</html>
