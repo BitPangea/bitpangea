@@ -1,62 +1,70 @@
 # BitPangea
 
-**A Scarce Digital Supercontinent**
+## One World
 
-*A persistent digital world governed by scarcity, cryptographic ownership, permanence, and neutrality.*
+### 21,000,000 Parcels
 
----
+### No Expansion
 
-## Vision
+### No Duplication
 
-BitPangea explores what happens when digital territory itself becomes scarce by design — a single, unified supercontinent where expansion is impossible, ownership is verifiable, and permanence is foundational.
-
-Inspired by the principles of cryptographic scarcity and sovereign ownership, BitPangea examines how those ideas might apply not to money, but to geography itself.
+A digital supercontinent exploring scarcity, geography, civilization, and permanence.
 
 ---
 
-## Core Principles
+## The Founding Constraint
 
-* **Scarcity** — Finite by design
-* **Ownership** — Sovereign and cryptographically verifiable
-* **Permanence** — Built to endure across generations
-* **Neutrality** — No central authority or platform control
+* One World
+* 21,000,000 Parcels
+* No Expansion
+* No Duplication
 
----
-
-## The Big Question
-
-> What if Bitcoin had been invented not as money, but as a world?
+Everything else remains open to discovery.
 
 ---
 
 ## Current Status
 
-**Exploratory Concept — Early Stage**
+BitPangea is an active worldbuilding and cartographic exploration project.
 
-BitPangea currently exists as a conceptual research and worldbuilding project.
+The world has not been implemented.
 
-No token, blockchain implementation, parcel registry, virtual world, ownership system, or digital economy currently exists.
+No parcels exist.
 
-The project is focused on exploring ideas related to scarcity, sovereignty, permanence, digital geography, and long-term civilization design.
+No claims exist.
+
+No allocations exist.
+
+No token exists.
+
+No blockchain has been selected.
+
+The project currently focuses on defining the world before determining how the world should function.
 
 ---
 
-## Links
+## Public Institutions
 
-* **Website:** https://bitpangea.com
-* **Manifesto:** Coming Soon
-* **Discussions:** Open an issue or join the conversation
+* The Atlas — Cartography
+* The Charter — Principles
+* The Chronicle — History
+* The Commons — Discussion
+* The Covenant — Legal Framework
+* The Codex — Inquiry
+* The Lexicon — Language
 
 ---
+
+## The Question
+
+> What if Bitcoin had been invented not as money, but as a world?
+
+---
+
+## Website
+
+https://bitpangea.com
 
 ## Contact
 
 [contact@bitpangea.com](mailto:contact@bitpangea.com)
-
----
-
-## Notes
-
-BitPangea is an exploratory concept intended to investigate how scarcity, ownership, permanence, and neutrality might shape a persistent digital civilization.
-
-All ideas, structures, and future directions remain subject to exploration and revision.
