@@ -3,7 +3,9 @@
 ## Codex V — The Contiguity
 
 **Review Date:** June 20, 2026
+
 **Status:** Adopted
+
 **Period:** Cartographic Period
 
 This document preserves the constitutional review conducted prior to the adoption of Codex V — The Contiguity.
