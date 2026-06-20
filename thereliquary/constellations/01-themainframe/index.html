@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Mainframe | The Reliquary | BitPangea</title>
+
+  <!-- Favicons -->
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="/assets/favicon.svg">
+  
+  <meta name="description" content="The Mainframe — Reliquary Relic I of XII, preserving the memory of computation within the Twelve Constellations of Digital Antiquity." />
+
+  <!-- BitPangea Metadata -->
+  <meta name="theme-color" content="#00c8d7">
+  <meta name="robots" content="index,follow">
+
+  <link rel="canonical" href="https://bitpangea.com/thereliquary/themainframe/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="The Mainframe | The Reliquary | BitPangea">
+  <meta property="og:description" content="Reliquary Relic I of XII — a preserved constellation of Digital Antiquity honoring the memory of computation.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://bitpangea.com/thereliquary/themainframe/">
+  <meta property="og:image" content="https://bitpangea.com/images/bitpangea-og.jpg">
+  <meta property="og:site_name" content="BitPangea">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter/X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Mainframe | The Reliquary | BitPangea">
+  <meta name="twitter:description" content="Reliquary Relic I of XII — a preserved constellation of Digital Antiquity honoring the memory of computation.">
+  <meta name="twitter:image" content="https://bitpangea.com/images/bitpangea-og.jpg">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"CreativeWork",
+    "name":"The Mainframe",
+    "url":"https://bitpangea.com/thereliquary/themainframe/",
+    "description":"Reliquary Relic I of XII, preserving the memory of computation within the Twelve Constellations of Digital Antiquity.",
+    "isPartOf":{
+      "@type":"WebSite",
+      "name":"BitPangea",
+      "url":"https://bitpangea.com/"
+    }
+  }
+  </script>
+  
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #02050a;
+      --gold: #d4a938;
+      --cyan: #00c8d7;
+      --white: #ffffff;
+      --line: rgba(212, 169, 56, 0.18);
+      --amber: rgba(212, 169, 56, 0.72);
+      --dim: rgba(255,255,255,.58);
+    }
+
+    html, body {
+      width: 100%;
+      min-height: 100%;
+      background: var(--bg);
+      color: var(--white);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      position: relative;
+      min-height: 100vh;
+      overflow-x: hidden;
+      background: #000;
+      line-height: 1.7;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(circle at 52% 18%, rgba(212, 169, 56, 0.09), transparent 28%),
+        radial-gradient(circle at 21% 72%, rgba(0, 200, 215, 0.06), transparent 36%),
+        radial-gradient(circle at 82% 64%, rgba(212,169,56,.04), transparent 28%),
+        linear-gradient(180deg, rgba(2,5,10,.94), rgba(2,5,10,.99));
+      z-index: -2;
+      pointer-events: none;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(212,169,56,.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(212,169,56,.025) 1px, transparent 1px);
+      background-size: 64px 64px;
+      opacity: .34;
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 72px 22px;
+    }
+
+    .chamber {
+      width: min(100%, 1040px);
+      padding: clamp(34px, 6vw, 72px);
+      border: 1px solid rgba(212, 169, 56, 0.18);
+      background:
+        linear-gradient(135deg, rgba(212,169,56,.045), rgba(0,0,0,.16)),
+        rgba(0,0,0,.42);
+      box-shadow:
+        0 0 80px rgba(0,0,0,.72),
+        inset 0 0 60px rgba(212,169,56,.025);
+      backdrop-filter: blur(3px);
+    }
+
+    .eyebrow {
+      color: var(--cyan);
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-size: 11px;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      color: var(--white);
+      font-size: clamp(42px, 8vw, 84px);
+      line-height: 1.02;
+      letter-spacing: 8px;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+      text-shadow: 0 0 24px rgba(0,0,0,.94);
+    }
+
+    .subtitle {
+      color: var(--gold);
+      font-size: 14px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 44px;
+    }
+
+    .divider {
+      width: 72px;
+      height: 2px;
+      background: var(--gold);
+      margin: 0 0 50px;
+      box-shadow: 0 0 16px rgba(212,169,56,.62);
+    }
+
+    .relic {
+      margin: 48px 0;
+      padding: clamp(28px, 5vw, 54px);
+      border: 1px solid rgba(212, 169, 56, 0.24);
+      background: rgba(0,0,0,.48);
+      box-shadow: inset 0 0 42px rgba(0,0,0,.65);
+    }
+
+    .constellation {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(16px, 3vw, 30px);
+      margin-bottom: 44px;
+      user-select: none;
+    }
+
+    .starfield {
+      min-height: 240px;
+      border: 1px solid rgba(212,169,56,.18);
+      background:
+        radial-gradient(circle at 17% 22%, rgba(255,255,255,.95) 0 1px, transparent 2px),
+        radial-gradient(circle at 34% 58%, rgba(212,169,56,.9) 0 1px, transparent 2px),
+        radial-gradient(circle at 48% 36%, rgba(255,255,255,.78) 0 1px, transparent 2px),
+        radial-gradient(circle at 66% 61%, rgba(212,169,56,.75) 0 1px, transparent 2px),
+        radial-gradient(circle at 82% 29%, rgba(255,255,255,.84) 0 1px, transparent 2px),
+        rgba(2,5,10,.45);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .starfield::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(28deg, transparent 19%, rgba(212,169,56,.18) 19.3%, transparent 20%),
+        linear-gradient(132deg, transparent 38%, rgba(212,169,56,.16) 38.3%, transparent 39%),
+        linear-gradient(8deg, transparent 57%, rgba(0,200,215,.12) 57.2%, transparent 58%);
+      opacity: .8;
+    }
+
+    .machine-mark {
+      min-height: 240px;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 10px;
+      padding: 18px;
+      border: 1px solid rgba(212,169,56,.18);
+      background: rgba(2,5,10,.45);
+    }
+
+    .bit {
+      min-height: 24px;
+      border: 1px solid rgba(212,169,56,.16);
+      background: rgba(0,0,0,.34);
+    }
+
+    .bit.punched {
+      background: rgba(212,169,56,.42);
+      box-shadow: 0 0 16px rgba(212,169,56,.22);
+    }
+
+    .section-label {
+      color: rgba(0,200,215,.76);
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin: 38px 0 14px;
+    }
+
+    .body-copy {
+      color: rgba(255,255,255,.78);
+      font-size: clamp(16px, 2vw, 20px);
+      line-height: 1.9;
+      max-width: 850px;
+      text-shadow: 0 0 12px rgba(0,0,0,.95);
+    }
+
+    .body-copy p + p { margin-top: 22px; }
+
+    .artifacts {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 16px;
+    }
+
+    .artifacts li {
+      border: 1px solid rgba(212,169,56,.16);
+      background: rgba(2,5,10,.42);
+      color: rgba(255,255,255,.74);
+      padding: 14px 16px;
+      letter-spacing: 1px;
+    }
+
+    blockquote {
+      margin-top: 18px;
+      padding: 26px 28px;
+      border-left: 2px solid var(--gold);
+      background: rgba(212,169,56,.035);
+      color: rgba(255,255,255,.84);
+      font-size: clamp(18px, 2.4vw, 25px);
+      line-height: 1.75;
+      font-style: italic;
+      box-shadow: inset 0 0 38px rgba(0,0,0,.35);
+    }
+
+    .record {
+      margin-top: 52px;
+      padding-top: 26px;
+      border-top: 1px solid rgba(212,169,56,.14);
+      color: rgba(255,255,255,.46);
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      line-height: 2;
+    }
+
+    .record strong {
+      color: rgba(212,169,56,.72);
+      font-weight: 400;
+    }
+
+    .footnote {
+      margin-top: 46px;
+      color: rgba(255,255,255,.46);
+      font-size: 13px;
+      letter-spacing: 2px;
+      line-height: 2;
+    }
+
+    .footnote span {
+      color: rgba(212,169,56,.66);
+    }
+
+    @media (max-width: 768px) {
+      .page { padding: 42px 16px; }
+      .chamber { padding: 32px 22px; }
+      h1 { letter-spacing: 5px; }
+      .constellation { grid-template-columns: 1fr; }
+      .artifacts { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Some relics are preserved before they are understood. -->
+  <!-- Chamber I remembers computation. -->
+  <!-- The remaining constellations are not cataloged here. -->
+
+  <main class="page">
+    <article class="chamber">
+      <div class="eyebrow">Reliquary Relic · Digital Antiquity</div>
+
+      <h1>The Mainframe</h1>
+
+      <div class="subtitle">Constellation I of XII · Chamber I</div>
+
+      <div class="divider"></div>
+
+      <section class="relic" aria-label="The Mainframe relic chamber">
+
+        <div class="constellation" aria-hidden="true">
+          <div class="starfield"></div>
+          <div class="machine-mark">
+            <div class="bit punched"></div><div class="bit"></div><div class="bit punched"></div><div class="bit"></div><div class="bit punched"></div><div class="bit"></div>
+            <div class="bit"></div><div class="bit punched"></div><div class="bit"></div><div class="bit punched"></div><div class="bit"></div><div class="bit punched"></div>
+            <div class="bit punched"></div><div class="bit punched"></div><div class="bit"></div><div class="bit"></div><div class="bit punched"></div><div class="bit"></div>
+            <div class="bit"></div><div class="bit"></div><div class="bit punched"></div><div class="bit punched"></div><div class="bit"></div><div class="bit"></div>
+            <div class="bit punched"></div><div class="bit"></div><div class="bit"></div><div class="bit punched"></div><div class="bit"></div><div class="bit punched"></div>
+            <div class="bit"></div><div class="bit punched"></div><div class="bit punched"></div><div class="bit"></div><div class="bit punched"></div><div class="bit"></div>
+          </div>
+        </div>
+
+        <div class="section-label">Preservation</div>
+        <div class="body-copy">
+          <p>Before the network.</p>
+          <p>Before the window.</p>
+          <p>Before the search.</p>
+          <p>Before the ledger.</p>
+          <p>There were machines that transformed thought into calculation.</p>
+          <p>Entire rooms were dedicated to the processing of instructions. Their memory was measured in fragments. Their speed was measured in moments. Their purpose was simple:</p>
+          <p>To compute.</p>
+          <p>Not to connect the world. Not to entertain it. Not to govern it.</p>
+          <p>Only to compute.</p>
+        </div>
+
+        <div class="section-label">Preserved Artifacts</div>
+        <ul class="artifacts">
+          <li>Punch Cards</li>
+          <li>Terminals</li>
+          <li>Mainframes</li>
+          <li>Early Computing Systems</li>
+        </ul>
+
+        <div class="section-label">Inscription</div>
+        <blockquote>Every digital civilization inherits a machine it never met.</blockquote>
+
+        <div class="section-label">Observation</div>
+        <div class="body-copy">
+          <p>The Mainframe does not preserve a device.</p>
+          <p>It preserves an idea.</p>
+          <p>That calculation could be delegated. That instructions could persist. That logic could be mechanized.</p>
+          <p>Every digital world descends from this realization.</p>
+        </div>
+
+      </section>
+
+      <div class="record">
+        <div><strong>Designation:</strong> Relic I of XII</div>
+        <div><strong>Constellation:</strong> The Mainframe</div>
+        <div><strong>Domain:</strong> Computation</div>
+        <div><strong>Status:</strong> Preserved</div>
+        <div><strong>Period:</strong> Digital Antiquity</div>
+      </div>
+
+      <div class="footnote">
+        <div><span>The remaining constellations have not been cataloged here.</span></div>
+        <div>Some relics are not adjacent.</div>
+        <div>Some relics are not visible.</div>
+        <div>Some relics must be discovered.</div>
+      </div>
+
+    </article>
+  </main>
+
+</body>
+</html>
