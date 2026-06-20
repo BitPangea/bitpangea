@@ -122,6 +122,35 @@ Relationships are properties of the world's structure.
 Cartographic relationships exist before social, economic, or civilizational meaning emerges.
 
 ---
+## Contiguity Principles
+
+*Derived from Codex V — The Contiguity*
+
+### Contiguity Requires Adjacency
+
+Connection depends upon one or more Adjacencies between Parcels.
+
+### Connection Emerges Through Relation
+
+Parcels become connected through cartographic relationships rather than ownership, governance, settlement, commerce, or activity.
+
+### Contiguity Preserves Distinction
+
+Connection does not erase individuality. Distinct Parcels remain distinct even within a Contiguity.
+
+### A Contiguity Is Not A Claim
+
+Connection does not establish ownership, stewardship, authority, jurisdiction, access, or control.
+
+### The World Remains Whole
+
+BitPangea itself constitutes a single Contiguity connected through an unbroken path of Adjacencies.
+
+### No Parcel Exists In Cartographic Isolation
+
+Every Parcel participates in the greater structure of BitPangea and exists within the world's Contiguity.
+
+---
 
 ## Living Doctrine
 
