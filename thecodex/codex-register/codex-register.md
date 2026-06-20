@@ -33,6 +33,7 @@ It records the definitions adopted into The Codex.
 | II    | The Boundary   | June 16, 2026 |
 | III   | The Coordinate | June 17, 2026 |
 | IV    | The Adjacency  | June 19, 2026 |
+| V     | The Contiguity | June 20, 2026 |
 
 ---
 
