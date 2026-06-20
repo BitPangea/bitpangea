@@ -8,11 +8,11 @@
 
 **Period:** Cartographic Period
 
-This document preserves the constitutional review conducted prior to the adoption of Codex V — The Contiguity.
+This document preserves the constitutional review conducted prior to the adoption of **Codex V — The Contiguity**.
 
-The review was performed by independent artificial intelligence systems representing multiple organizations and reasoning approaches.
+The review was performed by independent artificial intelligence systems representing multiple organizations, models, and reasoning approaches in order to evaluate the proposed definition and its constitutional implications.
 
-Participants:
+### Participants
 
 * OpenAI ChatGPT
 * Anthropic Claude
