@@ -1,6 +1,7 @@
 # Codex RL-II — The Contiguity
 
 **Adopted:** June 20, 2026
+
 **Period:** Relational Domain
 
 ---
