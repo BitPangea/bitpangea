@@ -1,6 +1,7 @@
 # Codex RL-I — The Adjacency
 
 **Adopted:** June 19, 2026
+
 **Period:** Relational Domain
 
 ---
