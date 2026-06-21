@@ -1,21 +1,21 @@
-# Codex IV — The Adjacency
+# Codex RL-I — The Adjacency
 
 **Adopted:** June 19, 2026
-**Period:** Cartographic Period
+**Period:** Relational Domain
 
 ---
 
 ## Definition
 
-An Adjacency is the cartographic relation between two Parcels that share a common Boundary within BitPangea.
+An Adjacency is the cartographic relation between two Parcels that share a common Boundary within The World.
 
 ---
 
 ## The Definition
 
-The existence of multiple Parcels within BitPangea makes cartographic relationship possible.
+The existence of multiple Parcels within The World makes cartographic relation possible.
 
-An Adjacency exists not to establish ownership, access, obligation, governance, value, or claim, but to describe the direct relationship between neighboring Parcels.
+An Adjacency exists not to establish ownership, access, obligation, governance, value, or claim, but to describe the direct relation between neighboring Parcels.
 
 Without Boundaries, Parcels cannot be distinguished.
 
@@ -25,7 +25,7 @@ Without Adjacencies, Parcels cannot be understood in relation to one another.
 
 ## Formal Definition
 
-An Adjacency is the cartographic relation between two Parcels that share a common Boundary within BitPangea.
+An Adjacency is the cartographic relation between two Parcels that share a common Boundary within The World.
 
 An Adjacency is a property of the world's structure rather than a property of either Parcel individually.
 
@@ -49,7 +49,7 @@ If one Parcel is adjacent to another, the relationship is mutual between both Pa
 
 ### Permanence
 
-Once established within the canonical structure of the world, an Adjacency cannot be erased, reassigned, or replaced.
+Once established within the canonical structure of The World, an Adjacency cannot be erased, reassigned, or replaced.
 
 ### Neutrality
 
