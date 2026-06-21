@@ -1,31 +1,31 @@
-# Codex III — The Coordinate
+# Codex ST-III — The Coordinate
 
 **Adopted:** June 17, 2026
-**Period:** Cartographic Period
+**Period:** Structural Domain
 
 ---
 
 ## Definition
 
-A Coordinate is the cartographic reference by which the position of a Parcel is uniquely described within BitPangea.
+A Coordinate is the cartographic reference by which the position of a Parcel is uniquely described within The World.
 
 ---
 
 ## The Definition
 
-The existence of a Parcel within BitPangea implies position.
+The existence of a Parcel within The World implies position.
 
-A Coordinate exists not to create position, ownership, value, territory, or claim, but to describe position within the world.
+A Coordinate exists not to create position, ownership, value, territory, or claim, but to describe position within The World.
 
 Without Coordinates, position may exist but cannot be formally referenced.
 
-Without reference, the map cannot speak clearly about place.
+Without reference, the structure of The World cannot be clearly described.
 
 ---
 
 ## Formal Definition
 
-A Coordinate is the cartographic reference by which the position of a Parcel is uniquely described within BitPangea.
+A Coordinate is the cartographic reference by which the position of a Parcel is uniquely described within The World.
 
 A Coordinate describes position; it does not create position.
 
@@ -37,11 +37,11 @@ Every Coordinate possesses the following immutable properties:
 
 ### Reference
 
-A Coordinate exists to reference the position of a Parcel within BitPangea.
+A Coordinate exists to reference the position of a Parcel within The World.
 
 ### Uniqueness
 
-Each Coordinate uniquely describes the position of one Parcel within the world.
+Each Coordinate uniquely describes the position of one Parcel within The World.
 
 ### Dependence
 
