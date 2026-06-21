@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Codex I — The Parcel | BitPangea</title>
+  <title>Codex ST-I — The Parcel | BitPangea</title>
 
   <!-- Favicons -->
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
@@ -12,7 +12,7 @@
 
   <meta
     name="description"
-    content="Codex I — The Parcel establishes the first formal cartographic definition within BitPangea: the parcel as the smallest indivisible cartographic unit of the digital supercontinent."
+    content="Codex ST-I — The Parcel establishes the first Structural Domain definition within BitPangea: the parcel as the smallest indivisible cartographic unit of the digital supercontinent."
   />
 
   <!-- BitPangea Metadata -->
@@ -22,8 +22,8 @@
   <link rel="canonical" href="https://bitpangea.com/thecodex/codex-I/">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Codex I — The Parcel | BitPangea">
-  <meta property="og:description" content="The first cartographic definition of BitPangea: the parcel as a permanent, unique, indivisible unit of the supercontinent.">
+  <meta property="og:title" content="Codex ST-I — The Parcel | BitPangea">
+  <meta property="og:description" content="The first Structural Domain definition of BitPangea: the parcel as a permanent, unique, indivisible unit of the supercontinent.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://bitpangea.com/thecodex/codex-I/">
   <meta property="og:image" content="https://bitpangea.com/images/bitpangea-og.jpg">
@@ -32,8 +32,8 @@
 
   <!-- Twitter/X -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Codex I — The Parcel | BitPangea">
-  <meta name="twitter:description" content="The first cartographic definition of BitPangea: the parcel as a permanent, unique, indivisible unit of the supercontinent.">
+  <meta name="twitter:title" content="Codex ST-I — The Parcel | BitPangea">
+  <meta name="twitter:description" content="The first Structural Domain definition of BitPangea: the parcel as a permanent, unique, indivisible unit of the supercontinent.">
   <meta name="twitter:image" content="https://bitpangea.com/images/bitpangea-og.jpg">
 
   <!-- Structured Data -->
@@ -41,11 +41,11 @@
   {
     "@context":"https://schema.org",
     "@type":"Article",
-    "headline":"Codex I — The Parcel",
-    "name":"Codex I — The Parcel",
+    "headline":"Codex ST-I — The Parcel",
+    "name":"Codex ST-I — The Parcel",
     "url":"https://bitpangea.com/thecodex/codex-I/",
     "datePublished":"2026-06-15",
-    "description":"The first formal cartographic definition within BitPangea, establishing the parcel as the smallest indivisible cartographic unit of the digital supercontinent.",
+    "description":"The first Structural Domain definition within BitPangea, establishing the parcel as the smallest indivisible cartographic unit of the digital supercontinent.",
     "isPartOf":{
       "@type":"WebPage",
       "name":"The Codex",
@@ -432,6 +432,105 @@
  margin-top: 18px;
 }
     
+
+
+    .codex-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 26px 0 0;
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 8px 12px;
+      border: 1px solid rgba(212, 169, 56, 0.28);
+      color: rgba(255,255,255,0.82);
+      background: rgba(0,0,0,0.32);
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .domain-note {
+      margin: 30px 0 0;
+      padding: 22px 26px;
+      border: 1px solid rgba(212, 169, 56, 0.18);
+      background: rgba(0, 0, 0, 0.38);
+    }
+
+    .domain-note span {
+      display: block;
+      color: var(--cyan);
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .domain-note p {
+      font-size: 17px;
+      margin-bottom: 10px;
+    }
+
+    .domain-note p:last-child { margin-bottom: 0; }
+
+    .legacy-link a,
+    .legacy-link a:visited {
+      color: rgba(212, 169, 56, 0.9);
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+    }
+
+    .legacy-link a:hover {
+      color: #ffffff;
+      text-shadow: 0 0 12px rgba(212,169,56,.6);
+    }
+
+    .property-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin-top: 22px;
+    }
+
+    .property-card,
+    .principle-card {
+      padding: 22px 24px;
+      background: rgba(0,0,0,0.36);
+      border: 1px solid rgba(212, 169, 56, 0.16);
+      box-shadow: 0 0 20px rgba(0,0,0,0.28);
+      margin-bottom: 16px;
+    }
+
+    .property-card h3,
+    .principle-card h3 {
+      color: var(--gold);
+      font-size: 15px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .property-card p,
+    .principle-card p {
+      margin-bottom: 0;
+      font-size: 16px;
+      color: rgba(255,255,255,0.88);
+    }
+
+    .two-column {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .two-column { grid-template-columns: 1fr; }
+    }
+
     .bp-footer {
       margin-top: 120px;
       padding: 60px 40px;
@@ -531,19 +630,20 @@
   <main class="page">
     <article class="container">
       <section class="hero">
-        <div class="eyebrow">Codex I · June 15, 2026</div>
+        <div class="eyebrow">Codex ST-I · Structural Domain · June 15, 2026</div>
 
-        <h1>Codex I<br>The Parcel</h1>
+        <h1>Codex ST-I<br>The Parcel</h1>
 
-        <div class="subtitle">The First Cartographic Definition</div>
+        <div class="subtitle">The First Structural Definition</div>
 
         <p class="intro">
-          Codex I establishes the first formal definition within BitPangea.
+          Codex ST-I establishes the first formal definition within the Structural Domain of BitPangea.
           Before discovery, ownership, commerce, governance, or civilization, the parcel is defined as the fundamental cartographic unit of the world.
         </p>
 
         <div class="codex-meta" aria-label="Codex metadata">
-          <span class="pill">The Codex</span>
+          <span class="pill">Structural (ST)</span>
+          <span class="pill">What is the world?</span>
           <span class="pill">Cartographic Period</span>
           <span class="pill">Adopted Definition</span>
         </div>
@@ -554,6 +654,12 @@
           <span class="quote-label">Codex Definition</span>
           A Parcel is the smallest indivisible cartographic unit of BitPangea.
         </blockquote>
+
+        <div class="domain-note">
+          <span>Domain Assignment</span>
+          <p><strong>Structural (ST):</strong> What is the world?</p>
+          <p>The Parcel belongs to the Structural Domain because it defines a foundational cartographic unit of BitPangea without reference to discovery, ownership, governance, settlement, commerce, or civilization.</p>
+        </div>
       </section>
 
       <section class="section">
@@ -641,7 +747,7 @@
       </section>
 
       <section class="section">
-        <h2>Principles Established by Codex I</h2>
+        <h2>Principles Established by Codex ST-I</h2>
 
         <div class="principle-card">
           <h3>1. Existence Precedes Discovery</h3>
@@ -674,7 +780,18 @@
         Discovery reveals what already exists. It does not create it.
       </blockquote>
 
-      <div class="status">Codex I · Adopted Definition · Cartographic Period</div>
+      <div class="status">Codex ST-I · Structural Domain · Adopted Definition · Cartographic Period</div>
+
+      <section class="section">
+        <h2>Historical Record</h2>
+        <p>
+          This entry was originally adopted as <strong>Codex I — The Parcel</strong> before the adoption of the Domain Architecture on June 20, 2026.
+          Its original sequential form has been preserved within the Legacy Codex Register.
+        </p>
+        <p class="legacy-link">
+          <a href="/thecodex/codex-register/legacy-codex-register01/codex-I/">View Legacy Codex I →</a>
+        </p>
+      </section>
 
       <p class="source-link">
         <a href="codex-I-parcel.md">View Markdown Source</a>
