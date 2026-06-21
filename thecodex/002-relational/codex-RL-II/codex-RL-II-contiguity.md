@@ -1,31 +1,31 @@
-# Codex V — The Contiguity
+# Codex RL-II — The Contiguity
 
 **Adopted:** June 20, 2026
-**Period:** Cartographic Period
+**Period:** Relational Domain
 
 ---
 
 ## Definition
 
-A Contiguity is the cartographic condition by which two or more Parcels are connected through an unbroken path of Adjacencies within BitPangea.
+A Contiguity is the cartographic condition by which two or more Parcels are connected through an unbroken path of Adjacencies within The World.
 
 ---
 
 ## The Definition
 
-The existence of Adjacencies within BitPangea makes connection possible.
+The existence of Adjacencies within The World makes connection possible.
 
 A Contiguity exists not to establish ownership, governance, access, jurisdiction, value, settlement, or claim, but to describe the connected structure formed by neighboring Parcels.
 
 Without Adjacencies, Parcels may be distinguished but cannot be understood as connected.
 
-Without Contiguity, the world cannot be understood as a unified whole.
+Without Contiguity, the unity of The World cannot be structurally understood.
 
 ---
 
 ## Formal Definition
 
-A Contiguity is the cartographic condition by which two or more Parcels are connected through an unbroken path of Adjacencies within BitPangea.
+A Contiguity is the cartographic condition by which two or more Parcels are connected through an unbroken path of Adjacencies within The World.
 
 A Contiguity is a property of the world's structure rather than a property of any individual Parcel.
 
@@ -53,7 +53,7 @@ A Contiguity describes the connected structure formed by many Parcels rather tha
 
 ### Permanence
 
-Once established within the canonical structure of the world, a Contiguity cannot be fragmented, reassigned, or dissolved without altering the world's cartographic structure.
+Once established within the canonical structure of The World, a Contiguity cannot be fragmented, reassigned, or dissolved without altering the world's cartographic structure.
 
 ### Neutrality
 
