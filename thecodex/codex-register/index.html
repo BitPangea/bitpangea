@@ -269,6 +269,171 @@
 
     p:last-child { margin-bottom: 0; }
 
+
+    .domain-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin: 18px 0 34px;
+    }
+
+    .domain-tab,
+    .domain-tab:visited {
+      display: inline-block;
+      padding: 10px 18px;
+      color: var(--white);
+      border: 1px solid rgba(212, 169, 56, 0.32);
+      background: rgba(0, 0, 0, 0.36);
+      text-decoration: none;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-size: 11px;
+      transition: all .25s ease;
+    }
+
+    .domain-tab:hover,
+    .domain-tab.active {
+      color: var(--gold);
+      border-color: rgba(212, 169, 56, 0.68);
+      box-shadow: 0 0 18px rgba(212, 169, 56, 0.10);
+    }
+
+    .domain-block {
+      margin-top: 38px;
+      background: rgba(0, 0, 0, 0.24);
+    }
+
+    .domain-heading {
+      margin-bottom: 18px;
+      color: var(--cyan);
+      font-size: 18px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .domain-heading span {
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 13px;
+      letter-spacing: 0;
+      text-transform: none;
+      margin-left: 8px;
+    }
+
+    .domain-entry-list {
+      border: 1px solid rgba(212, 169, 56, 0.28);
+      background: rgba(0, 0, 0, 0.32);
+    }
+
+    .domain-entry {
+      display: grid;
+      grid-template-columns: 170px 1fr 82px;
+      align-items: center;
+      gap: 28px;
+      padding: 22px 24px;
+      color: var(--white);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(212, 169, 56, 0.16);
+      transition: all .25s ease;
+    }
+
+    .domain-entry:last-child { border-bottom: none; }
+
+    .domain-entry:hover {
+      background: rgba(0, 0, 0, 0.42);
+      box-shadow: inset 0 0 24px rgba(212, 169, 56, 0.04);
+    }
+
+    .domain-entry .entry-meta {
+      color: var(--cyan);
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .domain-entry h3 {
+      color: var(--white);
+      font-size: 18px;
+      letter-spacing: 1px;
+      margin: 0;
+      text-transform: none;
+    }
+
+    .domain-entry p {
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 14px;
+      line-height: 1.55;
+      margin: 0;
+    }
+
+    .domain-entry .entry-link {
+      color: var(--gold);
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .legacy-card {
+      margin-top: 34px;
+      padding: 26px 28px;
+      border: 1px solid rgba(212, 169, 56, 0.24);
+      background: rgba(0, 0, 0, 0.38);
+    }
+
+    .legacy-card h2 {
+      margin-bottom: 12px;
+      font-size: 20px;
+    }
+
+    .legacy-card p {
+      font-size: 15px;
+      color: rgba(255, 255, 255, 0.82);
+      margin-bottom: 16px;
+    }
+
+    .legacy-card a,
+    .legacy-card a:visited {
+      color: var(--gold);
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+    }
+
+    .period-note {
+      margin-top: 34px;
+      padding: 22px 26px;
+      border: 1px solid rgba(212, 169, 56, 0.24);
+      background: rgba(0, 0, 0, 0.36);
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+      color: rgba(255, 255, 255, 0.82);
+    }
+
+    .period-note .symbol {
+      width: 24px;
+      height: 24px;
+      border: 1px solid rgba(212, 169, 56, 0.62);
+      border-radius: 50%;
+      color: var(--gold);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 auto;
+      font-size: 14px;
+      line-height: 1;
+      margin-top: 4px;
+    }
+
+    .period-note p {
+      margin: 0;
+      font-size: 15px;
+      color: rgba(255, 255, 255, 0.82);
+    }
+
     .entry-list {
       display: grid;
       grid-template-columns: 1fr;
@@ -428,6 +593,13 @@
       p { font-size: 16px; }
       .section { padding: 28px 22px; }
       .entry-card { padding: 24px 22px; }
+
+      .domain-tabs { gap: 10px; }
+      .domain-tab { font-size: 10px; padding: 9px 12px; }
+      .domain-heading span { display: block; margin: 6px 0 0; }
+      .domain-entry { grid-template-columns: 1fr; gap: 10px; padding: 20px; }
+      .domain-entry .entry-link { text-align: left; }
+      .period-note { padding: 20px; }
     }
   </style>
 </head>
@@ -452,7 +624,7 @@
 
   <main class="page">
     <article class="container">
-      <section class="hero">
+      <section class="hero" id="codex-register-top">
         <div class="eyebrow">Codex Register · June 2026</div>
 
         <h1>The Codex<br>Register</h1>
@@ -472,71 +644,86 @@
         </div>
       </section>
 
-      <section class="section">
-        <h2>Established Codex Entries</h2>
+      <div class="domain-tabs" aria-label="Codex domain filters">
+        <a class="domain-tab active" href="#codex-register-top">All Domains</a>
+        <a class="domain-tab" href="#structural-domain">Structural (ST)</a>
+        <a class="domain-tab" href="#relational-domain">Relational (RL)</a>
+      </div>
 
-        <p>
-          Each adopted Codex is preserved as a permanent record within the Cartographic Period.
-        </p>
+      <section class="domain-block" id="structural-domain" aria-labelledby="structural-heading">
+        <h2 class="domain-heading" id="structural-heading">Structural (ST) <span>— What is the world?</span></h2>
 
-        <div class="entry-list" aria-label="Established Codex entries">
-          <a class="entry-card" href="/thecodex/codex-I/">
-            <div class="entry-meta">Codex I · June 15, 2026</div>
-            <h3>The Parcel</h3>
-            <p>
-              The first cartographic definition of BitPangea. Codex I defines the parcel as the smallest indivisible
-              cartographic unit of the supercontinent, existing before discovery, ownership, commerce, governance, or code.
-            </p>
-            <div class="entry-link">Read Codex I →</div>
+        <div class="domain-entry-list" aria-label="Structural Domain Codex entries">
+          <a class="domain-entry" href="/thecodex/codex-I/">
+            <div>
+              <div class="entry-meta">ST-I · June 15, 2026</div>
+              <h3>The Parcel</h3>
+            </div>
+            <p>The first cartographic definition of BitPangea.</p>
+            <div class="entry-link">View →</div>
           </a>
 
-          <a class="entry-card" href="/thecodex/codex-II/">
-            <div class="entry-meta">Codex II · June 16, 2026</div>
-            <h3>The Boundary</h3>
-            <p>
-              The second cartographic definition of BitPangea. Codex II acknowledges the boundary as the cartographic distinction
-              that allows one parcel to be differentiated from another, making plurality possible within the supercontinent.
-            </p>
-            <div class="entry-link">Read Codex II →</div>
+          <a class="domain-entry" href="/thecodex/codex-II/">
+            <div>
+              <div class="entry-meta">ST-II · June 16, 2026</div>
+              <h3>The Boundary</h3>
+            </div>
+            <p>The cartographic distinction between Parcels.</p>
+            <div class="entry-link">View →</div>
           </a>
 
-          <a class="entry-card" href="/thecodex/codex-III/">
-            <div class="entry-meta">Codex III · June 17, 2026</div>
-            <h3>The Coordinate</h3>
-            <p>
-              The third cartographic definition of BitPangea. Codex III acknowledges the Coordinate as the cartographic reference
-              by which the position of a Parcel is uniquely described within BitPangea, establishing the foundation for location,
-              place, and future digital geography.
-            </p>
-            <div class="entry-link">Read Codex III →</div>
+          <a class="domain-entry" href="/thecodex/codex-III/">
+            <div>
+              <div class="entry-meta">ST-III · June 17, 2026</div>
+              <h3>The Coordinate</h3>
+            </div>
+            <p>The cartographic reference for location.</p>
+            <div class="entry-link">View →</div>
           </a>
-
-          <a class="entry-card" href="/thecodex/codex-IV/">
-            <div class="entry-meta">Codex IV · June 19, 2026</div>
-            <h3>The Adjacency</h3>
-            <p>
-              The fourth cartographic definition of BitPangea. Codex IV acknowledges Adjacency as the cartographic relation
-              between two Parcels that share a common Boundary, establishing the first formal relationship within the world and
-              laying the foundation for proximity, connection, and future geographic structure.
-            </p>
-            <div class="entry-link">Read Codex IV →</div>
-          </a>
-
-<a class="entry-card" href="/thecodex/codex-V/">
-  <div class="entry-meta">Codex V · June 20, 2026</div>
-  <h3>The Contiguity</h3>
-  <p>
-    The fifth cartographic definition of BitPangea. Codex V acknowledges Contiguity as the cartographic condition
-    by which two or more Parcels are connected through an unbroken path of Adjacencies, establishing the first
-    world-scale cartographic structure and explaining how the supercontinent remains a single connected whole.
-  </p>
-  <div class="entry-link">Read Codex V →</div>
-</a>
-          
         </div>
       </section>
 
-      <div class="status">Codex Register · Permanent Record · Cartographic Period</div>
+      <section class="domain-block" id="relational-domain" aria-labelledby="relational-heading">
+        <h2 class="domain-heading" id="relational-heading">Relational (RL) <span>— How do things relate?</span></h2>
+
+        <div class="domain-entry-list" aria-label="Relational Domain Codex entries">
+          <a class="domain-entry" href="/thecodex/codex-IV/">
+            <div>
+              <div class="entry-meta">RL-I · June 19, 2026</div>
+              <h3>The Adjacency</h3>
+            </div>
+            <p>The relation of proximity between Parcels.</p>
+            <div class="entry-link">View →</div>
+          </a>
+
+          <a class="domain-entry" href="/thecodex/codex-V/">
+            <div>
+              <div class="entry-meta">RL-II · June 20, 2026</div>
+              <h3>The Contiguity</h3>
+            </div>
+            <p>The condition of connection without separation.</p>
+            <div class="entry-link">View →</div>
+          </a>
+        </div>
+      </section>
+
+      <section class="legacy-card" aria-labelledby="legacy-register-heading">
+        <h2 id="legacy-register-heading">Legacy Codex Register</h2>
+        <p>
+          The original sequential register remains preserved as a historical record of the first five adopted Codices before the adoption of the Domain Architecture.
+        </p>
+        <a href="https://bitpangea.com/thecodex/codex-register/legacy-codex-register01/index.html">View Legacy Register →</a>
+      </section>
+
+      <div class="period-note">
+        <span class="symbol">⌾</span>
+        <p>
+          The Cartographic Period is in its early stage.<br>
+          Additional Codices will be adopted as the framework develops.
+        </p>
+      </div>
+
+      <div class="status">Codex Register · Domain Record · Cartographic Period</div>
     </article>
   </main>
 
