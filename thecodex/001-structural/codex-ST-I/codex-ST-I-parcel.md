@@ -1,4 +1,4 @@
-# Codex Entry I
+# Codex ST-I
 
 ## The Parcel
 
@@ -6,19 +6,21 @@
 
 ---
 
-A Parcel is the smallest indivisible cartographic unit of BitPangea.
+A Parcel is the smallest indivisible cartographic unit recognized within The World.
 
-A parcel occupies a permanent position within the supercontinent and possesses a unique identity distinct from all other parcels.
+A Parcel occupies a permanent position within The World and possesses a unique identity distinct from all other Parcels.
 
-A parcel exists as a fundamental constituent of the world itself—not as a product of human action, but as an intrinsic element of BitPangea's cartographic reality.
+A Parcel exists as a fundamental structural unit of The World itself—not as a product of human action, but as an intrinsic element of BitPangea's cartographic reality.
 
 Its existence precedes ownership, settlement, development, commerce, governance, and even awareness.
+
+Within the Structural Domain, the Parcel serves as the foundational unit through which the structure of The World is expressed and understood.
 
 ---
 
 ## Formal Definition
 
-A Parcel is a uniquely identifiable, non-overlapping, indivisible portion of the BitPangea supercontinent, defined by its permanent identity and fixed position within the unified whole.
+A Parcel is a uniquely identifiable, non-overlapping, indivisible cartographic unit occupying a permanent position within The World.
 
 Each parcel possesses the following immutable properties:
 
