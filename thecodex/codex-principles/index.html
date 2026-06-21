@@ -395,6 +395,131 @@
       text-transform: uppercase;
     }
 
+
+
+    .domain-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 26px;
+      margin-bottom: 10px;
+    }
+
+    .domain-nav a,
+    .domain-nav a:visited {
+      display: inline-block;
+      padding: 12px 18px;
+      border: 1px solid rgba(212, 169, 56, 0.35);
+      color: var(--white);
+      text-decoration: none;
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      background: rgba(0,0,0,0.34);
+      transition: all .25s ease;
+    }
+
+    .domain-nav a:hover {
+      border-color: rgba(212, 169, 56, 0.70);
+      color: var(--gold);
+      box-shadow: 0 0 18px rgba(212, 169, 56, 0.10);
+    }
+
+    .domain-heading {
+      margin-top: 44px;
+      margin-bottom: 18px;
+      color: var(--cyan);
+      font-size: 17px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .domain-heading span {
+      color: rgba(255,255,255,0.88);
+      font-size: 13px;
+      letter-spacing: 0;
+      text-transform: none;
+      margin-left: 8px;
+    }
+
+    .codex-principle-group {
+      margin-top: 26px;
+      padding: 26px;
+      border: 1px solid rgba(212, 169, 56, 0.14);
+      background: rgba(0,0,0,0.24);
+    }
+
+    .codex-principle-group h3 {
+      color: var(--white);
+      font-size: 18px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .codex-subtitle {
+      color: var(--gold);
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .entry-card.compact {
+      padding: 18px 20px;
+    }
+
+    .entry-card.compact h3 {
+      font-size: 15px;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+    }
+
+    .entry-card.compact p {
+      font-size: 14px;
+    }
+
+    .legacy-link-card {
+      display: block;
+      margin-top: 18px;
+      padding: 24px 26px;
+      border: 1px solid rgba(212, 169, 56, 0.30);
+      background: rgba(0,0,0,0.38);
+      color: var(--white);
+      text-decoration: none;
+      transition: all .25s ease;
+    }
+
+    .legacy-link-card:hover {
+      border-color: rgba(212, 169, 56, 0.60);
+      background: rgba(0,0,0,0.52);
+      transform: translateY(-2px);
+    }
+
+    .legacy-link-card span {
+      display: block;
+      color: var(--cyan);
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .legacy-link-card strong {
+      display: block;
+      color: var(--gold);
+      font-size: 18px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .legacy-link-card p {
+      margin: 0;
+      font-size: 15px;
+      color: rgba(255,255,255,0.84);
+    }
+
     @media (max-width: 980px) {
       .topbar { align-items: flex-start; flex-direction: column; }
       .nav { justify-content: flex-start; }
@@ -457,6 +582,12 @@
           <span>Principles Doctrine</span>
           <p>Definitions establish meaning. Principles preserve understanding.</p>
         </div>
+
+        <div class="domain-nav" aria-label="Codex Principles domains">
+          <a href="#structural-principles">Structural (ST)</a>
+          <a href="#relational-principles">Relational (RL)</a>
+          <a href="/thecodex/codex-principles/legacy-codex-principles01/">Legacy Principles</a>
+        </div>
       </section>
 
       <section class="section">
@@ -473,194 +604,229 @@
         </p>
       </section>
 
-      <section class="section">
-        <h2>Parcel Principles</h2>
+      <section class="section" id="structural-principles">
+        <h2>Structural Domain Principles</h2>
 
-        <div class="entry-list">
-          <div class="entry-card">
-            <div class="entry-meta">Codex I · The Parcel</div>
-            <h3>Existence Precedes Discovery</h3>
-            <p>Parcels exist independently of whether they have been discovered, observed, mapped, claimed, or discussed.</p>
+        <p>
+          The Structural Domain preserves principles revealed by Codices that define what the world is.
+          These principles concern existence, distinction, position, and the cartographic primitives of BitPangea.
+        </p>
+
+        <div class="codex-principle-group">
+          <h3>ST-I · The Parcel</h3>
+          <div class="codex-subtitle">Unit · What is the world?</div>
+
+          <div class="entry-list">
+            <div class="entry-card compact">
+              <div class="entry-meta">Principle 1 · ST-I</div>
+              <h3>Existence Precedes Discovery</h3>
+              <p>Parcels exist independently of whether they have been discovered, observed, mapped, claimed, or discussed.</p>
+            </div>
+
+            <div class="entry-card compact">
+              <div class="entry-meta">Principle 2 · ST-I</div>
+              <h3>Revelation Through Mapping</h3>
+              <p>The world is revealed through cartography rather than created through issuance, allocation, or authority.</p>
+            </div>
+
+            <div class="entry-card compact">
+              <div class="entry-meta">Principle 3 · ST-I</div>
+              <h3>Ownership Is Secondary</h3>
+              <p>Ownership may emerge later, but existence does not depend upon ownership.</p>
+            </div>
+
+            <div class="entry-card compact">
+              <div class="entry-meta">Principle 4 · ST-I</div>
+              <h3>The Map Must Outlast Its Inhabitants</h3>
+              <p>Cartography should endure beyond individual participants, institutions, and generations.</p>
+            </div>
+
+            <div class="entry-card compact">
+              <div class="entry-meta">Principle 5 · ST-I</div>
+              <h3>Identity Persists</h3>
+              <p>A Parcel remains itself regardless of ownership, stewardship, settlement, or historical change.</p>
+            </div>
           </div>
+        </div>
 
-          <div class="entry-card">
-            <div class="entry-meta">Codex I · The Parcel</div>
-            <h3>Revelation Through Mapping</h3>
-            <p>The world is revealed through cartography rather than created through issuance, allocation, or authority.</p>
+        <div class="codex-principle-group">
+          <h3>ST-II · The Boundary</h3>
+          <div class="codex-subtitle">Distinction · What is the world?</div>
+
+          <div class="entry-list">
+            <div class="entry-card compact">
+              <div class="entry-meta">Principle 1 · ST-II</div>
+              <h3>Distinction Enables Plurality</h3>
+              <p>Multiple Parcels can only exist if distinction exists between them.</p>
+            </div>
+
+            <div class="entry-card compact">
+              <div class="entry-meta">Principle 2 · ST-II</div>
+              <h3>Boundaries Precede Relationships</h3>
+              <p>Distinction must exist before relationships can exist.</p>
+            </div>
+
+            <div class="entry-card compact">
+              <div class="entry-meta">Principle 3 · ST-II</div>
+              <h3>A Boundary Is Not A Claim</h3>
+              <p>Distinction does not imply ownership.</p>
+            </div>
+
+            <div class="entry-card compact">
+              <div class="entry-meta">Principle 4 · ST-II</div>
+              <h3>A Boundary Belongs To The World</h3>
+              <p>Boundaries are properties of BitPangea itself rather than individual Parcels.</p>
+            </div>
+
+            <div class="entry-card compact">
+              <div class="entry-meta">Principle 5 · ST-II</div>
+              <h3>Representation Is Not Definition</h3>
+              <p>A map may represent a Boundary, but the Boundary exists independently of representation.</p>
+            </div>
           </div>
+        </div>
 
-          <div class="entry-card">
-            <div class="entry-meta">Codex I · The Parcel</div>
-            <h3>Ownership Is Secondary</h3>
-            <p>Ownership may emerge later, but existence does not depend upon ownership.</p>
+        <div class="codex-principle-group">
+          <h3>ST-III · The Coordinate</h3>
+          <div class="codex-subtitle">Location · What is the world?</div>
+
+          <div class="entry-list">
+            <div class="entry-card compact">
+              <div class="entry-meta">Principle 1 · ST-III</div>
+              <h3>Position Precedes Description</h3>
+              <p>A Parcel possesses position because it exists within BitPangea. A Coordinate describes that position. It does not create it.</p>
+            </div>
+
+            <div class="entry-card compact">
+              <div class="entry-meta">Principle 2 · ST-III</div>
+              <h3>Coordinates Make Position Referable</h3>
+              <p>Position may exist without being known, named, mapped, or described. Coordinates allow position to be referenced within the cartographic record.</p>
+            </div>
+
+            <div class="entry-card compact">
+              <div class="entry-meta">Principle 3 · ST-III</div>
+              <h3>A Coordinate Is Not A Claim</h3>
+              <p>A Coordinate describes where a Parcel is. It does not determine who may claim, steward, govern, inhabit, or use it.</p>
+            </div>
+
+            <div class="entry-card compact">
+              <div class="entry-meta">Principle 4 · ST-III</div>
+              <h3>Coordinates Belong To The Map</h3>
+              <p>Coordinates are part of the cartographic structure of BitPangea and do not belong to any person, institution, community, or Parcel owner.</p>
+            </div>
+
+            <div class="entry-card compact">
+              <div class="entry-meta">Principle 5 · ST-III</div>
+              <h3>Representation Is Not Implementation</h3>
+              <p>A Coordinate may be expressed through systems, but such systems represent Coordinates. They do not define the constitutional concept itself.</p>
+            </div>
           </div>
+        </div>
+      </section>
 
-          <div class="entry-card">
-            <div class="entry-meta">Codex I · The Parcel</div>
-            <h3>The Map Must Outlast Its Inhabitants</h3>
-            <p>Cartography should endure beyond individual participants, institutions, and generations.</p>
+      <section class="section" id="relational-principles">
+        <h2>Relational Domain Principles</h2>
+
+        <p>
+          The Relational Domain preserves principles revealed by Codices that define how things relate.
+          These principles concern arrangement, connection, proximity, and relation among structural entities.
+        </p>
+
+        <div class="codex-principle-group">
+          <h3>RL-I · The Adjacency</h3>
+          <div class="codex-subtitle">Relation of Proximity · How do things relate?</div>
+
+          <div class="entry-list">
+            <div class="entry-card compact">
+              <div class="entry-meta">Principle 1 · RL-I</div>
+              <h3>Adjacency Requires Distinction</h3>
+              <p>Relationship depends upon distinction.</p>
+            </div>
+
+            <div class="entry-card compact">
+              <div class="entry-meta">Principle 2 · RL-I</div>
+              <h3>Adjacency Requires Position</h3>
+              <p>Relationship depends upon location.</p>
+            </div>
+
+            <div class="entry-card compact">
+              <div class="entry-meta">Principle 3 · RL-I</div>
+              <h3>Adjacency Is Not Ownership</h3>
+              <p>Proximity does not establish rights, claims, or authority.</p>
+            </div>
+
+            <div class="entry-card compact">
+              <div class="entry-meta">Principle 4 · RL-I</div>
+              <h3>Adjacency Belongs To The World</h3>
+              <p>Relationships are properties of the world's structure.</p>
+            </div>
+
+            <div class="entry-card compact">
+              <div class="entry-meta">Principle 5 · RL-I</div>
+              <h3>Relationship Precedes Meaning</h3>
+              <p>Cartographic relationships exist before social, economic, or civilizational meaning emerges.</p>
+            </div>
           </div>
+        </div>
 
-          <div class="entry-card">
-            <div class="entry-meta">Codex I · The Parcel</div>
-            <h3>Identity Persists</h3>
-            <p>A Parcel remains itself regardless of ownership, stewardship, settlement, or historical change.</p>
+        <div class="codex-principle-group">
+          <h3>RL-II · The Contiguity</h3>
+          <div class="codex-subtitle">Condition of Connection · How do things relate?</div>
+
+          <div class="entry-list">
+            <div class="entry-card compact">
+              <div class="entry-meta">Principle 1 · RL-II</div>
+              <h3>Contiguity Requires Adjacency</h3>
+              <p>Connection depends upon one or more Adjacencies between Parcels.</p>
+            </div>
+
+            <div class="entry-card compact">
+              <div class="entry-meta">Principle 2 · RL-II</div>
+              <h3>Connection Emerges Through Relation</h3>
+              <p>Parcels become connected through cartographic relationships rather than ownership, governance, settlement, commerce, or activity.</p>
+            </div>
+
+            <div class="entry-card compact">
+              <div class="entry-meta">Principle 3 · RL-II</div>
+              <h3>Contiguity Preserves Distinction</h3>
+              <p>Connection does not erase individuality. Distinct Parcels remain distinct even within a Contiguity.</p>
+            </div>
+
+            <div class="entry-card compact">
+              <div class="entry-meta">Principle 4 · RL-II</div>
+              <h3>A Contiguity Is Not A Claim</h3>
+              <p>Connection does not establish ownership, stewardship, authority, jurisdiction, access, or control.</p>
+            </div>
+
+            <div class="entry-card compact">
+              <div class="entry-meta">Principle 5 · RL-II</div>
+              <h3>The World Remains Whole</h3>
+              <p>BitPangea itself constitutes a single Contiguity connected through an unbroken path of Adjacencies.</p>
+            </div>
+
+            <div class="entry-card compact">
+              <div class="entry-meta">Principle 6 · RL-II</div>
+              <h3>No Parcel Exists In Cartographic Isolation</h3>
+              <p>Every Parcel participates in the greater structure of BitPangea and exists within the world's Contiguity.</p>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="section">
-        <h2>Boundary Principles</h2>
+        <h2>Legacy Codex Principles</h2>
 
-        <div class="entry-list">
-          <div class="entry-card">
-            <div class="entry-meta">Codex II · The Boundary</div>
-            <h3>Distinction Enables Plurality</h3>
-            <p>Multiple Parcels can only exist if distinction exists between them.</p>
-          </div>
+        <p>
+          The original sequential organization of the first five Codex Principles has been preserved as a historical record.
+        </p>
 
-          <div class="entry-card">
-            <div class="entry-meta">Codex II · The Boundary</div>
-            <h3>Boundaries Precede Relationships</h3>
-            <p>Distinction must exist before relationships can exist.</p>
-          </div>
-
-          <div class="entry-card">
-            <div class="entry-meta">Codex II · The Boundary</div>
-            <h3>A Boundary Is Not A Claim</h3>
-            <p>Distinction does not imply ownership.</p>
-          </div>
-
-          <div class="entry-card">
-            <div class="entry-meta">Codex II · The Boundary</div>
-            <h3>A Boundary Belongs To The World</h3>
-            <p>Boundaries are properties of BitPangea itself rather than individual Parcels.</p>
-          </div>
-
-          <div class="entry-card">
-            <div class="entry-meta">Codex II · The Boundary</div>
-            <h3>Representation Is Not Definition</h3>
-            <p>A map may represent a Boundary, but the Boundary exists independently of representation.</p>
-          </div>
-        </div>
+        <a class="legacy-link-card" href="/thecodex/codex-principles/legacy-codex-principles01/">
+          <span>Historical Record</span>
+          <strong>View Legacy Codex Principles →</strong>
+          <p>Preserves the pre-domain structure before the adoption of the Structural and Relational Domain organization.</p>
+        </a>
       </section>
 
-      <section class="section">
-        <h2>Coordinate Principles</h2>
-
-        <div class="entry-list">
-          <div class="entry-card">
-            <div class="entry-meta">Codex III · The Coordinate</div>
-            <h3>Position Precedes Description</h3>
-            <p>A Parcel possesses position because it exists within BitPangea. A Coordinate describes that position. It does not create it.</p>
-          </div>
-
-          <div class="entry-card">
-            <div class="entry-meta">Codex III · The Coordinate</div>
-            <h3>Coordinates Make Position Referable</h3>
-            <p>Position may exist without being known, named, mapped, or described. Coordinates allow position to be referenced within the cartographic record.</p>
-          </div>
-
-          <div class="entry-card">
-            <div class="entry-meta">Codex III · The Coordinate</div>
-            <h3>A Coordinate Is Not A Claim</h3>
-            <p>A Coordinate describes where a Parcel is. It does not determine who may claim, steward, govern, inhabit, or use it.</p>
-          </div>
-
-          <div class="entry-card">
-            <div class="entry-meta">Codex III · The Coordinate</div>
-            <h3>Coordinates Belong To The Map</h3>
-            <p>Coordinates are part of the cartographic structure of BitPangea and do not belong to any person, institution, community, or Parcel owner.</p>
-          </div>
-
-          <div class="entry-card">
-            <div class="entry-meta">Codex III · The Coordinate</div>
-            <h3>Representation Is Not Implementation</h3>
-            <p>A Coordinate may be expressed through systems, but such systems represent Coordinates. They do not define the constitutional concept itself.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <h2>Adjacency Principles</h2>
-
-        <div class="entry-list">
-          <div class="entry-card">
-            <div class="entry-meta">Codex IV · The Adjacency</div>
-            <h3>Adjacency Requires Distinction</h3>
-            <p>Relationship depends upon distinction.</p>
-          </div>
-
-          <div class="entry-card">
-            <div class="entry-meta">Codex IV · The Adjacency</div>
-            <h3>Adjacency Requires Position</h3>
-            <p>Relationship depends upon location.</p>
-          </div>
-
-          <div class="entry-card">
-            <div class="entry-meta">Codex IV · The Adjacency</div>
-            <h3>Adjacency Is Not Ownership</h3>
-            <p>Proximity does not establish rights, claims, or authority.</p>
-          </div>
-
-          <div class="entry-card">
-            <div class="entry-meta">Codex IV · The Adjacency</div>
-            <h3>Adjacency Belongs To The World</h3>
-            <p>Relationships are properties of the world's structure.</p>
-          </div>
-
-          <div class="entry-card">
-            <div class="entry-meta">Codex IV · The Adjacency</div>
-            <h3>Relationship Precedes Meaning</h3>
-            <p>Cartographic relationships exist before social, economic, or civilizational meaning emerges.</p>
-          </div>
-        </div>
-      </section>
-
-<section class="section">
-  <h2>Contiguity Principles</h2>
-
-  <div class="entry-list">
-
-<div class="entry-card">
-  <div class="entry-meta">Codex V · The Contiguity</div>
-  <h3>Contiguity Requires Adjacency</h3>
-  <p>Connection depends upon one or more Adjacencies between Parcels.</p>
-</div>
-
-<div class="entry-card">
-  <div class="entry-meta">Codex V · The Contiguity</div>
-  <h3>Connection Emerges Through Relation</h3>
-  <p>Parcels become connected through cartographic relationships rather than ownership, governance, settlement, commerce, or activity.</p>
-</div>
-
-<div class="entry-card">
-  <div class="entry-meta">Codex V · The Contiguity</div>
-  <h3>Contiguity Preserves Distinction</h3>
-  <p>Connection does not erase individuality. Distinct Parcels remain distinct even within a Contiguity.</p>
-</div>
-
-<div class="entry-card">
-  <div class="entry-meta">Codex V · The Contiguity</div>
-  <h3>A Contiguity Is Not A Claim</h3>
-  <p>Connection does not establish ownership, stewardship, authority, jurisdiction, access, or control.</p>
-</div>
-
-<div class="entry-card">
-  <div class="entry-meta">Codex V · The Contiguity</div>
-  <h3>The World Remains Whole</h3>
-  <p>BitPangea itself constitutes a single Contiguity connected through an unbroken path of Adjacencies.</p>
-</div>
-
-<div class="entry-card">
-  <div class="entry-meta">Codex V · The Contiguity</div>
-  <h3>No Parcel Exists In Cartographic Isolation</h3>
-  <p>Every Parcel participates in the greater structure of BitPangea and exists within the world's Contiguity.</p>
-</div>
-  </div>
-</section>
-
-      
       <section class="section">
         <h2>Living Doctrine</h2>
 
