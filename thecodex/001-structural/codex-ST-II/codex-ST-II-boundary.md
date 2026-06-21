@@ -1,4 +1,4 @@
-# Codex Entry II
+# Codex ST-II
 
 ## The Boundary
 
@@ -6,25 +6,25 @@
 
 ---
 
-A Boundary is the cartographic distinction that allows one parcel to be differentiated from another.
+A Boundary is the cartographic distinction that allows one Parcel to be differentiated from another within The World.
 
-The existence of multiple parcels necessitates the existence of boundaries.
+The existence of multiple Parcels necessitates the existence of Boundaries.
 
-A boundary exists not to establish ownership, governance, territory, value, or purpose, but to preserve distinction within the world.
+A Boundary exists not to establish ownership, governance, territory, value, or purpose, but to preserve distinction within the structure of The World.
 
-Without boundaries, there can be no plurality of parcels.
+Without Boundaries, there can be no plurality of Parcels.
 
-Without plurality, there can be no supercontinent.
+Without plurality, the structure of The World cannot be understood.
 
 ---
 
 ## Formal Definition
 
-A Boundary is the cartographic distinction that distinguishes one parcel from another within the BitPangea supercontinent.
+A Boundary is the cartographic distinction that differentiates one Parcel from another within The World.
 
-A boundary is a property of the world's structure rather than a property of any individual parcel.
+A Boundary is a property of the world's structure rather than a property of any individual Parcel.
 
-Each boundary possesses the following immutable properties:
+Each Boundary possesses the following immutable properties:
 
 ### Distinction
 
