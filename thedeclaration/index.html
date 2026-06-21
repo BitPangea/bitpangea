@@ -267,6 +267,23 @@
       background: rgba(0, 0, 0, 0.35);
     }
 
+.declaration-link,
+.declaration-link:visited {
+  color: #ffffff;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.declaration-link:hover {
+  color: #d4a938;
+  text-shadow: 0 0 8px rgba(212,169,56,.5);
+}
+
+.declaration-link:active {
+  color: #ffffff;
+}
+    
     .bp-footer {
       margin-top: 120px;
       padding: 60px 40px 44px;
@@ -385,7 +402,7 @@
       <div class="divider"></div>
 
       <div class="declaration-box">
-        <p>BitPangea is <a href="/thedeclaration/one-world/">one world</a>.</p>
+        <p>BitPangea is <a href="/thedeclaration/one-world/" class="declaration-link">one world</a>.</p>
         <p>BitPangea consists of 21,000,000 parcels.</p>
         <p>BitPangea is finite.</p>
         <p>BitPangea cannot expand.</p>
