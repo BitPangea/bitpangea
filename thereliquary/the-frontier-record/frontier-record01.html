@@ -111,6 +111,45 @@
         0 0 24px rgba(212,169,56,.08);
     }
 
+/* Add this CSS near .hero-image */
+.artifact-frame {
+  margin: 0 auto 44px;
+}
+
+.hero-image {
+  width: 100%;
+  display: block;
+  border: 1px solid rgba(212, 169, 56, 0.20);
+  background: rgba(0,0,0,.40);
+  box-shadow:
+    0 0 48px rgba(0,0,0,.70),
+    0 0 24px rgba(212,169,56,.08);
+}
+
+.artifact-caption {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 22px;
+  padding: 16px 18px 0;
+  color: rgba(255,255,255,.46);
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.artifact-caption strong {
+  color: rgba(212,169,56,.72);
+  font-weight: 400;
+}
+
+.negative-group {
+  margin: 8px 0 28px;
+}
+
+.negative-group p {
+  margin-bottom: 10px;
+}
+    
     .eyebrow {
       color: var(--cyan);
       letter-spacing: 4px;
@@ -242,27 +281,35 @@
 
       <div class="divider"></div>
 
+  <figure class="artifact-frame">
   <img
-        class="hero-image"
-        src="/thereliquary/the-frontier-record/the-frontier-record00I.png"
-        alt="The Frontier Record — the first preserved cartographic record of BitPangea"
-      />
+    class="hero-image"
+    src="/thereliquary/the-frontier-record/the-frontier-record00I.png"
+    alt="The Frontier Record — the first preserved cartographic record of BitPangea"
+  />
+
+  <figcaption class="artifact-caption">
+    <span><strong>Artifact:</strong> Frontier Record 001</span>
+    <span><strong>Period:</strong> Foundation Period</span>
+    <span><strong>Status:</strong> Preserved</span>
+  </figcaption>
+</figure>
       
       <section class="inscription" aria-label="The Frontier Record">
 
         <div class="statement">
-          <p>The Frontier Record is the first preserved cartographic record of BitPangea.</p>
+  <p>The Frontier Record is the first preserved cartographic record of BitPangea.</p>
 
-          <p>It does not establish law.</p>
+  <div class="negative-group">
+    <p>It does not establish law.</p>
+    <p>It does not define concepts.</p>
+    <p>It does not govern the world.</p>
+  </div>
 
-          <p>It does not define concepts.</p>
-
-          <p>It does not govern the world.</p>
-
-          <p>
-            It preserves the earliest known cartographic act within the constitutional history of BitPangea.
-          </p>
-        </div>
+  <p>
+    It preserves the earliest known cartographic act within the constitutional history of BitPangea.
+  </p>
+</div>
 
         <div class="threshold">
           <span class="threshold-label">Frontier Doctrine</span>
