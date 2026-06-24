@@ -320,6 +320,44 @@
       background: rgba(0, 0, 0, 0.35);
     }
 
+.atlas-header{
+    display:flex;
+    align-items:center;
+    gap:42px;
+    margin-bottom:20px;
+}
+
+.atlas-compass{
+    width:150px;
+    height:150px;
+    flex-shrink:0;
+    opacity:.96;
+}
+
+.atlas-title{
+    display:flex;
+    flex-direction:column;
+}
+
+.atlas-title h1{
+    margin-bottom:12px;
+}
+
+@media (max-width:768px){
+
+    .atlas-header{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:24px;
+    }
+
+    .atlas-compass{
+        width:110px;
+        height:110px;
+    }
+
+}
+    
     footer {
       padding: 34px 24px;
       text-align: center;
@@ -469,25 +507,48 @@
   </header>
 
   <main class="page">
-    <article class="container">
-      <div class="eyebrow">The Cartographic Record · May 2026</div>
+  <article class="container">
 
-      <h1>The<br>Atlas</h1>
+    <div class="eyebrow">The Cartographic Record · May 2026</div>
 
-      <div class="subtitle">The Canonical Map of the World</div>
+    <div class="atlas-header">
 
-      <div class="divider"></div>
+      <img
+        src="/theatlas/compass-rose.png"
+        alt="The Atlas Compass Rose"
+        class="atlas-compass"
+      >
 
-      <p class="atlas-statement">One unified supercontinent. One finite world. 21 million parcels.</p>
+      <div class="atlas-title">
 
-      <p>The Atlas will become the canonical cartographic home of BitPangea: the place where the shape, boundaries, parcel logic, and geographic memory of the digital supercontinent are explored over time.</p>
+        <h1>The<br>Atlas</h1>
 
-      <div class="image-frame">
-        <img
-          src="/images/BitPangea-theatlas.jpg"
-          alt="BitPangea The Atlas full image"
-        />
+        <div class="subtitle">
+          The Canonical Map of the World
+        </div>
+
       </div>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <p class="atlas-statement">
+      One unified supercontinent. One finite world. 21 million parcels.
+    </p>
+
+    <p>
+      The Atlas will become the canonical cartographic home of BitPangea:
+      the place where the shape, boundaries, parcel logic, and geographic
+      memory of the digital supercontinent are explored over time.
+    </p>
+
+    <div class="image-frame">
+      <img
+        src="/images/BitPangea-theatlas.jpg"
+        alt="BitPangea The Atlas full image"
+      />
+    </div>
 
       <h2>The Founding Constraint</h2>
 
