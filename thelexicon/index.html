@@ -401,7 +401,7 @@ p:last-child { margin-bottom: 0; }
 
 .reliquary-link:hover { color: #d4a938; }
 
-/* --- Lexicon hero aligned to Atlas hero pattern --- */
+/* --- Lexicon hero: Atlas-matched layout + visual seal enlargement --- */
 .lexicon-header {
   display: flex;
   align-items: center;
@@ -409,14 +409,31 @@ p:last-child { margin-bottom: 0; }
   margin-bottom: 20px;
 }
 
-.lexicon-seal {
+/*
+  The Lexicon PNG appears to contain extra transparent padding inside the image file.
+  The wrapper keeps the hero layout at the same 290px x 290px footprint as The Atlas,
+  while the image is visually scaled inside that footprint so the actual seal reads
+  at the intended hero size.
+*/
+.lexicon-seal-wrap {
   width: 290px;
   height: 290px;
   flex: 0 0 290px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+}
+
+.lexicon-seal {
+  width: 290px;
+  height: 290px;
   display: block;
   object-fit: contain;
   object-position: center;
   opacity: .96;
+  transform: scale(1.42);
+  transform-origin: center center;
   filter: drop-shadow(0 0 20px rgba(212, 169, 56, 0.16));
 }
 
@@ -541,10 +558,16 @@ p:last-child { margin-bottom: 0; }
     gap: 24px;
   }
 
-  .lexicon-seal {
+  .lexicon-seal-wrap {
     width: 220px;
     height: 220px;
     flex: 0 0 auto;
+  }
+
+  .lexicon-seal {
+    width: 220px;
+    height: 220px;
+    transform: scale(1.42);
   }
 }
 
@@ -570,7 +593,7 @@ p:last-child { margin-bottom: 0; }
 <section class="hero">
 <div class="eyebrow">Preserved Vocabulary · June 2026</div>
 <div class="lexicon-header">
-<img alt="The Lexicon Stone Tablet" class="lexicon-seal" src="/thelexicon/stone-tablet.png"/>
+<div class="lexicon-seal-wrap"><img alt="The Lexicon Stone Tablet" class="lexicon-seal" src="/thelexicon/stone-tablet.png?v=20260624-lexicon-seal-fix"/></div>
 <div class="lexicon-title">
 <h1>The<br>Lexicon</h1>
 <div class="subtitle">The Language of BitPangea</div>
