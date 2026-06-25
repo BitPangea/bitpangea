@@ -172,6 +172,34 @@
       margin-bottom: 40px;
     }
 
+
+    .commons-header {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      margin-bottom: 20px;
+    }
+
+    .commons-symbol {
+      width: 290px;
+      height: 290px;
+      flex: 0 0 290px;
+      display: block;
+      object-fit: contain;
+      object-position: center;
+      opacity: .96;
+      filter: drop-shadow(0 0 20px rgba(212, 169, 56, 0.16));
+    }
+
+    .commons-title {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .commons-title h1 {
+      margin-bottom: 12px;
+    }
+
     .divider {
       width: 58px;
       height: 2px;
@@ -341,6 +369,19 @@
       .nav a { font-size: 10px; letter-spacing: 2px; }
       .page { padding: 185px 16px 60px; }
       .container { padding: 36px 24px 46px; }
+
+      .commons-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+      }
+
+      .commons-symbol {
+        width: 220px;
+        height: 220px;
+        flex: 0 0 auto;
+      }
+
       h1 { letter-spacing: 4px; }
       h2 { font-size: 23px; letter-spacing: 3px; }
       .subtitle { font-size: 16px; }
@@ -374,9 +415,19 @@
     <article class="container">
       <div class="eyebrow">Public Gathering · May 2026</div>
 
-      <h1>The<br>Commons</h1>
+      <div class="commons-header">
+        <img
+          src="/thecommons/stone-amphitheater.png"
+          alt="The Commons Stone Amphitheater"
+          class="commons-symbol"
+        >
 
-      <div class="subtitle">Questions From the Edge of a New World</div>
+        <div class="commons-title">
+          <h1>The<br>Commons</h1>
+
+          <div class="subtitle">Questions From the Edge of a New World</div>
+        </div>
+      </div>
 
       <div class="divider"></div>
 
