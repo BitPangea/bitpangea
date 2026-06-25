@@ -207,6 +207,40 @@
       text-shadow: 0 0 9px rgba(0, 0, 0, 0.9);
     }
 
+
+
+    .chronicle-header {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      margin-bottom: 20px;
+    }
+
+    .chronicle-seal {
+      width: 290px;
+      height: 290px;
+      flex: 0 0 290px;
+      display: block;
+      object-fit: contain;
+      object-position: center;
+      opacity: .96;
+      filter: drop-shadow(0 0 20px rgba(212, 169, 56, 0.16));
+    }
+
+    .chronicle-title {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+
+    .chronicle-title h1 {
+      margin-bottom: 12px;
+    }
+
+    .chronicle-title .subtitle {
+      margin-bottom: 0;
+    }
+
     .divider {
       width: 58px;
       height: 2px;
@@ -391,6 +425,16 @@
       .nav a { font-size: 10px; letter-spacing: 2px; }
       .page { padding: 165px 16px 60px; }
       .container { padding: 36px 24px 46px; }
+      .chronicle-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+      }
+      .chronicle-seal {
+        width: 220px;
+        height: 220px;
+        flex: 0 0 auto;
+      }
       h1 { letter-spacing: 4px; }
       h2 { font-size: 25px; letter-spacing: 3px; }
       h3 { font-size: 16px; }
@@ -421,21 +465,32 @@
 
   <main class="page">
     <article class="container">
-      <div class="eyebrow">Historical Record · Period-Based Chronology</div>
+      <section class="hero">
+        <div class="eyebrow">Historical Record · Period-Based Chronology</div>
 
-      <h1>BitPangea<br>Chronicle</h1>
+        <div class="chronicle-header">
+          <img
+            src="/thechronicle/hourglass-medallion.png"
+            alt="The Chronicle Hourglass Medallion"
+            class="chronicle-seal"
+          >
 
-      <div class="subtitle">The History of a Scarce Digital Supercontinent</div>
+          <div class="chronicle-title">
+            <h1>The<br>Chronicle</h1>
+            <div class="subtitle">The History of a Scarce Digital Supercontinent</div>
+          </div>
+        </div>
 
-      <p class="intro">
-        The Chronicle records the major historical developments of BitPangea through successive periods of formation, definition, discovery, and civilization.
-      </p>
+        <div class="divider"></div>
 
-      <p class="intro">
-        Earlier daily records remain preserved, but the public Chronicle now follows the larger historical structure of the world itself.
-      </p>
-    
-      <div class="divider"></div>
+        <p class="intro">
+          The Chronicle records the major historical developments of BitPangea through successive periods of formation, definition, discovery, and civilization.
+        </p>
+
+        <p class="intro">
+          Earlier daily records remain preserved, but the public Chronicle now follows the larger historical structure of the world itself.
+        </p>
+      </section>
 
       <section class="entry">
         <div class="date">May 28, 2026 – June 14, 2026</div>
