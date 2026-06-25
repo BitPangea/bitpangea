@@ -369,6 +369,49 @@ height:290px;
 display:block;
 object-fit:contain;
 }
+
+
+/* Lexicon heraldic header */
+.hero-header {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-bottom: 26px;
+}
+
+.hero-symbol {
+  width: 290px;
+  height: 290px;
+  flex: 0 0 290px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-symbol img {
+  width: 290px;
+  height: 290px;
+  display: block;
+  object-fit: contain;
+  filter: drop-shadow(0 0 22px rgba(212, 169, 56, 0.16));
+}
+
+.hero-symbol {
+    width: 220px;
+    height: 220px;
+    flex-basis: auto;
+  }
+
+
+.hero-title {
+  flex: 1;
+  min-width: 0;
+}
+
+.hero-title h1 {
+  margin-bottom: 20px;
+}
+  
 .hero-title{flex:1;}
   
     footer {
@@ -456,57 +499,11 @@ object-fit:contain;
 .hero-symbol img{width:220px;height:220px;}
 }
 
-
-/* Lexicon heraldic header */
-.hero-header {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-  margin-bottom: 26px;
-}
-
-.hero-symbol {
-  width: 290px;
-  height: 290px;
-  flex: 0 0 290px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero-symbol img {
-  width: 290px;
-  height: 290px;
-  display: block;
-  object-fit: contain;
-  filter: drop-shadow(0 0 22px rgba(212, 169, 56, 0.16));
-}
-
-.hero-title {
-  flex: 1;
-  min-width: 0;
-}
-
-.hero-title h1 {
-  margin-bottom: 20px;
-}
-
 @media (max-width: 768px) {
   .hero-header {
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
-  }
-
-  .hero-symbol {
-    width: 220px;
-    height: 220px;
-    flex-basis: auto;
-  }
-
-  .hero-symbol img {
-    width: 220px;
-    height: 220px;
   }
 }
 </style>
