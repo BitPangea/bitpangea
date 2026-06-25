@@ -234,6 +234,44 @@
       box-shadow: 0 0 14px rgba(212, 169, 56, 0.65);
     }
 
+
+    /* --- Archive hero aligned to Lexicon institutional format --- */
+    .archive-header {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      margin-bottom: 20px;
+    }
+
+    .archive-medallion-frame {
+      width: 290px;
+      height: 290px;
+      flex: 0 0 290px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .archive-medallion {
+      width: 290px;
+      height: 290px;
+      display: block;
+      object-fit: contain;
+      object-position: center;
+      opacity: .96;
+      filter: drop-shadow(0 0 20px rgba(212, 169, 56, 0.16));
+    }
+
+    .archive-title {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+
+    .archive-title h1 {
+      margin-bottom: 12px;
+    }
+
     .archive-sigil {
       margin: 38px 0 50px;
       padding: 34px 36px;
@@ -492,7 +530,45 @@
       p, li { font-size: 16px; }
       .section { padding: 28px 22px; }
       blockquote { font-size: 20px; padding: 24px 24px; }
-      .archive-sigil { padding: 26px 24px; }
+  
+    /* --- Archive hero aligned to Lexicon institutional format --- */
+    .archive-header {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      margin-bottom: 20px;
+    }
+
+    .archive-medallion-frame {
+      width: 290px;
+      height: 290px;
+      flex: 0 0 290px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .archive-medallion {
+      width: 290px;
+      height: 290px;
+      display: block;
+      object-fit: contain;
+      object-position: center;
+      opacity: .96;
+      filter: drop-shadow(0 0 20px rgba(212, 169, 56, 0.16));
+    }
+
+    .archive-title {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+
+    .archive-title h1 {
+      margin-bottom: 12px;
+    }
+
+    .archive-sigil { padding: 26px 24px; }
     }
   </style>
 </head>
@@ -520,16 +596,27 @@
       <section class="hero">
         <div class="eyebrow">Preservation Record · June 2026</div>
 
-        <h1>BitPangea<br>The Archive</h1>
+        <div class="archive-header">
+          <div class="archive-medallion-frame">
+            <img
+              src="/thearchive/key-and-book-medallion.png"
+              alt="The Archive Key and Book Medallion"
+              class="archive-medallion"
+            >
+          </div>
 
-        <div class="subtitle">Knowledge Becomes Inheritance</div>
+          <div class="archive-title">
+            <h1>The<br>Archive</h1>
+            <div class="subtitle">Knowledge Becomes Inheritance</div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
 
         <p class="intro">
           The Archive is a future home for important records, references, preserved knowledge,
           and historical materials that may one day help future builders understand how BitPangea began.
         </p>
-
-        <div class="divider"></div>
 
         <blockquote>
           <span class="quote-label">Archive Principle</span>
