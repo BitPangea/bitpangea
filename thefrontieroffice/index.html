@@ -383,6 +383,48 @@ footer {
     margin-bottom: 24px;
 }
 
+
+/* --- Frontier Office hero aligned to institutional place format --- */
+.frontier-header {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  margin-bottom: 20px;
+}
+
+.frontier-obelisk {
+  width: 360px;
+  height: auto;
+  flex: 0 0 360px;
+  display: block;
+  object-fit: contain;
+  object-position: center;
+  filter: drop-shadow(0 0 22px rgba(0, 200, 215, 0.16)) drop-shadow(0 0 18px rgba(212, 169, 56, 0.12));
+}
+
+.frontier-title {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.frontier-title h1 {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .frontier-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .frontier-obelisk {
+    width: 280px;
+    flex: 0 0 auto;
+  }
+}
+
 </style>
 </head>
 
@@ -414,13 +456,20 @@ BITPANGEA
 Signal Transmission · May 2026
 </div>
 
-<h1>
-Contact<br>
-The Frontier
-</h1>
+<div class="frontier-header">
+  <img
+    src="/thefrontieroffice/ancient-obelisk.png"
+    alt="The Frontier Office Ancient Obelisk"
+    class="frontier-obelisk"
+  >
 
-<div class="subtitle">
-A Scarce Digital Supercontinent
+  <div class="frontier-title">
+    <h1>Contact<br>The Frontier</h1>
+
+    <div class="subtitle">
+      A Scarce Digital Supercontinent
+    </div>
+  </div>
 </div>
 
 <div class="divider"></div>
