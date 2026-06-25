@@ -356,7 +356,21 @@
 .reliquary-link:hover {
   color: #d4a938;
 }
-    
+
+.hero-header{
+display:flex;
+align-items:flex-start;
+gap:34px;
+margin-bottom:26px;
+}
+.hero-symbol img{
+width:290px;
+height:290px;
+display:block;
+object-fit:contain;
+}
+.hero-title{flex:1;}
+  
     footer {
       padding: 34px 24px;
       text-align: center;
@@ -437,20 +451,6 @@
       .lexicon-entry h3 { font-size: 21px; letter-spacing: 3px; }
     }
   
-
-.hero-header{
-display:flex;
-align-items:flex-start;
-gap:34px;
-margin-bottom:26px;
-}
-.hero-symbol img{
-width:290px;
-height:290px;
-display:block;
-object-fit:contain;
-}
-.hero-title{flex:1;}
 @media (max-width:768px){
 .hero-header{flex-direction:column;}
 .hero-symbol img{width:220px;height:220px;}
