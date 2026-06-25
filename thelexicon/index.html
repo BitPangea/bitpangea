@@ -455,6 +455,60 @@ object-fit:contain;
 .hero-header{flex-direction:column;}
 .hero-symbol img{width:220px;height:220px;}
 }
+
+
+/* Lexicon heraldic header */
+.hero-header {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-bottom: 26px;
+}
+
+.hero-symbol {
+  width: 290px;
+  height: 290px;
+  flex: 0 0 290px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-symbol img {
+  width: 290px;
+  height: 290px;
+  display: block;
+  object-fit: contain;
+  filter: drop-shadow(0 0 22px rgba(212, 169, 56, 0.16));
+}
+
+.hero-title {
+  flex: 1;
+  min-width: 0;
+}
+
+.hero-title h1 {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .hero-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .hero-symbol {
+    width: 220px;
+    height: 220px;
+    flex-basis: auto;
+  }
+
+  .hero-symbol img {
+    width: 220px;
+    height: 220px;
+  }
+}
 </style>
 </head>
 <body>
@@ -466,30 +520,17 @@ object-fit:contain;
 <nav class="nav">
 <a href="../">The World</a>
 <a href="../theatlas/">The Atlas</a>
-<a aria-current="page" class="active" href="../thecharter/">The Charter</a>
+<a href="../thecharter/">The Charter</a>
 <a href="../thechronicle/">The Chronicle</a>
 <a href="../thecommons/">The Commons</a>
 <a href="../thefrontieroffice/">The Frontier Office</a>
 </nav>
 </header>
-  
 <main class="page">
 <article class="container">
-<section class="hero">
-  <div class="hero-header">
-    <img alt="The Lexicon Heraldic Symbol" class="hero-symbol" src="/thelexicon/stone-tablet.png"/>
-    </div>
-    <div class="hero-title">
-      <div class="eyebrow">Preserved Vocabulary · June 2026</div>
-      <h1>The Lexicon</h1>
-      <div class="subtitle">The Language of BitPangea</div>
-      <p class="intro">
-          A preserved vocabulary for the evolving digital supercontinent.
-          Some terms describe institutions. Some describe geography.
-          Others describe ideas that do not yet have final answers.
-        </p>
-    </div>
-  
+<section class="hero"><div class="hero-header"><div class="hero-symbol"><img alt="The Lexicon Heraldic Symbol" src="/thelexicon/stone-tablet.png"/></div><div class="hero-title"><></><></><></><></></div></div>
+
+
 <div class="divider"></div>
 <blockquote>
 <span class="quote-label">Foundational Principle</span>
