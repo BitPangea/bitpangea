@@ -210,6 +210,27 @@
       text-shadow: 0 0 24px rgba(0, 0, 0, 0.92);
     }
 
+.codex-header2 {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      margin-bottom: 20px;
+    }
+
+    .codex-seal2 {
+      width: 290px;
+      height: 290px;
+      object-fit: contain;
+      flex-shrink: 0;
+      opacity: .96;
+      filter: drop-shadow(0 0 20px rgba(212, 169, 56, 0.16));
+    }
+
+    .codex-titles {
+      display: flex;
+      flex-direction: column;
+    }
+    
     .subtitle {
       color: var(--gold);
       font-size: 20px;
@@ -337,8 +358,6 @@
       line-height: 1.55;
       margin: 0;
     }
-
-
 
     .entry-list {
       display: grid;
@@ -526,6 +545,14 @@
       <section class="hero">
         <div class="eyebrow">Working Record · June 2026</div>
 
+ <div class="codex-header2">
+          <img
+            src="/thecodex/heraldic-medallion.png"
+            alt="The Codex Heraldic Medallion"
+            class="codex-seal2"
+          />
+          <div class="codex-title2">
+        
         <h1>BitPangea<br>The Codex</h1>
 
         <div class="subtitle">Ideas Before Specifications</div>
