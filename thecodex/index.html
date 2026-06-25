@@ -7,15 +7,15 @@
   <title>The Codex | BitPangea</title>
 
   <!-- Favicons -->
-<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-<link rel="shortcut icon" href="/assets/favicon.svg">
-  
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="/assets/favicon.svg">
+
   <meta
     name="description"
     content="The BitPangea Codex — a living record of working ideas, unresolved questions, and evolving concepts for a scarce digital supercontinent."
   />
 
-<!-- BitPangea Metadata -->
+  <!-- BitPangea Metadata -->
   <meta name="theme-color" content="#00c8d7">
   <meta name="robots" content="index,follow">
 
@@ -87,7 +87,7 @@
       inset: 0;
       background-image:
         linear-gradient(rgba(2, 5, 10, 0.76), rgba(2, 5, 10, 0.92)),
-        url("../images/bitpangea.jpg");
+        url("/images/bitpangea.jpg");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -164,13 +164,12 @@
     }
 
     .nav a.active,
-.nav a[aria-current="page"] {
- color: #ffffff;
- border-bottom: 1px solid rgba(212, 169, 56, 0.95);
- padding-bottom: 4px;
- text-shadow: 0 0 12px rgba(212, 169, 56, 0.65);
-}
-
+    .nav a[aria-current="page"] {
+      color: #ffffff;
+      border-bottom: 1px solid rgba(212, 169, 56, 0.95);
+      padding-bottom: 4px;
+      text-shadow: 0 0 12px rgba(212, 169, 56, 0.65);
+    }
 
     .page {
       width: 100%;
@@ -188,7 +187,7 @@
     }
 
     .hero {
-      max-width: 860px;
+      max-width: 900px;
       margin-bottom: 46px;
     }
 
@@ -200,24 +199,14 @@
       margin-bottom: 22px;
     }
 
-    h1 {
-      color: var(--white);
-      font-size: clamp(42px, 7vw, 76px);
-      line-height: 1.02;
-      letter-spacing: 7px;
-      text-transform: uppercase;
-      margin-bottom: 20px;
-      text-shadow: 0 0 24px rgba(0, 0, 0, 0.92);
-    }
-
-.codex-header2 {
+    .codex-header {
       display: flex;
       align-items: center;
       gap: 28px;
-      margin-bottom: 20px;
+      margin-bottom: 22px;
     }
 
-    .codex-seal2 {
+    .codex-seal {
       width: 290px;
       height: 290px;
       object-fit: contain;
@@ -226,23 +215,34 @@
       filter: drop-shadow(0 0 20px rgba(212, 169, 56, 0.16));
     }
 
-    .codex-titles {
+    .codex-title {
       display: flex;
       flex-direction: column;
     }
-    
+
+    h1 {
+      color: var(--white);
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: 1.02;
+      letter-spacing: 7px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      text-shadow: 0 0 24px rgba(0, 0, 0, 0.92);
+    }
+
     .subtitle {
       color: var(--gold);
       font-size: 20px;
       letter-spacing: 3px;
       text-transform: uppercase;
-      margin-bottom: 28px;
+      margin-bottom: 0;
+      padding-top: 6px;
     }
 
     .intro {
       color: rgba(255, 255, 255, 0.88);
       font-size: 20px;
-      max-width: 820px;
+      max-width: 900px;
       margin-bottom: 32px;
     }
 
@@ -425,25 +425,6 @@
       background: rgba(0, 0, 0, 0.35);
     }
 
-.source-link a,
-.source-link a:visited {
- color: rgba(212, 169, 56, 0.9);
- text-decoration: none;
- text-transform: uppercase;
- letter-spacing: 2px;
- font-size: 12px;
-}
-
-.source-link a:hover {
- color: #ffffff;
- text-shadow: 0 0 12px rgba(212,169,56,.6);
-}
-
-
-.source-link {
- margin-top: 18px;
-}
-    
     .bp-footer {
       margin-top: 120px;
       padding: 60px 40px;
@@ -481,7 +462,11 @@
       margin: 24px auto;
     }
 
-    .footer-notice { color: rgba(255,255,255,.65); font-size: 14px; line-height: 1.8; }
+    .footer-notice {
+      color: rgba(255,255,255,.65);
+      font-size: 14px;
+      line-height: 1.8;
+    }
 
     .footer-notice p {
       margin-bottom: 8px;
@@ -512,6 +497,8 @@
       .nav a { font-size: 10px; letter-spacing: 2px; }
       .page { padding: 178px 16px 60px; }
       .container { padding: 36px 24px 46px; }
+      .codex-header { flex-direction: column; align-items: flex-start; gap: 28px; }
+      .codex-seal { width: 220px; height: 220px; }
       h1 { letter-spacing: 4px; }
       .subtitle { font-size: 16px; }
       .intro { font-size: 18px; }
@@ -533,7 +520,7 @@
     <nav class="nav">
       <a href="/">The World</a>
       <a href="/theatlas/">The Atlas</a>
-      <a href="/thecharter/" class="active" aria-current="page">The Charter</a>
+      <a href="/thecharter/">The Charter</a>
       <a href="/thechronicle/">The Chronicle</a>
       <a href="/thecommons/">The Commons</a>
       <a href="/thefrontieroffice/">The Frontier Office</a>
@@ -545,21 +532,19 @@
       <section class="hero">
         <div class="eyebrow">Working Record · June 2026</div>
 
- <div class="codex-header2">
+        <div class="codex-header">
           <img
             src="/thecodex/heraldic-medallion.png"
             alt="The Codex Heraldic Medallion"
-            class="codex-seal2"
+            class="codex-seal"
           />
-          <div class="codex-title2">
-        
-        <h1>The Codex</h1>
 
-        <div class="subtitle">Ideas Before Specifications</div>
- </div>
+          <div class="codex-title">
+            <h1>The Codex</h1>
+            <div class="subtitle">Ideas Before Specifications</div>
+          </div>
         </div>
 
-            
         <p class="intro">
           The Codex is a living record of working ideas, unresolved questions, and evolving concepts.
           It does not finalize BitPangea. It preserves the exploration before the rules harden.
@@ -590,72 +575,64 @@
         </div>
       </section>
 
+      <section class="section">
+        <h2>The Codex Register</h2>
 
+        <p>
+          As working ideas become formal definitions, they are adopted into The Codex and preserved within
+          The Codex Register. The Register serves as the permanent historical record of constitutional
+          cartographic definitions recognized by BitPangea.
+        </p>
+
+        <p>
+          Each adopted Codex is recorded by title, sequence, and adoption date, preserving the historical
+          development of the Cartographic Period as the world gradually becomes defined.
+        </p>
+
+        <div class="entry-list" aria-label="Codex Register">
+          <a class="entry-card" href="/thecodex/codex-register/">
+            <div class="entry-meta">Permanent Historical Record</div>
+            <h3>The Codex Register</h3>
+
+            <p>
+              A permanent record of adopted Codices. The Register preserves the constitutional history of
+              BitPangea, documenting each formal definition as it is added to The Codex.
+            </p>
+
+            <div class="entry-link">View The Codex Register →</div>
+          </a>
+        </div>
+      </section>
 
       <section class="section">
-  <h2>The Codex Register</h2>
+        <h2>The Codex Principles</h2>
 
-  <p>
-    As working ideas become formal definitions, they are adopted into The Codex and preserved within
-    The Codex Register. The Register serves as the permanent historical record of constitutional
-    cartographic definitions recognized by BitPangea.
-  </p>
+        <p>
+          As Codices are adopted, certain principles emerge from the definitions themselves.
+          The Codex Principles preserve those recurring doctrines so they may be referenced,
+          reviewed, and carried forward as BitPangea continues to define its world.
+        </p>
 
-  <p>
-    Each adopted Codex is recorded by title, sequence, and adoption date, preserving the historical
-    development of the Cartographic Period as the world gradually becomes defined.
-  </p>
+        <p>
+          The Principles do not replace the Codices. They collect the constitutional lessons
+          revealed through them.
+        </p>
 
-  <div class="entry-list" aria-label="Codex Register">
+        <div class="entry-list" aria-label="Codex Principles">
+          <a class="entry-card" href="/thecodex/codex-principles/">
+            <div class="entry-meta">Living Doctrine</div>
+            <h3>The Codex Principles</h3>
 
-    <a class="entry-card" href="/thecodex/codex-register/">
-      <div class="entry-meta">Permanent Historical Record</div>
-      <h3>The Codex Register</h3>
+            <p>
+              A growing record of foundational principles discovered through The Codex,
+              including existence, distinction, position, relation, permanence, neutrality,
+              and the separation of cartography from ownership.
+            </p>
 
-      <p>
-        A permanent record of adopted Codices. The Register preserves the constitutional history of
-        BitPangea, documenting each formal definition as it is added to The Codex.
-      </p>
-
-      <div class="entry-link">View The Codex Register →</div>
-    </a>
-
-  </div>
+            <div class="entry-link">View The Codex Principles →</div>
+          </a>
+        </div>
       </section>
-   <section class="section">
-        <div>
-        
-  <h2>The Codex Principles</h2>
-
-  <p>
-    As Codices are adopted, certain principles emerge from the definitions themselves.
-    The Codex Principles preserve those recurring doctrines so they may be referenced,
-    reviewed, and carried forward as BitPangea continues to define its world.
-  </p>
-
-  <p>
-    The Principles do not replace the Codices. They collect the constitutional lessons
-    revealed through them.
-  </p>
-
-  <div class="entry-list" aria-label="Codex Principles">
-
-    <a class="entry-card" href="/thecodex/codex-principles/">
-      <div class="entry-meta">Living Doctrine</div>
-      <h3>The Codex Principles</h3>
-
-      <p>
-        A growing record of foundational principles discovered through The Codex,
-        including existence, distinction, position, relation, permanence, neutrality,
-        and the separation of cartography from ownership.
-      </p>
-
-      <div class="entry-link">View The Codex Principles →</div>
-    </a>
-
-  </div>
-        
-</section>
 
       <section class="section">
         <h2>Current Working Concepts</h2>
