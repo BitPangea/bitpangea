@@ -506,6 +506,65 @@ object-fit:contain;
     gap: 24px;
   }
 }
+
+
+/* --- Fixed Lexicon Heraldic Header --- */
+.hero {
+  max-width: 860px;
+  margin-bottom: 46px;
+}
+
+.hero-header {
+  display: flex !important;
+  align-items: center !important;
+  gap: 28px !important;
+  margin-bottom: 26px !important;
+}
+
+.hero-symbol {
+  width: 290px !important;
+  height: 290px !important;
+  flex: 0 0 290px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.hero-symbol img {
+  width: 290px !important;
+  height: 290px !important;
+  display: block !important;
+  object-fit: contain !important;
+  filter: drop-shadow(0 0 22px rgba(212, 169, 56, 0.16)) !important;
+}
+
+.hero-title {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+.hero-title h1 {
+  margin-bottom: 20px !important;
+}
+
+@media (max-width: 768px) {
+  .hero-header {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 24px !important;
+  }
+
+  .hero-symbol {
+    width: 220px !important;
+    height: 220px !important;
+    flex: 0 0 auto !important;
+  }
+
+  .hero-symbol img {
+    width: 220px !important;
+    height: 220px !important;
+  }
+}
 </style>
 </head>
 <body>
@@ -525,15 +584,10 @@ object-fit:contain;
 </header>
 <main class="page">
 <article class="container">
-<section class="hero"><div class="hero-header"><div class="hero-symbol"><img alt="The Lexicon Heraldic Symbol" src="/thelexicon/stone-tablet.png"/></div><div class="hero-title"><></><></><></><></></div></div>
-
-
-<div class="divider"></div>
-<blockquote>
+<section class="hero"><div class="hero-header"><div class="hero-symbol"><img alt="The Lexicon Heraldic Symbol" src="/thelexicon/stone-tablet.png"/></div><div class="hero-title"><div class="eyebrow">Preserved Vocabulary · June 2026</div><h1>The Lexicon</h1><div class="subtitle">The Language of BitPangea</div><p class="intro">A preserved vocabulary for the evolving digital supercontinent. Some terms describe institutions. Some describe geography. Others describe ideas that do not yet have final answers.</p></div></div><div class="divider"></div><blockquote>
 <span class="quote-label">Foundational Principle</span>
           Civilizations are built not only from territory, but from shared language.
-        </blockquote>
-</section>
+        </blockquote></section>
 <section class="section">
 <h2>Purpose</h2>
 <p>The Lexicon exists to preserve the evolving language of BitPangea.</p>
