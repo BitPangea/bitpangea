@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Digital Scarcity | The Luminaries</title>
+<!-- Favicons -->
+<!-- BitPangea Metadata -->
+<!-- Open Graph -->
+<!-- Twitter/X -->
+<!-- Structured Data -->
+<meta content="Lineage VIII — Digital Scarcity. Preserved through Satoshi Nakamoto." name="description"/><meta content="noindex,nofollow" name="robots"/><meta content="#8f5cff" name="theme-color"/><style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #02030a;
+  --violet: #8f5cff;
+  --violet-soft: rgba(143, 92, 255, 0.22);
+  --violet-faint: rgba(143, 92, 255, 0.08);
+  --gold: #d4a938;
+  --white: #ffffff;
+  --muted: rgba(255, 255, 255, 0.68);
+  --line: rgba(143, 92, 255, 0.20);
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  background: var(--bg);
+  color: var(--white);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  line-height: 1.72;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at 50% 5%, rgba(143, 92, 255, 0.13), transparent 30%),
+    radial-gradient(circle at 20% 65%, rgba(212, 169, 56, 0.06), transparent 28%),
+    linear-gradient(180deg, #02030a 0%, #010106 100%);
+}
+
+.page {
+  width: 100%;
+  padding: 96px 28px 120px;
+}
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 64px 58px;
+  background: rgba(0, 0, 0, 0.38);
+  border: 1px solid var(--line);
+  box-shadow:
+    0 0 80px rgba(0, 0, 0, 0.70),
+    inset 0 0 80px rgba(143, 92, 255, 0.025);
+}
+
+.eyebrow {
+  color: var(--violet);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 28px;
+}
+
+h1 {
+  color: var(--white);
+  font-size: clamp(46px, 8vw, 86px);
+  line-height: 1.02;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  text-shadow: 0 0 30px rgba(0, 0, 0, 0.95);
+}
+
+.subtitle {
+  color: var(--gold);
+  font-size: 18px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 48px;
+}
+
+.divider {
+  width: 64px;
+  height: 2px;
+  background: var(--violet);
+  margin: 0 0 44px;
+  box-shadow: 0 0 18px rgba(143, 92, 255, 0.70);
+}
+
+p {
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 17px;
+}
+
+.intro {
+  font-size: 20px;
+  max-width: 760px;
+  margin-bottom: 34px;
+}
+
+section {
+  margin-top: 34px;
+}
+
+.panel {
+  padding: 34px 34px 30px;
+  background: rgba(0, 0, 0, 0.34);
+  border: 1px solid rgba(143, 92, 255, 0.16);
+}
+
+h2 {
+  color: var(--white);
+  font-size: 24px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+blockquote {
+  margin: 38px 0;
+  padding: 30px 36px;
+  border-left: 3px solid var(--violet);
+  background: rgba(0, 0, 0, 0.44);
+  color: var(--white);
+  font-size: 23px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  box-shadow: 0 0 28px rgba(0, 0, 0, 0.45);
+}
+
+.quote-label {
+  display: block;
+  color: var(--violet);
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.luminary-card {
+  margin-top: 44px;
+  padding: 42px 38px;
+  background:
+    linear-gradient(180deg, rgba(143, 92, 255, 0.045), rgba(0, 0, 0, 0.40)),
+    rgba(0, 0, 0, 0.42);
+  border: 1px solid rgba(143, 92, 255, 0.24);
+  box-shadow:
+    0 0 44px rgba(0, 0, 0, 0.50),
+    inset 0 0 50px rgba(143, 92, 255, 0.035);
+}
+
+.designation {
+  color: var(--violet);
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.luminary-card h2 {
+  font-size: 36px;
+  letter-spacing: 6px;
+  margin-bottom: 6px;
+}
+
+.unknown {
+  color: var(--gold);
+  font-size: 13px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+.inscription {
+  margin: 34px 0;
+  padding: 28px 30px;
+  border: 1px solid rgba(212, 169, 56, 0.20);
+  background: rgba(0, 0, 0, 0.34);
+}
+
+.inscription p {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.empty-record {
+  margin-top: 34px;
+  padding: 28px 30px;
+  border: 1px dashed rgba(143, 92, 255, 0.30);
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.empty-record p:first-child {
+  color: var(--violet);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.closing {
+  margin-top: 38px;
+  padding: 38px 36px;
+  background: rgba(0, 0, 0, 0.48);
+  border: 1px solid rgba(143, 92, 255, 0.20);
+}
+
+.closing p:first-child {
+  color: var(--gold);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.status {
+  margin-top: 38px;
+  padding: 16px 22px;
+  border: 1px solid rgba(143, 92, 255, 0.36);
+  color: var(--violet);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 11px;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding: 48px 16px 80px;
+  }
+
+  .container {
+    padding: 38px 24px 46px;
+  }
+
+  h1 {
+    letter-spacing: 5px;
+  }
+
+  .subtitle {
+    font-size: 15px;
+  }
+
+  p,
+  .intro {
+    font-size: 16px;
+  }
+
+  blockquote {
+    font-size: 19px;
+    padding: 24px;
+  }
+
+  .panel,
+  .luminary-card,
+  .closing {
+    padding: 28px 22px;
+  }
+}
+
+
+.lineage-link,
+.lineage-link:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+.lineage-link:hover {
+  color: var(--violet);
+  text-shadow: 0 0 14px rgba(143, 92, 255, 0.65);
+}
+
+
+.record-link,
+.record-link:visited {
+  color: var(--violet);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(143, 92, 255, 0.38);
+}
+
+.record-link:hover {
+  color: var(--gold);
+  border-bottom-color: rgba(212, 169, 56, 0.70);
+  text-shadow: 0 0 14px rgba(143, 92, 255, 0.55);
+}
+
+.lineage-path {
+  margin-top: 34px;
+  padding: 24px 28px;
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px dashed rgba(143, 92, 255, 0.28);
+}
+
+.lineage-path p {
+  margin-bottom: 10px;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.lineage-path strong {
+  color: var(--gold);
+}
+</style><meta content="Digital Scarcity | The Luminaries" property="og:title"/><meta content="Lineage VIII — Digital Scarcity." property="og:description"/><meta content="https://bitpangea.com/theluminaries/08-digital-scarcity/" property="og:url"/><meta content="Digital Scarcity | The Luminaries" name="twitter:title"/><meta content="Lineage VIII — Digital Scarcity." name="twitter:description"/><link href="https://bitpangea.com/theluminaries/08-digital-scarcity/" rel="canonical"/></head>
+<body>
+<main class="page"><article class="container">
+<section class="hero">
+<div class="eyebrow">Lineage VIII · The Luminaries</div>
+<h1>Digital<br/>Scarcity</h1>
+<div class="subtitle">Preserved through Satoshi Nakamoto · Name Unknown</div>
+<div class="divider"></div>
+<p class="intro">
+Digital Scarcity is preserved as the eighth lineage record because it demonstrated that finite digital property could exist without central authority.
+</p>
+<p>Programmable Agreements established the conceptual bridge. Bitcoin crossed it.</p>
+<blockquote>
+<span class="quote-label">Lineage Recognition</span>
+The digital world fundamentally changed when scarcity became native to the digital realm rather than imposed by an institution.
+</blockquote>
+</section>
+<section class="panel">
+<h2>The Discovery</h2>
+<p>In 2008, under the name Satoshi Nakamoto, the Bitcoin white paper described a peer-to-peer electronic cash system that solved the long-standing problem of digital scarcity without requiring a trusted intermediary.</p>
+<p>The launch of the Genesis Block on 3 January 2009 transformed that theory into reality.</p>
+</section>
+<section class="panel">
+<h2>What Became Possible</h2>
+<p>Digital Scarcity made decentralized ownership possible.</p>
+<p>For the first time, digital property could be finite, verifiable, transferable, and resistant to arbitrary duplication or centralized control.</p>
+<p>This discovery reshaped ideas of money, trust, permanence, sovereignty, and ultimately inspired entirely new categories of digital systems.</p>
+</section>
+<section class="luminary-card">
+<div class="designation">Preserved Luminary</div>
+<h2>Satoshi Nakamoto</h2>
+<div class="unknown">Name Unknown</div>
+<p>Satoshi is preserved not because of celebrity or identity, but because the discovery of decentralized digital scarcity permanently altered the trajectory of the digital world.</p>
+<p>The contribution matters. The name does not.</p>
+</section>
+<section class="panel">
+<h2>Why Digital Scarcity Follows Programmable Agreements</h2>
+<p>The Luminaries is organized by dependency rather than fame.</p>
+<p>Digital Scarcity unites representation, logic, computation, information, cryptography, digital cash, and programmable agreements into a single functioning system.</p>
+<p>Without this discovery, BitPangea itself could never have been imagined.</p>
+</section>
+<section class="lineage-path">
+<p><strong>Previous:</strong> <a class="record-link" href="/theluminaries/07-programmable-agreements/">Programmable Agreements</a></p>
+<p><strong>Lineage VIII:</strong> Digital Scarcity</p>
+<p><strong>Next:</strong> <a class="record-link" href="/theluminaries/09-not-yet-revealed/">Not Yet Revealed</a></p>
+<p><a class="record-link" href="/theluminaries/">Return to The Luminaries</a></p>
+</section>
+<section class="closing">
+<p>This is Digital Scarcity.</p>
+<p>The eighth preserved discovery in The Luminaries.</p>
+<p>Not Bitcoin alone, but the discovery that digital scarcity could exist without central authority.</p>
+</section>
+<div class="status">Hidden Record · Lineage VIII</div>
+</article></main>
+</body>
+</html>
