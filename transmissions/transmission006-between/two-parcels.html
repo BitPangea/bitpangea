@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Two Parcels | Transmission 006 | BitPangea</title>
+  <meta name="description" content="Two parcels appear within Transmission 006: Between." />
+  <link rel="canonical" href="https://bitpangea.com/transmissions/transmission006-between/two-parcels.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Two Parcels | Transmission 006 | BitPangea">
+  <meta property="og:description" content="Two parcels appear within Transmission 006: Between.">
+  <meta property="og:url" content="https://bitpangea.com/transmissions/transmission006-between/two-parcels.html">
+  <meta property="og:site_name" content="BitPangea">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Two Parcels | Transmission 006 | BitPangea">
+  <meta name="twitter:description" content="Two parcels appear within Transmission 006: Between.">
+
+  <style>
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg: #02050a;
+  --gold: #d4a938;
+  --cyan: #00c8d7;
+  --white: #ffffff;
+  --muted: rgba(255,255,255,.68);
+  --line: rgba(212,169,56,.18);
+}
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  background: var(--bg);
+  color: var(--white);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  position: relative;
+  line-height: 1.72;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 70% 10%, rgba(212,169,56,.10), transparent 30%),
+    radial-gradient(circle at 18% 20%, rgba(0,200,215,.08), transparent 32%),
+    linear-gradient(rgba(2,5,10,.88), rgba(2,5,10,.97));
+  z-index: -2;
+  pointer-events: none;
+}
+
+.page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 28px;
+}
+
+.container {
+  width: min(1040px, 100%);
+  min-height: min(680px, calc(100vh - 96px));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 58px;
+  background: rgba(0,0,0,.44);
+  border: 1px solid var(--line);
+  box-shadow: 0 0 70px rgba(0,0,0,.58);
+  backdrop-filter: blur(4px);
+}
+
+.eyebrow {
+  color: var(--cyan);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 24px;
+}
+
+h1 {
+  color: var(--white);
+  font-size: clamp(42px, 7vw, 78px);
+  line-height: 1.04;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+  text-shadow: 0 0 24px rgba(0,0,0,.92);
+}
+
+.subtitle {
+  color: var(--gold);
+  font-size: clamp(18px, 2.4vw, 26px);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.divider {
+  width: 64px;
+  height: 2px;
+  background: var(--gold);
+  margin: 34px 0 42px;
+  box-shadow: 0 0 14px rgba(212,169,56,.65);
+}
+
+.transmission-text {
+  max-width: 820px;
+}
+
+p {
+  margin-bottom: 20px;
+  color: var(--white);
+  font-size: clamp(19px, 2.1vw, 26px);
+}
+
+.question {
+  margin-top: 18px;
+  color: var(--gold);
+  font-size: clamp(24px, 3vw, 38px);
+  letter-spacing: 2px;
+  line-height: 1.35;
+}
+
+.symbol {
+  width: min(420px, 78vw);
+  height: 220px;
+  margin: 18px 0 34px;
+  position: relative;
+}
+
+.parcel {
+  width: 88px;
+  height: 88px;
+  border: 1px solid rgba(212,169,56,.78);
+  background: rgba(212,169,56,.06);
+  box-shadow: 0 0 28px rgba(212,169,56,.24);
+}
+
+.parcel.one { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); }
+.parcel.left { position: absolute; left: 26%; top: 50%; transform: translate(-50%,-50%); }
+.parcel.right { position: absolute; left: 74%; top: 50%; transform: translate(-50%,-50%); }
+
+.boundary-line {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  width: 2px;
+  height: 60%;
+  background: var(--gold);
+  box-shadow: 0 0 18px rgba(212,169,56,.75);
+}
+
+.coordinate-dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: var(--cyan);
+  border-radius: 50%;
+  box-shadow: 0 0 18px rgba(0,200,215,.9);
+}
+
+.coordinate-dot.a { left: calc(26% - 5px); top: calc(50% - 5px); }
+.coordinate-dot.b { left: calc(74% - 5px); top: calc(50% - 5px); }
+
+.adjacency-line {
+  position: absolute;
+  left: 26%;
+  right: 26%;
+  top: 50%;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(0,200,215,.1), rgba(0,200,215,.95), rgba(0,200,215,.1));
+  box-shadow: 0 0 18px rgba(0,200,215,.8);
+}
+
+.next {
+  margin-top: 40px;
+}
+
+.next a,
+.next a:visited {
+  display: inline-block;
+  color: var(--gold);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 13px;
+  padding: 16px 22px;
+  border: 1px solid rgba(212,169,56,.38);
+  background: rgba(0,0,0,.35);
+  transition: all .25s ease;
+}
+
+.next a:hover {
+  color: var(--white);
+  border-color: rgba(212,169,56,.82);
+  box-shadow: 0 0 22px rgba(212,169,56,.20);
+}
+
+.status {
+  margin-top: 40px;
+  color: rgba(255,255,255,.40);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+@media (max-width: 768px) {
+  .page { padding: 24px 16px; }
+  .container { min-height: calc(100vh - 48px); padding: 36px 24px; }
+  h1 { letter-spacing: 5px; }
+}
+
+  </style>
+</head>
+
+<body>
+<main class="page">
+  <article class="container">
+
+    <div class="eyebrow">Transmission 006 · Page III</div>
+
+    <h1>Two Parcels</h1>
+
+    <div class="subtitle">Existence Repeated</div>
+
+    <div class="divider"></div>
+
+    <div class="transmission-text">
+      <div class="symbol"><div class="parcel left"></div><div class="parcel right"></div></div>
+      <p>Two Parcels appear.</p>
+      <p class="question">Now what exists?</p>
+      <p>Still almost nothing.</p>
+    </div>
+
+    <div class="next">
+      <a href="boundary.html">Continue →</a>
+    </div>
+
+    <div class="status">Structural Record · Multiplicity</div>
+
+  </article>
+</main>
+</body>
+</html>
