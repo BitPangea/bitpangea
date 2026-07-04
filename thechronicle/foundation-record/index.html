@@ -130,19 +130,35 @@
       text-transform: uppercase;
     }
 
-    .nav { display: flex; gap: 28px; }
+     .nav {
+      display: flex;
+      gap: 28px;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
 
-    .nav a {
+    .nav a,
+    .nav a:visited {
       color: rgba(212, 169, 56, 0.9);
       text-decoration: none;
       font-size: 12px;
       letter-spacing: 3px;
       text-transform: uppercase;
       transition: all .25s ease;
+      white-space: nowrap;
     }
 
     .nav a:hover {
       color: #ffffff;
+      text-shadow: 0 0 12px rgba(212,169,56,.6);
+    }
+
+    .nav a.active,
+    .nav a[aria-current="page"] {
+      color: #ffffff;
+      border-bottom: 1px solid rgba(212, 169, 56, 0.95);
+      padding-bottom: 4px;
       text-shadow: 0 0 12px rgba(212, 169, 56, 0.65);
     }
 
@@ -365,8 +381,8 @@
     <nav class="nav">
       <a href="/">The World</a>
       <a href="/theatlas/">The Atlas</a>
-      <a href="/thecharter/">The Charter</a>
-      <a href="/thechronicle/">The Chronicle</a>
+      <a href="/thefoundation/">The Foundation</a>
+      <a href="/thechronicle/ class="active" aria-current="page">The Chronicle</a>
       <a href="/thecommons/">The Commons</a>
       <a href="/thefrontieroffice/">The Frontier Office</a>
     </nav>
