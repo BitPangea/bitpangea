@@ -36,7 +36,7 @@
 <!-- Favicons -->
 <link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="/assets/favicon.svg" rel="shortcut icon"/>
-<meta content="BitPangea is a scarce digital supercontinent: one world, 21 million parcels, no expansion, no duplication, and no central authority." name="description">
+<meta content="BitPangea is a scarce digital supercontinent: one world, 21 million parcels, no expansion, no duplication, and no central authority." name="description"/>
 <style>
     * {
       margin: 0;
@@ -498,8 +498,20 @@ h1 .smaller {
   
 .continental-notice{max-width:900px;margin:32px auto 48px;padding:20px 24px;border:1px solid rgba(212,169,56,.45);background:rgba(212,169,56,.06);border-radius:10px}
 .continental-notice h3{margin:0 0 10px;color:#d4a938;text-transform:uppercase;letter-spacing:.08em}
+
+.continental-notice{
+position:absolute !important;
+top:170px;
+right:70px;
+width:380px;
+margin:0!important;
+background:rgba(8,10,14,.82)!important;
+backdrop-filter:blur(4px);
+z-index:50;
+}
+body{position:relative;}
 </style>
-</meta></head>
+</head>
 <body>
 <header class="topbar">
 <a class="brand" href="/">
