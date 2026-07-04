@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!-- Theme -->
+<meta content="#00c8d7" name="theme-color"/>
+<!-- SEO -->
+<meta content="index, follow" name="robots"/>
+<link href="https://bitpangea.com/" rel="canonical"/>
+<!-- Open Graph -->
+<meta content="BitPangea — A Digital Supercontinent" property="og:title"/>
+<meta content="BitPangea is a scarce digital supercontinent: one world, 21 million parcels, no expansion, no duplication, and no central authority." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://bitpangea.com/" property="og:url"/>
+<meta content="https://bitpangea.com/images/bitpangea-og.jpg" property="og:image"/>
+<meta content="BitPangea" property="og:site_name"/>
+<meta content="en_US" property="og:locale"/>
+<!-- Twitter/X -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="BitPangea — A Digital Supercontinent" name="twitter:title"/>
+<meta content="One world. 21 million parcels. No expansion." name="twitter:description"/>
+<meta content="https://bitpangea.com/images/bitpangea-og.jpg" name="twitter:image"/>
+<!-- Structured Data -->
+<script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"BitPangea",
+    "url":"https://bitpangea.com/",
+    "description":"BitPangea is a scarce digital supercontinent: one world, 21 million parcels, no expansion, no duplication, and no central authority."
+  }
+  </script>
+<title>BitPangea</title>
+<!-- Favicons -->
+<link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/favicon.svg" rel="shortcut icon"/>
+<meta content="BitPangea is a scarce digital supercontinent: one world, 21 million parcels, no expansion, no duplication, and no central authority." name="description">
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #02050a;
+      --gold: #d4a938;
+      --gold-line: rgba(212, 169, 56, 0.22);
+      --cyan: #00c8d7;
+      --white: #ffffff;
+      --muted: rgba(219, 232, 241, 0.78);
+    }
+
+    html,
+    body {
+      width: 100%;
+      min-height: 100%;
+      background: #000;
+      color: var(--white);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      overflow-x: hidden;
+      background-color: var(--bg);
+      background-image:
+        linear-gradient(
+          90deg,
+          rgba(0,0,0,0.72) 0%,
+          rgba(0,0,0,0.58) 25%,
+          rgba(0,0,0,0.12) 48%,
+          rgba(0,0,0,0.22) 100%
+        ),
+        linear-gradient(
+          180deg,
+          rgba(0,0,0,0.42) 0%,
+          rgba(0,0,0,0.06) 45%,
+          rgba(0,0,0,0.62) 100%
+        ),
+        url("/images/bitpangea-rt.jpg");
+      background-size: cover;
+      background-position: 72% center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(circle at 72% 36%, rgba(0, 200, 215, 0.10), transparent 28%),
+        radial-gradient(circle at 19% 33%, rgba(212, 169, 56, 0.06), transparent 32%),
+        radial-gradient(circle at 52% 104%, rgba(212, 169, 56, 0.05), transparent 30%);
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .topbar,
+    .page,
+    .principles,
+    .status {
+      position: relative;
+      z-index: 2;
+    }
+
+    .topbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      min-height: 86px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 28px;
+      padding: 0 42px;
+      background: rgba(0, 0, 0, 0.64);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(212, 169, 56, 0.15);
+      z-index: 1000;
+    }
+
+    .brand {
+      color: var(--white);
+      text-decoration: none;
+      letter-spacing: 9px;
+      font-size: 24px;
+      font-weight: 400;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .brand span {
+      display: block;
+      margin-top: 4px;
+      color: var(--gold);
+      font-size: 11px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+
+    .nav {
+      display: flex;
+      gap: 28px;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .nav a {
+      color: rgba(212, 169, 56, 0.88);
+      text-decoration: none;
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      transition: all 0.25s ease;
+      white-space: nowrap;
+    }
+
+    .nav a.active,
+.nav a[aria-current="page"] {
+ color: #ffffff;
+ border-bottom: 1px solid rgba(212, 169, 56, 0.95);
+ padding-bottom: 4px;
+ text-shadow: 0 0 12px rgba(212, 169, 56, 0.65);
+}
+
+
+    .page {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: minmax(320px, 560px) 1fr;
+      align-items: center;
+      gap: 42px;
+      padding: 128px 64px 126px;
+    }
+
+    .hero-copy {
+      max-width: 560px;
+      padding: 34px 0 20px;
+    }
+
+    .eyebrow {
+      color: var(--cyan);
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-size: 12px;
+      margin-bottom: 22px;
+      text-shadow: 0 0 16px rgba(0, 200, 215, 0.45);
+    }
+
+.world-link,
+.world-link:visited,
+.world-link:hover,
+.world-link:active {
+    color: inherit;
+    text-decoration: none;
+}
+    
+    h1 {
+  max-width: 720px;
+  font-size: clamp(42px, 5.2vw, 74px);
+  line-height: 1.02;
+  letter-spacing: 7px;
+}
+
+h1 .smaller {
+  display: block;
+  font-size: 0.72em;
+  letter-spacing: 8px;
+}
+
+    .scarcity-line {
+      display: inline-block;
+      color: var(--gold);
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-size: clamp(16px, 2vw, 24px);
+      margin-bottom: 30px;
+      text-shadow: 0 0 16px rgba(212, 169, 56, 0.30);
+    }
+
+    .divider {
+      width: 68px;
+      height: 2px;
+      background: var(--gold);
+      margin: 0 0 34px;
+      box-shadow: 0 0 16px rgba(212, 169, 56, 0.62);
+    }
+
+    .lead {
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.75;
+      max-width: 520px;
+      margin-bottom: 34px;
+      text-shadow: 0 0 14px rgba(0, 0, 0, 0.92);
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 34px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 50px;
+      padding: 0 24px;
+      border: 1px solid rgba(212, 169, 56, 0.58);
+      color: var(--gold);
+      background: rgba(0, 0, 0, 0.38);
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 12px;
+      transition: all 0.25s ease;
+      box-shadow: 0 0 24px rgba(0, 0, 0, 0.32);
+    }
+
+    .button:hover {
+      color: var(--white);
+      border-color: rgba(212, 169, 56, 0.92);
+      background: rgba(212, 169, 56, 0.12);
+      text-shadow: 0 0 12px rgba(212, 169, 56, 0.55);
+    }
+
+    .button.secondary {
+      border-color: rgba(0, 200, 215, 0.38);
+      color: rgba(219, 232, 241, 0.86);
+    }
+
+    .button.secondary:hover {
+      border-color: rgba(0, 200, 215, 0.78);
+      background: rgba(0, 200, 215, 0.10);
+    }
+
+    .scarcity-card {
+      width: min(100%, 520px);
+      padding: 24px 26px;
+      background: linear-gradient(135deg, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.22));
+      border: 1px solid var(--gold-line);
+      box-shadow: 0 0 42px rgba(0, 0, 0, 0.38);
+      backdrop-filter: blur(5px);
+    }
+
+    .card-title {
+      color: var(--gold);
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-size: 12px;
+      margin-bottom: 16px;
+    }
+
+    .rules {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px 22px;
+      list-style: none;
+    }
+
+    .rules li {
+      color: rgba(255, 255, 255, 0.86);
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      line-height: 1.45;
+    }
+
+    .rules li::before {
+      content: "—";
+      color: var(--cyan);
+      margin-right: 8px;
+    }
+
+    .principles {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      min-height: 92px;
+      display: grid;
+      grid-template-columns: 1.1fr repeat(4, 1fr);
+      gap: 0;
+      align-items: center;
+      padding: 18px 46px;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.68));
+      border-top: 1px solid rgba(212, 169, 56, 0.12);
+      backdrop-filter: blur(5px);
+      z-index: 50;
+    }
+
+    .principles .label {
+      color: var(--cyan);
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-size: 13px;
+    }
+
+    .principle {
+      min-height: 46px;
+      padding: 0 20px;
+      border-left: 1px solid rgba(212, 169, 56, 0.42);
+    }
+
+    .principle strong {
+      display: block;
+      color: rgba(219, 232, 241, 0.92);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-size: 13px;
+      margin-bottom: 8px;
+      font-weight: 400;
+    }
+
+    .principle span {
+      color: rgba(219, 232, 241, 0.66);
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+
+    .status {
+      position: fixed;
+      right: 28px;
+      bottom: 116px;
+      padding: 12px 16px;
+      border: 1px solid rgba(212, 169, 56, 0.30);
+      background: rgba(0, 0, 0, 0.30);
+      color: rgba(212, 169, 56, 0.72);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 10px;
+      z-index: 60;
+    }
+
+    .status a,
+.status a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+.status a:hover {
+    color: #ffffff;
+}
+
+.reliquary-link,
+.reliquary-link:visited,
+.reliquary-link:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+.reliquary-link:hover {
+  color: var(--gold);
+  text-shadow: 0 0 10px rgba(212,169,56,.35);
+}
+
+    
+    @media (max-width: 1120px) {
+      .topbar {
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 20px 28px;
+      }
+
+      .nav {
+        width: 100%;
+        justify-content: flex-start;
+        gap: 14px 22px;
+      }
+
+      .page {
+        grid-template-columns: 1fr;
+        padding-top: 170px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      body {
+        background-position: 67% center;
+      }
+
+      .topbar {
+        padding: 18px 20px;
+      }
+
+      .brand {
+        font-size: 20px;
+        letter-spacing: 6px;
+      }
+
+      .brand span {
+        font-size: 10px;
+        letter-spacing: 3px;
+      }
+
+      .nav a {
+        font-size: 10px;
+        letter-spacing: 2px;
+      }
+
+      .page {
+        min-height: auto;
+        padding: 172px 22px 300px;
+      }
+
+      h1 {
+        letter-spacing: 5px;
+      }
+
+      .lead {
+        font-size: 16px;
+      }
+
+      .rules {
+        grid-template-columns: 1fr;
+      }
+
+      .principles {
+        position: absolute;
+        grid-template-columns: 1fr;
+        align-items: start;
+        gap: 16px;
+        padding: 24px 22px 28px;
+      }
+
+      .principle {
+        padding: 0 0 0 16px;
+      }
+
+      .status {
+        display: none;
+      }
+
+      .micro-footer {
+    position: fixed;
+    bottom: 8px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: rgba(255,255,255,.35);
+    z-index: 55;
+}
+      
+    }
+  
+.continental-notice{max-width:900px;margin:32px auto 48px;padding:20px 24px;border:1px solid rgba(212,169,56,.45);background:rgba(212,169,56,.06);border-radius:10px}
+.continental-notice h3{margin:0 0 10px;color:#d4a938;text-transform:uppercase;letter-spacing:.08em}
+</style>
+</meta></head>
+<body>
+<header class="topbar">
+<a class="brand" href="/">
+      BITPANGEA
+      <span>A Digital Supercontinent</span>
+</a>
+<nav class="nav">
+<a aria-current="page" class="active" href="/">The World</a>
+<a href="/theatlas/">The Atlas</a>
+<a href="/thefoundation/">The Foundation</a>
+<a href="/thechronicle/">The Chronicle</a>
+<a href="/thecommons/">The Commons</a>
+<a href="/thefrontieroffice/">The Frontier Office</a>
+</nav>
+</header>
+<main class="page"><section class="continental-notice"><h3>Temporary Continental Shift</h3><p>BitPangea is currently undergoing constitutional infrastructure improvements as The Foundation is integrated throughout the world. During this transition, some pages may temporarily reflect ongoing institutional refinement.</p><p>The world remains fully accessible. This work strengthens the long-term architecture of BitPangea while preserving the continuity of its constitutional record.</p></section>
+<section aria-labelledby="hero-title" class="hero-copy">
+<div class="eyebrow"><a class="world-link" href="/thereliquary/">
+  ONE WORLD
+</a></div>
+<h1 id="hero-title">
+  A SCARCE<br/>
+DIGITAL<br/>
+<span class="smaller">SUPERCONTINENT</span>
+</h1>
+<br/>
+<div class="scarcity-line">
+        21 Million Parcels<br/> No Expansion
+      </div>
+<div class="divider"></div>
+<p class="lead">
+        BitPangea explores a persistent digital world where land is finite,
+        ownership is verifiable, and sovereignty is <a class="reliquary-link" href="/transmissions/transmission004-thebuilder/thebuilder.html">
+    built
+  </a> into the foundation.
+      </p>
+<div class="cta-row">
+<a class="button" href="/thedeclaration/">Read The Declaration</a>
+<a class="button" href="/thecharter/">Read The Charter</a>
+<a class="button secondary" href="/thecommons/">Enter The Commons</a>
+</div>
+<aside aria-label="Core BitPangea constraints" class="scarcity-card">
+<div class="card-title">The Founding Constraint</div>
+<ul class="rules">
+<li>One World</li>
+<li>21 Million Parcels</li>
+<li>No Expansion</li>
+<li>No Duplication</li>
+<li>No Authority</li>
+<li>Built to Endure</li>
+</ul>
+</aside>
+</section>
+<br/>
+<div class="micro-footer">
+© 2026 BitPangea · Built on Cryptographic Permanence <br/>
+<br/>
+One World · 21 Million Parcels · No Expansion
+</div>
+</main>
+<section aria-label="BitPangea founding principles" class="principles">
+<div class="label">Founded on Principles</div>
+<div class="principle">
+<strong>Scarcity</strong>
+<span>Finite by design</span>
+</div>
+<div class="principle">
+<strong>Ownership</strong>
+<span>Sovereign &amp; verifiable</span>
+</div>
+<div class="principle">
+<strong>Permanence</strong>
+<span>Built to endure</span>
+</div>
+<div class="principle">
+<strong>Neutrality</strong>
+<span>No central control</span>
+</div>
+</section>
+<div class="status"><a href="/transmissions/transmission001-whatif/">Digital Civilization Experiment →</a></div>
+</body>
+</html>
