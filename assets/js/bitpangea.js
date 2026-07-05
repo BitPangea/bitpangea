@@ -37,3 +37,4 @@ async function bpInit() {
 }
 
 document.addEventListener("DOMContentLoaded", bpInit);
+console.log("BitPangea Framework v1.0 loaded");
