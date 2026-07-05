@@ -10,16 +10,23 @@
   }
 
   function bpSetActiveNav() {
-    const page = document.body.dataset.bpPage;
-    if (!page) return;
 
-    const activeLink = document.querySelector(`.bp-nav a[data-nav="${page}"]`);
-    if (!activeLink) return;
+  const page = document.body.dataset.bpPage;
 
-    activeLink.classList.add("active");
-    activeLink.setAttribute("aria-current", "page");
-  }
+  console.log("BP Page:", page);
 
+  const activeLink = document.querySelector(`.bp-nav a[data-nav="${page}"]`);
+
+  console.log("Found link:", activeLink);
+
+  if (!activeLink) return;
+
+  activeLink.classList.add("active");
+  activeLink.setAttribute("aria-current", "page");
+
+  console.log("Active applied.");
+}
+  
   async function bpInit() {
     try {
       await bpLoadInclude("bp-header", "/assets/includes/bitpangea-header.html");
