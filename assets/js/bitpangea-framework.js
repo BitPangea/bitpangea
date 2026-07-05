@@ -13,20 +13,14 @@ async function bpLoadInclude(id, url) {
 }
 
 function bpSetActiveNav() {
-  const currentPath = window.location.pathname.replace(/\/$/, "") || "/";
-  const navLinks = document.querySelectorAll(".bp-nav a");
+  const page = document.body.dataset.bpPage;
+  if (!page) return;
 
-  navLinks.forEach(link => {
-    const linkPath = new URL(link.href).pathname.replace(/\/$/, "") || "/";
+  const activeLink = document.querySelector(`.bp-nav a[data-nav="${page}"]`);
+  if (!activeLink) return;
 
-    const isHome = linkPath === "/" && currentPath === "/";
-    const isSection = linkPath !== "/" && currentPath.startsWith(linkPath);
-
-    if (isHome || isSection) {
-      link.classList.add("active");
-      link.setAttribute("aria-current", "page");
-    }
-  });
+  activeLink.classList.add("active");
+  activeLink.setAttribute("aria-current", "page");
 }
 
 async function bpInit() {
