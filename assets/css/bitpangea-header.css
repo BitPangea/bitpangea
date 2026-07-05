@@ -1,0 +1,167 @@
+/* ==========================================================
+   BitPangea Global Header
+   ========================================================== */
+
+.bp-header {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    right: 0;
+
+    min-height: 86px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 32px;
+
+    padding: 18px 60px;
+
+    background: var(--bp-header-bg);
+
+    backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid var(--bp-line);
+
+    z-index: 5000;
+}
+
+/* ------------------------------------- */
+
+.bp-brand {
+
+    text-decoration: none;
+
+    color: var(--bp-white);
+
+    white-space: nowrap;
+
+    flex: 0 0 auto;
+
+    letter-spacing: 9px;
+
+    font-size: 24px;
+
+    font-weight: 400;
+
+    text-transform: uppercase;
+}
+
+.bp-brand span {
+
+    display: block;
+
+    margin-top: 4px;
+
+    color: var(--bp-gold);
+
+    font-size: 11px;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+}
+
+/* ------------------------------------- */
+
+.bp-nav {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    flex-wrap: wrap;
+
+    gap: 18px 24px;
+}
+
+.bp-nav a {
+
+    color: rgba(212,169,56,.92);
+
+    text-decoration: none;
+
+    text-transform: uppercase;
+
+    letter-spacing: 3px;
+
+    font-size: 12px;
+
+    transition: .25s;
+}
+
+.bp-nav a:hover {
+
+    color: white;
+
+    text-shadow: 0 0 10px rgba(212,169,56,.55);
+}
+
+/* ------------------------------------- */
+
+.bp-nav a.active,
+.bp-nav a[aria-current="page"] {
+
+    color: white;
+
+    border-bottom: 1px solid var(--bp-gold);
+
+    padding-bottom: 4px;
+
+    text-shadow: 0 0 12px rgba(212,169,56,.55);
+}
+
+/* ------------------------------------- */
+
+@media (max-width:980px){
+
+.bp-header{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    padding:20px 24px;
+}
+
+.bp-nav{
+
+    justify-content:flex-start;
+}
+
+}
+
+/* ------------------------------------- */
+
+@media (max-width:768px){
+
+.bp-brand{
+
+    font-size:20px;
+
+    letter-spacing:6px;
+}
+
+.bp-brand span{
+
+    font-size:10px;
+
+    letter-spacing:3px;
+}
+
+.bp-nav{
+
+    gap:14px 18px;
+}
+
+.bp-nav a{
+
+    font-size:10px;
+
+    letter-spacing:2px;
+}
+
+}
