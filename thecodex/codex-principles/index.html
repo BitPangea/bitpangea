@@ -10,6 +10,10 @@
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="shortcut icon" href="/assets/favicon.svg">
 
+  <!-- New Header -->
+<link rel="stylesheet" href="/assets/css/bitpangea-framework.css">
+<script src="/assets/js/bitpangea-framework.js" defer></script>
+
   <meta
     name="description"
     content="The Codex Principles preserve the foundational doctrines revealed through adopted Codices within BitPangea."
@@ -111,74 +115,6 @@
         linear-gradient(90deg, rgba(0,0,0,.60), rgba(0,0,0,.26), rgba(0,0,0,.66));
       z-index: -1;
       pointer-events: none;
-    }
-
-    .topbar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      min-height: 86px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 28px;
-      padding: 18px 42px;
-      background: rgba(0, 0, 0, 0.78);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(212, 169, 56, 0.14);
-      z-index: 1000;
-    }
-
-    .brand {
-      flex: 0 0 auto;
-      color: var(--white);
-      text-decoration: none;
-      letter-spacing: 9px;
-      font-size: 24px;
-      font-weight: 400;
-      text-transform: uppercase;
-      white-space: nowrap;
-    }
-
-    .brand span {
-      display: block;
-      margin-top: 4px;
-      color: var(--gold);
-      font-size: 11px;
-      letter-spacing: 4px;
-      text-transform: uppercase;
-    }
-
-    .nav {
-      display: flex;
-      justify-content: flex-end;
-      flex-wrap: wrap;
-      gap: 18px 28px;
-    }
-
-    .nav a,
-    .nav a:visited {
-      color: rgba(212, 169, 56, 0.92);
-      text-decoration: none;
-      font-size: 12px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      transition: all .25s ease;
-      white-space: nowrap;
-    }
-
-    .nav a.active,
-    .nav a[aria-current="page"] {
-      color: #ffffff;
-      border-bottom: 1px solid rgba(212, 169, 56, 0.95);
-      padding-bottom: 4px;
-      text-shadow: 0 0 12px rgba(212, 169, 56, 0.65);
-    }
-
-    .nav a:hover {
-      color: #ffffff;
-      text-shadow: 0 0 12px rgba(212,169,56,.6);
     }
 
     .page {
@@ -343,58 +279,6 @@
       background: rgba(0, 0, 0, 0.35);
     }
 
-    .bp-footer {
-      margin-top: 120px;
-      padding: 60px 40px;
-      text-align: center;
-      border-top: 1px solid rgba(255,191,0,.15);
-      background: rgba(0,0,0,.72);
-    }
-
-    .footer-links {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 24px;
-      margin-bottom: 24px;
-    }
-
-    .footer-links a,
-    .footer-links a:visited {
-      color: rgba(212, 169, 56, 0.9);
-      text-decoration: none;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: 12px;
-    }
-
-    .footer-links a:hover {
-      color: #ffffff;
-      text-shadow: 0 0 12px rgba(212,169,56,.6);
-    }
-
-    .footer-divider {
-      width: 120px;
-      height: 1px;
-      background: rgba(212,160,23,.35);
-      margin: 24px auto;
-    }
-
-    .footer-notice p {
-      margin-bottom: 8px;
-      font-size: 14px;
-      color: rgba(255,255,255,.65);
-      letter-spacing: 2px;
-      text-transform: uppercase;
-    }
-
-    .footer-copy {
-      color: rgba(255,255,255,.45);
-      font-size: 11px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-    }
-
     .domain-nav {
       display: flex;
       flex-wrap: wrap;
@@ -518,17 +402,7 @@
       color: rgba(255,255,255,0.84);
     }
 
-    @media (max-width: 980px) {
-      .topbar { align-items: flex-start; flex-direction: column; }
-      .nav { justify-content: flex-start; }
-    }
-
     @media (max-width: 768px) {
-      .topbar { padding: 20px 24px; }
-      .brand { font-size: 20px; letter-spacing: 6px; }
-      .brand span { font-size: 10px; letter-spacing: 3px; }
-      .nav { gap: 14px 18px; }
-      .nav a { font-size: 10px; letter-spacing: 2px; }
       .page { padding: 178px 16px 60px; }
       .container { padding: 36px 24px 46px; }
       h1 { letter-spacing: 4px; }
@@ -541,23 +415,9 @@
   </style>
 </head>
 
-<body>
+<body data-bp-page="thefoundation">
 
-  <header class="topbar">
-    <a class="brand" href="/">
-      BITPANGEA
-      <span>A Digital Supercontinent</span>
-    </a>
-
-    <nav class="nav">
-      <a href="/">The World</a>
-      <a href="/theatlas/">The Atlas</a>
-      <a href="/thefoundation/" class="active" aria-current="page">The Foundation</a>
-      <a href="/thechronicle/">The Chronicle</a>
-      <a href="/thecommons/">The Commons</a>
-      <a href="/thefrontieroffice/">The Frontier Office</a>
-    </nav>
-  </header>
+<div id="bp-header"></div>
 
   <main class="page">
     <article class="container">
@@ -889,26 +749,6 @@
       <div class="status">Codex Principles · Living Doctrine · Cartographic Period</div>
     </article>
  </main>
-<footer class="bp-footer">
-<div class="footer-links">
-<a href="/">The World</a>
-<a href="/theatlas/">The Atlas</a>
-<a href="/thefoundation/">The Foundation</a>
-<a href="/thechronicle/">The Chronicle</a>
-<a href="/thecommons/">The Commons</a>
-<a href="/thefrontieroffice/">The Frontier Office</a>
-<a href="/thecovenant/">The Covenant</a>
-</div>
-<div class="footer-divider"></div>
-<div class="footer-notice">
-<p>BitPangea is an exploratory concept.</p>
-<p>No parcels exist. No allocations exist. No token exists.</p>
-<p>No blockchain has been selected.</p>
-</div>
-<div class="footer-divider"></div>
-<div class="footer-copy">
-      © 2026 BitPangea · Built on Cryptographic Permanence
-    </div>
-</footer>
+<div id="bp-footer"></div>
 </body>
 </html>
