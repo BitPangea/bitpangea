@@ -8,6 +8,11 @@
 <!-- Favicons -->
 <link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="/assets/favicon.svg" rel="shortcut icon"/>
+
+<!-- New Header -->
+<link rel="stylesheet" href="/assets/css/bitpangea-framework.css">
+<script src="/assets/js/bitpangea-framework.js" defer></script>
+  
 <meta content="The Truths — the constitutional realities of BitPangea, preserving what is unconditionally true of the world." name="description"/>
 <!-- BitPangea Metadata -->
 <meta content="#00c8d7" name="theme-color"/>
@@ -102,75 +107,7 @@
       pointer-events: none;
     }
 
-    .topbar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      min-height: 86px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 28px;
-      padding: 18px 42px;
-      background: rgba(0, 0, 0, 0.78);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(212, 169, 56, 0.14);
-      z-index: 1000;
-    }
-
-    .brand {
-      flex: 0 0 auto;
-      color: var(--white);
-      text-decoration: none;
-      letter-spacing: 9px;
-      font-size: 24px;
-      font-weight: 400;
-      text-transform: uppercase;
-      white-space: nowrap;
-    }
-
-    .brand span {
-      display: block;
-      margin-top: 4px;
-      color: var(--gold);
-      font-size: 11px;
-      letter-spacing: 4px;
-      text-transform: uppercase;
-    }
-
-    .nav {
-      display: flex;
-      justify-content: flex-end;
-      flex-wrap: wrap;
-      gap: 18px 28px;
-    }
-
-    .nav a,
-    .nav a:visited {
-      color: rgba(212, 169, 56, 0.92);
-      text-decoration: none;
-      font-size: 12px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      transition: all .25s ease;
-      white-space: nowrap;
-    }
-
-    .nav a.active,
-    .nav a[aria-current="page"] {
-      color: #ffffff;
-      border-bottom: 1px solid rgba(212, 169, 56, 0.95);
-      padding-bottom: 4px;
-      text-shadow: 0 0 12px rgba(212, 169, 56, 0.65);
-    }
-
-    .nav a:hover {
-      color: #ffffff;
-      text-shadow: 0 0 12px rgba(212,169,56,.6);
-    }
-
-    .page {
+     .page {
       width: 100%;
       padding: 150px 28px 90px;
     }
@@ -332,58 +269,6 @@
       background: rgba(0, 0, 0, 0.35);
     }
 
-    .bp-footer {
-      margin-top: 120px;
-      padding: 60px 40px;
-      text-align: center;
-      border-top: 1px solid rgba(255,191,0,.15);
-      background: rgba(0,0,0,.72);
-    }
-
-    .footer-links {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 24px;
-      margin-bottom: 24px;
-    }
-
-    .footer-links a,
-    .footer-links a:visited {
-      color: rgba(212, 169, 56, 0.9);
-      text-decoration: none;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: 12px;
-    }
-
-    .footer-links a:hover {
-      color: #ffffff;
-      text-shadow: 0 0 12px rgba(212,169,56,.6);
-    }
-
-    .footer-divider {
-      width: 120px;
-      height: 1px;
-      background: rgba(212,160,23,.35);
-      margin: 24px auto;
-    }
-
-    .footer-notice p {
-      margin-bottom: 8px;
-      font-size: 14px;
-      color: rgba(255,255,255,.65);
-      letter-spacing: 2px;
-      text-transform: uppercase;
-    }
-
-    .footer-copy {
-      color: rgba(255,255,255,.45);
-      font-size: 11px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-    }
-
     .domain-nav {
       display: flex;
       flex-wrap: wrap;
@@ -507,17 +392,7 @@
       color: rgba(255,255,255,0.84);
     }
 
-    @media (max-width: 980px) {
-      .topbar { align-items: flex-start; flex-direction: column; }
-      .nav { justify-content: flex-start; }
-    }
-
-    @media (max-width: 768px) {
-      .topbar { padding: 20px 24px; }
-      .brand { font-size: 20px; letter-spacing: 6px; }
-      .brand span { font-size: 10px; letter-spacing: 3px; }
-      .nav { gap: 14px 18px; }
-      .nav a { font-size: 10px; letter-spacing: 2px; }
+      @media (max-width: 768px) {
       .page { padding: 178px 16px 60px; }
       .container { padding: 36px 24px 46px; }
       h1 { letter-spacing: 4px; }
@@ -544,29 +419,11 @@
 @media(max-width:768px){.truths-header{flex-direction:column;align-items:flex-start}.truths-seal{width:125px;height:125px}.truth-card{padding:20px}}
 </style>
 </head>
-<body>
-<header class="topbar">
-<a class="brand" href="/">
-      BITPANGEA
-      <span>A Digital Supercontinent</span>
-</a>
-<nav class="nav"><a href="/">The World</a><a href="/theatlas/">The Atlas</a><a aria-current="page" class="active" href="/thefoundation/">The Foundation</a><a href="/thechronicle/">The Chronicle</a><a href="/thecommons/">The Commons</a><a href="/thefrontieroffice/">The Frontier Office</a></nav>
-</header>
+<body data-bp-page="thefoundation">
+<div id="bp-header"></div>
 <main class="page">
 <article class="container"><section class="hero"><div class="eyebrow">FOUNDATIONAL RECORD · CONSTITUTIONAL REALITIES</div><div class="truths-header"><img alt="The Truths Seal" class="truths-seal" src="/thetruths/thetruths.png"/><div class="truths-title"><h1>The<br/>Truths</h1><div class="subtitle">The Constitutional Realities of BitPangea</div></div></div><div class="divider"></div><p class="intro">The Truths preserve what is unconditionally true of BitPangea. They do not instruct, persuade, or inspire conduct. They state the realities of the world as the world is understood within The Foundation.</p><div class="register-note"><span>Foundational Distinction</span><p>Truths describe what is. Principles guide what should be. Maxims preserve what should be remembered.</p></div></section><section class="section"><h2>Purpose</h2><p>The Truths are not rules, doctrines, aspirations, or values. They are constitutional realities: statements that remain true regardless of discovery, ownership, recognition, belief, or future interpretation.</p><p>Where The Codex defines terms, The Truths declare the conditions that make those definitions possible. Where The Principles will guide stewardship, The Truths remain descriptive and foundational.</p></section><section class="section"><h2>I · Existence</h2><div class="truth-grid"><div class="truth-card"><div class="truth-number">Truth I</div><h3>The world exists.</h3><p>Existence precedes observation, discovery, ownership, or understanding.</p></div><div class="truth-card"><div class="truth-number">Truth II</div><h3>The world is one.</h3><p>BitPangea is a single, continuous cartographic whole.</p></div><div class="truth-card"><div class="truth-number">Truth III</div><h3>The world is finite.</h3><p>Its extent is complete, even where its details remain unknown.</p></div><div class="truth-card"><div class="truth-number">Truth IV</div><h3>The world cannot expand.</h3><p>No later act can increase the world beyond its established extent.</p></div><div class="truth-card"><div class="truth-number">Truth V</div><h3>The world cannot be duplicated.</h3><p>No copy, mirror, fork, or simulation becomes BitPangea itself.</p></div></div></section><section class="section"><h2>II · Structure</h2><div class="truth-grid"><div class="truth-card"><div class="truth-number">Truth VI</div><h3>Structure precedes discovery.</h3><p>The world possesses order before anyone recognizes it.</p></div><div class="truth-card"><div class="truth-number">Truth VII</div><h3>Every Parcel belongs to the world.</h3><p>No Parcel exists outside the single world to which it belongs.</p></div><div class="truth-card"><div class="truth-number">Truth VIII</div><h3>Every place has identity.</h3><p>Coordinates identify place without possessing it.</p></div><div class="truth-card"><div class="truth-number">Truth IX</div><h3>Boundaries distinguish.</h3><p>A Boundary creates distinction without creating a separate world.</p></div><div class="truth-card"><div class="truth-number">Truth X</div><h3>Relation is real.</h3><p>No Parcel exists in isolation from the structure around it.</p></div></div></section><section class="section"><h2>III · Permanence</h2><div class="truth-grid"><div class="truth-card"><div class="truth-number">Truth XI</div><h3>The world remains.</h3><p>The world persists beyond individual observers, records, claims, or generations.</p></div><div class="truth-card"><div class="truth-number">Truth XII</div><h3>Truth does not require recognition.</h3><p>Reality exists independent of belief, approval, or awareness.</p></div><div class="truth-card"><div class="truth-number">Truth XIII</div><h3>The finite whole precedes every part.</h3><p>Parcels, boundaries, and coordinates derive meaning from the world they belong to.</p></div></div></section><section class="section"><h2>IV · Discovery</h2><div class="truth-grid"><div class="truth-card"><div class="truth-number">Truth XIV</div><h3>Discovery reveals. It does not create.</h3><p>To discover is to uncover what already exists.</p></div><div class="truth-card"><div class="truth-number">Truth XV</div><h3>The map follows the world.</h3><p>The map records the world; it does not define the world into existence.</p></div><div class="truth-card"><div class="truth-number">Truth XVI</div><h3>Knowledge expands. The world remains.</h3><p>Understanding may change without changing the world itself.</p></div><div class="truth-card"><div class="truth-number">Truth XVII</div><h3>The frontier is a condition of knowing.</h3><p>What is unknown is not absent; it is unrevealed.</p></div></div></section><section class="section"><h2>V · Record</h2><div class="truth-grid"><div class="truth-card"><div class="truth-number">Truth XVIII</div><h3>The record preserves discovery.</h3><p>What is discovered may be remembered through record.</p></div><div class="truth-card"><div class="truth-number">Truth XIX</div><h3>The Archive does not create the past.</h3><p>Preservation carries memory forward; it does not invent what happened.</p></div></div></section><section class="section"><h2>VI · Foundation</h2><div class="truth-grid"><div class="truth-card"><div class="truth-number">Truth XX</div><h3>The Foundation preserves understanding.</h3><p>The Foundation gathers the works through which the world becomes intelligible.</p></div><div class="truth-card"><div class="truth-number">Truth XXI</div><h3>BitPangea is one world.</h3><p>All later structures, relations, records, and civilizations arise within the same finite world.</p></div></div></section><section class="section"><h2>What The Truths Are Not</h2><p>The Truths are not the ethical code of BitPangea. They are not the stewardship doctrine, the cultural sayings, or the civilizational constitution. Those belong elsewhere within The Foundation and future civilizational works.</p><p>The Truths are the floor beneath those works: the realities upon which later principles and maxims may stand.</p></section><div class="status">Foundational Record · Active Index</div></article>
 </main>
-<footer class="bp-footer">
-<div class="footer-links"><a href="/">The World</a><a href="/theatlas/">The Atlas</a><a href="/thefoundation/">The Foundation</a><a href="/thechronicle/">The Chronicle</a><a href="/thecommons/">The Commons</a><a href="/thefrontieroffice/">The Frontier Office</a><a href="/thecovenant/">The Covenant</a></div>
-<div class="footer-divider"></div>
-<div class="footer-notice">
-<p>BitPangea is an exploratory concept.</p>
-<p>No parcels exist. No allocations exist. No token exists.</p>
-<p>No blockchain has been selected.</p>
-</div>
-<div class="footer-divider"></div>
-<div class="footer-copy">
-      © 2026 BitPangea · Built on Cryptographic Permanence
-    </div>
-</footer>
+<div id="bp-footer"></div>
 </body>
 </html>
