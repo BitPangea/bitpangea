@@ -253,18 +253,15 @@ Provides:
 }
 
 .bp-nav a {
+  position: relative;
+  display: inline-block;
 
-    color: rgba(212,169,56,.92);
-
-    text-decoration: none;
-
-    text-transform: uppercase;
-
-    letter-spacing: 3px;
-
-    font-size: 12px;
-
-    transition: .25s;
+  color: rgba(212,169,56,.92);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  transition: .25s;
 }
 
 .bp-nav a:hover {
