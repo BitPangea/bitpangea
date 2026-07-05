@@ -278,14 +278,22 @@ Provides:
 
 .bp-nav a.active,
 .bp-nav a[aria-current="page"] {
+  position: relative;
+  color: var(--bp-white);
+  text-shadow: 0 0 12px rgba(212, 169, 56, .65);
+}
 
-    color: white;
-
-    border-bottom: 1px solid var(--bp-gold);
-
-    padding-bottom: 4px;
-
-    text-shadow: 0 0 12px rgba(212,169,56,.55);
+.bp-nav a.active::after,
+.bp-nav a[aria-current="page"]::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  width: calc(100% + 14px);
+  height: 1px;
+  transform: translateX(-50%);
+  background: var(--bp-gold);
+  box-shadow: 0 0 10px rgba(212, 169, 56, .75);
 }
 
 /* ------------------------------------- */
