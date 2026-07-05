@@ -30,8 +30,8 @@ function bpSetActiveNav() {
 }
 
 async function bpInit() {
-  await bpLoadInclude("bp-header", "/assets/includes/header.html");
-  await bpLoadInclude("bp-footer", "/assets/includes/footer.html");
+  await bpLoadInclude("bp-header", "/assets/includes/bitpangea-header.html");
+  await bpLoadInclude("bp-footer", "/assets/includes/bitpangea-footer.html");
 
   bpSetActiveNav();
 }
