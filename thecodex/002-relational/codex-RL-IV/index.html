@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Codex RL-IV — The Direction | BitPangea</title>
+
+  <!-- Favicons -->
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="/assets/favicon.svg">
+
+  <!-- New Header -->
+<link rel="stylesheet" href="/assets/css/bitpangea-framework.css">
+<script src="/assets/js/bitpangea-framework.js" defer></script>
+
+  <meta
+    name="description"
+    content="Codex RL-IV — The Direction establishes direction as the cartographic orientation describing the relative position of one Parcel with respect to another within BitPangea."
+  />
+
+  <!-- BitPangea Metadata -->
+  <meta name="theme-color" content="#00c8d7">
+  <meta name="robots" content="index,follow">
+
+  <link rel="canonical" href="https://bitpangea.com/thecodex/002-relational/codex-RL-IV/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Codex RL-IV — The Direction | BitPangea">
+  <meta property="og:description" content="The fourth relational definition of BitPangea: direction as the cartographic orientation describing the relative position of one Parcel with respect to another.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://bitpangea.com/thecodex/002-relational/codex-RL-IV/">
+  <meta property="og:image" content="https://bitpangea.com/images/bitpangea-og.jpg">
+  <meta property="og:site_name" content="BitPangea">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter/X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Codex RL-IV — The Direction | BitPangea">
+  <meta name="twitter:description" content="The fourth relational definition of BitPangea: direction as cartographic orientation.">
+  <meta name="twitter:image" content="https://bitpangea.com/images/bitpangea-og.jpg">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Article",
+    "headline":"Codex RL-IV — The Direction",
+    "name":"Codex RL-IV — The Direction",
+    "url":"https://bitpangea.com/thecodex/002-relational/codex-RL-IV/",
+    "datePublished":"2026-07-07",
+    "description":"The fourth formal definition within the Relational Domain of BitPangea, establishing direction as the cartographic orientation describing the relative position of one Parcel with respect to another.",
+    "isPartOf":{
+      "@type":"WebPage",
+      "name":"The Codex",
+      "url":"https://bitpangea.com/thecodex/"
+    },
+    "publisher":{
+      "@type":"Organization",
+      "name":"BitPangea",
+      "url":"https://bitpangea.com/"
+    }
+  }
+  </script>
+
+   <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #02050a;
+      --gold: #d4a938;
+      --cyan: #00c8d7;
+      --white: #ffffff;
+      --muted: rgba(255, 255, 255, 0.74);
+      --panel: rgba(0, 0, 0, 0.50);
+      --panel-soft: rgba(0, 0, 0, 0.32);
+      --line: rgba(212, 169, 56, 0.18);
+    }
+
+    html, body {
+      width: 100%;
+      min-height: 100%;
+      background: var(--bg);
+      color: var(--white);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      position: relative;
+      line-height: 1.72;
+      overflow-x: hidden;
+      background: var(--bg);
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(2, 5, 10, 0.76), rgba(2, 5, 10, 0.92)),
+        url("../images/bitpangea.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      opacity: 1;
+      z-index: -2;
+      pointer-events: none;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(circle at 72% 12%, rgba(0, 200, 215, 0.12), transparent 35%),
+        radial-gradient(circle at 18% 18%, rgba(212, 169, 56, 0.12), transparent 34%),
+        linear-gradient(90deg, rgba(0,0,0,.60), rgba(0,0,0,.26), rgba(0,0,0,.66));
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    .page {
+      width: 100%;
+      padding: 150px 28px 90px;
+    }
+
+    .container {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 58px;
+      background: rgba(0, 0, 0, 0.44);
+      border: 1px solid var(--line);
+      box-shadow: 0 0 70px rgba(0, 0, 0, 0.58);
+      backdrop-filter: blur(4px);
+    }
+
+    .hero {
+      max-width: 860px;
+      margin-bottom: 46px;
+    }
+
+    .eyebrow {
+      color: var(--cyan);
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-size: 12px;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      color: var(--white);
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: 1.02;
+      letter-spacing: 7px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      text-shadow: 0 0 24px rgba(0, 0, 0, 0.92);
+    }
+
+    .subtitle {
+      color: var(--gold);
+      font-size: 20px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+    }
+
+    .intro {
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 20px;
+      max-width: 820px;
+      margin-bottom: 32px;
+    }
+
+    .divider {
+      width: 64px;
+      height: 2px;
+      background: var(--gold);
+      margin: 34px 0 42px;
+      box-shadow: 0 0 14px rgba(212, 169, 56, 0.65);
+    }
+
+    .section {
+      margin-top: 34px;
+      padding: 34px 34px 30px;
+      background: var(--panel-soft);
+      border: 1px solid rgba(212, 169, 56, 0.13);
+    }
+
+    .section + .section { margin-top: 26px; }
+
+    h2 {
+      margin-bottom: 18px;
+      color: var(--white);
+      font-size: 24px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      text-shadow: 0 0 14px rgba(0, 0, 0, 0.9);
+    }
+
+    p {
+      margin-bottom: 20px;
+      color: var(--white);
+      font-size: 17px;
+      text-shadow: 0 0 9px rgba(0, 0, 0, 0.9);
+    }
+
+    p:last-child { margin-bottom: 0; }
+
+    strong { color: var(--white); }
+
+    ul {
+      margin: 18px 0 4px 0;
+      list-style: none;
+    }
+
+    li {
+      position: relative;
+      margin-bottom: 14px;
+      padding-left: 24px;
+      color: rgba(255,255,255,0.90);
+      font-size: 17px;
+      text-shadow: 0 0 9px rgba(0, 0, 0, 0.9);
+    }
+
+    li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 13px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--gold);
+      box-shadow: 0 0 10px rgba(212,169,56,.70);
+    }
+
+    blockquote {
+      margin: 36px 0;
+      padding: 30px 36px;
+      border-left: 3px solid var(--gold);
+      background: rgba(0, 0, 0, 0.52);
+      color: var(--white);
+      font-size: 25px;
+      line-height: 1.45;
+      letter-spacing: 1px;
+      box-shadow: 0 0 28px rgba(0, 0, 0, 0.45);
+    }
+
+    .quote-label {
+      display: block;
+      color: var(--cyan);
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .codex-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin: 36px 0 52px;
+    }
+
+    .codex-card {
+      padding: 22px 20px;
+      background: rgba(0, 0, 0, 0.42);
+      border: 1px solid rgba(212, 169, 56, 0.20);
+      box-shadow: 0 0 22px rgba(0, 0, 0, 0.30);
+    }
+
+    .codex-card h3 {
+      color: var(--gold);
+      font-size: 13px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .codex-card p {
+      color: rgba(255,255,255,0.82);
+      font-size: 15px;
+      line-height: 1.55;
+      margin: 0;
+    }
+
+    .entry-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .entry-card {
+      display: block;
+      padding: 28px 28px 26px;
+      background: rgba(0, 0, 0, 0.44);
+      border: 1px solid rgba(212, 169, 56, 0.24);
+      box-shadow: 0 0 26px rgba(0, 0, 0, 0.34);
+      text-decoration: none;
+      transition: all .25s ease;
+    }
+
+    .entry-card:hover {
+      border-color: rgba(212, 169, 56, 0.52);
+      background: rgba(0, 0, 0, 0.56);
+      box-shadow: 0 0 34px rgba(212, 169, 56, 0.10);
+      transform: translateY(-2px);
+    }
+
+    .entry-card .entry-meta {
+      color: var(--cyan);
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .entry-card h3 {
+      color: var(--gold);
+      font-size: 20px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .entry-card p {
+      color: rgba(255,255,255,0.86);
+      font-size: 16px;
+      line-height: 1.65;
+      margin-bottom: 16px;
+    }
+
+    .entry-card .entry-link {
+      color: var(--white);
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .status {
+      margin-top: 38px;
+      padding: 18px 24px;
+      border: 1px solid rgba(212, 169, 56, 0.38);
+      color: var(--gold);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-size: 12px;
+      display: inline-block;
+      background: rgba(0, 0, 0, 0.35);
+    }
+
+.source-link a,
+.source-link a:visited {
+ color: rgba(212, 169, 56, 0.9);
+ text-decoration: none;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ font-size: 12px;
+}
+
+.source-link a:hover {
+ color: #ffffff;
+ text-shadow: 0 0 12px rgba(212,169,56,.6);
+}
+
+
+.source-link {
+ margin-top: 18px;
+}
+
+
+    @media (max-width: 980px) {
+
+      .codex-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 768px) {
+
+      .page { padding: 178px 16px 60px; }
+      .container { padding: 36px 24px 46px; }
+      h1 { letter-spacing: 4px; }
+      .subtitle { font-size: 16px; }
+      .intro { font-size: 18px; }
+      p, li { font-size: 16px; }
+      .section { padding: 28px 22px; }
+      blockquote { font-size: 20px; padding: 24px 24px; }
+    }
+  </style>
+</head>
+
+<body data-bp-page="thefoundation">
+
+<div id="bp-header"></div>
+
+  <main class="page">
+    <article class="container">
+      <section class="hero">
+        <div class="eyebrow">Codex RL-IV · July 7, 2026</div>
+
+        <h1>Codex RL-IV<br>The Direction</h1>
+
+        <div class="subtitle">The Fourth Relational Definition</div>
+
+        <p class="intro">
+          Codex RL-IV establishes the fourth formal definition within the Relational Domain of BitPangea.
+          Before movement, navigation, routing, access, governance, stewardship, implementation, or civilizational use, direction is acknowledged as the cartographic orientation through which the relative position of one Parcel with respect to another is described within the world.
+        </p>
+
+        <div class="codex-meta" aria-label="Codex metadata">
+          <span class="pill">The Codex</span>
+          <span class="pill">Relational Domain</span>
+          <span class="pill">Cartographic Period</span>
+          <span class="pill">Adopted Definition</span>
+        </div>
+
+        <div class="divider"></div>
+
+        <blockquote>
+          <span class="quote-label">Codex Definition</span>
+          A Direction is the cartographic orientation describing the relative position of one Parcel with respect to another within BitPangea.
+        </blockquote>
+      </section>
+
+      <section class="section">
+        <h2>Domain Assignment</h2>
+
+        <p>
+          Codex RL-IV belongs to the <strong>Relational Domain (RL)</strong>.
+        </p>
+
+        <p>
+          The Relational Domain asks: <strong>How do things relate?</strong> It preserves Codices that define how structural entities are arranged, connected, measured, oriented, extended, or understood in relation to one another.
+        </p>
+
+        <p>
+          Direction is relational because it does not describe a single Parcel in isolation. It describes the orientation of one Parcel with respect to another Parcel within BitPangea, without assigning movement, navigation, accessibility, ownership, jurisdiction, value, or purpose.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>The Definition</h2>
+
+        <p>The existence of multiple Parcels within BitPangea makes orientation possible.</p>
+
+        <p>A Direction exists not to establish movement, navigation, access, ownership, jurisdiction, value, settlement, or claim, but to describe the relative orientation between Parcels.</p>
+
+        <p>Without Adjacency, Parcels cannot be understood in direct relation.</p>
+
+        <p>Without Contiguity, Parcels cannot be understood as connected through the world.</p>
+
+        <p>Without Distance, separation cannot be described as measure.</p>
+
+        <p>Without Direction, relative position cannot be described as orientation.</p>
+      </section>
+
+      <section class="section">
+        <h2>Formal Definition</h2>
+
+        <p>A Direction is the cartographic orientation describing the relative position of one Parcel with respect to another within BitPangea.</p>
+
+        <p>A Direction is a property of the world's relational structure rather than a property of either Parcel individually.</p>
+
+        <p>Direction describes orientation independently of movement, path, accessibility, ownership, jurisdiction, value, or purpose.</p>
+      </section>
+
+      <section class="section">
+        <h2>Immutable Properties</h2>
+
+        <p>Each Direction possesses the following immutable properties:</p>
+
+        <div class="property-grid" aria-label="Immutable direction properties">
+          <div class="property-card">
+            <h3>Orientation</h3>
+            <p>A Direction describes the relative position of one Parcel with respect to another within BitPangea.</p>
+          </div>
+
+          <div class="property-card">
+            <h3>Dependence</h3>
+            <p>A Direction depends upon the existence of Parcels and their positions within the world's cartographic structure.</p>
+          </div>
+
+          <div class="property-card">
+            <h3>Asymmetry</h3>
+            <p>A Direction is inherently asymmetric. Reversing the order of two Parcels reverses the Direction while preserving the underlying relationship between the Parcels.</p>
+          </div>
+
+          <div class="property-card">
+            <h3>Universality</h3>
+            <p>A Direction may exist between any two Parcels regardless of adjacency, contiguity, measured distance, ownership, jurisdiction, or use.</p>
+          </div>
+
+          <div class="property-card">
+            <h3>Neutrality</h3>
+            <p>A Direction does not assign movement, navigation, accessibility, value, ownership, jurisdiction, or purpose. It merely describes orientation.</p>
+          </div>
+
+          <div class="property-card">
+            <h3>Permanence</h3>
+            <p>Once established within the canonical structure of the world, a Direction cannot be altered without altering the world's cartographic structure.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section two-column">
+        <div>
+          <h2>What A Direction Is</h2>
+
+          <ul>
+            <li>A cartographic orientation</li>
+            <li>A description of relative position between two Parcels</li>
+            <li>An asymmetric relational property</li>
+            <li>A complement to Distance</li>
+            <li>The first orientation established within the Relational Domain</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>What A Direction Is Not</h2>
+
+          <ul>
+            <li>Movement</li>
+            <li>Navigation</li>
+            <li>A route</li>
+            <li>A path</li>
+            <li>Accessibility</li>
+            <li>Ownership</li>
+            <li>Jurisdiction</li>
+            <li>A statement of value or purpose</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Principles Established by Codex RL-IV</h2>
+
+        <div class="principle-card">
+          <h3>1. Direction Requires Parcels</h3>
+          <p>Direction cannot exist in isolation. It requires at least two Parcels whose relative orientation can be described within BitPangea.</p>
+        </div>
+
+        <div class="principle-card">
+          <h3>2. Direction Requires Position</h3>
+          <p>Direction depends upon the position of Parcels within the world's cartographic structure. Without position, relative orientation cannot be described.</p>
+        </div>
+
+        <div class="principle-card">
+          <h3>3. Direction Is Relational</h3>
+          <p>Direction describes one Parcel with respect to another. It is not an isolated attribute of either Parcel alone.</p>
+        </div>
+
+        <div class="principle-card">
+          <h3>4. Direction Is Asymmetric</h3>
+          <p>Direction changes when the order of the Parcels is reversed. The relationship remains, but the orientation is reversed.</p>
+        </div>
+
+        <div class="principle-card">
+          <h3>5. Direction Complements Distance</h3>
+          <p>Distance describes separation. Direction describes orientation. Together they allow relative position to be described without creating movement, route, access, or navigation.</p>
+        </div>
+
+        <div class="principle-card">
+          <h3>6. Orientation Precedes Navigation</h3>
+          <p>Before a path can be followed or a route can be interpreted, orientation must be describable. Direction establishes orientation before navigation assigns use.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Relationship to Coordinate</h2>
+
+        <p>
+          Coordinate and Direction both concern position, but they do so in different ways.
+        </p>
+
+        <p>
+          A Coordinate describes the position of a Parcel individually within BitPangea. A Direction describes the relative position of one Parcel with respect to another.
+        </p>
+
+        <p>
+          Coordinate belongs to the Structural Domain because it identifies where a Parcel is. Direction belongs to the Relational Domain because it describes how one Parcel is oriented in relation to another.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Scope</h2>
+
+        <p>This Codex acknowledges the existence and necessity of Direction as a cartographic orientation.</p>
+
+        <p>It establishes that relative orientation between Parcels can be described. It does not establish the specific reference frame, directional notation, coordinate convention, route system, or technical implementation by which orientation is represented.</p>
+
+        <p>It does not establish:</p>
+
+        <ul>
+          <li>Movement between Parcels</li>
+          <li>Routes or paths</li>
+          <li>Transportation systems</li>
+          <li>Navigation</li>
+          <li>Accessibility</li>
+          <li>Travel time</li>
+          <li>Territories, regions, or districts</li>
+          <li>Ownership or jurisdiction</li>
+          <li>Civilizational meaning</li>
+          <li>Cartographic implementation</li>
+        </ul>
+
+        <p>These questions remain subjects for future inquiry.</p>
+      </section>
+
+      <blockquote>
+        <span class="quote-label">Cartographic Doctrine</span>
+        Distance enables measure. Direction enables orientation.
+      </blockquote>
+
+      <div class="status">Codex RL-IV · Relational Domain · Adopted Definition · Cartographic Period</div>
+
+      <p class="source-link">
+        <a href="codex-RL-IV-direction.md">View Markdown Source</a>
+      </p>
+
+      <section class="section">
+        <h2>Historical Record</h2>
+
+        <p>
+          This Codex was adopted as <strong>Codex RL-IV — The Direction</strong> within the Relational Domain after the establishment of Adjacency, Contiguity, and Distance.
+        </p>
+
+        <p>
+          It completes the first foundational arc of the Relational Domain by establishing orientation as the fourth cartographic primitive of BitPangea, following relation, connection, and measure.
+        </p>
+      </section>
+    </article>
+  </main>
+<div id="bp-footer"></div>
+
+</body>
+</html>
