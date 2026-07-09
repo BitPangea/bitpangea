@@ -4,6 +4,24 @@
 **Category:** Spatial Properties  
 **Review Period:** July 2026
 
+# Participants
+
+This constitutional review was conducted collaboratively through multiple independent architectural evaluations.
+
+Participants included:
+
+- **Founder:** Christopher Burris
+- **OpenAI ChatGPT** — Constitutional architecture, synthesis, architectural critique, and editorial review.
+- **Anthropic Claude** — Independent constitutional architecture review and domain analysis.
+- **Google Gemini** — Independent constitutional exploration of post-relational architecture, higher-order spatial concepts, and World Properties.
+- **xAI Grok** — Independent constitutional architecture review and comparative analysis.
+
+Each participant contributed independent reasoning during the review process. The adopted constitutional architecture reflects the synthesis of these perspectives rather than the exclusive adoption of any single proposal.
+
+---
+
+Unlike earlier Codex reviews that focused primarily on refining individual constitutional definitions, this review fundamentally reorganized the constitutional architecture of BitPangea. Through independent review by multiple AI systems and subsequent constitutional synthesis, the proposed Spatial Domain was ultimately recognized as the opening category within the broader World Properties Domain, establishing a new constitutional direction for future Codices.
+
 ---
 
 # Purpose of Review
