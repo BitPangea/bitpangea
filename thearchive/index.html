@@ -362,6 +362,59 @@
       font-size: 14px;
     }
 
+    .archive-records {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .archive-record-group {
+      padding: 24px 22px;
+      background: rgba(0, 0, 0, 0.42);
+      border: 1px solid rgba(212, 169, 56, 0.20);
+      box-shadow: 0 0 22px rgba(0, 0, 0, 0.30);
+    }
+
+    .archive-record-group h3 {
+      color: var(--gold);
+      font-size: 13px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .archive-record-group ul { margin: 0; }
+
+    .archive-record-group li {
+      margin-bottom: 10px;
+      padding-left: 0;
+    }
+
+    .archive-record-group li::before { display: none; }
+
+    .archive-record-link,
+    .archive-record-link:visited {
+      color: rgba(255, 255, 255, 0.88);
+      text-decoration: none;
+      font-size: 15px;
+      line-height: 1.5;
+      border-bottom: 1px solid rgba(212, 169, 56, 0.22);
+      transition: color .2s ease, border-color .2s ease, text-shadow .2s ease;
+    }
+
+    .archive-record-link:hover {
+      color: var(--gold);
+      border-color: rgba(212, 169, 56, 0.65);
+      text-shadow: 0 0 10px rgba(212, 169, 56, 0.28);
+    }
+
+    .record-note {
+      color: rgba(255, 255, 255, 0.66);
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
     .status {
       margin-top: 38px;
       padding: 18px 24px;
@@ -388,7 +441,8 @@
     
     @media (max-width: 980px) {
       
-      .archive-grid {
+      .archive-grid,
+      .archive-records {
         grid-template-columns: 1fr;
       }
     }
@@ -475,8 +529,8 @@
         <div class="divider"></div>
 
         <p class="intro">
-          The Archive is a future home for important records, references, preserved knowledge,
-          and historical materials that may one day help future builders understand how BitPangea began.
+          The Archive preserves important records, references, inherited knowledge,
+          and historical materials that may help future builders understand how BitPangea began.
         </p>
 
         <blockquote>
@@ -488,9 +542,9 @@
       <div class="archive-sigil">
         <div class="small">Archive Status</div>
         <div class="large">
-          Mostly empty.<br>
-          Intentionally preserved.<br>
-          Waiting for history.
+          Preservation has begun.<br>
+          Earlier forms endure.<br>
+          History remains accessible.
         </div>
       </div>
 
@@ -577,7 +631,7 @@
       <div class="archive-empty">
         <p>Current Condition</p>
         <p>
-          The Archive begins almost empty. That is appropriate. A civilization should not invent a past before it has lived one.
+          The Archive began almost empty. It now preserves the first constitutional materials whose earlier forms remain important to the history of BitPangea.
         </p>
       </div>
 
@@ -586,10 +640,9 @@
         Knowledge becomes <a href="/transmissions/transmission005-theinheritance/" class="reliquary-link">inheritance</a> only when someone chooses to preserve it.
       </blockquote>
 
-      <div class="status">Exploratory Concept · Early Stage</div>
+      <div class="status">Active Preservation Record · July 2026</div>
     </article>
   </main>
 <div id="bp-footer"></div>
 </body>
 </html>
-
