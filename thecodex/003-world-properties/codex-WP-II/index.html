@@ -11,14 +11,14 @@
 <!-- New Header -->
 <link href="/assets/css/bitpangea-framework.css" rel="stylesheet"/>
 <script defer="" src="/assets/js/bitpangea-framework.js"></script>
-<meta content="Codex WP-II — The Region establishes Region as the second World Property of BitPangea, describing a coherent large-scale portion of the World." name="description"/>
+<meta content="Codex WP-II — The Region recognizes Region as the second World Property of BitPangea and preserves the mature methodology of World Property discovery." name="description"/>
 <!-- BitPangea Metadata -->
 <meta content="#00c8d7" name="theme-color"/>
 <meta content="index,follow" name="robots"/>
 <link href="https://bitpangea.com/thecodex/003-world-properties/codex-WP-II/" rel="canonical"/>
 <!-- Open Graph -->
 <meta content="Codex WP-II — The Region | BitPangea" property="og:title"/>
-<meta content="The second World Property of BitPangea: Region as the cartographic property describing a coherent large-scale portion of the World." property="og:description"/>
+<meta content="The second World Property of BitPangea: Region as a coherent large-scale portion of the World, recognized rather than created." property="og:description"/>
 <meta content="article" property="og:type"/>
 <meta content="https://bitpangea.com/thecodex/003-world-properties/codex-WP-II/" property="og:url"/>
 <meta content="https://bitpangea.com/images/bitpangea-og.jpg" property="og:image"/>
@@ -27,7 +27,7 @@
 <!-- Twitter/X -->
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="Codex WP-II — The Region | BitPangea" name="twitter:title"/>
-<meta content="The second World Property of BitPangea: Region as the cartographic property describing a coherent large-scale portion of the World." name="twitter:description"/>
+<meta content="The second World Property of BitPangea: Region as a coherent large-scale portion of the World, recognized rather than created." name="twitter:description"/>
 <meta content="https://bitpangea.com/images/bitpangea-og.jpg" name="twitter:image"/>
 <!-- Structured Data -->
 <script type="application/ld+json">
@@ -38,7 +38,8 @@
   "name":"Codex WP-II — The Region",
   "url":"https://bitpangea.com/thecodex/003-world-properties/codex-WP-II/",
   "datePublished":"2026-07-10",
-  "description":"The second formal definition within the World Properties Domain of BitPangea, establishing Region as the cartographic property describing a coherent large-scale portion of the World.",
+  "dateModified":"2026-07-11",
+  "description":"The second formal definition within the World Properties Domain of BitPangea, recognizing Region as a coherent large-scale portion of the World and preserving the mature methodology of World Property discovery.",
   "isPartOf":{"@type":"WebPage","name":"The Codex","url":"https://bitpangea.com/thecodex/"},
   "publisher":{"@type":"Organization","name":"BitPangea","url":"https://bitpangea.com/"}
 }
@@ -366,13 +367,14 @@
       blockquote { font-size: 20px; padding: 24px 24px; }
     }
   </style>
+<link href="/thecodex/003-world-properties/bitpangea-framework.css" rel="stylesheet"/>
 </head>
 <body data-bp-page="thefoundation">
 <div id="bp-header"></div>
 <main class="page">
 <article class="container">
 <section class="hero">
-<div class="eyebrow">Codex WP-II · July 10, 2026</div>
+<div class="eyebrow">Codex WP-II · July 10, 2026 · Refined July 11, 2026</div>
 <h1>Codex WP-II<br/>The Region</h1>
 <div class="subtitle">The Second World Property</div>
 <p class="intro">
@@ -407,23 +409,10 @@
 <p>Extent does not create Region, and Region does not depend upon the prior act of codifying Extent. Their order preserves a constitutionally meaningful path of recognition while leaving both properties ontologically independent.</p>
 </section>
 <section class="section">
-<h2>Spatial Properties</h2>
-<p>Region is the second adopted Codex within the <strong>Spatial Properties</strong> category of the World Properties Domain.</p>
-<div aria-label="Adopted spatial properties" class="codex-grid">
-<div class="codex-card">
-<h3>WP-I · Extent</h3>
-<p>The spatial scope of The World.</p>
+<h2>Recognized World Properties</h2>
+<div id="wp-register">
+<p>Loading recognized World Properties...</p>
 </div>
-<div class="codex-card">
-<h3>WP-II · Region</h3>
-<p>A coherent large-scale portion of The World.</p>
-</div>
-<div class="codex-card">
-<h3>WP-III · Cluster</h3>
-<p>A contiguous portion of The World.</p>
-</div>
-</div>
-<p>These properties are unified by the constitutional question they answer rather than by a requirement that each logically create or constitute the next.</p>
 </section>
 <section class="section">
 <h2>The Definition</h2>
@@ -525,10 +514,35 @@
 <span class="quote-label">Cartographic Doctrine</span>
   Region exists before recognition. The Codex reveals and preserves what The World already possesses.
 </blockquote>
-<div class="status">Codex WP-II · World Properties Domain · Spatial Properties · Adopted Definition</div>
+<div class="status">Codex WP-II · World Properties Domain · Spatial Properties · Refined Adopted Definition</div>
 <p class="source-link"><a href="codex-WP-II-region.md">View Markdown Source</a></p>
 </article>
 </main>
 <div id="bp-footer"></div>
+<script>
+document.addEventListener("DOMContentLoaded", async () => {
+  const registerContainer = document.getElementById("wp-register");
+
+  if (!registerContainer) return;
+
+  try {
+    const response = await fetch(
+      "/thecodex/003-world-properties/wp-register.html"
+    );
+
+    if (!response.ok) {
+      throw new Error(`Unable to load register: ${response.status}`);
+    }
+
+    registerContainer.innerHTML = await response.text();
+  } catch (error) {
+    console.error("World Properties Register error:", error);
+
+    registerContainer.innerHTML = `
+      <p>The World Properties Register could not be loaded.</p>
+    `;
+  }
+});
+</script>
 </body>
 </html>
