@@ -11,7 +11,7 @@
 <!-- New Header -->
 <link href="/assets/css/bitpangea-framework.css" rel="stylesheet"/>
 <script defer="" src="/assets/js/bitpangea-framework.js"></script>
-<meta content="Codex WP-III — The Cluster establishes Cluster as the third World Property of BitPangea, describing a contiguous portion of the World." name="description"/>
+<meta content="Codex WP-III — The Cluster recognizes Cluster as the third World Property of BitPangea, describing a contiguous portion of the World." name="description"/>
 <!-- BitPangea Metadata -->
 <meta content="#00c8d7" name="theme-color"/>
 <meta content="index,follow" name="robots"/>
@@ -38,7 +38,7 @@
   "name":"Codex WP-III — The Cluster",
   "url":"https://bitpangea.com/thecodex/003-world-properties/codex-WP-III/",
   "datePublished":"2026-07-11",
-  "description":"The third formal definition within the World Properties Domain of BitPangea, establishing Cluster as the cartographic property describing a contiguous portion of the World.",
+  "description":"The third formal definition within the World Properties Domain of BitPangea, recognizing Cluster as the cartographic property describing a contiguous portion of the World.",
   "isPartOf":{"@type":"WebPage","name":"The Codex","url":"https://bitpangea.com/thecodex/"},
   "publisher":{"@type":"Organization","name":"BitPangea","url":"https://bitpangea.com/"}
 }
@@ -366,6 +366,7 @@
       blockquote { font-size: 20px; padding: 24px 24px; }
     }
   </style>
+<link href="/thecodex/003-world-properties/bitpangea-framework.css" rel="stylesheet"/>
 </head>
 <body data-bp-page="thefoundation">
 <div id="bp-header"></div>
@@ -376,7 +377,7 @@
 <h1>Codex WP-III<br/>The Cluster</h1>
 <div class="subtitle">The Third World Property</div>
 <p class="intro">
-    Codex WP-III continues the World Properties Domain by establishing <strong>Cluster</strong>
+    Codex WP-III continues the World Properties Domain by recognizing <strong>Cluster</strong>
     as the third constitutional Spatial Property of The World. Following the recognition
     of Extent and Region, BitPangea now preserves another objective property already
     existing within The World: the contiguous portion known as a Cluster.
@@ -408,21 +409,9 @@
 <p>These Codices do not create one another, nor do they bring their subjects into existence. Each preserves the recognition of an objective World Property that existed before constitutional inquiry reached it.</p>
 </section>
 <section class="section">
-<h2>Spatial Properties</h2>
-<p>Cluster is the third Codex within the <strong>Spatial Properties</strong> category of the World Properties Domain.</p>
-<div aria-label="Adopted spatial properties" class="codex-grid">
-<div class="codex-card">
-<h3>WP-I · Extent</h3>
-<p>The spatial scope of the World.</p>
-</div>
-<div class="codex-card">
-<h3>WP-II · Region</h3>
-<p>A coherent large-scale portion of the World.</p>
-</div>
-<div class="codex-card">
-<h3>WP-III · Cluster</h3>
-<p>A contiguous portion of the World.</p>
-</div>
+<h2>Recognized World Properties</h2>
+<div id="wp-register">
+<p>Loading recognized World Properties...</p>
 </div>
 </section>
 <section class="section">
@@ -520,5 +509,30 @@
 </article>
 </main>
 <div id="bp-footer"></div>
+<script>
+document.addEventListener("DOMContentLoaded", async () => {
+  const registerContainer = document.getElementById("wp-register");
+
+  if (!registerContainer) return;
+
+  try {
+    const response = await fetch(
+      "/thecodex/003-world-properties/wp-register.html"
+    );
+
+    if (!response.ok) {
+      throw new Error(`Unable to load register: ${response.status}`);
+    }
+
+    registerContainer.innerHTML = await response.text();
+  } catch (error) {
+    console.error("World Properties Register error:", error);
+
+    registerContainer.innerHTML = `
+      <p>The World Properties Register could not be loaded.</p>
+    `;
+  }
+});
+</script>
 </body>
 </html>
