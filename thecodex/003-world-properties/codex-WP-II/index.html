@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Codex WP-II — The Region | BitPangea</title>
+<!-- Favicons -->
+<link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/favicon.svg" rel="shortcut icon"/>
+<!-- New Header -->
+<link href="/assets/css/bitpangea-framework.css" rel="stylesheet"/>
+<script defer="" src="/assets/js/bitpangea-framework.js"></script>
+<meta content="Codex WP-II — The Region establishes Region as the second World Property of BitPangea, describing a coherent large-scale portion of the World." name="description"/>
+<!-- BitPangea Metadata -->
+<meta content="#00c8d7" name="theme-color"/>
+<meta content="index,follow" name="robots"/>
+<link href="https://bitpangea.com/thecodex/003-world-properties/codex-WP-II/" rel="canonical"/>
+<!-- Open Graph -->
+<meta content="Codex WP-II — The Region | BitPangea" property="og:title"/>
+<meta content="The second World Property of BitPangea: Region as the cartographic property describing a coherent large-scale portion of the World." property="og:description"/>
+<meta content="article" property="og:type"/>
+<meta content="https://bitpangea.com/thecodex/003-world-properties/codex-WP-II/" property="og:url"/>
+<meta content="https://bitpangea.com/images/bitpangea-og.jpg" property="og:image"/>
+<meta content="BitPangea" property="og:site_name"/>
+<meta content="en_US" property="og:locale"/>
+<!-- Twitter/X -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Codex WP-II — The Region | BitPangea" name="twitter:title"/>
+<meta content="The second World Property of BitPangea: Region as the cartographic property describing a coherent large-scale portion of the World." name="twitter:description"/>
+<meta content="https://bitpangea.com/images/bitpangea-og.jpg" name="twitter:image"/>
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"Codex WP-II — The Region",
+  "name":"Codex WP-II — The Region",
+  "url":"https://bitpangea.com/thecodex/003-world-properties/codex-WP-II/",
+  "datePublished":"2026-07-10",
+  "description":"The second formal definition within the World Properties Domain of BitPangea, establishing Region as the cartographic property describing a coherent large-scale portion of the World.",
+  "isPartOf":{"@type":"WebPage","name":"The Codex","url":"https://bitpangea.com/thecodex/"},
+  "publisher":{"@type":"Organization","name":"BitPangea","url":"https://bitpangea.com/"}
+}
+</script>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #02050a;
+      --gold: #d4a938;
+      --cyan: #00c8d7;
+      --white: #ffffff;
+      --muted: rgba(255, 255, 255, 0.74);
+      --panel: rgba(0, 0, 0, 0.50);
+      --panel-soft: rgba(0, 0, 0, 0.32);
+      --line: rgba(212, 169, 56, 0.18);
+    }
+
+    html, body {
+      width: 100%;
+      min-height: 100%;
+      background: var(--bg);
+      color: var(--white);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      position: relative;
+      line-height: 1.72;
+      overflow-x: hidden;
+      background: var(--bg);
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(2, 5, 10, 0.76), rgba(2, 5, 10, 0.92)),
+        url("../images/bitpangea.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      opacity: 1;
+      z-index: -2;
+      pointer-events: none;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(circle at 72% 12%, rgba(0, 200, 215, 0.12), transparent 35%),
+        radial-gradient(circle at 18% 18%, rgba(212, 169, 56, 0.12), transparent 34%),
+        linear-gradient(90deg, rgba(0,0,0,.60), rgba(0,0,0,.26), rgba(0,0,0,.66));
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    .page {
+      width: 100%;
+      padding: 150px 28px 90px;
+    }
+
+    .container {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 58px;
+      background: rgba(0, 0, 0, 0.44);
+      border: 1px solid var(--line);
+      box-shadow: 0 0 70px rgba(0, 0, 0, 0.58);
+      backdrop-filter: blur(4px);
+    }
+
+    .hero {
+      max-width: 860px;
+      margin-bottom: 46px;
+    }
+
+    .eyebrow {
+      color: var(--cyan);
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-size: 12px;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      color: var(--white);
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: 1.02;
+      letter-spacing: 7px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      text-shadow: 0 0 24px rgba(0, 0, 0, 0.92);
+    }
+
+    .subtitle {
+      color: var(--gold);
+      font-size: 20px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+    }
+
+    .intro {
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 20px;
+      max-width: 820px;
+      margin-bottom: 32px;
+    }
+
+    .divider {
+      width: 64px;
+      height: 2px;
+      background: var(--gold);
+      margin: 34px 0 42px;
+      box-shadow: 0 0 14px rgba(212, 169, 56, 0.65);
+    }
+
+    .section {
+      margin-top: 34px;
+      padding: 34px 34px 30px;
+      background: var(--panel-soft);
+      border: 1px solid rgba(212, 169, 56, 0.13);
+    }
+
+    .section + .section { margin-top: 26px; }
+
+    h2 {
+      margin-bottom: 18px;
+      color: var(--white);
+      font-size: 24px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      text-shadow: 0 0 14px rgba(0, 0, 0, 0.9);
+    }
+
+    p {
+      margin-bottom: 20px;
+      color: var(--white);
+      font-size: 17px;
+      text-shadow: 0 0 9px rgba(0, 0, 0, 0.9);
+    }
+
+    p:last-child { margin-bottom: 0; }
+
+    strong { color: var(--white); }
+
+    ul {
+      margin: 18px 0 4px 0;
+      list-style: none;
+    }
+
+    li {
+      position: relative;
+      margin-bottom: 14px;
+      padding-left: 24px;
+      color: rgba(255,255,255,0.90);
+      font-size: 17px;
+      text-shadow: 0 0 9px rgba(0, 0, 0, 0.9);
+    }
+
+    li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 13px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--gold);
+      box-shadow: 0 0 10px rgba(212,169,56,.70);
+    }
+
+    blockquote {
+      margin: 36px 0;
+      padding: 30px 36px;
+      border-left: 3px solid var(--gold);
+      background: rgba(0, 0, 0, 0.52);
+      color: var(--white);
+      font-size: 25px;
+      line-height: 1.45;
+      letter-spacing: 1px;
+      box-shadow: 0 0 28px rgba(0, 0, 0, 0.45);
+    }
+
+    .quote-label {
+      display: block;
+      color: var(--cyan);
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .codex-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin: 36px 0 52px;
+    }
+
+    .codex-card {
+      padding: 22px 20px;
+      background: rgba(0, 0, 0, 0.42);
+      border: 1px solid rgba(212, 169, 56, 0.20);
+      box-shadow: 0 0 22px rgba(0, 0, 0, 0.30);
+    }
+
+    .codex-card h3 {
+      color: var(--gold);
+      font-size: 13px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .codex-card p {
+      color: rgba(255,255,255,0.82);
+      font-size: 15px;
+      line-height: 1.55;
+      margin: 0;
+    }
+
+    .entry-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .entry-card {
+      display: block;
+      padding: 28px 28px 26px;
+      background: rgba(0, 0, 0, 0.44);
+      border: 1px solid rgba(212, 169, 56, 0.24);
+      box-shadow: 0 0 26px rgba(0, 0, 0, 0.34);
+      text-decoration: none;
+      transition: all .25s ease;
+    }
+
+    .entry-card:hover {
+      border-color: rgba(212, 169, 56, 0.52);
+      background: rgba(0, 0, 0, 0.56);
+      box-shadow: 0 0 34px rgba(212, 169, 56, 0.10);
+      transform: translateY(-2px);
+    }
+
+    .entry-card .entry-meta {
+      color: var(--cyan);
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .entry-card h3 {
+      color: var(--gold);
+      font-size: 20px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .entry-card p {
+      color: rgba(255,255,255,0.86);
+      font-size: 16px;
+      line-height: 1.65;
+      margin-bottom: 16px;
+    }
+
+    .entry-card .entry-link {
+      color: var(--white);
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .status {
+      margin-top: 38px;
+      padding: 18px 24px;
+      border: 1px solid rgba(212, 169, 56, 0.38);
+      color: var(--gold);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-size: 12px;
+      display: inline-block;
+      background: rgba(0, 0, 0, 0.35);
+    }
+
+.source-link a,
+.source-link a:visited {
+ color: rgba(212, 169, 56, 0.9);
+ text-decoration: none;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ font-size: 12px;
+}
+
+.source-link a:hover {
+ color: #ffffff;
+ text-shadow: 0 0 12px rgba(212,169,56,.6);
+}
+
+
+.source-link {
+ margin-top: 18px;
+}
+     
+    @media (max-width: 980px) {
+
+      .codex-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      .page { padding: 178px 16px 60px; }
+      .container { padding: 36px 24px 46px; }
+      h1 { letter-spacing: 4px; }
+      .subtitle { font-size: 16px; }
+      .intro { font-size: 18px; }
+      p, li { font-size: 16px; }
+      .section { padding: 28px 22px; }
+      blockquote { font-size: 20px; padding: 24px 24px; }
+    }
+  </style>
+</head>
+<body data-bp-page="thefoundation">
+<div id="bp-header"></div>
+<main class="page">
+<article class="container">
+<section class="hero">
+<div class="eyebrow">Codex WP-II · July 10, 2026</div>
+<h1>Codex WP-II<br/>The Region</h1>
+<div class="subtitle">The Second World Property</div>
+<p class="intro">
+    Codex WP-II continues the World Properties Domain by establishing <strong>Region</strong>
+    as the second constitutional Spatial Property of The World. Following the recognition
+    of Extent as the spatial scope of The World, BitPangea now begins describing the
+    large-scale portions recognized within that scope.
+  </p>
+<div aria-label="Codex metadata" class="codex-meta">
+<span class="pill">The Codex</span>
+<span class="pill">World Properties Domain</span>
+<span class="pill">Spatial Properties</span>
+<span class="pill">Adopted Definition</span>
+</div>
+<div class="divider"></div>
+<blockquote>
+<span class="quote-label">Codex Definition</span>
+    A Region is the cartographic property describing a coherent large-scale portion of the World within BitPangea.
+  </blockquote>
+</section>
+<section class="section">
+<h2>Domain Assignment</h2>
+<p>Codex WP-II belongs to the <strong>World Properties Domain (WP)</strong>.</p>
+<p>The World Properties Domain asks: <strong>What properties does the World possess?</strong> It preserves Codices describing properties of The World rather than the Structural primitives composing it or the Relational grammar through which its Parcels are understood.</p>
+<p>Region belongs to this Domain because it describes an intrinsic spatial property recognized within The World. A Region is not created by governance, settlement, ownership, or classification. It is recognized as a coherent large-scale portion of the already-existing World.</p>
+</section>
+<section class="section">
+<h2>Constitutional Progression</h2>
+<p>Codex WP-I established <strong>Extent</strong> as the spatial scope of The World.</p>
+<p>Codex WP-II proceeds inward from that scope. Once The World is recognized as possessing Extent, constitutional inquiry may identify coherent large-scale portions existing within it.</p>
+<p>Region therefore does not divide The World into existence. It describes large-scale spatial organization already possessed by The World.</p>
+</section>
+<section class="section">
+<h2>Spatial Properties</h2>
+<p>Region is the second Codex within the <strong>Spatial Properties</strong> category of the World Properties Domain.</p>
+<div aria-label="Spatial properties sequence" class="codex-grid">
+<div class="codex-card"><h3>WP-I · Extent</h3><p>The spatial scope of the World.</p></div>
+<div class="codex-card"><h3>WP-II · Region</h3><p>A coherent large-scale portion of the World.</p></div>
+<div class="codex-card"><h3>WP-III · Cluster</h3><p>A spatial property of concentration or grouping within the World.</p></div>
+<div class="codex-card"><h3>WP-IV · Locality</h3><p>A localized spatial property recognized within the World.</p></div>
+</div>
+<p>This sequence proceeds from the broadest spatial property of The World toward increasingly localized properties recognized within its Extent.</p>
+</section>
+<section class="section">
+<h2>The Definition</h2>
+<p>The Extent of The World makes regional recognition possible.</p>
+<p>A Region exists not to establish ownership, jurisdiction, governance, settlement, value, access, purpose, or civilizational identity, but to describe a coherent large-scale portion of The World.</p>
+<p>A Region may be recognized through spatial coherence without requiring a constitutionally prescribed size, shape, boundary, population, function, or use.</p>
+</section>
+<section class="section">
+<h2>Formal Definition</h2>
+<p>A Region is the cartographic property describing a coherent large-scale portion of the World within BitPangea.</p>
+<p>A Region is a property of The World rather than a property of any individual Parcel, inhabitant, claim, institution, government, or settlement.</p>
+<p>This Codex establishes that coherent large-scale portions may be recognized within The World. It does not prescribe how coherence is measured, how boundaries are represented, or how Regions are named, mapped, governed, or used.</p>
+</section>
+<section class="section">
+<h2>Immutable Properties</h2>
+<p>Every Region possesses the following immutable properties:</p>
+<div aria-label="Immutable region properties" class="property-grid">
+<div class="property-card"><h3>World Property</h3><p>A Region is recognized within The World and belongs to its spatial character rather than to any individual Parcel or institution.</p></div>
+<div class="property-card"><h3>Coherence</h3><p>A Region is recognized as a portion of The World whose spatial character allows it to be understood as belonging together.</p></div>
+<div class="property-card"><h3>Large-Scale Character</h3><p>A Region describes spatial organization at a scale greater than a Cluster or Locality without requiring a fixed threshold.</p></div>
+<div class="property-card"><h3>Variability</h3><p>A Region possesses no constitutionally prescribed size, shape, geometry, boundary, or number of Parcels.</p></div>
+<div class="property-card"><h3>Recognition</h3><p>A Region is recognized rather than created. Mapping, naming, discovery, or codification does not bring the Region into existence.</p></div>
+<div class="property-card"><h3>Neutrality</h3><p>A Region does not assign ownership, jurisdiction, governance, settlement, access, value, purpose, identity, or civilizational meaning.</p></div>
+</div>
+</section>
+<section class="section two-column">
+<div>
+<h2>What A Region Is</h2>
+<ul>
+<li>A cartographic property</li>
+<li>A coherent large-scale portion of The World</li>
+<li>A Spatial Property recognized within Extent</li>
+<li>A large-scale expression of spatial organization</li>
+<li>A property recognized rather than created</li>
+</ul>
+</div>
+<div>
+<h2>What A Region Is Not</h2>
+<ul>
+<li>A continent separate from BitPangea</li>
+<li>A territory or political jurisdiction</li>
+<li>A government or administrative district</li>
+<li>A settlement or population center</li>
+<li>A Cluster or Locality</li>
+<li>A claim of ownership</li>
+<li>A fixed geometry or prescribed boundary</li>
+<li>A statement of value, purpose, culture, or use</li>
+</ul>
+</div>
+</section>
+<section class="section">
+<h2>Principles Established by Codex WP-II</h2>
+<div class="principle-card"><h3>1. Extent Makes Region Possible</h3><p>Regions are recognized within the spatial scope of The World. Without Extent, no large-scale portion of The World can be constitutionally situated.</p></div>
+<div class="principle-card"><h3>2. Regions Are Recognized, Not Created</h3><p>Classification, naming, mapping, discovery, or codification may reveal a Region but do not create the spatial property itself.</p></div>
+<div class="principle-card"><h3>3. Coherence Does Not Require Uniformity</h3><p>A Region may contain internal differences while remaining coherent as a large-scale portion of The World.</p></div>
+<div class="principle-card"><h3>4. Region Does Not Require Contiguity</h3><p>Coherence may arise through spatial character without requiring every Parcel within a Region to participate in a single uninterrupted Contiguity.</p></div>
+<div class="principle-card"><h3>5. Scale Does Not Establish Authority</h3><p>The large-scale character of a Region grants no ownership, governance, jurisdiction, control, privilege, or right.</p></div>
+<div class="principle-card"><h3>6. Region Precedes Civilizational Meaning</h3><p>A Region exists as a World Property before any culture, community, settlement, institution, or inhabitant assigns meaning to it.</p></div>
+</section>
+<section class="section">
+<h2>Region, Cluster, and Locality</h2>
+<p>Region must remain constitutionally distinct from the later Spatial Properties of Cluster and Locality.</p>
+<p>A <strong>Region</strong> describes coherent large-scale spatial organization. A future <strong>Cluster</strong> is expected to describe concentration or grouping. A future <strong>Locality</strong> is expected to describe immediate or localized spatial context.</p>
+<p>These distinctions are matters of character rather than size alone. A Region is not merely a larger Cluster, and a Locality is not merely a smaller Region.</p>
+</section>
+<section class="section">
+<h2>Scope</h2>
+<p>This Codex acknowledges the existence and necessity of Region as the second Spatial Property within the World Properties Domain.</p>
+<p>It establishes that coherent large-scale portions may be recognized within The World.</p>
+<p>It does not establish:</p>
+<ul>
+<li>The number of Regions within BitPangea</li>
+<li>The precise size, shape, geometry, or boundary of any Region</li>
+<li>A universal threshold separating Region from Cluster or Locality</li>
+<li>The method by which coherence is measured or represented</li>
+<li>Whether all Regions must be contiguous</li>
+<li>Names, classifications, maps, or administrative systems for Regions</li>
+<li>Ownership, jurisdiction, governance, settlement, culture, value, or purpose</li>
+<li>Cartographic implementation</li>
+</ul>
+<p>These questions remain subjects for future inquiry.</p>
+</section>
+<section class="section">
+<h2>Constitutional Sequence</h2>
+<p>Extent describes the spatial scope of The World.</p>
+<p>Region describes coherent large-scale portions recognized within that scope.</p>
+<p>Together, WP-I and WP-II begin the inward progression of Spatial Properties from The World as a whole toward the increasingly localized structures recognized within it.</p>
+</section>
+<blockquote>
+<span class="quote-label">Cartographic Doctrine</span>
+  Extent describes the scope of The World. Region reveals coherent form within that scope.
+</blockquote>
+<div class="status">Codex WP-II · World Properties Domain · Spatial Properties · Adopted Definition</div>
+<p class="source-link"><a href="codex-WP-II-region.md">View Markdown Source</a></p>
+</article>
+</main>
+<div id="bp-footer"></div>
+</body>
+</html>
