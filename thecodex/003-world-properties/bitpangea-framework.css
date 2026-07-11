@@ -1,0 +1,22 @@
+.wp-register .codex-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: all .25s ease;
+}
+
+.wp-register .codex-card h3 {
+    color: var(--gold);
+}
+
+.wp-register .codex-card p {
+    color: rgba(255,255,255,.82);
+}
+
+.wp-register .codex-card:hover {
+    text-decoration: none;
+    transform: translateY(-2px);
+    border-color: rgba(212,169,56,.52);
+    background: rgba(0,0,0,.56);
+    box-shadow: 0 0 34px rgba(212,169,56,.10);
+}
