@@ -1,4 +1,4 @@
-# Codex WP-I — The Extent
+# Codex WP-S-I — The Extent
 
 **Domain:** World Properties (WP)  
 **Category:** Spatial Properties  
@@ -7,7 +7,7 @@
 
 ---
 
-# Codex WP-I — The Extent
+# Codex WP-S-I — The Extent
 
 ## Definition
 
@@ -17,7 +17,7 @@
 
 # Domain Assignment
 
-Codex WP-I belongs to the **World Properties Domain (WP)**.
+Codex WP-S-I belongs to the **World Properties Domain (WP)**.
 
 The World Properties Domain asks:
 
@@ -31,9 +31,9 @@ The first category within the World Properties Domain is **Spatial Properties**,
 
 # Constitutional Function
 
-Codex WP-I does not define the World.
+Codex WP-S-I does not define the World.
 
-Codex WP-I establishes **Extent** as the first recognized property of the World.
+Codex WP-S-I establishes **Extent** as the first recognized property of the World.
 
 Extent is not a structural primitive.
 
@@ -142,7 +142,7 @@ Extent exists independently of any particular coordinate system, measurement met
 
 ---
 
-# Principles Established by Codex WP-I
+# Principles Established by Codex WP-S-I
 
 ## 1. The World Possesses Properties
 
@@ -218,4 +218,4 @@ These subjects remain within future constitutional inquiry.
 
 ---
 
-**Codex WP-I · World Properties Domain · Spatial Properties · Proposed Definition**
+**Codex WP-S-I · World Properties Domain · Spatial Properties · Proposed Definition**
