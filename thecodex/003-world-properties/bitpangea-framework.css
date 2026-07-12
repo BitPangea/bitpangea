@@ -27,7 +27,7 @@
 }
 
 /* ----------------------------------------------------------
-   Recognized World Properties Register
+   World Properties Domain Register
    ---------------------------------------------------------- */
 
 .wp-register {
@@ -46,8 +46,54 @@
 }
 
 /* ----------------------------------------------------------
-   Recognized Spatial World Properties Register
+   World Property Category Registers
    ---------------------------------------------------------- */
+
+.wp-category-register {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.wp-category-title {
+  margin: 0 0 10px;
+  color: var(--gold, #d4a938);
+  font-size: 22px;
+  letter-spacing: 3px;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.wp-category-description {
+  margin-bottom: 26px;
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.wp-category-note {
+  margin-top: 28px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.wp-category-coming-soon {
+  margin-top: 24px;
+  padding: 22px;
+  background: rgba(0, 0, 0, 0.28);
+  border: 1px dashed rgba(212, 169, 56, 0.25);
+  color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.wp-category-divider {
+  margin: 60px 0;
+  border: 0;
+  border-top: 1px solid rgba(212, 169, 56, 0.18);
+}
+
+/* Spatial category hook */
 
 .wp-spatial-register {
   width: 100%;
@@ -324,14 +370,8 @@
    ---------------------------------------------------------- */
 
 @media (max-width: 980px) {
-  .codex-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .property-grid {
-    grid-template-columns: 1fr;
-  }
-
+  .codex-grid,
+  .property-grid,
   .two-column {
     grid-template-columns: 1fr;
   }
@@ -357,52 +397,12 @@
 
   .codex-card h3,
   .property-card h3,
-  .principle-card h3 {
+  .principle-card h3,
+  .wp-category-title {
     letter-spacing: 2px;
   }
-}
-/* ==========================================================
-   World Property Category Registers
-   ========================================================== */
 
-/* Individual Category Register */
-
-.wp-category-register {
-  margin-top: 30px;
-}
-
-/* Category Heading */
-
-.wp-category-title {
-  margin: 0 0 10px;
-  color: var(--gold, #d4a938);
-  font-size: 22px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-}
-
-.wp-category-description {
-  margin-bottom: 26px;
-  color: rgba(255,255,255,.84);
-  line-height: 1.7;
-}
-
-/* Future Category Placeholder */
-
-.wp-category-coming-soon {
-  padding: 22px;
-  margin-top: 24px;
-  background: rgba(0,0,0,.28);
-  border: 1px dashed rgba(212,169,56,.25);
-  color: rgba(255,255,255,.75);
-  text-align: center;
-  letter-spacing: 1px;
-}
-
-/* Category Divider */
-
-.wp-category-divider {
-  margin: 60px 0;
-  border: 0;
-  border-top: 1px solid rgba(212,169,56,.18);
+  .wp-category-title {
+    font-size: 19px;
+  }
 }
