@@ -342,3 +342,48 @@
     letter-spacing: 2px;
   }
 }
+/* ==========================================================
+   World Property Category Registers
+   ========================================================== */
+
+/* Individual Category Register */
+
+.wp-category-register {
+  margin-top: 30px;
+}
+
+/* Category Heading */
+
+.wp-category-title {
+  margin: 0 0 10px;
+  color: var(--gold, #d4a938);
+  font-size: 22px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.wp-category-description {
+  margin-bottom: 26px;
+  color: rgba(255,255,255,.84);
+  line-height: 1.7;
+}
+
+/* Future Category Placeholder */
+
+.wp-category-coming-soon {
+  padding: 22px;
+  margin-top: 24px;
+  background: rgba(0,0,0,.28);
+  border: 1px dashed rgba(212,169,56,.25);
+  color: rgba(255,255,255,.75);
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+/* Category Divider */
+
+.wp-category-divider {
+  margin: 60px 0;
+  border: 0;
+  border-top: 1px solid rgba(212,169,56,.18);
+}
