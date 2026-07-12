@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+<title>The Structural Domain | BitPangea</title>
+
+<link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/favicon.svg" rel="shortcut icon"/>
+
+<link rel="stylesheet" href="/assets/css/bitpangea-framework.css">
+<script src="/assets/js/bitpangea-framework.js" defer></script>
+
+<meta
+  name="description"
+  content="The constitutional home of the Structural Domain within The Codex of BitPangea."
+/>
+
+<meta content="#00c8d7" name="theme-color"/>
+<meta content="index,follow" name="robots"/>
+
+<link
+  href="https://bitpangea.com/thecodex/001-structural/"
+  rel="canonical"
+/>
+
+<meta content="The Structural Domain | BitPangea" property="og:title"/>
+<meta
+  content="The constitutional home of the Domain that asks: What is the World?"
+  property="og:description"
+/>
+<meta content="website" property="og:type"/>
+<meta
+  content="https://bitpangea.com/thecodex/001-structural/"
+  property="og:url"
+/>
+<meta content="https://bitpangea.com/images/bitpangea-og.jpg" property="og:image"/>
+<meta content="BitPangea" property="og:site_name"/>
+<meta content="en_US" property="og:locale"/>
+
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="The Structural Domain | BitPangea" name="twitter:title"/>
+<meta
+  content="The constitutional home of the Domain that asks: What is the World?"
+  name="twitter:description"
+/>
+<meta content="https://bitpangea.com/images/bitpangea-og.jpg" name="twitter:image"/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "The Structural Domain",
+  "url": "https://bitpangea.com/thecodex/001-structural/",
+  "description": "The constitutional home of the Structural Domain within The Codex of BitPangea.",
+  "isPartOf": {
+    "@type": "WebPage",
+    "name": "The Codex",
+    "url": "https://bitpangea.com/thecodex/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "BitPangea",
+    "url": "https://bitpangea.com/"
+  }
+}
+</script>
+
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg: #02050a;
+  --gold: #d4a938;
+  --cyan: #00c8d7;
+  --white: #ffffff;
+  --muted: rgba(255,255,255,.74);
+  --panel-soft: rgba(0,0,0,.32);
+  --line: rgba(212,169,56,.18);
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  background: var(--bg);
+  color: var(--white);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  position: relative;
+  line-height: 1.72;
+  overflow-x: hidden;
+  background: var(--bg);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(2,5,10,.78), rgba(2,5,10,.94)),
+    url("../images/bitpangea.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -2;
+  pointer-events: none;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 72% 12%, rgba(0,200,215,.11), transparent 35%),
+    radial-gradient(circle at 18% 18%, rgba(212,169,56,.12), transparent 34%),
+    linear-gradient(90deg, rgba(0,0,0,.62), rgba(0,0,0,.28), rgba(0,0,0,.68));
+  z-index: -1;
+  pointer-events: none;
+}
+
+.page {
+  width: 100%;
+  padding: 150px 28px 90px;
+}
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 58px;
+  background: rgba(0,0,0,.44);
+  border: 1px solid var(--line);
+  box-shadow: 0 0 70px rgba(0,0,0,.58);
+  backdrop-filter: blur(4px);
+}
+
+.hero {
+  max-width: 900px;
+  margin-bottom: 46px;
+}
+
+.eyebrow {
+  color: var(--cyan);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 22px;
+}
+
+h1 {
+  color: var(--white);
+  font-size: clamp(42px,7vw,76px);
+  line-height: 1.02;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-shadow: 0 0 24px rgba(0,0,0,.92);
+}
+
+.subtitle {
+  color: var(--gold);
+  font-size: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+.intro {
+  color: rgba(255,255,255,.88);
+  font-size: 20px;
+  max-width: 840px;
+  margin-bottom: 32px;
+}
+
+.divider {
+  width: 64px;
+  height: 2px;
+  background: var(--gold);
+  margin: 34px 0 42px;
+  box-shadow: 0 0 14px rgba(212,169,56,.65);
+}
+
+.section {
+  margin-top: 34px;
+  padding: 34px 34px 30px;
+  background: var(--panel-soft);
+  border: 1px solid rgba(212,169,56,.13);
+}
+
+.section + .section { margin-top: 26px; }
+
+h2 {
+  margin-bottom: 18px;
+  color: var(--white);
+  font-size: 24px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-shadow: 0 0 14px rgba(0,0,0,.9);
+}
+
+p {
+  margin-bottom: 20px;
+  color: var(--white);
+  font-size: 17px;
+  text-shadow: 0 0 9px rgba(0,0,0,.9);
+}
+
+p:last-child { margin-bottom: 0; }
+
+strong { color: var(--white); }
+
+ul {
+  margin: 18px 0 4px;
+  list-style: none;
+}
+
+li {
+  position: relative;
+  margin-bottom: 14px;
+  padding-left: 24px;
+  color: rgba(255,255,255,.90);
+  font-size: 17px;
+  text-shadow: 0 0 9px rgba(0,0,0,.9);
+}
+
+li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 13px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 10px rgba(212,169,56,.70);
+}
+
+blockquote {
+  margin: 36px 0;
+  padding: 30px 36px;
+  border-left: 3px solid var(--gold);
+  background: rgba(0,0,0,.52);
+  color: var(--white);
+  font-size: 25px;
+  line-height: 1.45;
+  letter-spacing: 1px;
+  box-shadow: 0 0 28px rgba(0,0,0,.45);
+}
+
+.quote-label {
+  display: block;
+  color: var(--cyan);
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.domain-question {
+  margin-top: 24px;
+  padding: 24px 26px;
+  border: 1px solid rgba(212,169,56,.22);
+  background: rgba(0,0,0,.38);
+}
+
+.domain-question .label {
+  color: var(--cyan);
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.domain-question .question {
+  color: var(--gold);
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.codex-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.codex-card {
+  display: block;
+  padding: 24px;
+  background: rgba(0,0,0,.42);
+  border: 1px solid rgba(212,169,56,.20);
+  color: inherit;
+  text-decoration: none;
+  transition: .25s ease;
+}
+
+.codex-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(212,169,56,.48);
+  background: rgba(0,0,0,.56);
+}
+
+.codex-card .entry-meta {
+  color: var(--cyan);
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 9px;
+}
+
+.codex-card h3 {
+  color: var(--gold);
+  font-size: 18px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.codex-card p {
+  color: rgba(255,255,255,.82);
+  font-size: 15px;
+  margin: 0;
+}
+
+.domain-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.domain-link {
+  display: block;
+  padding: 24px;
+  background: rgba(0,0,0,.42);
+  border: 1px solid rgba(212,169,56,.20);
+  color: inherit;
+  text-decoration: none;
+  transition: .25s ease;
+}
+
+.domain-link:hover {
+  transform: translateY(-2px);
+  border-color: rgba(212,169,56,.48);
+  background: rgba(0,0,0,.56);
+}
+
+.domain-link h3 {
+  color: var(--gold);
+  font-size: 15px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.domain-link p {
+  color: rgba(255,255,255,.82);
+  font-size: 15px;
+  margin: 0;
+}
+
+.status {
+  margin-top: 38px;
+  padding: 18px 24px;
+  border: 1px solid rgba(212,169,56,.38);
+  color: var(--gold);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 12px;
+  display: inline-block;
+  background: rgba(0,0,0,.35);
+}
+
+@media (max-width: 980px) {
+  .codex-grid,
+  .domain-links {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .page { padding: 178px 16px 60px; }
+  .container { padding: 36px 24px 46px; }
+  h1 { letter-spacing: 4px; }
+  .subtitle { font-size: 16px; }
+  .intro { font-size: 18px; }
+  p, li { font-size: 16px; }
+  .section { padding: 28px 22px; }
+  blockquote { font-size: 20px; padding: 24px; }
+  .domain-question .question { font-size: 19px; }
+}
+</style>
+</head>
+
+<body data-bp-page="thefoundation">
+<div id="bp-header"></div>
+
+<main class="page">
+<article class="container">
+
+<section class="hero">
+  <div class="eyebrow">The Codex · Domain I · June 2026</div>
+
+  <h1>The Structural<br>Domain</h1>
+
+  <div class="subtitle">The Constitutional Home of Structural Inquiry</div>
+
+  <p class="intro">
+    The Structural Domain preserves the foundational constitutional vocabulary
+    through which <strong>The World</strong> may be described. Its Codices
+    establish the primary structural concepts recognized within BitPangea
+    before ownership, governance, settlement, commerce, or civilization.
+  </p>
+
+  <div class="domain-question">
+    <div class="label">Constitutional Question</div>
+    <div class="question">What is the World?</div>
+  </div>
+
+  <div class="divider"></div>
+
+  <blockquote>
+    <span class="quote-label">Domain Doctrine</span>
+    The World is declared. Structural inquiry reveals what exists within it.
+  </blockquote>
+</section>
+
+<section class="section">
+  <h2>Constitutional Purpose</h2>
+
+  <p>
+    The Structural Domain establishes the constitutional vocabulary required
+    to describe BitPangea as a world.
+  </p>
+
+  <p>
+    It identifies the foundational unit, the distinction between units, the
+    reference by which position is described, and the singular whole within
+    which every structural concept exists.
+  </p>
+
+  <p>
+    Structural Codices do not grant ownership, establish governance, define
+    value, authorize claims, or create civilization. They preserve the
+    cartographic concepts that precede them.
+  </p>
+</section>
+
+<section class="section">
+  <h2>Mode of Discovery</h2>
+
+  <p>
+    Structural inquiry proceeds through <strong>constitutive progression</strong>.
+  </p>
+
+  <p>
+    Each adopted Codex establishes vocabulary required to describe the
+    structural reality recognized by the Codices that follow.
+  </p>
+
+  <p>
+    This progression is constitutional rather than temporal. The Codex does
+    not create The World or its structures; it reveals and preserves the
+    vocabulary through which they become formally understood.
+  </p>
+</section>
+
+<section class="section">
+  <h2>The Structural Sequence</h2>
+
+  <div class="codex-grid">
+
+    <a class="codex-card" href="/thecodex/001-structural/codex-ST-I/">
+      <div class="entry-meta">ST-I · June 15, 2026</div>
+      <h3>The Parcel</h3>
+      <p>
+        The smallest indivisible cartographic unit of BitPangea.
+      </p>
+    </a>
+
+    <a class="codex-card" href="/thecodex/001-structural/codex-ST-II/">
+      <div class="entry-meta">ST-II · June 19, 2026</div>
+      <h3>The Boundary</h3>
+      <p>
+        The cartographic distinction that allows one Parcel to be
+        differentiated from another.
+      </p>
+    </a>
+
+    <a class="codex-card" href="/thecodex/001-structural/codex-ST-III/">
+      <div class="entry-meta">ST-III · June 19, 2026</div>
+      <h3>The Coordinate</h3>
+      <p>
+        The cartographic reference by which the position of a Parcel is
+        uniquely described within BitPangea.
+      </p>
+    </a>
+
+    <a class="codex-card" href="/thecodex/001-structural/codex-ST-IV/">
+      <div class="entry-meta">ST-IV · June 21, 2026</div>
+      <h3>The World</h3>
+      <p>
+        The singular, continuous cartographic whole within which all
+        structural concepts exist.
+      </p>
+    </a>
+
+  </div>
+</section>
+
+<section class="section">
+  <h2>What the Domain Establishes</h2>
+
+  <ul>
+    <li>A Parcel establishes the foundational cartographic unit.</li>
+    <li>A Boundary preserves distinction between Parcels.</li>
+    <li>A Coordinate provides cartographic reference within BitPangea.</li>
+    <li>The World preserves the singular whole within which every structural concept exists.</li>
+  </ul>
+</section>
+
+<section class="section">
+  <h2>Constitutional Completion</h2>
+
+  <p>
+    The adopted Structural Codices establish the first completed constitutional
+    sequence within The Codex.
+  </p>
+
+  <p>
+    Parcel, Boundary, Coordinate, and The World form the foundational
+    structural vocabulary of BitPangea.
+  </p>
+
+  <p>
+    Completion does not prevent future structural discovery. It records that
+    the first constitutional foundation of structural inquiry has been
+    established.
+  </p>
+</section>
+
+<section class="section">
+  <h2>Constitutional Records</h2>
+
+  <div class="domain-links">
+
+    <a class="domain-link" href="/thecharter/02-the-cartographic-charter/">
+      <h3>The Cartographic Charter</h3>
+      <p>
+        The constitutional period record preserving the discoveries through
+        which the foundational map of BitPangea became structurally understood.
+      </p>
+    </a>
+
+    <a class="domain-link" href="/thecodex/">
+      <h3>The Codex Register</h3>
+      <p>
+        The active constitutional register of adopted Domains and Codices.
+      </p>
+    </a>
+
+  </div>
+</section>
+
+<section class="section">
+  <h2>Bridge to Relational Inquiry</h2>
+
+  <p>
+    Structural inquiry establishes what exists within BitPangea.
+  </p>
+
+  <p>
+    Once the foundational structural vocabulary is recognized, constitutional
+    inquiry may ask how those structures relate.
+  </p>
+
+  <p>
+    The Relational Domain begins where structural description becomes
+    relational understanding.
+  </p>
+</section>
+
+<blockquote>
+  <span class="quote-label">Constitutional Conclusion</span>
+  Structure establishes the vocabulary of existence. Relation establishes how
+  existence is understood together.
+</blockquote>
+
+<div class="status">
+  Structural Domain · Active Constitutional Record · June 2026
+</div>
+
+</article>
+</main>
+
+<div id="bp-footer"></div>
+</body>
+</html>
