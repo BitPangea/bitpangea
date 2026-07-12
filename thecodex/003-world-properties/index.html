@@ -399,7 +399,7 @@ blockquote {
 
 <section class="section">
 <h2>Recognized Categories and World Properties</h2>
-<div id="wp-register">
+<div id="wp-spatial-register">
 <p>Loading the World Properties Domain Register...</p>
 </div>
 </section>
@@ -443,13 +443,13 @@ blockquote {
 <div id="bp-footer"></div>
 <script>
 document.addEventListener("DOMContentLoaded", async () => {
-  const register = document.getElementById("wp-register");
+  const register = document.getElementById("wp-spatial-register");
 
   if (!register) return;
 
   try {
     const response = await fetch(
-      "/thecodex/003-world-properties/wp-register.html"
+      "/thecodex/003-world-properties/wp-spatial-register.html"
     );
 
     if (!response.ok) {
