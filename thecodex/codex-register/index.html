@@ -11,44 +11,44 @@
 <!-- New Header -->
 <link href="/assets/css/bitpangea-framework.css" rel="stylesheet"/>
 <script defer="" src="/assets/js/bitpangea-framework.js"></script>
-<meta content="The Codex Register records formal entries adopted into The Codex of BitPangea." name="description"/>
+<meta content="The Codex Register preserves adopted Codices within their canonical Structural, Relational, and World Properties Domains." name="description"/>
 <!-- BitPangea Metadata -->
 <meta content="#00c8d7" name="theme-color"/>
 <meta content="index,follow" name="robots"/>
 <link href="https://bitpangea.com/thecodex/codex-register/" rel="canonical"/>
 <!-- Open Graph -->
 <meta content="The Codex Register | BitPangea" property="og:title"/>
-<meta content="A permanent record of adopted Codices within BitPangea." property="og:description"/>
+<meta content="The permanent register of adopted Codices, organized by their canonical Domains within BitPangea." property="og:description"/>
 <meta content="website" property="og:type"/>
-<meta content="https://bitpangea.com/the/-register/" property="og:url"/>
+<meta content="https://bitpangea.com/thecodex/codex-register/" property="og:url"/>
 <meta content="https://bitpangea.com/images/bitpangea-og.jpg" property="og:image"/>
 <meta content="BitPangea" property="og:site_name"/>
 <meta content="en_US" property="og:locale"/>
 <!-- Twitter/X -->
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="The  Register | BitPangea" name="twitter:title"/>
-<meta content="A permanent record of adopted Codices within BitPangea." name="twitter:description"/>
+<meta content="The Codex Register | BitPangea" name="twitter:title"/>
+<meta content="The permanent register of adopted Codices, organized by their canonical Domains within BitPangea." name="twitter:description"/>
 <meta content="https://bitpangea.com/images/bitpangea-og.jpg" name="twitter:image"/>
 <!-- Structured Data -->
 <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"CollectionPage",
-    "name":"The  Register",
-    "url":"https://bitpangea.com/the/-register/",
-    "description":"A permanent record of formal entries adopted into The  of BitPangea.",
-    "isPartOf":{
-      "@type":"WebPage",
-      "name":"The ",
-      "url":"https://bitpangea.com/the/"
-    },
-    "publisher":{
-      "@type":"Organization",
-      "name":"BitPangea",
-      "url":"https://bitpangea.com/"
-    }
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "The Codex Register",
+  "url": "https://bitpangea.com/thecodex/codex-register/",
+  "description": "The permanent register of adopted Codices, organized by their canonical Domains within BitPangea.",
+  "isPartOf": {
+    "@type": "WebPage",
+    "name": "The Codex",
+    "url": "https://bitpangea.com/thecodex/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "BitPangea",
+    "url": "https://bitpangea.com/"
   }
-  </script>
+}
+</script>
 <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -463,24 +463,70 @@
       .domain-entry .entry-link { text-align: left; }
       .period-note { padding: 20px; }
     }
-  </style>
+  
+
+    .domain-heading-link,
+    .domain-heading-link:visited {
+      color: var(--cyan);
+      text-decoration: none;
+      transition: color .25s ease, text-shadow .25s ease;
+    }
+
+    .domain-heading-link:hover,
+    .domain-heading-link:focus-visible {
+      color: var(--gold);
+      text-shadow: 0 0 14px rgba(212, 169, 56, 0.30);
+    }
+
+    .domain-heading-link:focus-visible {
+      outline: 2px solid var(--cyan);
+      outline-offset: 4px;
+    }
+
+    .domain-overview {
+      margin: 0 0 22px;
+      padding: 18px 20px;
+      border-left: 3px solid rgba(212, 169, 56, 0.72);
+      background: rgba(0, 0, 0, 0.30);
+    }
+
+    .domain-overview p {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.84);
+      font-size: 15px;
+      line-height: 1.65;
+    }
+
+    .domain-overview a,
+    .domain-overview a:visited {
+      color: var(--gold);
+      text-decoration: none;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      font-size: 11px;
+      white-space: nowrap;
+    }
+
+    .domain-overview a:hover,
+    .domain-overview a:focus-visible {
+      color: var(--white);
+      text-shadow: 0 0 12px rgba(212, 169, 56, 0.65);
+    }
+</style>
 </head>
 <body data-bp-page="thefoundation">
 <div id="bp-header"></div>
 <main class="page">
 <article class="container">
-<section class="hero" id="-register-top">
-<div class="eyebrow">Codex Register · June 2026</div>
+<section class="hero" id="codex-register-top">
+<div class="eyebrow">Codex Register · Domain Record · July 2026</div>
 <h1>The Codex<br/>Register</h1>
 <div class="subtitle">Adopted Codices</div>
-<p class="intro">
-          The Codex Register records formal entries adopted into The Codex.
-          Each entry preserves a foundational concept within BitPangea before later systems are built upon it.
-        </p>
+<p class="intro">The Codex Register preserves adopted Codices within the Domains to which their discoveries belong. Each Domain provides the canonical home for a distinct class of inquiry, while the Register preserves the active sequence of recognized Codices.</p>
 <div class="divider"></div>
 <div class="register-note">
 <span>Register Principle</span>
-<p>The Codex Register does not define the world. It records the definitions adopted into The Codex.</p>
+<p>The Domains organize inquiry. The Codices preserve discovery. The Register records both within one active canonical record.</p>
 </div>
 </section>
 <div aria-label="Codex domain filters" class="domain-tabs">
@@ -489,8 +535,8 @@
 <a class="domain-tab" href="#relational-domain">Relational (RL)</a>
 <a class="domain-tab" href="#world-properties-domain">World Properties (WP)</a></div>
 <section aria-labelledby="structural-heading" class="domain-block" id="structural-domain">
-<h2 class="domain-heading" id="structural-heading">Structural (ST) <span>— What is the world?</span></h2>
-<div aria-label="Structural Domain Codex entries" class="domain-entry-list">
+<h2 class="domain-heading" id="structural-heading"><a class="domain-heading-link" href="/thecodex/001-structural/">Structural (ST)</a> <span>— What is the World?</span></h2>
+<div class="domain-overview"><p>The Structural Domain is the canonical home of structural inquiry. It preserves the foundational vocabulary through which The World is described. <a href="/thecodex/001-structural/">Enter the Structural Domain →</a></p></div><div aria-label="Structural Domain Codex entries" class="domain-entry-list">
 <a class="domain-entry" href="/thecodex/001-structural/codex-ST-I/">
 <div>
 <div class="entry-meta">ST-I · June 15, 2026</div>
@@ -526,8 +572,8 @@
 </div>
 </section>
 <section aria-labelledby="relational-heading" class="domain-block" id="relational-domain">
-<h2 class="domain-heading" id="relational-heading">Relational (RL) <span>— How do things relate?</span></h2>
-<div aria-label="Relational Domain Codex entries" class="domain-entry-list">
+<h2 class="domain-heading" id="relational-heading"><a class="domain-heading-link" href="/thecodex/002-relational/">Relational (RL)</a> <span>— How do the elements within BitPangea relate?</span></h2>
+<div class="domain-overview"><p>The Relational Domain is the canonical home of relational inquiry. It preserves the first-order grammar through which structural elements are understood together. <a href="/thecodex/002-relational/">Enter the Relational Domain →</a></p></div><div aria-label="Relational Domain Codex entries" class="domain-entry-list">
 <a class="domain-entry" href="/thecodex/002-relational/codex-RL-I/">
 <div>
 <div class="entry-meta">RL-I · June 19, 2026</div>
@@ -561,68 +607,40 @@
 <div class="entry-link">View →</div>
 </a>
 </div>
-</section><section
-  aria-labelledby="world-properties-heading"
-  class="domain-block"
-  id="world-properties-domain"
->
-  <h2 class="domain-heading" id="world-properties-heading">
-    World Properties (WP)
-    <span>— What properties does the World possess?</span>
-  </h2>
-
-  <div
-    aria-label="World Properties Domain Codex entries"
-    class="domain-entry-list"
-  >
-    <a
-      class="domain-entry"
-      href="/thecodex/003-world-properties/codex-WP-I/"
-    >
-      <div>
-        <div class="entry-meta">WP-I · July 8, 2026 · Refined July 11, 2026</div>
-        <h3>The Extent</h3>
-      </div>
-
-      <p>
+</section><section aria-labelledby="world-properties-heading" class="domain-block" id="world-properties-domain">
+<h2 class="domain-heading" id="world-properties-heading"><a class="domain-heading-link" href="/thecodex/003-world-properties/">World Properties (WP)</a> <span>— What properties does the World possess?</span></h2>
+<div class="domain-overview"><p>The World Properties Domain is the canonical home of World Property inquiry. It preserves objective properties already possessed by The World and the categories through which they are recognized. <a href="/thecodex/003-world-properties/">Enter the World Properties Domain →</a></p></div><div aria-label="World Properties Domain Codex entries" class="domain-entry-list">
+<a class="domain-entry" href="/thecodex/003-world-properties/codex-WP-I/">
+<div>
+<div class="entry-meta">WP-I · July 8, 2026 · Refined July 11, 2026</div>
+<h3>The Extent</h3>
+</div>
+<p>
         The cartographic property describing the spatial scope of the World.
       </p>
-
-      <div class="entry-link">View →</div>
-    </a>
-
-    <a
-      class="domain-entry"
-      href="/thecodex/003-world-properties/codex-WP-II/"
-    >
-      <div>
-        <div class="entry-meta">WP-II · July 10, 2026 · Refined July 11, 2026</div>
-        <h3>The Region</h3>
-      </div>
-
-      <p>
+<div class="entry-link">View →</div>
+</a>
+<a class="domain-entry" href="/thecodex/003-world-properties/codex-WP-II/">
+<div>
+<div class="entry-meta">WP-II · July 10, 2026 · Refined July 11, 2026</div>
+<h3>The Region</h3>
+</div>
+<p>
         The cartographic property describing a coherent large-scale portion of the World.
       </p>
-
-      <div class="entry-link">View →</div>
-    </a>
-
-    <a
-      class="domain-entry"
-      href="/thecodex/003-world-properties/codex-WP-III/"
-    >
-      <div>
-        <div class="entry-meta">WP-III · July 11, 2026</div>
-        <h3>The Cluster</h3>
-      </div>
-
-      <p>
+<div class="entry-link">View →</div>
+</a>
+<a class="domain-entry" href="/thecodex/003-world-properties/codex-WP-III/">
+<div>
+<div class="entry-meta">WP-III · July 11, 2026</div>
+<h3>The Cluster</h3>
+</div>
+<p>
         The cartographic property describing a contiguous portion of the World.
       </p>
-
-      <div class="entry-link">View →</div>
-    </a>
-  </div>
+<div class="entry-link">View →</div>
+</a>
+</div>
 </section>
 <section aria-labelledby="legacy-register-heading" class="legacy-card">
 <h2 id="legacy-register-heading">Legacy Codex Register</h2>
@@ -633,12 +651,9 @@
 </section>
 <div class="period-note">
 <span class="symbol">⌾</span>
-<p>
-          The Cartographic Period is in its early stage.<br/>
-          Additional Codices will be adopted as the framework develops.
-        </p>
+<p>The Codex is organized through active Domains. Additional Codices and Domains may be recognized as inquiry continues.</p>
 </div>
-<div class="status">Codex Register · Domain Record · Cartographic Period</div>
+<div class="status">Codex Register · Active Domain Record · July 2026</div>
 </article>
 </main>
 <div id="bp-footer"></div>
