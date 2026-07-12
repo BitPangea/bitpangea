@@ -3,89 +3,60 @@
   Path: /thecodex/003-world-properties/wp-spatial-register.html
 
   This shared fragment preserves the recognized Spatial Properties
-  of the World Properties Domain.
+  within the World Properties Domain.
 
   Update this file whenever a new Spatial Property is
   constitutionally recognized.
 -->
 
-<div class="wp-register" aria-label="Recognized World Properties">
+<div
+  class="wp-category-register wp-spatial-register"
+  aria-label="Recognized Spatial Properties"
+>
+  <h3 class="wp-category-title">Spatial Properties</h3>
 
-  <p>
-    The <strong>World Properties Domain</strong> preserves the constitutional
-    recognition of objective properties already existing within
-    <strong>The World</strong>. World Properties are organized into
-    constitutional categories according to the nature of the properties they
-    preserve.
+  <p class="wp-category-description">
+    Spatial Properties preserve the objective spatial properties of
+    <strong>The World</strong>. Each property exists prior to constitutional
+    recognition and is preserved through discovery rather than creation.
   </p>
 
-  <div class="principle-card">
-    <h3>Recognized Category</h3>
+  <div class="codex-grid">
+    <a
+      class="codex-card"
+      href="/thecodex/003-world-properties/codex-WP-I/"
+    >
+      <h3>WP-I · Extent</h3>
+      <p>
+        The cartographic property describing the spatial scope of the World.
+      </p>
+    </a>
 
-    <p>
-      <strong>Spatial Properties</strong> preserve the objective spatial
-      properties of the World.
-    </p>
+    <a
+      class="codex-card"
+      href="/thecodex/003-world-properties/codex-WP-II/"
+    >
+      <h3>WP-II · Region</h3>
+      <p>
+        The cartographic property describing a coherent large-scale portion
+        of the World.
+      </p>
+    </a>
+
+    <a
+      class="codex-card"
+      href="/thecodex/003-world-properties/codex-WP-III/"
+    >
+      <h3>WP-III · Cluster</h3>
+      <p>
+        The cartographic property describing a contiguous portion of the World.
+      </p>
+    </a>
   </div>
 
-  <div id="wp-spatial-register">
-    <p>Loading Spatial Properties...</p>
-  </div>
-
-  <!--
-  Future Categories
-
-  <div class="principle-card">
-      <h3>Discovery Properties</h3>
-      <p>...</p>
-  </div>
-
-  <div id="wp-discovery-register"></div>
-
-  <div class="principle-card">
-      <h3>Physical Properties</h3>
-      <p>...</p>
-  </div>
-
-  <div id="wp-physical-register"></div>
-
-  -->
-
-  <p class="wp-register-note">
-    Additional World Property categories may be recognized through
-    constitutional discovery. Categories are constitutional classifications,
-    not additional Domains.
+  <p class="wp-category-note">
+    Spatial Property Codices are ordered by constitutional priority of
+    recognition. Their sequence does not imply that one property creates,
+    causes, or constitutionally activates another.
   </p>
-
 </div>
-
-<script>
-document.addEventListener("DOMContentLoaded", async () => {
-
-    const spatial = document.getElementById("wp-spatial-register");
-
-    if (spatial) {
-        try {
-
-            const response = await fetch(
-                "/thecodex/003-world-properties/wp-spatial-register.html"
-            );
-
-            if (!response.ok) {
-                throw new Error(response.status);
-            }
-
-            spatial.innerHTML = await response.text();
-
-        } catch (error) {
-
-            console.error("Spatial Register:", error);
-
-            spatial.innerHTML =
-                "<p>The Spatial Properties Register could not be loaded.</p>";
-
-        }
-    }
-
-});
-</script>
