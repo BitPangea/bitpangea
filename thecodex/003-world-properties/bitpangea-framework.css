@@ -46,6 +46,25 @@
 }
 
 /* ----------------------------------------------------------
+   Recognized Spatial World Properties Register
+   ---------------------------------------------------------- */
+
+.wp-spatial-register {
+  width: 100%;
+}
+
+.wp-spatial-register > p {
+  margin-bottom: 20px;
+}
+
+.wp-spatial-register-note {
+  margin-top: 28px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* ----------------------------------------------------------
    Codex Cards / Shared Register Cards
    ---------------------------------------------------------- */
 
