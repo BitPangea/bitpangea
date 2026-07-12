@@ -1,4 +1,4 @@
-# Codex WP-I Review — The Extent
+# Codex WP-S-I Review — The Extent
 
 **Domain:** World Properties (WP)  
 **Category:** Spatial Properties  
@@ -26,7 +26,7 @@ Unlike earlier Codex reviews that focused primarily on refining individual const
 
 # Purpose of Review
 
-The review of Codex WP-I extended beyond the definition of **Extent** itself.
+The review of Codex WP-S-I extended beyond the definition of **Extent** itself.
 
 It became a constitutional review of the architectural transition from the completed Structural and Relational Domains into the newly recognized **World Properties Domain**.
 
@@ -167,10 +167,10 @@ Rather than attempting to classify every property of the World simultaneously, r
 
 Working progression:
 
-- WP-I — Extent
-- WP-II — Region
-- WP-III — Cluster
-- WP-IV — Locality
+- WP-S-I — Extent
+- WP-S-II — Region
+- WP-S-III — Cluster
+- WP-S-IV — Locality
 
 Future categories may include:
 
@@ -226,7 +226,7 @@ The review produced the following conclusions.
 - The Relational Domain naturally concludes with RL-IV.
 - World Properties should immediately follow the Relational Domain.
 - Spatial Properties are the appropriate opening category.
-- Extent is an appropriate candidate for WP-I.
+- Extent is an appropriate candidate for WP-S-I.
 - The constitutional question "What properties does the World possess?" provides a broader and more durable architectural foundation than a dedicated Spatial Domain.
 
 ---
@@ -242,7 +242,7 @@ Future constitutional inquiry will continue regarding:
 - Locality
 - Additional World Property categories
 
-These questions remain open constitutional subjects and were intentionally not resolved by WP-I.
+These questions remain open constitutional subjects and were intentionally not resolved by WP-S-I.
 
 ---
 
