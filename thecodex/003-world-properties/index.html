@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>The World Properties Domain | BitPangea</title>
+
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="shortcut icon" href="/assets/favicon.svg">
+
+<link rel="stylesheet" href="/assets/css/bitpangea-framework.css">
+<link rel="stylesheet" href="/thecodex/003-world-properties/bitpangea-framework.css">
+<script src="/assets/js/bitpangea-framework.js" defer></script>
+
+<meta name="description" content="The constitutional home of the World Properties Domain within The Codex of BitPangea.">
+<meta name="theme-color" content="#00c8d7">
+<meta name="robots" content="index,follow">
+
+<link rel="canonical" href="https://bitpangea.com/thecodex/003-world-properties/">
+
+<meta property="og:title" content="The World Properties Domain | BitPangea">
+<meta property="og:description" content="The constitutional home of the Domain that asks: What properties does the World possess?">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bitpangea.com/thecodex/003-world-properties/">
+<meta property="og:image" content="https://bitpangea.com/images/bitpangea-og.jpg">
+<meta property="og:site_name" content="BitPangea">
+<meta property="og:locale" content="en_US">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The World Properties Domain | BitPangea">
+<meta name="twitter:description" content="The constitutional home of the Domain that asks: What properties does the World possess?">
+<meta name="twitter:image" content="https://bitpangea.com/images/bitpangea-og.jpg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "The World Properties Domain",
+  "url": "https://bitpangea.com/thecodex/003-world-properties/",
+  "description": "The constitutional home of the World Properties Domain within The Codex of BitPangea.",
+  "isPartOf": {
+    "@type": "WebPage",
+    "name": "The Codex",
+    "url": "https://bitpangea.com/thecodex/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "BitPangea",
+    "url": "https://bitpangea.com/"
+  }
+}
+</script>
+
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg: #02050a;
+  --gold: #d4a938;
+  --cyan: #00c8d7;
+  --white: #ffffff;
+  --muted: rgba(255,255,255,.74);
+  --panel-soft: rgba(0,0,0,.32);
+  --line: rgba(212,169,56,.18);
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  background: var(--bg);
+  color: var(--white);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  position: relative;
+  line-height: 1.72;
+  overflow-x: hidden;
+  background: var(--bg);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(2,5,10,.78), rgba(2,5,10,.94)),
+    url("../images/bitpangea.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -2;
+  pointer-events: none;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 72% 12%, rgba(0,200,215,.11), transparent 35%),
+    radial-gradient(circle at 18% 18%, rgba(212,169,56,.12), transparent 34%),
+    linear-gradient(90deg, rgba(0,0,0,.62), rgba(0,0,0,.28), rgba(0,0,0,.68));
+  z-index: -1;
+  pointer-events: none;
+}
+
+.page {
+  width: 100%;
+  padding: 150px 28px 90px;
+}
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 58px;
+  background: rgba(0,0,0,.44);
+  border: 1px solid var(--line);
+  box-shadow: 0 0 70px rgba(0,0,0,.58);
+  backdrop-filter: blur(4px);
+}
+
+.hero {
+  max-width: 900px;
+  margin-bottom: 46px;
+}
+
+.eyebrow {
+  color: var(--cyan);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 22px;
+}
+
+h1 {
+  color: var(--white);
+  font-size: clamp(42px,7vw,76px);
+  line-height: 1.02;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-shadow: 0 0 24px rgba(0,0,0,.92);
+}
+
+.subtitle {
+  color: var(--gold);
+  font-size: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+.intro {
+  color: rgba(255,255,255,.88);
+  font-size: 20px;
+  max-width: 840px;
+  margin-bottom: 32px;
+}
+
+.divider {
+  width: 64px;
+  height: 2px;
+  background: var(--gold);
+  margin: 34px 0 42px;
+  box-shadow: 0 0 14px rgba(212,169,56,.65);
+}
+
+.section {
+  margin-top: 34px;
+  padding: 34px 34px 30px;
+  background: var(--panel-soft);
+  border: 1px solid rgba(212,169,56,.13);
+}
+
+.section + .section { margin-top: 26px; }
+
+h2 {
+  margin-bottom: 18px;
+  color: var(--white);
+  font-size: 24px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-shadow: 0 0 14px rgba(0,0,0,.9);
+}
+
+p {
+  margin-bottom: 20px;
+  color: var(--white);
+  font-size: 17px;
+  text-shadow: 0 0 9px rgba(0,0,0,.9);
+}
+
+p:last-child { margin-bottom: 0; }
+
+strong { color: var(--white); }
+
+ul {
+  margin: 18px 0 4px;
+  list-style: none;
+}
+
+li {
+  position: relative;
+  margin-bottom: 14px;
+  padding-left: 24px;
+  color: rgba(255,255,255,.90);
+  font-size: 17px;
+  text-shadow: 0 0 9px rgba(0,0,0,.9);
+}
+
+li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 13px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 10px rgba(212,169,56,.70);
+}
+
+blockquote {
+  margin: 36px 0;
+  padding: 30px 36px;
+  border-left: 3px solid var(--gold);
+  background: rgba(0,0,0,.52);
+  color: var(--white);
+  font-size: 25px;
+  line-height: 1.45;
+  letter-spacing: 1px;
+  box-shadow: 0 0 28px rgba(0,0,0,.45);
+}
+
+.quote-label {
+  display: block;
+  color: var(--cyan);
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.domain-question {
+  margin-top: 24px;
+  padding: 24px 26px;
+  border: 1px solid rgba(212,169,56,.22);
+  background: rgba(0,0,0,.38);
+}
+
+.domain-question .label {
+  color: var(--cyan);
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.domain-question .question {
+  color: var(--gold);
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.domain-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.domain-link {
+  display: block;
+  padding: 24px;
+  background: rgba(0,0,0,.42);
+  border: 1px solid rgba(212,169,56,.20);
+  color: inherit;
+  text-decoration: none;
+  transition: .25s ease;
+}
+
+.domain-link:hover {
+  transform: translateY(-2px);
+  border-color: rgba(212,169,56,.48);
+  background: rgba(0,0,0,.56);
+}
+
+.domain-link h3 {
+  color: var(--gold);
+  font-size: 15px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.domain-link p {
+  color: rgba(255,255,255,.82);
+  font-size: 15px;
+  margin: 0;
+}
+
+.status {
+  margin-top: 38px;
+  padding: 18px 24px;
+  border: 1px solid rgba(212,169,56,.38);
+  color: var(--gold);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 12px;
+  display: inline-block;
+  background: rgba(0,0,0,.35);
+}
+
+@media (max-width: 980px) {
+  .domain-links { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+  .page { padding: 178px 16px 60px; }
+  .container { padding: 36px 24px 46px; }
+  h1 { letter-spacing: 4px; }
+  .subtitle { font-size: 16px; }
+  .intro { font-size: 18px; }
+  p, li { font-size: 16px; }
+  .section { padding: 28px 22px; }
+  blockquote { font-size: 20px; padding: 24px; }
+  .domain-question .question { font-size: 19px; }
+}
+</style>
+</head>
+
+<body data-bp-page="thefoundation">
+<div id="bp-header"></div>
+
+<main class="page">
+<article class="container">
+
+<section class="hero">
+  <div class="eyebrow">The Codex · Domain III · July 2026</div>
+
+  <h1>The World<br>Properties<br>Domain</h1>
+
+  <div class="subtitle">The Constitutional Home of World Property Inquiry</div>
+
+  <p class="intro">
+    The World Properties Domain preserves the constitutional recognition of
+    objective properties already possessed by <strong>The World</strong>.
+    Its Codices do not create, grant, activate, or assemble those properties.
+    They recognize and preserve what constitutional inquiry reveals.
+  </p>
+
+  <div class="domain-question">
+    <div class="label">Constitutional Question</div>
+    <div class="question">What properties does the World possess?</div>
+  </div>
+
+  <div class="divider"></div>
+
+  <blockquote>
+    <span class="quote-label">Domain Doctrine</span>
+    The World possesses properties before those properties are discovered.
+  </blockquote>
+</section>
+
+<section class="section">
+  <h2>Constitutional Purpose</h2>
+
+  <p>
+    The World Properties Domain exists to preserve objective properties of the
+    already-existing World.
+  </p>
+
+  <p>
+    A World Property may remain unknown, unnamed, unmapped, or unrecorded
+    without being absent. Constitutional discovery recognizes the property;
+    it does not bring the property into existence.
+  </p>
+</section>
+
+<section class="section">
+  <h2>Mode of Discovery</h2>
+
+  <p>
+    World Property Codices operate through <strong>ontological independence</strong>.
+    No property must be constitutionally created or activated by another.
+  </p>
+
+  <p>
+    Their ordering reflects <strong>constitutional priority of recognition</strong>:
+    the principled order through which properties are most faithfully preserved.
+  </p>
+
+  <p>
+    Each class of World Properties follows its own
+    <strong>natural mode of revelation</strong>.
+  </p>
+</section>
+
+<section class="section">
+  <h2>World Property Categories</h2>
+
+  <p>
+    World Properties may be organized into constitutional categories according
+    to the nature of the properties they preserve.
+  </p>
+
+  <ul>
+    <li>Categories are classifications within the World Properties Domain.</li>
+    <li>Categories are not additional Domains.</li>
+    <li>Categories emerge through constitutional discovery.</li>
+    <li>No category is presumed before its constitutional recognition.</li>
+    <li>Classification follows what The World reveals.</li>
+  </ul>
+</section>
+
+<section class="section">
+  <h2>Recognized World Properties</h2>
+
+  <div id="wp-register">
+    <p>Loading the World Properties Register...</p>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Constitutional Records</h2>
+
+  <div class="domain-links">
+    <a class="domain-link" href="/thecharter/04-the-world-properties-charter/">
+      <h3>The World Properties Charter</h3>
+      <p>
+        The constitutional record governing discovery, recognition,
+        classification, and preservation within the Domain.
+      </p>
+    </a>
+
+    <a class="domain-link" href="/thecodex/">
+      <h3>The Codex Register</h3>
+      <p>
+        The active constitutional register of adopted Domains and Codices.
+      </p>
+    </a>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Future Constitutional Inquiry</h2>
+
+  <p>
+    The World Properties Domain remains open to further discovery.
+  </p>
+
+  <p>
+    Future Codices may recognize additional objective properties. Future
+    inquiry may also reveal additional constitutional categories through which
+    related properties can be faithfully organized.
+  </p>
+
+  <p>
+    Neither the number of World Properties nor the number of categories is
+    predetermined.
+  </p>
+</section>
+
+<blockquote>
+  <span class="quote-label">Constitutional Conclusion</span>
+  The Codex does not decide what properties The World should possess. It
+  preserves what The World reveals that it already possesses.
+</blockquote>
+
+<div class="status">
+  World Properties Domain · Active Constitutional Record · July 2026
+</div>
+
+</article>
+</main>
+
+<div id="bp-footer"></div>
+
+<script>
+document.addEventListener("DOMContentLoaded", async () => {
+  const register = document.getElementById("wp-register");
+
+  if (!register) return;
+
+  try {
+    const response = await fetch(
+      "/thecodex/003-world-properties/wp-register.html"
+    );
+
+    if (!response.ok) {
+      throw new Error(`Unable to load register: ${response.status}`);
+    }
+
+    register.innerHTML = await response.text();
+  } catch (error) {
+    console.error("World Properties Register error:", error);
+    register.innerHTML =
+      "<p>The World Properties Register could not be loaded.</p>";
+  }
+});
+</script>
+
+</body>
+</html>
