@@ -1,0 +1,91 @@
+<!--
+  BitPangea — Spatial Properties Register
+  Path: /thecodex/003-world-properties/wp-spatial-register.html
+
+  This shared fragment preserves the recognized Spatial Properties
+  of the World Properties Domain.
+
+  Update this file whenever a new Spatial Property is
+  constitutionally recognized.
+-->
+
+<div class="wp-register" aria-label="Recognized World Properties">
+
+  <p>
+    The <strong>World Properties Domain</strong> preserves the constitutional
+    recognition of objective properties already existing within
+    <strong>The World</strong>. World Properties are organized into
+    constitutional categories according to the nature of the properties they
+    preserve.
+  </p>
+
+  <div class="principle-card">
+    <h3>Recognized Category</h3>
+
+    <p>
+      <strong>Spatial Properties</strong> preserve the objective spatial
+      properties of the World.
+    </p>
+  </div>
+
+  <div id="wp-spatial-register">
+    <p>Loading Spatial Properties...</p>
+  </div>
+
+  <!--
+  Future Categories
+
+  <div class="principle-card">
+      <h3>Discovery Properties</h3>
+      <p>...</p>
+  </div>
+
+  <div id="wp-discovery-register"></div>
+
+  <div class="principle-card">
+      <h3>Physical Properties</h3>
+      <p>...</p>
+  </div>
+
+  <div id="wp-physical-register"></div>
+
+  -->
+
+  <p class="wp-register-note">
+    Additional World Property categories may be recognized through
+    constitutional discovery. Categories are constitutional classifications,
+    not additional Domains.
+  </p>
+
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", async () => {
+
+    const spatial = document.getElementById("wp-spatial-register");
+
+    if (spatial) {
+        try {
+
+            const response = await fetch(
+                "/thecodex/003-world-properties/wp-spatial-register.html"
+            );
+
+            if (!response.ok) {
+                throw new Error(response.status);
+            }
+
+            spatial.innerHTML = await response.text();
+
+        } catch (error) {
+
+            console.error("Spatial Register:", error);
+
+            spatial.innerHTML =
+                "<p>The Spatial Properties Register could not be loaded.</p>";
+
+        }
+    }
+
+});
+</script>
