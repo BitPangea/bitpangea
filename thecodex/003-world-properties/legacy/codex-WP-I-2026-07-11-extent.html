@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Codex WP-I — The Extent | BitPangea</title>
+<!-- Favicons -->
+<link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/favicon.svg" rel="shortcut icon"/>
+<!-- New Header -->
+<link href="/assets/css/bitpangea-framework.css" rel="stylesheet"/>
+<script defer="" src="/assets/js/bitpangea-framework.js"></script>
+<meta content="Codex WP-I — The Extent establishes Extent as the first World Property of BitPangea and preserves the governing methodology of World Property discovery." name="description"/>
+<!-- BitPangea Metadata -->
+<meta content="#00c8d7" name="theme-color"/>
+<meta content="index,follow" name="robots"/>
+<link href="https://bitpangea.com/thecodex/003-world-properties/codex-WP-I/" rel="canonical"/>
+<!-- Open Graph -->
+<meta content="Codex WP-I — The Extent | BitPangea" property="og:title"/>
+<meta content="The first World Property of BitPangea: Extent as the cartographic property describing the spatial scope of the World, recognized rather than created." property="og:description"/>
+<meta content="article" property="og:type"/>
+<meta content="https://bitpangea.com/thecodex/003-world-properties/codex-WP-I/" property="og:url"/>
+<meta content="https://bitpangea.com/images/bitpangea-og.jpg" property="og:image"/>
+<meta content="BitPangea" property="og:site_name"/>
+<meta content="en_US" property="og:locale"/>
+<!-- Twitter/X -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Codex WP-I — The Extent | BitPangea" name="twitter:title"/>
+<meta content="The first World Property of BitPangea: Extent as the cartographic property describing the spatial scope of the World, recognized rather than created." name="twitter:description"/>
+<meta content="https://bitpangea.com/images/bitpangea-og.jpg" name="twitter:image"/>
+<!-- Structured Data -->
+<script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Article",
+    "headline":"Codex WP-I — The Extent",
+    "name":"Codex WP-I — The Extent",
+    "url":"https://bitpangea.com/thecodex/003-world-properties/codex-WP-I/",
+    "datePublished":"2026-07-08",
+    "dateModified":"2026-07-11",
+    "description":"The first formal definition within the World Properties Domain of BitPangea, establishing Extent as the cartographic property describing the spatial scope of the World and preserving the governing methodology of World Property discovery.",
+    "isPartOf":{
+      "@type":"WebPage",
+      "name":"The Codex",
+      "url":"https://bitpangea.com/thecodex/"
+    },
+    "publisher":{
+      "@type":"Organization",
+      "name":"BitPangea",
+      "url":"https://bitpangea.com/"
+    }
+  }
+  </script>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #02050a;
+      --gold: #d4a938;
+      --cyan: #00c8d7;
+      --white: #ffffff;
+      --muted: rgba(255, 255, 255, 0.74);
+      --panel: rgba(0, 0, 0, 0.50);
+      --panel-soft: rgba(0, 0, 0, 0.32);
+      --line: rgba(212, 169, 56, 0.18);
+    }
+
+    html, body {
+      width: 100%;
+      min-height: 100%;
+      background: var(--bg);
+      color: var(--white);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      position: relative;
+      line-height: 1.72;
+      overflow-x: hidden;
+      background: var(--bg);
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(2, 5, 10, 0.76), rgba(2, 5, 10, 0.92)),
+        url("../images/bitpangea.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      opacity: 1;
+      z-index: -2;
+      pointer-events: none;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(circle at 72% 12%, rgba(0, 200, 215, 0.12), transparent 35%),
+        radial-gradient(circle at 18% 18%, rgba(212, 169, 56, 0.12), transparent 34%),
+        linear-gradient(90deg, rgba(0,0,0,.60), rgba(0,0,0,.26), rgba(0,0,0,.66));
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    .page {
+      width: 100%;
+      padding: 150px 28px 90px;
+    }
+
+    .container {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 58px;
+      background: rgba(0, 0, 0, 0.44);
+      border: 1px solid var(--line);
+      box-shadow: 0 0 70px rgba(0, 0, 0, 0.58);
+      backdrop-filter: blur(4px);
+    }
+
+    .hero {
+      max-width: 860px;
+      margin-bottom: 46px;
+    }
+
+    .eyebrow {
+      color: var(--cyan);
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-size: 12px;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      color: var(--white);
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: 1.02;
+      letter-spacing: 7px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      text-shadow: 0 0 24px rgba(0, 0, 0, 0.92);
+    }
+
+    .subtitle {
+      color: var(--gold);
+      font-size: 20px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+    }
+
+    .intro {
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 20px;
+      max-width: 820px;
+      margin-bottom: 32px;
+    }
+
+    .divider {
+      width: 64px;
+      height: 2px;
+      background: var(--gold);
+      margin: 34px 0 42px;
+      box-shadow: 0 0 14px rgba(212, 169, 56, 0.65);
+    }
+
+    .section {
+      margin-top: 34px;
+      padding: 34px 34px 30px;
+      background: var(--panel-soft);
+      border: 1px solid rgba(212, 169, 56, 0.13);
+    }
+
+    .section + .section { margin-top: 26px; }
+
+    h2 {
+      margin-bottom: 18px;
+      color: var(--white);
+      font-size: 24px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      text-shadow: 0 0 14px rgba(0, 0, 0, 0.9);
+    }
+
+    p {
+      margin-bottom: 20px;
+      color: var(--white);
+      font-size: 17px;
+      text-shadow: 0 0 9px rgba(0, 0, 0, 0.9);
+    }
+
+    p:last-child { margin-bottom: 0; }
+
+    strong { color: var(--white); }
+
+    ul {
+      margin: 18px 0 4px 0;
+      list-style: none;
+    }
+
+    li {
+      position: relative;
+      margin-bottom: 14px;
+      padding-left: 24px;
+      color: rgba(255,255,255,0.90);
+      font-size: 17px;
+      text-shadow: 0 0 9px rgba(0, 0, 0, 0.9);
+    }
+
+    li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 13px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--gold);
+      box-shadow: 0 0 10px rgba(212,169,56,.70);
+    }
+
+    blockquote {
+      margin: 36px 0;
+      padding: 30px 36px;
+      border-left: 3px solid var(--gold);
+      background: rgba(0, 0, 0, 0.52);
+      color: var(--white);
+      font-size: 25px;
+      line-height: 1.45;
+      letter-spacing: 1px;
+      box-shadow: 0 0 28px rgba(0, 0, 0, 0.45);
+    }
+
+    .quote-label {
+      display: block;
+      color: var(--cyan);
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .codex-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin: 36px 0 52px;
+    }
+
+    .codex-card {
+      padding: 22px 20px;
+      background: rgba(0, 0, 0, 0.42);
+      border: 1px solid rgba(212, 169, 56, 0.20);
+      box-shadow: 0 0 22px rgba(0, 0, 0, 0.30);
+    }
+
+    .codex-card h3 {
+      color: var(--gold);
+      font-size: 13px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .codex-card p {
+      color: rgba(255,255,255,0.82);
+      font-size: 15px;
+      line-height: 1.55;
+      margin: 0;
+    }
+
+    .entry-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .entry-card {
+      display: block;
+      padding: 28px 28px 26px;
+      background: rgba(0, 0, 0, 0.44);
+      border: 1px solid rgba(212, 169, 56, 0.24);
+      box-shadow: 0 0 26px rgba(0, 0, 0, 0.34);
+      text-decoration: none;
+      transition: all .25s ease;
+    }
+
+    .entry-card:hover {
+      border-color: rgba(212, 169, 56, 0.52);
+      background: rgba(0, 0, 0, 0.56);
+      box-shadow: 0 0 34px rgba(212, 169, 56, 0.10);
+      transform: translateY(-2px);
+    }
+
+    .entry-card .entry-meta {
+      color: var(--cyan);
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .entry-card h3 {
+      color: var(--gold);
+      font-size: 20px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .entry-card p {
+      color: rgba(255,255,255,0.86);
+      font-size: 16px;
+      line-height: 1.65;
+      margin-bottom: 16px;
+    }
+
+    .entry-card .entry-link {
+      color: var(--white);
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .status {
+      margin-top: 38px;
+      padding: 18px 24px;
+      border: 1px solid rgba(212, 169, 56, 0.38);
+      color: var(--gold);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-size: 12px;
+      display: inline-block;
+      background: rgba(0, 0, 0, 0.35);
+    }
+
+.source-link a,
+.source-link a:visited {
+ color: rgba(212, 169, 56, 0.9);
+ text-decoration: none;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ font-size: 12px;
+}
+
+.source-link a:hover {
+ color: #ffffff;
+ text-shadow: 0 0 12px rgba(212,169,56,.6);
+}
+
+
+.source-link {
+ margin-top: 18px;
+}
+
+     
+    @media (max-width: 980px) {
+
+      .codex-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      .page { padding: 178px 16px 60px; }
+      .container { padding: 36px 24px 46px; }
+      h1 { letter-spacing: 4px; }
+      .subtitle { font-size: 16px; }
+      .intro { font-size: 18px; }
+      p, li { font-size: 16px; }
+      .section { padding: 28px 22px; }
+      blockquote { font-size: 20px; padding: 24px 24px; }
+    }
+  </style>
+
+<link rel="stylesheet" href="/assets/css/bitpangea-framework.css">
+<link rel="stylesheet" href="/thecodex/003-world-properties/bitpangea-framework.css">
+</head>
+<body data-bp-page="thefoundation">
+<div id="bp-header"></div>
+<main class="page">
+<article class="container">
+<section class="hero">
+<div class="eyebrow">Codex WP-I · July 8, 2026 · Refined July 11, 2026</div>
+<h1>Codex WP-I<br/>The Extent</h1>
+<div class="subtitle">The First World Property</div>
+<p class="intro">
+    Codex WP-I opens the World Properties Domain by recognizing <strong>Extent</strong>
+    as the first constitutional Spatial Property of The World. The World already exists,
+    and its spatial scope exists with it. This Codex does not create that scope; it
+    preserves its constitutional recognition.
+  </p>
+<div aria-label="Codex metadata" class="codex-meta">
+<span class="pill">The Codex</span>
+<span class="pill">World Properties Domain</span>
+<span class="pill">Spatial Properties</span>
+<span class="pill">Adopted Definition</span>
+</div>
+<div class="divider"></div>
+<blockquote>
+<span class="quote-label">Codex Definition</span>
+    An Extent is the cartographic property describing the spatial scope of the World within BitPangea.
+  </blockquote>
+</section>
+<section class="section">
+<h2>Domain Assignment</h2>
+<p>Codex WP-I belongs to the <strong>World Properties Domain (WP)</strong>.</p>
+<p>The World Properties Domain asks: <strong>What properties does the World possess?</strong></p>
+<p>World Property Codices preserve the constitutional recognition of objective properties already existing within The World. They do not create, assemble, grant, or activate those properties.</p>
+<p>Unlike the constitutive progression of the Structural Domain or the grammatical progression of the Relational Domain, World Property Codices operate through <strong>ontological independence</strong>. A World Property exists regardless of whether another World Property has already been recognized.</p>
+</section>
+<section class="section">
+<h2>Constitutional Transition</h2>
+<p>The Structural Domain established the constitutional vocabulary through which The World may be described.</p>
+<p>The Relational Domain established the first-order grammar through which structural elements may be understood in relation to one another.</p>
+<p>Codex WP-I begins a different mode of inquiry. The World Properties Domain recognizes objective properties possessed by the already-existing World. Its Codices follow their natural mode of revelation rather than a required chain of logical construction.</p>
+</section>
+<section class="section">
+<h2>Mode of Discovery</h2>
+<p>World Properties exist prior to their discovery, naming, mapping, or codification.</p>
+<p>The order of World Property Codices therefore reflects <strong>constitutional priority of recognition</strong>: the order in which the properties are most faithfully and naturally preserved through constitutional inquiry.</p>
+<p>This ordering is principled but not creative. Recognition neither produces a property nor makes its existence dependent upon a previous Codex.</p>
+</section>
+<section class="section">
+  <h2>Recognized World Properties</h2>
+
+  <div id="wp-spatial-register">
+    <p>Loading recognized World Properties...</p>
+  </div>
+</section>
+<section class="section">
+<h2>The Definition</h2>
+<p>The World is finite and possesses spatial scope whether or not that scope has been measured, mapped, or observed.</p>
+<p>Extent identifies that objective scope without prescribing its geometry, representation, measurement, implementation, or interpretation.</p>
+<p>Extent establishes no ownership, governance, jurisdiction, settlement, access, value, movement, purpose, or civilizational meaning.</p>
+</section>
+<section class="section">
+<h2>Formal Definition</h2>
+<p>An Extent is the cartographic property describing the spatial scope of the World within BitPangea.</p>
+<p>Extent belongs to The World as a whole. It is not a property of any individual Parcel, Boundary, Coordinate, relation, inhabitant, claim, institution, or settlement.</p>
+<p>This Codex constitutionally recognizes that The World possesses spatial scope. It does not determine how that scope must be measured, represented, mapped, or implemented.</p>
+</section>
+<section class="section">
+<h2>Immutable Properties</h2>
+<p>Every Extent possesses the following immutable properties:</p>
+<div aria-label="Immutable extent properties" class="property-grid">
+<div class="property-card"><h3>World Property</h3><p>Extent is an objective property possessed by The World as a whole.</p></div>
+<div class="property-card"><h3>Spatial Scope</h3><p>Extent describes the cartographic scope of The World.</p></div>
+<div class="property-card"><h3>Recognition</h3><p>Extent is recognized rather than created. Discovery, naming, mapping, or codification does not bring it into existence.</p></div>
+<div class="property-card"><h3>Independence</h3><p>Extent exists regardless of whether any Region, Cluster, or other World Property has been constitutionally recognized.</p></div>
+<div class="property-card"><h3>Permanence</h3><p>Inquiry or representation does not expand, contract, duplicate, or otherwise alter the Extent of The World.</p></div>
+<div class="property-card"><h3>Neutrality</h3><p>Extent assigns no ownership, jurisdiction, governance, settlement, access, value, purpose, or civilizational meaning.</p></div>
+</div>
+</section>
+<section class="section two-column">
+<div>
+<h2>What An Extent Is</h2>
+<ul>
+<li>A cartographic property</li>
+<li>A property of The World as a whole</li>
+<li>The spatial scope of The World</li>
+<li>An objective reality existing prior to discovery</li>
+<li>The first constitutionally recognized Spatial Property</li>
+</ul>
+</div>
+<div>
+<h2>What An Extent Is Not</h2>
+<ul>
+<li>A Parcel, Boundary, or Coordinate</li>
+<li>A relation between Parcels</li>
+<li>A Region or Cluster</li>
+<li>A measurement system</li>
+<li>A map or cartographic implementation</li>
+<li>A claim, territory, settlement, jurisdiction, or government</li>
+</ul>
+</div>
+</section>
+<section class="section">
+<h2>Principles Established by Codex WP-I</h2>
+<div class="principle-card"><h3>1. The World Possesses Properties</h3><p>The World possesses objective properties that may be constitutionally recognized without being created by the Codex.</p></div>
+<div class="principle-card"><h3>2. World Properties Are Recognized, Not Created</h3><p>Inquiry, discovery, naming, mapping, and codification preserve recognition of World Properties but do not produce them.</p></div>
+<div class="principle-card"><h3>3. World Properties Exist Prior to Discovery</h3><p>A World Property remains real regardless of whether it has been observed, understood, named, mapped, or recorded.</p></div>
+<div class="principle-card"><h3>4. World Properties Operate Through Ontological Independence</h3><p>No World Property must be created or constitutionally activated by the Codex that precedes it.</p></div>
+<div class="principle-card"><h3>5. Ordering Reflects Constitutional Priority of Recognition</h3><p>The numbering of World Property Codices preserves a principled order of constitutional recognition rather than a chain of logical construction.</p></div>
+<div class="principle-card"><h3>6. Spatial Scope Does Not Imply Civilizational Meaning</h3><p>Extent establishes no ownership, administration, settlement, governance, access, value, movement, purpose, privilege, or use.</p></div>
+</section>
+<section class="section">
+<h2>Scope</h2>
+<p>This Codex recognizes Extent as the first Spatial Property within the World Properties Domain.</p>
+<p>It establishes that The World possesses spatial scope. It does not establish:</p>
+<ul>
+<li>The geometry or representation of the World's outer limit</li>
+<li>The method by which spatial scope is measured</li>
+<li>The nature of any surface, medium, edge, or topology</li>
+<li>The number, boundaries, or character of Regions or Clusters</li>
+<li>The criteria governing any future World Property</li>
+<li>Ownership, claims, governance, commerce, settlement, culture, value, or purpose</li>
+<li>Cartographic implementation</li>
+</ul>
+<p>These matters remain subjects for future constitutional inquiry.</p>
+</section>
+<section class="section">
+<h2>Constitutional Sequence</h2>
+<p>Codex WP-I marks the beginning of constitutional property inquiry.</p>
+<p>The Structural Domain establishes structural vocabulary. The Relational Domain establishes relational grammar. The World Properties Domain recognizes objective properties possessed by The World.</p>
+<p>Within the World Properties Domain, Extent is recognized first by constitutional priority. Its recognition neither creates later properties nor makes their existence dependent upon it.</p>
+</section>
+<section class="section">
+<h2>Preserved Original Edition</h2>
+<p>The original July 8, 2026 edition of Codex WP-I has been preserved in The Archive as a historical constitutional record.</p>
+<p class="source-link"><a href="/thecodex/003-world-properties/legacy/codex-WP-I-index.html">View Preserved WP-I Edition</a></p>
+</section>
+<blockquote>
+<span class="quote-label">Cartographic Doctrine</span>
+  The World possesses Extent before Extent is discovered. The Codex recognizes the scope; it does not create it.
+</blockquote>
+<div class="status">Codex WP-I · World Properties Domain · Spatial Properties · Refined Adopted Definition</div>
+<p class="source-link"><a href="codex-WP-I-extent.md">View Markdown Source</a></p>
+</article>
+</main>
+<div id="bp-footer"></div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", async () => {
+    const registerContainer = document.getElementById("wp-spatial-register");
+
+    if (!registerContainer) return;
+
+    try {
+      const response = await fetch(
+        "/thecodex/003-world-properties/wp-spatial-register.html"
+      );
+
+      if (!response.ok) {
+        throw new Error(`Unable to load register: ${response.status}`);
+      }
+
+      registerContainer.innerHTML = await response.text();
+    } catch (error) {
+      console.error("World Properties Register error:", error);
+
+      registerContainer.innerHTML = `
+        <p>
+          The World Properties Register could not be loaded.
+        </p>
+      `;
+    }
+  });
+</script>
+</body>
+</html>
