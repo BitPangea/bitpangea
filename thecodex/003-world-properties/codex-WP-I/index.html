@@ -428,7 +428,7 @@
 <section class="section">
   <h2>Recognized World Properties</h2>
 
-  <div id="wp-register">
+  <div id="wp-spatial-register">
     <p>Loading recognized World Properties...</p>
   </div>
 </section>
@@ -526,13 +526,13 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", async () => {
-    const registerContainer = document.getElementById("wp-register");
+    const registerContainer = document.getElementById("wp-spatial-register");
 
     if (!registerContainer) return;
 
     try {
       const response = await fetch(
-        "/thecodex/003-world-properties/wp-register.html"
+        "/thecodex/003-world-properties/wp-spatial-register.html"
       );
 
       if (!response.ok) {
