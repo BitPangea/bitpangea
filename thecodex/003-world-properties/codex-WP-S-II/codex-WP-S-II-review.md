@@ -1,6 +1,6 @@
-# Codex WP-II — The Region Review
+# Codex WP-S-II — The Region Review
 
-**Codex:** WP-II — The Region  
+**Codex:** WP-S-II — The Region  
 **Domain:** World Properties (WP)  
 **Category:** Spatial Properties  
 **Review Period:** July 10, 2026
@@ -9,7 +9,7 @@
 
 # Purpose
 
-Following the adoption of **Codex WP-I — The Extent**, constitutional review was conducted to establish the second World Property of BitPangea.
+Following the adoption of **Codex WP-S-I — The Extent**, constitutional review was conducted to establish the second World Property of BitPangea.
 
 The objective of this review was to determine whether **Region** constitutes an intrinsic property of the World and, if so, to identify the most constitutionally appropriate first-order definition while preserving the architectural cadence established throughout the Structural and Relational Domains.
 
@@ -144,7 +144,7 @@ The change also preserved architectural flexibility for future constitutional wo
 
 An additional architectural review identified another important consideration.
 
-Early drafts of Codex WP-II referenced future Spatial Properties by name.
+Early drafts of Codex WP-S-II referenced future Spatial Properties by name.
 
 Following review, these references were removed.
 
@@ -180,6 +180,6 @@ The review established several enduring architectural principles.
 
 # Result
 
-Codex WP-II establishes **Region** as the second adopted World Property within the World Properties Domain.
+Codex WP-S-II establishes **Region** as the second adopted World Property within the World Properties Domain.
 
-Together with **WP-I — The Extent**, it begins the constitutional recognition of the Spatial Properties possessed by the World itself while preserving sufficient architectural flexibility for future constitutional discovery.
+Together with **WP-S-I — The Extent**, it begins the constitutional recognition of the Spatial Properties possessed by the World itself while preserving sufficient architectural flexibility for future constitutional discovery.
