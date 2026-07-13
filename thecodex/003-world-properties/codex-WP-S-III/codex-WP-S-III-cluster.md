@@ -1,7 +1,7 @@
-# Codex WP-III — The Cluster
+# Codex WP-S-III — The Cluster
 
 **Domain:** World Properties (WP)  
-**Codex:** WP-III  
+**Codex:** WP-S-III  
 **Title:** The Cluster  
 **Adopted:** July 11, 2026
 
@@ -15,7 +15,7 @@
 
 # Domain Assignment
 
-Codex WP-III belongs to the **World Properties Domain (WP).**
+Codex WP-S-III belongs to the **World Properties Domain (WP).**
 
 The World Properties Domain asks:
 
@@ -31,11 +31,11 @@ Accordingly, World Property Codices are not required to form a chain of constitu
 
 # Constitutional Progression
 
-Codex WP-I established **Extent** as the spatial scope of the World.
+Codex WP-S-I established **Extent** as the spatial scope of the World.
 
-Codex WP-II established **Region** as a large-scale property recognized within that scope.
+Codex WP-S-II established **Region** as a large-scale property recognized within that scope.
 
-Codex WP-III continues constitutional discovery by recognizing **Cluster** as another objective spatial property already existing within the World.
+Codex WP-S-III continues constitutional discovery by recognizing **Cluster** as another objective spatial property already existing within the World.
 
 Neither discovery nor codification creates a Cluster. They merely recognize its existence.
 
@@ -45,13 +45,13 @@ Neither discovery nor codification creates a Cluster. They merely recognize its 
 
 The currently recognized Spatial Properties of the World are:
 
-- **WP-I — Extent**
+- **WP-S-I — Extent**
   - The spatial scope of the World.
 
-- **WP-II — Region**
+- **WP-S-II — Region**
   - A coherent large-scale portion of the World.
 
-- **WP-III — Cluster**
+- **WP-S-III — Cluster**
   - A contiguous portion of the World.
 
 ---
@@ -144,7 +144,7 @@ A Cluster exists objectively regardless of whether it has been discovered, named
 
 ---
 
-# Principles Established by Codex WP-III
+# Principles Established by Codex WP-S-III
 
 ## 1. Clusters Are Recognized, Not Created
 
