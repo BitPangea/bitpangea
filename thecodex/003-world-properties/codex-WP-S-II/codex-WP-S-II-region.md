@@ -1,8 +1,8 @@
-# Codex WP-II — The Region
+# Codex WP-S-II — The Region
 
 **Domain:** World Properties (WP)  
 **Category:** Spatial Properties  
-**Codex:** WP-II  
+**Codex:** WP-S-II  
 **Adopted:** July 10, 2026
 
 ---
@@ -15,7 +15,7 @@
 
 # Domain Assignment
 
-Codex WP-II belongs to the **World Properties Domain (WP)**.
+Codex WP-S-II belongs to the **World Properties Domain (WP)**.
 
 The World Properties Domain asks:
 
@@ -29,9 +29,9 @@ Region belongs to this Domain because it describes an inherent spatial property 
 
 # Constitutional Progression
 
-Codex WP-I established **Extent** as the spatial scope of the World.
+Codex WP-S-I established **Extent** as the spatial scope of the World.
 
-Codex WP-II proceeds inward from that scope.
+Codex WP-S-II proceeds inward from that scope.
 
 Once the World is recognized as possessing Extent, constitutional inquiry may recognize coherent large-scale portions existing within that Extent.
 
@@ -47,8 +47,8 @@ Region is the second adopted Codex within the **Spatial Properties** category of
 
 Current constitutional progression:
 
-- **WP-I — The Extent**
-- **WP-II — The Region**
+- **WP-S-I — The Extent**
+- **WP-S-II — The Region**
 
 Together these establish the first adopted Spatial Properties of BitPangea.
 
@@ -163,7 +163,7 @@ A Region is not:
 
 ---
 
-# Principles Established by Codex WP-II
+# Principles Established by Codex WP-S-II
 
 ## 1. Extent Makes Region Possible
 
@@ -251,7 +251,7 @@ Extent describes the spatial scope of the World.
 
 Region describes coherent large-scale portions recognized within that scope.
 
-Together, WP-I and WP-II establish the currently adopted Spatial Properties of the World Properties Domain.
+Together, WP-S-I and WP-S-II establish the currently adopted Spatial Properties of the World Properties Domain.
 
 ---
 
