@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transmission 007 — The Presence | BitPangea</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="/assets/favicon.svg">
+  <meta name="description" content="Transmission 007 — The Presence. A meditative passage into the question of what exists within the World." />
+  <meta name="theme-color" content="#02050a">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://bitpangea.com/transmissions/transmission007-thepresence/">
+  <meta property="og:title" content="Transmission 007 — The Presence | BitPangea">
+  <meta property="og:description" content="The World existed. Yet existence was not emptiness.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://bitpangea.com/transmissions/transmission007-thepresence/">
+  <meta property="og:site_name" content="BitPangea">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --bg: #010306;
+      --white: #f4f7fa;
+      --dim: rgba(244,247,250,.62);
+      --gold: #d4a938;
+      --cyan: #00c8d7;
+    }
+    html { scroll-behavior: smooth; background: var(--bg); }
+    body {
+      min-height: 100%; overflow-x: hidden;
+      background:
+        radial-gradient(circle at 50% 15%, rgba(0,200,215,.035), transparent 28%),
+        radial-gradient(circle at 50% 72%, rgba(212,169,56,.025), transparent 36%),
+        var(--bg);
+      color: var(--white); font-family: Arial, Helvetica, sans-serif; line-height: 1.7;
+    }
+    body::before {
+      content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 1;
+      background:
+        linear-gradient(rgba(255,255,255,.012) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.012) 1px, transparent 1px);
+      background-size: 72px 72px; opacity: .12;
+      -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 18%, black 82%, transparent 100%);
+      mask-image: linear-gradient(to bottom, transparent 0%, black 18%, black 82%, transparent 100%);
+    }
+    #presence-field {
+      position: fixed; inset: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none;
+      opacity: 0; transition: opacity 1.6s ease;
+    }
+    .ambient-glow {
+      position: fixed; width: 44vw; height: 44vw; left: 50%; top: 50%;
+      transform: translate(-50%, -50%) scale(.72); border-radius: 50%;
+      background: radial-gradient(circle, rgba(0,200,215,.055) 0%, rgba(0,200,215,.018) 34%, transparent 70%);
+      filter: blur(10px); opacity: 0; pointer-events: none; z-index: 0;
+      transition: opacity 1.6s ease, transform 2s ease;
+    }
+    .transmission { position: relative; z-index: 2; }
+    .scene {
+      min-height: 100vh; display: grid; place-items: center; padding: 14vh 8vw; position: relative;
+    }
+    .scene-inner {
+      width: min(920px, 100%); text-align: center; opacity: 0; transform: translateY(30px);
+      transition: opacity 1.2s ease, transform 1.2s ease;
+    }
+    .scene.visible .scene-inner { opacity: 1; transform: translateY(0); }
+    .scene p {
+      font-size: clamp(24px, 4vw, 54px); font-weight: 300; letter-spacing: .01em; line-height: 1.45;
+      text-shadow: 0 0 26px rgba(0,0,0,.92);
+    }
+    .scene .small {
+      font-size: clamp(16px, 2vw, 24px); color: var(--dim); letter-spacing: .08em; text-transform: uppercase;
+    }
+    .scene .question { font-size: clamp(34px, 5.2vw, 72px); line-height: 1.2; letter-spacing: .015em; }
+    .scene .emphasis {
+      color: var(--gold); text-shadow: 0 0 18px rgba(212,169,56,.18), 0 0 42px rgba(212,169,56,.08);
+    }
+    .scene .cyan {
+      color: var(--cyan); text-shadow: 0 0 18px rgba(0,200,215,.18), 0 0 42px rgba(0,200,215,.08);
+    }
+    .line {
+      width: 62px; height: 1px; margin: 34px auto;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      box-shadow: 0 0 14px rgba(212,169,56,.35);
+    }
+    .spaced p + p { margin-top: 1.15em; }
+    .presence-mark {
+      width: 11px; height: 11px; margin: 0 auto 46px; border-radius: 50%; background: rgba(255,255,255,.92);
+      box-shadow: 0 0 16px rgba(255,255,255,.8), 0 0 44px rgba(0,200,215,.28), 0 0 80px rgba(212,169,56,.14);
+      animation: pulse 4s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(.82); opacity: .55; }
+      50% { transform: scale(1.18); opacity: 1; }
+    }
+    .threshold { min-height: 135vh; }
+    .final { min-height: 120vh; padding-bottom: 20vh; }
+    .final .scene-inner {
+      border: 1px solid rgba(212,169,56,.14); background: rgba(0,0,0,.24);
+      padding: clamp(34px, 7vw, 74px);
+      box-shadow: 0 0 90px rgba(0,0,0,.7), inset 0 0 70px rgba(212,169,56,.018);
+      backdrop-filter: blur(4px);
+    }
+    .transmission-number {
+      color: var(--cyan); font-size: 11px; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 26px;
+    }
+    h1 {
+      font-size: clamp(42px, 8vw, 88px); line-height: 1.04; letter-spacing: .1em;
+      text-transform: uppercase; font-weight: 700; margin-bottom: 22px;
+    }
+    .final-subtitle {
+      color: var(--gold); font-size: clamp(13px, 1.8vw, 18px); letter-spacing: .22em;
+      text-transform: uppercase; line-height: 1.8;
+    }
+    .closing { margin-top: 52px; color: var(--dim); font-size: clamp(17px, 2vw, 22px); line-height: 1.9; }
+    .scroll-cue {
+      position: fixed; left: 50%; bottom: 28px; transform: translateX(-50%); z-index: 3;
+      color: rgba(255,255,255,.34); font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+      transition: opacity .5s ease; pointer-events: none;
+    }
+    .scroll-cue::after {
+      content: ""; display: block; width: 1px; height: 34px; margin: 10px auto 0;
+      background: linear-gradient(to bottom, rgba(212,169,56,.8), transparent);
+      animation: descend 2.2s ease-in-out infinite;
+    }
+    @keyframes descend {
+      0%, 100% { transform: scaleY(.45); opacity: .35; transform-origin: top; }
+      50% { transform: scaleY(1); opacity: .9; transform-origin: top; }
+    }
+    .vignette { position: fixed; inset: 0; pointer-events: none; z-index: 4; box-shadow: inset 0 0 180px rgba(0,0,0,.94); }
+    @media (max-width: 700px) {
+      .scene { padding: 12vh 22px; }
+      .scene p { line-height: 1.5; }
+      .threshold { min-height: 120vh; }
+      .final .scene-inner { padding: 34px 24px; }
+      h1 { letter-spacing: .06em; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation: none !important; transition-duration: .01ms !important; transition-delay: 0ms !important; }
+      .scene-inner { opacity: 1; transform: none; }
+      #presence-field { opacity: .42 !important; }
+      .ambient-glow { opacity: .45 !important; transform: translate(-50%, -50%) scale(1) !important; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Transmission 007 does not name what has not yet been revealed. -->
+  <!-- Presence precedes classification. -->
+  <!-- The World does not answer all at once. -->
+  <canvas id="presence-field" aria-hidden="true"></canvas>
+  <div class="ambient-glow" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+  <div class="scroll-cue" aria-hidden="true">Continue</div>
+  <main class="transmission">
+    <section class="scene"><div class="scene-inner"><p>The World existed.</p></div></section>
+    <section class="scene"><div class="scene-inner spaced"><p>Its parts had been distinguished.</p><p>Their relations had been revealed.</p></div></section>
+    <section class="scene threshold"><div class="scene-inner"><p>Yet existence was not emptiness.</p></div></section>
+    <section class="scene"><div class="scene-inner"><div class="presence-mark" aria-hidden="true"></div><p>Something was present.</p></div></section>
+    <section class="scene"><div class="scene-inner spaced"><p>Structure described what the World was.</p><p>Relation described how its parts belonged.</p></div></section>
+    <section class="scene"><div class="scene-inner"><p>Neither answered what might exist within it.</p></div></section>
+    <section class="scene threshold"><div class="scene-inner"><div class="small">The next question</div><div class="line"></div><p class="question">What exists <span class="emphasis">within</span> the World?</p></div></section>
+    <section class="scene"><div class="scene-inner spaced"><p>The World did not answer all at once.</p><p class="cyan">It waited to be revealed.</p></div></section>
+    <section class="scene final"><div class="scene-inner"><div class="transmission-number">Transmission 007</div><h1>The Presence</h1><div class="final-subtitle">The World was no longer empty.</div><div class="closing">The World exists.<br>Now begins the question of what exists within it.</div></div></section>
+  </main>
+  <script>
+    (() => {
+      const scenes = [...document.querySelectorAll('.scene')];
+      const canvas = document.getElementById('presence-field');
+      const ctx = canvas.getContext('2d');
+      const glow = document.querySelector('.ambient-glow');
+      const cue = document.querySelector('.scroll-cue');
+      let width = 0, height = 0, dpr = Math.min(window.devicePixelRatio || 1, 2), particles = [], scrollProgress = 0, animationFrame = null;
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      function resize() {
+        width = window.innerWidth; height = window.innerHeight; dpr = Math.min(window.devicePixelRatio || 1, 2);
+        canvas.width = width * dpr; canvas.height = height * dpr; canvas.style.width = width + 'px'; canvas.style.height = height + 'px';
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        const count = Math.max(42, Math.min(120, Math.floor((width * height) / 14500)));
+        particles = Array.from({ length: count }, (_, index) => ({
+          x: Math.random() * width, y: Math.random() * height,
+          radius: Math.random() * 1.4 + .2,
+          speedX: (Math.random() - .5) * .08, speedY: (Math.random() - .5) * .08,
+          phase: Math.random() * Math.PI * 2,
+          type: index % 7 === 0 ? 'gold' : index % 5 === 0 ? 'cyan' : 'white'
+        }));
+      }
+      function updateProgress() {
+        const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+        scrollProgress = maxScroll > 0 ? window.scrollY / maxScroll : 0;
+        const reveal = Math.max(0, Math.min(1, (scrollProgress - .16) / .42));
+        canvas.style.opacity = String(.05 + reveal * .63);
+        glow.style.opacity = String(reveal * .78);
+        glow.style.transform = `translate(-50%, -50%) scale(${.72 + reveal * .42})`;
+        cue.style.opacity = window.scrollY > window.innerHeight * .4 ? '0' : '1';
+      }
+      function draw(time = 0) {
+        ctx.clearRect(0, 0, width, height);
+        const reveal = Math.max(0, Math.min(1, (scrollProgress - .12) / .5));
+        const lineReveal = Math.max(0, Math.min(1, (scrollProgress - .32) / .3));
+        for (const p of particles) {
+          if (!reduceMotion) {
+            p.x += p.speedX; p.y += p.speedY;
+            if (p.x < -10) p.x = width + 10; if (p.x > width + 10) p.x = -10;
+            if (p.y < -10) p.y = height + 10; if (p.y > height + 10) p.y = -10;
+          }
+          const twinkle = reduceMotion ? .7 : .45 + Math.sin(time * .00055 + p.phase) * .25;
+          const alpha = Math.max(0, reveal * twinkle);
+          if (p.type === 'gold') ctx.fillStyle = `rgba(212,169,56,${alpha * .85})`;
+          else if (p.type === 'cyan') ctx.fillStyle = `rgba(0,200,215,${alpha * .72})`;
+          else ctx.fillStyle = `rgba(244,247,250,${alpha * .58})`;
+          ctx.beginPath(); ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2); ctx.fill();
+        }
+        if (lineReveal > 0) {
+          const maxDistance = 120;
+          for (let i = 0; i < particles.length; i++) {
+            for (let j = i + 1; j < particles.length; j++) {
+              const a = particles[i], b = particles[j], dx = a.x - b.x, dy = a.y - b.y;
+              const distance = Math.sqrt(dx * dx + dy * dy);
+              if (distance < maxDistance) {
+                const alpha = (1 - distance / maxDistance) * lineReveal * .045;
+                ctx.strokeStyle = `rgba(212,169,56,${alpha})`; ctx.lineWidth = .5;
+                ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
+              }
+            }
+          }
+        }
+        if (!reduceMotion) animationFrame = requestAnimationFrame(draw);
+      }
+      const observer = new IntersectionObserver((entries) => {
+        for (const entry of entries) if (entry.isIntersecting) entry.target.classList.add('visible');
+      }, { threshold: .38 });
+      scenes.forEach(scene => observer.observe(scene));
+      window.addEventListener('resize', resize, { passive: true });
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      resize(); updateProgress();
+      if (reduceMotion) { scenes.forEach(scene => scene.classList.add('visible')); draw(0); }
+      else draw();
+      window.addEventListener('beforeunload', () => { if (animationFrame) cancelAnimationFrame(animationFrame); });
+    })();
+  </script>
+</body>
+</html>
