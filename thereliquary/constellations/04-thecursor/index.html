@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>The Cursor | The Reliquary | BitPangea</title>
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="/assets/favicon.svg">
+
+  <meta name="description" content="The Cursor — Constellation IV of XII, preserving the memory of exploration within the Twelve Constellations of Digital Antiquity." />
+  <meta name="theme-color" content="#00c8d7">
+  <meta name="robots" content="index,follow">
+
+  <link rel="canonical" href="https://bitpangea.com/thereliquary/constellations/04-thecursor/">
+
+  <meta property="og:title" content="The Cursor | The Reliquary | BitPangea">
+  <meta property="og:description" content="Constellation IV of XII — the first wanderer of digital space.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://bitpangea.com/thereliquary/constellations/04-thecursor/">
+  <meta property="og:image" content="https://bitpangea.com/images/bitpangea-og.jpg">
+  <meta property="og:site_name" content="BitPangea">
+  <meta property="og:locale" content="en_US">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Cursor | The Reliquary | BitPangea">
+  <meta name="twitter:description" content="Constellation IV of XII — preserving movement, discovery, and navigation within Digital Antiquity.">
+  <meta name="twitter:image" content="https://bitpangea.com/images/bitpangea-og.jpg">
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"CreativeWork",
+    "name":"The Cursor",
+    "url":"https://bitpangea.com/thereliquary/constellations/04-thecursor/",
+    "description":"Constellation IV of XII, preserving the memory of exploration within the Twelve Constellations of Digital Antiquity.",
+    "isPartOf":{
+      "@type":"CreativeWorkSeries",
+      "name":"The Twelve Constellations of Digital Antiquity",
+      "url":"https://bitpangea.com/thereliquary/"
+    }
+  }
+  </script>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #02050a;
+      --gold: #d4a938;
+      --cyan: #00c8d7;
+      --white: #ffffff;
+      --dim: rgba(255,255,255,.72);
+      --faint: rgba(255,255,255,.42);
+    }
+
+    html, body {
+      width: 100%;
+      min-height: 100%;
+      background: var(--bg);
+      color: var(--white);
+      font-family: Arial, Helvetica, sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      position: relative;
+      min-height: 100vh;
+      overflow-x: hidden;
+      background: #000;
+      line-height: 1.7;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(circle at 50% 9%, rgba(212,169,56,.09), transparent 26%),
+        radial-gradient(circle at 18% 73%, rgba(0,200,215,.06), transparent 34%),
+        radial-gradient(circle at 88% 62%, rgba(212,169,56,.035), transparent 28%),
+        linear-gradient(180deg, rgba(2,5,10,.94), rgba(2,5,10,.995));
+      z-index: -3;
+      pointer-events: none;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(212,169,56,.024) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(212,169,56,.024) 1px, transparent 1px);
+      background-size: 64px 64px;
+      opacity: .31;
+      z-index: -2;
+      pointer-events: none;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 72px 22px;
+    }
+
+    .chamber {
+      width: min(100%, 1040px);
+      padding: clamp(34px, 6vw, 72px);
+      border: 1px solid rgba(212,169,56,.18);
+      background:
+        linear-gradient(135deg, rgba(212,169,56,.045), rgba(0,0,0,.16)),
+        rgba(0,0,0,.42);
+      box-shadow:
+        0 0 80px rgba(0,0,0,.72),
+        inset 0 0 60px rgba(212,169,56,.025);
+      backdrop-filter: blur(3px);
+    }
+
+    .eyebrow {
+      color: var(--cyan);
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-size: 11px;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      color: var(--white);
+      font-size: clamp(42px, 8vw, 84px);
+      line-height: 1.02;
+      letter-spacing: 8px;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+      text-shadow: 0 0 24px rgba(0,0,0,.94);
+    }
+
+    .subtitle {
+      color: var(--gold);
+      font-size: 14px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 44px;
+      max-width: 760px;
+      line-height: 1.7;
+    }
+
+    .divider {
+      width: 72px;
+      height: 2px;
+      background: var(--gold);
+      margin: 0 0 50px;
+      box-shadow: 0 0 16px rgba(212,169,56,.62);
+    }
+
+    .relic {
+      margin: 48px 0;
+      padding: clamp(24px, 4vw, 48px);
+      border: 1px solid rgba(212,169,56,.24);
+      background: rgba(0,0,0,.48);
+      box-shadow: inset 0 0 42px rgba(0,0,0,.65);
+    }
+
+    .constellation {
+      display: grid;
+      grid-template-columns: .78fr 1.22fr;
+      gap: clamp(22px, 4vw, 42px);
+      align-items: start;
+      margin-bottom: 44px;
+      padding-bottom: 42px;
+      border-bottom: 1px solid rgba(212,169,56,.14);
+    }
+
+    .constellation-meta {
+      color: rgba(255,255,255,.78);
+      font-size: 15px;
+      letter-spacing: 1px;
+      line-height: 2;
+      text-transform: uppercase;
+    }
+
+    .constellation-meta strong {
+      color: var(--gold);
+      font-weight: 400;
+    }
+
+    .meta-divider {
+      width: 100%;
+      height: 1px;
+      background: rgba(212,169,56,.12);
+      margin: 26px 0;
+    }
+
+    .represents {
+      margin-top: 18px;
+      list-style-position: inside;
+      color: rgba(255,255,255,.78);
+      line-height: 2;
+    }
+
+    .journey {
+      position: relative;
+      min-height: 420px;
+      overflow: hidden;
+      border: 1px solid rgba(212,169,56,.18);
+      background:
+        radial-gradient(circle at 15% 20%, rgba(255,255,255,.7) 0 1px, transparent 1.8px),
+        radial-gradient(circle at 71% 31%, rgba(212,169,56,.8) 0 1px, transparent 2px),
+        radial-gradient(circle at 42% 74%, rgba(0,200,215,.64) 0 1px, transparent 2px),
+        radial-gradient(circle at 88% 78%, rgba(255,255,255,.5) 0 1px, transparent 1.8px),
+        linear-gradient(180deg, rgba(3,8,15,.9), rgba(0,0,0,.98));
+      box-shadow:
+        0 0 46px rgba(0,0,0,.62),
+        inset 0 0 68px rgba(0,0,0,.75);
+      isolation: isolate;
+    }
+
+    .journey::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(0,200,215,.042) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,200,215,.042) 1px, transparent 1px);
+      background-size: 42px 42px;
+      opacity: 0;
+      animation: revealGrid 18s ease-in-out infinite;
+      z-index: -1;
+    }
+
+    .journey::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(0,0,0,.96), transparent 20%, transparent 80%, rgba(0,0,0,.96));
+      pointer-events: none;
+    }
+
+    .origin-mark {
+      position: absolute;
+      left: 8%;
+      top: 12%;
+      color: rgba(255,255,255,.32);
+      font: 11px/1.4 "Courier New", monospace;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .path {
+      position: absolute;
+      left: 8%;
+      top: 21%;
+      width: 82%;
+      height: 62%;
+      border: 1px solid transparent;
+    }
+
+    .node {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgba(212,169,56,.42);
+      box-shadow: 0 0 0 1px rgba(212,169,56,.22), 0 0 16px rgba(212,169,56,.28);
+      opacity: .24;
+      animation: nodePulse 18s ease-in-out infinite;
+    }
+
+    .node::after {
+      position: absolute;
+      top: 17px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: rgba(255,255,255,.3);
+      font-size: 9px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .node.one { left: 4%; top: 64%; animation-delay: 0s; }
+    .node.two { left: 39%; top: 18%; animation-delay: 5s; }
+    .node.three { left: 69%; top: 68%; animation-delay: 10s; }
+    .node.four { left: 92%; top: 32%; animation-delay: 14s; }
+    .node.one::after { content: "Movement"; }
+    .node.two::after { content: "Discovery"; }
+    .node.three::after { content: "Navigation"; }
+    .node.four::after { content: "Arrival"; }
+
+    .trail {
+      position: absolute;
+      width: 170px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(0,200,215,.42));
+      transform-origin: right center;
+      opacity: .55;
+      filter: blur(.2px);
+    }
+
+    .cursor-traveler {
+      position: absolute;
+      left: 10%;
+      top: 72%;
+      width: 34px;
+      height: 44px;
+      z-index: 3;
+      filter: drop-shadow(0 0 9px rgba(0,200,215,.72));
+      animation: wander 18s cubic-bezier(.55,.03,.35,1) infinite;
+    }
+
+    .cursor-traveler svg {
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+    }
+
+    .cursor-traveler path {
+      fill: rgba(246,253,255,.96);
+      stroke: var(--cyan);
+      stroke-width: 1.2;
+    }
+
+    .cursor-traveler .pulse {
+      transform-origin: 10px 8px;
+      animation: cursorPulse 2.2s ease-in-out infinite;
+    }
+
+    .word {
+      position: absolute;
+      color: rgba(255,255,255,.14);
+      font-size: clamp(11px, 1.5vw, 15px);
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      opacity: 0;
+      animation: wordReveal 18s ease-in-out infinite;
+    }
+
+    .word.movement { left: 13%; bottom: 17%; animation-delay: 1s; }
+    .word.discovery { left: 39%; top: 18%; animation-delay: 5.6s; }
+    .word.navigation { left: 55%; bottom: 17%; animation-delay: 10.2s; }
+
+    .arrival {
+      position: absolute;
+      right: 7%;
+      top: 26%;
+      width: 116px;
+      height: 116px;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(212,169,56,.22);
+      transform: rotate(45deg);
+      opacity: .22;
+      animation: arrivalReveal 18s ease-in-out infinite;
+    }
+
+    .arrival::before,
+    .arrival::after {
+      content: "";
+      position: absolute;
+      background: rgba(212,169,56,.2);
+    }
+
+    .arrival::before { width: 150%; height: 1px; }
+    .arrival::after { height: 150%; width: 1px; }
+
+    .arrival span {
+      transform: rotate(-45deg);
+      color: var(--gold);
+      font-size: 9px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .journey-caption {
+      position: absolute;
+      left: 8%;
+      right: 8%;
+      bottom: 6%;
+      color: rgba(255,255,255,.37);
+      font: 10px/1.6 "Courier New", monospace;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      z-index: 4;
+    }
+
+    .journey-controls {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 12px;
+    }
+
+    .replay {
+      appearance: none;
+      border: 1px solid rgba(212,169,56,.2);
+      background: rgba(0,0,0,.35);
+      color: rgba(255,255,255,.55);
+      padding: 8px 12px;
+      font: 10px/1 Arial, sans-serif;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .replay:hover,
+    .replay:focus-visible {
+      color: var(--gold);
+      border-color: rgba(212,169,56,.48);
+      outline: none;
+    }
+
+    .section-label {
+      color: rgba(0,200,215,.76);
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin: 38px 0 14px;
+    }
+
+    .body-copy {
+      color: rgba(255,255,255,.78);
+      font-size: clamp(16px, 2vw, 20px);
+      line-height: 1.9;
+      max-width: 850px;
+      text-shadow: 0 0 12px rgba(0,0,0,.95);
+    }
+
+    .body-copy p + p { margin-top: 22px; }
+
+    blockquote {
+      margin-top: 18px;
+      padding: 26px 28px;
+      border-left: 2px solid var(--gold);
+      background: rgba(212,169,56,.035);
+      color: rgba(255,255,255,.84);
+      font-size: clamp(18px, 2.4vw, 25px);
+      line-height: 1.75;
+      font-style: normal;
+      box-shadow: inset 0 0 38px rgba(0,0,0,.35);
+    }
+
+    .record {
+      margin-top: 52px;
+      padding-top: 26px;
+      border-top: 1px solid rgba(212,169,56,.14);
+      color: rgba(255,255,255,.46);
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      line-height: 2;
+    }
+
+    .record strong {
+      color: rgba(212,169,56,.72);
+      font-weight: 400;
+    }
+
+    .footnote {
+      margin-top: 46px;
+      color: rgba(255,255,255,.46);
+      font-size: 13px;
+      letter-spacing: 2px;
+      line-height: 2;
+    }
+
+    .footnote span { color: rgba(212,169,56,.66); }
+
+    @keyframes wander {
+      0%, 5%   { left: 10%; top: 72%; transform: rotate(-5deg) scale(.95); }
+      24%      { left: 28%; top: 52%; transform: rotate(3deg) scale(1); }
+      44%      { left: 46%; top: 28%; transform: rotate(-3deg) scale(1); }
+      66%      { left: 65%; top: 69%; transform: rotate(4deg) scale(1.02); }
+      84%, 94% { left: 82%; top: 34%; transform: rotate(0deg) scale(1.06); }
+      100%     { left: 10%; top: 72%; transform: rotate(-5deg) scale(.95); }
+    }
+
+    @keyframes revealGrid {
+      0%, 8% { opacity: 0; }
+      40% { opacity: .7; }
+      82% { opacity: .95; }
+      100% { opacity: 0; }
+    }
+
+    @keyframes wordReveal {
+      0%, 12% { opacity: 0; transform: translateY(8px); }
+      24%, 52% { opacity: 1; transform: translateY(0); }
+      66%, 100% { opacity: 0; }
+    }
+
+    @keyframes nodePulse {
+      0%, 15% { opacity: .2; transform: scale(.75); }
+      28%, 52% { opacity: 1; transform: scale(1.35); }
+      68%, 100% { opacity: .24; transform: scale(.8); }
+    }
+
+    @keyframes arrivalReveal {
+      0%, 65% { opacity: .16; transform: rotate(45deg) scale(.8); }
+      82%, 94% { opacity: .84; transform: rotate(45deg) scale(1); box-shadow: 0 0 34px rgba(212,169,56,.16); }
+      100% { opacity: .16; transform: rotate(45deg) scale(.8); }
+    }
+
+    @keyframes cursorPulse {
+      0%, 100% { opacity: .78; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.04); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: .001ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+      }
+      .journey::before { opacity: .55; }
+      .word { opacity: .75; }
+      .arrival { opacity: .7; }
+      .cursor-traveler { left: 82%; top: 34%; }
+    }
+
+    @media (max-width: 768px) {
+      .page { padding: 42px 16px; }
+      .chamber { padding: 32px 22px; }
+      h1 { letter-spacing: 5px; }
+      .constellation { grid-template-columns: 1fr; }
+      .journey { min-height: 360px; }
+      .journey-caption { font-size: 9px; }
+      .arrival { width: 90px; height: 90px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Some worlds are seen. Others must be traversed. -->
+  <!-- Constellation IV remembers exploration. -->
+  <!-- The Cursor was the first visible extension of human intention within digital space. -->
+
+  <main class="page">
+    <article class="chamber">
+      <div class="eyebrow">Constellation IV · Digital Antiquity</div>
+
+      <h1>The Cursor</h1>
+
+      <div class="subtitle">The first wanderer of digital space.</div>
+
+      <div class="divider"></div>
+
+      <section class="relic" aria-label="The Cursor constellation chamber">
+
+        <div class="constellation">
+          <div class="constellation-meta">
+            <div><strong>Constellation:</strong> IV of XII</div>
+            <div><strong>Domain:</strong> Exploration</div>
+            <div><strong>Status:</strong> Preserved</div>
+
+            <div class="meta-divider"></div>
+
+            <div><strong>Represents:</strong></div>
+            <ul class="represents">
+              <li>Movement</li>
+              <li>Discovery</li>
+              <li>Navigation</li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="journey" id="cursorJourney" aria-label="An animated cursor travels through a dark digital field, revealing movement, discovery, and navigation.">
+              <div class="origin-mark">Origin / Position 000</div>
+
+              <div class="path" aria-hidden="true">
+                <span class="node one"></span>
+                <span class="node two"></span>
+                <span class="node three"></span>
+                <span class="node four"></span>
+              </div>
+
+              <div class="word movement">Movement</div>
+              <div class="word discovery">Discovery</div>
+              <div class="word navigation">Navigation</div>
+
+              <div class="arrival" aria-hidden="true"><span>Known Space</span></div>
+
+              <div class="cursor-traveler" aria-hidden="true">
+                <svg viewBox="0 0 32 42" role="img">
+                  <g class="pulse">
+                    <path d="M4 2 L4 34 L12.2 26.2 L17.4 38.4 L23.2 35.8 L18 24.2 L29 24.2 Z"></path>
+                  </g>
+                </svg>
+              </div>
+
+              <div class="journey-caption">A position becomes a direction. A direction becomes a path. A path becomes discovery.</div>
+            </div>
+
+            <div class="journey-controls">
+              <button class="replay" type="button" id="replayJourney" aria-label="Replay the cursor journey">Replay Journey</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-label">Preservation</div>
+
+        <div class="body-copy">
+          <p>Before the Digital World could be explored, something had to move within it.</p>
+
+          <p>The Cursor gave position a visible form.</p>
+
+          <p>It crossed the surface of the screen.</p>
+
+          <p>It entered windows, followed paths, uncovered hidden places, and carried human intention into spaces without roads.</p>
+
+          <p>The Cursor did not create the world.</p>
+
+          <p>It did not carry the message.</p>
+
+          <p>It did not open the Window.</p>
+
+          <p>It wandered through what computation, communication, and interface had made possible.</p>
+
+          <p>With every movement, the unknown became reachable.</p>
+
+          <p>With every selection, possibility became direction.</p>
+
+          <p>The Digital World was no longer something humanity could only see.</p>
+
+          <p>It had become somewhere humanity could go.</p>
+        </div>
+
+        <div class="section-label">Constellation Inscription</div>
+        <blockquote>The first path through digital space began with a point that moved.</blockquote>
+
+        <div class="section-label">Observation</div>
+        <div class="body-copy">
+          <p>The Cursor preserves more than a pointer.</p>
+          <p>It preserves the moment human intention became visible inside the machine.</p>
+          <p>A position could be chosen. A direction could be followed. A world could be explored.</p>
+        </div>
+
+      </section>
+
+      <div class="record">
+        <div><strong>Designation:</strong> Constellation IV of XII</div>
+        <div><strong>Constellation:</strong> The Cursor</div>
+        <div><strong>Domain:</strong> Exploration</div>
+        <div><strong>Status:</strong> Preserved</div>
+        <div><strong>Period:</strong> Digital Antiquity</div>
+      </div>
+
+      <div class="footnote">
+        <div><span>Part of the Twelve Constellations of Digital Antiquity.</span></div>
+        <div>Some worlds are calculated.</div>
+        <div>Some worlds are carried.</div>
+        <div>Some worlds are seen.</div>
+        <div>Some worlds must be explored.</div>
+      </div>
+
+    </article>
+  </main>
+
+  <script>
+    (() => {
+      const journey = document.getElementById('cursorJourney');
+      const replay = document.getElementById('replayJourney');
+
+      if (!journey || !replay) return;
+
+      replay.addEventListener('click', () => {
+        const animated = journey.querySelectorAll('*');
+        animated.forEach((element) => {
+          element.style.animation = 'none';
+        });
+
+        void journey.offsetWidth;
+
+        animated.forEach((element) => {
+          element.style.animation = '';
+        });
+      });
+    })();
+  </script>
+
+</body>
+</html>
