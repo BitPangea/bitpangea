@@ -1,12 +1,19 @@
-# BitPangea Chronicle
+# The Chronicle
 
-## Project Record
+**BitPangea**  
+*A Digital Supercontinent*
 
-### Dated Signals From a Scarce Digital Supercontinent
+---
 
-The Chronicle serves as the official historical record of BitPangea.
+## Overview
 
-Unlike daily journals or development logs, The Chronicle exists to preserve the major milestones, decisions, institutions, principles, and turning points that shaped the emergence of the project over time.
+The Chronicle is the official historical record of BitPangea.
+
+It preserves the major milestones, decisions, institutional developments, discoveries, and turning points through which the World has taken shape over time.
+
+The Chronicle is not a daily task list or technical changelog.
+
+Its purpose is to preserve history.
 
 ---
 
@@ -16,106 +23,138 @@ The Chronicle records the evolution of BitPangea from its earliest foundations.
 
 It preserves:
 
-- Major project milestones
-- Foundational decisions
-- Institutional development
-- Historical context
-- Significant records and discoveries
-- The progression of ideas over time
+- major project milestones;
+- foundational decisions;
+- institutional development;
+- constitutional transitions;
+- significant discoveries;
+- historical context;
+- the progression of ideas over time.
 
-The Chronicle is not intended to be a complete task list or technical changelog.
+The Chronicle should remain selective.
 
-It exists to preserve history.
-
----
-
-## Historical Overview
-
-### The Foundation
-
-BitPangea began with a simple question:
-
-> What if Bitcoin had been invented not as money, but as a world?
-
-From that question emerged the concept of a scarce digital supercontinent:
-
-- One world
-- One map
-- 21 million parcels
-- No expansion
-- Cryptographic permanence
+Routine work may belong in journals or development records, while the Chronicle preserves changes that materially shaped BitPangea.
 
 ---
 
-### The Early Institutions
+## Institutional Role
 
-As the project matured, a collection of distinct institutions emerged:
+The Chronicle is distinct from other BitPangea institutions:
 
-- **The World** — the public surface of BitPangea
-- **The Atlas** — cartography and geography
-- **The Charter** — principles and constitutional foundations
-- **The Chronicle** — historical record
-- **The Commons** — future discussion and discourse
-- **The Frontier Office** — communication
-- **The Covenant** — public restraint and clarification
-- **The Codex** — inquiry and unresolved questions
-- **The Archive** — preservation and inheritance
-- **The Reliquary** — monuments, artifacts, and memory
-- **The Signal** — preserved presence
-- **Transmission Records** — preserved communication
-- **The Lexicon** — language and definitions
+- **The Journal** preserves detailed day-by-day work.
+- **The Updates** summarize recent progress.
+- **The Archive** preserves records and historical materials.
+- **The Charter** preserves constitutional purpose and adopted records.
+- **The Reliquary** preserves artifacts and discoverable records.
+- **The Chronicle** preserves the historical sequence of the World’s development.
+
+Its role is chronological and interpretive.
 
 ---
 
-### Major Themes
+## Historical Scope
 
-Several recurring themes emerged during BitPangea's foundation period:
+The Chronicle may preserve:
 
-#### Scarcity
-Digital geography should be finite.
-
-#### Permanence
-History should be preserved rather than replaced.
-
-#### Stewardship
-Civilizations require caretakers, not merely builders.
-
-#### Discovery
-Curiosity should reveal meaning over time.
-
-#### Restraint
-Important questions should mature before implementation.
-
-#### Civilization
-The project increasingly explores institutions, memory, language, history, and culture rather than technology alone.
+- the establishment of new institutions;
+- the adoption of Codices or constitutional records;
+- the completion of major Periods or Domains;
+- important architectural decisions;
+- significant Transmissions;
+- preserved discoveries;
+- changes to the public structure of BitPangea;
+- moments that later readers may need in order to understand how the World developed.
 
 ---
 
-### Foundational Records
+## Foundational Themes
 
-Several ideas became recurring historical references:
+Several themes recur throughout the Chronicle:
 
-- Before ownership can be claimed, the world must first be mapped.
-- Genesis Parcel (Lot 0)
-- The Codex and the preservation of inquiry
-- The Archive and the preservation of inheritance
-- The Signal and the preservation of presence
-- Transmission Records and the preservation of communication
-- The Lexicon and the preservation of language
+### Scarcity
+
+BitPangea is conceived as a finite World.
+
+### Permanence
+
+Important records should be preserved rather than silently replaced.
+
+### Stewardship
+
+The World should be carried forward with restraint and responsibility.
+
+### Discovery
+
+Meaning should emerge through inquiry, observation, and exploration.
+
+### Restraint
+
+Institutions and concepts should be established only when they have earned their place.
+
+### Continuity
+
+The history of BitPangea should remain intelligible to future readers.
 
 ---
 
-## Current Status
+## Entry Standard
 
-BitPangea remains an exploratory concept.
+A Chronicle entry should:
 
-- No parcels exist.
-- No allocations exist.
-- No token exists.
-- No blockchain has been selected.
+1. identify the date or date range;
+2. use a clear historical title;
+3. explain what changed and why it mattered;
+4. distinguish completion from discussion or exploration;
+5. preserve important decisions and institutional consequences;
+6. avoid unnecessary implementation detail;
+7. remain understandable without requiring access to private notes.
 
-The record remains open.
+Chronicle entries should be written for future readers, not only for the day on which they are created.
 
 ---
 
-**Status:** Exploratory Concept · Early Stage
+## Repository Guidance
+
+When maintaining this directory:
+
+1. use clear, stable filenames and paths;
+2. preserve earlier significant versions when major revisions occur;
+3. distinguish active chronology from preserved historical records;
+4. verify all internal links and public asset paths;
+5. keep public documentation free of private maintenance notes or concealed discovery details;
+6. avoid duplicating daily journal content unless the event has broader historical significance;
+7. document major structural changes to The Chronicle in the appropriate BitPangea records.
+
+---
+
+## What The Chronicle Is Not
+
+The Chronicle is not:
+
+- a complete development log;
+- a daily journal;
+- a technical issue tracker;
+- a roadmap;
+- a marketing timeline;
+- a substitute for The Archive;
+- a place for every minor revision.
+
+Its purpose is to preserve the history that matters.
+
+---
+
+## Status
+
+**Active Historical Institution**
+
+---
+
+## BitPangea Notice
+
+BitPangea is an evolving digital-world project.
+
+Its constitutional, cartographic, and institutional architecture continues to develop over time.
+
+---
+
+© 2026 BitPangea · Built on Cryptographic Permanence
