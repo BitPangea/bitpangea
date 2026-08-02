@@ -3,24 +3,28 @@
 **BitPangea**  
 *A Digital Supercontinent*
 
-**Preservation Record · June 2026**  
-**Knowledge Becomes Inheritance**
-
-The Archive is a future home for important records, references, preserved knowledge, and historical materials that may one day help future builders understand how BitPangea began.
-
 ---
 
-## Archive Principle
+## Overview
+
+The Archive preserves records, references, earlier versions, and historical materials that may help future readers understand how BitPangea began and how it developed over time.
+
+It is designed as a long-term institutional record rather than a conventional content library.
 
 > A civilization does not inherit only land. It inherits memory, questions, records, and responsibility.
 
 ---
 
-## Archive Status
+## Purpose
 
-**Mostly empty.**  
-**Intentionally preserved.**  
-**Waiting for history.**
+The Archive exists to preserve knowledge that may outlive the moment in which it was created.
+
+Its role is distinct from other BitPangea institutions:
+
+- **The Chronicle** records what happened.
+- **The Reliquary** preserves artifacts, monuments, and discoverable records.
+- **The Codex** preserves canonical inquiry and recognized knowledge.
+- **The Archive** preserves materials that may become historically important, useful, or meaningful over time.
 
 ---
 
@@ -32,70 +36,90 @@ Formal materials, dated entries, source documents, and preserved public referenc
 
 ### References
 
-Research, external context, and ideas that help explain how the world was imagined.
+Research, external context, and ideas that help explain how BitPangea was imagined and developed.
 
 ### Preserved Versions
 
-Earlier forms of documents, pages, concepts, and visual structures that may later matter.
+Earlier forms of pages, documents, concepts, and visual structures that may later matter.
 
 ### Inheritance
 
-Knowledge kept not for immediate use, but for those who may one day need to understand the beginning.
-
----
-
-## Purpose
-
-The Archive exists to preserve knowledge that may outlive the moment in which it was created.
-
-The Chronicle records what happened. The Reliquary preserves artifacts and monuments. The Codex preserves inquiry. The Archive preserves materials that may become useful, meaningful, or historically important over time.
+Knowledge retained not only for present use, but for those who may someday need to understand the beginning.
 
 ---
 
 ## What May Belong Here
 
-- Original versions of important BitPangea documents.
-- Major historical records and dated project materials.
-- Research references that shaped early thinking.
-- Preserved snapshots of public pages and visual identity.
-- Foundational writings that may later move out of active circulation.
-- Materials future builders may need to understand why early decisions were made.
+The Archive may preserve:
+
+- original versions of important BitPangea documents;
+- major historical records and dated project materials;
+- research references that shaped early thinking;
+- preserved snapshots of public pages and visual identity;
+- foundational writings that later move out of active circulation;
+- materials future builders may need to understand why early decisions were made.
 
 ---
 
 ## What The Archive Is Not
 
-The Archive is not a marketing page, roadmap, whitepaper, or technical specification.
+The Archive is not:
 
-It is not meant to accelerate BitPangea. It is meant to remember it.
+- a marketing page;
+- a roadmap;
+- a whitepaper;
+- a technical specification;
+- a replacement for The Chronicle;
+- a repository for every temporary draft.
+
+Its purpose is not to accelerate BitPangea.
+
+Its purpose is to remember it.
 
 ---
 
 ## Current Condition
 
-The Archive begins almost empty. That is appropriate. A civilization should not invent a past before it has lived one.
+The Archive remains intentionally limited.
+
+That is appropriate.
+
+A civilization should not invent a past before it has lived one.
 
 ---
 
-## For Future Readers
+## Preservation Principle
 
 > Knowledge becomes inheritance only when someone chooses to preserve it.
 
 ---
 
+## Repository Guidance
+
+This directory should contain only materials that genuinely belong to BitPangea’s historical or preservation record.
+
+When adding or revising files:
+
+1. use clear, stable filenames;
+2. preserve original dates when known;
+3. distinguish active documents from preserved versions;
+4. avoid overwriting historically significant files without retaining the earlier form;
+5. keep public-facing documentation free of private maintenance notes or concealed discovery details;
+6. document major archival additions in the appropriate BitPangea journal or Chronicle entry when warranted.
+
+---
+
 ## Status
 
-**Exploratory Concept · Early Stage**
+**Active Preservation Institution**
 
 ---
 
 ## BitPangea Notice
 
-BitPangea is an exploratory concept.
+BitPangea is an exploratory digital-world project.
 
-No parcels exist. No allocations exist. No token exists.
-
-No blockchain has been selected.
+Its institutions, records, and architecture continue to develop over time.
 
 ---
 
