@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Constellation V of XII — The Searcher. A BitPangea interactive preservation experience about inquiry, indexing, retrieval, and understanding." />
+  <meta name="theme-color" content="#02050a" />
+  <title>The Searcher — Constellation V | BitPangea</title>
+
+  <style>
+    :root {
+      --black: #02050a;
+      --gold: #d4a938;
+      --cyan: #00c8d7;
+      --white: #f4f1e8;
+      --muted: rgba(244, 241, 232, 0.58);
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      width: 100%;
+      min-height: 100%;
+      background: var(--black);
+      color: var(--white);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      overflow-x: hidden;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background:
+        radial-gradient(circle at 50% 20%, rgba(0, 200, 215, 0.045), transparent 32%),
+        radial-gradient(circle at 50% 75%, rgba(212, 169, 56, 0.035), transparent 38%),
+        linear-gradient(180deg, #02050a 0%, #030812 52%, #010307 100%);
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      opacity: .42;
+      background-image:
+        linear-gradient(rgba(255,255,255,.015) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.015) 1px, transparent 1px);
+      background-size: 48px 48px;
+      mask-image: linear-gradient(to bottom, transparent, black 12%, black 84%, transparent);
+    }
+
+    .noise {
+      position: fixed;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+      opacity: .2;
+      background-image:
+        radial-gradient(circle at 10% 20%, rgba(255,255,255,.1) 0 1px, transparent 1.2px),
+        radial-gradient(circle at 80% 15%, rgba(255,255,255,.06) 0 1px, transparent 1.2px),
+        radial-gradient(circle at 40% 70%, rgba(255,255,255,.07) 0 1px, transparent 1.2px);
+      background-size: 180px 160px, 220px 210px, 260px 230px;
+      mix-blend-mode: screen;
+    }
+
+    .experience {
+      position: relative;
+      z-index: 2;
+      min-height: 100vh;
+    }
+
+    .scene {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 6vh 6vw;
+      position: relative;
+    }
+
+    .scene + .scene {
+      border-top: 1px solid rgba(212,169,56,.045);
+    }
+
+    .stage {
+      width: min(1100px, 100%);
+      margin: 0 auto;
+    }
+
+    .kicker {
+      margin: 0 0 1rem;
+      color: var(--cyan);
+      text-transform: uppercase;
+      letter-spacing: .42em;
+      font-size: .62rem;
+      font-weight: 700;
+    }
+
+    h1, h2 {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 400;
+      letter-spacing: -.035em;
+    }
+
+    h1 {
+      font-size: clamp(4.5rem, 10vw, 9rem);
+      line-height: .92;
+    }
+
+    h2 {
+      font-size: clamp(3rem, 7vw, 6rem);
+      line-height: .96;
+    }
+
+    .lead {
+      margin: 1.6rem 0 0;
+      max-width: 760px;
+      color: rgba(244,241,232,.74);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(1.05rem, 1.9vw, 1.35rem);
+      line-height: 1.8;
+    }
+
+    .prompt-card {
+      margin-top: 3rem;
+      width: min(760px, 100%);
+      border: 1px solid rgba(212,169,56,.18);
+      background: linear-gradient(180deg, rgba(4,8,14,.82), rgba(4,8,14,.48));
+      box-shadow: 0 20px 80px rgba(0,0,0,.38);
+      backdrop-filter: blur(8px);
+      padding: 1.2rem 1.2rem 1.25rem;
+    }
+
+    .prompt-label {
+      color: var(--gold);
+      font-size: .58rem;
+      text-transform: uppercase;
+      letter-spacing: .36em;
+      margin-bottom: .8rem;
+      font-weight: 800;
+    }
+
+    .terminal {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: .8rem;
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+      font-size: clamp(.9rem, 1.8vw, 1rem);
+      color: #d7e7ea;
+      padding: .95rem 1rem;
+      border: 1px solid rgba(0,200,215,.12);
+      background: rgba(0, 0, 0, .34);
+    }
+
+    .terminal .carat { color: var(--cyan); }
+
+    .cursor {
+      width: .62em;
+      height: 1.1em;
+      background: var(--gold);
+      display: inline-block;
+      animation: blink 1.05s steps(1) infinite;
+      box-shadow: 0 0 10px rgba(212,169,56,.45);
+    }
+
+    .begin {
+      margin-top: 1.2rem;
+      appearance: none;
+      border: 1px solid rgba(212,169,56,.34);
+      color: var(--gold);
+      background: rgba(212,169,56,.05);
+      padding: .8rem 1rem;
+      text-transform: uppercase;
+      letter-spacing: .28em;
+      font-size: .62rem;
+      cursor: pointer;
+      transition: background .2s ease, color .2s ease, border-color .2s ease, transform .2s ease;
+    }
+
+    .begin:hover, .begin:focus-visible {
+      color: #fff6dd;
+      background: rgba(212,169,56,.11);
+      border-color: rgba(212,169,56,.65);
+      outline: none;
+      transform: translateY(-1px);
+    }
+
+    .archive-field {
+      position: relative;
+      min-height: 64vh;
+      margin-top: 2.2rem;
+      border: 1px solid rgba(0,200,215,.08);
+      background:
+        radial-gradient(circle at center, rgba(0,200,215,.03), transparent 55%),
+        rgba(0,0,0,.24);
+      overflow: hidden;
+    }
+
+    .fragment {
+      position: absolute;
+      font-family: "SFMono-Regular", Consolas, monospace;
+      color: rgba(218,232,234,.3);
+      font-size: clamp(.62rem, 1.2vw, .78rem);
+      letter-spacing: .03em;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity .75s ease, transform .75s ease, color .75s ease;
+      white-space: nowrap;
+    }
+
+    .fragment.visible {
+      opacity: .75;
+      transform: translateY(0);
+    }
+
+    .fragment.indexed { color: rgba(0,200,215,.72); }
+
+    .fragment.retrieved {
+      color: #fff5d8;
+      text-shadow: 0 0 14px rgba(212,169,56,.35);
+      opacity: 1;
+    }
+
+    .index-line {
+      position: absolute;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(0,200,215,.16), transparent);
+      opacity: 0;
+      transition: opacity 1s ease;
+    }
+
+    .index-line.visible { opacity: 1; }
+
+    .phase-copy { max-width: 760px; }
+
+    .phase-number {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: .35em;
+      font-size: .58rem;
+      margin-bottom: .9rem;
+      font-weight: 800;
+    }
+
+    .phase-word {
+      color: #fff;
+      margin-bottom: .6rem;
+    }
+
+    .phase-definition {
+      color: var(--muted);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(1.05rem, 1.7vw, 1.28rem);
+      line-height: 1.75;
+      max-width: 680px;
+    }
+
+    .retrieval-panel {
+      margin-top: 2.2rem;
+      border: 1px solid rgba(212,169,56,.16);
+      background: rgba(3,7,12,.54);
+      padding: clamp(1.25rem, 3vw, 2rem);
+      max-width: 840px;
+    }
+
+    .result {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 1rem;
+      align-items: start;
+      padding: 1rem 0;
+      border-bottom: 1px solid rgba(255,255,255,.05);
+      opacity: .28;
+      transition: opacity .7s ease, transform .7s ease;
+      transform: translateX(-8px);
+    }
+
+    .result:last-child { border-bottom: 0; }
+
+    .result.active {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .result .num {
+      color: var(--cyan);
+      font-family: monospace;
+      font-size: .72rem;
+      padding-top: .2rem;
+    }
+
+    .result strong {
+      display: block;
+      color: var(--white);
+      margin-bottom: .3rem;
+      letter-spacing: .04em;
+    }
+
+    .result span {
+      color: rgba(244,241,232,.5);
+      font-size: .87rem;
+      line-height: 1.55;
+    }
+
+    .constellation-field {
+      position: relative;
+      height: min(66vh, 620px);
+      margin-top: 2.5rem;
+      border: 1px solid rgba(212,169,56,.12);
+      background:
+        radial-gradient(circle at center, rgba(212,169,56,.05), transparent 38%),
+        rgba(0,0,0,.18);
+      overflow: hidden;
+    }
+
+    .node {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--gold);
+      box-shadow: 0 0 10px rgba(212,169,56,.55), 0 0 28px rgba(212,169,56,.18);
+      opacity: .18;
+      transition: opacity 1s ease, transform 1.2s ease;
+    }
+
+    .node.on {
+      opacity: 1;
+      transform: scale(1.22);
+    }
+
+    svg.constellation-lines {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .constellation-lines line {
+      stroke: rgba(212,169,56,.22);
+      stroke-width: 1;
+      opacity: 0;
+      transition: opacity 1.1s ease;
+    }
+
+    .constellation-lines line.on { opacity: 1; }
+
+    .understanding {
+      display: grid;
+      place-items: center;
+      text-align: center;
+      min-height: 68vh;
+      position: relative;
+    }
+
+    .understanding::before {
+      content: "";
+      position: absolute;
+      width: min(70vw, 760px);
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(212,169,56,.09), rgba(0,200,215,.03) 38%, transparent 68%);
+      filter: blur(10px);
+      pointer-events: none;
+    }
+
+    .understanding-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 930px;
+    }
+
+    .understanding-word {
+      margin: 0;
+      color: #fff9ed;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(3rem, 10vw, 8.2rem);
+      font-weight: 400;
+      letter-spacing: .03em;
+      text-shadow:
+        0 0 16px rgba(212,169,56,.26),
+        0 0 54px rgba(212,169,56,.11);
+      opacity: 0;
+      transform: translateY(14px);
+      transition: opacity 1.6s ease, transform 1.6s ease;
+    }
+
+    .understanding-word.on {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .closing {
+      margin: 1.6rem auto 0;
+      max-width: 760px;
+      color: rgba(244,241,232,.68);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(1.05rem, 1.8vw, 1.32rem);
+      line-height: 1.8;
+      opacity: 0;
+      transition: opacity 1.4s ease .4s;
+    }
+
+    .closing.on { opacity: 1; }
+
+    .identity {
+      margin-top: 3rem;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: .28em;
+      font-size: .62rem;
+      line-height: 1.8;
+      opacity: 0;
+      transition: opacity 1.4s ease .8s;
+    }
+
+    .identity.on { opacity: 1; }
+
+    .scroll-cue {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      color: rgba(255,255,255,.34);
+      font-size: .58rem;
+      text-transform: uppercase;
+      letter-spacing: .32em;
+      display: flex;
+      align-items: center;
+      gap: .8rem;
+    }
+
+    .scroll-cue::before, .scroll-cue::after {
+      content: "";
+      width: 32px;
+      height: 1px;
+      background: rgba(212,169,56,.18);
+    }
+
+    @keyframes blink {
+      0%, 48% { opacity: 1; }
+      49%, 100% { opacity: 0; }
+    }
+
+    @media (max-width: 700px) {
+      .scene {
+        min-height: 92vh;
+        padding: 8vh 6vw;
+      }
+
+      .archive-field { min-height: 58vh; }
+
+      .terminal { grid-template-columns: auto 1fr; }
+      .cursor { display: none; }
+      .fragment { font-size: .56rem; }
+
+      .result {
+        grid-template-columns: 1fr;
+        gap: .35rem;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .cursor { animation: none; }
+      .fragment,
+      .result,
+      .node,
+      .constellation-lines line,
+      .understanding-word,
+      .closing,
+      .identity {
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="noise" aria-hidden="true"></div>
+
+  <main class="experience">
+
+    <section class="scene" id="opening">
+      <div class="stage">
+        <p class="kicker">Constellation V of XII · Domain: Knowledge</p>
+        <h1>The Searcher</h1>
+
+        <p class="lead">
+          The Digital World had become visible. It could be crossed. It could be explored.
+          But as information multiplied, knowing where to look was no longer enough.
+        </p>
+
+        <div class="prompt-card">
+          <div class="prompt-label">Inquiry</div>
+          <div class="terminal" aria-label="Search prompt">
+            <span class="carat">&gt;</span>
+            <span class="query">find what is not yet understood</span>
+            <span class="cursor" aria-hidden="true"></span>
+          </div>
+          <button class="begin" id="beginSearch" type="button">Begin Search</button>
+        </div>
+      </div>
+
+      <div class="scroll-cue" aria-hidden="true">Continue</div>
+    </section>
+
+    <section class="scene" id="indexing">
+      <div class="stage">
+        <div class="phase-copy">
+          <div class="phase-number">I · Indexing</div>
+          <h2 class="phase-word">Information gained structure.</h2>
+          <p class="phase-definition">
+            Fragments that once existed only as scattered files, pages, paths, and names
+            could be organized into something searchable.
+          </p>
+        </div>
+
+        <div class="archive-field" id="archiveField" aria-label="Animated index of information fragments"></div>
+      </div>
+    </section>
+
+    <section class="scene" id="retrieval">
+      <div class="stage">
+        <div class="phase-copy">
+          <div class="phase-number">II · Retrieval</div>
+          <h2 class="phase-word">The answer could be brought forward.</h2>
+          <p class="phase-definition">
+            You no longer needed to know where something was in order to find it.
+          </p>
+        </div>
+
+        <div class="retrieval-panel" aria-label="Retrieved information">
+          <div class="result"><div class="num">01</div><div><strong>INDEX / DIGITAL-WORLD</strong><span>Linked references found across previously separate paths.</span></div></div>
+          <div class="result"><div class="num">02</div><div><strong>QUERY / RELATION</strong><span>Relevant fragments surfaced from a larger field of information.</span></div></div>
+          <div class="result"><div class="num">03</div><div><strong>RETRIEVAL / CONTEXT</strong><span>Information returned not merely as location, but as meaning.</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene" id="knowledge">
+      <div class="stage">
+        <div class="phase-copy">
+          <div class="phase-number">III · Knowledge</div>
+          <h2 class="phase-word">Fragments became connected.</h2>
+          <p class="phase-definition">
+            Inquiry found the path. Indexing gave information structure. Retrieval brought
+            what mattered into view.
+          </p>
+        </div>
+
+        <div class="constellation-field" id="constellationField" aria-label="Information fragments forming a constellation">
+          <svg class="constellation-lines" id="constellationLines" viewBox="0 0 1000 600" preserveAspectRatio="none" aria-hidden="true">
+            <line x1="170" y1="380" x2="315" y2="245"></line>
+            <line x1="315" y1="245" x2="470" y2="300"></line>
+            <line x1="470" y1="300" x2="600" y2="180"></line>
+            <line x1="600" y1="180" x2="760" y2="250"></line>
+            <line x1="760" y1="250" x2="835" y2="405"></line>
+            <line x1="835" y1="405" x2="640" y2="430"></line>
+            <line x1="640" y1="430" x2="470" y2="300"></line>
+            <line x1="470" y1="300" x2="360" y2="450"></line>
+            <line x1="360" y1="450" x2="170" y2="380"></line>
+          </svg>
+
+          <span class="node" style="left:17%; top:63%;"></span>
+          <span class="node" style="left:31.5%; top:40.5%;"></span>
+          <span class="node" style="left:47%; top:50%;"></span>
+          <span class="node" style="left:60%; top:30%;"></span>
+          <span class="node" style="left:76%; top:41.5%;"></span>
+          <span class="node" style="left:83.5%; top:67.5%;"></span>
+          <span class="node" style="left:64%; top:72%;"></span>
+          <span class="node" style="left:36%; top:75%;"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene" id="understanding">
+      <div class="stage understanding">
+        <div class="understanding-inner">
+          <p class="kicker">Inquiry · Indexing · Retrieval</p>
+          <div class="understanding-word" id="understandingWord">Understanding</div>
+          <p class="closing" id="closingLine">
+            Information could be found. And what could be found could begin to be understood.
+          </p>
+          <div class="identity" id="identityLine">
+            The Searcher · The force that transformed information into understanding.
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    (() => {
+      const fragments = [
+        "index://knowledge/001",
+        "archive.search",
+        "/public/query",
+        "metadata:linked",
+        "node:reference",
+        "page://unknown",
+        "term:meaning",
+        "path:/retrieval",
+        "catalogue.entry",
+        "fragment_1993.html",
+        "directory://root",
+        "keyword:world",
+        "document:found",
+        "source:indexed",
+        "result:relevant",
+        "link://follow",
+        "record:memory",
+        "query:why",
+        "query:where",
+        "query:what",
+        "context:returned",
+        "relation:mapped",
+        "file:unseen",
+        "signal:matched"
+      ];
+
+      const archive = document.getElementById("archiveField");
+      const start = document.getElementById("beginSearch");
+      const results = [...document.querySelectorAll(".result")];
+      const nodes = [...document.querySelectorAll(".node")];
+      const lines = [...document.querySelectorAll("#constellationLines line")];
+      const understandingWord = document.getElementById("understandingWord");
+      const closingLine = document.getElementById("closingLine");
+      const identityLine = document.getElementById("identityLine");
+      const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      function seededPositions(count) {
+        const positions = [];
+        let seed = 17;
+        for (let i = 0; i < count; i++) {
+          seed = (seed * 9301 + 49297) % 233280;
+          const x = 6 + (seed / 233280) * 82;
+          seed = (seed * 9301 + 49297) % 233280;
+          const y = 8 + (seed / 233280) * 80;
+          positions.push([x, y]);
+        }
+        return positions;
+      }
+
+      const positions = seededPositions(fragments.length);
+
+      fragments.forEach((text, i) => {
+        const el = document.createElement("span");
+        el.className = "fragment";
+        el.textContent = text;
+        el.style.left = positions[i][0] + "%";
+        el.style.top = positions[i][1] + "%";
+        archive.appendChild(el);
+      });
+
+      for (let i = 0; i < 9; i++) {
+        const line = document.createElement("span");
+        line.className = "index-line";
+        line.style.left = (8 + i * 9) + "%";
+        line.style.top = (16 + ((i * 17) % 66)) + "%";
+        line.style.width = (18 + ((i * 11) % 34)) + "%";
+        archive.appendChild(line);
+      }
+
+      const fragmentEls = [...archive.querySelectorAll(".fragment")];
+      const indexLines = [...archive.querySelectorAll(".index-line")];
+
+      function runIndexing() {
+        fragmentEls.forEach((el, i) => {
+          setTimeout(() => el.classList.add("visible"), reduced ? 0 : i * 75);
+        });
+
+        indexLines.forEach((el, i) => {
+          setTimeout(() => el.classList.add("visible"), reduced ? 0 : 700 + i * 130);
+        });
+
+        fragmentEls.forEach((el, i) => {
+          if (i % 3 === 0 || i % 5 === 0) {
+            setTimeout(() => el.classList.add("indexed"), reduced ? 0 : 1250 + i * 45);
+          }
+        });
+
+        [4, 10, 14, 20].forEach((idx, j) => {
+          if (fragmentEls[idx]) {
+            setTimeout(() => fragmentEls[idx].classList.add("retrieved"), reduced ? 0 : 2200 + j * 300);
+          }
+        });
+      }
+
+      start.addEventListener("click", () => {
+        runIndexing();
+        document.getElementById("indexing").scrollIntoView({ behavior: reduced ? "auto" : "smooth" });
+      });
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+
+          if (entry.target.id === "indexing") runIndexing();
+
+          if (entry.target.id === "retrieval") {
+            results.forEach((result, i) => {
+              setTimeout(() => result.classList.add("active"), reduced ? 0 : i * 500);
+            });
+          }
+
+          if (entry.target.id === "knowledge") {
+            nodes.forEach((node, i) => {
+              setTimeout(() => node.classList.add("on"), reduced ? 0 : i * 180);
+            });
+
+            lines.forEach((line, i) => {
+              setTimeout(() => line.classList.add("on"), reduced ? 0 : 700 + i * 140);
+            });
+          }
+
+          if (entry.target.id === "understanding") {
+            understandingWord.classList.add("on");
+            closingLine.classList.add("on");
+            identityLine.classList.add("on");
+          }
+        });
+      }, { threshold: 0.42 });
+
+      ["indexing", "retrieval", "knowledge", "understanding"].forEach(id => {
+        observer.observe(document.getElementById(id));
+      });
+    })();
+  </script>
+</body>
+</html>
