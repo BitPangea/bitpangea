@@ -1,40 +1,30 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>The Chronicle | BitPangea</title>
-
-  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-  <link rel="shortcut icon" href="/assets/favicon.svg">
-
-  <link rel="stylesheet" href="/assets/css/bitpangea-framework.css">
-  <script src="/assets/js/bitpangea-framework.js" defer></script>
-
-  <meta
-    name="description"
-    content="The BitPangea Chronicle — the period-based historical record of a scarce digital supercontinent."
-  />
-
-  <meta name="theme-color" content="#00c8d7">
-  <meta name="robots" content="index,follow">
-  <link rel="canonical" href="https://bitpangea.com/thechronicle/">
-
-  <meta property="og:title" content="The Chronicle | BitPangea">
-  <meta property="og:description" content="The period-based historical record of BitPangea, preserving the major developments of a scarce digital supercontinent.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://bitpangea.com/thechronicle/">
-  <meta property="og:image" content="https://bitpangea.com/images/bitpangea-og.jpg">
-  <meta property="og:site_name" content="BitPangea">
-  <meta property="og:locale" content="en_US">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="The Chronicle | BitPangea">
-  <meta name="twitter:description" content="The period-based historical record of BitPangea, preserving the major developments of a scarce digital supercontinent.">
-  <meta name="twitter:image" content="https://bitpangea.com/images/bitpangea-og.jpg">
-
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Chronicle | BitPangea</title>
+<link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/favicon.svg" rel="shortcut icon"/>
+<link href="/assets/css/bitpangea-framework.css" rel="stylesheet"/>
+<script defer="" src="/assets/js/bitpangea-framework.js"></script>
+<meta content="The BitPangea Chronicle — the period-based historical record of a scarce digital supercontinent." name="description"/>
+<meta content="#00c8d7" name="theme-color"/>
+<meta content="index,follow" name="robots"/>
+<link href="https://bitpangea.com/thechronicle/" rel="canonical"/>
+<meta content="The Chronicle | BitPangea" property="og:title"/>
+<meta content="The period-based historical record of BitPangea, preserving the major developments of a scarce digital supercontinent." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://bitpangea.com/thechronicle/" property="og:url"/>
+<meta content="https://bitpangea.com/images/bitpangea-og.jpg" property="og:image"/>
+<meta content="BitPangea" property="og:site_name"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="The Chronicle | BitPangea" name="twitter:title"/>
+<meta content="The period-based historical record of BitPangea, preserving the major developments of a scarce digital supercontinent." name="twitter:description"/>
+<meta content="https://bitpangea.com/images/bitpangea-og.jpg" name="twitter:image"/>
+<style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
     html, body {
@@ -286,1181 +276,851 @@
       .intro, p, li { font-size: 16px; }
       .period-card { padding: 24px 22px; }
     }
-  </style>
+  
+    /* World Properties Chronology — collapsible day entries */
+    .chronology-disclosure {
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .chronology-summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 22px 24px;
+      cursor: pointer;
+      user-select: none;
+      list-style: none;
+      background: rgba(3, 8, 16, 0.52);
+      transition:
+        background .22s ease,
+        border-color .22s ease;
+    }
+
+    .chronology-summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .chronology-summary::marker {
+      content: "";
+    }
+
+    .chronology-summary:hover,
+    .chronology-summary:focus-visible {
+      background: rgba(10, 18, 30, 0.70);
+    }
+
+    .chronology-summary:focus-visible {
+      outline: 2px solid rgba(0, 200, 215, 0.70);
+      outline-offset: -2px;
+    }
+
+    .chronology-summary-copy {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      gap: 5px;
+    }
+
+    .chronology-summary-date {
+      color: #00c8d7;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-size: 11px;
+      line-height: 1.4;
+    }
+
+    .chronology-summary-title {
+      color: #d4a938;
+      font-size: 18px;
+      line-height: 1.4;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
+    }
+
+    .chronology-toggle {
+      position: relative;
+      width: 34px;
+      height: 34px;
+      flex: 0 0 34px;
+      border-radius: 50%;
+      border: 1px solid rgba(212, 169, 56, 0.28);
+      background: rgba(212, 169, 56, 0.08);
+    }
+
+    .chronology-toggle::before,
+    .chronology-toggle::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 11px;
+      height: 1px;
+      background: #d4a938;
+      transform: translate(-50%, -50%);
+      transition: transform .20s ease, opacity .20s ease;
+    }
+
+    .chronology-toggle::after {
+      transform: translate(-50%, -50%) rotate(90deg);
+    }
+
+    .chronology-disclosure[open] .chronology-toggle::after {
+      opacity: 0;
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    .chronology-disclosure[open] .chronology-summary {
+      border-bottom: 1px solid rgba(212, 169, 56, 0.14);
+    }
+
+    .chronology-body {
+      padding: 26px 30px 30px;
+    }
+
+    .chronology-body > :first-child {
+      margin-top: 0;
+    }
+
+    .chronology-body > :last-child {
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 768px) {
+      .chronology-summary {
+        padding: 20px 18px;
+        gap: 16px;
+      }
+
+      .chronology-summary-date {
+        letter-spacing: 2px;
+      }
+
+      .chronology-summary-title {
+        font-size: 16px;
+        letter-spacing: 1.5px;
+      }
+
+      .chronology-body {
+        padding: 22px 20px 24px;
+      }
+
+      .chronology-toggle {
+        width: 32px;
+        height: 32px;
+        flex-basis: 32px;
+      }
+    }
+</style>
 </head>
-
 <body data-bp-page="thechronicle">
-
 <div id="bp-header"></div>
-
-  <main class="page">
-    <article class="container">
-      <section class="hero">
-        <div class="eyebrow">Historical Record · Period-Based Chronology</div>
-
-        <div class="chronicle-header">
-          <img
-            src="/thechronicle/hourglass-medallion.png"
-            alt="The Chronicle Hourglass Medallion"
-            class="chronicle-seal"
-          >
-
-          <div class="chronicle-title">
-            <h1>The<br>Chronicle</h1>
-            <div class="subtitle">The History of a Scarce Digital Supercontinent</div>
-          </div>
-        </div>
-
-        <div class="divider"></div>
-
-        <p class="intro">
+<main class="page">
+<article class="container">
+<section class="hero">
+<div class="eyebrow">Historical Record · Period-Based Chronology</div>
+<div class="chronicle-header">
+<img alt="The Chronicle Hourglass Medallion" class="chronicle-seal" src="/thechronicle/hourglass-medallion.png"/>
+<div class="chronicle-title">
+<h1>The<br/>Chronicle</h1>
+<div class="subtitle">The History of a Scarce Digital Supercontinent</div>
+</div>
+</div>
+<div class="divider"></div>
+<p class="intro">
           The Chronicle records the major historical developments of BitPangea through successive periods of formation, definition, discovery, relation, and civilization.
         </p>
-
-        <p class="intro">
+<p class="intro">
           Completed periods are summarized and preserved as historical records, while the active period continues as a living chronology.
         </p>
-      </section>
-
-      <section class="entry">
-        <div class="date">May 28, 2026 – June 14, 2026</div>
-        <h2>Foundation Period</h2>
-
-        <div class="day-title">The World Is Imagined</div>
-
-        <p>
+</section>
+<section class="entry">
+<div class="date">May 28, 2026 – June 14, 2026</div>
+<h2>Foundation Period</h2>
+<div class="day-title">The World Is Imagined</div>
+<p>
           The Foundation Period established the initial institutions, principles, records, and identity of BitPangea. During this period, the project evolved from a conceptual question into an emerging civilizational framework.
         </p>
-
-        <div class="period-card">
-          <h3>Major Milestones</h3>
-
-          <ul>
-            <li>Established BitPangea from the founding question: <strong>“What if Bitcoin had been invented not as money, but as a world?”</strong></li>
-            <li>Acquired <strong>bitpangea.com</strong>, created <strong>contact@bitpangea.com</strong>, and launched <a href="/thereliquary/first-stone/" class="reliquary-link">the first public website</a>.</li>
-            <li>Published the first public Manifesto, later evolving the project language into <strong>The Charter</strong>.</li>
-            <li>Created the early public world surface and established the core institutions: <strong>The World</strong>, <strong>The Atlas</strong>, <strong>The Charter</strong>, <strong>The Chronicle</strong>, <strong>The Commons</strong>, and <strong>The Frontier Office</strong>.</li>
-            <li>Created <strong>The Covenant</strong> as a public clarification of restraint, current status, and non-offering.</li>
-            <li>Established <strong>The Atlas</strong> as the cartographic center of BitPangea and preserved the principle: <strong>“Before ownership can be claimed, the world must first be mapped.”</strong></li>
-            <li>Defined <strong>Genesis Parcel (Lot 0)</strong> as a permanently reserved monument to the origins of BitPangea.</li>
-            <li>Preserved <strong>The First Stone</strong> as the earliest public artifact of the world.</li>
-            <li>Created <strong>The Codex</strong> as a living record of inquiry, concepts, unresolved questions, and deferred decisions.</li>
-            <li>Created <strong>The Archive</strong> as a preservation layer for knowledge, records, and future inheritance.</li>
-            <li>Established <strong>Transmission Records</strong> and preserved <strong>Transmission 001: What If?</strong> and <strong>Transmission 002: The Map</strong>.</li>
-            <li>Created <strong>The Signal</strong>, <strong>The Wall</strong>, <strong>The Lexicon</strong>, and <strong>The Reliquary</strong>.</li>
-            <li>Implemented site-wide metadata, favicon standards, visual identity systems, and discoverability improvements across BitPangea’s growing institutional framework.</li>
-            <li>Concluded the Foundation Period with BitPangea’s core institutional structure established and preserved.</li>
-          </ul>
-        </div>
-
-        <div class="period-card">
-          <h3>Preserved Foundation Record</h3>
-
-          <p>
+<div class="period-card">
+<h3>Major Milestones</h3>
+<ul>
+<li>Established BitPangea from the founding question: <strong>“What if Bitcoin had been invented not as money, but as a world?”</strong></li>
+<li>Acquired <strong>bitpangea.com</strong>, created <strong>contact@bitpangea.com</strong>, and launched <a class="reliquary-link" href="/thereliquary/first-stone/">the first public website</a>.</li>
+<li>Published the first public Manifesto, later evolving the project language into <strong>The Charter</strong>.</li>
+<li>Created the early public world surface and established the core institutions: <strong>The World</strong>, <strong>The Atlas</strong>, <strong>The Charter</strong>, <strong>The Chronicle</strong>, <strong>The Commons</strong>, and <strong>The Frontier Office</strong>.</li>
+<li>Created <strong>The Covenant</strong> as a public clarification of restraint, current status, and non-offering.</li>
+<li>Established <strong>The Atlas</strong> as the cartographic center of BitPangea and preserved the principle: <strong>“Before ownership can be claimed, the world must first be mapped.”</strong></li>
+<li>Defined <strong>Genesis Parcel (Lot 0)</strong> as a permanently reserved monument to the origins of BitPangea.</li>
+<li>Preserved <strong>The First Stone</strong> as the earliest public artifact of the world.</li>
+<li>Created <strong>The Codex</strong> as a living record of inquiry, concepts, unresolved questions, and deferred decisions.</li>
+<li>Created <strong>The Archive</strong> as a preservation layer for knowledge, records, and future inheritance.</li>
+<li>Established <strong>Transmission Records</strong> and preserved <strong>Transmission 001: What If?</strong> and <strong>Transmission 002: The Map</strong>.</li>
+<li>Created <strong>The Signal</strong>, <strong>The Wall</strong>, <strong>The Lexicon</strong>, and <strong>The Reliquary</strong>.</li>
+<li>Implemented site-wide metadata, favicon standards, visual identity systems, and discoverability improvements across BitPangea’s growing institutional framework.</li>
+<li>Concluded the Foundation Period with BitPangea’s core institutional structure established and preserved.</li>
+</ul>
+</div>
+<div class="period-card">
+<h3>Preserved Foundation Record</h3>
+<p>
             The original day-by-day chronology of the Foundation Period has been preserved in its original form as a historical artifact.
           </p>
-
-          <p>
-            <a class="record-link" href="/thechronicle/foundation-record/">View the Foundation Record</a>
-          </p>
-        </div>
-      </section>
-
-      <section class="entry">
-        <div class="date">June 15, 2026 – June 30, 2026</div>
-        <h2>Cartographic Period</h2>
-
-        <div class="day-title">The World Is Defined</div>
-
-        <p>
+<p>
+<a class="record-link" href="/thechronicle/foundation-record/">View the Foundation Record</a>
+</p>
+</div>
+</section>
+<section class="entry">
+<div class="date">June 15, 2026 – June 30, 2026</div>
+<h2>Cartographic Period</h2>
+<div class="day-title">The World Is Defined</div>
+<p>
           The Cartographic Period transformed BitPangea from an imagined world into a constitutionally defined world. During this period, the Structural Domain reached completion, the first Relational principles emerged, and the constitutional architecture expanded through declarations, charters, preserved records, and institutional memory.
         </p>
-
-        <div class="period-card">
-          <h3>Major Milestones</h3>
-
-          <ul>
-            <li>Adopted the completed Structural sequence:
+<div class="period-card">
+<h3>Major Milestones</h3>
+<ul>
+<li>Adopted the completed Structural sequence:
               <ul>
-                <li><strong>ST-I — Parcel</strong></li>
-                <li><strong>ST-II — Boundary</strong></li>
-                <li><strong>ST-III — Coordinate</strong></li>
-                <li><strong>ST-IV — The World</strong></li>
-              </ul>
-            </li>
-            <li>Adopted the first Relational Codices:
+<li><strong>ST-I — Parcel</strong></li>
+<li><strong>ST-II — Boundary</strong></li>
+<li><strong>ST-III — Coordinate</strong></li>
+<li><strong>ST-IV — The World</strong></li>
+</ul>
+</li>
+<li>Adopted the first Relational Codices:
               <ul>
-                <li><strong>RL-I — Adjacency</strong></li>
-                <li><strong>RL-II — Contiguity</strong></li>
-              </ul>
-            </li>
-            <li>Adopted the <strong>Codex Domain Architecture</strong>, reorganizing the Codices into mature constitutional Domains.</li>
-            <li>Published <strong>The BitPangea Declaration</strong> and <strong>One World</strong>.</li>
-            <li>Recognized the completion of the <strong>Structural Domain</strong> and reassigned Surface and Limit to the World Properties Domain.</li>
-            <li>Established <strong>The Constitutional Charter</strong>, preserving the <strong>Foundational Charter</strong> and the <strong>Cartographic Charter</strong>.</li>
-            <li>Completed and preserved <strong>Transmission 003 — The Frontier</strong>, <strong>Transmission 004 — The Builders</strong>, and <strong>Transmission 005 — The Inheritance</strong>.</li>
-            <li>Preserved the first three entries within the <strong>Twelve Constellations of Digital Antiquity</strong>.</li>
-            <li>Recognized <strong>Visions</strong> as a distinct category of preserved constitutional record.</li>
-            <li>Completed the institutional visual identity of BitPangea through dedicated symbolic artwork and unified landing page hero layouts.</li>
-            <li>Established a hidden record preserving the concept of digital lineage and the intellectual inheritance of the Digital World.</li>
-            <li>Concluded the Cartographic Period with the world constitutionally established and prepared for the Relational Domain.</li>
-          </ul>
-        </div>
-
-        <div class="period-card">
-          <h3>Preserved Cartographic Record</h3>
-
-          <p>
+<li><strong>RL-I — Adjacency</strong></li>
+<li><strong>RL-II — Contiguity</strong></li>
+</ul>
+</li>
+<li>Adopted the <strong>Codex Domain Architecture</strong>, reorganizing the Codices into mature constitutional Domains.</li>
+<li>Published <strong>The BitPangea Declaration</strong> and <strong>One World</strong>.</li>
+<li>Recognized the completion of the <strong>Structural Domain</strong> and reassigned Surface and Limit to the World Properties Domain.</li>
+<li>Established <strong>The Constitutional Charter</strong>, preserving the <strong>Foundational Charter</strong> and the <strong>Cartographic Charter</strong>.</li>
+<li>Completed and preserved <strong>Transmission 003 — The Frontier</strong>, <strong>Transmission 004 — The Builders</strong>, and <strong>Transmission 005 — The Inheritance</strong>.</li>
+<li>Preserved the first three entries within the <strong>Twelve Constellations of Digital Antiquity</strong>.</li>
+<li>Recognized <strong>Visions</strong> as a distinct category of preserved constitutional record.</li>
+<li>Completed the institutional visual identity of BitPangea through dedicated symbolic artwork and unified landing page hero layouts.</li>
+<li>Established a hidden record preserving the concept of digital lineage and the intellectual inheritance of the Digital World.</li>
+<li>Concluded the Cartographic Period with the world constitutionally established and prepared for the Relational Domain.</li>
+</ul>
+</div>
+<div class="period-card">
+<h3>Preserved Cartographic Record</h3>
+<p>
             The original day-by-day chronology of the Cartographic Period has been preserved in its original form as a historical artifact.
           </p>
-
-          <p>
-            <a class="record-link" href="https://bitpangea.com/thechronicle/cartographic-record/">View the Cartographic Record</a>
-          </p>
-        </div>
-      </section>
-
-      <section class="entry">
-        <div class="date">July 1, 2026 – July 7, 2026</div>
-        <h2>Relational Period</h2>
-
-        <div class="day-title">The World Begins to Relate</div>
-
-        <p>
+<p>
+<a class="record-link" href="https://bitpangea.com/thechronicle/cartographic-record/">View the Cartographic Record</a>
+</p>
+</div>
+</section>
+<section class="entry">
+<div class="date">July 1, 2026 – July 7, 2026</div>
+<h2>Relational Period</h2>
+<div class="day-title">The World Begins to Relate</div>
+<p>
           The Relational Period completed the first constitutional grammar through which BitPangea describes how any two Parcels relate. Beginning with the constitutional transition preserved in Transmission 006, the period established <strong>Adjacency</strong>, <strong>Contiguity</strong>, <strong>Distance</strong>, and <strong>Direction</strong> as the four foundational relational primitives, completing the first-order relational language of the World.
         </p>
-
-        <div class="period-card">
-          <h3>Major Milestones</h3>
-          <ul>
-            <li>Completed <strong>Transmission 006</strong>, establishing the constitutional transition from the Structural Domain to the Relational Domain.</li>
-            <li>Established <strong>The Foundation</strong> as the constitutional library of BitPangea.</li>
-            <li>Created the unified <strong>BitPangea Framework</strong> and standardized navigation and institutional presentation.</li>
-            <li>Adopted <strong>Codex RL-III — The Distance</strong>.</li>
-            <li>Adopted <strong>Codex RL-IV — The Direction</strong>.</li>
-            <li>Completed the first constitutional arc of the Relational Domain, recognizing <strong>RL-I</strong> through <strong>RL-IV</strong> as a complete first-order relational grammar.</li>
-          </ul>
-        </div>
-
-        <div class="period-card">
-          <h3>Preserved Relational Record</h3>
-          <p>The original day-by-day chronology of the Relational Period has been preserved in its original form as a historical artifact.</p>
-          <p><a class="record-link" href="/thechronicle/relational-record/">View the Relational Record</a></p>
-        </div>
-      </section>
-
-      <section class="entry">
-        <div class="date">July 8, 2026 – Present</div>
-        <h2>World Properties Period</h2>
-
-        <div class="day-title">The World Reveals Its Properties</div>
-
-        <p>
+<div class="period-card">
+<h3>Major Milestones</h3>
+<ul>
+<li>Completed <strong>Transmission 006</strong>, establishing the constitutional transition from the Structural Domain to the Relational Domain.</li>
+<li>Established <strong>The Foundation</strong> as the constitutional library of BitPangea.</li>
+<li>Created the unified <strong>BitPangea Framework</strong> and standardized navigation and institutional presentation.</li>
+<li>Adopted <strong>Codex RL-III — The Distance</strong>.</li>
+<li>Adopted <strong>Codex RL-IV — The Direction</strong>.</li>
+<li>Completed the first constitutional arc of the Relational Domain, recognizing <strong>RL-I</strong> through <strong>RL-IV</strong> as a complete first-order relational grammar.</li>
+</ul>
+</div>
+<div class="period-card">
+<h3>Preserved Relational Record</h3>
+<p>The original day-by-day chronology of the Relational Period has been preserved in its original form as a historical artifact.</p>
+<p><a class="record-link" href="/thechronicle/relational-record/">View the Relational Record</a></p>
+</div>
+</section>
+<section class="entry">
+<div class="date">July 8, 2026 – Present</div>
+<h2>World Properties Period</h2>
+<div class="day-title">The World Reveals Its Properties</div>
+<p>
           Following completion of the Structural and Relational Domains, constitutional inquiry entered a new phase. Rather than continuing to define structures or relationships, BitPangea began examining the properties already possessed by the World itself. The World Properties Period explores those enduring characteristics, beginning with the World's Spatial Properties and continuing toward future categories revealed through constitutional inquiry.
         </p>
+<details class="period-card chronology-disclosure"><summary class="chronology-summary"><span class="chronology-summary-copy"><span class="chronology-summary-date">July 8, 2026</span><span class="chronology-summary-title">The World Properties</span></span><span aria-hidden="true" class="chronology-toggle"></span></summary><div class="chronology-body">
 
-<div class="period-card">
-  <div class="date">July 8, 2026</div>
 
-  <h3>The World Properties</h3>
-
-  <p>
+<p>
     Following the completion of the <strong>Relational Domain</strong>, BitPangea underwent one of its most significant constitutional architectural reviews to date. Rather than continuing the Relational Domain with additional spatial concepts, independent constitutional analysis concluded that <strong>Adjacency</strong>, <strong>Contiguity</strong>, <strong>Distance</strong>, and <strong>Direction</strong> together form a complete first-order relational grammar describing how Parcels relate. This realization naturally revealed the beginning of an entirely new constitutional Domain: <strong>The World Properties Domain (WP)</strong>.
   </p>
-
-  <p>
+<p>
     Extensive constitutional review was conducted through <strong>OpenAI ChatGPT</strong>, <strong>Anthropic Claude</strong>, <strong>Google Gemini</strong>, and <strong>xAI Grok</strong>. Throughout the review, multiple architectural alternatives—including an Aggregative Domain and an independent Spatial Domain—were carefully evaluated before ultimately recognizing that spatial concepts are more appropriately understood as the first category within the broader World Properties Domain. This architectural transition established a new constitutional question for BitPangea: <strong>What properties does the World possess?</strong>
-  </p>
-
-  <ul>
-
-    <li>Formally concluded the first constitutional arc of the <strong>Relational Domain</strong>, recognizing <strong>RL-I</strong> through <strong>RL-IV</strong> as a complete first-order relational grammar.</li>
-
-    <li>Established the <strong>World Properties Domain (WP)</strong> as the third constitutional Domain within The Codex, succeeding the Structural and Relational Domains.</li>
-
-    <li>Adopted the constitutional question of the World Properties Domain: <strong>"What properties does the World possess?"</strong></li>
-
-    <li>Recognized <strong>Spatial Properties</strong> as the opening category within the World Properties Domain, replacing earlier proposals for an independent Spatial Domain.</li>
-
-    <li>Adopted <strong>Codex WP-S-I — The Extent</strong> as the first World Property, defining Extent as the cartographic property describing the spatial scope of the World within BitPangea.</li>
-
-    <li>Established the foundational doctrine that the World Properties Domain describes properties already possessed by the World rather than creating or assembling them.</li>
-
-    <li>Established that World Property Codices preserve the constitutional recognition of objective properties already existing within the World rather than creating, assembling, or activating those properties.</li>
-
-    <li>Established the initial Spatial Properties category beginning with Extent while recognizing that future World Properties would emerge through constitutional discovery rather than predetermined dependency.</li>
-
-    <li>Completed the full constitutional record for <strong>Codex WP-S-I</strong>, including its formal definition, immutable properties, foundational doctrine, architectural review, historical record, and integration into the Codex Register.</li>
-
-  </ul>
-
-  <p>
+</p>
+<ul>
+<li>Formally concluded the first constitutional arc of the <strong>Relational Domain</strong>, recognizing <strong>RL-I</strong> through <strong>RL-IV</strong> as a complete first-order relational grammar.</li>
+<li>Established the <strong>World Properties Domain (WP)</strong> as the third constitutional Domain within The Codex, succeeding the Structural and Relational Domains.</li>
+<li>Adopted the constitutional question of the World Properties Domain: <strong>"What properties does the World possess?"</strong></li>
+<li>Recognized <strong>Spatial Properties</strong> as the opening category within the World Properties Domain, replacing earlier proposals for an independent Spatial Domain.</li>
+<li>Adopted <strong>Codex WP-S-I — The Extent</strong> as the first World Property, defining Extent as the cartographic property describing the spatial scope of the World within BitPangea.</li>
+<li>Established the foundational doctrine that the World Properties Domain describes properties already possessed by the World rather than creating or assembling them.</li>
+<li>Established that World Property Codices preserve the constitutional recognition of objective properties already existing within the World rather than creating, assembling, or activating those properties.</li>
+<li>Established the initial Spatial Properties category beginning with Extent while recognizing that future World Properties would emerge through constitutional discovery rather than predetermined dependency.</li>
+<li>Completed the full constitutional record for <strong>Codex WP-S-I</strong>, including its formal definition, immutable properties, foundational doctrine, architectural review, historical record, and integration into the Codex Register.</li>
+</ul>
+<p>
     The adoption of the World Properties Domain marks one of the most significant constitutional milestones of the Cartographic Period. Whereas the Structural Domain established <em>what exists</em>, and the Relational Domain established <em>how existing things relate</em>, the World Properties Domain begins answering a new constitutional question: <em>what is true about the World itself</em>. With the adoption of <strong>Codex WP-S-I — The Extent</strong>, BitPangea begins examining the properties possessed by the World, establishing a new constitutional foundation upon which future spatial, physical, topological, environmental, and other World Properties may be formally preserved.
   </p>
+</div></details>
+<details class="period-card chronology-disclosure"><summary class="chronology-summary"><span class="chronology-summary-copy"><span class="chronology-summary-date">July 9, 2026</span><span class="chronology-summary-title">The Lexicon and The Archive</span></span><span aria-hidden="true" class="chronology-toggle"></span></summary><div class="chronology-body">
 
-</div>
-      
-<div class="period-card">
-  <div class="date">July 9, 2026</div>
 
-  <h3>The Lexicon and The Archive</h3>
-
-  <p>
+<p>
     As the World Properties Domain continued to emerge, attention shifted from creating new constitutional institutions to refining the institutions already established. During this review, <strong>The Lexicon</strong> underwent an important constitutional clarification. Rather than serving as a repository for proposed concepts or future possibilities, it was recognized that The Lexicon should preserve only the language that has been formally adopted and constitutionally approved within BitPangea. This realization reinforced its role as the authoritative vocabulary of the world rather than a planning document.
   </p>
-
-  <p>
+<p>
     Simultaneously, <strong>The Archive</strong> advanced from an intentionally sparse institutional placeholder into BitPangea's first organized preservation repository. Earlier constitutional records—including superseded Charters, Chronicle records, and legacy Codices—were formally incorporated into curated archival collections, establishing The Archive as the permanent home for preserving the historical evolution of the world without disturbing its active constitutional institutions.
   </p>
-
-  <ul>
-
-    <li>Conducted a constitutional review of <strong>The Lexicon</strong>, clarifying its institutional purpose within BitPangea.</li>
-
-    <li>Established the governing principle that <strong>The Lexicon</strong> preserves only language that has been formally adopted and constitutionally approved.</li>
-
-    <li>Confirmed that proposed concepts, exploratory terminology, and future architectural ideas belong outside The Lexicon until formally recognized through the constitutional process.</li>
-
-    <li>Expanded <strong>The Archive</strong> from a conceptual institution into an active preservation repository.</li>
-
-    <li>Established the first organized archival collections preserving historical constitutional materials from <strong>The Charter</strong>, <strong>The Chronicle</strong>, and <strong>The Codex</strong>.</li>
-
-    <li>Preserved the original <strong>Foundational Record</strong> of The Charter together with the preserved <strong>Cartographic Record</strong> and <strong>Foundation Record</strong> of The Chronicle.</li>
-
-    <li>Integrated the legacy <strong>Codex Principles</strong> together with the original five constitutional Codices preserved prior to the adoption of the Domain Architecture.</li>
-
-    <li>Recognized The Archive as the institutional repository through which earlier constitutional forms remain permanently accessible while allowing BitPangea's active institutions to continue evolving.</li>
-
-  </ul>
-
-  <p>
+<ul>
+<li>Conducted a constitutional review of <strong>The Lexicon</strong>, clarifying its institutional purpose within BitPangea.</li>
+<li>Established the governing principle that <strong>The Lexicon</strong> preserves only language that has been formally adopted and constitutionally approved.</li>
+<li>Confirmed that proposed concepts, exploratory terminology, and future architectural ideas belong outside The Lexicon until formally recognized through the constitutional process.</li>
+<li>Expanded <strong>The Archive</strong> from a conceptual institution into an active preservation repository.</li>
+<li>Established the first organized archival collections preserving historical constitutional materials from <strong>The Charter</strong>, <strong>The Chronicle</strong>, and <strong>The Codex</strong>.</li>
+<li>Preserved the original <strong>Foundational Record</strong> of The Charter together with the preserved <strong>Cartographic Record</strong> and <strong>Foundation Record</strong> of The Chronicle.</li>
+<li>Integrated the legacy <strong>Codex Principles</strong> together with the original five constitutional Codices preserved prior to the adoption of the Domain Architecture.</li>
+<li>Recognized The Archive as the institutional repository through which earlier constitutional forms remain permanently accessible while allowing BitPangea's active institutions to continue evolving.</li>
+</ul>
+<p>
     These refinements further strengthened BitPangea's constitutional architecture by clearly distinguishing between <em>active constitutional institutions</em> and their <em>preserved historical forms</em>. The Lexicon now serves as the authoritative vocabulary of the world, documenting only what has become constitutionally known, while The Archive preserves the historical record of how that constitutional knowledge evolved over time.
   </p>
+</div></details>
+<details class="period-card chronology-disclosure"><summary class="chronology-summary"><span class="chronology-summary-copy"><span class="chronology-summary-date">July 10, 2026</span><span class="chronology-summary-title">The Region</span></span><span aria-hidden="true" class="chronology-toggle"></span></summary><div class="chronology-body">
 
-</div>
 
-<div class="period-card">
-  <div class="date">July 10, 2026</div>
-
-  <h3>The Region</h3>
-
-  <p>
+<p>
     The World Properties Domain continued with the adoption of <strong>Codex WP-S-II — The Region</strong>, establishing Region as the second formally recognized Spatial Property of BitPangea. Following the adoption of <strong>Extent</strong> as the spatial scope of the World, constitutional inquiry moved inward to examine how coherent large-scale portions may be recognized within that scope without implying ownership, jurisdiction, governance, settlement, or civilizational meaning.
   </p>
-
-  <p>
+<p>
     Prior to adoption, the proposed definition underwent constitutional review through <strong>OpenAI ChatGPT</strong>, <strong>Anthropic Claude</strong>, and <strong>xAI Grok</strong>. The review examined whether Region should be understood through aggregation, contiguity, coherence, area, or portion. The final definition preserved <strong>coherence</strong> as the broader constitutional principle while replacing <strong>area</strong> with <strong>portion</strong>, avoiding premature assumptions concerning geometry and preserving sufficient flexibility for future inquiry.
   </p>
-
-  <ul>
-
-    <li>Adopted <strong>Codex WP-S-II — The Region</strong> as the second World Property within the <strong>Spatial Properties</strong> category.</li>
-
-    <li>Defined a Region as <strong>the cartographic property describing a coherent large-scale portion of the World within BitPangea</strong>.</li>
-
-    <li>Established that Regions are recognized rather than created and exist as intrinsic properties of the World rather than products of mapping, naming, governance, ownership, or settlement.</li>
-
-    <li>Recognized that a Region possesses no constitutionally prescribed size, shape, geometry, boundary, or number of Parcels.</li>
-
-    <li>Preserved Region as an objective World Property while recognizing that its constitutional definition and methodology would continue to mature through subsequent constitutional inquiry.</li>
-
-    <li>Established that coherence does not require uniformity and that a Region may contain internal differences while remaining recognizable as a coherent large-scale portion of the World.</li>
-
-    <li>Completed the full constitutional record for <strong>Codex WP-S-II</strong>, including its formal definition, immutable properties, foundational principles, scope, architectural review, historical record, and cartographic doctrine.</li>
-
-    <li>Updated the <strong>Codex Register</strong> to include WP-S-II — The Region within the World Properties Domain.</li>
-
-    <li>Updated <strong>The Lexicon</strong> to preserve Region as recognized constitutional vocabulary and revised the World Properties Period entry to include both Extent and Region.</li>
-
-    <li>Reaffirmed the institutional principle that active constitutional records should document only what is known and approved, removing references to unadopted future Codices from the Region record.</li>
-
-  </ul>
-
-  <p>
+<ul>
+<li>Adopted <strong>Codex WP-S-II — The Region</strong> as the second World Property within the <strong>Spatial Properties</strong> category.</li>
+<li>Defined a Region as <strong>the cartographic property describing a coherent large-scale portion of the World within BitPangea</strong>.</li>
+<li>Established that Regions are recognized rather than created and exist as intrinsic properties of the World rather than products of mapping, naming, governance, ownership, or settlement.</li>
+<li>Recognized that a Region possesses no constitutionally prescribed size, shape, geometry, boundary, or number of Parcels.</li>
+<li>Preserved Region as an objective World Property while recognizing that its constitutional definition and methodology would continue to mature through subsequent constitutional inquiry.</li>
+<li>Established that coherence does not require uniformity and that a Region may contain internal differences while remaining recognizable as a coherent large-scale portion of the World.</li>
+<li>Completed the full constitutional record for <strong>Codex WP-S-II</strong>, including its formal definition, immutable properties, foundational principles, scope, architectural review, historical record, and cartographic doctrine.</li>
+<li>Updated the <strong>Codex Register</strong> to include WP-S-II — The Region within the World Properties Domain.</li>
+<li>Updated <strong>The Lexicon</strong> to preserve Region as recognized constitutional vocabulary and revised the World Properties Period entry to include both Extent and Region.</li>
+<li>Reaffirmed the institutional principle that active constitutional records should document only what is known and approved, removing references to unadopted future Codices from the Region record.</li>
+</ul>
+<p>
     With the adoption of Region, the World Properties Domain now preserves two formally recognized Spatial Properties. <strong>Extent</strong> describes the spatial scope of the World, while <strong>Region</strong> reveals coherent large-scale form within that scope. Together, they begin the inward constitutional study of the properties possessed by the World itself while preserving future spatial inquiry for later discovery and adoption.
   </p>
+</div></details>
+<details class="period-card chronology-disclosure"><summary class="chronology-summary"><span class="chronology-summary-copy"><span class="chronology-summary-date">July 11, 2026</span><span class="chronology-summary-title">The Cluster and the Maturation of the World Properties Domain</span></span><span aria-hidden="true" class="chronology-toggle"></span></summary><div class="chronology-body">
 
-</div>
 
-<div class="period-card">
-  <div class="date">July 11, 2026</div>
-
-  <h3>The Cluster and the Maturation of the World Properties Domain</h3>
-
-  <p>
+<p>
     Constitutional inquiry continued with the adoption of <strong>Codex WP-S-III — The Cluster</strong>, recognizing Cluster as the third Spatial Property of the World. During extensive constitutional review involving <strong>OpenAI ChatGPT</strong>, <strong>Anthropic Claude</strong>, <strong>Google Gemini</strong>, and <strong>xAI Grok</strong>, the discussion expanded beyond the definition of Cluster itself and ultimately transformed the constitutional methodology governing the entire <strong>World Properties Domain</strong>.
   </p>
-
-  <p>
+<p>
     Rather than discovering another step within a required constitutional sequence, BitPangea recognized that World Properties already exist within the World independent of constitutional recognition. This realization established the governing methodology of the Domain: World Property Codices preserve objective properties already possessed by the World. Their constitutional ordering reflects the priority of recognition and the natural mode of revelation rather than logical dependency or constitutional construction.
   </p>
-
-  <ul>
-
-    <li>Adopted <strong>Codex WP-S-III — The Cluster</strong> as the third recognized Spatial Property within the World Properties Domain.</li>
-
-    <li>Defined a Cluster as <strong>the cartographic property describing a contiguous portion of the World within BitPangea</strong>.</li>
-
-    <li>Established the constitutional doctrine that <strong>World Properties are discovered rather than created</strong>.</li>
-
-    <li>Recognized <strong>ontological independence</strong> as a governing principle of the World Properties Domain, establishing that World Properties exist regardless of the order in which they are constitutionally recognized.</li>
-
-    <li>Established <strong>constitutional priority of recognition</strong> as the ordering principle governing World Property Codices.</li>
-
-    <li>Recognized the <strong>natural mode of revelation</strong> as the constitutional methodology through which World Properties progressively become known.</li>
-
-    <li>Revised <strong>Codex WP-S-I — The Extent</strong> and <strong>Codex WP-S-II — The Region</strong> to incorporate the mature World Properties methodology while preserving their original constitutional editions within <strong>The Archive</strong>.</li>
-
-    <li>Expanded <strong>The Archive</strong> to preserve the original World Properties Codices as historical constitutional records documenting the evolution of the Domain.</li>
-
-    <li>Expanded <strong>The Lexicon</strong> to preserve Cluster together with the newly recognized constitutional methodology of the World Properties Domain.</li>
-
-    <li>Established the shared <strong>World Properties Register</strong> as a reusable constitutional record, allowing future World Property discoveries to be preserved centrally while maintaining stable Codex pages.</li>
-
-  </ul>
-
-  <p>
+<ul>
+<li>Adopted <strong>Codex WP-S-III — The Cluster</strong> as the third recognized Spatial Property within the World Properties Domain.</li>
+<li>Defined a Cluster as <strong>the cartographic property describing a contiguous portion of the World within BitPangea</strong>.</li>
+<li>Established the constitutional doctrine that <strong>World Properties are discovered rather than created</strong>.</li>
+<li>Recognized <strong>ontological independence</strong> as a governing principle of the World Properties Domain, establishing that World Properties exist regardless of the order in which they are constitutionally recognized.</li>
+<li>Established <strong>constitutional priority of recognition</strong> as the ordering principle governing World Property Codices.</li>
+<li>Recognized the <strong>natural mode of revelation</strong> as the constitutional methodology through which World Properties progressively become known.</li>
+<li>Revised <strong>Codex WP-S-I — The Extent</strong> and <strong>Codex WP-S-II — The Region</strong> to incorporate the mature World Properties methodology while preserving their original constitutional editions within <strong>The Archive</strong>.</li>
+<li>Expanded <strong>The Archive</strong> to preserve the original World Properties Codices as historical constitutional records documenting the evolution of the Domain.</li>
+<li>Expanded <strong>The Lexicon</strong> to preserve Cluster together with the newly recognized constitutional methodology of the World Properties Domain.</li>
+<li>Established the shared <strong>World Properties Register</strong> as a reusable constitutional record, allowing future World Property discoveries to be preserved centrally while maintaining stable Codex pages.</li>
+</ul>
+<p>
     Although the day's work began with defining <strong>Cluster</strong>, its enduring constitutional contribution proved to be the maturation of the World Properties Domain itself. By recognizing that World Properties exist independently of constitutional discovery, BitPangea established a methodology capable of supporting future World Property Codices without requiring predetermined dependency chains. The Domain now preserves not only the properties of the World, but also the constitutional process through which those properties are progressively revealed.
   </p>
-</div>
-<div class="period-card">
-  <div class="date">July 12, 2026</div>
+</div></details>
+<details class="period-card chronology-disclosure"><summary class="chronology-summary"><span class="chronology-summary-copy"><span class="chronology-summary-date">July 12, 2026</span><span class="chronology-summary-title">The Domains and the Maturation of The Codex</span></span><span aria-hidden="true" class="chronology-toggle"></span></summary><div class="chronology-body">
 
-  <h3>The Domains and the Maturation of The Codex</h3>
 
-  <p>
+<p>
     Following the constitutional maturation of the <strong>World Properties Domain</strong>, BitPangea undertook a broader architectural review of <strong>The Codex</strong> itself. During extensive constitutional analysis involving <strong>OpenAI ChatGPT</strong>, <strong>Anthropic Claude</strong>, <strong>Google Gemini</strong>, and <strong>xAI Grok</strong>, inquiry revealed that the Structural, Relational, and World Properties Domains had evolved beyond simple organizational groupings into independent canonical institutions serving as the enduring homes of their respective fields of inquiry.
   </p>
-
-  <p>
+<p>
     This constitutional review also completed the internal maturation of the <strong>World Properties Domain</strong>. Building upon the recognition of <strong>World Property Categories</strong>, BitPangea established <strong>Spatial Properties</strong> as the first recognized constitutional Category and reorganized the existing World Property Codices into the Spatial classification. The former <strong>WP-I</strong>, <strong>WP-II</strong>, and <strong>WP-III</strong> designations became <strong>WP-S-I</strong>, <strong>WP-S-II</strong>, and <strong>WP-S-III</strong>, distinguishing Category membership from the broader World Properties Domain while preserving all previous canonical editions within <strong>The Archive</strong>.
   </p>
-
-  <ul>
-
-    <li>Established the <strong>Structural Domain</strong> as the canonical home of structural inquiry within <strong>The Codex</strong>.</li>
-
-    <li>Established the <strong>Relational Domain</strong> as the canonical home of relational inquiry within <strong>The Codex</strong>.</li>
-
-    <li>Established the <strong>World Properties Domain</strong> as the canonical home of World Property inquiry within <strong>The Codex</strong>.</li>
-
-    <li>Created dedicated Domain pages for all three recognized Domains, formally separating Domains from individual Codices.</li>
-
-    <li>Recognized Domains as canonical institutions within <strong>The Codex</strong> rather than organizational folders or navigational groupings.</li>
-
-    <li>Formally recognized <strong>Spatial Properties</strong> as the first constitutional Category within the World Properties Domain.</li>
-
-    <li>Redesignated the existing World Property Codices as <strong>WP-S-I — The Extent</strong>, <strong>WP-S-II — The Region</strong>, and <strong>WP-S-III — The Cluster</strong>, establishing Category-based constitutional identifiers.</li>
-
-    <li>Established the architectural relationship of <strong>World Properties → Categories → Codices</strong>, distinguishing constitutional Categories from Domains while preserving objective World Properties within their appropriate classifications.</li>
-
-    <li>Preserved all prior constitutional editions of <strong>WP-I</strong>, <strong>WP-II</strong>, and <strong>WP-III</strong> within <strong>The Archive</strong> as successive Canonical Editions documenting the constitutional evolution of the Domain.</li>
-
-    <li>Expanded <strong>The Codex Principles</strong> to preserve doctrines revealed through the World Properties Domain, recognizing that Domain Principles emerge through constitutional discovery rather than only upon Domain completion.</li>
-
-    <li>Reorganized <strong>The Codex Register</strong> to preserve Domains as the primary divisions of inquiry, with adopted Codices preserved beneath their respective Domains.</li>
-
-    <li>Further refined the institutional identities of <strong>The Charter</strong>, <strong>The Codex</strong>, <strong>The Lexicon</strong>, and <strong>The Archive</strong>, recognizing that each preserves a distinct class of constitutional or canonical knowledge.</li>
-
-    <li>Completed the initial institutional architecture supporting future Domains, including the planned <strong>Epistemic</strong> and <strong>Civilizational</strong> Domains.</li>
-
-  </ul>
-
-  <p>
+<ul>
+<li>Established the <strong>Structural Domain</strong> as the canonical home of structural inquiry within <strong>The Codex</strong>.</li>
+<li>Established the <strong>Relational Domain</strong> as the canonical home of relational inquiry within <strong>The Codex</strong>.</li>
+<li>Established the <strong>World Properties Domain</strong> as the canonical home of World Property inquiry within <strong>The Codex</strong>.</li>
+<li>Created dedicated Domain pages for all three recognized Domains, formally separating Domains from individual Codices.</li>
+<li>Recognized Domains as canonical institutions within <strong>The Codex</strong> rather than organizational folders or navigational groupings.</li>
+<li>Formally recognized <strong>Spatial Properties</strong> as the first constitutional Category within the World Properties Domain.</li>
+<li>Redesignated the existing World Property Codices as <strong>WP-S-I — The Extent</strong>, <strong>WP-S-II — The Region</strong>, and <strong>WP-S-III — The Cluster</strong>, establishing Category-based constitutional identifiers.</li>
+<li>Established the architectural relationship of <strong>World Properties → Categories → Codices</strong>, distinguishing constitutional Categories from Domains while preserving objective World Properties within their appropriate classifications.</li>
+<li>Preserved all prior constitutional editions of <strong>WP-I</strong>, <strong>WP-II</strong>, and <strong>WP-III</strong> within <strong>The Archive</strong> as successive Canonical Editions documenting the constitutional evolution of the Domain.</li>
+<li>Expanded <strong>The Codex Principles</strong> to preserve doctrines revealed through the World Properties Domain, recognizing that Domain Principles emerge through constitutional discovery rather than only upon Domain completion.</li>
+<li>Reorganized <strong>The Codex Register</strong> to preserve Domains as the primary divisions of inquiry, with adopted Codices preserved beneath their respective Domains.</li>
+<li>Further refined the institutional identities of <strong>The Charter</strong>, <strong>The Codex</strong>, <strong>The Lexicon</strong>, and <strong>The Archive</strong>, recognizing that each preserves a distinct class of constitutional or canonical knowledge.</li>
+<li>Completed the initial institutional architecture supporting future Domains, including the planned <strong>Epistemic</strong> and <strong>Civilizational</strong> Domains.</li>
+</ul>
+<p>
     Although no new World Property was constitutionally recognized during the day, the architectural significance proved substantial. BitPangea ceased to view <strong>The Codex</strong> as merely a collection of Codices and instead recognized it as a collection of Domains. Simultaneously, the World Properties Domain matured beyond a simple sequence of World Property Codices into a constitutional framework capable of organizing objective properties through recognized Categories while preserving the complete canonical history of every constitutional edition. Together, these discoveries established the enduring institutional architecture through which future constitutional inquiry may continue to unfold.
   </p>
-</div>
-<div class="period-card">
-  <div class="date">July 17, 2026</div>
+</div></details>
+<details class="period-card chronology-disclosure"><summary class="chronology-summary"><span class="chronology-summary-copy"><span class="chronology-summary-date">July 17, 2026</span><span class="chronology-summary-title">The Cursor</span></span><span aria-hidden="true" class="chronology-toggle"></span></summary><div class="chronology-body">
 
-  <h3>The Cursor</h3>
 
-  <p>
+<p>
     On Day #51, BitPangea returned to <strong>The Twelve Constellations of Digital Antiquity</strong> and completed the fourth preserved Constellation: <strong>The Cursor</strong>. Following <strong>The Mainframe</strong>, <strong>The Packet</strong>, and <strong>The Window</strong>, The Cursor emerged as the first Constellation devoted not to computation, communication, or visibility, but to movement through digital space itself.
   </p>
-
-  <p>
+<p>
     Constitutional review established <strong>Exploration</strong> as The Cursor’s Domain, with <strong>movement</strong>, <strong>discovery</strong>, and <strong>navigation</strong> identified as its defining ideas. Rather than treating the cursor merely as a graphical pointer or interface device, BitPangea preserved it as the earliest visible extension of human intention within the Digital World: the first wanderer capable of crossing the screen, selecting direction, revealing paths, and transforming a visible digital environment into one that could be traversed.
   </p>
-
-  <ul>
-
-    <li>Completed <strong>Constellation IV of XII — The Cursor</strong> within <strong>The Twelve Constellations of Digital Antiquity</strong>.</li>
-
-    <li>Established <strong>Exploration</strong> as the canonical Domain of The Cursor.</li>
-
-    <li>Recognized <strong>movement</strong>, <strong>discovery</strong>, and <strong>navigation</strong> as the three ideas represented by the Constellation.</li>
-
-    <li>Preserved the canonical description of The Cursor as <strong>“The first wanderer of digital space.”</strong></li>
-
-    <li>Defined The Cursor as the first visible extension of human intention within the Digital World.</li>
-
-    <li>Clarified the constitutional distinction between <strong>The Window</strong> and <strong>The Cursor</strong>: The Window allowed humanity to see the Digital World, while The Cursor allowed humanity to move within it.</li>
-
-    <li>Established the first four Constellations as a coherent sequence of digital emergence: <strong>the machine, the messenger, the opening, and the wanderer</strong>.</li>
-
-    <li>Created a dedicated animated preservation page for The Cursor within <strong>The Reliquary</strong>.</li>
-
-    <li>Used motion as the primary expressive medium of the page, allowing the Constellation to be experienced through movement rather than represented only as a static artifact.</li>
-
-    <li>Designed a cinematic cursor journey in which a luminous pointer crosses a dark digital field and reveals the ideas of <strong>Movement</strong>, <strong>Discovery</strong>, and <strong>Navigation</strong>.</li>
-
-    <li>Preserved the institutional architecture and visual identity established by the earlier Constellation pages while giving The Cursor a unique interactive character appropriate to its Domain.</li>
-
-    <li>Added replay and reduced-motion considerations so the experience remains repeatable and accessible without diminishing its symbolic purpose.</li>
-
-    <li>Established a concealed path by which future visitors may discover The Cursor through an act of thoughtful exploration, without publicly disclosing the location of the Constellation.</li>
-
-  </ul>
-
-  <p>
+<ul>
+<li>Completed <strong>Constellation IV of XII — The Cursor</strong> within <strong>The Twelve Constellations of Digital Antiquity</strong>.</li>
+<li>Established <strong>Exploration</strong> as the canonical Domain of The Cursor.</li>
+<li>Recognized <strong>movement</strong>, <strong>discovery</strong>, and <strong>navigation</strong> as the three ideas represented by the Constellation.</li>
+<li>Preserved the canonical description of The Cursor as <strong>“The first wanderer of digital space.”</strong></li>
+<li>Defined The Cursor as the first visible extension of human intention within the Digital World.</li>
+<li>Clarified the constitutional distinction between <strong>The Window</strong> and <strong>The Cursor</strong>: The Window allowed humanity to see the Digital World, while The Cursor allowed humanity to move within it.</li>
+<li>Established the first four Constellations as a coherent sequence of digital emergence: <strong>the machine, the messenger, the opening, and the wanderer</strong>.</li>
+<li>Created a dedicated animated preservation page for The Cursor within <strong>The Reliquary</strong>.</li>
+<li>Used motion as the primary expressive medium of the page, allowing the Constellation to be experienced through movement rather than represented only as a static artifact.</li>
+<li>Designed a cinematic cursor journey in which a luminous pointer crosses a dark digital field and reveals the ideas of <strong>Movement</strong>, <strong>Discovery</strong>, and <strong>Navigation</strong>.</li>
+<li>Preserved the institutional architecture and visual identity established by the earlier Constellation pages while giving The Cursor a unique interactive character appropriate to its Domain.</li>
+<li>Added replay and reduced-motion considerations so the experience remains repeatable and accessible without diminishing its symbolic purpose.</li>
+<li>Established a concealed path by which future visitors may discover The Cursor through an act of thoughtful exploration, without publicly disclosing the location of the Constellation.</li>
+</ul>
+<p>
     With the completion of The Cursor, the first four Constellations now preserve a continuous account of humanity’s earliest relationship with the Digital World. The Mainframe made computation possible. The Packet allowed information to travel. The Window made the Digital World visible. The Cursor made it navigable. Through this sequence, digital space ceased to be only a hidden system operating behind machines and became a place through which human intention could move, search, select, and discover.
   </p>
-</div>  
-<div class="period-card">
-  <div class="date">July 18, 2026</div>
+</div></details>
+<details class="period-card chronology-disclosure"><summary class="chronology-summary"><span class="chronology-summary-copy"><span class="chronology-summary-date">July 18, 2026</span><span class="chronology-summary-title">Transmission 007 — The Presence</span></span><span aria-hidden="true" class="chronology-toggle"></span></summary><div class="chronology-body">
 
-  <h3>Transmission 007 — The Presence</h3>
 
-  <p>
+<p>
     On Day #52, BitPangea returned to <strong>The Transmissions</strong> and completed <strong>Transmission 007 — The Presence</strong>, opening the philosophical threshold of the <strong>World Properties Period</strong>. Rather than naming or prematurely recognizing a specific World Property, the Transmission introduced the deeper question now facing the World: not merely what the World is, nor how its parts relate, but <strong>what exists within it</strong>.
   </p>
-
-  <p>
+<p>
     The Presence was created as a meditative scroll journey in which an initially empty digital field gradually acquires depth, light, movement, and subtle signs of occupation. The experience begins with the foundational statement <strong>“The World existed.”</strong> and proceeds through the established achievements of the Structural and Relational Domains before revealing that existence itself is not emptiness. The Transmission does not answer the World Properties question. It establishes the constitutional and philosophical space in which that question may now be asked.
   </p>
-
-  <ul>
-
-    <li>Completed <strong>Transmission 007 — The Presence</strong> as the seventh preserved Transmission of BitPangea.</li>
-
-    <li>Established The Presence as the introductory Transmission of the <strong>World Properties Period</strong>.</li>
-
-    <li>Centered the Transmission upon the question <strong>“What exists within the World?”</strong></li>
-
-    <li>Preserved the distinction between the Structural, Relational, and World Properties Domains: Structure describes what the World is, Relation describes how its parts belong, and World Properties asks what the World possesses or contains.</li>
-
-    <li>Avoided naming, depicting, or constitutionally implying any unadopted World Property.</li>
-
-    <li>Designed the Transmission as a <strong>meditative scroll journey</strong> with no navigation, footer, branching choices, or conventional video controls.</li>
-
-    <li>Created an opening state of near-total darkness in which the World initially appears empty.</li>
-
-    <li>Gradually introduced abstract particles, faint connections, luminosity, depth, and atmospheric movement as signs of presence without classification.</li>
-
-    <li>Used the visitor’s act of scrolling as the sole means of progression, allowing attention and movement through the page to become part of the Transmission itself.</li>
-
-    <li>Preserved the foundational opening statement <strong>“The World existed.”</strong> as the premise from which the entire Transmission unfolds.</li>
-
-    <li>Introduced the realization <strong>“Yet existence was not emptiness.”</strong> as the central threshold between the completed Domains and the inquiry now beginning.</li>
-
-    <li>Concluded the journey with the principle that <strong>the World did not answer all at once; it waited to be revealed</strong>.</li>
-
-    <li>Added responsive behavior and reduced-motion accessibility while preserving the intended meditative experience.</li>
-
-    <li>Established a concealed path through which future visitors may discover the Transmission without publicly disclosing its location.</li>
-
-    <li>Reorganized <strong>The Reliquary Ledger</strong> by type of hidden item rather than by visible institution, establishing a more durable record of BitPangea’s concealed pathways.</li>
-
-  </ul>
-
-  <p>
+<ul>
+<li>Completed <strong>Transmission 007 — The Presence</strong> as the seventh preserved Transmission of BitPangea.</li>
+<li>Established The Presence as the introductory Transmission of the <strong>World Properties Period</strong>.</li>
+<li>Centered the Transmission upon the question <strong>“What exists within the World?”</strong></li>
+<li>Preserved the distinction between the Structural, Relational, and World Properties Domains: Structure describes what the World is, Relation describes how its parts belong, and World Properties asks what the World possesses or contains.</li>
+<li>Avoided naming, depicting, or constitutionally implying any unadopted World Property.</li>
+<li>Designed the Transmission as a <strong>meditative scroll journey</strong> with no navigation, footer, branching choices, or conventional video controls.</li>
+<li>Created an opening state of near-total darkness in which the World initially appears empty.</li>
+<li>Gradually introduced abstract particles, faint connections, luminosity, depth, and atmospheric movement as signs of presence without classification.</li>
+<li>Used the visitor’s act of scrolling as the sole means of progression, allowing attention and movement through the page to become part of the Transmission itself.</li>
+<li>Preserved the foundational opening statement <strong>“The World existed.”</strong> as the premise from which the entire Transmission unfolds.</li>
+<li>Introduced the realization <strong>“Yet existence was not emptiness.”</strong> as the central threshold between the completed Domains and the inquiry now beginning.</li>
+<li>Concluded the journey with the principle that <strong>the World did not answer all at once; it waited to be revealed</strong>.</li>
+<li>Added responsive behavior and reduced-motion accessibility while preserving the intended meditative experience.</li>
+<li>Established a concealed path through which future visitors may discover the Transmission without publicly disclosing its location.</li>
+<li>Reorganized <strong>The Reliquary Ledger</strong> by type of hidden item rather than by visible institution, establishing a more durable record of BitPangea’s concealed pathways.</li>
+</ul>
+<p>
     Transmission 007 marks a quiet but important transition in the constitutional development of BitPangea. The World has already been established. Its elements have been distinguished. Their relationships have been revealed. The Presence now introduces the realization that the World may possess qualities, conditions, or phenomena not yet named. By refusing to answer the question prematurely, the Transmission preserves the discipline of constitutional discovery while opening the next field of inquiry. The World exists. Now begins the question of what exists within it.
   </p>
-</div>
+</div></details>
+<details class="period-card chronology-disclosure"><summary class="chronology-summary"><span class="chronology-summary-copy"><span class="chronology-summary-date">August 1, 2026</span><span class="chronology-summary-title">The Public Repository Record</span></span><span aria-hidden="true" class="chronology-toggle"></span></summary><div class="chronology-body">
 
-<div class="period-card">
-  <div class="date">August 1, 2026</div>
 
-  <h3>The Public Repository Record</h3>
-
-  <p>
+<p>
     On Day #66, BitPangea conducted a broad review of the public documentation preserved throughout its GitHub repository. The work began as a series of small institutional maintenance tasks: reviewing existing <strong>README.md</strong> files, updating outdated descriptions, and creating missing repository records beside public <strong>index.html</strong> pages. As the review progressed, it became clear that the repository documentation needed to reflect BitPangea’s current constitutional and institutional architecture rather than the much earlier exploratory structure established during May and June.
   </p>
-
-  <p>
+<p>
     The review also clarified an important distinction between a public repository README and an internal maintenance record. Public README files should explain an institution’s purpose, role, structure, and repository standards without exposing concealed discovery paths, hidden triggers, verification records, or Builder-only maintenance information. The affected files were therefore reconstructed as public-facing institutional records suitable for placement directly within the BitPangea public repository.
   </p>
-
-  <ul>
-
-    <li>Reviewed and updated the main public <strong>BitPangea README.md</strong> to reflect the World’s current constitutional, cartographic, historical, preservation, and institutional architecture.</li>
-
-    <li>Expanded the main repository README to formally include <strong>The Foundation</strong> as the constitutional library of BitPangea.</li>
-
-    <li>Documented the eight foundational works preserved within The Foundation: <strong>The Declaration</strong>, <strong>The Charter</strong>, <strong>The Codex</strong>, <strong>The Lexicon</strong>, <strong>The Truths</strong>, <strong>The Principles</strong>, <strong>The Maxims</strong>, and <strong>The Archive</strong>.</li>
-
-    <li>Added the five-Domain architecture to the main repository record: <strong>Structural</strong>, <strong>Relational</strong>, <strong>World Properties</strong>, <strong>Epistemic</strong>, and <strong>Civilizational</strong>.</li>
-
-    <li>Updated the public README for <strong>The Archive</strong> to reflect its current role as BitPangea’s long-term preservation institution for records, references, earlier versions, and historically significant materials.</li>
-
-    <li>Updated the public README for <strong>The Atlas</strong> to reflect its role as the canonical cartographic institution of BitPangea.</li>
-
-    <li>Updated the public README for <strong>The Charter</strong> to reflect its role in preserving founding purpose, constitutional direction, and formally adopted records.</li>
-
-    <li>Updated the public README for <strong>The Chronicle</strong> to reflect its role as the official historical record of BitPangea rather than a daily development log.</li>
-
-    <li>Updated the public README for <strong>The Codex</strong> to reflect its current role in structured inquiry, recognized knowledge, and the Domain architecture through which the World becomes understood.</li>
-
-    <li>Updated the public README for <strong>The Commons</strong> to preserve its role as the public gathering place for questions, criticism, research, exploration, and discussion.</li>
-
-    <li>Updated the public README for <strong>The Covenant</strong> to preserve its role as BitPangea’s public statement of restraint, clarification, and present condition.</li>
-
-    <li>Created a new public repository README for <strong>The Declaration</strong>, preserving its foundational truths while distinguishing it from The Charter and The Codex.</li>
-
-    <li>Created a new public repository README for <strong>The Foundation</strong>, documenting its eight-volume constitutional library and its role as the public index to those works.</li>
-
-    <li>Updated the public README for <strong>The Frontier Office</strong> to reflect its role as the primary public communications institution of BitPangea.</li>
-
-    <li>Updated the public README for <strong>The Lexicon</strong> to reflect its role in preserving the constitutional, institutional, structural, relational, and historical language of the World.</li>
-
-    <li>Created a public repository README for <strong>The Luminaries</strong>, preserving its ordered lineage of foundational digital ideas and its numbered institutional structure.</li>
-
-    <li>Created a public repository README for <strong>The Maxims</strong>, documenting its twenty-one adopted Maxims across six thematic sections.</li>
-
-    <li>Created a public repository README for <strong>The Principles</strong>, documenting its twenty-one stewardship Principles across six thematic sections.</li>
-
-    <li>Created a restrained public repository README for <strong>The Reliquary</strong> that explains its purpose without turning the document into a public sitemap or disclosing its discovery architecture.</li>
-
-    <li>Created a public repository README for <strong>The Signal</strong>, preserving Signal 001 and establishing a public standard for future Signal records.</li>
-
-    <li>Created a public repository README for <strong>The Transmissions</strong>, documenting the seven completed Transmissions, their sequence, directory standard, and varying media forms.</li>
-
-    <li>Created a public repository README for <strong>The Truths</strong>, documenting its twenty-one constitutional realities across six thematic sections.</li>
-
-    <li>Standardized the public README files around shared repository principles, including stable filenames, preserved historical versions, accurate links and metadata, clear institutional boundaries, and documentation of major changes within the appropriate Journal or Chronicle record.</li>
-
-    <li>Removed outdated descriptions that continued to present established BitPangea institutions as merely empty, hypothetical, or early-stage concepts.</li>
-
-    <li>Established that public repository documentation should explain the visible institutional architecture of BitPangea without disclosing concealed routes, trigger words, or internal maintenance details.</li>
-
-  </ul>
-
-  <p>
+<ul>
+<li>Reviewed and updated the main public <strong>BitPangea README.md</strong> to reflect the World’s current constitutional, cartographic, historical, preservation, and institutional architecture.</li>
+<li>Expanded the main repository README to formally include <strong>The Foundation</strong> as the constitutional library of BitPangea.</li>
+<li>Documented the eight foundational works preserved within The Foundation: <strong>The Declaration</strong>, <strong>The Charter</strong>, <strong>The Codex</strong>, <strong>The Lexicon</strong>, <strong>The Truths</strong>, <strong>The Principles</strong>, <strong>The Maxims</strong>, and <strong>The Archive</strong>.</li>
+<li>Added the five-Domain architecture to the main repository record: <strong>Structural</strong>, <strong>Relational</strong>, <strong>World Properties</strong>, <strong>Epistemic</strong>, and <strong>Civilizational</strong>.</li>
+<li>Updated the public README for <strong>The Archive</strong> to reflect its current role as BitPangea’s long-term preservation institution for records, references, earlier versions, and historically significant materials.</li>
+<li>Updated the public README for <strong>The Atlas</strong> to reflect its role as the canonical cartographic institution of BitPangea.</li>
+<li>Updated the public README for <strong>The Charter</strong> to reflect its role in preserving founding purpose, constitutional direction, and formally adopted records.</li>
+<li>Updated the public README for <strong>The Chronicle</strong> to reflect its role as the official historical record of BitPangea rather than a daily development log.</li>
+<li>Updated the public README for <strong>The Codex</strong> to reflect its current role in structured inquiry, recognized knowledge, and the Domain architecture through which the World becomes understood.</li>
+<li>Updated the public README for <strong>The Commons</strong> to preserve its role as the public gathering place for questions, criticism, research, exploration, and discussion.</li>
+<li>Updated the public README for <strong>The Covenant</strong> to preserve its role as BitPangea’s public statement of restraint, clarification, and present condition.</li>
+<li>Created a new public repository README for <strong>The Declaration</strong>, preserving its foundational truths while distinguishing it from The Charter and The Codex.</li>
+<li>Created a new public repository README for <strong>The Foundation</strong>, documenting its eight-volume constitutional library and its role as the public index to those works.</li>
+<li>Updated the public README for <strong>The Frontier Office</strong> to reflect its role as the primary public communications institution of BitPangea.</li>
+<li>Updated the public README for <strong>The Lexicon</strong> to reflect its role in preserving the constitutional, institutional, structural, relational, and historical language of the World.</li>
+<li>Created a public repository README for <strong>The Luminaries</strong>, preserving its ordered lineage of foundational digital ideas and its numbered institutional structure.</li>
+<li>Created a public repository README for <strong>The Maxims</strong>, documenting its twenty-one adopted Maxims across six thematic sections.</li>
+<li>Created a public repository README for <strong>The Principles</strong>, documenting its twenty-one stewardship Principles across six thematic sections.</li>
+<li>Created a restrained public repository README for <strong>The Reliquary</strong> that explains its purpose without turning the document into a public sitemap or disclosing its discovery architecture.</li>
+<li>Created a public repository README for <strong>The Signal</strong>, preserving Signal 001 and establishing a public standard for future Signal records.</li>
+<li>Created a public repository README for <strong>The Transmissions</strong>, documenting the seven completed Transmissions, their sequence, directory standard, and varying media forms.</li>
+<li>Created a public repository README for <strong>The Truths</strong>, documenting its twenty-one constitutional realities across six thematic sections.</li>
+<li>Standardized the public README files around shared repository principles, including stable filenames, preserved historical versions, accurate links and metadata, clear institutional boundaries, and documentation of major changes within the appropriate Journal or Chronicle record.</li>
+<li>Removed outdated descriptions that continued to present established BitPangea institutions as merely empty, hypothetical, or early-stage concepts.</li>
+<li>Established that public repository documentation should explain the visible institutional architecture of BitPangea without disclosing concealed routes, trigger words, or internal maintenance details.</li>
+</ul>
+<p>
     The work completed on August 1 did not establish a new constitutional institution or adopt a new World Property. Instead, it strengthened the public record surrounding the institutions that already exist. BitPangea’s repository documentation now more accurately reflects the World as it has developed: not merely as an early concept built around scarcity, but as an expanding constitutional architecture of foundational works, Domains, institutions, records, and preserved experiences. The World had grown considerably since its first README files were written. Today, its public repository record began to catch up.
   </p>
-</div>
+</div></details>
+<details class="period-card chronology-disclosure"><summary class="chronology-summary"><span class="chronology-summary-copy"><span class="chronology-summary-date">August 2, 2026</span><span class="chronology-summary-title">The Orange Thread</span></span><span aria-hidden="true" class="chronology-toggle"></span></summary><div class="chronology-body">
 
-<div class="period-card">
-  <div class="date">August 2, 2026</div>
 
-  <h3>The Orange Thread</h3>
-
-  <p>
+<p>
     On Day #67, BitPangea established <strong>The Orange Thread</strong>, a new lineage of tributes acknowledging Bitcoin and selected Bitcoin-related technologies, principles, or structures that meaningfully enter the World. Unlike a comprehensive archive of Bitcoin terminology, The Orange Thread is governed by restraint. Bitcoin begins the Thread because its influence precedes BitPangea itself. Any future tribute may be created only after the related technology or principle has been genuinely implemented within the World.
   </p>
-
-  <p>
+<p>
     The first tribute was dedicated to <strong>Bitcoin</strong>. The tribute does not honor price, speculation, possession, or market history. It recognizes Bitcoin as the first enduring demonstration that a digital system could establish scarcity, truth, and transfer through cryptographic verification without requiring permission from a sovereign center. In this respect, Bitcoin did not create BitPangea, but it helped make a world like BitPangea conceivable.
   </p>
-
-  <ul>
-
-    <li>Established <strong>The Orange Thread</strong> as a continuing lineage of Bitcoin-related tributes within BitPangea.</li>
-
-    <li>Adopted the governing principle that Bitcoin begins the Thread because its influence predates the World.</li>
-
-    <li>Established that future Bitcoin-related technologies, principles, or structures may enter The Orange Thread only after meaningful implementation within BitPangea.</li>
-
-    <li>Clarified that implementation establishes eligibility for a tribute but does not require one; the World must also reveal a natural and meaningful place for its preservation.</li>
-
-    <li>Created the first tribute within The Orange Thread and dedicated it to <strong>Bitcoin</strong>.</li>
-
-    <li>Framed the Bitcoin tribute around digital scarcity, cryptographic permanence, verifiable transfer, and operation without a sovereign center.</li>
-
-    <li>Distinguished the tribute from price, speculation, market performance, and possession.</li>
-
-    <li>Created an original visual work presenting Bitcoin as an origin condition of a digital world rather than as a commercial or financial object.</li>
-
-    <li>Published the standalone Bitcoin tribute page at <strong>bitpangea.com/theorangethread/</strong>.</li>
-
-    <li>Recorded the complete discovery architecture privately within <strong>The Hidden Ledger</strong> while preserving the public experience of The Orange Thread.</li>
-
-  </ul>
-
-  <p>
+<ul>
+<li>Established <strong>The Orange Thread</strong> as a continuing lineage of Bitcoin-related tributes within BitPangea.</li>
+<li>Adopted the governing principle that Bitcoin begins the Thread because its influence predates the World.</li>
+<li>Established that future Bitcoin-related technologies, principles, or structures may enter The Orange Thread only after meaningful implementation within BitPangea.</li>
+<li>Clarified that implementation establishes eligibility for a tribute but does not require one; the World must also reveal a natural and meaningful place for its preservation.</li>
+<li>Created the first tribute within The Orange Thread and dedicated it to <strong>Bitcoin</strong>.</li>
+<li>Framed the Bitcoin tribute around digital scarcity, cryptographic permanence, verifiable transfer, and operation without a sovereign center.</li>
+<li>Distinguished the tribute from price, speculation, market performance, and possession.</li>
+<li>Created an original visual work presenting Bitcoin as an origin condition of a digital world rather than as a commercial or financial object.</li>
+<li>Published the standalone Bitcoin tribute page at <strong>bitpangea.com/theorangethread/</strong>.</li>
+<li>Recorded the complete discovery architecture privately within <strong>The Hidden Ledger</strong> while preserving the public experience of The Orange Thread.</li>
+</ul>
+<p>
     The Orange Thread does not establish a predetermined collection, schedule, or exhaustive vocabulary. It begins with a single tribute and may remain there indefinitely unless BitPangea later adopts another Bitcoin-related technology or principle in a manner significant enough to become part of the World’s lived architecture. The Thread will therefore grow only when BitPangea itself gives it reason to continue.
   </p>
-</div>
+</div></details>
+<details class="period-card chronology-disclosure"><summary class="chronology-summary"><span class="chronology-summary-copy"><span class="chronology-summary-date">August 3, 2026</span><span class="chronology-summary-title">The World Properties Research Landscape</span></span><span aria-hidden="true" class="chronology-toggle"></span></summary><div class="chronology-body">
 
-<div class="period-card">
-  <div class="date">August 3, 2026</div>
 
-  <h3>The World Properties Research Landscape</h3>
-
-  <p>
+<p>
     On Day #68, BitPangea confronted the true scale of the <strong>World Properties Domain</strong>. What initially appeared to be a single continuation of the Codex sequence revealed itself as a much broader ontological landscape containing many possible families of intrinsic World Properties. The central realization was that this Domain cannot be responsibly developed through a rigid progression in which one Category or Property must be completed before another may be investigated.
   </p>
-
-  <p>
+<p>
     The World Properties Domain was instead recognized as a field of discovery. Categories may emerge as valid Properties are encountered, investigated, and constitutionally placed. A newly discovered Property may belong to <strong>Spatial</strong>, <strong>Terrain</strong>, <strong>Geometric</strong>, <strong>Compositional</strong>, <strong>Distributional</strong>, <strong>Temporal</strong>, <strong>Emergent</strong>, or another Category not yet recognized. The Category organizes the Property after or during inquiry; it does not determine which Property BitPangea must examine next.
   </p>
+<ul>
+<li>Reaffirmed the completed architecture of the <strong>Structural Domain</strong>: <strong>The Parcel</strong>, <strong>The Boundary</strong>, <strong>The Coordinate</strong>, and <strong>The World</strong>.</li>
+<li>Reaffirmed the completed architecture of the <strong>Relational Domain</strong>: <strong>The Adjacency</strong>, <strong>The Contiguity</strong>, <strong>The Distance</strong>, and <strong>The Direction</strong>.</li>
+<li>Preserved the current adopted architecture of the <strong>World Properties Domain</strong> through the <strong>Spatial Properties</strong> Category and its three adopted Codices: <strong>The Extent</strong>, <strong>The Region</strong>, and <strong>The Cluster</strong>.</li>
+<li>Rejected the assumption that each Category within the World Properties Domain must follow a mandatory <strong>A → B → C → D</strong> conceptual sequence.</li>
+<li>Established the governing principle that <strong>discovery determines order; order does not determine discovery</strong>.</li>
+<li>Clarified that Categories organize discovered Properties but must not restrict which valid Property may be investigated or adopted next.</li>
+<li>Returned to the earliest Cartographic Period schedules to recover concepts that were important enough to be proposed as Codices but were later removed from Domains in which they did not constitutionally belong.</li>
+<li>Identified <strong>The Surface</strong>, <strong>The Limit</strong>, <strong>The Terrain</strong>, and <strong>The Locality</strong> as historically significant recovered concepts requiring renewed inquiry.</li>
+<li>Recognized that <strong>The Surface</strong> may be a standalone Property, a prerequisite field, a Category foundation, or a concept already implicit within The World.</li>
+<li>Recognized that <strong>The Limit</strong> may describe the maximum Extent, terminal condition, cartographic expression of finitude, or outer edge of The World, while remaining constitutionally distinct from Parcel Boundaries.</li>
+<li>Recognized that <strong>The Terrain</strong> may be a standalone Property, a Category of Properties, or an emergent composite expressed through concepts such as <strong>Texture</strong>, <strong>Relief</strong>, <strong>Gradient</strong>, <strong>Roughness</strong>, and <strong>Smoothness</strong>.</li>
+<li>Preserved <strong>The Locality</strong> as unresolved because it must survive the question <strong>“according to whom?”</strong> and must also demonstrate that it differs from Cluster in constitutional character rather than merely in scale.</li>
+<li>Strengthened the constitutional tests for admission into the World Properties Domain through the paired questions <strong>“According to whom?”</strong> and <strong>“Intrinsic to what?”</strong>.</li>
+<li>Clarified that a World Property may arise from multiple relations without belonging in the Relational Domain, provided it describes an intrinsic higher-order condition of The World or a formation within it.</li>
+<li>Distinguished true standalone Properties from attributes, measurable dimensions, spectra, complements, composites, prerequisite fields, Category labels, misplaced concepts, and rejected concepts.</li>
+<li>Reviewed broad external analyses from <strong>OpenAI ChatGPT</strong> and <strong>Anthropic Claude</strong> to expose the possible scale of the Domain, identify candidate Categories, test overlaps, and compare constitutional methods without adopting either proposed taxonomy.</li>
+<li>Recognized possible research areas including <strong>Surficial</strong>, <strong>Terrain</strong>, <strong>Boundary</strong>, <strong>Geometric</strong>, <strong>Topological</strong>, <strong>Distributional</strong>, <strong>Compositional</strong>, <strong>Pattern</strong>, <strong>Hierarchical</strong>, <strong>Measurable</strong>, <strong>Threshold</strong>, <strong>Temporal</strong>, and <strong>Emergent Properties</strong>.</li>
+<li>Established that all such Categories remain exploratory and may later merge, divide, disappear, or be rejected through inquiry.</li>
+<li>Created the first version of the private working document <strong>World Properties Research Landscape</strong>.</li>
+<li>Preserved the working document at <strong>research/world-properties-research-landscape.md</strong>.</li>
+<li>Established a seven-stage inquiry method involving historical recovery, constitutional admission, distinctiveness review, Domain-boundary analysis, Category discovery, definition drafting, and adoption review.</li>
+<li>Selected <strong>The Surface</strong> as the first recommended formal inquiry, without presuming that it must become the next Codex or even a Codex at all.</li>
+<li>Established that the calendar must follow discovery and that no predetermined August Claiming schedule should override the World’s unfinished constitutional inquiry.</li>
+</ul>
+</div></details>
+<details class="period-card chronology-disclosure"><summary class="chronology-summary"><span class="chronology-summary-copy"><span class="chronology-summary-date">August 3–4, 2026</span><span class="chronology-summary-title">The Frontier and The Surface</span></span><span aria-hidden="true" class="chronology-toggle"></span></summary><div class="chronology-body">
 
-  <ul>
 
-    <li>Reaffirmed the completed architecture of the <strong>Structural Domain</strong>: <strong>The Parcel</strong>, <strong>The Boundary</strong>, <strong>The Coordinate</strong>, and <strong>The World</strong>.</li>
-
-    <li>Reaffirmed the completed architecture of the <strong>Relational Domain</strong>: <strong>The Adjacency</strong>, <strong>The Contiguity</strong>, <strong>The Distance</strong>, and <strong>The Direction</strong>.</li>
-
-    <li>Preserved the current adopted architecture of the <strong>World Properties Domain</strong> through the <strong>Spatial Properties</strong> Category and its three adopted Codices: <strong>The Extent</strong>, <strong>The Region</strong>, and <strong>The Cluster</strong>.</li>
-
-    <li>Rejected the assumption that each Category within the World Properties Domain must follow a mandatory <strong>A → B → C → D</strong> conceptual sequence.</li>
-
-    <li>Established the governing principle that <strong>discovery determines order; order does not determine discovery</strong>.</li>
-
-    <li>Clarified that Categories organize discovered Properties but must not restrict which valid Property may be investigated or adopted next.</li>
-
-    <li>Returned to the earliest Cartographic Period schedules to recover concepts that were important enough to be proposed as Codices but were later removed from Domains in which they did not constitutionally belong.</li>
-
-    <li>Identified <strong>The Surface</strong>, <strong>The Limit</strong>, <strong>The Terrain</strong>, and <strong>The Locality</strong> as historically significant recovered concepts requiring renewed inquiry.</li>
-
-    <li>Recognized that <strong>The Surface</strong> may be a standalone Property, a prerequisite field, a Category foundation, or a concept already implicit within The World.</li>
-
-    <li>Recognized that <strong>The Limit</strong> may describe the maximum Extent, terminal condition, cartographic expression of finitude, or outer edge of The World, while remaining constitutionally distinct from Parcel Boundaries.</li>
-
-    <li>Recognized that <strong>The Terrain</strong> may be a standalone Property, a Category of Properties, or an emergent composite expressed through concepts such as <strong>Texture</strong>, <strong>Relief</strong>, <strong>Gradient</strong>, <strong>Roughness</strong>, and <strong>Smoothness</strong>.</li>
-
-    <li>Preserved <strong>The Locality</strong> as unresolved because it must survive the question <strong>“according to whom?”</strong> and must also demonstrate that it differs from Cluster in constitutional character rather than merely in scale.</li>
-
-    <li>Strengthened the constitutional tests for admission into the World Properties Domain through the paired questions <strong>“According to whom?”</strong> and <strong>“Intrinsic to what?”</strong>.</li>
-
-    <li>Clarified that a World Property may arise from multiple relations without belonging in the Relational Domain, provided it describes an intrinsic higher-order condition of The World or a formation within it.</li>
-
-    <li>Distinguished true standalone Properties from attributes, measurable dimensions, spectra, complements, composites, prerequisite fields, Category labels, misplaced concepts, and rejected concepts.</li>
-
-    <li>Reviewed broad external analyses from <strong>OpenAI ChatGPT</strong> and <strong>Anthropic Claude</strong> to expose the possible scale of the Domain, identify candidate Categories, test overlaps, and compare constitutional methods without adopting either proposed taxonomy.</li>
-
-    <li>Recognized possible research areas including <strong>Surficial</strong>, <strong>Terrain</strong>, <strong>Boundary</strong>, <strong>Geometric</strong>, <strong>Topological</strong>, <strong>Distributional</strong>, <strong>Compositional</strong>, <strong>Pattern</strong>, <strong>Hierarchical</strong>, <strong>Measurable</strong>, <strong>Threshold</strong>, <strong>Temporal</strong>, and <strong>Emergent Properties</strong>.</li>
-
-    <li>Established that all such Categories remain exploratory and may later merge, divide, disappear, or be rejected through inquiry.</li>
-
-    <li>Created the first version of the private working document <strong>World Properties Research Landscape</strong>.</li>
-
-    <li>Preserved the working document at <strong>research/world-properties-research-landscape.md</strong>.</li>
-
-    <li>Established a seven-stage inquiry method involving historical recovery, constitutional admission, distinctiveness review, Domain-boundary analysis, Category discovery, definition drafting, and adoption review.</li>
-
-    <li>Selected <strong>The Surface</strong> as the first recommended formal inquiry, without presuming that it must become the next Codex or even a Codex at all.</li>
-
-    <li>Established that the calendar must follow discovery and that no predetermined August Claiming schedule should override the World’s unfinished constitutional inquiry.</li>
-
-  </ul>
-
-<div class="period-card">
-  <div class="date">August 3–4, 2026</div>
-
-  <h3>The Frontier and The Surface</h3>
-
-  <p>
+<p>
     Across Days #68 and #69, BitPangea continued the constitutional inquiry opened through the <strong>World Properties Research Landscape</strong>. The work first clarified the proper placement of <strong>The Frontier</strong>, a concept preserved through earlier Transmissions, Truths, and public language, before turning to the first formal recovered-concept inquiry: <strong>The Surface</strong>.
   </p>
-
-  <p>
+<p>
     Review of The Frontier revealed that its language is often spatial and poetic, but its constitutional essence is epistemic. The Frontier is not an intrinsic edge, border, or terminal Property of The World. It is the condition separating what has been revealed from what remains unrevealed. As knowledge expands, The Frontier changes while The World itself remains unchanged.
   </p>
-
-  <p>
+<p>
     The inquiry then returned to the earliest proposal for <strong>ST-V — The Surface</strong>. Its original definition described The Surface as the foundational cartographic substrate supporting The World. Constitutional review preserved that historical formulation while confirming why it was not adopted: placing Surface beneath or prior to The World conflicted with <strong>ST-IV — The World</strong> and threatened to reopen the completed Structural hierarchy.
   </p>
-
-  <p>
+<p>
     Independent analysis through <strong>OpenAI ChatGPT</strong>, <strong>Anthropic Claude</strong>, and <strong>xAI Grok</strong> was then compared against BitPangea’s own constitutional record. All concluded that The Surface should not presently become a standalone Codex. The adopted Spatial Properties—<strong>The Extent</strong>, <strong>The Region</strong>, and <strong>The Cluster</strong>—remain coherent through The World, the Structural Domain, and the Relational Domain without requiring a separately adopted Surface.
   </p>
-
-  <ul>
-
-    <li>Reviewed the existing constitutional history of <strong>The Frontier</strong> through prior Transmissions, Truths, Codex-era inquiry, and early public language.</li>
-
-    <li>Confirmed that <strong>The Frontier is a condition of knowing</strong> rather than an intrinsic Property of The World.</li>
-
-    <li>Preserved the principle that <strong>what is unknown is not absent; it is unrevealed</strong>.</li>
-
-    <li>Reaffirmed that <strong>knowledge expands while The World remains</strong>.</li>
-
-    <li>Clarified that <strong>discovery reveals; it does not create</strong>.</li>
-
-    <li>Recognized that every Frontier is temporary because its location depends upon the present state of knowledge.</li>
-
-    <li>Provisionally assigned <strong>The Frontier</strong> to the future <strong>Epistemic Domain</strong>.</li>
-
-    <li>Removed The Frontier from consideration as a speculative <strong>Emergent World Property</strong>.</li>
-
-    <li>Deferred any formal Epistemic Codex for The Frontier until the Epistemic Domain itself begins.</li>
-
-    <li>Confirmed that poetic or institutional expressions such as <strong>“Contact The Frontier”</strong> do not determine the concept’s ontological Domain placement.</li>
-
-    <li>Converted the <strong>World Properties Research Landscape</strong> into a working checklist and inquiry tracker.</li>
-
-    <li>Selected <strong>The Surface</strong> as the first formal recovered-concept inquiry.</li>
-
-    <li>Located and reviewed the earliest proposal for <strong>ST-V — The Surface</strong>.</li>
-
-    <li>Preserved its original proposed definition: <strong>“The Surface is the foundational cartographic substrate of BitPangea that supports The World.”</strong></li>
-
-    <li>Preserved the original implied hierarchy: <strong>Surface → World → Parcel, Boundary, Coordinate</strong>.</li>
-
-    <li>Recorded that the original hierarchy conflicted with The World’s constitutional primacy by placing Surface beneath or prior to the complete cartographic whole.</li>
-
-    <li>Recorded that the terms <strong>substrate</strong>, <strong>foundational</strong>, and <strong>supports</strong> imported unnecessary physical and architectural assumptions into a digital cartographic ontology.</li>
-
-    <li>Preserved the later revised formulation that treated Surface as the bounded dimensional medium within The World rather than a foundation beneath it.</li>
-
-    <li>Reaffirmed the Structural load-bearing test: without Parcel, Boundary, Coordinate, or World, the structural framework becomes incoherent; without a separately defined Surface, it does not.</li>
-
-    <li>Reaffirmed that the <strong>Structural Domain</strong> remains complete through <strong>The Parcel</strong>, <strong>The Boundary</strong>, <strong>The Coordinate</strong>, and <strong>The World</strong>.</li>
-
-    <li>Confirmed that returning Surface to Structure would improperly reopen a completed first-order Domain.</li>
-
-    <li>Reviewed whether Surface should instead be treated as a standalone World Property, prerequisite field, Category foundation, Domain premise, attribute of The World, or concept already implicit within The World.</li>
-
-    <li>Submitted the same neutral constitutional inquiry prompt to <strong>OpenAI ChatGPT</strong>, <strong>Anthropic Claude</strong>, and <strong>xAI Grok</strong>.</li>
-
-    <li>Compared independent analyses and identified strong agreement that Surface should not presently be adopted as a standalone Codex.</li>
-
-    <li>Confirmed that <strong>The Extent</strong>, <strong>The Region</strong>, and <strong>The Cluster</strong> remain constitutionally coherent without a Surface Codex.</li>
-
-    <li>Determined that the dimensional and continuous cartographic character described by Surface is already implicit within <strong>ST-IV — The World</strong>.</li>
-
-    <li>Determined that no present constitutional need exists for Surface as a separate prerequisite field, Category foundation, Domain premise, or new constitutional instrument.</li>
-
-    <li>Rejected permanent dismissal of the concept because future inquiry into <strong>Terrain</strong>, <strong>Topology</strong>, <strong>Form</strong>, or another Property may reveal a genuine constitutional gap.</li>
-
-    <li>Reclassified <strong>The Surface</strong> as an <strong>implicit characteristic of The World</strong>.</li>
-
-    <li>Recorded a present <strong>no-adoption conclusion</strong> for a standalone Surface Codex.</li>
-
-    <li>Established that Surface may be reconsidered only if future constitutional work demonstrates an actual dependency rather than conceptual appeal alone.</li>
-
-    <li>Created and preserved the private record <strong>Constitutional Review — The Surface</strong>, documenting the full historical recovery, independent analyses, constitutional synthesis, final classification, risks, and reopening conditions.</li>
-
-  </ul>
-
-  <p>
+<ul>
+<li>Reviewed the existing constitutional history of <strong>The Frontier</strong> through prior Transmissions, Truths, Codex-era inquiry, and early public language.</li>
+<li>Confirmed that <strong>The Frontier is a condition of knowing</strong> rather than an intrinsic Property of The World.</li>
+<li>Preserved the principle that <strong>what is unknown is not absent; it is unrevealed</strong>.</li>
+<li>Reaffirmed that <strong>knowledge expands while The World remains</strong>.</li>
+<li>Clarified that <strong>discovery reveals; it does not create</strong>.</li>
+<li>Recognized that every Frontier is temporary because its location depends upon the present state of knowledge.</li>
+<li>Provisionally assigned <strong>The Frontier</strong> to the future <strong>Epistemic Domain</strong>.</li>
+<li>Removed The Frontier from consideration as a speculative <strong>Emergent World Property</strong>.</li>
+<li>Deferred any formal Epistemic Codex for The Frontier until the Epistemic Domain itself begins.</li>
+<li>Confirmed that poetic or institutional expressions such as <strong>“Contact The Frontier”</strong> do not determine the concept’s ontological Domain placement.</li>
+<li>Converted the <strong>World Properties Research Landscape</strong> into a working checklist and inquiry tracker.</li>
+<li>Selected <strong>The Surface</strong> as the first formal recovered-concept inquiry.</li>
+<li>Located and reviewed the earliest proposal for <strong>ST-V — The Surface</strong>.</li>
+<li>Preserved its original proposed definition: <strong>“The Surface is the foundational cartographic substrate of BitPangea that supports The World.”</strong></li>
+<li>Preserved the original implied hierarchy: <strong>Surface → World → Parcel, Boundary, Coordinate</strong>.</li>
+<li>Recorded that the original hierarchy conflicted with The World’s constitutional primacy by placing Surface beneath or prior to the complete cartographic whole.</li>
+<li>Recorded that the terms <strong>substrate</strong>, <strong>foundational</strong>, and <strong>supports</strong> imported unnecessary physical and architectural assumptions into a digital cartographic ontology.</li>
+<li>Preserved the later revised formulation that treated Surface as the bounded dimensional medium within The World rather than a foundation beneath it.</li>
+<li>Reaffirmed the Structural load-bearing test: without Parcel, Boundary, Coordinate, or World, the structural framework becomes incoherent; without a separately defined Surface, it does not.</li>
+<li>Reaffirmed that the <strong>Structural Domain</strong> remains complete through <strong>The Parcel</strong>, <strong>The Boundary</strong>, <strong>The Coordinate</strong>, and <strong>The World</strong>.</li>
+<li>Confirmed that returning Surface to Structure would improperly reopen a completed first-order Domain.</li>
+<li>Reviewed whether Surface should instead be treated as a standalone World Property, prerequisite field, Category foundation, Domain premise, attribute of The World, or concept already implicit within The World.</li>
+<li>Submitted the same neutral constitutional inquiry prompt to <strong>OpenAI ChatGPT</strong>, <strong>Anthropic Claude</strong>, and <strong>xAI Grok</strong>.</li>
+<li>Compared independent analyses and identified strong agreement that Surface should not presently be adopted as a standalone Codex.</li>
+<li>Confirmed that <strong>The Extent</strong>, <strong>The Region</strong>, and <strong>The Cluster</strong> remain constitutionally coherent without a Surface Codex.</li>
+<li>Determined that the dimensional and continuous cartographic character described by Surface is already implicit within <strong>ST-IV — The World</strong>.</li>
+<li>Determined that no present constitutional need exists for Surface as a separate prerequisite field, Category foundation, Domain premise, or new constitutional instrument.</li>
+<li>Rejected permanent dismissal of the concept because future inquiry into <strong>Terrain</strong>, <strong>Topology</strong>, <strong>Form</strong>, or another Property may reveal a genuine constitutional gap.</li>
+<li>Reclassified <strong>The Surface</strong> as an <strong>implicit characteristic of The World</strong>.</li>
+<li>Recorded a present <strong>no-adoption conclusion</strong> for a standalone Surface Codex.</li>
+<li>Established that Surface may be reconsidered only if future constitutional work demonstrates an actual dependency rather than conceptual appeal alone.</li>
+<li>Created and preserved the private record <strong>Constitutional Review — The Surface</strong>, documenting the full historical recovery, independent analyses, constitutional synthesis, final classification, risks, and reopening conditions.</li>
+</ul>
+<p>
     No new World Property, Category, or Codex was adopted across these two days. Instead, BitPangea produced two important acts of constitutional placement. <strong>The Frontier</strong> was clarified as an Epistemic condition rather than a Property of The World, while <strong>The Surface</strong> was determined to be already implicit within The World and therefore not presently necessary as a standalone Codex.
   </p>
-
-  <p>
+<p>
     These inquiries demonstrated that constitutional progress does not require adoption. A concept may be historically important, philosophically meaningful, and worthy of extensive review while still failing to establish a separate constitutional necessity. The result was not omission, but restraint: The Frontier was placed where it belongs, The Surface was preserved without duplication, and the World Properties Domain remained open for the next genuine discovery.
   </p>
-
-  <p>
+<p>
     No new World Property or Category was adopted today. The significance of Day #68 was methodological and constitutional. BitPangea recognized that the World Properties Domain is not a list to complete, but an ontology to discover. Its breadth does not require immediate reduction, nor does its complexity justify random adoption. The new Research Landscape provides a disciplined way to preserve possibilities, investigate recovered concepts, and allow Categories to emerge without closing the Domain before the World has revealed what it contains.
   </p>
-</div>
+</div></details>
+<details class="period-card chronology-disclosure"><summary class="chronology-summary"><span class="chronology-summary-copy"><span class="chronology-summary-date">August 5, 2026</span><span class="chronology-summary-title">The Limit</span></span><span aria-hidden="true" class="chronology-toggle"></span></summary><div class="chronology-body">
 
-<div class="period-card">
-  <div class="date">August 5, 2026</div>
 
-  <h3>The Limit</h3>
-
-  <p>
+<p>
     On Day #70, BitPangea completed the second formal recovered-concept inquiry of the <strong>World Properties Period</strong>. Following the review of <strong>The Surface</strong>, constitutional attention turned to <strong>The Limit</strong>, a concept originally proposed as <strong>ST-VI</strong> and provisionally reassigned to the World Properties Domain when the Structural Domain concluded.
   </p>
-
-  <p>
+<p>
     The earliest proposal described The Limit as the cartographic edge of The World—the distinction between BitPangea geography and what lies beyond it. It was intended to identify the outermost structural condition beyond which no Parcel exists, no Coordinate describes position, and no Boundary runs between territories. The review preserved that original intent while testing whether the concept establishes an independent constitutional fact.
   </p>
-
-  <p>
+<p>
     The inquiry revealed that The Limit contains two different meanings. In its minimal sense, it describes the completion or maximum scope inherent in the finite <strong>Extent</strong> of The World. In its stronger historical sense, it describes a geographic edge, terminal line, outer perimeter, or condition beyond which the World’s geography ceases. These meanings could not be treated as constitutionally equivalent.
   </p>
-
-  <p>
+<p>
     Independent analyses through <strong>Claude</strong> and <strong>Grok</strong> were compared against BitPangea’s adopted architecture and historical record. Both concluded that finitude does not necessarily create a conventional edge, that a finite World may be closed and edgeless, and that The Limit should not presently become a standalone World Property.
   </p>
-
-  <ul>
-
-    <li>Closed the previous inquiry into <strong>The Surface</strong> by informing Claude and Grok that Surface was not adopted as a standalone Codex and is presently classified as an implicit characteristic of <strong>ST-IV — The World</strong>.</li>
-
-    <li>Preserved continuity between the Surface and Limit inquiries without allowing the Surface determination to predetermine the outcome for The Limit.</li>
-
-    <li>Recovered the earliest proposal for <strong>ST-VI — The Limit</strong>.</li>
-
-    <li>Preserved <strong>The Edge</strong> as an alternate historical name considered for the concept.</li>
-
-    <li>Preserved the original proposed meaning of The Limit as the cartographic edge of The World and the distinction between BitPangea geography and what was described as lying beyond it.</li>
-
-    <li>Preserved the original description of The Limit as the condition beyond which no Parcel exists, no Coordinate describes position, and no Boundary runs between territories.</li>
-
-    <li>Reaffirmed the original distinction between <strong>The Boundary</strong>, which distinguishes Parcels within The World, and The Limit, which was intended to describe the outer condition of The World itself.</li>
-
-    <li>Reaffirmed that distinctiveness from Boundary does not by itself establish constitutional necessity.</li>
-
-    <li>Reaffirmed why The Limit was retired from the Structural Domain before adoption.</li>
-
-    <li>Confirmed that the completed Structural sequence remains <strong>The Parcel → The Boundary → The Coordinate → The World</strong>.</li>
-
-    <li>Confirmed that Parcels, Boundaries, Coordinates, and The World remain coherent without a separately adopted Limit.</li>
-
-    <li>Recorded that definitions concerning terminal Coordinates, outermost Parcels, or the point at which Boundaries cease would indirectly reopen Structural questions through the World Properties Domain.</li>
-
-    <li>Reviewed the provisional reassignment of The Limit as <strong>WP-II</strong> when the World Properties Domain was first recognized.</li>
-
-    <li>Recognized that the later adoption of <strong>WP-S-I — The Extent</strong> required renewed analysis of whether The Limit adds anything beyond finite spatial scope.</li>
-
-    <li>Separated the concept into <strong>Limit-as-finitude</strong> and <strong>Limit-as-edge</strong>.</li>
-
-    <li>Determined that Limit-as-finitude describes the completion, maximum scope, or upper bound inherent in finite Extent.</li>
-
-    <li>Determined that Limit-as-edge describes a geographic edge, terminal line, outer perimeter, or condition beyond which no Parcel or Coordinate exists.</li>
-
-    <li>Established that <strong>finitude does not necessarily entail an edge</strong>.</li>
-
-    <li>Established that a finite World may be closed and edgeless while still possessing complete and measurable Extent.</li>
-
-    <li>Clarified that <strong>finite</strong>, <strong>bounded</strong>, <strong>limited</strong>, <strong>edged</strong>, and <strong>closed</strong> are not constitutionally interchangeable terms.</li>
-
-    <li>Confirmed that a maximum Extent does not automatically establish a geographic perimeter.</li>
-
-    <li>Determined that the World’s present constitutional record does not establish outermost Parcels, terminal Coordinates, a traversable edge, or an exterior.</li>
-
-    <li>Determined that the phrase <strong>“what lies beyond”</strong> improperly implies an exterior realm or positive condition outside The World.</li>
-
-    <li>Reaffirmed that absence beyond The World is not itself a constitutional entity.</li>
-
-    <li>Compared The Limit directly with <strong>The World</strong>, <strong>The Extent</strong>, <strong>The Boundary</strong>, <strong>The Edge</strong>, <strong>The Perimeter</strong>, <strong>The Interior</strong>, <strong>The Surface</strong>, <strong>The Frontier</strong>, <strong>Closure</strong>, and <strong>Finitude</strong>.</li>
-
-    <li>Confirmed that The Limit depends upon The World, while The World does not depend upon a separately adopted Limit.</li>
-
-    <li>Confirmed that the minimal meaning of The Limit is already substantially expressed through the Declaration, <strong>ST-IV — The World</strong>, and <strong>WP-S-I — The Extent</strong>.</li>
-
-    <li>Confirmed that Extent remains coherent without a geographic Limit.</li>
-
-    <li>Determined that The Edge may be synonymous with The Limit or may describe outermost Parcels abutting a Limit, but neither concept is presently established.</li>
-
-    <li>Determined that Perimeter would be a measurable attribute of an edge and therefore cannot exist constitutionally before an edge is demonstrated.</li>
-
-    <li>Determined that Interior should not be adopted merely as the complement of an unproven Limit.</li>
-
-    <li>Confirmed that The Limit cannot be defined merely as the edge of The Surface because Surface was not separately adopted.</li>
-
-    <li>Reaffirmed that <strong>The Frontier</strong> is epistemic—the threshold between what has been revealed and what remains unrevealed—while The Limit, if valid, would be ontological and independent of knowledge.</li>
-
-    <li>Clarified that The Frontier may move as knowledge expands, while a true Limit would remain fixed as a condition of The World.</li>
-
-    <li>Recognized that Closure and a geographic Limit may represent different possible expressions of the World’s topology.</li>
-
-    <li>Declined to require an immediate Topology inquiry merely to rescue or reject The Limit.</li>
-
-    <li>Reviewed independent constitutional analyses from Claude and Grok using the same neutral prompt.</li>
-
-    <li>Recorded Claude’s conclusion that The Limit should be deferred pending resolution of the World’s topological character.</li>
-
-    <li>Recorded Grok’s conclusion that The Limit should be rejected as a standalone World Property and preserved only for possible future reconsideration.</li>
-
-    <li>Recognized that both analyses agreed on present non-adoption, rejection of Structural placement, redundancy in the minimal meaning, and lack of proof for the geographic-edge meaning.</li>
-
-    <li>Reclassified The Limit’s minimal meaning as an <strong>implicit terminal expression of finite Extent</strong>.</li>
-
-    <li>Recorded that the stronger geographic-edge meaning remains <strong>unproven and deferred</strong>.</li>
-
-    <li>Determined that no <strong>Boundary Properties</strong> Category, <strong>Terminal Properties</strong> Category, separate premise, or new constitutional instrument is presently required.</li>
-
-    <li>Recorded a present <strong>no-adoption conclusion</strong> for a standalone Limit Codex.</li>
-
-    <li>Established that The Limit may be reconsidered only if future inquiry independently demonstrates an intrinsic edge, outermost Parcel condition, terminal Coordinate structure, geographic perimeter, or another fact that The World and The Extent cannot already express.</li>
-
-    <li>Created and preserved the private record <strong>Constitutional Review — The Limit</strong>, documenting the full historical recovery, constitutional tests, Claude and Grok analyses, comparative synthesis, final classification, risks, and reopening conditions.</li>
-
-  </ul>
-
-  <p>
+<ul>
+<li>Closed the previous inquiry into <strong>The Surface</strong> by informing Claude and Grok that Surface was not adopted as a standalone Codex and is presently classified as an implicit characteristic of <strong>ST-IV — The World</strong>.</li>
+<li>Preserved continuity between the Surface and Limit inquiries without allowing the Surface determination to predetermine the outcome for The Limit.</li>
+<li>Recovered the earliest proposal for <strong>ST-VI — The Limit</strong>.</li>
+<li>Preserved <strong>The Edge</strong> as an alternate historical name considered for the concept.</li>
+<li>Preserved the original proposed meaning of The Limit as the cartographic edge of The World and the distinction between BitPangea geography and what was described as lying beyond it.</li>
+<li>Preserved the original description of The Limit as the condition beyond which no Parcel exists, no Coordinate describes position, and no Boundary runs between territories.</li>
+<li>Reaffirmed the original distinction between <strong>The Boundary</strong>, which distinguishes Parcels within The World, and The Limit, which was intended to describe the outer condition of The World itself.</li>
+<li>Reaffirmed that distinctiveness from Boundary does not by itself establish constitutional necessity.</li>
+<li>Reaffirmed why The Limit was retired from the Structural Domain before adoption.</li>
+<li>Confirmed that the completed Structural sequence remains <strong>The Parcel → The Boundary → The Coordinate → The World</strong>.</li>
+<li>Confirmed that Parcels, Boundaries, Coordinates, and The World remain coherent without a separately adopted Limit.</li>
+<li>Recorded that definitions concerning terminal Coordinates, outermost Parcels, or the point at which Boundaries cease would indirectly reopen Structural questions through the World Properties Domain.</li>
+<li>Reviewed the provisional reassignment of The Limit as <strong>WP-II</strong> when the World Properties Domain was first recognized.</li>
+<li>Recognized that the later adoption of <strong>WP-S-I — The Extent</strong> required renewed analysis of whether The Limit adds anything beyond finite spatial scope.</li>
+<li>Separated the concept into <strong>Limit-as-finitude</strong> and <strong>Limit-as-edge</strong>.</li>
+<li>Determined that Limit-as-finitude describes the completion, maximum scope, or upper bound inherent in finite Extent.</li>
+<li>Determined that Limit-as-edge describes a geographic edge, terminal line, outer perimeter, or condition beyond which no Parcel or Coordinate exists.</li>
+<li>Established that <strong>finitude does not necessarily entail an edge</strong>.</li>
+<li>Established that a finite World may be closed and edgeless while still possessing complete and measurable Extent.</li>
+<li>Clarified that <strong>finite</strong>, <strong>bounded</strong>, <strong>limited</strong>, <strong>edged</strong>, and <strong>closed</strong> are not constitutionally interchangeable terms.</li>
+<li>Confirmed that a maximum Extent does not automatically establish a geographic perimeter.</li>
+<li>Determined that the World’s present constitutional record does not establish outermost Parcels, terminal Coordinates, a traversable edge, or an exterior.</li>
+<li>Determined that the phrase <strong>“what lies beyond”</strong> improperly implies an exterior realm or positive condition outside The World.</li>
+<li>Reaffirmed that absence beyond The World is not itself a constitutional entity.</li>
+<li>Compared The Limit directly with <strong>The World</strong>, <strong>The Extent</strong>, <strong>The Boundary</strong>, <strong>The Edge</strong>, <strong>The Perimeter</strong>, <strong>The Interior</strong>, <strong>The Surface</strong>, <strong>The Frontier</strong>, <strong>Closure</strong>, and <strong>Finitude</strong>.</li>
+<li>Confirmed that The Limit depends upon The World, while The World does not depend upon a separately adopted Limit.</li>
+<li>Confirmed that the minimal meaning of The Limit is already substantially expressed through the Declaration, <strong>ST-IV — The World</strong>, and <strong>WP-S-I — The Extent</strong>.</li>
+<li>Confirmed that Extent remains coherent without a geographic Limit.</li>
+<li>Determined that The Edge may be synonymous with The Limit or may describe outermost Parcels abutting a Limit, but neither concept is presently established.</li>
+<li>Determined that Perimeter would be a measurable attribute of an edge and therefore cannot exist constitutionally before an edge is demonstrated.</li>
+<li>Determined that Interior should not be adopted merely as the complement of an unproven Limit.</li>
+<li>Confirmed that The Limit cannot be defined merely as the edge of The Surface because Surface was not separately adopted.</li>
+<li>Reaffirmed that <strong>The Frontier</strong> is epistemic—the threshold between what has been revealed and what remains unrevealed—while The Limit, if valid, would be ontological and independent of knowledge.</li>
+<li>Clarified that The Frontier may move as knowledge expands, while a true Limit would remain fixed as a condition of The World.</li>
+<li>Recognized that Closure and a geographic Limit may represent different possible expressions of the World’s topology.</li>
+<li>Declined to require an immediate Topology inquiry merely to rescue or reject The Limit.</li>
+<li>Reviewed independent constitutional analyses from Claude and Grok using the same neutral prompt.</li>
+<li>Recorded Claude’s conclusion that The Limit should be deferred pending resolution of the World’s topological character.</li>
+<li>Recorded Grok’s conclusion that The Limit should be rejected as a standalone World Property and preserved only for possible future reconsideration.</li>
+<li>Recognized that both analyses agreed on present non-adoption, rejection of Structural placement, redundancy in the minimal meaning, and lack of proof for the geographic-edge meaning.</li>
+<li>Reclassified The Limit’s minimal meaning as an <strong>implicit terminal expression of finite Extent</strong>.</li>
+<li>Recorded that the stronger geographic-edge meaning remains <strong>unproven and deferred</strong>.</li>
+<li>Determined that no <strong>Boundary Properties</strong> Category, <strong>Terminal Properties</strong> Category, separate premise, or new constitutional instrument is presently required.</li>
+<li>Recorded a present <strong>no-adoption conclusion</strong> for a standalone Limit Codex.</li>
+<li>Established that The Limit may be reconsidered only if future inquiry independently demonstrates an intrinsic edge, outermost Parcel condition, terminal Coordinate structure, geographic perimeter, or another fact that The World and The Extent cannot already express.</li>
+<li>Created and preserved the private record <strong>Constitutional Review — The Limit</strong>, documenting the full historical recovery, constitutional tests, Claude and Grok analyses, comparative synthesis, final classification, risks, and reopening conditions.</li>
+</ul>
+<p>
     No new World Property, Category, or Codex was adopted today. The inquiry determined that The Limit’s weakest meaning is already implicit within the finite Extent of The World, while its strongest meaning depends upon a geographic edge that BitPangea has not established.
   </p>
-
-  <p>
+<p>
     The result preserved finitude without inventing a perimeter. The World remains finite. Its Extent remains complete. But no outermost Parcel, terminal Coordinate, external realm, or cartographic edge has been constitutionally recognized.
   </p>
+</div></details>
+<details class="period-card chronology-disclosure"><summary class="chronology-summary"><span class="chronology-summary-copy"><span class="chronology-summary-date">August 6, 2026</span><span class="chronology-summary-title">The Terrain</span></span><span aria-hidden="true" class="chronology-toggle"></span></summary><div class="chronology-body">
 
-  </div>
-  
-<div class="period-card">
-  <div class="date">August 6, 2026</div>
 
-  <h3>The Terrain</h3>
-
-  <p>
+<p>
     Day #70 therefore produced another act of constitutional restraint. The Limit was not discarded as meaningless, nor adopted because it once appeared necessary. It was placed according to what the World presently demonstrates: as an implication of finite Extent, with its geographic interpretation deferred until an actual constitutional need appears.
   </p>
-
 <li>Confirmed that <strong>The Terrain</strong> had never previously been proposed as a formal Codex and had appeared only through broader constitutional discussions, research landscapes, and external analyses.</li>
-
 <li>Recovered earlier descriptions of Terrain as a possible <strong>Compositional Property</strong>, <strong>Surficial Property</strong>, emergent composite, cartographic character, or recognizable pattern expressed across an area of BitPangea.</li>
-
 <li>Preserved the earlier working formulation that Terrain might describe <strong>“the intrinsic cartographic character expressed across a portion of The World.”</strong></li>
-
 <li>Identified the term <strong>recognizable</strong> as constitutionally unsafe because recognizability may depend upon an observer.</li>
-
 <li>Opened the inquiry without assuming that Terrain exists, belongs in the World Properties Domain, requires Surface, or should become a Codex.</li>
-
 <li>Closed the prior constitutional loops concerning <strong>The Surface</strong> and <strong>The Limit</strong> before beginning the Terrain inquiry.</li>
-
 <li>Reaffirmed that Surface remains an <strong>implicit characteristic of ST-IV — The World</strong> rather than a separately adopted Codex.</li>
-
 <li>Reaffirmed that The Limit remains unadopted, with its minimal meaning implicit in finite Extent and its geographic-edge meaning unproven.</li>
-
 <li>Separated Terrain into three candidate meanings: <strong>physical Terrain</strong>, <strong>compositional Terrain</strong>, and <strong>cartographic Terrain</strong>.</li>
-
 <li>Tested whether Terrain depends upon Surface or whether that dependency arises only from conventional physical geography.</li>
-
 <li>Determined that physical Terrain would describe elevation, relief, slope, roughness, smoothness, depth, height, contour, or material variation.</li>
-
 <li>Determined that BitPangea has not constitutionally established elevation, relief, gravity, materiality, three-dimensional variation, or a physical surface capable of rising and falling.</li>
-
 <li>Determined that adopting physical Terrain would improperly import terrestrial, gravitational, dimensional, and material assumptions into BitPangea.</li>
-
 <li>Rejected <strong>physical Terrain</strong> at present as constitutionally unsupported.</li>
-
 <li>Determined that compositional Terrain would require intrinsic differences in Parcel type, cartographic matter, constitution, or internal composition.</li>
-
 <li>Confirmed that BitPangea has not established different intrinsic Parcel types, different cartographic substances, or compositional classes.</li>
-
 <li>Determined that <strong>compositional Terrain</strong> presently lacks demonstrated constitutional subject matter.</li>
-
 <li>Deferred compositional Terrain pending future proof that Parcels or portions of The World possess intrinsic compositional differences.</li>
-
 <li>Determined that cartographic Terrain may describe objective differences in arrangement, density, pattern, distribution, continuity, regularity, configuration, or variation.</li>
-
 <li>Removed <strong>recognizable</strong> as a constitutional requirement and preserved only observer-independent cartographic character for further analysis.</li>
-
 <li>Determined that cartographic Terrain does not establish one primitive fact but instead describes the combined expression of several more precise Structural, Relational, Spatial, Distributional, or Compositional conditions.</li>
-
 <li>Reclassified <strong>cartographic Terrain</strong> as an <strong>emergent cartographic composite</strong> rather than a standalone World Property.</li>
-
 <li>Confirmed that Terrain does not require reopening The Surface inquiry.</li>
-
 <li>Determined that the implicit dimensional and cartographic character of <strong>ST-IV — The World</strong> is sufficient to ground any surviving nonphysical interpretation of Terrain.</li>
-
 <li>Confirmed that physical dependency upon Surface does not establish constitutional dependency when physical Terrain itself fails.</li>
-
 <li>Compared Terrain directly with <strong>The World</strong>, <strong>The Surface</strong>, <strong>The Extent</strong>, <strong>The Region</strong>, <strong>The Cluster</strong>, <strong>The Parcel</strong>, <strong>Density</strong>, <strong>Pattern</strong>, <strong>Texture</strong>, <strong>Relief</strong>, <strong>Elevation</strong>, <strong>Form</strong>, <strong>Composition</strong>, <strong>Character</strong>, and <strong>Topology</strong>.</li>
-
 <li>Clarified that <strong>Region identifies where</strong>, while Terrain may descriptively summarize the combined character expressed there.</li>
-
 <li>Determined that one Region may contain multiple terrain-like expressions and that one terrain-like expression may cross multiple Regions.</li>
-
 <li>Determined that Cluster may contribute concentration to terrain-like character but is not identical to Terrain.</li>
-
 <li>Determined that Density, Pattern, Texture, Composition, Form, and Configuration are more precise concepts that may require future independent inquiry.</li>
-
 <li>Determined that Roughness and Smoothness may form one spectrum rather than two independent Properties.</li>
-
 <li>Determined that Relief depends upon Elevation and that neither concept is presently established.</li>
-
 <li>Determined that Gradient is more likely a measurable dimension of change than a standalone Terrain concept.</li>
-
 <li>Determined that Texture may be a more precise local attribute or future Property than Terrain.</li>
-
 <li>Reviewed whether Terrain reveals a valid Category such as <strong>Compositional Properties</strong>, <strong>Surficial Properties</strong>, <strong>Terrain Properties</strong>, <strong>Pattern Properties</strong>, <strong>Distributional Properties</strong>, or <strong>Intrinsic Character Properties</strong>.</li>
-
 <li>Determined that no formal Category should be created before one or more precise constituent Properties independently survive constitutional inquiry.</li>
-
 <li>Preserved Terrain only as a working research and descriptive concept rather than a formal Category foundation.</li>
-
 <li>Submitted the same neutral constitutional inquiry prompt to <strong>OpenAI ChatGPT</strong>, <strong>Anthropic Claude</strong>, and <strong>xAI Grok</strong>.</li>
-
 <li>Compared the independent analyses and identified strong agreement that Terrain should not presently be adopted as a standalone Codex.</li>
-
 <li>Recorded Claude’s conclusion that physical Terrain should be rejected, compositional Terrain deferred, and cartographic Terrain preserved as a possible Category label or emergent composite.</li>
-
 <li>Recorded Grok’s conclusion that Terrain is best treated as ordinary descriptive language or a potential emergent composite of more precise future Properties.</li>
-
 <li>Determined that Claude’s proposed Category treatment was premature because no validated constituent Property presently requires such a Category.</li>
-
 <li>Determined that Grok’s complete redundancy finding was too strong because Terrain may still preserve the useful descriptive distinction between where a portion exists and what combined character is expressed there.</li>
-
 <li>Adopted the shared conclusion that Terrain is not a primitive World Property.</li>
-
 <li>Recorded a present <strong>no-adoption conclusion</strong> for a standalone Terrain Codex.</li>
-
 <li>Recorded the final disposition: <strong>physical Terrain rejected at present</strong>, <strong>compositional Terrain deferred</strong>, and <strong>cartographic Terrain reclassified as an emergent cartographic composite</strong>.</li>
-
 <li>Confirmed that no <strong>Terrain Properties</strong>, <strong>Surficial Properties</strong>, <strong>Compositional Properties</strong>, or <strong>Intrinsic Character Properties</strong> Category will be created at this time.</li>
-
 <li>Established that Terrain may be reconsidered only if future inquiry independently establishes precise constituent Properties, intrinsic Parcel differences, or a stable composite requiring formal recognition.</li>
-
 <li>Created and preserved the private record <strong>Constitutional Review — The Terrain</strong>, documenting the complete inquiry, independent analyses, constitutional synthesis, final classification, risks, and reopening conditions.</li>
+</div></details>
+<details class="period-card chronology-disclosure" open=""><summary class="chronology-summary"><span class="chronology-summary-copy"><span class="chronology-summary-date">August 7, 2026</span><span class="chronology-summary-title">The Locality and the Next Inquiry</span></span><span aria-hidden="true" class="chronology-toggle"></span></summary><div class="chronology-body">
 
-</div>
 
-  <div class="period-card">
-  <div class="date">August 7, 2026</div>
-
-  <h3>The Locality and the Next Inquiry</h3>
-
-  <p>
+<p>
     Day #72 completed the constitutional inquiry into <strong>The Locality</strong> and then marked a methodological transition within the <strong>World Properties Period</strong>. Locality was not adopted as a standalone Property: when tied to a referent it proved relational, when stripped of reference it collapsed substantially into <strong>The Cluster</strong>, and when used to describe limited applicability it remained only a contextual modifier. With the immediate recovered-concept queue now exhausted, BitPangea conducted its first <strong>World Properties Meta-Inquiry</strong> to determine not the next Property, but the next question.
   </p>
-
-  <li>Confirmed that <strong>The Locality</strong> had never previously been formally proposed, drafted, or adopted as a Codex.</li>
-
-  <li>Recovered earlier descriptions of Locality as a multi-Parcel spatial structure, spatial aggregate, proximate neighborhood, and possible finer-grained concept below Region and Cluster.</li>
-
-  <li>Recognized that earlier Locality discussions predated the completed adoption of <strong>WP-S-I — The Extent</strong>, <strong>WP-S-II — The Region</strong>, and <strong>WP-S-III — The Cluster</strong>, thereby increasing Locality’s present burden of distinctiveness.</li>
-
-  <li>Opened the Locality inquiry without assuming that Locality exists as an intrinsic World Property, belongs in Spatial Properties, or warrants a Codex.</li>
-
-  <li>Placed the central constitutional question at the heart of the inquiry: <strong>“Can anything be local without being local to something?”</strong></li>
-
-  <li>Distinguished <strong>observer-dependence</strong> from <strong>reference-dependence</strong>.</li>
-
-  <li>Determined that a Locality centered upon an observer is observer-dependent and therefore cannot qualify as an intrinsic World Property.</li>
-
-  <li>Determined that a Locality centered upon an objective Parcel or Coordinate may be observer-independent while remaining inherently reference-dependent.</li>
-
-  <li>Established the governing distinction that <strong>Locality need not be observer-dependent, but it is inherently reference-dependent.</strong></li>
-
-  <li>Separated Locality into three candidate meanings: <strong>relative-nearness Locality</strong>, <strong>intrinsic-neighborhood Locality</strong>, and <strong>contextual-scope Locality</strong>.</li>
-
-  <li>Determined that relative-nearness Locality describes Parcels falling within some Distance relation to a referent.</li>
-
-  <li>Determined that relative-nearness Locality is principally an application of <strong>RL-III — The Distance</strong> across multiple Parcels rather than an independent World Property.</li>
-
-  <li>Identified the unresolved threshold problem inherent in defining when “near” becomes “local.”</li>
-
-  <li>Determined that no intrinsic universal threshold separating local from non-local has been constitutionally established.</li>
-
-  <li>Reclassified <strong>relative-nearness Locality</strong> as a <strong>reference-dependent relational construct / application of Distance</strong>.</li>
-
-  <li>Attempted an observer-independent and referent-independent formulation of Locality as an intrinsic spatial neighborhood.</li>
-
-  <li>Tested mutual proximity, Adjacency, Contiguity, compactness, concentration, and neighborhood coherence as possible governing principles.</li>
-
-  <li>Determined that referent-free Locality substantially collapses into <strong>WP-S-III — The Cluster</strong> together with the existing Relational primitives.</li>
-
-  <li>Tested the older implied progression <strong>World → Extent → Region → Cluster → Locality → Parcel</strong>.</li>
-
-  <li>Rejected scale alone as sufficient grounds for constitutional adoption.</li>
-
-  <li>Determined that no objective threshold presently identifies where Cluster becomes Locality.</li>
-
-  <li>Rejected <strong>intrinsic-neighborhood Locality</strong> as redundant with The Cluster and existing Relational concepts.</li>
-
-  <li>Tested Locality as the contextual spatial scope within which another Property, condition, or pattern applies locally rather than globally.</li>
-
-  <li>Determined that <strong>local</strong> in this sense functions as a qualifier or modifier rather than an independent constitutional entity.</li>
-
-  <li>Determined that Region and Cluster already provide bounded spatial contexts where needed.</li>
-
-  <li>Preserved <strong>contextual Locality</strong> only as ordinary scope-modifying language.</li>
-
-  <li>Compared Locality directly with <strong>The World</strong>, <strong>The Parcel</strong>, <strong>The Coordinate</strong>, <strong>The Distance</strong>, <strong>The Adjacency</strong>, <strong>The Contiguity</strong>, <strong>The Extent</strong>, <strong>The Region</strong>, <strong>The Cluster</strong>, <strong>Proximity</strong>, <strong>Neighborhood</strong>, <strong>Vicinity</strong>, <strong>Area</strong>, <strong>Zone</strong>, <strong>Place</strong>, <strong>Scope</strong>, <strong>Position</strong>, <strong>Terrain</strong>, <strong>Pattern</strong>, and <strong>Topology</strong>.</li>
-
-  <li>Determined that Locality cannot simultaneously escape reference-dependence and remain constitutionally distinct from Cluster.</li>
-
-  <li>Confirmed that Locality does not require reopening the completed <strong>Relational Domain</strong>.</li>
-
-  <li>Confirmed that no <strong>Locality</strong>, <strong>Neighborhood</strong>, <strong>Scope</strong>, or <strong>Relationally Emergent Spatial Properties</strong> Category should be created.</li>
-
-  <li>Submitted the same neutral Locality inquiry to <strong>Anthropic Claude</strong> and <strong>xAI Grok</strong>.</li>
-
-  <li>Recorded strong independent agreement that Locality should not be adopted as a standalone World Property.</li>
-
-  <li>Recorded Claude’s conclusion that relative Locality is relational, intrinsic-neighborhood Locality collapses into Cluster or Distance, and contextual Locality is a modifier rather than a Property.</li>
-
-  <li>Recorded Grok’s conclusion that Locality is best treated as a reference-dependent relational construct, possible scale-specialization of Cluster, or ordinary descriptive language rather than a Codex.</li>
-
-  <li>Adopted the shared constitutional conclusion that <strong>The Locality will not become a standalone World Property</strong>.</li>
-
-  <li>Recorded a present <strong>no-adoption conclusion</strong> for a standalone Locality Codex.</li>
-
-  <li>Established the final Locality disposition: <strong>relative-nearness Locality reclassified as an application of Distance</strong>, <strong>intrinsic-neighborhood Locality rejected as redundant with Cluster</strong>, and <strong>contextual-scope Locality preserved only as descriptive qualifying language</strong>.</li>
-
-  <li>Established that Locality may be reconsidered only if a future inquiry independently demonstrates an objective sub-Cluster spatial structure with a governing principle distinct from Cluster, Region, Distance, Adjacency, and Contiguity.</li>
-
-  <li>Created and preserved the private record <strong>Constitutional Review — The Locality</strong>.</li>
-
-  <li>Recognized that the immediate recovered-concept queue had now been exhausted following the completed inquiries into <strong>The Surface</strong>, <strong>The Limit</strong>, <strong>The Terrain</strong>, and <strong>The Locality</strong>.</li>
-
-  <li>Determined that selecting another concept directly from the unresolved research landscape risked replacing discovery with list order, Category preference, or aesthetic sequencing.</li>
-
-  <li>Opened <strong>World Properties Meta-Inquiry 001</strong> to determine which unresolved concept should receive the next formal constitutional inquiry.</li>
-
-  <li>Reframed the planning question from <strong>“What Property comes next?”</strong> to <strong>“What question should BitPangea ask next?”</strong></li>
-
-  <li>Preserved the governing principle that <strong>the next inquiry is not the next Property</strong>.</li>
-
-  <li>Presented the unresolved research landscape across Spatial, Surficial, Terrain, Boundary or Terminal, Geometric or Morphological, Topological, Distributional, Compositional, Pattern, Hierarchical, Measurable or Quantitative, Threshold or Transitional, Temporal or Persistence, and Emergent candidate families.</li>
-
-  <li>Required each candidate to be evaluated for intrinsicness, distinctiveness, constitutional necessity, readiness, dependency, discovery value, redundancy risk, physical-assumption risk, observer or reference risk, and potential Category value.</li>
-
-  <li>Required explicit distinction among intrinsic Property, relational condition, emergent composite, measurement, process, event, descriptive language, Category label, and implementation characteristic.</li>
-
-  <li>Required that no candidate be favored merely because it appeared next in an existing list.</li>
-
-  <li>Required that no Category be created before validated constituent Properties independently justify it.</li>
-
-  <li>Required that Structural and Relational Domains remain closed unless a demonstrated constitutional need requires reconsideration.</li>
-
-  <li>Required that physical geography, topology, dimensionality, materiality, time, and other unresolved foundations not be imported by assumption.</li>
-
-  <li>Submitted the same World Properties Meta-Inquiry to <strong>Anthropic Claude</strong> and <strong>xAI Grok</strong>.</li>
-
-  <li>Compared the independent landscape triage produced by Claude and Grok.</li>
-
-  <li>Recorded strong agreement that <strong>Distributional</strong> and <strong>Geometric / Morphological</strong> concepts presently contain the strongest near-term candidates.</li>
-
-  <li>Recorded agreement that full Topology, Surficial concepts, physical Terrain descendants, Compositional concepts, Temporal or Persistence concepts, Threshold or Transitional concepts, and many spectrum endpoints remain premature or constitutionally hazardous.</li>
-
-  <li>Recorded Claude’s ten strongest candidates, led by <strong>Density</strong>, <strong>Void</strong>, <strong>Form</strong>, <strong>Distribution</strong>, and <strong>Connectivity</strong>.</li>
-
-  <li>Recorded Grok’s ten strongest candidates, led by <strong>Density</strong>, <strong>Form</strong>, <strong>Pattern</strong>, <strong>Distribution</strong>, and <strong>Compactness</strong>.</li>
-
-  <li>Identified exact independent convergence on the same next-three inquiry sequence: <strong>Density → Form → Pattern</strong>.</li>
-
-  <li>Determined that this convergence constitutes strong evidence for research priority but not constitutional authority for adoption.</li>
-
-  <li>Selected <strong>Density</strong> as the next formal constitutional inquiry.</li>
-
-  <li>Rejected the assumption that differential Parcel concentration necessarily exists merely because The World contains Parcels across Extent.</li>
-
-  <li>Established that the Density inquiry must begin with the more fundamental question: <strong>“Density of what?”</strong></li>
-
-  <li>Established the quantitative test <strong>“According to which unit?”</strong> as central to distinguishing intrinsic Density from measurement.</li>
-
-  <li>Established that the Density inquiry must determine whether Density can exist without measurement and whether Density can vary in BitPangea at all.</li>
-
-  <li>Preserved Claude’s proposition that <strong>Density may be the Property while Cluster is the structure exhibiting that Property</strong> only as a hypothesis to test.</li>
-
-  <li>Established <strong>Density vs. Cluster</strong> as the principal distinctiveness test for the next inquiry.</li>
-
-  <li>Preserved <strong>Form</strong> as the planned second inquiry because its resolution may clarify Shape, Symmetry, Compactness, Elongation, Fragmentation, Regularity, Curvature, and the viability of a Geometric or Morphological Category.</li>
-
-  <li>Preserved <strong>Pattern</strong> as the planned third inquiry because its resolution may clarify Repetition, Regularity, Rhythm, Sequence, Texture, Terrain’s surviving composite meaning, and whether Pattern is primitive or emergent.</li>
-
-  <li>Preserved <strong>Distribution</strong> as the strongest fourth inquiry candidate.</li>
-
-  <li>Preserved <strong>Void</strong> conditionally, to be investigated only if Density leaves an unresolved constitutional question rather than resolving Void as low Density, absence of Cluster, or a spectrum endpoint.</li>
-
-  <li>Preserved <strong>Compactness</strong> conditionally, to be investigated only if Form establishes sufficient geometric grounding and Compactness remains distinct from Cluster, Distance, and measurement.</li>
-
-  <li>Established the working inquiry queue: <strong>Density → Form → Pattern → Distribution → Void (conditional) → Compactness (conditional)</strong>.</li>
-
-  <li>Confirmed that this queue records <strong>research priority rather than constitutional sequence</strong>.</li>
-
-  <li>Established that any candidate may be skipped if an earlier inquiry resolves or invalidates it.</li>
-
-  <li>Established that the queue may be interrupted if a high-leverage discovery reveals a more urgent prerequisite or materially changes the constitutional landscape.</li>
-
-  <li>Established the new research method: <strong>Meta-Inquiry → Inquiry Queue → Exhaust or Invalidate Queue → New Meta-Inquiry</strong>.</li>
-
-  <li>Established that <strong>World Properties Meta-Inquiry 002</strong> should occur only after the present queue has been substantially exhausted, invalidated, or materially altered by discovery.</li>
-
-  <li>Created and preserved the private record <strong>World Properties Meta-Inquiry 001 — Selecting the Next Constitutional Inquiry</strong>.</li>
-
-  <li>Closed Day #72 with no new Codex and no new Category, but with the unresolved World Properties landscape reorganized into a disciplined research path.</li>
-
-  <li>Preserved the final methodological distinction: <strong>Density is not yet the next Property. Density is the next question.</strong></li>
-
-</div>
-      </section>
-      <div class="note">Exploratory Concept · Early Stage</div>
-    </article>
-  </main>
+<li>Confirmed that <strong>The Locality</strong> had never previously been formally proposed, drafted, or adopted as a Codex.</li>
+<li>Recovered earlier descriptions of Locality as a multi-Parcel spatial structure, spatial aggregate, proximate neighborhood, and possible finer-grained concept below Region and Cluster.</li>
+<li>Recognized that earlier Locality discussions predated the completed adoption of <strong>WP-S-I — The Extent</strong>, <strong>WP-S-II — The Region</strong>, and <strong>WP-S-III — The Cluster</strong>, thereby increasing Locality’s present burden of distinctiveness.</li>
+<li>Opened the Locality inquiry without assuming that Locality exists as an intrinsic World Property, belongs in Spatial Properties, or warrants a Codex.</li>
+<li>Placed the central constitutional question at the heart of the inquiry: <strong>“Can anything be local without being local to something?”</strong></li>
+<li>Distinguished <strong>observer-dependence</strong> from <strong>reference-dependence</strong>.</li>
+<li>Determined that a Locality centered upon an observer is observer-dependent and therefore cannot qualify as an intrinsic World Property.</li>
+<li>Determined that a Locality centered upon an objective Parcel or Coordinate may be observer-independent while remaining inherently reference-dependent.</li>
+<li>Established the governing distinction that <strong>Locality need not be observer-dependent, but it is inherently reference-dependent.</strong></li>
+<li>Separated Locality into three candidate meanings: <strong>relative-nearness Locality</strong>, <strong>intrinsic-neighborhood Locality</strong>, and <strong>contextual-scope Locality</strong>.</li>
+<li>Determined that relative-nearness Locality describes Parcels falling within some Distance relation to a referent.</li>
+<li>Determined that relative-nearness Locality is principally an application of <strong>RL-III — The Distance</strong> across multiple Parcels rather than an independent World Property.</li>
+<li>Identified the unresolved threshold problem inherent in defining when “near” becomes “local.”</li>
+<li>Determined that no intrinsic universal threshold separating local from non-local has been constitutionally established.</li>
+<li>Reclassified <strong>relative-nearness Locality</strong> as a <strong>reference-dependent relational construct / application of Distance</strong>.</li>
+<li>Attempted an observer-independent and referent-independent formulation of Locality as an intrinsic spatial neighborhood.</li>
+<li>Tested mutual proximity, Adjacency, Contiguity, compactness, concentration, and neighborhood coherence as possible governing principles.</li>
+<li>Determined that referent-free Locality substantially collapses into <strong>WP-S-III — The Cluster</strong> together with the existing Relational primitives.</li>
+<li>Tested the older implied progression <strong>World → Extent → Region → Cluster → Locality → Parcel</strong>.</li>
+<li>Rejected scale alone as sufficient grounds for constitutional adoption.</li>
+<li>Determined that no objective threshold presently identifies where Cluster becomes Locality.</li>
+<li>Rejected <strong>intrinsic-neighborhood Locality</strong> as redundant with The Cluster and existing Relational concepts.</li>
+<li>Tested Locality as the contextual spatial scope within which another Property, condition, or pattern applies locally rather than globally.</li>
+<li>Determined that <strong>local</strong> in this sense functions as a qualifier or modifier rather than an independent constitutional entity.</li>
+<li>Determined that Region and Cluster already provide bounded spatial contexts where needed.</li>
+<li>Preserved <strong>contextual Locality</strong> only as ordinary scope-modifying language.</li>
+<li>Compared Locality directly with <strong>The World</strong>, <strong>The Parcel</strong>, <strong>The Coordinate</strong>, <strong>The Distance</strong>, <strong>The Adjacency</strong>, <strong>The Contiguity</strong>, <strong>The Extent</strong>, <strong>The Region</strong>, <strong>The Cluster</strong>, <strong>Proximity</strong>, <strong>Neighborhood</strong>, <strong>Vicinity</strong>, <strong>Area</strong>, <strong>Zone</strong>, <strong>Place</strong>, <strong>Scope</strong>, <strong>Position</strong>, <strong>Terrain</strong>, <strong>Pattern</strong>, and <strong>Topology</strong>.</li>
+<li>Determined that Locality cannot simultaneously escape reference-dependence and remain constitutionally distinct from Cluster.</li>
+<li>Confirmed that Locality does not require reopening the completed <strong>Relational Domain</strong>.</li>
+<li>Confirmed that no <strong>Locality</strong>, <strong>Neighborhood</strong>, <strong>Scope</strong>, or <strong>Relationally Emergent Spatial Properties</strong> Category should be created.</li>
+<li>Submitted the same neutral Locality inquiry to <strong>Anthropic Claude</strong> and <strong>xAI Grok</strong>.</li>
+<li>Recorded strong independent agreement that Locality should not be adopted as a standalone World Property.</li>
+<li>Recorded Claude’s conclusion that relative Locality is relational, intrinsic-neighborhood Locality collapses into Cluster or Distance, and contextual Locality is a modifier rather than a Property.</li>
+<li>Recorded Grok’s conclusion that Locality is best treated as a reference-dependent relational construct, possible scale-specialization of Cluster, or ordinary descriptive language rather than a Codex.</li>
+<li>Adopted the shared constitutional conclusion that <strong>The Locality will not become a standalone World Property</strong>.</li>
+<li>Recorded a present <strong>no-adoption conclusion</strong> for a standalone Locality Codex.</li>
+<li>Established the final Locality disposition: <strong>relative-nearness Locality reclassified as an application of Distance</strong>, <strong>intrinsic-neighborhood Locality rejected as redundant with Cluster</strong>, and <strong>contextual-scope Locality preserved only as descriptive qualifying language</strong>.</li>
+<li>Established that Locality may be reconsidered only if a future inquiry independently demonstrates an objective sub-Cluster spatial structure with a governing principle distinct from Cluster, Region, Distance, Adjacency, and Contiguity.</li>
+<li>Created and preserved the private record <strong>Constitutional Review — The Locality</strong>.</li>
+<li>Recognized that the immediate recovered-concept queue had now been exhausted following the completed inquiries into <strong>The Surface</strong>, <strong>The Limit</strong>, <strong>The Terrain</strong>, and <strong>The Locality</strong>.</li>
+<li>Determined that selecting another concept directly from the unresolved research landscape risked replacing discovery with list order, Category preference, or aesthetic sequencing.</li>
+<li>Opened <strong>World Properties Meta-Inquiry 001</strong> to determine which unresolved concept should receive the next formal constitutional inquiry.</li>
+<li>Reframed the planning question from <strong>“What Property comes next?”</strong> to <strong>“What question should BitPangea ask next?”</strong></li>
+<li>Preserved the governing principle that <strong>the next inquiry is not the next Property</strong>.</li>
+<li>Presented the unresolved research landscape across Spatial, Surficial, Terrain, Boundary or Terminal, Geometric or Morphological, Topological, Distributional, Compositional, Pattern, Hierarchical, Measurable or Quantitative, Threshold or Transitional, Temporal or Persistence, and Emergent candidate families.</li>
+<li>Required each candidate to be evaluated for intrinsicness, distinctiveness, constitutional necessity, readiness, dependency, discovery value, redundancy risk, physical-assumption risk, observer or reference risk, and potential Category value.</li>
+<li>Required explicit distinction among intrinsic Property, relational condition, emergent composite, measurement, process, event, descriptive language, Category label, and implementation characteristic.</li>
+<li>Required that no candidate be favored merely because it appeared next in an existing list.</li>
+<li>Required that no Category be created before validated constituent Properties independently justify it.</li>
+<li>Required that Structural and Relational Domains remain closed unless a demonstrated constitutional need requires reconsideration.</li>
+<li>Required that physical geography, topology, dimensionality, materiality, time, and other unresolved foundations not be imported by assumption.</li>
+<li>Submitted the same World Properties Meta-Inquiry to <strong>Anthropic Claude</strong> and <strong>xAI Grok</strong>.</li>
+<li>Compared the independent landscape triage produced by Claude and Grok.</li>
+<li>Recorded strong agreement that <strong>Distributional</strong> and <strong>Geometric / Morphological</strong> concepts presently contain the strongest near-term candidates.</li>
+<li>Recorded agreement that full Topology, Surficial concepts, physical Terrain descendants, Compositional concepts, Temporal or Persistence concepts, Threshold or Transitional concepts, and many spectrum endpoints remain premature or constitutionally hazardous.</li>
+<li>Recorded Claude’s ten strongest candidates, led by <strong>Density</strong>, <strong>Void</strong>, <strong>Form</strong>, <strong>Distribution</strong>, and <strong>Connectivity</strong>.</li>
+<li>Recorded Grok’s ten strongest candidates, led by <strong>Density</strong>, <strong>Form</strong>, <strong>Pattern</strong>, <strong>Distribution</strong>, and <strong>Compactness</strong>.</li>
+<li>Identified exact independent convergence on the same next-three inquiry sequence: <strong>Density → Form → Pattern</strong>.</li>
+<li>Determined that this convergence constitutes strong evidence for research priority but not constitutional authority for adoption.</li>
+<li>Selected <strong>Density</strong> as the next formal constitutional inquiry.</li>
+<li>Rejected the assumption that differential Parcel concentration necessarily exists merely because The World contains Parcels across Extent.</li>
+<li>Established that the Density inquiry must begin with the more fundamental question: <strong>“Density of what?”</strong></li>
+<li>Established the quantitative test <strong>“According to which unit?”</strong> as central to distinguishing intrinsic Density from measurement.</li>
+<li>Established that the Density inquiry must determine whether Density can exist without measurement and whether Density can vary in BitPangea at all.</li>
+<li>Preserved Claude’s proposition that <strong>Density may be the Property while Cluster is the structure exhibiting that Property</strong> only as a hypothesis to test.</li>
+<li>Established <strong>Density vs. Cluster</strong> as the principal distinctiveness test for the next inquiry.</li>
+<li>Preserved <strong>Form</strong> as the planned second inquiry because its resolution may clarify Shape, Symmetry, Compactness, Elongation, Fragmentation, Regularity, Curvature, and the viability of a Geometric or Morphological Category.</li>
+<li>Preserved <strong>Pattern</strong> as the planned third inquiry because its resolution may clarify Repetition, Regularity, Rhythm, Sequence, Texture, Terrain’s surviving composite meaning, and whether Pattern is primitive or emergent.</li>
+<li>Preserved <strong>Distribution</strong> as the strongest fourth inquiry candidate.</li>
+<li>Preserved <strong>Void</strong> conditionally, to be investigated only if Density leaves an unresolved constitutional question rather than resolving Void as low Density, absence of Cluster, or a spectrum endpoint.</li>
+<li>Preserved <strong>Compactness</strong> conditionally, to be investigated only if Form establishes sufficient geometric grounding and Compactness remains distinct from Cluster, Distance, and measurement.</li>
+<li>Established the working inquiry queue: <strong>Density → Form → Pattern → Distribution → Void (conditional) → Compactness (conditional)</strong>.</li>
+<li>Confirmed that this queue records <strong>research priority rather than constitutional sequence</strong>.</li>
+<li>Established that any candidate may be skipped if an earlier inquiry resolves or invalidates it.</li>
+<li>Established that the queue may be interrupted if a high-leverage discovery reveals a more urgent prerequisite or materially changes the constitutional landscape.</li>
+<li>Established the new research method: <strong>Meta-Inquiry → Inquiry Queue → Exhaust or Invalidate Queue → New Meta-Inquiry</strong>.</li>
+<li>Established that <strong>World Properties Meta-Inquiry 002</strong> should occur only after the present queue has been substantially exhausted, invalidated, or materially altered by discovery.</li>
+<li>Created and preserved the private record <strong>World Properties Meta-Inquiry 001 — Selecting the Next Constitutional Inquiry</strong>.</li>
+<li>Closed Day #72 with no new Codex and no new Category, but with the unresolved World Properties landscape reorganized into a disciplined research path.</li>
+<li>Preserved the final methodological distinction: <strong>Density is not yet the next Property. Density is the next question.</strong></li>
+</div></details>
+</section>
+<div class="note">Exploratory Concept · Early Stage</div>
+</article>
+</main>
 <div id="bp-footer"></div>
-</body>
-</html>
-
-</body>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".chronology-disclosure").forEach((entry) => {
+    entry.addEventListener("toggle", () => {
+      if (entry.open) {
+        const rect = entry.getBoundingClientRect();
+        if (rect.top < 90 || rect.top > window.innerHeight * 0.82) {
+          entry.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }
+    });
+  });
+});
+</script></body>
 </html>
