@@ -11,11 +11,13 @@ The Maxims preserves the enduring sayings, reminders, and distilled wisdom of Bi
 
 It is one of the foundational works preserved within **The Foundation**.
 
-The Maxims do not define the World and they do not govern conduct.
+The Maxims do not define the World, constitutionalize design, or govern conduct.
 
 Their role is narrower:
 
 > Truths describe what is. Principles guide what should be. Maxims preserve what should be remembered.
+
+Beginning with the Creator Period, The Maxims also preserves the wisdom that emerges when constitutional restraint and intentional creation are held together.
 
 ---
 
@@ -53,20 +55,21 @@ The Maxims
 
 The Maxims should not become a general collection of inspirational quotations.
 
-Its purpose is to preserve the memorable essence of BitPangea.
+Its purpose is to preserve the memorable essence of BitPangea across constitutional discovery, stewardship, preservation, and creative design.
 
 ---
 
 ## Current Structure
 
-The current public register contains **21 Maxims** organized into six thematic sections:
+The current public register contains **25 Maxims** organized into seven thematic sections:
 
 1. **The World**
-2. **Discovery**
+2. **Discovery & Creation**
 3. **Record**
 4. **Relation**
-5. **Stewardship**
-6. **Continuance**
+5. **Creation**
+6. **Stewardship**
+7. **Continuance**
 
 ---
 
@@ -79,9 +82,9 @@ The current public register contains **21 Maxims** organized into six thematic s
 3. **The foundation holds.**
 4. **The finite becomes meaningful.**
 
-### II · Discovery
+### II · Discovery & Creation
 
-5. **Discovery reveals.**
+5. **Discovery reveals. Creation gives form.**
 6. **The map follows.**
 7. **Every frontier teaches.**
 8. **The first mark matters.**
@@ -100,16 +103,23 @@ The current public register contains **21 Maxims** organized into six thematic s
 15. **Between places, meaning gathers.**
 16. **The path matters.**
 
-### V · Stewardship
+### V · Creation
 
-17. **Stewardship remembers the future.**
-18. **Build slowly where permanence is desired.**
-19. **Inheritance is responsibility.**
+17. **Not everything must be codified.**
+18. **The Constitution constrains. The Creator chooses.**
+19. **Design within truth.**
+20. **Create first. Constitutionalize only when necessary.**
 
-### VI · Continuance
+### VI · Stewardship
 
-20. **Long after the builders, the world remains.**
-21. **Leave something worthy of return.**
+21. **Stewardship remembers the future.**
+22. **Build slowly where permanence is desired.**
+23. **Inheritance is responsibility.**
+
+### VII · Continuance
+
+24. **Long after the builders, the world remains.**
+25. **Leave something worthy of return.**
 
 ---
 
@@ -124,6 +134,24 @@ This directory includes:
 The public page presents the current register, thematic organization, and institutional distinction of The Maxims.
 
 ---
+
+## Creator Period Clarification
+
+The Creator Period does not replace the older wisdom of discovery. It extends it.
+
+The new Creation Maxims preserve the distinction between what must be constitutionally true and what may be intentionally designed within those truths.
+
+The governing ideas include:
+
+> **“Not a Codex” does not mean “not allowed to exist.”**
+
+> **The Constitution constrains. The Creator chooses.**
+
+> **Design within truth.**
+
+These are Maxims rather than Codices. Their role is mnemonic and philosophical, not constitutional.
+
+A Maxim may summarize an important methodological lesson without itself creating law, institutional authority, or a design requirement.
 
 ## Repository Guidance
 
@@ -150,7 +178,10 @@ Before adding a new Maxim, confirm that it is:
 - specific enough to belong to BitPangea;
 - not merely a Truth rewritten poetically;
 - not merely a Principle shortened into a slogan;
+- not merely a design instruction disguised as wisdom;
 - appropriate to an existing thematic section or strong enough to justify a new one.
+
+A Maxim may reflect a constitutional or methodological lesson without acquiring the authority of a Codex.
 
 ---
 
@@ -160,10 +191,13 @@ The Maxims is not:
 
 - a substitute for The Truths;
 - a substitute for The Principles;
+- a substitute for The Codex;
+- an Atlas design specification;
 - a technical rulebook;
 - a chronology;
 - a general quotation collection;
-- a repository for temporary slogans.
+- a repository for temporary slogans;
+- a mechanism for constitutionalizing a design choice through repetition.
 
 Its proper role is:
 
@@ -173,7 +207,7 @@ Its proper role is:
 
 ## Status
 
-**Active Foundational Institution**
+**Active Foundational Institution · Creator Period Clarified**
 
 ---
 
