@@ -7,25 +7,37 @@
 
 ## Overview
 
-The Atlas is the canonical cartographic institution of BitPangea.
+The Atlas is the canonical cartographic design institution of BitPangea.
 
-It preserves the developing map of the World, the logic by which its finite geography is understood, and the records through which its spatial structure becomes visible over time.
+It is the principal home in which the constitutional constraints of BitPangea are translated into intentional geography, Parcel arrangement, naming, visual form, and cartographic expression.
 
-BitPangea is conceived as one finite digital supercontinent composed of **21,000,000 Parcels**.
+BitPangea is one finite digital supercontinent composed of **21,000,000 Parcels**.
+
+Beginning with the Creator Period, BitPangea distinguishes **constitutional discovery** from **creative design**:
+
+- Constitutional discovery determines what the World must be.
+- Creative design determines what may be intentionally created within those truths.
+- Implementation determines how those designs are technically expressed.
+
+> BitPangea is constitutionally constrained, but intentionally designed.
 
 ---
 
 ## Purpose
 
-The Atlas exists to preserve the cartographic expression of BitPangea.
+The Atlas exists to design, preserve, and present the cartographic expression of BitPangea within the constraints established by The Foundation and The Codex.
 
 Its role includes:
 
 - presenting the World as a single connected whole;
-- preserving the logic of finite geography;
-- documenting the relationship between Parcels and larger spatial structures;
+- designing the concrete geography of the World;
+- developing the Parcel division system and other cartographic conventions;
+- establishing naming and visual representation;
+- documenting recognized spatial relationships, groupings, regions, and emergent geographic forms;
 - maintaining cartographic records and historically important map-related materials;
 - providing a stable public home for the evolving map of the World.
+
+The Atlas may create design features without requiring each feature to become a Codex. A design decision returns to constitutional inquiry only when it creates a genuine dependency upon identity, permanence, Structure, Relation, World Properties, or another adopted constitutional truth.
 
 > Before ownership can be claimed, the World must first be mapped.
 
@@ -43,7 +55,9 @@ Parcels are the finite units from which the World is composed.
 
 ### Spatial Structure
 
-The Atlas may preserve the visible expression of recognized spatial relationships, groupings, regions, and other cartographic structures as they are formally established.
+The Atlas may preserve the visible expression of recognized spatial relationships, groupings, regions, and other cartographic structures.
+
+Not every visible or geographic feature requires independent constitutional recognition. Features may exist as intentional design, derived configuration, or cartographic expression so long as they remain consistent with adopted constitutional constraints.
 
 ### Cartographic Memory
 
@@ -57,13 +71,17 @@ The Atlas is distinct from other BitPangea institutions:
 
 - **The Declaration** establishes foundational truth.
 - **The Charter** preserves constitutional development.
-- **The Codex** preserves canonical inquiry and recognized knowledge.
+- **The Codex** preserves constitutional inquiry and concepts requiring canonical stability.
 - **The Archive** preserves historical materials.
 - **The Chronicle** preserves chronology.
 - **The Reliquary** preserves hidden and discoverable artifacts.
-- **The Atlas** preserves the cartographic expression of the World.
+- **The Atlas** designs, preserves, and presents the cartographic expression of the World.
 
-The Atlas should represent what has been recognized without claiming authority to create or redefine the World itself.
+The proper relationship is:
+
+**The Foundation constrains → The Codex defines → The Atlas designs → Implementation realizes.**
+
+The Atlas does not possess authority to contradict or redefine constitutional truth. It does possess authority to make intentional cartographic design choices wherever the Constitution leaves those choices open.
 
 ---
 
@@ -74,11 +92,33 @@ The Atlas is guided by several enduring constraints:
 - BitPangea is one World.
 - The World is finite.
 - The total number of Parcels is fixed at 21,000,000.
-- The map should follow the World rather than force the World to fit the map.
+- Design must remain consistent with The Foundation and The Codex.
+- The map follows the constitutional World; it may intentionally give concrete form to what constitutional truth leaves open.
 - Cartographic records should remain stable, intelligible, and historically traceable.
-- Earlier forms should be preserved when major revisions occur.
+- Earlier significant forms should be preserved when major revisions occur.
+- A design choice should not be elevated into constitutional law merely because it is important, useful, familiar, or visually prominent.
 
 ---
+
+## Creator Period Method
+
+The Atlas operates under a distinct design track:
+
+**Constitutional Constraints → Creative Design → Atlas Expression → Implementation → Observation of Consequences → Constitutional Trigger if necessary**
+
+This design track complements, but does not replace, the constitutional track:
+
+**Foundation → Necessary Consequences → Constitutional Inquiry → Codex / No-Adoption**
+
+A design decision should be reconsidered constitutionally only when changing it would:
+
+- alter Parcel identity or permanence;
+- alter Boundary, Coordinate, Adjacency, Contiguity, Distance, Direction, or another adopted constitutional concept;
+- contradict an established Truth or Codex;
+- break multiple institutional dependencies;
+- create genuine constitutional information loss if left merely as design.
+
+Until such a trigger exists, design remains design.
 
 ## Cartographic Records
 
@@ -115,20 +155,22 @@ When adding or revising files within The Atlas:
 
 The Atlas is not:
 
-- a speculative map of unrecognized properties;
-- a substitute for The Codex;
+- a substitute for The Foundation or The Codex;
+- a requirement that every geographic feature first receive constitutional recognition;
 - a private planning document;
 - a general image gallery;
 - a marketing page;
 - an authority that can expand, duplicate, or arbitrarily redefine the World.
 
-Its purpose is to preserve and present the map of BitPangea faithfully.
+Its purpose is to intentionally design, preserve, and present the concrete cartographic World faithfully within constitutional constraints.
+
+**“Not a Codex” does not mean “not allowed to exist.”**
 
 ---
 
 ## Status
 
-**Active Cartographic Institution**
+**Active Cartographic Design Institution · Creator Period**
 
 ---
 
