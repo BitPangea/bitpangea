@@ -9,7 +9,9 @@
 
 The Charter preserves the founding purpose, constitutional direction, and major adopted statements of BitPangea.
 
-It is the institutional record through which the World’s purpose is expressed and carried forward as BitPangea develops through its major Periods and Domains.
+It is the institutional record through which the World’s purpose is expressed and carried forward as BitPangea develops through major constitutional Periods, Domains, and later methodological transitions.
+
+Beginning with the Creator Period, BitPangea now distinguishes constitutional development from intentional world design. A new Period does not automatically require a new constitutional Charter.
 
 The Charter began with a simple founding question:
 
@@ -19,7 +21,7 @@ The Charter began with a simple founding question:
 
 ## Purpose
 
-The Charter exists to preserve why BitPangea was founded and what principles guide its development.
+The Charter exists to preserve why BitPangea was founded, what constitutional direction guides its development, and which major constitutional eras or transitions deserve formal preservation.
 
 It establishes BitPangea as:
 
@@ -29,7 +31,9 @@ It establishes BitPangea as:
 - guided by stewardship rather than mere possession;
 - developed slowly enough for its institutions and structures to earn their place.
 
-The Charter should remain broad enough to guide the World while avoiding technical claims that have not yet been constitutionally established.
+The Charter should remain broad enough to guide the World while avoiding technical or design claims that have not been constitutionally established.
+
+It should also avoid treating every major development phase as though it must culminate in a constitutional Charter.
 
 ---
 
@@ -77,22 +81,27 @@ The Charter is distinct from other foundational institutions:
 
 - **The Declaration** proclaims that the World exists.
 - **The Charter** preserves why the World exists and the constitutional direction of its development.
-- **The Codex** preserves canonical inquiry and recognized knowledge.
+- **The Codex** preserves constitutional inquiry and concepts requiring canonical stability.
 - **The Lexicon** preserves the language of the World.
 - **The Archive** preserves materials of enduring historical value.
 - **The Chronicle** preserves the chronology of BitPangea’s development.
+- **The Atlas** intentionally designs and preserves the concrete cartographic expression of the World within constitutional constraints.
 
 The Charter should not duplicate those institutions.
 
-Its role is to preserve purpose, constitutional direction, and formally adopted period records.
+Its role is to preserve purpose, constitutional direction, formally adopted constitutional period records, and major methodological transitions that materially change how BitPangea develops.
 
 ---
 
 ## Charter Development
 
-The Charter may expand as BitPangea progresses through major constitutional Periods.
+The Charter may expand as BitPangea progresses through major constitutional Periods or when a major methodological transition warrants formal constitutional preservation.
 
-New Charter records should be added only when a Period, Domain, or major architectural transition has been sufficiently understood to justify formal preservation.
+A Period should not receive a Charter merely because it exists.
+
+New Charter records should be added only when a Period, Domain, or architectural transition has produced a genuine constitutional result that is sufficiently understood to justify formal preservation.
+
+The Creator Period is therefore not presumed to require its own Charter. Its principal work is intentional world design. Constitutional inquiry remains available whenever design reveals a genuine dependency or unresolved constitutional necessity.
 
 Each addition should:
 
@@ -103,6 +112,30 @@ Each addition should:
 5. be documented in the appropriate journal or Chronicle entry.
 
 ---
+
+## The Creator Period
+
+The Creator Period marks a change in BitPangea’s operating method rather than the automatic creation of a new constitutional Domain or Charter.
+
+Its governing distinction is:
+
+> **Constitutional discovery determines what the World must be. Creative design determines what may be intentionally created within those truths.**
+
+The current relationship is:
+
+**The Foundation constrains → The Codex defines → The Atlas designs → Implementation realizes.**
+
+The Charter preserves this distinction without attempting to constitutionalize every design choice.
+
+A design decision should return to constitutional inquiry only when changing it would:
+
+- alter Parcel identity or permanence;
+- alter an adopted Structural, Relational, or World Property concept;
+- contradict an established Truth or Codex;
+- create a dependency relied upon by multiple institutions;
+- produce genuine constitutional information loss if left merely as design.
+
+This means a new Period may advance BitPangea substantially without producing a new Codex, Category, Domain, or Charter.
 
 ## Repository Guidance
 
@@ -123,20 +156,22 @@ When maintaining this directory:
 The Charter is not:
 
 - a technical specification;
+- a design manual;
 - a roadmap;
 - a token document;
 - a land-allocation policy;
 - a substitute for The Codex;
 - a substitute for The Declaration;
-- a repository for every unresolved idea.
+- a repository for every unresolved idea;
+- a requirement that every major Period produce a new constitutional Charter.
 
-Its purpose is constitutional rather than operational.
+Its purpose is constitutional and historical rather than operational or design-governing.
 
 ---
 
 ## Status
 
-**Active Constitutional Institution**
+**Active Constitutional Institution · Creator Period Clarified**
 
 ---
 
