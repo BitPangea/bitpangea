@@ -11,6 +11,8 @@ The Foundation is the constitutional library of BitPangea.
 
 It preserves the principal works through which the World’s existence, purpose, structure, language, truths, principles, wisdom, and memory become intelligible.
 
+The Foundation also establishes the enduring constitutional constraints within which BitPangea may be intentionally designed.
+
 The Foundation is not a single document.
 
 It is the institutional shelf upon which BitPangea’s foundational works are preserved together.
@@ -30,7 +32,8 @@ Its purpose is to provide a stable public index to the works that explain:
 - what remains true;
 - how stewardship should be approached;
 - what wisdom should be remembered;
-- what historical materials should endure.
+- what historical materials should endure;
+- which truths and constitutional constraints must remain stable as the World is intentionally designed.
 
 > The Foundation is the constitutional library of the World.
 
@@ -56,7 +59,9 @@ The Charter preserves the founding purpose and constitutional direction of BitPa
 
 **The Codex**
 
-The Codex preserves structured inquiry, recognized knowledge, and the conceptual architecture through which the World becomes precise.
+The Codex preserves structured constitutional inquiry, recognized concepts, and the architecture that requires canonical precision and stability.
+
+The Codex does not exist to constitutionalize every design choice through which the World is expressed.
 
 ### Volume IV · Language
 
@@ -101,11 +106,40 @@ The Foundation serves as:
 - the constitutional library;
 - the public index to the foundational works;
 - the place where their relationship is made clear;
-- the stable entry point for understanding BitPangea’s constitutional architecture.
+- the stable entry point for understanding BitPangea’s constitutional architecture;
+- the preserved source of the truths and constraints within which later design may proceed.
 
 The Foundation should remain cumulative rather than duplicative.
 
+It should not become a design manual. Creative choices belong primarily to The Atlas and implementation unless genuine constitutional dependency later requires elevation.
+
 ---
+
+## Foundation and Creation
+
+Beginning with the emergence of the Creator perspective on Day #99, BitPangea distinguishes two complementary disciplines:
+
+### Constitutional Discovery
+
+Determines what the World must be because of foundational truths, necessary consequences, and adopted constitutional commitments.
+
+### Creative Design
+
+Determines what may be intentionally created within those truths.
+
+The governing distinction is:
+
+> **BitPangea is constitutionally constrained, but intentionally designed.**
+
+The Foundation does not prescribe every geographic, visual, cartographic, naming, or technical detail of the World.
+
+The proper relationship is:
+
+**The Foundation constrains → The Codex defines → The Atlas designs → Implementation realizes.**
+
+A design decision should return to constitutional inquiry only when changing that choice would alter constitutional identity, permanence, an adopted Codex, or another foundational truth.
+
+This distinction does not weaken The Foundation. It clarifies its scope.
 
 ## Public Structure
 
@@ -142,16 +176,18 @@ The Foundation is not:
 - a substitute for The Codex;
 - a duplicate repository for the contents of every foundational volume;
 - a general navigation page for all BitPangea institutions;
+- a cartographic design specification;
 - a technical specification;
-- a roadmap.
+- a roadmap;
+- a requirement that every feature of BitPangea first become constitutional law before it may exist.
 
-Its role is to preserve the constitutional library as a coherent whole.
+Its role is to preserve the constitutional library as a coherent whole and to establish the enduring constraints within which BitPangea may be created.
 
 ---
 
 ## Status
 
-**Active Foundational Institution**
+**Active Foundational Institution · Creator Period Clarified**
 
 ---
 
