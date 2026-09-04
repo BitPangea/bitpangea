@@ -7,31 +7,34 @@
 
 ## Overview
 
-The Codex is BitPangea’s canonical institution for recognized inquiry, structured knowledge, and formally preserved concepts.
+The Codex is BitPangea’s canonical constitutional institution for structured inquiry, formally preserved concepts, and definitions that require enduring stability.
 
-It began as a working record of unresolved questions and evolving ideas. As BitPangea developed, the Codex became the place where the World’s structure, relations, properties, and future forms could be examined with increasing precision.
+It began as a working record of unresolved questions and evolving ideas. As BitPangea developed, the Codex became the place where the World’s structure, relations, properties, and constitutional dependencies could be examined with increasing precision.
 
-The Codex does not create the World.
+Beginning with the Creator Period, BitPangea now distinguishes constitutional discovery from creative design.
 
-It preserves the process through which the World becomes understood.
+The Codex does not create every feature of the World.
 
-> This record does not define the World by invention. It preserves the inquiry through which the World becomes known.
+It defines and preserves what must remain constitutionally precise as the World is intentionally designed.
+
+> The Codex defines what must remain true. It does not micromanage what The Atlas may create within those truths.
 
 ---
 
 ## Purpose
 
-The Codex exists to preserve disciplined inquiry.
+The Codex exists to preserve disciplined constitutional inquiry and concepts that require canonical definition.
 
 Its role includes:
 
-- recording important questions;
+- recording important constitutional questions;
 - preserving formally recognized concepts;
-- organizing knowledge by Domain and Codex;
+- organizing constitutional knowledge by Domain and Codex;
 - distinguishing adopted understanding from unresolved exploration;
-- preserving the constitutional development of BitPangea’s conceptual architecture.
+- preserving the constitutional development of BitPangea’s conceptual architecture;
+- preventing constitutional necessity from being confused with creative permission.
 
-The Codex should remain precise, cumulative, and historically traceable.
+The Codex should remain precise, cumulative, historically traceable, and deliberately narrower than the totality of what may exist within BitPangea.
 
 ---
 
@@ -41,52 +44,55 @@ The Codex is distinct from other BitPangea institutions:
 
 - **The Declaration** proclaims that the World exists.
 - **The Charter** preserves purpose and constitutional direction.
-- **The Codex** recognizes and preserves structured knowledge.
+- **The Codex** preserves constitutional inquiry and concepts requiring canonical stability.
 - **The Lexicon** defines the language through which that knowledge is expressed.
+- **The Atlas** intentionally designs the concrete cartographic World within constitutional constraints.
 - **The Archive** preserves historically important materials.
 - **The Chronicle** preserves the sequence of development.
 
 The Codex should not duplicate those institutions.
 
-Its role is inquiry, recognition, and conceptual preservation.
+Its role is constitutional inquiry, recognition, definition, and conceptual preservation.
+
+The governing relationship is:
+
+**The Foundation constrains → The Codex defines → The Atlas designs → Implementation realizes.**
 
 ---
 
 ## Domain Architecture
 
-The Codex is organized through major Domains, each centered on a foundational question.
+The Codex is organized through major Domains, each centered on a constitutional question.
 
 ### Structural Domain
 
-**Question:** What is the World?
+**Question:** What is the World structurally?
 
-This Domain examines the constitutional structure of BitPangea.
+The Structural Domain preserves the foundational architecture of Parcel, Boundary, Coordinate, and World.
+
+**Current standing:** Presently complete at the first-order foundational level, but constitutionally open to future irreducible Structural discovery.
 
 ### Relational Domain
 
-**Question:** How do things relate?
+**Question:** How do Parcels stand in relation to one another?
 
-This Domain examines the relations among Parcels and larger spatial structures.
+The Relational Domain preserves Adjacency, Contiguity, Distance, and Direction.
+
+**Current standing:** Presently complete in its first-order relational grammar, but constitutionally open to future irreducible relational discovery.
 
 ### World Properties Domain
 
-**Question:** What exists within the World?
+**Question:** What intrinsic properties does the World possess?
 
-This Domain examines properties that belong to the World once its structural and relational foundations are established.
+The World Properties Domain preserves recognized properties and the Categories through which they are organized.
 
-### Epistemic Domain
+**Current standing:** Open and presently resting. Spatial Properties are established, but no immediate new inquiry is constitutionally compelled.
 
-**Question:** How is the World known?
+### Future Domains
 
-This Domain will examine observation, recognition, evidence, interpretation, and knowledge.
+Epistemic, Civilizational, or other future Domains may emerge only if constitutional necessity is demonstrated.
 
-### Civilizational Domain
-
-**Question:** What do inhabitants do?
-
-This Domain will examine institutions, practices, and structures that may arise only after the World itself has been sufficiently understood.
-
----
+No future Domain is predetermined merely because it has previously been imagined.
 
 ## Codex Records
 
@@ -94,11 +100,14 @@ A Codex record should:
 
 1. address one clearly defined constitutional subject;
 2. belong to an established Domain;
-3. distinguish discovery from invention;
+3. demonstrate why the subject requires constitutional recognition;
 4. preserve the reasoning behind recognition;
 5. avoid extending beyond what has been sufficiently established;
 6. remain consistent with earlier adopted Codices;
-7. preserve important revisions when understanding changes.
+7. preserve important revisions when understanding changes;
+8. pass an information-loss or irreducibility test sufficient to justify constitutional status.
+
+A concept should not receive a Codex merely because it is useful, visually important, mathematically elegant, historically familiar, or significant to design.
 
 Codices should be added in deliberate sequence rather than as disconnected topics.
 
@@ -110,14 +119,49 @@ The Codex values restraint over premature certainty.
 
 An unresolved question may remain open when:
 
-- the World has not yet revealed enough structure;
-- the concept depends on an earlier uncompleted Domain;
+- constitutional evidence is insufficient;
+- the concept depends on an unresolved prerequisite;
 - competing interpretations remain materially unresolved;
-- adoption would create an institution or property before it has earned its place.
+- the concept can be completely expressed through existing Codices;
+- adoption would constitutionalize a design choice without genuine necessity.
 
 Open questions may be preserved without being treated as adopted constitutional knowledge.
 
+A failed Codex inquiry does not prohibit a concept from existing in design.
+
+> **“Not a Codex” means “not constitutionally required.” It does not mean “not allowed to exist.”**
+
 ---
+
+## Creator Period Method
+
+Beginning on Day #100, the Codex operates alongside a distinct design track.
+
+### Constitutional Track
+
+**Foundation → Necessary Consequences → Constitutional Inquiry → Codex / No-Adoption**
+
+This track governs what must be true.
+
+### Design Track
+
+**Constitutional Constraints → Creative Design → Atlas Expression → Implementation → Observation of Consequences → Constitutional Trigger if necessary**
+
+This track governs what may be intentionally created.
+
+The two tracks are complementary.
+
+The Codex should remain strict because its purpose is permanence and constitutional precision. The Atlas should remain creative because its purpose is to design the concrete World within those constraints.
+
+A design decision should return to constitutional inquiry only when:
+
+- changing it would alter Parcel identity or permanence;
+- changing it would alter Boundary, Coordinate, Adjacency, Contiguity, Distance, Direction, or another adopted concept;
+- multiple institutions depend upon it remaining stable;
+- implementation reveals genuine constitutional information loss;
+- leaving the decision as mere design would permit contradiction of The Foundation or The Codex.
+
+Until such a trigger exists, design remains design.
 
 ## Repository Guidance
 
@@ -142,17 +186,22 @@ The Codex is not:
 - a protocol specification;
 - a roadmap;
 - an investment document;
+- a design manual;
 - a technical implementation manual;
+- a catalogue of every feature that may exist within the World;
 - a repository for every passing idea;
-- an authority that may invent properties without constitutional basis.
+- an authority that must approve every act of world-building;
+- an authority that may invent constitutional properties without basis.
 
-Its purpose is to preserve the disciplined search for what the World is and what may properly be recognized within it.
+Its purpose is to preserve the disciplined constitutional search for what must be defined and stabilized.
+
+Creative permission belongs elsewhere unless a genuine constitutional dependency emerges.
 
 ---
 
 ## Status
 
-**Active Constitutional Institution**
+**Active Constitutional Institution · Creator Period Clarified**
 
 ---
 
