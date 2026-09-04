@@ -9,11 +9,11 @@
 
 The Chronicle is the official historical record of BitPangea.
 
-It preserves the major milestones, decisions, institutional developments, discoveries, and turning points through which the World has taken shape over time.
+It preserves the major milestones, decisions, institutional developments, discoveries, design transitions, and turning points through which the World has taken shape over time.
 
 The Chronicle is not a daily task list or technical changelog.
 
-Its purpose is to preserve history.
+Its purpose is to preserve history — including the constitutional periods through which BitPangea was defined and the Creator Period through which the World begins to be intentionally designed.
 
 ---
 
@@ -28,6 +28,8 @@ It preserves:
 - institutional development;
 - constitutional transitions;
 - significant discoveries;
+- major design transitions;
+- Period boundaries and threshold days;
 - historical context;
 - the progression of ideas over time.
 
@@ -45,10 +47,14 @@ The Chronicle is distinct from other BitPangea institutions:
 - **The Updates** summarize recent progress.
 - **The Archive** preserves records and historical materials.
 - **The Charter** preserves constitutional purpose and adopted records.
+- **The Codex** preserves constitutional definitions and inquiry.
+- **The Atlas** preserves and expresses intentional cartographic design.
 - **The Reliquary** preserves artifacts and discoverable records.
 - **The Chronicle** preserves the historical sequence of the World’s development.
 
 Its role is chronological and interpretive.
+
+The Chronicle may therefore preserve both constitutional discovery and intentional creation without confusing their authority.
 
 ---
 
@@ -58,12 +64,17 @@ The Chronicle may preserve:
 
 - the establishment of new institutions;
 - the adoption of Codices or constitutional records;
-- the completion of major Periods or Domains;
+- the completion, resting state, or reopening of major Domains;
+- the beginning and ending of major Periods;
+- threshold days between Periods;
 - important architectural decisions;
 - significant Transmissions;
 - preserved discoveries;
+- major acts of intentional world design;
 - changes to the public structure of BitPangea;
 - moments that later readers may need in order to understand how the World developed.
+
+Not every important historical event is constitutional. The Chronicle may preserve design history without elevating design decisions into Codex-level authority.
 
 ---
 
@@ -85,7 +96,11 @@ The World should be carried forward with restraint and responsibility.
 
 ### Discovery
 
-Meaning should emerge through inquiry, observation, and exploration.
+Meaning may emerge through inquiry, observation, and exploration.
+
+### Creation
+
+What the Constitution leaves open may be intentionally designed through The Atlas.
 
 ### Restraint
 
@@ -97,6 +112,45 @@ The history of BitPangea should remain intelligible to future readers.
 
 ---
 
+## Creator Period Clarification
+
+Day #99 — September 3, 2026 — established a methodological threshold in BitPangea.
+
+The first ninety-nine days were primarily governed by the question:
+
+> **What must The World be?**
+
+Day #99 itself became the transition point through which BitPangea recognized that constitutional discovery and intentional creation are different but compatible activities.
+
+The next Period begins with the question:
+
+> **What shall we make of it?**
+
+The governing distinction is:
+
+> **The Constitution establishes what must be true. Design determines what may be intentionally created within those truths. Implementation determines how those designs are technically expressed.**
+
+The Chronicle should preserve that distinction carefully.
+
+Day #99 is treated as a **threshold day between Periods**, not merely as another World Properties entry and not yet as the first full day of the Creator Period.
+
+The standing architecture at the transition is:
+
+- **Structural Domain:** presently complete at the first-order foundational level; constitutionally open.
+- **Parcel Assemblage:** legitimate research lens; no independent Structural subject class demonstrated.
+- **Relational Domain:** presently complete in its first-order relational grammar; constitutionally open.
+- **World Properties Domain:** open and presently resting; no immediate inquiry constitutionally compelled.
+
+The Creator Period begins on Day #100.
+
+Its governing relationship is:
+
+**The Foundation constrains → The Codex defines → The Atlas designs → Implementation realizes.**
+
+The Chronicle should preserve design milestones when they materially shape BitPangea, while avoiding the implication that every designed feature is constitutional law.
+
+---
+
 ## Entry Standard
 
 A Chronicle entry should:
@@ -104,10 +158,12 @@ A Chronicle entry should:
 1. identify the date or date range;
 2. use a clear historical title;
 3. explain what changed and why it mattered;
-4. distinguish completion from discussion or exploration;
-5. preserve important decisions and institutional consequences;
-6. avoid unnecessary implementation detail;
-7. remain understandable without requiring access to private notes.
+4. distinguish constitutional adoption, no-adoption, research, design, and implementation where relevant;
+5. distinguish completion from permanent closure;
+6. identify threshold days when a historical transition does not fit cleanly within either adjacent Period;
+7. preserve important decisions and institutional consequences;
+8. avoid unnecessary implementation detail;
+9. remain understandable without requiring access to private notes.
 
 Chronicle entries should be written for future readers, not only for the day on which they are created.
 
@@ -137,6 +193,9 @@ The Chronicle is not:
 - a roadmap;
 - a marketing timeline;
 - a substitute for The Archive;
+- a substitute for The Codex;
+- an Atlas design specification;
+- a mechanism for constitutionalizing a design decision merely because it is historically important;
 - a place for every minor revision.
 
 Its purpose is to preserve the history that matters.
@@ -145,7 +204,7 @@ Its purpose is to preserve the history that matters.
 
 ## Status
 
-**Active Historical Institution**
+**Active Historical Institution · Creator Period Transition Preserved**
 
 ---
 
@@ -153,7 +212,7 @@ Its purpose is to preserve the history that matters.
 
 BitPangea is an evolving digital-world project.
 
-Its constitutional, cartographic, and institutional architecture continues to develop over time.
+Its constitutional, cartographic, design, and institutional architecture continues to develop over time.
 
 ---
 
