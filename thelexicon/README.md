@@ -9,7 +9,9 @@
 
 The Lexicon is the preserved vocabulary of BitPangea.
 
-It records the terms through which the World, its institutions, structures, records, relationships, and developing ideas are named and understood.
+It records the terms through which the World, its institutions, structures, records, relationships, design choices, and developing ideas are named and understood.
+
+Beginning with the Creator Period, the Lexicon recognizes that meaningful vocabulary may arise from both **constitutional discovery** and **creative design**.
 
 Definitions may evolve as BitPangea becomes more precise.
 
@@ -26,12 +28,12 @@ The Lexicon exists to preserve continuity of meaning across BitPangea.
 Its role includes:
 
 - defining constitutional and institutional terminology;
-- preserving cartographic and relational vocabulary;
-- distinguishing similar concepts;
-- recording the language introduced by new Domains and institutions;
-- helping future readers understand how BitPangea described itself over time.
+- preserving cartographic, relational, and design vocabulary;
+- distinguishing constitutional terms from design-level terms;
+- recording the language introduced by new Domains, institutions, historical Periods, and intentional world design;
+- helping future readers understand how BitPangea described, designed, and interpreted itself over time.
 
-The Lexicon should remain clear, cumulative, and consistent with the institutions and Codices it supports.
+The Lexicon should remain clear, cumulative, and consistent with the institutions, Codices, and recognized design records it supports.
 
 ---
 
@@ -43,12 +45,13 @@ Its role is distinct from other BitPangea institutions:
 
 - **The Declaration** proclaims foundational truths.
 - **The Charter** preserves purpose and constitutional direction.
-- **The Codex** preserves structured inquiry and recognized knowledge.
-- **The Lexicon** defines and preserves the language through which that knowledge is expressed.
+- **The Codex** preserves constitutional inquiry and concepts requiring canonical stability.
+- **The Lexicon** defines and preserves the language through which constitutional, institutional, historical, and design concepts are expressed.
+- **The Atlas** intentionally designs and preserves the concrete cartographic expression of the World.
 - **The Chronicle** preserves history.
 - **The Archive** preserves historically important materials.
 
-The Lexicon should clarify meaning without replacing the constitutional or institutional records from which terms arise.
+The Lexicon should clarify meaning without replacing the constitutional, institutional, or design records from which terms arise.
 
 ---
 
@@ -58,19 +61,29 @@ The Lexicon may preserve terms from several broad categories.
 
 ### Constitutional Language
 
-Terms associated with the World’s foundational architecture, including its principal institutions and records.
+Terms associated with the World’s foundational architecture, adopted Codices, Domains, constitutional methodologies, and principal institutions.
 
 ### Structural and Cartographic Language
 
-Terms describing the World, Parcels, boundaries, coordinates, surfaces, limits, maps, and recognized spatial structures.
+Terms describing the World, Parcels, Boundaries, Coordinates, maps, recognized spatial structures, and cartographic expression.
 
 ### Relational Language
 
-Terms describing how Parcels and places relate, including adjacency, contiguity, distance, direction, extent, locality, clusters, regions, districts, and paths.
+Terms describing how Parcels and places relate, including Adjacency, Contiguity, Distance, and Direction.
 
 ### World Properties
 
-Terms describing recognized properties that exist within the World.
+Terms describing constitutionally recognized intrinsic properties of the World.
+
+### Design Language
+
+Terms that arise from intentional world creation within constitutional constraints, including geography, Parcel arrangement, naming, visual form, terrain, landmarks, and cartographic conventions.
+
+A design term does not become constitutional merely because it is preserved in The Lexicon.
+
+### Methodological Language
+
+Terms describing how BitPangea distinguishes constitutional discovery, creative design, implementation, and constitutional dependency.
 
 ### Institutional Language
 
@@ -78,42 +91,70 @@ Terms associated with BitPangea’s public institutions, preservation systems, r
 
 ### Historical Language
 
-Terms describing Periods, Domains, discoveries, transmissions, records, and major stages in the development of BitPangea.
-
----
+Terms describing Periods, Domains, discoveries, design eras, transmissions, records, and major stages in the development of BitPangea.
 
 ## Definition Standard
 
 A Lexicon entry should:
 
 1. define one term clearly;
-2. use language consistent with the relevant institution or Codex;
-3. distinguish the term from closely related concepts;
-4. avoid introducing authority that the source record does not possess;
-5. remain concise enough to function as a reference;
-6. be revised when the underlying constitutional meaning changes.
+2. identify whether its authority is constitutional, institutional, historical, design-level, or methodological;
+3. use language consistent with the relevant institution, Codex, Atlas record, or preserved source;
+4. distinguish the term from closely related concepts;
+5. avoid introducing authority that the source record does not possess;
+6. remain concise enough to function as a reference;
+7. be revised when the underlying constitutional, institutional, historical, or design meaning changes.
 
 Definitions should not be broadened merely to make a term sound more important.
 
+A design term may be preserved without being elevated into constitutional vocabulary.
+
 ---
 
-## Relationship to The Codex
+## Relationship to The Codex and The Atlas
 
-The Codex and The Lexicon serve complementary roles:
+The Codex, The Atlas, and The Lexicon serve complementary roles:
 
 ```text
 The Codex
-→ recognizes and preserves structured knowledge
+→ defines concepts that require constitutional stability
+
+The Atlas
+→ designs the concrete World within constitutional constraints
 
 The Lexicon
-→ defines the language used to express that knowledge
+→ preserves the recognized language used to express both
 ```
 
-A Codex may establish a concept before the Lexicon preserves its formal vocabulary.
+A Codex may establish a constitutional concept before The Lexicon preserves its formal vocabulary.
 
-The Lexicon should follow adopted understanding rather than inventing concepts independently.
+The Atlas may also establish recognized design language without requiring the underlying feature to become a Codex.
+
+The Lexicon should follow recognized constitutional, institutional, historical, or design usage rather than inventing authority independently.
 
 ---
+
+## Creator Period Clarification
+
+The Creator Period establishes an important distinction in vocabulary.
+
+### Constitutional Discovery
+
+Language used to identify what must be true because of BitPangea’s foundational commitments and constitutional dependencies.
+
+### Creative Design
+
+Language used to identify what has been intentionally created within those truths.
+
+The governing principle is:
+
+> **“Not a Codex” means “not constitutionally required.” It does not mean “not allowed to exist.”**
+
+The Lexicon may therefore preserve a legitimate design term even when that term has no independent constitutional standing.
+
+Examples may include names for geographic forms, visual conventions, designed terrain, landmarks, or other Atlas expressions.
+
+Such inclusion must not be misread as constitutional adoption.
 
 ## Repository Guidance
 
@@ -135,19 +176,21 @@ When maintaining this directory:
 The Lexicon is not:
 
 - a substitute for The Codex;
+- a substitute for The Atlas;
 - a general dictionary;
 - a technical specification;
 - a repository for undefined slogans;
 - an authority that may create institutions by naming them;
+- an authority that may constitutionalize a design choice merely by defining it;
 - a place where speculative language becomes constitutional merely through inclusion.
 
-Its role is to preserve the language of BitPangea faithfully.
+Its role is to preserve the language of BitPangea faithfully while keeping constitutional, institutional, historical, and design authority distinct.
 
 ---
 
 ## Status
 
-**Active Foundational Institution**
+**Active Foundational Institution · Creator Period Clarified**
 
 ---
 
