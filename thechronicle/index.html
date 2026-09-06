@@ -477,6 +477,84 @@
       .executive-briefing { padding: 28px 22px; }
     }
 
+
+    /* Period-level collapsibles for completed historical periods */
+    .period-section {
+      margin-top: 54px;
+      padding-top: 38px;
+      border-top: 1px solid rgba(212, 169, 56, 0.20);
+    }
+
+    .period-disclosure {
+      margin-top: 22px;
+      padding: 0;
+      overflow: hidden;
+      border: 1px solid rgba(212, 169, 56, 0.16);
+      background: rgba(0, 0, 0, 0.20);
+    }
+
+    .period-summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 18px 22px;
+      cursor: pointer;
+      user-select: none;
+      list-style: none;
+      background: rgba(3, 8, 16, 0.42);
+      transition: background .22s ease, border-color .22s ease;
+    }
+
+    .period-summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .period-summary::marker {
+      content: "";
+    }
+
+    .period-summary:hover,
+    .period-summary:focus-visible {
+      background: rgba(10, 18, 30, 0.66);
+    }
+
+    .period-summary:focus-visible {
+      outline: 2px solid rgba(0, 200, 215, 0.70);
+      outline-offset: -2px;
+    }
+
+    .period-summary-label {
+      color: #d4a938;
+      font-size: 13px;
+      line-height: 1.4;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .period-disclosure[open] .chronology-toggle::after {
+      opacity: 0;
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    .period-disclosure[open] .period-summary {
+      border-bottom: 1px solid rgba(212, 169, 56, 0.14);
+    }
+
+    .period-body {
+      padding: 2px 0 2px;
+    }
+
+    @media (max-width: 768px) {
+      .period-summary {
+        padding: 17px 18px;
+      }
+
+      .period-summary-label {
+        font-size: 12px;
+        letter-spacing: 1.5px;
+      }
+    }
 </style>
 </head>
 <body data-bp-page="thechronicle">
@@ -503,13 +581,6 @@
 <section aria-labelledby="executive-briefing-heading" class="executive-briefing">
 <div class="brief-label">Executive Briefing · Day #101 · September 5, 2026</div>
 <h2 id="executive-briefing-heading">The Form of The World</h2>
-
-
-
-
-
-
-
 <p>Day #101 returned to <strong>Form</strong>, but now explicitly as <strong>Creator-period design</strong> rather than constitutional inquiry. The day began from Day #100’s promising direction and refined it into a deliberate visual and experiential identity for BitPangea.</p>
 <p>The governing distinction remained intact: <strong>Form failed as a Codex. Form may succeed beautifully as design.</strong> No constitutional reopening was triggered.</p>
 <div class="brief-grid">
@@ -528,7 +599,7 @@
 <p>
           The Foundation Period established the initial institutions, principles, records, and identity of BitPangea. During this period, the project evolved from a conceptual question into an emerging civilizational framework.
         </p>
-<div class="period-card">
+<details class="period-disclosure"><summary class="period-summary"><span class="period-summary-label">View Period Details</span><span aria-hidden="true" class="chronology-toggle"></span></summary><div class="period-body"><div class="period-card">
 <h3>Major Milestones</h3>
 <ul>
 <li>Established BitPangea from the founding question: <strong>“What if Bitcoin had been invented not as money, but as a world?”</strong></li>
@@ -546,8 +617,7 @@
 <li>Implemented site-wide metadata, favicon standards, visual identity systems, and discoverability improvements across BitPangea’s growing institutional framework.</li>
 <li>Concluded the Foundation Period with BitPangea’s core institutional structure established and preserved.</li>
 </ul>
-</div>
-<div class="period-card">
+</div><div class="period-card">
 <h3>Preserved Foundation Record</h3>
 <p>
             The original day-by-day chronology of the Foundation Period has been preserved in its original form as a historical artifact.
@@ -555,7 +625,8 @@
 <p>
 <a class="record-link" href="/thechronicle/foundation-record/">View the Foundation Record</a>
 </p>
-</div>
+</div></div></details>
+
 </section>
 <section class="entry">
 <div class="date">June 15, 2026 – June 30, 2026</div>
@@ -564,7 +635,7 @@
 <p>
           The Cartographic Period transformed BitPangea from an imagined world into a constitutionally defined world. During this period, the Structural Domain reached completion, the first Relational principles emerged, and the constitutional architecture expanded through declarations, charters, preserved records, and institutional memory.
         </p>
-<div class="period-card">
+<details class="period-disclosure"><summary class="period-summary"><span class="period-summary-label">View Period Details</span><span aria-hidden="true" class="chronology-toggle"></span></summary><div class="period-body"><div class="period-card">
 <h3>Major Milestones</h3>
 <ul>
 <li>Adopted the completed Structural sequence:
@@ -592,8 +663,7 @@
 <li>Established a hidden record preserving the concept of digital lineage and the intellectual inheritance of the Digital World.</li>
 <li>Concluded the Cartographic Period with the world constitutionally established and prepared for the Relational Domain.</li>
 </ul>
-</div>
-<div class="period-card">
+</div><div class="period-card">
 <h3>Preserved Cartographic Record</h3>
 <p>
             The original day-by-day chronology of the Cartographic Period has been preserved in its original form as a historical artifact.
@@ -601,7 +671,8 @@
 <p>
 <a class="record-link" href="https://bitpangea.com/thechronicle/cartographic-record/">View the Cartographic Record</a>
 </p>
-</div>
+</div></div></details>
+
 </section>
 <section class="entry">
 <div class="date">July 1, 2026 – July 7, 2026</div>
@@ -610,7 +681,7 @@
 <p>
           The Relational Period completed the first constitutional grammar through which BitPangea describes how any two Parcels relate. Beginning with the constitutional transition preserved in Transmission 006, the period established <strong>Adjacency</strong>, <strong>Contiguity</strong>, <strong>Distance</strong>, and <strong>Direction</strong> as the four foundational relational primitives, completing the first-order relational language of the World.
         </p>
-<div class="period-card">
+<details class="period-disclosure"><summary class="period-summary"><span class="period-summary-label">View Period Details</span><span aria-hidden="true" class="chronology-toggle"></span></summary><div class="period-body"><div class="period-card">
 <h3>Major Milestones</h3>
 <ul>
 <li>Completed <strong>Transmission 006</strong>, establishing the constitutional transition from the Structural Domain to the Relational Domain.</li>
@@ -620,12 +691,12 @@
 <li>Adopted <strong>Codex RL-IV — The Direction</strong>.</li>
 <li>Completed the first constitutional arc of the Relational Domain, recognizing <strong>RL-I</strong> through <strong>RL-IV</strong> as a complete first-order relational grammar.</li>
 </ul>
-</div>
-<div class="period-card">
+</div><div class="period-card">
 <h3>Preserved Relational Record</h3>
 <p>The original day-by-day chronology of the Relational Period has been preserved in its original form as a historical artifact.</p>
 <p><a class="record-link" href="/thechronicle/relational-record/">View the Relational Record</a></p>
-</div>
+</div></div></details>
+
 </section>
 <section class="entry">
 <div class="date">July 8, 2026 – September 3, 2026</div>
@@ -637,7 +708,7 @@
 <p>
           By Day #99, the Domain remained open but no immediate constitutional necessity required another inquiry. That stopping condition helped reveal the next historical threshold: BitPangea could remain constitutionally rigorous while intentionally designing what the Constitution leaves open.
         </p>
-<details class="period-card chronology-disclosure"><summary class="chronology-summary"><span class="chronology-summary-copy"><span class="chronology-summary-date">July 8, 2026</span><span class="chronology-summary-title">The World Properties</span></span><span aria-hidden="true" class="chronology-toggle"></span></summary><div class="chronology-body">
+<details class="period-disclosure"><summary class="period-summary"><span class="period-summary-label">View Period Details</span><span aria-hidden="true" class="chronology-toggle"></span></summary><div class="period-body"><details class="period-card chronology-disclosure"><summary class="chronology-summary"><span class="chronology-summary-copy"><span class="chronology-summary-date">July 8, 2026</span><span class="chronology-summary-title">The World Properties</span></span><span aria-hidden="true" class="chronology-toggle"></span></summary><div class="chronology-body">
 <p>
     Following the completion of the <strong>Relational Domain</strong>, BitPangea underwent one of its most significant constitutional architectural reviews to date. Rather than continuing the Relational Domain with additional spatial concepts, independent constitutional analysis concluded that <strong>Adjacency</strong>, <strong>Contiguity</strong>, <strong>Distance</strong>, and <strong>Direction</strong> together form a complete first-order relational grammar describing how Parcels relate. This realization naturally revealed the beginning of an entirely new constitutional Domain: <strong>The World Properties Domain (WP)</strong>.
   </p>
@@ -658,8 +729,7 @@
 <p>
     The adoption of the World Properties Domain marks one of the most significant constitutional milestones of the Cartographic Period. Whereas the Structural Domain established <em>what exists</em>, and the Relational Domain established <em>how existing things relate</em>, the World Properties Domain begins answering a new constitutional question: <em>what is true about the World itself</em>. With the adoption of <strong>Codex WP-S-I — The Extent</strong>, BitPangea begins examining the properties possessed by the World, establishing a new constitutional foundation upon which future spatial, physical, topological, environmental, and other World Properties may be formally preserved.
   </p>
-</div></details>
-<details class="period-card chronology-disclosure"><summary class="chronology-summary"><span class="chronology-summary-copy"><span class="chronology-summary-date">July 9, 2026</span><span class="chronology-summary-title">The Lexicon and The Archive</span></span><span aria-hidden="true" class="chronology-toggle"></span></summary><div class="chronology-body">
+</div></details><details class="period-card chronology-disclosure"><summary class="chronology-summary"><span class="chronology-summary-copy"><span class="chronology-summary-date">July 9, 2026</span><span class="chronology-summary-title">The Lexicon and The Archive</span></span><span aria-hidden="true" class="chronology-toggle"></span></summary><div class="chronology-body">
 <p>
     As the World Properties Domain continued to emerge, attention shifted from creating new constitutional institutions to refining the institutions already established. During this review, <strong>The Lexicon</strong> underwent an important constitutional clarification. Rather than serving as a repository for proposed concepts or future possibilities, it was recognized that The Lexicon should preserve only the language that has been formally adopted and constitutionally approved within BitPangea. This realization reinforced its role as the authoritative vocabulary of the world rather than a planning document.
   </p>
@@ -679,8 +749,7 @@
 <p>
     These refinements further strengthened BitPangea's constitutional architecture by clearly distinguishing between <em>active constitutional institutions</em> and their <em>preserved historical forms</em>. The Lexicon now serves as the authoritative vocabulary of the world, documenting only what has become constitutionally known, while The Archive preserves the historical record of how that constitutional knowledge evolved over time.
   </p>
-</div></details>
-<details class="period-card chronology-disclosure"><summary class="chronology-summary"><span class="chronology-summary-copy"><span class="chronology-summary-date">July 10, 2026</span><span class="chronology-summary-title">The Region</span></span><span aria-hidden="true" class="chronology-toggle"></span></summary><div class="chronology-body">
+</div></details><details class="period-card chronology-disclosure"><summary class="chronology-summary"><span class="chronology-summary-copy"><span class="chronology-summary-date">July 10, 2026</span><span class="chronology-summary-title">The Region</span></span><span aria-hidden="true" class="chronology-toggle"></span></summary><div class="chronology-body">
 <p>
     The World Properties Domain continued with the adoption of <strong>Codex WP-S-II — The Region</strong>, establishing Region as the second formally recognized Spatial Property of BitPangea. Following the adoption of <strong>Extent</strong> as the spatial scope of the World, constitutional inquiry moved inward to examine how coherent large-scale portions may be recognized within that scope without implying ownership, jurisdiction, governance, settlement, or civilizational meaning.
   </p>
@@ -702,8 +771,7 @@
 <p>
     With the adoption of Region, the World Properties Domain now preserves two formally recognized Spatial Properties. <strong>Extent</strong> describes the spatial scope of the World, while <strong>Region</strong> reveals coherent large-scale form within that scope. Together, they begin the inward constitutional study of the properties possessed by the World itself while preserving future spatial inquiry for later discovery and adoption.
   </p>
-</div></details>
-<details class="period-card chronology-disclosure"><summary class="chronology-summary"><span class="chronology-summary-copy"><span class="chronology-summary-date">July 11, 2026</span><span class="chronology-summary-title">The Cluster and the Maturation of the World Properties Domain</span></span><span aria-hidden="true" class="chronology-toggle"></span></summary><div class="chronology-body">
+</div></details><details class="period-card chronology-disclosure"><summary class="chronology-summary"><span class="chronology-summary-copy"><span class="chronology-summary-date">July 11, 2026</span><span class="chronology-summary-title">The Cluster and the Maturation of the World Properties Domain</span></span><span aria-hidden="true" class="chronology-toggle"></span></summary><div class="chronology-body">
 <p>
     Constitutional inquiry continued with the adoption of <strong>Codex WP-S-III — The Cluster</strong>, recognizing Cluster as the third Spatial Property of the World. During extensive constitutional review involving <strong>OpenAI ChatGPT</strong>, <strong>Anthropic Claude</strong>, <strong>Google Gemini</strong>, and <strong>xAI Grok</strong>, the discussion expanded beyond the definition of Cluster itself and ultimately transformed the constitutional methodology governing the entire <strong>World Properties Domain</strong>.
   </p>
@@ -725,8 +793,7 @@
 <p>
     Although the day's work began with defining <strong>Cluster</strong>, its enduring constitutional contribution proved to be the maturation of the World Properties Domain itself. By recognizing that World Properties exist independently of constitutional discovery, BitPangea established a methodology capable of supporting future World Property Codices without requiring predetermined dependency chains. The Domain now preserves not only the properties of the World, but also the constitutional process through which those properties are progressively revealed.
   </p>
-</div></details>
-<details class="period-card chronology-disclosure"><summary class="chronology-summary"><span class="chronology-summary-copy"><span class="chronology-summary-date">July 12, 2026</span><span class="chronology-summary-title">The Domains and the Maturation of The Codex</span></span><span aria-hidden="true" class="chronology-toggle"></span></summary><div class="chronology-body">
+</div></details><details class="period-card chronology-disclosure"><summary class="chronology-summary"><span class="chronology-summary-copy"><span class="chronology-summary-date">July 12, 2026</span><span class="chronology-summary-title">The Domains and the Maturation of The Codex</span></span><span aria-hidden="true" class="chronology-toggle"></span></summary><div class="chronology-body">
 <p>
     Following the constitutional maturation of the <strong>World Properties Domain</strong>, BitPangea undertook a broader architectural review of <strong>The Codex</strong> itself. During extensive constitutional analysis involving <strong>OpenAI ChatGPT</strong>, <strong>Anthropic Claude</strong>, <strong>Google Gemini</strong>, and <strong>xAI Grok</strong>, inquiry revealed that the Structural, Relational, and World Properties Domains had evolved beyond simple organizational groupings into independent canonical institutions serving as the enduring homes of their respective fields of inquiry.
   </p>
@@ -751,8 +818,7 @@
 <p>
     Although no new World Property was constitutionally recognized during the day, the architectural significance proved substantial. BitPangea ceased to view <strong>The Codex</strong> as merely a collection of Codices and instead recognized it as a collection of Domains. Simultaneously, the World Properties Domain matured beyond a simple sequence of World Property Codices into a constitutional framework capable of organizing objective properties through recognized Categories while preserving the complete canonical history of every constitutional edition. Together, these discoveries established the enduring institutional architecture through which future constitutional inquiry may continue to unfold.
   </p>
-</div></details>
-<details class="period-card chronology-disclosure"><summary class="chronology-summary"><span class="chronology-summary-copy"><span class="chronology-summary-date">July 17, 2026</span><span class="chronology-summary-title">The Cursor</span></span><span aria-hidden="true" class="chronology-toggle"></span></summary><div class="chronology-body">
+</div></details><details class="period-card chronology-disclosure"><summary class="chronology-summary"><span class="chronology-summary-copy"><span class="chronology-summary-date">July 17, 2026</span><span class="chronology-summary-title">The Cursor</span></span><span aria-hidden="true" class="chronology-toggle"></span></summary><div class="chronology-body">
 <p>
     On Day #51, BitPangea returned to <strong>The Twelve Constellations of Digital Antiquity</strong> and completed the fourth preserved Constellation: <strong>The Cursor</strong>. Following <strong>The Mainframe</strong>, <strong>The Packet</strong>, and <strong>The Window</strong>, The Cursor emerged as the first Constellation devoted not to computation, communication, or visibility, but to movement through digital space itself.
   </p>
@@ -777,8 +843,7 @@
 <p>
     With the completion of The Cursor, the first four Constellations now preserve a continuous account of humanity’s earliest relationship with the Digital World. The Mainframe made computation possible. The Packet allowed information to travel. The Window made the Digital World visible. The Cursor made it navigable. Through this sequence, digital space ceased to be only a hidden system operating behind machines and became a place through which human intention could move, search, select, and discover.
   </p>
-</div></details>
-<details class="period-card chronology-disclosure"><summary class="chronology-summary"><span class="chronology-summary-copy"><span class="chronology-summary-date">July 18, 2026</span><span class="chronology-summary-title">Transmission 007 — The Presence</span></span><span aria-hidden="true" class="chronology-toggle"></span></summary><div class="chronology-body">
+</div></details><details class="period-card chronology-disclosure"><summary class="chronology-summary"><span class="chronology-summary-copy"><span class="chronology-summary-date">July 18, 2026</span><span class="chronology-summary-title">Transmission 007 — The Presence</span></span><span aria-hidden="true" class="chronology-toggle"></span></summary><div class="chronology-body">
 <p>
     On Day #52, BitPangea returned to <strong>The Transmissions</strong> and completed <strong>Transmission 007 — The Presence</strong>, opening the philosophical threshold of the <strong>World Properties Period</strong>. Rather than naming or prematurely recognizing a specific World Property, the Transmission introduced the deeper question now facing the World: not merely what the World is, nor how its parts relate, but <strong>what exists within it</strong>.
   </p>
@@ -805,8 +870,7 @@
 <p>
     Transmission 007 marks a quiet but important transition in the constitutional development of BitPangea. The World has already been established. Its elements have been distinguished. Their relationships have been revealed. The Presence now introduces the realization that the World may possess qualities, conditions, or phenomena not yet named. By refusing to answer the question prematurely, the Transmission preserves the discipline of constitutional discovery while opening the next field of inquiry. The World exists. Now begins the question of what exists within it.
   </p>
-</div></details>
-<details class="period-card chronology-disclosure"><summary class="chronology-summary"><span class="chronology-summary-copy"><span class="chronology-summary-date">August 1, 2026</span><span class="chronology-summary-title">The Public Repository Record</span></span><span aria-hidden="true" class="chronology-toggle"></span></summary><div class="chronology-body">
+</div></details><details class="period-card chronology-disclosure"><summary class="chronology-summary"><span class="chronology-summary-copy"><span class="chronology-summary-date">August 1, 2026</span><span class="chronology-summary-title">The Public Repository Record</span></span><span aria-hidden="true" class="chronology-toggle"></span></summary><div class="chronology-body">
 <p>
     On Day #66, BitPangea conducted a broad review of the public documentation preserved throughout its GitHub repository. The work began as a series of small institutional maintenance tasks: reviewing existing <strong>README.md</strong> files, updating outdated descriptions, and creating missing repository records beside public <strong>index.html</strong> pages. As the review progressed, it became clear that the repository documentation needed to reflect BitPangea’s current constitutional and institutional architecture rather than the much earlier exploratory structure established during May and June.
   </p>
@@ -843,8 +907,7 @@
 <p>
     The work completed on August 1 did not establish a new constitutional institution or adopt a new World Property. Instead, it strengthened the public record surrounding the institutions that already exist. BitPangea’s repository documentation now more accurately reflects the World as it has developed: not merely as an early concept built around scarcity, but as an expanding constitutional architecture of foundational works, Domains, institutions, records, and preserved experiences. The World had grown considerably since its first README files were written. Today, its public repository record began to catch up.
   </p>
-</div></details>
-<details class="period-card chronology-disclosure"><summary class="chronology-summary"><span class="chronology-summary-copy"><span class="chronology-summary-date">August 2, 2026</span><span class="chronology-summary-title">The Orange Thread</span></span><span aria-hidden="true" class="chronology-toggle"></span></summary><div class="chronology-body">
+</div></details><details class="period-card chronology-disclosure"><summary class="chronology-summary"><span class="chronology-summary-copy"><span class="chronology-summary-date">August 2, 2026</span><span class="chronology-summary-title">The Orange Thread</span></span><span aria-hidden="true" class="chronology-toggle"></span></summary><div class="chronology-body">
 <p>
     On Day #67, BitPangea established <strong>The Orange Thread</strong>, a new lineage of tributes acknowledging Bitcoin and selected Bitcoin-related technologies, principles, or structures that meaningfully enter the World. Unlike a comprehensive archive of Bitcoin terminology, The Orange Thread is governed by restraint. Bitcoin begins the Thread because its influence precedes BitPangea itself. Any future tribute may be created only after the related technology or principle has been genuinely implemented within the World.
   </p>
@@ -866,8 +929,7 @@
 <p>
     The Orange Thread does not establish a predetermined collection, schedule, or exhaustive vocabulary. It begins with a single tribute and may remain there indefinitely unless BitPangea later adopts another Bitcoin-related technology or principle in a manner significant enough to become part of the World’s lived architecture. The Thread will therefore grow only when BitPangea itself gives it reason to continue.
   </p>
-</div></details>
-<details class="period-card chronology-disclosure"><summary class="chronology-summary"><span class="chronology-summary-copy"><span class="chronology-summary-date">August 3, 2026</span><span class="chronology-summary-title">The World Properties Research Landscape</span></span><span aria-hidden="true" class="chronology-toggle"></span></summary><div class="chronology-body">
+</div></details><details class="period-card chronology-disclosure"><summary class="chronology-summary"><span class="chronology-summary-copy"><span class="chronology-summary-date">August 3, 2026</span><span class="chronology-summary-title">The World Properties Research Landscape</span></span><span aria-hidden="true" class="chronology-toggle"></span></summary><div class="chronology-body">
 <p>
     On Day #68, BitPangea confronted the true scale of the <strong>World Properties Domain</strong>. What initially appeared to be a single continuation of the Codex sequence revealed itself as a much broader ontological landscape containing many possible families of intrinsic World Properties. The central realization was that this Domain cannot be responsibly developed through a rigid progression in which one Category or Property must be completed before another may be investigated.
   </p>
@@ -899,8 +961,7 @@
 <li>Selected <strong>The Surface</strong> as the first recommended formal inquiry, without presuming that it must become the next Codex or even a Codex at all.</li>
 <li>Established that the calendar must follow discovery and that no predetermined August Claiming schedule should override the World’s unfinished constitutional inquiry.</li>
 </ul>
-</div></details>
-<details class="period-card chronology-disclosure"><summary class="chronology-summary"><span class="chronology-summary-copy"><span class="chronology-summary-date">August 3–4, 2026</span><span class="chronology-summary-title">The Frontier and The Surface</span></span><span aria-hidden="true" class="chronology-toggle"></span></summary><div class="chronology-body">
+</div></details><details class="period-card chronology-disclosure"><summary class="chronology-summary"><span class="chronology-summary-copy"><span class="chronology-summary-date">August 3–4, 2026</span><span class="chronology-summary-title">The Frontier and The Surface</span></span><span aria-hidden="true" class="chronology-toggle"></span></summary><div class="chronology-body">
 <p>
     Across Days #68 and #69, BitPangea continued the constitutional inquiry opened through the <strong>World Properties Research Landscape</strong>. The work first clarified the proper placement of <strong>The Frontier</strong>, a concept preserved through earlier Transmissions, Truths, and public language, before turning to the first formal recovered-concept inquiry: <strong>The Surface</strong>.
   </p>
@@ -956,8 +1017,7 @@
 <p>
     No new World Property or Category was adopted today. The significance of Day #68 was methodological and constitutional. BitPangea recognized that the World Properties Domain is not a list to complete, but an ontology to discover. Its breadth does not require immediate reduction, nor does its complexity justify random adoption. The new Research Landscape provides a disciplined way to preserve possibilities, investigate recovered concepts, and allow Categories to emerge without closing the Domain before the World has revealed what it contains.
   </p>
-</div></details>
-<details class="period-card chronology-disclosure"><summary class="chronology-summary"><span class="chronology-summary-copy"><span class="chronology-summary-date">August 5, 2026</span><span class="chronology-summary-title">The Limit</span></span><span aria-hidden="true" class="chronology-toggle"></span></summary><div class="chronology-body">
+</div></details><details class="period-card chronology-disclosure"><summary class="chronology-summary"><span class="chronology-summary-copy"><span class="chronology-summary-date">August 5, 2026</span><span class="chronology-summary-title">The Limit</span></span><span aria-hidden="true" class="chronology-toggle"></span></summary><div class="chronology-body">
 <p>
     On Day #70, BitPangea completed the second formal recovered-concept inquiry of the <strong>World Properties Period</strong>. Following the review of <strong>The Surface</strong>, constitutional attention turned to <strong>The Limit</strong>, a concept originally proposed as <strong>ST-VI</strong> and provisionally reassigned to the World Properties Domain when the Structural Domain concluded.
   </p>
@@ -1022,8 +1082,7 @@
 <p>
     The result preserved finitude without inventing a perimeter. The World remains finite. Its Extent remains complete. But no outermost Parcel, terminal Coordinate, external realm, or cartographic edge has been constitutionally recognized.
   </p>
-</div></details>
-<details class="period-card chronology-disclosure"><summary class="chronology-summary"><span class="chronology-summary-copy"><span class="chronology-summary-date">August 6, 2026</span><span class="chronology-summary-title">The Terrain</span></span><span aria-hidden="true" class="chronology-toggle"></span></summary><div class="chronology-body">
+</div></details><details class="period-card chronology-disclosure"><summary class="chronology-summary"><span class="chronology-summary-copy"><span class="chronology-summary-date">August 6, 2026</span><span class="chronology-summary-title">The Terrain</span></span><span aria-hidden="true" class="chronology-toggle"></span></summary><div class="chronology-body">
 <p>
     Day #70 therefore produced another act of constitutional restraint. The Limit was not discarded as meaningless, nor adopted because it once appeared necessary. It was placed according to what the World presently demonstrates: as an implication of finite Extent, with its geographic interpretation deferred until an actual constitutional need appears.
   </p>
@@ -1076,8 +1135,7 @@
 <li>Confirmed that no <strong>Terrain Properties</strong>, <strong>Surficial Properties</strong>, <strong>Compositional Properties</strong>, or <strong>Intrinsic Character Properties</strong> Category will be created at this time.</li>
 <li>Established that Terrain may be reconsidered only if future inquiry independently establishes precise constituent Properties, intrinsic Parcel differences, or a stable composite requiring formal recognition.</li>
 <li>Determined, through the same comparative synthesis, that Grok’s complete redundancy finding was too strong because Terrain may still preserve the useful descriptive distinction between where a portion exists and what combined character is expressed there.</li><li>Created and preserved the private record <strong>Constitutional Review — The Terrain</strong>, documenting the complete inquiry, the <strong>OpenAI ChatGPT</strong>, <strong>Anthropic Claude</strong>, and <strong>xAI Grok</strong> reviews, constitutional synthesis, final classification, risks, and reopening conditions.</li>
-</div></details>
-<details class="period-card chronology-disclosure"><summary class="chronology-summary"><span class="chronology-summary-copy"><span class="chronology-summary-date">August 7, 2026</span><span class="chronology-summary-title">The Locality and the Next Inquiry</span></span><span aria-hidden="true" class="chronology-toggle"></span></summary><div class="chronology-body">
+</div></details><details class="period-card chronology-disclosure"><summary class="chronology-summary"><span class="chronology-summary-copy"><span class="chronology-summary-date">August 7, 2026</span><span class="chronology-summary-title">The Locality and the Next Inquiry</span></span><span aria-hidden="true" class="chronology-toggle"></span></summary><div class="chronology-body">
 <p>
     Day #72 completed the constitutional inquiry into <strong>The Locality</strong> and then marked a methodological transition within the <strong>World Properties Period</strong>. Locality was not adopted as a standalone Property: when tied to a referent it proved relational, when stripped of reference it collapsed substantially into <strong>The Cluster</strong>, and when used to describe limited applicability it remained only a contextual modifier. With the immediate recovered-concept queue now exhausted, BitPangea conducted its first <strong>World Properties Meta-Inquiry</strong> to determine not the next Property, but the next question.
   </p>
@@ -1161,8 +1219,7 @@
 <li>Created and preserved the private record <strong>World Properties Meta-Inquiry 001 — Selecting the Next Constitutional Inquiry</strong>.</li>
 <li>Closed Day #72 with no new Codex and no new Category, but with the unresolved World Properties landscape reorganized into a disciplined research path.</li>
 <li>Preserved the final methodological distinction: <strong>Density is not yet the next Property. Density is the next question.</strong></li>
-</div></details>
-<details class="period-card chronology-disclosure">
+</div></details><details class="period-card chronology-disclosure">
 <summary class="chronology-summary">
 <span class="chronology-summary-copy">
 <span class="chronology-summary-date">August 8, 2026</span>
@@ -1651,8 +1708,7 @@
 </li>
 </ul>
 </div>
-</details>
-<details class="period-card chronology-disclosure">
+</details><details class="period-card chronology-disclosure">
 <summary class="chronology-summary">
 <span class="chronology-summary-copy">
 <span class="chronology-summary-date">August 10, 2026</span>
@@ -2337,8 +2393,7 @@
 </li>
 </ul>
 </div>
-</details>
-<details class="period-card chronology-disclosure">
+</details><details class="period-card chronology-disclosure">
 <summary class="chronology-summary">
 <span class="chronology-summary-copy">
 <span class="chronology-summary-date">September 3, 2026 · Day #99</span>
@@ -2377,8 +2432,7 @@
       Together, the two reviews reinforced a mature architectural principle: <strong>present completion and constitutional openness are compatible</strong>. BitPangea can preserve a complete first-order grammar without pretending that no future discovery is possible.
     </p>
 </div>
-</details>
-<div class="period-card">
+</details><div class="period-card">
 <h3>World Properties Period Standing</h3>
 <p>
     The World Properties Period concludes its active constitutional arc without closing the Domain itself.
@@ -2389,7 +2443,24 @@
 <p>
     The constitutional work remains available whenever future design reveals a genuine gap. The next Period begins not because constitutional inquiry failed, but because constitutional restraint finally made room for deliberate creation.
   </p>
-</div>
+</div></div></details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </section>
 <section class="entry">
 <div class="date">September 4, 2026 · PRESENT</div>
@@ -2519,7 +2590,7 @@
 </p>
 <p><strong>The Creator began to draw.</strong></p>
 </div>
-</details><details class="period-card chronology-disclosure" open="">
+</details><details class="period-card chronology-disclosure">
 <summary class="chronology-summary">
 <span class="chronology-summary-copy">
 <span class="chronology-summary-date">September 5, 2026 · Day #101</span>
