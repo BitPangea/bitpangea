@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Canonical Result Equivalence | Foundational Survey Fabric Conformance | BitPangea</title>
+
+<link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/favicon.svg" rel="shortcut icon"/>
+<link href="/assets/css/bitpangea-framework.css" rel="stylesheet"/>
+<script defer src="/assets/js/bitpangea-framework.js"></script>
+
+<meta name="description" content="Canonical Result Equivalence — Conformance Section 03 for the BitPangea Foundational Survey Fabric."/>
+<meta name="theme-color" content="#00c8d7"/>
+<meta name="robots" content="index,follow"/>
+<link rel="canonical" href="https://bitpangea.com/theatlas/foundational-survey-fabric/conformance/03-canonical-result-equivalence/"/>
+
+<meta property="og:title" content="Canonical Result Equivalence | BitPangea"/>
+<meta property="og:description" content="Conformance Section 03 for the Foundational Survey Fabric."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://bitpangea.com/theatlas/foundational-survey-fabric/conformance/03-canonical-result-equivalence/"/>
+<meta property="og:site_name" content="BitPangea"/>
+
+<style>
+
+
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;min-height:100%;background:#02050a;color:#fff;font-family:Arial,Helvetica,sans-serif}
+body{position:relative;line-height:1.75;overflow-x:hidden;background:#02050a}
+body::before{content:"";position:fixed;inset:0;background-image:linear-gradient(rgba(2,5,10,.78),rgba(2,5,10,.90)),url("/images/bitpangea.jpg");background-size:cover;background-position:center;background-repeat:no-repeat;z-index:-2;pointer-events:none}
+body::after{content:"";position:fixed;inset:0;background:radial-gradient(circle at 75% 12%,rgba(0,200,215,.10),transparent 34%),radial-gradient(circle at 18% 18%,rgba(212,169,56,.10),transparent 32%),linear-gradient(90deg,rgba(0,0,0,.60),rgba(0,0,0,.25),rgba(0,0,0,.64));z-index:-1;pointer-events:none}
+.page{width:100%;padding:150px 28px 90px}
+.container{max-width:1040px;margin:0 auto;padding:54px 58px 64px;background:rgba(0,0,0,.48);border:1px solid rgba(212,169,56,.16);box-shadow:0 0 60px rgba(0,0,0,.55);backdrop-filter:blur(4px)}
+.eyebrow{color:#00c8d7;letter-spacing:4px;text-transform:uppercase;font-size:12px;margin-bottom:20px}
+.arch-header{display:flex;align-items:center;gap:28px;margin-bottom:20px}
+.arch-mark{width:230px;height:230px;flex-shrink:0;opacity:.96}
+.arch-title{display:flex;flex-direction:column}
+h1{color:#fff;font-size:clamp(32px,4.5vw,52px);line-height:1.02;letter-spacing:5px;text-transform:uppercase;margin-bottom:14px;text-shadow:0 0 22px rgba(0,0,0,.9)}
+.subtitle{color:#d4a938;font-size:18px;letter-spacing:3px;text-transform:uppercase;margin-bottom:18px}
+.divider{width:64px;height:2px;background:#d4a938;margin:34px 0 42px;box-shadow:0 0 14px rgba(212,169,56,.65)}
+.arch-statement{font-size:28px;font-weight:500;color:#fff;margin-bottom:28px;text-shadow:0 0 18px rgba(212,169,56,.25)}
+p{margin-bottom:22px;color:#fff;font-size:17px;text-shadow:0 0 9px rgba(0,0,0,.9)}
+h2{margin-top:54px;margin-bottom:20px;color:#fff;font-size:28px;letter-spacing:4px;text-transform:uppercase;text-shadow:0 0 14px rgba(0,0,0,.9)}
+blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;background:rgba(0,0,0,.52);color:#fff;font-size:24px;line-height:1.45;letter-spacing:1px;box-shadow:0 0 28px rgba(0,0,0,.45)}
+.quote-label{display:block;color:#00c8d7;font-size:11px;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px}
+.req-intro{margin:34px 0 42px;padding:28px 30px;background:rgba(0,0,0,.34);border:1px solid rgba(212,169,56,.18)}
+.req-intro p:last-child{margin-bottom:0}
+.spec-card{margin-top:28px;padding:30px 32px 28px;background:rgba(0,0,0,.34);border:1px solid rgba(212,169,56,.18);box-shadow:0 0 22px rgba(0,0,0,.24)}
+.spec-card h2{margin:0 0 18px;font-size:24px;letter-spacing:3px}
+.spec-label{color:#00c8d7;font-size:11px;letter-spacing:3px;text-transform:uppercase;margin-bottom:10px}
+.status-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:28px}
+.status-card{padding:24px;border:1px solid rgba(0,200,215,.18);background:rgba(0,0,0,.30)}
+.status-card h3{color:#d4a938;font-size:13px;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}
+.status-card p{margin:0;font-size:15px;color:rgba(255,255,255,.84)}
+.finding-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.finding-links a,.finding-links a:visited{color:#d4a938;text-decoration:none;border:1px solid rgba(212,169,56,.24);padding:8px 10px;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;background:rgba(0,0,0,.28)}
+.finding-links a:hover{color:#fff}
+.section-nav{display:flex;flex-wrap:wrap;gap:12px;margin:34px 0 8px}
+.section-nav a,.section-nav a:visited{color:#d4a938;text-decoration:none;text-transform:uppercase;letter-spacing:2px;font-size:12px;padding:11px 14px;border:1px solid rgba(212,169,56,.24);background:rgba(0,0,0,.28)}
+.section-nav a:hover{color:#fff;text-shadow:0 0 12px rgba(212,169,56,.55)}
+.note{margin-top:58px;padding:18px 24px;border:1px solid rgba(212,169,56,.38);color:#d4a938;letter-spacing:2px;text-transform:uppercase;font-size:12px;display:inline-block;background:rgba(0,0,0,.35)}
+@media(max-width:768px){
+  .page{padding:185px 16px 60px}.container{padding:36px 24px 46px}
+  .arch-header{flex-direction:column;align-items:flex-start;gap:24px}
+  .arch-mark{width:110px;height:110px}h1{letter-spacing:3px}
+  .subtitle{font-size:16px}.arch-statement{font-size:19px}p{font-size:16px}
+  blockquote{font-size:20px;padding:24px 26px}.status-grid{grid-template-columns:1fr}
+  .spec-card{padding:26px 22px 24px}.spec-card h2{font-size:21px}
+}
+
+
+</style>
+</head>
+
+<body data-bp-page="theatlas">
+<div id="bp-header"></div>
+
+<main class="page">
+<article class="container">
+
+<div class="eyebrow">The Atlas · The Architecture · Foundational Survey Fabric · Conformance</div>
+
+<div class="arch-header">
+  <img src="/thearchitecture/architecture-globe.png" alt="The Architecture Emblem" class="arch-mark"/>
+  <div class="arch-title">
+    <h1>Canonical Result<br/>Equivalence</h1>
+    <div class="subtitle">Conformance Section 03 · Independent Result Reproducibility</div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<p class="arch-statement">
+  The conformance requirement that independent implementations return identical authoritative results for identical canonical inputs.
+</p>
+
+<div class="req-intro">
+<p>
+  <strong>Canonical Result Equivalence</strong> establishes the central reproducibility test of Foundational Survey Fabric conformance. If two independent implementations receive the same canonical input under the same governing Specification, the authoritative result must be the same.
+</p>
+<p>
+  Internal architecture may differ radically. Programming language, storage model, optimization strategy, caching, indexing, execution order, and implementation technology may all vary. None of those differences may alter canonical spatial truth.
+</p>
+</div>
+
+<blockquote>
+  <span class="quote-label">Conformance Principle</span>
+  Many implementations. One spatial truth.
+</blockquote>
+
+<section class="spec-card">
+  <div class="spec-label">03.1 · Equivalence Requirement</div>
+  <h2>Identical Canonical Inputs, Identical Authoritative Results</h2>
+  <p>
+    Any two conforming implementations shall produce the same authoritative canonical result when given identical valid canonical inputs under the same applicable Specification.
+  </p>
+  <p>
+    A disagreement in authoritative result indicates a conformance failure, a specification ambiguity, an implementation defect, or an unresolved incompatibility that must be identified rather than silently tolerated.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">03.2 · Scope of Equivalence</div>
+  <h2>Equivalence Applies Wherever Canonical Truth Is Produced</h2>
+  <p>
+    Canonical Result Equivalence shall apply to every mandatory operation that produces authoritative Survey truth, including interpretation, normalization, validation, measurement, geometric predicates, composition, comparison, serialization, and other canonical outputs defined by the Specification.
+  </p>
+  <p>
+    Optional features may add capability, but where they claim canonical behavior they remain subject to the same equivalence requirement.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">03.3 · Implementation Independence</div>
+  <h2>Internal Method Does Not Define the Answer</h2>
+  <p>
+    A conforming implementation may use any internal algorithm, programming language, storage engine, indexing strategy, cache, or optimization that preserves the authoritative result.
+  </p>
+  <p>
+    Internal method is implementation freedom. Canonical output is not.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">03.4 · Exact Equivalence</div>
+  <h2>Canonical Equality Is Exact</h2>
+  <p>
+    Authoritative result equivalence shall be determined by the exact canonical rules of the Specification rather than tolerance bands, approximate numeric agreement, implementation-specific rounding, or “close enough” comparison.
+  </p>
+  <p>
+    Where a result is canonical, equivalent means mathematically equivalent under the governing Survey rules.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">03.5 · Canonicalization Before Comparison</div>
+  <h2>Compare Meaning in Canonical Form</h2>
+  <p>
+    Where multiple valid noncanonical expressions can represent the same canonical spatial meaning, conforming implementations shall first normalize those expressions according to the governing canonicalization rules.
+  </p>
+  <p>
+    Result comparison shall distinguish harmless representational variation from actual disagreement in canonical meaning.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">03.6 · Serialization Equivalence</div>
+  <h2>Authoritative Interchange Must Agree</h2>
+  <p>
+    When a canonical result is serialized for authoritative interchange, conforming implementations shall produce or normalize to the same canonical serialized representation required by the Specification.
+  </p>
+  <p>
+    Different internal or presentation formats are permissible only where they map deterministically to the same authoritative interchange truth.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">03.7 · Validation Equivalence</div>
+  <h2>The Same Input Must Receive the Same Canonical Judgment</h2>
+  <p>
+    Independent implementations shall reach the same canonical validity judgment for the same input under the same Specification.
+  </p>
+  <p>
+    An input shall not be canonical in one conforming implementation and invalid, ambiguous, or differently interpreted in another.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">03.8 · Error Equivalence</div>
+  <h2>Invalid Inputs Must Fail Consistently</h2>
+  <p>
+    Where the Specification defines an input or operation as invalid, conforming implementations shall reject it consistently according to the applicable failure rules.
+  </p>
+  <p>
+    Implementations may expose different human-readable diagnostics, but they shall not invent canonical meaning for an input that another conforming implementation correctly rejects.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">03.9 · Hidden-State Prohibition</div>
+  <h2>Equivalent Results Must Not Depend on Hidden Context</h2>
+  <p>
+    Cache state, database sequence, randomization, user identity, ownership state, session context, wall-clock time, or other mutable implementation conditions shall not cause canonical results to differ.
+  </p>
+  <p>
+    Hidden state may improve performance. It may not participate in foundational spatial meaning.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">03.10 · Reference Vector Proof</div>
+  <h2>Equivalence Must Be Testable</h2>
+  <p>
+    Canonical Result Equivalence shall ultimately be demonstrated through shared reference vectors containing defined canonical inputs and their required authoritative results.
+  </p>
+  <p>
+    A conforming implementation shall reproduce the required results exactly for every Mandatory Core vector applicable to its conformance claim.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">03.11 · Cross-Implementation Testing</div>
+  <h2>Independent Implementations Should Be Compared Directly</h2>
+  <p>
+    Conformance testing should permit outputs from independent implementations to be compared directly after canonical normalization.
+  </p>
+  <p>
+    Cross-implementation disagreement is valuable evidence: it should expose ambiguity or defect rather than be concealed by implementation-specific tolerance.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">03.12 · Disagreement Handling</div>
+  <h2>Conflict Must Be Resolved at the Correct Layer</h2>
+  <p>
+    If independent implementations produce different authoritative results from the same canonical inputs, the disagreement shall be treated as a conformance or specification issue.
+  </p>
+  <p>
+    The correct response is to determine whether the Specification is ambiguous, one or more implementations are defective, or incompatible versions are being applied. Consensus or implementation preference shall not simply choose among conflicting mathematical answers.
+  </p>
+</section>
+
+<div class="status-grid">
+  <div class="status-card">
+    <h3>Established by Requirements</h3>
+    <p>
+      Finding #10 requires independent conforming implementations to derive identical canonical results from identical inputs. Supporting requirements establish exact mathematics, deterministic canonicalization, canonical serialization, exact equivalence, exact comparison, finite representation, hidden-state independence, and deterministic termination.
+    </p>
+  </div>
+  <div class="status-card">
+    <h3>Still Open in Conformance</h3>
+    <p>
+      The exact comparison harness, reference-vector corpus, canonical output-diff rules, error equivalence taxonomy, cross-version comparison rules, tolerance for noncanonical diagnostics, and formal procedure for resolving implementation disagreement remain to be defined after the Specification is complete.
+    </p>
+  </div>
+</div>
+
+<section class="spec-card">
+  <div class="spec-label">Requirements Basis</div>
+  <h2>Primary Referenced Findings</h2>
+  <p>
+    This Conformance section is derived primarily from Requirements Finding #10 and is reinforced by Findings #24, #30, #57–#60, #63–#66, #74, and #78–#83.
+  </p>
+  <div class="finding-links">
+    <a href="/theatlas/foundational-survey-fabric/requirements/02-addressability-meaning-refinement/#finding-10">#10</a>
+    <a href="/theatlas/foundational-survey-fabric/requirements/04-ontology-structure/#finding-24">#24 · #30</a>
+    <a href="/theatlas/foundational-survey-fabric/requirements/06-geometry-topology-measurement-operations/#finding-57">#57–#60</a>
+    <a href="/theatlas/foundational-survey-fabric/requirements/06-geometry-topology-measurement-operations/#finding-63">#63–#66</a>
+    <a href="/theatlas/foundational-survey-fabric/requirements/06-geometry-topology-measurement-operations/#finding-74">#74</a>
+    <a href="/theatlas/foundational-survey-fabric/requirements/07-knowability-computability-conformance/#finding-78">#78–#83</a>
+  </div>
+</section>
+
+<blockquote>
+  <span class="quote-label">Architectural Boundary</span>
+  Implementations may differ in how they calculate. They may not differ in canonical truth.
+</blockquote>
+
+<div class="section-nav">
+  <a href="/theatlas/foundational-survey-fabric/conformance/02-mandatory-core/">← Conformance 02</a>
+  <a href="/theatlas/foundational-survey-fabric/requirements/">Requirements Framework</a>
+  <a href="/theatlas/foundational-survey-fabric/specification/">Specification</a>
+  <a href="/theatlas/foundational-survey-fabric/conformance/">Conformance Index</a>
+</div>
+
+<div class="note">Foundational Survey Fabric · Conformance 03 · Canonical Result Equivalence</div>
+
+</article>
+</main>
+
+<div id="bp-footer"></div>
+</body>
+</html>
