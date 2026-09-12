@@ -23,13 +23,6 @@
 
 <style>
 
-
-
-
-
-
-
-
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{width:100%;min-height:100%;background:#02050a;color:#fff;font-family:Arial,Helvetica,sans-serif}
 body{position:relative;line-height:1.75;overflow-x:hidden;background:#02050a}
@@ -279,7 +272,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 <a class="spec-index-card" href="/theatlas/foundational-survey-fabric/conformance/04-validation-behavior/">
   <div class="spec-index-number">Conformance 04</div>
   <h2>Validation Behavior</h2>
-  <p>Defines how implementations distinguish canonical input, valid noncanonical representation, malformed expression, out-of-domain reference, impossible refinement, ambiguity, and other invalid states.</p>
+  <p>Defines how implementations distinguish canonical input, valid noncanonical representation, malformed expression, out-of-domain reference, impossible precision expression, ambiguity, and other invalid states.</p>
   <span class="spec-index-range">Validation · Normalization · Rejection · Classification →</span>
 </a>
 <a class="spec-index-card" href="/theatlas/foundational-survey-fabric/conformance/05-exactness-requirements/">
@@ -291,13 +284,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 <a class="spec-index-card" href="/theatlas/foundational-survey-fabric/conformance/06-serialization-compatibility/">
   <div class="spec-index-number">Conformance 06</div>
   <h2>Serialization Compatibility</h2>
-  <p>Defines how independent implementations prove compatibility with canonical Survey interchange, parsing, normalization, serialization, and precision-preserving exchange.</p>
+  <p>Defines how independent implementations prove compatibility with the governing normative Survey interchange rules, including parsing, normalization, supported normative encodings, deterministic semantic equivalence, and precision-preserving exchange.</p>
   <span class="spec-index-range">Serialization · Interchange · Parsing · Round-Trip →</span>
 </a>
 <a class="spec-index-card" href="/theatlas/foundational-survey-fabric/conformance/07-version-compatibility/">
   <div class="spec-index-number">Conformance 07</div>
   <h2>Version Compatibility</h2>
-  <p>Defines how implementations preserve established canonical spatial meaning across compatible specification evolution and versioned representations.</p>
+  <p>Defines how implementations preserve established canonical spatial meaning across compatible Specification evolution and versioned normative representations or encodings.</p>
   <span class="spec-index-range">Versioning · Compatibility · Continuity · Evolution →</span>
 </a>
 <a class="spec-index-card" href="/theatlas/foundational-survey-fabric/conformance/08-independent-implementation/">
@@ -315,23 +308,28 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 <a class="spec-index-card" href="/theatlas/foundational-survey-fabric/conformance/10-conformance-declaration/">
   <div class="spec-index-number">Conformance 10</div>
   <h2>Conformance Report / Declaration</h2>
-  <p>Defines the formal evidence record and resulting declaration by which software proves that it correctly implements the governing Specification.</p>
+  <p>Defines the formal evidence record and resulting compatibility declaration by which software demonstrates that it correctly implements the governing Specification, without itself establishing canonical authority over that Specification.</p>
   <span class="spec-index-range">Report · Evidence · Declaration · Proof →</span>
 </a>
 </div>
 
 <div class="specification-map">
 <p>
-  Together, these ten sections define the intended proof architecture for Foundational Survey Fabric compatibility: what must be supported, what is mandatory, how authoritative results are compared, how inputs are validated, how exactness is preserved, how serialized and versioned data remain compatible, how independence is demonstrated, what constitutes failure, and how the resulting evidence is formally reported and declared.
+  Together, these ten sections define the intended proof architecture for Foundational Survey Fabric compatibility: what must be supported, what is mandatory, how authoritative results are compared, how inputs are validated, how exactness is preserved, how normative interchange and versioned encodings remain compatible, how independence is demonstrated, what constitutes failure, and how the resulting evidence is formally reported and declared.
 </p>
 <p>
-  The complete Conformance framework remains subordinate to the governing Requirements and Specification. It may classify, test, verify, and report implementation behavior, but it may not create alternate spatial truth or weaken the canonical rules established beneath it.
+  The complete Conformance framework remains subordinate to the governing Requirements and Specification. It may classify, test, verify, and report implementation behavior, but it may not create alternate spatial truth, weaken the canonical rules established beneath it, or establish canonical authority merely by declaring an implementation conforming.
 </p>
 </div>
 
 <blockquote>
   <span class="quote-label">Architectural Sequence</span>
   Requirements establishes what must be satisfied. Specification defines the mathematics that satisfies it. Conformance defines how an implementation proves it follows the Specification.
+</blockquote>
+
+<blockquote>
+  <span class="quote-label">Conformance Standing</span>
+  Serious conformance testing begins only when the Specification is sufficiently complete to produce deterministic canonical results. Reference Vectors and other proof artifacts may define required categories now, but exact canonical test corpora must follow the formal mathematics rather than precede it.
 </blockquote>
 
 <div class="section-nav">
