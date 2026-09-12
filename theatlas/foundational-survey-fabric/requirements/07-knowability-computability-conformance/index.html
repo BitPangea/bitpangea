@@ -23,10 +23,6 @@
 
 <style>
 
-
-
-
-
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{width:100%;min-height:100%;background:#02050a;color:#fff;font-family:Arial,Helvetica,sans-serif}
 body{position:relative;line-height:1.75;overflow-x:hidden;background:#02050a}
@@ -84,8 +80,6 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   .finding-principle{font-size:18px}
 }
 
-
-
 .finding-list{
   margin:18px 0 20px 22px;
 }
@@ -98,8 +92,6 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 @media(max-width:768px){
   .finding-list li{font-size:16px}
 }
-
-
 
 </style>
 </head>
@@ -128,10 +120,10 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 
 <div class="req-intro">
 <p>
-  This section establishes the final requirements gate for the Foundational Survey Fabric. Canonical spatial references, extents, and geometric expressions must be finitely representable, exactly computable, free from hidden-state dependence, and governed by deterministic rules that terminate and remain suitable for independent verification.
+  This section establishes the requirements governing finite knowability, exact computability, independent verification, and staged readiness for the Foundational Survey Fabric. Canonical spatial references, extents, and geometric expressions must be finitely representable, exactly computable, free from hidden-state dependence, and governed by deterministic rules that terminate.
 </p>
 <p>
-  These findings also define the path from requirements into formal specification: a minimal canonical primitive set, controlled complexity, exact rather than vague canonical states, a mandatory conformance core, and a readiness gate that a candidate mathematical design must survive before it can advance into prototype testing.
+  These findings also define the staged path from requirements into formal mathematical design, prototype and conformance testing, and eventual canonical adoption: a minimal canonical primitive set, controlled complexity, exact rather than vague canonical states, a mandatory conformance core, and distinct readiness gates appropriate to each stage.
 </p>
 </div>
 
@@ -185,15 +177,23 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 </section>
 <section class="finding" id="finding-85">
   <div class="finding-number">Requirement Finding #85</div>
-  <h2>Readiness Gate for Mathematical Design and Prototype</h2>
-  <p>A candidate Foundational Survey Fabric design should advance from requirements into formal mathematical design and prototype testing only if it can satisfy the complete accepted Survey Fabric requirements without internal contradiction, preserve all immutable BitPangea spatial truths, remain exactly and independently implementable, support compatible future refinement and extension, and allow higher spatial and civilizational systems to develop without requiring mutation of the foundational reference architecture. Readiness should be demonstrated through conformance analysis, edge-case testing, independent implementation, and deliberate attempts to expose ambiguity or hidden dependency.</p>
-  <div class="finding-principle"><span class="quote-label">Governing Principle</span>Do not choose the architecture because it looks elegant. Choose it only after it survives the requirements.</div>
+  <h2>Readiness Gates for Mathematical Design, Prototype, and Canonical Adoption</h2>
+  <p>The Foundational Survey Fabric should use staged readiness gates rather than require proof of a completed design before formal design work can begin.</p>
+  <p>A candidate may advance from requirements into formal mathematical design when it can be mapped credibly against the complete accepted requirements, contains no known contradiction with immutable BitPangea spatial truths, and appears capable of exact independent implementation without prematurely assigning higher-layer responsibilities to the Survey Fabric.</p>
+  <p>A candidate should advance from mathematical design into serious prototype and conformance testing only when its rules are sufficiently complete to produce deterministic canonical results.</p>
+  <p>A candidate should not advance to canonical adoption until it has survived requirements traceability, conformance analysis, edge-case and pathological testing, independent implementation, and deliberate attempts to expose ambiguity, hidden dependency, nontermination, accidental approximation, or higher-layer leakage.</p>
+  <div class="finding-principle"><span class="quote-label">Governing Principle</span>Design when the requirements justify exploration. Adopt only after the architecture survives the requirements.</div>
 </section>
+
+<blockquote>
+  <span class="quote-label">Readiness Sequence</span>
+  Requirements justify design. Deterministic rules justify prototype and conformance testing. Adversarial proof and independent implementation justify canonical adoption.
+</blockquote>
 
 <div class="req-status">
   <h3>Section Standing</h3>
   <p>
-    Findings #78–#85 establish the finite knowability, computability, and conformance requirements of the Foundational Survey Fabric: every canonical truth must be finitely representable and deterministically computable; the primitive set should remain minimal; hidden state must not affect authoritative results; required operations must terminate; canonical complexity must remain controlled and unambiguous; vague or unresolved states are not canonical truth; every conforming implementation must satisfy a mandatory core; and no candidate mathematical design should advance until it survives the complete requirements framework through conformance analysis, independent implementation, edge-case testing, and deliberate attempts to expose ambiguity or hidden dependency.
+    Findings #78–#85 establish the finite knowability, computability, and conformance requirements of the Foundational Survey Fabric: every canonical truth must be finitely representable and deterministically computable; the primitive set should remain minimal; hidden state must not affect authoritative results; required operations must terminate; canonical complexity must remain controlled and unambiguous; vague or unresolved states are not canonical truth; every conforming implementation must satisfy a mandatory core; and progression from mathematical design to prototype testing to canonical adoption must occur through distinct readiness gates with increasing proof obligations.
   </p>
 </div>
 
