@@ -23,15 +23,6 @@
 
 <style>
 
-
-
-
-
-
-
-
-
-
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{width:100%;min-height:100%;background:#02050a;color:#fff;font-family:Arial,Helvetica,sans-serif}
 body{position:relative;line-height:1.75;overflow-x:hidden;background:#02050a}
@@ -107,15 +98,15 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 <div class="divider"></div>
 
 <p class="arch-statement">
-  The canonical test set for proving that independent implementations interpret, refine, normalize, and resolve Survey addresses identically.
+  The canonical test set for proving that independent implementations interpret, extend precision, normalize, and resolve Survey addresses identically without presuming one precision mechanism.
 </p>
 
 <div class="req-intro">
 <p>
-  <strong>Addressing Vectors</strong> define the reference cases through which implementations will prove consistent interpretation of basic addresses, refined addresses, canonicalization behavior, valid noncanonical forms, aliases where permitted, and expected canonical resolution.
+  <strong>Addressing Vectors</strong> define the reference cases through which implementations will prove consistent interpretation of basic addresses, higher-precision addresses, canonicalization behavior, valid alternate forms, aliases where permitted, and expected canonical resolution.
 </p>
 <p>
-  The final vector corpus does not yet exist because the formal addressing grammar and refinement mathematics remain unresolved within the Specification. This page therefore establishes the required vector categories and proof obligations without inventing canonical addresses prematurely.
+  The final vector corpus does not yet exist because the formal addressing grammar and exact precision mechanism remain unresolved within the Specification. This page therefore establishes the required vector categories and proof obligations without inventing canonical addresses or choosing among possible precision mechanisms prematurely.
 </p>
 </div>
 
@@ -136,13 +127,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">01.2 · Refined Address Vectors</div>
+  <div class="spec-label">01.2 · Higher-Precision Address Vectors</div>
   <h2>Increasing Precision Without Rewriting Place</h2>
   <p>
-    The vector set shall include canonical references at multiple supported refinement depths to prove that increased precision extends the addressing system without renumbering or reinterpreting previously established spatial meaning.
+    The vector set shall include canonical references expressed at multiple supported precision levels or states to prove that increased precision extends canonical reference without renumbering, relocating, invalidating, or reinterpreting previously established spatial meaning.
   </p>
   <p>
-    Refined vectors shall demonstrate the exact relationship between coarser and finer canonical references once the refinement mathematics are formally selected.
+    These vectors shall demonstrate the exact relationship between lower-precision and higher-precision canonical references once the Specification formally selects the precision mechanism, whether by refinement, exact coordinate extension, symbolic subdivision, exact fractional representation, or another exact method.
   </p>
 </section>
 
@@ -153,7 +144,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
     The vector set shall include valid expressions that differ in representation but resolve to the same canonical spatial meaning where the Specification permits such equivalence.
   </p>
   <p>
-    Every conforming implementation shall normalize each applicable case to the same authoritative canonical result.
+    Every conforming implementation shall resolve each applicable case to the same authoritative canonical meaning and, where the Specification requires one unique canonical representation, to that same required form.
   </p>
 </section>
 
@@ -161,10 +152,10 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">01.4 · Valid Noncanonical Representation Vectors</div>
   <h2>Recognize Valid Form Without Creating Alternate Truth</h2>
   <p>
-    Where the Specification permits noncanonical but valid address forms, reference vectors shall demonstrate how those forms are classified and converted to the required canonical representation.
+    Where the Specification permits valid alternate or noncanonical address forms, Reference Vectors shall demonstrate how those forms are classified and deterministically resolved to canonical meaning, including conversion to a unique canonical representation where the Specification requires one.
   </p>
   <p>
-    A valid noncanonical form may be accepted for interchange or convenience, but it shall not establish an independent spatial truth.
+    A valid alternate form may be accepted for interchange or convenience, but it shall not establish an independent spatial truth or acquire normative authority merely by being accepted.
   </p>
 </section>
 
@@ -183,7 +174,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">01.6 · Absolute Reference Vectors</div>
   <h2>Canonical Addressing Must Stand Without Higher-Layer Objects</h2>
   <p>
-    Reference vectors shall demonstrate that canonical Survey addresses resolve independently of Parcels, Regions, landmarks, ownership, or other higher-layer entities.
+    Reference Vectors shall demonstrate that canonical Survey addresses resolve independently of Parcels, Regions, landmarks, ownership, or other entities and semantics belonging to higher Architecture domains.
   </p>
   <p>
     The expected result shall be derivable solely from the canonical address and governing Survey mathematics.
@@ -194,7 +185,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">01.7 · Address and Measurement Agreement</div>
   <h2>Reference and Pang Mathematics Must Resolve to One Place</h2>
   <p>
-    Once the formal addressing and Pang-based coordinate relationship is selected, vectors shall demonstrate that canonical address resolution and canonical measurement agree exactly.
+    Once the formal relationship between canonical addressing and Pang-based measurement is specified, vectors shall demonstrate that canonical address resolution and canonical measurement agree exactly.
   </p>
   <p>
     No conforming implementation may resolve an address to one place while its canonical Pang interpretation resolves to another.
@@ -216,7 +207,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">01.9 · Representation Independence</div>
   <h2>Display Form Must Not Change Canonical Resolution</h2>
   <p>
-    Where multiple textual, machine-readable, or presentation forms represent one canonical address, vectors shall demonstrate that those forms resolve to identical canonical meaning.
+    Where multiple textual, machine-readable, normative, or presentation forms represent one canonical address, vectors shall demonstrate deterministic semantic equivalence and identical canonical meaning, with representation identity required only where the Specification mandates one unique form.
   </p>
   <p>
     Presentation may vary. Place must not.
@@ -238,13 +229,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="status-card">
     <h3>Established by Requirements and Specification Scope</h3>
     <p>
-      Canonical addresses must be deterministic, permanent in meaning, self-resolving from the governing specification, absolute within one global frame, capable of extensible refinement, independently reproducible, and deterministically canonicalizable where equivalent representations exist.
+      Canonical addresses must be deterministic, permanent in meaning, self-resolving from the governing Specification, absolute within one global frame, capable of extensible exact precision, independently reproducible, and deterministically equivalent or canonicalizable where multiple valid representations exist.
     </p>
   </div>
   <div class="status-card">
     <h3>Canonical Vector Corpus Not Yet Possessed</h3>
     <p>
-      Actual address strings, refinement examples, alias forms, canonicalization outputs, encoded test fixtures, and expected machine-readable results cannot be defined until the formal address grammar, refinement mathematics, and canonical serialization are selected and tested.
+      Actual address strings, higher-precision examples, alias forms, canonicalization or semantic-equivalence outputs, encoded test fixtures, and expected machine-readable results cannot be defined until the formal address grammar, precision mathematics, and normative serialization/interchange rules are specified and tested.
     </p>
   </div>
 </div>
@@ -266,7 +257,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 
 <blockquote>
   <span class="quote-label">Reference Vector Boundary</span>
-  Addressing Vectors do not choose the address system. They prove that the chosen address system resolves identically everywhere it is implemented.
+  Addressing Vectors do not choose the address system or its precision mechanism. They prove that the chosen system resolves one canonical spatial meaning everywhere it is implemented.
 </blockquote>
 
 <div class="section-nav">
