@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Conformance Report / Declaration | Foundational Survey Fabric Conformance | BitPangea</title>
+
+<link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/favicon.svg" rel="shortcut icon"/>
+<link href="/assets/css/bitpangea-framework.css" rel="stylesheet"/>
+<script defer src="/assets/js/bitpangea-framework.js"></script>
+
+<meta name="description" content="Conformance Report / Declaration — Conformance Section 10 for the BitPangea Foundational Survey Fabric."/>
+<meta name="theme-color" content="#00c8d7"/>
+<meta name="robots" content="index,follow"/>
+<link rel="canonical" href="https://bitpangea.com/theatlas/foundational-survey-fabric/conformance/10-conformance-declaration/"/>
+
+<meta property="og:title" content="Conformance Report / Declaration | BitPangea"/>
+<meta property="og:description" content="Conformance Section 10 for the Foundational Survey Fabric."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://bitpangea.com/theatlas/foundational-survey-fabric/conformance/10-conformance-declaration/"/>
+<meta property="og:site_name" content="BitPangea"/>
+
+<style>
+
+
+
+
+
+
+
+
+
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;min-height:100%;background:#02050a;color:#fff;font-family:Arial,Helvetica,sans-serif}
+body{position:relative;line-height:1.75;overflow-x:hidden;background:#02050a}
+body::before{content:"";position:fixed;inset:0;background-image:linear-gradient(rgba(2,5,10,.78),rgba(2,5,10,.90)),url("/images/bitpangea.jpg");background-size:cover;background-position:center;background-repeat:no-repeat;z-index:-2;pointer-events:none}
+body::after{content:"";position:fixed;inset:0;background:radial-gradient(circle at 75% 12%,rgba(0,200,215,.10),transparent 34%),radial-gradient(circle at 18% 18%,rgba(212,169,56,.10),transparent 32%),linear-gradient(90deg,rgba(0,0,0,.60),rgba(0,0,0,.25),rgba(0,0,0,.64));z-index:-1;pointer-events:none}
+.page{width:100%;padding:150px 28px 90px}
+.container{max-width:1040px;margin:0 auto;padding:54px 58px 64px;background:rgba(0,0,0,.48);border:1px solid rgba(212,169,56,.16);box-shadow:0 0 60px rgba(0,0,0,.55);backdrop-filter:blur(4px)}
+.eyebrow{color:#00c8d7;letter-spacing:4px;text-transform:uppercase;font-size:12px;margin-bottom:20px}
+.arch-header{display:flex;align-items:center;gap:28px;margin-bottom:20px}
+.arch-mark{width:230px;height:230px;flex-shrink:0;opacity:.96}
+.arch-title{display:flex;flex-direction:column}
+h1{color:#fff;font-size:clamp(32px,4.5vw,52px);line-height:1.02;letter-spacing:5px;text-transform:uppercase;margin-bottom:14px;text-shadow:0 0 22px rgba(0,0,0,.9)}
+.subtitle{color:#d4a938;font-size:18px;letter-spacing:3px;text-transform:uppercase;margin-bottom:18px}
+.divider{width:64px;height:2px;background:#d4a938;margin:34px 0 42px;box-shadow:0 0 14px rgba(212,169,56,.65)}
+.arch-statement{font-size:28px;font-weight:500;color:#fff;margin-bottom:28px;text-shadow:0 0 18px rgba(212,169,56,.25)}
+p{margin-bottom:22px;color:#fff;font-size:17px;text-shadow:0 0 9px rgba(0,0,0,.9)}
+h2{margin-top:54px;margin-bottom:20px;color:#fff;font-size:28px;letter-spacing:4px;text-transform:uppercase;text-shadow:0 0 14px rgba(0,0,0,.9)}
+blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;background:rgba(0,0,0,.52);color:#fff;font-size:24px;line-height:1.45;letter-spacing:1px;box-shadow:0 0 28px rgba(0,0,0,.45)}
+.quote-label{display:block;color:#00c8d7;font-size:11px;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px}
+.req-intro{margin:34px 0 42px;padding:28px 30px;background:rgba(0,0,0,.34);border:1px solid rgba(212,169,56,.18)}
+.req-intro p:last-child{margin-bottom:0}
+.spec-card{margin-top:28px;padding:30px 32px 28px;background:rgba(0,0,0,.34);border:1px solid rgba(212,169,56,.18);box-shadow:0 0 22px rgba(0,0,0,.24)}
+.spec-card h2{margin:0 0 18px;font-size:24px;letter-spacing:3px}
+.spec-label{color:#00c8d7;font-size:11px;letter-spacing:3px;text-transform:uppercase;margin-bottom:10px}
+.status-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:28px}
+.status-card{padding:24px;border:1px solid rgba(0,200,215,.18);background:rgba(0,0,0,.30)}
+.status-card h3{color:#d4a938;font-size:13px;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}
+.status-card p{margin:0;font-size:15px;color:rgba(255,255,255,.84)}
+.finding-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.finding-links a,.finding-links a:visited{color:#d4a938;text-decoration:none;border:1px solid rgba(212,169,56,.24);padding:8px 10px;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;background:rgba(0,0,0,.28)}
+.finding-links a:hover{color:#fff}
+.section-nav{display:flex;flex-wrap:wrap;gap:12px;margin:34px 0 8px}
+.section-nav a,.section-nav a:visited{color:#d4a938;text-decoration:none;text-transform:uppercase;letter-spacing:2px;font-size:12px;padding:11px 14px;border:1px solid rgba(212,169,56,.24);background:rgba(0,0,0,.28)}
+.section-nav a:hover{color:#fff;text-shadow:0 0 12px rgba(212,169,56,.55)}
+.note{margin-top:58px;padding:18px 24px;border:1px solid rgba(212,169,56,.38);color:#d4a938;letter-spacing:2px;text-transform:uppercase;font-size:12px;display:inline-block;background:rgba(0,0,0,.35)}
+@media(max-width:768px){
+  .page{padding:185px 16px 60px}.container{padding:36px 24px 46px}
+  .arch-header{flex-direction:column;align-items:flex-start;gap:24px}
+  .arch-mark{width:110px;height:110px}h1{letter-spacing:3px}
+  .subtitle{font-size:16px}.arch-statement{font-size:19px}p{font-size:16px}
+  blockquote{font-size:20px;padding:24px 26px}.status-grid{grid-template-columns:1fr}
+  .spec-card{padding:26px 22px 24px}.spec-card h2{font-size:21px}
+}
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+
+<body data-bp-page="theatlas">
+<div id="bp-header"></div>
+
+<main class="page">
+<article class="container">
+
+<div class="eyebrow">The Atlas · The Architecture · Foundational Survey Fabric · Conformance</div>
+
+<div class="arch-header">
+  <img src="/thearchitecture/architecture-globe.png" alt="The Architecture Emblem" class="arch-mark"/>
+  <div class="arch-title">
+    <h1>Conformance Report<br/>&amp; Declaration</h1>
+    <div class="subtitle">Conformance Section 10 · Formal Compatibility Evidence</div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<p class="arch-statement">
+  The formal record by which an implementation demonstrates, limits, and declares its compatibility with the Foundational Survey Fabric Specification.
+</p>
+
+<div class="req-intro">
+<p>
+  <strong>Conformance Report / Declaration</strong> is the final evidentiary layer of Foundational Survey Fabric conformance. It records what was tested, against which governing specification, under which conformance classes, with what results, and therefore what compatibility claim the implementation is entitled to make.
+</p>
+<p>
+  A declaration is not a substitute for proof. It is the structured statement produced from conformance evidence. The report preserves that evidence; the declaration summarizes the resulting compatibility claim.
+</p>
+</div>
+
+<blockquote>
+  <span class="quote-label">Conformance Question</span>
+  How does software prove that it correctly implements the Specification?
+</blockquote>
+
+<section class="spec-card">
+  <div class="spec-label">10.1 · Purpose of the Conformance Report</div>
+  <h2>Preserve the Evidence Behind the Claim</h2>
+  <p>
+    A conformance report shall preserve the evidence necessary to evaluate whether an implementation satisfies the applicable Foundational Survey Fabric Conformance requirements.
+  </p>
+  <p>
+    The report shall identify the tested implementation, governing specification identity, applicable version, declared conformance classes, required reference vectors, test outcomes, failures, unsupported capabilities, and any other evidence required by the governing Conformance framework.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">10.2 · Purpose of the Declaration</div>
+  <h2>State Only What the Evidence Supports</h2>
+  <p>
+    A conformance declaration shall state the compatibility claim established by the completed report.
+  </p>
+  <p>
+    It shall not claim broader compatibility than the tested evidence supports and shall clearly identify the specification version, conformance scope, and any limitations applicable to the declaration.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">10.3 · Implementation Identity</div>
+  <h2>The Tested Software Must Be Identifiable</h2>
+  <p>
+    The report shall identify the implementation with sufficient precision to distinguish the tested software from materially different builds, configurations, forks, or releases.
+  </p>
+  <p>
+    The exact identity mechanism remains open, but it should permit later verification of what implementation was actually evaluated.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">10.4 · Governing Specification Identity</div>
+  <h2>The Standard Under Test Must Be Explicit</h2>
+  <p>
+    Every report shall identify the governing Foundational Survey Fabric Specification and applicable version or compatibility identity against which conformance was evaluated.
+  </p>
+  <p>
+    A declaration without a defined governing standard shall not constitute a complete compatibility claim.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">10.5 · Conformance Class Scope</div>
+  <h2>The Claim Must Define Its Boundaries</h2>
+  <p>
+    The report shall identify each conformance class claimed by the implementation, including the Mandatory Core and any optional capability classes that have been successfully demonstrated.
+  </p>
+  <p>
+    Capabilities that were not tested, are unsupported, remain experimental, or fall outside the claimed scope shall be identified separately rather than implied as conforming.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">10.6 · Test and Reference Vector Record</div>
+  <h2>Canonical Expectations Must Be Traceable</h2>
+  <p>
+    The report shall record the required conformance tests and Reference Vectors applicable to the declared scope, together with their expected authoritative outcomes and the implementation’s observed results.
+  </p>
+  <p>
+    Evidence shall be sufficient to determine whether the implementation reproduced the canonical behavior required by the Specification.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">10.7 · Result Classification</div>
+  <h2>Pass, Fail, Unsupported, and Indeterminate Must Be Distinguished</h2>
+  <p>
+    Each applicable conformance test shall ultimately receive a deterministic disposition defined by the Conformance framework.
+  </p>
+  <p>
+    Successful behavior, implementation failure, unsupported optional capability, specification ambiguity, and other non-equivalent outcomes shall not be collapsed into one generic status.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">10.8 · Failure Disclosure</div>
+  <h2>Failures Must Remain Visible</h2>
+  <p>
+    A conformance report shall preserve all material failures, mismatches, unresolved ambiguities, or unsupported mandatory capabilities discovered during testing.
+  </p>
+  <p>
+    A declaration shall not omit known evidence that invalidates or materially limits the compatibility claim.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">10.9 · Independent Reproducibility</div>
+  <h2>The Evidence Must Be Verifiable by Others</h2>
+  <p>
+    The report should preserve enough information for an independent evaluator to reproduce the applicable tests and confirm the claimed result from the same governing materials.
+  </p>
+  <p>
+    Where independent implementation or evaluator evidence is required, that evidence shall be referenced explicitly.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">10.10 · Declaration Integrity</div>
+  <h2>The Claim Must Not Exceed the Proof</h2>
+  <p>
+    A conformance declaration shall be invalid if it claims compatibility beyond the tested specification version, demonstrated conformance classes, or successfully completed Mandatory Core requirements.
+  </p>
+  <p>
+    The declaration shall accurately represent the boundaries of the proven compatibility.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">10.11 · Report and Declaration Versioning</div>
+  <h2>Evidence Must Remain Bound to What Was Tested</h2>
+  <p>
+    Conformance reports and declarations shall carry sufficient identity and version information to determine which implementation build, specification version, test corpus, and conformance rules produced the recorded result.
+  </p>
+  <p>
+    A later implementation release or specification revision shall not automatically inherit an earlier declaration without whatever reevaluation the governing Conformance framework requires.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">10.12 · Provenance and Authenticity</div>
+  <h2>The Record May Be Verified Without Becoming Spatial Truth</h2>
+  <p>
+    Conformance reports and declarations may use signatures, hashes, publication records, provenance systems, or other verification mechanisms to establish authenticity and integrity.
+  </p>
+  <p>
+    Those mechanisms authenticate the conformance record; they do not define canonical spatial meaning.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">10.13 · Machine-Readable Declaration</div>
+  <h2>Conformance Should Be Interoperably Expressible</h2>
+  <p>
+    The completed Conformance framework should support a deterministic machine-readable representation of the declaration so that software, registries, validators, and future infrastructure can evaluate compatibility claims consistently.
+  </p>
+  <p>
+    The exact declaration schema and serialization remain unresolved until the Conformance model is finalized.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">10.14 · Human-Readable Declaration</div>
+  <h2>The Claim Must Also Be Understandable</h2>
+  <p>
+    Conformance should also be expressible in a concise human-readable form that identifies what implementation was tested, against what specification, for which conformance classes, and with what overall result.
+  </p>
+  <p>
+    Human-readable summaries shall remain faithful to the underlying machine-verifiable evidence.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">10.15 · Reassessment Boundary</div>
+  <h2>Material Change May Require New Proof</h2>
+  <p>
+    Material changes to implementation behavior, governing specification version, serialization rules, conformance classes, or Mandatory Core requirements may require renewed conformance evaluation.
+  </p>
+  <p>
+    The exact reassessment triggers remain to be defined, but a declaration shall not be treated as timeless evidence for software or rules that materially differ from what was tested.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">10.16 · Final Conformance Standing</div>
+  <h2>Proof Produces the Claim</h2>
+  <p>
+    An implementation may declare Foundational Survey Fabric compatibility only after satisfying the applicable Mandatory Core, all requirements of each claimed conformance class, the governing validation and exactness rules, serialization and version compatibility, independent implementation obligations, and applicable failure conditions.
+  </p>
+  <p>
+    The declaration is therefore the outcome of the Conformance framework—not an assertion that precedes it.
+  </p>
+</section>
+
+<div class="status-grid">
+  <div class="status-card">
+    <h3>Established by Requirements</h3>
+    <p>
+      The requirements establish independent reproducibility, canonical result equivalence, exactness, deterministic validation, canonical interchange, specification identity and versioning, a mandatory conformance core, and readiness evidence through conformance analysis, reference testing, independent implementation, edge cases, and deliberate attempts to expose ambiguity or hidden dependency.
+    </p>
+  </div>
+  <div class="status-card">
+    <h3>Still Open in Conformance</h3>
+    <p>
+      The exact report schema, declaration schema, machine-readable format, evaluator identity requirements, evidence-retention rules, certification authority if any, signing or provenance mechanism, test-run identifiers, reassessment triggers, publication process, and formal status vocabulary remain unresolved until the complete Conformance framework and Specification are finalized.
+    </p>
+  </div>
+</div>
+
+<section class="spec-card">
+  <div class="spec-label">Requirements Basis</div>
+  <h2>Primary Referenced Findings</h2>
+  <p>
+    This Conformance section is derived especially from Requirements Findings #10, #16–#17, #57–#60, #63–#64, #78–#85, with Finding #84 establishing the Mandatory Core and Finding #85 requiring conformance analysis and independent implementation before architectural readiness is demonstrated.
+  </p>
+  <div class="finding-links">
+    <a href="/theatlas/foundational-survey-fabric/requirements/02-addressability-meaning-refinement/#finding-10">#10</a>
+    <a href="/theatlas/foundational-survey-fabric/requirements/03-authority-consensus-evolution/#finding-16">#16–#17</a>
+    <a href="/theatlas/foundational-survey-fabric/requirements/06-geometry-topology-measurement-operations/#finding-57">#57–#60</a>
+    <a href="/theatlas/foundational-survey-fabric/requirements/06-geometry-topology-measurement-operations/#finding-63">#63–#64</a>
+    <a href="/theatlas/foundational-survey-fabric/requirements/07-knowability-computability-conformance/#finding-78">#78–#85</a>
+  </div>
+</section>
+
+<blockquote>
+  <span class="quote-label">Architectural Boundary</span>
+  Conformance is demonstrated by evidence. Declaration records the result of that evidence.
+</blockquote>
+
+<div class="section-nav">
+  <a href="/theatlas/foundational-survey-fabric/conformance/09-failure-conditions/">← Conformance 09</a>
+  <a href="/theatlas/foundational-survey-fabric/requirements/">Requirements Framework</a>
+  <a href="/theatlas/foundational-survey-fabric/specification/">Specification</a>
+  <a href="/theatlas/foundational-survey-fabric/conformance/">Conformance Index</a>
+</div>
+
+<div class="note">Foundational Survey Fabric · Conformance 10 · Conformance Report / Declaration</div>
+
+</article>
+</main>
+
+<div id="bp-footer"></div>
+</body>
+</html>
