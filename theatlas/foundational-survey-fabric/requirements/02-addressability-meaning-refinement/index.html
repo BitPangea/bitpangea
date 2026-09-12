@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Addressability, Canonical Meaning, and Refinement | Foundational Survey Fabric | BitPangea</title>
+
+<link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/favicon.svg" rel="shortcut icon"/>
+<link href="/assets/css/bitpangea-framework.css" rel="stylesheet"/>
+<script defer src="/assets/js/bitpangea-framework.js"></script>
+
+<meta name="description" content="Addressability, Canonical Meaning, and Refinement — Requirements Findings #7–#15 for the BitPangea Foundational Survey Fabric."/>
+<meta name="theme-color" content="#00c8d7"/>
+<meta name="robots" content="index,follow"/>
+<link rel="canonical" href="https://bitpangea.com/theatlas/foundational-survey-fabric/requirements/02-addressability-meaning-refinement/"/>
+
+<meta property="og:title" content="Addressability, Canonical Meaning, and Refinement | BitPangea"/>
+<meta property="og:description" content="Requirements Findings #7–#15 for the Foundational Survey Fabric."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://bitpangea.com/theatlas/foundational-survey-fabric/requirements/02-addressability-meaning-refinement/"/>
+<meta property="og:site_name" content="BitPangea"/>
+
+<style>
+
+
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;min-height:100%;background:#02050a;color:#fff;font-family:Arial,Helvetica,sans-serif}
+body{position:relative;line-height:1.75;overflow-x:hidden;background:#02050a}
+body::before{content:"";position:fixed;inset:0;background-image:linear-gradient(rgba(2,5,10,.78),rgba(2,5,10,.90)),url("/images/bitpangea.jpg");background-size:cover;background-position:center;background-repeat:no-repeat;z-index:-2;pointer-events:none}
+body::after{content:"";position:fixed;inset:0;background:radial-gradient(circle at 75% 12%,rgba(0,200,215,.10),transparent 34%),radial-gradient(circle at 18% 18%,rgba(212,169,56,.10),transparent 32%),linear-gradient(90deg,rgba(0,0,0,.60),rgba(0,0,0,.25),rgba(0,0,0,.64));z-index:-1;pointer-events:none}
+.page{width:100%;padding:150px 28px 90px}
+.container{max-width:1040px;margin:0 auto;padding:54px 58px 64px;background:rgba(0,0,0,.48);border:1px solid rgba(212,169,56,.16);box-shadow:0 0 60px rgba(0,0,0,.55);backdrop-filter:blur(4px)}
+.eyebrow{color:#00c8d7;letter-spacing:4px;text-transform:uppercase;font-size:12px;margin-bottom:20px}
+.arch-header{display:flex;align-items:center;gap:28px;margin-bottom:20px}
+.arch-mark{width:230px;height:230px;flex-shrink:0;opacity:.96}
+.arch-title{display:flex;flex-direction:column}
+h1{color:#fff;font-size:clamp(38px,6vw,66px);line-height:1.06;letter-spacing:5px;text-transform:uppercase;margin-bottom:14px;text-shadow:0 0 22px rgba(0,0,0,.9)}
+.subtitle{color:#d4a938;font-size:18px;letter-spacing:3px;text-transform:uppercase;margin-bottom:18px}
+.divider{width:64px;height:2px;background:#d4a938;margin:34px 0 42px;box-shadow:0 0 14px rgba(212,169,56,.65)}
+.arch-statement{font-size:28px;font-weight:500;color:#fff;margin-bottom:28px;text-shadow:0 0 18px rgba(212,169,56,.25)}
+p{margin-bottom:22px;color:#fff;font-size:17px;text-shadow:0 0 9px rgba(0,0,0,.9)}
+h2{margin-top:54px;margin-bottom:20px;color:#fff;font-size:28px;letter-spacing:4px;text-transform:uppercase;text-shadow:0 0 14px rgba(0,0,0,.9)}
+.arch-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:34px 0 10px}
+.arch-card{border:1px solid rgba(212,169,56,.22);background:rgba(0,0,0,.30);padding:22px;min-height:145px}
+.arch-card h3{color:#d4a938;font-size:13px;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px}
+.arch-card p{font-size:15px;margin-bottom:0}
+blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;background:rgba(0,0,0,.52);color:#fff;font-size:24px;line-height:1.45;letter-spacing:1px;box-shadow:0 0 28px rgba(0,0,0,.45)}
+.quote-label{display:block;color:#00c8d7;font-size:11px;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px}
+.return-link{display:inline-block;margin-top:14px;color:#d4a938;text-decoration:none;text-transform:uppercase;letter-spacing:2px;font-size:12px}
+.return-link:hover{color:#fff;text-shadow:0 0 12px rgba(212,169,56,.5)}
+.note{margin-top:58px;padding:18px 24px;border:1px solid rgba(212,169,56,.38);color:#d4a938;letter-spacing:2px;text-transform:uppercase;font-size:12px;display:inline-block;background:rgba(0,0,0,.35)}
+@media(max-width:900px){.arch-grid{grid-template-columns:1fr}}
+@media(max-width:768px){.page{padding:185px 16px 60px}.container{padding:36px 24px 46px}.arch-header{flex-direction:column;align-items:flex-start;gap:24px}.arch-mark{width:110px;height:110px}h1{letter-spacing:3px}h2{font-size:23px;letter-spacing:3px}.subtitle{font-size:16px}.arch-statement{font-size:19px}p{font-size:16px}blockquote{font-size:20px;padding:24px 26px}}
+
+
+.req-intro {
+  margin: 34px 0 42px;
+  padding: 28px 30px;
+  background: rgba(0,0,0,.34);
+  border: 1px solid rgba(212,169,56,.18);
+}
+.req-intro p:last-child { margin-bottom: 0; }
+
+.finding {
+  margin-top: 28px;
+  padding: 30px 32px 28px;
+  background: rgba(0,0,0,.34);
+  border: 1px solid rgba(212,169,56,.18);
+  box-shadow: 0 0 22px rgba(0,0,0,.24);
+}
+.finding-number {
+  color: #00c8d7;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.finding h2 {
+  margin: 0 0 18px;
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+.finding p {
+  color: rgba(255,255,255,.90);
+}
+.finding-principle {
+  margin: 24px 0 0;
+  padding: 22px 26px;
+  border-left: 3px solid #d4a938;
+  background: rgba(0,0,0,.48);
+  font-size: 20px;
+  line-height: 1.45;
+}
+.finding-principle .quote-label {
+  margin-bottom: 10px;
+}
+.section-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 34px 0 8px;
+}
+.section-nav a,
+.section-nav a:visited {
+  color: #d4a938;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  padding: 11px 14px;
+  border: 1px solid rgba(212,169,56,.24);
+  background: rgba(0,0,0,.28);
+}
+.section-nav a:hover {
+  color: #fff;
+  text-shadow: 0 0 12px rgba(212,169,56,.55);
+}
+.req-status {
+  margin-top: 36px;
+  padding: 26px 28px;
+  border: 1px solid rgba(0,200,215,.18);
+  background: rgba(0,0,0,.30);
+}
+.req-status h3 {
+  color: #d4a938;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.req-status p {
+  margin: 0;
+  font-size: 15px;
+  color: rgba(255,255,255,.82);
+}
+@media(max-width:768px){
+  .finding { padding: 26px 22px 24px; }
+  .finding h2 { font-size: 21px; }
+  .finding-principle { font-size: 18px; }
+}
+
+
+</style>
+</head>
+
+<body data-bp-page="theatlas">
+<div id="bp-header"></div>
+
+<main class="page">
+<article class="container">
+
+<div class="eyebrow">The Atlas · The Architecture · Foundational Survey Fabric · Requirements</div>
+
+<div class="arch-header">
+  <img src="/thearchitecture/architecture-globe.png" alt="The Architecture Emblem" class="arch-mark"/>
+  <div class="arch-title">
+    <h1>Addressability,<br/>Canonical Meaning<br/>&amp; Refinement</h1>
+    <div class="subtitle">Requirements Framework · Findings #7–#15</div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<p class="arch-statement">
+  The rules by which BitPangea names place, preserves canonical spatial meaning, and becomes more precise without rewriting what already exists.
+</p>
+
+<div class="req-intro">
+<p>
+  This section establishes the requirements for universal spatial addressability, deterministic canonical meaning, extensible refinement, and implementation-independent interpretation across the Foundational Survey Fabric.
+</p>
+<p>
+  It also defines the separation between canonical reference and higher-layer entities, ensuring that the Survey Fabric can describe where space is without absorbing what occupies that space or forcing higher systems to share its internal structure.
+</p>
+</div>
+
+<blockquote>
+  <span class="quote-label">Atlas Working Principle</span>
+  Presentation may change. Place must not.
+</blockquote>
+
+
+<section class="finding" id="finding-7">
+  <div class="finding-number">Requirement Finding #7</div>
+  <h2>Universal Addressability Within the Survey Domain</h2>
+  <p>Every valid location within the canonical BitPangea Survey Domain should be mathematically addressable, whether or not any stored object, Parcel, infrastructure element, or other spatial entity presently exists there. Addressability must not require materialization; the address space may be complete while stored records remain sparse.</p>
+  <div class="finding-principle"><span class="quote-label">Governing Principle</span>If a place can exist within the Survey Domain, BitPangea should be able to name where it is.</div>
+</section>
+<section class="finding" id="finding-8">
+  <div class="finding-number">Requirement Finding #8</div>
+  <h2>Deterministic and Permanent Address Meaning</h2>
+  <p>Canonical Survey Fabric addressing should be deterministic and permanent in meaning. The same valid location, interpreted under the canonical specification, should always yield the same canonical spatial reference, and the same canonical address should always resolve to the same spatial meaning. Display labels, aliases, encodings, and user-facing representations may evolve, but they must never redefine the canonical address beneath them.</p>
+  <div class="finding-principle"><span class="quote-label">Governing Principle</span>Presentation may change. Place must not.</div>
+</section>
+<section class="finding" id="finding-9">
+  <div class="finding-number">Requirement Finding #9</div>
+  <h2>Precision by Extension</h2>
+  <p>The Foundational Survey Fabric should support increasing spatial precision through refinement that extends the existing reference system rather than replacing it. Finer future resolution must not renumber, relocate, or reinterpret previously established canonical addresses or foundational spatial truth. Higher layers that reference the Survey Fabric—including the Parcel Cadastre—must remain able to preserve their established identities and spatial relationships regardless of later refinement depth.</p>
+  <div class="finding-principle"><span class="quote-label">Governing Principle</span>Precision by extension, not migration.</div>
+</section>
+<section class="finding" id="finding-10">
+  <div class="finding-number">Requirement Finding #10</div>
+  <h2>Independent Implementations, Identical Results</h2>
+  <p>The Foundational Survey Fabric should be specified so that independent conforming implementations derive the same canonical spatial results from the same inputs. Implementation technology may vary, but canonical address meaning, position, refinement behavior, subdivision interpretation, and other authoritative Survey Fabric operations must be exact and implementation-independent. Conformance tests and reference vectors should provide an objective means of proving equivalence.</p>
+  <div class="finding-principle"><span class="quote-label">Governing Principle</span>Many implementations. One spatial truth.</div>
+</section>
+<section class="finding" id="finding-11">
+  <div class="finding-number">Requirement Finding #11</div>
+  <h2>The Survey Fabric Knows Space, Not the Things in Space</h2>
+  <p>The Foundational Survey Fabric should not identify, classify, or describe the entities that occupy BitPangea space. Its role is limited to providing the permanent mathematical reference system through which spatial position can be referenced. Descriptions of an entity’s location, footprint, boundary, path, or spatial extent should be established by higher layers using canonical Survey Fabric references rather than being embedded in the Survey Fabric itself. New spatial capabilities should therefore extend upward by reference without requiring modification of the foundational spatial system.</p>
+  <div class="finding-principle"><span class="quote-label">Governing Principle</span>The Survey Fabric knows space, not the things in space.</div>
+</section>
+<section class="finding" id="finding-12">
+  <div class="finding-number">Requirement Finding #12</div>
+  <h2>Derived Spatial Relationships</h2>
+  <p>The Foundational Survey Fabric should not preserve adjacency, overlap, containment, or other spatial relationships among Parcels or higher-layer entities as foundational records. Such relationships should be established or derived by the layers that define those entities using canonical Survey Fabric references. Where the Survey Fabric’s own mathematics inherently produces relationships such as subdivision, containment, or neighborhood among its reference constructs, those relationships should ordinarily be deterministically derivable from the specification rather than separately stored as permanent truth.</p>
+  <div class="finding-principle"><span class="quote-label">Governing Principle</span>Derive what mathematics already knows. Store only what must independently exist.</div>
+</section>
+<section class="finding" id="finding-13">
+  <div class="finding-number">Requirement Finding #13</div>
+  <h2>Survey Domain Need Not Match World Form</h2>
+  <p>The canonical Survey Domain should not be required to coincide geometrically with BitPangea’s irregular World Form. The Foundational Survey Fabric may use a simpler finite mathematical reference domain, while higher spatial layers determine which referenced locations constitute BitPangea’s cartographic World and how its supercontinental form is expressed. Mathematical reference capacity not used by The World must not be treated as additional territory, an Exterior, a neighboring realm, or cartographically valid World-space merely because the Survey Fabric can reference it.</p>
+  <div class="finding-principle"><span class="quote-label">Governing Principle</span>Reference capacity is not territory.</div>
+</section>
+<section class="finding" id="finding-14">
+  <div class="finding-number">Requirement Finding #14</div>
+  <h2>Specification Over Materialization</h2>
+  <p>The Foundational Survey Fabric should exist primarily as a compact mathematical specification rather than as a permanently materialized inventory of every possible survey unit or address. Canonical spatial references should be derivable from the specification as needed. Implementations may cache, index, precompute, or materialize portions of the Survey Fabric for performance, but those artifacts must remain reconstructable and non-authoritative.</p>
+  <div class="finding-principle"><span class="quote-label">Governing Principle</span>The permanent truth lies in the specification, not in any particular stored representation. Specify the space. Materialize only what is needed.</div>
+</section>
+<section class="finding" id="finding-15">
+  <div class="finding-number">Requirement Finding #15</div>
+  <h2>One Foundational Reference, Many Derived Views</h2>
+  <p>Authoritative spatial systems above the Foundational Survey Fabric should ultimately reference the same canonical BitPangea spatial reference system rather than establishing independent competing sources of permanent World-space truth. Higher layers may define local, derived, dimensional, application-specific, or user-facing coordinate systems when useful, provided that their relationship to canonical BitPangea space can be deterministically established where authoritative World location matters. The Survey Fabric need not know or encode those higher systems.</p>
+  <div class="finding-principle"><span class="quote-label">Governing Principle</span>One foundational reference. Many derived views. Local coordinates may describe a perspective on place. Canonical Survey references preserve the place itself.</div>
+</section>
+
+<div class="req-status">
+  <h3>Section Standing</h3>
+  <p>
+    Findings #7–#15 establish the requirements for universal addressability, permanent canonical meaning, refinement by extension, independent implementation, semantic separation between space and the things in space, derived relationships, distinction between Survey Domain and World Form, specification over materialization, and one foundational spatial reference shared by higher systems.
+  </p>
+</div>
+
+<div class="section-nav">
+  <a href="/theatlas/foundational-survey-fabric/requirements/01-foundation-purpose-scope/">← Requirements I</a>
+  <a href="/theatlas/foundational-survey-fabric/requirements/">Requirements Index</a>
+</div>
+
+<div class="note">Foundational Survey Fabric · Requirements II · Addressability, Canonical Meaning, and Refinement</div>
+
+</article>
+</main>
+
+<div id="bp-footer"></div>
+</body>
+</html>
