@@ -143,7 +143,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">01.4 · Class Independence</div>
   <h2>Capability Boundaries Must Be Explicit</h2>
   <p>
-    Each conformance class shall define its own scope, dependencies, required behaviors, applicable reference vectors, and success conditions.
+    Each conformance class shall define its own scope, dependencies, required behaviors, applicable Reference Vector categories or proof obligations, and success conditions. Exact canonical vectors shall be attached only after the governing mathematics are sufficiently specified to produce deterministic expected results.
   </p>
   <p>
     Implementations shall not infer compliance with one class solely from successful implementation of another unless the governing Conformance specification explicitly establishes that dependency.
@@ -154,7 +154,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">01.5 · Canonical Result Requirement</div>
   <h2>All Classes Resolve to the Same Spatial Truth</h2>
   <p>
-    Where two implementations claim support for the same canonical operation or expression, identical valid canonical inputs shall produce identical authoritative results.
+    Where two implementations claim support for the same canonical operation or expression, identical valid canonical inputs shall produce the same authoritative canonical meaning. Where the governing Specification requires a unique canonical representation for that operation, the produced representation shall also be identical.
   </p>
   <p>
     Differences in programming language, architecture, storage, caching, performance optimization, or internal representation shall not alter canonical output.
@@ -187,7 +187,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">01.8 · Serialization and Version Scope</div>
   <h2>Compatibility Must Be Identifiable</h2>
   <p>
-    Each conformance claim shall identify the applicable specification identity, version, serialization rules, and conformance class or classes against which the implementation was evaluated.
+    Each conformance claim shall identify the applicable Specification identity, version, normative serialization/interchange rules, and conformance class or classes against which the implementation was evaluated.
   </p>
   <p>
     A conformance claim shall therefore describe compatibility with a defined standard rather than assert compatibility in the abstract.
@@ -198,7 +198,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">01.9 · Independent Reproducibility</div>
   <h2>Conformance Must Be Independently Demonstrable</h2>
   <p>
-    A valid conformance class shall be defined so that independent implementers can evaluate the same requirements, execute the same applicable reference vectors, and reach the same conformance judgment.
+    A valid conformance class shall be defined so that independent implementers can evaluate the same requirements, execute the same applicable Reference Vectors once those vectors formally exist, and reach the same conformance judgment.
   </p>
   <p>
     Conformance shall not depend on proprietary interpretation, unpublished behavior, hidden test logic, or exclusive institutional knowledge.
@@ -220,7 +220,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="status-card">
     <h3>Established by Requirements</h3>
     <p>
-      Independent implementations must reproduce identical canonical results; canonical mathematics must remain exact and deterministic; validation and normalization must be defined; canonical interchange must be unambiguous; spatial meaning must remain independently implementable; finite canonical truth must be resolvable; and every conforming implementation must ultimately satisfy a mandatory minimum conformance core.
+      Independent implementations must reproduce the same canonical meaning from the same canonical inputs; canonical mathematics must remain exact and deterministic; validation and normalization must be defined; normative interchange must be unambiguous; spatial meaning must remain independently implementable; finite canonical truth must be resolvable; and every conforming implementation must ultimately satisfy a mandatory minimum conformance core.
     </p>
   </div>
   <div class="status-card">
@@ -246,6 +246,11 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
     <a href="/theatlas/foundational-survey-fabric/requirements/07-knowability-computability-conformance/#finding-78">#78–#85</a>
   </div>
 </section>
+
+<blockquote>
+  <span class="quote-label">Conformance Authority Boundary</span>
+  A conformance class proves compatibility with a defined Specification scope. It does not establish canonical authority over the Specification, its succession, or the spatial truth the Specification defines.
+</blockquote>
 
 <blockquote>
   <span class="quote-label">Conformance Question</span>
