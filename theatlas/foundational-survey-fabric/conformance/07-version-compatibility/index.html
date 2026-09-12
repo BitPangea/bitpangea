@@ -72,11 +72,6 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   .spec-card{padding:26px 22px 24px}.spec-card h2{font-size:21px}
 }
 
-
-
-
-
-
 </style>
 </head>
 
@@ -99,7 +94,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 <div class="divider"></div>
 
 <p class="arch-statement">
-  The conformance rules for determining whether implementations, serializations, and specifications remain compatible as the governing Survey standard evolves.
+  The conformance rules for determining whether implementations, normative encodings, durable representations, and Specifications remain compatible as the governing Survey standard evolves.
 </p>
 
 <div class="req-intro">
@@ -120,7 +115,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">07.1 · Governing Version Identification</div>
   <h2>The Applicable Standard Must Be Explicit</h2>
   <p>
-    A conforming implementation shall be able to identify the governing Foundational Survey Fabric specification version or compatibility identity applicable to the canonical operation, serialization, or conformance claim being evaluated.
+    A conforming implementation shall be able to identify the governing Foundational Survey Fabric Specification version or compatibility identity applicable to the canonical operation, normative encoding or interchange rule, or conformance claim being evaluated.
   </p>
   <p>
     Version ambiguity shall not be permitted to alter authoritative interpretation.
@@ -153,7 +148,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">07.4 · Cross-Version Result Equivalence</div>
   <h2>Compatible Versions Preserve Canonical Results</h2>
   <p>
-    Where an operation and its canonical semantics remain unchanged across compatible specification versions, identical canonical inputs shall continue to produce identical authoritative results.
+    Where an operation and its canonical semantics remain unchanged across compatible Specification versions, identical canonical inputs shall continue to produce the same authoritative canonical meaning. Where the Specification requires one unique canonical representation, that representation shall also remain identical.
   </p>
   <p>
     A version change shall not silently alter canonical output under an unchanged rule set.
@@ -161,13 +156,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">07.5 · Serialization Version Compatibility</div>
+  <div class="spec-label">07.5 · Normative Encoding Version Compatibility</div>
   <h2>Versioned Representations Must Preserve Meaning</h2>
   <p>
-    Where serialization formats evolve, conforming implementations shall determine whether a serialized representation is compatible with the governing specification version and whether it can be interpreted without loss or reinterpretation of canonical meaning.
+    Where normative encodings or interchange representations evolve, conforming implementations shall determine whether a representation is compatible with the governing Specification and encoding version and whether it can be interpreted without loss or reinterpretation of canonical meaning.
   </p>
   <p>
-    Compatible serialization evolution may change representation while preserving the same mathematical truth.
+    Compatible encoding evolution may change representation, add a new governed lossless encoding, or revise an existing encoding while preserving the same canonical mathematical truth. No encoding version may create a competing spatial meaning.
   </p>
 </section>
 
@@ -175,7 +170,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">07.6 · Unsupported Version Handling</div>
   <h2>Do Not Guess Across Unknown Versions</h2>
   <p>
-    An implementation shall not silently interpret an unknown or unsupported specification version according to a different version’s rules.
+    An implementation shall not silently interpret an unknown or unsupported Specification version or normative-encoding version according to a different version’s rules.
   </p>
   <p>
     Unsupported or indeterminate versions shall be rejected or explicitly classified according to the governing Conformance rules.
@@ -189,7 +184,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
     A proposed change that would alter established canonical spatial meaning shall not be treated as ordinary compatible specification evolution.
   </p>
   <p>
-    Such a change belongs to a fundamentally different class of architectural or constitutional decision and shall not be disguised as routine version compatibility.
+    Such a change belongs to a fundamentally different class of architectural or constitutional decision and shall not be disguised as routine compatible version evolution. Governance over the standard does not create authority to reinterpret protected immutable spatial truth.
   </p>
 </section>
 
@@ -219,7 +214,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">07.10 · Conformance Claim Version Scope</div>
   <h2>Compatibility Claims Must Name Their Basis</h2>
   <p>
-    Every formal conformance claim shall identify the specification version, compatibility identity, serialization version where applicable, and conformance profile against which the implementation was tested.
+    Every formal conformance claim shall identify the Specification version, compatibility identity, normative encoding or interchange version where applicable, and conformance profile against which the implementation was tested.
   </p>
   <p>
     Compatibility shall therefore be demonstrable against a defined standard rather than asserted generically.
@@ -230,7 +225,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">07.11 · Version Transition Testing</div>
   <h2>Compatibility Must Be Proven Across Change</h2>
   <p>
-    Conformance testing shall ultimately include reference vectors and transition cases sufficient to demonstrate that compatible specification evolution preserves established spatial meaning and required canonical results.
+    Conformance testing shall ultimately include Reference Vectors and transition cases sufficient to demonstrate that compatible Specification evolution preserves established spatial meaning and required canonical results once the underlying mathematics are sufficiently complete to define those vectors exactly.
   </p>
   <p>
     Version transition tests should expose unintended reinterpretation before a compatibility claim is accepted.
@@ -252,13 +247,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="status-card">
     <h3>Established by Requirements</h3>
     <p>
-      The requirements establish canonical authority through valid consensus, compatible specification evolution without spatial mutation, explicit version and specification identity, persistence of spatial meaning across compatible versions, one meaning across durable representations, and the principle that verification or implementation technology may evolve without changing canonical Survey truth.
+      The requirements establish that canonical adoption, succession, amendment, or replacement of the standard occurs only through valid BitPangea authority; compatible Specification evolution may not mutate established spatial meaning; version and Specification identity must remain explicit; canonical meaning must persist across compatible versions and durable representations; and verification or implementation technology may evolve without becoming the source of canonical authority or changing Survey truth.
     </p>
   </div>
   <div class="status-card">
     <h3>Still Open in Conformance</h3>
     <p>
-      The exact version identifier format, compatibility matrix, transition rules, backward-compatibility guarantees, forward-compatibility behavior, deprecation policy, required transition vectors, machine-readable compatibility declarations, and formal classification of incompatible change remain unresolved until the Specification and Conformance model are completed.
+      The exact Specification and normative-encoding version identifier formats, compatibility matrix, transition rules, backward-compatibility guarantees, forward-compatibility behavior, deprecation policy, eventual transition Reference Vectors, machine-readable compatibility declarations, and formal classification of incompatible change remain unresolved until the Specification and Conformance model are sufficiently complete.
     </p>
   </div>
 </div>
@@ -280,7 +275,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 
 <blockquote>
   <span class="quote-label">Architectural Boundary</span>
-  The specification may evolve. Established spatial meaning may not.
+  The Specification may evolve through valid authority. Established spatial meaning may not be rewritten by ordinary versioning, implementation preference, or conformance declaration.
 </blockquote>
 
 <div class="section-nav">
