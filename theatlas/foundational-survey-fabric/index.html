@@ -43,12 +43,19 @@ h2{margin-top:54px;margin-bottom:20px;color:#fff;font-size:28px;letter-spacing:4
 .arch-card{border:1px solid rgba(212,169,56,.22);background:rgba(0,0,0,.30);padding:22px;min-height:145px}
 .arch-card h3{color:#d4a938;font-size:13px;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px}
 .arch-card p{font-size:15px;margin-bottom:0}
+.framework-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin:30px 0 10px}
+.framework-card{display:block;border:1px solid rgba(212,169,56,.22);background:rgba(0,0,0,.30);padding:24px;text-decoration:none;transition:border-color .2s ease,background .2s ease,transform .2s ease}
+.framework-card:hover{border-color:rgba(0,200,215,.55);background:rgba(0,0,0,.48);transform:translateY(-2px)}
+.framework-card .framework-label{display:block;color:#00c8d7;font-size:11px;letter-spacing:3px;text-transform:uppercase;margin-bottom:9px}
+.framework-card h3{color:#d4a938;font-size:19px;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}
+.framework-card p{font-size:15px;margin-bottom:0;color:#fff}
+.framework-sequence{margin-top:30px}
 blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;background:rgba(0,0,0,.52);color:#fff;font-size:24px;line-height:1.45;letter-spacing:1px;box-shadow:0 0 28px rgba(0,0,0,.45)}
 .quote-label{display:block;color:#00c8d7;font-size:11px;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px}
 .return-link{display:inline-block;margin-top:14px;color:#d4a938;text-decoration:none;text-transform:uppercase;letter-spacing:2px;font-size:12px}
 .return-link:hover{color:#fff;text-shadow:0 0 12px rgba(212,169,56,.5)}
 .note{margin-top:58px;padding:18px 24px;border:1px solid rgba(212,169,56,.38);color:#d4a938;letter-spacing:2px;text-transform:uppercase;font-size:12px;display:inline-block;background:rgba(0,0,0,.35)}
-@media(max-width:900px){.arch-grid{grid-template-columns:1fr}}
+@media(max-width:900px){.arch-grid,.framework-grid{grid-template-columns:1fr}}
 @media(max-width:768px){.page{padding:185px 16px 60px}.container{padding:36px 24px 46px}.arch-header{flex-direction:column;align-items:flex-start;gap:24px}.arch-mark{width:110px;height:110px}h1{letter-spacing:3px}h2{font-size:23px;letter-spacing:3px}.subtitle{font-size:16px}.arch-statement{font-size:19px}p{font-size:16px}blockquote{font-size:20px;padding:24px 26px}}
 </style>
 </head>
@@ -62,7 +69,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 <div class="eyebrow">The Atlas · The Architecture</div>
 
 <div class="arch-header">
-  <img src="/thearchitecture/architecture-globe.png" alt="The Atlas Compass Rose" class="arch-mark"/>
+  <img src="/theatlas/compass-rose.png" alt="The Atlas Compass Rose" class="arch-mark"/>
   <div class="arch-title">
     <h1>Foundational<br/>Survey Fabric</h1>
     <div class="subtitle">Permanent Spatial Reference Architecture</div>
@@ -80,7 +87,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 </p>
 
 <p>
-  This page establishes the permanent institutional home for that architecture within The Atlas. It is intentionally concise while the governing record is being formalized, allowing the domain to remain visible without presenting incomplete mathematical design as finished structure.
+  This page establishes the permanent institutional home for that architecture within The Atlas. Its governing record is organized through four linked frameworks: <strong>Requirements</strong>, <strong>Specification</strong>, <strong>Conformance</strong>, and <strong>Reference Vectors</strong>. Together they preserve a clear separation between what the Survey Fabric must satisfy, how its mathematics are formally defined, how implementations prove compatibility, and how expected results are tested.
 </p>
 
 <blockquote>
@@ -106,6 +113,43 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
     <p>The Foundation and The Codex constrain what must remain true. The Atlas records the architectural design that gives those truths durable spatial expression.</p>
   </div>
 </div>
+
+<h2>Governing Framework</h2>
+
+<p>
+  The Foundational Survey Fabric is organized through four institutional layers. Each has a distinct role, and together they form the complete architectural path from accepted requirements to independently reproducible implementation results.
+</p>
+
+<div class="framework-grid">
+  <a class="framework-card" href="/theatlas/foundational-survey-fabric/requirements/">
+    <span class="framework-label">Framework 01</span>
+    <h3>Requirements</h3>
+    <p>Establishes the complete set of conditions the Foundational Survey Fabric must satisfy.</p>
+  </a>
+
+  <a class="framework-card" href="/theatlas/foundational-survey-fabric/specification/">
+    <span class="framework-label">Framework 02</span>
+    <h3>Specification</h3>
+    <p>Defines the formal mathematics and canonical rules through which the accepted requirements are satisfied.</p>
+  </a>
+
+  <a class="framework-card" href="/theatlas/foundational-survey-fabric/conformance/">
+    <span class="framework-label">Framework 03</span>
+    <h3>Conformance</h3>
+    <p>Defines how an implementation demonstrates that it correctly follows the governing Specification.</p>
+  </a>
+
+  <a class="framework-card" href="/theatlas/foundational-survey-fabric/reference-vectors/">
+    <span class="framework-label">Framework 04</span>
+    <h3>Reference Vectors</h3>
+    <p>Provides canonical examples, negative cases, and adversarial test cases that establish expected implementation results.</p>
+  </a>
+</div>
+
+<blockquote class="framework-sequence">
+  <span class="quote-label">Architectural Sequence</span>
+  Requirements establishes what must be satisfied. Specification defines the mathematics that satisfies it. Conformance defines how an implementation proves it follows the Specification. Reference Vectors provide canonical examples and test cases proving the expected results.
+</blockquote>
 
 <h2>Purpose of This Space</h2>
 
