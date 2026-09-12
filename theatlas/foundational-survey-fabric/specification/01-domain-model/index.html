@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Survey Domain and Ground Model | Foundational Survey Fabric Specification | BitPangea</title>
+
+<link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/favicon.svg" rel="shortcut icon"/>
+<link href="/assets/css/bitpangea-framework.css" rel="stylesheet"/>
+<script defer src="/assets/js/bitpangea-framework.js"></script>
+
+<meta name="description" content="Survey Domain and Ground Model — Specification Section 01 for the BitPangea Foundational Survey Fabric."/>
+<meta name="theme-color" content="#00c8d7"/>
+<meta name="robots" content="index,follow"/>
+<link rel="canonical" href="https://bitpangea.com/theatlas/foundational-survey-fabric/specification/01-domain-model/"/>
+
+<meta property="og:title" content="Survey Domain and Ground Model | BitPangea"/>
+<meta property="og:description" content="Specification Section 01 for the Foundational Survey Fabric."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://bitpangea.com/theatlas/foundational-survey-fabric/specification/01-domain-model/"/>
+<meta property="og:site_name" content="BitPangea"/>
+
+<style>
+
+
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;min-height:100%;background:#02050a;color:#fff;font-family:Arial,Helvetica,sans-serif}
+body{position:relative;line-height:1.75;overflow-x:hidden;background:#02050a}
+body::before{content:"";position:fixed;inset:0;background-image:linear-gradient(rgba(2,5,10,.78),rgba(2,5,10,.90)),url("/images/bitpangea.jpg");background-size:cover;background-position:center;background-repeat:no-repeat;z-index:-2;pointer-events:none}
+body::after{content:"";position:fixed;inset:0;background:radial-gradient(circle at 75% 12%,rgba(0,200,215,.10),transparent 34%),radial-gradient(circle at 18% 18%,rgba(212,169,56,.10),transparent 32%),linear-gradient(90deg,rgba(0,0,0,.60),rgba(0,0,0,.25),rgba(0,0,0,.64));z-index:-1;pointer-events:none}
+.page{width:100%;padding:150px 28px 90px}
+.container{max-width:1040px;margin:0 auto;padding:54px 58px 64px;background:rgba(0,0,0,.48);border:1px solid rgba(212,169,56,.16);box-shadow:0 0 60px rgba(0,0,0,.55);backdrop-filter:blur(4px)}
+.eyebrow{color:#00c8d7;letter-spacing:4px;text-transform:uppercase;font-size:12px;margin-bottom:20px}
+.arch-header{display:flex;align-items:center;gap:28px;margin-bottom:20px}
+.arch-mark{width:230px;height:230px;flex-shrink:0;opacity:.96}
+.arch-title{display:flex;flex-direction:column}
+h1{color:#fff;font-size:clamp(38px,6vw,66px);line-height:1.06;letter-spacing:5px;text-transform:uppercase;margin-bottom:14px;text-shadow:0 0 22px rgba(0,0,0,.9)}
+.subtitle{color:#d4a938;font-size:18px;letter-spacing:3px;text-transform:uppercase;margin-bottom:18px}
+.divider{width:64px;height:2px;background:#d4a938;margin:34px 0 42px;box-shadow:0 0 14px rgba(212,169,56,.65)}
+.arch-statement{font-size:28px;font-weight:500;color:#fff;margin-bottom:28px;text-shadow:0 0 18px rgba(212,169,56,.25)}
+p{margin-bottom:22px;color:#fff;font-size:17px;text-shadow:0 0 9px rgba(0,0,0,.9)}
+h2{margin-top:54px;margin-bottom:20px;color:#fff;font-size:28px;letter-spacing:4px;text-transform:uppercase;text-shadow:0 0 14px rgba(0,0,0,.9)}
+.arch-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:34px 0 10px}
+.arch-card{border:1px solid rgba(212,169,56,.22);background:rgba(0,0,0,.30);padding:22px;min-height:145px}
+.arch-card h3{color:#d4a938;font-size:13px;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px}
+.arch-card p{font-size:15px;margin-bottom:0}
+blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;background:rgba(0,0,0,.52);color:#fff;font-size:24px;line-height:1.45;letter-spacing:1px;box-shadow:0 0 28px rgba(0,0,0,.45)}
+.quote-label{display:block;color:#00c8d7;font-size:11px;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px}
+.return-link{display:inline-block;margin-top:14px;color:#d4a938;text-decoration:none;text-transform:uppercase;letter-spacing:2px;font-size:12px}
+.return-link:hover{color:#fff;text-shadow:0 0 12px rgba(212,169,56,.5)}
+.note{margin-top:58px;padding:18px 24px;border:1px solid rgba(212,169,56,.38);color:#d4a938;letter-spacing:2px;text-transform:uppercase;font-size:12px;display:inline-block;background:rgba(0,0,0,.35)}
+@media(max-width:900px){.arch-grid{grid-template-columns:1fr}}
+@media(max-width:768px){.page{padding:185px 16px 60px}.container{padding:36px 24px 46px}.arch-header{flex-direction:column;align-items:flex-start;gap:24px}.arch-mark{width:110px;height:110px}h1{letter-spacing:3px}h2{font-size:23px;letter-spacing:3px}.subtitle{font-size:16px}.arch-statement{font-size:19px}p{font-size:16px}blockquote{font-size:20px;padding:24px 26px}}
+
+
+.req-intro {
+  margin: 34px 0 42px;
+  padding: 28px 30px;
+  background: rgba(0,0,0,.34);
+  border: 1px solid rgba(212,169,56,.18);
+}
+.req-intro p:last-child { margin-bottom: 0; }
+
+.finding {
+  margin-top: 28px;
+  padding: 30px 32px 28px;
+  background: rgba(0,0,0,.34);
+  border: 1px solid rgba(212,169,56,.18);
+  box-shadow: 0 0 22px rgba(0,0,0,.24);
+}
+.finding-number {
+  color: #00c8d7;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.finding h2 {
+  margin: 0 0 18px;
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+.finding p {
+  color: rgba(255,255,255,.90);
+}
+.finding-principle {
+  margin: 24px 0 0;
+  padding: 22px 26px;
+  border-left: 3px solid #d4a938;
+  background: rgba(0,0,0,.48);
+  font-size: 20px;
+  line-height: 1.45;
+}
+.finding-principle .quote-label {
+  margin-bottom: 10px;
+}
+.section-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 34px 0 8px;
+}
+.section-nav a,
+.section-nav a:visited {
+  color: #d4a938;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  padding: 11px 14px;
+  border: 1px solid rgba(212,169,56,.24);
+  background: rgba(0,0,0,.28);
+}
+.section-nav a:hover {
+  color: #fff;
+  text-shadow: 0 0 12px rgba(212,169,56,.55);
+}
+.req-status {
+  margin-top: 36px;
+  padding: 26px 28px;
+  border: 1px solid rgba(0,200,215,.18);
+  background: rgba(0,0,0,.30);
+}
+.req-status h3 {
+  color: #d4a938;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.req-status p {
+  margin: 0;
+  font-size: 15px;
+  color: rgba(255,255,255,.82);
+}
+@media(max-width:768px){
+  .finding { padding: 26px 22px 24px; }
+  .finding h2 { font-size: 21px; }
+  .finding-principle { font-size: 18px; }
+}
+
+
+h1{
+  font-size:clamp(32px,4.5vw,52px);
+  line-height:1.02;
+}
+.spec-card{
+  margin-top:28px;
+  padding:30px 32px 28px;
+  background:rgba(0,0,0,.34);
+  border:1px solid rgba(212,169,56,.18);
+  box-shadow:0 0 22px rgba(0,0,0,.24);
+}
+.spec-card h2{
+  margin:0 0 18px;
+  font-size:24px;
+  letter-spacing:3px;
+}
+.spec-label{
+  color:#00c8d7;
+  font-size:11px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  margin-bottom:10px;
+}
+.finding-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:18px;
+}
+.finding-links a,
+.finding-links a:visited{
+  color:#d4a938;
+  text-decoration:none;
+  border:1px solid rgba(212,169,56,.24);
+  padding:8px 10px;
+  font-size:11px;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  background:rgba(0,0,0,.28);
+}
+.finding-links a:hover{color:#fff}
+.status-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+  margin-top:28px;
+}
+.status-card{
+  padding:24px;
+  border:1px solid rgba(0,200,215,.18);
+  background:rgba(0,0,0,.30);
+}
+.status-card h3{
+  color:#d4a938;
+  font-size:13px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  margin-bottom:10px;
+}
+.status-card p{margin:0;font-size:15px;color:rgba(255,255,255,.84)}
+@media(max-width:768px){
+  .status-grid{grid-template-columns:1fr}
+  .spec-card{padding:26px 22px 24px}
+  .spec-card h2{font-size:21px}
+}
+
+</style>
+</head>
+
+<body data-bp-page="theatlas">
+<div id="bp-header"></div>
+
+<main class="page">
+<article class="container">
+
+<div class="eyebrow">The Atlas · The Architecture · Foundational Survey Fabric · Specification</div>
+
+<div class="arch-header">
+  <img src="/thearchitecture/architecture-globe.png" alt="The Architecture Emblem" class="arch-mark"/>
+  <div class="arch-title">
+    <h1>Survey Domain<br/>&amp; Ground Model</h1>
+    <div class="subtitle">Specification Section 01 · Derived from the Requirements Framework</div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<p class="arch-statement">
+  The specification boundary for BitPangea’s finite canonical Survey Domain and its permanent two-dimensional ground model.
+</p>
+
+<div class="req-intro">
+<p>
+  This section translates accepted Foundational Survey Fabric requirements into the specification scope for the Survey Domain and Ground Model. It defines the properties that the eventual formal mathematics must satisfy before any exact domain geometry, coordinate encoding, addressing grammar, or implementation representation can be adopted.
+</p>
+<p>
+  This page does not yet select the final mathematical shape of the Survey Domain. It records the required structural model that the eventual specification must realize.
+</p>
+</div>
+
+<blockquote>
+  <span class="quote-label">Specification Principle</span>
+  Reference capacity is not territory.
+</blockquote>
+
+<section class="spec-card">
+  <div class="spec-label">01.1 · Canonical Survey Domain</div>
+  <h2>Finite Reference Domain</h2>
+  <p>
+    The Foundational Survey Fabric shall define one finite canonical Survey Domain. The domain establishes the exact scope within which canonical BitPangea spatial reference is valid.
+  </p>
+  <p>
+    The Survey Domain is a reference architecture, not a cartographic declaration of World membership. A location may be validly referenceable within the Survey Domain without thereby becoming BitPangea World-space.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">01.2 · Dimensional Model</div>
+  <h2>Two-Dimensional Planar Ground</h2>
+  <p>
+    The canonical Survey Domain shall presently be modeled as a two-dimensional planar spatial ground. Vertical, volumetric, immersive, nested, terrain, elevation, and other higher-dimensional or surface expressions belong above the Foundational Survey Fabric.
+  </p>
+  <p>
+    The Survey Fabric therefore anchors permanent ground position without becoming the visible, geographic, architectural, rendered, or experiential surface of BitPangea.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">01.3 · Domain Coherence</div>
+  <h2>One Connected Reference Space</h2>
+  <p>
+    The canonical Survey Domain shall be one connected and internally coherent reference domain rather than a collection of disconnected sectors or a domain containing arbitrary internal holes where canonical reference is unavailable.
+  </p>
+  <p>
+    Higher spatial layers may designate portions of that reference capacity differently without requiring corresponding gaps in the foundational reference system.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">01.4 · Domain Limits</div>
+  <h2>Exact Reference Extent</h2>
+  <p>
+    The Survey Domain shall possess exact mathematically defined limits that determine where valid canonical Survey reference ends.
+  </p>
+  <p>
+    Those limits shall not themselves be treated as BitPangea’s World Boundary, Extent expression, Verge, coastline, Exterior, or other cartographic feature. Beyond the canonical Survey Domain, there is simply no valid BitPangea Survey reference.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">01.5 · World-Space Separation</div>
+  <h2>Reference Capacity and World Membership</h2>
+  <p>
+    World membership shall be established by higher spatial layers using canonical Survey Fabric references. The Foundational Survey Fabric shall determine where canonical reference is valid, while higher layers determine what portions of that reference capacity constitute The World.
+  </p>
+  <p>
+    The Survey Domain is therefore not required to geometrically match BitPangea’s irregular supercontinental World Form.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">01.6 · Higher-Layer Geometry</div>
+  <h2>No Required Alignment to Survey Subdivision</h2>
+  <p>
+    Parcels, Regions, World-form features, infrastructure, Outliers, and other higher-layer spatial entities shall not be required to align their authoritative geometry with Survey Fabric subdivisions, grid lines, or indexing structures merely because those structures exist.
+  </p>
+  <p>
+    The Survey Fabric provides reference. Higher layers remain responsible for shape.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">01.7 · Center and Internal Partitions</div>
+  <h2>No Foundational Semantic Privilege</h2>
+  <p>
+    The Survey Domain shall not establish a privileged civic, cultural, geographic, or institutional center. Any mathematically derived midpoint or centroid remains a geometric property unless a higher layer assigns meaning to it.
+  </p>
+  <p>
+    Internal sectors, quadrants, regions, zones, or partitions used for indexing, computation, refinement, or serialization shall likewise remain semantically neutral at the foundational level.
+  </p>
+</section>
+
+<div class="status-grid">
+  <div class="status-card">
+    <h3>Established by Requirements</h3>
+    <p>
+      Finite domain; planar two-dimensional ground; one connected reference space; exact domain limits; separation of reference capacity from World-space; no mandatory grid alignment for higher geometry; terrain and surface above the foundation; no privileged foundational center or semantic internal partition.
+    </p>
+  </div>
+  <div class="status-card">
+    <h3>Still Open in the Specification</h3>
+    <p>
+      The exact mathematical geometry of the finite Survey Domain, its numerical dimensions, its precise boundary representation, the exact coordinate mathematics, and the final addressing/refinement system remain unresolved until the candidate mathematical design is selected and tested against the complete requirements framework.
+    </p>
+  </div>
+</div>
+
+<section class="spec-card">
+  <div class="spec-label">Requirements Basis</div>
+  <h2>Primary Derived Findings</h2>
+  <p>
+    This specification section is derived especially from Requirements Findings #18–#19, #23, #28–#29, #48–#49, #51–#52, and #76–#77.
+  </p>
+  <div class="finding-links">
+    <a href="/theatlas/foundational-survey-fabric/requirements/04-ontology-structure/#finding-18">#18–#19</a>
+    <a href="/theatlas/foundational-survey-fabric/requirements/04-ontology-structure/#finding-23">#23</a>
+    <a href="/theatlas/foundational-survey-fabric/requirements/04-ontology-structure/#finding-28">#28–#29</a>
+    <a href="/theatlas/foundational-survey-fabric/requirements/06-geometry-topology-measurement-operations/#finding-48">#48–#49</a>
+    <a href="/theatlas/foundational-survey-fabric/requirements/06-geometry-topology-measurement-operations/#finding-51">#51–#52</a>
+    <a href="/theatlas/foundational-survey-fabric/requirements/06-geometry-topology-measurement-operations/#finding-76">#76–#77</a>
+  </div>
+</section>
+
+<blockquote>
+  <span class="quote-label">Architectural Boundary</span>
+  The Survey Domain defines where canonical reference is possible. Higher layers determine what that referenced space becomes.
+</blockquote>
+
+<div class="section-nav">
+  <a href="/theatlas/foundational-survey-fabric/">← Foundational Survey Fabric</a>
+  <a href="/theatlas/foundational-survey-fabric/requirements/">Requirements Framework</a>
+  <a href="/theatlas/foundational-survey-fabric/specification/">Specification Index</a>
+</div>
+
+<div class="note">Foundational Survey Fabric · Specification 01 · Survey Domain and Ground Model</div>
+
+</article>
+</main>
+
+<div id="bp-footer"></div>
+</body>
+</html>
