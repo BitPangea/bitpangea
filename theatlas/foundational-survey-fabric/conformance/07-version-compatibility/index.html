@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Version Compatibility | Foundational Survey Fabric Conformance | BitPangea</title>
+
+<link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/favicon.svg" rel="shortcut icon"/>
+<link href="/assets/css/bitpangea-framework.css" rel="stylesheet"/>
+<script defer src="/assets/js/bitpangea-framework.js"></script>
+
+<meta name="description" content="Version Compatibility — Conformance Section 07 for the BitPangea Foundational Survey Fabric."/>
+<meta name="theme-color" content="#00c8d7"/>
+<meta name="robots" content="index,follow"/>
+<link rel="canonical" href="https://bitpangea.com/theatlas/foundational-survey-fabric/conformance/07-version-compatibility/"/>
+
+<meta property="og:title" content="Version Compatibility | BitPangea"/>
+<meta property="og:description" content="Conformance Section 07 for the Foundational Survey Fabric."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://bitpangea.com/theatlas/foundational-survey-fabric/conformance/07-version-compatibility/"/>
+<meta property="og:site_name" content="BitPangea"/>
+
+<style>
+
+
+
+
+
+
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;min-height:100%;background:#02050a;color:#fff;font-family:Arial,Helvetica,sans-serif}
+body{position:relative;line-height:1.75;overflow-x:hidden;background:#02050a}
+body::before{content:"";position:fixed;inset:0;background-image:linear-gradient(rgba(2,5,10,.78),rgba(2,5,10,.90)),url("/images/bitpangea.jpg");background-size:cover;background-position:center;background-repeat:no-repeat;z-index:-2;pointer-events:none}
+body::after{content:"";position:fixed;inset:0;background:radial-gradient(circle at 75% 12%,rgba(0,200,215,.10),transparent 34%),radial-gradient(circle at 18% 18%,rgba(212,169,56,.10),transparent 32%),linear-gradient(90deg,rgba(0,0,0,.60),rgba(0,0,0,.25),rgba(0,0,0,.64));z-index:-1;pointer-events:none}
+.page{width:100%;padding:150px 28px 90px}
+.container{max-width:1040px;margin:0 auto;padding:54px 58px 64px;background:rgba(0,0,0,.48);border:1px solid rgba(212,169,56,.16);box-shadow:0 0 60px rgba(0,0,0,.55);backdrop-filter:blur(4px)}
+.eyebrow{color:#00c8d7;letter-spacing:4px;text-transform:uppercase;font-size:12px;margin-bottom:20px}
+.arch-header{display:flex;align-items:center;gap:28px;margin-bottom:20px}
+.arch-mark{width:230px;height:230px;flex-shrink:0;opacity:.96}
+.arch-title{display:flex;flex-direction:column}
+h1{color:#fff;font-size:clamp(32px,4.5vw,52px);line-height:1.02;letter-spacing:5px;text-transform:uppercase;margin-bottom:14px;text-shadow:0 0 22px rgba(0,0,0,.9)}
+.subtitle{color:#d4a938;font-size:18px;letter-spacing:3px;text-transform:uppercase;margin-bottom:18px}
+.divider{width:64px;height:2px;background:#d4a938;margin:34px 0 42px;box-shadow:0 0 14px rgba(212,169,56,.65)}
+.arch-statement{font-size:28px;font-weight:500;color:#fff;margin-bottom:28px;text-shadow:0 0 18px rgba(212,169,56,.25)}
+p{margin-bottom:22px;color:#fff;font-size:17px;text-shadow:0 0 9px rgba(0,0,0,.9)}
+h2{margin-top:54px;margin-bottom:20px;color:#fff;font-size:28px;letter-spacing:4px;text-transform:uppercase;text-shadow:0 0 14px rgba(0,0,0,.9)}
+blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;background:rgba(0,0,0,.52);color:#fff;font-size:24px;line-height:1.45;letter-spacing:1px;box-shadow:0 0 28px rgba(0,0,0,.45)}
+.quote-label{display:block;color:#00c8d7;font-size:11px;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px}
+.req-intro{margin:34px 0 42px;padding:28px 30px;background:rgba(0,0,0,.34);border:1px solid rgba(212,169,56,.18)}
+.req-intro p:last-child{margin-bottom:0}
+.spec-card{margin-top:28px;padding:30px 32px 28px;background:rgba(0,0,0,.34);border:1px solid rgba(212,169,56,.18);box-shadow:0 0 22px rgba(0,0,0,.24)}
+.spec-card h2{margin:0 0 18px;font-size:24px;letter-spacing:3px}
+.spec-label{color:#00c8d7;font-size:11px;letter-spacing:3px;text-transform:uppercase;margin-bottom:10px}
+.status-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:28px}
+.status-card{padding:24px;border:1px solid rgba(0,200,215,.18);background:rgba(0,0,0,.30)}
+.status-card h3{color:#d4a938;font-size:13px;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}
+.status-card p{margin:0;font-size:15px;color:rgba(255,255,255,.84)}
+.finding-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.finding-links a,.finding-links a:visited{color:#d4a938;text-decoration:none;border:1px solid rgba(212,169,56,.24);padding:8px 10px;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;background:rgba(0,0,0,.28)}
+.finding-links a:hover{color:#fff}
+.section-nav{display:flex;flex-wrap:wrap;gap:12px;margin:34px 0 8px}
+.section-nav a,.section-nav a:visited{color:#d4a938;text-decoration:none;text-transform:uppercase;letter-spacing:2px;font-size:12px;padding:11px 14px;border:1px solid rgba(212,169,56,.24);background:rgba(0,0,0,.28)}
+.section-nav a:hover{color:#fff;text-shadow:0 0 12px rgba(212,169,56,.55)}
+.note{margin-top:58px;padding:18px 24px;border:1px solid rgba(212,169,56,.38);color:#d4a938;letter-spacing:2px;text-transform:uppercase;font-size:12px;display:inline-block;background:rgba(0,0,0,.35)}
+@media(max-width:768px){
+  .page{padding:185px 16px 60px}.container{padding:36px 24px 46px}
+  .arch-header{flex-direction:column;align-items:flex-start;gap:24px}
+  .arch-mark{width:110px;height:110px}h1{letter-spacing:3px}
+  .subtitle{font-size:16px}.arch-statement{font-size:19px}p{font-size:16px}
+  blockquote{font-size:20px;padding:24px 26px}.status-grid{grid-template-columns:1fr}
+  .spec-card{padding:26px 22px 24px}.spec-card h2{font-size:21px}
+}
+
+
+
+
+
+
+</style>
+</head>
+
+<body data-bp-page="theatlas">
+<div id="bp-header"></div>
+
+<main class="page">
+<article class="container">
+
+<div class="eyebrow">The Atlas · The Architecture · Foundational Survey Fabric · Conformance</div>
+
+<div class="arch-header">
+  <img src="/thearchitecture/architecture-globe.png" alt="The Architecture Emblem" class="arch-mark"/>
+  <div class="arch-title">
+    <h1>Version<br/>Compatibility</h1>
+    <div class="subtitle">Conformance Section 07 · Specification Evolution Compatibility</div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<p class="arch-statement">
+  The conformance rules for determining whether implementations, serializations, and specifications remain compatible as the governing Survey standard evolves.
+</p>
+
+<div class="req-intro">
+<p>
+  <strong>Version Compatibility</strong> establishes how a conforming implementation proves that it applies the correct governing Survey specification and preserves established canonical spatial meaning across compatible specification evolution.
+</p>
+<p>
+  The standard may acquire new versions, clarifications, conformance materials, encodings, or optional capabilities. Existing canonical place must not be renumbered, relocated, reinterpreted, or otherwise altered merely because the specification document changes.
+</p>
+</div>
+
+<blockquote>
+  <span class="quote-label">Conformance Principle</span>
+  Version the standard. Do not version the place.
+</blockquote>
+
+<section class="spec-card">
+  <div class="spec-label">07.1 · Governing Version Identification</div>
+  <h2>The Applicable Standard Must Be Explicit</h2>
+  <p>
+    A conforming implementation shall be able to identify the governing Foundational Survey Fabric specification version or compatibility identity applicable to the canonical operation, serialization, or conformance claim being evaluated.
+  </p>
+  <p>
+    Version ambiguity shall not be permitted to alter authoritative interpretation.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">07.2 · Compatible Evolution</div>
+  <h2>New Versions May Extend Without Moving Place</h2>
+  <p>
+    A later compatible specification version may clarify rules, improve conformance material, add optional capabilities, or introduce additional durable representations.
+  </p>
+  <p>
+    Such evolution shall preserve all previously established canonical spatial meaning.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">07.3 · Spatial Meaning Preservation</div>
+  <h2>Established Canonical References Must Remain Stable</h2>
+  <p>
+    A compatible version shall not renumber, relocate, reinterpret, reuse, or otherwise change the canonical spatial meaning of an established Survey reference.
+  </p>
+  <p>
+    An implementation that applies a newer version shall continue to resolve previously established canonical references to the same authoritative place.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">07.4 · Cross-Version Result Equivalence</div>
+  <h2>Compatible Versions Preserve Canonical Results</h2>
+  <p>
+    Where an operation and its canonical semantics remain unchanged across compatible specification versions, identical canonical inputs shall continue to produce identical authoritative results.
+  </p>
+  <p>
+    A version change shall not silently alter canonical output under an unchanged rule set.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">07.5 · Serialization Version Compatibility</div>
+  <h2>Versioned Representations Must Preserve Meaning</h2>
+  <p>
+    Where serialization formats evolve, conforming implementations shall determine whether a serialized representation is compatible with the governing specification version and whether it can be interpreted without loss or reinterpretation of canonical meaning.
+  </p>
+  <p>
+    Compatible serialization evolution may change representation while preserving the same mathematical truth.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">07.6 · Unsupported Version Handling</div>
+  <h2>Do Not Guess Across Unknown Versions</h2>
+  <p>
+    An implementation shall not silently interpret an unknown or unsupported specification version according to a different version’s rules.
+  </p>
+  <p>
+    Unsupported or indeterminate versions shall be rejected or explicitly classified according to the governing Conformance rules.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">07.7 · Incompatible Change Boundary</div>
+  <h2>Spatial Mutation Is Not Ordinary Compatibility</h2>
+  <p>
+    A proposed change that would alter established canonical spatial meaning shall not be treated as ordinary compatible specification evolution.
+  </p>
+  <p>
+    Such a change belongs to a fundamentally different class of architectural or constitutional decision and shall not be disguised as routine version compatibility.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">07.8 · Backward Compatibility</div>
+  <h2>Previously Valid Canonical Truth Must Remain Interpretable</h2>
+  <p>
+    A compatible implementation of a later specification version shall remain able to interpret previously valid canonical references and expressions whose meaning was established under earlier compatible versions, subject to the governing compatibility rules.
+  </p>
+  <p>
+    Historical canonical truth shall not become ambiguous merely because the standard gains new capability.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">07.9 · Forward Compatibility</div>
+  <h2>Unknown Capability Must Not Be Invented</h2>
+  <p>
+    An implementation encountering a future extension or optional capability it does not understand shall not fabricate canonical interpretation for that unsupported feature.
+  </p>
+  <p>
+    Forward-compatibility behavior shall preserve known canonical meaning while clearly identifying unsupported capability.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">07.10 · Conformance Claim Version Scope</div>
+  <h2>Compatibility Claims Must Name Their Basis</h2>
+  <p>
+    Every formal conformance claim shall identify the specification version, compatibility identity, serialization version where applicable, and conformance profile against which the implementation was tested.
+  </p>
+  <p>
+    Compatibility shall therefore be demonstrable against a defined standard rather than asserted generically.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">07.11 · Version Transition Testing</div>
+  <h2>Compatibility Must Be Proven Across Change</h2>
+  <p>
+    Conformance testing shall ultimately include reference vectors and transition cases sufficient to demonstrate that compatible specification evolution preserves established spatial meaning and required canonical results.
+  </p>
+  <p>
+    Version transition tests should expose unintended reinterpretation before a compatibility claim is accepted.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">07.12 · Version Compatibility Failure</div>
+  <h2>Meaning Drift Is a Conformance Failure</h2>
+  <p>
+    If an implementation changes established canonical meaning solely because it applies a different supposedly compatible specification version, that behavior shall constitute a conformance failure.
+  </p>
+  <p>
+    Compatibility requires continuity of canonical spatial truth, not merely successful parsing of a newer document or format.
+  </p>
+</section>
+
+<div class="status-grid">
+  <div class="status-card">
+    <h3>Established by Requirements</h3>
+    <p>
+      The requirements establish canonical authority through valid consensus, compatible specification evolution without spatial mutation, explicit version and specification identity, persistence of spatial meaning across compatible versions, one meaning across durable representations, and the principle that verification or implementation technology may evolve without changing canonical Survey truth.
+    </p>
+  </div>
+  <div class="status-card">
+    <h3>Still Open in Conformance</h3>
+    <p>
+      The exact version identifier format, compatibility matrix, transition rules, backward-compatibility guarantees, forward-compatibility behavior, deprecation policy, required transition vectors, machine-readable compatibility declarations, and formal classification of incompatible change remain unresolved until the Specification and Conformance model are completed.
+    </p>
+  </div>
+</div>
+
+<section class="spec-card">
+  <div class="spec-label">Requirements Basis</div>
+  <h2>Primary Referenced Findings</h2>
+  <p>
+    This Conformance section is derived especially from Requirements Findings #16–#17, #22, #59–#61, #64, and #84–#85.
+  </p>
+  <div class="finding-links">
+    <a href="/theatlas/foundational-survey-fabric/requirements/03-authority-consensus-evolution/#finding-16">#16–#17</a>
+    <a href="/theatlas/foundational-survey-fabric/requirements/04-ontology-structure/#finding-22">#22</a>
+    <a href="/theatlas/foundational-survey-fabric/requirements/06-geometry-topology-measurement-operations/#finding-59">#59–#61</a>
+    <a href="/theatlas/foundational-survey-fabric/requirements/06-geometry-topology-measurement-operations/#finding-64">#64</a>
+    <a href="/theatlas/foundational-survey-fabric/requirements/07-knowability-computability-conformance/#finding-84">#84–#85</a>
+  </div>
+</section>
+
+<blockquote>
+  <span class="quote-label">Architectural Boundary</span>
+  The specification may evolve. Established spatial meaning may not.
+</blockquote>
+
+<div class="section-nav">
+  <a href="/theatlas/foundational-survey-fabric/conformance/06-serialization-compatibility/">← Conformance 06</a>
+  <a href="/theatlas/foundational-survey-fabric/requirements/">Requirements Framework</a>
+  <a href="/theatlas/foundational-survey-fabric/specification/">Specification</a>
+  <a href="/theatlas/foundational-survey-fabric/conformance/">Conformance Index</a>
+</div>
+
+<div class="note">Foundational Survey Fabric · Conformance 07 · Version Compatibility</div>
+
+</article>
+</main>
+
+<div id="bp-footer"></div>
+</body>
+</html>
