@@ -23,16 +23,6 @@
 
 <style>
 
-
-
-
-
-
-
-
-
-
-
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{width:100%;min-height:100%;background:#02050a;color:#fff;font-family:Arial,Helvetica,sans-serif}
 body{position:relative;line-height:1.75;overflow-x:hidden;background:#02050a}
@@ -76,16 +66,6 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   blockquote{font-size:20px;padding:24px 26px}.status-grid{grid-template-columns:1fr}
   .spec-card{padding:26px 22px 24px}.spec-card h2{font-size:21px}
 }
-
-
-
-
-
-
-
-
-
-
 
 </style>
 </head>
@@ -141,7 +121,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">02.2 · Exact Domain Limit Vectors</div>
   <h2>The Finite Survey Domain Must Have One Exact Extent</h2>
   <p>
-    Reference vectors shall identify the exact mathematical limits of the canonical Survey Domain once its formal geometry is selected.
+    Reference Vectors shall identify the exact mathematical limits of the canonical Survey Domain once its formal geometry is specified.
   </p>
   <p>
     Independent implementations shall derive the same valid reference extent and the same boundary conditions from the governing Specification.
@@ -185,7 +165,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">02.6 · Corner and Intersection Vectors</div>
   <h2>Multiple Boundary Conditions Must Agree</h2>
   <p>
-    Where the selected Survey Domain geometry contains corners, vertices, joined limits, or equivalent compound boundary conditions, the vector set shall include exact cases at those intersections.
+    Where the specified Survey Domain geometry contains corners, vertices, joined limits, or equivalent compound boundary conditions, the vector set shall include exact cases at those intersections.
   </p>
   <p>
     These vectors shall prove that multiple simultaneous boundary rules produce one deterministic result.
@@ -193,13 +173,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">02.7 · Boundary Refinement Vectors</div>
+  <div class="spec-label">02.7 · Boundary Precision Vectors</div>
   <h2>Greater Precision Must Not Change the Domain</h2>
   <p>
-    The corpus shall test references near Domain limits at multiple supported refinement depths to prove that increasing precision does not expand, contract, or reinterpret the finite Survey Domain.
+    The corpus shall test references near Domain limits across multiple supported precision levels or states to prove that increasing precision does not expand, contract, or reinterpret the finite Survey Domain.
   </p>
   <p>
-    Refinement may increase positional precision. It shall not migrate the foundational reference extent.
+    The eventual precision mechanism may increase positional exactness through refinement, exact coordinate extension, symbolic subdivision, exact fractional representation, or another exact method. None may migrate the foundational Survey Domain extent.
   </p>
 </section>
 
@@ -221,7 +201,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
     Where appropriate, vectors shall demonstrate that a location may be validly referenceable within the Survey Domain without thereby proving that the location constitutes BitPangea World-space.
   </p>
   <p>
-    These cases shall preserve the architectural distinction between canonical reference capacity and higher-layer World membership.
+    These cases shall preserve the architectural distinction between canonical reference capacity and World membership established by higher spatial Architecture domains.
   </p>
 </section>
 
@@ -246,7 +226,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="status-card">
     <h3>Canonical Vector Corpus Not Yet Possessed</h3>
     <p>
-      Actual origin coordinates, Domain-limit values, exact boundary expressions, inclusion conventions, near-boundary refinement cases, and authoritative machine-readable expected results cannot be created until the formal Survey Domain geometry, canonical frame, addressing model, and serialization are selected.
+      Actual origin coordinates, Domain-limit values, exact boundary expressions, inclusion conventions, near-boundary precision cases, and authoritative machine-readable expected results cannot be created until the formal Survey Domain geometry, canonical frame, addressing model, precision mechanism, and normative serialization/interchange rules are specified.
     </p>
   </div>
 </div>
@@ -268,7 +248,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 
 <blockquote>
   <span class="quote-label">Reference Vector Boundary</span>
-  Domain-Boundary Vectors prove where canonical reference begins and ends. They do not define where The World begins and ends.
+  Domain-Boundary Vectors prove where canonical Survey reference begins and ends. They do not define World membership, The Extent, the Verge, or where The World begins and ends.
 </blockquote>
 
 <div class="section-nav">
