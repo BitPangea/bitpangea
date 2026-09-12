@@ -89,15 +89,15 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 <div class="divider"></div>
 
 <p class="arch-statement">
-  The canonical test set for proving that equivalent syntactic or mathematical representations converge deterministically to one authoritative Survey result.
+  The canonical test set for proving that equivalent syntactic or mathematical representations converge deterministically to one authoritative Survey meaning, with one unique representation only where the Specification requires it.
 </p>
 
 <div class="req-intro">
 <p>
-  <strong>Normalization Vectors</strong> define the reference cases through which implementations will prove that different valid expressions of the same canonical spatial truth normalize to one identical authoritative result.
+  <strong>Normalization Vectors</strong> define the reference cases through which implementations will prove that different valid expressions of the same canonical spatial truth resolve deterministically to one authoritative meaning and, where required, one canonical form.
 </p>
 <p>
-  The final vector corpus does not yet exist because the exact address grammar, geometric primitive set, ordering rules, canonical serialization, and normalization algorithms remain unresolved within the Specification. This page therefore establishes the required normalization tests without inventing canonical forms prematurely.
+  The final vector corpus does not yet exist because the exact address grammar, geometric primitive set, ordering rules, normative serialization/interchange model, and normalization algorithms remain unresolved within the Specification. This page therefore establishes the required normalization tests without inventing canonical forms or forcing a single encoding model prematurely.
 </p>
 </div>
 
@@ -110,7 +110,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">06.1 · Canonical-Form Vectors</div>
   <h2>Canonical Input Must Remain Canonical</h2>
   <p>
-    The vector set shall include already-canonical references, extents, expressions, and serializations to prove that normalization preserves their authoritative form and spatial meaning.
+    The vector set shall include already-canonical references, extents, expressions, and applicable normative encodings to prove that normalization preserves authoritative spatial meaning and any unique canonical form explicitly required by the Specification.
   </p>
   <p>
     A conforming implementation shall not alter canonical input merely because an alternative internal representation is more convenient.
@@ -121,7 +121,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">06.2 · Equivalent Address Vectors</div>
   <h2>Different Valid Address Forms Must Converge</h2>
   <p>
-    Where the Specification permits multiple valid expressions for the same canonical Survey address, vectors shall demonstrate their deterministic convergence to one authoritative canonical reference.
+    Where the Specification permits multiple valid expressions for the same canonical Survey address, Reference Vectors shall demonstrate their deterministic resolution to one authoritative canonical reference meaning and, where required, one canonical representation.
   </p>
   <p>
     Equivalent address syntax shall not create competing place identities.
@@ -143,7 +143,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">06.4 · Ordering Normalization Vectors</div>
   <h2>Equivalent Components Must Acquire One Canonical Order</h2>
   <p>
-    Where canonical expressions contain multiple components whose order does not change spatial meaning, vectors shall prove the deterministic ordering rules required for normalization and reproducibility.
+    Where canonical or normative expressions contain multiple components whose order does not change spatial meaning, Reference Vectors shall prove any deterministic ordering rules required by the governing representation for normalization, exact comparison, or reproducibility.
   </p>
   <p>
     Canonical ordering shall serve exact comparison and interchange without implying semantic hierarchy.
@@ -162,13 +162,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">06.6 · Serialization Normalization Vectors</div>
-  <h2>Equivalent Encodings Must Resolve to One Interchange Form</h2>
+  <div class="spec-label">06.6 · Normative Interchange Normalization Vectors</div>
+  <h2>Equivalent Encodings Must Resolve to One Canonical Meaning</h2>
   <p>
-    Where valid noncanonical serialized forms are permitted, vectors shall demonstrate deterministic normalization to the authoritative machine-readable representation.
+    Where valid alternate, noncanonical, or multiple normative encodings are permitted, Reference Vectors shall demonstrate deterministic normalization or semantic-equivalence behavior according to the governing Specification.
   </p>
   <p>
-    Internal storage or presentation differences shall not create alternate canonical serialization.
+    If the Specification defines one unique canonical serialization, applicable cases shall normalize to that exact form. If it permits multiple explicitly governed lossless normative encodings, those encodings may remain representationally distinct while resolving to the same canonical meaning under deterministic equivalence rules.
   </p>
 </section>
 
@@ -176,7 +176,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">06.7 · Precision-Preserving Normalization Vectors</div>
   <h2>Normalization Must Preserve Exact Precision</h2>
   <p>
-    The vector corpus shall include expressions with exact refinement or sub-Pang precision to prove that normalization does not silently truncate, round, generalize, or otherwise reduce canonical precision.
+    The vector corpus shall include expressions carrying exact higher precision or sub-Pang precision to prove that normalization does not silently truncate, round, generalize, or otherwise reduce canonical precision, regardless of the precision mechanism ultimately specified.
   </p>
   <p>
     Any transformation that loses precision belongs to lossy conversion, not canonical normalization.
@@ -198,7 +198,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">06.9 · Idempotence Vectors</div>
   <h2>Normalizing Canonical Output Again Must Change Nothing</h2>
   <p>
-    The vector set shall include cases proving that once an expression has been normalized to canonical form, applying the normalization process again produces the identical canonical result.
+    The vector set shall include cases proving that once an expression has been normalized or deterministically resolved, applying the same process again preserves the identical canonical meaning and any unique canonical form required by the Specification.
   </p>
   <p>
     Canonical normalization should therefore be stable and idempotent.
@@ -231,7 +231,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">06.12 · Cross-Implementation Normalization Agreement</div>
   <h2>Every Implementation Must Converge to the Same Canonical Result</h2>
   <p>
-    Independent conforming implementations shall produce identical canonical normalized output for every valid equivalent input in the vector corpus.
+    Independent conforming implementations shall produce the same authoritative canonical meaning for every valid equivalent input in the vector corpus. Where the Specification requires one unique canonical normalized representation, that output shall also agree exactly.
   </p>
   <p>
     A disagreement indicates an implementation defect, specification ambiguity, version incompatibility, or unresolved normalization dependency requiring correction.
@@ -242,13 +242,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="status-card">
     <h3>Established by Requirements and Specification Scope</h3>
     <p>
-      The Survey Fabric must provide deterministic canonicalization, exact validity and normalization, canonical ordering where required, exact equivalence, canonical serialization, no silent snapping, preservation of canonical precision, controlled canonical complexity, and one authoritative spatial meaning despite multiple valid representations.
+      The Survey Fabric must provide deterministic canonicalization or semantic resolution, exact validity and normalization, canonical ordering where required, exact equivalence, governed normative serialization/interchange, no silent snapping, preservation of canonical precision, controlled canonical complexity, and one authoritative spatial meaning despite multiple valid representations.
     </p>
   </div>
   <div class="status-card">
     <h3>Canonical Vector Corpus Not Yet Possessed</h3>
     <p>
-      Actual equivalent address forms, geometric normalization cases, ordering fixtures, redundancy examples, canonical serialization outputs, idempotence cases, and machine-readable expected results cannot be created until the final addressing, geometry, serialization, and normalization rules are formally selected.
+      Actual equivalent address forms, geometric normalization cases, ordering fixtures, redundancy examples, normative encoding and semantic-equivalence fixtures, idempotence cases, and authoritative machine-readable expected results cannot be created until the final addressing, geometry, normative serialization/interchange, precision, and normalization rules are formally specified.
     </p>
   </div>
 </div>
@@ -269,7 +269,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 
 <blockquote>
   <span class="quote-label">Reference Vector Boundary</span>
-  Normalization Vectors prove that equivalent expressions converge to one canonical truth. They do not permit invalid or merely nearby expressions to be treated as equivalent.
+  Normalization Vectors prove that equivalent expressions resolve to one canonical truth. They do not require one universal representation unless the Specification does, and they do not permit invalid or merely nearby expressions to be treated as equivalent.
 </blockquote>
 
 <div class="section-nav">
