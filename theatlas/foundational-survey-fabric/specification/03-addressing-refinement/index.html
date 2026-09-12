@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Canonical Addressing and Refinement | Foundational Survey Fabric Specification | BitPangea</title>
+
+<link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/favicon.svg" rel="shortcut icon"/>
+<link href="/assets/css/bitpangea-framework.css" rel="stylesheet"/>
+<script defer src="/assets/js/bitpangea-framework.js"></script>
+
+<meta name="description" content="Canonical Addressing and Refinement — Specification Section 03 for the BitPangea Foundational Survey Fabric."/>
+<meta name="theme-color" content="#00c8d7"/>
+<meta name="robots" content="index,follow"/>
+<link rel="canonical" href="https://bitpangea.com/theatlas/foundational-survey-fabric/specification/03-addressing-refinement/"/>
+
+<meta property="og:title" content="Canonical Addressing and Refinement | BitPangea"/>
+<meta property="og:description" content="Specification Section 03 for the Foundational Survey Fabric."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://bitpangea.com/theatlas/foundational-survey-fabric/specification/03-addressing-refinement/"/>
+<meta property="og:site_name" content="BitPangea"/>
+
+<style>
+
+
+
+
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;min-height:100%;background:#02050a;color:#fff;font-family:Arial,Helvetica,sans-serif}
+body{position:relative;line-height:1.75;overflow-x:hidden;background:#02050a}
+body::before{content:"";position:fixed;inset:0;background-image:linear-gradient(rgba(2,5,10,.78),rgba(2,5,10,.90)),url("/images/bitpangea.jpg");background-size:cover;background-position:center;background-repeat:no-repeat;z-index:-2;pointer-events:none}
+body::after{content:"";position:fixed;inset:0;background:radial-gradient(circle at 75% 12%,rgba(0,200,215,.10),transparent 34%),radial-gradient(circle at 18% 18%,rgba(212,169,56,.10),transparent 32%),linear-gradient(90deg,rgba(0,0,0,.60),rgba(0,0,0,.25),rgba(0,0,0,.64));z-index:-1;pointer-events:none}
+.page{width:100%;padding:150px 28px 90px}
+.container{max-width:1040px;margin:0 auto;padding:54px 58px 64px;background:rgba(0,0,0,.48);border:1px solid rgba(212,169,56,.16);box-shadow:0 0 60px rgba(0,0,0,.55);backdrop-filter:blur(4px)}
+.eyebrow{color:#00c8d7;letter-spacing:4px;text-transform:uppercase;font-size:12px;margin-bottom:20px}
+.arch-header{display:flex;align-items:center;gap:28px;margin-bottom:20px}
+.arch-mark{width:230px;height:230px;flex-shrink:0;opacity:.96}
+.arch-title{display:flex;flex-direction:column}
+h1{color:#fff;font-size:clamp(38px,6vw,66px);line-height:1.06;letter-spacing:5px;text-transform:uppercase;margin-bottom:14px;text-shadow:0 0 22px rgba(0,0,0,.9)}
+.subtitle{color:#d4a938;font-size:18px;letter-spacing:3px;text-transform:uppercase;margin-bottom:18px}
+.divider{width:64px;height:2px;background:#d4a938;margin:34px 0 42px;box-shadow:0 0 14px rgba(212,169,56,.65)}
+.arch-statement{font-size:28px;font-weight:500;color:#fff;margin-bottom:28px;text-shadow:0 0 18px rgba(212,169,56,.25)}
+p{margin-bottom:22px;color:#fff;font-size:17px;text-shadow:0 0 9px rgba(0,0,0,.9)}
+h2{margin-top:54px;margin-bottom:20px;color:#fff;font-size:28px;letter-spacing:4px;text-transform:uppercase;text-shadow:0 0 14px rgba(0,0,0,.9)}
+.arch-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:34px 0 10px}
+.arch-card{border:1px solid rgba(212,169,56,.22);background:rgba(0,0,0,.30);padding:22px;min-height:145px}
+.arch-card h3{color:#d4a938;font-size:13px;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px}
+.arch-card p{font-size:15px;margin-bottom:0}
+blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;background:rgba(0,0,0,.52);color:#fff;font-size:24px;line-height:1.45;letter-spacing:1px;box-shadow:0 0 28px rgba(0,0,0,.45)}
+.quote-label{display:block;color:#00c8d7;font-size:11px;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px}
+.return-link{display:inline-block;margin-top:14px;color:#d4a938;text-decoration:none;text-transform:uppercase;letter-spacing:2px;font-size:12px}
+.return-link:hover{color:#fff;text-shadow:0 0 12px rgba(212,169,56,.5)}
+.note{margin-top:58px;padding:18px 24px;border:1px solid rgba(212,169,56,.38);color:#d4a938;letter-spacing:2px;text-transform:uppercase;font-size:12px;display:inline-block;background:rgba(0,0,0,.35)}
+@media(max-width:900px){.arch-grid{grid-template-columns:1fr}}
+@media(max-width:768px){.page{padding:185px 16px 60px}.container{padding:36px 24px 46px}.arch-header{flex-direction:column;align-items:flex-start;gap:24px}.arch-mark{width:110px;height:110px}h1{letter-spacing:3px}h2{font-size:23px;letter-spacing:3px}.subtitle{font-size:16px}.arch-statement{font-size:19px}p{font-size:16px}blockquote{font-size:20px;padding:24px 26px}}
+
+
+.req-intro {
+  margin: 34px 0 42px;
+  padding: 28px 30px;
+  background: rgba(0,0,0,.34);
+  border: 1px solid rgba(212,169,56,.18);
+}
+.req-intro p:last-child { margin-bottom: 0; }
+
+.finding {
+  margin-top: 28px;
+  padding: 30px 32px 28px;
+  background: rgba(0,0,0,.34);
+  border: 1px solid rgba(212,169,56,.18);
+  box-shadow: 0 0 22px rgba(0,0,0,.24);
+}
+.finding-number {
+  color: #00c8d7;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.finding h2 {
+  margin: 0 0 18px;
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+.finding p {
+  color: rgba(255,255,255,.90);
+}
+.finding-principle {
+  margin: 24px 0 0;
+  padding: 22px 26px;
+  border-left: 3px solid #d4a938;
+  background: rgba(0,0,0,.48);
+  font-size: 20px;
+  line-height: 1.45;
+}
+.finding-principle .quote-label {
+  margin-bottom: 10px;
+}
+.section-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 34px 0 8px;
+}
+.section-nav a,
+.section-nav a:visited {
+  color: #d4a938;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  padding: 11px 14px;
+  border: 1px solid rgba(212,169,56,.24);
+  background: rgba(0,0,0,.28);
+}
+.section-nav a:hover {
+  color: #fff;
+  text-shadow: 0 0 12px rgba(212,169,56,.55);
+}
+.req-status {
+  margin-top: 36px;
+  padding: 26px 28px;
+  border: 1px solid rgba(0,200,215,.18);
+  background: rgba(0,0,0,.30);
+}
+.req-status h3 {
+  color: #d4a938;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.req-status p {
+  margin: 0;
+  font-size: 15px;
+  color: rgba(255,255,255,.82);
+}
+@media(max-width:768px){
+  .finding { padding: 26px 22px 24px; }
+  .finding h2 { font-size: 21px; }
+  .finding-principle { font-size: 18px; }
+}
+
+
+h1{
+  font-size:clamp(32px,4.5vw,52px);
+  line-height:1.02;
+}
+.spec-card{
+  margin-top:28px;
+  padding:30px 32px 28px;
+  background:rgba(0,0,0,.34);
+  border:1px solid rgba(212,169,56,.18);
+  box-shadow:0 0 22px rgba(0,0,0,.24);
+}
+.spec-card h2{
+  margin:0 0 18px;
+  font-size:24px;
+  letter-spacing:3px;
+}
+.spec-label{
+  color:#00c8d7;
+  font-size:11px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  margin-bottom:10px;
+}
+.finding-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:18px;
+}
+.finding-links a,
+.finding-links a:visited{
+  color:#d4a938;
+  text-decoration:none;
+  border:1px solid rgba(212,169,56,.24);
+  padding:8px 10px;
+  font-size:11px;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  background:rgba(0,0,0,.28);
+}
+.finding-links a:hover{color:#fff}
+.status-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+  margin-top:28px;
+}
+.status-card{
+  padding:24px;
+  border:1px solid rgba(0,200,215,.18);
+  background:rgba(0,0,0,.30);
+}
+.status-card h3{
+  color:#d4a938;
+  font-size:13px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  margin-bottom:10px;
+}
+.status-card p{margin:0;font-size:15px;color:rgba(255,255,255,.84)}
+@media(max-width:768px){
+  .status-grid{grid-template-columns:1fr}
+  .spec-card{padding:26px 22px 24px}
+  .spec-card h2{font-size:21px}
+}
+
+
+
+</style>
+</head>
+
+<body data-bp-page="theatlas">
+<div id="bp-header"></div>
+
+<main class="page">
+<article class="container">
+
+<div class="eyebrow">The Atlas · The Architecture · Foundational Survey Fabric · Specification</div>
+
+<div class="arch-header">
+  <img src="/thearchitecture/architecture-globe.png" alt="The Architecture Emblem" class="arch-mark"/>
+  <div class="arch-title">
+    <h1>Canonical Addressing<br/>&amp; Refinement</h1>
+    <div class="subtitle">Specification Section 03 · Derived from the Requirements Framework</div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<p class="arch-statement">
+  The specification boundary for how BitPangea names canonical place, increases precision, preserves address meaning, and normalizes equivalent spatial references.
+</p>
+
+<div class="req-intro">
+<p>
+  This section translates accepted Foundational Survey Fabric requirements into the specification scope for canonical addressing and refinement. It defines what the eventual address grammar and refinement mathematics must accomplish without prematurely fixing their final syntax or encoding.
+</p>
+<p>
+  The governing requirement is that canonical address meaning remain exact, deterministic, permanent, self-resolving, and extensible. Greater precision must extend the established reference system rather than renumber, relocate, reinterpret, or silently snap existing canonical places.
+</p>
+</div>
+
+<blockquote>
+  <span class="quote-label">Specification Principle</span>
+  Precision by extension, not migration.
+</blockquote>
+
+<section class="spec-card">
+  <div class="spec-label">03.1 · Universal Addressability</div>
+  <h2>Every Valid Representable Place Can Be Named</h2>
+  <p>
+    Every valid location representable within the canonical Survey Domain shall be addressable whether or not any Parcel, infrastructure element, stored object, or other higher-layer entity exists there.
+  </p>
+  <p>
+    Addressability shall not depend on materialization. The canonical address space may be complete while stored records remain sparse.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">03.2 · Canonical Address Meaning</div>
+  <h2>Permanent and Deterministic Reference</h2>
+  <p>
+    A canonical Survey address shall always resolve to the same canonical spatial meaning under the governing specification. The same canonical spatial meaning shall normalize to the same authoritative reference.
+  </p>
+  <p>
+    Display forms, aliases, encodings, human-readable labels, and local coordinate views may evolve, but they shall not redefine the canonical place beneath them.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">03.3 · Address Grammar</div>
+  <h2>Self-Resolving Canonical Structure</h2>
+  <p>
+    The canonical address grammar shall contain enough mathematical structure for a conforming implementation to resolve the spatial meaning of a valid address directly from the governing specification and the reference itself.
+  </p>
+  <p>
+    Canonical Survey references shall not depend on an authoritative lookup registry that assigns meaning to otherwise opaque identifiers.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">03.4 · Absolute Reference</div>
+  <h2>Independent of Higher-Layer Objects</h2>
+  <p>
+    Canonical Survey references shall be absolute within BitPangea’s one global canonical coordinate frame.
+  </p>
+  <p>
+    Their foundational meaning shall not depend on Parcels, Regions, landmarks, neighboring entities, ownership, or any other higher-layer object or relationship.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">03.5 · Extensible Refinement</div>
+  <h2>More Precision Without Rewriting Place</h2>
+  <p>
+    The Foundational Survey Fabric shall support additional canonical precision through refinement that extends established spatial reference rather than replacing it.
+  </p>
+  <p>
+    Finer refinement shall not renumber, relocate, reinterpret, or invalidate previously established canonical references. Higher layers shall remain able to preserve their identities and spatial relationships regardless of later refinement depth.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">03.6 · Refinement Depth</div>
+  <h2>Precision Without Semantic Tiers</h2>
+  <p>
+    Canonical refinement depth or equivalent precision shall be representable without assigning civilizational, functional, object-specific, or application-specific meaning to any particular depth.
+  </p>
+  <p>
+    Higher layers may define convenient resolution profiles or names, but those shall remain exact translations of the underlying canonical refinement mathematics.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">03.7 · Sub-Pang Precision</div>
+  <h2>Refinement Below the Pang</h2>
+  <p>
+    Spatial positions, distances, and extents smaller than one Pang shall be expressible through the Survey Fabric’s exact refinement mathematics.
+  </p>
+  <p>
+    The Pang remains the native canonical scale. The specification shall not require a permanently named hierarchy of subunits unless later formal design proves such names necessary.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">03.8 · Finite Exact Representation</div>
+  <h2>No Pretended Infinite Address</h2>
+  <p>
+    The canonical address system shall not require every theoretical real-number point to possess a finite address.
+  </p>
+  <p>
+    Every valid location representable under the canonical Survey mathematics shall be exactly addressable, and actual canonical references shall remain finite and deterministically computable.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">03.9 · Canonicalization</div>
+  <h2>One Authoritative Reference for One Meaning</h2>
+  <p>
+    The specification shall define deterministic normalization rules so that mathematically equivalent valid representations resolve to one canonical Survey reference.
+  </p>
+  <p>
+    Alternative textual forms, aliases, local-coordinate expressions, and equivalent encodings may exist, but canonicalization shall preserve place rather than alter it.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">03.10 · No Reuse</div>
+  <h2>Canonical References Remain Permanent</h2>
+  <p>
+    A canonical Survey reference shall never be reused or reassigned to a different spatial meaning because a higher-layer entity moves, disappears, changes ownership, or ceases to exist.
+  </p>
+  <p>
+    A place may become unused. Its canonical address shall not become available for somewhere else.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">03.11 · Address and Measurement Agreement</div>
+  <h2>Reference and Pang Mathematics Must Agree</h2>
+  <p>
+    Canonical Survey references and Pang-based position, distance, and extent shall remain exactly and reproducibly related.
+  </p>
+  <p>
+    The eventual design may use direct coordinates, hierarchical addressing, symbolic refinement, or another exact representation, but address meaning and canonical measurement shall resolve to the same spatial truth.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">03.12 · No Silent Snapping</div>
+  <h2>Normalization Does Not Move Place</h2>
+  <p>
+    Canonicalization shall normalize only mathematically equivalent references. It shall not move a location to a nearby grid line, refinement boundary, preferred increment, vertex, or other derived structure.
+  </p>
+  <p>
+    Any snapping or alignment performed by higher layers shall be an explicit spatial change rather than an interpretation of canonical address meaning.
+  </p>
+</section>
+
+<div class="status-grid">
+  <div class="status-card">
+    <h3>Established by Requirements</h3>
+    <p>
+      Universal addressability within the valid Survey Domain; permanent deterministic address meaning; refinement by extension; self-resolving canonical addresses; non-reuse of references; deterministic canonicalization; absolute foundational reference; exact agreement between address and Pang measurement; sub-Pang precision through refinement; refinement depth without semantic tiers; and finite exact addressability rather than an unrestricted real-number continuum.
+    </p>
+  </div>
+  <div class="status-card">
+    <h3>Still Open in the Specification</h3>
+    <p>
+      The exact address syntax, canonical grammar, encoding alphabet, coordinate-versus-hierarchical representation, refinement notation, branching or subdivision mathematics, maximum refinement policy, canonical normalization algorithm, and final machine-readable serialization remain unresolved until the formal mathematical design is selected and tested.
+    </p>
+  </div>
+</div>
+
+<section class="spec-card">
+  <div class="spec-label">Requirements Basis</div>
+  <h2>Primary Derived Findings</h2>
+  <p>
+    This specification section is derived especially from Requirements Findings #7–#9, #20–#22, #30, #41–#42, #54, and #70–#71.
+  </p>
+  <div class="finding-links">
+    <a href="/theatlas/foundational-survey-fabric/requirements/02-addressability-meaning-refinement/#finding-7">#7–#9</a>
+    <a href="/theatlas/foundational-survey-fabric/requirements/04-ontology-structure/#finding-20">#20–#22</a>
+    <a href="/theatlas/foundational-survey-fabric/requirements/04-ontology-structure/#finding-30">#30</a>
+    <a href="/theatlas/foundational-survey-fabric/requirements/05-measurements-orientation/#finding-41">#41–#42</a>
+    <a href="/theatlas/foundational-survey-fabric/requirements/06-geometry-topology-measurement-operations/#finding-54">#54</a>
+    <a href="/theatlas/foundational-survey-fabric/requirements/06-geometry-topology-measurement-operations/#finding-70">#70–#71</a>
+  </div>
+</section>
+
+<blockquote>
+  <span class="quote-label">Architectural Boundary</span>
+  Address names the place. Refinement increases precision. Neither may redefine the canonical spatial meaning already established.
+</blockquote>
+
+<div class="section-nav">
+  <a href="/theatlas/foundational-survey-fabric/specification/02-frame-measurement/">← Specification 02</a>
+  <a href="/theatlas/foundational-survey-fabric/requirements/">Requirements Framework</a>
+  <a href="/theatlas/foundational-survey-fabric/specification/">Specification Index</a>
+</div>
+
+<div class="note">Foundational Survey Fabric · Specification 03 · Canonical Addressing and Refinement</div>
+
+</article>
+</main>
+
+<div id="bp-footer"></div>
+</body>
+</html>
