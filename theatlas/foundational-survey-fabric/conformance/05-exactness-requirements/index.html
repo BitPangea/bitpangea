@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Exactness Requirements | Foundational Survey Fabric Conformance | BitPangea</title>
+
+<link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/favicon.svg" rel="shortcut icon"/>
+<link href="/assets/css/bitpangea-framework.css" rel="stylesheet"/>
+<script defer src="/assets/js/bitpangea-framework.js"></script>
+
+<meta name="description" content="Exactness Requirements — Conformance Section 05 for the BitPangea Foundational Survey Fabric."/>
+<meta name="theme-color" content="#00c8d7"/>
+<meta name="robots" content="index,follow"/>
+<link rel="canonical" href="https://bitpangea.com/theatlas/foundational-survey-fabric/conformance/05-exactness-requirements/"/>
+
+<meta property="og:title" content="Exactness Requirements | BitPangea"/>
+<meta property="og:description" content="Conformance Section 05 for the Foundational Survey Fabric."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://bitpangea.com/theatlas/foundational-survey-fabric/conformance/05-exactness-requirements/"/>
+<meta property="og:site_name" content="BitPangea"/>
+
+<style>
+
+
+
+
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;min-height:100%;background:#02050a;color:#fff;font-family:Arial,Helvetica,sans-serif}
+body{position:relative;line-height:1.75;overflow-x:hidden;background:#02050a}
+body::before{content:"";position:fixed;inset:0;background-image:linear-gradient(rgba(2,5,10,.78),rgba(2,5,10,.90)),url("/images/bitpangea.jpg");background-size:cover;background-position:center;background-repeat:no-repeat;z-index:-2;pointer-events:none}
+body::after{content:"";position:fixed;inset:0;background:radial-gradient(circle at 75% 12%,rgba(0,200,215,.10),transparent 34%),radial-gradient(circle at 18% 18%,rgba(212,169,56,.10),transparent 32%),linear-gradient(90deg,rgba(0,0,0,.60),rgba(0,0,0,.25),rgba(0,0,0,.64));z-index:-1;pointer-events:none}
+.page{width:100%;padding:150px 28px 90px}
+.container{max-width:1040px;margin:0 auto;padding:54px 58px 64px;background:rgba(0,0,0,.48);border:1px solid rgba(212,169,56,.16);box-shadow:0 0 60px rgba(0,0,0,.55);backdrop-filter:blur(4px)}
+.eyebrow{color:#00c8d7;letter-spacing:4px;text-transform:uppercase;font-size:12px;margin-bottom:20px}
+.arch-header{display:flex;align-items:center;gap:28px;margin-bottom:20px}
+.arch-mark{width:230px;height:230px;flex-shrink:0;opacity:.96}
+.arch-title{display:flex;flex-direction:column}
+h1{color:#fff;font-size:clamp(32px,4.5vw,52px);line-height:1.02;letter-spacing:5px;text-transform:uppercase;margin-bottom:14px;text-shadow:0 0 22px rgba(0,0,0,.9)}
+.subtitle{color:#d4a938;font-size:18px;letter-spacing:3px;text-transform:uppercase;margin-bottom:18px}
+.divider{width:64px;height:2px;background:#d4a938;margin:34px 0 42px;box-shadow:0 0 14px rgba(212,169,56,.65)}
+.arch-statement{font-size:28px;font-weight:500;color:#fff;margin-bottom:28px;text-shadow:0 0 18px rgba(212,169,56,.25)}
+p{margin-bottom:22px;color:#fff;font-size:17px;text-shadow:0 0 9px rgba(0,0,0,.9)}
+h2{margin-top:54px;margin-bottom:20px;color:#fff;font-size:28px;letter-spacing:4px;text-transform:uppercase;text-shadow:0 0 14px rgba(0,0,0,.9)}
+blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;background:rgba(0,0,0,.52);color:#fff;font-size:24px;line-height:1.45;letter-spacing:1px;box-shadow:0 0 28px rgba(0,0,0,.45)}
+.quote-label{display:block;color:#00c8d7;font-size:11px;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px}
+.req-intro{margin:34px 0 42px;padding:28px 30px;background:rgba(0,0,0,.34);border:1px solid rgba(212,169,56,.18)}
+.req-intro p:last-child{margin-bottom:0}
+.spec-card{margin-top:28px;padding:30px 32px 28px;background:rgba(0,0,0,.34);border:1px solid rgba(212,169,56,.18);box-shadow:0 0 22px rgba(0,0,0,.24)}
+.spec-card h2{margin:0 0 18px;font-size:24px;letter-spacing:3px}
+.spec-label{color:#00c8d7;font-size:11px;letter-spacing:3px;text-transform:uppercase;margin-bottom:10px}
+.status-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:28px}
+.status-card{padding:24px;border:1px solid rgba(0,200,215,.18);background:rgba(0,0,0,.30)}
+.status-card h3{color:#d4a938;font-size:13px;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}
+.status-card p{margin:0;font-size:15px;color:rgba(255,255,255,.84)}
+.finding-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.finding-links a,.finding-links a:visited{color:#d4a938;text-decoration:none;border:1px solid rgba(212,169,56,.24);padding:8px 10px;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;background:rgba(0,0,0,.28)}
+.finding-links a:hover{color:#fff}
+.section-nav{display:flex;flex-wrap:wrap;gap:12px;margin:34px 0 8px}
+.section-nav a,.section-nav a:visited{color:#d4a938;text-decoration:none;text-transform:uppercase;letter-spacing:2px;font-size:12px;padding:11px 14px;border:1px solid rgba(212,169,56,.24);background:rgba(0,0,0,.28)}
+.section-nav a:hover{color:#fff;text-shadow:0 0 12px rgba(212,169,56,.55)}
+.note{margin-top:58px;padding:18px 24px;border:1px solid rgba(212,169,56,.38);color:#d4a938;letter-spacing:2px;text-transform:uppercase;font-size:12px;display:inline-block;background:rgba(0,0,0,.35)}
+@media(max-width:768px){
+  .page{padding:185px 16px 60px}.container{padding:36px 24px 46px}
+  .arch-header{flex-direction:column;align-items:flex-start;gap:24px}
+  .arch-mark{width:110px;height:110px}h1{letter-spacing:3px}
+  .subtitle{font-size:16px}.arch-statement{font-size:19px}p{font-size:16px}
+  blockquote{font-size:20px;padding:24px 26px}.status-grid{grid-template-columns:1fr}
+  .spec-card{padding:26px 22px 24px}.spec-card h2{font-size:21px}
+}
+
+
+
+
+</style>
+</head>
+
+<body data-bp-page="theatlas">
+<div id="bp-header"></div>
+
+<main class="page">
+<article class="container">
+
+<div class="eyebrow">The Atlas · The Architecture · Foundational Survey Fabric · Conformance</div>
+
+<div class="arch-header">
+  <img src="/thearchitecture/architecture-globe.png" alt="The Architecture Emblem" class="arch-mark"/>
+  <div class="arch-title">
+    <h1>Exactness<br/>Requirements</h1>
+    <div class="subtitle">Conformance Section 05 · Canonical Precision and Determinism</div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<p class="arch-statement">
+  The conformance rules that prevent tolerance, hidden approximation, silent snapping, and mutable implementation state from altering canonical Survey truth.
+</p>
+
+<div class="req-intro">
+<p>
+  <strong>Exactness Requirements</strong> establish the minimum precision discipline every conforming implementation must preserve when interpreting, comparing, measuring, normalizing, and returning authoritative Survey results.
+</p>
+<p>
+  Canonical truth is exact. A conforming implementation may use approximations internally for performance or presentation only where those approximations are prevented from changing the authoritative result.
+</p>
+</div>
+
+<blockquote>
+  <span class="quote-label">Conformance Principle</span>
+  Exact for truth. Approximate for experience.
+</blockquote>
+
+<section class="spec-card">
+  <div class="spec-label">05.1 · Exact Canonical Equality</div>
+  <h2>No Tolerance-Based Equality</h2>
+  <p>
+    Canonical equality and equivalence shall be determined by the exact rules of the governing Specification.
+  </p>
+  <p>
+    Floating tolerances, epsilon bands, “close enough” comparison, or implementation-specific approximation shall not determine whether two canonical references or spatial expressions are equal.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">05.2 · Exact Spatial Predicates</div>
+  <h2>Predicates Must Resolve Deterministically</h2>
+  <p>
+    Foundational predicates such as adjacency, intersection, containment, boundary contact, separation, and equivalence shall resolve exactly under the canonical mathematics.
+  </p>
+  <p>
+    A conforming implementation shall not substitute approximate geometric tests for canonical predicate truth.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">05.3 · No Silent Snapping</div>
+  <h2>Canonicalization Must Not Move Place</h2>
+  <p>
+    Canonical references shall not be silently moved to nearby grid lines, refinement boundaries, vertices, preferred increments, or other derived structures.
+  </p>
+  <p>
+    Snapping may exist as an explicit higher-layer operation, but it shall never be disguised as canonical interpretation or normalization.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">05.4 · Hidden-State Independence</div>
+  <h2>Mutable Context Must Not Change the Answer</h2>
+  <p>
+    Authoritative results shall depend only on explicit canonical inputs and the governing Specification.
+  </p>
+  <p>
+    Cache history, database order, random state, user identity, ownership, session state, machine history, wall-clock time, or other hidden mutable conditions shall not alter canonical output.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">05.5 · Exact Measurement</div>
+  <h2>Canonical Measure Must Be Reproducible</h2>
+  <p>
+    Canonical separation, area, path length, boundary length, and other authoritative measures shall be produced through the exact mathematical rules defined by the Specification.
+  </p>
+  <p>
+    Internal numeric shortcuts are permissible only when they are proven to preserve the exact authoritative result.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">05.6 · Exact Canonicalization</div>
+  <h2>Normalization Preserves Identical Meaning</h2>
+  <p>
+    Canonicalization shall normalize only mathematically equivalent representations.
+  </p>
+  <p>
+    It shall not truncate, round, infer, approximate, or otherwise alter a valid spatial meaning in order to produce a preferred representation.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">05.7 · Precision Integrity</div>
+  <h2>Canonical Precision Must Not Be Lost Invisibly</h2>
+  <p>
+    A conforming implementation shall distinguish complete canonical precision from reduced storage, transmission, or rendering precision.
+  </p>
+  <p>
+    Any lossy conversion shall be detectable and shall not be represented as exact equivalence to the complete authoritative expression.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">05.8 · Finite Exact Representation</div>
+  <h2>Authoritative Truth Must Be Exactly Representable</h2>
+  <p>
+    Canonical references, extents, and foundational spatial expressions shall remain finitely representable and exactly resolvable under the governing Specification.
+  </p>
+  <p>
+    A conformance claim shall not depend on irreducible approximation or indefinite numerical convergence to determine canonical meaning.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">05.9 · Deterministic Termination</div>
+  <h2>Exactness Must Be Reachable</h2>
+  <p>
+    Canonical operations required for conformance shall terminate deterministically for valid finite canonical inputs.
+  </p>
+  <p>
+    An implementation shall not claim canonical exactness where the authoritative result depends on potentially non-terminating computation or unresolved convergence.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">05.10 · Approximation Boundary</div>
+  <h2>Approximate Methods Belong Outside Canonical Truth</h2>
+  <p>
+    Rendering, visualization, interaction, simulation, engineering convenience, or local presentation may use approximate methods where appropriate.
+  </p>
+  <p>
+    Such approximation shall remain explicitly outside the authoritative canonical result and shall not redefine foundational spatial truth.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">05.11 · Cross-Implementation Exactness</div>
+  <h2>Exactness Must Survive Independent Implementation</h2>
+  <p>
+    Independent conforming implementations shall reproduce identical authoritative results from identical canonical inputs without relying on shared hidden state or common proprietary software.
+  </p>
+  <p>
+    Exactness shall be a property of the published Specification, not of one favored implementation.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">05.12 · Exactness Failure</div>
+  <h2>Approximate Canonical Results Are Nonconforming</h2>
+  <p>
+    If an implementation uses tolerance-based equality, silent snapping, hidden mutable state, undetected lossy conversion, or implementation-specific approximation to establish an authoritative Survey result, that behavior shall constitute a conformance failure.
+  </p>
+  <p>
+    The implementation may still provide such behavior as an explicitly noncanonical higher-layer feature, but it shall not be presented as Foundational Survey Fabric truth.
+  </p>
+</section>
+
+<div class="status-grid">
+  <div class="status-card">
+    <h3>Established by Requirements</h3>
+    <p>
+      The requirements establish exact foundational mathematics, deterministic canonicalization, exact comparison, no silent snapping, distinction between canonical and reduced precision, detectable loss of precision, finite exact representation, hidden-state independence, deterministic termination, and exact-or-invalid canonical truth.
+    </p>
+  </div>
+  <div class="status-card">
+    <h3>Still Open in Conformance</h3>
+    <p>
+      The exact test vectors for numerical exactness, canonical representations used in proof, permitted internal approximation strategies, proof obligations for optimized algorithms, formal error thresholds for noncanonical presentation layers, and detailed failure codes remain to be defined after the Specification is complete.
+    </p>
+  </div>
+</div>
+
+<section class="spec-card">
+  <div class="spec-label">Requirements Basis</div>
+  <h2>Primary Referenced Findings</h2>
+  <p>
+    This Conformance section is derived especially from Requirements Findings #24, #30, #53–#57, #66, #72–#75, and #78–#83.
+  </p>
+  <div class="finding-links">
+    <a href="/theatlas/foundational-survey-fabric/requirements/04-ontology-structure/#finding-24">#24 · #30</a>
+    <a href="/theatlas/foundational-survey-fabric/requirements/06-geometry-topology-measurement-operations/#finding-53">#53–#57</a>
+    <a href="/theatlas/foundational-survey-fabric/requirements/06-geometry-topology-measurement-operations/#finding-66">#66</a>
+    <a href="/theatlas/foundational-survey-fabric/requirements/06-geometry-topology-measurement-operations/#finding-72">#72–#75</a>
+    <a href="/theatlas/foundational-survey-fabric/requirements/07-knowability-computability-conformance/#finding-78">#78–#83</a>
+  </div>
+</section>
+
+<blockquote>
+  <span class="quote-label">Architectural Boundary</span>
+  Approximation may assist an implementation. It may not become authoritative spatial truth.
+</blockquote>
+
+<div class="section-nav">
+  <a href="/theatlas/foundational-survey-fabric/conformance/04-validation-behavior/">← Conformance 04</a>
+  <a href="/theatlas/foundational-survey-fabric/requirements/">Requirements Framework</a>
+  <a href="/theatlas/foundational-survey-fabric/specification/">Specification</a>
+  <a href="/theatlas/foundational-survey-fabric/conformance/">Conformance Index</a>
+</div>
+
+<div class="note">Foundational Survey Fabric · Conformance 05 · Exactness Requirements</div>
+
+</article>
+</main>
+
+<div id="bp-footer"></div>
+</body>
+</html>
