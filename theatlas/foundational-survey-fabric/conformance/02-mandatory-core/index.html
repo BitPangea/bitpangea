@@ -146,7 +146,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
     The Mandatory Core shall require deterministic validation of canonical references and expressions within its scope.
   </p>
   <p>
-    Canonical input, valid noncanonical input, malformed expressions, impossible refinement, out-of-domain references, and other invalid states shall be distinguished according to the governing Specification rather than implementation-specific guesswork.
+    Canonical input, valid noncanonical input, malformed expressions, impossible precision expressions, out-of-domain references, and other invalid states shall be distinguished according to the governing Specification rather than implementation-specific guesswork.
   </p>
 </section>
 
@@ -154,7 +154,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">02.5 · Required Canonicalization</div>
   <h2>Equivalent Meaning Must Normalize Identically</h2>
   <p>
-    Where the Specification permits multiple equivalent representations, every conforming implementation shall normalize them to the same authoritative canonical meaning and required canonical form.
+    Where the Specification permits multiple equivalent representations, every conforming implementation shall resolve them to the same authoritative canonical meaning and, where the Specification requires a unique canonical form for a given operation or encoding, produce that required form.
   </p>
   <p>
     Canonicalization shall preserve place exactly and shall not silently move, snap, approximate, or reinterpret spatial meaning.
@@ -176,7 +176,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">02.7 · Required Result Equivalence</div>
   <h2>Identical Inputs, Identical Authoritative Results</h2>
   <p>
-    Independent implementations receiving identical valid canonical inputs shall produce identical authoritative results for every Mandatory Core operation within scope.
+    Independent implementations receiving identical valid canonical inputs shall produce the same authoritative canonical result for every Mandatory Core operation within scope. Where the governing Specification requires a unique canonical representation of that result, the representation shall also be identical.
   </p>
   <p>
     Performance, programming language, storage model, cache strategy, internal representation, and optimization may differ without altering the canonical answer.
@@ -184,13 +184,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">02.8 · Required Serialization</div>
+  <div class="spec-label">02.8 · Required Normative Interchange</div>
   <h2>Canonical Results Must Be Interchangeable</h2>
   <p>
-    Every conforming implementation shall support the canonical interchange representation required by the governing Specification for Mandatory Core references, expressions, and results.
+    Every conforming implementation shall satisfy the normative serialization and interchange obligations that the governing Specification assigns to the Mandatory Core for references, expressions, and results.
   </p>
   <p>
-    Alternative internal or presentation formats may be used, but they shall not replace the canonical representation where authoritative interchange is required.
+    The governing Specification may require one canonical serialization or permit multiple explicitly governed lossless normative encodings. A Mandatory Core implementation shall support the required encoding scope it claims, preserve deterministic canonical meaning across that scope, and shall not substitute proprietary internal or presentation formats for authoritative interchange requirements.
   </p>
 </section>
 
@@ -209,7 +209,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">02.10 · Independent Reproducibility</div>
   <h2>The Core Must Be Open to Independent Proof</h2>
   <p>
-    Mandatory Core conformance shall be independently testable from openly inspectable specifications, conformance rules, and reference vectors.
+    Mandatory Core conformance shall be independently testable from openly inspectable Specifications, conformance rules, and applicable Reference Vectors once the canonical vector corpus has been established from sufficiently complete formal mathematics.
   </p>
   <p>
     No proprietary software, unpublished algorithm, exclusive service, secret convention, or institutional permission shall be required to understand or reproduce the canonical result.
@@ -242,13 +242,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="status-card">
     <h3>Established by Requirements</h3>
     <p>
-      Finding #84 requires a mandatory minimum conformance core for every implementation claiming canonical compatibility. Findings #10, #24, #30, #57–#60, #63–#66, #71–#75, and #78–#83 further establish the exactness, reproducibility, normalization, interchange, finite representation, validity, and implementation independence that the Mandatory Core must ultimately prove.
+      Finding #84 requires a mandatory minimum conformance core for every implementation claiming canonical compatibility. Findings #10, #24, #30, #57–#60, #63–#66, #71–#75, and #78–#83 further establish the exactness, reproducibility, normalization, normative interchange, finite representation, validity, and implementation independence that the Mandatory Core must ultimately prove.
     </p>
   </div>
   <div class="status-card">
     <h3>Still Open in Conformance</h3>
     <p>
-      The exact Mandatory Core test inventory, operation list, required reference vectors, canonical test identifiers, pass thresholds where binary pass/fail is insufficient, declaration syntax, and treatment of provisional implementations remain unresolved until the Specification and remaining Conformance sections are complete.
+      The exact Mandatory Core test inventory, operation list, required Reference Vector categories and eventual canonical vectors, canonical test identifiers, pass thresholds where binary pass/fail is insufficient, required normative encoding scope, declaration syntax, and treatment of provisional implementations remain unresolved until the Specification and remaining Conformance sections are complete.
     </p>
   </div>
 </div>
@@ -257,7 +257,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">Requirements Basis</div>
   <h2>Primary Referenced Finding</h2>
   <p>
-    This Conformance section directly realizes Requirements Finding #84 — Mandatory Conformance Core — and references supporting requirements governing exactness, deterministic canonicalization, independent implementation, serialization, finite computability, and authoritative results.
+    This Conformance section directly realizes Requirements Finding #84 — Mandatory Conformance Core — and references supporting requirements governing exactness, deterministic canonicalization, independent implementation, normative serialization and interchange, finite computability, and authoritative results.
   </p>
   <div class="finding-links">
     <a href="/theatlas/foundational-survey-fabric/requirements/07-knowability-computability-conformance/#finding-84">#84</a>
@@ -272,7 +272,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 
 <blockquote>
   <span class="quote-label">Architectural Boundary</span>
-  Optional capability may extend what an implementation can do. It may not change what canonical spatial truth means.
+  Optional capability may extend what an implementation can do. It may not change what canonical spatial truth means, substitute for failure of the Mandatory Core, or create authority over the governing Specification.
 </blockquote>
 
 <div class="section-nav">
