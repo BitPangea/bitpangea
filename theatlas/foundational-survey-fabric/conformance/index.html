@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Conformance | Foundational Survey Fabric | BitPangea</title>
+
+<link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/favicon.svg" rel="shortcut icon"/>
+<link href="/assets/css/bitpangea-framework.css" rel="stylesheet"/>
+<script defer src="/assets/js/bitpangea-framework.js"></script>
+
+<meta name="description" content="The conformance framework for proving correct implementation of the BitPangea Foundational Survey Fabric Specification."/>
+<meta name="theme-color" content="#00c8d7"/>
+<meta name="robots" content="index,follow"/>
+<link rel="canonical" href="https://bitpangea.com/theatlas/foundational-survey-fabric/conformance/"/>
+
+<meta property="og:title" content="Foundational Survey Fabric Conformance | BitPangea"/>
+<meta property="og:description" content="The conformance framework through which software proves that it correctly implements the Foundational Survey Fabric Specification."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://bitpangea.com/theatlas/foundational-survey-fabric/conformance/"/>
+<meta property="og:site_name" content="BitPangea"/>
+
+<style>
+
+
+
+
+
+
+
+
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;min-height:100%;background:#02050a;color:#fff;font-family:Arial,Helvetica,sans-serif}
+body{position:relative;line-height:1.75;overflow-x:hidden;background:#02050a}
+body::before{content:"";position:fixed;inset:0;background-image:linear-gradient(rgba(2,5,10,.78),rgba(2,5,10,.90)),url("/images/bitpangea.jpg");background-size:cover;background-position:center;background-repeat:no-repeat;z-index:-2;pointer-events:none}
+body::after{content:"";position:fixed;inset:0;background:radial-gradient(circle at 75% 12%,rgba(0,200,215,.10),transparent 34%),radial-gradient(circle at 18% 18%,rgba(212,169,56,.10),transparent 32%),linear-gradient(90deg,rgba(0,0,0,.60),rgba(0,0,0,.25),rgba(0,0,0,.64));z-index:-1;pointer-events:none}
+.page{width:100%;padding:150px 28px 90px}
+.container{max-width:1040px;margin:0 auto;padding:54px 58px 64px;background:rgba(0,0,0,.48);border:1px solid rgba(212,169,56,.16);box-shadow:0 0 60px rgba(0,0,0,.55);backdrop-filter:blur(4px)}
+.eyebrow{color:#00c8d7;letter-spacing:4px;text-transform:uppercase;font-size:12px;margin-bottom:20px}
+.arch-header{display:flex;align-items:center;gap:28px;margin-bottom:20px}
+.arch-mark{width:230px;height:230px;flex-shrink:0;opacity:.96}
+.arch-title{display:flex;flex-direction:column}
+h1{color:#fff;font-size:clamp(38px,6vw,66px);line-height:1.06;letter-spacing:5px;text-transform:uppercase;margin-bottom:14px;text-shadow:0 0 22px rgba(0,0,0,.9)}
+.subtitle{color:#d4a938;font-size:18px;letter-spacing:3px;text-transform:uppercase;margin-bottom:18px}
+.divider{width:64px;height:2px;background:#d4a938;margin:34px 0 42px;box-shadow:0 0 14px rgba(212,169,56,.65)}
+.arch-statement{font-size:28px;font-weight:500;color:#fff;margin-bottom:28px;text-shadow:0 0 18px rgba(212,169,56,.25)}
+p{margin-bottom:22px;color:#fff;font-size:17px;text-shadow:0 0 9px rgba(0,0,0,.9)}
+h2{margin-top:54px;margin-bottom:20px;color:#fff;font-size:28px;letter-spacing:4px;text-transform:uppercase;text-shadow:0 0 14px rgba(0,0,0,.9)}
+blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;background:rgba(0,0,0,.52);color:#fff;font-size:24px;line-height:1.45;letter-spacing:1px;box-shadow:0 0 28px rgba(0,0,0,.45)}
+.quote-label{display:block;color:#00c8d7;font-size:11px;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px}
+.note{margin-top:58px;padding:18px 24px;border:1px solid rgba(212,169,56,.38);color:#d4a938;letter-spacing:2px;text-transform:uppercase;font-size:12px;display:inline-block;background:rgba(0,0,0,.35)}
+.req-intro{margin:34px 0 42px;padding:28px 30px;background:rgba(0,0,0,.34);border:1px solid rgba(212,169,56,.18)}
+.req-intro p:last-child{margin-bottom:0}
+.finding{margin-top:28px;padding:30px 32px 28px;background:rgba(0,0,0,.34);border:1px solid rgba(212,169,56,.18);box-shadow:0 0 22px rgba(0,0,0,.24)}
+.finding-number{color:#00c8d7;font-size:11px;letter-spacing:3px;text-transform:uppercase;margin-bottom:10px}
+.finding h2{margin:0 0 18px;font-size:24px;letter-spacing:3px}
+.finding p{color:rgba(255,255,255,.90)}
+.finding-principle{margin:24px 0 0;padding:22px 26px;border-left:3px solid #d4a938;background:rgba(0,0,0,.48);font-size:20px;line-height:1.45}
+.finding-principle .quote-label{margin-bottom:10px}
+.section-nav{display:flex;flex-wrap:wrap;gap:12px;margin:34px 0 8px}
+.section-nav a,.section-nav a:visited{color:#d4a938;text-decoration:none;text-transform:uppercase;letter-spacing:2px;font-size:12px;padding:11px 14px;border:1px solid rgba(212,169,56,.24);background:rgba(0,0,0,.28)}
+.section-nav a:hover{color:#fff;text-shadow:0 0 12px rgba(212,169,56,.55)}
+.req-status{margin-top:36px;padding:26px 28px;border:1px solid rgba(0,200,215,.18);background:rgba(0,0,0,.30)}
+.req-status h3{color:#d4a938;font-size:13px;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}
+.req-status p{margin:0;font-size:15px;color:rgba(255,255,255,.82)}
+@media(max-width:768px){
+  .page{padding:185px 16px 60px}
+  .container{padding:36px 24px 46px}
+  .arch-header{flex-direction:column;align-items:flex-start;gap:24px}
+  .arch-mark{width:110px;height:110px}
+  h1{letter-spacing:3px}
+  .subtitle{font-size:16px}
+  .arch-statement{font-size:19px}
+  p{font-size:16px}
+  blockquote{font-size:20px;padding:24px 26px}
+  .finding{padding:26px 22px 24px}
+  .finding h2{font-size:21px}
+  .finding-principle{font-size:18px}
+}
+
+
+
+.finding-list{
+  margin:18px 0 20px 22px;
+}
+.finding-list li{
+  color:rgba(255,255,255,.90);
+  margin-bottom:9px;
+  font-size:17px;
+  text-shadow:0 0 9px rgba(0,0,0,.9);
+}
+@media(max-width:768px){
+  .finding-list li{font-size:16px}
+}
+
+
+
+
+.req-index-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:18px;
+  margin:34px 0 10px;
+}
+.req-index-card{
+  display:block;
+  text-decoration:none;
+  color:#fff;
+  padding:28px 30px;
+  border:1px solid rgba(212,169,56,.22);
+  background:rgba(0,0,0,.34);
+  box-shadow:0 0 22px rgba(0,0,0,.24);
+  transition:transform .18s ease,border-color .18s ease,background .18s ease;
+}
+.req-index-card:hover{
+  transform:translateY(-2px);
+  border-color:rgba(212,169,56,.55);
+  background:rgba(0,0,0,.48);
+}
+.req-index-number{
+  color:#00c8d7;
+  font-size:11px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  margin-bottom:10px;
+}
+.req-index-card h2{
+  margin:0 0 12px;
+  font-size:24px;
+  letter-spacing:3px;
+}
+.req-index-card p{
+  margin:0;
+  color:rgba(255,255,255,.84);
+  font-size:15px;
+}
+.req-index-range{
+  display:inline-block;
+  margin-top:16px;
+  color:#d4a938;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  font-size:12px;
+}
+.requirements-map{
+  margin:34px 0 0;
+  padding:26px 28px;
+  border:1px solid rgba(0,200,215,.18);
+  background:rgba(0,0,0,.30);
+}
+.requirements-map p:last-child{margin-bottom:0}
+@media(max-width:768px){
+  .req-index-card{padding:24px 22px}
+  .req-index-card h2{font-size:21px}
+}
+
+
+.spec-index-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:18px;
+  margin:34px 0 10px;
+}
+.spec-index-card{
+  display:block;
+  text-decoration:none;
+  color:#fff;
+  padding:28px 30px;
+  border:1px solid rgba(212,169,56,.22);
+  background:rgba(0,0,0,.34);
+  box-shadow:0 0 22px rgba(0,0,0,.24);
+  transition:transform .18s ease,border-color .18s ease,background .18s ease;
+}
+.spec-index-card:hover{
+  transform:translateY(-2px);
+  border-color:rgba(212,169,56,.55);
+  background:rgba(0,0,0,.48);
+}
+.spec-index-number{
+  color:#00c8d7;
+  font-size:11px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  margin-bottom:10px;
+}
+.spec-index-card h2{
+  margin:0 0 12px;
+  font-size:24px;
+  letter-spacing:3px;
+}
+.spec-index-card p{
+  margin:0;
+  color:rgba(255,255,255,.84);
+  font-size:15px;
+}
+.spec-index-range{
+  display:inline-block;
+  margin-top:16px;
+  color:#d4a938;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  font-size:12px;
+}
+.specification-map{
+  margin:34px 0 0;
+  padding:26px 28px;
+  border:1px solid rgba(0,200,215,.18);
+  background:rgba(0,0,0,.30);
+}
+.specification-map p:last-child{margin-bottom:0}
+@media(max-width:768px){
+  .spec-index-card{padding:24px 22px}
+  .spec-index-card h2{font-size:21px}
+}
+
+
+</style>
+</head>
+
+<body data-bp-page="theatlas">
+<div id="bp-header"></div>
+
+<main class="page">
+<article class="container">
+
+<div class="eyebrow">The Atlas · The Architecture · Foundational Survey Fabric</div>
+
+<div class="arch-header">
+  <img src="/thearchitecture/architecture-globe.png" alt="The Architecture Emblem" class="arch-mark"/>
+  <div class="arch-title">
+    <h1>Conformance</h1>
+    <div class="subtitle">Foundational Survey Fabric · Implementation Proof Framework</div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<p class="arch-statement">
+  The framework through which software proves that it correctly implements the Foundational Survey Fabric Specification.
+</p>
+
+<div class="req-intro">
+<p>
+  <strong>Foundational Survey Fabric Conformance</strong> defines how an implementation demonstrates compatibility with the governing Specification. It translates requirements and formal mathematics into observable proof: canonical results, validation behavior, exactness, serialization compatibility, version compatibility, independent reproducibility, failure conditions, and formal declaration.
+</p>
+<p>
+  Conformance does not redefine the Requirements or the Specification. The Requirements establish what must be satisfied. The Specification defines the mathematics that satisfies it. Conformance defines how software proves that it follows that Specification correctly.
+</p>
+</div>
+
+<blockquote>
+  <span class="quote-label">Conformance Question</span>
+  How does software prove that it correctly implements the Specification?
+</blockquote>
+
+<h2>Conformance Structure</h2>
+
+<div class="spec-index-grid">
+
+<a class="spec-index-card" href="/theatlas/foundational-survey-fabric/conformance/01-conformance-classes/">
+  <div class="spec-index-number">Conformance 01</div>
+  <h2>Conformance Classes</h2>
+  <p>Defines the capability classes through which an implementation may claim Foundational Survey Fabric compatibility without creating alternate forms of canonical spatial truth.</p>
+  <span class="spec-index-range">Classes · Scope · Capability · Compatibility →</span>
+</a>
+<a class="spec-index-card" href="/theatlas/foundational-survey-fabric/conformance/02-mandatory-core/">
+  <div class="spec-index-number">Conformance 02</div>
+  <h2>Mandatory Core</h2>
+  <p>Defines the minimum body of canonical behavior every implementation must satisfy before claiming Foundational Survey Fabric compatibility.</p>
+  <span class="spec-index-range">Mandatory Core · Required Behavior · Canonical Truth →</span>
+</a>
+<a class="spec-index-card" href="/theatlas/foundational-survey-fabric/conformance/03-canonical-result-equivalence/">
+  <div class="spec-index-number">Conformance 03</div>
+  <h2>Canonical Result Equivalence</h2>
+  <p>Defines the requirement that independent implementations return identical authoritative results for identical canonical inputs.</p>
+  <span class="spec-index-range">Equivalence · Reproducibility · Canonical Results →</span>
+</a>
+<a class="spec-index-card" href="/theatlas/foundational-survey-fabric/conformance/04-validation-behavior/">
+  <div class="spec-index-number">Conformance 04</div>
+  <h2>Validation Behavior</h2>
+  <p>Defines how implementations distinguish canonical input, valid noncanonical representation, malformed expression, out-of-domain reference, impossible refinement, ambiguity, and other invalid states.</p>
+  <span class="spec-index-range">Validation · Normalization · Rejection · Classification →</span>
+</a>
+<a class="spec-index-card" href="/theatlas/foundational-survey-fabric/conformance/05-exactness-requirements/">
+  <div class="spec-index-number">Conformance 05</div>
+  <h2>Exactness Requirements</h2>
+  <p>Defines the exactness discipline required at the canonical level, including prohibition of tolerance-based equality, silent snapping, hidden implementation state, and undetected precision loss.</p>
+  <span class="spec-index-range">Exactness · Precision · Determinism · No Snapping →</span>
+</a>
+<a class="spec-index-card" href="/theatlas/foundational-survey-fabric/conformance/06-serialization-compatibility/">
+  <div class="spec-index-number">Conformance 06</div>
+  <h2>Serialization Compatibility</h2>
+  <p>Defines how independent implementations prove compatibility with canonical Survey interchange, parsing, normalization, serialization, and precision-preserving exchange.</p>
+  <span class="spec-index-range">Serialization · Interchange · Parsing · Round-Trip →</span>
+</a>
+<a class="spec-index-card" href="/theatlas/foundational-survey-fabric/conformance/07-version-compatibility/">
+  <div class="spec-index-number">Conformance 07</div>
+  <h2>Version Compatibility</h2>
+  <p>Defines how implementations preserve established canonical spatial meaning across compatible specification evolution and versioned representations.</p>
+  <span class="spec-index-range">Versioning · Compatibility · Continuity · Evolution →</span>
+</a>
+<a class="spec-index-card" href="/theatlas/foundational-survey-fabric/conformance/08-independent-implementation/">
+  <div class="spec-index-number">Conformance 08</div>
+  <h2>Independent Implementation Requirement</h2>
+  <p>Defines the requirement that canonical Survey truth be independently implementable, reproducible, and verifiable without proprietary dependency or exclusive institutional knowledge.</p>
+  <span class="spec-index-range">Independence · Reproducibility · Open Verification →</span>
+</a>
+<a class="spec-index-card" href="/theatlas/foundational-survey-fabric/conformance/09-failure-conditions/">
+  <div class="spec-index-number">Conformance 09</div>
+  <h2>Failure Conditions</h2>
+  <p>Defines the conditions under which an implementation must be judged incompatible, nonconforming, unsupported, indeterminate, or unable to sustain a claimed capability.</p>
+  <span class="spec-index-range">Failure · Incompatibility · Unsupported · Indeterminate →</span>
+</a>
+<a class="spec-index-card" href="/theatlas/foundational-survey-fabric/conformance/10-conformance-declaration/">
+  <div class="spec-index-number">Conformance 10</div>
+  <h2>Conformance Report / Declaration</h2>
+  <p>Defines the formal evidence record and resulting declaration by which software proves that it correctly implements the governing Specification.</p>
+  <span class="spec-index-range">Report · Evidence · Declaration · Proof →</span>
+</a>
+</div>
+
+<div class="specification-map">
+<p>
+  Together, these ten sections define the intended proof architecture for Foundational Survey Fabric compatibility: what must be supported, what is mandatory, how authoritative results are compared, how inputs are validated, how exactness is preserved, how serialized and versioned data remain compatible, how independence is demonstrated, what constitutes failure, and how the resulting evidence is formally reported and declared.
+</p>
+<p>
+  The complete Conformance framework remains subordinate to the governing Requirements and Specification. It may classify, test, verify, and report implementation behavior, but it may not create alternate spatial truth or weaken the canonical rules established beneath it.
+</p>
+</div>
+
+<blockquote>
+  <span class="quote-label">Architectural Sequence</span>
+  Requirements establishes what must be satisfied. Specification defines the mathematics that satisfies it. Conformance defines how an implementation proves it follows the Specification.
+</blockquote>
+
+<div class="section-nav">
+  <a href="/theatlas/foundational-survey-fabric/">← Foundational Survey Fabric</a>
+  <a href="/theatlas/foundational-survey-fabric/requirements/">Requirements Framework</a>
+  <a href="/theatlas/foundational-survey-fabric/specification/">Specification</a>
+  <a href="/thearchitecture/">The Architecture</a>
+</div>
+
+<div class="note">Foundational Survey Fabric · Conformance · Implementation Proof Framework</div>
+
+</article>
+</main>
+
+<div id="bp-footer"></div>
+</body>
+</html>
