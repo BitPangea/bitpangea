@@ -75,14 +75,6 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   .spec-card{padding:26px 22px 24px}.spec-card h2{font-size:21px}
 }
 
-
-
-
-
-
-
-
-
 </style>
 </head>
 
@@ -113,7 +105,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <strong>Conformance Report / Declaration</strong> is the final evidentiary layer of Foundational Survey Fabric conformance. It records what was tested, against which governing specification, under which conformance classes, with what results, and therefore what compatibility claim the implementation is entitled to make.
 </p>
 <p>
-  A declaration is not a substitute for proof. It is the structured statement produced from conformance evidence. The report preserves that evidence; the declaration summarizes the resulting compatibility claim.
+  A declaration is not a substitute for proof. It is the structured statement produced from conformance evidence. The report preserves that evidence; the declaration summarizes the resulting compatibility claim. Neither the report nor the declaration establishes canonical authority over the governing Specification, its succession, or the spatial truth that Specification defines.
 </p>
 </div>
 
@@ -129,7 +121,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
     A conformance report shall preserve the evidence necessary to evaluate whether an implementation satisfies the applicable Foundational Survey Fabric Conformance requirements.
   </p>
   <p>
-    The report shall identify the tested implementation, governing specification identity, applicable version, declared conformance classes, required reference vectors, test outcomes, failures, unsupported capabilities, and any other evidence required by the governing Conformance framework.
+    The report shall identify the tested implementation, governing Specification identity, applicable version, declared conformance classes, applicable normative encoding or interchange scope, applicable Reference Vectors once those vectors formally exist, test outcomes, failures, unsupported capabilities, and any other evidence required by the governing Conformance framework.
   </p>
 </section>
 
@@ -140,7 +132,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
     A conformance declaration shall state the compatibility claim established by the completed report.
   </p>
   <p>
-    It shall not claim broader compatibility than the tested evidence supports and shall clearly identify the specification version, conformance scope, and any limitations applicable to the declaration.
+    It shall not claim broader compatibility than the tested evidence supports and shall clearly identify the Specification version, conformance scope, applicable normative encoding or interchange scope where relevant, and any limitations applicable to the declaration.
   </p>
 </section>
 
@@ -181,10 +173,10 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">10.6 · Test and Reference Vector Record</div>
   <h2>Canonical Expectations Must Be Traceable</h2>
   <p>
-    The report shall record the required conformance tests and Reference Vectors applicable to the declared scope, together with their expected authoritative outcomes and the implementation’s observed results.
+    The report shall record the required conformance tests applicable to the declared scope and, once the formal mathematics are sufficiently complete to establish them, the applicable Reference Vectors together with their expected authoritative outcomes and the implementation’s observed results.
   </p>
   <p>
-    Evidence shall be sufficient to determine whether the implementation reproduced the canonical behavior required by the Specification.
+    Evidence shall be sufficient to determine whether the implementation reproduced the canonical behavior required by the Specification. Reference Vector categories and proof obligations may be defined before the exact vector corpus exists, but reports shall not imply that unestablished vectors were executed.
   </p>
 </section>
 
@@ -225,7 +217,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">10.10 · Declaration Integrity</div>
   <h2>The Claim Must Not Exceed the Proof</h2>
   <p>
-    A conformance declaration shall be invalid if it claims compatibility beyond the tested specification version, demonstrated conformance classes, or successfully completed Mandatory Core requirements.
+    A conformance declaration shall be invalid if it claims compatibility beyond the tested Specification version, demonstrated conformance classes, applicable normative encoding or interchange scope, or successfully completed Mandatory Core requirements.
   </p>
   <p>
     The declaration shall accurately represent the boundaries of the proven compatibility.
@@ -236,7 +228,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">10.11 · Report and Declaration Versioning</div>
   <h2>Evidence Must Remain Bound to What Was Tested</h2>
   <p>
-    Conformance reports and declarations shall carry sufficient identity and version information to determine which implementation build, specification version, test corpus, and conformance rules produced the recorded result.
+    Conformance reports and declarations shall carry sufficient identity and version information to determine which implementation build, Specification version, normative encoding or interchange scope, applicable test corpus, and Conformance rules produced the recorded result.
   </p>
   <p>
     A later implementation release or specification revision shall not automatically inherit an earlier declaration without whatever reevaluation the governing Conformance framework requires.
@@ -250,7 +242,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
     Conformance reports and declarations may use signatures, hashes, publication records, provenance systems, or other verification mechanisms to establish authenticity and integrity.
   </p>
   <p>
-    Those mechanisms authenticate the conformance record; they do not define canonical spatial meaning.
+    Those mechanisms authenticate the conformance record; they do not define canonical spatial meaning, establish canonical standing for the Specification, or grant authority to amend or succeed it.
   </p>
 </section>
 
@@ -261,7 +253,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
     The completed Conformance framework should support a deterministic machine-readable representation of the declaration so that software, registries, validators, and future infrastructure can evaluate compatibility claims consistently.
   </p>
   <p>
-    The exact declaration schema and serialization remain unresolved until the Conformance model is finalized.
+    The exact declaration schema, normative or administrative encoding, and interchange rules remain unresolved until the Conformance model is finalized.
   </p>
 </section>
 
@@ -280,7 +272,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">10.15 · Reassessment Boundary</div>
   <h2>Material Change May Require New Proof</h2>
   <p>
-    Material changes to implementation behavior, governing specification version, serialization rules, conformance classes, or Mandatory Core requirements may require renewed conformance evaluation.
+    Material changes to implementation behavior, governing Specification version, normative serialization or interchange rules, conformance classes, or Mandatory Core requirements may require renewed conformance evaluation.
   </p>
   <p>
     The exact reassessment triggers remain to be defined, but a declaration shall not be treated as timeless evidence for software or rules that materially differ from what was tested.
@@ -291,10 +283,10 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">10.16 · Final Conformance Standing</div>
   <h2>Proof Produces the Claim</h2>
   <p>
-    An implementation may declare Foundational Survey Fabric compatibility only after satisfying the applicable Mandatory Core, all requirements of each claimed conformance class, the governing validation and exactness rules, serialization and version compatibility, independent implementation obligations, and applicable failure conditions.
+    An implementation may declare Foundational Survey Fabric compatibility only after satisfying the applicable Mandatory Core, all requirements of each claimed conformance class, the governing validation and exactness rules, normative serialization and interchange obligations, version compatibility, independent implementation obligations, and applicable failure conditions.
   </p>
   <p>
-    The declaration is therefore the outcome of the Conformance framework—not an assertion that precedes it.
+    The declaration is therefore the outcome of the Conformance framework—not an assertion that precedes it, and not a source of canonical authority beyond the compatibility scope actually proven.
   </p>
 </section>
 
@@ -302,13 +294,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="status-card">
     <h3>Established by Requirements</h3>
     <p>
-      The requirements establish independent reproducibility, canonical result equivalence, exactness, deterministic validation, canonical interchange, specification identity and versioning, a mandatory conformance core, and readiness evidence through conformance analysis, reference testing, independent implementation, edge cases, and deliberate attempts to expose ambiguity or hidden dependency.
+      The requirements establish independent reproducibility, canonical result equivalence, exactness, deterministic validation, normative serialization and interchange, Specification identity and versioning, a mandatory conformance core, and a staged readiness model in which canonical adoption requires requirements traceability, conformance analysis, edge and pathological testing, independent implementation, and deliberate attempts to expose ambiguity, hidden dependency, nontermination, unresolved approximation, or higher-domain leakage.
     </p>
   </div>
   <div class="status-card">
     <h3>Still Open in Conformance</h3>
     <p>
-      The exact report schema, declaration schema, machine-readable format, evaluator identity requirements, evidence-retention rules, certification authority if any, signing or provenance mechanism, test-run identifiers, reassessment triggers, publication process, and formal status vocabulary remain unresolved until the complete Conformance framework and Specification are finalized.
+      The exact report schema, declaration schema, machine-readable format, evaluator identity requirements, evidence-retention rules, any future certification or registry role if separately authorized, signing or provenance mechanism, test-run identifiers, reassessment triggers, publication process, and formal status vocabulary remain unresolved until the complete Conformance framework and Specification are sufficiently mature.
     </p>
   </div>
 </div>
@@ -317,7 +309,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">Requirements Basis</div>
   <h2>Primary Referenced Findings</h2>
   <p>
-    This Conformance section is derived especially from Requirements Findings #10, #16–#17, #57–#60, #63–#64, #78–#85, with Finding #84 establishing the Mandatory Core and Finding #85 requiring conformance analysis and independent implementation before architectural readiness is demonstrated.
+    This Conformance section is derived especially from Requirements Findings #10, #16–#17, #57–#60, #63–#64, #78–#85, with Finding #84 establishing the Mandatory Core and Finding #85 establishing staged readiness gates: formal mathematical design may proceed within the audited requirements envelope, serious conformance testing follows sufficiently deterministic rules, and canonical adoption requires conformance analysis, adversarial testing, and independent implementation evidence.
   </p>
   <div class="finding-links">
     <a href="/theatlas/foundational-survey-fabric/requirements/02-addressability-meaning-refinement/#finding-10">#10</a>
@@ -330,7 +322,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 
 <blockquote>
   <span class="quote-label">Architectural Boundary</span>
-  Conformance is demonstrated by evidence. Declaration records the result of that evidence.
+  Conformance is demonstrated by evidence. Declaration records the result of that evidence. Neither evidence nor declaration makes the governing Specification canonical; canonical standing belongs to valid BitPangea authority.
 </blockquote>
 
 <div class="section-nav">
