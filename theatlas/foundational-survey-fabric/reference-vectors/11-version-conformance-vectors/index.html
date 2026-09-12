@@ -23,25 +23,6 @@
 
 <style>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{width:100%;min-height:100%;background:#02050a;color:#fff;font-family:Arial,Helvetica,sans-serif}
 body{position:relative;line-height:1.75;overflow-x:hidden;background:#02050a}
@@ -86,25 +67,6 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   .spec-card{padding:26px 22px 24px}.spec-card h2{font-size:21px}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </style>
 </head>
 
@@ -127,12 +89,12 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 <div class="divider"></div>
 
 <p class="arch-statement">
-  The canonical test set for proving continuity of spatial truth across compatible specification versions and deterministic conformance outcomes under defined profiles.
+  The canonical test set for proving continuity of spatial truth across compatible Specification and normative-encoding evolution, together with deterministic conformance outcomes under defined profiles.
 </p>
 
 <div class="req-intro">
 <p>
-  <strong>Version / Conformance Vectors</strong> define the reference cases through which implementations will prove that earlier canonical spatial meaning remains unchanged across compatible specification evolution and that known implementation behavior is classified consistently under a defined conformance profile.
+  <strong>Version / Conformance Vectors</strong> define the reference cases through which implementations will prove that earlier canonical spatial meaning remains unchanged across compatible Specification and normative-encoding evolution and that known implementation behavior is classified consistently under a defined Conformance profile.
 </p>
 <p>
   These vectors intentionally join version continuity and conformance disposition because both concern interpretation of the same governing standard over time: what remains canonically unchanged, what a specific implementation is required to support, and whether observed behavior should pass, fail, be unsupported, or remain indeterminate.
@@ -148,7 +110,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">11.1 · Cross-Version Canonical Meaning Vectors</div>
   <h2>Compatible Versions Must Preserve Place</h2>
   <p>
-    The vector set shall include canonical references and expressions established under an earlier compatible specification version together with the authoritative result required under a later compatible version.
+    The vector set shall include canonical references and expressions established under an earlier compatible Specification version together with the authoritative result required under a later compatible Specification version.
   </p>
   <p>
     The expected result shall demonstrate that established canonical spatial meaning remains unchanged.
@@ -162,18 +124,18 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
     Reference vectors shall include operations whose semantics are unchanged across compatible specification versions.
   </p>
   <p>
-    Identical canonical inputs shall continue to produce identical authoritative results under each compatible version.
+    Identical canonical inputs shall continue to produce the same authoritative canonical meaning under each compatible version. Where the Specification requires one unique canonical representation, that representation shall also remain identical.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">11.3 · Versioned Serialization Vectors</div>
+  <div class="spec-label">11.3 · Versioned Normative Encoding Vectors</div>
   <h2>Representation May Evolve Without Moving Canonical Meaning</h2>
   <p>
-    The corpus shall include versioned serialized forms that represent the same canonical Survey truth under different compatible specifications or interchange formats.
+    The corpus shall include versioned normative encodings or interchange forms that represent the same canonical Survey truth under compatible Specification or encoding versions.
   </p>
   <p>
-    Conforming implementations shall preserve identical underlying spatial meaning even where the representation changes.
+    Conforming implementations shall preserve the same underlying canonical spatial meaning even where the representation changes. Where multiple governed lossless encodings are permitted, version compatibility shall preserve deterministic semantic equivalence rather than forcing byte-for-byte identity across distinct encodings.
   </p>
 </section>
 
@@ -192,7 +154,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">11.5 · Forward-Compatibility Vectors</div>
   <h2>Unsupported Future Capability Must Be Identified, Not Guessed</h2>
   <p>
-    The vector set shall include cases where an implementation encounters a future optional feature, extension, or representation beyond its supported conformance scope.
+    The vector set shall include cases where an implementation encounters a future optional feature, extension, representation, or normative-encoding version beyond its supported Conformance scope.
   </p>
   <p>
     The expected result shall distinguish unsupported capability from invalid canonical truth and shall prohibit fabricated interpretation.
@@ -203,7 +165,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">11.6 · Compatible-Change Vectors</div>
   <h2>Clarification and Extension Must Preserve Established Truth</h2>
   <p>
-    The corpus shall include specification changes classified as compatible, such as clarification, additional conformance material, or optional capability.
+    The corpus shall include Specification or normative-encoding changes classified as compatible, such as clarification, additional Conformance material, optional capability, or introduction of an explicitly governed lossless encoding.
   </p>
   <p>
     Reference outcomes shall prove that those changes do not alter established canonical spatial meaning.
@@ -217,7 +179,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
     Reference vectors shall include hypothetical or historical cases sufficient to demonstrate when a change would renumber, relocate, reinterpret, or otherwise alter established canonical spatial truth.
   </p>
   <p>
-    Such a case shall be classified as incompatible rather than ordinary version evolution.
+    Such a case shall be classified as incompatible rather than ordinary version evolution. Conformance may detect that incompatibility, but it does not authorize the change or establish canonical succession.
   </p>
 </section>
 
@@ -258,7 +220,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">11.11 · Indeterminate Vectors</div>
   <h2>Specification Ambiguity Must Not Be Misclassified as Implementation Failure</h2>
   <p>
-    Where the governing specification does not yet determine one authoritative result, a reference case may be classified as indeterminate until the ambiguity is resolved.
+    Where the governing Specification does not yet determine one authoritative result, a reference case may be classified as indeterminate until the ambiguity is resolved through the proper BitPangea authority and Specification-governance process.
   </p>
   <p>
     Such cases shall remain visibly distinct from pass, fail, and unsupported outcomes.
@@ -280,7 +242,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">11.13 · Declaration Consistency Vectors</div>
   <h2>Formal Claims Must Match Proven Outcomes</h2>
   <p>
-    The vector corpus shall include conformance-report and declaration cases to prove that a formal compatibility claim does not exceed the specification version, conformance profile, or test outcomes actually demonstrated.
+    The vector corpus shall include Conformance-report and declaration cases to prove that a formal compatibility claim does not exceed the Specification version, normative encoding/interchange scope, Conformance profile, or test outcomes actually demonstrated.
   </p>
   <p>
     A declaration inconsistent with its evidence shall be classified as invalid.
@@ -291,7 +253,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">11.14 · Cross-Implementation Conformance Agreement</div>
   <h2>Independent Evaluators Must Reach the Same Disposition</h2>
   <p>
-    Independent evaluators applying the same Specification, Conformance rules, profile, and vector input shall reach the same pass, fail, unsupported, indeterminate, or compatibility judgment.
+    Independent evaluators applying the same Specification, Conformance rules, profile, and vector input shall reach the same pass, fail, unsupported, indeterminate, or compatibility judgment. Agreement on conformance does not itself establish canonical standing for a Specification version or encoding version.
   </p>
   <p>
     Disagreement indicates ambiguity in the rules, incorrect evaluation, or an unresolved version dependency requiring correction.
@@ -302,13 +264,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="status-card">
     <h3>Established by Requirements and Conformance Scope</h3>
     <p>
-      The Survey Fabric must preserve established canonical meaning across compatible specification evolution, identify governing specification versions, distinguish compatible from spatially mutating change, support independently reproducible conformance judgments, and preserve a mandatory core while allowing explicitly scoped optional capability above it.
+      The Survey Fabric must preserve established canonical meaning across compatible Specification and normative-encoding evolution, identify governing Specification and encoding versions where applicable, distinguish compatible change from spatial mutation, support independently reproducible Conformance judgments, and preserve a Mandatory Core while allowing explicitly scoped optional capability above it. Canonical standing for a standard remains a matter of valid BitPangea authority rather than conformance outcome.
     </p>
   </div>
   <div class="status-card">
     <h3>Canonical Vector Corpus Not Yet Possessed</h3>
     <p>
-      Actual specification-version pairs, compatibility fixtures, profile identifiers, pass/fail/unsupported/indeterminate examples, transition vectors, declaration cases, and authoritative machine-readable outcomes cannot be created until the versioning model, final conformance profiles, test taxonomy, and declaration format are formally established.
+      Actual Specification-version and normative-encoding-version pairs, compatibility fixtures, profile identifiers, pass/fail/unsupported/indeterminate examples, transition vectors, declaration cases, and authoritative machine-readable outcomes cannot be created until the versioning model, final Conformance profiles, test taxonomy, declaration format, and applicable normative interchange rules are formally established.
     </p>
   </div>
 </div>
@@ -330,7 +292,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 
 <blockquote>
   <span class="quote-label">Reference Vector Boundary</span>
-  Version / Conformance Vectors prove continuity of canonical truth and consistency of compatibility judgment. They do not permit versioning or profile choice to redefine the place being tested.
+  Version / Conformance Vectors prove continuity of canonical truth and consistency of compatibility judgment. They do not permit versioning, encoding choice, or profile choice to redefine the place being tested, and they do not establish which Specification version has canonical standing.
 </blockquote>
 
 <div class="section-nav">
