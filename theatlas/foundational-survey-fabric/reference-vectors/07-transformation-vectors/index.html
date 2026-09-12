@@ -82,21 +82,6 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   .spec-card{padding:26px 22px 24px}.spec-card h2{font-size:21px}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </style>
 </head>
 
@@ -119,7 +104,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 <div class="divider"></div>
 
 <p class="arch-statement">
-  The canonical test set for proving exact rotation, reflection, translation, scaling where permitted, inverse transformation, and resolution back to canonical Survey space.
+  The canonical test set for proving exact rotation, reflection, translation, scaling where permitted, inverse transformation, and deterministic resolution back to one canonical Survey space.
 </p>
 
 <div class="req-intro">
@@ -217,7 +202,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">07.8 · Canonical Frame Resolution Vectors</div>
   <h2>Derived Views Must Map Back to One Foundational Frame</h2>
   <p>
-    Reference vectors shall prove that transformed local, rotated, mirrored, or scaled representations can be deterministically resolved to the single canonical Survey frame where authoritative World-space location matters.
+    Reference Vectors shall prove that transformed local, rotated, mirrored, or scaled representations can be deterministically resolved to the single canonical Survey frame wherever authoritative Survey-space location must be recovered.
   </p>
   <p>
     Derived coordinate systems may vary. Canonical Survey truth may not.
@@ -228,7 +213,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">07.9 · Precision-Preserving Transformation Vectors</div>
   <h2>Transformation Must Not Silently Reduce Precision</h2>
   <p>
-    The vector corpus shall include refined or sub-Pang geometry to prove that exact transformations preserve canonical precision where mathematically lossless.
+    The vector corpus shall include higher-precision or sub-Pang geometry to prove that exact transformations preserve canonical precision where mathematically lossless, regardless of the precision mechanism ultimately specified.
   </p>
   <p>
     Any transformation that reduces precision shall be identified as lossy rather than canonical equivalence.
@@ -250,7 +235,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">07.11 · Equivalent Transformation Vectors</div>
   <h2>Different Paths to the Same Geometry Must Converge</h2>
   <p>
-    Where multiple transformation sequences produce the same canonical spatial result, vectors shall demonstrate exact equivalence and deterministic normalization.
+    Where multiple transformation sequences produce the same canonical spatial result, Reference Vectors shall demonstrate exact equivalence and deterministic resolution to the same canonical meaning, with one unique normalized representation only where the Specification requires it.
   </p>
   <p>
     Different operational histories shall not create distinct canonical truths for equivalent transformed space.
@@ -261,7 +246,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">07.12 · Cross-Implementation Transformation Agreement</div>
   <h2>Every Implementation Must Return the Same Transformed Result</h2>
   <p>
-    Independent conforming implementations shall produce identical authoritative results for the same transformation inputs under the same governing Specification.
+    Independent conforming implementations shall produce the same authoritative canonical transformed meaning for the same transformation inputs under the same governing Specification. Where the Specification requires one unique canonical representation of a transformed result, that representation shall also agree exactly.
   </p>
   <p>
     A disagreement indicates an implementation defect, specification ambiguity, version incompatibility, or unresolved transformation dependency requiring correction.
@@ -278,7 +263,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="status-card">
     <h3>Canonical Vector Corpus Not Yet Possessed</h3>
     <p>
-      Actual transformation inputs, matrices or equivalent formalism, angular values, scale factors, inverse fixtures, composed transformation cases, and authoritative expected outputs cannot be created until the final transformation and angular mathematics are selected and tested.
+      Actual transformation inputs, matrices or equivalent formalism, angular values, scale factors, inverse fixtures, composed transformation cases, higher-precision fixtures, and authoritative expected outputs cannot be created until the final transformation, angular, precision, and applicable normative interchange rules are specified and tested.
     </p>
   </div>
 </div>
@@ -299,7 +284,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 
 <blockquote>
   <span class="quote-label">Reference Vector Boundary</span>
-  Transformation Vectors prove that derived spatial views remain exactly related to one canonical space. They do not create alternate foundational Worlds.
+  Transformation Vectors prove that derived spatial views remain exactly related to one canonical Survey space. They do not create alternate foundational frames, places, or Worlds.
 </blockquote>
 
 <div class="section-nav">
