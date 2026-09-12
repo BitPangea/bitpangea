@@ -22,12 +22,6 @@
 <meta property="og:site_name" content="BitPangea"/>
 
 <style>
-
-
-
-
-
-
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{width:100%;min-height:100%;background:#02050a;color:#fff;font-family:Arial,Helvetica,sans-serif}
 body{position:relative;line-height:1.75;overflow-x:hidden;background:#02050a}
@@ -77,8 +71,6 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   .finding-principle{font-size:18px}
 }
 
-
-
 .finding-list{
   margin:18px 0 20px 22px;
 }
@@ -91,9 +83,6 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 @media(max-width:768px){
   .finding-list li{font-size:16px}
 }
-
-
-
 
 .req-index-grid{
   display:grid;
@@ -175,7 +164,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 <div class="divider"></div>
 
 <p class="arch-statement">
-  The governing requirements that any valid Foundational Survey Fabric must satisfy before formal mathematical design and prototype testing.
+  The governing requirements that define the architectural envelope for formal mathematical design, prototype testing, and eventual canonical adoption.
 </p>
 
 <div class="req-intro">
@@ -183,13 +172,18 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   The <strong>Foundational Survey Fabric Requirements Framework</strong> defines what BitPangea’s permanent spatial reference architecture must preserve, permit, exclude, and prove. These requirements establish the architectural envelope within which the later mathematical specification must operate.
 </p>
 <p>
-  The framework does not itself select the final mathematics, addressing scheme, subdivision model, implementation technology, or higher-layer architecture. Instead, it preserves the permanent conditions that any candidate design must satisfy without contradiction.
+  The framework does not itself select the final mathematics, addressing scheme, subdivision model, implementation technology, or higher-layer architecture. Instead, it preserves the permanent conditions that any candidate design must satisfy without contradiction while protecting the boundary between foundational spatial reference and the responsibilities of higher Architecture domains.
 </p>
 </div>
 
 <blockquote>
   <span class="quote-label">Atlas Working Principle</span>
   Do not choose the architecture because it looks elegant. Choose it only after it survives the requirements.
+</blockquote>
+
+<blockquote>
+  <span class="quote-label">Architecture Boundary Rule</span>
+  Protect the boundary. Do not design the layer above from the layer below.
 </blockquote>
 
 <h2>Requirements Structure</h2>
@@ -199,25 +193,25 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 <a class="req-index-card" href="/theatlas/foundational-survey-fabric/requirements/01-foundation-purpose-scope/">
   <div class="req-index-number">Requirements I</div>
   <h2>Foundational Purpose and Scope</h2>
-  <p>Defines the minimum permanent purpose of the Foundational Survey Fabric, its separation from Parcels and higher systems, the proper reach of immutability, extension without downward mutation, and preservation of unknown future use.</p>
+  <p>Defines the minimum permanent purpose of the Foundational Survey Fabric, the separation between canonical spatial reference and higher Architecture responsibilities, the proper reach of immutability, extension without downward mutation, and preservation of unknown future use.</p>
   <span class="req-index-range">Findings #1–#6 →</span>
 </a>
 <a class="req-index-card" href="/theatlas/foundational-survey-fabric/requirements/02-addressability-meaning-refinement/">
   <div class="req-index-number">Requirements II</div>
   <h2>Addressability, Canonical Meaning, and Refinement</h2>
-  <p>Defines universal addressability, permanent canonical meaning, refinement by extension, implementation-independent interpretation, semantic separation between space and entities, and one foundational reference shared by higher systems.</p>
+  <p>Defines addressability for every location representable under the canonical Survey mathematics, permanent canonical meaning, refinement by extension, implementation-independent interpretation, semantic separation between space and entities, and one foundational reference shared by higher systems.</p>
   <span class="req-index-range">Findings #7–#15 →</span>
 </a>
 <a class="req-index-card" href="/theatlas/foundational-survey-fabric/requirements/03-authority-consensus-evolution/">
   <div class="req-index-number">Requirements III</div>
   <h2>Authority, Consensus, and Specification Evolution</h2>
-  <p>Defines how a reproducible specification acquires canonical authority and how the governing standard may evolve without renumbering, relocating, or reinterpreting established spatial truth.</p>
+  <p>Defines the separation between technical reproducibility and canonical authority, and how the governing standard may evolve without renumbering, relocating, or reinterpreting established spatial truth.</p>
   <span class="req-index-range">Findings #16–#17 →</span>
 </a>
 <a class="req-index-card" href="/theatlas/foundational-survey-fabric/requirements/04-ontology-structure/">
   <div class="req-index-number">Requirements IV</div>
   <h2>Mathematical Ontology and Domain Structure</h2>
-  <p>Defines the Survey Fabric’s mathematical ontology: finite domain, refinement, canonical references, planar ground, exact mathematics, semantic neutrality, canonical extents, and the distinction between foundational reference and higher-layer meaning.</p>
+  <p>Defines the Survey Fabric’s mathematical ontology: finite canonical domain, extensible precision, canonical references, planar ground, exact mathematics, semantic neutrality, canonical extents, and the distinction between foundational reference capacity and higher-layer World meaning.</p>
   <span class="req-index-range">Findings #18–#33 →</span>
 </a>
 <a class="req-index-card" href="/theatlas/foundational-survey-fabric/requirements/05-measurements-orientation/">
@@ -229,13 +223,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 <a class="req-index-card" href="/theatlas/foundational-survey-fabric/requirements/06-geometry-topology-measurement-operations/">
   <div class="req-index-number">Requirements VI</div>
   <h2>Geometry, Topology, Measurement, and Spatial Operations</h2>
-  <p>Defines exact continuity, spatial predicates, transformations, measurement, geometric composition, normalization, serialization, equivalence, precision handling, comparison, connectedness, and other foundational spatial operations.</p>
+  <p>Defines exact continuity, spatial predicates, transformations, measurement, geometric composition, normalization, normative serialization and interchange, equivalence, precision handling, comparison, connectedness, and other foundational spatial operations.</p>
   <span class="req-index-range">Findings #44–#77 →</span>
 </a>
 <a class="req-index-card" href="/theatlas/foundational-survey-fabric/requirements/07-knowability-computability-conformance/">
   <div class="req-index-number">Requirements VII</div>
   <h2>Finite Knowability, Computability, and Conformance</h2>
-  <p>Defines finite representability, exact computability, minimal primitives, hidden-state independence, termination, controlled complexity, exact canonical states, the mandatory conformance core, and the readiness gate for mathematical design.</p>
+  <p>Defines finite representability, exact computability, minimal primitives, hidden-state independence, termination, controlled complexity, exact canonical states, the mandatory conformance core, and staged readiness gates for mathematical design, prototype testing, and canonical adoption.</p>
   <span class="req-index-range">Findings #78–#85 →</span>
 </a>
 </div>
@@ -245,8 +239,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   Together, these seven sections preserve the requirements-level definition of the Foundational Survey Fabric as a minimal, exact, finite, planar, semantically neutral, BitPangea-native spatial reference architecture.
 </p>
 <p>
-  The complete framework governs the transition from architectural inquiry into formal specification. No candidate Survey Fabric should advance unless it can satisfy all eighty-five findings while preserving immutable BitPangea spatial truth, exact independent implementation, compatible refinement, and future extensibility.
+  The complete framework governs staged progression from architectural inquiry into formal mathematical design, prototype and conformance testing, and eventual canonical adoption. Entry into design requires credible requirements coverage; entry into serious prototype testing requires sufficiently complete deterministic rules; canonical adoption requires successful traceability, conformance analysis, adversarial testing, and independent implementation across all eighty-five findings.
 </p>
+</div>
+
+<div class="req-status">
+  <h3>Current Standing</h3>
+  <p>Requirements Integrity Audit complete. Findings #1–#85 remain the governing requirements set, with audited wording and boundaries. The mathematics remain deliberately unresolved. The framework is ready to support traceability work and Spatial Ground inquiry, but not yet mathematical implementation.</p>
 </div>
 
 <blockquote>
