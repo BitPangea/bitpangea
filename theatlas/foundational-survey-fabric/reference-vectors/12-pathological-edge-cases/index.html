@@ -23,26 +23,6 @@
 
 <style>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{width:100%;min-height:100%;background:#02050a;color:#fff;font-family:Arial,Helvetica,sans-serif}
 body{position:relative;line-height:1.75;overflow-x:hidden;background:#02050a}
@@ -87,26 +67,6 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   .spec-card{padding:26px 22px 24px}.spec-card h2{font-size:21px}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </style>
 </head>
 
@@ -134,10 +94,10 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 
 <div class="req-intro">
 <p>
-  <strong>Pathological Edge Cases</strong> define the reference cases through which the Foundational Survey Fabric is deliberately stressed at its most difficult boundaries: exact contact, extreme refinement, structurally different but equivalent geometry, complex finite extents, normalization stress, precision limits, and other cases most likely to reveal ambiguity or implementation dependence.
+  <strong>Pathological Edge Cases</strong> define the reference cases through which the Foundational Survey Fabric is deliberately stressed at its most difficult boundaries: exact contact, extreme precision, structurally different but equivalent geometry, complex finite extents, normalization stress, normative-interchange stress, and other cases most likely to reveal ambiguity, hidden dependency, approximation, or implementation dependence.
 </p>
 <p>
-  These vectors are not exceptions to the Specification. They are proof that the Specification remains exact when the easy cases end. The final corpus cannot yet be constructed because the formal mathematics, refinement model, serialization, and normalization rules remain unresolved. This page therefore establishes the adversarial categories the completed architecture must survive.
+  These vectors are not exceptions to the Specification. They are proof that the Specification remains exact when the easy cases end. The final corpus cannot yet be constructed because the formal mathematics, precision mechanism, normative serialization/interchange model, and normalization rules remain unresolved. This page therefore establishes the adversarial categories the completed architecture must survive without inventing unresolved mathematics prematurely.
 </p>
 </div>
 
@@ -169,13 +129,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">12.3 · Deepest Tested Refinement</div>
+  <div class="spec-label">12.3 · Extreme Precision Cases</div>
   <h2>Extreme Precision Must Remain Exact and Reachable</h2>
   <p>
-    The corpus shall include references at the deepest refinement depth selected for practical conformance testing.
+    The corpus shall include valid references at demanding supported precision levels, states, or exact representations selected for practical Conformance stress testing once the governing precision mechanism is specified.
   </p>
   <p>
-    These cases shall prove finite parsing, exact resolution, deterministic termination, and preservation of canonical meaning under extreme but valid precision.
+    These cases shall prove finite parsing, exact resolution, deterministic termination, and preservation of canonical meaning under extreme but valid precision without presuming that precision is organized as hierarchical refinement.
   </p>
 </section>
 
@@ -186,7 +146,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
     Reference vectors shall include valid spatial extents with substantial but finite geometric complexity.
   </p>
   <p>
-    Conforming implementations shall interpret, normalize, compare, measure, and serialize such expressions without ambiguity or nontermination.
+    Conforming implementations shall interpret, normalize or semantically resolve, compare, measure, and exchange such expressions through applicable normative encodings without ambiguity or nontermination.
   </p>
 </section>
 
@@ -197,7 +157,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
     The vector set shall include highly redundant, deeply nested, differently ordered, or compositionally complex valid expressions that nevertheless resolve to a simpler canonical meaning.
   </p>
   <p>
-    Normalization shall remove unnecessary representational complexity without changing spatial truth.
+    Normalization or semantic resolution shall remove or govern unnecessary representational complexity without changing spatial truth. One unique normalized representation is required only where the Specification explicitly requires it.
   </p>
 </section>
 
@@ -205,7 +165,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">12.6 · Precision-Boundary Cases</div>
   <h2>Nearness Must Not Become Identity</h2>
   <p>
-    The corpus shall include references or measurements positioned immediately on opposite sides of refinement, equality, or geometric decision boundaries.
+    The corpus shall include references or measurements positioned immediately on opposite sides of precision, subdivision, equality, or geometric decision boundaries.
   </p>
   <p>
     Implementations shall not collapse distinct canonical values through tolerance, rounding, or hidden snapping.
@@ -230,18 +190,18 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
     Where permitted by the Specification, the vector corpus shall include nontrivial compositions of rotations, reflections, translations, scaling, and inverse operations.
   </p>
   <p>
-    Equivalent transformation chains shall converge to identical canonical results without cumulative approximation or drift.
+    Equivalent transformation chains shall resolve to the same authoritative canonical meaning without cumulative approximation or drift, with identical representation required only where the Specification mandates one.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">12.9 · Serialization Stress Cases</div>
+  <div class="spec-label">12.9 · Normative Interchange Stress Cases</div>
   <h2>Complex Canonical Meaning Must Survive Interchange</h2>
   <p>
-    Reference vectors shall include complex but valid canonical expressions whose serialization exercises field ordering, precision preservation, normalization, parsing, and round-trip behavior simultaneously.
+    Reference Vectors shall include complex but valid canonical expressions whose normative interchange exercises encoding rules, field ordering where applicable, precision preservation, normalization or semantic equivalence, parsing, and round-trip behavior simultaneously.
   </p>
   <p>
-    Interchange shall preserve exact meaning even when the serialized expression is large or structurally intricate.
+    Interchange shall preserve exact canonical meaning even when the encoded expression is large or structurally intricate. Where multiple governed lossless normative encodings exist, stress cases shall test both encoding-specific obligations and deterministic semantic equivalence across them.
   </p>
 </section>
 
@@ -249,7 +209,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">12.10 · Hidden-State Detection Cases</div>
   <h2>The Same Input Must Remain the Same Under Different Execution Histories</h2>
   <p>
-    The vector set shall include repeated evaluations under varied cache state, execution order, process history, or other implementation conditions to prove that hidden mutable state does not alter canonical output.
+    The vector set shall include repeated evaluations under varied cache state, execution order, process history, or other implementation conditions to prove that hidden mutable state does not alter canonical meaning or any uniquely required canonical output.
   </p>
   <p>
     State may affect performance. It shall not affect truth.
@@ -271,10 +231,10 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">12.12 · Ambiguity-Exposure Cases</div>
   <h2>The Corpus Should Attack the Specification, Not Merely the Code</h2>
   <p>
-    The edge-case corpus shall include cases specifically designed to expose underspecified behavior, conflicting interpretation, or hidden dependency in the governing Specification itself.
+    The edge-case corpus shall include cases specifically designed to expose underspecified behavior, conflicting interpretation, hidden dependency, unresolved approximation, or responsibility leakage into higher Architecture domains within the governing Specification itself.
   </p>
   <p>
-    If independent implementations reasonably disagree because the Specification does not determine one result, the case shall reveal a specification ambiguity rather than be concealed as implementation variation.
+    If independent implementations reasonably disagree because the Specification does not determine one authoritative result, the case shall reveal a Specification ambiguity or unresolved dependency rather than be concealed as implementation variation.
   </p>
 </section>
 
@@ -293,10 +253,10 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">12.14 · Cross-Implementation Stress Agreement</div>
   <h2>Every Implementation Must Survive the Same Hard Cases</h2>
   <p>
-    Independent conforming implementations shall produce identical authoritative results for every valid pathological case and identical rejection or classification for every invalid adversarial case.
+    Independent conforming implementations shall produce the same authoritative canonical meaning for every valid pathological case and the same canonical rejection or applicable classification for every invalid adversarial case. Where the Specification requires one unique representation, that representation shall also agree exactly.
   </p>
   <p>
-    Divergence under stress is evidence of implementation defect, specification ambiguity, version incompatibility, or hidden dependency requiring correction before full architectural confidence is warranted.
+    Divergence under stress is evidence of implementation defect, Specification ambiguity, version incompatibility, hidden dependency, unresolved approximation, or higher-domain leakage requiring correction before canonical adoption can be justified.
   </p>
 </section>
 
@@ -304,13 +264,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="status-card">
     <h3>Established by Requirements and Conformance Scope</h3>
     <p>
-      The Survey Fabric must remain exact, finitely representable, independently reproducible, hidden-state independent, deterministically terminating, normalization-stable, resistant to silent snapping or precision loss, and capable of exposing ambiguity or hidden dependency through deliberate edge-case and adversarial testing.
+      The Survey Fabric must remain exact, finitely representable, independently reproducible, hidden-state independent, deterministically terminating, normalization- or semantic-resolution-stable, resistant to silent snapping, precision loss, unresolved approximation, and higher-domain leakage, and capable of exposing ambiguity or hidden dependency through deliberate edge-case and adversarial testing.
     </p>
   </div>
   <div class="status-card">
     <h3>Canonical Vector Corpus Not Yet Possessed</h3>
     <p>
-      Actual pathological fixtures, deepest tested refinement values, complex finite extents, adversarial normalization inputs, transformation chains, serialization stress cases, ambiguity probes, and authoritative expected results cannot be created until the formal Survey mathematics and complete conformance rules are selected and tested.
+      Actual pathological fixtures, extreme-precision cases, complex finite extents, adversarial normalization inputs, transformation chains, normative-interchange stress cases, ambiguity probes, and authoritative expected results cannot be created until the formal Survey mathematics, precision mechanism, normative interchange rules, and complete Conformance rules are specified and tested.
     </p>
   </div>
 </div>
@@ -332,7 +292,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 
 <blockquote>
   <span class="quote-label">Reference Vector Boundary</span>
-  Pathological Edge Cases do not weaken the architecture by finding difficult behavior. They strengthen it by refusing to preserve ambiguity as canonical truth.
+  Pathological Edge Cases do not weaken the architecture by finding difficult behavior. They strengthen it by refusing to preserve ambiguity, approximation, hidden dependency, or higher-domain leakage as canonical truth. Surviving these cases is evidence for adoption readiness; the vectors themselves do not grant canonical standing.
 </blockquote>
 
 <div class="section-nav">
