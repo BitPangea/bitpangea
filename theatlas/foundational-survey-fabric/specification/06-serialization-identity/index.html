@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Serialization and Specification Identity | Foundational Survey Fabric Specification | BitPangea</title>
+
+<link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/favicon.svg" rel="shortcut icon"/>
+<link href="/assets/css/bitpangea-framework.css" rel="stylesheet"/>
+<script defer src="/assets/js/bitpangea-framework.js"></script>
+
+<meta name="description" content="Serialization and Specification Identity — Specification Section 06 for the BitPangea Foundational Survey Fabric."/>
+<meta name="theme-color" content="#00c8d7"/>
+<meta name="robots" content="index,follow"/>
+<link rel="canonical" href="https://bitpangea.com/theatlas/foundational-survey-fabric/specification/06-serialization-identity/"/>
+
+<meta property="og:title" content="Serialization and Specification Identity | BitPangea"/>
+<meta property="og:description" content="Specification Section 06 for the Foundational Survey Fabric."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://bitpangea.com/theatlas/foundational-survey-fabric/specification/06-serialization-identity/"/>
+<meta property="og:site_name" content="BitPangea"/>
+
+<style>
+
+
+
+
+
+
+
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;min-height:100%;background:#02050a;color:#fff;font-family:Arial,Helvetica,sans-serif}
+body{position:relative;line-height:1.75;overflow-x:hidden;background:#02050a}
+body::before{content:"";position:fixed;inset:0;background-image:linear-gradient(rgba(2,5,10,.78),rgba(2,5,10,.90)),url("/images/bitpangea.jpg");background-size:cover;background-position:center;background-repeat:no-repeat;z-index:-2;pointer-events:none}
+body::after{content:"";position:fixed;inset:0;background:radial-gradient(circle at 75% 12%,rgba(0,200,215,.10),transparent 34%),radial-gradient(circle at 18% 18%,rgba(212,169,56,.10),transparent 32%),linear-gradient(90deg,rgba(0,0,0,.60),rgba(0,0,0,.25),rgba(0,0,0,.64));z-index:-1;pointer-events:none}
+.page{width:100%;padding:150px 28px 90px}
+.container{max-width:1040px;margin:0 auto;padding:54px 58px 64px;background:rgba(0,0,0,.48);border:1px solid rgba(212,169,56,.16);box-shadow:0 0 60px rgba(0,0,0,.55);backdrop-filter:blur(4px)}
+.eyebrow{color:#00c8d7;letter-spacing:4px;text-transform:uppercase;font-size:12px;margin-bottom:20px}
+.arch-header{display:flex;align-items:center;gap:28px;margin-bottom:20px}
+.arch-mark{width:230px;height:230px;flex-shrink:0;opacity:.96}
+.arch-title{display:flex;flex-direction:column}
+h1{color:#fff;font-size:clamp(38px,6vw,66px);line-height:1.06;letter-spacing:5px;text-transform:uppercase;margin-bottom:14px;text-shadow:0 0 22px rgba(0,0,0,.9)}
+.subtitle{color:#d4a938;font-size:18px;letter-spacing:3px;text-transform:uppercase;margin-bottom:18px}
+.divider{width:64px;height:2px;background:#d4a938;margin:34px 0 42px;box-shadow:0 0 14px rgba(212,169,56,.65)}
+.arch-statement{font-size:28px;font-weight:500;color:#fff;margin-bottom:28px;text-shadow:0 0 18px rgba(212,169,56,.25)}
+p{margin-bottom:22px;color:#fff;font-size:17px;text-shadow:0 0 9px rgba(0,0,0,.9)}
+h2{margin-top:54px;margin-bottom:20px;color:#fff;font-size:28px;letter-spacing:4px;text-transform:uppercase;text-shadow:0 0 14px rgba(0,0,0,.9)}
+.arch-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:34px 0 10px}
+.arch-card{border:1px solid rgba(212,169,56,.22);background:rgba(0,0,0,.30);padding:22px;min-height:145px}
+.arch-card h3{color:#d4a938;font-size:13px;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px}
+.arch-card p{font-size:15px;margin-bottom:0}
+blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;background:rgba(0,0,0,.52);color:#fff;font-size:24px;line-height:1.45;letter-spacing:1px;box-shadow:0 0 28px rgba(0,0,0,.45)}
+.quote-label{display:block;color:#00c8d7;font-size:11px;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px}
+.return-link{display:inline-block;margin-top:14px;color:#d4a938;text-decoration:none;text-transform:uppercase;letter-spacing:2px;font-size:12px}
+.return-link:hover{color:#fff;text-shadow:0 0 12px rgba(212,169,56,.5)}
+.note{margin-top:58px;padding:18px 24px;border:1px solid rgba(212,169,56,.38);color:#d4a938;letter-spacing:2px;text-transform:uppercase;font-size:12px;display:inline-block;background:rgba(0,0,0,.35)}
+@media(max-width:900px){.arch-grid{grid-template-columns:1fr}}
+@media(max-width:768px){.page{padding:185px 16px 60px}.container{padding:36px 24px 46px}.arch-header{flex-direction:column;align-items:flex-start;gap:24px}.arch-mark{width:110px;height:110px}h1{letter-spacing:3px}h2{font-size:23px;letter-spacing:3px}.subtitle{font-size:16px}.arch-statement{font-size:19px}p{font-size:16px}blockquote{font-size:20px;padding:24px 26px}}
+
+
+.req-intro {
+  margin: 34px 0 42px;
+  padding: 28px 30px;
+  background: rgba(0,0,0,.34);
+  border: 1px solid rgba(212,169,56,.18);
+}
+.req-intro p:last-child { margin-bottom: 0; }
+
+.finding {
+  margin-top: 28px;
+  padding: 30px 32px 28px;
+  background: rgba(0,0,0,.34);
+  border: 1px solid rgba(212,169,56,.18);
+  box-shadow: 0 0 22px rgba(0,0,0,.24);
+}
+.finding-number {
+  color: #00c8d7;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.finding h2 {
+  margin: 0 0 18px;
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+.finding p {
+  color: rgba(255,255,255,.90);
+}
+.finding-principle {
+  margin: 24px 0 0;
+  padding: 22px 26px;
+  border-left: 3px solid #d4a938;
+  background: rgba(0,0,0,.48);
+  font-size: 20px;
+  line-height: 1.45;
+}
+.finding-principle .quote-label {
+  margin-bottom: 10px;
+}
+.section-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 34px 0 8px;
+}
+.section-nav a,
+.section-nav a:visited {
+  color: #d4a938;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  padding: 11px 14px;
+  border: 1px solid rgba(212,169,56,.24);
+  background: rgba(0,0,0,.28);
+}
+.section-nav a:hover {
+  color: #fff;
+  text-shadow: 0 0 12px rgba(212,169,56,.55);
+}
+.req-status {
+  margin-top: 36px;
+  padding: 26px 28px;
+  border: 1px solid rgba(0,200,215,.18);
+  background: rgba(0,0,0,.30);
+}
+.req-status h3 {
+  color: #d4a938;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.req-status p {
+  margin: 0;
+  font-size: 15px;
+  color: rgba(255,255,255,.82);
+}
+@media(max-width:768px){
+  .finding { padding: 26px 22px 24px; }
+  .finding h2 { font-size: 21px; }
+  .finding-principle { font-size: 18px; }
+}
+
+
+h1{
+  font-size:clamp(32px,4.5vw,52px);
+  line-height:1.02;
+}
+.spec-card{
+  margin-top:28px;
+  padding:30px 32px 28px;
+  background:rgba(0,0,0,.34);
+  border:1px solid rgba(212,169,56,.18);
+  box-shadow:0 0 22px rgba(0,0,0,.24);
+}
+.spec-card h2{
+  margin:0 0 18px;
+  font-size:24px;
+  letter-spacing:3px;
+}
+.spec-label{
+  color:#00c8d7;
+  font-size:11px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  margin-bottom:10px;
+}
+.finding-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:18px;
+}
+.finding-links a,
+.finding-links a:visited{
+  color:#d4a938;
+  text-decoration:none;
+  border:1px solid rgba(212,169,56,.24);
+  padding:8px 10px;
+  font-size:11px;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  background:rgba(0,0,0,.28);
+}
+.finding-links a:hover{color:#fff}
+.status-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+  margin-top:28px;
+}
+.status-card{
+  padding:24px;
+  border:1px solid rgba(0,200,215,.18);
+  background:rgba(0,0,0,.30);
+}
+.status-card h3{
+  color:#d4a938;
+  font-size:13px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  margin-bottom:10px;
+}
+.status-card p{margin:0;font-size:15px;color:rgba(255,255,255,.84)}
+@media(max-width:768px){
+  .status-grid{grid-template-columns:1fr}
+  .spec-card{padding:26px 22px 24px}
+  .spec-card h2{font-size:21px}
+}
+
+
+
+
+
+
+</style>
+</head>
+
+<body data-bp-page="theatlas">
+<div id="bp-header"></div>
+
+<main class="page">
+<article class="container">
+
+<div class="eyebrow">The Atlas · The Architecture · Foundational Survey Fabric · Specification</div>
+
+<div class="arch-header">
+  <img src="/thearchitecture/architecture-globe.png" alt="The Architecture Emblem" class="arch-mark"/>
+  <div class="arch-title">
+    <h1>Serialization &amp;<br/>Specification Identity</h1>
+    <div class="subtitle">Specification Section 06 · Derived from the Requirements Framework</div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<p class="arch-statement">
+  The specification boundary for canonical interchange, normative representation, standard identity, and preservation of one mathematical truth across multiple durable forms.
+</p>
+
+<div class="req-intro">
+<p>
+  This section translates accepted Foundational Survey Fabric requirements into the specification scope for serialization and specification identity. It defines how authoritative Survey references, extents, and foundational spatial expressions must be represented for deterministic interchange across independent conforming implementations.
+</p>
+<p>
+  It also establishes the distinction between the mathematical truth of canonical space and the documents, encodings, versions, or verification systems used to describe and exchange that truth. Formats may evolve. Canonical spatial meaning must remain unchanged.
+</p>
+</div>
+
+<blockquote>
+  <span class="quote-label">Specification Principle</span>
+  One meaning. Many durable expressions.
+</blockquote>
+
+<section class="spec-card">
+  <div class="spec-label">06.1 · Canonical Serialization</div>
+  <h2>One Authoritative Interchange Form</h2>
+  <p>
+    The Foundational Survey Fabric shall define a canonical machine-readable serialization for authoritative Survey references, spatial extents, and other foundational spatial expressions.
+  </p>
+  <p>
+    Independent conforming implementations may use different internal data structures or storage methods, but authoritative interchange shall normalize to the canonical representation defined by the specification.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">06.2 · Deterministic Encoding</div>
+  <h2>Unambiguous Machine Representation</h2>
+  <p>
+    The canonical serialization shall be deterministic so that the same canonical spatial meaning produces the same authoritative serialized result.
+  </p>
+  <p>
+    Equivalent but noncanonical encodings may exist for convenience, but they shall normalize deterministically to the authoritative form where canonical interchange is required.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">06.3 · Normative Representation</div>
+  <h2>One Governing Meaning Across Formats</h2>
+  <p>
+    The Survey specification may be expressed through multiple human-readable, machine-readable, formal, archival, or future durable representations.
+  </p>
+  <p>
+    Those representations shall express one governing mathematical meaning and shall not establish competing spatial truths.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">06.4 · Representation Consistency</div>
+  <h2>Deterministic Agreement Across Normative Forms</h2>
+  <p>
+    Where multiple normative representations are maintained, the specification process shall define rules sufficient to ensure deterministic consistency among them.
+  </p>
+  <p>
+    If a conflict arises among normative representations, the governing specification shall provide a clear precedence or resolution rule so canonical meaning remains unambiguous.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">06.5 · Specification Identity</div>
+  <h2>The Standard Must Be Identifiable</h2>
+  <p>
+    The Foundational Survey Fabric specification, serialization rules, conformance profiles, and reference materials shall carry explicit identity information sufficient for independent implementations to determine which governing standard applies.
+  </p>
+  <p>
+    Specification identity shall identify the standard and its applicable rules without becoming part of the spatial identity of the places described by that standard.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">06.6 · Versioning</div>
+  <h2>Version the Standard, Not the Place</h2>
+  <p>
+    Specification documents, serialization rules, conformance profiles, and test materials may carry governed version history.
+  </p>
+  <p>
+    Compatible specification evolution shall preserve previously established canonical spatial meaning. A new document version shall not renumber, relocate, reinterpret, or otherwise change an existing canonical place.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">06.7 · Compatibility</div>
+  <h2>Preserve Established Spatial Meaning</h2>
+  <p>
+    Conforming implementations shall be able to determine whether a specification or serialization version is compatible with previously established canonical Survey meaning.
+  </p>
+  <p>
+    Compatible changes may clarify rules, extend capabilities, improve conformance material, or add durable representations, provided they do not alter established spatial truth.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">06.8 · Spatial Meaning Independent of Format</div>
+  <h2>The Format Is Not the Place</h2>
+  <p>
+    Canonical spatial meaning shall remain independent of any particular text format, binary encoding, data structure, schema language, storage system, or interchange technology.
+  </p>
+  <p>
+    A representation may become obsolete while the mathematical place it describes remains unchanged and recoverable through the governing specification.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">06.9 · Verification Independence</div>
+  <h2>Mathematics Before Verification Technology</h2>
+  <p>
+    Canonical Survey meaning shall not depend on any particular cryptographic algorithm, signature scheme, blockchain, consensus network, database, or authentication technology.
+  </p>
+  <p>
+    Such technologies may authenticate specifications, records, or canonical succession above the spatial mathematics, but they shall not define where a Survey reference points.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">06.10 · Provenance Boundary</div>
+  <h2>Identity of the Standard Is Not Identity of the Place</h2>
+  <p>
+    Specification identity, document provenance, publication history, signatures, and verification metadata may establish which standard or representation is authoritative.
+  </p>
+  <p>
+    Those mechanisms shall remain separate from the canonical spatial meaning of references established under that standard.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">06.11 · Interoperable Exchange</div>
+  <h2>Many Implementations, One Interchange Truth</h2>
+  <p>
+    A conforming implementation shall be able to emit, receive, parse, validate, and interpret canonical serialized Survey expressions without dependence on proprietary internal state or inaccessible implementation knowledge.
+  </p>
+  <p>
+    Canonical interchange shall therefore support independent verification and reproducibility across implementations.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">06.12 · Durable Expression</div>
+  <h2>Spatial Truth Should Outlive Its Formats</h2>
+  <p>
+    The governing specification shall preserve enough formal meaning that canonical Survey truth can be re-expressed in future durable formats without changing the mathematics beneath it.
+  </p>
+  <p>
+    New representations may be introduced where useful, but no representation shall create an alternate canonical space.
+  </p>
+</section>
+
+<div class="status-grid">
+  <div class="status-card">
+    <h3>Established by Requirements</h3>
+    <p>
+      Canonical serialization and interchange; deterministic normalization to authoritative representation; explicit specification identity and versioning; persistence of spatial meaning across compatible specification evolution; independence of spatial meaning from cryptographic, blockchain, database, or verification technology; and preservation of one mathematical truth across multiple durable representations.
+    </p>
+  </div>
+  <div class="status-card">
+    <h3>Still Open in the Specification</h3>
+    <p>
+      The exact machine-readable format, encoding syntax, field order, canonical byte representation, schema language, version identifier format, normative-representation precedence rule, compatibility declaration format, and cryptographic or provenance mechanisms used above the spatial mathematics remain unresolved until the formal specification and conformance model are selected and tested.
+    </p>
+  </div>
+</div>
+
+<section class="spec-card">
+  <div class="spec-label">Requirements Basis</div>
+  <h2>Primary Derived Findings</h2>
+  <p>
+    This specification section is derived especially from Requirements Findings #59–#61 and #64.
+  </p>
+  <div class="finding-links">
+    <a href="/theatlas/foundational-survey-fabric/requirements/06-geometry-topology-measurement-operations/#finding-59">#59–#61</a>
+    <a href="/theatlas/foundational-survey-fabric/requirements/06-geometry-topology-measurement-operations/#finding-64">#64</a>
+  </div>
+</section>
+
+<blockquote>
+  <span class="quote-label">Architectural Boundary</span>
+  The representation may change. The specification may evolve. The canonical spatial meaning must remain the same.
+</blockquote>
+
+<div class="section-nav">
+  <a href="/theatlas/foundational-survey-fabric/specification/05-operations/">← Specification 05</a>
+  <a href="/theatlas/foundational-survey-fabric/requirements/">Requirements Framework</a>
+  <a href="/theatlas/foundational-survey-fabric/specification/">Specification Index</a>
+</div>
+
+<div class="note">Foundational Survey Fabric · Specification 06 · Serialization and Specification Identity</div>
+
+</article>
+</main>
+
+<div id="bp-footer"></div>
+</body>
+</html>
