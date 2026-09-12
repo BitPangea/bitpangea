@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mathematical Ontology and Domain Structure | Foundational Survey Fabric | BitPangea</title>
+
+<link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/favicon.svg" rel="shortcut icon"/>
+<link href="/assets/css/bitpangea-framework.css" rel="stylesheet"/>
+<script defer src="/assets/js/bitpangea-framework.js"></script>
+
+<meta name="description" content="Mathematical Ontology and Domain Structure — Requirements Findings #18–#33 for the BitPangea Foundational Survey Fabric."/>
+<meta name="theme-color" content="#00c8d7"/>
+<meta name="robots" content="index,follow"/>
+<link rel="canonical" href="https://bitpangea.com/theatlas/foundational-survey-fabric/requirements/04-ontology-structure/"/>
+
+<meta property="og:title" content="Mathematical Ontology and Domain Structure | BitPangea"/>
+<meta property="og:description" content="Requirements Findings #18–#33 for the Foundational Survey Fabric."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://bitpangea.com/theatlas/foundational-survey-fabric/requirements/04-ontology-structure/"/>
+<meta property="og:site_name" content="BitPangea"/>
+
+<style>
+
+
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;min-height:100%;background:#02050a;color:#fff;font-family:Arial,Helvetica,sans-serif}
+body{position:relative;line-height:1.75;overflow-x:hidden;background:#02050a}
+body::before{content:"";position:fixed;inset:0;background-image:linear-gradient(rgba(2,5,10,.78),rgba(2,5,10,.90)),url("/images/bitpangea.jpg");background-size:cover;background-position:center;background-repeat:no-repeat;z-index:-2;pointer-events:none}
+body::after{content:"";position:fixed;inset:0;background:radial-gradient(circle at 75% 12%,rgba(0,200,215,.10),transparent 34%),radial-gradient(circle at 18% 18%,rgba(212,169,56,.10),transparent 32%),linear-gradient(90deg,rgba(0,0,0,.60),rgba(0,0,0,.25),rgba(0,0,0,.64));z-index:-1;pointer-events:none}
+.page{width:100%;padding:150px 28px 90px}
+.container{max-width:1040px;margin:0 auto;padding:54px 58px 64px;background:rgba(0,0,0,.48);border:1px solid rgba(212,169,56,.16);box-shadow:0 0 60px rgba(0,0,0,.55);backdrop-filter:blur(4px)}
+.eyebrow{color:#00c8d7;letter-spacing:4px;text-transform:uppercase;font-size:12px;margin-bottom:20px}
+.arch-header{display:flex;align-items:center;gap:28px;margin-bottom:20px}
+.arch-mark{width:230px;height:230px;flex-shrink:0;opacity:.96}
+.arch-title{display:flex;flex-direction:column}
+h1{color:#fff;font-size:clamp(38px,6vw,66px);line-height:1.06;letter-spacing:5px;text-transform:uppercase;margin-bottom:14px;text-shadow:0 0 22px rgba(0,0,0,.9)}
+.subtitle{color:#d4a938;font-size:18px;letter-spacing:3px;text-transform:uppercase;margin-bottom:18px}
+.divider{width:64px;height:2px;background:#d4a938;margin:34px 0 42px;box-shadow:0 0 14px rgba(212,169,56,.65)}
+.arch-statement{font-size:28px;font-weight:500;color:#fff;margin-bottom:28px;text-shadow:0 0 18px rgba(212,169,56,.25)}
+p{margin-bottom:22px;color:#fff;font-size:17px;text-shadow:0 0 9px rgba(0,0,0,.9)}
+h2{margin-top:54px;margin-bottom:20px;color:#fff;font-size:28px;letter-spacing:4px;text-transform:uppercase;text-shadow:0 0 14px rgba(0,0,0,.9)}
+blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;background:rgba(0,0,0,.52);color:#fff;font-size:24px;line-height:1.45;letter-spacing:1px;box-shadow:0 0 28px rgba(0,0,0,.45)}
+.quote-label{display:block;color:#00c8d7;font-size:11px;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px}
+.note{margin-top:58px;padding:18px 24px;border:1px solid rgba(212,169,56,.38);color:#d4a938;letter-spacing:2px;text-transform:uppercase;font-size:12px;display:inline-block;background:rgba(0,0,0,.35)}
+.req-intro{margin:34px 0 42px;padding:28px 30px;background:rgba(0,0,0,.34);border:1px solid rgba(212,169,56,.18)}
+.req-intro p:last-child{margin-bottom:0}
+.finding{margin-top:28px;padding:30px 32px 28px;background:rgba(0,0,0,.34);border:1px solid rgba(212,169,56,.18);box-shadow:0 0 22px rgba(0,0,0,.24)}
+.finding-number{color:#00c8d7;font-size:11px;letter-spacing:3px;text-transform:uppercase;margin-bottom:10px}
+.finding h2{margin:0 0 18px;font-size:24px;letter-spacing:3px}
+.finding p{color:rgba(255,255,255,.90)}
+.finding-principle{margin:24px 0 0;padding:22px 26px;border-left:3px solid #d4a938;background:rgba(0,0,0,.48);font-size:20px;line-height:1.45}
+.finding-principle .quote-label{margin-bottom:10px}
+.section-nav{display:flex;flex-wrap:wrap;gap:12px;margin:34px 0 8px}
+.section-nav a,.section-nav a:visited{color:#d4a938;text-decoration:none;text-transform:uppercase;letter-spacing:2px;font-size:12px;padding:11px 14px;border:1px solid rgba(212,169,56,.24);background:rgba(0,0,0,.28)}
+.section-nav a:hover{color:#fff;text-shadow:0 0 12px rgba(212,169,56,.55)}
+.req-status{margin-top:36px;padding:26px 28px;border:1px solid rgba(0,200,215,.18);background:rgba(0,0,0,.30)}
+.req-status h3{color:#d4a938;font-size:13px;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}
+.req-status p{margin:0;font-size:15px;color:rgba(255,255,255,.82)}
+@media(max-width:768px){
+  .page{padding:185px 16px 60px}
+  .container{padding:36px 24px 46px}
+  .arch-header{flex-direction:column;align-items:flex-start;gap:24px}
+  .arch-mark{width:110px;height:110px}
+  h1{letter-spacing:3px}
+  .subtitle{font-size:16px}
+  .arch-statement{font-size:19px}
+  p{font-size:16px}
+  blockquote{font-size:20px;padding:24px 26px}
+  .finding{padding:26px 22px 24px}
+  .finding h2{font-size:21px}
+  .finding-principle{font-size:18px}
+}
+
+
+</style>
+</head>
+
+<body data-bp-page="theatlas">
+<div id="bp-header"></div>
+
+<main class="page">
+<article class="container">
+
+<div class="eyebrow">The Atlas · The Architecture · Foundational Survey Fabric · Requirements</div>
+
+<div class="arch-header">
+  <img src="/thearchitecture/architecture-globe.png" alt="The Architecture Emblem" class="arch-mark"/>
+  <div class="arch-title">
+    <h1>Mathematical Ontology<br/>&amp; Domain Structure</h1>
+    <div class="subtitle">Requirements Framework · Findings #18–#33</div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<p class="arch-statement">
+  The foundational rules governing what kinds of spatial things the Survey Fabric does—and does not—treat as canonical.
+</p>
+
+<div class="req-intro">
+<p>
+  This section defines the mathematical ontology of the Foundational Survey Fabric: the status of cells, the finite Survey Domain, refinement, canonical addresses, dimensionality, exactness, boundaries, containment, extents, and the distinction between foundational spatial reference and higher-layer meaning.
+</p>
+<p>
+  These findings preserve a deliberately minimal substrate. They require one exact spatial mathematics while resisting the temptation to turn grids, Parcels, World membership, boundaries, temporal state, or semantic entities into foundational objects unless their permanence is genuinely necessary.
+</p>
+</div>
+
+<blockquote>
+  <span class="quote-label">Atlas Working Principle</span>
+  The reference system is fundamental. The grid may be a way of expressing it.
+</blockquote>
+
+
+<section class="finding" id="finding-18">
+  <div class="finding-number">Requirement Finding #18</div>
+  <h2>Cells Are Not Foundational Objects by Default</h2>
+  <p>The Foundational Survey Fabric should not presently be defined as a permanent inventory or ontology of cells. Its foundational requirement is an exact canonical spatial reference system capable of deterministic addressing and refinement. Cells, survey units, subdivisions, grids, or similar structures may be mathematically derived or used by implementations where useful, but they should not become foundational objects unless later inquiry demonstrates that permanent cell identity is necessary.</p>
+  <div class="finding-principle"><span class="quote-label">Governing Principle</span>The reference system is fundamental. The grid may be a way of expressing it.</div>
+</section>
+<section class="finding" id="finding-19">
+  <div class="finding-number">Requirement Finding #19</div>
+  <h2>Finite by Design</h2>
+  <p>The canonical BitPangea Survey Domain should presently be treated as finite in spatial extent, consistent with BitPangea’s constitutional finitude. Future precision should be achieved through refinement within that domain rather than by expanding it, unless a later Creator or constitutional inquiry establishes a legitimate reason for a broader reference architecture.</p>
+  <div class="finding-principle"><span class="quote-label">Governing Principle</span>Finite by design, not by assumption.</div>
+</section>
+<section class="finding" id="finding-20">
+  <div class="finding-number">Requirement Finding #20</div>
+  <h2>Extensible Refinement</h2>
+  <p>The Foundational Survey Fabric should support hierarchical refinement to additional spatial precision without requiring alteration of previously established canonical addresses or spatial truth. No arbitrary maximum resolution should be imposed merely to satisfy foreseeable 2026 needs. Whether the eventual canonical mathematics provides effectively unbounded refinement or a deliberately finite maximum depth should remain unresolved until the Survey Fabric’s mathematical design is selected and tested. Refinement capability should be available where needed without requiring the entire Survey Domain to be materialized at that depth.</p>
+  <div class="finding-principle"><span class="quote-label">Governing Principle</span>Preserve the ability to become more precise without pretending today to know how precise BitPangea will ever need to become.</div>
+</section>
+<section class="finding" id="finding-21">
+  <div class="finding-number">Requirement Finding #21</div>
+  <h2>Self-Resolving Canonical Addresses</h2>
+  <p>Canonical Foundational Survey Fabric addresses should be mathematically derivable and resolvable under the canonical specification without dependence on an authoritative lookup registry that assigns spatial meaning to otherwise opaque identifiers. Their exact representation may evolve or use machine-oriented encoding, and higher layers may employ opaque identifiers for Parcels or other entities, but the foundational meaning of a canonical Survey reference must be recoverable from the specification and the reference itself.</p>
+  <div class="finding-principle"><span class="quote-label">Governing Principle</span>A Survey address should carry enough structure for the mathematics to know where it refers. The Survey Fabric identifies where. Higher layers identify what.</div>
+</section>
+<section class="finding" id="finding-22">
+  <div class="finding-number">Requirement Finding #22</div>
+  <h2>Canonical References Are Never Reused</h2>
+  <p>Canonical Survey references should never be reused, reassigned, or given a different spatial meaning because higher-layer entities change, disappear, move, or cease to exist. A reference may become unused or unoccupied by higher layers, but its canonical spatial meaning must remain permanent. Historical and future systems should therefore be able to rely on the same Survey reference meaning the same place across time.</p>
+  <div class="finding-principle"><span class="quote-label">Governing Principle</span>Places may become empty. Their addresses do not become available for somewhere else.</div>
+</section>
+<section class="finding" id="finding-23">
+  <div class="finding-number">Requirement Finding #23</div>
+  <h2>Two-Dimensional Planar Ground</h2>
+  <p>The Foundational Survey Fabric should presently be treated as a two-dimensional planar canonical reference system for BitPangea’s permanent spatial ground. Vertical, volumetric, immersive, nested, or other higher-dimensional spatial systems should ordinarily be established by higher layers that reference the canonical Survey Fabric rather than by expanding the foundational substrate itself. This preserves a minimal permanent ground while allowing future dimensional experiences and structures to evolve independently. A different foundational dimensional model should be considered only if later inquiry demonstrates that it is necessary to preserve permanent spatial truth.</p>
+  <div class="finding-principle"><span class="quote-label">Governing Principle</span>The Survey Fabric anchors the ground. Higher layers may build dimensions above it.</div>
+</section>
+<section class="finding" id="finding-24">
+  <div class="finding-number">Requirement Finding #24</div>
+  <h2>Exact Foundational Mathematics</h2>
+  <p>Authoritative Foundational Survey Fabric mathematics should produce exact, deterministic spatial results rather than depend on implementation-specific numerical approximation. Rendering, visualization, simulation, navigation, and other higher-level systems may use approximate numerical methods where appropriate, but approximation must not determine canonical spatial meaning. The eventual mathematical representation may use integers, rational values, symbolic hierarchy, fixed-point methods, or another exact system; that implementation choice remains unresolved.</p>
+  <div class="finding-principle"><span class="quote-label">Governing Principle</span>Exact for truth. Approximate for experience.</div>
+</section>
+<section class="finding" id="finding-25">
+  <div class="finding-number">Requirement Finding #25</div>
+  <h2>Boundaries Are Not Foundational Semantic Objects</h2>
+  <p>The Foundational Survey Fabric should not presently define semantic boundaries as independent foundational objects. Where its mathematical structure inherently produces edges, subdivision limits, or other reference boundaries, those should ordinarily be treated as exact derivable consequences of the canonical reference system. Higher layers should define and own the authoritative boundaries of Parcels, Regions, infrastructure, World-form features, and other spatial entities using Survey Fabric references.</p>
+  <div class="finding-principle"><span class="quote-label">Governing Principle</span>The Survey Fabric provides the mathematics of separation. Higher layers decide what is being separated.</div>
+</section>
+<section class="finding" id="finding-26">
+  <div class="finding-number">Requirement Finding #26</div>
+  <h2>Semantic Containment Belongs Above</h2>
+  <p>The Foundational Survey Fabric should not preserve semantic containment relationships among Parcels or higher-layer entities. Such relationships should be established or derived by the systems that define those entities, using their authoritative spatial extents expressed through canonical Survey Fabric references. Where the Survey Fabric’s own mathematics inherently produces hierarchical containment among its reference constructs, that containment may be deterministically derived from the specification rather than stored as independent foundational truth.</p>
+  <div class="finding-principle"><span class="quote-label">Governing Principle</span>The Survey Fabric knows how space nests. Higher layers know what occupies the nested space.</div>
+</section>
+<section class="finding" id="finding-27">
+  <div class="finding-number">Requirement Finding #27</div>
+  <h2>Space Without Time</h2>
+  <p>The Foundational Survey Fabric should remain a purely spatial reference system and should not encode temporal state, occupancy history, ownership chronology, version history, or other time-dependent semantics into canonical spatial addresses or foundational spatial meaning. Higher layers may record how entities, rights, state, or interpretations change through time while continuing to reference the same permanent Survey locations. The Survey Fabric itself may have a governed specification history without making time part of the spatial reference system.</p>
+  <div class="finding-principle"><span class="quote-label">Governing Principle</span>Place persists. History accumulates above it.</div>
+</section>
+<section class="finding" id="finding-28">
+  <div class="finding-number">Requirement Finding #28</div>
+  <h2>Higher-Layer Geometry Need Not Align to the Grid</h2>
+  <p>Higher-layer spatial entities should not be required to align their authoritative boundaries with Survey Fabric subdivisions, derived grid lines, or other indexing geometry merely because those structures exist within the foundational reference system. Parcels, World-form features, infrastructure, Regions, Outliers, and other spatial entities should be free to define their own exact supported geometry using canonical Survey Fabric references. Alignment with Survey subdivisions may be chosen by a higher layer where useful, but should not be imposed as a foundational requirement.</p>
+  <div class="finding-principle"><span class="quote-label">Governing Principle</span>The Survey Fabric provides reference, not shape.</div>
+</section>
+<section class="finding" id="finding-29">
+  <div class="finding-number">Requirement Finding #29</div>
+  <h2>World Membership Belongs Above</h2>
+  <p>The Foundational Survey Fabric should determine whether a location is validly referenceable within the canonical Survey Domain, but it should not itself determine whether that location constitutes BitPangea World-space. World membership, Extent expression, supercontinental form, Verge, Outliers, and other cartographic inclusion questions should be established by higher spatial layers using canonical Survey Fabric references. A mathematically valid reference outside designated World-space should remain reference capacity only, not territory or Exterior.</p>
+  <div class="finding-principle"><span class="quote-label">Governing Principle</span>The Survey Fabric answers “where can be referenced?” Higher layers answer “what counts as The World?”</div>
+</section>
+<section class="finding" id="finding-30">
+  <div class="finding-number">Requirement Finding #30</div>
+  <h2>Deterministic Canonicalization</h2>
+  <p>The Foundational Survey Fabric should provide deterministic canonicalization so that a given canonical spatial meaning resolves to one authoritative Survey reference even when the underlying mathematics or higher representations permit multiple equivalent descriptions. Alternative textual forms, aliases, local coordinate systems, encodings, or mathematically equivalent expressions may exist, but where authoritative foundational reference matters they must be capable of deterministic normalization to the same canonical Survey meaning.</p>
+  <div class="finding-principle"><span class="quote-label">Governing Principle</span>Many representations may describe a place. Only one foundational reference should be canonical for that meaning.</div>
+</section>
+<section class="finding" id="finding-31">
+  <div class="finding-number">Requirement Finding #31</div>
+  <h2>Canonical Spatial Extents</h2>
+  <p>The Foundational Survey Fabric should support canonical reference not only to spatial position but also, where appropriate, to exact spatial extents expressed through the same foundational reference system. Such references should remain semantically neutral: the Survey Fabric may make an extent exactly describable without identifying what occupies it or what that extent means. Higher layers should assign identity, function, and authority to those extents.</p>
+  <div class="finding-principle"><span class="quote-label">Governing Principle</span>The Survey Fabric may describe the shape of space without describing the thing that uses it.</div>
+</section>
+<section class="finding" id="finding-32">
+  <div class="finding-number">Requirement Finding #32</div>
+  <h2>Exact Edge Semantics</h2>
+  <p>The Foundational Survey Fabric should define exact mathematical conventions for canonical extents, endpoints, shared edges, and boundary inclusion sufficient to ensure that conforming implementations interpret the same spatial references identically. Those conventions should remain semantically neutral. Higher layers should determine what a shared edge, boundary, inclusion, exclusion, or contact means for Parcels or other spatial entities.</p>
+  <div class="finding-principle"><span class="quote-label">Governing Principle</span>The Survey Fabric defines how edges meet. Higher layers define what the meeting means.</div>
+</section>
+<section class="finding" id="finding-33">
+  <div class="finding-number">Requirement Finding #33</div>
+  <h2>One Mathematics, Many Spatial Expressions</h2>
+  <p>The Foundational Survey Fabric should not presently treat points, lines, areas, or similar spatial forms as separate foundational object classes with independent identity or lifecycle. Instead, they should be expressible as exact mathematical spatial references or extents within the same canonical reference system. Higher layers may use those expressions to define entities appropriate to their own functions without requiring the Survey Fabric to classify or own those entities.</p>
+  <div class="finding-principle"><span class="quote-label">Governing Principle</span>One spatial mathematics. Many spatial expressions.</div>
+</section>
+
+<div class="req-status">
+  <h3>Section Standing</h3>
+  <p>
+    Findings #18–#33 establish the Survey Fabric’s mathematical ontology and domain structure: no permanent cell ontology by default, a finite and refinable canonical domain, self-resolving and non-reusable references, planar ground, exact mathematics, semantic separation of boundaries and containment, space without time, independence from higher-layer geometry and World membership, deterministic canonicalization, canonical extents, exact edge semantics, and one spatial mathematics capable of many exact spatial expressions.
+  </p>
+</div>
+
+<div class="section-nav">
+  <a href="/theatlas/foundational-survey-fabric/requirements/03-authority-consensus-evolution/">← Requirements III</a>
+  <a href="/theatlas/foundational-survey-fabric/requirements/">Requirements Index</a>
+</div>
+
+<div class="note">Foundational Survey Fabric · Requirements IV · Mathematical Ontology and Domain Structure</div>
+
+</article>
+</main>
+
+<div id="bp-footer"></div>
+</body>
+</html>
