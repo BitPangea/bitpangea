@@ -70,9 +70,6 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   .spec-card{padding:26px 22px 24px}.spec-card h2{font-size:21px}
 }
 
-
-
-
 </style>
 </head>
 
@@ -138,10 +135,10 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">05.3 · No Silent Snapping</div>
   <h2>Canonicalization Must Not Move Place</h2>
   <p>
-    Canonical references shall not be silently moved to nearby grid lines, refinement boundaries, vertices, preferred increments, or other derived structures.
+    Canonical references shall not be silently moved to nearby grid lines, precision or subdivision boundaries, vertices, preferred increments, or other derived structures.
   </p>
   <p>
-    Snapping may exist as an explicit higher-layer operation, but it shall never be disguised as canonical interpretation or normalization.
+    Snapping may exist as an explicit operation in a higher Architecture domain, but it shall never be disguised as canonical interpretation or normalization.
   </p>
 </section>
 
@@ -226,7 +223,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">05.11 · Cross-Implementation Exactness</div>
   <h2>Exactness Must Survive Independent Implementation</h2>
   <p>
-    Independent conforming implementations shall reproduce identical authoritative results from identical canonical inputs without relying on shared hidden state or common proprietary software.
+    Independent conforming implementations shall reproduce the same authoritative canonical meaning from identical canonical inputs without relying on shared hidden state or common proprietary software. Where the governing Specification requires one unique canonical representation, that representation shall also agree exactly.
   </p>
   <p>
     Exactness shall be a property of the published Specification, not of one favored implementation.
@@ -240,7 +237,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
     If an implementation uses tolerance-based equality, silent snapping, hidden mutable state, undetected lossy conversion, or implementation-specific approximation to establish an authoritative Survey result, that behavior shall constitute a conformance failure.
   </p>
   <p>
-    The implementation may still provide such behavior as an explicitly noncanonical higher-layer feature, but it shall not be presented as Foundational Survey Fabric truth.
+    The implementation may still provide such behavior as an explicitly noncanonical feature of a higher Architecture domain, but it shall not be presented as Foundational Survey Fabric truth.
   </p>
 </section>
 
@@ -254,7 +251,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="status-card">
     <h3>Still Open in Conformance</h3>
     <p>
-      The exact test vectors for numerical exactness, canonical representations used in proof, permitted internal approximation strategies, proof obligations for optimized algorithms, formal error thresholds for noncanonical presentation layers, and detailed failure codes remain to be defined after the Specification is complete.
+      The exact Reference Vectors for numerical exactness, canonical or normative representations used in proof, permitted internal approximation strategies, proof obligations for optimized algorithms, formal error thresholds for noncanonical presentation layers, and detailed failure codes remain to be defined once the Specification is sufficiently complete to produce deterministic expected results.
     </p>
   </div>
 </div>
@@ -276,7 +273,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 
 <blockquote>
   <span class="quote-label">Architectural Boundary</span>
-  Approximation may assist an implementation. It may not become authoritative spatial truth.
+  Approximation may assist an implementation or higher Architecture domain. It may not become authoritative spatial truth, silently move place, or weaken the exact rules of the governing Specification.
 </blockquote>
 
 <div class="section-nav">
