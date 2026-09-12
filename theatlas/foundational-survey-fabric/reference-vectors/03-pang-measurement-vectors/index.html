@@ -23,17 +23,6 @@
 
 <style>
 
-
-
-
-
-
-
-
-
-
-
-
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{width:100%;min-height:100%;background:#02050a;color:#fff;font-family:Arial,Helvetica,sans-serif}
 body{position:relative;line-height:1.75;overflow-x:hidden;background:#02050a}
@@ -78,17 +67,6 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   .spec-card{padding:26px 22px 24px}.spec-card h2{font-size:21px}
 }
 
-
-
-
-
-
-
-
-
-
-
-
 </style>
 </head>
 
@@ -111,15 +89,15 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 <div class="divider"></div>
 
 <p class="arch-statement">
-  The canonical test set for proving exact agreement on Pang-based distance, area, path and boundary length, and sub-Pang precision.
+  The canonical test set for proving exact agreement on Pang-based distance, area, path and boundary length, and exact sub-Pang precision without presuming one precision mechanism.
 </p>
 
 <div class="req-intro">
 <p>
-  <strong>Pang Measurement Vectors</strong> define the reference cases through which implementations will prove identical canonical measurement of spatial separation, area, path length, boundary length, and refinement below one Pang.
+  <strong>Pang Measurement Vectors</strong> define the reference cases through which implementations will prove identical canonical measurement of spatial separation, area, path length, boundary length, and exact precision below one Pang.
 </p>
 <p>
-  The final vector corpus does not yet exist because the exact distance, area, length, angular, and refinement mathematics remain unresolved within the Specification. This page therefore establishes the measurement cases that must eventually be tested without inventing formulas or expected values prematurely.
+  The final vector corpus does not yet exist because the exact distance, area, length, angular, and precision mathematics remain unresolved within the Specification. This page therefore establishes the measurement cases that must eventually be tested without inventing formulas, precision mechanisms, or expected values prematurely.
 </p>
 </div>
 
@@ -165,7 +143,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">03.4 · Square Pang Area Vectors</div>
   <h2>Canonical Area Must Be Exact</h2>
   <p>
-    The vector set shall include exact spatial extents whose area can be expressed canonically in square Pangs once the formal area mathematics are selected.
+    The vector set shall include exact spatial extents whose area can be expressed canonically in square Pangs once the formal area mathematics are specified.
   </p>
   <p>
     Independent implementations shall produce identical authoritative area results for identical extents.
@@ -201,29 +179,29 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
     Where canonical extents possess measurable boundaries, reference vectors shall test exact boundary length according to the governing Survey mathematics.
   </p>
   <p>
-    The Survey result shall remain geometric only and shall not imply Parcel perimeter, legal boundary, or other higher-layer interpretation.
+    The Survey result shall remain geometric only and shall not imply Parcel perimeter, legal boundary, or other interpretation belonging to higher Architecture domains.
   </p>
 </section>
 
 <section class="spec-card">
   <div class="spec-label">03.8 · Sub-Pang Precision Vectors</div>
-  <h2>Refinement Must Support Exact Measure Below One Pang</h2>
+  <h2>Canonical Mathematics Must Support Exact Measure Below One Pang</h2>
   <p>
-    The vector set shall include positions, separations, lengths, and extents smaller than one Pang to prove exact sub-Pang measurement through the canonical refinement system.
+    The vector set shall include positions, separations, lengths, and extents smaller than one Pang to prove exact sub-Pang measurement through the precision mechanism ultimately defined by the Specification.
   </p>
   <p>
-    These cases shall not require permanently named subunits unless the final Specification later establishes them.
+    That mechanism may use refinement, exact coordinate extension, symbolic subdivision, exact fractional representation, or another exact method. These cases shall not require permanently named subunits unless the final Specification later establishes them.
   </p>
 </section>
 
 <section class="spec-card">
   <div class="spec-label">03.9 · Mixed-Precision Vectors</div>
-  <h2>Different Refinement Depths Must Resolve Exactly</h2>
+  <h2>Different Precision Expressions Must Resolve Exactly</h2>
   <p>
-    Reference vectors shall include calculations involving canonical inputs expressed at different supported refinement depths.
+    Reference Vectors shall include calculations involving canonical inputs expressed at different supported precision levels, states, or exact representations once the governing precision model is specified.
   </p>
   <p>
-    Every conforming implementation shall resolve the operation without silently discarding precision or redefining the Pang scale.
+    Every conforming implementation shall resolve the operation without silently discarding precision, changing canonical meaning, or redefining the Pang scale.
   </p>
 </section>
 
@@ -253,7 +231,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">03.12 · Cross-Implementation Measurement Agreement</div>
   <h2>Every Implementation Must Return the Same Measure</h2>
   <p>
-    Independent conforming implementations shall produce identical canonical separation, area, path length, boundary length, and sub-Pang results from identical canonical inputs.
+    Independent conforming implementations shall produce the same authoritative canonical separation, area, path length, boundary length, and sub-Pang meaning from identical canonical inputs. Where the governing Specification requires one unique canonical representation of a measurement result, that representation shall also agree exactly.
   </p>
   <p>
     A mismatch indicates an implementation defect, specification ambiguity, version incompatibility, or unresolved mathematical dependency requiring correction.
@@ -264,13 +242,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="status-card">
     <h3>Established by Requirements and Specification Scope</h3>
     <p>
-      Pang is BitPangea’s native canonical unit of linear measure; square Pangs measure area; canonical spatial separation, area, path length, and boundary length must be exact; Pang scale must remain uniform across the Survey Domain; and sub-Pang precision must be supplied through exact refinement mathematics.
+      Pang is BitPangea’s native canonical unit of linear measure; square Pangs measure area; canonical spatial separation, area, path length, and boundary length must be exact; Pang scale must remain uniform across the Survey Domain; and sub-Pang precision must be supplied through an exact mechanism without prematurely requiring a hierarchy of named subunits.
     </p>
   </div>
   <div class="status-card">
     <h3>Canonical Vector Corpus Not Yet Possessed</h3>
     <p>
-      Actual measurement inputs, exact expected Pang values, square-Pang results, path and boundary formulas, sub-Pang examples, mixed-precision fixtures, and canonical machine-readable outputs cannot be defined until the final measurement and refinement mathematics are selected and tested.
+      Actual measurement inputs, exact expected Pang values, square-Pang results, path and boundary formulas, sub-Pang examples, mixed-precision fixtures, and authoritative machine-readable outputs cannot be defined until the final measurement mathematics, precision mechanism, and normative serialization/interchange rules are specified and tested.
     </p>
   </div>
 </div>
@@ -292,7 +270,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 
 <blockquote>
   <span class="quote-label">Reference Vector Boundary</span>
-  Pang Measurement Vectors prove the exact measure of canonical space. They do not define what crossing, using, valuing, or experiencing that space means.
+  Pang Measurement Vectors prove the exact measure of canonical space. They do not choose the precision mechanism or define what crossing, using, valuing, governing, or experiencing that space means.
 </blockquote>
 
 <div class="section-nav">
