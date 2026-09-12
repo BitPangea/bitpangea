@@ -74,13 +74,6 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   .spec-card{padding:26px 22px 24px}.spec-card h2{font-size:21px}
 }
 
-
-
-
-
-
-
-
 </style>
 </head>
 
@@ -124,7 +117,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">09.1 · Canonical Result Mismatch</div>
   <h2>Different Authoritative Results Constitute Failure</h2>
   <p>
-    If an implementation produces an authoritative canonical result that differs from the result required by the governing Specification or Reference Vectors for the same canonical input, the applicable conformance claim shall fail.
+    If an implementation produces an authoritative canonical meaning that differs from the result required by the governing Specification for the same canonical input, the applicable conformance claim shall fail. Once applicable Reference Vectors formally exist, disagreement with their required canonical outcomes shall likewise constitute failure.
   </p>
   <p>
     Implementation-specific preference, optimization, or tolerance shall not excuse disagreement in canonical truth.
@@ -138,7 +131,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
     An implementation shall fail the applicable conformance requirement if it accepts malformed, impossible, ambiguous, out-of-domain, or otherwise invalid input as authoritative canonical Survey truth.
   </p>
   <p>
-    Higher-layer convenience repair may exist only where it is explicitly separated from canonical validation.
+    Convenience repair provided by a higher Architecture domain may exist only where it is explicitly separated from canonical validation.
   </p>
 </section>
 
@@ -146,7 +139,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">09.3 · Valid Rejection</div>
   <h2>Required Canonical Input Must Not Be Rejected</h2>
   <p>
-    An implementation shall fail conformance if it rejects a valid canonical reference, expression, operation, or serialization that the governing Specification requires it to support within the claimed conformance scope.
+    An implementation shall fail conformance if it rejects a valid canonical reference, expression, operation, normative encoding, or interchange representation that the governing Specification requires it to support within the claimed conformance scope.
   </p>
   <p>
     A compatible implementation must recognize the canonical truth it claims to implement.
@@ -157,7 +150,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">09.4 · Noncanonical Normalization Failure</div>
   <h2>Equivalent Input Must Normalize Correctly</h2>
   <p>
-    Where valid noncanonical representations are supported, failure to normalize them to the required canonical meaning and form shall constitute a conformance failure.
+    Where valid alternate or noncanonical representations are supported, failure to resolve them to the required canonical meaning, or to a unique canonical form where the Specification explicitly requires one, shall constitute a conformance failure.
   </p>
   <p>
     Normalization that changes spatial meaning is likewise a failure.
@@ -171,7 +164,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
     Use of tolerance-based equality, silent rounding, hidden snapping, unresolved floating approximation, or implementation-specific convergence to determine an authoritative result shall constitute conformance failure where exact canonical behavior is required.
   </p>
   <p>
-    Approximation may exist outside the canonical layer but shall not be mislabeled as foundational truth.
+    Approximation may exist in higher Architecture domains or noncanonical implementation behavior but shall not be mislabeled as foundational truth.
   </p>
 </section>
 
@@ -187,13 +180,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">09.7 · Serialization Failure</div>
-  <h2>Canonical Interchange Must Remain Reproducible</h2>
+  <div class="spec-label">09.7 · Normative Interchange Failure</div>
+  <h2>Authoritative Exchange Must Satisfy the Governing Encoding Rules</h2>
   <p>
-    An implementation shall fail serialization conformance if it cannot emit, parse, normalize, or preserve the canonical interchange representation required by the governing Specification.
+    An implementation shall fail interchange conformance if it cannot emit, parse, interpret, normalize where required, or preserve the obligations of a normative encoding that the governing Specification requires or that the implementation claims to support.
   </p>
   <p>
-    Silent precision loss, incompatible field interpretation, or alternate authoritative serialization also constitutes failure where one canonical form is required.
+    Silent precision loss, incompatible field interpretation, failure of deterministic semantic equivalence, or emission of an unauthorized authoritative encoding constitutes failure. Where the Specification requires one unique canonical representation, failure to reproduce that representation exactly also constitutes failure.
   </p>
 </section>
 
@@ -204,7 +197,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
     A conformance claim shall fail if an implementation applies a supposedly compatible version in a manner that renumbers, relocates, reinterprets, or otherwise changes established canonical spatial meaning.
   </p>
   <p>
-    Unsupported versions shall be identified explicitly rather than guessed.
+    Unsupported Specification versions and unsupported normative-encoding versions shall be identified explicitly rather than guessed.
   </p>
 </section>
 
@@ -237,7 +230,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
     An implementation shall fail the applicable conformance requirement if a valid finite canonical input cannot be resolved to completion where the Specification requires a deterministic authoritative result.
   </p>
   <p>
-    Indefinite convergence, unresolved ambiguity, or potentially nonterminating interpretation is incompatible with canonical conformance.
+    Indefinite convergence, unresolved ambiguity, hidden dependency, or potentially nonterminating interpretation is incompatible with canonical conformance. A design that can produce authoritative truth only through unresolved approximation likewise fails the canonical exactness requirement.
   </p>
 </section>
 
@@ -259,7 +252,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
     If independent implementations reasonably produce different results because the governing Specification does not determine one authoritative answer, the issue shall be classified as a specification ambiguity rather than automatically assigning implementation fault.
   </p>
   <p>
-    The ambiguity must be resolved through the proper specification-governance process before a definitive conformance judgment can be made for the affected case.
+    The ambiguity must be resolved through the proper BitPangea authority and Specification-governance process before a definitive conformance judgment can be made for the affected case. Conformance disagreement may reveal the need for clarification, but conformance testing does not itself establish canonical succession or amendment authority.
   </p>
 </section>
 
@@ -267,7 +260,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">09.14 · Conformance Claim Misrepresentation</div>
   <h2>An Implementation May Claim Only What It Proves</h2>
   <p>
-    A declaration that exceeds the conformance classes, specification versions, operations, or capabilities actually demonstrated shall be invalid.
+    A declaration that exceeds the conformance classes, Specification versions, normative encoding scope, operations, or capabilities actually demonstrated shall be invalid.
   </p>
   <p>
     Conformance reporting must distinguish proven compatibility from unsupported, untested, experimental, or noncanonical behavior.
@@ -278,13 +271,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="status-card">
     <h3>Established by Requirements</h3>
     <p>
-      The requirements establish exact canonical truth, deterministic validity and normalization, rejection of ambiguity, no silent snapping, detectable precision loss, independent implementation, finite representation, hidden-state independence, termination, exact-or-invalid canonical states, a mandatory conformance core, and deliberate attempts to expose ambiguity or hidden dependency before acceptance.
+      The requirements establish exact canonical truth, deterministic validity and normalization, rejection of ambiguity, no silent snapping, detectable precision loss, independent implementation, finite representation, hidden-state independence, termination, exact-or-invalid canonical states, a mandatory conformance core, and canonical-adoption attempts specifically intended to expose ambiguity, hidden dependency, nontermination, unresolved approximation, or leakage of higher-domain responsibility before acceptance.
     </p>
   </div>
   <div class="status-card">
     <h3>Still Open in Conformance</h3>
     <p>
-      The formal failure-code taxonomy, severity classes, test-case disposition rules, retest procedure, distinction among fail, unsupported, indeterminate, and specification-defect outcomes, remediation process, certification withdrawal rules, and machine-readable failure report format remain unresolved until the complete Conformance framework is defined.
+      The formal failure-code taxonomy, severity classes, test-case disposition rules, retest procedure, distinction among fail, unsupported, indeterminate, and Specification-defect outcomes, remediation process, treatment of withdrawn or superseded conformance declarations, and machine-readable failure report format remain unresolved until the complete Conformance framework is defined.
     </p>
   </div>
 </div>
@@ -307,7 +300,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 
 <blockquote>
   <span class="quote-label">Architectural Boundary</span>
-  Failure must expose incompatibility. It must not be hidden by approximation, convenience, or ambiguous claims.
+  Failure must expose incompatibility, ambiguity, hidden dependency, or unsupported scope. It must not be hidden by approximation, convenience, higher-domain leakage, or ambiguous claims.
 </blockquote>
 
 <div class="section-nav">
