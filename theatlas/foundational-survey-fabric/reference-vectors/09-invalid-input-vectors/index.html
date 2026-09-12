@@ -23,23 +23,6 @@
 
 <style>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{width:100%;min-height:100%;background:#02050a;color:#fff;font-family:Arial,Helvetica,sans-serif}
 body{position:relative;line-height:1.75;overflow-x:hidden;background:#02050a}
@@ -84,23 +67,6 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   .spec-card{padding:26px 22px 24px}.spec-card h2{font-size:21px}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </style>
 </head>
 
@@ -131,7 +97,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <strong>Invalid-Input Vectors</strong> define the reference cases through which implementations will prove that inputs lacking valid canonical Survey meaning are rejected consistently and without silent repair.
 </p>
 <p>
-  The final vector corpus does not yet exist because the exact address grammar, refinement rules, serialization format, version identifiers, and error taxonomy remain unresolved within the Specification and Conformance framework. This page therefore establishes the required negative-test categories without inventing invalid examples prematurely.
+  The final vector corpus does not yet exist because the exact address grammar, precision mechanism, normative serialization/interchange model, version identifiers, and error taxonomy remain unresolved within the Specification and Conformance framework. This page therefore establishes the required negative-test categories without inventing invalid examples or presuming unresolved mathematics prematurely.
 </p>
 </div>
 
@@ -152,13 +118,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">09.2 · Impossible Refinement Vectors</div>
+  <div class="spec-label">09.2 · Impossible Precision Expression Vectors</div>
   <h2>Invalid Precision Structure Must Fail</h2>
   <p>
-    Reference vectors shall include refinement expressions that cannot exist under the canonical refinement mathematics.
+    Reference Vectors shall include precision expressions that cannot exist under the canonical precision mathematics ultimately specified.
   </p>
   <p>
-    Implementations shall reject impossible branches, depths, or refinement combinations without truncation, substitution, or silent repair.
+    Implementations shall reject impossible precision states, malformed extensions, invalid subdivisions, unsupported exact representations, or other impossible precision combinations without truncation, substitution, or silent repair.
   </p>
 </section>
 
@@ -188,7 +154,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">09.5 · Unsupported Representation Vectors</div>
   <h2>Unknown Form Must Not Be Guessed</h2>
   <p>
-    The vector set shall include encodings, formats, extensions, or forms not supported by the applicable conformance profile or specification version.
+    The vector set shall include encodings, formats, extensions, or forms not supported by the applicable Conformance profile, Specification version, or claimed normative encoding/interchange scope.
   </p>
   <p>
     Unsupported input shall be identified explicitly rather than silently interpreted through a nearby known form.
@@ -199,7 +165,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">09.6 · Unsupported Version Vectors</div>
   <h2>Unknown Version Must Fail Clearly</h2>
   <p>
-    The corpus shall include serialized expressions associated with unknown, unsupported, or incompatible specification versions.
+    The corpus shall include expressions associated with unknown, unsupported, or incompatible Specification versions and, where applicable, unknown, unsupported, or incompatible normative-encoding versions.
   </p>
   <p>
     Conforming implementations shall not reinterpret them using a different version’s rules unless the governing compatibility model explicitly permits that behavior.
@@ -232,7 +198,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">09.9 · Hidden-Snapping Trap Vectors</div>
   <h2>Nearby Invalidity Must Not Become Validity</h2>
   <p>
-    The corpus shall include inputs lying near valid refinement boundaries, vertices, increments, or Domain limits to prove that implementations do not silently snap invalid input to a nearby valid location.
+    The corpus shall include inputs lying near valid precision or subdivision boundaries, vertices, increments, or Domain limits to prove that implementations do not silently snap invalid input to a nearby valid location.
   </p>
   <p>
     Proximity shall never substitute for canonical identity.
@@ -243,7 +209,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">09.10 · Conflicting-Field Vectors</div>
   <h2>Contradictory Representations Must Fail</h2>
   <p>
-    Where a serialization can contain multiple fields or representations that jointly determine canonical meaning, vectors shall include internally inconsistent combinations.
+    Where a normative encoding or other governed representation can contain multiple fields or representations that jointly determine canonical meaning, Reference Vectors shall include internally inconsistent combinations.
   </p>
   <p>
     Conforming implementations shall reject contradiction rather than choose one field opportunistically.
@@ -254,7 +220,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">09.11 · Nonterminating or Pathological Input Vectors</div>
   <h2>Invalid Complexity Must Not Defeat Canonical Resolution</h2>
   <p>
-    Where applicable, the corpus shall include inputs designed to expose pathological recursion, excessive redundancy, unresolved convergence, or other behavior incompatible with finite canonical interpretation.
+    Where applicable, the corpus shall include inputs designed to expose pathological recursion, excessive redundancy, unresolved convergence, hidden dependency, unresolved approximation, or other behavior incompatible with finite canonical interpretation.
   </p>
   <p>
     Implementations shall reject invalid pathological structures according to deterministic rules rather than hang, diverge, or produce implementation-specific results.
@@ -265,7 +231,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">09.12 · Cross-Implementation Rejection Agreement</div>
   <h2>Every Implementation Must Fail the Same Invalid Case</h2>
   <p>
-    Independent conforming implementations shall classify and reject the same invalid input consistently under the same governing Specification and conformance profile.
+    Independent conforming implementations shall reach the same canonical validity judgment and applicable failure classification for the same invalid input under the same governing Specification and Conformance profile.
   </p>
   <p>
     Human-readable diagnostics may vary, but the canonical validity judgment shall not.
@@ -276,13 +242,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="status-card">
     <h3>Established by Requirements and Conformance Scope</h3>
     <p>
-      The Survey Fabric must distinguish canonical input, valid noncanonical representation, malformed expression, impossible refinement, out-of-domain reference, ambiguity, precision loss, unsupported forms, and exact-or-invalid canonical states. Invalid input must not acquire meaning through guesswork, tolerance, snapping, or hidden repair.
+      The Survey Fabric must distinguish canonical input, valid alternate or noncanonical representation, malformed expression, impossible precision expression, out-of-domain reference, ambiguity, precision loss, unsupported forms, and exact-or-invalid canonical states. Invalid input must not acquire meaning through guesswork, tolerance, snapping, hidden dependency, or silent repair.
     </p>
   </div>
   <div class="status-card">
     <h3>Canonical Vector Corpus Not Yet Possessed</h3>
     <p>
-      Actual malformed strings, impossible refinement fixtures, unsupported encodings, version errors, conflicting-field cases, exact failure identifiers, pathological inputs, and machine-readable expected rejection results cannot be created until the final grammar, serialization, versioning, and validation rules are selected.
+      Actual malformed strings, impossible precision fixtures, unsupported normative encodings, Specification or encoding-version errors, conflicting-field cases, exact failure identifiers, pathological inputs, and machine-readable expected rejection results cannot be created until the final grammar, precision, normative serialization/interchange, versioning, and validation rules are specified.
     </p>
   </div>
 </div>
@@ -303,7 +269,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 
 <blockquote>
   <span class="quote-label">Reference Vector Boundary</span>
-  Invalid-Input Vectors prove what canonical Survey truth refuses to accept. They do not permit convenience logic to invent meaning where the foundation has none.
+  Invalid-Input Vectors prove what canonical Survey truth refuses to accept. They do not permit convenience logic, approximation, hidden dependency, or higher-domain behavior to invent meaning where the Foundational Survey Fabric has none.
 </blockquote>
 
 <div class="section-nav">
