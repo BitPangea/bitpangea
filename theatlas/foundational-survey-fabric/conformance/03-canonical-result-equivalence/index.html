@@ -91,12 +91,12 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 <div class="divider"></div>
 
 <p class="arch-statement">
-  The conformance requirement that independent implementations return identical authoritative results for identical canonical inputs.
+  The conformance requirement that independent implementations derive the same authoritative canonical meaning from identical canonical inputs.
 </p>
 
 <div class="req-intro">
 <p>
-  <strong>Canonical Result Equivalence</strong> establishes the central reproducibility test of Foundational Survey Fabric conformance. If two independent implementations receive the same canonical input under the same governing Specification, the authoritative result must be the same.
+  <strong>Canonical Result Equivalence</strong> establishes the central reproducibility test of Foundational Survey Fabric conformance. If two independent implementations receive the same canonical input under the same governing Specification, the authoritative canonical meaning must be the same. Where the Specification requires a unique canonical representation, that representation must also agree exactly.
 </p>
 <p>
   Internal architecture may differ radically. Programming language, storage model, optimization strategy, caching, indexing, execution order, and implementation technology may all vary. None of those differences may alter canonical spatial truth.
@@ -110,9 +110,9 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 
 <section class="spec-card">
   <div class="spec-label">03.1 · Equivalence Requirement</div>
-  <h2>Identical Canonical Inputs, Identical Authoritative Results</h2>
+  <h2>Identical Canonical Inputs, One Authoritative Meaning</h2>
   <p>
-    Any two conforming implementations shall produce the same authoritative canonical result when given identical valid canonical inputs under the same applicable Specification.
+    Any two conforming implementations shall produce the same authoritative canonical meaning when given identical valid canonical inputs under the same applicable Specification. If the governing Specification requires one unique canonical representation for that result, conforming implementations shall produce that representation identically.
   </p>
   <p>
     A disagreement in authoritative result indicates a conformance failure, a specification ambiguity, an implementation defect, or an unresolved incompatibility that must be identified rather than silently tolerated.
@@ -123,7 +123,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">03.2 · Scope of Equivalence</div>
   <h2>Equivalence Applies Wherever Canonical Truth Is Produced</h2>
   <p>
-    Canonical Result Equivalence shall apply to every mandatory operation that produces authoritative Survey truth, including interpretation, normalization, validation, measurement, geometric predicates, composition, comparison, serialization, and other canonical outputs defined by the Specification.
+    Canonical Result Equivalence shall apply to every mandatory operation that produces authoritative Survey truth, including interpretation, normalization, validation, measurement, geometric predicates, composition, comparison, normative interchange, and other canonical outputs defined by the Specification.
   </p>
   <p>
     Optional features may add capability, but where they claim canonical behavior they remain subject to the same equivalence requirement.
@@ -156,21 +156,24 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">03.5 · Canonicalization Before Comparison</div>
   <h2>Compare Meaning in Canonical Form</h2>
   <p>
-    Where multiple valid noncanonical expressions can represent the same canonical spatial meaning, conforming implementations shall first normalize those expressions according to the governing canonicalization rules.
+    Where multiple valid representations can express the same canonical spatial meaning, conforming implementations shall apply the governing canonicalization and equivalence rules required by the Specification before comparing authoritative results.
   </p>
   <p>
-    Result comparison shall distinguish harmless representational variation from actual disagreement in canonical meaning.
+    Result comparison shall distinguish permitted representational variation, including different governed normative encodings where allowed, from actual disagreement in canonical meaning.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">03.6 · Serialization Equivalence</div>
-  <h2>Authoritative Interchange Must Agree</h2>
+  <div class="spec-label">03.6 · Normative Interchange Equivalence</div>
+  <h2>Authoritative Exchange Must Preserve One Meaning</h2>
   <p>
-    When a canonical result is serialized for authoritative interchange, conforming implementations shall produce or normalize to the same canonical serialized representation required by the Specification.
+    When an authoritative result is exchanged through a normative encoding, conforming implementations shall satisfy the exact interchange rules applicable to that encoding under the governing Specification.
   </p>
   <p>
-    Different internal or presentation formats are permissible only where they map deterministically to the same authoritative interchange truth.
+    If the Specification defines one canonical serialization, conforming implementations shall reproduce that representation exactly where required. If the Specification permits multiple explicitly governed lossless normative encodings, those different encodings may remain valid so long as they are deterministically recognizable as expressing the same canonical spatial meaning.
+  </p>
+  <p>
+    Internal or presentation formats remain implementation freedoms only where they map unambiguously to the governing normative interchange semantics.
   </p>
 </section>
 
@@ -211,10 +214,10 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">03.10 · Reference Vector Proof</div>
   <h2>Equivalence Must Be Testable</h2>
   <p>
-    Canonical Result Equivalence shall ultimately be demonstrated through shared reference vectors containing defined canonical inputs and their required authoritative results.
+    Canonical Result Equivalence shall ultimately be demonstrated through shared Reference Vectors containing defined canonical inputs and their required authoritative results once the formal mathematics are sufficiently complete to establish those vectors exactly.
   </p>
   <p>
-    A conforming implementation shall reproduce the required results exactly for every Mandatory Core vector applicable to its conformance claim.
+    A conforming implementation shall reproduce the required canonical meaning exactly for every Mandatory Core vector applicable to its conformance claim, and shall reproduce an identical representation wherever the vector and governing Specification require one unique canonical form.
   </p>
 </section>
 
@@ -222,7 +225,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">03.11 · Cross-Implementation Testing</div>
   <h2>Independent Implementations Should Be Compared Directly</h2>
   <p>
-    Conformance testing should permit outputs from independent implementations to be compared directly after canonical normalization.
+    Conformance testing should permit outputs from independent implementations to be compared directly after applying the governing canonicalization, semantic-equivalence, and normative-encoding rules.
   </p>
   <p>
     Cross-implementation disagreement is valuable evidence: it should expose ambiguity or defect rather than be concealed by implementation-specific tolerance.
@@ -244,13 +247,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="status-card">
     <h3>Established by Requirements</h3>
     <p>
-      Finding #10 requires independent conforming implementations to derive identical canonical results from identical inputs. Supporting requirements establish exact mathematics, deterministic canonicalization, canonical serialization, exact equivalence, exact comparison, finite representation, hidden-state independence, and deterministic termination.
+      Finding #10 requires independent conforming implementations to derive the same canonical result meaning from identical inputs. Supporting requirements establish exact mathematics, deterministic canonicalization, normative serialization and interchange, exact equivalence, exact comparison, finite representation, hidden-state independence, and deterministic termination.
     </p>
   </div>
   <div class="status-card">
     <h3>Still Open in Conformance</h3>
     <p>
-      The exact comparison harness, reference-vector corpus, canonical output-diff rules, error equivalence taxonomy, cross-version comparison rules, tolerance for noncanonical diagnostics, and formal procedure for resolving implementation disagreement remain to be defined after the Specification is complete.
+      The exact comparison harness, eventual Reference Vector corpus, canonical meaning-comparison rules, encoding-specific output-diff rules where unique representations are required, error equivalence taxonomy, cross-version comparison rules, tolerance for noncanonical diagnostics, and formal procedure for resolving implementation disagreement remain to be defined after the Specification is sufficiently complete.
     </p>
   </div>
 </div>
@@ -273,7 +276,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 
 <blockquote>
   <span class="quote-label">Architectural Boundary</span>
-  Implementations may differ in how they calculate. They may not differ in canonical truth.
+  Implementations may differ in how they calculate and, where the Specification permits it, in how they encode. They may not differ in canonical spatial meaning.
 </blockquote>
 
 <div class="section-nav">
