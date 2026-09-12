@@ -23,8 +23,6 @@
 
 <style>
 
-
-
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{width:100%;min-height:100%;background:#02050a;color:#fff;font-family:Arial,Helvetica,sans-serif}
 body{position:relative;line-height:1.75;overflow-x:hidden;background:#02050a}
@@ -69,8 +67,6 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   .spec-card{padding:26px 22px 24px}.spec-card h2{font-size:21px}
 }
 
-
-
 </style>
 </head>
 
@@ -98,10 +94,10 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 
 <div class="req-intro">
 <p>
-  <strong>Validation Behavior</strong> defines the required canonical judgment an implementation must make when presented with a Survey reference, extent, refinement expression, serialization, or other foundational spatial input.
+  <strong>Validation Behavior</strong> defines the required canonical judgment an implementation must make when presented with a Survey reference, extent, precision expression, normative encoding, or other foundational spatial input.
 </p>
 <p>
-  Conforming software must distinguish valid canonical input from valid but noncanonical representation, malformed expression, out-of-domain reference, impossible refinement, ambiguous input, and other invalid states without relying on guesswork or silently inventing spatial meaning.
+  Conforming software must distinguish valid canonical input from valid but noncanonical representation, malformed expression, out-of-domain reference, impossible precision expression, ambiguous input, and other invalid states without relying on guesswork or silently inventing spatial meaning.
 </p>
 </div>
 
@@ -114,7 +110,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">04.1 · Canonical Valid Input</div>
   <h2>Accept Authoritative Form</h2>
   <p>
-    An input that satisfies the governing Specification and is already expressed in required canonical form shall be accepted as canonical Survey input.
+    An input that satisfies the governing Specification and is already expressed in the canonical or normative form required for its applicable operation or encoding shall be accepted as valid authoritative Survey input.
   </p>
   <p>
     Its spatial meaning shall be interpreted exactly and without modification.
@@ -128,7 +124,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
     A valid input that represents legitimate canonical spatial meaning but is not expressed in canonical form may be accepted where the Specification permits such representations.
   </p>
   <p>
-    The implementation shall deterministically normalize that input to the same authoritative canonical meaning and form required by the Specification.
+    The implementation shall deterministically resolve that input to the same authoritative canonical meaning and, where the governing Specification requires a unique canonical form, normalize it to that required form.
   </p>
 </section>
 
@@ -136,7 +132,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">04.3 · Malformed Expression</div>
   <h2>Reject Invalid Structure</h2>
   <p>
-    An expression that violates the required grammar, serialization structure, field rules, refinement syntax, or other formal construction requirements shall be rejected as malformed.
+    An expression that violates the required grammar, normative encoding structure, field rules, precision syntax, or other formal construction requirements shall be rejected as malformed.
   </p>
   <p>
     A conforming implementation shall not infer intended spatial meaning from structurally invalid input.
@@ -155,13 +151,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">04.5 · Impossible Refinement</div>
+  <div class="spec-label">04.5 · Impossible Precision Expression</div>
   <h2>Reject Invalid Precision Structure</h2>
   <p>
-    A refinement expression that violates the canonical refinement mathematics, uses an impossible branch or depth state, or otherwise cannot resolve under the Specification shall be rejected.
+    A precision expression that violates the canonical precision mathematics, uses an impossible value, structure, subdivision, extension, or representational state, or otherwise cannot resolve under the Specification shall be rejected.
   </p>
   <p>
-    Implementations shall not repair impossible refinement through silent truncation, substitution, or snapping.
+    Implementations shall not repair impossible precision through silent truncation, substitution, coercion, or snapping.
   </p>
 </section>
 
@@ -183,7 +179,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
     Estimated, rounded, approximate, pending, disputed, or incomplete spatial values shall not be accepted as canonical Survey truth unless they resolve exactly to a valid canonical representation.
   </p>
   <p>
-    Higher layers may preserve such states for their own purposes, but the Foundational Survey Fabric shall classify them separately from authoritative canonical input.
+    Higher Architecture domains may preserve such states for their own purposes, but the Foundational Survey Fabric shall classify them separately from authoritative canonical input.
   </p>
 </section>
 
@@ -202,10 +198,10 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">04.9 · Canonicalization Boundary</div>
   <h2>Normalization Must Preserve Place</h2>
   <p>
-    Validation may normalize equivalent forms, canonical ordering, serialization, or representational syntax only where the resulting expression preserves identical canonical spatial meaning.
+    Validation may normalize equivalent forms, canonical ordering, normative encoding, or representational syntax only where the resulting expression preserves identical canonical spatial meaning.
   </p>
   <p>
-    Validation shall not relocate a position, alter an extent, change refinement meaning, or substitute a nearby representable value.
+    Validation shall not relocate a position, alter an extent, change precision meaning, or substitute a nearby representable value.
   </p>
 </section>
 
@@ -224,7 +220,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">04.11 · Failure Classification</div>
   <h2>Reject for Defined Reasons</h2>
   <p>
-    The Conformance framework shall ultimately define deterministic failure classes sufficient to distinguish malformed syntax, invalid canonical structure, out-of-domain reference, impossible refinement, ambiguity, unsupported version, and other relevant validation failures.
+    The Conformance framework shall ultimately define deterministic failure classes sufficient to distinguish malformed syntax, invalid canonical structure, out-of-domain reference, impossible precision expression, ambiguity, unsupported Specification or normative-encoding version, and other relevant validation failures.
   </p>
   <p>
     Human-readable error wording may vary, but the canonical failure condition shall not.
@@ -238,7 +234,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
     A conforming implementation shall not silently repair invalid canonical input through snapping, rounding, truncation, inferred defaults, guessed intent, or implementation-specific fallback behavior.
   </p>
   <p>
-    Any higher-layer convenience feature that proposes a correction must remain explicitly separate from canonical validation.
+    Any convenience feature provided by a higher Architecture domain that proposes a correction must remain explicitly separate from canonical validation.
   </p>
 </section>
 
@@ -252,7 +248,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="status-card">
     <h3>Still Open in Conformance</h3>
     <p>
-      The formal validation status codes, machine-readable error taxonomy, exact parser behavior, version-mismatch handling, distinction between recoverable and terminal validation failures, canonical diagnostics, and complete reference-vector set remain to be defined once the Specification is complete.
+      The formal validation status codes, machine-readable error taxonomy, exact parser behavior, Specification- and normative-encoding-version mismatch handling, distinction between recoverable and terminal validation failures, canonical diagnostics, and eventual Reference Vector corpus remain to be defined once the Specification is sufficiently complete.
     </p>
   </div>
 </div>
@@ -274,7 +270,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 
 <blockquote>
   <span class="quote-label">Architectural Boundary</span>
-  Validation may recognize canonical truth or reject invalid input. It may not manufacture truth from ambiguity.
+  Validation may recognize canonical truth, normalize equivalent valid representation where permitted, or reject invalid input. It may not manufacture truth from ambiguity, silently repair spatial meaning, or create authority over the governing Specification.
 </blockquote>
 
 <div class="section-nav">
