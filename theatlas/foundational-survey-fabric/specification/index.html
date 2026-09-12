@@ -23,12 +23,6 @@
 
 <style>
 
-
-
-
-
-
-
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{width:100%;min-height:100%;background:#02050a;color:#fff;font-family:Arial,Helvetica,sans-serif}
 body{position:relative;line-height:1.75;overflow-x:hidden;background:#02050a}
@@ -240,7 +234,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 
 <div class="req-intro">
 <p>
-  The <strong>Foundational Survey Fabric Specification</strong> is the formal mathematical layer beneath implementation. It will translate the accepted requirements into exact definitions for domain, frame, measurement, addressing, refinement, geometry, operations, serialization, and computability.
+  The <strong>Foundational Survey Fabric Specification</strong> is the formal mathematical layer beneath implementation. It will translate the accepted requirements into exact definitions for domain, frame, measurement, addressing, precision, geometry, operations, serialization, and computability.
 </p>
 <p>
   The Specification is not yet complete. Findings #1–#85 deliberately established the governing requirements before prematurely selecting much of the final mathematics. These seven sections therefore preserve both what the requirements already establish and what must still be formally resolved, tested, and proven.
@@ -270,9 +264,9 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 </a>
 <a class="spec-index-card" href="/theatlas/foundational-survey-fabric/specification/03-addressing-refinement/">
   <div class="spec-index-number">Specification 03</div>
-  <h2>Canonical Addressing and Refinement</h2>
-  <p>Defines how canonical place is named, how precision increases without migration, how equivalent references normalize, and how sub-Pang precision remains exact and permanent.</p>
-  <span class="spec-index-range">Addressing · Refinement · Precision · Normalization →</span>
+  <h2>Canonical Addressing and Precision</h2>
+  <p>Defines how canonical place is named, how precision increases without migration, how equivalent references normalize, and how exact sub-Pang precision is represented without prematurely prescribing one refinement structure.</p>
+  <span class="spec-index-range">Addressing · Precision · Extension · Normalization →</span>
 </a>
 <a class="spec-index-card" href="/theatlas/foundational-survey-fabric/specification/04-expressions-geometry/">
   <div class="spec-index-number">Specification 04</div>
@@ -289,7 +283,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 <a class="spec-index-card" href="/theatlas/foundational-survey-fabric/specification/06-serialization-identity/">
   <div class="spec-index-number">Specification 06</div>
   <h2>Serialization and Specification Identity</h2>
-  <p>Defines canonical interchange, normative representation, specification identity, versioning, compatibility, and preservation of one mathematical truth across multiple durable forms.</p>
+  <p>Defines normative serialization and interchange, specification identity, versioning, compatibility, and preservation of one canonical mathematical truth across one or more explicitly governed durable representations.</p>
   <span class="spec-index-range">Serialization · Identity · Versioning · Interchange →</span>
 </a>
 <a class="spec-index-card" href="/theatlas/foundational-survey-fabric/specification/07-computability-rules/">
@@ -305,13 +299,18 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   Together, these seven sections define the complete intended structure of the Foundational Survey Fabric Specification: from the finite Survey Domain and canonical frame through addressing, geometry, operations, serialization, and the rules that determine whether a spatial result is exact, finite, valid, reproducible, and authoritative.
 </p>
 <p>
-  Several sections presently describe specification boundaries rather than completed mathematics. That is intentional. The Requirements Framework establishes what must be satisfied; the Specification will define the mathematics that satisfies it. Formal choices should be added here only after they survive the accepted requirements, edge cases, independent implementation, and later conformance testing.
+  Several sections presently describe specification boundaries rather than completed mathematics. That is intentional. The Requirements Framework establishes what must be satisfied; the Specification defines the mathematics that satisfies it. Formal mathematical design may begin when a candidate maps credibly to the accepted requirements and contains no known contradiction with immutable BitPangea spatial truth. Serious prototype and conformance testing should follow only when deterministic canonical rules are sufficiently complete, while canonical adoption remains reserved for candidates that later survive traceability, adversarial testing, conformance analysis, and independent implementation.
 </p>
 </div>
 
 <blockquote>
   <span class="quote-label">Architectural Sequence</span>
   Requirements establishes what must be satisfied. Specification defines the mathematics that satisfies it.
+</blockquote>
+
+<blockquote>
+  <span class="quote-label">Specification Boundary</span>
+  Define the foundational mathematics completely. Do not use the Specification to design the higher Architecture domains that depend upon it.
 </blockquote>
 
 <div class="section-nav">
