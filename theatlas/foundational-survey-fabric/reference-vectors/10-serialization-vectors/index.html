@@ -23,24 +23,6 @@
 
 <style>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{width:100%;min-height:100%;background:#02050a;color:#fff;font-family:Arial,Helvetica,sans-serif}
 body{position:relative;line-height:1.75;overflow-x:hidden;background:#02050a}
@@ -85,24 +67,6 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   .spec-card{padding:26px 22px 24px}.spec-card h2{font-size:21px}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </style>
 </head>
 
@@ -118,22 +82,22 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <img src="/thearchitecture/architecture-globe.png" alt="The Architecture Emblem" class="arch-mark"/>
   <div class="arch-title">
     <h1>Serialization<br/>Vectors</h1>
-    <div class="subtitle">Reference Vector Section 10 · Canonical Machine Representation</div>
+    <div class="subtitle">Reference Vector Section 10 · Normative Serialization and Interchange</div>
   </div>
 </div>
 
 <div class="divider"></div>
 
 <p class="arch-statement">
-  The canonical test set for proving exact encoding, parsing, normalization, round-trip preservation, structural requirements, and machine-readable output.
+  The canonical test set for proving exact normative encoding, parsing, normalization or semantic equivalence, round-trip preservation, structural requirements, and machine-readable interchange.
 </p>
 
 <div class="req-intro">
 <p>
-  <strong>Serialization Vectors</strong> define the reference cases through which implementations will prove that canonical Survey expressions can be encoded, parsed, normalized, exchanged, and reproduced without ambiguity or loss of spatial meaning.
+  <strong>Serialization Vectors</strong> define the reference cases through which implementations will prove that canonical Survey expressions can be encoded, parsed, normalized or semantically resolved, exchanged, and reproduced without ambiguity or loss of spatial meaning.
 </p>
 <p>
-  The final vector corpus does not yet exist because the exact canonical serialization format, field ordering, schema language, byte or text representation, and normalization procedure remain unresolved within the Specification. This page therefore establishes the required serialization tests without inventing a canonical encoding prematurely.
+  The final vector corpus does not yet exist because the normative serialization/interchange model, field ordering, schema language, byte or text representation, semantic-equivalence rules, and normalization procedures remain unresolved within the Specification. This page therefore establishes the required serialization tests without prematurely assuming either one universal canonical encoding or a particular family of governed encodings.
 </p>
 </div>
 
@@ -143,13 +107,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 </blockquote>
 
 <section class="spec-card">
-  <div class="spec-label">10.1 · Canonical Encoding Vectors</div>
-  <h2>Canonical Meaning Must Produce One Authoritative Encoding</h2>
+  <div class="spec-label">10.1 · Normative Encoding Vectors</div>
+  <h2>Canonical Meaning Must Be Encoded According to the Governing Rules</h2>
   <p>
-    The vector set shall include canonical Survey references, extents, and foundational expressions together with the exact machine-readable encoding required by the Specification.
+    The vector set shall include canonical Survey references, extents, and foundational expressions together with the exact machine-readable encoding obligations established by the Specification.
   </p>
   <p>
-    Where a unique canonical representation is defined, independent implementations shall emit the identical authoritative encoding for the same canonical meaning.
+    If the Specification defines one unique canonical serialization, independent implementations shall emit that identical authoritative encoding for the same canonical meaning. If the Specification permits multiple explicitly governed lossless normative encodings, vectors shall prove exact compliance within each encoding and deterministic semantic equivalence across them.
   </p>
 </section>
 
@@ -157,7 +121,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">10.2 · Canonical Parsing Vectors</div>
   <h2>Authoritative Encoding Must Resolve Identically</h2>
   <p>
-    Reference vectors shall include canonical serialized inputs and the exact Survey meaning each must resolve to.
+    Reference Vectors shall include normative serialized inputs and the exact Survey meaning each must resolve to.
   </p>
   <p>
     Parsing shall be deterministic and independent of locale, undocumented defaults, database state, or other hidden implementation context.
@@ -165,13 +129,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">10.3 · Noncanonical Serialization Vectors</div>
-  <h2>Permitted Alternate Forms Must Normalize</h2>
+  <div class="spec-label">10.3 · Alternate Representation Vectors</div>
+  <h2>Permitted Alternate Forms Must Resolve Deterministically</h2>
   <p>
-    Where valid noncanonical serialized representations are permitted, vectors shall demonstrate their exact classification and normalization to the authoritative canonical form.
+    Where valid alternate or noncanonical serialized representations are permitted, Reference Vectors shall demonstrate their exact classification and deterministic resolution to canonical meaning, including normalization to a unique canonical form where the Specification requires one.
   </p>
   <p>
-    Alternate encodings may aid convenience or interoperability, but they shall not create competing canonical representations.
+    Alternate encodings may aid convenience or interoperability, and multiple normative encodings may coexist where explicitly governed, but none may create a competing canonical spatial truth.
   </p>
 </section>
 
@@ -179,7 +143,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">10.4 · Field Requirement Vectors</div>
   <h2>Required Structure Must Be Testable</h2>
   <p>
-    The corpus shall include cases proving the presence, meaning, and exact interpretation of required fields, elements, markers, or components defined by the canonical serialization.
+    The corpus shall include cases proving the presence, meaning, and exact interpretation of required fields, elements, markers, or components defined by each applicable governing normative encoding.
   </p>
   <p>
     Missing, duplicated, malformed, or conflicting required fields shall be handled according to the governing validation rules.
@@ -193,15 +157,15 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
     Where field or component ordering is normative, vectors shall prove the exact required order.
   </p>
   <p>
-    Where ordering is semantically irrelevant but canonical normalization requires one deterministic sequence, vectors shall demonstrate convergence to that sequence.
+    Where ordering is semantically irrelevant but a governing normative encoding or canonicalization rule requires one deterministic sequence, vectors shall demonstrate convergence to that sequence.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">10.6 · Canonical Whitespace and Formatting Vectors</div>
-  <h2>Presentation Variance Must Not Create Meaning Variance</h2>
+  <div class="spec-label">10.6 · Normative Whitespace and Formatting Vectors</div>
+  <h2>Formatting Variance Must Not Create Meaning Variance</h2>
   <p>
-    Where text-based serialization permits insignificant formatting differences, vectors shall demonstrate which differences normalize away and which are invalid.
+    Where a text-based normative or accepted representation permits insignificant formatting differences, Reference Vectors shall demonstrate which differences normalize away or remain semantically equivalent and which are invalid.
   </p>
   <p>
     If the final canonical form requires exact formatting, conforming implementations shall reproduce that form exactly.
@@ -212,7 +176,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">10.7 · Precision-Preserving Serialization Vectors</div>
   <h2>Encoding Must Preserve Canonical Precision</h2>
   <p>
-    The vector set shall include refined and sub-Pang expressions to prove that serialization preserves every required unit of canonical spatial precision.
+    The vector set shall include higher-precision and sub-Pang expressions to prove that normative serialization/interchange preserves every required element of canonical spatial precision regardless of the precision mechanism ultimately specified.
   </p>
   <p>
     Truncation, rounding, or lossy conversion shall not be accepted as canonical interchange where exact representation is required.
@@ -223,10 +187,10 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">10.8 · Round-Trip Vectors</div>
   <h2>Encode, Parse, and Recover the Same Canonical Truth</h2>
   <p>
-    Reference vectors shall test canonical serialize-parse and parse-serialize round trips.
+    Reference Vectors shall test serialize-parse and parse-serialize round trips for each applicable normative encoding and for any permitted normalization path between alternate forms and normative forms.
   </p>
   <p>
-    Where the representation is defined as canonical and lossless, the resulting meaning and authoritative serialized form shall be identical to the source.
+    Where one unique canonical serialization is defined, lossless round trip shall restore both identical canonical meaning and the identical required representation. Where multiple governed lossless normative encodings are permitted, round trip shall preserve canonical meaning exactly and reproduce the governing obligations of the encoding being tested.
   </p>
 </section>
 
@@ -234,7 +198,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">10.9 · Cross-Implementation Exchange Vectors</div>
   <h2>One Implementation Must Read Another’s Canonical Output</h2>
   <p>
-    The corpus shall include interchange cases proving that canonical output produced by one conforming implementation can be parsed and interpreted identically by another.
+    The corpus shall include interchange cases proving that normative output produced by one conforming implementation can be parsed and interpreted with the same canonical meaning by another.
   </p>
   <p>
     Exchange shall not depend on shared proprietary data structures, hidden registries, or private conventions.
@@ -245,7 +209,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">10.10 · Specification Identity Vectors</div>
   <h2>Governing Standard Identity Must Be Interpretable</h2>
   <p>
-    Where serialization carries or references specification identity, version, conformance profile, or compatibility metadata, vectors shall prove that those identifiers are encoded and interpreted consistently.
+    Where a normative encoding carries or references Specification identity, encoding version, Conformance profile, or compatibility metadata, Reference Vectors shall prove that those identifiers are encoded and interpreted consistently.
   </p>
   <p>
     Such metadata identifies the governing standard and shall not become part of the spatial identity of the place described.
@@ -253,10 +217,10 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">10.11 · Invalid Serialization Vectors</div>
+  <div class="spec-label">10.11 · Invalid Interchange Vectors</div>
   <h2>Malformed Machine Representation Must Fail Deterministically</h2>
   <p>
-    The vector corpus shall include malformed, incomplete, contradictory, unsupported, or precision-corrupting serialized forms.
+    The vector corpus shall include malformed, incomplete, contradictory, unsupported, unauthorized, or precision-corrupting serialized or interchange forms.
   </p>
   <p>
     Conforming implementations shall reject or classify those forms consistently rather than invent canonical meaning.
@@ -265,12 +229,12 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 
 <section class="spec-card">
   <div class="spec-label">10.12 · Exact Machine-Output Agreement</div>
-  <h2>Every Implementation Must Produce the Required Output</h2>
+  <h2>Every Implementation Must Satisfy the Required Encoding Obligations</h2>
   <p>
     Independent conforming implementations shall produce identical authoritative machine-readable output wherever the Specification defines a unique canonical serialization.
   </p>
   <p>
-    Where multiple permitted durable representations exist, each shall remain deterministically reducible to the same canonical mathematical meaning according to the governing rules.
+    Where multiple explicitly governed lossless normative encodings exist, implementations may produce representationally different outputs only as permitted by those encoding rules, while preserving deterministic semantic equivalence and one canonical mathematical meaning.
   </p>
 </section>
 
@@ -278,13 +242,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="status-card">
     <h3>Established by Requirements and Specification Scope</h3>
     <p>
-      The Survey Fabric must support canonical serialization and interchange, deterministic normalization, one mathematical meaning across durable representations, explicit specification identity and versioning, precision-preserving exchange, independent implementation, and exact machine interpretation without hidden state.
+      The Survey Fabric must support deterministic normative serialization and interchange, whether through one canonical serialization or multiple explicitly governed lossless encodings; deterministic normalization or semantic equivalence; one mathematical meaning across durable representations; explicit Specification and encoding identity where required; precision-preserving exchange; independent implementation; and exact machine interpretation without hidden state.
     </p>
   </div>
   <div class="status-card">
     <h3>Canonical Vector Corpus Not Yet Possessed</h3>
     <p>
-      Actual canonical bytes or text, schemas, field names, field order, formatting rules, version identifiers, normalized examples, round-trip fixtures, and exact machine-readable expected outputs cannot be created until the final serialization and specification-identity rules are selected.
+      Actual normative bytes or text, schemas, field names, field order, formatting rules, Specification and encoding identifiers, normalization or semantic-equivalence examples, round-trip fixtures, and exact machine-readable expected outputs cannot be created until the final normative serialization/interchange and identity rules are specified and tested.
     </p>
   </div>
 </div>
@@ -305,7 +269,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 
 <blockquote>
   <span class="quote-label">Reference Vector Boundary</span>
-  Serialization Vectors prove how canonical truth is represented and exchanged. The representation carries the truth; it does not become the place.
+  Serialization Vectors prove how canonical truth is represented and exchanged. One or many governed encodings may carry that truth; no representation becomes the place or creates a competing spatial truth.
 </blockquote>
 
 <div class="section-nav">
