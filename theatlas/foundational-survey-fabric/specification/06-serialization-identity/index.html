@@ -23,12 +23,6 @@
 
 <style>
 
-
-
-
-
-
-
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{width:100%;min-height:100%;background:#02050a;color:#fff;font-family:Arial,Helvetica,sans-serif}
 body{position:relative;line-height:1.75;overflow-x:hidden;background:#02050a}
@@ -57,7 +51,6 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 .note{margin-top:58px;padding:18px 24px;border:1px solid rgba(212,169,56,.38);color:#d4a938;letter-spacing:2px;text-transform:uppercase;font-size:12px;display:inline-block;background:rgba(0,0,0,.35)}
 @media(max-width:900px){.arch-grid{grid-template-columns:1fr}}
 @media(max-width:768px){.page{padding:185px 16px 60px}.container{padding:36px 24px 46px}.arch-header{flex-direction:column;align-items:flex-start;gap:24px}.arch-mark{width:110px;height:110px}h1{letter-spacing:3px}h2{font-size:23px;letter-spacing:3px}.subtitle{font-size:16px}.arch-statement{font-size:19px}p{font-size:16px}blockquote{font-size:20px;padding:24px 26px}}
-
 
 .req-intro {
   margin: 34px 0 42px;
@@ -244,7 +237,7 @@ h1{
 
 <div class="req-intro">
 <p>
-  This section translates accepted Foundational Survey Fabric requirements into the specification scope for serialization and specification identity. It defines how authoritative Survey references, extents, and foundational spatial expressions must be represented for deterministic interchange across independent conforming implementations.
+  This section translates accepted Foundational Survey Fabric requirements into the specification scope for serialization and specification identity. It defines how authoritative Survey references, extents, and foundational spatial expressions must be represented through deterministic normative interchange across independent conforming implementations.
 </p>
 <p>
   It also establishes the distinction between the mathematical truth of canonical space and the documents, encodings, versions, or verification systems used to describe and exchange that truth. Formats may evolve. Canonical spatial meaning must remain unchanged.
@@ -257,13 +250,16 @@ h1{
 </blockquote>
 
 <section class="spec-card">
-  <div class="spec-label">06.1 · Canonical Serialization</div>
-  <h2>One Authoritative Interchange Form</h2>
+  <div class="spec-label">06.1 · Normative Serialization and Interchange</div>
+  <h2>Deterministic Authoritative Exchange</h2>
   <p>
-    The Foundational Survey Fabric shall define a canonical machine-readable serialization for authoritative Survey references, spatial extents, and other foundational spatial expressions.
+    The Foundational Survey Fabric shall define deterministic normative serialization and interchange rules for authoritative Survey references, spatial extents, and other foundational spatial expressions.
   </p>
   <p>
-    Independent conforming implementations may use different internal data structures or storage methods, but authoritative interchange shall normalize to the canonical representation defined by the specification.
+    The governing Specification may define one canonical serialization or multiple explicitly governed lossless encodings, provided every normative form resolves deterministically to the same canonical spatial meaning and authoritative interchange remains unambiguous.
+  </p>
+  <p>
+    Independent conforming implementations may use different internal data structures or storage methods, but those internal choices shall not alter the normative interchange semantics established by the Specification.
   </p>
 </section>
 
@@ -271,21 +267,27 @@ h1{
   <div class="spec-label">06.2 · Deterministic Encoding</div>
   <h2>Unambiguous Machine Representation</h2>
   <p>
-    The canonical serialization shall be deterministic so that the same canonical spatial meaning produces the same authoritative serialized result.
+    Every normative encoding shall be deterministic within its own rules so that conforming implementations produce and interpret that encoding without ambiguity.
   </p>
   <p>
-    Equivalent but noncanonical encodings may exist for convenience, but they shall normalize deterministically to the authoritative form where canonical interchange is required.
+    Where more than one normative encoding is permitted, differently encoded authoritative expressions shall be deterministically recognizable as the same canonical spatial meaning when they are semantically equivalent.
+  </p>
+  <p>
+    Valid non-normative or convenience encodings may exist, but they shall not acquire canonical authority merely by representing the same place.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">06.3 · Normative Representation</div>
-  <h2>One Governing Meaning Across Formats</h2>
+  <div class="spec-label">06.3 · Representation Classes</div>
+  <h2>One Governing Meaning Across Durable Forms</h2>
   <p>
-    The Survey specification may be expressed through multiple human-readable, machine-readable, formal, archival, or future durable representations.
+    The Survey Specification may be documented or encoded through multiple human-readable, machine-readable, formal, archival, or future durable representations.
   </p>
   <p>
-    Those representations shall express one governing mathematical meaning and shall not establish competing spatial truths.
+    Any representation designated normative shall express the same canonical mathematical meaning and shall participate in the Specification’s deterministic equivalence and conflict-resolution rules.
+  </p>
+  <p>
+    Non-normative explanatory, archival, or presentation forms may evolve independently, but they shall not establish or override canonical spatial truth.
   </p>
 </section>
 
@@ -293,10 +295,10 @@ h1{
   <div class="spec-label">06.4 · Representation Consistency</div>
   <h2>Deterministic Agreement Across Normative Forms</h2>
   <p>
-    Where multiple normative representations are maintained, the specification process shall define rules sufficient to ensure deterministic consistency among them.
+    Where multiple normative representations are maintained, the Specification shall define deterministic semantic-equivalence rules sufficient for conforming implementations to recognize when those representations express the same canonical meaning.
   </p>
   <p>
-    If a conflict arises among normative representations, the governing specification shall provide a clear precedence or resolution rule so canonical meaning remains unambiguous.
+    If a conflict arises among normative representations, the governing Specification shall provide an explicit precedence or conflict-resolution rule so disagreement among forms cannot create competing canonical meanings.
   </p>
 </section>
 
@@ -326,7 +328,7 @@ h1{
   <div class="spec-label">06.7 · Compatibility</div>
   <h2>Preserve Established Spatial Meaning</h2>
   <p>
-    Conforming implementations shall be able to determine whether a specification or serialization version is compatible with previously established canonical Survey meaning.
+    Conforming implementations shall be able to determine whether a Specification version or normative encoding version is compatible with previously established canonical Survey meaning.
   </p>
   <p>
     Compatible changes may clarify rules, extend capabilities, improve conformance material, or add durable representations, provided they do not alter established spatial truth.
@@ -370,10 +372,10 @@ h1{
   <div class="spec-label">06.11 · Interoperable Exchange</div>
   <h2>Many Implementations, One Interchange Truth</h2>
   <p>
-    A conforming implementation shall be able to emit, receive, parse, validate, and interpret canonical serialized Survey expressions without dependence on proprietary internal state or inaccessible implementation knowledge.
+    A conforming implementation shall be able to emit, receive, parse, validate, and interpret the normative Survey encodings it claims to support without dependence on proprietary internal state or inaccessible implementation knowledge.
   </p>
   <p>
-    Canonical interchange shall therefore support independent verification and reproducibility across implementations.
+    Normative interchange shall therefore support independent verification, deterministic semantic equivalence, and reproducibility across implementations.
   </p>
 </section>
 
@@ -392,13 +394,13 @@ h1{
   <div class="status-card">
     <h3>Established by Requirements</h3>
     <p>
-      Canonical serialization and interchange; deterministic normalization to authoritative representation; explicit specification identity and versioning; persistence of spatial meaning across compatible specification evolution; independence of spatial meaning from cryptographic, blockchain, database, or verification technology; and preservation of one mathematical truth across multiple durable representations.
+      Deterministic normative serialization and interchange; permission for one canonical serialization or multiple explicitly governed lossless normative encodings; deterministic semantic equivalence across authoritative forms; explicit specification identity and versioning; persistence of spatial meaning across compatible specification evolution; independence of spatial meaning from cryptographic, blockchain, database, or verification technology; and preservation of one canonical mathematical truth across multiple durable representations.
     </p>
   </div>
   <div class="status-card">
     <h3>Still Open in the Specification</h3>
     <p>
-      The exact machine-readable format, encoding syntax, field order, canonical byte representation, schema language, version identifier format, normative-representation precedence rule, compatibility declaration format, and cryptographic or provenance mechanisms used above the spatial mathematics remain unresolved until the formal specification and conformance model are selected and tested.
+      Whether authoritative interchange uses one canonical serialization or multiple governed lossless normative encodings; the exact machine-readable format or formats, encoding syntax, field order, byte-level canonicalization rules where applicable, schema language, version identifier format, normative-representation precedence rule, compatibility declaration format, and cryptographic or provenance mechanisms used above the spatial mathematics remain unresolved until the formal Specification and conformance model are selected and tested.
     </p>
   </div>
 </div>
@@ -417,7 +419,7 @@ h1{
 
 <blockquote>
   <span class="quote-label">Architectural Boundary</span>
-  The representation may change. The specification may evolve. The canonical spatial meaning must remain the same.
+  Representations may change or multiply. The Specification may evolve. Canonical spatial meaning must remain singular, deterministic, and unchanged.
 </blockquote>
 
 <div class="section-nav">
