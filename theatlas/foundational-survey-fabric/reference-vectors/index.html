@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Reference Vectors | Foundational Survey Fabric | BitPangea</title>
+
+<link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/favicon.svg" rel="shortcut icon"/>
+<link href="/assets/css/bitpangea-framework.css" rel="stylesheet"/>
+<script defer src="/assets/js/bitpangea-framework.js"></script>
+
+<meta name="description" content="The canonical reference-vector framework for proving expected Foundational Survey Fabric results across independent implementations."/>
+<meta name="theme-color" content="#00c8d7"/>
+<meta name="robots" content="index,follow"/>
+<link rel="canonical" href="https://bitpangea.com/theatlas/foundational-survey-fabric/reference-vectors/"/>
+
+<meta property="og:title" content="Foundational Survey Fabric Reference Vectors | BitPangea"/>
+<meta property="og:description" content="Canonical examples and adversarial test cases for proving exact expected results under the Foundational Survey Fabric Specification."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://bitpangea.com/theatlas/foundational-survey-fabric/reference-vectors/"/>
+<meta property="og:site_name" content="BitPangea"/>
+
+<style>
+
+
+
+
+
+
+
+
+
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;min-height:100%;background:#02050a;color:#fff;font-family:Arial,Helvetica,sans-serif}
+body{position:relative;line-height:1.75;overflow-x:hidden;background:#02050a}
+body::before{content:"";position:fixed;inset:0;background-image:linear-gradient(rgba(2,5,10,.78),rgba(2,5,10,.90)),url("/images/bitpangea.jpg");background-size:cover;background-position:center;background-repeat:no-repeat;z-index:-2;pointer-events:none}
+body::after{content:"";position:fixed;inset:0;background:radial-gradient(circle at 75% 12%,rgba(0,200,215,.10),transparent 34%),radial-gradient(circle at 18% 18%,rgba(212,169,56,.10),transparent 32%),linear-gradient(90deg,rgba(0,0,0,.60),rgba(0,0,0,.25),rgba(0,0,0,.64));z-index:-1;pointer-events:none}
+.page{width:100%;padding:150px 28px 90px}
+.container{max-width:1040px;margin:0 auto;padding:54px 58px 64px;background:rgba(0,0,0,.48);border:1px solid rgba(212,169,56,.16);box-shadow:0 0 60px rgba(0,0,0,.55);backdrop-filter:blur(4px)}
+.eyebrow{color:#00c8d7;letter-spacing:4px;text-transform:uppercase;font-size:12px;margin-bottom:20px}
+.arch-header{display:flex;align-items:center;gap:28px;margin-bottom:20px}
+.arch-mark{width:230px;height:230px;flex-shrink:0;opacity:.96}
+.arch-title{display:flex;flex-direction:column}
+h1{color:#fff;font-size:clamp(38px,6vw,66px);line-height:1.06;letter-spacing:5px;text-transform:uppercase;margin-bottom:14px;text-shadow:0 0 22px rgba(0,0,0,.9)}
+.subtitle{color:#d4a938;font-size:18px;letter-spacing:3px;text-transform:uppercase;margin-bottom:18px}
+.divider{width:64px;height:2px;background:#d4a938;margin:34px 0 42px;box-shadow:0 0 14px rgba(212,169,56,.65)}
+.arch-statement{font-size:28px;font-weight:500;color:#fff;margin-bottom:28px;text-shadow:0 0 18px rgba(212,169,56,.25)}
+p{margin-bottom:22px;color:#fff;font-size:17px;text-shadow:0 0 9px rgba(0,0,0,.9)}
+h2{margin-top:54px;margin-bottom:20px;color:#fff;font-size:28px;letter-spacing:4px;text-transform:uppercase;text-shadow:0 0 14px rgba(0,0,0,.9)}
+blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;background:rgba(0,0,0,.52);color:#fff;font-size:24px;line-height:1.45;letter-spacing:1px;box-shadow:0 0 28px rgba(0,0,0,.45)}
+.quote-label{display:block;color:#00c8d7;font-size:11px;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px}
+.note{margin-top:58px;padding:18px 24px;border:1px solid rgba(212,169,56,.38);color:#d4a938;letter-spacing:2px;text-transform:uppercase;font-size:12px;display:inline-block;background:rgba(0,0,0,.35)}
+.req-intro{margin:34px 0 42px;padding:28px 30px;background:rgba(0,0,0,.34);border:1px solid rgba(212,169,56,.18)}
+.req-intro p:last-child{margin-bottom:0}
+.finding{margin-top:28px;padding:30px 32px 28px;background:rgba(0,0,0,.34);border:1px solid rgba(212,169,56,.18);box-shadow:0 0 22px rgba(0,0,0,.24)}
+.finding-number{color:#00c8d7;font-size:11px;letter-spacing:3px;text-transform:uppercase;margin-bottom:10px}
+.finding h2{margin:0 0 18px;font-size:24px;letter-spacing:3px}
+.finding p{color:rgba(255,255,255,.90)}
+.finding-principle{margin:24px 0 0;padding:22px 26px;border-left:3px solid #d4a938;background:rgba(0,0,0,.48);font-size:20px;line-height:1.45}
+.finding-principle .quote-label{margin-bottom:10px}
+.section-nav{display:flex;flex-wrap:wrap;gap:12px;margin:34px 0 8px}
+.section-nav a,.section-nav a:visited{color:#d4a938;text-decoration:none;text-transform:uppercase;letter-spacing:2px;font-size:12px;padding:11px 14px;border:1px solid rgba(212,169,56,.24);background:rgba(0,0,0,.28)}
+.section-nav a:hover{color:#fff;text-shadow:0 0 12px rgba(212,169,56,.55)}
+.req-status{margin-top:36px;padding:26px 28px;border:1px solid rgba(0,200,215,.18);background:rgba(0,0,0,.30)}
+.req-status h3{color:#d4a938;font-size:13px;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}
+.req-status p{margin:0;font-size:15px;color:rgba(255,255,255,.82)}
+@media(max-width:768px){
+  .page{padding:185px 16px 60px}
+  .container{padding:36px 24px 46px}
+  .arch-header{flex-direction:column;align-items:flex-start;gap:24px}
+  .arch-mark{width:110px;height:110px}
+  h1{letter-spacing:3px}
+  .subtitle{font-size:16px}
+  .arch-statement{font-size:19px}
+  p{font-size:16px}
+  blockquote{font-size:20px;padding:24px 26px}
+  .finding{padding:26px 22px 24px}
+  .finding h2{font-size:21px}
+  .finding-principle{font-size:18px}
+}
+
+
+
+.finding-list{
+  margin:18px 0 20px 22px;
+}
+.finding-list li{
+  color:rgba(255,255,255,.90);
+  margin-bottom:9px;
+  font-size:17px;
+  text-shadow:0 0 9px rgba(0,0,0,.9);
+}
+@media(max-width:768px){
+  .finding-list li{font-size:16px}
+}
+
+
+
+
+.req-index-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:18px;
+  margin:34px 0 10px;
+}
+.req-index-card{
+  display:block;
+  text-decoration:none;
+  color:#fff;
+  padding:28px 30px;
+  border:1px solid rgba(212,169,56,.22);
+  background:rgba(0,0,0,.34);
+  box-shadow:0 0 22px rgba(0,0,0,.24);
+  transition:transform .18s ease,border-color .18s ease,background .18s ease;
+}
+.req-index-card:hover{
+  transform:translateY(-2px);
+  border-color:rgba(212,169,56,.55);
+  background:rgba(0,0,0,.48);
+}
+.req-index-number{
+  color:#00c8d7;
+  font-size:11px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  margin-bottom:10px;
+}
+.req-index-card h2{
+  margin:0 0 12px;
+  font-size:24px;
+  letter-spacing:3px;
+}
+.req-index-card p{
+  margin:0;
+  color:rgba(255,255,255,.84);
+  font-size:15px;
+}
+.req-index-range{
+  display:inline-block;
+  margin-top:16px;
+  color:#d4a938;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  font-size:12px;
+}
+.requirements-map{
+  margin:34px 0 0;
+  padding:26px 28px;
+  border:1px solid rgba(0,200,215,.18);
+  background:rgba(0,0,0,.30);
+}
+.requirements-map p:last-child{margin-bottom:0}
+@media(max-width:768px){
+  .req-index-card{padding:24px 22px}
+  .req-index-card h2{font-size:21px}
+}
+
+
+.spec-index-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:18px;
+  margin:34px 0 10px;
+}
+.spec-index-card{
+  display:block;
+  text-decoration:none;
+  color:#fff;
+  padding:28px 30px;
+  border:1px solid rgba(212,169,56,.22);
+  background:rgba(0,0,0,.34);
+  box-shadow:0 0 22px rgba(0,0,0,.24);
+  transition:transform .18s ease,border-color .18s ease,background .18s ease;
+}
+.spec-index-card:hover{
+  transform:translateY(-2px);
+  border-color:rgba(212,169,56,.55);
+  background:rgba(0,0,0,.48);
+}
+.spec-index-number{
+  color:#00c8d7;
+  font-size:11px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  margin-bottom:10px;
+}
+.spec-index-card h2{
+  margin:0 0 12px;
+  font-size:24px;
+  letter-spacing:3px;
+}
+.spec-index-card p{
+  margin:0;
+  color:rgba(255,255,255,.84);
+  font-size:15px;
+}
+.spec-index-range{
+  display:inline-block;
+  margin-top:16px;
+  color:#d4a938;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  font-size:12px;
+}
+.specification-map{
+  margin:34px 0 0;
+  padding:26px 28px;
+  border:1px solid rgba(0,200,215,.18);
+  background:rgba(0,0,0,.30);
+}
+.specification-map p:last-child{margin-bottom:0}
+@media(max-width:768px){
+  .spec-index-card{padding:24px 22px}
+  .spec-index-card h2{font-size:21px}
+}
+
+
+
+</style>
+</head>
+
+<body data-bp-page="theatlas">
+<div id="bp-header"></div>
+
+<main class="page">
+<article class="container">
+
+<div class="eyebrow">The Atlas · The Architecture · Foundational Survey Fabric</div>
+
+<div class="arch-header">
+  <img src="/thearchitecture/architecture-globe.png" alt="The Architecture Emblem" class="arch-mark"/>
+  <div class="arch-title">
+    <h1>Reference Vectors</h1>
+    <div class="subtitle">Foundational Survey Fabric · Canonical Test Corpus Framework</div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<p class="arch-statement">
+  The canonical examples and test cases through which expected Foundational Survey Fabric results become independently reproducible.
+</p>
+
+<div class="req-intro">
+<p>
+  <strong>Foundational Survey Fabric Reference Vectors</strong> define the exact input-and-expected-result cases that will allow independent implementations to prove agreement with the governing Specification and Conformance framework.
+</p>
+<p>
+  Reference Vectors do not select the Survey mathematics. The Requirements establish what must be satisfied. The Specification defines the mathematics that satisfies those requirements. Conformance defines how an implementation proves compatibility. Reference Vectors then provide canonical examples, negative cases, and adversarial tests against which that implementation can be evaluated.
+</p>
+<p>
+  Because the final Survey mathematics are not yet selected, these pages establish the required vector categories and proof obligations rather than inventing authoritative input/output data prematurely.
+</p>
+</div>
+
+<blockquote>
+  <span class="quote-label">Reference Vector Question</span>
+  Given this exact input, what exact answer must every conforming implementation produce?
+</blockquote>
+
+<h2>Reference Vector Structure</h2>
+
+<div class="spec-index-grid">
+
+<a class="spec-index-card" href="/theatlas/foundational-survey-fabric/reference-vectors/01-addressing-vectors/">
+  <div class="spec-index-number">Reference Vectors 01</div>
+  <h2>Addressing Vectors</h2>
+  <p>Tests canonical address interpretation, refinement, normalization, permanence, and resolution across independent implementations.</p>
+  <span class="spec-index-range">Addressing · Refinement · Canonicalization · Permanence →</span>
+</a>
+<a class="spec-index-card" href="/theatlas/foundational-survey-fabric/reference-vectors/02-domain-boundary-vectors/">
+  <div class="spec-index-number">Reference Vectors 02</div>
+  <h2>Domain-Boundary Vectors</h2>
+  <p>Tests the canonical origin, finite Survey Domain limits, exact boundary inclusion, near-boundary validity, and the separation between Survey validity and World membership.</p>
+  <span class="spec-index-range">Origin · Domain Limits · Boundary Inclusion · Validity →</span>
+</a>
+<a class="spec-index-card" href="/theatlas/foundational-survey-fabric/reference-vectors/03-pang-measurement-vectors/">
+  <div class="spec-index-number">Reference Vectors 03</div>
+  <h2>Pang Measurement Vectors</h2>
+  <p>Tests canonical separation, square-Pang area, path and boundary length, uniform Pang scale, and exact sub-Pang measurement.</p>
+  <span class="spec-index-range">Pang · Distance · Area · Length · Sub-Pang →</span>
+</a>
+<a class="spec-index-card" href="/theatlas/foundational-survey-fabric/reference-vectors/04-orientation-vectors/">
+  <div class="spec-index-number">Reference Vectors 04</div>
+  <h2>Orientation Vectors</h2>
+  <p>Tests Pankor, Panvath, Panoris, Panvel, canonical rotation, handedness, mirrored views, and transformed orientation.</p>
+  <span class="spec-index-range">Direction · Rotation · Handedness · Orientation →</span>
+</a>
+<a class="spec-index-card" href="/theatlas/foundational-survey-fabric/reference-vectors/05-geometry-vectors/">
+  <div class="spec-index-number">Reference Vectors 05</div>
+  <h2>Geometry Vectors</h2>
+  <p>Tests exact touch, intersection, overlap, containment, separation, shared boundary, connectedness, continuity, and related predicates.</p>
+  <span class="spec-index-range">Touch · Intersection · Containment · Connectedness →</span>
+</a>
+<a class="spec-index-card" href="/theatlas/foundational-survey-fabric/reference-vectors/06-normalization-vectors/">
+  <div class="spec-index-number">Reference Vectors 06</div>
+  <h2>Normalization Vectors</h2>
+  <p>Tests whether different valid syntactic or mathematical expressions of the same spatial truth converge to one canonical result.</p>
+  <span class="spec-index-range">Normalization · Equivalence · Canonical Convergence →</span>
+</a>
+<a class="spec-index-card" href="/theatlas/foundational-survey-fabric/reference-vectors/07-transformation-vectors/">
+  <div class="spec-index-number">Reference Vectors 07</div>
+  <h2>Transformation Vectors</h2>
+  <p>Tests rotation, reflection, translation, scaling where permitted, inverse transformation, composition, and exact resolution back to canonical Survey space.</p>
+  <span class="spec-index-range">Rotation · Reflection · Translation · Inversion →</span>
+</a>
+<a class="spec-index-card" href="/theatlas/foundational-survey-fabric/reference-vectors/08-precision-vectors/">
+  <div class="spec-index-number">Reference Vectors 08</div>
+  <h2>Precision Vectors</h2>
+  <p>Tests exact refinement, sub-Pang representation, canonical/storage/render distinctions, lossless conversion, and detectable lossy reduction.</p>
+  <span class="spec-index-range">Precision · Refinement · Lossless · Lossy →</span>
+</a>
+<a class="spec-index-card" href="/theatlas/foundational-survey-fabric/reference-vectors/09-invalid-input-vectors/">
+  <div class="spec-index-number">Reference Vectors 09</div>
+  <h2>Invalid-Input Vectors</h2>
+  <p>Tests deterministic failure for malformed expressions, impossible refinement, ambiguity, out-of-domain references, unsupported forms, and other invalid states.</p>
+  <span class="spec-index-range">Malformed · Ambiguous · Unsupported · Reject →</span>
+</a>
+<a class="spec-index-card" href="/theatlas/foundational-survey-fabric/reference-vectors/10-serialization-vectors/">
+  <div class="spec-index-number">Reference Vectors 10</div>
+  <h2>Serialization Vectors</h2>
+  <p>Tests canonical encoding, parsing, normalization, field and order requirements, round trips, and exact machine-readable interchange.</p>
+  <span class="spec-index-range">Encoding · Parsing · Round-Trip · Machine Output →</span>
+</a>
+<a class="spec-index-card" href="/theatlas/foundational-survey-fabric/reference-vectors/11-version-conformance-vectors/">
+  <div class="spec-index-number">Reference Vectors 11</div>
+  <h2>Version / Conformance Vectors</h2>
+  <p>Tests preservation of canonical truth across compatible specification versions and deterministic pass, fail, unsupported, or indeterminate conformance outcomes.</p>
+  <span class="spec-index-range">Versioning · Compatibility · Pass · Fail →</span>
+</a>
+<a class="spec-index-card" href="/theatlas/foundational-survey-fabric/reference-vectors/12-pathological-edge-cases/">
+  <div class="spec-index-number">Reference Vectors 12</div>
+  <h2>Pathological Edge Cases</h2>
+  <p>Deliberately attacks the architecture with exact boundary contact, equivalent but structurally different geometry, extreme refinement, complex finite extents, and normalization stress.</p>
+  <span class="spec-index-range">Adversarial · Edge Cases · Stress · Ambiguity →</span>
+</a>
+</div>
+
+<div class="specification-map">
+<p>
+  Together, these twelve sections define the intended canonical test architecture for the Foundational Survey Fabric: address resolution, Survey Domain limits, Pang measurement, orientation, geometry, normalization, transformation, precision, invalid-input rejection, serialization, version and conformance behavior, and deliberate pathological stress.
+</p>
+<p>
+  The Reference Vector corpus remains subordinate to the governing Requirements, Specification, and Conformance framework. It may prove, expose, compare, and reproduce expected behavior, but it may not invent spatial truth, fill unresolved mathematical gaps, or override the canonical rules established by the Specification.
+</p>
+</div>
+
+<blockquote>
+  <span class="quote-label">Architectural Sequence</span>
+  Requirements establishes what must be satisfied. Specification defines the mathematics that satisfies it. Conformance defines how an implementation proves it follows the Specification. Reference Vectors provide canonical examples and test cases proving the expected results.
+</blockquote>
+
+<div class="section-nav">
+  <a href="/theatlas/foundational-survey-fabric/">← Foundational Survey Fabric</a>
+  <a href="/theatlas/foundational-survey-fabric/requirements/">Requirements Framework</a>
+  <a href="/theatlas/foundational-survey-fabric/specification/">Specification</a>
+  <a href="/theatlas/foundational-survey-fabric/conformance/">Conformance</a>
+  <a href="/thearchitecture/">The Architecture</a>
+</div>
+
+<div class="note">Foundational Survey Fabric · Reference Vectors · Canonical Test Corpus Framework</div>
+
+</article>
+</main>
+
+<div id="bp-footer"></div>
+</body>
+</html>
