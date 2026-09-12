@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Canonical Operations | Foundational Survey Fabric Specification | BitPangea</title>
+
+<link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/favicon.svg" rel="shortcut icon"/>
+<link href="/assets/css/bitpangea-framework.css" rel="stylesheet"/>
+<script defer src="/assets/js/bitpangea-framework.js"></script>
+
+<meta name="description" content="Canonical Operations — Specification Section 05 for the BitPangea Foundational Survey Fabric."/>
+<meta name="theme-color" content="#00c8d7"/>
+<meta name="robots" content="index,follow"/>
+<link rel="canonical" href="https://bitpangea.com/theatlas/foundational-survey-fabric/specification/05-operations/"/>
+
+<meta property="og:title" content="Canonical Operations | BitPangea"/>
+<meta property="og:description" content="Specification Section 05 for the Foundational Survey Fabric."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://bitpangea.com/theatlas/foundational-survey-fabric/specification/05-operations/"/>
+<meta property="og:site_name" content="BitPangea"/>
+
+<style>
+
+
+
+
+
+
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;min-height:100%;background:#02050a;color:#fff;font-family:Arial,Helvetica,sans-serif}
+body{position:relative;line-height:1.75;overflow-x:hidden;background:#02050a}
+body::before{content:"";position:fixed;inset:0;background-image:linear-gradient(rgba(2,5,10,.78),rgba(2,5,10,.90)),url("/images/bitpangea.jpg");background-size:cover;background-position:center;background-repeat:no-repeat;z-index:-2;pointer-events:none}
+body::after{content:"";position:fixed;inset:0;background:radial-gradient(circle at 75% 12%,rgba(0,200,215,.10),transparent 34%),radial-gradient(circle at 18% 18%,rgba(212,169,56,.10),transparent 32%),linear-gradient(90deg,rgba(0,0,0,.60),rgba(0,0,0,.25),rgba(0,0,0,.64));z-index:-1;pointer-events:none}
+.page{width:100%;padding:150px 28px 90px}
+.container{max-width:1040px;margin:0 auto;padding:54px 58px 64px;background:rgba(0,0,0,.48);border:1px solid rgba(212,169,56,.16);box-shadow:0 0 60px rgba(0,0,0,.55);backdrop-filter:blur(4px)}
+.eyebrow{color:#00c8d7;letter-spacing:4px;text-transform:uppercase;font-size:12px;margin-bottom:20px}
+.arch-header{display:flex;align-items:center;gap:28px;margin-bottom:20px}
+.arch-mark{width:230px;height:230px;flex-shrink:0;opacity:.96}
+.arch-title{display:flex;flex-direction:column}
+h1{color:#fff;font-size:clamp(38px,6vw,66px);line-height:1.06;letter-spacing:5px;text-transform:uppercase;margin-bottom:14px;text-shadow:0 0 22px rgba(0,0,0,.9)}
+.subtitle{color:#d4a938;font-size:18px;letter-spacing:3px;text-transform:uppercase;margin-bottom:18px}
+.divider{width:64px;height:2px;background:#d4a938;margin:34px 0 42px;box-shadow:0 0 14px rgba(212,169,56,.65)}
+.arch-statement{font-size:28px;font-weight:500;color:#fff;margin-bottom:28px;text-shadow:0 0 18px rgba(212,169,56,.25)}
+p{margin-bottom:22px;color:#fff;font-size:17px;text-shadow:0 0 9px rgba(0,0,0,.9)}
+h2{margin-top:54px;margin-bottom:20px;color:#fff;font-size:28px;letter-spacing:4px;text-transform:uppercase;text-shadow:0 0 14px rgba(0,0,0,.9)}
+.arch-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:34px 0 10px}
+.arch-card{border:1px solid rgba(212,169,56,.22);background:rgba(0,0,0,.30);padding:22px;min-height:145px}
+.arch-card h3{color:#d4a938;font-size:13px;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px}
+.arch-card p{font-size:15px;margin-bottom:0}
+blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;background:rgba(0,0,0,.52);color:#fff;font-size:24px;line-height:1.45;letter-spacing:1px;box-shadow:0 0 28px rgba(0,0,0,.45)}
+.quote-label{display:block;color:#00c8d7;font-size:11px;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px}
+.return-link{display:inline-block;margin-top:14px;color:#d4a938;text-decoration:none;text-transform:uppercase;letter-spacing:2px;font-size:12px}
+.return-link:hover{color:#fff;text-shadow:0 0 12px rgba(212,169,56,.5)}
+.note{margin-top:58px;padding:18px 24px;border:1px solid rgba(212,169,56,.38);color:#d4a938;letter-spacing:2px;text-transform:uppercase;font-size:12px;display:inline-block;background:rgba(0,0,0,.35)}
+@media(max-width:900px){.arch-grid{grid-template-columns:1fr}}
+@media(max-width:768px){.page{padding:185px 16px 60px}.container{padding:36px 24px 46px}.arch-header{flex-direction:column;align-items:flex-start;gap:24px}.arch-mark{width:110px;height:110px}h1{letter-spacing:3px}h2{font-size:23px;letter-spacing:3px}.subtitle{font-size:16px}.arch-statement{font-size:19px}p{font-size:16px}blockquote{font-size:20px;padding:24px 26px}}
+
+
+.req-intro {
+  margin: 34px 0 42px;
+  padding: 28px 30px;
+  background: rgba(0,0,0,.34);
+  border: 1px solid rgba(212,169,56,.18);
+}
+.req-intro p:last-child { margin-bottom: 0; }
+
+.finding {
+  margin-top: 28px;
+  padding: 30px 32px 28px;
+  background: rgba(0,0,0,.34);
+  border: 1px solid rgba(212,169,56,.18);
+  box-shadow: 0 0 22px rgba(0,0,0,.24);
+}
+.finding-number {
+  color: #00c8d7;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.finding h2 {
+  margin: 0 0 18px;
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+.finding p {
+  color: rgba(255,255,255,.90);
+}
+.finding-principle {
+  margin: 24px 0 0;
+  padding: 22px 26px;
+  border-left: 3px solid #d4a938;
+  background: rgba(0,0,0,.48);
+  font-size: 20px;
+  line-height: 1.45;
+}
+.finding-principle .quote-label {
+  margin-bottom: 10px;
+}
+.section-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 34px 0 8px;
+}
+.section-nav a,
+.section-nav a:visited {
+  color: #d4a938;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  padding: 11px 14px;
+  border: 1px solid rgba(212,169,56,.24);
+  background: rgba(0,0,0,.28);
+}
+.section-nav a:hover {
+  color: #fff;
+  text-shadow: 0 0 12px rgba(212,169,56,.55);
+}
+.req-status {
+  margin-top: 36px;
+  padding: 26px 28px;
+  border: 1px solid rgba(0,200,215,.18);
+  background: rgba(0,0,0,.30);
+}
+.req-status h3 {
+  color: #d4a938;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.req-status p {
+  margin: 0;
+  font-size: 15px;
+  color: rgba(255,255,255,.82);
+}
+@media(max-width:768px){
+  .finding { padding: 26px 22px 24px; }
+  .finding h2 { font-size: 21px; }
+  .finding-principle { font-size: 18px; }
+}
+
+
+h1{
+  font-size:clamp(32px,4.5vw,52px);
+  line-height:1.02;
+}
+.spec-card{
+  margin-top:28px;
+  padding:30px 32px 28px;
+  background:rgba(0,0,0,.34);
+  border:1px solid rgba(212,169,56,.18);
+  box-shadow:0 0 22px rgba(0,0,0,.24);
+}
+.spec-card h2{
+  margin:0 0 18px;
+  font-size:24px;
+  letter-spacing:3px;
+}
+.spec-label{
+  color:#00c8d7;
+  font-size:11px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  margin-bottom:10px;
+}
+.finding-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:18px;
+}
+.finding-links a,
+.finding-links a:visited{
+  color:#d4a938;
+  text-decoration:none;
+  border:1px solid rgba(212,169,56,.24);
+  padding:8px 10px;
+  font-size:11px;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  background:rgba(0,0,0,.28);
+}
+.finding-links a:hover{color:#fff}
+.status-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+  margin-top:28px;
+}
+.status-card{
+  padding:24px;
+  border:1px solid rgba(0,200,215,.18);
+  background:rgba(0,0,0,.30);
+}
+.status-card h3{
+  color:#d4a938;
+  font-size:13px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  margin-bottom:10px;
+}
+.status-card p{margin:0;font-size:15px;color:rgba(255,255,255,.84)}
+@media(max-width:768px){
+  .status-grid{grid-template-columns:1fr}
+  .spec-card{padding:26px 22px 24px}
+  .spec-card h2{font-size:21px}
+}
+
+
+
+
+
+</style>
+</head>
+
+<body data-bp-page="theatlas">
+<div id="bp-header"></div>
+
+<main class="page">
+<article class="container">
+
+<div class="eyebrow">The Atlas · The Architecture · Foundational Survey Fabric · Specification</div>
+
+<div class="arch-header">
+  <img src="/thearchitecture/architecture-globe.png" alt="The Architecture Emblem" class="arch-mark"/>
+  <div class="arch-title">
+    <h1>Canonical<br/>Operations</h1>
+    <div class="subtitle">Specification Section 05 · Derived from the Requirements Framework</div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<p class="arch-statement">
+  The specification boundary for the exact operations by which canonical BitPangea space is measured, composed, compared, normalized, ordered, and converted without changing its underlying truth.
+</p>
+
+<div class="req-intro">
+<p>
+  This section translates accepted Foundational Survey Fabric requirements into the specification scope for canonical spatial operations. It defines the behaviors that the eventual formal mathematics must support for measurement, composition, comparison, equivalence, ordering, precision conversion, and normalization.
+</p>
+<p>
+  These operations must remain exact, deterministic, semantically neutral, implementation-independent, and incapable of silently moving, approximating, or redefining canonical space.
+</p>
+</div>
+
+<blockquote>
+  <span class="quote-label">Specification Principle</span>
+  At the foundation, equal means equal. Tolerance belongs above.
+</blockquote>
+
+<section class="spec-card">
+  <div class="spec-label">05.1 · Canonical Measurement</div>
+  <h2>Exact Measure of Spatial Expressions</h2>
+  <p>
+    The Foundational Survey Fabric shall support exact canonical measurement of valid spatial expressions, including straight spatial separation, area, path length, and boundary length where applicable.
+  </p>
+  <p>
+    Measurement shall remain geometric. Functional meanings such as travel cost, accessibility, convenience, or legal significance belong to higher layers.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">05.2 · Union</div>
+  <h2>Exact Spatial Combination</h2>
+  <p>
+    The specification shall support exact union of canonical spatial references or extents where mathematically valid.
+  </p>
+  <p>
+    Union shall produce the exact combined canonical spatial extent without determining whether the resulting space constitutes one higher-layer entity, ownership domain, Region, or other semantic construct.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">05.3 · Intersection</div>
+  <h2>Exact Common Spatial Result</h2>
+  <p>
+    The specification shall support exact intersection operations that determine the canonical common space shared by valid spatial expressions.
+  </p>
+  <p>
+    The geometric result shall remain authoritative only as spatial truth. Any legal, institutional, ownership, governance, or access consequence remains outside the Survey Fabric.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">05.4 · Difference</div>
+  <h2>Exact Spatial Subtraction</h2>
+  <p>
+    The Foundational Survey Fabric shall support exact difference operations sufficient to derive the portion of one valid canonical extent not shared by another.
+  </p>
+  <p>
+    Difference shall remain a geometric operation and shall not itself imply removal, transfer, exclusion, loss of rights, or any higher-layer semantic consequence.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">05.5 · Comparison</div>
+  <h2>Exact Canonical Comparison</h2>
+  <p>
+    Equality, adjacency, intersection, containment, boundary contact, and related foundational comparisons shall be evaluated exactly rather than through implementation-specific tolerance.
+  </p>
+  <p>
+    Approximate comparison, engineering margins, fuzzy matching, and rendering thresholds may exist above the foundation, but shall not redefine canonical Survey truth.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">05.6 · Equivalence</div>
+  <h2>Equivalent Space, One Canonical Meaning</h2>
+  <p>
+    The specification shall define exact rules for determining whether differently expressed references, extents, compositions, or geometric constructions represent the same canonical BitPangea space.
+  </p>
+  <p>
+    Equivalent space does not imply equivalent higher-layer identity, ownership, rights, history, function, or authority.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">05.7 · Canonical Ordering</div>
+  <h2>Deterministic Order Without Semantic Rank</h2>
+  <p>
+    The Foundational Survey Fabric shall support deterministic ordering of canonical references and derived spatial components wherever required for normalization, serialization, verification, exact reproducibility, or conformance.
+  </p>
+  <p>
+    Canonical ordering shall remain semantically neutral and shall not imply importance, priority, ownership rank, cultural hierarchy, or geographic significance.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">05.8 · Normalization</div>
+  <h2>Canonicalize Equivalence</h2>
+  <p>
+    The specification shall define deterministic normalization rules capable of converting valid noncanonical but equivalent expressions into canonical form.
+  </p>
+  <p>
+    Normalization shall preserve spatial meaning exactly. It shall never move a location, alter an extent, or reinterpret a valid canonical place.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">05.9 · Validity</div>
+  <h2>Canonical, Noncanonical, or Invalid</h2>
+  <p>
+    Conforming implementations shall be able to distinguish canonical expressions, valid noncanonical representations, malformed expressions, impossible refinement expressions, and references outside the canonical Survey Domain.
+  </p>
+  <p>
+    Invalid or ambiguous inputs shall not be silently assigned spatial meaning through implementation-specific guesswork.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">05.10 · Precision Conversion</div>
+  <h2>Lossless and Lossy Transformation</h2>
+  <p>
+    The specification shall define deterministic rules that distinguish exact lossless transformations of canonical precision from lossy reduction, truncation, approximation, or generalization.
+  </p>
+  <p>
+    A lossy representation may be useful for rendering, storage, transmission, or convenience, but it shall not be treated as equivalent to complete canonical truth.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">05.11 · Canonical vs. Storage vs. Rendering Precision</div>
+  <h2>Separate Truth From Representation</h2>
+  <p>
+    Canonical spatial precision shall remain distinct from implementation storage precision and user-facing rendering precision.
+  </p>
+  <p>
+    Implementations may store or display less detail where useful, provided that any reduction is recognized as a partial or approximate representation rather than a redefinition of authoritative space.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">05.12 · No Silent Snapping</div>
+  <h2>Operations Must Not Move Place</h2>
+  <p>
+    Canonical operations shall not silently snap references to grid lines, refinement boundaries, vertices, preferred increments, or nearby representable positions.
+  </p>
+  <p>
+    Snapping and alignment may exist above the foundation only as explicit intentional transformations.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">05.13 · Neutral Conflict Detection</div>
+  <h2>Reveal Spatial Conflict Without Adjudication</h2>
+  <p>
+    The Survey Fabric shall provide exact canonical facts and geometric results sufficient for higher layers to detect conflicts, contradictions, overlaps, or invalid spatial relationships.
+  </p>
+  <p>
+    The Foundational Survey Fabric shall not adjudicate the institutional, legal, ownership, access, or governance consequences of those conflicts.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">05.14 · Transformation Integrity</div>
+  <h2>Derived Operations Must Resolve Back to Canonical Space</h2>
+  <p>
+    Rotation, mirroring, reflection, translation, scaling, zoom, compression, and related transformations may be used by derived views and higher layers.
+  </p>
+  <p>
+    Such operations shall remain exactly resolvable to the canonical Survey frame and shall not redefine Pang scale, canonical orientation, or authoritative World-space location.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">05.15 · Proximity</div>
+  <h2>Exact Closeness Without Semantic Meaning</h2>
+  <p>
+    The Foundational Survey Fabric shall support exact spatial separation and threshold-based proximity where required.
+  </p>
+  <p>
+    Terms such as near, local, neighboring, remote, or convenient remain higher-layer interpretations and shall not become foundational spatial semantics.
+  </p>
+</section>
+
+<div class="status-grid">
+  <div class="status-card">
+    <h3>Established by Requirements</h3>
+    <p>
+      Exact measurement; spatial union, intersection, and difference; deterministic validity and normalization; canonical ordering; neutral conflict detection; exact spatial equivalence; derived scale transformation; exact proximity; separation of canonical, storage, and rendering precision; lossless versus lossy conversion; exact comparison; and prohibition of silent snapping.
+    </p>
+  </div>
+  <div class="status-card">
+    <h3>Still Open in the Specification</h3>
+    <p>
+      The exact mathematical algorithms for composition, equivalence, ordering, normalization, precision conversion, and comparison; operation syntax; error classes; edge-case behavior; canonical return forms; and computational complexity limits remain unresolved until the formal mathematical design is selected and tested.
+    </p>
+  </div>
+</div>
+
+<section class="spec-card">
+  <div class="spec-label">Requirements Basis</div>
+  <h2>Primary Derived Findings</h2>
+  <p>
+    This specification section is derived especially from Requirements Findings #55–#58 and #65–#75.
+  </p>
+  <div class="finding-links">
+    <a href="/theatlas/foundational-survey-fabric/requirements/06-geometry-topology-measurement-operations/#finding-55">#55–#58</a>
+    <a href="/theatlas/foundational-survey-fabric/requirements/06-geometry-topology-measurement-operations/#finding-65">#65–#75</a>
+  </div>
+</section>
+
+<blockquote>
+  <span class="quote-label">Architectural Boundary</span>
+  Canonical operations may calculate, compare, compose, and normalize space. They may not invent meaning, tolerate ambiguity, or silently move the place being described.
+</blockquote>
+
+<div class="section-nav">
+  <a href="/theatlas/foundational-survey-fabric/specification/04-expressions-geometry/">← Specification 04</a>
+  <a href="/theatlas/foundational-survey-fabric/requirements/">Requirements Framework</a>
+  <a href="/theatlas/foundational-survey-fabric/specification/">Specification Index</a>
+</div>
+
+<div class="note">Foundational Survey Fabric · Specification 05 · Canonical Operations</div>
+
+</article>
+</main>
+
+<div id="bp-footer"></div>
+</body>
+</html>
