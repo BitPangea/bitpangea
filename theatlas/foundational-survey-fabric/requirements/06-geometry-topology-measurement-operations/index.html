@@ -22,10 +22,6 @@
 <meta property="og:site_name" content="BitPangea"/>
 
 <style>
-
-
-
-
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{width:100%;min-height:100%;background:#02050a;color:#fff;font-family:Arial,Helvetica,sans-serif}
 body{position:relative;line-height:1.75;overflow-x:hidden;background:#02050a}
@@ -126,7 +122,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 
 <div class="req-intro">
 <p>
-  This section establishes the Foundational Survey Fabric’s requirements for continuity, connectedness, spatial predicates, domain limits, transformations, measurement, geometric composition, normalization, serialization, equivalence, precision handling, and exact comparison.
+  This section establishes the Foundational Survey Fabric’s requirements for continuity, connectedness, spatial predicates, exact Survey Domain limits, transformations, measurement, geometric composition, normalization, normative serialization and interchange, equivalence, precision handling, and exact comparison.
 </p>
 <p>
   It also reinforces the architectural boundary between foundational spatial truth and higher-layer meaning. The Survey Fabric may determine exact geometry, proximity, conflict, equivalence, and transformation while leaving identity, ownership, terrain, policy, interpretation, and civilizational consequence to the systems above it.
@@ -166,8 +162,10 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 <section class="finding" id="finding-48">
   <div class="finding-number">Requirement Finding #48</div>
   <h2>Exact Survey Domain Limits</h2>
-  <p>The canonical finite Survey Domain should possess exact mathematically defined limits that determine the valid scope of Foundational Survey Fabric reference. Those limits should not themselves constitute BitPangea’s World Boundary, Extent expression, Verge, coastline, Exterior, or other cartographic feature. Higher spatial layers should determine the form and membership of The World within the Survey Domain. A location beyond the canonical Survey Domain should simply lack a valid BitPangea Survey reference rather than acquire independent cartographic or territorial meaning.</p>
-  <div class="finding-principle"><span class="quote-label">Governing Principle</span>The Survey Domain ends where canonical reference ends—not where The World necessarily ends.</div>
+  <p>The canonical finite Survey Domain should possess exact mathematically defined limits that determine the valid scope of Foundational Survey Fabric reference.</p>
+  <p>Those limits should not themselves constitute BitPangea’s World Boundary, Extent expression, Verge, coastline, Exterior, or other cartographic feature. Higher spatial Architecture domains should determine the form and membership of The World within the Survey Domain.</p>
+  <p>Every authoritative World-space location must remain representable within the canonical Survey Domain. A location beyond the Survey Domain should simply lack a valid BitPangea Survey reference rather than acquire independent cartographic or territorial meaning.</p>
+  <div class="finding-principle"><span class="quote-label">Governing Principle</span>Survey Domain limits define reference capacity. World limits are established above and need not coincide with them.</div>
 </section>
 <section class="finding" id="finding-49">
   <div class="finding-number">Requirement Finding #49</div>
@@ -201,9 +199,11 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 </section>
 <section class="finding" id="finding-54">
   <div class="finding-number">Requirement Finding #54</div>
-  <h2>Sub-Pang Precision Through Refinement</h2>
-  <p>Spatial positions, distances, and extents smaller than one Pang should be expressed through the Foundational Survey Fabric’s exact canonical refinement mathematics rather than requiring a permanently prescribed hierarchy of named subunits. The Pang should remain the native canonical unit of spatial scale, while the eventual mathematical design determines how exact sub-Pang precision is represented. Named subunits or convenient display conventions may be introduced later where useful, provided they remain exact translations of canonical Survey mathematics and do not constrain or redefine the underlying refinement system.</p>
-  <div class="finding-principle"><span class="quote-label">Governing Principle</span>Pang names the scale. Mathematics supplies the fractions.</div>
+  <h2>Sub-Pang Precision Through Exact Refinement</h2>
+  <p>Spatial positions, distances, and extents smaller than one Pang should be expressible through the Foundational Survey Fabric’s exact precision mechanism without requiring a permanently prescribed hierarchy of named subunits.</p>
+  <p>The Pang should remain the native canonical unit of spatial scale, while the eventual mathematical design determines how exact sub-Pang precision is represented. That mechanism may involve refinement, subdivision, exact fractional representation, or another exact method consistent with the Specification.</p>
+  <p>Named subunits or convenient display conventions may be introduced later where useful, provided they remain exact translations of canonical Survey mathematics and do not constrain or redefine the underlying precision system.</p>
+  <div class="finding-principle"><span class="quote-label">Governing Principle</span>Pang names the scale. Mathematics supplies the finer precision.</div>
 </section>
 <section class="finding" id="finding-55">
   <div class="finding-number">Requirement Finding #55</div>
@@ -232,8 +232,10 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 <section class="finding" id="finding-59">
   <div class="finding-number">Requirement Finding #59</div>
   <h2>Canonical Serialization and Interchange</h2>
-  <p>The Foundational Survey Fabric should ultimately define a canonical serialization and interchange representation for authoritative Survey references, spatial extents, and other foundational spatial expressions so that independent conforming implementations can exchange and verify spatial data without ambiguity. Implementations may use different internal storage or computational representations, and higher layers may present alternative user-facing forms, but authoritative interchange should normalize to the canonical representation defined by the Survey specification.</p>
-  <div class="finding-principle"><span class="quote-label">Governing Principle</span>Implement however you like. Exchange one spatial truth.</div>
+  <p>The Foundational Survey Fabric should ultimately define deterministic normative serialization and interchange rules for authoritative Survey references, spatial extents, and other foundational spatial expressions so that independent conforming implementations can exchange and verify spatial data without ambiguity.</p>
+  <p>The Specification may define one canonical serialization or multiple explicitly governed lossless encodings, provided all normative forms resolve deterministically to the same canonical spatial meaning and equivalent data can be recognized as equivalent without implementation-specific guesswork.</p>
+  <p>Implementations may use different internal storage or computational representations, and higher layers may present alternative user-facing forms, but authoritative interchange must remain exactly defined by the governing Survey specification.</p>
+  <div class="finding-principle"><span class="quote-label">Governing Principle</span>Implement however you like. Exchange without ambiguity.</div>
 </section>
 <section class="finding" id="finding-60">
   <div class="finding-number">Requirement Finding #60</div>
@@ -262,7 +264,9 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 <section class="finding" id="finding-64">
   <div class="finding-number">Requirement Finding #64</div>
   <h2>One Meaning, Many Durable Expressions</h2>
-  <p>The Foundational Survey Fabric should preserve one canonical mathematical meaning while permitting that meaning to be expressed through multiple authoritative human-readable, machine-readable, formal, archival, or future specification representations where useful. No representation should create an independent spatial truth. The governing specification process should ensure deterministic consistency among normative representations and provide a clear rule for resolving any conflict.</p>
+  <p>The Foundational Survey Fabric should preserve one canonical mathematical meaning while permitting that meaning to be documented or encoded through multiple durable human-readable, machine-readable, formal, archival, or future representations where useful.</p>
+  <p>No representation should establish an independent spatial truth. Where multiple normative representations are maintained, the governing specification should define deterministic semantic equivalence and an explicit precedence or conflict-resolution rule so that disagreement among representations cannot produce competing canonical meanings.</p>
+  <p>Non-normative explanatory, archival, or presentation forms may evolve freely provided they do not claim authority over canonical spatial meaning.</p>
   <div class="finding-principle"><span class="quote-label">Governing Principle</span>Spatial truth should outlive the formats used to describe it. One meaning. Many durable expressions.</div>
 </section>
 <section class="finding" id="finding-65">
@@ -347,7 +351,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 <div class="req-status">
   <h3>Section Standing</h3>
   <p>
-    Findings #44–#77 establish the Survey Fabric’s geometry, topology, measurement, and spatial-operation requirements: exact continuity and predicates, semantically neutral reference, finite domain limits, derived transformations, separation of terrain and surface from the foundation, uniform Pang scale, sub-Pang refinement, canonical path and boundary length, exact spatial composition, deterministic validity and ordering, canonical serialization and versioning, independence from verification technology and rights systems, open implementation, exact spatial equivalence, singular orientation, exact proximity, precision without semantic tiers, lossless versus lossy conversion, exact comparison, no silent snapping, one connected Survey Domain, and no semantic privilege for internal partitions.
+    Findings #44–#77 establish the Survey Fabric’s audited geometry, topology, measurement, and spatial-operation requirements: exact continuity and predicates, semantically neutral reference, exact finite Survey Domain limits distinct from World limits, derived transformations, separation of terrain and surface from the foundation, uniform Pang scale, exact sub-Pang precision without premature commitment to one mechanism, canonical path and boundary length, exact spatial composition, deterministic validity and ordering, normative serialization and interchange, versioning, independence from verification technology and rights systems, open implementation, one canonical spatial meaning across durable representations, exact spatial equivalence, singular orientation, exact proximity, precision without semantic tiers, lossless versus lossy conversion, exact comparison, no silent snapping, one connected Survey Domain, and no semantic privilege for internal partitions.
   </p>
 </div>
 
