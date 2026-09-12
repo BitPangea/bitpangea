@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Architecture | The Atlas | BitPangea</title>
+
+<link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/favicon.svg" rel="shortcut icon"/>
+<link href="/assets/css/bitpangea-framework.css" rel="stylesheet"/>
+<script defer src="/assets/js/bitpangea-framework.js"></script>
+
+<meta name="description" content="The Architecture is the structural design record of BitPangea: the enduring systems through which the World is made viable."/>
+<meta name="theme-color" content="#00c8d7"/>
+<meta name="robots" content="index,follow"/>
+<link rel="canonical" href="https://bitpangea.com/thearchitecture/"/>
+
+<meta property="og:title" content="The Architecture | BitPangea"/>
+<meta property="og:description" content="The structural design record of BitPangea: the enduring systems through which the World is made viable."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://bitpangea.com/thearchitecture/"/>
+<meta property="og:image" content="https://bitpangea.com/thearchitecture/architecture-globe.png"/>
+<meta property="og:site_name" content="BitPangea"/>
+<meta property="og:locale" content="en_US"/>
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="The Architecture | BitPangea"/>
+<meta name="twitter:description" content="The structural design record of BitPangea."/>
+<meta name="twitter:image" content="https://bitpangea.com/thearchitecture/architecture-globe.png"/>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"CollectionPage",
+  "name":"The Architecture",
+  "url":"https://bitpangea.com/thearchitecture/",
+  "description":"The structural design record of BitPangea: the enduring systems through which the World is made viable.",
+  "isPartOf":{
+    "@type":"WebPage",
+    "name":"The Atlas",
+    "url":"https://bitpangea.com/theatlas/"
+  }
+}
+</script>
+
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg: #02050a;
+  --gold: #d4a938;
+  --cyan: #00c8d7;
+  --white: #ffffff;
+  --muted: rgba(255,255,255,.72);
+  --panel: rgba(0,0,0,.34);
+  --panel-strong: rgba(0,0,0,.50);
+  --line: rgba(212,169,56,.18);
+}
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  background: var(--bg);
+  color: var(--white);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  position: relative;
+  line-height: 1.72;
+  overflow-x: hidden;
+  background: var(--bg);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(2,5,10,.82), rgba(2,5,10,.95)),
+    url("/images/bitpangea.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -2;
+  pointer-events: none;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 72% 10%, rgba(0,200,215,.09), transparent 31%),
+    radial-gradient(circle at 18% 20%, rgba(212,169,56,.12), transparent 33%),
+    linear-gradient(90deg, rgba(0,0,0,.60), rgba(0,0,0,.25), rgba(0,0,0,.68));
+  z-index: -1;
+  pointer-events: none;
+}
+
+.page {
+  width: 100%;
+  padding: 150px 28px 90px;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 58px;
+  background: rgba(0,0,0,.44);
+  border: 1px solid var(--line);
+  box-shadow: 0 0 70px rgba(0,0,0,.58);
+  backdrop-filter: blur(4px);
+}
+
+.hero {
+  max-width: 980px;
+  margin-bottom: 46px;
+}
+
+.eyebrow {
+  color: var(--cyan);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 22px;
+}
+
+.architecture-header {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  margin-bottom: 20px;
+}
+
+.architecture-emblem {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  flex-shrink: 0;
+  opacity: .98;
+  filter: drop-shadow(0 0 28px rgba(212,169,56,.18));
+}
+
+.architecture-title {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  color: var(--white);
+  font-size: clamp(42px, 7vw, 76px);
+  line-height: 1.02;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  text-shadow: 0 0 24px rgba(0,0,0,.92);
+}
+
+.subtitle {
+  color: var(--gold);
+  font-size: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding-top: 6px;
+}
+
+.divider {
+  width: 64px;
+  height: 2px;
+  background: var(--gold);
+  margin: 34px 0 42px;
+  box-shadow: 0 0 14px rgba(212,169,56,.65);
+}
+
+.intro {
+  color: rgba(255,255,255,.90);
+  font-size: 20px;
+  max-width: 900px;
+  margin-bottom: 32px;
+}
+
+.section {
+  margin-top: 34px;
+  padding: 34px 34px 30px;
+  background: var(--panel);
+  border: 1px solid rgba(212,169,56,.13);
+}
+
+.section + .section {
+  margin-top: 26px;
+}
+
+h2 {
+  margin-bottom: 18px;
+  color: var(--white);
+  font-size: 24px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-shadow: 0 0 14px rgba(0,0,0,.9);
+}
+
+p {
+  margin-bottom: 20px;
+  color: var(--white);
+  font-size: 17px;
+  text-shadow: 0 0 9px rgba(0,0,0,.9);
+}
+
+p:last-child { margin-bottom: 0; }
+
+blockquote {
+  margin: 36px 0;
+  padding: 30px 36px;
+  border-left: 3px solid var(--gold);
+  background: rgba(0,0,0,.52);
+  color: var(--white);
+  font-size: 25px;
+  line-height: 1.45;
+  letter-spacing: 1px;
+  box-shadow: 0 0 28px rgba(0,0,0,.45);
+}
+
+.quote-label {
+  display: block;
+  color: var(--cyan);
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.architecture-index {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+  margin-top: 34px;
+}
+
+.architecture-card {
+  position: relative;
+  min-height: 250px;
+  padding: 30px 32px;
+  background: rgba(0,0,0,.42);
+  border: 1px solid rgba(212,169,56,.20);
+  box-shadow: 0 0 22px rgba(0,0,0,.30);
+  overflow: hidden;
+}
+
+.architecture-card::after {
+  content: "";
+  position: absolute;
+  right: -42px;
+  top: -42px;
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  border: 1px solid rgba(212,169,56,.14);
+  background: radial-gradient(circle, rgba(212,169,56,.10), transparent 62%);
+  pointer-events: none;
+}
+
+.architecture-card .domain-status {
+  color: var(--cyan);
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.architecture-card h3 {
+  color: var(--white);
+  font-size: 23px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  text-shadow: 0 0 14px rgba(0,0,0,.9);
+}
+
+.architecture-card p {
+  color: rgba(255,255,255,.84);
+  font-size: 16px;
+  line-height: 1.65;
+  margin-bottom: 18px;
+}
+
+.architecture-link,
+.architecture-link:visited {
+  color: var(--gold);
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.architecture-link:hover {
+  color: var(--white);
+  text-shadow: 0 0 12px rgba(212,169,56,.65);
+}
+
+.architecture-card.reserved {
+  border-color: rgba(0,200,215,.20);
+}
+
+.architecture-card.reserved .domain-status {
+  color: var(--gold);
+}
+
+.relationship-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.relationship-card {
+  padding: 24px;
+  background: rgba(0,0,0,.30);
+  border: 1px solid rgba(212,169,56,.16);
+}
+
+.relationship-card h3 {
+  color: var(--gold);
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.relationship-card p {
+  font-size: 15px;
+  color: rgba(255,255,255,.82);
+  margin-bottom: 0;
+}
+
+.closing {
+  margin-top: 38px;
+  padding: 38px 36px;
+  background: rgba(0,0,0,.56);
+  border: 1px solid rgba(212,169,56,.22);
+  box-shadow: 0 0 34px rgba(0,0,0,.38);
+}
+
+.closing p {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.closing p:first-child {
+  color: var(--gold);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.status {
+  margin-top: 38px;
+  padding: 18px 24px;
+  border: 1px solid rgba(212,169,56,.38);
+  color: var(--gold);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 12px;
+  display: inline-block;
+  background: rgba(0,0,0,.35);
+}
+
+.atlas-link,
+.atlas-link:visited {
+  color: var(--gold);
+  text-decoration: none;
+}
+
+.atlas-link:hover {
+  color: var(--white);
+  text-shadow: 0 0 12px rgba(212,169,56,.65);
+}
+
+@media (max-width: 980px) {
+  .architecture-index,
+  .relationship-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .page { padding: 178px 16px 60px; }
+  .container { padding: 36px 24px 46px; }
+  .architecture-header { flex-direction: column; align-items: flex-start; gap: 24px; }
+  .architecture-emblem { width: 190px; height: 190px; }
+  h1 { letter-spacing: 4px; }
+  .subtitle { font-size: 16px; }
+  .intro, .closing p { font-size: 18px; }
+  p { font-size: 16px; }
+  .section, .closing { padding: 28px 22px; }
+  blockquote { font-size: 20px; padding: 24px; }
+  .architecture-card { min-height: auto; padding: 28px 24px; }
+}
+</style>
+</head>
+
+<body data-bp-page="theatlas">
+<div id="bp-header"></div>
+
+<main class="page">
+<article class="container">
+
+<section class="hero">
+  <div class="eyebrow">The Atlas · Structural Design Record</div>
+
+  <div class="architecture-header">
+    <img
+      alt="The Architecture Emblem"
+      class="architecture-emblem"
+      src="/thearchitecture/architecture-globe.png"
+    />
+    <div class="architecture-title">
+      <h1>The<br/>Architecture</h1>
+      <div class="subtitle">The Structural Design Record of BitPangea</div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <p class="intro">
+    The Architecture is the institutional record of the enduring systems through which BitPangea is made viable. It preserves the structural design that connects permanent spatial truth to the systems that define place, Parcels, authority, continuity, compatibility, operation, and experience.
+  </p>
+
+  <blockquote>
+    <span class="quote-label">Architectural Purpose</span>
+    The Architecture records what the World requires to remain durable, extensible, coherent, and independently understandable without confusing implementation with constitutional truth.
+  </blockquote>
+</section>
+
+<section class="section">
+  <h2>Architecture Within The Atlas</h2>
+
+  <p>
+    <a class="atlas-link" href="/theatlas/"><strong>The Atlas</strong></a> is the canonical map and structural design record of the World. Within it, The Architecture preserves the deep systems that make BitPangea structurally possible without reducing the World to any one implementation, service, interface, institution, or technology.
+  </p>
+
+  <p>
+    The architectural domains do not replace one another. Each defines a distinct responsibility and boundary. Together they provide a framework through which permanent place can remain stable while higher systems remain capable of development, replacement, extension, and independent implementation.
+  </p>
+
+  <blockquote>
+    <span class="quote-label">Atlas Working Principle</span>
+    The deeper the layer, the more permanent it should be. The closer the layer is to the user, the more freedom it should have to evolve.
+  </blockquote>
+</section>
+
+<section class="section">
+  <h2>Structural Relationship</h2>
+
+  <div class="relationship-grid">
+    <div class="relationship-card">
+      <h3>Foundation</h3>
+      <p>The Foundation and The Codex establish what must remain true and constrain the architecture designed within those truths.</p>
+    </div>
+
+    <div class="relationship-card">
+      <h3>Architecture</h3>
+      <p>The Architecture establishes the enduring structural systems through which the designed World can remain coherent and viable.</p>
+    </div>
+
+    <div class="relationship-card">
+      <h3>Implementation</h3>
+      <p>Implementations realize architectural design through replaceable technologies without becoming the permanent truth they implement.</p>
+    </div>
+  </div>
+</section>
+
+<div class="architecture-index">
+
+  <section class="architecture-card">
+    <div class="domain-status">Established Domain</div>
+    <h3>Foundational Survey Fabric</h3>
+    <p>
+      The permanent spatial reference architecture beneath BitPangea. It preserves canonical location, orientation, measurement, refinement, and spatial meaning without absorbing the identities or functions of higher systems.
+    </p>
+    <p><a class="architecture-link" href="/theatlas/foundational-survey-fabric/">Enter Foundational Survey Fabric →</a></p>
+  </section>
+
+  <section class="architecture-card">
+    <div class="domain-status">Provisional Domain</div>
+    <h3>Spatial Ground</h3>
+    <p>
+      The enduring relationship between canonical Survey space, World-space, and the stable ground upon which higher BitPangea structures may be defined.
+    </p>
+    <p><a class="architecture-link" href="/theatlas/spatial-ground/">Enter Spatial Ground →</a></p>
+  </section>
+
+  <section class="architecture-card">
+    <div class="domain-status">Provisional Domain</div>
+    <h3>General Spatial Interpretation</h3>
+    <p>
+      The shared spatial interpretation architecture through which higher spatial entities can reference canonical BitPangea space without becoming part of the Survey Fabric itself.
+    </p>
+    <p><a class="architecture-link" href="/theatlas/general-spatial-interpretation/">Enter General Spatial Interpretation →</a></p>
+  </section>
+
+  <section class="architecture-card">
+    <div class="domain-status">Provisional Domain</div>
+    <h3>Parcel Cadastre</h3>
+    <p>
+      The authoritative spatial record of the exactly 21,000,000 Parcels: their permanent identities, fixed positions, territorial definitions, and Parcel-specific spatial truth.
+    </p>
+    <p><a class="architecture-link" href="/theatlas/parcel-cadastre/">Enter Parcel Cadastre →</a></p>
+  </section>
+
+  <section class="architecture-card">
+    <div class="domain-status">Provisional Domain</div>
+    <h3>Identity / Rights / Control</h3>
+    <p>
+      The systems through which actors, rights, authority, access, possession, delegation, and control may be defined without becoming part of canonical place itself.
+    </p>
+    <p><a class="architecture-link" href="/theatlas/identity-rights-control/">Enter Identity / Rights / Control →</a></p>
+  </section>
+
+  <section class="architecture-card">
+    <div class="domain-status">Provisional Domain</div>
+    <h3>Persistence / Provenance</h3>
+    <p>
+      The architecture through which durable state, historical continuity, record lineage, verification, and canonical succession may remain intelligible across change.
+    </p>
+    <p><a class="architecture-link" href="/theatlas/persistence-provenance/">Enter Persistence / Provenance →</a></p>
+  </section>
+
+  <section class="architecture-card">
+    <div class="domain-status">Provisional Domain</div>
+    <h3>Interoperability</h3>
+    <p>
+      The standards, mappings, and compatibility rules through which independent BitPangea systems may exchange authoritative meaning without creating competing canonical truths.
+    </p>
+    <p><a class="architecture-link" href="/theatlas/interoperability/">Enter Interoperability →</a></p>
+  </section>
+
+  <section class="architecture-card reserved">
+    <div class="domain-status">Reserved Domain</div>
+    <h3>World Runtime</h3>
+    <p>
+      The reserved architectural home for execution, synchronization, communication, routing, shared services, and other live functions that may operate above permanent spatial and cadastral truth.
+    </p>
+    <p><a class="architecture-link" href="/theatlas/world-runtime/">Enter World Runtime →</a></p>
+  </section>
+
+  <section class="architecture-card">
+    <div class="domain-status">Provisional Domain</div>
+    <h3>Experience Architecture</h3>
+    <p>
+      The replaceable interfaces, representations, navigation models, immersive systems, and experiential structures through which BitPangea may be encountered without binding World truth to one technology.
+    </p>
+    <p><a class="architecture-link" href="/theatlas/experience-architecture/">Enter Experience Architecture →</a></p>
+  </section>
+
+</div>
+
+<section class="section">
+  <h2>Architectural Boundaries</h2>
+
+  <p>
+    The Architecture is intentionally layered. A lower domain should provide the stable reference or capability needed by higher domains without absorbing the identities, meanings, rights, state, or experiences those higher domains create.
+  </p>
+
+  <p>
+    Permanent place should remain independent of ownership. Canonical spatial truth should remain independent of runtime. Runtime should remain independent of any one implementation. Experience should remain free to evolve without redefining the World beneath it.
+  </p>
+
+  <blockquote>
+    <span class="quote-label">Atlas Working Principle</span>
+    Extend upward. Do not rewrite downward.
+  </blockquote>
+
+  <blockquote>
+    <span class="quote-label">Architectural Direction</span>
+    Ground establishes place. Runtime enables function. Civilization creates meaning.
+  </blockquote>
+</section>
+
+<section class="closing">
+  <p>This is The Architecture.</p>
+  <p>The structural design record of BitPangea.</p>
+  <p>
+    One World. Distinct architectural domains. A durable structure for preserving permanent truth while allowing systems, institutions, technologies, and experience to evolve above it.
+  </p>
+</section>
+
+<div class="status">The Atlas · The Architecture · Active Index</div>
+
+</article>
+</main>
+
+<div id="bp-footer"></div>
+</body>
+</html>
