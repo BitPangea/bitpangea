@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Requirements Framework | Foundational Survey Fabric | BitPangea</title>
+
+<link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/favicon.svg" rel="shortcut icon"/>
+<link href="/assets/css/bitpangea-framework.css" rel="stylesheet"/>
+<script defer src="/assets/js/bitpangea-framework.js"></script>
+
+<meta name="description" content="The governing requirements framework for the BitPangea Foundational Survey Fabric, organized across Findings #1–#85."/>
+<meta name="theme-color" content="#00c8d7"/>
+<meta name="robots" content="index,follow"/>
+<link rel="canonical" href="https://bitpangea.com/theatlas/foundational-survey-fabric/requirements/"/>
+
+<meta property="og:title" content="Foundational Survey Fabric Requirements | BitPangea"/>
+<meta property="og:description" content="The governing requirements framework for the Foundational Survey Fabric, organized across Findings #1–#85."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://bitpangea.com/theatlas/foundational-survey-fabric/requirements/"/>
+<meta property="og:site_name" content="BitPangea"/>
+
+<style>
+
+
+
+
+
+
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;min-height:100%;background:#02050a;color:#fff;font-family:Arial,Helvetica,sans-serif}
+body{position:relative;line-height:1.75;overflow-x:hidden;background:#02050a}
+body::before{content:"";position:fixed;inset:0;background-image:linear-gradient(rgba(2,5,10,.78),rgba(2,5,10,.90)),url("/images/bitpangea.jpg");background-size:cover;background-position:center;background-repeat:no-repeat;z-index:-2;pointer-events:none}
+body::after{content:"";position:fixed;inset:0;background:radial-gradient(circle at 75% 12%,rgba(0,200,215,.10),transparent 34%),radial-gradient(circle at 18% 18%,rgba(212,169,56,.10),transparent 32%),linear-gradient(90deg,rgba(0,0,0,.60),rgba(0,0,0,.25),rgba(0,0,0,.64));z-index:-1;pointer-events:none}
+.page{width:100%;padding:150px 28px 90px}
+.container{max-width:1040px;margin:0 auto;padding:54px 58px 64px;background:rgba(0,0,0,.48);border:1px solid rgba(212,169,56,.16);box-shadow:0 0 60px rgba(0,0,0,.55);backdrop-filter:blur(4px)}
+.eyebrow{color:#00c8d7;letter-spacing:4px;text-transform:uppercase;font-size:12px;margin-bottom:20px}
+.arch-header{display:flex;align-items:center;gap:28px;margin-bottom:20px}
+.arch-mark{width:230px;height:230px;flex-shrink:0;opacity:.96}
+.arch-title{display:flex;flex-direction:column}
+h1{color:#fff;font-size:clamp(38px,6vw,66px);line-height:1.06;letter-spacing:5px;text-transform:uppercase;margin-bottom:14px;text-shadow:0 0 22px rgba(0,0,0,.9)}
+.subtitle{color:#d4a938;font-size:18px;letter-spacing:3px;text-transform:uppercase;margin-bottom:18px}
+.divider{width:64px;height:2px;background:#d4a938;margin:34px 0 42px;box-shadow:0 0 14px rgba(212,169,56,.65)}
+.arch-statement{font-size:28px;font-weight:500;color:#fff;margin-bottom:28px;text-shadow:0 0 18px rgba(212,169,56,.25)}
+p{margin-bottom:22px;color:#fff;font-size:17px;text-shadow:0 0 9px rgba(0,0,0,.9)}
+h2{margin-top:54px;margin-bottom:20px;color:#fff;font-size:28px;letter-spacing:4px;text-transform:uppercase;text-shadow:0 0 14px rgba(0,0,0,.9)}
+blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;background:rgba(0,0,0,.52);color:#fff;font-size:24px;line-height:1.45;letter-spacing:1px;box-shadow:0 0 28px rgba(0,0,0,.45)}
+.quote-label{display:block;color:#00c8d7;font-size:11px;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px}
+.note{margin-top:58px;padding:18px 24px;border:1px solid rgba(212,169,56,.38);color:#d4a938;letter-spacing:2px;text-transform:uppercase;font-size:12px;display:inline-block;background:rgba(0,0,0,.35)}
+.req-intro{margin:34px 0 42px;padding:28px 30px;background:rgba(0,0,0,.34);border:1px solid rgba(212,169,56,.18)}
+.req-intro p:last-child{margin-bottom:0}
+.finding{margin-top:28px;padding:30px 32px 28px;background:rgba(0,0,0,.34);border:1px solid rgba(212,169,56,.18);box-shadow:0 0 22px rgba(0,0,0,.24)}
+.finding-number{color:#00c8d7;font-size:11px;letter-spacing:3px;text-transform:uppercase;margin-bottom:10px}
+.finding h2{margin:0 0 18px;font-size:24px;letter-spacing:3px}
+.finding p{color:rgba(255,255,255,.90)}
+.finding-principle{margin:24px 0 0;padding:22px 26px;border-left:3px solid #d4a938;background:rgba(0,0,0,.48);font-size:20px;line-height:1.45}
+.finding-principle .quote-label{margin-bottom:10px}
+.section-nav{display:flex;flex-wrap:wrap;gap:12px;margin:34px 0 8px}
+.section-nav a,.section-nav a:visited{color:#d4a938;text-decoration:none;text-transform:uppercase;letter-spacing:2px;font-size:12px;padding:11px 14px;border:1px solid rgba(212,169,56,.24);background:rgba(0,0,0,.28)}
+.section-nav a:hover{color:#fff;text-shadow:0 0 12px rgba(212,169,56,.55)}
+.req-status{margin-top:36px;padding:26px 28px;border:1px solid rgba(0,200,215,.18);background:rgba(0,0,0,.30)}
+.req-status h3{color:#d4a938;font-size:13px;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}
+.req-status p{margin:0;font-size:15px;color:rgba(255,255,255,.82)}
+@media(max-width:768px){
+  .page{padding:185px 16px 60px}
+  .container{padding:36px 24px 46px}
+  .arch-header{flex-direction:column;align-items:flex-start;gap:24px}
+  .arch-mark{width:110px;height:110px}
+  h1{letter-spacing:3px}
+  .subtitle{font-size:16px}
+  .arch-statement{font-size:19px}
+  p{font-size:16px}
+  blockquote{font-size:20px;padding:24px 26px}
+  .finding{padding:26px 22px 24px}
+  .finding h2{font-size:21px}
+  .finding-principle{font-size:18px}
+}
+
+
+
+.finding-list{
+  margin:18px 0 20px 22px;
+}
+.finding-list li{
+  color:rgba(255,255,255,.90);
+  margin-bottom:9px;
+  font-size:17px;
+  text-shadow:0 0 9px rgba(0,0,0,.9);
+}
+@media(max-width:768px){
+  .finding-list li{font-size:16px}
+}
+
+
+
+
+.req-index-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:18px;
+  margin:34px 0 10px;
+}
+.req-index-card{
+  display:block;
+  text-decoration:none;
+  color:#fff;
+  padding:28px 30px;
+  border:1px solid rgba(212,169,56,.22);
+  background:rgba(0,0,0,.34);
+  box-shadow:0 0 22px rgba(0,0,0,.24);
+  transition:transform .18s ease,border-color .18s ease,background .18s ease;
+}
+.req-index-card:hover{
+  transform:translateY(-2px);
+  border-color:rgba(212,169,56,.55);
+  background:rgba(0,0,0,.48);
+}
+.req-index-number{
+  color:#00c8d7;
+  font-size:11px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  margin-bottom:10px;
+}
+.req-index-card h2{
+  margin:0 0 12px;
+  font-size:24px;
+  letter-spacing:3px;
+}
+.req-index-card p{
+  margin:0;
+  color:rgba(255,255,255,.84);
+  font-size:15px;
+}
+.req-index-range{
+  display:inline-block;
+  margin-top:16px;
+  color:#d4a938;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  font-size:12px;
+}
+.requirements-map{
+  margin:34px 0 0;
+  padding:26px 28px;
+  border:1px solid rgba(0,200,215,.18);
+  background:rgba(0,0,0,.30);
+}
+.requirements-map p:last-child{margin-bottom:0}
+@media(max-width:768px){
+  .req-index-card{padding:24px 22px}
+  .req-index-card h2{font-size:21px}
+}
+
+</style>
+</head>
+
+<body data-bp-page="theatlas">
+<div id="bp-header"></div>
+
+<main class="page">
+<article class="container">
+
+<div class="eyebrow">The Atlas · The Architecture · Foundational Survey Fabric</div>
+
+<div class="arch-header">
+  <img src="/thearchitecture/architecture-globe.png" alt="The Architecture Emblem" class="arch-mark"/>
+  <div class="arch-title">
+    <h1>Requirements<br/>Framework</h1>
+    <div class="subtitle">Foundational Survey Fabric · Findings #1–#85</div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<p class="arch-statement">
+  The governing requirements that any valid Foundational Survey Fabric must satisfy before formal mathematical design and prototype testing.
+</p>
+
+<div class="req-intro">
+<p>
+  The <strong>Foundational Survey Fabric Requirements Framework</strong> defines what BitPangea’s permanent spatial reference architecture must preserve, permit, exclude, and prove. These requirements establish the architectural envelope within which the later mathematical specification must operate.
+</p>
+<p>
+  The framework does not itself select the final mathematics, addressing scheme, subdivision model, implementation technology, or higher-layer architecture. Instead, it preserves the permanent conditions that any candidate design must satisfy without contradiction.
+</p>
+</div>
+
+<blockquote>
+  <span class="quote-label">Atlas Working Principle</span>
+  Do not choose the architecture because it looks elegant. Choose it only after it survives the requirements.
+</blockquote>
+
+<h2>Requirements Structure</h2>
+
+<div class="req-index-grid">
+
+<a class="req-index-card" href="/theatlas/foundational-survey-fabric/requirements/01-foundation-purpose-scope/">
+  <div class="req-index-number">Requirements I</div>
+  <h2>Foundational Purpose and Scope</h2>
+  <p>Defines the minimum permanent purpose of the Foundational Survey Fabric, its separation from Parcels and higher systems, the proper reach of immutability, extension without downward mutation, and preservation of unknown future use.</p>
+  <span class="req-index-range">Findings #1–#6 →</span>
+</a>
+<a class="req-index-card" href="/theatlas/foundational-survey-fabric/requirements/02-addressability-meaning-refinement/">
+  <div class="req-index-number">Requirements II</div>
+  <h2>Addressability, Canonical Meaning, and Refinement</h2>
+  <p>Defines universal addressability, permanent canonical meaning, refinement by extension, implementation-independent interpretation, semantic separation between space and entities, and one foundational reference shared by higher systems.</p>
+  <span class="req-index-range">Findings #7–#15 →</span>
+</a>
+<a class="req-index-card" href="/theatlas/foundational-survey-fabric/requirements/03-authority-consensus-evolution/">
+  <div class="req-index-number">Requirements III</div>
+  <h2>Authority, Consensus, and Specification Evolution</h2>
+  <p>Defines how a reproducible specification acquires canonical authority and how the governing standard may evolve without renumbering, relocating, or reinterpreting established spatial truth.</p>
+  <span class="req-index-range">Findings #16–#17 →</span>
+</a>
+<a class="req-index-card" href="/theatlas/foundational-survey-fabric/requirements/04-ontology-structure/">
+  <div class="req-index-number">Requirements IV</div>
+  <h2>Mathematical Ontology and Domain Structure</h2>
+  <p>Defines the Survey Fabric’s mathematical ontology: finite domain, refinement, canonical references, planar ground, exact mathematics, semantic neutrality, canonical extents, and the distinction between foundational reference and higher-layer meaning.</p>
+  <span class="req-index-range">Findings #18–#33 →</span>
+</a>
+<a class="req-index-card" href="/theatlas/foundational-survey-fabric/requirements/05-measurements-orientation/">
+  <div class="req-index-number">Requirements V</div>
+  <h2>Native BitPangea Measurement and Orientation</h2>
+  <p>Defines Pang-based scale and area, canonical spatial separation, BitPangea-native directions, one permanent origin, one global canonical frame, and exact agreement between address, measure, and orientation.</p>
+  <span class="req-index-range">Findings #34–#43 →</span>
+</a>
+<a class="req-index-card" href="/theatlas/foundational-survey-fabric/requirements/06-geometry-topology-measurement-operations/">
+  <div class="req-index-number">Requirements VI</div>
+  <h2>Geometry, Topology, Measurement, and Spatial Operations</h2>
+  <p>Defines exact continuity, spatial predicates, transformations, measurement, geometric composition, normalization, serialization, equivalence, precision handling, comparison, connectedness, and other foundational spatial operations.</p>
+  <span class="req-index-range">Findings #44–#77 →</span>
+</a>
+<a class="req-index-card" href="/theatlas/foundational-survey-fabric/requirements/07-knowability-computability-conformance/">
+  <div class="req-index-number">Requirements VII</div>
+  <h2>Finite Knowability, Computability, and Conformance</h2>
+  <p>Defines finite representability, exact computability, minimal primitives, hidden-state independence, termination, controlled complexity, exact canonical states, the mandatory conformance core, and the readiness gate for mathematical design.</p>
+  <span class="req-index-range">Findings #78–#85 →</span>
+</a>
+</div>
+
+<div class="requirements-map">
+<p>
+  Together, these seven sections preserve the requirements-level definition of the Foundational Survey Fabric as a minimal, exact, finite, planar, semantically neutral, BitPangea-native spatial reference architecture.
+</p>
+<p>
+  The complete framework governs the transition from architectural inquiry into formal specification. No candidate Survey Fabric should advance unless it can satisfy all eighty-five findings while preserving immutable BitPangea spatial truth, exact independent implementation, compatible refinement, and future extensibility.
+</p>
+</div>
+
+<blockquote>
+  <span class="quote-label">Architectural Boundary</span>
+  Foundational Survey Fabric — establishes canonical spatial reference.
+</blockquote>
+
+<div class="section-nav">
+  <a href="/theatlas/foundational-survey-fabric/">← Foundational Survey Fabric</a>
+  <a href="/thearchitecture/">The Architecture</a>
+</div>
+
+<div class="note">Foundational Survey Fabric · Governing Requirements Framework · Findings #1–#85</div>
+
+</article>
+</main>
+
+<div id="bp-footer"></div>
+</body>
+</html>
