@@ -1,1 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Serialization Vectors | Foundational Survey Fabric Reference Vectors | BitPangea</title>
 
+<link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/favicon.svg" rel="shortcut icon"/>
+<link href="/assets/css/bitpangea-framework.css" rel="stylesheet"/>
+<script defer src="/assets/js/bitpangea-framework.js"></script>
+
+<meta name="description" content="Serialization Vectors — Reference Vector Section 10 for the BitPangea Foundational Survey Fabric."/>
+<meta name="theme-color" content="#00c8d7"/>
+<meta name="robots" content="index,follow"/>
+<link rel="canonical" href="https://bitpangea.com/theatlas/foundational-survey-fabric/reference-vectors/10-serialization-vectors/"/>
+
+<meta property="og:title" content="Serialization Vectors | BitPangea"/>
+<meta property="og:description" content="Reference Vector Section 10 for the Foundational Survey Fabric."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://bitpangea.com/theatlas/foundational-survey-fabric/reference-vectors/10-serialization-vectors/"/>
+<meta property="og:site_name" content="BitPangea"/>
+
+<style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;min-height:100%;background:#02050a;color:#fff;font-family:Arial,Helvetica,sans-serif}
+body{position:relative;line-height:1.75;overflow-x:hidden;background:#02050a}
+body::before{content:"";position:fixed;inset:0;background-image:linear-gradient(rgba(2,5,10,.78),rgba(2,5,10,.90)),url("/images/bitpangea.jpg");background-size:cover;background-position:center;background-repeat:no-repeat;z-index:-2;pointer-events:none}
+body::after{content:"";position:fixed;inset:0;background:radial-gradient(circle at 75% 12%,rgba(0,200,215,.10),transparent 34%),radial-gradient(circle at 18% 18%,rgba(212,169,56,.10),transparent 32%),linear-gradient(90deg,rgba(0,0,0,.60),rgba(0,0,0,.25),rgba(0,0,0,.64));z-index:-1;pointer-events:none}
+.page{width:100%;padding:150px 28px 90px}
+.container{max-width:1040px;margin:0 auto;padding:54px 58px 64px;background:rgba(0,0,0,.48);border:1px solid rgba(212,169,56,.16);box-shadow:0 0 60px rgba(0,0,0,.55);backdrop-filter:blur(4px)}
+.eyebrow{color:#00c8d7;letter-spacing:4px;text-transform:uppercase;font-size:12px;margin-bottom:20px}
+.arch-header{display:flex;align-items:center;gap:28px;margin-bottom:20px}
+.arch-mark{width:230px;height:230px;flex-shrink:0;opacity:.96}
+.arch-title{display:flex;flex-direction:column}
+h1{color:#fff;font-size:clamp(32px,4.5vw,52px);line-height:1.02;letter-spacing:5px;text-transform:uppercase;margin-bottom:14px;text-shadow:0 0 22px rgba(0,0,0,.9)}
+.subtitle{color:#d4a938;font-size:18px;letter-spacing:3px;text-transform:uppercase;margin-bottom:18px}
+.divider{width:64px;height:2px;background:#d4a938;margin:34px 0 42px;box-shadow:0 0 14px rgba(212,169,56,.65)}
+.arch-statement{font-size:28px;font-weight:500;color:#fff;margin-bottom:28px;text-shadow:0 0 18px rgba(212,169,56,.25)}
+p{margin-bottom:22px;color:#fff;font-size:17px;text-shadow:0 0 9px rgba(0,0,0,.9)}
+h2{margin-top:54px;margin-bottom:20px;color:#fff;font-size:28px;letter-spacing:4px;text-transform:uppercase;text-shadow:0 0 14px rgba(0,0,0,.9)}
+blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;background:rgba(0,0,0,.52);color:#fff;font-size:24px;line-height:1.45;letter-spacing:1px;box-shadow:0 0 28px rgba(0,0,0,.45)}
+.quote-label{display:block;color:#00c8d7;font-size:11px;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px}
+.req-intro{margin:34px 0 42px;padding:28px 30px;background:rgba(0,0,0,.34);border:1px solid rgba(212,169,56,.18)}
+.req-intro p:last-child{margin-bottom:0}
+.spec-card{margin-top:28px;padding:30px 32px 28px;background:rgba(0,0,0,.34);border:1px solid rgba(212,169,56,.18);box-shadow:0 0 22px rgba(0,0,0,.24)}
+.spec-card h2{margin:0 0 18px;font-size:24px;letter-spacing:3px}
+.spec-label{color:#00c8d7;font-size:11px;letter-spacing:3px;text-transform:uppercase;margin-bottom:10px}
+.status-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:28px}
+.status-card{padding:24px;border:1px solid rgba(0,200,215,.18);background:rgba(0,0,0,.30)}
+.status-card h3{color:#d4a938;font-size:13px;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}
+.status-card p{margin:0;font-size:15px;color:rgba(255,255,255,.84)}
+.finding-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.finding-links a,.finding-links a:visited{color:#d4a938;text-decoration:none;border:1px solid rgba(212,169,56,.24);padding:8px 10px;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;background:rgba(0,0,0,.28)}
+.finding-links a:hover{color:#fff}
+.section-nav{display:flex;flex-wrap:wrap;gap:12px;margin:34px 0 8px}
+.section-nav a,.section-nav a:visited{color:#d4a938;text-decoration:none;text-transform:uppercase;letter-spacing:2px;font-size:12px;padding:11px 14px;border:1px solid rgba(212,169,56,.24);background:rgba(0,0,0,.28)}
+.section-nav a:hover{color:#fff;text-shadow:0 0 12px rgba(212,169,56,.55)}
+.note{margin-top:58px;padding:18px 24px;border:1px solid rgba(212,169,56,.38);color:#d4a938;letter-spacing:2px;text-transform:uppercase;font-size:12px;display:inline-block;background:rgba(0,0,0,.35)}
+@media(max-width:768px){
+  .page{padding:185px 16px 60px}.container{padding:36px 24px 46px}
+  .arch-header{flex-direction:column;align-items:flex-start;gap:24px}
+  .arch-mark{width:110px;height:110px}h1{letter-spacing:3px}
+  .subtitle{font-size:16px}.arch-statement{font-size:19px}p{font-size:16px}
+  blockquote{font-size:20px;padding:24px 26px}.status-grid{grid-template-columns:1fr}
+  .spec-card{padding:26px 22px 24px}.spec-card h2{font-size:21px}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+
+<body data-bp-page="theatlas">
+<div id="bp-header"></div>
+
+<main class="page">
+<article class="container">
+
+<div class="eyebrow">The Atlas · The Architecture · Foundational Survey Fabric · Reference Vectors</div>
+
+<div class="arch-header">
+  <img src="/thearchitecture/architecture-globe.png" alt="The Architecture Emblem" class="arch-mark"/>
+  <div class="arch-title">
+    <h1>Serialization<br/>Vectors</h1>
+    <div class="subtitle">Reference Vector Section 10 · Canonical Machine Representation</div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<p class="arch-statement">
+  The canonical test set for proving exact encoding, parsing, normalization, round-trip preservation, structural requirements, and machine-readable output.
+</p>
+
+<div class="req-intro">
+<p>
+  <strong>Serialization Vectors</strong> define the reference cases through which implementations will prove that canonical Survey expressions can be encoded, parsed, normalized, exchanged, and reproduced without ambiguity or loss of spatial meaning.
+</p>
+<p>
+  The final vector corpus does not yet exist because the exact canonical serialization format, field ordering, schema language, byte or text representation, and normalization procedure remain unresolved within the Specification. This page therefore establishes the required serialization tests without inventing a canonical encoding prematurely.
+</p>
+</div>
+
+<blockquote>
+  <span class="quote-label">Reference Vector Question</span>
+  Given this exact input, what exact answer must every conforming implementation produce?
+</blockquote>
+
+<section class="spec-card">
+  <div class="spec-label">10.1 · Canonical Encoding Vectors</div>
+  <h2>Canonical Meaning Must Produce One Authoritative Encoding</h2>
+  <p>
+    The vector set shall include canonical Survey references, extents, and foundational expressions together with the exact machine-readable encoding required by the Specification.
+  </p>
+  <p>
+    Where a unique canonical representation is defined, independent implementations shall emit the identical authoritative encoding for the same canonical meaning.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">10.2 · Canonical Parsing Vectors</div>
+  <h2>Authoritative Encoding Must Resolve Identically</h2>
+  <p>
+    Reference vectors shall include canonical serialized inputs and the exact Survey meaning each must resolve to.
+  </p>
+  <p>
+    Parsing shall be deterministic and independent of locale, undocumented defaults, database state, or other hidden implementation context.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">10.3 · Noncanonical Serialization Vectors</div>
+  <h2>Permitted Alternate Forms Must Normalize</h2>
+  <p>
+    Where valid noncanonical serialized representations are permitted, vectors shall demonstrate their exact classification and normalization to the authoritative canonical form.
+  </p>
+  <p>
+    Alternate encodings may aid convenience or interoperability, but they shall not create competing canonical representations.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">10.4 · Field Requirement Vectors</div>
+  <h2>Required Structure Must Be Testable</h2>
+  <p>
+    The corpus shall include cases proving the presence, meaning, and exact interpretation of required fields, elements, markers, or components defined by the canonical serialization.
+  </p>
+  <p>
+    Missing, duplicated, malformed, or conflicting required fields shall be handled according to the governing validation rules.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">10.5 · Field-Order Vectors</div>
+  <h2>Ordering Rules Must Be Deterministic</h2>
+  <p>
+    Where field or component ordering is normative, vectors shall prove the exact required order.
+  </p>
+  <p>
+    Where ordering is semantically irrelevant but canonical normalization requires one deterministic sequence, vectors shall demonstrate convergence to that sequence.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">10.6 · Canonical Whitespace and Formatting Vectors</div>
+  <h2>Presentation Variance Must Not Create Meaning Variance</h2>
+  <p>
+    Where text-based serialization permits insignificant formatting differences, vectors shall demonstrate which differences normalize away and which are invalid.
+  </p>
+  <p>
+    If the final canonical form requires exact formatting, conforming implementations shall reproduce that form exactly.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">10.7 · Precision-Preserving Serialization Vectors</div>
+  <h2>Encoding Must Preserve Canonical Precision</h2>
+  <p>
+    The vector set shall include refined and sub-Pang expressions to prove that serialization preserves every required unit of canonical spatial precision.
+  </p>
+  <p>
+    Truncation, rounding, or lossy conversion shall not be accepted as canonical interchange where exact representation is required.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">10.8 · Round-Trip Vectors</div>
+  <h2>Encode, Parse, and Recover the Same Canonical Truth</h2>
+  <p>
+    Reference vectors shall test canonical serialize-parse and parse-serialize round trips.
+  </p>
+  <p>
+    Where the representation is defined as canonical and lossless, the resulting meaning and authoritative serialized form shall be identical to the source.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">10.9 · Cross-Implementation Exchange Vectors</div>
+  <h2>One Implementation Must Read Another’s Canonical Output</h2>
+  <p>
+    The corpus shall include interchange cases proving that canonical output produced by one conforming implementation can be parsed and interpreted identically by another.
+  </p>
+  <p>
+    Exchange shall not depend on shared proprietary data structures, hidden registries, or private conventions.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">10.10 · Specification Identity Vectors</div>
+  <h2>Governing Standard Identity Must Be Interpretable</h2>
+  <p>
+    Where serialization carries or references specification identity, version, conformance profile, or compatibility metadata, vectors shall prove that those identifiers are encoded and interpreted consistently.
+  </p>
+  <p>
+    Such metadata identifies the governing standard and shall not become part of the spatial identity of the place described.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">10.11 · Invalid Serialization Vectors</div>
+  <h2>Malformed Machine Representation Must Fail Deterministically</h2>
+  <p>
+    The vector corpus shall include malformed, incomplete, contradictory, unsupported, or precision-corrupting serialized forms.
+  </p>
+  <p>
+    Conforming implementations shall reject or classify those forms consistently rather than invent canonical meaning.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">10.12 · Exact Machine-Output Agreement</div>
+  <h2>Every Implementation Must Produce the Required Output</h2>
+  <p>
+    Independent conforming implementations shall produce identical authoritative machine-readable output wherever the Specification defines a unique canonical serialization.
+  </p>
+  <p>
+    Where multiple permitted durable representations exist, each shall remain deterministically reducible to the same canonical mathematical meaning according to the governing rules.
+  </p>
+</section>
+
+<div class="status-grid">
+  <div class="status-card">
+    <h3>Established by Requirements and Specification Scope</h3>
+    <p>
+      The Survey Fabric must support canonical serialization and interchange, deterministic normalization, one mathematical meaning across durable representations, explicit specification identity and versioning, precision-preserving exchange, independent implementation, and exact machine interpretation without hidden state.
+    </p>
+  </div>
+  <div class="status-card">
+    <h3>Canonical Vector Corpus Not Yet Possessed</h3>
+    <p>
+      Actual canonical bytes or text, schemas, field names, field order, formatting rules, version identifiers, normalized examples, round-trip fixtures, and exact machine-readable expected outputs cannot be created until the final serialization and specification-identity rules are selected.
+    </p>
+  </div>
+</div>
+
+<section class="spec-card">
+  <div class="spec-label">Primary Requirements Basis</div>
+  <h2>Referenced Requirements</h2>
+  <p>
+    Serialization Vectors will derive especially from Requirements Findings #10, #30, #57–#61, #63–#64, #66, #72–#75, and #78–#84.
+  </p>
+  <div class="finding-links">
+    <a href="/theatlas/foundational-survey-fabric/requirements/02-addressability-meaning-refinement/#finding-10">#10</a>
+    <a href="/theatlas/foundational-survey-fabric/requirements/04-ontology-structure/#finding-30">#30</a>
+    <a href="/theatlas/foundational-survey-fabric/requirements/06-geometry-topology-measurement-operations/#finding-57">#57–#61 · #63–#64 · #66 · #72–#75</a>
+    <a href="/theatlas/foundational-survey-fabric/requirements/07-knowability-computability-conformance/#finding-78">#78–#84</a>
+  </div>
+</section>
+
+<blockquote>
+  <span class="quote-label">Reference Vector Boundary</span>
+  Serialization Vectors prove how canonical truth is represented and exchanged. The representation carries the truth; it does not become the place.
+</blockquote>
+
+<div class="section-nav">
+  <a href="/theatlas/foundational-survey-fabric/reference-vectors/09-invalid-input-vectors/">← Reference Vectors 09</a>
+  <a href="/theatlas/foundational-survey-fabric/requirements/">Requirements Framework</a>
+  <a href="/theatlas/foundational-survey-fabric/specification/">Specification</a>
+  <a href="/theatlas/foundational-survey-fabric/conformance/">Conformance</a>
+  <a href="/theatlas/foundational-survey-fabric/reference-vectors/">Reference Vectors Index</a>
+</div>
+
+<div class="note">Foundational Survey Fabric · Reference Vectors 10 · Serialization Vectors</div>
+
+</article>
+</main>
+
+<div id="bp-footer"></div>
+</body>
+</html>
