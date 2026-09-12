@@ -211,10 +211,6 @@ h1{
   .spec-card h2{font-size:21px}
 }
 
-
-
-
-
 </style>
 </head>
 
@@ -261,7 +257,7 @@ h1{
     The Foundational Survey Fabric shall support exact canonical measurement of valid spatial expressions, including straight spatial separation, area, path length, and boundary length where applicable.
   </p>
   <p>
-    Measurement shall remain geometric. Functional meanings such as travel cost, accessibility, convenience, or legal significance belong to higher layers.
+    Measurement shall remain geometric. Functional meanings such as travel cost, accessibility, convenience, or legal significance belong to the higher Architecture domains responsible for them.
   </p>
 </section>
 
@@ -346,7 +342,7 @@ h1{
   <div class="spec-label">05.9 · Validity</div>
   <h2>Canonical, Noncanonical, or Invalid</h2>
   <p>
-    Conforming implementations shall be able to distinguish canonical expressions, valid noncanonical representations, malformed expressions, impossible refinement expressions, and references outside the canonical Survey Domain.
+    Conforming implementations shall be able to distinguish canonical expressions, valid noncanonical representations, malformed expressions, impossible precision expressions, and references outside the canonical Survey Domain.
   </p>
   <p>
     Invalid or ambiguous inputs shall not be silently assigned spatial meaning through implementation-specific guesswork.
@@ -379,7 +375,7 @@ h1{
   <div class="spec-label">05.12 · No Silent Snapping</div>
   <h2>Operations Must Not Move Place</h2>
   <p>
-    Canonical operations shall not silently snap references to grid lines, refinement boundaries, vertices, preferred increments, or nearby representable positions.
+    Canonical operations shall not silently snap references to grid lines, precision boundaries, subdivision boundaries, vertices, preferred increments, or nearby representable positions.
   </p>
   <p>
     Snapping and alignment may exist above the foundation only as explicit intentional transformations.
@@ -390,7 +386,7 @@ h1{
   <div class="spec-label">05.13 · Neutral Conflict Detection</div>
   <h2>Reveal Spatial Conflict Without Adjudication</h2>
   <p>
-    The Survey Fabric shall provide exact canonical facts and geometric results sufficient for higher layers to detect conflicts, contradictions, overlaps, or invalid spatial relationships.
+    The Survey Fabric shall provide exact canonical facts and geometric results sufficient for higher Architecture domains to detect conflicts, contradictions, overlaps, or invalid spatial relationships.
   </p>
   <p>
     The Foundational Survey Fabric shall not adjudicate the institutional, legal, ownership, access, or governance consequences of those conflicts.
@@ -401,7 +397,7 @@ h1{
   <div class="spec-label">05.14 · Transformation Integrity</div>
   <h2>Derived Operations Must Resolve Back to Canonical Space</h2>
   <p>
-    Rotation, mirroring, reflection, translation, scaling, zoom, compression, and related transformations may be used by derived views and higher layers.
+    Rotation, mirroring, reflection, translation, scaling, zoom, compression, and related transformations may be used by derived views and higher Architecture domains.
   </p>
   <p>
     Such operations shall remain exactly resolvable to the canonical Survey frame and shall not redefine Pang scale, canonical orientation, or authoritative World-space location.
@@ -415,7 +411,7 @@ h1{
     The Foundational Survey Fabric shall support exact spatial separation and threshold-based proximity where required.
   </p>
   <p>
-    Terms such as near, local, neighboring, remote, or convenient remain higher-layer interpretations and shall not become foundational spatial semantics.
+    Terms such as near, local, neighboring, remote, or convenient remain higher-domain interpretations and shall not become foundational spatial semantics.
   </p>
 </section>
 
@@ -448,7 +444,7 @@ h1{
 
 <blockquote>
   <span class="quote-label">Architectural Boundary</span>
-  Canonical operations may calculate, compare, compose, and normalize space. They may not invent meaning, tolerate ambiguity, or silently move the place being described.
+  Canonical operations may calculate, compare, compose, and normalize space. They may not invent meaning, tolerate ambiguity, silently move the place being described, or prescribe how higher Architecture domains must use the result.
 </blockquote>
 
 <div class="section-nav">
