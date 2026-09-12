@@ -12,14 +12,14 @@
 <!-- New Header -->
 <link href="/assets/css/bitpangea-framework.css" rel="stylesheet"/>
 <script defer="" src="/assets/js/bitpangea-framework.js"></script>
-<meta content="The BitPangea Atlas — the evolving cartographic record of a scarce digital supercontinent." name="description"/>
+<meta content="The BitPangea Atlas — the canonical map and structural design record of the World." name="description"/>
 <!-- BitPangea Metadata -->
 <meta content="#00c8d7" name="theme-color"/>
 <meta content="index,follow" name="robots"/>
 <link href="https://bitpangea.com/theatlas/" rel="canonical"/>
 <!-- Open Graph -->
 <meta content="The Atlas | BitPangea" property="og:title"/>
-<meta content="The official cartographic record of BitPangea. One unified supercontinent. One finite world. 21 million parcels." property="og:description"/>
+<meta content="The canonical map and structural design record of BitPangea. One World. 21 million Parcels. Intentional design within constitutional truth." property="og:description"/>
 <meta content="website" property="og:type"/>
 <meta content="https://bitpangea.com/theatlas/" property="og:url"/>
 <meta content="https://bitpangea.com/images/bitpangea-og.jpg" property="og:image"/>
@@ -28,7 +28,7 @@
 <!-- Twitter/X -->
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="The Atlas | BitPangea" name="twitter:title"/>
-<meta content="The official cartographic record of BitPangea. One unified supercontinent. One finite world. 21 million parcels." name="twitter:description"/>
+<meta content="The canonical map and structural design record of BitPangea." name="twitter:description"/>
 <meta content="https://bitpangea.com/images/bitpangea-og.jpg" name="twitter:image"/>
 <!-- Structured Data -->
 <script type="application/ld+json">
@@ -37,7 +37,7 @@
     "@type":"WebPage",
     "name":"The Atlas",
     "url":"https://bitpangea.com/theatlas/",
-    "description":"The evolving cartographic record of a scarce digital supercontinent.",
+    "description":"The canonical map and structural design record of BitPangea.",
     "isPartOf":{
       "@type":"WebSite",
       "name":"BitPangea",
@@ -348,132 +348,286 @@
       .image-frame { padding: 18px; }
       blockquote { font-size: 20px; padding: 24px 26px; }
       }
-  </style>
+  
+    .atlas-branches {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+      margin: 34px 0 10px;
+    }
+    .branch-card {
+      position: relative;
+      min-height: 280px;
+      padding: 30px 32px;
+      border: 1px solid rgba(212, 169, 56, 0.22);
+      background: rgba(0, 0, 0, 0.36);
+      box-shadow: 0 0 22px rgba(0, 0, 0, 0.26);
+      overflow: hidden;
+    }
+    .branch-card::after {
+      content: "";
+      position: absolute;
+      right: -42px;
+      top: -42px;
+      width: 132px;
+      height: 132px;
+      border-radius: 50%;
+      border: 1px solid rgba(212, 169, 56, 0.12);
+      background: radial-gradient(circle, rgba(212,169,56,0.09), transparent 62%);
+      pointer-events: none;
+    }
+    .branch-status {
+      color: #00c8d7;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .branch-card h3 {
+      color: #ffffff;
+      font-size: 25px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+      text-shadow: 0 0 14px rgba(0,0,0,.9);
+    }
+    .branch-card p {
+      color: rgba(255,255,255,.84);
+      font-size: 16px;
+      line-height: 1.65;
+      margin-bottom: 18px;
+    }
+    .branch-link,
+    .branch-link:visited {
+      color: #d4a938;
+      text-decoration: none;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-size: 13px;
+    }
+    .branch-link:hover {
+      color: #ffffff;
+      text-shadow: 0 0 12px rgba(212,169,56,.65);
+    }
+    .topic-list {
+      margin: 16px 0 0 0;
+      padding: 0;
+      list-style: none;
+    }
+    .topic-list li {
+      position: relative;
+      margin: 0 0 9px 0;
+      padding-left: 18px;
+      color: rgba(255,255,255,.78);
+      font-size: 15px;
+      text-shadow: none;
+    }
+    .topic-list li::before {
+      content: "—";
+      position: absolute;
+      left: 0;
+      color: #d4a938;
+    }
+    .atlas-closing {
+      margin-top: 40px;
+      padding: 36px 34px;
+      border: 1px solid rgba(212,169,56,.22);
+      background: rgba(0,0,0,.50);
+    }
+    .atlas-closing p {
+      font-size: 19px;
+    }
+    @media (max-width: 900px) {
+      .atlas-branches { grid-template-columns: 1fr; }
+    }
+
+</style>
 </head>
 <body data-bp-page="theatlas">
 <div id="bp-header"></div>
 <main class="page">
 <article class="container">
-<div class="eyebrow">The Cartographic Record · The Creator Period</div>
+<div class="eyebrow">The Cartographic and Structural Record</div>
+
 <div class="atlas-header">
 <img alt="The Atlas Compass Rose" class="atlas-compass" src="/theatlas/compass-rose.png"/>
 <div class="atlas-title">
 <h1>The<br/>Atlas</h1>
-<div class="subtitle">
-          The Canonical Map of the World
-        </div>
+<div class="subtitle">The Canonical Map and Structural Design Record of the World</div>
 </div>
 </div>
+
 <div class="divider"></div>
-<p class="atlas-statement">
-      One unified supercontinent. One finite world. 21 million parcels.
-    </p>
+
+<p class="atlas-statement">One unified supercontinent. One finite World. 21,000,000 Parcels.</p>
+
 <p>
-      The Atlas is the canonical cartographic design home of <a class="bitcoin-link" href="/theorangethread/shining-city/">₿</a>itPangea:
-      the place where the constitutional constraints of the World are translated into
-      intentional geography, parcel design, naming, visual form, and cartographic memory.
-    </p>
+The Atlas is the canonical design home of <a class="bitcoin-link" href="/theorangethread/shining-city/">₿</a>itPangea:
+the place where constitutional truth is translated into World Form, spatial architecture,
+Parcel structure, cartographic expression, and the enduring design of the World.
+</p>
+
 <p>
-      BitPangea is <strong>constitutionally constrained, but intentionally designed</strong>.
-      The Foundation and The Codex establish what must remain true. The Atlas is where the
-      Creator determines how those truths are expressed as an actual World.
-    </p>
+BitPangea is <strong>constitutionally constrained, but intentionally designed</strong>.
+The Foundation and The Codex establish what must remain true. The Atlas records what now exists,
+what is now being designed, and how those truths are intentionally expressed as a World.
+</p>
+
 <div class="image-frame">
 <img alt="BitPangea The Atlas full image" src="/images/BitPangea-theatlas.jpg"/>
 </div>
+
 <h2>The Founding Constraint</h2>
-<p>BitPangea consists of one finite, complete, continuous digital World containing exactly <strong>21,000,000 Parcels</strong>. Its Parcel population is fixed. The World does not expand or duplicate, and no central authority may alter that constitutional fact.</p>
-<h2>Current Status</h2>
-<p>Through Day #106, The Atlas now distinguishes more clearly between <strong>visible cartographic design</strong> and the deeper spatial architecture that may permanently support The World. The Creator Period continues to preserve adopted design directions while allowing foundational spatial architecture to remain exploratory until it survives further review.</p>
-<p>For World form, BitPangea continues with the adopted Creator direction of a <strong>singular, compositionally balanced, asymmetric digital supercontinent</strong>, inspired by Pangea in ancestry rather than reconstructed from it. The experience is now clarified as <strong>globe-first from space</strong>, followed by an atmospheric descent and cloud transition into BitPangea as a <strong>flat World</strong>. Progressive Revelation continues to govern how geography, connectivity, and Parcel structure become visible with proximity.</p>
-<p>For Parcel morphology, the rhombic form produced by the three-part hexagonal construction remains a <strong>useful local Parcel representation concept</strong>. Day #105 clarified, however, that Parcel morphology and foundational spatial order are separate Creator design problems. The rhombic grammar is therefore no longer presumed to define BitPangea’s deepest permanent spatial architecture.</p>
-<p>Days #105–106 introduced a strong but unadopted spatial architecture contender: <strong>Foundational Survey Fabric → General Spatial Interpretation → Parcel Cadastre</strong>. The Survey Fabric would establish permanent spatial reference; General Spatial Interpretation would define non-Parcel spatial entities against that reference; and the Parcel Cadastre would be dedicated specifically to the exactly <strong>21,000,000 Parcels</strong>.</p>
-<p>Day #103’s constitutional finding remains unchanged: <strong>the exactly 21,000,000 Parcels do not constitutionally exhaust every cartographically valid portion of The World.</strong> The Outliers and The Verge therefore remain constitutionally permissible Creator design space, with exact design still open.</p>
+<p>
+BitPangea consists of one finite, complete, continuous digital World containing exactly
+<strong>21,000,000 Parcels</strong>. Its Parcel population is fixed. The World does not expand
+or duplicate, and no central authority may alter that constitutional fact.
+</p>
 
+<h2>The Atlas Structure</h2>
+<p>
+The Atlas is not a single map or document. It is the institutional design record through which
+the World may be understood at several distinct levels. Its principal branches separate deep
+structural architecture from the designed World, the Parcels that compose its scarce cadastral
+fabric, and the cartographic systems through which BitPangea is represented and encountered.
+</p>
 
+<blockquote>
+<span class="quote-label">Atlas Working Principle</span>
+Chronicle records when. Atlas records what.
+</blockquote>
 
+<div class="atlas-branches">
 
-<h2>Day #106 Design State</h2>
-<div class="atlas-grid">
-<div class="atlas-card"><h3>World Form · Adopted</h3><p>One asymmetric digital supercontinent, Pangea-derived in ancestry, serene at World scale, with Progressive Revelation guiding the approach from globe view toward the flat lived World.</p></div>
-<div class="atlas-card"><h3>Parcel Morphology · Local Concept</h3><p>The rhombic three-part grammar remains useful for local Parcel representation and study, but is no longer presumed to be the foundational spatial architecture.</p></div>
-<div class="atlas-card"><h3>Survey Fabric · Strong Contender</h3><p>A permanent BitPangea-native spatial reference system is being explored beneath Parcel geometry and visible World expression. Exact geometry, addressing, and implementation remain open.</p></div>
-<div class="atlas-card"><h3>General Spatial Interpretation · Provisional</h3><p>A separate spatial function may define non-Parcel entities against the same permanent reference fabric without turning them into Parcels.</p></div>
-<div class="atlas-card"><h3>Parcel Cadastre · Provisional</h3><p>A dedicated cadastral layer may preserve the exactly 21,000,000 Parcels and Parcel-specific spatial truth. Ownership and rights are not presently treated as part of Parcel spatial identity.</p></div>
-<div class="atlas-card"><h3>Non-Parcel Space · Permissible</h3><p>The 21,000,000 Parcels do not exhaust The World. Outliers, The Verge, and other non-Parcel spatial expression remain permissible within constitutional guardrails.</p></div>
+<section class="branch-card">
+<div class="branch-status">Active Branch</div>
+<h3>The Architecture</h3>
+<p>
+The enduring systems through which the World is made viable. The Architecture preserves the
+deep structural design connecting permanent spatial truth to ground, Parcels, rights, continuity,
+interoperability, runtime, and experience without confusing implementation with constitutional truth.
+</p>
+<p><a class="branch-link" href="/thearchitecture/">Enter The Architecture →</a></p>
+</section>
+
+<section class="branch-card">
+<div class="branch-status">Provisional</div>
+<h3>The World</h3>
+<p>
+The designed spatial and geographic expression of BitPangea itself: the form, membership,
+large-scale organization, terminal expression, and non-Parcel features through which the World
+becomes a coherent place rather than merely a reference system.
+</p>
+<ul class="topic-list">
+<li>World Form</li>
+<li>World-Space</li>
+<li>Regions</li>
+<li>The Verge</li>
+<li>Outliers</li>
+<li>Additional World-scale design as required</li>
+</ul>
+</section>
+
+<section class="branch-card">
+<div class="branch-status">Provisional</div>
+<h3>The Parcels</h3>
+<p>
+The design record of BitPangea’s exactly 21,000,000 Parcels as visible and lived components
+of the World. This branch concerns Parcel form and arrangement rather than the permanent
+cadastral identity preserved by the Parcel Cadastre.
+</p>
+<ul class="topic-list">
+<li>Parcel Form</li>
+<li>Parcel Fabric</li>
+<li>Parcel Arrangement</li>
+<li>Additional Parcel-scale design as required</li>
+</ul>
+</section>
+
+<section class="branch-card">
+<div class="branch-status">Provisional</div>
+<h3>The Cartography</h3>
+<p>
+The systems through which BitPangea is truthfully represented, revealed, scaled, and navigated
+as a map. Cartography may evolve in presentation while remaining accountable to the World and
+structural truths it represents.
+</p>
+<ul class="topic-list">
+<li>Globe</li>
+<li>Flat Map</li>
+<li>Progressive Revelation</li>
+<li>Map Scale</li>
+<li>Additional cartographic conventions as required</li>
+</ul>
+</section>
+
 </div>
-<blockquote><span class="quote-label">Creator Period Working Direction</span>Survey first. Build later.</blockquote>
-<blockquote><span class="quote-label">Day #106 Spatial Distinction</span>Parcel morphology and foundational spatial order are different design problems.</blockquote>
 
 <h2>Constitution, Design, and Implementation</h2>
-<p>BitPangea now distinguishes four complementary functions across constitutional definition, intentional design, verification, and technical realization.</p>
+<p>
+BitPangea distinguishes constitutional truth from intentional design and technical realization.
+The Foundation and The Codex constrain what must remain true. The Atlas organizes the design of
+the World within those truths. Implementation determines how that design is rendered, accessed,
+computed, and expressed without turning replaceable technology into constitutional law.
+</p>
+
 <div class="atlas-grid">
-<div class="atlas-card"><h3>The Foundation &amp; The Codex</h3><p>Establish what must be true: permanent constraints, constitutional identity, intrinsic structure, and governing invariants.</p></div>
-<div class="atlas-card"><h3>The Atlas</h3><p>Establishes what is intentionally designed within those truths: geography, Parcel arrangement, non-Parcel structure, naming, visual form, and the concrete cartographic World.</p></div>
-<div class="atlas-card"><h3>Creator Constraint Review</h3><p>Tests significant design choices before adoption and returns only genuine dependencies to narrow constitutional inquiry.</p></div>
-<div class="atlas-card"><h3>Implementation</h3><p>Determines how Atlas design is technically rendered, accessed, and expressed without turning technical choices into constitutional law.</p></div>
+<div class="atlas-card"><h3>The Foundation &amp; The Codex</h3><p>Establish what must remain true: permanent constraints, constitutional identity, intrinsic structure, and governing invariants.</p></div>
+<div class="atlas-card"><h3>The Atlas</h3><p>Records the designed World: architecture, geography, Parcels, cartography, naming, form, and structural expression within constitutional truth.</p></div>
+<div class="atlas-card"><h3>Implementation</h3><p>Realizes Atlas design through replaceable technologies, services, interfaces, and systems without becoming the permanent truth they implement.</p></div>
 </div>
-<p>A design decision becomes constitutionally significant only when changing it would alter Parcel identity, Boundary, Coordinate, Adjacency, Contiguity, permanence, an adopted Codex, or another foundational truth. Day #103 formalized the response: <strong>Creator Idea → Constraint Review → PASS / UNCERTAIN / FAIL → narrow inquiry only when necessary → return to design.</strong> Days #105–106 added a complementary rule for deeper architecture: <strong>separate permanent spatial truth from the visible systems that may change above it.</strong></p>
-<blockquote><span class="quote-label">The Creator Period</span>Not everything that exists in BitPangea must be constitutionalized. Some things are simply created within the Constitution.</blockquote>
 
-
-
-
-
-<h2>Cartographic Layers</h2>
-<div class="atlas-grid">
-<div class="atlas-card"><h3>Foundational Survey Fabric</h3><p>Strong unadopted contender for the permanent spatial reference beneath The World. Its purpose would be to establish stable, deterministic spatial truth rather than visible geography.</p></div>
-<div class="atlas-card"><h3>General Spatial Interpretation</h3><p>Provisional function for non-Parcel spatial entities referenced against the same foundational fabric. Exact authority and ontology remain open.</p></div>
-<div class="atlas-card"><h3>Parcel Cadastre</h3><p>Provisional dedicated home for exactly 21,000,000 permanent Parcels and Parcel-specific spatial truth, distinct from ownership and rights.</p></div>
-<div class="atlas-card"><h3>World Form</h3><p>The intentionally designed supercontinental expression of BitPangea: globe-first on approach, flat as the lived World, organic in Form and digital in substance.</p></div>
-<div class="atlas-card"><h3>Non-Parcel Structure</h3><p>Constitutionally permissible cartographic portions that may include Outliers, The Verge, infrastructure, or other future spatial entities without becoming Parcels.</p></div>
-<div class="atlas-card"><h3>Place Memory</h3><p>The record of names, Regions, settlements, landmarks, historical geography, and meanings that may emerge through the life of The World.</p></div>
-</div>
-<blockquote><span class="quote-label">Day #106 Working Principle</span>Substrate ≠ Parcel experience.</blockquote>
-<blockquote><span class="quote-label">Long-Horizon Direction</span>The permanent thing should be the spatial truth and its specification, not the software used to implement it.</blockquote>
+<blockquote>
+<span class="quote-label">Atlas Working Principle</span>
+The deeper the layer, the more permanent it should be. The closer the layer is to the user, the more freedom it should have to evolve.
+</blockquote>
 
 <h2>Principles Guiding The Atlas</h2>
 <ul>
 <li>One finite, complete, continuous digital World</li>
 <li>Exactly 21,000,000 Parcels</li>
 <li>The 21,000,000 Parcels do not constitutionally exhaust every cartographically valid portion of The World</li>
-<li>The complete Parcel population must remain one single Contiguity through unbroken paths of Parcel Adjacencies</li>
-<li>Design must remain consistent with The Foundation and The Codex</li>
-<li>Precise geography may be intentionally created without requiring a Codex for every feature</li>
-<li>Parcel morphology and foundational spatial order are separate Creator design problems</li>
-<li>The rhombic three-part grammar remains a useful local Parcel representation concept rather than the presently preferred foundational architecture</li>
-<li>A Foundational Survey Fabric is a strong Creator-period contender, not an adopted system</li>
-<li>General Spatial Interpretation and Parcel Cadastre are strong provisional spatial functions, not adopted layers</li>
-<li>Universal spatial addressability is a promising Survey-Fabric principle: one spatial language may eventually reference Parcels and non-Parcel entities without making them the same kind of object</li>
+<li>The complete Parcel population remains one single Contiguity through unbroken paths of Parcel Adjacencies</li>
+<li>Design remains consistent with The Foundation and The Codex</li>
+<li>Architecture and visible World expression are distinct design concerns</li>
+<li>Parcel morphology and foundational spatial order are separate design problems</li>
+<li>Permanent spatial truth should remain independent of ownership, runtime, and user experience</li>
 <li>Addressable space need not be materialized as stored objects</li>
-<li>Parcel ownership and rights are not presently treated as part of Parcel spatial identity</li>
-<li>The globe is an approach and presentation experience; after cloud entry, BitPangea is experienced as a flat World</li>
-<li>The Survey Fabric therefore need not wrap directly onto a sphere merely because the distant experience is globe-first</li>
-<li>The Outliers are constitutionally permissible Creator design space; exact form and function remain open</li>
-<li>The Verge is constitutionally permissible Creator design space and must not be treated as a constitutional Edge, Limit, Perimeter, Exterior, or World Property</li>
-<li>The Frontier retains its established epistemic meaning and is not used for the spatial terminal concept</li>
-<li>Extent remains the complete spatial scope of The World, not a belt, zone, or neighboring territory</li>
-<li>No cartographically valid structure is established beyond The World</li>
-<li>Naming, visual form, terrain-like features, landmarks, and cartographic conventions belong primarily to design</li>
+<li>The globe is an approach and presentation experience; BitPangea is experienced as a flat lived World after cloud entry</li>
+<li>The Outliers and The Verge remain permissible design space within constitutional constraints</li>
 <li>Implementation choices remain distinct from constitutional law</li>
-<li>Significant design choices should undergo Creator Constraint Review when a constitutional dependency is plausible</li>
 <li>Survey first. Build later.</li>
 <li>Substrate ≠ Parcel experience.</li>
-<li>The deeper the layer, the more permanent it should be; the closer the layer is to the user, the more freedom it should have to evolve</li>
 <li>No central authority may expand or duplicate the map</li>
 <li>Designed for long-term civilization building</li>
 </ul>
-<blockquote><span class="quote-label">Day #106 Spatial Architecture Finding</span>Ground establishes place. Runtime enables function. Civilization creates meaning.</blockquote>
+
+<blockquote>
+<span class="quote-label">Atlas Working Principle</span>
+Ground establishes place. Runtime enables function. Civilization creates meaning.
+</blockquote>
+
 <blockquote>
 <span class="quote-label">Foundational Permanence</span>
 <a class="atlas-transmission" href="/transmissions/transmission002-themap/">
-    Before ownership can be claimed, the world must first be mapped.
-  </a>
+Before ownership can be claimed, the world must first be mapped.
+</a>
 </blockquote>
+
 <div class="atlas-reference">
 <a href="../thereliquary/lot-0/">Cartographic Record: Lot 0</a>
 </div>
-<div class="note">Canonical Cartographic Design Space · Creator Period · Day #106</div>
+
+<section class="atlas-closing">
+<p><strong>This is The Atlas.</strong></p>
+<p>
+The canonical map and structural design record of BitPangea: one institutional home for the
+architecture that makes the World viable, the World that gives space form, the Parcels that
+preserve scarce place, and the cartography through which that World is revealed.
+</p>
+</section>
+
+<div class="note">Canonical Map and Structural Design Record · Active Index</div>
 </article>
 </main>
 <div id="bp-footer"></div>
