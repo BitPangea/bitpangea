@@ -89,15 +89,15 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 <div class="divider"></div>
 
 <p class="arch-statement">
-  The canonical test set for proving exact agreement on Pang-based distance, area, path and boundary length, and exact sub-Pang precision without presuming one precision mechanism.
+  The canonical test set for proving exact agreement on Pang-based spatial separation, area, path and geometric boundary length, and exact sub-Pang precision without presuming one precision mechanism.
 </p>
 
 <div class="req-intro">
 <p>
-  <strong>Pang Measurement Vectors</strong> define the reference cases through which implementations will prove identical canonical measurement of spatial separation, area, path length, boundary length, and exact precision below one Pang.
+  <strong>Pang Measurement Vectors</strong> define the reference cases through which implementations will prove identical canonical measurement of spatial separation, area, path length, geometric boundary length, and exact precision below one Pang.
 </p>
 <p>
-  The final vector corpus does not yet exist because the exact distance, area, length, angular, and precision mathematics remain unresolved within the Specification. This page therefore establishes the measurement cases that must eventually be tested without inventing formulas, precision mechanisms, or expected values prematurely.
+  The final vector corpus does not yet exist because the exact spatial-separation, area, length, angular, and precision mathematics remain unresolved within the Specification. This page therefore establishes the measurement cases that must eventually be tested without inventing formulas, precision mechanisms, or expected values prematurely.
 </p>
 </div>
 
@@ -118,13 +118,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">03.2 · Canonical Separation Vectors</div>
-  <h2>Exact Distance Between Canonical Positions</h2>
+  <div class="spec-label">03.2 · Canonical Spatial Separation Vectors</div>
+  <h2>Exact Spatial Separation Between Canonical Positions</h2>
   <p>
     Reference vectors shall include pairs of canonical positions whose exact spatial separation must be measured identically by every conforming implementation.
   </p>
   <p>
-    These cases shall test the canonical distance mathematics only and shall not imply routing, travel time, network cost, or experiential distance.
+    These cases shall test the canonical spatial-separation mathematics only and shall not imply routing, travel time, network cost, or experiential distance.
   </p>
 </section>
 
@@ -173,10 +173,10 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">03.7 · Boundary Length Vectors</div>
+  <div class="spec-label">03.7 · Geometric Boundary Length Vectors</div>
   <h2>Exact Perimeter-Like Measure Without Higher-Layer Meaning</h2>
   <p>
-    Where canonical extents possess measurable boundaries, reference vectors shall test exact boundary length according to the governing Survey mathematics.
+    Where canonical extents possess measurable boundaries, reference vectors shall test exact geometric boundary length according to the governing Survey mathematics.
   </p>
   <p>
     The Survey result shall remain geometric only and shall not imply Parcel perimeter, legal boundary, or other interpretation belonging to higher Architecture domains.
@@ -231,7 +231,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">03.12 · Cross-Implementation Measurement Agreement</div>
   <h2>Every Implementation Must Return the Same Measure</h2>
   <p>
-    Independent conforming implementations shall produce the same authoritative canonical separation, area, path length, boundary length, and sub-Pang meaning from identical canonical inputs. Where the governing Specification requires one unique canonical representation of a measurement result, that representation shall also agree exactly.
+    Independent conforming implementations shall produce the same authoritative canonical spatial separation, area, path length, geometric boundary length, and sub-Pang meaning from identical canonical inputs. Where the governing Specification requires one unique canonical representation of a measurement result, that representation shall also agree exactly.
   </p>
   <p>
     A mismatch indicates an implementation defect, specification ambiguity, version incompatibility, or unresolved mathematical dependency requiring correction.
@@ -242,13 +242,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="status-card">
     <h3>Established by Requirements and Specification Scope</h3>
     <p>
-      Pang is BitPangea’s native canonical unit of linear measure; square Pangs measure area; canonical spatial separation, area, path length, and boundary length must be exact; Pang scale must remain uniform across the Survey Domain; and sub-Pang precision must be supplied through an exact mechanism without prematurely requiring a hierarchy of named subunits.
+      Pang is BitPangea’s native canonical unit of linear measure; square Pangs measure area; canonical spatial separation, area, path length, and geometric boundary length must be exact; Pang scale must remain uniform across the Survey Domain; and sub-Pang precision must be supplied through an exact mechanism without prematurely requiring a hierarchy of named subunits.
     </p>
   </div>
   <div class="status-card">
     <h3>Canonical Vector Corpus Not Yet Possessed</h3>
     <p>
-      Actual measurement inputs, exact expected Pang values, square-Pang results, path and boundary formulas, sub-Pang examples, mixed-precision fixtures, and authoritative machine-readable outputs cannot be defined until the final measurement mathematics, precision mechanism, and normative serialization/interchange rules are specified and tested.
+      Actual measurement inputs, exact expected Pang values, square-Pang results, path and geometric-boundary formulas, sub-Pang examples, mixed-precision fixtures, and authoritative machine-readable outputs cannot be defined until the final measurement mathematics, precision mechanism, and normative serialization/interchange rules are specified and tested.
     </p>
   </div>
 </div>
