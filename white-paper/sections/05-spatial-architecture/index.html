@@ -1,1 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>V. Spatial Architecture | BitPangea White Paper</title>
 
+<!-- Favicons -->
+<link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/favicon.svg" rel="shortcut icon"/>
+
+<!-- BitPangea Framework -->
+<link rel="stylesheet" href="/assets/css/bitpangea-framework.css"/>
+<script src="/assets/js/bitpangea-framework.js" defer></script>
+
+<meta content="Section V of BitPangea — A World Before a Civilization, White Paper Version 0.1. Spatial Architecture defines the relationship among The Extent, the Foundational Survey Fabric, Spatial Ground, General Spatial Interpretation, and the Parcel Cadastre." name="description"/>
+<meta content="#00c8d7" name="theme-color"/>
+<meta content="index,follow" name="robots"/>
+<link href="https://bitpangea.com/white-paper/sections/05-spatial-architecture/" rel="canonical"/>
+
+<!-- Open Graph -->
+<meta content="V. Spatial Architecture | BitPangea White Paper" property="og:title"/>
+<meta content="Persistent place requires architecture deeper than coordinates. BitPangea separates The Extent, canonical Survey reference, Spatial Ground, General Spatial Interpretation, and the Parcel Cadastre." property="og:description"/>
+<meta content="article" property="og:type"/>
+<meta content="https://bitpangea.com/white-paper/sections/05-spatial-architecture/" property="og:url"/>
+<meta content="https://bitpangea.com/images/bitpangea-og.jpg" property="og:image"/>
+<meta content="BitPangea" property="og:site_name"/>
+<meta content="en_US" property="og:locale"/>
+
+<!-- Twitter/X -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="V. Spatial Architecture | BitPangea White Paper" name="twitter:title"/>
+<meta content="Persistent place requires architecture deeper than coordinates. BitPangea separates The Extent, canonical Survey reference, Spatial Ground, General Spatial Interpretation, and the Parcel Cadastre." name="twitter:description"/>
+<meta content="https://bitpangea.com/images/bitpangea-og.jpg" name="twitter:image"/>
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"ScholarlyArticle",
+  "headline":"V. Spatial Architecture — Extent, Survey, Ground, Interpretation, and Cadastre",
+  "name":"BitPangea — A World Before a Civilization — White Paper Version 0.1 — V. Spatial Architecture — Extent, Survey, Ground, Interpretation, and Cadastre",
+  "datePublished":"2026-09",
+  "inLanguage":"en-US",
+  "isPartOf":{
+    "@type":"CreativeWork",
+    "name":"BitPangea — A World Before a Civilization — White Paper Version 0.1",
+    "url":"https://bitpangea.com/white-paper/"
+  },
+  "publisher":{
+    "@type":"Organization",
+    "name":"BitPangea",
+    "url":"https://bitpangea.com/"
+  },
+  "url":"https://bitpangea.com/white-paper/sections/05-spatial-architecture/"
+}
+</script>
+
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  background: #02050a;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  position: relative;
+  line-height: 1.75;
+  overflow-x: hidden;
+  background: #02050a;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(2, 5, 10, 0.84), rgba(2, 5, 10, 0.96)),
+    url("/images/bitpangea.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -2;
+  pointer-events: none;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 74% 12%, rgba(0, 200, 215, 0.10), transparent 34%),
+    radial-gradient(circle at 18% 18%, rgba(212, 169, 56, 0.09), transparent 32%),
+    linear-gradient(90deg, rgba(0,0,0,.62), rgba(0,0,0,.30), rgba(0,0,0,.68));
+  z-index: -1;
+  pointer-events: none;
+}
+
+.page { width: 100%; padding: 150px 28px 90px; }
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 54px 58px 64px;
+  background: rgba(0, 0, 0, 0.52);
+  border: 1px solid rgba(212, 169, 56, 0.16);
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(4px);
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 26px;
+  font-size: 12px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: #aeb9c4;
+}
+
+.breadcrumbs a,
+.breadcrumbs a:visited {
+  color: #00c8d7;
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover { color: #d4a938; }
+
+.eyebrow {
+  color: #00c8d7;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 18px;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: clamp(42px, 6vw, 70px);
+  line-height: 1.06;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+  text-shadow: 0 0 22px rgba(0, 0, 0, 0.9);
+}
+
+.subtitle {
+  color: #d4a938;
+  font-size: 18px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.publication-meta {
+  color: #aeb9c4;
+  font-size: 13px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+
+.divider {
+  width: 64px;
+  height: 2px;
+  background: #d4a938;
+  margin: 32px 0 40px;
+  box-shadow: 0 0 14px rgba(212, 169, 56, 0.65);
+}
+
+
+.section-copy h2 {
+  color: #d4a938;
+  font-size: clamp(26px, 3.2vw, 34px);
+  line-height: 1.2;
+  letter-spacing: 1.2px;
+  margin: 44px 0 20px;
+  text-shadow: 0 0 14px rgba(0, 0, 0, 0.88);
+}
+
+.section-copy h2:first-child {
+  margin-top: 0;
+}
+
+.section-copy p {
+  margin-bottom: 22px;
+  color: #ffffff;
+  font-size: 17px;
+  text-shadow: 0 0 9px rgba(0, 0, 0, 0.9);
+}
+
+.section-copy strong { color: #ffffff; }
+.section-copy ul {
+  margin: 8px 0 26px 28px;
+  padding-left: 18px;
+}
+.section-copy li {
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-size: 17px;
+  text-shadow: 0 0 9px rgba(0, 0, 0, 0.9);
+}
+
+
+.principle {
+  margin: 34px 0;
+  padding: 24px 28px;
+  border-left: 3px solid #d4a938;
+  background: rgba(0, 0, 0, 0.46);
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.35);
+}
+
+.principle-label {
+  display: block;
+  color: #00c8d7;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.principle p {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.sequence {
+  margin: 30px 0;
+  padding: 20px 24px;
+  text-align: center;
+  color: #d4a938;
+  border: 1px solid rgba(212, 169, 56, 0.28);
+  background: rgba(0, 0, 0, 0.34);
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: .2px;
+}
+
+.section-note {
+  margin-top: 46px;
+  padding: 18px 22px;
+  border: 1px solid rgba(212, 169, 56, 0.30);
+  background: rgba(0,0,0,.34);
+  color: #d4a938;
+  font-size: 12px;
+  line-height: 1.65;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+.section-nav {
+  margin-top: 54px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(255,255,255,.12);
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 18px;
+  align-items: center;
+}
+
+.section-nav a,
+.section-nav a:visited {
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid rgba(212,169,56,.30);
+  background: rgba(0,0,0,.28);
+  padding: 14px 16px;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.section-nav a:hover {
+  color: #d4a938;
+  border-color: rgba(212,169,56,.65);
+}
+
+.section-nav .next { text-align: right; }
+.section-nav .toc { text-align: center; color: #00c8d7; }
+
+@media (max-width: 1120px) {
+  .page { padding-top: 190px; }
+}
+
+@media (max-width: 768px) {
+  .page { padding: 205px 16px 60px; }
+  .container { padding: 36px 24px 46px; }
+  h1 { letter-spacing: 2px; }
+  .subtitle { font-size: 15px; }
+  
+.section-copy h2 {
+  color: #d4a938;
+  font-size: clamp(26px, 3.2vw, 34px);
+  line-height: 1.2;
+  letter-spacing: 1.2px;
+  margin: 44px 0 20px;
+  text-shadow: 0 0 14px rgba(0, 0, 0, 0.88);
+}
+
+.section-copy h2:first-child {
+  margin-top: 0;
+}
+
+.section-copy p { font-size: 16px; }
+  .principle p { font-size: 18px; }
+  .section-nav { grid-template-columns: 1fr; }
+  .section-nav .next,
+  .section-nav .toc { text-align: left; }
+}
+</style>
+</head>
+
+<body data-bp-page="white-paper">
+<div id="bp-header"></div>
+
+<main class="page">
+<article class="container">
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="/">BitPangea</a>
+    <span>›</span>
+    <a href="/white-paper/">White Paper</a>
+    <span>›</span>
+    <span>Section V</span>
+  </nav>
+
+  <div class="eyebrow">White Paper · Version 0.1 · Section V</div>
+  <h1>V. Spatial Architecture</h1>
+  <div class="subtitle">Extent, Survey, Ground, Interpretation, and Cadastre</div>
+  <div class="publication-meta">September 2026 · BitPangea Creator Period</div>
+
+  <div class="divider"></div>
+
+  <div class="section-copy">
+
+    <h2>Persistent Place Requires More Than Coordinates</h2>
+
+    <p>A digital World can display locations without making those locations permanent.</p>
+
+    <p>Coordinates can be generated.</p>
+
+    <p>Maps can be redrawn.</p>
+
+    <p>Objects can be moved.</p>
+
+    <p>Identifiers can be reassigned.</p>
+
+    <p>Interfaces can change what a user sees without preserving what a place fundamentally is.</p>
+
+    <p>BitPangea requires something stronger.</p>
+
+    <p>If a Parcel is to remain the same place through changing software, changing representations, changing ownership, changing development, and changing history, then its spatial identity cannot depend upon any one implementation.</p>
+
+    <p>Persistent place requires a durable spatial architecture beneath experience.</p>
+
+    <p>BitPangea therefore separates several responsibilities that are often collapsed into one system.</p>
+
+    <p>The constitutional World has a complete spatial scope.</p>
+
+    <p>A canonical Survey architecture preserves exact spatial reference.</p>
+
+    <p>Higher spatial Architecture interprets that reference into usable World-space structure.</p>
+
+    <p>The Parcel Cadastre then establishes which canonical Parcel occupies which fixed place.</p>
+
+    <p>The governing sequence is:</p>
+
+    <div class="sequence">Foundational Survey Fabric → Spatial Ground → General Spatial Interpretation → Parcel Cadastre</div>
+
+    <p>And the broader design principle is:</p>
+
+    <div class="principle">
+      <span class="principle-label">Spatial Design Principle</span>
+      <p><strong>Survey first. Cadastre later. Experience above both.</strong></p>
+    </div>
+
+    <p>This separation is central to BitPangea.</p>
+
+    <p>It allows the World to preserve spatial truth without requiring every future implementation to use the same software, rendering method, interface, or internal representation.</p>
+
+    <h2>The Extent — The Complete Spatial Scope</h2>
+
+    <p>Before spatial reference can be meaningful, BitPangea must possess a defined World to which that reference applies.</p>
+
+    <p>That constitutional role belongs to <strong>The Extent</strong>.</p>
+
+    <p>The Extent expresses the complete spatial scope of BitPangea.</p>
+
+    <p>It establishes that the World is finite and complete without requiring that its entire internal geography already be known, developed, or represented.</p>
+
+    <p>The Extent is not a coordinate system.</p>
+
+    <p>It is not a Parcel grid.</p>
+
+    <p>It is not the Survey Domain.</p>
+
+    <p>It is not a visible border.</p>
+
+    <p>It is not a surrounding wall, coastline, perimeter, or Exterior.</p>
+
+    <p>It identifies a constitutional condition:</p>
+
+    <div class="principle">
+      <span class="principle-label">Constitutional Condition</span>
+      <p><strong>BitPangea possesses one complete, non-expanding spatial scope.</strong></p>
+    </div>
+
+    <p>That scope constrains everything built within the World.</p>
+
+    <p>Later Architecture must fit inside it.</p>
+
+    <p>The Extent does not tell later systems how to represent that scope mathematically.</p>
+
+    <p>That responsibility belongs elsewhere.</p>
+
+    <h2>The Foundational Survey Fabric — Canonical Spatial Reference</h2>
+
+    <p>The deepest current spatial Architecture domain is the <strong>Foundational Survey Fabric</strong>.</p>
+
+    <p>Its purpose is not to create Parcels.</p>
+
+    <p>Its purpose is to preserve canonical spatial reference.</p>
+
+    <p>The Foundational Survey Fabric is intended to be:</p>
+
+    <div class="principle">
+      <span class="principle-label">Survey Fabric Character</span>
+      <p><strong>minimal, exact, finite, planar, and semantically neutral.</strong></p>
+    </div>
+
+    <p>Its role is to answer the most primitive spatial question:</p>
+
+    <div class="principle">
+      <span class="principle-label">Primitive Spatial Question</span>
+      <p><strong>Where?</strong></p>
+    </div>
+
+    <p>It provides the permanent reference architecture against which higher spatial systems can establish location, measurement, orientation, refinement, and deterministic geometric relationships.</p>
+
+    <p>This distinction is critical because the Survey Fabric is not itself the World.</p>
+
+    <div class="principle">
+      <span class="principle-label">Architecture Boundary</span>
+      <p><strong>The Survey Domain is not BitPangea territory.</strong></p>
+    </div>
+
+    <p>It is a finite mathematical reference domain.</p>
+
+    <p>Likewise:</p>
+
+    <div class="principle">
+      <span class="principle-label">Survey / Parcel Distinction</span>
+      <p><strong>Survey units are not Parcels.</strong></p>
+    </div>
+
+    <p>A mathematical unit within the Survey system does not become a canonical Parcel merely because it can be referenced.</p>
+
+    <p>And:</p>
+
+    <div class="principle">
+      <span class="principle-label">Reference / Territory Distinction</span>
+      <p><strong>Reference capacity is not territory.</strong></p>
+    </div>
+
+    <p>The ability to mathematically identify a location does not, by itself, establish that the location belongs to the World or that it constitutes a Parcel.</p>
+
+    <p>The Survey Fabric preserves reference.</p>
+
+    <p>Higher Architecture determines what that reference means within BitPangea.</p>
+
+    <h2>Representation Must Not Redefine Place</h2>
+
+    <p>A canonical spatial architecture must remain meaningful even when its representation changes.</p>
+
+    <p>That means BitPangea cannot allow a display format, database key, map projection, serialization method, rendering engine, or application-specific coordinate label to become the permanent definition of place merely because it was implemented first.</p>
+
+    <p>The governing principle is:</p>
+
+    <div class="principle">
+      <span class="principle-label">Governing Principle</span>
+      <p><strong>Representation may change. Place must not.</strong></p>
+    </div>
+
+    <p>Two conforming implementations may represent the same canonical location differently.</p>
+
+    <p>One may display a human-readable coordinate.</p>
+
+    <p>Another may use a machine encoding.</p>
+
+    <p>Another may render a visual map without exposing the underlying reference at all.</p>
+
+    <p>Those differences are acceptable if each implementation resolves to the same canonical spatial meaning.</p>
+
+    <p>This is why the Foundational Survey Fabric is designed around durable meaning rather than one permanent technical expression.</p>
+
+    <p>The deeper architecture should preserve spatial truth.</p>
+
+    <p>Implementations should remain replaceable.</p>
+
+    <h2>Spatial Ground</h2>
+
+    <p>Above the Foundational Survey Fabric sits <strong>Spatial Ground</strong>.</p>
+
+    <p>Spatial Ground is a recognized Architecture domain, but its detailed internal design remains under development.</p>
+
+    <p>Its role exists because canonical reference alone is not yet the same thing as World-space ground.</p>
+
+    <p>The Survey Fabric can establish exact location and spatial relationships while remaining intentionally neutral about what those locations mean within the World.</p>
+
+    <p>Spatial Ground is therefore expected to mediate between pure canonical reference and higher spatial interpretation.</p>
+
+    <p>Its precise responsibilities have not yet been fully adopted, and the White Paper should not pretend otherwise.</p>
+
+    <p>What is established is the dependency:</p>
+
+    <div class="sequence">Foundational Survey Fabric → Spatial Ground</div>
+
+    <p>Spatial Ground must respect the canonical Survey reference beneath it.</p>
+
+    <p>It may add World-relevant spatial structure above that reference.</p>
+
+    <p>But it must not redefine the Survey system in order to do so.</p>
+
+    <p>This reflects a broader Architecture rule:</p>
+
+    <div class="principle">
+      <span class="principle-label">Architecture Boundary Rule</span>
+      <p><strong>A lower Architecture domain may constrain what higher domains must not violate without prescribing how those higher domains must internally work.</strong></p>
+    </div>
+
+    <p>In short:</p>
+
+    <div class="principle">
+      <span class="principle-label">Boundary Discipline</span>
+      <p><strong>Protect the boundary. Do not design the layer above from the layer below.</strong></p>
+    </div>
+
+    <h2>General Spatial Interpretation</h2>
+
+    <p>The next demonstrated dependency is <strong>General Spatial Interpretation</strong>.</p>
+
+    <p>This domain exists because a persistent World requires more than raw reference and more than foundational ground.</p>
+
+    <p>Higher systems must eventually interpret space in ways that support:</p>
+
+    <ul>
+      <li>territory,</li>
+      <li>geography,</li>
+      <li>Parcel placement,</li>
+      <li>regional organization,</li>
+      <li>non-Parcel portions,</li>
+      <li>infrastructure,</li>
+      <li>and later experience.</li>
+    </ul>
+
+    <p>General Spatial Interpretation is intended to provide that intermediate layer without allowing interpretation to rewrite the canonical spatial truth beneath it.</p>
+
+    <p>Again, its internal architecture remains under development.</p>
+
+    <p>What is already clear is the responsibility boundary.</p>
+
+    <p>The Survey Fabric preserves canonical reference.</p>
+
+    <p>Spatial Ground establishes the next World-space layer.</p>
+
+    <p>General Spatial Interpretation derives usable higher spatial meaning.</p>
+
+    <p>The Parcel Cadastre then establishes canonical Parcel identity and territory.</p>
+
+    <p>That is why the sequence matters.</p>
+
+    <h2>The Parcel Cadastre — Which Parcel Is This?</h2>
+
+    <p>The <strong>Parcel Cadastre</strong> is the Architecture domain responsible for canonical Parcel truth.</p>
+
+    <p>It answers a different question from the Survey Fabric.</p>
+
+    <p>The Survey asks:</p>
+
+    <div class="principle">
+      <span class="principle-label">Survey Question</span>
+      <p><strong>Where is this?</strong></p>
+    </div>
+
+    <p>The Cadastre asks:</p>
+
+    <div class="principle">
+      <span class="principle-label">Cadastral Question</span>
+      <p><strong>Which Parcel is this, where is it fixed, and what territory belongs to it?</strong></p>
+    </div>
+
+    <p>The distinction can be summarized as:</p>
+
+    <div class="principle">
+      <span class="principle-label">Survey / Cadastre Distinction</span>
+      <p><strong>Survey establishes where. Cadastre establishes which Parcel.</strong></p>
+    </div>
+
+    <p>The Parcel Cadastre must ultimately preserve the permanent identities, fixed positions, and authoritative canonical territorial definitions of exactly 21,000,000 Parcels.</p>
+
+    <p>That includes maintaining the distinction between:</p>
+
+    <ul>
+      <li>Parcel identity,</li>
+      <li>Parcel position,</li>
+      <li>Parcel territory,</li>
+      <li>Parcel boundaries,</li>
+      <li>and relationships among Parcels.</li>
+    </ul>
+
+    <p>A Parcel may be displayed differently over time.</p>
+
+    <p>Its ownership may change.</p>
+
+    <p>Its use may change.</p>
+
+    <p>Its structures may change.</p>
+
+    <p>Its surrounding Region may develop.</p>
+
+    <p>But the canonical Parcel should remain the same Parcel.</p>
+
+    <p>This is what makes cadastral truth different from visual representation.</p>
+
+    <h2>Deterministic Spatial Relationships</h2>
+
+    <p>Persistent place also requires deterministic relationships.</p>
+
+    <p>Those canonical Parcel truths must resolve consistently across conforming implementations.</p>
+
+    <p>Two implementations should not disagree about fundamental spatial facts simply because they use different software, internal data structures, rendering systems, or algorithms.</p>
+
+    <p>If two canonical Parcels share a Boundary, that relationship should not depend upon the client being used to view them.</p>
+
+    <p>Parcel Adjacency is established through shared Boundary and must resolve consistently across conforming implementations.</p>
+
+    <p>If a Parcel occupies a particular canonical position, another conforming implementation should resolve that same position.</p>
+
+    <p>If one geometry is equivalent to another representation of the same canonical territory, the architecture must be capable of recognizing that equivalence.</p>
+
+    <p>This does not require every implementation to use the same internal algorithms.</p>
+
+    <p>It requires them to preserve the same canonical meaning.</p>
+
+    <p>That distinction is essential for long-term interoperability.</p>
+
+    <div class="principle">
+      <span class="principle-label">Interoperability Principle</span>
+      <p><strong>One meaning. Many durable expressions.</strong></p>
+    </div>
+
+    <h2>Parcel Geometry</h2>
+
+    <p>The Parcel Cadastre cannot ultimately operate without exact Parcel geometry.</p>
+
+    <p>Exactly <strong>21,000,000 Parcels</strong> must be arranged within one finite World while preserving:</p>
+
+    <ul>
+      <li>unique Parcel identity,</li>
+      <li>fixed position,</li>
+      <li>indivisibility,</li>
+      <li>non-overlap,</li>
+      <li>deterministic boundaries,</li>
+      <li>Parcel Adjacency,</li>
+      <li>World-scale Parcel Contiguity,</li>
+      <li>compatibility with non-Parcel cartographic portions,</li>
+      <li>and compatibility with the larger World Form.</li>
+    </ul>
+
+    <p>BitPangea currently favors equal fundamental Parcel area as a Creator design direction.</p>
+
+    <p>It is also exploring a dominant rhombic morphology derived from a three-part hexagonal construction as the leading visible Parcel grammar.</p>
+
+    <p>That direction remains provisional.</p>
+
+    <p>The individual rhombic unit—not the enclosing hexagon—is the prospective Parcel form.</p>
+
+    <p>Local orientation may vary while preserving one dominant morphology.</p>
+
+    <p>But the visible Parcel grammar is not the Foundational Survey Fabric.</p>
+
+    <p>That distinction must remain clear:</p>
+
+    <div class="principle">
+      <span class="principle-label">Substrate / Experience Distinction</span>
+      <p><strong>Substrate ≠ Parcel experience.</strong></p>
+    </div>
+
+    <p>The deepest spatial reference may be mathematically simpler than the geography and Parcel forms ultimately shown to participants.</p>
+
+    <p>The geometry must fit the architecture.</p>
+
+    <p>The architecture should not be reverse-engineered merely to preserve an attractive tiling.</p>
+
+    <h2>Spatial Truth Before Experience</h2>
+
+    <p>BitPangea ultimately intends to present an expressive and increasingly detailed World.</p>
+
+    <p>Participants may encounter it first as a globe.</p>
+
+    <p>They may move closer into geography, Regions, infrastructure, and individual Parcels.</p>
+
+    <p>Interfaces may present location in intuitive rather than mathematical terms.</p>
+
+    <p>None of that changes the order beneath the experience.</p>
+
+    <p>The World should not become spatially true only when it is rendered.</p>
+
+    <p>Its canonical place must already exist.</p>
+
+    <p>That is the purpose of the spatial Architecture:</p>
+
+    <div class="principle">
+      <span class="principle-label">Spatial Responsibility</span>
+      <p><strong>The Extent constrains the World’s complete spatial scope.</strong></p>
+    </div>
+
+    <div class="principle">
+      <span class="principle-label">Canonical Reference</span>
+      <p><strong>The Foundational Survey Fabric preserves canonical spatial reference.</strong></p>
+    </div>
+
+    <div class="principle">
+      <span class="principle-label">World-Space Ground</span>
+      <p><strong>Spatial Ground builds the next World-space layer upon that reference.</strong></p>
+    </div>
+
+    <div class="principle">
+      <span class="principle-label">Spatial Interpretation</span>
+      <p><strong>General Spatial Interpretation derives higher spatial meaning.</strong></p>
+    </div>
+
+    <div class="principle">
+      <span class="principle-label">Parcel Truth</span>
+      <p><strong>The Parcel Cadastre establishes exactly which persistent Parcel occupies which place.</strong></p>
+    </div>
+
+    <p>Only then should experience decide how that place is shown.</p>
+
+    <p>The principle remains:</p>
+
+    <div class="principle">
+      <span class="principle-label">Spatial Design Principle</span>
+      <p><strong>Survey first. Cadastre later. Experience above both.</strong></p>
+    </div>
+
+    <p>Persistent digital place depends upon getting that order right.</p>
+
+  </div>
+
+  <div class="section-note">
+    Part of <strong>BitPangea — A World Before a Civilization</strong> · White Paper — Version 0.1 · September 2026. This section is part of the preserved Version 0.1 publication; the complete White Paper remains the canonical versioned document.
+  </div>
+
+  <nav class="section-nav" aria-label="White Paper section navigation">
+    <a href="/white-paper/sections/04-the-21000000-parcel-architecture/">← Previous: The 21,000,000 Parcel Architecture</a>
+    <a class="toc" href="/white-paper/#contents">Contents</a>
+    <a class="next" href="/white-paper/sections/06-world-form-and-the-verge/">Next: World Form and The Verge →</a>
+  </nav>
+</article>
+</main>
+
+<div id="bp-footer"></div>
+</body>
+</html>
