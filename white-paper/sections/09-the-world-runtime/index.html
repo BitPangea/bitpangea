@@ -1,1 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>IX. The World Runtime | BitPangea White Paper</title>
 
+<!-- Favicons -->
+<link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/favicon.svg" rel="shortcut icon"/>
+
+<!-- BitPangea Framework -->
+<link rel="stylesheet" href="/assets/css/bitpangea-framework.css"/>
+<script src="/assets/js/bitpangea-framework.js" defer></script>
+
+<meta content="Section IX of BitPangea — A World Before a Civilization, White Paper Version 0.1. The World Runtime defines how BitPangea processes authorized change, preserves coherent World State, validates operations, supports recovery, and maintains one operational World." name="description"/>
+<meta content="#00c8d7" name="theme-color"/>
+<meta content="index,follow" name="robots"/>
+<link href="https://bitpangea.com/white-paper/sections/09-the-world-runtime/" rel="canonical"/>
+
+<!-- Open Graph -->
+<meta content="IX. The World Runtime | BitPangea White Paper" property="og:title"/>
+<meta content="The World Runtime exists to permit change without surrendering continuity by validating, executing, preserving, and recovering coherent World State." property="og:description"/>
+<meta content="article" property="og:type"/>
+<meta content="https://bitpangea.com/white-paper/sections/09-the-world-runtime/" property="og:url"/>
+<meta content="https://bitpangea.com/images/bitpangea-og.jpg" property="og:image"/>
+<meta content="BitPangea" property="og:site_name"/>
+<meta content="en_US" property="og:locale"/>
+
+<!-- Twitter/X -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="IX. The World Runtime | BitPangea White Paper" name="twitter:title"/>
+<meta content="The World Runtime exists to permit change without surrendering continuity by validating, executing, preserving, and recovering coherent World State." name="twitter:description"/>
+<meta content="https://bitpangea.com/images/bitpangea-og.jpg" name="twitter:image"/>
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"ScholarlyArticle",
+  "headline":"IX. The World Runtime",
+  "name":"BitPangea — A World Before a Civilization — White Paper Version 0.1 — IX. The World Runtime",
+  "datePublished":"2026-09",
+  "inLanguage":"en-US",
+  "isPartOf":{
+    "@type":"CreativeWork",
+    "name":"BitPangea — A World Before a Civilization — White Paper Version 0.1",
+    "url":"https://bitpangea.com/white-paper/"
+  },
+  "publisher":{
+    "@type":"Organization",
+    "name":"BitPangea",
+    "url":"https://bitpangea.com/"
+  },
+  "url":"https://bitpangea.com/white-paper/sections/09-the-world-runtime/"
+}
+</script>
+
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  background: #02050a;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  position: relative;
+  line-height: 1.75;
+  overflow-x: hidden;
+  background: #02050a;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(2, 5, 10, 0.84), rgba(2, 5, 10, 0.96)),
+    url("/images/bitpangea.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -2;
+  pointer-events: none;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 74% 12%, rgba(0, 200, 215, 0.10), transparent 34%),
+    radial-gradient(circle at 18% 18%, rgba(212, 169, 56, 0.09), transparent 32%),
+    linear-gradient(90deg, rgba(0,0,0,.62), rgba(0,0,0,.30), rgba(0,0,0,.68));
+  z-index: -1;
+  pointer-events: none;
+}
+
+.page { width: 100%; padding: 150px 28px 90px; }
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 54px 58px 64px;
+  background: rgba(0, 0, 0, 0.52);
+  border: 1px solid rgba(212, 169, 56, 0.16);
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(4px);
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 26px;
+  font-size: 12px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: #aeb9c4;
+}
+
+.breadcrumbs a,
+.breadcrumbs a:visited {
+  color: #00c8d7;
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover { color: #d4a938; }
+
+.eyebrow {
+  color: #00c8d7;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 18px;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: clamp(42px, 6vw, 70px);
+  line-height: 1.06;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+  text-shadow: 0 0 22px rgba(0, 0, 0, 0.9);
+}
+
+.subtitle {
+  color: #d4a938;
+  font-size: 18px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.publication-meta {
+  color: #aeb9c4;
+  font-size: 13px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+
+.divider {
+  width: 64px;
+  height: 2px;
+  background: #d4a938;
+  margin: 32px 0 40px;
+  box-shadow: 0 0 14px rgba(212, 169, 56, 0.65);
+}
+
+
+.section-copy h2 {
+  color: #d4a938;
+  font-size: clamp(26px, 3.2vw, 34px);
+  line-height: 1.2;
+  letter-spacing: 1.2px;
+  margin: 44px 0 20px;
+  text-shadow: 0 0 14px rgba(0, 0, 0, 0.88);
+}
+
+.section-copy h2:first-child {
+  margin-top: 0;
+}
+
+.section-copy h3 {
+  color: #ffffff;
+  font-size: 21px;
+  line-height: 1.25;
+  letter-spacing: 0.4px;
+  margin: 28px 0 10px;
+  text-shadow: 0 0 12px rgba(0, 0, 0, 0.88);
+}
+
+
+.section-copy p {
+  margin-bottom: 22px;
+  color: #ffffff;
+  font-size: 17px;
+  text-shadow: 0 0 9px rgba(0, 0, 0, 0.9);
+}
+
+.section-copy strong { color: #ffffff; }
+.section-copy ul {
+  margin: 8px 0 26px 28px;
+  padding-left: 18px;
+}
+.section-copy li {
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-size: 17px;
+  text-shadow: 0 0 9px rgba(0, 0, 0, 0.9);
+}
+
+
+.principle {
+  margin: 34px 0;
+  padding: 24px 28px;
+  border-left: 3px solid #d4a938;
+  background: rgba(0, 0, 0, 0.46);
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.35);
+}
+
+.principle-label {
+  display: block;
+  color: #00c8d7;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.principle p {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.sequence {
+  margin: 30px 0;
+  padding: 20px 24px;
+  text-align: center;
+  color: #d4a938;
+  border: 1px solid rgba(212, 169, 56, 0.28);
+  background: rgba(0, 0, 0, 0.34);
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: .2px;
+}
+
+.section-note {
+  margin-top: 46px;
+  padding: 18px 22px;
+  border: 1px solid rgba(212, 169, 56, 0.30);
+  background: rgba(0,0,0,.34);
+  color: #d4a938;
+  font-size: 12px;
+  line-height: 1.65;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+.section-nav {
+  margin-top: 54px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(255,255,255,.12);
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 18px;
+  align-items: center;
+}
+
+.section-nav a,
+.section-nav a:visited {
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid rgba(212,169,56,.30);
+  background: rgba(0,0,0,.28);
+  padding: 14px 16px;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.section-nav a:hover {
+  color: #d4a938;
+  border-color: rgba(212,169,56,.65);
+}
+
+.section-nav .next { text-align: right; }
+.section-nav .toc { text-align: center; color: #00c8d7; }
+
+@media (max-width: 1120px) {
+  .page { padding-top: 190px; }
+}
+
+@media (max-width: 768px) {
+  .page { padding: 205px 16px 60px; }
+  .container { padding: 36px 24px 46px; }
+  h1 { letter-spacing: 2px; }
+  .subtitle { font-size: 15px; }
+  
+.section-copy h2 {
+  color: #d4a938;
+  font-size: clamp(26px, 3.2vw, 34px);
+  line-height: 1.2;
+  letter-spacing: 1.2px;
+  margin: 44px 0 20px;
+  text-shadow: 0 0 14px rgba(0, 0, 0, 0.88);
+}
+
+.section-copy h2:first-child {
+  margin-top: 0;
+}
+
+.section-copy h3 {
+  color: #ffffff;
+  font-size: 21px;
+  line-height: 1.25;
+  letter-spacing: 0.4px;
+  margin: 28px 0 10px;
+  text-shadow: 0 0 12px rgba(0, 0, 0, 0.88);
+}
+
+
+.section-copy p { font-size: 16px; }
+  .principle p { font-size: 18px; }
+  .section-nav { grid-template-columns: 1fr; }
+  .section-nav .next,
+  .section-nav .toc { text-align: left; }
+}
+</style>
+</head>
+
+<body data-bp-page="white-paper">
+<div id="bp-header"></div>
+
+<main class="page">
+<article class="container">
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="/">BitPangea</a>
+    <span>›</span>
+    <a href="/white-paper/">White Paper</a>
+    <span>›</span>
+    <span>Section IX</span>
+  </nav>
+
+  <div class="eyebrow">White Paper · Version 0.1 · Section IX</div>
+  <h1>The World Runtime</h1>
+  <div class="subtitle">A World Before a Civilization</div>
+  <div class="publication-meta">September 2026 · BitPangea Creator Period</div>
+
+  <div class="divider"></div>
+
+  <div class="section-copy">
+
+    <h2>Change Without Losing the World</h2>
+
+    <p>A persistent digital World must be capable of change.</p>
+
+    <p>Structures may be created.</p>
+
+    <p>Permissions may be updated.</p>
+
+    <p>Services may operate.</p>
+
+    <p>Content may be added.</p>
+
+    <p>Institutions may act.</p>
+
+    <p>Builders may modify what they are authorized to control.</p>
+
+    <p>Participants may interact with systems that alter the current condition of the World.</p>
+
+    <p>But change creates a difficult architectural problem:</p>
+
+    <div class="principle">
+      <span class="principle-label">Architectural Question</span>
+      <p><strong>How can BitPangea change without losing continuity?</strong></p>
+    </div>
+
+    <p>If every operation can redefine canonical truth, the World becomes unstable.</p>
+
+    <p>If no operation can change anything, the World cannot become inhabited, useful, or historical.</p>
+
+    <p>BitPangea therefore requires a governed operational layer capable of processing legitimate change while preserving continuity.</p>
+
+    <p>That responsibility belongs to <strong>World Runtime</strong>.</p>
+
+    <p>The central principle is:</p>
+
+    <div class="principle">
+      <span class="principle-label">Central Runtime Principle</span>
+      <p><strong>The World Runtime exists to permit change without surrendering continuity.</strong></p>
+    </div>
+
+    <h2>Spatial Truth and World State</h2>
+
+    <p>The first distinction is between <strong>spatial truth</strong> and <strong>World State</strong>.</p>
+
+    <p>Spatial truth answers questions such as:</p>
+
+    <ul>
+      <li>What World exists?</li>
+      <li>Where is a canonical location?</li>
+      <li>Which Parcel occupies a particular place?</li>
+      <li>What territory canonically belongs to that Parcel?</li>
+      <li>What spatial relationships remain fixed?</li>
+    </ul>
+
+    <p>World State answers a different question:</p>
+
+    <div class="principle">
+      <span class="principle-label">World State Question</span>
+      <p><strong>What is true within the World now?</strong></p>
+    </div>
+
+    <p>A Parcel may contain a structure today that did not exist yesterday.</p>
+
+    <p>A service may be operating now that was previously inactive.</p>
+
+    <p>An access rule may change.</p>
+
+    <p>A Builder may publish something.</p>
+
+    <p>An institution may receive authority.</p>
+
+    <p>A World object may move, appear, disappear, or change condition.</p>
+
+    <p>Those changes do not necessarily alter the spatial foundation itself.</p>
+
+    <p>This distinction allows BitPangea to remain stable at its deepest levels while becoming dynamic above them.</p>
+
+    <div class="principle">
+      <span class="principle-label">Spatial Truth / World State Distinction</span>
+      <p><strong>Spatial truth tells us what and where the World is.</strong></p>
+      <p><strong>World State tells us what is true within it now.</strong></p>
+    </div>
+
+    <h2>Persistent World State</h2>
+
+    <p>World State must persist beyond the moment in which an interaction occurs.</p>
+
+    <p>If a legitimate operation changes the World, that change should not vanish merely because the user closes an application or the service that processed the request restarts.</p>
+
+    <p>This means BitPangea requires persistent operational state.</p>
+
+    <p>The exact implementation remains open.</p>
+
+    <p>What matters architecturally is the responsibility:</p>
+
+    <div class="principle">
+      <span class="principle-label">Persistence Requirement</span>
+      <p><strong>What legitimately becomes true of the World must be capable of remaining true after the interaction that caused it has ended.</strong></p>
+    </div>
+
+    <p>Persistent state allows the World to accumulate consequence.</p>
+
+    <p>Without it, activity becomes temporary display rather than durable World history.</p>
+
+    <h2>Authorized Operations</h2>
+
+    <p>World Runtime should not decide authority merely because it is capable of executing an operation.</p>
+
+    <p>Authorization belongs to the appropriate authority systems, including Identity / Rights / Control.</p>
+
+    <p>Runtime receives a request and must determine whether that request is permitted under the relevant rules and current conditions.</p>
+
+    <p>The responsibility sequence is:</p>
+
+    <div class="sequence">request ≠ authorization ≠ execution ≠ result</div>
+
+    <p>These stages must remain distinct.</p>
+
+    <p>A request is simply an attempt to cause change.</p>
+
+    <p>Authorization determines whether that change is permitted.</p>
+
+    <p>Execution performs the permitted operation.</p>
+
+    <p>The result becomes part of World State if the operation succeeds.</p>
+
+    <p>This leads to another concise relationship:</p>
+
+    <div class="principle">
+      <span class="principle-label">Responsibility Relationship</span>
+      <p><strong>Authority permits. Runtime changes. Provenance remembers.</strong></p>
+    </div>
+
+    <p>Keeping these responsibilities separate prevents Runtime from quietly becoming the source of rights, identity, or Parcel truth.</p>
+
+    <h2>Validation Before Change</h2>
+
+    <p>A permitted operation must still be valid.</p>
+
+    <p>BitPangea therefore requires validation before consequential World State changes are accepted.</p>
+
+    <p>Validation may eventually consider:</p>
+
+    <ul>
+      <li>whether the actor is authorized,</li>
+      <li>whether the target exists,</li>
+      <li>whether the requested change is well formed,</li>
+      <li>whether the operation violates canonical spatial truth,</li>
+      <li>whether required dependencies are satisfied,</li>
+      <li>whether the current state permits the requested transition,</li>
+      <li>whether conflicting changes exist,</li>
+      <li>or whether the operation would create an invalid World condition.</li>
+    </ul>
+
+    <p>The exact validation rules will depend upon the operation.</p>
+
+    <p>The architectural principle is broader:</p>
+
+    <div class="principle">
+      <span class="principle-label">Validation Principle</span>
+      <p><strong>A technically executable action is not automatically a legitimate World change.</strong></p>
+    </div>
+
+    <p>Runtime must preserve the integrity of the World, not merely process commands.</p>
+
+    <h2>Execution</h2>
+
+    <p>Once an operation is both authorized and valid, Runtime executes the change.</p>
+
+    <p>Execution should be deterministic wherever canonical outcome requires it.</p>
+
+    <p>Equivalent legitimate operations should not produce contradictory canonical results merely because different conforming systems process them.</p>
+
+    <p>That does not mean every implementation must use identical software.</p>
+
+    <p>It means the architecture must define enough shared meaning that one World does not become several incompatible Worlds through implementation variance.</p>
+
+    <p>Execution therefore sits at the boundary between architectural meaning and technical realization.</p>
+
+    <p>Implementation may vary.</p>
+
+    <p>Canonical outcome must remain coherent where the architecture requires one answer.</p>
+
+    <h2>Protocols and Services</h2>
+
+    <p>World Runtime will require mechanisms through which systems communicate and operations are requested.</p>
+
+    <p>These may include <strong>protocols</strong> and <strong>services</strong>.</p>
+
+    <p>A protocol defines how systems interact.</p>
+
+    <p>A service provides some usable capability.</p>
+
+    <p>Neither should automatically become a source of canonical authority.</p>
+
+    <p>A protocol may carry an authorized instruction without creating the right to issue that instruction.</p>
+
+    <p>A service may perform a useful operation without becoming the owner of the World truth it processes.</p>
+
+    <p>This distinction is important because service architecture will almost certainly change over time.</p>
+
+    <p>BitPangea should be able to replace a service without replacing the World.</p>
+
+    <p>Likewise, a protocol should remain a means of interaction rather than a hidden constitutional layer.</p>
+
+    <h2>Integrity</h2>
+
+    <p>A living World requires more than successful execution.</p>
+
+    <p>It requires integrity.</p>
+
+    <p>Integrity means that legitimate changes leave the World in a coherent condition.</p>
+
+    <p>That may eventually require safeguards against:</p>
+
+    <ul>
+      <li>contradictory updates,</li>
+      <li>partial operations,</li>
+      <li>invalid state transitions,</li>
+      <li>duplicated effects,</li>
+      <li>unauthorized mutation,</li>
+      <li>corruption,</li>
+      <li>or divergence among conforming systems.</li>
+    </ul>
+
+    <p>The precise mechanisms remain unresolved.</p>
+
+    <p>But the architectural responsibility is established:</p>
+
+    <div class="principle">
+      <span class="principle-label">Integrity Requirement</span>
+      <p><strong>Consequential World change must preserve coherent World State.</strong></p>
+    </div>
+
+    <p>Where an operation has multiple dependent effects, the architecture must preserve a coherent outcome rather than leave the World in an ambiguous intermediate state.</p>
+
+    <p>The implementation can evolve.</p>
+
+    <p>The requirement for coherent outcomes should not.</p>
+
+    <h2>Recovery</h2>
+
+    <p>Persistent systems can fail.</p>
+
+    <p>Software crashes.</p>
+
+    <p>Networks partition.</p>
+
+    <p>Hardware fails.</p>
+
+    <p>Services become unavailable.</p>
+
+    <p>Implementations contain bugs.</p>
+
+    <p>BitPangea therefore cannot define continuity as the absence of failure.</p>
+
+    <p>It must define continuity as the ability to preserve or restore coherent World State when failure occurs.</p>
+
+    <p>Recovery architecture must eventually answer questions such as:</p>
+
+    <ul>
+      <li>What state is authoritative after interruption?</li>
+      <li>How is incomplete work identified?</li>
+      <li>How are conflicting records resolved?</li>
+      <li>How can corrupted or failed components be replaced?</li>
+      <li>How can the World resume without silently rewriting legitimate history?</li>
+    </ul>
+
+    <p>The exact mechanisms remain open.</p>
+
+    <p>The principle is not:</p>
+
+    <div class="principle">
+      <span class="principle-label">Not the Requirement</span>
+      <p><strong>The World must never fail.</strong></p>
+    </div>
+
+    <p>It is:</p>
+
+    <div class="principle">
+      <span class="principle-label">Recovery Principle</span>
+      <p><strong>The World must be capable of recovering without losing its identity.</strong></p>
+    </div>
+
+    <h2>Runtime and Provenance</h2>
+
+    <p>Runtime changes the present.</p>
+
+    <p>Persistence / Provenance preserves the path to the present.</p>
+
+    <p>Those responsibilities are connected but should remain distinct.</p>
+
+    <p>Runtime should know enough to execute legitimate operations.</p>
+
+    <p>Provenance should preserve enough evidence to understand how a resulting state came to exist.</p>
+
+    <p>This makes later verification, accountability, historical preservation, correction, and institutional memory possible.</p>
+
+    <p>The distinction is:</p>
+
+    <div class="principle">
+      <span class="principle-label">Runtime / Provenance Distinction</span>
+      <p><strong>Runtime changes the present. Provenance preserves the path to the present.</strong></p>
+    </div>
+
+    <p>A mature BitPangea should therefore be able to answer not only:</p>
+
+    <div class="principle">
+      <span class="principle-label">Present-State Question</span>
+      <p><strong>What is true now?</strong></p>
+    </div>
+
+    <p>but, where appropriate:</p>
+
+    <div class="principle">
+      <span class="principle-label">Provenance Question</span>
+      <p><strong>How did it become true?</strong></p>
+    </div>
+
+    <h2>One Operational World</h2>
+
+    <p>BitPangea is intended to support one canonical operational World, even if multiple conforming implementations eventually participate in operating or experiencing it.</p>
+
+    <p>That requires Runtime semantics strong enough to prevent technical diversity from becoming contradictory World truth.</p>
+
+    <p>Different implementations may use:</p>
+
+    <ul>
+      <li>different programming languages,</li>
+      <li>different internal databases,</li>
+      <li>different service architectures,</li>
+      <li>different optimization strategies,</li>
+      <li>or different interface layers.</li>
+    </ul>
+
+    <p>But where an operation has one canonical meaning, conforming implementations must preserve that meaning.</p>
+
+    <p>The principle remains:</p>
+
+    <div class="principle">
+      <span class="principle-label">Operational Unity</span>
+      <p><strong>One operational World. Many conforming implementations.</strong></p>
+    </div>
+
+    <p>This is not a commitment to one technical architecture.</p>
+
+    <p>It is a commitment to continuity of meaning.</p>
+
+    <h2>The Purpose of Runtime</h2>
+
+    <p>World Runtime is not the World itself.</p>
+
+    <p>It is not the source of Parcel identity.</p>
+
+    <p>It is not the source of actor rights.</p>
+
+    <p>It is not the permanent memory of every event.</p>
+
+    <p>It is the governed operational architecture through which legitimate change becomes current World State.</p>
+
+    <p>Its role can be summarized simply:</p>
+
+    <div class="principle">
+      <span class="principle-label">Runtime Responsibility</span>
+      <p><strong>Spatial truth establishes the persistent World.</strong></p>
+      <p><strong>Authority determines what change is permitted.</strong></p>
+      <p><strong>Runtime executes legitimate change.</strong></p>
+      <p><strong>Persistence / Provenance preserves continuity and evidence.</strong></p>
+    </div>
+
+    <p>The World Runtime exists so BitPangea can become dynamic without becoming arbitrary.</p>
+
+    <div class="principle">
+      <span class="principle-label">Central Runtime Principle</span>
+      <p><strong>The World Runtime exists to permit change without surrendering continuity.</strong></p>
+    </div>
+
+  </div>
+
+  <div class="section-note">
+    Part of <strong>BitPangea — A World Before a Civilization</strong> · White Paper — Version 0.1 · September 2026. This section is part of the preserved Version 0.1 publication; the complete White Paper remains the canonical versioned document.
+  </div>
+
+  <nav class="section-nav" aria-label="White Paper section navigation">
+    <a href="/white-paper/sections/08-identity-rights-and-control/">← Previous: Identity, Rights, and Control</a>
+    <a class="toc" href="/white-paper/#contents">Contents</a>
+    <a class="next" href="/white-paper/sections/10-builders-and-civilization/">Next: Builders and Civilization →</a>
+  </nav>
+</article>
+</main>
+
+<div id="bp-footer"></div>
+</body>
+</html>
