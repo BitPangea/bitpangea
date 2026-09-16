@@ -1,1 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>I. Abstract | BitPangea White Paper</title>
 
+<!-- Favicons -->
+<link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/favicon.svg" rel="shortcut icon"/>
+
+<!-- BitPangea Framework -->
+<link rel="stylesheet" href="/assets/css/bitpangea-framework.css"/>
+<script src="/assets/js/bitpangea-framework.js" defer></script>
+
+<meta content="Abstract of BitPangea — A World Before a Civilization, White Paper Version 0.1. One finite digital World, exactly 21,000,000 canonical Parcels, persistent spatial architecture, governed change, Builders, and emergent civilization." name="description"/>
+<meta content="#00c8d7" name="theme-color"/>
+<meta content="index,follow" name="robots"/>
+<link href="https://bitpangea.com/white-paper/sections/01-abstract/" rel="canonical"/>
+
+<!-- Open Graph -->
+<meta content="I. Abstract | BitPangea White Paper" property="og:title"/>
+<meta content="BitPangea begins with one finite digital World, exactly 21,000,000 canonical Parcels, and the premise that the World must exist before civilization can emerge." property="og:description"/>
+<meta content="article" property="og:type"/>
+<meta content="https://bitpangea.com/white-paper/sections/01-abstract/" property="og:url"/>
+<meta content="https://bitpangea.com/images/bitpangea-og.jpg" property="og:image"/>
+<meta content="BitPangea" property="og:site_name"/>
+<meta content="en_US" property="og:locale"/>
+
+<!-- Twitter/X -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="I. Abstract | BitPangea White Paper" name="twitter:title"/>
+<meta content="BitPangea begins with one finite digital World, exactly 21,000,000 canonical Parcels, and the premise that the World must exist before civilization can emerge." name="twitter:description"/>
+<meta content="https://bitpangea.com/images/bitpangea-og.jpg" name="twitter:image"/>
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"ScholarlyArticle",
+  "headline":"I. Abstract",
+  "name":"BitPangea — A World Before a Civilization — White Paper Version 0.1 — I. Abstract",
+  "datePublished":"2026-09",
+  "inLanguage":"en-US",
+  "isPartOf":{
+    "@type":"CreativeWork",
+    "name":"BitPangea — A World Before a Civilization — White Paper Version 0.1",
+    "url":"https://bitpangea.com/white-paper/"
+  },
+  "publisher":{
+    "@type":"Organization",
+    "name":"BitPangea",
+    "url":"https://bitpangea.com/"
+  },
+  "url":"https://bitpangea.com/white-paper/sections/01-abstract/"
+}
+</script>
+
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  background: #02050a;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  position: relative;
+  line-height: 1.75;
+  overflow-x: hidden;
+  background: #02050a;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(2, 5, 10, 0.84), rgba(2, 5, 10, 0.96)),
+    url("/images/bitpangea.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -2;
+  pointer-events: none;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 74% 12%, rgba(0, 200, 215, 0.10), transparent 34%),
+    radial-gradient(circle at 18% 18%, rgba(212, 169, 56, 0.09), transparent 32%),
+    linear-gradient(90deg, rgba(0,0,0,.62), rgba(0,0,0,.30), rgba(0,0,0,.68));
+  z-index: -1;
+  pointer-events: none;
+}
+
+.page { width: 100%; padding: 150px 28px 90px; }
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 54px 58px 64px;
+  background: rgba(0, 0, 0, 0.52);
+  border: 1px solid rgba(212, 169, 56, 0.16);
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(4px);
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 26px;
+  font-size: 12px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: #aeb9c4;
+}
+
+.breadcrumbs a,
+.breadcrumbs a:visited {
+  color: #00c8d7;
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover { color: #d4a938; }
+
+.eyebrow {
+  color: #00c8d7;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 18px;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: clamp(42px, 6vw, 70px);
+  line-height: 1.06;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+  text-shadow: 0 0 22px rgba(0, 0, 0, 0.9);
+}
+
+.subtitle {
+  color: #d4a938;
+  font-size: 18px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.publication-meta {
+  color: #aeb9c4;
+  font-size: 13px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+
+.divider {
+  width: 64px;
+  height: 2px;
+  background: #d4a938;
+  margin: 32px 0 40px;
+  box-shadow: 0 0 14px rgba(212, 169, 56, 0.65);
+}
+
+.section-copy p {
+  margin-bottom: 22px;
+  color: #ffffff;
+  font-size: 17px;
+  text-shadow: 0 0 9px rgba(0, 0, 0, 0.9);
+}
+
+.section-copy strong { color: #ffffff; }
+
+.principle {
+  margin: 34px 0;
+  padding: 24px 28px;
+  border-left: 3px solid #d4a938;
+  background: rgba(0, 0, 0, 0.46);
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.35);
+}
+
+.principle-label {
+  display: block;
+  color: #00c8d7;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.principle p {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.sequence {
+  margin: 30px 0;
+  padding: 20px 24px;
+  text-align: center;
+  color: #d4a938;
+  border: 1px solid rgba(212, 169, 56, 0.28);
+  background: rgba(0, 0, 0, 0.34);
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: .2px;
+}
+
+.section-note {
+  margin-top: 46px;
+  padding: 18px 22px;
+  border: 1px solid rgba(212, 169, 56, 0.30);
+  background: rgba(0,0,0,.34);
+  color: #d4a938;
+  font-size: 12px;
+  line-height: 1.65;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+.section-nav {
+  margin-top: 54px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(255,255,255,.12);
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 18px;
+  align-items: center;
+}
+
+.section-nav a,
+.section-nav a:visited {
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid rgba(212,169,56,.30);
+  background: rgba(0,0,0,.28);
+  padding: 14px 16px;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.section-nav a:hover {
+  color: #d4a938;
+  border-color: rgba(212,169,56,.65);
+}
+
+.section-nav .next { text-align: right; }
+.section-nav .toc { text-align: center; color: #00c8d7; }
+
+@media (max-width: 1120px) {
+  .page { padding-top: 190px; }
+}
+
+@media (max-width: 768px) {
+  .page { padding: 205px 16px 60px; }
+  .container { padding: 36px 24px 46px; }
+  h1 { letter-spacing: 2px; }
+  .subtitle { font-size: 15px; }
+  .section-copy p { font-size: 16px; }
+  .principle p { font-size: 18px; }
+  .section-nav { grid-template-columns: 1fr; }
+  .section-nav .next,
+  .section-nav .toc { text-align: left; }
+}
+</style>
+</head>
+
+<body data-bp-page="white-paper">
+<div id="bp-header"></div>
+
+<main class="page">
+<article class="container">
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="/">BitPangea</a>
+    <span>›</span>
+    <a href="/white-paper/">White Paper</a>
+    <span>›</span>
+    <span>Section I</span>
+  </nav>
+
+  <div class="eyebrow">White Paper · Version 0.1 · Section I</div>
+  <h1>I. Abstract</h1>
+  <div class="subtitle">A World Before a Civilization</div>
+  <div class="publication-meta">September 2026 · BitPangea Creator Period</div>
+
+  <div class="divider"></div>
+
+  <div class="section-copy">
+    <p>BitPangea is an attempt to establish one finite digital World before attempting to build the civilization that may eventually inhabit it.</p>
+
+    <p>Its foundational premise is simple:</p>
+
+    <div class="principle">
+      <span class="principle-label">Foundational Premise</span>
+      <p><strong>Before there can be a digital civilization, there must first be a World in which that civilization can exist.</strong></p>
+    </div>
+
+    <p>Rather than beginning with applications, markets, social systems, virtual assets, or predefined experiences, BitPangea begins with persistent place.</p>
+
+    <p>The World is conceived as one finite, complete, continuous cartographic whole containing exactly <strong>21,000,000 canonical Parcels</strong>. That fixed Parcel count is inspired by Bitcoin’s 21,000,000-unit monetary supply, but BitPangea applies scarcity to place rather than money. A Parcel is therefore understood first as a persistent place with canonical identity, fixed position, and enduring territorial meaning—not merely as an asset, token, or economic instrument.</p>
+
+    <p>Persistent digital place requires architecture deeper than any single application or software implementation. BitPangea therefore distinguishes the World’s complete spatial scope, canonical spatial reference, higher spatial interpretation, and Parcel identity through a developing spatial architecture. Its clearest demonstrated dependency is:</p>
+
+    <div class="sequence">Foundational Survey Fabric → Spatial Ground → General Spatial Interpretation → Parcel Cadastre</div>
+
+    <p>The purpose of this architecture is to allow location and Parcel identity to remain coherent even as interfaces, software, ownership, use, and representation change.</p>
+
+    <p>BitPangea must also be capable of change.</p>
+
+    <p>Spatial truth establishes what and where the World is. <strong>World State</strong> describes what is true within it now. Identity / Rights / Control establishes legitimate authority, while World Runtime is intended to evaluate and execute permitted change without allowing operational systems to redefine the deeper World beneath them.</p>
+
+    <p>The governing principle is:</p>
+
+    <div class="principle">
+      <span class="principle-label">Runtime Principle</span>
+      <p><strong>The World Runtime exists to permit change without surrendering continuity.</strong></p>
+    </div>
+
+    <p>BitPangea’s Architecture therefore separates enduring responsibilities for spatial truth, authority, persistence, interoperability, runtime, and experience while allowing implementation technology to evolve over time. The objective is not technological permanence. It is continuity of meaning.</p>
+
+    <p>Above that foundation, Builders may eventually create structures, services, institutions, infrastructure, experiences, communities, and economic activity within the World.</p>
+
+    <p>The central rule is:</p>
+
+    <div class="principle">
+      <span class="principle-label">Builder Principle</span>
+      <p><strong>Create within the World without redefining the World.</strong></p>
+    </div>
+
+    <p>Builders are intended to form the bridge between a deliberately designed World and a civilization that is not itself prewritten. Communities, economies, institutions, traditions, cultures, and historical significance should be capable of emerging from continued participation rather than being installed as features.</p>
+
+    <p>BitPangea therefore distinguishes finite spatial architecture from an open civilizational future.</p>
+
+    <p>Its deepest foundations are intended to be constrained and durable.</p>
+
+    <p>Its future civilization is intended to remain capable of surprise.</p>
+
+    <p>History follows from the same principle. BitPangea recognizes an inherited Digital Antiquity while also seeking to become capable of accumulating its own native history through persistence, memory, consequence, and time.</p>
+
+    <p>The World should not fabricate age.</p>
+
+    <p>It should become capable of becoming old.</p>
+
+    <p>BitPangea remains under active architectural development. Some truths are established strongly enough to constrain future work. Several Architecture domains are recognized but incomplete. Important design questions remain provisional, parked, or intentionally open.</p>
+
+    <p>That openness is deliberate.</p>
+
+    <div class="principle">
+      <span class="principle-label">Status Discipline</span>
+      <p><strong>Unresolved does not mean undefined.</strong></p>
+    </div>
+
+    <p>The project proceeds by dependency rather than artificial schedule, with permanence reserved for the truths that must endure and flexibility preserved wherever future Builders, institutions, technologies, and civilization should remain free to evolve.</p>
+
+    <p>The objective is not to predict the future.</p>
+
+    <p>It is to establish a World coherent enough for the future to occur within it.</p>
+
+    <div class="principle">
+      <span class="principle-label">White Paper Thesis</span>
+      <p><strong>A World before a civilization.</strong></p>
+    </div>
+  </div>
+
+  <div class="section-note">
+    Part of <strong>BitPangea — A World Before a Civilization</strong> · White Paper — Version 0.1 · September 2026. This section is part of the preserved Version 0.1 publication; the complete White Paper remains the canonical versioned document.
+  </div>
+
+  <nav class="section-nav" aria-label="White Paper section navigation">
+    <a href="/white-paper/">← White Paper</a>
+    <a class="toc" href="/white-paper/#contents">Contents</a>
+    <a class="next" href="/white-paper/sections/02-the-bitpangea-premise/">Next: The BitPangea Premise →</a>
+  </nav>
+</article>
+</main>
+
+<div id="bp-footer"></div>
+</body>
+</html>
