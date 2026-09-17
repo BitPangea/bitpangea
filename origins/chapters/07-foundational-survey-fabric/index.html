@@ -1,1 +1,1674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 
+<title>Foundational Survey Fabric | BitPangea: Origins</title>
+
+<link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/favicon.svg" rel="shortcut icon"/>
+
+<link rel="stylesheet" href="/assets/css/bitpangea-framework.css"/>
+<script src="/assets/js/bitpangea-framework.js" defer></script>
+
+<meta content="Chapter VII of BitPangea: Origins — Version 0.1. The Foundational Survey Fabric: BitPangea’s minimal, exact, finite, planar, semantically neutral canonical spatial reference architecture." name="description"/>
+<meta content="#00c8d7" name="theme-color"/>
+<meta content="index,follow" name="robots"/>
+<link href="https://bitpangea.com/origins/chapters/07-foundational-survey-fabric/" rel="canonical"/>
+
+<meta content="Foundational Survey Fabric | BitPangea: Origins — Version 0.1" property="og:title"/>
+<meta content="The canonical spatial reference architecture beneath BitPangea: Survey first, Cadastre later, Experience above both." property="og:description"/>
+<meta content="article" property="og:type"/>
+<meta content="https://bitpangea.com/origins/chapters/07-foundational-survey-fabric/" property="og:url"/>
+<meta content="https://bitpangea.com/origins/BitPangea_Origins_cover.png" property="og:image"/>
+<meta content="BitPangea" property="og:site_name"/>
+<meta content="en_US" property="og:locale"/>
+
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Foundational Survey Fabric | BitPangea: Origins — Version 0.1" name="twitter:title"/>
+<meta content="BitPangea’s minimal, exact, finite, planar, semantically neutral canonical spatial reference architecture beneath the World." name="twitter:description"/>
+<meta content="https://bitpangea.com/origins/BitPangea_Origins_cover.png" name="twitter:image"/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Chapter",
+  "name": "Foundational Survey Fabric",
+  "position": 7,
+  "url": "https://bitpangea.com/origins/chapters/07-foundational-survey-fabric/",
+  "isPartOf": {
+    "@type": "Book",
+    "name": "BitPangea: Origins",
+    "alternateName": "The Foundational Manuscript of a Finite Digital World",
+    "version": "0.1",
+    "url": "https://bitpangea.com/origins/"
+  },
+  "datePublished": "2026-09",
+  "image": "https://bitpangea.com/origins/BitPangea_Origins_cover.png"
+}
+</script>
+
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg: #02050a;
+  --gold: #d4a938;
+  --cyan: #00c8d7;
+  --white: #ffffff;
+  --muted: rgba(255,255,255,.70);
+  --panel: rgba(0,0,0,.44);
+  --panel-soft: rgba(0,0,0,.32);
+  --line: rgba(212,169,56,.18);
+}
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  background: var(--bg);
+  color: var(--white);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  position: relative;
+  line-height: 1.72;
+  overflow-x: hidden;
+  background: var(--bg);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 76% 9%, rgba(212,169,56,.12), transparent 31%),
+    radial-gradient(circle at 16% 21%, rgba(0,200,215,.08), transparent 31%),
+    linear-gradient(rgba(2,5,10,.84), rgba(2,5,10,.97));
+  z-index: -2;
+  pointer-events: none;
+}
+
+.page {
+  width: 100%;
+  padding: 150px 28px 90px;
+}
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 58px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  box-shadow: 0 0 70px rgba(0,0,0,.58);
+  backdrop-filter: blur(4px);
+}
+
+.breadcrumb {
+  color: rgba(255,255,255,.70);
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+}
+
+.breadcrumb a,
+.breadcrumb a:visited {
+  color: var(--cyan);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover { color: #fff; }
+
+.eyebrow {
+  color: var(--cyan);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  color: var(--white);
+  font-size: clamp(46px, 6.5vw, 76px);
+  line-height: 1.02;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  text-shadow: 0 0 24px rgba(0,0,0,.92);
+}
+
+.subtitle {
+  color: var(--gold);
+  font-size: clamp(18px, 2.1vw, 24px);
+  line-height: 1.35;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.meta {
+  color: rgba(255,255,255,.72);
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.divider {
+  width: 64px;
+  height: 2px;
+  background: var(--gold);
+  margin: 38px 0 42px;
+  box-shadow: 0 0 14px rgba(212,169,56,.65);
+}
+
+.chapter-copy h2 {
+  margin-top: 42px;
+  margin-bottom: 18px;
+  color: var(--gold);
+  font-size: 24px;
+  line-height: 1.3;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  text-shadow: 0 0 12px rgba(0,0,0,.9);
+}
+
+.chapter-copy p {
+  margin-bottom: 22px;
+  color: rgba(255,255,255,.93);
+  font-size: 17px;
+  line-height: 1.8;
+  text-shadow: 0 0 8px rgba(0,0,0,.88);
+}
+
+.chapter-copy strong { color: #fff; }
+
+.question-group {
+  margin: 28px 0 30px;
+  padding: 26px 28px;
+  background: rgba(0,0,0,.40);
+  border-left: 3px solid var(--cyan);
+}
+
+.question-group p {
+  margin-bottom: 10px;
+  color: rgba(255,255,255,.94);
+}
+
+.question-group p:last-child { margin-bottom: 0; }
+
+.principle {
+  margin: 28px 0;
+  padding: 24px 26px;
+  border-left: 3px solid var(--gold);
+  background: rgba(0,0,0,.46);
+}
+
+.principle-label {
+  display: block;
+  color: var(--cyan);
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 9px;
+}
+
+.principle p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.sequence {
+  margin: 26px 0;
+  padding: 22px 24px;
+  border-left: 3px solid var(--cyan);
+  background: rgba(0,0,0,.46);
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: .4px;
+}
+
+.chapter-note {
+  margin-top: 44px;
+  padding: 26px 28px;
+  background: rgba(0,0,0,.40);
+  border: 1px solid rgba(212,169,56,.18);
+  color: rgba(255,255,255,.80);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.chapter-note strong { color: var(--gold); }
+
+.chapter-nav {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 14px;
+  align-items: stretch;
+  margin-top: 28px;
+}
+
+.nav-link,
+.nav-link:visited {
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+  padding: 14px 18px;
+  border: 1px solid rgba(212,169,56,.27);
+  background: rgba(0,0,0,.40);
+  color: var(--gold);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 12px;
+  transition: .2s ease;
+}
+
+.nav-link:hover {
+  color: #fff;
+  border-color: rgba(255,255,255,.55);
+}
+
+.nav-link.center {
+  justify-content: center;
+  color: var(--cyan);
+  border-color: rgba(0,200,215,.25);
+}
+
+.nav-link.next { justify-content: flex-end; text-align: right; }
+
+@media (max-width: 768px) {
+  .page { padding: 178px 16px 60px; }
+  .container { padding: 36px 24px 46px; }
+  .hero h1 { letter-spacing: 3px; }
+  .chapter-copy p { font-size: 16px; }
+  .chapter-nav { grid-template-columns: 1fr; }
+  .nav-link, .nav-link.center, .nav-link.next { justify-content: flex-start; text-align: left; }
+}
+</style>
+</head>
+
+<body data-bp-page="origins">
+<div id="bp-header"></div>
+
+<main class="page">
+<article class="container">
+
+<div class="breadcrumb">
+  <a href="/">BitPangea</a> › <a href="/origins/">Origins</a> › Chapter VII
+</div>
+
+<section class="hero">
+  <div class="eyebrow">Origins · Version 0.1 · Chapter VII</div>
+  <h1>Foundational Survey Fabric</h1>
+  <div class="subtitle">The Foundational Manuscript of a Finite Digital World</div>
+  <div class="meta">September 2026 · BitPangea Creator Period</div>
+  <div class="divider"></div>
+</section>
+
+<section class="chapter-copy">
+
+  <p>A World can be seen before it can be surveyed.</p>
+
+  <p>Its silhouette can be designed.</p>
+
+  <p>Its geography can be imagined.</p>
+
+  <p>Its regions can be named.</p>
+
+  <p>Its Parcels can even be rendered.</p>
+
+  <p>But none of those things, by themselves, establishes permanent spatial truth.</p>
+
+  <p>BitPangea therefore requires something beneath the visible World.</p>
+
+  <p>Something more fundamental than geography.</p>
+
+  <p>Something more durable than a rendering.</p>
+
+  <p>Something independent of any particular interface, engine, database, map, or experience.</p>
+
+  <p>That Architecture domain is the Foundational Survey Fabric.</p>
+
+  <p>The Foundational Survey Fabric is BitPangea’s:</p>
+
+  <div class="principle">
+    <span class="principle-label">Foundational Survey Fabric</span>
+    <p>minimal, exact, finite, planar, semantically neutral canonical spatial reference architecture.</p>
+  </div>
+
+  <p>Its purpose is to establish and preserve permanent spatial reference without prematurely defining the higher systems that will later use that reference.</p>
+
+  <p>It does not define Parcels.</p>
+
+  <p>It does not determine ownership.</p>
+
+  <p>It does not determine World membership.</p>
+
+  <p>It does not define geography.</p>
+
+  <p>It does not govern civilization.</p>
+
+  <p>It does not dictate runtime implementation.</p>
+
+  <p>It establishes the canonical spatial basis against which those higher systems can remain coherent.</p>
+
+  <p>Its deepest responsibility is simple:</p>
+
+  <div class="principle">
+    <span class="principle-label">Deepest Responsibility</span>
+    <p>Preserve where.</p>
+  </div>
+
+  <h2>The Survey Problem</h2>
+
+  <p>Physical worlds inherit spatial reality.</p>
+
+  <p>A surveyor does not create the Earth by measuring it.</p>
+
+  <p>The land exists independently of the survey.</p>
+
+  <p>Measurement establishes a reproducible framework through which location and spatial relationships can be described.</p>
+
+  <p>A digital World faces a different problem.</p>
+
+  <p>There is no preexisting physical ground waiting to be surveyed.</p>
+
+  <p>The spatial ground itself must first be established.</p>
+
+  <p>This produces one of BitPangea’s deepest architectural questions:</p>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>What permanent spatial truth must exist before the World can meaningfully claim that one place is here and another is there?</strong></p>
+  </div>
+
+  <p>If BitPangea begins with visible geography, geography risks becoming the authority over location.</p>
+
+  <p>If it begins with Parcel graphics, rendering risks becoming authority.</p>
+
+  <p>If it begins with a game engine, the engine’s coordinate system risks becoming the World.</p>
+
+  <p>If it begins with a database schema, implementation risks becoming architecture.</p>
+
+  <p>None of those is sufficiently durable.</p>
+
+  <p>BitPangea therefore requires canonical spatial meaning that belongs to BitPangea itself.</p>
+
+  <p>The Survey Fabric exists to provide that meaning.</p>
+
+  <h2>Survey First</h2>
+
+  <p>The governing spatial dependency begins with:</p>
+
+  <p>Foundational Survey Fabric</p>
+
+  <div class="sequence">↓</div>
+
+  <p>Spatial Ground</p>
+
+  <div class="sequence">↓</div>
+
+  <p>General Spatial Interpretation</p>
+
+  <div class="sequence">↓</div>
+
+  <p>Parcel Cadastre</p>
+
+  <p>This sequence is stronger than a mere page order.</p>
+
+  <p>It reflects demonstrated spatial dependency.</p>
+
+  <p>The Foundational Survey Fabric establishes canonical spatial reference.</p>
+
+  <p>Spatial Ground carries that reference upward into the usable spatial basis of the World.</p>
+
+  <p>General Spatial Interpretation allows higher spatial meaning to be derived without altering the Survey truth beneath it.</p>
+
+  <p>The Parcel Cadastre then establishes canonical Parcel identity and territorial definition upon that deeper architecture.</p>
+
+  <p>The principle remains:</p>
+
+  <div class="principle">
+    <span class="principle-label">Spatial Architecture Principle</span>
+    <p>Survey first. Cadastre later. Experience above both.</p>
+  </div>
+
+  <p>But the mature Architecture now preserves a further discipline:</p>
+
+  <p>A lower Architecture domain may constrain what higher domains must not violate without prescribing how those higher domains must internally work.</p>
+
+  <p>The shorthand is:</p>
+
+  <div class="principle">
+    <span class="principle-label">Architecture Boundary Rule</span>
+    <p>Protect the boundary. Do not design the layer above from the layer below.</p>
+  </div>
+
+  <p>The Survey Fabric should therefore establish what higher systems must respect.</p>
+
+  <p>It should not quietly become those systems.</p>
+
+  <h2>The Survey Fabric Is Not the World</h2>
+
+  <p>One of the most important distinctions to emerge from the 85 Findings is:</p>
+
+  <div class="principle">
+    <span class="principle-label">Survey / World Boundary</span>
+    <p>The Survey Domain is not the World.</p>
+  </div>
+
+  <p>The Survey Domain is the finite mathematical reference domain within which canonical Survey references are valid.</p>
+
+  <p>That makes it reference capacity.</p>
+
+  <p>It does not make every valid Survey reference BitPangea territory.</p>
+
+  <p>The distinction is:</p>
+
+  <p>Survey Domain</p>
+
+  <p>→ where canonical Survey reference is mathematically valid</p>
+
+  <p>World</p>
+
+  <p>→ which spatial locations belong to BitPangea</p>
+
+  <p>This produces a critical rule:</p>
+
+  <p>A valid Survey reference does not automatically establish World membership.</p>
+
+  <p>World membership belongs above the Foundational Survey Fabric.</p>
+
+  <p>The governing requirement is instead:</p>
+
+  <p>Every authoritative World-space location must be representable within the Survey Domain.</p>
+
+  <p>That is enough.</p>
+
+  <p>The Survey Fabric establishes reference.</p>
+
+  <p>Higher Architecture establishes what that reference means within the World.</p>
+
+  <h2>The Survey Fabric Is Not the Parcel Cadastre</h2>
+
+  <p>This distinction is equally important.</p>
+
+  <p>The Foundational Survey Fabric and the Parcel Cadastre are separate Architecture domains.</p>
+
+  <p>The Survey Fabric establishes canonical spatial reference.</p>
+
+  <p>The Parcel Cadastre establishes canonical Parcel truth.</p>
+
+  <p>Therefore:</p>
+
+  <div class="principle">
+    <span class="principle-label">Survey / Cadastre Boundary</span>
+    <p>Survey units are not Parcels.</p>
+  </div>
+
+  <p>A mathematical subdivision, cell, reference element, coordinate construct, or implementation unit inside the Survey system should not be presumed to be a Parcel.</p>
+
+  <p>BitPangea must contain exactly:</p>
+
+  <p>21,000,000 Parcels</p>
+
+  <p>But that does not require the Survey Fabric itself to contain exactly 21,000,000 reference units.</p>
+
+  <p>The correct relationship is:</p>
+
+  <p>Foundational Survey Fabric</p>
+
+  <p>→ establishes canonical spatial reference</p>
+
+  <p>Parcel Cadastre</p>
+
+  <p>→ defines exactly 21,000,000 canonical Parcels against that reference</p>
+
+  <p>This separation prevents Parcel geometry from becoming the deepest spatial truth merely because Parcels are visually prominent.</p>
+
+  <h2>Minimum Permanent Spatial Content</h2>
+
+  <p>The Foundational Survey Fabric should preserve only the minimum spatial content required to reconstruct canonical reference exactly.</p>
+
+  <p>This is one of the strongest conclusions of the Requirements Integrity Audit.</p>
+
+  <p>The deepest Survey architecture may need to preserve things such as:</p>
+
+  <p>canonical Survey Domain</p>
+
+  <p>origin</p>
+
+  <p>orientation</p>
+
+  <p>spatial measurement framework</p>
+
+  <p>reference mathematics</p>
+
+  <p>precision rules</p>
+
+  <p>canonical addressing</p>
+
+  <p>normative mathematical conventions</p>
+
+  <p>But it should not absorb higher-layer responsibilities merely because they later depend upon space.</p>
+
+  <p>The Survey Fabric should not define:</p>
+
+  <p>ownership</p>
+
+  <p>rights</p>
+
+  <p>governance</p>
+
+  <p>runtime services</p>
+
+  <p>civilization</p>
+
+  <p>application state</p>
+
+  <p>user experience</p>
+
+  <p>economic systems</p>
+
+  <p>actor identity</p>
+
+  <p>Parcel allocation</p>
+
+  <p>higher-layer semantics</p>
+
+  <p>unless some aspect is irreducibly necessary to preserve canonical spatial truth itself.</p>
+
+  <p>The governing principle is:</p>
+
+  <div class="principle">
+    <span class="principle-label">Minimum Permanent Architecture</span>
+    <p>The deepest layer should preserve spatial truth, not the machinery used to prove or experience it.</p>
+  </div>
+
+  <h2>Canonical Survey Reference</h2>
+
+  <p>The Survey Fabric must make location persist independently of representation.</p>
+
+  <p>That requires a Canonical Survey Reference.</p>
+
+  <p>A Canonical Survey Reference is the permanent, deterministic spatial reference through which BitPangea identifies where a valid Survey location or exact spatial extent lies.</p>
+
+  <p>Its meaning must remain stable even if:</p>
+
+  <p>interfaces change</p>
+
+  <p>encodings change</p>
+
+  <p>aliases change</p>
+
+  <p>display forms change</p>
+
+  <p>implementations change</p>
+
+  <p>compatible Specification versions evolve</p>
+
+  <p>The representation may evolve.</p>
+
+  <p>The place must not.</p>
+
+  <p>This produces one of the governing principles of the Survey Fabric:</p>
+
+  <div class="principle">
+    <span class="principle-label">Canonical Reference Principle</span>
+    <p>Representation may change. Place must not.</p>
+  </div>
+
+  <h2>The Coordinate-System Trap</h2>
+
+  <p>One of the easiest ways to build a digital World is to accept the coordinate system provided by the software used to create it.</p>
+
+  <p>That is also one of the easiest ways to confuse implementation with architecture.</p>
+
+  <p>One engine may use:</p>
+
+  <p>x</p>
+
+  <p>y</p>
+
+  <p>z</p>
+
+  <p>Another may use latitude-like and longitude-like values.</p>
+
+  <p>Another may use:</p>
+
+  <p>tiles</p>
+
+  <p>vectors</p>
+
+  <p>indices</p>
+
+  <p>cells</p>
+
+  <p>nodes</p>
+
+  <p>database identifiers</p>
+
+  <p>All of these may be useful representations.</p>
+
+  <p>None should automatically become BitPangea’s canonical spatial truth merely because it is convenient.</p>
+
+  <p>The deeper requirement is:</p>
+
+  <p>BitPangea requires canonical spatial reference whose meaning belongs to BitPangea rather than to any particular implementation.</p>
+
+  <p>A coordinate frame may express that reference.</p>
+
+  <p>It should not own it.</p>
+
+  <h2>Exactness Before Convenience</h2>
+
+  <p>The Foundational Survey Fabric favors exactness.</p>
+
+  <p>That preference arises because permanent place should not depend upon implementation-specific approximation.</p>
+
+  <p>The current Survey direction remains compatible with integer-based reference.</p>
+
+  <p>But the Requirements have deliberately avoided prematurely selecting one final mathematical mechanism.</p>
+
+  <p>The Survey Fabric must support:</p>
+
+  <p>determinism</p>
+
+  <p>reproducibility</p>
+
+  <p>exactness</p>
+
+  <p>canonical equivalence</p>
+
+  <p>implementation independence</p>
+
+  <p>stable spatial meaning</p>
+
+  <p>It should avoid requiring that permanent spatial truth depend upon:</p>
+
+  <p>floating-point accident</p>
+
+  <p>renderer precision</p>
+
+  <p>client-specific interpretation</p>
+
+  <p>hidden implementation state</p>
+
+  <p>approximate equality</p>
+
+  <p>The rule is:</p>
+
+  <div class="principle">
+    <span class="principle-label">Exactness Principle</span>
+    <p>At the Survey layer, equal means equal. Tolerance belongs above.</p>
+  </div>
+
+  <p>This is one of the reasons the mathematical Specification remains deliberately unresolved.</p>
+
+  <p>BitPangea has established what the mathematics must accomplish before selecting exactly how those mathematics will accomplish it.</p>
+
+  <h2>Finite Survey Domain</h2>
+
+  <p>The Survey Domain itself is finite.</p>
+
+  <p>Once the exact mathematical limits of that domain are formally adopted, changing them would not be an ordinary implementation update.</p>
+
+  <p>It would represent foundational architectural change.</p>
+
+  <p>That is because later systems may come to depend upon the meaning of canonical reference within that domain.</p>
+
+  <p>The principle is:</p>
+
+  <div class="principle">
+    <span class="principle-label">Survey Domain Principle</span>
+    <p>Refine within the domain. Do not casually redefine the domain itself.</p>
+  </div>
+
+  <p>But the Survey Domain limit should not be mistaken for:</p>
+
+  <p>The Extent</p>
+
+  <p>The Verge</p>
+
+  <p>a World Boundary</p>
+
+  <p>an Exterior</p>
+
+  <p>a coastline</p>
+
+  <p>a territorial edge</p>
+
+  <p>Again:</p>
+
+  <p>Survey Domain limits define reference capacity. World limits are established above.</p>
+
+  <h2>Precision Without Relocation</h2>
+
+  <p>BitPangea requires the ability to become more spatially precise over time.</p>
+
+  <p>But increasing precision must not relocate existing place.</p>
+
+  <p>The 85 Findings therefore preserve the requirement for refinement without prematurely choosing one final mechanism.</p>
+
+  <p>Future exact precision may eventually use:</p>
+
+  <p>hierarchical refinement</p>
+
+  <p>coordinate extension</p>
+
+  <p>symbolic subdivision</p>
+
+  <p>exact fractions</p>
+
+  <p>another mathematically exact mechanism</p>
+
+  <p>The requirement is not that one specific structure be used.</p>
+
+  <p>The requirement is:</p>
+
+  <p>More precision must not change previously established canonical meaning.</p>
+
+  <p>The principle is:</p>
+
+  <div class="principle">
+    <span class="principle-label">Refinement Principle</span>
+    <p>Precision by extension, not migration.</p>
+  </div>
+
+  <p>A more precise future Survey reference should deepen the description of place.</p>
+
+  <p>It should not move the place.</p>
+
+  <h2>Pang</h2>
+
+  <p>BitPangea preserves Pang as its native canonical unit of linear spatial measure.</p>
+
+  <p>Pang belongs to the Survey architecture.</p>
+
+  <p>It establishes canonical spatial scale.</p>
+
+  <p>But Pang should not force BitPangea into an unnecessary permanent hierarchy of named subunits.</p>
+
+  <p>Sub-Pang precision may be expressed through whatever exact mathematical mechanism ultimately survives Specification and Conformance.</p>
+
+  <p>The distinction is:</p>
+
+  <div class="principle">
+    <span class="principle-label">Pang Principle</span>
+    <p>Pang names the scale. Mathematics supplies finer precision.</p>
+  </div>
+
+  <p>Higher layers may translate Pang-based measure into other human-readable or experiential units.</p>
+
+  <p>Those translations must not redefine canonical Survey meaning.</p>
+
+  <h2>Native Canonical Orientation</h2>
+
+  <p>The Foundational Survey Fabric also requires deterministic orientation.</p>
+
+  <p>BitPangea preserves four native canonical directions:</p>
+
+  <p>Pankor — North</p>
+
+  <p>Panvath — South</p>
+
+  <p>Panoris — East</p>
+
+  <p>Panvel — West</p>
+
+  <p>These names belong to BitPangea’s canonical Survey orientation.</p>
+
+  <p>Higher layers may display orientation differently.</p>
+
+  <p>Interfaces may use familiar directional language.</p>
+
+  <p>Other representational systems may transform orientation.</p>
+
+  <p>But authoritative results must remain deterministically resolvable to the canonical Survey frame.</p>
+
+  <p>The Survey term is therefore orientation.</p>
+
+  <p>The constitutional concept The Direction remains distinct.</p>
+
+  <h2>Spatial Separation, Length, and Geometric Relationship</h2>
+
+  <p>The terminology collision audit clarified several mathematical concepts within the Survey Fabric.</p>
+
+  <p>The Survey layer should avoid casually reusing constitutional terms such as:</p>
+
+  <p>The Distance</p>
+
+  <p>The Adjacency</p>
+
+  <p>The Contiguity</p>
+
+  <p>The Direction</p>
+
+  <p>The Boundary</p>
+
+  <p>Instead, Survey mathematics should use qualified or more precise language.</p>
+
+  <p>For example:</p>
+
+  <p>spatial separation</p>
+
+  <p>describes direct mathematical gap.</p>
+
+  <p>path length</p>
+
+  <p>describes the length of a path.</p>
+
+  <p>geometric boundary</p>
+
+  <p>describes mathematical boundary.</p>
+
+  <p>touch or contact</p>
+
+  <p>describes lower-level geometric contact.</p>
+
+  <p>connectedness or continuity</p>
+
+  <p>describes lower-level mathematical connection.</p>
+
+  <p>This preserves a crucial principle:</p>
+
+  <div class="principle">
+    <span class="principle-label">Terminology Principle</span>
+    <p>Spatial separation measures direct gap. Length measures path. Higher layers decide what path means.</p>
+  </div>
+
+  <p>The Survey Fabric supplies mathematically exact facts.</p>
+
+  <p>Higher Architecture determines which of those facts acquire constitutional or World-level meaning.</p>
+
+  <h2>Representation-Independent Spatial Truth</h2>
+
+  <p>One visitor may encounter BitPangea as a globe.</p>
+
+  <p>Another may use the flat lived World.</p>
+
+  <p>Another may inspect a Parcel.</p>
+
+  <p>Another may use a Survey tool.</p>
+
+  <p>Another may eventually experience the World through a technology that does not yet exist.</p>
+
+  <p>Those experiences may differ radically.</p>
+
+  <p>Canonical place should not.</p>
+
+  <p>Conceptually:</p>
+
+  <p>Foundational Survey Fabric</p>
+
+  <div class="sequence">↓</div>
+
+  <p>one canonical spatial meaning</p>
+
+  <div class="sequence">↓</div>
+
+  <p>many valid representations</p>
+
+  <p>The representation may:</p>
+
+  <p>translate</p>
+
+  <p>project</p>
+
+  <p>simplify</p>
+
+  <p>display</p>
+
+  <p>query</p>
+
+  <p>or visualize</p>
+
+  <p>the Survey truth.</p>
+
+  <p>It should not redefine it.</p>
+
+  <p>This is what allows BitPangea to survive technological change.</p>
+
+  <p>A renderer can disappear.</p>
+
+  <p>A map system can be replaced.</p>
+
+  <p>A software stack can become obsolete.</p>
+
+  <p>The World’s canonical spatial reference remains.</p>
+
+  <h2>Specification, Conformance, and Reference Vectors</h2>
+
+  <p>The Foundational Survey Fabric is no longer merely an informal concept.</p>
+
+  <p>Its institutional architecture now consists of four linked frameworks:</p>
+
+  <p>Requirements</p>
+
+  <div class="sequence">↓</div>
+
+  <p>Specification</p>
+
+  <div class="sequence">↓</div>
+
+  <p>Conformance</p>
+
+  <div class="sequence">↓</div>
+
+  <p>Reference Vectors</p>
+
+  <p>The Requirements establish what the Foundational Survey Fabric must satisfy.</p>
+
+  <p>The Specification will define the exact mathematics that satisfy those Requirements.</p>
+
+  <p>The Conformance framework will define how independent implementations prove they correctly implement the Specification.</p>
+
+  <p>The Reference Vectors will provide canonical inputs and expected outputs against which implementations can be tested.</p>
+
+  <p>Their governing questions are:</p>
+
+  <p>Requirements:</p>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>What must be true?</strong></p>
+  </div>
+
+  <p>Specification:</p>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>Precisely how does the Foundational Survey Fabric work?</strong></p>
+  </div>
+
+  <p>Conformance:</p>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>How does software prove it correctly implements that Specification?</strong></p>
+  </div>
+
+  <p>Reference Vectors:</p>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>Given this exact input, what exact answer must every conforming implementation produce?</strong></p>
+  </div>
+
+  <p>This institutional separation protects BitPangea from confusing mathematical design with implementation proof.</p>
+
+  <h2>Eighty-Five Requirements</h2>
+
+  <p>The Foundational Survey Fabric currently rests upon 85 audited Requirements.</p>
+
+  <p>Those Findings cover seven broad areas:</p>
+
+  <p>1. Foundation, Purpose &amp; Scope</p>
+
+  <p>2. Addressability, Meaning &amp; Refinement</p>
+
+  <p>3. Authority, Consensus &amp; Evolution</p>
+
+  <p>4. Mathematical Ontology and Survey Domain Structure</p>
+
+  <p>5. Measurements &amp; Orientation</p>
+
+  <p>6. Geometry, Topology, Measurement &amp; Operations</p>
+
+  <p>7. Knowability, Computability &amp; Conformance</p>
+
+  <p>All 85 Findings remain Requirements.</p>
+
+  <p>None was discarded merely because the architecture matured.</p>
+
+  <p>Instead, the Requirements Integrity Audit clarified boundaries, removed premature assumptions, and strengthened the separation between Survey responsibility and higher Architecture.</p>
+
+  <p>This matters because the Survey Fabric must be stable conceptually before its mathematics become canonical.</p>
+
+  <h2>Requirements Before Mathematics</h2>
+
+  <p>The Foundational Survey Fabric deliberately has not yet selected its final mathematics.</p>
+
+  <p>That restraint is intentional.</p>
+
+  <p>The Requirements now establish enough constraint to judge future mathematical candidates without pretending that a preferred candidate has already won.</p>
+
+  <p>A candidate mathematical architecture should be able to demonstrate that it:</p>
+
+  <p>satisfies the Requirements</p>
+
+  <p>contains no known contradiction</p>
+
+  <p>supports exact independent implementation</p>
+
+  <p>avoids unnecessary approximation</p>
+
+  <p>terminates where required</p>
+
+  <p>avoids hidden dependency</p>
+
+  <p>preserves canonical meaning</p>
+
+  <p>does not absorb higher-layer responsibility</p>
+
+  <p>and can eventually survive Conformance and Reference Vector testing</p>
+
+  <p>The principle is:</p>
+
+  <p>Design when the Requirements justify exploration. Adopt only after the architecture survives the Requirements.</p>
+
+  <h2>Conformance Is Not Authority</h2>
+
+  <p>A conforming implementation can prove that it correctly follows the Specification.</p>
+
+  <p>It cannot, merely by doing so, decide what Specification is canonical.</p>
+
+  <p>This distinction matters.</p>
+
+  <p>Conformance may establish:</p>
+
+  <p>correctness</p>
+
+  <p>compatibility</p>
+
+  <p>deterministic behavior</p>
+
+  <p>expected results</p>
+
+  <p>It does not establish canonical institutional standing.</p>
+
+  <p>That belongs to valid BitPangea authority.</p>
+
+  <p>The distinction is:</p>
+
+  <div class="principle">
+    <span class="principle-label">Conformance / Authority</span>
+    <p>Verification can prove correctness. Governance establishes canonical standing.</p>
+  </div>
+
+  <p>And even governance should not possess authority to rewrite foundational spatial truth casually once that truth has been validly established.</p>
+
+  <h2>Normative Interchange</h2>
+
+  <p>The Survey Fabric must eventually support exact machine interchange.</p>
+
+  <p>But exact interchange does not necessarily require one universal file format forever.</p>
+
+  <p>The final Specification may define:</p>
+
+  <p>one canonical serialization</p>
+
+  <p>or:</p>
+
+  <p>multiple explicitly governed lossless normative encodings</p>
+
+  <p>If multiple normative encodings exist, they must resolve deterministically to the same canonical mathematical meaning.</p>
+
+  <p>Internal software representations may differ.</p>
+
+  <p>Human-facing representations may differ.</p>
+
+  <p>Archival forms may evolve.</p>
+
+  <p>But authoritative interchange must not become ambiguous.</p>
+
+  <p>The principle is:</p>
+
+  <div class="principle">
+    <span class="principle-label">Interchange Principle</span>
+    <p>Implement however you like. Exchange without ambiguity.</p>
+  </div>
+
+  <p>And:</p>
+
+  <div class="principle">
+    <span class="principle-label">Interchange Principle</span>
+    <p>One meaning. Many durable expressions.</p>
+  </div>
+
+  <h2>General Spatial Interpretation</h2>
+
+  <p>General Spatial Interpretation is now recognized as an Architecture domain above Spatial Ground and beneath the Parcel Cadastre in the demonstrated spatial sequence.</p>
+
+  <p>Its existence should no longer be described merely as a speculative possibility that may disappear into arbitrary queries.</p>
+
+  <p>Its precise internal responsibilities remain subject to later Architecture inquiry.</p>
+
+  <p>That is different from questioning whether the domain exists at all.</p>
+
+  <p>The important boundary is:</p>
+
+  <p>General Spatial Interpretation may derive, interpret, or expose usable spatial meaning.</p>
+
+  <p>It must not redefine the canonical Survey truth beneath it.</p>
+
+  <p>And it must not acquire authority over canonical Parcel truth belonging to the Parcel Cadastre.</p>
+
+  <p>The Foundational Survey Fabric therefore constrains General Spatial Interpretation without designing it from below.</p>
+
+  <h2>Survey Before Geography</h2>
+
+  <p>The Survey Fabric remains distinct from geography.</p>
+
+  <p>Geography gives place character.</p>
+
+  <p>Survey gives place canonical reference.</p>
+
+  <p>A mountain may rise at a location.</p>
+
+  <p>A road may cross it.</p>
+
+  <p>A district may include it.</p>
+
+  <p>A city may eventually develop there.</p>
+
+  <p>The mountain may disappear.</p>
+
+  <p>The road may move.</p>
+
+  <p>The district may change.</p>
+
+  <p>The city may be rebuilt.</p>
+
+  <p>The canonical spatial reference should remain intelligible.</p>
+
+  <p>The distinction is:</p>
+
+  <p>Survey</p>
+
+  <p>→ where</p>
+
+  <p>Geography</p>
+
+  <p>→ what is there</p>
+
+  <p>This protects permanent place from legitimate change.</p>
+
+  <h2>Survey Before Rights</h2>
+
+  <p>The same principle applies to rights and control.</p>
+
+  <p>A Parcel’s location does not depend upon who controls it.</p>
+
+  <p>A transfer of rights should not move it.</p>
+
+  <p>A change in identity should not alter its geometry.</p>
+
+  <p>A new control relationship should not rewrite its Survey reference.</p>
+
+  <p>Conceptually:</p>
+
+  <p>Survey</p>
+
+  <p>→ where is the place?</p>
+
+  <p>Parcel Cadastre</p>
+
+  <p>→ which Parcel is it?</p>
+
+  <p>Identity / Rights / Control</p>
+
+  <p>→ what relationships exist between actors and that Parcel?</p>
+
+  <p>These are separate responsibilities.</p>
+
+  <p>Higher social or operational relationships must not redefine foundational spatial truth.</p>
+
+  <h2>Supporting Exactly 21,000,000 Parcels</h2>
+
+  <p>The Foundational Survey Fabric must ultimately support a World containing exactly:</p>
+
+  <p>21,000,000 Parcels</p>
+
+  <p>But that requirement should be understood correctly.</p>
+
+  <p>The Survey Fabric does not itself create those Parcels.</p>
+
+  <p>It must provide spatial reference sufficiently exact and durable that higher Architecture can establish them coherently.</p>
+
+  <p>The full architecture must eventually reconcile:</p>
+
+  <p>one finite World</p>
+
+  <p>The Extent</p>
+
+  <p>finite Survey Domain</p>
+
+  <p>World Form</p>
+
+  <p>canonical spatial reference</p>
+
+  <p>exactly 21,000,000 Parcels</p>
+
+  <p>equal-area preference</p>
+
+  <p>Parcel Adjacency</p>
+
+  <p>The Verge</p>
+
+  <p>Outliers</p>
+
+  <p>non-Parcel spatial structures where permitted</p>
+
+  <p>multiple representations</p>
+
+  <p>persistent Parcel identity</p>
+
+  <p>A Survey architecture that cannot support those later obligations is insufficient.</p>
+
+  <p>But the Survey Fabric should not attempt to solve those higher layers internally.</p>
+
+  <p>Again:</p>
+
+  <div class="principle">
+    <span class="principle-label">Architecture Boundary Rule</span>
+    <p>Protect the boundary. Do not design the layer above from the layer below.</p>
+  </div>
+
+  <h2>The Visible Parcel Grammar Is Not the Survey Fabric</h2>
+
+  <p>BitPangea’s Parcel exploration continues to favor a three-orientation rhombille family as a visible Parcel grammar.</p>
+
+  <p>That does not make rhombille tiling the Survey Fabric.</p>
+
+  <p>The deeper Architecture now preserves an important distinction:</p>
+
+  <div class="sequence">substrate<br/>≠<br/>Parcel experience</div>
+
+  <p>The mathematical Survey substrate may remain unseen.</p>
+
+  <p>The Parcel Cadastre may define exact Parcel territory against that substrate.</p>
+
+  <p>The visible Parcel representation may use a coherent three-orientation grammar above both.</p>
+
+  <p>This prevents the visible tiling from dictating the deepest mathematics merely because it is attractive or intuitive.</p>
+
+  <p>The principle is:</p>
+
+  <p>Survey first. Build later.</p>
+
+  <p>And:</p>
+
+  <p>The visible Parcel grammar must be supported by the Survey architecture, not mistaken for it.</p>
+
+  <h2>World Form and the Survey Fabric</h2>
+
+  <p>BitPangea’s World Form is intentionally organic and asymmetric.</p>
+
+  <p>The Foundational Survey Fabric must be exact and deterministic.</p>
+
+  <p>Those qualities are not contradictory.</p>
+
+  <p>They belong at different levels.</p>
+
+  <p>At World scale:</p>
+
+  <p>organic form</p>
+
+  <p>may dominate.</p>
+
+  <p>At Survey scale:</p>
+
+  <p>mathematical exactness</p>
+
+  <p>must dominate.</p>
+
+  <p>The Survey Fabric should therefore be rigorous enough that the visible World does not need to look mathematically regular everywhere.</p>
+
+  <p>The governing principle is:</p>
+
+  <p>The World may look organic because its deepest spatial architecture is sufficiently exact not to require visible regularity.</p>
+
+  <h2>The Verge and Other Non-Parcel Spatial Conditions</h2>
+
+  <p>Earlier versions of this section used Frontier as though it were a terminal spatial morphology.</p>
+
+  <p>That language is now superseded.</p>
+
+  <p>The Frontier is epistemic.</p>
+
+  <p>The relevant Creator-period spatial concept is The Verge.</p>
+
+  <p>The Survey Fabric must be capable of referencing whatever spatial conditions higher Architecture legitimately establishes, including:</p>
+
+  <p>The Verge</p>
+
+  <p>Outliers</p>
+
+  <p>World-scale infrastructure</p>
+
+  <p>other non-Parcel spatial structures</p>
+
+  <p>if they become authoritative parts of the World.</p>
+
+  <p>Again, this does not mean the Survey Fabric defines them.</p>
+
+  <p>It means their authoritative spatial locations must remain representable.</p>
+
+  <p>The distinction is:</p>
+
+  <div class="principle">
+    <span class="principle-label">Authority Boundary</span>
+    <p>Survey tells where. Higher Architecture tells what.</p>
+  </div>
+
+  <h2>Persistence</h2>
+
+  <p>The word Foundational carries an obligation.</p>
+
+  <p>The Survey Fabric is intended to endure.</p>
+
+  <p>That does not mean the first mathematical proposal should become immutable.</p>
+
+  <p>Before canonical adoption:</p>
+
+  <p>models should be tested</p>
+
+  <p>alternatives should be explored</p>
+
+  <p>contradictions should be exposed</p>
+
+  <p>pathological cases should be attacked</p>
+
+  <p>better mathematics should be allowed to replace weaker candidates</p>
+
+  <p>But once canonical spatial reference has been validly established, changing its meaning should be extraordinarily difficult.</p>
+
+  <p>Why?</p>
+
+  <p>Because higher systems may depend upon it:</p>
+
+  <p>Parcel identity</p>
+
+  <p>Parcel geometry</p>
+
+  <p>geography</p>
+
+  <p>infrastructure</p>
+
+  <p>construction</p>
+
+  <p>rights</p>
+
+  <p>history</p>
+
+  <p>navigation</p>
+
+  <p>services</p>
+
+  <p>institutions</p>
+
+  <p>civilization</p>
+
+  <p>The design process therefore carries an unusual responsibility:</p>
+
+  <div class="principle">
+    <span class="principle-label">Persistence Principle</span>
+    <p>Experiment freely before the foundation is established so that the World does not have to experiment with its foundation afterward.</p>
+  </div>
+
+  <h2>Authority and Derivation</h2>
+
+  <p>BitPangea must preserve a distinction between authoritative truth and derived representation.</p>
+
+  <p>For example:</p>
+
+  <p>Foundational Survey Fabric</p>
+
+  <p>→ authoritative canonical spatial reference</p>
+
+  <p>Parcel Cadastre</p>
+
+  <p>→ authoritative canonical Parcel truth</p>
+
+  <p>Map</p>
+
+  <p>→ represents spatial information</p>
+
+  <p>Globe</p>
+
+  <p>→ represents the World at planetary scale</p>
+
+  <p>Viewer</p>
+
+  <p>→ presents selected information</p>
+
+  <p>Search</p>
+
+  <p>→ discovers information</p>
+
+  <p>Builder</p>
+
+  <p>→ requests permissible World change</p>
+
+  <p>These systems may interact closely.</p>
+
+  <div class="principle">
+    <span class="principle-label">Authority Principle</span>
+    <p>Reference does not transfer authority.</p>
+  </div>
+
+  <p>A map may display a Parcel accurately without becoming the Parcel Cadastre.</p>
+
+  <p>A globe may depict BitPangea without becoming the Survey Fabric.</p>
+
+  <p>A Builder may modify permitted World state without changing where the Parcel exists.</p>
+
+  <p>This separation allows BitPangea to grow technically without losing institutional clarity.</p>
+
+  <h2>A Survey Fabric Beneath History</h2>
+
+  <p>The Foundational Survey Fabric ultimately serves something larger than surveying.</p>
+
+  <p>It allows history to remain attached to place.</p>
+
+  <p>Imagine a location that begins undeveloped.</p>
+
+  <p>Something is later built there.</p>
+
+  <p>A community forms.</p>
+
+  <p>An event occurs.</p>
+
+  <p>The structure disappears.</p>
+
+  <p>Another replaces it.</p>
+
+  <p>The place becomes culturally significant.</p>
+
+  <p>Generations later, its history is remembered.</p>
+
+  <p>For that sequence to possess spatial continuity, there must remain a durable answer to:</p>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>Where did this happen?</strong></p>
+  </div>
+
+  <p>The Survey Fabric exists, in part, to make that answer permanent.</p>
+
+  <p>Without persistent place, history becomes a collection of detached events.</p>
+
+  <p>With persistent place, history can belong to a World.</p>
+
+  <h2>What Is Established</h2>
+
+  <p>The current Foundational Survey Fabric architecture supports the following statements:</p>
+
+  <p>BitPangea requires permanent canonical spatial reference.</p>
+
+  <p>That responsibility belongs to the Foundational Survey Fabric.</p>
+
+  <p>The Foundational Survey Fabric is:</p>
+
+  <p>minimal</p>
+
+  <p>exact</p>
+
+  <p>finite</p>
+
+  <p>planar</p>
+
+  <p>semantically neutral</p>
+
+  <p>The Survey Fabric exists beneath Spatial Ground, General Spatial Interpretation, and the Parcel Cadastre.</p>
+
+  <p>The demonstrated spatial dependency is:</p>
+
+  <div class="sequence">Foundational Survey Fabric → Spatial Ground → General Spatial Interpretation → Parcel Cadastre</div>
+
+  <div class="principle">
+    <span class="principle-label">Survey / Cadastre Boundary</span>
+    <p>Survey units are not Parcels.</p>
+  </div>
+
+  <div class="principle">
+    <span class="principle-label">Survey / World Boundary</span>
+    <p>The Survey Domain is not the World.</p>
+  </div>
+
+  <p>A valid Survey reference does not automatically establish World membership.</p>
+
+  <p>Every authoritative World-space location must be representable within the Survey Domain.</p>
+
+  <p>The Survey Domain is finite.</p>
+
+  <p>Canonical Survey meaning must remain deterministic and representation-independent.</p>
+
+  <p>Precision must be extensible without relocating previously established place.</p>
+
+  <p>Pang is BitPangea’s native canonical linear measure.</p>
+
+  <p>Pankor, Panvath, Panoris, and Panvel form the native canonical Survey orientation.</p>
+
+  <p>The Parcel Cadastre remains authoritative for Parcel identity and territorial definition.</p>
+
+  <p>Geography does not redefine Survey truth.</p>
+
+  <p>Rights and control do not redefine Survey truth.</p>
+
+  <p>The Survey Fabric must support higher Architecture without designing those higher domains from below.</p>
+
+  <p>The Foundational Survey Fabric is institutionally organized as:</p>
+
+  <div class="sequence">Requirements → Specification → Conformance → Reference Vectors</div>
+
+  <p>All 85 Findings remain Requirements.</p>
+
+  <p>The mathematics remain deliberately unresolved.</p>
+
+  <h2>What Remains Open</h2>
+
+  <p>The Foundational Survey Fabric is institutionally established but mathematically incomplete.</p>
+
+  <p>Important questions remain, including:</p>
+
+  <p>the final Survey Domain geometry</p>
+
+  <p>the exact mathematical origin</p>
+
+  <p>the complete canonical frame</p>
+
+  <p>the final canonical addressing mechanism</p>
+
+  <p>the exact refinement mechanism</p>
+
+  <p>the maximum or unbounded precision model</p>
+
+  <p>the final angular system</p>
+
+  <p>the final geometric primitive set</p>
+
+  <p>the canonical normalization rules</p>
+
+  <p>the final transformation mathematics</p>
+
+  <p>the exact normative serialization model</p>
+
+  <p>whether one or multiple normative encodings are adopted</p>
+
+  <p>the reference implementation or implementations</p>
+
+  <p>canonical Reference Vector values</p>
+
+  <p>the final Conformance corpus</p>
+
+  <p>the exact mathematical relationship between Survey space and higher World-space designation</p>
+
+  <p>the precise mathematical support required for exactly 21,000,000 Parcels</p>
+
+  <p>These questions remain open deliberately.</p>
+
+  <p>The Requirements define the problem.</p>
+
+  <p>They do not pretend the solution has already been selected.</p>
+
+  <h2>The Principle</h2>
+
+  <p>The Foundational Survey Fabric is where BitPangea moves from the idea of persistent place toward the mathematics capable of preserving it.</p>
+
+  <p>World Form tells us what BitPangea should become visibly.</p>
+
+  <p>The Parcel constraint tells us what must ultimately exist within the World.</p>
+
+  <p>The Parcel Cadastre will tell us which Parcel occupies which authoritative place.</p>
+
+  <p>The Foundational Survey Fabric asks the deeper question:</p>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>What permanent canonical spatial truth must exist beneath all of them?</strong></p>
+  </div>
+
+  <p>Its purpose is not to make BitPangea look mathematical.</p>
+
+  <p>Its purpose is to make BitPangea spatially durable.</p>
+
+  <p>Interfaces may change.</p>
+
+  <p>Maps may change.</p>
+
+  <p>Geography may change.</p>
+
+  <p>Buildings may change.</p>
+
+  <p>Infrastructure may change.</p>
+
+  <p>Rights may change.</p>
+
+  <p>Communities may change.</p>
+
+  <p>Civilization may change.</p>
+
+  <p>But if BitPangea is to possess meaningful place across those changes, something beneath them must remain exact enough to answer the simplest spatial question:</p>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>Where?</strong></p>
+  </div>
+
+  <div class="principle">
+    <span class="principle-label">Governing Principle</span>
+    <p>That is the purpose of the Foundational Survey Fabric.</p>
+  </div>
+
+</section>
+
+<section class="chapter-note">
+  Part of <strong>BitPangea: Origins — Version 0.1</strong> · <em>The Foundational Manuscript of a Finite Digital World</em> · September 2026. This chapter is part of the preserved Version 0.1 publication; the complete manuscript remains the canonical versioned document.
+</section>
+
+<nav class="chapter-nav" aria-label="Origins chapter navigation">
+  <a class="nav-link" href="/origins/chapters/06-world-form/">← Previous: World Form</a>
+  <a class="nav-link center" href="/origins/#contents">Contents</a>
+  <a class="nav-link next" href="/origins/chapters/08-parcel-geometry-cadastre/">Next: Parcel Geometry and Cadastre →</a>
+</nav>
+
+</article>
+</main>
+
+<div id="bp-footer"></div>
+</body>
+</html>
