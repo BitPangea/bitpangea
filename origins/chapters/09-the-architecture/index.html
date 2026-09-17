@@ -1,1 +1,1363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 
+<title>The Architecture | BitPangea: Origins</title>
+
+<link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/favicon.svg" rel="shortcut icon"/>
+
+<link rel="stylesheet" href="/assets/css/bitpangea-framework.css"/>
+<script src="/assets/js/bitpangea-framework.js" defer></script>
+
+<meta content="Chapter IX of BitPangea: Origins — Version 0.1. The Architecture: nine recognized Architecture domains, bounded authority, demonstrated dependencies, permanence, interoperability, and experience." name="description"/>
+<meta content="#00c8d7" name="theme-color"/>
+<meta content="index,follow" name="robots"/>
+<link href="https://bitpangea.com/origins/chapters/09-the-architecture/" rel="canonical"/>
+
+<meta content="The Architecture | BitPangea: Origins — Version 0.1" property="og:title"/>
+<meta content="The nine recognized Architecture domains of BitPangea, their responsibility boundaries, demonstrated dependencies, authority limits, and permanence gradient." property="og:description"/>
+<meta content="article" property="og:type"/>
+<meta content="https://bitpangea.com/origins/chapters/09-the-architecture/" property="og:url"/>
+<meta content="https://bitpangea.com/origins/BitPangea_Origins_cover.png" property="og:image"/>
+<meta content="BitPangea" property="og:site_name"/>
+<meta content="en_US" property="og:locale"/>
+
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="The Architecture | BitPangea: Origins — Version 0.1" name="twitter:title"/>
+<meta content="Establish what must endure. Govern what must change. Leave open what should emerge." name="twitter:description"/>
+<meta content="https://bitpangea.com/origins/BitPangea_Origins_cover.png" name="twitter:image"/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Chapter",
+  "name": "The Architecture",
+  "position": 9,
+  "url": "https://bitpangea.com/origins/chapters/09-the-architecture/",
+  "isPartOf": {
+    "@type": "Book",
+    "name": "BitPangea: Origins",
+    "alternateName": "The Foundational Manuscript of a Finite Digital World",
+    "version": "0.1",
+    "url": "https://bitpangea.com/origins/"
+  },
+  "datePublished": "2026-09",
+  "image": "https://bitpangea.com/origins/BitPangea_Origins_cover.png"
+}
+</script>
+
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg: #02050a;
+  --gold: #d4a938;
+  --cyan: #00c8d7;
+  --white: #ffffff;
+  --muted: rgba(255,255,255,.70);
+  --panel: rgba(0,0,0,.44);
+  --panel-soft: rgba(0,0,0,.32);
+  --line: rgba(212,169,56,.18);
+}
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  background: var(--bg);
+  color: var(--white);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  position: relative;
+  line-height: 1.72;
+  overflow-x: hidden;
+  background: var(--bg);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 76% 9%, rgba(212,169,56,.12), transparent 31%),
+    radial-gradient(circle at 16% 21%, rgba(0,200,215,.08), transparent 31%),
+    linear-gradient(rgba(2,5,10,.84), rgba(2,5,10,.97));
+  z-index: -2;
+  pointer-events: none;
+}
+
+.page {
+  width: 100%;
+  padding: 150px 28px 90px;
+}
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 58px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  box-shadow: 0 0 70px rgba(0,0,0,.58);
+  backdrop-filter: blur(4px);
+}
+
+.breadcrumb {
+  color: rgba(255,255,255,.70);
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+}
+
+.breadcrumb a,
+.breadcrumb a:visited {
+  color: var(--cyan);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover { color: #fff; }
+
+.eyebrow {
+  color: var(--cyan);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  color: var(--white);
+  font-size: clamp(46px, 6.5vw, 76px);
+  line-height: 1.02;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  text-shadow: 0 0 24px rgba(0,0,0,.92);
+}
+
+.subtitle {
+  color: var(--gold);
+  font-size: clamp(18px, 2.1vw, 24px);
+  line-height: 1.35;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.meta {
+  color: rgba(255,255,255,.72);
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.divider {
+  width: 64px;
+  height: 2px;
+  background: var(--gold);
+  margin: 38px 0 42px;
+  box-shadow: 0 0 14px rgba(212,169,56,.65);
+}
+
+.chapter-copy h2 {
+  margin-top: 42px;
+  margin-bottom: 18px;
+  color: var(--gold);
+  font-size: 24px;
+  line-height: 1.3;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  text-shadow: 0 0 12px rgba(0,0,0,.9);
+}
+
+.chapter-copy p {
+  margin-bottom: 22px;
+  color: rgba(255,255,255,.93);
+  font-size: 17px;
+  line-height: 1.8;
+  text-shadow: 0 0 8px rgba(0,0,0,.88);
+}
+
+.chapter-copy strong { color: #fff; }
+
+.question-group {
+  margin: 28px 0 30px;
+  padding: 26px 28px;
+  background: rgba(0,0,0,.40);
+  border-left: 3px solid var(--cyan);
+}
+
+.question-group p {
+  margin-bottom: 10px;
+  color: rgba(255,255,255,.94);
+}
+
+.question-group p:last-child { margin-bottom: 0; }
+
+.principle {
+  margin: 28px 0;
+  padding: 24px 26px;
+  border-left: 3px solid var(--gold);
+  background: rgba(0,0,0,.46);
+}
+
+.principle-label {
+  display: block;
+  color: var(--cyan);
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 9px;
+}
+
+.principle p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.sequence {
+  margin: 26px 0;
+  padding: 22px 24px;
+  border-left: 3px solid var(--cyan);
+  background: rgba(0,0,0,.46);
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: .4px;
+}
+
+.chapter-note {
+  margin-top: 44px;
+  padding: 26px 28px;
+  background: rgba(0,0,0,.40);
+  border: 1px solid rgba(212,169,56,.18);
+  color: rgba(255,255,255,.80);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.chapter-note strong { color: var(--gold); }
+
+.chapter-nav {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 14px;
+  align-items: stretch;
+  margin-top: 28px;
+}
+
+.nav-link,
+.nav-link:visited {
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+  padding: 14px 18px;
+  border: 1px solid rgba(212,169,56,.27);
+  background: rgba(0,0,0,.40);
+  color: var(--gold);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 12px;
+  transition: .2s ease;
+}
+
+.nav-link:hover {
+  color: #fff;
+  border-color: rgba(255,255,255,.55);
+}
+
+.nav-link.center {
+  justify-content: center;
+  color: var(--cyan);
+  border-color: rgba(0,200,215,.25);
+}
+
+.nav-link.next { justify-content: flex-end; text-align: right; }
+
+@media (max-width: 768px) {
+  .page { padding: 178px 16px 60px; }
+  .container { padding: 36px 24px 46px; }
+  .hero h1 { letter-spacing: 3px; }
+  .chapter-copy p { font-size: 16px; }
+  .chapter-nav { grid-template-columns: 1fr; }
+  .nav-link, .nav-link.center, .nav-link.next { justify-content: flex-start; text-align: left; }
+}
+</style>
+</head>
+
+<body data-bp-page="origins">
+<div id="bp-header"></div>
+
+<main class="page">
+<article class="container">
+
+<div class="breadcrumb">
+  <a href="/">BitPangea</a> › <a href="/origins/">Origins</a> › Chapter IX
+</div>
+
+<section class="hero">
+  <div class="eyebrow">Origins · Version 0.1 · Chapter IX</div>
+  <h1>The Architecture</h1>
+  <div class="subtitle">The Foundational Manuscript of a Finite Digital World</div>
+  <div class="meta">September 2026 · BitPangea Creator Period</div>
+  <div class="divider"></div>
+</section>
+
+<section class="chapter-copy">
+
+  <p>A World requires more than space.</p>
+
+  <p>The preceding sections establish the spatial foundation of BitPangea:</p>
+
+  <p>one finite World</p>
+
+  <p>The Extent</p>
+
+  <p>exactly 21,000,000 Parcels</p>
+
+  <p>a distinctive World Form</p>
+
+  <p>a Foundational Survey Fabric</p>
+
+  <p>and a Parcel Cadastre</p>
+
+  <p>Those elements establish permanent place.</p>
+
+  <p>They do not, by themselves, make the World operational.</p>
+
+  <p>A persistent digital World must also be able to:</p>
+
+  <p>preserve state</p>
+
+  <p>recognize actors</p>
+
+  <p>govern rights and control</p>
+
+  <p>support legitimate change</p>
+
+  <p>coordinate services</p>
+
+  <p>preserve provenance</p>
+
+  <p>interoperate across systems</p>
+
+  <p>support Builders</p>
+
+  <p>and remain experienceable through technologies that will change over time</p>
+
+  <p>BitPangea therefore requires an enduring architecture above and around its spatial foundation.</p>
+
+  <p>That architecture is now preserved within The Atlas as:</p>
+
+  <div class="principle">
+    <span class="principle-label">Atlas Architecture</span>
+    <p>The Architecture</p>
+  </div>
+
+  <p>The Architecture is the branch of The Atlas that preserves the enduring systems through which permanent spatial truth becomes viable World architecture.</p>
+
+  <p>It is not a constitutional Domain of The Codex.</p>
+
+  <p>Its components are instead recognized as Architecture domains.</p>
+
+  <p>That distinction is important.</p>
+
+  <p>An Architecture domain may be permanent, foundational, or deeply important without thereby becoming constitutional.</p>
+
+  <h2>From the 3×3 Scaffold to The Architecture</h2>
+
+  <p>Earlier Creator-period inquiry explored a provisional three-category model:</p>
+
+  <p>Spatial Ground</p>
+
+  <p>World Runtime</p>
+
+  <p>Civilization</p>
+
+  <p>That model was useful.</p>
+
+  <p>It helped separate:</p>
+
+  <p>designed foundations</p>
+
+  <p>governed operation</p>
+
+  <p>and emergent civilization</p>
+
+  <p>It also produced a provisional 3×3 framework containing concepts such as:</p>
+
+  <p>Foundational Survey Fabric</p>
+
+  <p>General Spatial Interpretation</p>
+
+  <p>Parcel Cadastre</p>
+
+  <p>Persistent World State</p>
+
+  <p>Identity / Rights / Control</p>
+
+  <p>Protocols / Services / Execution</p>
+
+  <p>Builder / Creation</p>
+
+  <p>Social / Economic / Cultural</p>
+
+  <p>Experience</p>
+
+  <p>The model did not survive unchanged.</p>
+
+  <p>That is not a failure.</p>
+
+  <p>It did what a good scaffold should do:</p>
+
+  <p>it exposed responsibilities that required deeper separation.</p>
+
+  <p>Several discoveries followed.</p>
+
+  <p>General Spatial Interpretation remained architecturally significant.</p>
+
+  <p>Identity / Rights / Control proved too important to treat casually as one undifferentiated concern.</p>
+
+  <p>Protocols, Services, and Execution revealed distinct responsibilities.</p>
+
+  <p>Social, Economic, and Cultural activity increasingly appeared to belong to emergent civilization rather than a formal World layer.</p>
+
+  <p>Persistence, provenance, interoperability, and experience each required more deliberate architectural treatment.</p>
+
+  <p>The 3×3 model therefore became part of the history of the Architecture rather than its final form.</p>
+
+  <p>The governing principle survived:</p>
+
+  <div class="principle">
+    <span class="principle-label">Governing Principle</span>
+    <p>The architecture must determine the diagram. The diagram must not determine the architecture.</p>
+  </div>
+
+  <h2>The Current Architecture Domains</h2>
+
+  <p>The present Architecture recognizes nine enduring domains:</p>
+
+  <p>Foundational Survey Fabric</p>
+
+  <p>Spatial Ground</p>
+
+  <p>General Spatial Interpretation</p>
+
+  <p>Parcel Cadastre</p>
+
+  <p>World Runtime</p>
+
+  <p>Identity / Rights / Control</p>
+
+  <p>Persistence / Provenance</p>
+
+  <p>Interoperability</p>
+
+  <p>Experience Architecture</p>
+
+  <p>These domains represent recognized areas of enduring responsibility within BitPangea.</p>
+
+  <p>Their presence in The Architecture means:</p>
+
+  <p>BitPangea has identified a lasting architectural problem that requires explicit treatment.</p>
+
+  <p>It does not automatically mean:</p>
+
+  <p>the domain is constitutional</p>
+
+  <p>the domain is fully designed</p>
+
+  <p>the domain is implemented</p>
+
+  <p>the domain is equally mature with every other domain</p>
+
+  <p>or that all nine domains form one strict dependency chain</p>
+
+  <p>That last distinction is especially important.</p>
+
+  <h2>Architecture Membership Is Not Dependency Order</h2>
+
+  <p>A list can create an illusion of sequence.</p>
+
+  <p>If one domain appears above another, a reader may assume:</p>
+
+  <p>first domain</p>
+
+  <div class="sequence">↓</div>
+
+  <p>second domain</p>
+
+  <div class="sequence">↓</div>
+
+  <p>third domain</p>
+
+  <div class="sequence">↓</div>
+
+  <p>strict dependency</p>
+
+  <p>That conclusion should not be made automatically.</p>
+
+  <p>The Architecture currently distinguishes two different ideas:</p>
+
+  <p>membership</p>
+
+  <p>and:</p>
+
+  <p>dependency</p>
+
+  <p>Membership answers:</p>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>Which enduring responsibilities belong to The Architecture?</strong></p>
+  </div>
+
+  <p>Dependency asks:</p>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>Which Architecture domain must be sufficiently established before another can proceed without guessing?</strong></p>
+  </div>
+
+  <p>Those are not the same question.</p>
+
+  <p>The strongest demonstrated dependency currently remains:</p>
+
+  <p>Foundational Survey Fabric</p>
+
+  <div class="sequence">↓</div>
+
+  <p>Spatial Ground</p>
+
+  <div class="sequence">↓</div>
+
+  <p>General Spatial Interpretation</p>
+
+  <div class="sequence">↓</div>
+
+  <p>Parcel Cadastre</p>
+
+  <p>Beyond that point, the Architecture may become more networked.</p>
+
+  <p>World Runtime, Identity / Rights / Control, Persistence / Provenance, and Interoperability may depend upon one another in more complex ways than a single vertical stack can express.</p>
+
+  <p>Experience Architecture is likely downstream of several of them.</p>
+
+  <p>But that relationship should be demonstrated rather than assumed.</p>
+
+  <p>The governing rule is:</p>
+
+  <div class="principle">
+    <span class="principle-label">Dependency Rule</span>
+    <p>Only claim strict ordering where dependency has actually been demonstrated.</p>
+  </div>
+
+  <h2>Why Architecture Domains Exist</h2>
+
+  <p>The purpose of Architecture domains is not organizational neatness.</p>
+
+  <p>They exist because different enduring responsibilities require different authorities, different forms of permanence, and different freedoms to change.</p>
+
+  <p>A Parcel should not depend upon an interface.</p>
+
+  <p>A rights system should not redefine Survey truth.</p>
+
+  <p>A Runtime should not become the Parcel Cadastre merely because it references Parcels.</p>
+
+  <p>An experience should not become canonical World state merely because a visitor sees it.</p>
+
+  <p>An interoperability layer should not acquire authority over the systems whose information it translates.</p>
+
+  <p>Persistence should preserve history without becoming authority over every truth it records.</p>
+
+  <p>Without architectural separation:</p>
+
+  <p>reference can become authority</p>
+
+  <p>implementation can become canon</p>
+
+  <p>representation can become truth</p>
+
+  <p>convenience can become permanence</p>
+
+  <p>The Architecture exists to prevent those collapses.</p>
+
+  <h2>The Architecture Boundary Rule</h2>
+
+  <p>The Requirements Integrity Audit produced one of the most important governing rules for the Architecture:</p>
+
+  <p>A lower Architecture domain may establish the constraints that higher domains must not violate, but it should not prescribe the internal responsibilities, organization, implementation, or lifecycle of a higher domain unless that dependency is irreducibly necessary to the lower domain itself.</p>
+
+  <p>The working form is:</p>
+
+  <div class="principle">
+    <span class="principle-label">Architecture Boundary Rule</span>
+    <p>Protect the boundary. Do not design the layer above from the layer below.</p>
+  </div>
+
+  <p>This principle applies far beyond the Foundational Survey Fabric.</p>
+
+  <p>For example:</p>
+
+  <p>The Parcel Cadastre may define canonical Parcel identity.</p>
+
+  <p>It should not therefore define the complete rights architecture.</p>
+
+  <p>Identity / Rights / Control may determine whether an actor may perform an action.</p>
+
+  <p>It should not therefore become World Runtime.</p>
+
+  <p>World Runtime may execute legitimate change.</p>
+
+  <p>It should not therefore become authority over every canonical truth it references.</p>
+
+  <p>Experience Architecture may expose World systems.</p>
+
+  <p>It should not therefore redefine them.</p>
+
+  <p>The Architecture is therefore built as much from boundaries of responsibility as from systems themselves.</p>
+
+  <h2>Foundational Survey Fabric</h2>
+
+  <p>The Foundational Survey Fabric establishes BitPangea’s minimal, exact, finite, planar, semantically neutral canonical spatial reference architecture.</p>
+
+  <p>Its deepest question is:</p>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>Where can canonical spatial reference be established?</strong></p>
+  </div>
+
+  <p>It preserves the spatial truth upon which later Architecture depends.</p>
+
+  <p>It does not define Parcels.</p>
+
+  <p>It does not determine World membership.</p>
+
+  <p>It does not determine rights.</p>
+
+  <p>It does not determine experience.</p>
+
+  <p>Its responsibility is intentionally narrow.</p>
+
+  <p>That narrowness is strength.</p>
+
+  <h2>Spatial Ground</h2>
+
+  <p>Spatial Ground is the next recognized Architecture domain above the Foundational Survey Fabric in the demonstrated spatial sequence.</p>
+
+  <p>Its full architecture remains to be developed.</p>
+
+  <p>Its existence reflects a necessary distinction:</p>
+
+  <p>canonical Survey reference is not yet the same thing as the complete usable spatial basis of the World.</p>
+
+  <p>Spatial Ground must therefore determine how the deeper Survey reference becomes usable as enduring World-space architecture without redefining the Survey Fabric beneath it.</p>
+
+  <p>Its precise responsibilities remain intentionally open pending formal inquiry.</p>
+
+  <p>That inquiry should begin only when the Foundational Survey Fabric is sufficiently stable to support it.</p>
+
+  <h2>General Spatial Interpretation</h2>
+
+  <p>General Spatial Interpretation occupies the demonstrated sequence between Spatial Ground and the Parcel Cadastre.</p>
+
+  <p>Earlier inquiry questioned whether it might collapse entirely into derived queries.</p>
+
+  <p>The Architecture now preserves it as a recognized domain.</p>
+
+  <p>That does not mean every interpretation becomes authoritative state.</p>
+
+  <p>Its role is instead to address spatial meaning and interpretation that sits above the canonical Survey foundation but below canonical Parcel definition.</p>
+
+  <p>Its exact internal design remains unresolved.</p>
+
+  <p>The key boundary is already clear:</p>
+
+  <p>General Spatial Interpretation may derive and interpret spatial truth.</p>
+
+  <p>It must not redefine the Foundational Survey Fabric.</p>
+
+  <p>And it must not replace the Parcel Cadastre’s authority over Parcel truth.</p>
+
+  <h2>Parcel Cadastre</h2>
+
+  <p>The Parcel Cadastre establishes the permanent identities, fixed positions, and authoritative territorial definitions of exactly:</p>
+
+  <p>21,000,000 Parcels</p>
+
+  <p>Its governing question is:</p>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>Which Parcel is this, and where does its canonical territory exist?</strong></p>
+  </div>
+
+  <p>The Cadastre owns Parcel truth.</p>
+
+  <p>It may depend upon deeper spatial architecture.</p>
+
+  <p>It does not thereby inherit authority over that deeper architecture.</p>
+
+  <p>Likewise, systems above it may reference Parcel truth without acquiring cadastral authority.</p>
+
+  <p>The Cadastre provides persistence of place at the Parcel level.</p>
+
+  <h2>World Runtime</h2>
+
+  <p>World Runtime concerns the operational existence of BitPangea.</p>
+
+  <p>A spatially coherent World can still be inert.</p>
+
+  <p>Something must allow legitimate change to occur and persist.</p>
+
+  <p>World Runtime therefore concerns the architecture through which BitPangea can:</p>
+
+  <p>maintain operational state</p>
+
+  <p>evaluate permissible change</p>
+
+  <p>execute valid actions</p>
+
+  <p>coordinate World services</p>
+
+  <p>preserve continuity across sessions and clients</p>
+
+  <p>recover from failure</p>
+
+  <p>and continue coherently through time</p>
+
+  <p>Its governing question is:</p>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>How does the World continue to exist and change without surrendering coherence?</strong></p>
+  </div>
+
+  <p>World Runtime should not absorb every authority it references.</p>
+
+  <p>It coordinates legitimate change.</p>
+
+  <p>It does not become all truth.</p>
+
+  <h2>Identity / Rights / Control</h2>
+
+  <p>The Identity / Rights / Control domain preserves a cluster of related but distinct responsibilities.</p>
+
+  <p>Identity asks:</p>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>Who or what is this?</strong></p>
+  </div>
+
+  <p>Rights asks:</p>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>What governed relationship exists?</strong></p>
+  </div>
+
+  <p>Control asks:</p>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>What authority may actually be exercised?</strong></p>
+  </div>
+
+  <p>These concepts remain grouped at the Architecture-domain level because they are deeply related.</p>
+
+  <p>That grouping should not be mistaken for proof that they must eventually be implemented as one system.</p>
+
+  <p>The Architecture preserves the responsibility.</p>
+
+  <p>Later design may further decompose it.</p>
+
+  <p>The essential distinction remains:</p>
+
+  <p>Identity is not ownership.</p>
+
+  <p>Ownership is not control.</p>
+
+  <p>Control is not permission.</p>
+
+  <p>Permission is not authority.</p>
+
+  <h2>Persistence / Provenance</h2>
+
+  <p>A persistent World requires more than current state.</p>
+
+  <p>It requires the ability to know:</p>
+
+  <p>what changed</p>
+
+  <p>where it came from</p>
+
+  <p>what authority produced it</p>
+
+  <p>what evidence supports it</p>
+
+  <p>what preceded it</p>
+
+  <p>and whether later changes altered the record</p>
+
+  <p>That responsibility belongs to Persistence / Provenance.</p>
+
+  <p>Persistence concerns endurance.</p>
+
+  <p>Provenance concerns origin and traceable lineage.</p>
+
+  <p>Together they help BitPangea preserve continuity without collapsing current state, historical record, and authority into one concept.</p>
+
+  <p>A World that remembers only its latest condition may persist operationally.</p>
+
+  <p>A World that preserves provenance can also explain how that condition came to exist.</p>
+
+  <h2>Interoperability</h2>
+
+  <p>BitPangea should not become permanently dependent upon one software implementation.</p>
+
+  <p>Systems will change.</p>
+
+  <p>Services will be replaced.</p>
+
+  <p>Interfaces will evolve.</p>
+
+  <p>Future technologies may interact with the World in ways that cannot presently be predicted.</p>
+
+  <p>Interoperability therefore exists as an Architecture domain concerned with the ability of distinct conforming systems to exchange, interpret, and act upon BitPangea information without changing its canonical meaning.</p>
+
+  <p>Its deepest principle is:</p>
+
+  <div class="principle">
+    <span class="principle-label">Interoperability Principle</span>
+    <p>Implementation diversity must not become semantic diversity.</p>
+  </div>
+
+  <p>Interoperability allows systems to differ.</p>
+
+  <p>It does not permit them to disagree about authoritative World truth.</p>
+
+  <h2>Experience Architecture</h2>
+
+  <p>Experience Architecture concerns how visitors, inhabitants, Builders, and future participants encounter and interact with BitPangea.</p>
+
+  <p>It may eventually include:</p>
+
+  <p>globe experience</p>
+
+  <p>flat lived World</p>
+
+  <p>navigation</p>
+
+  <p>Parcel interaction</p>
+
+  <p>Builder interfaces</p>
+
+  <p>discovery</p>
+
+  <p>visualization</p>
+
+  <p>immersion</p>
+
+  <p>future interaction modes not yet imagined</p>
+
+  <p>Experience matters enormously.</p>
+
+  <p>But it belongs high in the Architecture for a reason.</p>
+
+  <p>The experience should expose, translate, and interact with deeper systems.</p>
+
+  <p>It should not become their source of truth.</p>
+
+  <p>The principle remains:</p>
+
+  <div class="principle">
+    <span class="principle-label">Experience Principle</span>
+    <p>Experience is where the World becomes perceptible—not where the World becomes authoritative.</p>
+  </div>
+
+  <h2>Civilization Is Not an Architecture Domain</h2>
+
+  <p>One of the most important lessons of the earlier 3×3 model is what disappeared from the formal Architecture.</p>
+
+  <p>Civilization is not itself an Architecture domain.</p>
+
+  <p>This is deliberate.</p>
+
+  <p>BitPangea must create the conditions under which civilization may emerge.</p>
+
+  <p>It should not attempt to architect civilization itself as though:</p>
+
+  <p>culture</p>
+
+  <p>economy</p>
+
+  <p>community</p>
+
+  <p>history</p>
+
+  <p>social organization</p>
+
+  <p>collective meaning</p>
+
+  <p>were software layers to be installed.</p>
+
+  <p>The Architecture may provide capabilities that support them.</p>
+
+  <p>Civilization determines what those capabilities become.</p>
+
+  <p>Thus:</p>
+
+  <div class="principle">
+    <span class="principle-label">Civilization Principle</span>
+    <p>Architecture enables. Civilization emerges.</p>
+  </div>
+
+  <p>This is one of the clearest boundaries between the World the Creator must establish and the future that the Creator should leave open.</p>
+
+  <h2>Builders Belong Above the Architecture</h2>
+
+  <p>The same principle applies to Builders.</p>
+
+  <p>Builders require Architecture beneath them.</p>
+
+  <p>They may depend upon:</p>
+
+  <p>Parcel Cadastre</p>
+
+  <p>Identity / Rights / Control</p>
+
+  <p>World Runtime</p>
+
+  <p>Persistence / Provenance</p>
+
+  <p>Interoperability</p>
+
+  <p>Experience Architecture</p>
+
+  <p>But Builder / Creation is not presently preserved as one of the nine Architecture domains.</p>
+
+  <p>That distinction reflects a maturation of the earlier model.</p>
+
+  <p>Builders are participants in the World.</p>
+
+  <p>They use the Architecture.</p>
+
+  <p>They should not become another foundational authority merely because creation is essential to civilization.</p>
+
+  <p>The Creator establishes the World.</p>
+
+  <p>The Architecture makes legitimate creation possible.</p>
+
+  <p>Builders create within that World.</p>
+
+  <h2>Authority Does Not Flow Through Page Order</h2>
+
+  <p>Architecture diagrams can imply that authority travels upward or downward automatically.</p>
+
+  <p>It does not.</p>
+
+  <p>A lower domain does not own everything above it.</p>
+
+  <p>A higher domain does not acquire authority over everything it references below.</p>
+
+  <p>Responsibilities remain bounded.</p>
+
+  <p>Conceptually:</p>
+
+  <p>Foundational Survey Fabric</p>
+
+  <p>→ canonical Survey reference</p>
+
+  <p>Parcel Cadastre</p>
+
+  <p>→ canonical Parcel truth</p>
+
+  <p>Identity / Rights / Control</p>
+
+  <p>→ governed actor relationships and authority</p>
+
+  <p>World Runtime</p>
+
+  <p>→ legitimate operational change</p>
+
+  <p>Persistence / Provenance</p>
+
+  <p>→ durable continuity and lineage</p>
+
+  <p>Interoperability</p>
+
+  <p>→ reliable exchange across systems</p>
+
+  <p>Experience Architecture</p>
+
+  <p>→ human and machine encounter with the World</p>
+
+  <p>These systems must interact.</p>
+
+  <p>Interaction does not erase responsibility boundaries.</p>
+
+  <p>The governing principle is:</p>
+
+  <div class="principle">
+    <span class="principle-label">Authority Principle</span>
+    <p>Reference does not transfer authority.</p>
+  </div>
+
+  <h2>Permanence Is Unequal</h2>
+
+  <p>Not every Architecture domain should possess the same expected rate of change.</p>
+
+  <p>The deeper a system lies within the definition of the World, the more difficult casual change should become.</p>
+
+  <p>The closer a system lies to technology, interface, or experience, the more freedom it should possess to evolve.</p>
+
+  <p>Conceptually:</p>
+
+  <p>Foundational Survey Fabric</p>
+
+  <p>→ extreme persistence</p>
+
+  <p>Spatial Ground</p>
+
+  <p>→ very high persistence</p>
+
+  <p>General Spatial Interpretation</p>
+
+  <p>→ high architectural stability</p>
+
+  <p>Parcel Cadastre</p>
+
+  <p>→ permanent Parcel identity and territorial stability</p>
+
+  <p>World Runtime / Identity / Persistence / Interoperability</p>
+
+  <p>→ governed evolution</p>
+
+  <p>Experience Architecture</p>
+
+  <p>→ comparatively high freedom to evolve</p>
+
+  <p>This should not yet be interpreted as a formal change-control hierarchy.</p>
+
+  <p>It preserves a design principle:</p>
+
+  <div class="principle">
+    <span class="principle-label">Permanence Gradient</span>
+    <p>The deeper the layer, the more permanent it should be. The closer the layer is to the user, the more freedom it should have to evolve.</p>
+  </div>
+
+  <h2>The Architecture Must Permit Replacement</h2>
+
+  <p>The Architecture also exists to protect BitPangea from technological obsolescence.</p>
+
+  <p>Suppose the first renderer disappears.</p>
+
+  <p>The World should remain.</p>
+
+  <p>Suppose a service implementation becomes obsolete.</p>
+
+  <p>The service should be replaceable without relocating Parcels.</p>
+
+  <p>Suppose a new identity technology emerges.</p>
+
+  <p>It should be possible to evolve authentication without erasing actor continuity.</p>
+
+  <p>Suppose future devices present BitPangea in ways no current interface anticipates.</p>
+
+  <p>The underlying World should remain intelligible.</p>
+
+  <p>This produces an important architectural objective:</p>
+
+  <div class="principle">
+    <span class="principle-label">Replacement Principle</span>
+    <p>Implementations should be allowed to become obsolete without requiring the World to become obsolete with them.</p>
+  </div>
+
+  <div class="principle">
+    <span class="principle-label">Durability Principle</span>
+    <p>The Parcel should outlive the technology used to experience the Parcel.</p>
+  </div>
+
+  <div class="principle">
+    <span class="principle-label">Durability Principle</span>
+    <p>The World should outlive the technology used to experience the World.</p>
+  </div>
+
+  <h2>Cross-Domain Relationships</h2>
+
+  <p>A functioning BitPangea will require many Architecture domains to participate in the same operation.</p>
+
+  <p>A future construction event might conceptually involve:</p>
+
+  <p>actor identity</p>
+
+  <div class="sequence">↓</div>
+
+  <p>rights / control</p>
+
+  <div class="sequence">↓</div>
+
+  <p>Parcel Cadastre reference</p>
+
+  <div class="sequence">↓</div>
+
+  <p>World Runtime validation and execution</p>
+
+  <div class="sequence">↓</div>
+
+  <p>persistent state</p>
+
+  <div class="sequence">↓</div>
+
+  <p>provenance</p>
+
+  <div class="sequence">↓</div>
+
+  <p>interoperable exposure</p>
+
+  <div class="sequence">↓</div>
+
+  <p>experience representation</p>
+
+  <p>That sequence does not imply that all participating domains should become one system.</p>
+
+  <p>It demonstrates why responsibility boundaries matter.</p>
+
+  <p>Each Architecture domain should eventually be able to answer:</p>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>What truth do I own?</strong></p>
+  </div>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>What truth do I reference?</strong></p>
+  </div>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>What may I change?</strong></p>
+  </div>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>Whose authority do I rely upon?</strong></p>
+  </div>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>What evidence must I preserve?</strong></p>
+  </div>
+
+  <p>Those questions are more important than preserving a visually elegant diagram.</p>
+
+  <h2>Architecture Membership, Maturity, and Status</h2>
+
+  <p>Architecture domains may also possess different levels of maturity.</p>
+
+  <p>A domain can be:</p>
+
+  <p>recognized</p>
+
+  <p>provisional in design</p>
+
+  <p>reserved for later work</p>
+
+  <p>under active inquiry</p>
+
+  <p>institutionally established</p>
+
+  <p>without those states implying a different position in dependency order.</p>
+
+  <p>This distinction matters because terms such as Reserved and Provisional should describe architectural standing or maturity rather than silently imply sequence.</p>
+
+  <p>Likewise, presentation order should not be allowed to masquerade as dependency order.</p>
+
+  <p>The next architectural clarification must therefore settle exactly how The Architecture communicates:</p>
+
+  <p>membership</p>
+
+  <p>presentation</p>
+
+  <p>maturity</p>
+
+  <p>and dependency</p>
+
+  <p>without conflating them.</p>
+
+  <p>Until that work is complete:</p>
+
+  <p>Only demonstrated dependencies should be presented as strict dependencies.</p>
+
+  <h2>What Is Established</h2>
+
+  <p>The current Architecture supports the following statements:</p>
+
+  <p>BitPangea requires enduring Architecture above its spatial foundation.</p>
+
+  <p>That Architecture belongs within The Atlas, not The Foundation.</p>
+
+  <p>The Architecture currently recognizes nine domains:</p>
+
+  <p>Foundational Survey Fabric</p>
+
+  <p>Spatial Ground</p>
+
+  <p>General Spatial Interpretation</p>
+
+  <p>Parcel Cadastre</p>
+
+  <p>World Runtime</p>
+
+  <p>Identity / Rights / Control</p>
+
+  <p>Persistence / Provenance</p>
+
+  <p>Interoperability</p>
+
+  <p>Experience Architecture</p>
+
+  <p>Architecture-domain membership does not establish constitutional status.</p>
+
+  <p>Architecture-domain membership does not, by itself, establish strict dependency order.</p>
+
+  <p>The demonstrated spatial dependency is:</p>
+
+  <div class="sequence">Foundational Survey Fabric → Spatial Ground → General Spatial Interpretation → Parcel Cadastre</div>
+
+  <p>The relationships among the remaining Architecture domains require further dependency analysis.</p>
+
+  <p>The Foundational Survey Fabric and Parcel Cadastre are distinct authorities.</p>
+
+  <p>The Parcel Cadastre remains authoritative for Parcel truth.</p>
+
+  <p>World Runtime is required for governed operational continuity.</p>
+
+  <p>Identity / Rights / Control requires explicit Architecture treatment.</p>
+
+  <p>Persistence / Provenance requires explicit Architecture treatment.</p>
+
+  <p>Interoperability is necessary for technological durability.</p>
+
+  <p>Experience Architecture must remain distinct from deeper World authority.</p>
+
+  <p>Civilization is not itself a formal Architecture domain.</p>
+
+  <p>Builders operate through and above the Architecture rather than redefining its foundational truth.</p>
+
+  <div class="principle">
+    <span class="principle-label">Authority Principle</span>
+    <p>Reference does not transfer authority.</p>
+  </div>
+
+  <p>And:</p>
+
+  <div class="principle">
+    <span class="principle-label">Permanence Gradient</span>
+    <p>The deeper the layer, the more permanent it should be. The closer the layer is to the user, the more freedom it should have to evolve.</p>
+  </div>
+
+  <h2>What Remains Open</h2>
+
+  <p>Important architectural questions remain.</p>
+
+  <p>Among them are:</p>
+
+  <p>the final distinction between Architecture membership and presentation order</p>
+
+  <p>which dependencies beyond the first four domains are strict</p>
+
+  <p>which dependencies are cross-domain or bidirectional</p>
+
+  <p>the precise role of World Runtime relative to Identity / Rights / Control</p>
+
+  <p>the internal decomposition of Identity / Rights / Control</p>
+
+  <p>the internal decomposition of World Runtime</p>
+
+  <p>the exact responsibility boundary between World Runtime and Persistence / Provenance</p>
+
+  <p>the relationship between Persistence / Provenance and historical institutions</p>
+
+  <p>the precise role of Interoperability across the Architecture</p>
+
+  <p>the eventual responsibilities of Experience Architecture</p>
+
+  <p>the maturity and status model for Architecture domains</p>
+
+  <p>the final cross-domain authority model</p>
+
+  <p>the technical implementations of every Architecture domain</p>
+
+  <p>These questions should remain open until the architecture itself justifies their answers.</p>
+
+  <p>Origins should preserve the fact that the Architecture was discovered progressively rather than pretend the present structure appeared fully formed.</p>
+
+  <h2>The Principle</h2>
+
+  <p>The Architecture exists to protect a simple idea:</p>
+
+  <p>Not everything in a World should possess the same authority, the same permanence, or the same freedom to change.</p>
+
+  <p>Canonical spatial reference must remain stable enough to preserve place.</p>
+
+  <p>The Parcel Cadastre must remain stable enough to preserve the 21,000,000 Parcels.</p>
+
+  <p>World Runtime must be governed enough to permit legitimate change.</p>
+
+  <p>Identity, rights, and control must remain explicit enough to prevent authority from becoming accidental.</p>
+
+  <p>Persistence and provenance must preserve continuity.</p>
+
+  <p>Interoperability must allow technology to evolve.</p>
+
+  <p>Experience must remain free enough to improve.</p>
+
+  <p>And civilization must remain open enough to become something the Creator did not completely design.</p>
+
+  <p>The earlier 3×3 model expressed this as:</p>
+
+  <div class="principle">
+    <span class="principle-label">Earlier 3×3 Principle</span>
+    <p>Design the ground. Govern the runtime. Enable the civilization.</p>
+  </div>
+
+  <p>The mature Architecture carries that principle forward more precisely:</p>
+
+  <div class="principle">
+    <span class="principle-label">Mature Architecture Principle</span>
+    <p>Establish what must endure. Govern what must change. Leave open what should emerge.</p>
+  </div>
+
+  <p>And once the Architecture has done enough—</p>
+
+  <div class="principle">
+    <span class="principle-label">Governing Principle</span>
+    <p>allow the World to happen.</p>
+  </div>
+
+</section>
+
+<section class="chapter-note">
+  Part of <strong>BitPangea: Origins — Version 0.1</strong> · <em>The Foundational Manuscript of a Finite Digital World</em> · September 2026. This chapter is part of the preserved Version 0.1 publication; the complete manuscript remains the canonical versioned document.
+</section>
+
+<nav class="chapter-nav" aria-label="Origins chapter navigation">
+  <a class="nav-link" href="/origins/chapters/08-parcel-geometry-cadastre/">← Previous: Parcel Geometry and Cadastre</a>
+  <a class="nav-link center" href="/origins/#contents">Contents</a>
+  <a class="nav-link next" href="/origins/chapters/10-identity-rights-control/">Next: Identity, Rights, and Control →</a>
+</nav>
+
+</article>
+</main>
+
+<div id="bp-footer"></div>
+</body>
+</html>
