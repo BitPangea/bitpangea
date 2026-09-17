@@ -4392,18 +4392,5 @@ Day #112 therefore records a publication milestone rather than a new architectur
 </article>
 </main>
 <div id="bp-footer"></div>
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".chronology-disclosure").forEach((entry) => {
-    entry.addEventListener("toggle", () => {
-      if (entry.open) {
-        const rect = entry.getBoundingClientRect();
-        if (rect.top < 90 || rect.top > window.innerHeight * 0.82) {
-          entry.scrollIntoView({ behavior: "smooth", block: "start" });
-        }
-      }
-    });
-  });
-});
-</script></body>
+</body>
 </html>
