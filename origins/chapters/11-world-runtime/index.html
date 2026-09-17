@@ -1,1 +1,1840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 
+<title>World Runtime | BitPangea: Origins</title>
+
+<link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/favicon.svg" rel="shortcut icon"/>
+
+<link rel="stylesheet" href="/assets/css/bitpangea-framework.css"/>
+<script src="/assets/js/bitpangea-framework.js" defer></script>
+
+<meta content="Chapter XI of BitPangea: Origins — Version 0.1. World Runtime: governed operational change, persistent World State, validation, execution, recovery, integrity, interoperability, and continuity." name="description"/>
+<meta content="#00c8d7" name="theme-color"/>
+<meta content="index,follow" name="robots"/>
+<link href="https://bitpangea.com/origins/chapters/11-world-runtime/" rel="canonical"/>
+
+<meta content="World Runtime | BitPangea: Origins — Version 0.1" property="og:title"/>
+<meta content="The governed operational architecture through which BitPangea validates legitimate change, executes permitted operations, preserves World State, recovers coherently, and continues through time." property="og:description"/>
+<meta content="article" property="og:type"/>
+<meta content="https://bitpangea.com/origins/chapters/11-world-runtime/" property="og:url"/>
+<meta content="https://bitpangea.com/origins/BitPangea_Origins_cover.png" property="og:image"/>
+<meta content="BitPangea" property="og:site_name"/>
+<meta content="en_US" property="og:locale"/>
+
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="World Runtime | BitPangea: Origins — Version 0.1" name="twitter:title"/>
+<meta content="World Runtime exists to permit change without surrendering continuity." name="twitter:description"/>
+<meta content="https://bitpangea.com/origins/BitPangea_Origins_cover.png" name="twitter:image"/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Chapter",
+  "name": "World Runtime",
+  "position": 11,
+  "url": "https://bitpangea.com/origins/chapters/11-world-runtime/",
+  "isPartOf": {
+    "@type": "Book",
+    "name": "BitPangea: Origins",
+    "alternateName": "The Foundational Manuscript of a Finite Digital World",
+    "version": "0.1",
+    "url": "https://bitpangea.com/origins/"
+  },
+  "datePublished": "2026-09",
+  "image": "https://bitpangea.com/origins/BitPangea_Origins_cover.png"
+}
+</script>
+
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg: #02050a;
+  --gold: #d4a938;
+  --cyan: #00c8d7;
+  --white: #ffffff;
+  --muted: rgba(255,255,255,.70);
+  --panel: rgba(0,0,0,.44);
+  --panel-soft: rgba(0,0,0,.32);
+  --line: rgba(212,169,56,.18);
+}
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  background: var(--bg);
+  color: var(--white);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  position: relative;
+  line-height: 1.72;
+  overflow-x: hidden;
+  background: var(--bg);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 76% 9%, rgba(212,169,56,.12), transparent 31%),
+    radial-gradient(circle at 16% 21%, rgba(0,200,215,.08), transparent 31%),
+    linear-gradient(rgba(2,5,10,.84), rgba(2,5,10,.97));
+  z-index: -2;
+  pointer-events: none;
+}
+
+.page {
+  width: 100%;
+  padding: 150px 28px 90px;
+}
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 58px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  box-shadow: 0 0 70px rgba(0,0,0,.58);
+  backdrop-filter: blur(4px);
+}
+
+.breadcrumb {
+  color: rgba(255,255,255,.70);
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+}
+
+.breadcrumb a,
+.breadcrumb a:visited {
+  color: var(--cyan);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover { color: #fff; }
+
+.eyebrow {
+  color: var(--cyan);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  color: var(--white);
+  font-size: clamp(46px, 6.5vw, 76px);
+  line-height: 1.02;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  text-shadow: 0 0 24px rgba(0,0,0,.92);
+}
+
+.subtitle {
+  color: var(--gold);
+  font-size: clamp(18px, 2.1vw, 24px);
+  line-height: 1.35;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.meta {
+  color: rgba(255,255,255,.72);
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.divider {
+  width: 64px;
+  height: 2px;
+  background: var(--gold);
+  margin: 38px 0 42px;
+  box-shadow: 0 0 14px rgba(212,169,56,.65);
+}
+
+.chapter-copy h2 {
+  margin-top: 42px;
+  margin-bottom: 18px;
+  color: var(--gold);
+  font-size: 24px;
+  line-height: 1.3;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  text-shadow: 0 0 12px rgba(0,0,0,.9);
+}
+
+.chapter-copy p {
+  margin-bottom: 22px;
+  color: rgba(255,255,255,.93);
+  font-size: 17px;
+  line-height: 1.8;
+  text-shadow: 0 0 8px rgba(0,0,0,.88);
+}
+
+.chapter-copy strong { color: #fff; }
+
+.question-group {
+  margin: 28px 0 30px;
+  padding: 26px 28px;
+  background: rgba(0,0,0,.40);
+  border-left: 3px solid var(--cyan);
+}
+
+.question-group p {
+  margin-bottom: 10px;
+  color: rgba(255,255,255,.94);
+}
+
+.question-group p:last-child { margin-bottom: 0; }
+
+.principle {
+  margin: 28px 0;
+  padding: 24px 26px;
+  border-left: 3px solid var(--gold);
+  background: rgba(0,0,0,.46);
+}
+
+.principle-label {
+  display: block;
+  color: var(--cyan);
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 9px;
+}
+
+.principle p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.sequence {
+  margin: 26px 0;
+  padding: 22px 24px;
+  border-left: 3px solid var(--cyan);
+  background: rgba(0,0,0,.46);
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: .4px;
+}
+
+.chapter-note {
+  margin-top: 44px;
+  padding: 26px 28px;
+  background: rgba(0,0,0,.40);
+  border: 1px solid rgba(212,169,56,.18);
+  color: rgba(255,255,255,.80);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.chapter-note strong { color: var(--gold); }
+
+.chapter-nav {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 14px;
+  align-items: stretch;
+  margin-top: 28px;
+}
+
+.nav-link,
+.nav-link:visited {
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+  padding: 14px 18px;
+  border: 1px solid rgba(212,169,56,.27);
+  background: rgba(0,0,0,.40);
+  color: var(--gold);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 12px;
+  transition: .2s ease;
+}
+
+.nav-link:hover {
+  color: #fff;
+  border-color: rgba(255,255,255,.55);
+}
+
+.nav-link.center {
+  justify-content: center;
+  color: var(--cyan);
+  border-color: rgba(0,200,215,.25);
+}
+
+.nav-link.next { justify-content: flex-end; text-align: right; }
+
+@media (max-width: 768px) {
+  .page { padding: 178px 16px 60px; }
+  .container { padding: 36px 24px 46px; }
+  .hero h1 { letter-spacing: 3px; }
+  .chapter-copy p { font-size: 16px; }
+  .chapter-nav { grid-template-columns: 1fr; }
+  .nav-link, .nav-link.center, .nav-link.next { justify-content: flex-start; text-align: left; }
+}
+</style>
+</head>
+
+<body data-bp-page="origins">
+<div id="bp-header"></div>
+
+<main class="page">
+<article class="container">
+
+<div class="breadcrumb">
+  <a href="/">BitPangea</a> › <a href="/origins/">Origins</a> › Chapter XI
+</div>
+
+<section class="hero">
+  <div class="eyebrow">Origins · Version 0.1 · Chapter XI</div>
+  <h1>World Runtime</h1>
+  <div class="subtitle">The Foundational Manuscript of a Finite Digital World</div>
+  <div class="meta">September 2026 · BitPangea Creator Period</div>
+  <div class="divider"></div>
+</section>
+
+<section class="chapter-copy">
+
+  <p>A World can possess space without possessing operational life.</p>
+
+  <p>It can have a complete Extent.</p>
+
+  <p>It can contain exactly 21,000,000 Parcels.</p>
+
+  <p>It can possess a Foundational Survey Fabric.</p>
+
+  <p>It can possess a Parcel Cadastre.</p>
+
+  <p>It can possess actors, rights, and control relationships.</p>
+
+  <p>But unless BitPangea can preserve what is happening from one moment to the next, it remains a static architecture.</p>
+
+  <p>That responsibility belongs to a recognized Architecture domain:</p>
+
+  <p>World Runtime</p>
+
+  <p>World Runtime is the governed operational architecture through which BitPangea evaluates legitimate change, executes permitted operations, preserves current World condition, coordinates with other authoritative domains, and continues coherently through time.</p>
+
+  <p>It does not replace the spatial architecture beneath it.</p>
+
+  <p>It does not become Identity / Rights / Control.</p>
+
+  <p>It does not become Persistence / Provenance.</p>
+
+  <p>It does not become Interoperability.</p>
+
+  <p>It does not become Experience Architecture.</p>
+
+  <p>Its responsibility is narrower and more important:</p>
+
+  <div class="principle">
+    <span class="principle-label">Runtime Responsibility</span>
+    <p>Allow the World to change without surrendering coherence.</p>
+  </div>
+
+  <h2>From Spatial Truth to Operational Truth</h2>
+
+  <p>The deeper spatial Architecture answers questions such as:</p>
+
+  <p>Where is this place?</p>
+
+  <p>Which Parcel is this?</p>
+
+  <p>What territory defines it?</p>
+
+  <p>What canonical spatial relationships exist?</p>
+
+  <p>World Runtime answers a different class of questions:</p>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>What exists here now?</strong></p>
+  </div>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>What operation is being requested?</strong></p>
+  </div>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>Is the operation permitted?</strong></p>
+  </div>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>What state should change?</strong></p>
+  </div>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>What state should remain unchanged?</strong></p>
+  </div>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>What must persist afterward?</strong></p>
+  </div>
+
+  <p>This distinction is fundamental.</p>
+
+  <p>The Foundational Survey Fabric preserves canonical spatial reference.</p>
+
+  <p>The Parcel Cadastre preserves canonical Parcel truth.</p>
+
+  <p>World Runtime governs mutable operational truth.</p>
+
+  <p>Conceptually:</p>
+
+  <p>Spatial Architecture</p>
+
+  <p>→ persistent place</p>
+
+  <p>World Runtime</p>
+
+  <p>→ persistent operational condition</p>
+
+  <p>A Parcel may remain the same Parcel while nearly everything upon it changes.</p>
+
+  <p>That difference is precisely why Runtime must remain a distinct Architecture domain.</p>
+
+  <h2>Persistent World State</h2>
+
+  <p>A persistent World requires memory of its current operational condition.</p>
+
+  <p>If something is built, BitPangea must be capable of preserving the fact that it exists.</p>
+
+  <p>If legitimate infrastructure is established, later participants should encounter the resulting condition unless another legitimate change has occurred.</p>
+
+  <p>If an authorized operation changes the World, that change should survive the session, client, or interface that initiated it.</p>
+
+  <p>Persistent World State may eventually include state associated with:</p>
+
+  <p>constructed objects</p>
+
+  <p>infrastructure</p>
+
+  <p>World features</p>
+
+  <p>configuration</p>
+
+  <p>service condition</p>
+
+  <p>authorized relationships</p>
+
+  <p>mutable environmental conditions</p>
+
+  <p>other legitimate World state</p>
+
+  <p>The exact categories remain open.</p>
+
+  <p>The requirement does not:</p>
+
+  <div class="principle">
+    <span class="principle-label">Persistent World State</span>
+    <p>What legitimately becomes true of the World must be capable of remaining true after the interaction that caused it has ended.</p>
+  </div>
+
+  <h2>State Is Not Spatial Truth</h2>
+
+  <p>Persistent World State must remain distinct from the spatial truth beneath it.</p>
+
+  <p>Suppose a structure is constructed upon a Parcel.</p>
+
+  <p>The structure belongs to mutable World state.</p>
+
+  <p>The Parcel belongs to canonical cadastral truth.</p>
+
+  <p>The Parcel’s position ultimately depends upon deeper spatial Architecture.</p>
+
+  <p>If the structure later disappears, the Parcel remains.</p>
+
+  <p>Conceptually:</p>
+
+  <p>Foundational Survey Fabric</p>
+
+  <p>→ canonical spatial reference</p>
+
+  <p>Parcel Cadastre</p>
+
+  <p>→ canonical Parcel identity and territory</p>
+
+  <p>World Runtime</p>
+
+  <p>→ current mutable condition</p>
+
+  <p>This separation allows change without destabilizing place.</p>
+
+  <p>The Runtime should therefore never treat ordinary World-state mutation as permission to alter the canonical spatial foundation.</p>
+
+  <h2>Legitimate State Transition</h2>
+
+  <p>Persistence alone does not create a World Runtime.</p>
+
+  <p>A database can remember data.</p>
+
+  <p>World Runtime must govern legitimate transition.</p>
+
+  <p>It must eventually distinguish among:</p>
+
+  <p>valid change</p>
+
+  <p>invalid change</p>
+
+  <p>authorized change</p>
+
+  <p>unauthorized change</p>
+
+  <p>temporary change</p>
+
+  <p>persistent change</p>
+
+  <p>failed change</p>
+
+  <p>superseded change</p>
+
+  <p>Identity / Rights / Control contributes the authority information needed to evaluate a proposed action.</p>
+
+  <p>World Runtime consumes that information during operational decision-making.</p>
+
+  <p>Conceptually:</p>
+
+  <p>Actor</p>
+
+  <div class="sequence">↓</div>
+
+  <p>Identity resolved</p>
+
+  <div class="sequence">↓</div>
+
+  <p>rights / control evaluated</p>
+
+  <div class="sequence">↓</div>
+
+  <p>requested operation validated</p>
+
+  <div class="sequence">↓</div>
+
+  <p>World Runtime executes</p>
+
+  <div class="sequence">↓</div>
+
+  <p>World State changes</p>
+
+  <p>The World should not change merely because a client requests change.</p>
+
+  <p>It should change because a valid operation has passed through the appropriate authorities and Runtime rules.</p>
+
+  <h2>Request, Authorization, Execution, Result</h2>
+
+  <p>One of the most important Runtime distinctions is:</p>
+
+  <div class="sequence">request<br/>≠<br/>authorization<br/>≠<br/>execution<br/>≠<br/>result</div>
+
+  <p>A request says:</p>
+
+  <p>Someone wants something to happen.</p>
+
+  <p>Authorization says:</p>
+
+  <p>The action is presently permitted under the relevant authority and conditions.</p>
+
+  <p>Execution says:</p>
+
+  <p>The legitimate operation is actually carried out.</p>
+
+  <p>Result says:</p>
+
+  <p>The World now occupies a new operational condition.</p>
+
+  <p>These stages should remain conceptually separable even if an implementation performs them quickly.</p>
+
+  <p>A mature Runtime should ultimately be able to explain:</p>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>What operation was requested?</strong></p>
+  </div>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>Against which object or capability?</strong></p>
+  </div>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>Under whose authority?</strong></p>
+  </div>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>What validation occurred?</strong></p>
+  </div>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>What was executed?</strong></p>
+  </div>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>What changed?</strong></p>
+  </div>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>What did not change?</strong></p>
+  </div>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>What became canonical World state afterward?</strong></p>
+  </div>
+
+  <p>This does not require every trivial event to become administratively heavy.</p>
+
+  <p>It establishes clarity for consequential World mutation.</p>
+
+  <h2>Execution</h2>
+
+  <p>Execution is where a permitted operation becomes actual World change.</p>
+
+  <p>Conceptually:</p>
+
+  <p>State A</p>
+
+  <div class="sequence">↓</div>
+
+  <p>authorized valid operation</p>
+
+  <div class="sequence">↓</div>
+
+  <p>execution</p>
+
+  <div class="sequence">↓</div>
+
+  <p>State B</p>
+
+  <p>Execution belongs to World Runtime.</p>
+
+  <p>It should not be confused with the authority that permitted the action.</p>
+
+  <p>Identity / Rights / Control may establish whether the actor has standing.</p>
+
+  <p>Runtime executes the legitimate change.</p>
+
+  <p>Persistence / Provenance may preserve how that change occurred.</p>
+
+  <p>The distinction is:</p>
+
+  <div class="principle">
+    <span class="principle-label">Operational Responsibility</span>
+    <p>Authority permits. Runtime changes. Provenance remembers.</p>
+  </div>
+
+  <h2>Runtime as Orchestration</h2>
+
+  <p>World Runtime should be understood partly as an orchestration domain.</p>
+
+  <p>A consequential operation may require information from several Architecture domains.</p>
+
+  <p>For example, a future construction action might involve:</p>
+
+  <p>1. An actor requests construction.</p>
+
+  <p>2. Identity is resolved.</p>
+
+  <p>3. The target Parcel is resolved through the Parcel Cadastre.</p>
+
+  <p>4. Applicable rights and control are evaluated.</p>
+
+  <p>5. Runtime validates the proposed operation.</p>
+
+  <p>6. Relevant protocols determine valid interaction.</p>
+
+  <p>7. Runtime executes the legitimate change.</p>
+
+  <p>8. Persistent World State is updated.</p>
+
+  <p>9. Persistence / Provenance receives appropriate evidence.</p>
+
+  <p>10. Interoperability exposes the resulting canonical condition to other conforming systems.</p>
+
+  <p>11. Experience Architecture presents the result to participants.</p>
+
+  <p>No single Architecture domain necessarily owns all of these responsibilities.</p>
+
+  <p>That is intentional.</p>
+
+  <p>The Runtime permits the World to operate across specialized authorities without collapsing them into one undifferentiated system.</p>
+
+  <h2>The Runtime Does Not Own Everything</h2>
+
+  <p>Because World Runtime sits near the center of operational activity, it would be easy to make it the ultimate authority for the entire World.</p>
+
+  <p>That would undermine the Architecture.</p>
+
+  <p>World Runtime should not become the authoritative source for:</p>
+
+  <p>The Extent</p>
+
+  <p>canonical Survey reference</p>
+
+  <p>Parcel identity</p>
+
+  <p>Parcel territorial definition</p>
+
+  <p>actor identity</p>
+
+  <p>rights provenance</p>
+
+  <p>historical evidence</p>
+
+  <p>interoperability semantics</p>
+
+  <p>experience representation</p>
+
+  <p>Those responsibilities belong elsewhere.</p>
+
+  <p>Runtime references them when needed.</p>
+
+  <div class="principle">
+    <span class="principle-label">Authority Principle</span>
+    <p>Reference does not transfer authority.</p>
+  </div>
+
+  <p>Conceptually:</p>
+
+  <p>World Runtime</p>
+
+  <p>→ coordinates legitimate operation</p>
+
+  <p>not:</p>
+
+  <p>World Runtime</p>
+
+  <p>→ becomes all World authority</p>
+
+  <p>This boundary is essential.</p>
+
+  <h2>Protocols</h2>
+
+  <p>World Runtime requires coherent operational rules.</p>
+
+  <p>A protocol defines how legitimate interaction occurs.</p>
+
+  <p>It may eventually specify:</p>
+
+  <p>message structure</p>
+
+  <p>operation semantics</p>
+
+  <p>validation requirements</p>
+
+  <p>reference forms</p>
+
+  <p>state-transition rules</p>
+
+  <p>error behavior</p>
+
+  <p>expected responses</p>
+
+  <p>authority dependencies</p>
+
+  <p>Protocols create a common operational language.</p>
+
+  <p>Without them, different implementations could assign different meanings to the same request.</p>
+
+  <p>A Builder and Runtime must agree on what a construction request means.</p>
+
+  <p>A Parcel reference must resolve consistently.</p>
+
+  <p>A state transition must not become one thing in one client and another thing elsewhere.</p>
+
+  <p>The principle is:</p>
+
+  <div class="principle">
+    <span class="principle-label">Protocol Principle</span>
+    <p>Protocols define coherent participation in World operation.</p>
+  </div>
+
+  <p>But:</p>
+
+  <div class="principle">
+    <span class="principle-label">Protocol Boundary</span>
+    <p>Protocol is not authority.</p>
+  </div>
+
+  <p>A protocol may specify how a Parcel is referenced.</p>
+
+  <p>The Parcel Cadastre remains authoritative for Parcel truth.</p>
+
+  <p>A protocol may specify how identity evidence is presented.</p>
+
+  <p>Identity / Rights / Control remains authoritative for the relevant governed relationship.</p>
+
+  <h2>Services</h2>
+
+  <p>A service provides capability.</p>
+
+  <p>Services may eventually expose or perform functions related to:</p>
+
+  <p>Parcel lookup</p>
+
+  <p>identity resolution</p>
+
+  <p>authorization</p>
+
+  <p>construction</p>
+
+  <p>navigation</p>
+
+  <p>World state</p>
+
+  <p>discovery</p>
+
+  <p>history</p>
+
+  <p>infrastructure</p>
+
+  <p>These are examples, not adopted service categories.</p>
+
+  <p>The architectural distinction is:</p>
+
+  <div class="principle">
+    <span class="principle-label">Protocol / Service Distinction</span>
+    <p>A protocol defines coherent interaction. A service provides capability.</p>
+  </div>
+
+  <p>One service implementation may later replace another.</p>
+
+  <p>If canonical state, protocols, and authority boundaries are correctly designed, the World need not be redefined merely because software changes.</p>
+
+  <p>This supports a central durability principle:</p>
+
+  <div class="principle">
+    <span class="principle-label">Durability Principle</span>
+    <p>BitPangea should be able to replace software without replacing the World.</p>
+  </div>
+
+  <h2>Services Are Not Architecture Authorities by Default</h2>
+
+  <p>A service may expose information from an authoritative domain.</p>
+
+  <p>That does not automatically make the service authoritative.</p>
+
+  <p>For example:</p>
+
+  <p>Parcel service</p>
+
+  <p>→ exposes cadastral information</p>
+
+  <p>Parcel Cadastre</p>
+
+  <p>→ owns Parcel truth</p>
+
+  <p>Likewise:</p>
+
+  <p>identity service</p>
+
+  <p>→ exposes identity capability</p>
+
+  <p>Identity / Rights / Control</p>
+
+  <p>→ owns the relevant governed identity relationship</p>
+
+  <p>And:</p>
+
+  <p>history service</p>
+
+  <p>→ exposes preserved records</p>
+
+  <p>Persistence / Provenance</p>
+
+  <p>→ preserves authoritative lineage or evidence according to its own responsibility</p>
+
+  <p>The service is an implementation capability.</p>
+
+  <p>The Architecture domain determines where authority belongs.</p>
+
+  <h2>Deterministic Canonical Change</h2>
+
+  <p>A persistent World benefits when equivalent valid operations produce compatible canonical outcomes.</p>
+
+  <p>This does not mean every BitPangea experience must be deterministic.</p>
+
+  <p>Civilization can contain uncertainty.</p>
+
+  <p>Games can contain randomness.</p>
+
+  <p>Creative systems can produce variation.</p>
+
+  <p>Simulations can contain stochastic behavior.</p>
+
+  <p>But the Runtime must distinguish deliberate uncertainty from accidental disagreement among implementations.</p>
+
+  <p>For a canonical state transition:</p>
+
+  <p>Equivalent authorized operations against equivalent relevant state should not produce contradictory canonical outcomes merely because different conforming software executed them.</p>
+
+  <p>That principle will eventually require sufficiently precise operational semantics.</p>
+
+  <p>The technical mechanism remains open.</p>
+
+  <p>The architectural requirement does not.</p>
+
+  <h2>Validation Before Mutation</h2>
+
+  <p>A strong Runtime principle is:</p>
+
+  <div class="principle">
+    <span class="principle-label">Runtime Principle</span>
+    <p>Validate before mutating canonical World state whenever possible.</p>
+  </div>
+
+  <p>Conceptually:</p>
+
+  <p>request</p>
+
+  <div class="sequence">↓</div>
+
+  <p>resolve canonical references</p>
+
+  <div class="sequence">↓</div>
+
+  <p>evaluate authority</p>
+
+  <div class="sequence">↓</div>
+
+  <p>validate operation</p>
+
+  <div class="sequence">↓</div>
+
+  <p>execute</p>
+
+  <div class="sequence">↓</div>
+
+  <p>persist resulting state</p>
+
+  <p>This reduces the risk that an invalid request partially alters the World before being rejected.</p>
+
+  <p>Complex operations may eventually require more sophisticated workflows.</p>
+
+  <p>The general discipline remains important:</p>
+
+  <p>Canonical World state should not be mutated casually.</p>
+
+  <h2>Atomicity and Coherent Change</h2>
+
+  <p>Some operations may affect more than one World object or Architecture domain.</p>
+
+  <p>A future action could:</p>
+
+  <p>create a structure</p>
+
+  <p>modify associated state</p>
+
+  <p>connect infrastructure</p>
+
+  <p>change permissions</p>
+
+  <p>produce provenance evidence</p>
+
+  <p>What happens if part of the operation succeeds and another part fails?</p>
+
+  <p>World Runtime must eventually address this class of problem.</p>
+
+  <p>Consequential change should either:</p>
+
+  <p>complete coherently</p>
+
+  <p>or:</p>
+
+  <p>fail in a manner that does not leave contradictory canonical state</p>
+
+  <p>This does not require Origins to prescribe a specific database transaction model.</p>
+
+  <p>The deeper architectural principle is:</p>
+
+  <div class="principle">
+    <span class="principle-label">Consistency Principle</span>
+    <p>Consequential World change should preserve consistency across every canonical state it affects.</p>
+  </div>
+
+  <h2>Runtime and Persistence / Provenance</h2>
+
+  <p>Current World State answers:</p>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>What is true now?</strong></p>
+  </div>
+
+  <p>Persistence / Provenance helps answer:</p>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>How did this become true?</strong></p>
+  </div>
+
+  <p>These responsibilities interact closely.</p>
+
+  <p>They should not collapse.</p>
+
+  <p>World Runtime may produce evidence such as:</p>
+
+  <p>operation identity</p>
+
+  <p>actor reference</p>
+
+  <p>authority reference</p>
+
+  <p>prior relevant state</p>
+
+  <p>resulting state</p>
+
+  <p>time ordering</p>
+
+  <p>execution outcome</p>
+
+  <p>Persistence / Provenance may preserve appropriate lineage and evidence.</p>
+
+  <p>The Runtime should not automatically become the permanent historical archive merely because it generates the event.</p>
+
+  <p>Likewise, a historical record should not become Runtime authority merely because it remembers what occurred.</p>
+
+  <p>The distinction is:</p>
+
+  <div class="principle">
+    <span class="principle-label">Runtime / Provenance Boundary</span>
+    <p>Runtime changes the present. Provenance preserves the path to the present.</p>
+  </div>
+
+  <h2>State Is More Than a Snapshot</h2>
+
+  <p>A World that saves only its latest state can persist.</p>
+
+  <p>It may still be unable to explain itself.</p>
+
+  <p>For consequential World conditions, BitPangea may eventually need to distinguish:</p>
+
+  <p>current state</p>
+
+  <p>prior state</p>
+
+  <p>transition</p>
+
+  <p>actor</p>
+
+  <p>authority</p>
+
+  <p>execution</p>
+
+  <p>time</p>
+
+  <p>result</p>
+
+  <p>evidence</p>
+
+  <p>The exact retention architecture remains unresolved.</p>
+
+  <p>But a mature World should avoid being able to answer only:</p>
+
+  <p>This is how things are.</p>
+
+  <p>while being unable to answer:</p>
+
+  <p>How did they become this way?</p>
+
+  <p>That explanatory responsibility is one reason World Runtime and Persistence / Provenance must cooperate.</p>
+
+  <h2>Time and Ordering</h2>
+
+  <p>Persistent operation requires meaningful ordering.</p>
+
+  <p>This does not mean BitPangea must reproduce Earth time as its deepest temporal architecture.</p>
+
+  <p>It does not require a particular calendar.</p>
+
+  <p>It does not require a simulated day/night cycle.</p>
+
+  <p>The requirement is more fundamental:</p>
+
+  <p>Consequential World events and state transitions must be capable of meaningful ordering.</p>
+
+  <p>BitPangea may need to distinguish:</p>
+
+  <p>before</p>
+
+  <p>after</p>
+
+  <p>current</p>
+
+  <p>previous</p>
+
+  <p>future-effective</p>
+
+  <p>expired</p>
+
+  <p>superseded</p>
+
+  <p>where relevant.</p>
+
+  <p>Rights may begin or end.</p>
+
+  <p>Delegation may become effective later.</p>
+
+  <p>Concurrent changes may compete.</p>
+
+  <p>History may depend upon sequence.</p>
+
+  <p>The final temporal architecture remains open.</p>
+
+  <p>The need for ordered change does not.</p>
+
+  <h2>Concurrency</h2>
+
+  <p>A World used by many actors may receive multiple valid requests at nearly the same time.</p>
+
+  <p>Those requests may conflict.</p>
+
+  <p>Two actors may attempt to modify the same object.</p>
+
+  <p>One action may rely upon state changed by another.</p>
+
+  <p>One operation may invalidate another operation’s assumptions.</p>
+
+  <p>World Runtime will therefore require some concurrency model.</p>
+
+  <p>It must eventually be capable of determining:</p>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>Which operation becomes canonical first?</strong></p>
+  </div>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>Can both changes coexist?</strong></p>
+  </div>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>Does one invalidate the other?</strong></p>
+  </div>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>Must one be retried?</strong></p>
+  </div>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>What state becomes authoritative afterward?</strong></p>
+  </div>
+
+  <p>These are technical questions.</p>
+
+  <p>But they arise from a deeper architectural condition:</p>
+
+  <p>BitPangea must remain one coherent operational World even when many actors interact with it simultaneously.</p>
+
+  <h2>Failure Is Part of the Architecture</h2>
+
+  <p>A durable World cannot assume perfect execution.</p>
+
+  <p>Networks fail.</p>
+
+  <p>Services become unavailable.</p>
+
+  <p>Clients disconnect.</p>
+
+  <p>Messages arrive malformed.</p>
+
+  <p>Processes crash.</p>
+
+  <p>Implementations contain defects.</p>
+
+  <p>Operations time out.</p>
+
+  <p>Infrastructure becomes unavailable.</p>
+
+  <p>Failure is not a strange exception to a digital World.</p>
+
+  <p>It is part of the environment in which the World must persist.</p>
+
+  <p>Runtime architecture should therefore eventually support principles such as:</p>
+
+  <p>failure containment</p>
+
+  <p>safe retry</p>
+
+  <p>state verification</p>
+
+  <p>graceful degradation</p>
+
+  <p>recovery</p>
+
+  <p>auditability</p>
+
+  <p>consistency checking</p>
+
+  <p>The exact mechanisms remain open.</p>
+
+  <p>The expectation should not.</p>
+
+  <h2>Recovery</h2>
+
+  <p>Persistence without recoverability is incomplete.</p>
+
+  <p>The Runtime must eventually answer:</p>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>How can correct operational state be restored after failure without arbitrarily rewriting the World or its history?</strong></p>
+  </div>
+
+  <p>Possible mechanisms may eventually include:</p>
+
+  <p>validated checkpoints</p>
+
+  <p>replayable operations</p>
+
+  <p>redundant state</p>
+
+  <p>integrity verification</p>
+
+  <p>authoritative recovery procedures</p>
+
+  <p>Those are possibilities, not adopted designs.</p>
+
+  <p>The principle is:</p>
+
+  <div class="principle">
+    <span class="principle-label">Recovery Principle</span>
+    <p>Persistence must include the ability to recover coherent state.</p>
+  </div>
+
+  <p>A World that remembers incorrectly after failure is not meaningfully persistent.</p>
+
+  <h2>Integrity</h2>
+
+  <p>Canonical World State must be trustworthy.</p>
+
+  <p>BitPangea must eventually be capable of determining that operational state is:</p>
+
+  <p>valid</p>
+
+  <p>internally consistent</p>
+
+  <p>produced through legitimate transition</p>
+
+  <p>not silently altered outside authorized pathways</p>
+
+  <p>This is the problem of integrity.</p>
+
+  <p>The exact technical mechanism remains unresolved.</p>
+
+  <p>It may eventually involve:</p>
+
+  <p>cryptography</p>
+
+  <p>signatures</p>
+
+  <p>verification</p>
+
+  <p>replication</p>
+
+  <p>consensus</p>
+
+  <p>audit structures</p>
+
+  <p>other techniques</p>
+
+  <p>No particular mechanism is presently mandated.</p>
+
+  <p>The requirement comes first:</p>
+
+  <div class="principle">
+    <span class="principle-label">Integrity Principle</span>
+    <p>Participants and systems must be able to distinguish legitimate World change from unexplained mutation.</p>
+  </div>
+
+  <h2>Runtime and Blockchain</h2>
+
+  <p>BitPangea’s Bitcoin heritage makes one question inevitable:</p>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>Must World Runtime itself use a blockchain?</strong></p>
+  </div>
+
+  <p>The answer remains:</p>
+
+  <p>Not established.</p>
+
+  <p>Some Runtime requirements may benefit from:</p>
+
+  <p>cryptographic verification</p>
+
+  <p>distributed validation</p>
+
+  <p>tamper-evident evidence</p>
+
+  <p>consensus</p>
+
+  <p>replication</p>
+
+  <p>Other responsibilities may be better served through different architecture.</p>
+
+  <p>BitPangea should not choose a technology merely because it is thematically aligned.</p>
+
+  <p>The correct sequence remains:</p>
+
+  <p>World requirement</p>
+
+  <div class="sequence">↓</div>
+
+  <p>Architecture requirement</p>
+
+  <div class="sequence">↓</div>
+
+  <p>technical evaluation</p>
+
+  <div class="sequence">↓</div>
+
+  <p>implementation choice</p>
+
+  <p>not:</p>
+
+  <p>preferred technology</p>
+
+  <div class="sequence">↓</div>
+
+  <p>World redesigned to justify it</p>
+
+  <p>Bitcoin demonstrates important principles of digital scarcity, verification, and durable rules.</p>
+
+  <p>It does not require every BitPangea subsystem to reproduce Bitcoin’s architecture.</p>
+
+  <h2>Runtime and Decentralization</h2>
+
+  <p>The same discipline applies to decentralization.</p>
+
+  <p>“Decentralized” may describe:</p>
+
+  <p>authority</p>
+
+  <p>governance</p>
+
+  <p>hosting</p>
+
+  <p>execution</p>
+
+  <p>validation</p>
+
+  <p>storage</p>
+
+  <p>replication</p>
+
+  <p>identity</p>
+
+  <p>control</p>
+
+  <p>A system may be decentralized in one dimension and centralized in another.</p>
+
+  <p>The meaningful architectural question is not:</p>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>Is BitPangea decentralized?</strong></p>
+  </div>
+
+  <p>It is:</p>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>Which responsibilities should be distributed, among whom, for what purpose, and with what consequences for authority and continuity?</strong></p>
+  </div>
+
+  <p>That inquiry remains open.</p>
+
+  <p>Origins should preserve optionality.</p>
+
+  <h2>Runtime and Interoperability</h2>
+
+  <p>World Runtime will eventually operate across more than one implementation.</p>
+
+  <p>That makes Interoperability critical.</p>
+
+  <p>Different conforming systems may:</p>
+
+  <p>submit operations</p>
+
+  <p>read World state</p>
+
+  <p>expose services</p>
+
+  <p>present experiences</p>
+
+  <p>participate in Runtime workflows</p>
+
+  <p>They must not reinterpret canonical operational meaning arbitrarily.</p>
+
+  <p>Interoperability therefore must ensure that:</p>
+
+  <p>references retain meaning</p>
+
+  <p>protocol semantics remain stable</p>
+
+  <p>state representations remain compatible</p>
+
+  <p>valid results remain interpretable</p>
+
+  <p>implementation diversity does not create multiple contradictory Worlds</p>
+
+  <p>The principle is:</p>
+
+  <div class="principle">
+    <span class="principle-label">Interoperability Principle</span>
+    <p>One operational World may support many conforming implementations.</p>
+  </div>
+
+  <h2>Runtime and Builders</h2>
+
+  <p>World Runtime becomes especially important once Builders can create within BitPangea.</p>
+
+  <p>A Builder should not write directly into canonical World state however it chooses.</p>
+
+  <p>The safer architectural relationship is:</p>
+
+  <p>Builder</p>
+
+  <div class="sequence">↓</div>
+
+  <p>requests legitimate change</p>
+
+  <div class="sequence">↓</div>
+
+  <p>Identity / Rights / Control</p>
+
+  <p>evaluates authority</p>
+
+  <div class="sequence">↓</div>
+
+  <p>World Runtime</p>
+
+  <p>validates and executes</p>
+
+  <div class="sequence">↓</div>
+
+  <p>Persistent World State</p>
+
+  <p>records resulting operational condition</p>
+
+  <div class="sequence">↓</div>
+
+  <p>Persistence / Provenance</p>
+
+  <p>preserves appropriate lineage</p>
+
+  <p>The Builder can therefore be powerful without becoming sovereign.</p>
+
+  <p>The Runtime protects the boundary between creative freedom and World integrity.</p>
+
+  <h2>Runtime and Experience Architecture</h2>
+
+  <p>The same distinction applies to experiences.</p>
+
+  <p>An experience may allow a participant to:</p>
+
+  <p>walk</p>
+
+  <p>inspect</p>
+
+  <p>navigate</p>
+
+  <p>construct</p>
+
+  <p>communicate</p>
+
+  <p>interact</p>
+
+  <p>But something appearing in an interface does not automatically become canonical World state.</p>
+
+  <p>Conceptually:</p>
+
+  <p>Experience Architecture</p>
+
+  <p>→ presents and requests</p>
+
+  <p>World Runtime</p>
+
+  <p>→ validates and executes</p>
+
+  <p>World State</p>
+
+  <p>→ preserves the legitimate result</p>
+
+  <p>This allows many future experiences to coexist above one operational World.</p>
+
+  <p>Experience does not own the truth merely because it displays it.</p>
+
+  <h2>One World, Many Clients</h2>
+
+  <p>A mature BitPangea may eventually be encountered through many applications.</p>
+
+  <p>Those applications should not create incompatible Worlds merely because their interfaces differ.</p>
+
+  <p>The Runtime should support:</p>
+
+  <p>one canonical operational BitPangea capable of being encountered through many conforming clients.</p>
+
+  <p>This mirrors the spatial architecture:</p>
+
+  <p>one canonical spatial truth</p>
+
+  <p>→ many representations</p>
+
+  <p>and:</p>
+
+  <p>one canonical operational World</p>
+
+  <p>→ many experiences</p>
+
+  <p>This separation is essential to technological durability.</p>
+
+  <h2>Runtime Boundaries</h2>
+
+  <p>World Runtime must also know what not to persist.</p>
+
+  <p>Not every action surrounding BitPangea belongs to canonical World state.</p>
+
+  <p>For example:</p>
+
+  <p>a temporary user-interface preference</p>
+
+  <p>a private draft</p>
+
+  <p>a local camera position</p>
+
+  <p>an unsaved experiment</p>
+
+  <p>a transient communication</p>
+
+  <p>a client-only visualization</p>
+
+  <p>may not need to alter the World.</p>
+
+  <p>This creates important distinctions:</p>
+
+  <div class="sequence">client state<br/>≠<br/>World state</div>
+
+  <div class="sequence">temporary state<br/>≠<br/>persistent state</div>
+
+  <div class="sequence">private representation<br/>≠<br/>canonical World condition</div>
+
+  <div class="sequence">displayed possibility<br/>≠<br/>executed World change</div>
+
+  <p>Runtime should preserve what belongs to the World.</p>
+
+  <p>It should not attempt to own everything that happens around it.</p>
+
+  <h2>World State as a Shared Responsibility</h2>
+
+  <p>Changing canonical World state is qualitatively different from changing private local state.</p>
+
+  <p>A legitimate persistent change says:</p>
+
+  <p>From this point forward, this is part of the operational World unless later legitimately changed.</p>
+
+  <p>That gives mutation architectural weight.</p>
+
+  <p>It explains why:</p>
+
+  <p>identity</p>
+
+  <p>rights</p>
+
+  <p>authorization</p>
+
+  <p>validation</p>
+
+  <p>execution</p>
+
+  <p>persistence</p>
+
+  <p>provenance</p>
+
+  <p>integrity</p>
+
+  <p>all converge around Runtime activity.</p>
+
+  <p>The World must permit enough change to support life.</p>
+
+  <p>It must preserve enough discipline to remain coherent.</p>
+
+  <h2>Change Without Loss of Identity</h2>
+
+  <p>The deepest purpose of World Runtime is not merely to preserve objects.</p>
+
+  <p>It is to allow BitPangea to change while remaining BitPangea.</p>
+
+  <p>Earlier spatial Architecture established:</p>
+
+  <p>The World should be capable of changing without losing where it is.</p>
+
+  <p>World Runtime extends that principle:</p>
+
+  <div class="principle">
+    <span class="principle-label">Continuity Principle</span>
+    <p>The World should be capable of changing without losing what it is.</p>
+  </div>
+
+  <p>Buildings may appear.</p>
+
+  <p>Infrastructure may evolve.</p>
+
+  <p>Rights may change.</p>
+
+  <p>Communities may form.</p>
+
+  <p>Services may improve.</p>
+
+  <p>Technology may be replaced.</p>
+
+  <p>Civilization may become increasingly complex.</p>
+
+  <p>Yet those changes should occur within an architectural frame strong enough that BitPangea remains one continuous World through time.</p>
+
+  <h2>Internal Runtime Decomposition Remains Open</h2>
+
+  <p>World Runtime is now a recognized Architecture domain.</p>
+
+  <p>Its internal architecture is not complete.</p>
+
+  <p>Continued design may eventually distinguish separate responsibilities for:</p>
+
+  <p>protocols</p>
+
+  <p>services</p>
+
+  <p>validation</p>
+
+  <p>authorization integration</p>
+
+  <p>execution</p>
+
+  <p>state transition</p>
+
+  <p>concurrency</p>
+
+  <p>recovery</p>
+
+  <p>integrity</p>
+
+  <p>operational scheduling</p>
+
+  <p>other Runtime concerns</p>
+
+  <p>That does not weaken the domain.</p>
+
+  <p>It demonstrates that the domain has been identified before its final internal decomposition has been prematurely frozen.</p>
+
+  <p>Origins should preserve that distinction.</p>
+
+  <h2>What Is Established</h2>
+
+  <p>The current Architecture supports the following statements:</p>
+
+  <p>World Runtime is a recognized Architecture domain.</p>
+
+  <p>BitPangea requires persistent operational World State.</p>
+
+  <p>World State is distinct from foundational spatial truth.</p>
+
+  <p>Legitimate change must be evaluated before canonical state is mutated.</p>
+
+  <p>Identity / Rights / Control informs authorization.</p>
+
+  <p>World Runtime executes legitimate operational change.</p>
+
+  <p>Request, authorization, execution, and result are distinct concepts.</p>
+
+  <p>Protocols define coherent operational interaction.</p>
+
+  <p>Services provide capabilities.</p>
+
+  <p>Protocols and services do not automatically acquire authority over the canonical domains they reference.</p>
+
+  <div class="principle">
+    <span class="principle-label">Authority Principle</span>
+    <p>Reference does not transfer authority.</p>
+  </div>
+
+  <p>Runtime should coordinate specialized authorities rather than absorb them.</p>
+
+  <p>Consequential state transitions should preserve consistency.</p>
+
+  <p>Persistent state must survive sessions, clients, and interface changes.</p>
+
+  <p>World Runtime must support many clients encountering one canonical operational World.</p>
+
+  <p>Persistence should include recoverability and integrity.</p>
+
+  <p>World Runtime should produce sufficient evidence for Persistence / Provenance to preserve meaningful lineage.</p>
+
+  <p>Interoperability must allow multiple conforming implementations to participate without creating contradictory World meaning.</p>
+
+  <p>No particular blockchain, database architecture, consensus model, hosting model, or decentralization scheme is presently required.</p>
+
+  <h2>What Remains Open</h2>
+
+  <p>World Runtime remains one of BitPangea’s largest unresolved Architecture domains.</p>
+
+  <p>Important questions include:</p>
+
+  <p>the canonical World State model</p>
+
+  <p>which classes of information belong to World State</p>
+
+  <p>the authoritative state store or stores</p>
+
+  <p>the internal Runtime protocol architecture</p>
+
+  <p>service boundaries</p>
+
+  <p>execution model</p>
+
+  <p>authorization interface</p>
+
+  <p>transaction and atomicity requirements</p>
+
+  <p>concurrency model</p>
+
+  <p>temporal ordering</p>
+
+  <p>failure handling</p>
+
+  <p>recovery architecture</p>
+
+  <p>integrity mechanisms</p>
+
+  <p>state history</p>
+
+  <p>event evidence</p>
+
+  <p>auditability</p>
+
+  <p>distribution</p>
+
+  <p>replication</p>
+
+  <p>consensus, if required</p>
+
+  <p>decentralization, if any</p>
+
+  <p>cryptographic verification</p>
+
+  <p>Runtime conformance</p>
+
+  <p>interaction with Identity / Rights / Control</p>
+
+  <p>interaction with Persistence / Provenance</p>
+
+  <p>interaction with Interoperability</p>
+
+  <p>interaction with Builders</p>
+
+  <p>interaction with infrastructure</p>
+
+  <p>interaction with future governance</p>
+
+  <p>These questions should remain open until actual World requirements justify their answers.</p>
+
+  <p>Origins should not manufacture implementation certainty where architecture has not yet earned it.</p>
+
+  <h2>The Principle</h2>
+
+  <p>World Runtime is what gives BitPangea a present tense.</p>
+
+  <p>The Foundational Survey Fabric preserves canonical where.</p>
+
+  <p>The Parcel Cadastre preserves which Parcel.</p>
+
+  <p>Identity identifies the actor.</p>
+
+  <p>Rights describe the governed relationship.</p>
+
+  <p>Control and authorization determine whether authority may be exercised.</p>
+
+  <p>Protocols define coherent interaction.</p>
+
+  <p>Services provide capability.</p>
+
+  <p>World Runtime performs legitimate change.</p>
+
+  <p>Persistent World State preserves the resulting condition.</p>
+
+  <p>Persistence / Provenance preserves how that condition came to exist.</p>
+
+  <p>Interoperability allows multiple systems to understand it.</p>
+
+  <p>Experience Architecture allows participants to encounter it.</p>
+
+  <p>Together, these responsibilities allow BitPangea to continue from one moment into the next without being recreated from scratch.</p>
+
+  <p>The governing principle is therefore:</p>
+
+  <div class="principle">
+    <span class="principle-label">Governing Principle</span>
+    <p>World Runtime exists to permit change without surrendering continuity.</p>
+  </div>
+
+  <p>A World that cannot change is only a model.</p>
+
+  <p>A World that changes without authority is incoherent.</p>
+
+  <p>A World that changes without persistence has no present.</p>
+
+  <p>A World that changes without provenance cannot explain its past.</p>
+
+  <p>BitPangea must therefore be able to:</p>
+
+  <div class="principle">
+    <span class="principle-label">Runtime Purpose</span>
+    <p>change, remain coherent, persist, and remember.</p>
+  </div>
+
+</section>
+
+<section class="chapter-note">
+  Part of <strong>BitPangea: Origins — Version 0.1</strong> · <em>The Foundational Manuscript of a Finite Digital World</em> · September 2026. This chapter is part of the preserved Version 0.1 publication; the complete manuscript remains the canonical versioned document.
+</section>
+
+<nav class="chapter-nav" aria-label="Origins chapter navigation">
+  <a class="nav-link" href="/origins/chapters/10-identity-rights-control/">← Previous: Identity, Rights, and Control</a>
+  <a class="nav-link center" href="/origins/#contents">Contents</a>
+  <a class="nav-link next" href="/origins/chapters/12-builders-civilization/">Next: Builders and Civilization →</a>
+</nav>
+
+</article>
+</main>
+
+<div id="bp-footer"></div>
+</body>
+</html>
