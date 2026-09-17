@@ -13,7 +13,7 @@
 
   <!-- Open Graph -->
   <meta property="og:title" content="BitPangea — A Digital Supercontinent">
-  <meta property="og:description" content="BitPangea is a finite digital World of exactly 21,000,000 Parcels. Explore the World, its Foundation and Atlas, and White Paper Version 0.1 — A World Before a Civilization.">
+  <meta property="og:description" content="BitPangea is a finite digital World of exactly 21,000,000 Parcels. Explore the World, its Foundation and Atlas, White Paper Version 0.1, and BitPangea: Origins — the foundational manuscript of a finite digital World.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://bitpangea.com/">
   <meta property="og:image" content="https://bitpangea.com/images/bitpangea-og.jpg">
@@ -23,7 +23,7 @@
   <!-- Twitter/X -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="BitPangea — A Digital Supercontinent">
-  <meta name="twitter:description" content="One finite digital World. Exactly 21,000,000 Parcels. Read White Paper Version 0.1 — A World Before a Civilization.">
+  <meta name="twitter:description" content="One finite digital World. Exactly 21,000,000 Parcels. Read White Paper Version 0.1 and BitPangea: Origins — the foundational manuscript of a finite digital World.">
   <meta name="twitter:image" content="https://bitpangea.com/images/bitpangea-og.jpg">
 
   <!-- Structured Data -->
@@ -34,14 +34,24 @@
     "name":"BitPangea",
     "url":"https://bitpangea.com/",
     "description":"BitPangea is a finite digital World of exactly 21,000,000 Parcels, constitutionally constrained and intentionally designed.",
-    "subjectOf":{
-      "@type":"Report",
-      "name":"BitPangea — A World Before a Civilization",
-      "alternateName":"BitPangea White Paper — Version 0.1",
-      "url":"https://bitpangea.com/white-paper/",
-      "datePublished":"2026-09",
-      "description":"The architectural thesis of BitPangea: one finite digital World, exactly 21,000,000 persistent Parcels, governed change, Builder creation, emergent civilization, and accumulating history."
-    }
+    "subjectOf":[
+      {
+        "@type":"Report",
+        "name":"BitPangea — A World Before a Civilization",
+        "alternateName":"BitPangea White Paper — Version 0.1",
+        "url":"https://bitpangea.com/white-paper/",
+        "datePublished":"2026-09",
+        "description":"The architectural thesis of BitPangea: one finite digital World, exactly 21,000,000 persistent Parcels, governed change, Builder creation, emergent civilization, and accumulating history."
+      },
+      {
+        "@type":"CreativeWork",
+        "name":"BitPangea: Origins",
+        "alternateName":"BitPangea: Origins — Version 0.1",
+        "url":"https://bitpangea.com/origins/",
+        "datePublished":"2026-09",
+        "description":"The Foundational Manuscript of a Finite Digital World — the complete record of the architectural reasoning that established the World."
+      }
+    ]
   }
   </script>
   
@@ -57,7 +67,7 @@
   
   <meta
     name="description"
-    content="BitPangea is a finite digital World of exactly 21,000,000 Parcels. Explore the World, its Foundation and Atlas, and White Paper Version 0.1 — A World Before a Civilization."
+    content="BitPangea is a finite digital World of exactly 21,000,000 Parcels. Explore the World, its Foundation and Atlas, White Paper Version 0.1, and BitPangea: Origins — the foundational manuscript of a finite digital World."
   />
 
   <style>
@@ -243,7 +253,8 @@ h1 .smaller {
       background: rgba(0, 200, 215, 0.10);
     }
 
-    .white-paper-card {
+    .white-paper-card,
+    .origins-card {
       width: min(100%, 520px);
       margin: 0 0 22px;
       padding: 20px 22px;
@@ -253,7 +264,8 @@ h1 .smaller {
       backdrop-filter: blur(5px);
     }
 
-    .white-paper-kicker {
+    .white-paper-kicker,
+    .origins-kicker {
       color: var(--cyan);
       letter-spacing: 3px;
       text-transform: uppercase;
@@ -261,7 +273,8 @@ h1 .smaller {
       margin-bottom: 8px;
     }
 
-    .white-paper-title {
+    .white-paper-title,
+    .origins-title {
       color: var(--white);
       font-size: 16px;
       line-height: 1.45;
@@ -269,12 +282,14 @@ h1 .smaller {
       margin-bottom: 7px;
     }
 
-    .white-paper-title strong {
+    .white-paper-title strong,
+    .origins-title strong {
       color: var(--gold);
       font-weight: 600;
     }
 
-    .white-paper-copy {
+    .white-paper-copy,
+    .origins-copy {
       color: rgba(219, 232, 241, 0.72);
       font-size: 13px;
       line-height: 1.6;
@@ -282,7 +297,9 @@ h1 .smaller {
     }
 
     .white-paper-link,
-    .white-paper-link:visited {
+    .white-paper-link:visited,
+    .origins-link,
+    .origins-link:visited {
       color: var(--gold);
       text-decoration: none;
       text-transform: uppercase;
@@ -290,9 +307,19 @@ h1 .smaller {
       font-size: 11px;
     }
 
-    .white-paper-link:hover {
+    .white-paper-link:hover,
+    .origins-link:hover {
       color: var(--white);
       text-shadow: 0 0 12px rgba(212, 169, 56, 0.55);
+    }
+
+    .origins-card {
+      margin-top: -8px;
+      border-color: rgba(212, 169, 56, 0.30);
+    }
+
+    .origins-kicker {
+      color: var(--gold);
     }
 
     .scarcity-card {
@@ -516,6 +543,7 @@ DIGITAL<br>
 
       <div class="cta-row">
         <a class="button" href="/white-paper/">Read The White Paper</a>
+        <a class="button" href="/origins/">Read Origins</a>
         <a class="button" href="/thedeclaration/">Read The Declaration</a>
         <a class="button" href="/thefoundation/">Enter The Foundation</a>
         <a class="button" href="/theatlas/">Enter The Atlas</a>
@@ -529,6 +557,15 @@ DIGITAL<br>
           The architectural thesis of one finite digital World containing exactly 21,000,000 persistent Parcels — establishing place before ownership, architecture before applications, and a durable foundation before civilization.
         </div>
         <a class="white-paper-link" href="/white-paper/">Explore the White Paper →</a>
+      </aside>
+
+      <aside class="origins-card" aria-label="BitPangea Origins Version 0.1">
+        <div class="origins-kicker">Origins · Version 0.1 · September 2026</div>
+        <div class="origins-title"><strong>BitPangea: Origins</strong> — The Foundational Manuscript of a Finite Digital World</div>
+        <div class="origins-copy">
+          The complete record of the architectural reasoning that established the World — preserving how and why the understanding emerged.
+        </div>
+        <a class="origins-link" href="/origins/">Explore Origins →</a>
       </aside>
 
       <aside class="scarcity-card" aria-label="Core BitPangea constraints">
