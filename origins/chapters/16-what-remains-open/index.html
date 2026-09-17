@@ -1,1 +1,2639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 
+<title>What Remains Open | BitPangea: Origins</title>
+
+<link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/favicon.svg" rel="shortcut icon"/>
+
+<link rel="stylesheet" href="/assets/css/bitpangea-framework.css"/>
+<script src="/assets/js/bitpangea-framework.js" defer></script>
+
+<meta content="Chapter XVI of BitPangea: Origins — Version 0.1. What Remains Open: a map of architectural uncertainty, unresolved dependencies, parked inquiries, and freedoms intentionally preserved for future civilization." name="description"/>
+<meta content="#00c8d7" name="theme-color"/>
+<meta content="index,follow" name="robots"/>
+<link href="https://bitpangea.com/origins/chapters/16-what-remains-open/" rel="canonical"/>
+
+<meta content="What Remains Open | BitPangea: Origins — Version 0.1" property="og:title"/>
+<meta content="The unresolved landscape of BitPangea: required resolutions, dependent questions, parked inquiries, and intentional openness across spatial, operational, participatory, historical, and constitutional architecture." property="og:description"/>
+<meta content="article" property="og:type"/>
+<meta content="https://bitpangea.com/origins/chapters/16-what-remains-open/" property="og:url"/>
+<meta content="https://bitpangea.com/origins/BitPangea_Origins_cover.png" property="og:image"/>
+<meta content="BitPangea" property="og:site_name"/>
+<meta content="en_US" property="og:locale"/>
+
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="What Remains Open | BitPangea: Origins — Version 0.1" name="twitter:title"/>
+<meta content="Resolve what coherence requires. Defer what dependency requires. Preserve as open what civilization requires." name="twitter:description"/>
+<meta content="https://bitpangea.com/origins/BitPangea_Origins_cover.png" name="twitter:image"/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Chapter",
+  "name": "What Remains Open",
+  "position": 16,
+  "url": "https://bitpangea.com/origins/chapters/16-what-remains-open/",
+  "isPartOf": {
+    "@type": "Book",
+    "name": "BitPangea: Origins",
+    "alternateName": "The Foundational Manuscript of a Finite Digital World",
+    "version": "0.1",
+    "url": "https://bitpangea.com/origins/"
+  },
+  "datePublished": "2026-09",
+  "image": "https://bitpangea.com/origins/BitPangea_Origins_cover.png"
+}
+</script>
+
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg: #02050a;
+  --gold: #d4a938;
+  --cyan: #00c8d7;
+  --white: #ffffff;
+  --muted: rgba(255,255,255,.70);
+  --panel: rgba(0,0,0,.44);
+  --panel-soft: rgba(0,0,0,.32);
+  --line: rgba(212,169,56,.18);
+}
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  background: var(--bg);
+  color: var(--white);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  position: relative;
+  line-height: 1.72;
+  overflow-x: hidden;
+  background: var(--bg);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 76% 9%, rgba(212,169,56,.12), transparent 31%),
+    radial-gradient(circle at 16% 21%, rgba(0,200,215,.08), transparent 31%),
+    linear-gradient(rgba(2,5,10,.84), rgba(2,5,10,.97));
+  z-index: -2;
+  pointer-events: none;
+}
+
+.page {
+  width: 100%;
+  padding: 150px 28px 90px;
+}
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 58px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  box-shadow: 0 0 70px rgba(0,0,0,.58);
+  backdrop-filter: blur(4px);
+}
+
+.breadcrumb {
+  color: rgba(255,255,255,.70);
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+}
+
+.breadcrumb a,
+.breadcrumb a:visited {
+  color: var(--cyan);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover { color: #fff; }
+
+.eyebrow {
+  color: var(--cyan);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  color: var(--white);
+  font-size: clamp(46px, 6.5vw, 76px);
+  line-height: 1.02;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  text-shadow: 0 0 24px rgba(0,0,0,.92);
+}
+
+.subtitle {
+  color: var(--gold);
+  font-size: clamp(18px, 2.1vw, 24px);
+  line-height: 1.35;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.meta {
+  color: rgba(255,255,255,.72);
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.divider {
+  width: 64px;
+  height: 2px;
+  background: var(--gold);
+  margin: 38px 0 42px;
+  box-shadow: 0 0 14px rgba(212,169,56,.65);
+}
+
+.chapter-copy h2 {
+  margin-top: 42px;
+  margin-bottom: 18px;
+  color: var(--gold);
+  font-size: 24px;
+  line-height: 1.3;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  text-shadow: 0 0 12px rgba(0,0,0,.9);
+}
+
+.chapter-copy p {
+  margin-bottom: 22px;
+  color: rgba(255,255,255,.93);
+  font-size: 17px;
+  line-height: 1.8;
+  text-shadow: 0 0 8px rgba(0,0,0,.88);
+}
+
+.chapter-copy strong { color: #fff; }
+
+.question-group {
+  margin: 28px 0 30px;
+  padding: 26px 28px;
+  background: rgba(0,0,0,.40);
+  border-left: 3px solid var(--cyan);
+}
+
+.question-group p {
+  margin-bottom: 10px;
+  color: rgba(255,255,255,.94);
+}
+
+.question-group p:last-child { margin-bottom: 0; }
+
+.principle {
+  margin: 28px 0;
+  padding: 24px 26px;
+  border-left: 3px solid var(--gold);
+  background: rgba(0,0,0,.46);
+}
+
+.principle-label {
+  display: block;
+  color: var(--cyan);
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 9px;
+}
+
+.principle p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.sequence {
+  margin: 26px 0;
+  padding: 22px 24px;
+  border-left: 3px solid var(--cyan);
+  background: rgba(0,0,0,.46);
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: .4px;
+}
+
+.chapter-note {
+  margin-top: 44px;
+  padding: 26px 28px;
+  background: rgba(0,0,0,.40);
+  border: 1px solid rgba(212,169,56,.18);
+  color: rgba(255,255,255,.80);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.chapter-note strong { color: var(--gold); }
+
+.chapter-nav {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 14px;
+  align-items: stretch;
+  margin-top: 28px;
+}
+
+.nav-link,
+.nav-link:visited {
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+  padding: 14px 18px;
+  border: 1px solid rgba(212,169,56,.27);
+  background: rgba(0,0,0,.40);
+  color: var(--gold);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 12px;
+  transition: .2s ease;
+}
+
+.nav-link:hover {
+  color: #fff;
+  border-color: rgba(255,255,255,.55);
+}
+
+.nav-link.center {
+  justify-content: center;
+  color: var(--cyan);
+  border-color: rgba(0,200,215,.25);
+}
+
+.nav-link.next { justify-content: flex-end; text-align: right; }
+
+@media (max-width: 768px) {
+  .page { padding: 178px 16px 60px; }
+  .container { padding: 36px 24px 46px; }
+  .hero h1 { letter-spacing: 3px; }
+  .chapter-copy p { font-size: 16px; }
+  .chapter-nav { grid-template-columns: 1fr; }
+  .nav-link, .nav-link.center, .nav-link.next { justify-content: flex-start; text-align: left; }
+}
+</style>
+</head>
+
+<body data-bp-page="origins">
+<div id="bp-header"></div>
+
+<main class="page">
+<article class="container">
+
+<div class="breadcrumb">
+  <a href="/">BitPangea</a> › <a href="/origins/">Origins</a> › Chapter XVI
+</div>
+
+<section class="hero">
+  <div class="eyebrow">Origins · Version 0.1 · Chapter XVI</div>
+  <h1>What Remains Open</h1>
+  <div class="subtitle">The Foundational Manuscript of a Finite Digital World</div>
+  <div class="meta">September 2026 · BitPangea Creator Period</div>
+  <div class="divider"></div>
+</section>
+
+<section class="chapter-copy">
+
+  <p>BitPangea now possesses enough constitutional structure and Architecture to identify not only what has been established, but what still requires discovery.</p>
+
+  <p>That distinction matters.</p>
+
+  <p>An open question is not merely unfinished work.</p>
+
+  <p>It may represent:</p>
+
+  <p>a problem that must eventually be resolved before the World can operate coherently</p>
+
+  <p>a problem that should wait until prerequisite Architecture matures</p>
+
+  <p>a question whose answer depends upon another unresolved inquiry</p>
+
+  <p>or:</p>
+
+  <p>a question that should remain open because it properly belongs to future Builders, institutions, or civilization</p>
+
+  <p>This section therefore does not function as a backlog.</p>
+
+  <p>It is a map of architectural uncertainty.</p>
+
+  <p>The governing discipline is:</p>
+
+  <p>Resolve what coherence requires.</p>
+
+  <p>Defer what dependency requires.</p>
+
+  <p>Preserve as open what civilization requires.</p>
+
+  <h2>Different Kinds of Openness</h2>
+
+  <p>Not every unresolved matter belongs to the same category.</p>
+
+  <p>BitPangea increasingly distinguishes among at least four kinds of open question.</p>
+
+  <p>Required Resolution</p>
+
+  <p>These are questions the World eventually must answer in order to become canonically operational.</p>
+
+  <p>They may concern:</p>
+
+  <p>Survey mathematics</p>
+
+  <p>Parcel establishment</p>
+
+  <p>identity</p>
+
+  <p>authorization</p>
+
+  <p>Runtime state</p>
+
+  <p>integrity</p>
+
+  <p>or other indispensable systems.</p>
+
+  <p>Their unresolved status is temporary.</p>
+
+  <h2>Dependent Resolution</h2>
+
+  <p>These questions matter, but answering them now would require assumptions about Architecture that has not yet matured.</p>
+
+  <p>Their proper status is:</p>
+
+  <p>wait for the dependency.</p>
+
+  <p>A dependent question is not being ignored.</p>
+
+  <p>It is being protected from premature resolution.</p>
+
+  <h2>Parked Inquiry</h2>
+
+  <p>Some questions remain potentially important but currently lack enough evidence to justify active work.</p>
+
+  <p>They are neither rejected nor necessarily required.</p>
+
+  <p>They are parked.</p>
+
+  <p>A parked inquiry may return later if new Architecture gives it independent work to do.</p>
+
+  <h2>Intentional Openness</h2>
+
+  <p>Some questions should not necessarily be answered by the Creator at all.</p>
+
+  <p>They concern things such as:</p>
+
+  <p>culture</p>
+
+  <p>social convention</p>
+
+  <p>future institutions</p>
+
+  <p>historical interpretation</p>
+
+  <p>many economic outcomes</p>
+
+  <p>unexpected uses of the World.</p>
+
+  <p>These are not engineering debt.</p>
+
+  <p>They are preserved freedom.</p>
+
+  <p>Thus:</p>
+
+  <div class="principle">
+    <span class="principle-label">Kinds of Openness</span>
+    <p>Some questions await answers. Others preserve possibility.</p>
+  </div>
+
+  <h2>The Extent</h2>
+
+  <p>The constitutional meaning of WP-S-I — The Extent is established.</p>
+
+  <p>The Extent concerns:</p>
+
+  <p>the complete spatial scope of BitPangea.</p>
+
+  <p>Finitude is preserved as a condition of that Extent.</p>
+
+  <p>What remains unresolved is not whether the World is finite.</p>
+
+  <p>It is how the constitutional truth of The Extent will ultimately be supported by Architecture and mathematics.</p>
+
+  <p>Open questions include:</p>
+
+  <p>How will The Extent relate formally to higher spatial Architecture?</p>
+
+  <p>How will the World’s complete scope be represented against the Foundational Survey Fabric?</p>
+
+  <p>What mathematical relationship exists between The Extent and the finite Survey Domain?</p>
+
+  <p>How will canonical World-space membership be determined?</p>
+
+  <p>How does World Form exist within The Extent?</p>
+
+  <p>How should terminal World-form expression relate to The Extent without becoming synonymous with it?</p>
+
+  <p>The distinction must remain:</p>
+
+  <p>The Extent is constitutional.</p>
+
+  <p>The Survey Domain is mathematical reference capacity.</p>
+
+  <p>The Verge is Creator design space.</p>
+
+  <p>None should silently collapse into the others.</p>
+
+  <h2>The Limit</h2>
+
+  <p>The concept of Limit remains deliberately narrow.</p>
+
+  <p>The question is no longer whether BitPangea is finite.</p>
+
+  <p>That question is closed.</p>
+
+  <p>Nor should inquiry automatically reopen:</p>
+
+  <p>Edge</p>
+
+  <p>Perimeter</p>
+
+  <p>Exterior</p>
+
+  <p>World Boundary</p>
+
+  <p>without new evidence.</p>
+
+  <p>The remaining question is:</p>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>Does Limit perform constitutional work independent of The Extent, or is it simply the terminal expression of The Extent?</strong></p>
+  </div>
+
+  <p>This is a narrow constitutional inquiry.</p>
+
+  <p>Constitutional economy argues against creating a separate object unless independent work can be demonstrated.</p>
+
+  <p>Thus:</p>
+
+  <p>Limit remains unresolved because restraint presently has more justification than multiplication of canon.</p>
+
+  <h2>The Verge</h2>
+
+  <p>The earlier spatial use of Frontier has been superseded.</p>
+
+  <p>The Frontier is epistemic.</p>
+
+  <p>The relevant spatial design concept is:</p>
+
+  <p>The Verge</p>
+
+  <p>The Verge is permissible Creator design space for terminal World-form expression.</p>
+
+  <p>Its existence as a useful design concept is established.</p>
+
+  <p>Its final morphology is not.</p>
+
+  <p>Open questions include:</p>
+
+  <p>What visual and spatial character should The Verge possess?</p>
+
+  <p>How directly should it correspond to the terminal condition of The Extent?</p>
+
+  <p>Can it contain non-Parcel spatial structures?</p>
+
+  <p>How does it meet or interact with the canonical Parcel fabric?</p>
+
+  <p>What role, if any, do Outliers play near or beyond the dominant World Form?</p>
+
+  <p>Can infrastructure interact with The Verge?</p>
+
+  <p>Can Builders interact with it?</p>
+
+  <p>How should The Verge appear during globe-to-flat transition?</p>
+
+  <p>How should it remain recognizably digital without becoming a conventional coastline, wall, void, or ocean?</p>
+
+  <p>The governing distinction is:</p>
+
+  <p>The Extent defines complete scope.</p>
+
+  <p>The Verge explores how terminal World form may be expressed.</p>
+
+  <h2>Outliers</h2>
+
+  <p>Outliers remain permissible Creator design space.</p>
+
+  <p>They are not yet an adopted final morphology.</p>
+
+  <p>Questions include:</p>
+
+  <p>What qualifies as an Outlier?</p>
+
+  <p>Must every Outlier contain Parcels?</p>
+
+  <p>Can an Outlier be non-Parcel spatial structure?</p>
+
+  <p>How does an Outlier remain part of one World?</p>
+
+  <p>How does it preserve World-scale Parcel Contiguity where required?</p>
+
+  <p>How does it relate to the principal supercontinental form?</p>
+
+  <p>Can Outliers become infrastructure, landmarks, or other World-scale features?</p>
+
+  <p>Their permissibility is established.</p>
+
+  <p>Their role is not.</p>
+
+  <h2>World Form</h2>
+
+  <p>The adopted World Form direction is strong.</p>
+
+  <p>The exact World Form remains unfinished.</p>
+
+  <p>Established direction includes:</p>
+
+  <p>one World</p>
+
+  <p>singular digital supercontinent</p>
+
+  <p>compositionally balanced asymmetry</p>
+
+  <p>organic macro-form</p>
+
+  <p>digital substance</p>
+
+  <p>connectivity as intrinsic identity</p>
+
+  <p>progressive revelation</p>
+
+  <p>serene World scale</p>
+
+  <p>increasing digital intensity with approach</p>
+
+  <p>globe as the primary distant representation</p>
+
+  <p>flat lived World as the strong closer-scale direction.</p>
+
+  <p>Still open:</p>
+
+  <p>the final silhouette</p>
+
+  <p>the exact supercontinental articulation</p>
+
+  <p>the exact relationship between Form and The Extent</p>
+
+  <p>the role of The Verge</p>
+
+  <p>the role of Outliers</p>
+
+  <p>the regional organization of the World</p>
+
+  <p>the degree of authored geography</p>
+
+  <p>the exact visual expression of connectivity</p>
+
+  <p>the transition through approach from globe to flat lived World</p>
+
+  <p>the manner in which Parcel fabric becomes perceptible</p>
+
+  <p>the final visual language of BitPangea at the scale of the Digital Age</p>
+
+  <p>World Form should not be dictated by Parcel tiling merely because one tiling is convenient.</p>
+
+  <p>Likewise, Form should not ignore the deeper Architecture required to support it.</p>
+
+  <p>The reconciliation remains open.</p>
+
+  <h2>Foundational Survey Fabric</h2>
+
+  <p>The Foundational Survey Fabric is no longer merely an undefined concept.</p>
+
+  <p>Its architectural role is established.</p>
+
+  <p>Its 85 Findings now stand as Requirements.</p>
+
+  <p>Its institutional structure is:</p>
+
+  <p>Requirements</p>
+
+  <p>→ Specification</p>
+
+  <p>→ Conformance</p>
+
+  <p>→ Reference Vectors</p>
+
+  <p>The present state is therefore:</p>
+
+  <p>Requirements established.</p>
+
+  <p>Final mathematics unresolved.</p>
+
+  <p>Open work includes:</p>
+
+  <p>the final Survey Domain geometry</p>
+
+  <p>the canonical mathematical origin</p>
+
+  <p>the exact orientation framework</p>
+
+  <p>the final mathematical coordinate representation</p>
+
+  <p>the refinement mechanism</p>
+
+  <p>the precision-extension mechanism</p>
+
+  <p>normalization rules</p>
+
+  <p>exact arithmetic requirements</p>
+
+  <p>canonical geometry operations</p>
+
+  <p>canonical spatial-separation rules</p>
+
+  <p>normative serialization</p>
+
+  <p>lossless interchange encoding or encodings</p>
+
+  <p>Reference Vector values</p>
+
+  <p>Conformance tests</p>
+
+  <p>implementation-readiness gates</p>
+
+  <p>The Survey Fabric should not now be described merely as “integer-based.”</p>
+
+  <p>Its deeper requirement is:</p>
+
+  <p>exact, deterministic, finite, planar, semantically neutral canonical spatial reference.</p>
+
+  <p>Integer-based methods remain compatible with that direction, but the final Specification has not been adopted.</p>
+
+  <p>The governing discipline remains:</p>
+
+  <div class="principle">
+    <span class="principle-label">Survey Discipline</span>
+    <p>Requirements before mathematics.</p>
+  </div>
+
+  <h2>Survey Domain and World Membership</h2>
+
+  <p>The Survey Domain is finite.</p>
+
+  <p>What remains unresolved is the exact mathematical relationship between:</p>
+
+  <p>valid Survey reference</p>
+
+  <p>and:</p>
+
+  <p>authoritative World-space membership.</p>
+
+  <p>The governing rule is already established:</p>
+
+  <p>Every authoritative World-space location must be representable within the Survey Domain.</p>
+
+  <p>But:</p>
+
+  <p>Not every valid Survey reference is necessarily BitPangea territory.</p>
+
+  <p>The open problem is therefore not:</p>
+
+  <p>Does Survey equal World?</p>
+
+  <p>It does not.</p>
+
+  <p>The question is:</p>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>How will higher Architecture determine which Survey-addressable locations belong to the World?</strong></p>
+  </div>
+
+  <p>That question belongs above the Foundational Survey Fabric.</p>
+
+  <h2>Spatial Ground</h2>
+
+  <p>Spatial Ground is now a recognized Architecture domain.</p>
+
+  <p>Its existence is established.</p>
+
+  <p>Its internal Architecture is not.</p>
+
+  <p>The key question is:</p>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>How does canonical Survey reference become usable enduring World-space ground without causing the Survey Fabric itself to absorb higher spatial meaning?</strong></p>
+  </div>
+
+  <p>This is a required next-stage architectural inquiry once the Foundational Survey Fabric is sufficiently ready to support it.</p>
+
+  <p>Open questions include:</p>
+
+  <p>what responsibilities belong uniquely to Spatial Ground</p>
+
+  <p>what it derives from the Survey Fabric</p>
+
+  <p>what it must expose upward</p>
+
+  <p>what it must not define</p>
+
+  <p>how World-space designation is represented</p>
+
+  <p>how it relates to The Extent</p>
+
+  <p>how it constrains General Spatial Interpretation</p>
+
+  <p>how it avoids becoming either hidden Cadastre or hidden World Runtime.</p>
+
+  <h2>General Spatial Interpretation</h2>
+
+  <p>General Spatial Interpretation is now recognized as an Architecture domain.</p>
+
+  <p>Its membership is no longer the open question.</p>
+
+  <p>Its internal responsibility remains open.</p>
+
+  <p>The demonstrated spatial dependency is:</p>
+
+  <p>Foundational Survey Fabric</p>
+
+  <p>→ Spatial Ground</p>
+
+  <p>→ General Spatial Interpretation</p>
+
+  <p>→ Parcel Cadastre</p>
+
+  <p>The remaining questions include:</p>
+
+  <p>Which spatial interpretations properly belong here?</p>
+
+  <p>What derived spatial meaning should be canonical versus computed?</p>
+
+  <p>What does the domain preserve versus calculate?</p>
+
+  <p>How does it expose spatial interpretation without acquiring authority over Survey truth?</p>
+
+  <p>How does it avoid acquiring Parcel authority?</p>
+
+  <p>What relationships should remain query results rather than persisted state?</p>
+
+  <p>What conformance requirements, if any, will eventually apply?</p>
+
+  <p>The question has evolved from:</p>
+
+  <p>Does this domain exist?</p>
+
+  <p>to:</p>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>What exactly is this domain responsible for?</strong></p>
+  </div>
+
+  <h2>Parcel Geometry</h2>
+
+  <p>The final Parcel geometry remains unresolved.</p>
+
+  <p>The leading visible direction remains a:</p>
+
+  <p>three-orientation rhombille family</p>
+
+  <p>But that direction must still survive deeper architectural tests.</p>
+
+  <p>Open questions include:</p>
+
+  <p>Can the visible Parcel grammar support exactly 21,000,000 canonical Parcels?</p>
+
+  <p>Can equal-area construction be proven?</p>
+
+  <p>How should the three orientations be arranged globally?</p>
+
+  <p>How does local coherence survive across a complex asymmetric World Form?</p>
+
+  <p>How are transitions handled?</p>
+
+  <p>How does the visible Parcel grammar relate mathematically to the deeper Survey substrate?</p>
+
+  <p>How does it meet The Verge?</p>
+
+  <p>How do Outliers interact with the Parcel grammar?</p>
+
+  <p>Does one dominant Parcel morphology remain sufficient everywhere canonical Parcels exist?</p>
+
+  <p>The governing principle remains:</p>
+
+  <p>The visible Parcel grammar must conform to the Architecture. The Architecture should not be distorted merely to preserve a preferred pattern.</p>
+
+  <h2>The Exact 21,000,000 Arrangement</h2>
+
+  <p>The count is fixed.</p>
+
+  <p>The exact arrangement is not.</p>
+
+  <p>BitPangea must eventually establish exactly:</p>
+
+  <p>21,000,000 canonical Parcels</p>
+
+  <p>within one finite World.</p>
+
+  <p>This requires far more than creating 21 million identifiers.</p>
+
+  <p>The final solution must reconcile:</p>
+
+  <p>exact count</p>
+
+  <p>canonical identity</p>
+
+  <p>fixed position</p>
+
+  <p>authoritative territorial definition</p>
+
+  <p>equal-area preference</p>
+
+  <p>local coherence</p>
+
+  <p>Parcel Adjacency</p>
+
+  <p>World Form</p>
+
+  <p>The Extent</p>
+
+  <p>The Verge</p>
+
+  <p>Outliers where applicable</p>
+
+  <p>non-Parcel spatial conditions</p>
+
+  <p>Survey support</p>
+
+  <p>representation independence</p>
+
+  <p>This is one of the clearest required-resolution problems in BitPangea.</p>
+
+  <h2>Parcel Identifier Architecture</h2>
+
+  <p>Every Parcel must ultimately be persistently identifiable.</p>
+
+  <p>The identifier structure remains open.</p>
+
+  <p>Questions include:</p>
+
+  <p>What constitutes the canonical Parcel identifier?</p>
+
+  <p>Is it spatially meaningful?</p>
+
+  <p>Is it opaque?</p>
+
+  <p>Is it hierarchical?</p>
+
+  <p>Is it derived?</p>
+
+  <p>Is it human-readable?</p>
+
+  <p>Can aliases exist?</p>
+
+  <p>Can display identifiers change while canonical identity remains fixed?</p>
+
+  <p>How does the identifier relate to authoritative territorial definition?</p>
+
+  <p>How are invalid references handled?</p>
+
+  <p>How are superseded encodings represented?</p>
+
+  <p>The guiding principle is:</p>
+
+  <div class="principle">
+    <span class="principle-label">Parcel Identity Principle</span>
+    <p>Identifier representation may evolve. Parcel identity must not.</p>
+  </div>
+
+  <h2>Parcel Adjacency</h2>
+
+  <p>The Adjacency exists as a constitutional Parcel relationship.</p>
+
+  <p>The precise mathematical and cadastral realization remains unresolved.</p>
+
+  <p>The architecture must ultimately distinguish among lower-level geometric facts such as:</p>
+
+  <p>shared geometric boundary</p>
+
+  <p>point contact</p>
+
+  <p>touch</p>
+
+  <p>spatial separation</p>
+
+  <p>and the formal Parcel relationship:</p>
+
+  <p>Parcel Adjacency</p>
+
+  <p>Open questions include:</p>
+
+  <p>What geometric condition is sufficient to establish Parcel Adjacency?</p>
+
+  <p>Does point contact count?</p>
+
+  <p>Which facts belong canonically in the Cadastre?</p>
+
+  <p>Which remain derived through General Spatial Interpretation?</p>
+
+  <p>How are implementations tested for agreement?</p>
+
+  <p>The requirement is:</p>
+
+  <div class="principle">
+    <span class="principle-label">Adjacency Requirement</span>
+    <p>Parcel Adjacency must eventually be deterministic.</p>
+  </div>
+
+  <h2>Parcel Contiguity</h2>
+
+  <p>The Contiguity is also a constitutional Parcel relationship.</p>
+
+  <p>The World-scale requirement is established.</p>
+
+  <p>Its detailed mathematical realization remains open.</p>
+
+  <p>Questions include:</p>
+
+  <p>How is World-scale Parcel Contiguity proven?</p>
+
+  <p>How does The Verge interact with it?</p>
+
+  <p>How are Outliers treated?</p>
+
+  <p>Can non-Parcel structures interrupt, support, or route around Parcel fabric without violating the constitutional condition?</p>
+
+  <p>What exact graph or topological proof model will demonstrate conformance?</p>
+
+  <p>This problem will require careful separation between lower mathematical connectedness and constitutional Parcel Contiguity.</p>
+
+  <h2>Sub-Parcel Reference, Subdivision, and Aggregation</h2>
+
+  <p>The canonical supply must remain exactly:</p>
+
+  <p>21,000,000 Parcels.</p>
+
+  <p>What remains open is how higher systems may represent finer or larger units without changing that count.</p>
+
+  <p>Possible future concepts include:</p>
+
+  <p>sub-Parcel references</p>
+
+  <p>construction zones</p>
+
+  <p>usage areas</p>
+
+  <p>administrative overlays</p>
+
+  <p>multi-Parcel holdings</p>
+
+  <p>combined development areas</p>
+
+  <p>These should not silently create or destroy canonical Parcels.</p>
+
+  <p>The central unresolved question is:</p>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>How can higher layers obtain spatial flexibility without changing canonical Parcel supply?</strong></p>
+  </div>
+
+  <h2>Regions</h2>
+
+  <p>Region is already reserved terminology through WP-S-II — The Region.</p>
+
+  <p>That means later design should not casually use “region” as a generic label for any grouping.</p>
+
+  <p>Questions remain about how constitutional Region concepts, if further developed, relate to:</p>
+
+  <p>geography</p>
+
+  <p>administration</p>
+
+  <p>culture</p>
+
+  <p>navigation</p>
+
+  <p>infrastructure</p>
+
+  <p>history</p>
+
+  <p>Builder-created grouping</p>
+
+  <p>service areas</p>
+
+  <p>The terminology itself now constrains the inquiry.</p>
+
+  <p>The World should not create multiple unrelated meanings for a reserved constitutional term merely because each would be convenient.</p>
+
+  <h2>Geography</h2>
+
+  <p>BitPangea does not yet possess a final geography architecture.</p>
+
+  <p>Open questions include:</p>
+
+  <p>What qualifies as canonical geography?</p>
+
+  <p>What belongs to World State?</p>
+
+  <p>What is derived interpretation?</p>
+
+  <p>What is purely visual representation?</p>
+
+  <p>Can terrain change?</p>
+
+  <p>Who may change it?</p>
+
+  <p>Which geographic features persist independently of Builders?</p>
+
+  <p>Can geographic features span many Parcels?</p>
+
+  <p>How does geography relate to Parcel boundaries?</p>
+
+  <p>How does it relate to Spatial Ground and General Spatial Interpretation?</p>
+
+  <p>What belongs to Creator design versus later World development?</p>
+
+  <p>Geography is a dependent-resolution problem.</p>
+
+  <p>It should not be finalized before deeper spatial Architecture is ready.</p>
+
+  <h2>Infrastructure</h2>
+
+  <p>Infrastructure will almost certainly matter.</p>
+
+  <p>Its precise Architecture does not yet exist.</p>
+
+  <p>Potential infrastructure may include:</p>
+
+  <p>transport</p>
+
+  <p>communications</p>
+
+  <p>shared services</p>
+
+  <p>network pathways</p>
+
+  <p>utilities</p>
+
+  <p>public systems</p>
+
+  <p>digital-native connective structures</p>
+
+  <p>Open questions include:</p>
+
+  <p>Who may create infrastructure?</p>
+
+  <p>What authority permits it?</p>
+
+  <p>Can infrastructure cross Parcels?</p>
+
+  <p>Can it cross or interact with The Verge?</p>
+
+  <p>Can it connect Outliers?</p>
+
+  <p>Does infrastructure occupy Parcel territory?</p>
+
+  <p>Can it possess canonical identity?</p>
+
+  <p>What parts belong to World Runtime?</p>
+
+  <p>What parts belong to services?</p>
+
+  <p>What parts require institutional authority?</p>
+
+  <p>How is provenance preserved?</p>
+
+  <p>Infrastructure is likely to expose the limits of any architecture based only on simple actor-to-Parcel ownership relationships.</p>
+
+  <h2>Identity / Rights / Control</h2>
+
+  <p>Identity / Rights / Control is a recognized Architecture domain.</p>
+
+  <p>Its internal decomposition remains open.</p>
+
+  <p>The architecture still must determine how responsibilities such as:</p>
+
+  <p>identity</p>
+
+  <p>authentication</p>
+
+  <p>rights</p>
+
+  <p>authorization</p>
+
+  <p>control</p>
+
+  <p>delegation</p>
+
+  <p>recovery</p>
+
+  <p>policy</p>
+
+  <p>shared authority</p>
+
+  <p>should be separated or combined.</p>
+
+  <p>The important point is no longer whether these responsibilities exist.</p>
+
+  <p>They do.</p>
+
+  <p>The question is:</p>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>How should they be organized without collapsing distinct forms of authority?</strong></p>
+  </div>
+
+  <h2>Actor Identity</h2>
+
+  <p>Persistent actor identity is required.</p>
+
+  <p>The final identity model remains open.</p>
+
+  <p>Questions include:</p>
+
+  <p>Which actor classes exist?</p>
+
+  <p>Individuals?</p>
+
+  <p>Organizations?</p>
+
+  <p>Institutions?</p>
+
+  <p>Services?</p>
+
+  <p>Automated agents?</p>
+
+  <p>World systems?</p>
+
+  <p>How is identity established?</p>
+
+  <p>How is continuity preserved?</p>
+
+  <p>How are credentials rotated?</p>
+
+  <p>How does recovery work?</p>
+
+  <p>Can identities be pseudonymous?</p>
+
+  <p>Can one person legitimately operate more than one identity?</p>
+
+  <p>Can one identity represent an organization?</p>
+
+  <p>What information is public?</p>
+
+  <p>What remains private?</p>
+
+  <p>How does identity provenance work?</p>
+
+  <p>Identity must eventually become precise enough to support legitimate authority without requiring unnecessary disclosure.</p>
+
+  <h2>Authentication</h2>
+
+  <p>Authentication remains distinct from identity.</p>
+
+  <p>The final mechanism is open.</p>
+
+  <p>Possible implementations might involve:</p>
+
+  <p>cryptographic keys</p>
+
+  <p>hardware credentials</p>
+
+  <p>password-based methods</p>
+
+  <p>multi-factor mechanisms</p>
+
+  <p>wallet signatures</p>
+
+  <p>federated systems</p>
+
+  <p>future mechanisms</p>
+
+  <p>No specific technology is required.</p>
+
+  <p>The architectural requirement is:</p>
+
+  <p>BitPangea must be able to establish sufficient confidence that an actor requesting an operation is authorized to act through the relevant identity.</p>
+
+  <h2>Rights</h2>
+
+  <p>Rights remain one of the largest unresolved areas.</p>
+
+  <p>BitPangea has deliberately avoided reducing the entire domain to “ownership.”</p>
+
+  <p>Open questions include:</p>
+
+  <p>What formal governed relationships exist?</p>
+
+  <p>Does ownership become a canonical concept?</p>
+
+  <p>Can use exist without ownership?</p>
+
+  <p>Can construction authority be separate?</p>
+
+  <p>Can infrastructure authority be separate?</p>
+
+  <p>Can rights be temporary?</p>
+
+  <p>Can rights expire?</p>
+
+  <p>Can rights be revoked?</p>
+
+  <p>Can rights be shared?</p>
+
+  <p>Can rights conflict?</p>
+
+  <p>Can rights be inherited?</p>
+
+  <p>Can rights attach to services?</p>
+
+  <p>Organizations?</p>
+
+  <p>Infrastructure?</p>
+
+  <p>World objects?</p>
+
+  <p>How are rights created?</p>
+
+  <p>Under whose authority?</p>
+
+  <p>What provenance must be preserved?</p>
+
+  <p>These questions require eventual resolution for a mature multi-actor World.</p>
+
+  <p>They should not be answered by copying physical land law uncritically.</p>
+
+  <h2>Control and Authorization</h2>
+
+  <p>Rights do not automatically answer whether a particular action may occur now.</p>
+
+  <p>BitPangea still needs a precise model for:</p>
+
+  <p>authorization</p>
+
+  <p>control</p>
+
+  <p>scope</p>
+
+  <p>delegation</p>
+
+  <p>policy evaluation</p>
+
+  <p>revocation</p>
+
+  <p>current conditions</p>
+
+  <p>The core question is:</p>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>Given this actor, this governed relationship, this target, this World state, and this requested action—may the action occur now?</strong></p>
+  </div>
+
+  <p>This is a required operational problem.</p>
+
+  <h2>Delegation</h2>
+
+  <p>Delegation is likely to become necessary.</p>
+
+  <p>Its architecture remains open.</p>
+
+  <p>Questions include:</p>
+
+  <p>Who may delegate authority?</p>
+
+  <p>What may be delegated?</p>
+
+  <p>For how long?</p>
+
+  <p>Can delegation be revoked?</p>
+
+  <p>Can delegated authority be delegated again?</p>
+
+  <p>What happens when the underlying authority expires?</p>
+
+  <p>Can organizations delegate?</p>
+
+  <p>Can infrastructure authority be delegated?</p>
+
+  <p>How is provenance preserved?</p>
+
+  <p>Delegation is likely to become one of the key tests of whether Identity / Rights / Control is sufficiently expressive.</p>
+
+  <h2>Shared Authority</h2>
+
+  <p>BitPangea should not assume every World object must always have one controlling actor.</p>
+
+  <p>Shared authority may become necessary for:</p>
+
+  <p>organizations</p>
+
+  <p>institutions</p>
+
+  <p>infrastructure</p>
+
+  <p>communities</p>
+
+  <p>joint projects</p>
+
+  <p>public systems</p>
+
+  <p>The architecture remains open.</p>
+
+  <p>This should not be prematurely collapsed into governance.</p>
+
+  <p>Shared control is an authority problem.</p>
+
+  <p>Governance may later build upon it.</p>
+
+  <h2>Privacy</h2>
+
+  <p>Persistent identity, provenance, history, and accountability create real privacy obligations.</p>
+
+  <p>Open questions include:</p>
+
+  <p>What identity information is public?</p>
+
+  <p>What rights relationships are public?</p>
+
+  <p>What actions become public record?</p>
+
+  <p>What operational evidence remains protected?</p>
+
+  <p>Can activity remain private?</p>
+
+  <p>What may expire?</p>
+
+  <p>Who may inspect records?</p>
+
+  <p>What information must never become general World visibility?</p>
+
+  <p>The governing principle is already established:</p>
+
+  <div class="principle">
+    <span class="principle-label">Privacy Principle</span>
+    <p>Persistent identity and maximal disclosure are not the same requirement.</p>
+  </div>
+
+  <p>And:</p>
+
+  <div class="principle">
+    <span class="principle-label">Memory / Privacy Principle</span>
+    <p>A World can remember without remembering everyone publicly.</p>
+  </div>
+
+  <h2>World Runtime</h2>
+
+  <p>World Runtime is a recognized Architecture domain.</p>
+
+  <p>Its existence is established.</p>
+
+  <p>Its internal Architecture remains largely unresolved.</p>
+
+  <p>Open questions include:</p>
+
+  <p>the canonical World State model</p>
+
+  <p>the classes of state that belong to Runtime</p>
+
+  <p>protocol boundaries</p>
+
+  <p>service boundaries</p>
+
+  <p>validation</p>
+
+  <p>execution</p>
+
+  <p>authorization integration</p>
+
+  <p>atomicity</p>
+
+  <p>concurrency</p>
+
+  <p>ordering</p>
+
+  <p>failure</p>
+
+  <p>recovery</p>
+
+  <p>integrity</p>
+
+  <p>operational scheduling</p>
+
+  <p>conformance</p>
+
+  <p>distribution</p>
+
+  <p>replication</p>
+
+  <p>Runtime must eventually answer:</p>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>How does one operational BitPangea continue coherently while many actors and systems change it?</strong></p>
+  </div>
+
+  <h2>Canonical World State</h2>
+
+  <p>Persistent World State is required.</p>
+
+  <p>Its exact model is not.</p>
+
+  <p>Open questions include:</p>
+
+  <p>What belongs to canonical state?</p>
+
+  <p>What is derived?</p>
+
+  <p>What is cached?</p>
+
+  <p>What is temporary?</p>
+
+  <p>What is local to a client?</p>
+
+  <p>What is private?</p>
+
+  <p>What belongs only to provenance?</p>
+
+  <p>What belongs only to history?</p>
+
+  <p>What state is authoritative versus replicated?</p>
+
+  <p>Which Architecture domain owns which fact?</p>
+
+  <p>The distinction between World State and everything surrounding it will be central to Runtime clarity.</p>
+
+  <h2>Protocols</h2>
+
+  <p>Protocols are operationally necessary.</p>
+
+  <p>Their final structure remains open.</p>
+
+  <p>Questions include:</p>
+
+  <p>Which interactions require formal protocol?</p>
+
+  <p>What semantics must be canonical?</p>
+
+  <p>How are protocols versioned?</p>
+
+  <p>Can versions coexist?</p>
+
+  <p>How are incompatible clients handled?</p>
+
+  <p>What constitutes protocol conformance?</p>
+
+  <p>Who possesses authority to change protocol?</p>
+
+  <p>How does protocol evolution avoid changing canonical meaning accidentally?</p>
+
+  <p>Protocols must enable interoperability without becoming universal authority.</p>
+
+  <h2>Services</h2>
+
+  <p>Services provide capabilities.</p>
+
+  <p>Their boundaries remain unresolved.</p>
+
+  <p>Questions include:</p>
+
+  <p>Which capabilities deserve independent services?</p>
+
+  <p>Which services hold state?</p>
+
+  <p>Which remain stateless?</p>
+
+  <p>Which may be replaced freely?</p>
+
+  <p>How do services discover authoritative sources?</p>
+
+  <p>How is failure isolated?</p>
+
+  <p>How do services demonstrate conformance?</p>
+
+  <p>How are service versions handled?</p>
+
+  <p>A service should never become constitutionally permanent merely because an early implementation becomes popular.</p>
+
+  <h2>Execution</h2>
+
+  <p>Execution remains an internal Runtime problem requiring future resolution.</p>
+
+  <p>Questions include:</p>
+
+  <p>How are operations validated?</p>
+
+  <p>What constitutes one canonical state transition?</p>
+
+  <p>How are multi-domain effects coordinated?</p>
+
+  <p>How is authorization bound to execution?</p>
+
+  <p>How are partial results prevented?</p>
+
+  <p>What happens when execution fails halfway?</p>
+
+  <p>How are side effects represented?</p>
+
+  <p>How is provenance generated?</p>
+
+  <p>A World must eventually make legitimate change both operational and explainable.</p>
+
+  <h2>Concurrency</h2>
+
+  <p>A populated BitPangea will eventually receive simultaneous legitimate requests.</p>
+
+  <p>The Runtime will need to determine:</p>
+
+  <p>ordering</p>
+
+  <p>conflict</p>
+
+  <p>parallel compatibility</p>
+
+  <p>retry behavior</p>
+
+  <p>canonical resolution</p>
+
+  <p>cross-service coordination</p>
+
+  <p>The architectural requirement is:</p>
+
+  <p>Many actors may act. One operational World must remain coherent.</p>
+
+  <p>No particular distributed-systems mechanism has yet been chosen.</p>
+
+  <h2>Time</h2>
+
+  <p>BitPangea requires meaningful ordering.</p>
+
+  <p>The final temporal architecture remains open.</p>
+
+  <p>Questions include:</p>
+
+  <p>What constitutes canonical operational time?</p>
+
+  <p>How are events ordered?</p>
+
+  <p>How are timestamps represented?</p>
+
+  <p>How are simultaneous events treated?</p>
+
+  <p>Can rights become future-effective?</p>
+
+  <p>How are expirations represented?</p>
+
+  <p>How does operational time relate to historical eras?</p>
+
+  <p>Does BitPangea adopt a distinct World-time expression above deeper ordering?</p>
+
+  <p>These questions concern temporal truth.</p>
+
+  <p>They should not be confused with visual day/night cycles.</p>
+
+  <h2>Failure and Recovery</h2>
+
+  <p>Failure is inevitable.</p>
+
+  <p>Recovery Architecture is not yet established.</p>
+
+  <p>Questions include:</p>
+
+  <p>How is canonical state reconstructed?</p>
+
+  <p>Can operations be replayed?</p>
+
+  <p>What constitutes a valid checkpoint?</p>
+
+  <p>How is corruption detected?</p>
+
+  <p>How are conflicting recovery states resolved?</p>
+
+  <p>What authority may perform exceptional recovery?</p>
+
+  <p>How is recovery itself recorded?</p>
+
+  <p>The requirement is:</p>
+
+  <div class="principle">
+    <span class="principle-label">Recovery Principle</span>
+    <p>Persistence must include recoverability.</p>
+  </div>
+
+  <h2>Integrity</h2>
+
+  <p>BitPangea must ultimately be able to distinguish legitimate state from unexplained mutation.</p>
+
+  <p>The final integrity mechanism remains open.</p>
+
+  <p>Possible tools may include:</p>
+
+  <p>cryptographic hashes</p>
+
+  <p>signatures</p>
+
+  <p>redundant records</p>
+
+  <p>independent verification</p>
+
+  <p>tamper-evident structures</p>
+
+  <p>distributed validation</p>
+
+  <p>or other methods.</p>
+
+  <p>No specific mechanism is presently required.</p>
+
+  <p>The requirement is:</p>
+
+  <p>Canonical World state must be trustworthy enough to distinguish legitimate transition from unexplained alteration.</p>
+
+  <h2>Persistence / Provenance</h2>
+
+  <p>Persistence / Provenance is a recognized Architecture domain.</p>
+
+  <p>Its internal Architecture remains open.</p>
+
+  <p>Questions include:</p>
+
+  <p>Which events require durable provenance?</p>
+
+  <p>What evidence must be preserved?</p>
+
+  <p>How are actor and authority references preserved?</p>
+
+  <p>How is supersession represented?</p>
+
+  <p>How are corrections handled?</p>
+
+  <p>How are sources classified?</p>
+
+  <p>How long is evidence retained?</p>
+
+  <p>How does provenance interact with privacy?</p>
+
+  <p>How does it expose information to historical institutions without becoming history itself?</p>
+
+  <p>The central question is:</p>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>How does BitPangea preserve the lineage of consequential truth?</strong></p>
+  </div>
+
+  <h2>Interoperability</h2>
+
+  <p>Interoperability is a recognized Architecture domain.</p>
+
+  <p>Its exact mechanisms remain open.</p>
+
+  <p>Questions include:</p>
+
+  <p>What canonical interchange semantics must exist?</p>
+
+  <p>What may differ between implementations?</p>
+
+  <p>Which encodings are normative?</p>
+
+  <p>Can multiple lossless normative encodings coexist?</p>
+
+  <p>How are protocol versions negotiated?</p>
+
+  <p>How are canonical identifiers exchanged?</p>
+
+  <p>How is semantic equivalence tested?</p>
+
+  <p>How does conformance differ from interoperability?</p>
+
+  <p>The governing principle is established:</p>
+
+  <div class="principle">
+    <span class="principle-label">Interoperability Principle</span>
+    <p>Implementation diversity must not become semantic diversity.</p>
+  </div>
+
+  <h2>Blockchain</h2>
+
+  <p>BitPangea’s relationship with blockchain remains intentionally open.</p>
+
+  <p>Nothing established requires:</p>
+
+  <p>Parcels to be tokens</p>
+
+  <p>rights to be on-chain</p>
+
+  <p>World State to be on-chain</p>
+
+  <p>World Runtime to use blockchain</p>
+
+  <p>governance to use blockchain</p>
+
+  <p>Bitcoin remains an important source of inspiration.</p>
+
+  <p>It is not an implementation mandate.</p>
+
+  <p>The correct question is:</p>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>Which specific BitPangea responsibilities, if any, are genuinely improved by blockchain or related cryptographic systems?</strong></p>
+  </div>
+
+  <p>Technology follows requirement.</p>
+
+  <h2>Decentralization</h2>
+
+  <p>BitPangea has not adopted “decentralization” as one undifferentiated requirement.</p>
+
+  <p>Future inquiry may separately examine distribution of:</p>
+
+  <p>hosting</p>
+
+  <p>storage</p>
+
+  <p>execution</p>
+
+  <p>validation</p>
+
+  <p>authority</p>
+
+  <p>governance</p>
+
+  <p>identity</p>
+
+  <p>history</p>
+
+  <p>discovery</p>
+
+  <p>Different responsibilities may justify different answers.</p>
+
+  <p>Thus:</p>
+
+  <div class="principle">
+    <span class="principle-label">Decentralization Principle</span>
+    <p>Decentralization should be analyzed as architecture, not adopted as slogan.</p>
+  </div>
+
+  <h2>Builders</h2>
+
+  <p>Builders are required conceptually.</p>
+
+  <p>A final Builder architecture does not yet exist.</p>
+
+  <p>Builders are not themselves an Architecture domain.</p>
+
+  <p>They will operate through the Architecture.</p>
+
+  <p>Open questions include:</p>
+
+  <p>What may Builders create?</p>
+
+  <p>What may they not create?</p>
+
+  <p>How does drafting work?</p>
+
+  <p>How does commitment to canonical World state occur?</p>
+
+  <p>How are builds validated?</p>
+
+  <p>Can Builders create behaviors?</p>
+
+  <p>Can Builders create services?</p>
+
+  <p>Can Builders create institutions?</p>
+
+  <p>Can Builders create infrastructure?</p>
+
+  <p>How are updates handled?</p>
+
+  <p>How are deletions handled?</p>
+
+  <p>How does provenance attach to creation?</p>
+
+  <p>Builder design remains strongly dependent upon:</p>
+
+  <p>Identity / Rights / Control</p>
+
+  <p>World Runtime</p>
+
+  <p>Persistence / Provenance</p>
+
+  <p>Interoperability</p>
+
+  <p>Experience Architecture</p>
+
+  <p>and the eventual World object model.</p>
+
+  <h2>World Objects</h2>
+
+  <p>BitPangea has not yet established a canonical World-object architecture.</p>
+
+  <p>Future objects may raise questions such as:</p>
+
+  <p>Does every persistent object possess identity?</p>
+
+  <p>Can objects move?</p>
+
+  <p>Can objects span Parcels?</p>
+
+  <p>Can objects contain other objects?</p>
+
+  <p>Can an object possess state?</p>
+
+  <p>Can an object possess rights?</p>
+
+  <p>Can an object initiate behavior?</p>
+
+  <p>Can objects be versioned?</p>
+
+  <p>Can they be copied?</p>
+
+  <p>What makes two objects the same object across time?</p>
+
+  <p>This Architecture will likely become one of the key bridges between Builders and Runtime.</p>
+
+  <h2>Construction Rules</h2>
+
+  <p>Universal construction constraints are not yet established.</p>
+
+  <p>Possible future questions include:</p>
+
+  <p>height</p>
+
+  <p>volume</p>
+
+  <p>boundary crossing</p>
+
+  <p>overlap</p>
+
+  <p>collision</p>
+
+  <p>access</p>
+
+  <p>shared structures</p>
+
+  <p>vertical stacking</p>
+
+  <p>infrastructure connection</p>
+
+  <p>visual impact</p>
+
+  <p>temporary structures</p>
+
+  <p>subsurface use</p>
+
+  <p>These should not be copied automatically from conventional virtual worlds.</p>
+
+  <p>Construction rules should arise from BitPangea’s actual spatial and operational Architecture.</p>
+
+  <h2>Verticality</h2>
+
+  <p>The canonical Parcel architecture is presently framed primarily through planar spatial truth.</p>
+
+  <p>The role of vertical space remains unresolved.</p>
+
+  <p>Questions include:</p>
+
+  <p>What relationship does a Parcel have to height?</p>
+
+  <p>Can there be vertical limits?</p>
+
+  <p>Does subsurface space exist?</p>
+
+  <p>Can different actors possess different rights at different elevations?</p>
+
+  <p>Can World objects occupy the same planar Parcel at different vertical positions?</p>
+
+  <p>How does 3D construction relate to 2D cadastral truth?</p>
+
+  <p>Verticality may become a major design question once Builder Architecture advances.</p>
+
+  <h2>Experience Architecture</h2>
+
+  <p>Experience Architecture is a recognized Architecture domain.</p>
+
+  <p>Its final design remains open.</p>
+
+  <p>Questions include:</p>
+
+  <p>How does the globe transition into the flat lived World?</p>
+
+  <p>How is progressive revelation implemented?</p>
+
+  <p>How do users navigate?</p>
+
+  <p>How are Parcel boundaries revealed?</p>
+
+  <p>How are canonical and derived information distinguished?</p>
+
+  <p>How do Builders interact with the World?</p>
+
+  <p>How does discovery work?</p>
+
+  <p>What belongs to shared World experience versus private client preference?</p>
+
+  <p>Which technologies—web, 3D, AR, VR, future interfaces—should be supported?</p>
+
+  <p>The governing rule is already established:</p>
+
+  <div class="principle">
+    <span class="principle-label">Experience Principle</span>
+    <p>Experience is where the World becomes perceptible—not where the World becomes authoritative.</p>
+  </div>
+
+  <h2>Civilization</h2>
+
+  <p>Civilization remains intentionally underdetermined.</p>
+
+  <p>That is not a deficiency.</p>
+
+  <p>Possible future phenomena include:</p>
+
+  <p>communities</p>
+
+  <p>organizations</p>
+
+  <p>markets</p>
+
+  <p>institutions</p>
+
+  <p>social norms</p>
+
+  <p>cultural movements</p>
+
+  <p>education</p>
+
+  <p>art</p>
+
+  <p>public life</p>
+
+  <p>ritual</p>
+
+  <p>collective identity</p>
+
+  <p>many of which should not be predesigned.</p>
+
+  <p>The Creator’s responsibility is not to decide their outcomes.</p>
+
+  <p>It is to ensure that the World can support their emergence.</p>
+
+  <h2>Economy</h2>
+
+  <p>BitPangea does not presently possess a defined economy.</p>
+
+  <p>Open questions include:</p>
+
+  <p>Will Parcels be transferable?</p>
+
+  <p>Will markets exist?</p>
+
+  <p>Will currency exist?</p>
+
+  <p>Will Bitcoin have a direct operational role?</p>
+
+  <p>Can services charge fees?</p>
+
+  <p>Can Builders receive value?</p>
+
+  <p>Can communities create economic systems?</p>
+
+  <p>How will scarcity interact with actual use?</p>
+
+  <p>These questions may become important.</p>
+
+  <p>They do not currently define the World itself.</p>
+
+  <p>Economics should not be smuggled into spatial Architecture merely because territory is scarce.</p>
+
+  <h2>Governance</h2>
+
+  <p>Governance remains intentionally unresolved.</p>
+
+  <p>Future questions may include:</p>
+
+  <p>Who changes shared rules?</p>
+
+  <p>Who administers common systems?</p>
+
+  <p>Who resolves disputes?</p>
+
+  <p>Who governs infrastructure?</p>
+
+  <p>Who may alter protocols?</p>
+
+  <p>Who may propose constitutional change?</p>
+
+  <p>Can communities self-govern?</p>
+
+  <p>How are institutions recognized?</p>
+
+  <p>What authority remains with the Creator?</p>
+
+  <p>What authority belongs to future civilization?</p>
+
+  <p>Governance may eventually become unavoidable.</p>
+
+  <p>It should still follow the responsibilities that require governing.</p>
+
+  <h2>Disputes</h2>
+
+  <p>A multi-actor civilization will eventually produce disagreement.</p>
+
+  <p>BitPangea has no final dispute-resolution architecture.</p>
+
+  <p>Possible dispute classes include:</p>
+
+  <p>identity</p>
+
+  <p>rights</p>
+
+  <p>control</p>
+
+  <p>Builder actions</p>
+
+  <p>shared authority</p>
+
+  <p>institutions</p>
+
+  <p>history</p>
+
+  <p>governance</p>
+
+  <p>constitutional interpretation</p>
+
+  <p>These may require different mechanisms.</p>
+
+  <p>The existence of disagreement does not imply that one universal court-like system should solve every category.</p>
+
+  <h2>The Long-Term Role of the Creator</h2>
+
+  <p>The present architectural direction moves from Creator authority toward stewardship.</p>
+
+  <p>The exact transition remains open.</p>
+
+  <p>Questions include:</p>
+
+  <p>Which authorities remain with the Creator?</p>
+
+  <p>Which should become institutional?</p>
+
+  <p>Can Creator authority be delegated?</p>
+
+  <p>Can it expire?</p>
+
+  <p>Can it be superseded?</p>
+
+  <p>What happens if the Creator becomes unavailable?</p>
+
+  <p>Who preserves foundational stewardship?</p>
+
+  <p>How is intent distinguished from authority?</p>
+
+  <p>How does future civilization interact with Creator-period decisions?</p>
+
+  <p>These questions become more important as BitPangea approaches real operation.</p>
+
+  <h2>Constitutional Change</h2>
+
+  <p>BitPangea has established that foundational change must carry a much higher burden than ordinary World change.</p>
+
+  <p>The actual constitutional-change mechanism remains open.</p>
+
+  <p>Questions include:</p>
+
+  <p>What may be amended?</p>
+
+  <p>What should be effectively permanent?</p>
+
+  <p>Who may propose constitutional change?</p>
+
+  <p>Who evaluates it?</p>
+
+  <p>What evidence is required?</p>
+
+  <p>How are dependencies analyzed?</p>
+
+  <p>Does future civilization participate?</p>
+
+  <p>Can changes be reversed?</p>
+
+  <p>How is supersession preserved?</p>
+
+  <p>How is constitutional provenance recorded?</p>
+
+  <p>The principle is established.</p>
+
+  <p>The mechanism is not.</p>
+
+  <h2>Conformance</h2>
+
+  <p>Conformance is already explicit within the Foundational Survey Fabric.</p>
+
+  <p>Its future role elsewhere remains open.</p>
+
+  <p>Possible future conformance questions include:</p>
+
+  <p>Does an implementation preserve canonical Parcel identity?</p>
+
+  <p>Does it respect authority boundaries?</p>
+
+  <p>Does it preserve Runtime semantics?</p>
+
+  <p>Does it exchange canonical meaning correctly?</p>
+
+  <p>Does it preserve constitutional requirements?</p>
+
+  <p>But conformance should remain domain-specific where necessary.</p>
+
+  <p>The existence of a Survey conformance framework does not automatically justify one universal conformance system for every Architecture domain.</p>
+
+  <h2>History Architecture</h2>
+
+  <p>BitPangea intends to be capable of genuine history.</p>
+
+  <p>The full historical architecture remains open.</p>
+
+  <p>Questions include:</p>
+
+  <p>Which events become historical records?</p>
+
+  <p>Which evidence is retained?</p>
+
+  <p>What becomes archival?</p>
+
+  <p>What remains private?</p>
+
+  <p>How is significance added retrospectively?</p>
+
+  <p>How are corrections represented?</p>
+
+  <p>How are disputes preserved?</p>
+
+  <p>How are interpretations distinguished from evidence?</p>
+
+  <p>How is protected history handled?</p>
+
+  <p>How does history interact with institutions?</p>
+
+  <p>History should preserve evidence without becoming permanent universal surveillance.</p>
+
+  <h2>Digital Antiquity</h2>
+
+  <p>Digital Antiquity is established as a historical concept.</p>
+
+  <p>Its long-term institutional structure remains open.</p>
+
+  <p>Questions include:</p>
+
+  <p>How is Digital Antiquity curated?</p>
+
+  <p>Who preserves it?</p>
+
+  <p>How are artifacts authenticated?</p>
+
+  <p>How are hidden elements protected?</p>
+
+  <p>How are discoveries recorded without exposing protected meaning?</p>
+
+  <p>Can future civilization add new antiquities?</p>
+
+  <p>How are symbolic interpretation and historical evidence separated?</p>
+
+  <p>The Twelve Constellations are one expression of Digital Antiquity.</p>
+
+  <p>They do not exhaust it.</p>
+
+  <h2>Native BitPangean Antiquity</h2>
+
+  <p>BitPangea cannot yet possess native antiquity.</p>
+
+  <p>Antiquity requires time.</p>
+
+  <p>The World can only establish the conditions under which native antiquity may eventually arise.</p>
+
+  <p>Future civilization may need to confront questions involving:</p>
+
+  <p>historic designation</p>
+
+  <p>ruins</p>
+
+  <p>archaeological access</p>
+
+  <p>obsolete World states</p>
+
+  <p>historic Parcels</p>
+
+  <p>restoration</p>
+
+  <p>preservation</p>
+
+  <p>cultural heritage</p>
+
+  <p>These questions properly belong much later.</p>
+
+  <p>Many should remain open until history itself creates the need.</p>
+
+  <h2>What Must Eventually Be Resolved</h2>
+
+  <p>Among all open questions, several are clearly prerequisite to durable canonical operation.</p>
+
+  <p>They include at minimum:</p>
+
+  <p>final Foundational Survey Fabric Specification</p>
+
+  <p>Spatial Ground Architecture</p>
+
+  <p>General Spatial Interpretation responsibilities</p>
+
+  <p>exact Parcel arrangement</p>
+
+  <p>canonical Parcel identifiers</p>
+
+  <p>deterministic Parcel Adjacency</p>
+
+  <p>World-scale Parcel Contiguity realization</p>
+
+  <p>canonical cadastral territorial definition</p>
+
+  <p>actor identity model</p>
+
+  <p>rights and authorization architecture</p>
+
+  <p>canonical World State model</p>
+
+  <p>Runtime execution semantics</p>
+
+  <p>integrity</p>
+
+  <p>failure and recovery</p>
+
+  <p>core interoperability semantics</p>
+
+  <p>Builder-to-Runtime interaction</p>
+
+  <p>These do not all need to be solved immediately.</p>
+
+  <p>They do need eventual answers if BitPangea is to become a durable multi-actor World.</p>
+
+  <h2>What Should Wait</h2>
+
+  <p>Other questions are important but depend upon earlier Architecture.</p>
+
+  <p>Examples include:</p>
+
+  <p>detailed geography</p>
+
+  <p>final Builder system</p>
+
+  <p>World-object model</p>
+
+  <p>infrastructure architecture</p>
+
+  <p>construction rules</p>
+
+  <p>advanced Experience Architecture</p>
+
+  <p>economic capabilities</p>
+
+  <p>institutional Architecture</p>
+
+  <p>constitutional amendment mechanisms</p>
+
+  <p>advanced history systems</p>
+
+  <p>Finalizing these too early could cause downstream design to impose requirements backward upon deeper layers.</p>
+
+  <p>The governing principle remains:</p>
+
+  <div class="principle">
+    <span class="principle-label">Dependency Principle</span>
+    <p>Do not design the layer above from the layer below—and do not let the layer above redesign the layer beneath by accident.</p>
+  </div>
+
+  <h2>What Should Remain Open</h2>
+
+  <p>Some matters should never be treated as ordinary unresolved Architecture.</p>
+
+  <p>They represent freedom intentionally left to civilization.</p>
+
+  <p>These may include:</p>
+
+  <p>future cultures</p>
+
+  <p>artistic movements</p>
+
+  <p>community identities</p>
+
+  <p>customs</p>
+
+  <p>social norms</p>
+
+  <p>many forms of organization</p>
+
+  <p>unexpected uses of Parcels</p>
+
+  <p>historical interpretation</p>
+
+  <p>future institutions</p>
+
+  <p>much of economic behavior</p>
+
+  <p>collective meaning</p>
+
+  <p>BitPangea should be capable of supporting these things.</p>
+
+  <p>It should not claim authorship over their outcomes.</p>
+
+  <div class="principle">
+    <span class="principle-label">Intentional Openness</span>
+    <p>The absence of a predetermined answer can itself be an architectural success.</p>
+  </div>
+
+  <h2>The Open Architecture in One View</h2>
+
+  <p>The unresolved landscape can be understood as several overlapping areas rather than one strict queue.</p>
+
+  <p>Constitutional inquiries</p>
+
+  <p>Limit</p>
+
+  <p>future constitutional change</p>
+
+  <p>long-term stewardship</p>
+
+  <p>future authority</p>
+
+  <p>possible additional World Properties only where independent constitutional work is demonstrated</p>
+
+  <p>Spatial Architecture</p>
+
+  <p>Foundational Survey Fabric Specification</p>
+
+  <p>Spatial Ground</p>
+
+  <p>General Spatial Interpretation</p>
+
+  <p>Parcel Cadastre completion</p>
+
+  <p>exact 21,000,000 arrangement</p>
+
+  <p>Parcel geometry</p>
+
+  <p>Parcel identifiers</p>
+
+  <p>Parcel Adjacency</p>
+
+  <p>Parcel Contiguity</p>
+
+  <p>The Verge</p>
+
+  <p>Outliers</p>
+
+  <p>World Form reconciliation</p>
+
+  <p>Operational Architecture</p>
+
+  <p>Identity / Rights / Control</p>
+
+  <p>World Runtime</p>
+
+  <p>Persistence / Provenance</p>
+
+  <p>Interoperability</p>
+
+  <p>state</p>
+
+  <p>authorization</p>
+
+  <p>protocols</p>
+
+  <p>services</p>
+
+  <p>execution</p>
+
+  <p>time</p>
+
+  <p>concurrency</p>
+
+  <p>integrity</p>
+
+  <p>failure</p>
+
+  <p>recovery</p>
+
+  <p>Participation and creation</p>
+
+  <p>Builders</p>
+
+  <p>World objects</p>
+
+  <p>infrastructure</p>
+
+  <p>construction</p>
+
+  <p>Experience Architecture</p>
+
+  <p>Civilizational openness</p>
+
+  <p>economy</p>
+
+  <p>institutions</p>
+
+  <p>governance</p>
+
+  <p>community</p>
+
+  <p>culture</p>
+
+  <p>social order</p>
+
+  <p>unexpected uses</p>
+
+  <p>Historical development</p>
+
+  <p>history</p>
+
+  <p>archival systems</p>
+
+  <p>Digital Antiquity</p>
+
+  <p>native BitPangean antiquity</p>
+
+  <p>This is not a development schedule.</p>
+
+  <p>It is a dependency landscape.</p>
+
+  <h2>Open Does Not Mean Unconstrained</h2>
+
+  <p>An unresolved question can still be heavily constrained.</p>
+
+  <p>Final Parcel geometry remains open.</p>
+
+  <p>But any acceptable solution must still respect:</p>
+
+  <p>one finite World</p>
+
+  <p>exactly 21,000,000 Parcels</p>
+
+  <p>persistent Parcel identity</p>
+
+  <p>fixed position</p>
+
+  <p>World Form</p>
+
+  <p>canonical Survey reference</p>
+
+  <p>equal-area preference</p>
+
+  <p>local coherence</p>
+
+  <p>Parcel Adjacency</p>
+
+  <p>World-scale Parcel Contiguity</p>
+
+  <p>The Verge</p>
+
+  <p>Outliers where adopted</p>
+
+  <p>representation independence</p>
+
+  <p>The solution is open.</p>
+
+  <p>The problem is not undefined.</p>
+
+  <p>This distinction is central to disciplined design.</p>
+
+  <h2>Preserve the Question</h2>
+
+  <p>A well-formed unanswered question is an architectural asset.</p>
+
+  <p>A vague topic can be answered accidentally.</p>
+
+  <p>A precise inquiry preserves the actual problem.</p>
+
+  <p>For example:</p>
+
+  <p>“Figure out The Verge.”</p>
+
+  <p>is weak.</p>
+
+  <p>A stronger inquiry asks:</p>
+
+  <p>What terminal World-form morphology can express BitPangea’s Finitude without collapsing The Verge into The Extent, ordinary Parcel morphology, coastline, Exterior, or World Boundary, while remaining coherent with World Form, canonical spatial reference, and exactly 21,000,000 Parcels?</p>
+
+  <p>Likewise:</p>
+
+  <p>“Solve Parcel geometry.”</p>
+
+  <p>is weaker than:</p>
+
+  <p>What Parcel geometry can establish exactly 21,000,000 canonical Parcels with persistent identity, fixed position, equal-area preference, deterministic Parcel Adjacency, local coherence, and compatibility with the adopted World Form without causing the visible Parcel grammar to become the Foundational Survey Fabric?</p>
+
+  <p>Good questions protect the Architecture from shallow answers.</p>
+
+  <div class="principle">
+    <span class="principle-label">Discovery Principle</span>
+    <p>Good unanswered questions are part of the architecture of discovery.</p>
+  </div>
+
+  <h2>Dependency Before Schedule</h2>
+
+  <p>BitPangea should not confuse sequence with calendar.</p>
+
+  <p>An inquiry should proceed because its dependencies are sufficiently mature.</p>
+
+  <p>Not because a particular date arrived.</p>
+
+  <p>Not because an earlier list placed it next.</p>
+
+  <p>Not because a Creator-period Day implies that it must be completed.</p>
+
+  <p>The working principle remains:</p>
+
+  <div class="principle">
+    <span class="principle-label">Creator Period Principle</span>
+    <p>The Days record progress. They do not command progress.</p>
+  </div>
+
+  <p>Architectural dependency has priority over scheduling neatness.</p>
+
+  <h2>The Principle</h2>
+
+  <p>BitPangea should not measure progress by how many questions it eliminates.</p>
+
+  <p>Some questions must be solved.</p>
+
+  <p>Some must wait.</p>
+
+  <p>Some are parked until evidence returns.</p>
+
+  <p>Some should remain open long enough for civilization itself to answer them.</p>
+
+  <p>The mature discipline is knowing which is which.</p>
+
+  <p>BitPangea therefore proceeds under three central obligations:</p>
+
+  <p>Resolve what coherence requires.</p>
+
+  <p>Defer what dependency requires.</p>
+
+  <p>Preserve as open what civilization requires.</p>
+
+  <p>And a fourth discipline follows:</p>
+
+  <p>Do not answer a deeper question merely because an answer can be imagined.</p>
+
+  <p>That is not indecision.</p>
+
+  <p>It is architectural restraint.</p>
+
+  <p>The governing principle for this section is therefore:</p>
+
+  <div class="principle">
+    <span class="principle-label">Governing Principle</span>
+    <p>An open question should remain open until either the architecture requires an answer, the evidence justifies one, or the future earns the right to provide it.</p>
+  </div>
+
+  <p>BitPangea is not unfinished because unanswered questions remain.</p>
+
+  <div class="principle">
+    <span class="principle-label">Closing Principle</span>
+    <p>It would be unfinished if it could no longer distinguish the questions that require answers from the possibilities that require freedom.</p>
+  </div>
+
+</section>
+
+<section class="chapter-note">
+  Part of <strong>BitPangea: Origins — Version 0.1</strong> · <em>The Foundational Manuscript of a Finite Digital World</em> · September 2026. This chapter is part of the preserved Version 0.1 publication; the complete manuscript remains the canonical versioned document.
+</section>
+
+<nav class="chapter-nav" aria-label="Origins chapter navigation">
+  <a class="nav-link" href="/origins/chapters/15-what-is-established/">← Previous: What Is Established</a>
+  <a class="nav-link center" href="/origins/#contents">Contents</a>
+  <a class="nav-link next" href="/origins/chapters/17-development-philosophy/">Next: Development Philosophy →</a>
+</nav>
+
+</article>
+</main>
+
+<div id="bp-footer"></div>
+</body>
+</html>
