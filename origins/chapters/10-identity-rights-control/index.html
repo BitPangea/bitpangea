@@ -1,1 +1,1731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 
+<title>Identity, Rights, and Control | BitPangea: Origins</title>
+
+<link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/favicon.svg" rel="shortcut icon"/>
+
+<link rel="stylesheet" href="/assets/css/bitpangea-framework.css"/>
+<script src="/assets/js/bitpangea-framework.js" defer></script>
+
+<meta content="Chapter X of BitPangea: Origins — Version 0.1. Identity, Rights, and Control: persistent actor identity, governed relationships, scoped authority, authorization, and traceable World change." name="description"/>
+<meta content="#00c8d7" name="theme-color"/>
+<meta content="index,follow" name="robots"/>
+<link href="https://bitpangea.com/origins/chapters/10-identity-rights-control/" rel="canonical"/>
+
+<meta content="Identity, Rights, and Control | BitPangea: Origins — Version 0.1" property="og:title"/>
+<meta content="BitPangea’s architecture for persistent actors, governed relationships, scoped control, authorization, delegation, privacy, provenance, and legitimate participation." property="og:description"/>
+<meta content="article" property="og:type"/>
+<meta content="https://bitpangea.com/origins/chapters/10-identity-rights-control/" property="og:url"/>
+<meta content="https://bitpangea.com/origins/BitPangea_Origins_cover.png" property="og:image"/>
+<meta content="BitPangea" property="og:site_name"/>
+<meta content="en_US" property="og:locale"/>
+
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Identity, Rights, and Control | BitPangea: Origins — Version 0.1" name="twitter:title"/>
+<meta content="Identity establishes the actor. Rights establish the relationship. Control establishes exercisable authority." name="twitter:description"/>
+<meta content="https://bitpangea.com/origins/BitPangea_Origins_cover.png" name="twitter:image"/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Chapter",
+  "name": "Identity, Rights, and Control",
+  "position": 10,
+  "url": "https://bitpangea.com/origins/chapters/10-identity-rights-control/",
+  "isPartOf": {
+    "@type": "Book",
+    "name": "BitPangea: Origins",
+    "alternateName": "The Foundational Manuscript of a Finite Digital World",
+    "version": "0.1",
+    "url": "https://bitpangea.com/origins/"
+  },
+  "datePublished": "2026-09",
+  "image": "https://bitpangea.com/origins/BitPangea_Origins_cover.png"
+}
+</script>
+
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg: #02050a;
+  --gold: #d4a938;
+  --cyan: #00c8d7;
+  --white: #ffffff;
+  --muted: rgba(255,255,255,.70);
+  --panel: rgba(0,0,0,.44);
+  --panel-soft: rgba(0,0,0,.32);
+  --line: rgba(212,169,56,.18);
+}
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  background: var(--bg);
+  color: var(--white);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  position: relative;
+  line-height: 1.72;
+  overflow-x: hidden;
+  background: var(--bg);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 76% 9%, rgba(212,169,56,.12), transparent 31%),
+    radial-gradient(circle at 16% 21%, rgba(0,200,215,.08), transparent 31%),
+    linear-gradient(rgba(2,5,10,.84), rgba(2,5,10,.97));
+  z-index: -2;
+  pointer-events: none;
+}
+
+.page {
+  width: 100%;
+  padding: 150px 28px 90px;
+}
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 58px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  box-shadow: 0 0 70px rgba(0,0,0,.58);
+  backdrop-filter: blur(4px);
+}
+
+.breadcrumb {
+  color: rgba(255,255,255,.70);
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+}
+
+.breadcrumb a,
+.breadcrumb a:visited {
+  color: var(--cyan);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover { color: #fff; }
+
+.eyebrow {
+  color: var(--cyan);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  color: var(--white);
+  font-size: clamp(46px, 6.5vw, 76px);
+  line-height: 1.02;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  text-shadow: 0 0 24px rgba(0,0,0,.92);
+}
+
+.subtitle {
+  color: var(--gold);
+  font-size: clamp(18px, 2.1vw, 24px);
+  line-height: 1.35;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.meta {
+  color: rgba(255,255,255,.72);
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.divider {
+  width: 64px;
+  height: 2px;
+  background: var(--gold);
+  margin: 38px 0 42px;
+  box-shadow: 0 0 14px rgba(212,169,56,.65);
+}
+
+.chapter-copy h2 {
+  margin-top: 42px;
+  margin-bottom: 18px;
+  color: var(--gold);
+  font-size: 24px;
+  line-height: 1.3;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  text-shadow: 0 0 12px rgba(0,0,0,.9);
+}
+
+.chapter-copy p {
+  margin-bottom: 22px;
+  color: rgba(255,255,255,.93);
+  font-size: 17px;
+  line-height: 1.8;
+  text-shadow: 0 0 8px rgba(0,0,0,.88);
+}
+
+.chapter-copy strong { color: #fff; }
+
+.question-group {
+  margin: 28px 0 30px;
+  padding: 26px 28px;
+  background: rgba(0,0,0,.40);
+  border-left: 3px solid var(--cyan);
+}
+
+.question-group p {
+  margin-bottom: 10px;
+  color: rgba(255,255,255,.94);
+}
+
+.question-group p:last-child { margin-bottom: 0; }
+
+.principle {
+  margin: 28px 0;
+  padding: 24px 26px;
+  border-left: 3px solid var(--gold);
+  background: rgba(0,0,0,.46);
+}
+
+.principle-label {
+  display: block;
+  color: var(--cyan);
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 9px;
+}
+
+.principle p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.sequence {
+  margin: 26px 0;
+  padding: 22px 24px;
+  border-left: 3px solid var(--cyan);
+  background: rgba(0,0,0,.46);
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: .4px;
+}
+
+.chapter-note {
+  margin-top: 44px;
+  padding: 26px 28px;
+  background: rgba(0,0,0,.40);
+  border: 1px solid rgba(212,169,56,.18);
+  color: rgba(255,255,255,.80);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.chapter-note strong { color: var(--gold); }
+
+.chapter-nav {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 14px;
+  align-items: stretch;
+  margin-top: 28px;
+}
+
+.nav-link,
+.nav-link:visited {
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+  padding: 14px 18px;
+  border: 1px solid rgba(212,169,56,.27);
+  background: rgba(0,0,0,.40);
+  color: var(--gold);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 12px;
+  transition: .2s ease;
+}
+
+.nav-link:hover {
+  color: #fff;
+  border-color: rgba(255,255,255,.55);
+}
+
+.nav-link.center {
+  justify-content: center;
+  color: var(--cyan);
+  border-color: rgba(0,200,215,.25);
+}
+
+.nav-link.next { justify-content: flex-end; text-align: right; }
+
+@media (max-width: 768px) {
+  .page { padding: 178px 16px 60px; }
+  .container { padding: 36px 24px 46px; }
+  .hero h1 { letter-spacing: 3px; }
+  .chapter-copy p { font-size: 16px; }
+  .chapter-nav { grid-template-columns: 1fr; }
+  .nav-link, .nav-link.center, .nav-link.next { justify-content: flex-start; text-align: left; }
+}
+</style>
+</head>
+
+<body data-bp-page="origins">
+<div id="bp-header"></div>
+
+<main class="page">
+<article class="container">
+
+<div class="breadcrumb">
+  <a href="/">BitPangea</a> › <a href="/origins/">Origins</a> › Chapter X
+</div>
+
+<section class="hero">
+  <div class="eyebrow">Origins · Version 0.1 · Chapter X</div>
+  <h1>Identity, Rights, and Control</h1>
+  <div class="subtitle">The Foundational Manuscript of a Finite Digital World</div>
+  <div class="meta">September 2026 · BitPangea Creator Period</div>
+  <div class="divider"></div>
+</section>
+
+<section class="chapter-copy">
+
+  <p>A persistent World requires more than places.</p>
+
+  <p>It requires actors.</p>
+
+  <p>It requires relationships between actors and World objects.</p>
+
+  <p>It requires rules governing what those relationships permit.</p>
+
+  <p>And it requires a way to distinguish between:</p>
+
+  <p>association</p>
+
+  <p>entitlement</p>
+
+  <p>permission</p>
+
+  <p>control</p>
+
+  <p>and authority.</p>
+
+  <p>These responsibilities belong to one of BitPangea’s recognized Architecture domains:</p>
+
+  <p>Identity / Rights / Control</p>
+
+  <p>The grouping is deliberate.</p>
+
+  <p>The concepts are deeply related.</p>
+
+  <p>But they are not the same thing.</p>
+
+  <p>BitPangea should preserve that distinction carefully.</p>
+
+  <div class="principle">
+    <span class="principle-label">Identity</span>
+    <p>Identity answers who.</p>
+  </div>
+
+  <div class="principle">
+    <span class="principle-label">Rights</span>
+    <p>Rights answer what governed relationship exists.</p>
+  </div>
+
+  <div class="principle">
+    <span class="principle-label">Control</span>
+    <p>Control answers what authority may actually be exercised.</p>
+  </div>
+
+  <p>Those questions may eventually require further internal separation.</p>
+
+  <p>The Architecture preserves the domain now because the responsibility is enduring, even though its final internal design remains unresolved.</p>
+
+  <h2>The First Question: Who or What Is the Actor?</h2>
+
+  <p>Before a governed relationship can exist, BitPangea must be able to distinguish the actor to which that relationship applies.</p>
+
+  <p>This is the problem of Identity.</p>
+
+  <p>Identity asks:</p>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>Who or what is this?</strong></p>
+  </div>
+
+  <p>The answer may eventually apply to more than human individuals.</p>
+
+  <p>BitPangea may need to recognize different classes of actors, including:</p>
+
+  <p>individuals</p>
+
+  <p>organizations</p>
+
+  <p>institutions</p>
+
+  <p>services</p>
+
+  <p>Builders</p>
+
+  <p>automated agents</p>
+
+  <p>World systems</p>
+
+  <p>other future actor types</p>
+
+  <p>The final actor model remains open.</p>
+
+  <p>The architectural requirement is already clear:</p>
+
+  <p>BitPangea must be able to distinguish actors persistently enough that rights, authority, actions, provenance, and history can refer to them meaningfully.</p>
+
+  <p>Without persistent actor identity, every higher relationship becomes fragile.</p>
+
+  <h2>Identity Is Not a Username</h2>
+
+  <p>A username may identify someone to an interface.</p>
+
+  <p>That does not make the username the canonical actor.</p>
+
+  <p>Likewise, an:</p>
+
+  <p>email address</p>
+
+  <p>wallet address</p>
+
+  <p>account number</p>
+
+  <p>public key</p>
+
+  <p>credential</p>
+
+  <p>device identifier</p>
+
+  <p>external platform account</p>
+
+  <p>may help authenticate or locate an actor.</p>
+
+  <p>None should automatically become synonymous with BitPangea identity merely because it is convenient to implement.</p>
+
+  <p>The distinction parallels the Foundational Survey Fabric.</p>
+
+  <p>Just as BitPangea should not confuse an implementation coordinate with canonical spatial reference, it should not confuse an implementation credential with persistent actor identity.</p>
+
+  <p>Conceptually:</p>
+
+  <p>Actor</p>
+
+  <div class="sequence">↓</div>
+
+  <p>persistent BitPangea identity</p>
+
+  <p>may be associated with:</p>
+
+  <p>username</p>
+
+  <p>credential</p>
+
+  <p>wallet</p>
+
+  <p>device</p>
+
+  <p>account</p>
+
+  <p>profile</p>
+
+  <p>external identity</p>
+
+  <p>Those associations may change.</p>
+
+  <p>The actor’s continuity should remain intelligible.</p>
+
+  <h2>Authentication Is Not Identity</h2>
+
+  <p>Authentication asks:</p>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>Can this entity demonstrate control of credentials associated with an identity?</strong></p>
+  </div>
+
+  <p>Identity asks:</p>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>Which actor is this?</strong></p>
+  </div>
+
+  <p>They are related.</p>
+
+  <p>They are not synonymous.</p>
+
+  <p>Credentials may be:</p>
+
+  <p>rotated</p>
+
+  <p>revoked</p>
+
+  <p>recovered</p>
+
+  <p>replaced</p>
+
+  <p>superseded</p>
+
+  <p>or rendered obsolete by technology</p>
+
+  <p>A change in credentials should not necessarily create a new historical actor.</p>
+
+  <p>Conceptually:</p>
+
+  <p>Actor Identity</p>
+
+  <div class="sequence">↓</div>
+
+  <p>may use over time</p>
+
+  <div class="sequence">↓</div>
+
+  <p>Authentication Credentials</p>
+
+  <p>The mechanism remains open.</p>
+
+  <p>The separation should not.</p>
+
+  <h2>Identity Is Not Ownership</h2>
+
+  <p>One of the most important distinctions in the domain is:</p>
+
+  <div class="principle">
+    <span class="principle-label">Identity Principle</span>
+    <p>Identity does not imply ownership.</p>
+  </div>
+
+  <p>Knowing who an actor is does not establish what that actor controls.</p>
+
+  <p>Likewise:</p>
+
+  <div class="sequence">identity<br/>≠<br/>ownership</div>
+
+  <div class="sequence">identity<br/>≠<br/>rights</div>
+
+  <div class="sequence">identity<br/>≠<br/>permission</div>
+
+  <div class="sequence">identity<br/>≠<br/>authority</div>
+
+  <p>An actor may exist in BitPangea without possessing any special relationship to a Parcel.</p>
+
+  <p>An organization may possess a governed relationship that its individual members do not possess personally.</p>
+
+  <p>A service may have narrowly scoped authority to perform an operation without owning anything.</p>
+
+  <p>Identity makes governed relationships possible.</p>
+
+  <p>Identity is not itself the governed relationship.</p>
+
+  <h2>The Second Question: What Relationship Exists?</h2>
+
+  <p>Once an actor can be identified, BitPangea can ask a different question:</p>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>What governed relationship exists between this actor and a World object, place, system, or capability?</strong></p>
+  </div>
+
+  <p>This is the problem of Rights.</p>
+
+  <p>The term should be used carefully.</p>
+
+  <p>“Rights” can carry:</p>
+
+  <p>legal</p>
+
+  <p>political</p>
+
+  <p>moral</p>
+
+  <p>contractual</p>
+
+  <p>technical</p>
+
+  <p>social</p>
+
+  <p>meanings.</p>
+
+  <p>BitPangea has not yet adopted a final rights taxonomy.</p>
+
+  <p>At the Architecture level, the concern is more general:</p>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>What recognized relationship gives an actor some governed standing with respect to something in the World?</strong></p>
+  </div>
+
+  <p>That relationship may eventually take many forms.</p>
+
+  <p>Origins should preserve the need for the architecture without inventing its final categories.</p>
+
+  <h2>Rights Require Provenance</h2>
+
+  <p>A right should not exist merely because an application claims that it exists.</p>
+
+  <p>BitPangea should ultimately be able to determine, for consequential governed relationships:</p>
+
+  <p>What relationship is this?</p>
+
+  <p>Which actor possesses it?</p>
+
+  <p>To what object or capability does it apply?</p>
+
+  <p>What does it permit?</p>
+
+  <p>Where did it originate?</p>
+
+  <p>Which authority established it?</p>
+
+  <p>When did it become effective?</p>
+
+  <p>Can it expire?</p>
+
+  <p>Can it be delegated?</p>
+
+  <p>Can it be revoked?</p>
+
+  <p>Can it be superseded?</p>
+
+  <p>What evidence supports its present standing?</p>
+
+  <p>Not every relationship will necessarily require every one of these properties.</p>
+
+  <p>But the broader requirement is important:</p>
+
+  <div class="principle">
+    <span class="principle-label">Rights Principle</span>
+    <p>Rights require provenance.</p>
+  </div>
+
+  <p>A system that preserves a right while losing the authority from which it came risks confusing assertion with legitimate standing.</p>
+
+  <p>This is one reason Persistence / Provenance is now a distinct Architecture domain.</p>
+
+  <p>Identity / Rights / Control may establish and use governed relationships.</p>
+
+  <p>Persistence / Provenance helps preserve their lineage.</p>
+
+  <h2>Rights Are Not the Parcel</h2>
+
+  <p>A Parcel may be the object to which a right refers.</p>
+
+  <p>The right is not the Parcel.</p>
+
+  <p>Conceptually:</p>
+
+  <p>Parcel</p>
+
+  <p>→ canonical spatial object</p>
+
+  <p>Right</p>
+
+  <p>→ governed relationship involving that object</p>
+
+  <p>This distinction protects the Parcel Cadastre.</p>
+
+  <p>If a right changes:</p>
+
+  <p>the Parcel does not disappear.</p>
+
+  <p>If a new actor acquires a relationship:</p>
+
+  <p>the Parcel does not move.</p>
+
+  <p>If a right expires:</p>
+
+  <p>the Parcel’s territorial definition does not change.</p>
+
+  <p>Thus:</p>
+
+  <div class="principle">
+    <span class="principle-label">Cadastre Boundary</span>
+    <p>The Parcel Cadastre owns Parcel truth. Identity / Rights / Control may reference Parcel truth without redefining it.</p>
+  </div>
+
+  <p>This is an application of the broader architectural rule:</p>
+
+  <div class="principle">
+    <span class="principle-label">Authority Principle</span>
+    <p>Reference does not transfer authority.</p>
+  </div>
+
+  <h2>Ownership Is Only One Possible Relationship</h2>
+
+  <p>Digital-land systems often jump immediately from Parcel existence to ownership.</p>
+
+  <p>BitPangea should not.</p>
+
+  <p>Ownership may eventually become an important BitPangea concept.</p>
+
+  <p>But beginning with it would prematurely compress a richer architectural problem into one inherited word.</p>
+
+  <p>Future governed relationships could potentially distinguish concepts such as:</p>
+
+  <p>ownership</p>
+
+  <p>use</p>
+
+  <p>access</p>
+
+  <p>construction authority</p>
+
+  <p>administrative authority</p>
+
+  <p>delegated authority</p>
+
+  <p>temporary permission</p>
+
+  <p>occupancy</p>
+
+  <p>custodianship</p>
+
+  <p>shared control</p>
+
+  <p>service authority</p>
+
+  <p>These are illustrative only.</p>
+
+  <p>They are not adopted BitPangea rights classes.</p>
+
+  <p>The governing principle is:</p>
+
+  <div class="principle">
+    <span class="principle-label">Rights Design Principle</span>
+    <p>Discover the relationships the World actually requires before deciding which inherited legal or technical words should describe them.</p>
+  </div>
+
+  <h2>The Third Question: What May Actually Be Done?</h2>
+
+  <p>Rights describe governed relationships.</p>
+
+  <p>Control concerns the ability to exercise authority.</p>
+
+  <p>The question becomes:</p>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>What may this actor actually cause to happen?</strong></p>
+  </div>
+
+  <p>That is different from merely recording that a relationship exists.</p>
+
+  <p>An actor may possess some recognized right associated with a Parcel while still lacking authority to perform every possible operation affecting it.</p>
+
+  <p>Conceptually:</p>
+
+  <p>Actor Identity</p>
+
+  <div class="sequence">↓</div>
+
+  <p>Rights Relationship</p>
+
+  <div class="sequence">↓</div>
+
+  <p>Control / Authorization</p>
+
+  <div class="sequence">↓</div>
+
+  <p>permitted operation</p>
+
+  <div class="sequence">↓</div>
+
+  <p>World Runtime</p>
+
+  <div class="sequence">↓</div>
+
+  <p>execution</p>
+
+  <div class="sequence">↓</div>
+
+  <p>resulting World state</p>
+
+  <p>This sequence is important.</p>
+
+  <p>Rights describe standing.</p>
+
+  <p>Authorization determines whether a specific action is permitted under current conditions.</p>
+
+  <p>Control concerns exercisable authority.</p>
+
+  <p>Execution belongs to World Runtime.</p>
+
+  <p>Those responsibilities should not be collapsed into one field or one service merely because implementation would be simpler.</p>
+
+  <h2>Authorization Is Not Rights</h2>
+
+  <p>Rights and authorization should remain distinct.</p>
+
+  <p>Rights describe governed relationships.</p>
+
+  <p>Authorization evaluates a specific proposed action.</p>
+
+  <p>An authorization decision may depend upon:</p>
+
+  <p>rights</p>
+
+  <p>current World state</p>
+
+  <p>object state</p>
+
+  <p>time</p>
+
+  <p>policy</p>
+
+  <p>protocol</p>
+
+  <p>delegation</p>
+
+  <p>other governing conditions</p>
+
+  <p>Conceptually:</p>
+
+  <p>Rights</p>
+
+  <p>\+</p>
+
+  <p>current conditions</p>
+
+  <p>\+</p>
+
+  <p>applicable rules</p>
+
+  <div class="sequence">↓</div>
+
+  <p>Authorization decision</p>
+
+  <p>The exact mechanism remains unresolved.</p>
+
+  <p>The architectural distinction should remain.</p>
+
+  <p>A right may contribute to permission.</p>
+
+  <p>It does not necessarily guarantee every action.</p>
+
+  <h2>Control Is Not Unlimited Authority</h2>
+
+  <p>Control must be scoped.</p>
+
+  <p>Permission to perform one action should not silently become permission to perform everything.</p>
+
+  <p>Future BitPangea architecture may distinguish authority to:</p>
+
+  <p>view</p>
+
+  <p>enter</p>
+
+  <p>build</p>
+
+  <p>modify</p>
+
+  <p>operate</p>
+
+  <p>delegate</p>
+
+  <p>transfer</p>
+
+  <p>administer</p>
+
+  <p>remove</p>
+
+  <p>configure</p>
+
+  <p>Again, these are examples, not adopted categories.</p>
+
+  <p>The principle is:</p>
+
+  <div class="principle">
+    <span class="principle-label">Scoped Authority</span>
+    <p>Authority should be explicit enough that permission to do one thing does not silently become permission to do everything.</p>
+  </div>
+
+  <p>This becomes increasingly important once Builders, infrastructure, services, and persistent World state begin interacting.</p>
+
+  <h2>One Owner Field Is Not an Architecture</h2>
+
+  <p>A simplistic digital property system might store:</p>
+
+  <p>Parcel 1042</p>
+
+  <p>Owner: Alice</p>
+
+  <p>That may be enough for a prototype.</p>
+
+  <p>It does not answer the deeper architectural questions.</p>
+
+  <p>What identifies Alice?</p>
+
+  <p>What proves the relationship?</p>
+
+  <p>What authority created it?</p>
+
+  <p>What does “Owner” actually permit?</p>
+
+  <p>Can authority be delegated?</p>
+
+  <p>Can multiple actors hold different governed relationships?</p>
+
+  <p>Can different rights apply to different functions?</p>
+
+  <p>Can an actor temporarily exercise authority without acquiring ownership?</p>
+
+  <p>What happens when credentials change?</p>
+
+  <p>How is a dispute represented?</p>
+
+  <p>What provenance is preserved?</p>
+
+  <p>What historical record remains after the relationship changes?</p>
+
+  <p>The point is not that every Parcel must become legally complicated.</p>
+
+  <p>The point is that:</p>
+
+  <div class="principle">
+    <span class="principle-label">Architecture Principle</span>
+    <p>simplicity should be the result of understanding the architecture—not a substitute for understanding it.</p>
+  </div>
+
+  <h2>Rights Need Not Be Parcel Rights</h2>
+
+  <p>The 21,000,000 Parcels make Parcel relationships an obvious use case.</p>
+
+  <p>But the Identity / Rights / Control domain should not be designed only around Parcels.</p>
+
+  <p>Actors may eventually interact with:</p>
+
+  <p>constructed objects</p>
+
+  <p>infrastructure</p>
+
+  <p>services</p>
+
+  <p>institutions</p>
+
+  <p>organizations</p>
+
+  <p>shared systems</p>
+
+  <p>creative works</p>
+
+  <p>World capabilities</p>
+
+  <p>administrative functions</p>
+
+  <p>Builder tools</p>
+
+  <p>future object classes not yet imagined</p>
+
+  <p>The Architecture should therefore be capable of supporting governed relationships beyond ordinary Parcel control.</p>
+
+  <p>That does not require one universal rights model.</p>
+
+  <p>It requires avoiding a design so narrow that every new World object forces the domain to be reinvented.</p>
+
+  <h2>Persistent Actor, Persistent Place, Changing Relationship</h2>
+
+  <p>One of BitPangea’s strongest architectural advantages is the ability to separate persistent identities from changing relationships.</p>
+
+  <p>Conceptually:</p>
+
+  <p>Actor Identity</p>
+
+  <p>→ persistent actor</p>
+
+  <p>Parcel Identity</p>
+
+  <p>→ persistent place</p>
+
+  <p>Rights Relationship</p>
+
+  <p>→ may change over time</p>
+
+  <p>Control</p>
+
+  <p>→ may change according to the relationship and current conditions</p>
+
+  <p>This allows BitPangea to preserve meaningful history.</p>
+
+  <p>The same Parcel can remain the same place while different actors hold different relationships to it across time.</p>
+
+  <p>The same actor can preserve historical continuity even when credentials change.</p>
+
+  <p>The governed relationships can evolve without either identity having to be recreated.</p>
+
+  <h2>Delegation</h2>
+
+  <p>Delegation is one likely future requirement.</p>
+
+  <p>An actor possessing authority may need to permit another actor to exercise some subset of that authority.</p>
+
+  <p>Conceptually:</p>
+
+  <p>Actor A</p>
+
+  <div class="sequence">↓</div>
+
+  <p>possesses authority</p>
+
+  <div class="sequence">↓</div>
+
+  <p>delegates limited authority</p>
+
+  <div class="sequence">↓</div>
+
+  <p>Actor B</p>
+
+  <div class="sequence">↓</div>
+
+  <p>may exercise specified capability</p>
+
+  <p>If delegation exists, the Architecture will eventually need to answer:</p>
+
+  <p>Who may delegate?</p>
+
+  <p>What may be delegated?</p>
+
+  <p>For how long?</p>
+
+  <p>Under what conditions?</p>
+
+  <p>May delegated authority itself be delegated?</p>
+
+  <p>Can it be revoked?</p>
+
+  <p>What happens when the original authority ends?</p>
+
+  <p>How is provenance preserved?</p>
+
+  <p>These questions remain open.</p>
+
+  <p>Their existence reinforces why identity, rights, control, and provenance should not be treated as synonyms.</p>
+
+  <h2>Shared and Multiple Relationships</h2>
+
+  <p>BitPangea should also avoid assuming that every object must always have exactly one relevant actor.</p>
+
+  <p>A World may need relationships involving:</p>
+
+  <p>multiple individuals</p>
+
+  <p>organizations</p>
+
+  <p>institutions</p>
+
+  <p>groups</p>
+
+  <p>shared administration</p>
+
+  <p>joint projects</p>
+
+  <p>delegated operators</p>
+
+  <p>The architecture should not accidentally make singular control a permanent World rule merely because an early implementation stores only one account identifier.</p>
+
+  <p>Implementation convenience should not settle unresolved World relationships.</p>
+
+  <h2>Time</h2>
+
+  <p>Governed relationships may possess temporal dimensions.</p>
+
+  <p>A future relationship could theoretically be:</p>
+
+  <p>permanent</p>
+
+  <p>temporary</p>
+
+  <p>scheduled</p>
+
+  <p>conditional</p>
+
+  <p>revocable</p>
+
+  <p>expiring</p>
+
+  <p>future-effective</p>
+
+  <p>BitPangea has not adopted these as formal classes.</p>
+
+  <p>But time matters because a persistent World must be able to distinguish:</p>
+
+  <p>What is true now?</p>
+
+  <p>from:</p>
+
+  <p>What was true before?</p>
+
+  <p>and potentially:</p>
+
+  <p>What becomes true later?</p>
+
+  <p>This is another place where Identity / Rights / Control interacts with Persistence / Provenance.</p>
+
+  <p>The current relationship belongs to operational truth.</p>
+
+  <p>Its lineage belongs to historical and provenance truth.</p>
+
+  <h2>Identity, Rights, Control, and World Runtime</h2>
+
+  <p>The Identity / Rights / Control domain does not itself need to execute every change it authorizes.</p>
+
+  <p>That responsibility belongs to World Runtime.</p>
+
+  <p>A future consequential action might conceptually proceed:</p>
+
+  <p>Actor requests operation</p>
+
+  <div class="sequence">↓</div>
+
+  <p>Identity resolved</p>
+
+  <div class="sequence">↓</div>
+
+  <p>relevant rights determined</p>
+
+  <div class="sequence">↓</div>
+
+  <p>control / authorization evaluated</p>
+
+  <div class="sequence">↓</div>
+
+  <p>operation validated</p>
+
+  <div class="sequence">↓</div>
+
+  <p>World Runtime executes</p>
+
+  <div class="sequence">↓</div>
+
+  <p>persistent World state changes</p>
+
+  <div class="sequence">↓</div>
+
+  <p>Persistence / Provenance preserves lineage and evidence</p>
+
+  <p>This sequence protects responsibility boundaries.</p>
+
+  <p>Identity / Rights / Control answers whether the actor has standing and authority.</p>
+
+  <p>World Runtime governs legitimate operational change.</p>
+
+  <p>Persistence / Provenance helps preserve how that condition arose.</p>
+
+  <p>None should silently absorb the others.</p>
+
+  <h2>Identity, Rights, Control, and Builders</h2>
+
+  <p>Builders make these distinctions operationally important.</p>
+
+  <p>A Builder may eventually ask:</p>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>May this actor build here?</strong></p>
+  </div>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>What may the actor modify?</strong></p>
+  </div>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>What may be removed?</strong></p>
+  </div>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>What constraints apply?</strong></p>
+  </div>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>What authority supports the request?</strong></p>
+  </div>
+
+  <p>The Builder should not invent these answers.</p>
+
+  <p>It should consume them from the relevant Architecture.</p>
+
+  <p>Conceptually:</p>
+
+  <p>Builder</p>
+
+  <div class="sequence">↓</div>
+
+  <p>references Parcel Cadastre</p>
+
+  <div class="sequence">↓</div>
+
+  <p>references Identity / Rights / Control</p>
+
+  <div class="sequence">↓</div>
+
+  <p>requests legitimate World change</p>
+
+  <div class="sequence">↓</div>
+
+  <p>World Runtime validates and executes</p>
+
+  <div class="sequence">↓</div>
+
+  <p>Persistence / Provenance preserves appropriate evidence</p>
+
+  <p>The Builder creates.</p>
+
+  <p>It does not become cadastral authority.</p>
+
+  <p>It does not become rights authority.</p>
+
+  <p>It does not become World Runtime merely because it initiates an action.</p>
+
+  <h2>Infrastructure May Require Different Relationships</h2>
+
+  <p>World-scale infrastructure may introduce relationships that ordinary Parcel control cannot describe adequately.</p>
+
+  <p>A future:</p>
+
+  <p>road</p>
+
+  <p>transport system</p>
+
+  <p>communications network</p>
+
+  <p>shared utility</p>
+
+  <p>public service</p>
+
+  <p>digital-native infrastructure system</p>
+
+  <p>may cross many Parcels.</p>
+
+  <p>It would be architecturally weak to assume that all such systems must be modeled through the same relationship as one actor controlling one Parcel.</p>
+
+  <p>The broader principle is:</p>
+
+  <div class="principle">
+    <span class="principle-label">Authority Model</span>
+    <p>Different classes of World responsibility may require different classes of authority.</p>
+  </div>
+
+  <p>The final relationships remain open.</p>
+
+  <p>The Architecture should preserve enough flexibility to discover them.</p>
+
+  <h2>Formal Rights and Social Relationships Are Different</h2>
+
+  <p>BitPangea should also distinguish formal World-recognized relationships from relationships created socially by civilization.</p>
+
+  <p>A community may recognize:</p>
+
+  <p>custom</p>
+
+  <p>membership</p>
+
+  <p>tradition</p>
+
+  <p>reputation</p>
+
+  <p>voluntary obligation</p>
+
+  <p>local expectation</p>
+
+  <p>without those relationships becoming canonical World rights.</p>
+
+  <p>Similarly, not every social rule needs World Runtime enforcement.</p>
+
+  <p>The distinction is important:</p>
+
+  <div class="principle">
+    <span class="principle-label">Architecture / Civilization Boundary</span>
+    <p>Architecture governs what must be governed. Civilization may create additional relationships that remain social rather than canonical.</p>
+  </div>
+
+  <p>BitPangea should not turn every human relationship into protocol merely because it can represent one.</p>
+
+  <h2>Identity and Privacy</h2>
+
+  <p>Persistent identity does not require universal public disclosure.</p>
+
+  <p>The Architecture may eventually need to distinguish among:</p>
+
+  <p>existence of identity</p>
+
+  <p>proof of identity</p>
+
+  <p>identity attributes</p>
+
+  <p>credential data</p>
+
+  <p>public presentation</p>
+
+  <p>private attributes</p>
+
+  <p>authorization-relevant information</p>
+
+  <p>These are different concerns.</p>
+
+  <p>BitPangea may need to know enough to establish legitimate authority without making every identity fact public to every participant.</p>
+
+  <p>The governing distinction is:</p>
+
+  <div class="principle">
+    <span class="principle-label">Privacy Principle</span>
+    <p>Persistent identity and maximal disclosure are not the same requirement.</p>
+  </div>
+
+  <h2>Identity and Pseudonymity</h2>
+
+  <p>Meaningful identity also does not necessarily require a real-world legal name.</p>
+
+  <p>A persistent pseudonymous actor may still accumulate:</p>
+
+  <p>history</p>
+
+  <p>reputation</p>
+
+  <p>relationships</p>
+
+  <p>rights</p>
+
+  <p>responsibility</p>
+
+  <p>creative work</p>
+
+  <p>institutional roles</p>
+
+  <p>BitPangea should therefore determine identity assurance according to what a particular action requires rather than assuming one universal real-world identity standard.</p>
+
+  <p>Some actions may require stronger assurance.</p>
+
+  <p>Others may not.</p>
+
+  <p>That question remains open.</p>
+
+  <h2>Authority Must Be Traceable</h2>
+
+  <p>Consequential World actions should ultimately be explainable.</p>
+
+  <p>For an important change, BitPangea should aspire to answer:</p>
+
+  <p>Who acted?</p>
+
+  <p>Under which persistent identity?</p>
+
+  <p>Against which World object or capability?</p>
+
+  <p>Using what authority?</p>
+
+  <p>What rights or relationships supported the decision?</p>
+
+  <p>What authorization was evaluated?</p>
+
+  <p>What changed?</p>
+
+  <p>When did it occur?</p>
+
+  <p>What provenance was preserved?</p>
+
+  <p>This does not mean every trivial action must become administratively heavy.</p>
+
+  <p>It establishes a principle for consequential World change:</p>
+
+  <div class="principle">
+    <span class="principle-label">Traceability Principle</span>
+    <p>Authority should be traceable.</p>
+  </div>
+
+  <p>A persistent World should be able to distinguish legitimate change from unexplained mutation.</p>
+
+  <h2>The Creator’s Authority</h2>
+
+  <p>This domain eventually applies to the Creator as well.</p>
+
+  <p>During the Creator Period, the Creator necessarily possesses extraordinary authority.</p>
+
+  <p>The World is still being established.</p>
+
+  <p>Its enduring systems do not yet exist independently enough to govern every action.</p>
+
+  <p>But unlimited Creator authority should not automatically become the permanent model of a mature BitPangea.</p>
+
+  <p>As Architecture becomes established, authority should increasingly belong to explicit systems rather than informal intervention.</p>
+
+  <p>The principle remains:</p>
+
+  <div class="principle">
+    <span class="principle-label">Creator Authority Principle</span>
+    <p>The Creator should become progressively less authoritative as BitPangea moves from World creation toward civilization.</p>
+  </div>
+
+  <p>This does not mean the Creator becomes irrelevant.</p>
+
+  <p>The role changes.</p>
+
+  <p>Creation increasingly becomes stewardship.</p>
+
+  <p>A mature World should be capable of answering:</p>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>Why was this action permitted?</strong></p>
+  </div>
+
+  <p>with something stronger than:</p>
+
+  <p>Because the Creator could do it.</p>
+
+  <h2>No Premature Tokenization</h2>
+
+  <p>BitPangea’s fixed Parcel count and Bitcoin inspiration make tokenization an obvious future possibility to consider.</p>
+
+  <p>They do not make it a present architectural requirement.</p>
+
+  <p>Parcel rights do not presently require:</p>
+
+  <p>NFTs</p>
+
+  <p>a Parcel token</p>
+
+  <p>a particular blockchain</p>
+
+  <p>wallet-based ownership</p>
+
+  <p>on-chain governance</p>
+
+  <p>a specific transfer protocol</p>
+
+  <p>Any of those technologies may eventually be evaluated if they solve actual BitPangea requirements.</p>
+
+  <p>The correct order remains:</p>
+
+  <p>requirement</p>
+
+  <div class="sequence">↓</div>
+
+  <p>architecture</p>
+
+  <div class="sequence">↓</div>
+
+  <p>technical evaluation</p>
+
+  <div class="sequence">↓</div>
+
+  <p>implementation</p>
+
+  <p>not:</p>
+
+  <p>preferred technology</p>
+
+  <div class="sequence">↓</div>
+
+  <p>architecture invented to justify it</p>
+
+  <h2>No Premature Legal Analogy</h2>
+
+  <p>The same restraint applies to physical property law.</p>
+
+  <p>Terms such as:</p>
+
+  <p>deed</p>
+
+  <p>title</p>
+
+  <p>lease</p>
+
+  <p>easement</p>
+
+  <p>tenant</p>
+
+  <p>landlord</p>
+
+  <p>estate</p>
+
+  <p>may someday provide useful analogies.</p>
+
+  <p>But BitPangea should not inherit their full legal meaning merely because Parcels resemble territorial property.</p>
+
+  <p>Some concepts may map well.</p>
+
+  <p>Others may not.</p>
+
+  <p>Digital place may require relationships for which physical land law has no clean equivalent.</p>
+
+  <p>The governing rule is:</p>
+
+  <div class="principle">
+    <span class="principle-label">Analogy Principle</span>
+    <p>Use analogy to aid understanding. Do not allow analogy to replace architectural reasoning.</p>
+  </div>
+
+  <h2>History of Authority</h2>
+
+  <p>Persistent identity, governed relationships, control, Runtime execution, and provenance together create the possibility of reconstructing the history of authority.</p>
+
+  <p>For a Parcel or another World object, future BitPangea may be able to determine:</p>
+
+  <p>Which actor held which relationship?</p>
+
+  <p>During what period?</p>
+
+  <p>Who established it?</p>
+
+  <p>Was authority delegated?</p>
+
+  <p>Which actions occurred under it?</p>
+
+  <p>How was that authority changed or superseded?</p>
+
+  <p>How did the present condition arise?</p>
+
+  <p>Current state answers:</p>
+
+  <p>What is true now?</p>
+
+  <p>Provenance and history answer:</p>
+
+  <p>How did it become true?</p>
+
+  <p>Those are distinct kinds of knowledge.</p>
+
+  <p>A mature World may require both.</p>
+
+  <h2>Internal Decomposition Remains Open</h2>
+
+  <p>Identity / Rights / Control is now a recognized Architecture domain.</p>
+
+  <p>That recognition does not mean the domain’s internal architecture is complete.</p>
+
+  <p>Continued design may ultimately distinguish separate authorities for:</p>
+
+  <p>Identity</p>
+
+  <p>Rights</p>
+
+  <p>Authorization</p>
+
+  <p>Control</p>
+
+  <p>Policy</p>
+
+  <p>Delegation</p>
+
+  <p>Credentialing</p>
+
+  <p>Recovery</p>
+
+  <p>other responsibilities</p>
+
+  <p>The domain should therefore not be treated as one monolithic service merely because its name contains three concepts.</p>
+
+  <p>The Architecture has identified the enduring responsibility.</p>
+
+  <p>Its internal decomposition remains an open design problem.</p>
+
+  <h2>What Is Established</h2>
+
+  <p>The current Architecture supports the following statements:</p>
+
+  <p>Identity / Rights / Control is a recognized Architecture domain.</p>
+
+  <p>BitPangea requires persistent actor identity.</p>
+
+  <p>Identity is distinct from authentication.</p>
+
+  <p>Identity does not establish ownership, rights, permission, or authority by itself.</p>
+
+  <p>Rights describe governed relationships involving actors, World objects, or capabilities.</p>
+
+  <p>Rights require traceable authority and provenance.</p>
+
+  <p>The Parcel Cadastre remains authoritative for Parcel truth.</p>
+
+  <p>Rights may reference Parcels without redefining them.</p>
+
+  <p>Control concerns exercisable authority.</p>
+
+  <p>Authorization is distinct from the mere existence of a right.</p>
+
+  <p>Authority should be explicitly scoped.</p>
+
+  <p>World Runtime executes legitimate operational change.</p>
+
+  <p>Identity / Rights / Control should inform Runtime authorization without becoming World Runtime itself.</p>
+
+  <p>Persistence / Provenance should preserve the lineage and evidence associated with consequential authority and change.</p>
+
+  <p>Builders should consume rights and control information rather than invent it.</p>
+
+  <p>The domain should not be reduced prematurely to “ownership.”</p>
+
+  <p>Parcel rights do not presently require tokens, NFTs, or any particular blockchain.</p>
+
+  <p>Persistent identity does not require universal public disclosure.</p>
+
+  <p>Pseudonymous persistent identity remains architecturally possible.</p>
+
+  <p>The domain may ultimately require substantial internal decomposition.</p>
+
+  <h2>What Remains Open</h2>
+
+  <p>Major questions remain, including:</p>
+
+  <p>the canonical actor identity model</p>
+
+  <p>which actor classes BitPangea recognizes</p>
+
+  <p>the relationship between BitPangea identity and external identities</p>
+
+  <p>authentication mechanisms</p>
+
+  <p>credential recovery</p>
+
+  <p>identity continuity</p>
+
+  <p>privacy architecture</p>
+
+  <p>pseudonymity</p>
+
+  <p>identity assurance levels</p>
+
+  <p>the formal categories of governed relationships</p>
+
+  <p>whether ownership becomes a canonical BitPangea term</p>
+
+  <p>how rights originate</p>
+
+  <p>how rights are transferred</p>
+
+  <p>how rights expire</p>
+
+  <p>how rights are revoked</p>
+
+  <p>delegation</p>
+
+  <p>shared authority</p>
+
+  <p>institutional authority</p>
+
+  <p>infrastructure authority</p>
+
+  <p>authorization mechanisms</p>
+
+  <p>control boundaries</p>
+
+  <p>policy architecture</p>
+
+  <p>exception handling</p>
+
+  <p>dispute handling</p>
+
+  <p>recovery mechanisms</p>
+
+  <p>history of authority</p>
+
+  <p>the exact interface with Persistence / Provenance</p>
+
+  <p>the exact interface with World Runtime</p>
+
+  <p>the eventual internal decomposition of the domain</p>
+
+  <p>These questions should remain open until the Architecture can justify their answers.</p>
+
+  <p>Origins should preserve the problem faithfully rather than manufacture a rights system simply to make the diagram look complete.</p>
+
+  <h2>The Principle</h2>
+
+  <p>Identity, Rights, and Control determine whether BitPangea can move from persistent digital place into a World where actors can participate without dissolving the boundaries among:</p>
+
+  <p>actor</p>
+
+  <p>place</p>
+
+  <p>relationship</p>
+
+  <p>authority</p>
+
+  <p>and action.</p>
+
+  <p>The essential distinctions are:</p>
+
+  <div class="principle">
+    <span class="principle-label">Identity</span>
+    <p>Identity answers who.</p>
+  </div>
+
+  <div class="principle">
+    <span class="principle-label">Rights</span>
+    <p>Rights answer what governed relationship exists.</p>
+  </div>
+
+  <p>Control answers what authority may be exercised.</p>
+
+  <p>Authorization determines whether a particular action is presently permitted.</p>
+
+  <p>World Runtime performs legitimate change.</p>
+
+  <p>Persistence / Provenance preserves how that authority and change came to exist.</p>
+
+  <p>And beneath all of them remains the question:</p>
+
+  <div class="principle">
+    <span class="principle-label">Inquiry</span>
+    <p><strong>By whose authority?</strong></p>
+  </div>
+
+  <p>That question prevents BitPangea from reducing its future social architecture to an owner field, a wallet address, or an access-control shortcut.</p>
+
+  <p>A mature digital World should eventually be able to know:</p>
+
+  <p>who acted, what relationship supported the action, what authority was exercised, why the action was permitted, what changed, and how that change can later be explained.</p>
+
+  <p>The governing principle is therefore:</p>
+
+  <div class="principle">
+    <span class="principle-label">Governing Principle</span>
+    <p>Identity establishes the actor. Rights establish the relationship. Control establishes exercisable authority. None should silently inherit the authority of the others.</p>
+  </div>
+
+</section>
+
+<section class="chapter-note">
+  Part of <strong>BitPangea: Origins — Version 0.1</strong> · <em>The Foundational Manuscript of a Finite Digital World</em> · September 2026. This chapter is part of the preserved Version 0.1 publication; the complete manuscript remains the canonical versioned document.
+</section>
+
+<nav class="chapter-nav" aria-label="Origins chapter navigation">
+  <a class="nav-link" href="/origins/chapters/09-the-architecture/">← Previous: The Architecture</a>
+  <a class="nav-link center" href="/origins/#contents">Contents</a>
+  <a class="nav-link next" href="/origins/chapters/11-world-runtime/">Next: World Runtime →</a>
+</nav>
+
+</article>
+</main>
+
+<div id="bp-footer"></div>
+</body>
+</html>
