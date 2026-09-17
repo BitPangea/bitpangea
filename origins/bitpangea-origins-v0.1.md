@@ -1,11 +1,680 @@
 # BitPangea: Origins - Version 0.1
 
-***The Foundational Manuscript of a Finite Digital World***
+**The Foundational Manuscript of a Finite Digital World**
 
 The complete record of the architectural reasoning that established the World.  
 September 2026
 
-![BitPangea World](media/bitpangea-origins-cover.png)
+![BitPangea — the World at planetary distance](BitPangea_Origins_cover.png)
+
+---
+
+## Table of Contents
+
+- [**I. Abstract**](#ch01)
+- [**II. The Premise**](#ch02)
+  - [A World First](#ch02-s01)
+  - [Not Merely a Metaverse](#ch02-s02)
+  - [Not Merely Virtual Land](#ch02-s03)
+  - [Scarcity as a Spatial Condition](#ch02-s04)
+  - [Permanence Beneath Change](#ch02-s05)
+  - [A World That Does Not Predetermine Its Civilization](#ch02-s06)
+  - [Digital in Substance](#ch02-s07)
+  - [One World](#ch02-s08)
+  - [The Creator's Restraint](#ch02-s09)
+  - [The Foundational Proposition](#ch02-s10)
+- [**III. The World**](#ch03)
+  - [One World](#ch03-s01)
+  - [The World Precedes Its Subdivisions](#ch03-s02)
+  - [Finitude](#ch03-s03)
+  - [The Extent](#ch03-s04)
+  - [Completeness](#ch03-s05)
+  - [Continuity](#ch03-s06)
+  - [Cartographic Coherence](#ch03-s07)
+  - [Globe and Flat World](#ch03-s08)
+  - [The Supercontinent](#ch03-s09)
+  - [The Verge](#ch03-s10)
+  - [The Frontier Is Not the Verge](#ch03-s11)
+  - [Geography Above Spatial Truth](#ch03-s12)
+  - [The World and Its Representations](#ch03-s13)
+  - [One World, Many Scales](#ch03-s14)
+  - [The World Is the Constraint](#ch03-s15)
+  - [The Current Statement of the World](#ch03-s16)
+- [**IV. Finitude and The Extent**](#ch04)
+  - [Why Finitude Matters](#ch04-s01)
+  - [Finitude Is Not Scarcity Alone](#ch04-s02)
+  - [The Extent](#ch04-s03)
+  - [The Extent Is Not the Survey Domain](#ch04-s04)
+  - [The Extent Is Not an Edge](#ch04-s05)
+  - [The Narrow Question of Limit](#ch04-s06)
+  - [Finitude Without a Wall](#ch04-s07)
+  - [The Verge](#ch04-s08)
+  - [The Frontier Is Something Else](#ch04-s09)
+  - [Finite Does Not Mean Fully Parcelized](#ch04-s10)
+  - [Constraint Creates Meaning](#ch04-s11)
+  - [Finitude and the 21,000,000 Parcels](#ch04-s12)
+  - [A Finite World, an Open Future](#ch04-s13)
+  - [The Constitutional Discipline of Finitude](#ch04-s14)
+  - [What Is Established](#ch04-s15)
+  - [What Remains Open](#ch04-s16)
+  - [The Principle](#ch04-s17)
+- [**V. The 21,000,000 Parcel Constraint**](#ch05)
+  - [From Number to Architecture](#ch05-s01)
+  - [Why Exactly 21,000,000?](#ch05-s02)
+  - [A Parcel Is Not Merely an Asset](#ch05-s03)
+  - [The World Precedes the Parcels](#ch05-s04)
+  - [Fixed Means Fixed](#ch05-s05)
+  - [Scarcity Without an Economic Promise](#ch05-s06)
+  - [Equal Area as a Design Direction](#ch05-s07)
+  - [Parcel Geometry Must Serve the Architecture](#ch05-s08)
+  - [One Dominant Parcel Grammar](#ch05-s09)
+  - [The Parcel Fabric May Not Exhaust the World](#ch05-s10)
+  - [The Foundational Survey Fabric](#ch05-s11)
+  - [Canonical Parcel Identity](#ch05-s12)
+  - [Parcel Identity and Spatial Reference Are Different](#ch05-s13)
+  - [Parcels and Geography](#ch05-s14)
+  - [The Parcel Constraint and Civilization](#ch05-s15)
+  - [21,000,000 as Permanent Memory](#ch05-s16)
+  - [The Constraint as an Architectural Test](#ch05-s17)
+  - [What Is Established](#ch05-s18)
+  - [What Remains Open](#ch05-s19)
+  - [The Principle](#ch05-s20)
+- [**VI. World Form**](#ch06)
+  - [One World, One Form](#ch06-s01)
+  - [The Pangea Homage](#ch06-s02)
+  - [Compositionally Balanced Asymmetry](#ch06-s03)
+  - [Organic in Macro-Form](#ch06-s04)
+  - [Digital in Substance](#ch06-s05)
+  - [Composed of Connectivity](#ch06-s06)
+  - [Serene at World Scale](#ch06-s07)
+  - [Progressive Revelation](#ch06-s08)
+  - [The Globe as the Primary Distant Expression](#ch06-s09)
+  - [From Globe to Flat Lived World](#ch06-s10)
+  - [The Silhouette as Identity](#ch06-s11)
+  - [World Form Does Not Come From Parcel Geometry](#ch06-s12)
+  - [World Form and The Extent](#ch06-s13)
+  - [World Form and The Verge](#ch06-s14)
+  - [The Frontier Is Not World Form](#ch06-s15)
+  - [The World at Different Distances](#ch06-s16)
+  - [The World Before Geography](#ch06-s17)
+  - [A Digital Supercontinent, Not a Digital Earth](#ch06-s18)
+  - [What Is Established](#ch06-s19)
+  - [What Remains Open](#ch06-s20)
+  - [The Principle](#ch06-s21)
+- [**VII. Foundational Survey Fabric**](#ch07)
+  - [The Survey Problem](#ch07-s01)
+  - [Survey First](#ch07-s02)
+  - [The Survey Fabric Is Not the World](#ch07-s03)
+  - [The Survey Fabric Is Not the Parcel Cadastre](#ch07-s04)
+  - [Minimum Permanent Spatial Content](#ch07-s05)
+  - [Canonical Survey Reference](#ch07-s06)
+  - [The Coordinate-System Trap](#ch07-s07)
+  - [Exactness Before Convenience](#ch07-s08)
+  - [Finite Survey Domain](#ch07-s09)
+  - [Precision Without Relocation](#ch07-s10)
+  - [Pang](#ch07-s11)
+  - [Native Canonical Orientation](#ch07-s12)
+  - [Spatial Separation, Length, and Geometric Relationship](#ch07-s13)
+  - [Representation-Independent Spatial Truth](#ch07-s14)
+  - [Specification, Conformance, and Reference Vectors](#ch07-s15)
+  - [Eighty-Five Requirements](#ch07-s16)
+  - [Requirements Before Mathematics](#ch07-s17)
+  - [Conformance Is Not Authority](#ch07-s18)
+  - [Normative Interchange](#ch07-s19)
+  - [General Spatial Interpretation](#ch07-s20)
+  - [Survey Before Geography](#ch07-s21)
+  - [Survey Before Rights](#ch07-s22)
+  - [Supporting Exactly 21,000,000 Parcels](#ch07-s23)
+  - [The Visible Parcel Grammar Is Not the Survey Fabric](#ch07-s24)
+  - [World Form and the Survey Fabric](#ch07-s25)
+  - [The Verge and Other Non-Parcel Spatial Conditions](#ch07-s26)
+  - [Persistence](#ch07-s27)
+  - [Authority and Derivation](#ch07-s28)
+  - [A Survey Fabric Beneath History](#ch07-s29)
+  - [What Is Established](#ch07-s30)
+  - [What Remains Open](#ch07-s31)
+  - [The Principle](#ch07-s32)
+- [**VIII. Parcel Geometry and Cadastre**](#ch08)
+  - [From Survey Reference to Parcel Truth](#ch08-s01)
+  - [Survey Units Are Not Parcels](#ch08-s02)
+  - [Why Geometry Matters](#ch08-s03)
+  - [The Rhombille Direction](#ch08-s04)
+  - [Why Not a Conventional Square Grid?](#ch08-s05)
+  - [Local Coherence](#ch08-s06)
+  - [Three Orientations](#ch08-s07)
+  - [Equal Area](#ch08-s08)
+  - [One Dominant Parcel Grammar](#ch08-s09)
+  - [The Verge Is Not a Parcel Problem to Hide](#ch08-s10)
+  - [Parcel Identity](#ch08-s11)
+  - [Fixed Position](#ch08-s12)
+  - [Identity Is Not Ownership](#ch08-s13)
+  - [Parcel Adjacency](#ch08-s14)
+  - [Cadastre as Authority](#ch08-s15)
+  - [Geometry and Representation](#ch08-s16)
+  - [Cadastre Before Geography](#ch08-s17)
+  - [Cadastre Before Civilization](#ch08-s18)
+  - [Subdivision and Aggregation](#ch08-s19)
+  - [Regions Do Not Redefine Parcels](#ch08-s20)
+  - [The 21,000,000 Test](#ch08-s21)
+  - [The Cadastre as Memory](#ch08-s22)
+  - [What Is Established](#ch08-s23)
+  - [What Remains Open](#ch08-s24)
+  - [The Principle](#ch08-s25)
+- [**IX. The Architecture**](#ch09)
+  - [From the 3×3 Scaffold to The Architecture](#ch09-s01)
+  - [The Current Architecture Domains](#ch09-s02)
+  - [Architecture Membership Is Not Dependency Order](#ch09-s03)
+  - [Why Architecture Domains Exist](#ch09-s04)
+  - [The Architecture Boundary Rule](#ch09-s05)
+  - [Foundational Survey Fabric](#ch09-s06)
+  - [Spatial Ground](#ch09-s07)
+  - [General Spatial Interpretation](#ch09-s08)
+  - [Parcel Cadastre](#ch09-s09)
+  - [World Runtime](#ch09-s10)
+  - [Identity / Rights / Control](#ch09-s11)
+  - [Persistence / Provenance](#ch09-s12)
+  - [Interoperability](#ch09-s13)
+  - [Experience Architecture](#ch09-s14)
+  - [Civilization Is Not an Architecture Domain](#ch09-s15)
+  - [Builders Belong Above the Architecture](#ch09-s16)
+  - [Authority Does Not Flow Through Page Order](#ch09-s17)
+  - [Permanence Is Unequal](#ch09-s18)
+  - [The Architecture Must Permit Replacement](#ch09-s19)
+  - [Cross-Domain Relationships](#ch09-s20)
+  - [Architecture Membership, Maturity, and Status](#ch09-s21)
+  - [What Is Established](#ch09-s22)
+  - [What Remains Open](#ch09-s23)
+  - [The Principle](#ch09-s24)
+- [**X. Identity, Rights, and Control**](#ch10)
+  - [The First Question: Who or What Is the Actor?](#ch10-s01)
+  - [Identity Is Not a Username](#ch10-s02)
+  - [Authentication Is Not Identity](#ch10-s03)
+  - [Identity Is Not Ownership](#ch10-s04)
+  - [The Second Question: What Relationship Exists?](#ch10-s05)
+  - [Rights Require Provenance](#ch10-s06)
+  - [Rights Are Not the Parcel](#ch10-s07)
+  - [Ownership Is Only One Possible Relationship](#ch10-s08)
+  - [The Third Question: What May Actually Be Done?](#ch10-s09)
+  - [Authorization Is Not Rights](#ch10-s10)
+  - [Control Is Not Unlimited Authority](#ch10-s11)
+  - [One Owner Field Is Not an Architecture](#ch10-s12)
+  - [Rights Need Not Be Parcel Rights](#ch10-s13)
+  - [Persistent Actor, Persistent Place, Changing Relationship](#ch10-s14)
+  - [Delegation](#ch10-s15)
+  - [Shared and Multiple Relationships](#ch10-s16)
+  - [Time](#ch10-s17)
+  - [Identity, Rights, Control, and World Runtime](#ch10-s18)
+  - [Identity, Rights, Control, and Builders](#ch10-s19)
+  - [Infrastructure May Require Different Relationships](#ch10-s20)
+  - [Formal Rights and Social Relationships Are Different](#ch10-s21)
+  - [Identity and Privacy](#ch10-s22)
+  - [Identity and Pseudonymity](#ch10-s23)
+  - [Authority Must Be Traceable](#ch10-s24)
+  - [The Creator’s Authority](#ch10-s25)
+  - [No Premature Tokenization](#ch10-s26)
+  - [No Premature Legal Analogy](#ch10-s27)
+  - [History of Authority](#ch10-s28)
+  - [Internal Decomposition Remains Open](#ch10-s29)
+  - [What Is Established](#ch10-s30)
+  - [What Remains Open](#ch10-s31)
+  - [The Principle](#ch10-s32)
+- [**XI. World Runtime**](#ch11)
+  - [From Spatial Truth to Operational Truth](#ch11-s01)
+  - [Persistent World State](#ch11-s02)
+  - [State Is Not Spatial Truth](#ch11-s03)
+  - [Legitimate State Transition](#ch11-s04)
+  - [Request, Authorization, Execution, Result](#ch11-s05)
+  - [Execution](#ch11-s06)
+  - [Runtime as Orchestration](#ch11-s07)
+  - [The Runtime Does Not Own Everything](#ch11-s08)
+  - [Protocols](#ch11-s09)
+  - [Services](#ch11-s10)
+  - [Services Are Not Architecture Authorities by Default](#ch11-s11)
+  - [Deterministic Canonical Change](#ch11-s12)
+  - [Validation Before Mutation](#ch11-s13)
+  - [Atomicity and Coherent Change](#ch11-s14)
+  - [Runtime and Persistence / Provenance](#ch11-s15)
+  - [State Is More Than a Snapshot](#ch11-s16)
+  - [Time and Ordering](#ch11-s17)
+  - [Concurrency](#ch11-s18)
+  - [Failure Is Part of the Architecture](#ch11-s19)
+  - [Recovery](#ch11-s20)
+  - [Integrity](#ch11-s21)
+  - [Runtime and Blockchain](#ch11-s22)
+  - [Runtime and Decentralization](#ch11-s23)
+  - [Runtime and Interoperability](#ch11-s24)
+  - [Runtime and Builders](#ch11-s25)
+  - [Runtime and Experience Architecture](#ch11-s26)
+  - [One World, Many Clients](#ch11-s27)
+  - [Runtime Boundaries](#ch11-s28)
+  - [World State as a Shared Responsibility](#ch11-s29)
+  - [Change Without Loss of Identity](#ch11-s30)
+  - [Internal Runtime Decomposition Remains Open](#ch11-s31)
+  - [What Is Established](#ch11-s32)
+  - [What Remains Open](#ch11-s33)
+  - [The Principle](#ch11-s34)
+- [**XII. Builders and Civilization**](#ch12)
+  - [The Creator Cannot Build Everything](#ch12-s01)
+  - [Builders Are Not an Architecture Domain](#ch12-s02)
+  - [Builder Does Not Mean Sovereign](#ch12-s03)
+  - [Creation Is a Governed Capability](#ch12-s04)
+  - [Building Is Not the Same as Rendering](#ch12-s05)
+  - [The World Constrains Creation Without Prescribing It](#ch12-s06)
+  - [Builders Operate Through Architecture](#ch12-s07)
+  - [Builders May Create More Than Structures](#ch12-s08)
+  - [Builders and Infrastructure](#ch12-s09)
+  - [Builders and The Verge](#ch12-s10)
+  - [The Creator and the Builder](#ch12-s11)
+  - [Civilization Is Not an Architecture Domain](#ch12-s12)
+  - [Architecture Can Enable Society](#ch12-s13)
+  - [Social, Economic, and Cultural Are Emergent](#ch12-s14)
+  - [Economy Should Not Be Predesigned](#ch12-s15)
+  - [Culture Cannot Be Authored Into Authenticity](#ch12-s16)
+  - [Institutions May Emerge](#ch12-s17)
+  - [Civilization May Create Its Own Rules](#ch12-s18)
+  - [Governance Should Follow Need](#ch12-s19)
+  - [Emergence Requires Restraint](#ch12-s20)
+  - [Freedom Above Constraint](#ch12-s21)
+  - [Builders Create History](#ch12-s22)
+  - [Civilization Requires Memory](#ch12-s23)
+  - [Experience Architecture Is the Threshold](#ch12-s24)
+  - [Experience Is Not Civilization](#ch12-s25)
+  - [Experience Should Not Become the World](#ch12-s26)
+  - [Builder Diversity](#ch12-s27)
+  - [Civilization Should Be Able to Surprise the Creator](#ch12-s28)
+  - [The Creator’s Role Changes](#ch12-s29)
+  - [What Is Established](#ch12-s30)
+  - [What Remains Open](#ch12-s31)
+  - [The Principle](#ch12-s32)
+- [**XIII. History, Memory, and Digital Antiquity**](#ch13)
+  - [State, Provenance, and History Are Different](#ch13-s01)
+  - [Persistence / Provenance](#ch13-s02)
+  - [Place Makes History Possible](#ch13-s03)
+  - [History Is Not Logging](#ch13-s04)
+  - [Memory Has Different Responsibilities](#ch13-s05)
+  - [The World Should Not Remember Everything Forever](#ch13-s06)
+  - [Historical Significance Is Not Automatic](#ch13-s07)
+  - [Event and Interpretation](#ch13-s08)
+  - [Provenance Before Historical Authority](#ch13-s09)
+  - [Historical Authority Must Be Bounded](#ch13-s10)
+  - [Record and Narrative](#ch13-s11)
+  - [Canon and Meaning](#ch13-s12)
+  - [Digital Antiquity](#ch13-s13)
+  - [Digital Antiquity Is Not BitPangea History](#ch13-s14)
+  - [The Twelve Constellations of Digital Antiquity](#ch13-s15)
+  - [Discovery as Historical Experience](#ch13-s16)
+  - [Hidden Does Not Mean Unrecorded](#ch13-s17)
+  - [The Creator’s Memory Is Not Enough](#ch13-s18)
+  - [Chronicle, Atlas, and Origins](#ch13-s19)
+  - [Chronicle Records When](#ch13-s20)
+  - [Atlas Records What](#ch13-s21)
+  - [Origins Preserves the Reasoning](#ch13-s22)
+  - [Memory Must Preserve Uncertainty](#ch13-s23)
+  - [Correction Without Erasure](#ch13-s24)
+  - [Preservation Without Fossilization](#ch13-s25)
+  - [Authentic Ruins](#ch13-s26)
+  - [Digital Archaeology](#ch13-s27)
+  - [Historical Layers of Place](#ch13-s28)
+  - [Civilization May Remember Differently](#ch13-s29)
+  - [Uncertainty Belongs in History](#ch13-s30)
+  - [Memory and Privacy](#ch13-s31)
+  - [Memory and Integrity](#ch13-s32)
+  - [BitPangea Should Remember Its Own Creation](#ch13-s33)
+  - [Antiquity Requires Time](#ch13-s34)
+  - [Two Forms of Digital Antiquity](#ch13-s35)
+  - [What Is Established](#ch13-s36)
+  - [What Remains Open](#ch13-s37)
+  - [The Principle](#ch13-s38)
+- [**XIV. Constitutional Architecture**](#ch14)
+  - [Not Every Decision Is Constitutional](#ch14-s01)
+  - [The Governing Progression](#ch14-s02)
+  - [Status Matters](#ch14-s03)
+  - [Foundational Premise](#ch14-s04)
+  - [Constitutional Truth](#ch14-s05)
+  - [World Property](#ch14-s06)
+  - [Constitutional Economy](#ch14-s07)
+  - [Architecture Domain](#ch14-s08)
+  - [Adopted Design Direction](#ch14-s09)
+  - [Provisional Design](#ch14-s10)
+  - [Implementation](#ch14-s11)
+  - [Emergent Behavior](#ch14-s12)
+  - [Unresolved Question](#ch14-s13)
+  - [Undecided and Intentionally Open Are Different](#ch14-s14)
+  - [Canon Must Be Earned](#ch14-s15)
+  - [Foundation Constrains; Codex Defines](#ch14-s16)
+  - [Constitutional Inquiry](#ch14-s17)
+  - [Dependency Checks](#ch14-s18)
+  - [Parked Is Not Abandoned](#ch14-s19)
+  - [Rejection Is Architectural Knowledge](#ch14-s20)
+  - [Supersession Is Not Erasure](#ch14-s21)
+  - [Permanence Should Follow Consequence](#ch14-s22)
+  - [Constitutional Architecture Is Not Absolute Immutability](#ch14-s23)
+  - [Change Should Know What It Changes](#ch14-s24)
+  - [Authority Must Match Responsibility](#ch14-s25)
+  - [The Creator’s Constitutional Authority](#ch14-s26)
+  - [Stewardship Rather Than Permanent Sovereignty](#ch14-s27)
+  - [Constitutional Restraint Can Protect Freedom](#ch14-s28)
+  - [World Properties Should Follow Inquiry](#ch14-s29)
+  - [Constraint Does Not Contain the Solution](#ch14-s30)
+  - [Avoid Accidental Constitution](#ch14-s31)
+  - [Prototype Freedom](#ch14-s32)
+  - [Conformance](#ch14-s33)
+  - [Conformance Does Not Create Authority](#ch14-s34)
+  - [The Immutable Core Should Be Small](#ch14-s35)
+  - [Constitutional Records](#ch14-s36)
+  - [Chronicle, Atlas, Origins, and Constitutional Determination](#ch14-s37)
+  - [Canon and History Must Remain Distinct](#ch14-s38)
+  - [What Is Established](#ch14-s39)
+  - [What Remains Open](#ch14-s40)
+  - [The Principle](#ch14-s41)
+- [**XV. What Is Established**](#ch15)
+  - [A Note on Meaning](#ch15-s01)
+  - [The World](#ch15-s02)
+  - [BitPangea Is One World](#ch15-s03)
+  - [BitPangea Is Finite](#ch15-s04)
+  - [BitPangea Is Complete in Extent](#ch15-s05)
+  - [BitPangea Is a Complete, Continuous Cartographic Whole](#ch15-s06)
+  - [One World, One Spatial Truth, Many Representations](#ch15-s07)
+  - [The 21,000,000 Parcel Constraint](#ch15-s08)
+  - [The Number Is a Spatial Constraint](#ch15-s09)
+  - [The World Precedes the Parcel](#ch15-s10)
+  - [Parcel Existence Is Distinct From Ownership](#ch15-s11)
+  - [World Form](#ch15-s12)
+  - [Organic in Macro-Form, Digital in Substance](#ch15-s13)
+  - [BitPangea Is Composed of Connectivity](#ch15-s14)
+  - [Progressive Revelation](#ch15-s15)
+  - [Serene at World Scale, Alive at Parcel Scale](#ch15-s16)
+  - [The Globe Is the Primary Distant Representation](#ch15-s17)
+  - [Finitude, The Extent, and The Verge](#ch15-s18)
+  - [The Extent Is Not the Survey Domain](#ch15-s19)
+  - [The Extent Does Not Establish an Edge](#ch15-s20)
+  - [The Verge Is the Terminal World-Form Design Space](#ch15-s21)
+  - [Parcel Fabric Need Not Exhaust the World](#ch15-s22)
+  - [Foundational Survey Architecture](#ch15-s23)
+  - [The Survey Domain Is Not the World](#ch15-s24)
+  - [Survey Units Are Not Parcels](#ch15-s25)
+  - [The Demonstrated Spatial Dependency](#ch15-s26)
+  - [Requirements Precede Mathematics](#ch15-s27)
+  - [Exactness Matters](#ch15-s28)
+  - [Pang and Native Canonical Orientation](#ch15-s29)
+  - [Parcel Cadastre](#ch15-s30)
+  - [Parcel Identity Must Persist](#ch15-s31)
+  - [Fixed Position Matters](#ch15-s32)
+  - [Geometry and Identity Are Distinct](#ch15-s33)
+  - [Equal Area Remains a Strong Design Direction](#ch15-s34)
+  - [Local Coherence Is Required](#ch15-s35)
+  - [The Three-Orientation Rhombille Family Is the Leading Visible Parcel Direction](#ch15-s36)
+  - [The Architecture](#ch15-s37)
+  - [Nine Architecture Domains Are Recognized](#ch15-s38)
+  - [Architecture Membership Does Not Prove Strict Ordering](#ch15-s39)
+  - [The Architecture Boundary Rule Is Established](#ch15-s40)
+  - [Reference Does Not Transfer Authority](#ch15-s41)
+  - [Deeper Architecture Should Be More Permanent](#ch15-s42)
+  - [Identity / Rights / Control](#ch15-s43)
+  - [Identity Is Not Authentication](#ch15-s44)
+  - [Identity Is Not Ownership](#ch15-s45)
+  - [Rights Require Provenance](#ch15-s46)
+  - [Rights Do Not Redefine Parcels](#ch15-s47)
+  - [Parcel Rights Do Not Require a Particular Technology](#ch15-s48)
+  - [World Runtime](#ch15-s49)
+  - [Persistent World State Is Required](#ch15-s50)
+  - [World State Is Distinct From Spatial Truth](#ch15-s51)
+  - [Request, Authorization, Execution, and Result Are Distinct](#ch15-s52)
+  - [Runtime Coordinates Authority Rather Than Absorbing It](#ch15-s53)
+  - [One Operational World, Many Clients](#ch15-s54)
+  - [No Runtime Technology Is Constitutionally Required](#ch15-s55)
+  - [Persistence / Provenance](#ch15-s56)
+  - [Provenance Should Preserve Lineage](#ch15-s57)
+  - [Current State Is Not History](#ch15-s58)
+  - [Interoperability](#ch15-s59)
+  - [Technology Must Be Replaceable](#ch15-s60)
+  - [Experience Architecture](#ch15-s61)
+  - [Builders and Civilization](#ch15-s62)
+  - [Creation Must Extend Beyond the Creator](#ch15-s63)
+  - [Builders Create Within the World](#ch15-s64)
+  - [Civilization Is Not an Architecture Domain](#ch15-s65)
+  - [Economy Is Not Predetermined](#ch15-s66)
+  - [Governance Is Not Yet Established](#ch15-s67)
+  - [History, Memory, and Digital Antiquity](#ch15-s68)
+  - [Operational Record, Provenance, History, and Interpretation Are Distinct](#ch15-s69)
+  - [Chronicle, Atlas, and Origins Have Distinct Roles](#ch15-s70)
+  - [Digital Antiquity Is Distinct From BitPangea History](#ch15-s71)
+  - [The Twelve Constellations of Digital Antiquity Are Established as a Historical Structure](#ch15-s72)
+  - [BitPangea Should Be Capable of Becoming Old](#ch15-s73)
+  - [Constitutional Discipline](#ch15-s74)
+  - [The Governing Progression Is Established](#ch15-s75)
+  - [Canon Must Be Earned](#ch15-s76)
+  - [Constitutional Economy Is Established](#ch15-s77)
+  - [Provisionality Must Be Explicit](#ch15-s78)
+  - [Authority Must Follow Responsibility](#ch15-s79)
+  - [The Permanent Core Should Remain Small](#ch15-s80)
+  - [Creator Authority Should Evolve Toward Stewardship](#ch15-s81)
+  - [The Established Architecture in One View](#ch15-s82)
+  - [What This Section Does Not Claim](#ch15-s83)
+  - [The Principle](#ch15-s84)
+- [**XVI. What Remains Open**](#ch16)
+  - [Different Kinds of Openness](#ch16-s01)
+  - [Dependent Resolution](#ch16-s02)
+  - [Parked Inquiry](#ch16-s03)
+  - [Intentional Openness](#ch16-s04)
+  - [The Extent](#ch16-s05)
+  - [The Limit](#ch16-s06)
+  - [The Verge](#ch16-s07)
+  - [Outliers](#ch16-s08)
+  - [World Form](#ch16-s09)
+  - [Foundational Survey Fabric](#ch16-s10)
+  - [Survey Domain and World Membership](#ch16-s11)
+  - [Spatial Ground](#ch16-s12)
+  - [General Spatial Interpretation](#ch16-s13)
+  - [Parcel Geometry](#ch16-s14)
+  - [The Exact 21,000,000 Arrangement](#ch16-s15)
+  - [Parcel Identifier Architecture](#ch16-s16)
+  - [Parcel Adjacency](#ch16-s17)
+  - [Parcel Contiguity](#ch16-s18)
+  - [Sub-Parcel Reference, Subdivision, and Aggregation](#ch16-s19)
+  - [Regions](#ch16-s20)
+  - [Geography](#ch16-s21)
+  - [Infrastructure](#ch16-s22)
+  - [Identity / Rights / Control](#ch16-s23)
+  - [Actor Identity](#ch16-s24)
+  - [Authentication](#ch16-s25)
+  - [Rights](#ch16-s26)
+  - [Control and Authorization](#ch16-s27)
+  - [Delegation](#ch16-s28)
+  - [Shared Authority](#ch16-s29)
+  - [Privacy](#ch16-s30)
+  - [World Runtime](#ch16-s31)
+  - [Canonical World State](#ch16-s32)
+  - [Protocols](#ch16-s33)
+  - [Services](#ch16-s34)
+  - [Execution](#ch16-s35)
+  - [Concurrency](#ch16-s36)
+  - [Time](#ch16-s37)
+  - [Failure and Recovery](#ch16-s38)
+  - [Integrity](#ch16-s39)
+  - [Persistence / Provenance](#ch16-s40)
+  - [Interoperability](#ch16-s41)
+  - [Blockchain](#ch16-s42)
+  - [Decentralization](#ch16-s43)
+  - [Builders](#ch16-s44)
+  - [World Objects](#ch16-s45)
+  - [Construction Rules](#ch16-s46)
+  - [Verticality](#ch16-s47)
+  - [Experience Architecture](#ch16-s48)
+  - [Civilization](#ch16-s49)
+  - [Economy](#ch16-s50)
+  - [Governance](#ch16-s51)
+  - [Disputes](#ch16-s52)
+  - [The Long-Term Role of the Creator](#ch16-s53)
+  - [Constitutional Change](#ch16-s54)
+  - [Conformance](#ch16-s55)
+  - [History Architecture](#ch16-s56)
+  - [Digital Antiquity](#ch16-s57)
+  - [Native BitPangean Antiquity](#ch16-s58)
+  - [What Must Eventually Be Resolved](#ch16-s59)
+  - [What Should Wait](#ch16-s60)
+  - [What Should Remain Open](#ch16-s61)
+  - [The Open Architecture in One View](#ch16-s62)
+  - [Open Does Not Mean Unconstrained](#ch16-s63)
+  - [Preserve the Question](#ch16-s64)
+  - [Dependency Before Schedule](#ch16-s65)
+  - [The Principle](#ch16-s66)
+- [**XVII. Development Philosophy**](#ch17)
+  - [World First](#ch17-s01)
+  - [Foundation Constrains, Codex Defines, Atlas Designs, Implementation Realizes](#ch17-s02)
+  - [Constraint Before Feature](#ch17-s03)
+  - [Requirement Before Technology](#ch17-s04)
+  - [Requirements Before Mathematics](#ch17-s05)
+  - [Survey First](#ch17-s06)
+  - [Protect the Boundary](#ch17-s07)
+  - [Authority Before Convenience](#ch17-s08)
+  - [Canon Must Be Earned](#ch17-s09)
+  - [Status Is Part of the Architecture](#ch17-s10)
+  - [Prototype Freedom](#ch17-s11)
+  - [Freeze Late, Depend Late](#ch17-s12)
+  - [Durable Meaning, Replaceable Implementation](#ch17-s13)
+  - [Dependency-Aware Inquiry](#ch17-s14)
+  - [Solve the Earliest Constraining Problem](#ch17-s15)
+  - [Dependency Before Schedule](#ch17-s16)
+  - [Narrow the Question](#ch17-s17)
+  - [Preserve the Question](#ch17-s18)
+  - [Constitutional Economy](#ch17-s19)
+  - [Fewer Strong Concepts](#ch17-s20)
+  - [Distinguish the World From Its Representations](#ch17-s21)
+  - [Distinguish State From Experience](#ch17-s22)
+  - [Build for Multiple Representations](#ch17-s23)
+  - [Design for Replacement](#ch17-s24)
+  - [Architecture Before Optimization](#ch17-s25)
+  - [Engineering Is Evidence](#ch17-s26)
+  - [Mathematics Before Aesthetics Where Mathematics Is Foundational](#ch17-s27)
+  - [Aesthetics Still Matter](#ch17-s28)
+  - [Use Analogy Carefully](#ch17-s29)
+  - [Bitcoin as Inspiration, Not Template](#ch17-s30)
+  - [External Ideas Are Inputs, Not Decisions](#ch17-s31)
+  - [Critique Should Be Welcomed](#ch17-s32)
+  - [Do Not Defend Sunk Effort](#ch17-s33)
+  - [Preserve Rejected Work](#ch17-s34)
+  - [Documentation Is Part of Architectural Control](#ch17-s35)
+  - [Record Status, Not Merely Content](#ch17-s36)
+  - [Development Without False Completion](#ch17-s37)
+  - [Open Questions Are Work Products](#ch17-s38)
+  - [Resolve What Must Be Resolved](#ch17-s39)
+  - [Leave Open What Should Remain Free](#ch17-s40)
+  - [Creator Restraint](#ch17-s41)
+  - [From Creator to Steward](#ch17-s42)
+  - [Build the Minimum Necessary Foundation](#ch17-s43)
+  - [The Immutable Core Should Be Astonishingly Small](#ch17-s44)
+  - [Simplicity Below, Complexity Above](#ch17-s45)
+  - [Preserve Optionality Where It Has Value](#ch17-s46)
+  - [Verify Before Expansion](#ch17-s47)
+  - [The Long-Horizon Test](#ch17-s48)
+  - [Development as Discovery](#ch17-s49)
+  - [Let Constraints Reveal Architecture](#ch17-s50)
+  - [The Creator-Period Design Loop](#ch17-s51)
+  - [When the Design Reveals a Deeper Question](#ch17-s52)
+  - [Preserve Before Forgetting](#ch17-s53)
+  - [What This Philosophy Rejects](#ch17-s54)
+  - [What This Philosophy Favors](#ch17-s55)
+  - [Development Philosophy in One View](#ch17-s56)
+  - [The Principle](#ch17-s57)
+- [**XVIII. The Path Forward**](#ch18)
+  - [The Path Is Architectural, Not Chronological](#ch18-s01)
+  - [Do Not Turn Origins Into a Roadmap](#ch18-s02)
+  - [The Current Constitutional Path](#ch18-s03)
+  - [First: Reconsider Limit Narrowly](#ch18-s04)
+  - [Then: Conduct the Formal Inquiry Into Form](#ch18-s05)
+  - [After Form: Perform a Dependency Check](#ch18-s06)
+  - [Unity / Continuity May Deserve Later Review](#ch18-s07)
+  - [Meta-Inquiry Should Follow Evidence](#ch18-s08)
+  - [The Current Architecture Path](#ch18-s09)
+  - [The Foundational Survey Fabric Is Not “Finished”](#ch18-s10)
+  - [Next: Spatial Ground](#ch18-s11)
+  - [Then: General Spatial Interpretation](#ch18-s12)
+  - [Then: Parcel Cadastre](#ch18-s13)
+  - [Solve the 21,000,000-Parcel Problem as a Proof Obligation](#ch18-s14)
+  - [Test the Rhombille Direction Rather Than Protect It](#ch18-s15)
+  - [The Verge Should Follow Spatial Architecture](#ch18-s16)
+  - [Reconcile World Form With Deeper Architecture](#ch18-s17)
+  - [Do Not Force All Nine Architecture Domains Into One Queue](#ch18-s18)
+  - [Clarify Architecture Ordering Versus Membership](#ch18-s19)
+  - [Develop World Runtime From Actual Responsibilities](#ch18-s20)
+  - [Identity / Rights / Control Should Mature Alongside Runtime](#ch18-s21)
+  - [Persistence / Provenance Must Grow With Operation](#ch18-s22)
+  - [Interoperability Should Be Designed Before Implementation Diversity Becomes Fragmentation](#ch18-s23)
+  - [Experience Architecture Should Follow Canonical Meaning](#ch18-s24)
+  - [Build the Runtime Before Depending Upon Civilization](#ch18-s25)
+  - [Builders Should Become Authorized Creators](#ch18-s26)
+  - [Separate Draft From Canonical Creation](#ch18-s27)
+  - [Develop the World Object Model From Need](#ch18-s28)
+  - [Infrastructure Deserves Its Own Inquiry](#ch18-s29)
+  - [Civilization Comes Later Because It Is Meant to Be Free](#ch18-s30)
+  - [Do Not Design Culture](#ch18-s31)
+  - [Let Economics Follow Real Use](#ch18-s32)
+  - [Governance Should Follow Governed Responsibilities](#ch18-s33)
+  - [Grow History With the World](#ch18-s34)
+  - [Protect Digital Antiquity During Expansion](#ch18-s35)
+  - [Let Native Antiquity Begin Naturally](#ch18-s36)
+  - [Institutionalize Memory](#ch18-s37)
+  - [Origins Should Evolve Without Erasing Its Own History](#ch18-s38)
+  - [Review Existing Architecture Before Adding New Canon](#ch18-s39)
+  - [Conduct Periodic Dependency Reviews](#ch18-s40)
+  - [Test Replacement](#ch18-s41)
+  - [Test Recovery](#ch18-s42)
+  - [Test Scale Without Redefining the World](#ch18-s43)
+  - [Test the World Before Civilization](#ch18-s44)
+  - [Later: Test Civilization Without Creator Intervention](#ch18-s45)
+  - [The Creator’s Role Must Change With Progress](#ch18-s46)
+  - [Do Not Rush the Transfer](#ch18-s47)
+  - [Architectural Thresholds Ahead](#ch18-s48)
+  - [Progress Should Be Measured by Capability](#ch18-s49)
+  - [Preserve the Ability to Change Course](#ch18-s50)
+  - [Return to Deeper Inquiry When Evidence Requires It](#ch18-s51)
+  - [Avoid Endless Reopening](#ch18-s52)
+  - [The Path Narrows Below and Widens Above](#ch18-s53)
+  - [The World Should Become Harder to Redefine and Easier to Build Upon](#ch18-s54)
+  - [What Comes First](#ch18-s55)
+  - [What Should Not Come First](#ch18-s56)
+  - [Success Is Not Launch](#ch18-s57)
+  - [The Path Forward Is a Transfer of Authorship](#ch18-s58)
+  - [The Principle](#ch18-s59)
+- [**XIX. Conclusion — A World Before a Civilization**](#ch19)
+  - [A World Before an Application](#ch19-s01)
+  - [One World Before Many Systems](#ch19-s02)
+  - [Place Before Asset](#ch19-s03)
+  - [Exactly 21,000,000 Places](#ch19-s04)
+  - [Architecture Before Economy](#ch19-s05)
+  - [Survey Before Parcel](#ch19-s06)
+  - [Place Before Rights](#ch19-s07)
+  - [The Architecture Has Boundaries](#ch19-s08)
+  - [The World Must Be Able to Change](#ch19-s09)
+  - [Persistence Before History](#ch19-s10)
+  - [A World Capable of Becoming Old](#ch19-s11)
+  - [Inherited Digital Antiquity](#ch19-s12)
+  - [Designed Memory, Emergent History](#ch19-s13)
+  - [The Verge Is Not a Fabricated Edge](#ch19-s14)
+  - [Constraint Before Possibility](#ch19-s15)
+  - [Precision Below, Freedom Above](#ch19-s16)
+  - [The Creator Cannot Author the Destination](#ch19-s17)
+  - [The Creator’s Responsibility Is Also Restraint](#ch19-s18)
+  - [From Creator to Steward](#ch19-s19)
+  - [The Permanent Core Should Remain Small](#ch19-s20)
+  - [Technology Will Change](#ch19-s21)
+  - [Interoperability Protects One World](#ch19-s22)
+  - [Experience Must Remain Above Truth](#ch19-s23)
+  - [One World, Many Futures](#ch19-s24)
+  - [A World Worth Inheriting](#ch19-s25)
+  - [A World Worth Questioning](#ch19-s26)
+  - [Chronicle, Atlas, and Origins](#ch19-s27)
+  - [Origins Does Not Claim Completion](#ch19-s28)
+  - [The Architecture in Its Simplest Form](#ch19-s29)
+  - [The Institutional Sequence](#ch19-s30)
+  - [The Human Sequence](#ch19-s31)
+  - [The Final Principle](#ch19-s32)
+  - [Closing Statement](#ch19-s33)
+
+---
+
+<a id="ch01"></a>
 
 ## I. Abstract
 
@@ -135,6 +804,10 @@ Instead, it preserves the developing answer to a more fundamental question:
 
 BitPangea's present answer begins with **one finite World, permanent spatial truth, exactly 21,000,000 Parcels, governed architectural boundaries, and enough deliberate restraint to leave its future unwritten.**
 
+---
+
+<a id="ch02"></a>
+
 ## II. The Premise
 
 BitPangea begins with a deceptively simple proposition:
@@ -179,7 +852,9 @@ If BitPangea is to become a World, some things must exist beneath experience.
 
 Some things must endure.
 
-**A World First**
+<a id="ch02-s01"></a>
+
+### A World First
 
 BitPangea therefore follows a **World-first** development premise.
 
@@ -251,7 +926,9 @@ That is the central architectural asymmetry of BitPangea:
 
 **The World must be deliberately established, while much of its civilization should remain capable of emergence.**
 
-**Not Merely a Metaverse**
+<a id="ch02-s02"></a>
+
+### Not Merely a Metaverse
 
 The term *metaverse* can describe many different things:
 
@@ -297,7 +974,9 @@ None of them, individually or collectively, is what makes BitPangea a World.
 
 The defining architecture must exist beneath them.
 
-**Not Merely Virtual Land**
+<a id="ch02-s03"></a>
+
+### Not Merely Virtual Land
 
 BitPangea also begins from a different premise than a conventional virtual-land system.
 
@@ -359,7 +1038,9 @@ economics
 
 or civilization.
 
-**Scarcity as a Spatial Condition**
+<a id="ch02-s04"></a>
+
+### Scarcity as a Spatial Condition
 
 Digital systems possess an unusual characteristic:
 
@@ -417,7 +1098,9 @@ History can matter.
 
 Scarcity therefore begins as a condition of the World before it becomes anything economic.
 
-**Permanence Beneath Change**
+<a id="ch02-s05"></a>
+
+### Permanence Beneath Change
 
 A World capable of supporting an open-ended future must also accommodate change.
 
@@ -469,7 +1152,9 @@ This produces a broader architectural direction:
 
 **The deeper the layer, the more permanent it should be. The closer the layer is to the user, the more freedom it should have to evolve.**
 
-**A World That Does Not Predetermine Its Civilization**
+<a id="ch02-s06"></a>
+
+### A World That Does Not Predetermine Its Civilization
 
 World-first architecture creates another obligation.
 
@@ -525,7 +1210,9 @@ The Architecture establishes conditions.
 
 Civilization creates consequences.
 
-**Digital in Substance**
+<a id="ch02-s07"></a>
+
+### Digital in Substance
 
 BitPangea's homage to Pangea does not mean that it seeks to reproduce the physical Earth.
 
@@ -591,7 +1278,9 @@ In an important sense:
 
 **BitPangea is composed of connectivity.**
 
-**One World**
+<a id="ch02-s08"></a>
+
+### One World
 
 Another premise follows from this direction.
 
@@ -643,7 +1332,9 @@ The World cannot expand or be duplicated merely because implementation convenien
 
 That limitation is part of its identity.
 
-**The Creator's Restraint**
+<a id="ch02-s09"></a>
+
+### The Creator's Restraint
 
 The premise of BitPangea therefore includes a philosophy of creation.
 
@@ -701,7 +1392,9 @@ And an unresolved question can remain unresolved without representing failure.
 
 These distinctions protect the future World from the assumptions of its present Creator.
 
-**The Foundational Proposition**
+<a id="ch02-s10"></a>
+
+### The Foundational Proposition
 
 BitPangea can therefore be reduced to a foundational proposition:
 
@@ -733,6 +1426,10 @@ The Creator does not have to build the civilization.
 
 That is the premise.
 
+---
+
+<a id="ch03"></a>
+
 ## III. The World
 
 BitPangea begins with **one World**.
@@ -763,7 +1460,9 @@ Each word matters.
 
 Together, these characteristics define the World against which later architecture must be tested.
 
-**One World**
+<a id="ch03-s01"></a>
+
+### One World
 
 BitPangea’s unity is foundational.
 
@@ -805,7 +1504,9 @@ Every legitimate World-space location therefore possesses something that an arbi
 
 **a relationship to the same World.**
 
-**The World Precedes Its Subdivisions**
+<a id="ch03-s02"></a>
+
+### The World Precedes Its Subdivisions
 
 The World is primary.
 
@@ -863,7 +1564,9 @@ This distinction preserves the possibility that parts or aspects of the World ma
 
 The World is greater than its cadastre.
 
-**Finitude**
+<a id="ch03-s03"></a>
+
+### Finitude
 
 BitPangea is finite.
 
@@ -911,7 +1614,9 @@ That asymmetry is fundamental.
 
 **What happens within it need not be.**
 
-**The Extent**
+<a id="ch03-s04"></a>
+
+### The Extent
 
 Finitude requires something more precise than saying the World is simply “not infinite.”
 
@@ -947,7 +1652,9 @@ The Extent does **not**, by itself, require a coastline, wall, visible edge, oce
 
 Its terminal expression belongs to later constitutional interpretation and Creator design.
 
-**Completeness**
+<a id="ch03-s05"></a>
+
+### Completeness
 
 A finite World must also be capable of being understood as complete.
 
@@ -987,7 +1694,9 @@ Civilization matures **within** the World.
 
 The spatial whole does not need to remain unfinished merely so its history can remain unfinished.
 
-**Continuity**
+<a id="ch03-s06"></a>
+
+### Continuity
 
 BitPangea is continuous as one cartographic whole.
 
@@ -1027,7 +1736,9 @@ This is one reason BitPangea’s spatial problem cannot be solved merely as a gr
 
 Continuity must be supported by architecture.
 
-**Cartographic Coherence**
+<a id="ch03-s07"></a>
+
+### Cartographic Coherence
 
 Calling BitPangea a cartographic whole establishes another requirement.
 
@@ -1081,7 +1792,9 @@ The representation serves the World.
 
 The World does not derive its identity from the representation.
 
-**Globe and Flat World**
+<a id="ch03-s08"></a>
+
+### Globe and Flat World
 
 BitPangea’s current presentation direction reinforces this distinction.
 
@@ -1127,7 +1840,9 @@ These functions should not become competing definitions of BitPangea.
 
 They reveal different aspects of the same World.
 
-**The Supercontinent**
+<a id="ch03-s09"></a>
+
+### The Supercontinent
 
 The adopted World Form gives BitPangea a distinctive macro-scale identity.
 
@@ -1171,7 +1886,9 @@ The desired result is:
 
 The World should be organic in macro-form while remaining unmistakably digital in substance.
 
-**The Verge**
+<a id="ch03-s10"></a>
+
+### The Verge
 
 A finite World inevitably raises a design question:
 
@@ -1215,7 +1932,9 @@ The Creator may determine how that finitude becomes perceptible.
 
 BitPangea should discover the appearance and behavior of its terminal World form rather than inherit an answer automatically from terrestrial geography.
 
-**The Frontier Is Not the Verge**
+<a id="ch03-s11"></a>
+
+### The Frontier Is Not the Verge
 
 BitPangea also preserves **The Frontier**, but its meaning is different.
 
@@ -1239,7 +1958,9 @@ This is an important correction to earlier BitPangea reasoning.
 
 The terminology changed because the architecture became clearer.
 
-**Geography Above Spatial Truth**
+<a id="ch03-s12"></a>
+
+### Geography Above Spatial Truth
 
 BitPangea’s geography and its deepest spatial architecture should remain distinct.
 
@@ -1295,7 +2016,9 @@ The principle is:
 
 **The World should be capable of changing without losing where it is.**
 
-**The World and Its Representations**
+<a id="ch03-s13"></a>
+
+### The World and Its Representations
 
 This distinction protects BitPangea from dependence upon any single technology.
 
@@ -1353,7 +2076,9 @@ A World intended to endure should be able to survive the obsolescence of the tec
 
 The same is true of the World.
 
-**One World, Many Scales**
+<a id="ch03-s14"></a>
+
+### One World, Many Scales
 
 BitPangea must remain coherent across radically different scales.
 
@@ -1419,7 +2144,9 @@ The two qualities are not contradictory.
 
 They belong to different distances.
 
-**The World Is the Constraint**
+<a id="ch03-s15"></a>
+
+### The World Is the Constraint
 
 Digital systems often treat constraints as technical problems to be removed.
 
@@ -1459,7 +2186,9 @@ The architecture should therefore not attempt to engineer them away.
 
 It should learn how to build within them.
 
-**The Current Statement of the World**
+<a id="ch03-s16"></a>
+
+### The Current Statement of the World
 
 At the present stage of development, the strongest concise statement is:
 
@@ -1497,717 +2226,759 @@ The World should not be redesigned merely to accommodate whatever system comes l
 
 **The systems must learn to fit the World.**
 
+---
+
+<a id="ch04"></a>
+
 ## IV. Finitude and The Extent
 
-**A digital World does not naturally have to end.**
+A digital World does not naturally have to end.
 
-**Unlike physical territory, digital space can be expanded by instruction.**
+Unlike physical territory, digital space can be expanded by instruction.
 
-**More coordinates can be generated.**
+More coordinates can be generated.
 
-**More records can be created.**
+More records can be created.
 
-**More regions can be appended.**
+More regions can be appended.
 
-**More instances can be launched.**
+More instances can be launched.
 
-**Additional territory can be declared whenever existing capacity becomes inconvenient.**
+Additional territory can be declared whenever existing capacity becomes inconvenient.
 
-**BitPangea deliberately rejects that convenience.**
+BitPangea deliberately rejects that convenience.
 
-**BitPangea is finite.**
+BitPangea is finite.
 
-**This is one of the most consequential conditions of the World.**
+This is one of the most consequential conditions of the World.
 
-**Finitude means that BitPangea possesses a complete spatial scope.**
+Finitude means that BitPangea possesses a complete spatial scope.
 
-**The World cannot resolve future pressure simply by creating additional BitPangea territory beyond what already exists.**
+The World cannot resolve future pressure simply by creating additional BitPangea territory beyond what already exists.
 
-**Whatever civilization eventually develops within BitPangea must do so within a World whose spatial existence is limited.**
+Whatever civilization eventually develops within BitPangea must do so within a World whose spatial existence is limited.
 
-**But Finitude is not itself an independent World Property.**
+But Finitude is not itself an independent World Property.
 
-**Constitutional inquiry produced a more precise conclusion:**
+Constitutional inquiry produced a more precise conclusion:
 
-**Finitude is preserved as a condition of WP-S-I — The Extent.**
+Finitude is preserved as a condition of WP-S-I — The Extent.
 
-**That distinction matters.**
+That distinction matters.
 
-**Finitude describes an essential condition of the World’s spatial scope.**
+Finitude describes an essential condition of the World’s spatial scope.
 
-**The Extent is the constitutional property that carries that scope.**
+The Extent is the constitutional property that carries that scope.
 
-**The architecture therefore preserves Finitude without multiplying constitutional concepts unnecessarily.**
+The architecture therefore preserves Finitude without multiplying constitutional concepts unnecessarily.
 
-**Why Finitude Matters**
+<a id="ch04-s01"></a>
 
-**Physical worlds inherit limitation.**
+### Why Finitude Matters
 
-**A planet has dimensions.**
+Physical worlds inherit limitation.
 
-**A continent occupies a finite area.**
+A planet has dimensions.
 
-**Locations possess spatial relationships.**
+A continent occupies a finite area.
 
-**Development occurs within existing territory.**
+Locations possess spatial relationships.
 
-**Digital environments inherit none of these conditions automatically.**
+Development occurs within existing territory.
 
-**A digital system can simulate scarcity while retaining the power to create more territory whenever desired.**
+Digital environments inherit none of these conditions automatically.
 
-**BitPangea takes a stronger position.**
+A digital system can simulate scarcity while retaining the power to create more territory whenever desired.
 
-**Its spatial limitation should not merely be an economic rule applied to an otherwise unlimited digital environment.**
+BitPangea takes a stronger position.
 
-**It should belong to the World itself.**
+Its spatial limitation should not merely be an economic rule applied to an otherwise unlimited digital environment.
 
-**Conceptually:**
+It should belong to the World itself.
 
-**not:**
+Conceptually:
 
-**unlimited digital space**
+not:
 
-**↓**
+unlimited digital space
 
-**policy declares some portion scarce**
+↓
 
-**but:**
+policy declares some portion scarce
 
-**finite World**
+but:
 
-**↓**
+finite World
 
-**all later spatial systems operate within that condition**
+↓
 
-**This moves Finitude beneath markets, ownership, allocation, and economics.**
+all later spatial systems operate within that condition
 
-**It makes Finitude a condition of place before it becomes a condition of value.**
+This moves Finitude beneath markets, ownership, allocation, and economics.
 
-**Finitude Is Not Scarcity Alone**
+It makes Finitude a condition of place before it becomes a condition of value.
 
-**Finitude and scarcity are related.**
+<a id="ch04-s02"></a>
 
-**They are not the same thing.**
+### Finitude Is Not Scarcity Alone
 
-**Scarcity describes limited availability.**
+Finitude and scarcity are related.
 
-**Finitude describes the condition that the World itself possesses a complete spatial scope.**
+They are not the same thing.
 
-**A digital system can create scarcity without being finite.**
+Scarcity describes limited availability.
 
-**It could issue a limited number of assets today while retaining the power to create more territory tomorrow.**
+Finitude describes the condition that the World itself possesses a complete spatial scope.
 
-**BitPangea’s proposition is different.**
+A digital system can create scarcity without being finite.
 
-**It is not merely:**
+It could issue a limited number of assets today while retaining the power to create more territory tomorrow.
 
-**only 21,000,000 Parcels are presently available**
+BitPangea’s proposition is different.
 
-**It is:**
+It is not merely:
 
-**exactly 21,000,000 Parcels exist within one finite World.**
+only 21,000,000 Parcels are presently available
 
-**The Parcel constraint therefore operates within a deeper condition.**
+It is:
 
-**The World is finite first.**
+exactly 21,000,000 Parcels exist within one finite World.
 
-**The fixed Parcel supply must be reconciled to that World.**
+The Parcel constraint therefore operates within a deeper condition.
 
-**The Extent**
+The World is finite first.
 
-**If BitPangea is finite, there must be a complete spatial scope to the World.**
+The fixed Parcel supply must be reconciled to that World.
 
-**That foundational property is:**
+<a id="ch04-s03"></a>
 
-**WP-S-I — The Extent**
+### The Extent
 
-**The Extent concerns the complete spatial scope of BitPangea.**
+If BitPangea is finite, there must be a complete spatial scope to the World.
 
-**It answers a question more fundamental than Parcel geometry, geography, visual silhouette, or the way the terminal World form is experienced:**
+That foundational property is:
 
-**What is the complete spatial scope of the World?**
+WP-S-I — The Extent
 
-**The constitutional relationship is:**
+The Extent concerns the complete spatial scope of BitPangea.
 
-**WP-S-I — The Extent**
+It answers a question more fundamental than Parcel geometry, geography, visual silhouette, or the way the terminal World form is experienced:
 
-**↓**
+What is the complete spatial scope of the World?
 
-**complete spatial scope of BitPangea**
+The constitutional relationship is:
 
-**and:**
+WP-S-I — The Extent
 
-**Finitude**
+↓
 
-**↓**
+complete spatial scope of BitPangea
 
-**condition of that scope**
+and:
 
-**This architecture is intentionally economical.**
+Finitude
 
-**Finitude does not need to become a second constitutional property describing substantially the same condition from another perspective.**
+↓
 
-**The Extent carries the spatial property.**
+condition of that scope
 
-**Finitude describes one of its essential characteristics.**
+This architecture is intentionally economical.
 
-**The Extent Is Not the Survey Domain**
+Finitude does not need to become a second constitutional property describing substantially the same condition from another perspective.
 
-**An important distinction became clearer as the Foundational Survey Fabric matured.**
+The Extent carries the spatial property.
 
-**The Extent and the Survey Domain are not the same thing.**
+Finitude describes one of its essential characteristics.
 
-**The Extent concerns the complete spatial scope of the World.**
+<a id="ch04-s04"></a>
 
-**The Survey Domain concerns the finite mathematical reference capacity of the Foundational Survey Fabric.**
+### The Extent Is Not the Survey Domain
 
-**Those concepts interact.**
+An important distinction became clearer as the Foundational Survey Fabric matured.
 
-**They should not be collapsed.**
+The Extent and the Survey Domain are not the same thing.
 
-**The governing requirement is:**
+The Extent concerns the complete spatial scope of the World.
 
-**Every authoritative World-space location must be representable within the Survey Domain.**
+The Survey Domain concerns the finite mathematical reference capacity of the Foundational Survey Fabric.
 
-**But it does not follow that every mathematically valid Survey reference belongs to the World.**
+Those concepts interact.
 
-**Conceptually:**
+They should not be collapsed.
 
-**Survey Domain**
+The governing requirement is:
 
-**→ where canonical Survey reference is mathematically valid**
+Every authoritative World-space location must be representable within the Survey Domain.
 
-**The Extent**
+But it does not follow that every mathematically valid Survey reference belongs to the World.
 
-**→ complete spatial scope of BitPangea**
+Conceptually:
 
-**This preserves an important architectural boundary:**
+Survey Domain
 
-**Reference capacity is not territory.**
+→ where canonical Survey reference is mathematically valid
 
-**The Survey Fabric may establish where a location can be referenced.**
+The Extent
 
-**Higher spatial architecture determines what belongs to the World.**
+→ complete spatial scope of BitPangea
 
-**The Extent Is Not an Edge**
+This preserves an important architectural boundary:
 
-**A common intuition is:**
+Reference capacity is not territory.
 
-**finite World**
+The Survey Fabric may establish where a location can be referenced.
 
-**↓**
+Higher spatial architecture determines what belongs to the World.
 
-**there must therefore be an edge**
+<a id="ch04-s05"></a>
 
-**But that conclusion introduces more than Finitude actually requires.**
+### The Extent Is Not an Edge
 
-**An edge is one possible expression of termination.**
+A common intuition is:
 
-**It is not synonymous with Finitude.**
+finite World
 
-**Likewise, concepts such as:**
+↓
 
-**Edge**
+there must therefore be an edge
 
-**Perimeter**
+But that conclusion introduces more than Finitude actually requires.
 
-**Exterior**
+An edge is one possible expression of termination.
 
-**World Boundary**
+It is not synonymous with Finitude.
 
-**carry spatial implications that are not automatically established merely because the World is finite.**
+Likewise, concepts such as:
 
-**BitPangea’s constitutional inquiry therefore did not elevate those concepts into independent World Properties.**
+Edge
 
-**The deeper truth is simpler:**
+Perimeter
 
-**The World possesses a complete Extent.**
+Exterior
 
-**That statement does not yet tell a visitor what the terminal condition looks like.**
+World Boundary
 
-**It does not require a wall.**
+carry spatial implications that are not automatically established merely because the World is finite.
 
-**It does not require water.**
+BitPangea’s constitutional inquiry therefore did not elevate those concepts into independent World Properties.
 
-**It does not require darkness.**
+The deeper truth is simpler:
 
-**It does not require a void.**
+The World possesses a complete Extent.
 
-**It does not require an Exterior.**
+That statement does not yet tell a visitor what the terminal condition looks like.
 
-**It does not require a visible line.**
+It does not require a wall.
 
-**Finitude establishes the fact of limitation.**
+It does not require water.
 
-**It does not dictate the appearance of limitation.**
+It does not require darkness.
 
-**The Narrow Question of Limit**
+It does not require a void.
 
-**The concept of Limit deserves a narrower treatment.**
+It does not require an Exterior.
 
-**A finite World necessarily possesses some terminal condition of scope.**
+It does not require a visible line.
 
-**The useful constitutional question is therefore not whether BitPangea should invent another broad spatial concept.**
+Finitude establishes the fact of limitation.
 
-**It is:**
+It does not dictate the appearance of limitation.
 
-**Does Limit identify something constitutionally distinct, or is it simply the terminal expression of The Extent?**
+<a id="ch04-s06"></a>
 
-**That inquiry should remain narrow.**
+### The Narrow Question of Limit
 
-**It does not require reopening previously considered concepts such as:**
+The concept of Limit deserves a narrower treatment.
 
-**Edge**
+A finite World necessarily possesses some terminal condition of scope.
 
-**Perimeter**
+The useful constitutional question is therefore not whether BitPangea should invent another broad spatial concept.
 
-**Exterior**
+It is:
 
-**World Boundary**
+Does Limit identify something constitutionally distinct, or is it simply the terminal expression of The Extent?
 
-**unless genuinely new evidence requires it.**
+That inquiry should remain narrow.
 
-**This reflects a larger constitutional discipline:**
+It does not require reopening previously considered concepts such as:
 
-**Do not multiply canon merely because multiple words can describe the same underlying condition.**
+Edge
 
-**BitPangea benefits from constitutional economy.**
+Perimeter
 
-**The World should contain as many foundational concepts as it requires—**
+Exterior
 
-**and no more.**
+World Boundary
 
-**Finitude Without a Wall**
+unless genuinely new evidence requires it.
 
-**The fact that BitPangea ends does not require the World to terminate as a wall.**
+This reflects a larger constitutional discipline:
 
-**Nor does it require an ocean.**
+Do not multiply canon merely because multiple words can describe the same underlying condition.
 
-**Nor darkness.**
+BitPangea benefits from constitutional economy.
 
-**Nor a void.**
+The World should contain as many foundational concepts as it requires—
 
-**Nor an invisible collision barrier.**
+and no more.
 
-**Nor a terrestrial coastline.**
+<a id="ch04-s07"></a>
 
-**Nor any other familiar convention inherited from games, maps, or physical geography.**
+### Finitude Without a Wall
 
-**Those are possible design expressions.**
+The fact that BitPangea ends does not require the World to terminate as a wall.
 
-**They are not consequences of Finitude itself.**
+Nor does it require an ocean.
 
-**This distinction protects BitPangea from allowing constitutional truth to dictate visual design accidentally.**
+Nor darkness.
 
-**The constitutional condition is:**
+Nor a void.
 
-**BitPangea possesses a complete spatial Extent.**
+Nor an invisible collision barrier.
 
-**The Creator-period design question is:**
+Nor a terrestrial coastline.
 
-**How should that terminal condition become perceptible?**
+Nor any other familiar convention inherited from games, maps, or physical geography.
 
-**Those questions belong at different levels.**
+Those are possible design expressions.
 
-**The Verge**
+They are not consequences of Finitude itself.
 
-**The design space for the terminal expression of BitPangea is now preserved through:**
+This distinction protects BitPangea from allowing constitutional truth to dictate visual design accidentally.
 
-**The Verge**
+The constitutional condition is:
 
-**The Verge should not be confused with The Extent.**
+BitPangea possesses a complete spatial Extent.
 
-**The Extent is constitutional.**
+The Creator-period design question is:
 
-**The Verge is Creator design space.**
+How should that terminal condition become perceptible?
 
-**The Extent establishes that the World possesses a complete spatial scope.**
+Those questions belong at different levels.
 
-**The Verge explores how the World’s terminal form may be expressed within that constraint.**
+<a id="ch04-s08"></a>
 
-**Conceptually:**
+### The Verge
 
-**The Extent**
+The design space for the terminal expression of BitPangea is now preserved through:
 
-**→ complete spatial scope**
+The Verge
 
-**Finitude**
+The Verge should not be confused with The Extent.
 
-**→ condition of that scope**
+The Extent is constitutional.
 
-**The Verge**
+The Verge is Creator design space.
 
-**→ possible Creator-period expression of the terminal World form**
+The Extent establishes that the World possesses a complete spatial scope.
 
-**The Verge is therefore not automatically:**
+The Verge explores how the World’s terminal form may be expressed within that constraint.
 
-**a coastline**
+Conceptually:
 
-**a wall**
+The Extent
 
-**an Exterior**
+→ complete spatial scope
 
-**water**
+Finitude
 
-**a conventional border**
+→ condition of that scope
 
-**or ordinary Parcel fabric.**
+The Verge
 
-**Its final morphology remains a matter of design.**
+→ possible Creator-period expression of the terminal World form
 
-**The constitutional truth constrains the design.**
+The Verge is therefore not automatically:
 
-**The design should not pretend to become the constitutional truth beneath it.**
+a coastline
 
-**The Frontier Is Something Else**
+a wall
 
-**Earlier BitPangea reasoning used Frontier as though it might describe terminal spatial morphology.**
+an Exterior
 
-**That understanding was later refined.**
+water
 
-**The Frontier is not the spatial termination of the World.**
+a conventional border
 
-**The Frontier belongs to BitPangea’s epistemic vocabulary.**
+or ordinary Parcel fabric.
 
-**It concerns the relationship between what is known, established, explored, and still unknown.**
+Its final morphology remains a matter of design.
 
-**That distinction is now important enough to preserve explicitly:**
+The constitutional truth constrains the design.
 
-**The Verge**
+The design should not pretend to become the constitutional truth beneath it.
 
-**→ spatial / World-form design concept**
+<a id="ch04-s09"></a>
 
-**The Frontier**
+### The Frontier Is Something Else
 
-**→ epistemic concept**
+Earlier BitPangea reasoning used Frontier as though it might describe terminal spatial morphology.
 
-**The terms should not be used interchangeably.**
+That understanding was later refined.
 
-**The correction demonstrates something important about BitPangea’s development:**
+The Frontier is not the spatial termination of the World.
 
-**terminology may change when architecture becomes clearer.**
+The Frontier belongs to BitPangea’s epistemic vocabulary.
 
-**Preserving that correction is part of preserving the history of the reasoning.**
+It concerns the relationship between what is known, established, explored, and still unknown.
 
-**Finite Does Not Mean Fully Parcelized**
+That distinction is now important enough to preserve explicitly:
 
-**Another consequence follows from Finitude.**
+The Verge
 
-**If BitPangea contains exactly 21,000,000 Parcels, it may be tempting to conclude that every part of the World must therefore be a Parcel.**
+→ spatial / World-form design concept
 
-**That conclusion has not been established.**
+The Frontier
 
-**BitPangea preserves the constitutional possibility that:**
+→ epistemic concept
 
-**The Parcel fabric may not exhaust the World.**
+The terms should not be used interchangeably.
 
-**A finite World can contain a finite Parcel Cadastre without requiring every meaningful spatial condition within The Extent to become an ordinary Parcel.**
+The correction demonstrates something important about BitPangea’s development:
 
-**There may be:**
+terminology may change when architecture becomes clearer.
 
-**non-Parcel spatial structures**
+Preserving that correction is part of preserving the history of the reasoning.
 
-**World-scale infrastructure**
+<a id="ch04-s10"></a>
 
-**Verge conditions**
+### Finite Does Not Mean Fully Parcelized
 
-**Outliers**
+Another consequence follows from Finitude.
 
-**or other constitutionally permissible spatial phenomena**
+If BitPangea contains exactly 21,000,000 Parcels, it may be tempting to conclude that every part of the World must therefore be a Parcel.
 
-**whose relationship to the Parcel Cadastre must be designed rather than assumed.**
+That conclusion has not been established.
 
-**The correct relationship is therefore not:**
+BitPangea preserves the constitutional possibility that:
 
-**World = 21,000,000 Parcels**
+The Parcel fabric may not exhaust the World.
 
-**Instead:**
+A finite World can contain a finite Parcel Cadastre without requiring every meaningful spatial condition within The Extent to become an ordinary Parcel.
 
-**World**
+There may be:
 
-**↓**
+non-Parcel spatial structures
 
-**contains one coherent spatial architecture**
+World-scale infrastructure
 
-**↓**
+Verge conditions
 
-**within which exactly**
+Outliers
 
-**21,000,000 Parcels**
+or other constitutionally permissible spatial phenomena
 
-**must exist**
+whose relationship to the Parcel Cadastre must be designed rather than assumed.
 
-**The World remains the greater whole.**
+The correct relationship is therefore not:
 
-**Constraint Creates Meaning**
+World = 21,000,000 Parcels
 
-**Finitude has consequences far beyond the terminal reaches of BitPangea.**
+Instead:
 
-**If territory cannot simply be added, spatial decisions become consequential.**
+World
 
-**Where something exists matters.**
+↓
 
-**How places relate matters.**
+contains one coherent spatial architecture
 
-**Infrastructure matters.**
+↓
 
-**Access may matter.**
+within which exactly
 
-**Development patterns may matter.**
+21,000,000 Parcels
 
-**Congestion may matter.**
+must exist
 
-**Preservation may matter.**
+The World remains the greater whole.
 
-**Geography may matter.**
+<a id="ch04-s11"></a>
 
-**History may matter.**
+### Constraint Creates Meaning
 
-**A region can acquire significance precisely because an equivalent location cannot simply be manufactured elsewhere without limit.**
+Finitude has consequences far beyond the terminal reaches of BitPangea.
 
-**None of this tells civilization what it must value.**
+If territory cannot simply be added, spatial decisions become consequential.
 
-**That distinction matters.**
+Where something exists matters.
 
-**Finitude creates the conditions under which consequence can emerge.**
+How places relate matters.
 
-**It does not prescribe the consequences.**
+Infrastructure matters.
 
-**Finitude and the 21,000,000 Parcels**
+Access may matter.
 
-**The relationship between Finitude and the fixed Parcel supply is especially important.**
+Development patterns may matter.
 
-**The number 21,000,000 is not merely an inventory placed upon an arbitrary map.**
+Congestion may matter.
 
-**The World and the Parcel Cadastre must ultimately reconcile mathematically and spatially.**
+Preservation may matter.
 
-**The architecture must therefore solve a real problem:**
+Geography may matter.
 
-**one finite World**
+History may matter.
 
-- 
+A region can acquire significance precisely because an equivalent location cannot simply be manufactured elsewhere without limit.
 
-**one complete Extent**
+None of this tells civilization what it must value.
 
-- 
+That distinction matters.
 
-**canonical spatial reference**
+Finitude creates the conditions under which consequence can emerge.
 
-- 
+It does not prescribe the consequences.
 
-**exactly 21,000,000 Parcels**
+<a id="ch04-s12"></a>
 
-- 
+### Finitude and the 21,000,000 Parcels
 
-**coherent Parcel relationships**
+The relationship between Finitude and the fixed Parcel supply is especially important.
 
-**=**
+The number 21,000,000 is not merely an inventory placed upon an arbitrary map.
 
-**one internally consistent spatial system**
+The World and the Parcel Cadastre must ultimately reconcile mathematically and spatially.
 
-**This is one reason the Foundational Survey Fabric matters.**
+The architecture must therefore solve a real problem:
 
-**But the Survey Fabric does not itself solve the Parcel problem.**
+one finite World
 
-**It establishes the permanent canonical spatial reference against which later Architecture domains can solve it.**
+\+
 
-**Likewise, Parcel geometry cannot be selected merely because a pattern is visually attractive.**
+one complete Extent
 
-**Nor can a mathematically convenient tiling be allowed to redefine the World.**
+\+
 
-**The eventual Parcel architecture must respect:**
+canonical spatial reference
 
-**The World**
+\+
 
-**The Extent**
+exactly 21,000,000 Parcels
 
-**the Foundational Survey Fabric**
+\+
 
-**the Parcel count**
+coherent Parcel relationships
 
-**World Form**
+\=
 
-**and whatever other established constraints legitimately apply.**
+one internally consistent spatial system
 
-**Finitude forces the problem to be solved rather than escaped through expansion.**
+This is one reason the Foundational Survey Fabric matters.
 
-**A Finite World, an Open Future**
+But the Survey Fabric does not itself solve the Parcel problem.
 
-**Perhaps the most important consequence of Finitude is what it does not make finite.**
+It establishes the permanent canonical spatial reference against which later Architecture domains can solve it.
 
-**BitPangea’s territory is finite.**
+Likewise, Parcel geometry cannot be selected merely because a pattern is visually attractive.
 
-**Its future need not be.**
+Nor can a mathematically convenient tiling be allowed to redefine the World.
 
-**There may still be:**
+The eventual Parcel architecture must respect:
 
-**new construction**
+The World
 
-**new infrastructure**
+The Extent
 
-**new institutions**
+the Foundational Survey Fabric
 
-**new communities**
+the Parcel count
 
-**new services**
+World Form
 
-**new economic activity**
+and whatever other established constraints legitimately apply.
 
-**new culture**
+Finitude forces the problem to be solved rather than escaped through expansion.
 
-**new discoveries**
+<a id="ch04-s13"></a>
 
-**new histories**
+### A Finite World, an Open Future
 
-**new uses of old places**
+Perhaps the most important consequence of Finitude is what it does not make finite.
 
-**new interpretations of the World**
+BitPangea’s territory is finite.
 
-**A Parcel can undergo countless changes without another Parcel needing to be created.**
+Its future need not be.
 
-**A settlement can become a city within fixed territory.**
+There may still be:
 
-**A route can become historically important.**
+new construction
 
-**A location can acquire cultural meaning because of events no Creator could have anticipated when the World was established.**
+new infrastructure
 
-**The finite World becomes the persistent stage upon which an open-ended history can unfold.**
+new institutions
 
-**Thus:**
+new communities
 
-**BitPangea limits territory without attempting to limit possibility.**
+new services
 
-**The Constitutional Discipline of Finitude**
+new economic activity
 
-**The inquiry into Finitude also demonstrates how BitPangea’s constitutional process should work.**
+new culture
 
-**An intuitive concept was identified.**
+new discoveries
 
-**Its meaning was examined.**
+new histories
 
-**Its relationship to neighboring concepts was tested.**
+new uses of old places
 
-**Potential redundancy was exposed.**
+new interpretations of the World
 
-**The architecture resisted the temptation to canonize every useful word as an independent property.**
+A Parcel can undergo countless changes without another Parcel needing to be created.
 
-**The result became narrower and stronger:**
+A settlement can become a city within fixed territory.
 
-**Finitude**
+A route can become historically important.
 
-**↓**
+A location can acquire cultural meaning because of events no Creator could have anticipated when the World was established.
 
-**preserved**
+The finite World becomes the persistent stage upon which an open-ended history can unfold.
 
-**but:**
+Thus:
 
-**Finitude**
+BitPangea limits territory without attempting to limit possibility.
 
-**↓**
+<a id="ch04-s14"></a>
 
-**not established as a redundant standalone World Property**
+### The Constitutional Discipline of Finitude
 
-**instead:**
+The inquiry into Finitude also demonstrates how BitPangea’s constitutional process should work.
 
-**WP-S-I — The Extent**
+An intuitive concept was identified.
 
-**↓**
+Its meaning was examined.
 
-**carries the foundational spatial property**
+Its relationship to neighboring concepts was tested.
 
-**This illustrates an important constitutional principle:**
+Potential redundancy was exposed.
 
-**Discovery does not require multiplication of canon.**
+The architecture resisted the temptation to canonize every useful word as an independent property.
 
-**The purpose of constitutional inquiry is not to produce the largest possible architecture.**
+The result became narrower and stronger:
 
-**It is to discover the smallest enduring architecture sufficient to preserve the World.**
+Finitude
 
-**What Is Established**
+↓
 
-**At the current stage of BitPangea’s development, the following are established strongly enough to preserve in Origins:**
+preserved
 
-**BitPangea is finite.**
+but:
 
-**The World possesses a complete spatial Extent.**
+Finitude
 
-**Finitude is preserved as a condition of WP-S-I — The Extent.**
+↓
 
-**Finitude does not independently establish an Edge, Perimeter, Exterior, or World Boundary.**
+not established as a redundant standalone World Property
 
-**The Extent and the Survey Domain are distinct concepts.**
+instead:
 
-**Survey reference capacity does not automatically establish World membership.**
+WP-S-I — The Extent
 
-**Every authoritative World-space location must be representable within the Survey Domain.**
+↓
 
-**The terminal spatial expression of the World is not constitutionally required to take a conventional terrestrial form.**
+carries the foundational spatial property
 
-**The Verge is preserved as Creator design space for terminal World-form expression.**
+This illustrates an important constitutional principle:
 
-**The Frontier is epistemic and should not be used as a synonym for terminal spatial morphology.**
+Discovery does not require multiplication of canon.
 
-**The Parcel fabric may not exhaust the World.**
+The purpose of constitutional inquiry is not to produce the largest possible architecture.
 
-**Exactly 21,000,000 Parcels must be reconciled with one finite World.**
+It is to discover the smallest enduring architecture sufficient to preserve the World.
 
-**These statements establish substantial constraint without pretending that every spatial question has already been answered.**
+<a id="ch04-s15"></a>
 
-**What Remains Open**
+### What Is Established
 
-**Important questions remain intentionally unresolved.**
+At the current stage of BitPangea’s development, the following are established strongly enough to preserve in Origins:
 
-**Among them are:**
+BitPangea is finite.
 
-**the exact mathematical representation of The Extent**
+The World possesses a complete spatial Extent.
 
-**the final result of the narrow Limit inquiry**
+Finitude is preserved as a condition of WP-S-I — The Extent.
 
-**the relationship between The Extent and final World Form**
+Finitude does not independently establish an Edge, Perimeter, Exterior, or World Boundary.
 
-**the final morphology of The Verge**
+The Extent and the Survey Domain are distinct concepts.
 
-**the relationship between The Verge and Parcel fabric**
+Survey reference capacity does not automatically establish World membership.
 
-**the role and treatment of Outliers**
+Every authoritative World-space location must be representable within the Survey Domain.
 
-**the exact portion of the World occupied by canonical Parcels**
+The terminal spatial expression of the World is not constitutionally required to take a conventional terrestrial form.
 
-**the final mathematical model of the Foundational Survey Fabric**
+The Verge is preserved as Creator design space for terminal World-form expression.
 
-**the precise architecture through which exactly 21,000,000 Parcels are established within the World**
+The Frontier is epistemic and should not be used as a synonym for terminal spatial morphology.
 
-**These are not deficiencies in Origins.**
+The Parcel fabric may not exhaust the World.
 
-**They are part of the record.**
+Exactly 21,000,000 Parcels must be reconciled with one finite World.
 
-**A foundational manuscript should preserve uncertainty where uncertainty genuinely existed.**
+These statements establish substantial constraint without pretending that every spatial question has already been answered.
 
-**It should not manufacture precision merely to make the architecture appear complete.**
+<a id="ch04-s16"></a>
 
-**The Principle**
+### What Remains Open
 
-**Finitude establishes one of BitPangea’s deepest contrasts.**
+Important questions remain intentionally unresolved.
 
-**Digital computation makes expansion easy.**
+Among them are:
 
-**BitPangea chooses not to make expansion the answer.**
+the exact mathematical representation of The Extent
 
-**Instead, it establishes a World whose limitation must be respected by everything later built within it.**
+the final result of the narrow Limit inquiry
 
-**The governing principle remains:**
+the relationship between The Extent and final World Form
 
-**The World is finite so that what happens within it can matter.**
+the final morphology of The Verge
 
-**The Extent gives BitPangea complete spatial scope.**
+the relationship between The Verge and Parcel fabric
 
-**Finitude ensures that this scope cannot be made disposable through endless territorial creation.**
+the role and treatment of Outliers
 
-**The Parcel constraint makes that limitation locally consequential.**
+the exact portion of the World occupied by canonical Parcels
 
-**And within that finite condition, BitPangea intentionally leaves something open-ended:**
+the final mathematical model of the Foundational Survey Fabric
 
-**what its civilization may eventually become.**
+the precise architecture through which exactly 21,000,000 Parcels are established within the World
+
+These are not deficiencies in Origins.
+
+They are part of the record.
+
+A foundational manuscript should preserve uncertainty where uncertainty genuinely existed.
+
+It should not manufacture precision merely to make the architecture appear complete.
+
+<a id="ch04-s17"></a>
+
+### The Principle
+
+Finitude establishes one of BitPangea’s deepest contrasts.
+
+Digital computation makes expansion easy.
+
+BitPangea chooses not to make expansion the answer.
+
+Instead, it establishes a World whose limitation must be respected by everything later built within it.
+
+The governing principle remains:
+
+The World is finite so that what happens within it can matter.
+
+The Extent gives BitPangea complete spatial scope.
+
+Finitude ensures that this scope cannot be made disposable through endless territorial creation.
+
+The Parcel constraint makes that limitation locally consequential.
+
+And within that finite condition, BitPangea intentionally leaves something open-ended:
+
+what its civilization may eventually become.
+
+---
+
+<a id="ch05"></a>
 
 ## V. The 21,000,000 Parcel Constraint
 
@@ -2243,7 +3014,9 @@ That requirement does not merely affect the Parcel Cadastre.
 
 It places obligations upon the spatial architecture beneath and around it.
 
-**From Number to Architecture**
+<a id="ch05-s01"></a>
+
+### From Number to Architecture
 
 It would be easy to create **21,000,000 database records** and call them Parcels.
 
@@ -2291,7 +3064,9 @@ The number is not merely an output of the architecture.
 
 It is one of the fixed conditions against which the architecture must be discovered.
 
-**Why Exactly 21,000,000?**
+<a id="ch05-s02"></a>
+
+### Why Exactly 21,000,000?
 
 The number carries historical and philosophical meaning.
 
@@ -2331,7 +3106,9 @@ A digital system can choose constraint.
 
 And if the constraint is credible enough, that constraint can become constitutive of the system itself.
 
-**A Parcel Is Not Merely an Asset**
+<a id="ch05-s03"></a>
+
+### A Parcel Is Not Merely an Asset
 
 The word *Parcel* can easily invite economic interpretation.
 
@@ -2369,7 +3146,9 @@ This preserves a critical distinction:
 
 A Parcel can exist permanently as part of the World regardless of who, if anyone, possesses rights associated with it at a given time.
 
-**The World Precedes the Parcels**
+<a id="ch05-s04"></a>
+
+### The World Precedes the Parcels
 
 The **21,000,000-Parcel constraint** remains subordinate to a deeper principle:
 
@@ -2433,7 +3212,9 @@ must reconcile that World with exactly 21,000,000 canonical Parcels
 
 This remains one of the central technical and conceptual challenges of the Creator Period.
 
-**Fixed Means Fixed**
+<a id="ch05-s05"></a>
+
+### Fixed Means Fixed
 
 The architectural meaning of **21,000,000** becomes weak if the number can later be changed whenever it becomes inconvenient.
 
@@ -2469,7 +3250,9 @@ The World must accommodate change without manufacturing additional canonical spa
 
 That is precisely why the constraint matters.
 
-**Scarcity Without an Economic Promise**
+<a id="ch05-s06"></a>
+
+### Scarcity Without an Economic Promise
 
 A fixed supply creates spatial scarcity.
 
@@ -2509,7 +3292,9 @@ Whatever economic consequences eventually arise belong to higher systems and fut
 
 The Creator should not pretend to know those consequences in advance.
 
-**Equal Area as a Design Direction**
+<a id="ch05-s07"></a>
+
+### Equal Area as a Design Direction
 
 A fixed count immediately raises another question:
 
@@ -2583,7 +3368,9 @@ Civilization can still differentiate place.
 
 Because the final mathematical Parcel system remains unresolved, equal area should remain a strong design direction rather than being represented as a completed mathematical fact.
 
-**Parcel Geometry Must Serve the Architecture**
+<a id="ch05-s08"></a>
+
+### Parcel Geometry Must Serve the Architecture
 
 BitPangea has explored a **three-orientation rhombille family** as a promising visible grammar for Parcel representation.
 
@@ -2651,7 +3438,9 @@ And more deeply:
 
 **The visible Parcel grammar does not define the Survey Fabric merely because it is visible.**
 
-**One Dominant Parcel Grammar**
+<a id="ch05-s09"></a>
+
+### One Dominant Parcel Grammar
 
 BitPangea continues to favor one dominant Parcel morphology or visual grammar rather than a World composed arbitrarily from unrelated Parcel geometries.
 
@@ -2685,7 +3474,9 @@ Infrastructure may cross or interact with Parcels without becoming Parcel morpho
 
 The architecture should therefore pursue coherence without demanding false uniformity.
 
-**The Parcel Fabric May Not Exhaust the World**
+<a id="ch05-s10"></a>
+
+### The Parcel Fabric May Not Exhaust the World
 
 This is one of the most important qualifications surrounding the fixed Parcel count.
 
@@ -2701,13 +3492,17 @@ Conceptually:
 
 **BitPangea**
 
-├── **Parcel space**  
-│ └── exactly **21,000,000 canonical Parcels**
+```text
+├── Parcel space
+│ └── exactly 21,000,000 canonical Parcels
+```
 
 and potentially:
 
-└── **non-Parcel spatial structures**  
-  └── constitutionally permissible where the Architecture requires them
+```text
+└── non-Parcel spatial structures
+    └── constitutionally permissible where the Architecture requires them
+```
 
 This may include, subject to later design:
 
@@ -2723,7 +3518,9 @@ Forcing every possible spatial condition into Parcel form merely for numerical e
 
 The World remains primary.
 
-**The Foundational Survey Fabric**
+<a id="ch05-s11"></a>
+
+### The Foundational Survey Fabric
 
 The Parcel constraint is one of the strongest reasons BitPangea requires spatial architecture beneath the Cadastre.
 
@@ -2759,7 +3556,9 @@ This preserves one of BitPangea’s strongest architectural principles:
 
 **Survey first. Cadastre later. Experience above both.**
 
-**Canonical Parcel Identity**
+<a id="ch05-s12"></a>
+
+### Canonical Parcel Identity
 
 A fixed supply becomes meaningful only if individual Parcels remain persistently distinguishable.
 
@@ -2793,7 +3592,9 @@ The principle is:
 
 **The Parcel should outlive the technology used to experience the Parcel.**
 
-**Parcel Identity and Spatial Reference Are Different**
+<a id="ch05-s13"></a>
+
+### Parcel Identity and Spatial Reference Are Different
 
 Another important distinction follows from the mature Architecture.
 
@@ -2821,7 +3622,9 @@ The layers are related.
 
 They should not collapse into one another.
 
-**Parcels and Geography**
+<a id="ch05-s14"></a>
+
+### Parcels and Geography
 
 A Parcel must also remain distinct from whatever happens to exist upon it.
 
@@ -2881,7 +3684,9 @@ Its history changes.
 
 That distinction allows BitPangea to accumulate genuine spatial history.
 
-**The Parcel Constraint and Civilization**
+<a id="ch05-s15"></a>
+
+### The Parcel Constraint and Civilization
 
 A fixed Parcel supply does not determine what civilization will do with the Parcels.
 
@@ -2905,7 +3710,9 @@ The deeper principle is:
 
 **The Creator establishes the spatial constraint. History determines much of what that constraint eventually means.**
 
-**21,000,000 as Permanent Memory**
+<a id="ch05-s16"></a>
+
+### 21,000,000 as Permanent Memory
 
 The number also carries a symbolic dimension.
 
@@ -2939,7 +3746,9 @@ In that sense, the number becomes more than an initial design parameter.
 
 It becomes part of the identity of the World.
 
-**The Constraint as an Architectural Test**
+<a id="ch05-s17"></a>
+
+### The Constraint as an Architectural Test
 
 The fixed Parcel count provides BitPangea with an unusually powerful test.
 
@@ -2973,7 +3782,9 @@ The constraint therefore does not merely restrict the architecture.
 
 **It helps discover the architecture.**
 
-**What Is Established**
+<a id="ch05-s18"></a>
+
+### What Is Established
 
 At the current stage of BitPangea’s development, the following statements are strong enough to preserve:
 
@@ -3015,7 +3826,9 @@ The Verge is not ordinary Parcel morphology merely because it participates in te
 
 Parcel identity must remain persistent across changes in representation and technology.
 
-**What Remains Open**
+<a id="ch05-s19"></a>
+
+### What Remains Open
 
 The fixed count does not eliminate the need for continued design.
 
@@ -3065,7 +3878,9 @@ Much of the architecture required to honor the number remains to be discovered.
 
 That distinction is essential.
 
-**The Principle**
+<a id="ch05-s20"></a>
+
+### The Principle
 
 Bitcoin demonstrated that a digital system can make an otherwise arbitrary number consequential by making the constraint credible.
 
@@ -3103,9213 +3918,8649 @@ The governing principle therefore remains:
 
 **21,000,000 is not merely the number of Parcels in BitPangea. It is a constraint from which the architecture of BitPangea must be discovered.**
 
+---
+
+<a id="ch06"></a>
+
 ## VI. World Form
 
-**A finite World must eventually take form.**
+A finite World must eventually take form.
 
-**Finitude establishes that BitPangea possesses a complete spatial condition.**
+Finitude establishes that BitPangea possesses a complete spatial condition.
 
-**WP-S-I — The Extent establishes the complete spatial scope of the World.**
+WP-S-I — The Extent establishes the complete spatial scope of the World.
 
-**The 21,000,000-Parcel constraint establishes a fixed cadastral obligation within that World.**
+The 21,000,000-Parcel constraint establishes a fixed cadastral obligation within that World.
 
-**None of those conditions, by themselves, determines what BitPangea should look like.**
+None of those conditions, by themselves, determines what BitPangea should look like.
 
-**That is the question of World Form.**
+That is the question of World Form.
 
-**BitPangea’s adopted World Form direction is:**
+BitPangea’s adopted World Form direction is:
 
-**a singular, compositionally balanced, asymmetric digital supercontinent—organic in macro-form, digital in substance, and composed of connectivity.**
+a singular, compositionally balanced, asymmetric digital supercontinent—organic in macro-form, digital in substance, and composed of connectivity.
 
-**World Form is not merely silhouette.**
+World Form is not merely silhouette.
 
-**It is the first visible expression of the deeper architecture.**
+It is the first visible expression of the deeper architecture.
 
-**From planetary distance, BitPangea should appear whole.**
+From planetary distance, BitPangea should appear whole.
 
-**With approach, it should become increasingly legible.**
+With approach, it should become increasingly legible.
 
-**At close range, its digital nature should become unmistakable.**
+At close range, its digital nature should become unmistakable.
 
-**The World should reveal more of itself as proximity makes that information meaningful.**
+The World should reveal more of itself as proximity makes that information meaningful.
 
-**One World, One Form**
+<a id="ch06-s01"></a>
 
-**BitPangea’s foundational unity should be perceptible.**
+### One World, One Form
 
-**The World is not conceived as a collection of independent continents, floating territories, disconnected realms, or separate World instances.**
+BitPangea’s foundational unity should be perceptible.
 
-**Its macro-form should instead reinforce:**
+The World is not conceived as a collection of independent continents, floating territories, disconnected realms, or separate World instances.
 
-**one World**
+Its macro-form should instead reinforce:
 
-**↓**
+one World
 
-**one principal spatial whole**
+↓
 
-**↓**
+one principal spatial whole
 
-**one recognizable supercontinental identity**
+↓
 
-**This does not require every visible feature to connect in an overly literal physical sense.**
+one recognizable supercontinental identity
 
-**Nor does it eliminate internal diversity.**
+This does not require every visible feature to connect in an overly literal physical sense.
 
-**It means that when BitPangea is encountered at planetary scale, its visual identity should communicate the same proposition as its architecture:**
+Nor does it eliminate internal diversity.
 
-**This is one place.**
+It means that when BitPangea is encountered at planetary scale, its visual identity should communicate the same proposition as its architecture:
 
-**The supercontinent is therefore more than an aesthetic reference to Pangea.**
+This is one place.
 
-**It is the visible expression of unity.**
+The supercontinent is therefore more than an aesthetic reference to Pangea.
 
-**The Pangea Homage**
+It is the visible expression of unity.
 
-**The name BitPangea carries an intentional historical reference.**
+<a id="ch06-s02"></a>
 
-**Pangea represents the idea of once-unified continental landmass.**
+### The Pangea Homage
 
-**BitPangea preserves that idea of unity without attempting to reconstruct Earth’s ancient geography.**
+The name BitPangea carries an intentional historical reference.
 
-**BitPangea is not:**
+Pangea represents the idea of once-unified continental landmass.
 
-**a simulation of ancient Earth**
+BitPangea preserves that idea of unity without attempting to reconstruct Earth’s ancient geography.
 
-**a geological reconstruction**
+BitPangea is not:
 
-**a reskinned terrestrial globe**
+a simulation of ancient Earth
 
-**a fantasy copy of Pangea**
+a geological reconstruction
 
-**The homage is conceptual.**
+a reskinned terrestrial globe
 
-**Pangea provides the idea of:**
+a fantasy copy of Pangea
 
-**one connected whole**
+The homage is conceptual.
 
-**BitPangea asks what that idea becomes when expressed natively in a digital medium.**
+Pangea provides the idea of:
 
-**Its supercontinental identity should therefore feel neither conventionally terrestrial nor arbitrarily synthetic.**
+one connected whole
 
-**It should belong specifically to BitPangea.**
+BitPangea asks what that idea becomes when expressed natively in a digital medium.
 
-**Compositionally Balanced Asymmetry**
+Its supercontinental identity should therefore feel neither conventionally terrestrial nor arbitrarily synthetic.
 
-**The World should be asymmetric.**
+It should belong specifically to BitPangea.
 
-**Perfect symmetry would make a planetary-scale landform appear overtly constructed.**
+<a id="ch06-s03"></a>
 
-**It could cause BitPangea to resemble:**
+### Compositionally Balanced Asymmetry
 
-**a logo**
+The World should be asymmetric.
 
-**a diagram**
+Perfect symmetry would make a planetary-scale landform appear overtly constructed.
 
-**a board**
+It could cause BitPangea to resemble:
 
-**a symbol**
+a logo
 
-**a geometric exercise**
+a diagram
 
-**rather than a World possessing geographic identity.**
+a board
 
-**Pure randomness presents the opposite problem.**
+a symbol
 
-**A form without enough compositional structure can appear accidental rather than intentional.**
+a geometric exercise
 
-**The adopted direction therefore seeks:**
+rather than a World possessing geographic identity.
 
-**compositionally balanced asymmetry**
+Pure randomness presents the opposite problem.
 
-**Conceptually:**
+A form without enough compositional structure can appear accidental rather than intentional.
 
-**not:**
+The adopted direction therefore seeks:
 
-**perfect symmetry**
+compositionally balanced asymmetry
 
-**and not:**
+Conceptually:
 
-**unstructured randomness**
+not:
 
-**but:**
+perfect symmetry
 
-**asymmetry**
+and not:
 
-- 
+unstructured randomness
 
-**compositional balance**
+but:
 
-- 
+asymmetry
 
-**recognizable identity**
+\+
 
-**The final silhouette should be distinctive enough that BitPangea can eventually be recognized from form alone.**
+compositional balance
 
-**A visitor encountering the World at planetary distance should not need a label to know which World they are seeing.**
+\+
 
-**Organic in Macro-Form**
+recognizable identity
 
-**At World scale, BitPangea should possess an organic character.**
+The final silhouette should be distinctive enough that BitPangea can eventually be recognized from form alone.
 
-**Its broad contours should not immediately expose the mathematics beneath the World.**
+A visitor encountering the World at planetary distance should not need a label to know which World they are seeing.
 
-**That means avoiding, at planetary distance, the appearance of:**
+<a id="ch06-s04"></a>
 
-**a giant grid**
+### Organic in Macro-Form
 
-**a perfect polygon**
+At World scale, BitPangea should possess an organic character.
 
-**a regular tiling**
+Its broad contours should not immediately expose the mathematics beneath the World.
 
-**a visibly mechanical boundary**
+That means avoiding, at planetary distance, the appearance of:
 
-**a Parcel-derived outline**
+a giant grid
 
-**The macro-form should instead contain:**
+a perfect polygon
 
-**projection**
+a regular tiling
 
-**recession**
+a visibly mechanical boundary
 
-**broad mass**
+a Parcel-derived outline
 
-**narrowing**
+The macro-form should instead contain:
 
-**deep articulation**
+projection
 
-**regional character**
+recession
 
-**irregularity disciplined by composition**
+broad mass
 
-**The precise silhouette remains to be designed.**
+narrowing
 
-**The governing principle is already clear:**
+deep articulation
 
-**The World should feel formed rather than tiled when encountered from afar.**
+regional character
 
-**That does not deny its digital foundation.**
+irregularity disciplined by composition
 
-**It determines when that foundation becomes visible.**
+The precise silhouette remains to be designed.
 
-**Digital in Substance**
+The governing principle is already clear:
 
-**BitPangea should not attempt to conceal the medium from which it is made.**
+The World should feel formed rather than tiled when encountered from afar.
 
-**It is a digital World.**
+That does not deny its digital foundation.
 
-**Its visual identity should eventually reveal that fact.**
+It determines when that foundation becomes visible.
 
-**The design problem is therefore not:**
+<a id="ch06-s05"></a>
 
-**organic**
+### Digital in Substance
 
-**or:**
+BitPangea should not attempt to conceal the medium from which it is made.
 
-**digital**
+It is a digital World.
 
-**The question is:**
+Its visual identity should eventually reveal that fact.
 
-**At what scale should each become legible?**
+The design problem is therefore not:
 
-**At planetary distance:**
+organic
 
-**organic macro-form**
+or:
 
-**should dominate.**
+digital
 
-**With approach:**
+The question is:
 
-**digital structure**
+At what scale should each become legible?
 
-**should increasingly reveal itself.**
+At planetary distance:
 
-**This produces the adopted relationship:**
+organic macro-form
 
-**Organic in macro-form. Digital in substance.**
+should dominate.
 
-**The digital character of BitPangea should not appear as decoration layered on top of an otherwise conventional continent.**
+With approach:
 
-**It should arise from the structure and relationships of the World itself.**
+digital structure
 
-**Composed of Connectivity**
+should increasingly reveal itself.
 
-**One of the strongest World Form principles is that BitPangea should be:**
+This produces the adopted relationship:
 
-**composed of connectivity**
+Organic in macro-form. Digital in substance.
 
-**This is more than a visual motif.**
+The digital character of BitPangea should not appear as decoration layered on top of an otherwise conventional continent.
 
-**A conventional map may depict networks as systems placed upon territory:**
+It should arise from the structure and relationships of the World itself.
 
-**land**
+<a id="ch06-s06"></a>
 
-**↓**
+### Composed of Connectivity
 
-**roads / networks / connections**
+One of the strongest World Form principles is that BitPangea should be:
 
-**BitPangea permits a deeper relationship.**
+composed of connectivity
 
-**Connectivity may become intrinsic to how the World is constituted and progressively revealed.**
+This is more than a visual motif.
 
-**The World should not merely contain a digital network.**
+A conventional map may depict networks as systems placed upon territory:
 
-**Its digital nature may become visible because:**
+land
 
-**relationships**
+↓
 
-**connections**
+roads / networks / connections
 
-**pathways**
+BitPangea permits a deeper relationship.
 
-**spatial organization**
+Connectivity may become intrinsic to how the World is constituted and progressively revealed.
 
-**and structured interaction**
+The World should not merely contain a digital network.
 
-**are intrinsic to the World itself.**
+Its digital nature may become visible because:
 
-**Conceptually:**
+relationships
 
-**not:**
+connections
 
-**World + digital decoration**
+pathways
 
-**but:**
+spatial organization
 
-**World**
+and structured interaction
 
-**↓**
+are intrinsic to the World itself.
 
-**intrinsic relationships**
+Conceptually:
 
-**↓**
+not:
 
-**connectivity**
+World + digital decoration
 
-**↓**
+but:
 
-**digital character**
+World
 
-**The exact visual and technical realization remains open.**
+↓
 
-**The principle does not.**
+intrinsic relationships
 
-**Serene at World Scale**
+↓
 
-**BitPangea should resist the assumption that something must constantly move in order to appear digital.**
+connectivity
 
-**Constant pulses.**
+↓
 
-**Streams of light.**
+digital character
 
-**Animated grids.**
+The exact visual and technical realization remains open.
 
-**Persistent particle effects.**
+The principle does not.
 
-**Flashing nodes.**
+<a id="ch06-s07"></a>
 
-**Continuous visual noise.**
+### Serene at World Scale
 
-**These techniques can communicate technology.**
+BitPangea should resist the assumption that something must constantly move in order to appear digital.
 
-**They can also make a World exhausting.**
+Constant pulses.
 
-**BitPangea’s direction is different.**
+Streams of light.
 
-**The World should be serene at World scale.**
+Animated grids.
 
-**At planetary distance, BitPangea should be capable of simply existing.**
+Persistent particle effects.
 
-**Calm.**
+Flashing nodes.
 
-**Coherent.**
+Continuous visual noise.
 
-**Monumental.**
+These techniques can communicate technology.
 
-**Its digital nature does not need to announce itself continuously.**
+They can also make a World exhausting.
 
-**Its complexity can wait for the observer.**
+BitPangea’s direction is different.
 
-**That restraint makes later revelation more meaningful.**
+The World should be serene at World scale.
 
-**The paired design principle is:**
+At planetary distance, BitPangea should be capable of simply existing.
 
-**Serene at World scale. Alive at Parcel scale.**
+Calm.
 
-**Progressive Revelation**
+Coherent.
 
-**The bridge between planetary serenity and local complexity is progressive revelation.**
+Monumental.
 
-**BitPangea should not expose every layer of information at every distance.**
+Its digital nature does not need to announce itself continuously.
 
-**Instead, information should emerge when scale makes it meaningful.**
+Its complexity can wait for the observer.
 
-**A conceptual progression is:**
+That restraint makes later revelation more meaningful.
 
-**planetary distance**
+The paired design principle is:
 
-**↓**
+Serene at World scale. Alive at Parcel scale.
 
-**World**
+<a id="ch06-s08"></a>
 
-**↓**
+### Progressive Revelation
 
-**supercontinental form**
+The bridge between planetary serenity and local complexity is progressive revelation.
 
-**↓**
+BitPangea should not expose every layer of information at every distance.
 
-**connectivity**
+Instead, information should emerge when scale makes it meaningful.
 
-**↓**
+A conceptual progression is:
 
-**geography**
+planetary distance
 
-**↓**
+↓
 
-**regions and spatial relationships**
+World
 
-**↓**
+↓
 
-**local structure**
+supercontinental form
 
-**↓**
+↓
 
-**Parcel fabric**
+connectivity
 
-**↓**
+↓
 
-**individual place**
+geography
 
-**This should not become a rigid interface script.**
+↓
 
-**It is a design principle.**
+regions and spatial relationships
 
-**Information should become visible at the scale where it becomes meaningful.**
+↓
 
-**That protects both ends of the experience.**
+local structure
 
-**The World remains readable from afar.**
+↓
 
-**Local complexity remains available up close.**
+Parcel fabric
 
-**The Globe as the Primary Distant Expression**
+↓
 
-**BitPangea’s adopted distant representation is the globe.**
+individual place
 
-**The globe communicates several foundational characteristics simultaneously:**
+This should not become a rigid interface script.
 
-**one World**
+It is a design principle.
 
-**finitude**
+Information should become visible at the scale where it becomes meaningful.
 
-**wholeness**
+That protects both ends of the experience.
 
-**planetary identity**
+The World remains readable from afar.
 
-**singularity**
+Local complexity remains available up close.
 
-**This matters.**
+<a id="ch06-s09"></a>
 
-**A flat map is exceptionally useful for interpretation.**
+### The Globe as the Primary Distant Expression
 
-**But as the first encounter with BitPangea, a flat map risks presenting the World primarily as territory to be inspected.**
+BitPangea’s adopted distant representation is the globe.
 
-**The globe presents something different:**
+The globe communicates several foundational characteristics simultaneously:
 
-**the whole before the parts.**
+one World
 
-**The visitor first encounters BitPangea as one World.**
+finitude
 
-**Only with approach does the World become increasingly legible.**
+wholeness
 
-**That relationship makes the globe particularly well suited to the foundational idea of BitPangea.**
+planetary identity
 
-**From Globe to Flat Lived World**
+singularity
 
-**The globe is not intended to remain the permanent geometry of lived experience.**
+This matters.
 
-**At closer scales, BitPangea’s current direction favors transition into a flat lived World.**
+A flat map is exceptionally useful for interpretation.
 
-**That distinction is important.**
+But as the first encounter with BitPangea, a flat map risks presenting the World primarily as territory to be inspected.
 
-**The globe is the distant representation through which the whole is encountered.**
+The globe presents something different:
 
-**The flat World becomes the closer spatial condition through which:**
+the whole before the parts.
 
-**navigation**
+The visitor first encounters BitPangea as one World.
 
-**Parcel reasoning**
+Only with approach does the World become increasingly legible.
 
-**construction**
+That relationship makes the globe particularly well suited to the foundational idea of BitPangea.
 
-**local geography**
+<a id="ch06-s10"></a>
 
-**infrastructure**
+### From Globe to Flat Lived World
 
-**and lived experience**
+The globe is not intended to remain the permanent geometry of lived experience.
 
-**can become intelligible.**
+At closer scales, BitPangea’s current direction favors transition into a flat lived World.
 
-**Conceptually:**
+That distinction is important.
 
-**Globe**
+The globe is the distant representation through which the whole is encountered.
 
-**↓**
+The flat World becomes the closer spatial condition through which:
 
-**approach**
+navigation
 
-**↓**
+Parcel reasoning
 
-**progressive revelation**
+construction
 
-**↓**
+local geography
 
-**flat lived World**
+infrastructure
 
-**↓**
+and lived experience
 
-**Parcel-scale and local experience**
+can become intelligible.
 
-**The transition should not imply that BitPangea becomes a different World.**
+Conceptually:
 
-**Representation changes.**
+Globe
 
-**Canonical spatial truth does not.**
+↓
 
-**Thus:**
+approach
 
-**The globe and the flat lived World are different ways of encountering the same BitPangea.**
+↓
 
-**The exact experiential transition remains a Creator design question.**
+progressive revelation
 
-**The underlying spatial identity does not.**
+↓
 
-**The Silhouette as Identity**
+flat lived World
 
-**The macro-form of BitPangea should become recognizable in its own right.**
+↓
 
-**This places unusual importance on silhouette.**
+Parcel-scale and local experience
 
-**A successful BitPangea silhouette should be:**
+The transition should not imply that BitPangea becomes a different World.
 
-**distinctive**
+Representation changes.
 
-**asymmetric**
+Canonical spatial truth does not.
 
-**balanced**
+Thus:
 
-**memorable**
+The globe and the flat lived World are different ways of encountering the same BitPangea.
 
-**recognizable**
+The exact experiential transition remains a Creator design question.
 
-**difficult to confuse with another World**
+The underlying spatial identity does not.
 
-**It should not merely be attractive.**
+<a id="ch06-s11"></a>
 
-**It should become part of BitPangea’s identity.**
+### The Silhouette as Identity
 
-**This argues against casually generating the final World Form from whatever geometry happens to be convenient beneath it.**
+The macro-form of BitPangea should become recognizable in its own right.
 
-**The silhouette deserves deliberate World-scale design.**
+This places unusual importance on silhouette.
 
-**World Form Does Not Come From Parcel Geometry**
+A successful BitPangea silhouette should be:
 
-**An important architectural correction follows.**
+distinctive
 
-**World Form and Parcel fabric must ultimately reconcile.**
+asymmetric
 
-**But Parcel geometry should not be permitted to define the macro-form merely because a particular tiling or count makes one outline convenient.**
+balanced
 
-**Likewise, World Form cannot be drawn without regard for the deeper spatial architecture that must support it.**
+memorable
 
-**The relationship is not properly expressed as one system simply controlling another.**
+recognizable
 
-**A better understanding is:**
+difficult to confuse with another World
 
-**World Form**
+It should not merely be attractive.
 
-**↕**
+It should become part of BitPangea’s identity.
 
-**Foundational Survey Fabric**
+This argues against casually generating the final World Form from whatever geometry happens to be convenient beneath it.
 
-**↕**
+The silhouette deserves deliberate World-scale design.
 
-**Parcel Cadastre**
+<a id="ch06-s12"></a>
 
-**Each creates constraints the others must respect.**
+### World Form Does Not Come From Parcel Geometry
 
-**But their responsibilities are different.**
+An important architectural correction follows.
 
-**The Foundational Survey Fabric establishes canonical spatial reference.**
+World Form and Parcel fabric must ultimately reconcile.
 
-**The Parcel Cadastre establishes canonical Parcel identity and territorial definition.**
+But Parcel geometry should not be permitted to define the macro-form merely because a particular tiling or count makes one outline convenient.
 
-**World Form establishes the visible macro-scale identity of the World.**
+Likewise, World Form cannot be drawn without regard for the deeper spatial architecture that must support it.
 
-**The solution must ultimately reconcile all three without collapsing them into one authority.**
+The relationship is not properly expressed as one system simply controlling another.
 
-**This is why BitPangea cannot simply:**
+A better understanding is:
 
-**draw the World first and rationalize it mathematically afterward**
+World Form
 
-**or:**
+↕
 
-**generate the World from a tiling algorithm and accept whatever form emerges**
+Foundational Survey Fabric
 
-**The correct principle is:**
+↕
 
-**The form must belong to the World, and the deeper architecture must be capable of supporting it.**
+Parcel Cadastre
 
-**World Form and The Extent**
+Each creates constraints the others must respect.
 
-**World Form remains distinct from The Extent.**
+But their responsibilities are different.
 
-**The Extent concerns the complete spatial scope of BitPangea.**
+The Foundational Survey Fabric establishes canonical spatial reference.
 
-**World Form concerns how the World takes visible macro-scale form within that constitutional condition.**
+The Parcel Cadastre establishes canonical Parcel identity and territorial definition.
 
-**Those ideas interact strongly.**
+World Form establishes the visible macro-scale identity of the World.
 
-**They are not synonymous.**
+The solution must ultimately reconcile all three without collapsing them into one authority.
 
-**A visible supercontinental silhouette should not automatically be interpreted as the deepest constitutional statement of where BitPangea ends.**
+This is why BitPangea cannot simply:
 
-**This distinction preserves separate questions:**
+draw the World first and rationalize it mathematically afterward
 
-**The Extent**
+or:
 
-**→ What is the complete spatial scope of the World?**
+generate the World from a tiling algorithm and accept whatever form emerges
 
-**World Form**
+The correct principle is:
 
-**→ What visible form does the World take within that condition?**
+The form must belong to the World, and the deeper architecture must be capable of supporting it.
 
-**The difference prevents visual design from silently becoming constitutional spatial truth.**
+<a id="ch06-s13"></a>
 
-**World Form and The Verge**
+### World Form and The Extent
 
-**The terminal expression of World Form is now explored through The Verge.**
+World Form remains distinct from The Extent.
 
-**The Verge should not be confused with The Extent.**
+The Extent concerns the complete spatial scope of BitPangea.
 
-**The Extent is constitutional.**
+World Form concerns how the World takes visible macro-scale form within that constitutional condition.
 
-**The Verge is Creator design space.**
+Those ideas interact strongly.
 
-**The Verge may help express how the finite World is perceived at its terminal condition without becoming a new constitutional property.**
+They are not synonymous.
 
-**A conventional terrestrial model might suggest:**
+A visible supercontinental silhouette should not automatically be interpreted as the deepest constitutional statement of where BitPangea ends.
 
-**land**
+This distinction preserves separate questions:
 
-**↓**
+The Extent
 
-**coastline**
+→ What is the complete spatial scope of the World?
 
-**↓**
+World Form
 
-**ocean**
+→ What visible form does the World take within that condition?
 
-**BitPangea does not inherit that sequence automatically.**
+The difference prevents visual design from silently becoming constitutional spatial truth.
 
-**The Verge is not required to be:**
+<a id="ch06-s14"></a>
 
-**water**
+### World Form and The Verge
 
-**coastline**
+The terminal expression of World Form is now explored through The Verge.
 
-**wall**
+The Verge should not be confused with The Extent.
 
-**darkness**
+The Extent is constitutional.
 
-**void**
+The Verge is Creator design space.
 
-**Exterior**
+The Verge may help express how the finite World is perceived at its terminal condition without becoming a new constitutional property.
 
-**ordinary Parcel morphology**
+A conventional terrestrial model might suggest:
 
-**Its final form remains open.**
+land
 
-**What is established is the separation of responsibility:**
+↓
 
-**The Extent establishes that the World is finite.**
+coastline
 
-**The Verge explores how that finitude becomes visible.**
+↓
 
-**The Frontier Is Not World Form**
+ocean
 
-**Earlier BitPangea work used Frontier as though it might describe a terminal spatial morphology.**
+BitPangea does not inherit that sequence automatically.
 
-**That meaning has been superseded.**
+The Verge is not required to be:
 
-**The Frontier is now preserved as an epistemic concept, not a World-form edge.**
+water
 
-**It concerns what is known, discovered, established, or still unknown.**
+coastline
 
-**World Form should therefore no longer use Frontier as the name of its terminal spatial condition.**
+wall
 
-**The relevant distinction is:**
+darkness
 
-**The Verge**
+void
 
-**→ spatial / World-form design**
+Exterior
 
-**The Frontier**
+ordinary Parcel morphology
 
-**→ epistemic**
+Its final form remains open.
 
-**This correction is important because it prevents a later terminology collision from becoming embedded into Origins as current architecture.**
+What is established is the separation of responsibility:
 
-**The World at Different Distances**
+The Extent establishes that the World is finite.
 
-**World Form must succeed across radically different scales.**
+The Verge explores how that finitude becomes visible.
 
-**At planetary distance, BitPangea should communicate:**
+<a id="ch06-s15"></a>
 
-**unity**
+### The Frontier Is Not World Form
 
-**finitude**
+Earlier BitPangea work used Frontier as though it might describe a terminal spatial morphology.
 
-**silhouette**
+That meaning has been superseded.
 
-**serenity**
+The Frontier is now preserved as an epistemic concept, not a World-form edge.
 
-**identity**
+It concerns what is known, discovered, established, or still unknown.
 
-**At intermediate distance:**
+World Form should therefore no longer use Frontier as the name of its terminal spatial condition.
 
-**connectivity**
+The relevant distinction is:
 
-**regional differentiation**
+The Verge
 
-**geographic character**
+→ spatial / World-form design
 
-**spatial organization**
+The Frontier
 
-**should increasingly emerge.**
+→ epistemic
 
-**At local distance:**
+This correction is important because it prevents a later terminology collision from becoming embedded into Origins as current architecture.
 
-**Parcel fabric**
+<a id="ch06-s16"></a>
 
-**infrastructure**
+### The World at Different Distances
 
-**construction**
+World Form must succeed across radically different scales.
 
-**activity**
+At planetary distance, BitPangea should communicate:
 
-**individual place**
+unity
 
-**may dominate.**
+finitude
 
-**The World therefore changes in legibility with observation without changing in identity.**
+silhouette
 
-**A visitor is not merely enlarging one image.**
+serenity
 
-**The visitor is discovering deeper layers of the World.**
+identity
 
-**The World Before Geography**
+At intermediate distance:
 
-**World Form does not require complete geography to be designed in advance.**
+connectivity
 
-**The macro-form can exist before every:**
+regional differentiation
 
-**mountain**
+geographic character
 
-**valley**
+spatial organization
 
-**route**
+should increasingly emerge.
 
-**district**
+At local distance:
 
-**settlement**
+Parcel fabric
 
-**landmark**
+infrastructure
 
-**region**
+construction
 
-**has been defined.**
+activity
 
-**Indeed, many of those things should remain available to future design or future civilization.**
+individual place
 
-**World Form establishes the stage upon which geography may develop.**
+may dominate.
 
-**It should not become an excuse for the Creator to author every place before the World has a history.**
+The World therefore changes in legibility with observation without changing in identity.
 
-**The Creator’s task at this level is to establish enough form to make BitPangea coherent and recognizable.**
+A visitor is not merely enlarging one image.
 
-**Not to fill every location with predetermined meaning.**
+The visitor is discovering deeper layers of the World.
 
-**A Digital Supercontinent, Not a Digital Earth**
+<a id="ch06-s17"></a>
 
-**BitPangea should possess enough familiar spatial qualities that a visitor can understand it as a World.**
+### The World Before Geography
 
-**But it should not become so terrestrially literal that its digital nature disappears beneath imitation.**
+World Form does not require complete geography to be designed in advance.
 
-**BitPangea may possess:**
+The macro-form can exist before every:
 
-**place**
+mountain
 
-**Parcel relationships**
+valley
 
-**regions**
+route
 
-**geography**
+district
 
-**The Verge**
+settlement
 
-**Outliers**
+landmark
 
-**Parcels**
+region
 
-**infrastructure**
+has been defined.
 
-**without requiring:**
+Indeed, many of those things should remain available to future design or future civilization.
 
-**Earth-like oceans**
+World Form establishes the stage upon which geography may develop.
 
-**tectonic simulation**
+It should not become an excuse for the Creator to author every place before the World has a history.
 
-**physical geology**
+The Creator’s task at this level is to establish enough form to make BitPangea coherent and recognizable.
 
-**terrestrial continents**
+Not to fill every location with predetermined meaning.
 
-**Earth climate reproduction**
+<a id="ch06-s18"></a>
 
-**a simulation of the physical planet**
+### A Digital Supercontinent, Not a Digital Earth
 
-**unless particular elements are later adopted for independent architectural reasons.**
+BitPangea should possess enough familiar spatial qualities that a visitor can understand it as a World.
 
-**The World should feel intelligible without feeling derivative.**
+But it should not become so terrestrially literal that its digital nature disappears beneath imitation.
 
-**What Is Established**
+BitPangea may possess:
 
-**The current World Form direction supports the following statements:**
+place
 
-**BitPangea is one World.**
+Parcel relationships
 
-**Its macro-form is a singular digital supercontinent.**
+regions
 
-**The supercontinent is asymmetric.**
+geography
 
-**Its asymmetry is compositionally balanced.**
+The Verge
 
-**Its silhouette should become distinctive and recognizable.**
+Outliers
 
-**BitPangea is:**
+Parcels
 
-**organic in macro-form**
+infrastructure
 
-**and:**
+without requiring:
 
-**digital in substance**
+Earth-like oceans
 
-**The World is intended to be:**
+tectonic simulation
 
-**composed of connectivity**
+physical geology
 
-**Digital character should become increasingly legible with proximity.**
+terrestrial continents
 
-**The World should remain:**
+Earth climate reproduction
 
-**serene at World scale**
+a simulation of the physical planet
 
-**and become:**
+unless particular elements are later adopted for independent architectural reasons.
 
-**alive at Parcel scale**
+The World should feel intelligible without feeling derivative.
 
-**Complexity should reveal itself progressively.**
+<a id="ch06-s19"></a>
 
-**The globe is the primary distant representation.**
+### What Is Established
 
-**A flat lived World is the strong closer-scale direction.**
+The current World Form direction supports the following statements:
 
-**Globe and flat experience represent the same underlying World.**
+BitPangea is one World.
 
-**World Form is distinct from The Extent.**
+Its macro-form is a singular digital supercontinent.
 
-**The Verge is the Creator design space for terminal World-form expression.**
+The supercontinent is asymmetric.
 
-**The Frontier is epistemic and should not be used as World-form terminology.**
+Its asymmetry is compositionally balanced.
 
-**World Form must ultimately reconcile with the Foundational Survey Fabric and Parcel Cadastre without becoming subordinate to either.**
+Its silhouette should become distinctive and recognizable.
 
-**What Remains Open**
+BitPangea is:
 
-**World Form is not complete.**
+organic in macro-form
 
-**Important questions remain, including:**
+and:
 
-**the final supercontinental silhouette**
+digital in substance
 
-**the exact relationship between World Form and The Extent**
+The World is intended to be:
 
-**the final morphology of The Verge**
+composed of connectivity
 
-**the role and visual treatment of Outliers**
+Digital character should become increasingly legible with proximity.
 
-**the precise visual expression of connectivity**
+The World should remain:
 
-**the exact transition from globe to flat lived World**
+serene at World scale
 
-**the regional structure of the World**
+and become:
 
-**the degree and character of designed geography**
+alive at Parcel scale
 
-**the relationship between visible terrain and deeper spatial architecture**
+Complexity should reveal itself progressively.
 
-**the precise manner in which Parcel fabric becomes visible with proximity**
+The globe is the primary distant representation.
 
-**the interaction between Parcel morphology and World Form**
+A flat lived World is the strong closer-scale direction.
 
-**the final visual language of the Digital Age within BitPangea**
+Globe and flat experience represent the same underlying World.
 
-**These questions should remain open until design justifies their answers.**
+World Form is distinct from The Extent.
 
-**Origins should preserve the uncertainty rather than imply that visual completion has already occurred.**
+The Verge is the Creator design space for terminal World-form expression.
 
-**The Principle**
+The Frontier is epistemic and should not be used as World-form terminology.
 
-**World Form gives visible expression to constraints established more deeply within BitPangea.**
+World Form must ultimately reconcile with the Foundational Survey Fabric and Parcel Cadastre without becoming subordinate to either.
 
-**Finitude says the World is limited.**
+<a id="ch06-s20"></a>
 
-**The Extent establishes its complete spatial scope.**
+### What Remains Open
 
-**The 21,000,000-Parcel constraint establishes a fixed cadastral obligation.**
+World Form is not complete.
 
-**World Form asks:**
+Important questions remain, including:
 
-**What should one finite digital World look like when those constraints become visible identity?**
+the final supercontinental silhouette
 
-**The current answer is:**
+the exact relationship between World Form and The Extent
 
-**One supercontinent.**
+the final morphology of The Verge
 
-**Asymmetric but compositionally balanced.**
+the role and visual treatment of Outliers
 
-**Organic in macro-form.**
+the precise visual expression of connectivity
 
-**Digital in substance.**
+the exact transition from globe to flat lived World
 
-**Serene at World scale.**
+the regional structure of the World
 
-**Alive at Parcel scale.**
+the degree and character of designed geography
 
-**Increasingly legible with approach.**
+the relationship between visible terrain and deeper spatial architecture
 
-**Recognizable as a whole.**
+the precise manner in which Parcel fabric becomes visible with proximity
 
-**Composed not merely of territory—**
+the interaction between Parcel morphology and World Form
 
-**but of connectivity.**
+the final visual language of the Digital Age within BitPangea
 
-**And beneath what the visitor sees remains a deeper architectural discipline:**
+These questions should remain open until design justifies their answers.
 
-**The visible World may evolve in expression, but it must remain accountable to the spatial truth beneath it.**
+Origins should preserve the uncertainty rather than imply that visual completion has already occurred.
+
+<a id="ch06-s21"></a>
+
+### The Principle
+
+World Form gives visible expression to constraints established more deeply within BitPangea.
+
+Finitude says the World is limited.
+
+The Extent establishes its complete spatial scope.
+
+The 21,000,000-Parcel constraint establishes a fixed cadastral obligation.
+
+World Form asks:
+
+What should one finite digital World look like when those constraints become visible identity?
+
+The current answer is:
+
+One supercontinent.
+
+Asymmetric but compositionally balanced.
+
+Organic in macro-form.
+
+Digital in substance.
+
+Serene at World scale.
+
+Alive at Parcel scale.
+
+Increasingly legible with approach.
+
+Recognizable as a whole.
+
+Composed not merely of territory—
+
+but of connectivity.
+
+And beneath what the visitor sees remains a deeper architectural discipline:
+
+The visible World may evolve in expression, but it must remain accountable to the spatial truth beneath it.
+
+---
+
+<a id="ch07"></a>
 
 ## VII. Foundational Survey Fabric
 
-**A World can be seen before it can be surveyed.**
+A World can be seen before it can be surveyed.
 
-**Its silhouette can be designed.**
+Its silhouette can be designed.
 
-**Its geography can be imagined.**
+Its geography can be imagined.
 
-**Its regions can be named.**
+Its regions can be named.
 
-**Its Parcels can even be rendered.**
+Its Parcels can even be rendered.
 
-**But none of those things, by themselves, establishes permanent spatial truth.**
+But none of those things, by themselves, establishes permanent spatial truth.
 
-**BitPangea therefore requires something beneath the visible World.**
+BitPangea therefore requires something beneath the visible World.
 
-**Something more fundamental than geography.**
+Something more fundamental than geography.
 
-**Something more durable than a rendering.**
+Something more durable than a rendering.
 
-**Something independent of any particular interface, engine, database, map, or experience.**
+Something independent of any particular interface, engine, database, map, or experience.
 
-**That Architecture domain is the Foundational Survey Fabric.**
+That Architecture domain is the Foundational Survey Fabric.
 
-**The Foundational Survey Fabric is BitPangea’s:**
+The Foundational Survey Fabric is BitPangea’s:
 
-**minimal, exact, finite, planar, semantically neutral canonical spatial reference architecture.**
+minimal, exact, finite, planar, semantically neutral canonical spatial reference architecture.
 
-**Its purpose is to establish and preserve permanent spatial reference without prematurely defining the higher systems that will later use that reference.**
+Its purpose is to establish and preserve permanent spatial reference without prematurely defining the higher systems that will later use that reference.
 
-**It does not define Parcels.**
+It does not define Parcels.
 
-**It does not determine ownership.**
+It does not determine ownership.
 
-**It does not determine World membership.**
+It does not determine World membership.
 
-**It does not define geography.**
+It does not define geography.
 
-**It does not govern civilization.**
+It does not govern civilization.
 
-**It does not dictate runtime implementation.**
+It does not dictate runtime implementation.
 
-**It establishes the canonical spatial basis against which those higher systems can remain coherent.**
+It establishes the canonical spatial basis against which those higher systems can remain coherent.
 
-**Its deepest responsibility is simple:**
+Its deepest responsibility is simple:
 
-**Preserve where.**
+Preserve where.
 
-**The Survey Problem**
+<a id="ch07-s01"></a>
 
-**Physical worlds inherit spatial reality.**
+### The Survey Problem
 
-**A surveyor does not create the Earth by measuring it.**
+Physical worlds inherit spatial reality.
 
-**The land exists independently of the survey.**
+A surveyor does not create the Earth by measuring it.
 
-**Measurement establishes a reproducible framework through which location and spatial relationships can be described.**
+The land exists independently of the survey.
 
-**A digital World faces a different problem.**
+Measurement establishes a reproducible framework through which location and spatial relationships can be described.
 
-**There is no preexisting physical ground waiting to be surveyed.**
+A digital World faces a different problem.
 
-**The spatial ground itself must first be established.**
+There is no preexisting physical ground waiting to be surveyed.
 
-**This produces one of BitPangea’s deepest architectural questions:**
+The spatial ground itself must first be established.
 
-**What permanent spatial truth must exist before the World can meaningfully claim that one place is here and another is there?**
+This produces one of BitPangea’s deepest architectural questions:
 
-**If BitPangea begins with visible geography, geography risks becoming the authority over location.**
+What permanent spatial truth must exist before the World can meaningfully claim that one place is here and another is there?
 
-**If it begins with Parcel graphics, rendering risks becoming authority.**
+If BitPangea begins with visible geography, geography risks becoming the authority over location.
 
-**If it begins with a game engine, the engine’s coordinate system risks becoming the World.**
+If it begins with Parcel graphics, rendering risks becoming authority.
 
-**If it begins with a database schema, implementation risks becoming architecture.**
+If it begins with a game engine, the engine’s coordinate system risks becoming the World.
 
-**None of those is sufficiently durable.**
+If it begins with a database schema, implementation risks becoming architecture.
 
-**BitPangea therefore requires canonical spatial meaning that belongs to BitPangea itself.**
+None of those is sufficiently durable.
 
-**The Survey Fabric exists to provide that meaning.**
+BitPangea therefore requires canonical spatial meaning that belongs to BitPangea itself.
 
-**Survey First**
+The Survey Fabric exists to provide that meaning.
 
-**The governing spatial dependency begins with:**
+<a id="ch07-s02"></a>
 
-**Foundational Survey Fabric**
+### Survey First
 
-**↓**
+The governing spatial dependency begins with:
 
-**Spatial Ground**
+Foundational Survey Fabric
 
-**↓**
+↓
 
-**General Spatial Interpretation**
+Spatial Ground
 
-**↓**
+↓
 
-**Parcel Cadastre**
+General Spatial Interpretation
 
-**This sequence is stronger than a mere page order.**
+↓
 
-**It reflects demonstrated spatial dependency.**
+Parcel Cadastre
 
-**The Foundational Survey Fabric establishes canonical spatial reference.**
+This sequence is stronger than a mere page order.
 
-**Spatial Ground carries that reference upward into the usable spatial basis of the World.**
+It reflects demonstrated spatial dependency.
 
-**General Spatial Interpretation allows higher spatial meaning to be derived without altering the Survey truth beneath it.**
+The Foundational Survey Fabric establishes canonical spatial reference.
 
-**The Parcel Cadastre then establishes canonical Parcel identity and territorial definition upon that deeper architecture.**
+Spatial Ground carries that reference upward into the usable spatial basis of the World.
 
-**The principle remains:**
+General Spatial Interpretation allows higher spatial meaning to be derived without altering the Survey truth beneath it.
 
-**Survey first. Cadastre later. Experience above both.**
+The Parcel Cadastre then establishes canonical Parcel identity and territorial definition upon that deeper architecture.
 
-**But the mature Architecture now preserves a further discipline:**
+The principle remains:
 
-**A lower Architecture domain may constrain what higher domains must not violate without prescribing how those higher domains must internally work.**
+Survey first. Cadastre later. Experience above both.
 
-**The shorthand is:**
+But the mature Architecture now preserves a further discipline:
 
-**Protect the boundary. Do not design the layer above from the layer below.**
+A lower Architecture domain may constrain what higher domains must not violate without prescribing how those higher domains must internally work.
 
-**The Survey Fabric should therefore establish what higher systems must respect.**
+The shorthand is:
 
-**It should not quietly become those systems.**
+Protect the boundary. Do not design the layer above from the layer below.
 
-**The Survey Fabric Is Not the World**
+The Survey Fabric should therefore establish what higher systems must respect.
 
-**One of the most important distinctions to emerge from the 85 Findings is:**
+It should not quietly become those systems.
 
-**The Survey Domain is not the World.**
+<a id="ch07-s03"></a>
 
-**The Survey Domain is the finite mathematical reference domain within which canonical Survey references are valid.**
+### The Survey Fabric Is Not the World
 
-**That makes it reference capacity.**
+One of the most important distinctions to emerge from the 85 Findings is:
 
-**It does not make every valid Survey reference BitPangea territory.**
+The Survey Domain is not the World.
 
-**The distinction is:**
+The Survey Domain is the finite mathematical reference domain within which canonical Survey references are valid.
 
-**Survey Domain**
+That makes it reference capacity.
 
-**→ where canonical Survey reference is mathematically valid**
+It does not make every valid Survey reference BitPangea territory.
 
-**World**
+The distinction is:
 
-**→ which spatial locations belong to BitPangea**
+Survey Domain
 
-**This produces a critical rule:**
+→ where canonical Survey reference is mathematically valid
 
-**A valid Survey reference does not automatically establish World membership.**
+World
 
-**World membership belongs above the Foundational Survey Fabric.**
+→ which spatial locations belong to BitPangea
 
-**The governing requirement is instead:**
+This produces a critical rule:
 
-**Every authoritative World-space location must be representable within the Survey Domain.**
+A valid Survey reference does not automatically establish World membership.
 
-**That is enough.**
+World membership belongs above the Foundational Survey Fabric.
 
-**The Survey Fabric establishes reference.**
+The governing requirement is instead:
 
-**Higher Architecture establishes what that reference means within the World.**
+Every authoritative World-space location must be representable within the Survey Domain.
 
-**The Survey Fabric Is Not the Parcel Cadastre**
+That is enough.
 
-**This distinction is equally important.**
+The Survey Fabric establishes reference.
 
-**The Foundational Survey Fabric and the Parcel Cadastre are separate Architecture domains.**
+Higher Architecture establishes what that reference means within the World.
 
-**The Survey Fabric establishes canonical spatial reference.**
+<a id="ch07-s04"></a>
 
-**The Parcel Cadastre establishes canonical Parcel truth.**
+### The Survey Fabric Is Not the Parcel Cadastre
 
-**Therefore:**
+This distinction is equally important.
 
-**Survey units are not Parcels.**
+The Foundational Survey Fabric and the Parcel Cadastre are separate Architecture domains.
 
-**A mathematical subdivision, cell, reference element, coordinate construct, or implementation unit inside the Survey system should not be presumed to be a Parcel.**
+The Survey Fabric establishes canonical spatial reference.
 
-**BitPangea must contain exactly:**
+The Parcel Cadastre establishes canonical Parcel truth.
 
-**21,000,000 Parcels**
+Therefore:
 
-**But that does not require the Survey Fabric itself to contain exactly 21,000,000 reference units.**
+Survey units are not Parcels.
 
-**The correct relationship is:**
+A mathematical subdivision, cell, reference element, coordinate construct, or implementation unit inside the Survey system should not be presumed to be a Parcel.
 
-**Foundational Survey Fabric**
+BitPangea must contain exactly:
 
-**→ establishes canonical spatial reference**
+21,000,000 Parcels
 
-**Parcel Cadastre**
+But that does not require the Survey Fabric itself to contain exactly 21,000,000 reference units.
 
-**→ defines exactly 21,000,000 canonical Parcels against that reference**
+The correct relationship is:
 
-**This separation prevents Parcel geometry from becoming the deepest spatial truth merely because Parcels are visually prominent.**
+Foundational Survey Fabric
 
-**Minimum Permanent Spatial Content**
+→ establishes canonical spatial reference
 
-**The Foundational Survey Fabric should preserve only the minimum spatial content required to reconstruct canonical reference exactly.**
+Parcel Cadastre
 
-**This is one of the strongest conclusions of the Requirements Integrity Audit.**
+→ defines exactly 21,000,000 canonical Parcels against that reference
 
-**The deepest Survey architecture may need to preserve things such as:**
+This separation prevents Parcel geometry from becoming the deepest spatial truth merely because Parcels are visually prominent.
 
-**canonical Survey Domain**
+<a id="ch07-s05"></a>
 
-**origin**
+### Minimum Permanent Spatial Content
 
-**orientation**
+The Foundational Survey Fabric should preserve only the minimum spatial content required to reconstruct canonical reference exactly.
 
-**spatial measurement framework**
+This is one of the strongest conclusions of the Requirements Integrity Audit.
 
-**reference mathematics**
+The deepest Survey architecture may need to preserve things such as:
 
-**precision rules**
+canonical Survey Domain
 
-**canonical addressing**
+origin
 
-**normative mathematical conventions**
+orientation
 
-**But it should not absorb higher-layer responsibilities merely because they later depend upon space.**
+spatial measurement framework
 
-**The Survey Fabric should not define:**
+reference mathematics
 
-**ownership**
+precision rules
 
-**rights**
+canonical addressing
 
-**governance**
+normative mathematical conventions
 
-**runtime services**
+But it should not absorb higher-layer responsibilities merely because they later depend upon space.
 
-**civilization**
+The Survey Fabric should not define:
 
-**application state**
+ownership
 
-**user experience**
+rights
 
-**economic systems**
+governance
 
-**actor identity**
+runtime services
 
-**Parcel allocation**
+civilization
 
-**higher-layer semantics**
+application state
 
-**unless some aspect is irreducibly necessary to preserve canonical spatial truth itself.**
+user experience
 
-**The governing principle is:**
+economic systems
 
-**The deepest layer should preserve spatial truth, not the machinery used to prove or experience it.**
+actor identity
 
-**Canonical Survey Reference**
+Parcel allocation
 
-**The Survey Fabric must make location persist independently of representation.**
+higher-layer semantics
 
-**That requires a Canonical Survey Reference.**
+unless some aspect is irreducibly necessary to preserve canonical spatial truth itself.
 
-**A Canonical Survey Reference is the permanent, deterministic spatial reference through which BitPangea identifies where a valid Survey location or exact spatial extent lies.**
+The governing principle is:
 
-**Its meaning must remain stable even if:**
+The deepest layer should preserve spatial truth, not the machinery used to prove or experience it.
 
-**interfaces change**
+<a id="ch07-s06"></a>
 
-**encodings change**
+### Canonical Survey Reference
 
-**aliases change**
+The Survey Fabric must make location persist independently of representation.
 
-**display forms change**
+That requires a Canonical Survey Reference.
 
-**implementations change**
+A Canonical Survey Reference is the permanent, deterministic spatial reference through which BitPangea identifies where a valid Survey location or exact spatial extent lies.
 
-**compatible Specification versions evolve**
+Its meaning must remain stable even if:
 
-**The representation may evolve.**
+interfaces change
 
-**The place must not.**
+encodings change
 
-**This produces one of the governing principles of the Survey Fabric:**
+aliases change
 
-**Representation may change. Place must not.**
+display forms change
 
-**The Coordinate-System Trap**
+implementations change
 
-**One of the easiest ways to build a digital World is to accept the coordinate system provided by the software used to create it.**
+compatible Specification versions evolve
 
-**That is also one of the easiest ways to confuse implementation with architecture.**
+The representation may evolve.
 
-**One engine may use:**
+The place must not.
 
-**x**
+This produces one of the governing principles of the Survey Fabric:
 
-**y**
+Representation may change. Place must not.
 
-**z**
+<a id="ch07-s07"></a>
 
-**Another may use latitude-like and longitude-like values.**
+### The Coordinate-System Trap
 
-**Another may use:**
+One of the easiest ways to build a digital World is to accept the coordinate system provided by the software used to create it.
 
-**tiles**
+That is also one of the easiest ways to confuse implementation with architecture.
 
-**vectors**
+One engine may use:
 
-**indices**
+x
 
-**cells**
+y
 
-**nodes**
+z
 
-**database identifiers**
+Another may use latitude-like and longitude-like values.
 
-**All of these may be useful representations.**
+Another may use:
 
-**None should automatically become BitPangea’s canonical spatial truth merely because it is convenient.**
+tiles
 
-**The deeper requirement is:**
+vectors
 
-**BitPangea requires canonical spatial reference whose meaning belongs to BitPangea rather than to any particular implementation.**
+indices
 
-**A coordinate frame may express that reference.**
+cells
 
-**It should not own it.**
+nodes
 
-**Exactness Before Convenience**
+database identifiers
 
-**The Foundational Survey Fabric favors exactness.**
+All of these may be useful representations.
 
-**That preference arises because permanent place should not depend upon implementation-specific approximation.**
+None should automatically become BitPangea’s canonical spatial truth merely because it is convenient.
 
-**The current Survey direction remains compatible with integer-based reference.**
+The deeper requirement is:
 
-**But the Requirements have deliberately avoided prematurely selecting one final mathematical mechanism.**
+BitPangea requires canonical spatial reference whose meaning belongs to BitPangea rather than to any particular implementation.
 
-**The Survey Fabric must support:**
+A coordinate frame may express that reference.
 
-**determinism**
+It should not own it.
 
-**reproducibility**
+<a id="ch07-s08"></a>
 
-**exactness**
+### Exactness Before Convenience
 
-**canonical equivalence**
+The Foundational Survey Fabric favors exactness.
 
-**implementation independence**
+That preference arises because permanent place should not depend upon implementation-specific approximation.
 
-**stable spatial meaning**
+The current Survey direction remains compatible with integer-based reference.
 
-**It should avoid requiring that permanent spatial truth depend upon:**
+But the Requirements have deliberately avoided prematurely selecting one final mathematical mechanism.
 
-**floating-point accident**
+The Survey Fabric must support:
 
-**renderer precision**
+determinism
 
-**client-specific interpretation**
+reproducibility
 
-**hidden implementation state**
+exactness
 
-**approximate equality**
+canonical equivalence
 
-**The rule is:**
+implementation independence
 
-**At the Survey layer, equal means equal. Tolerance belongs above.**
+stable spatial meaning
 
-**This is one of the reasons the mathematical Specification remains deliberately unresolved.**
+It should avoid requiring that permanent spatial truth depend upon:
 
-**BitPangea has established what the mathematics must accomplish before selecting exactly how those mathematics will accomplish it.**
+floating-point accident
 
-**Finite Survey Domain**
+renderer precision
 
-**The Survey Domain itself is finite.**
+client-specific interpretation
 
-**Once the exact mathematical limits of that domain are formally adopted, changing them would not be an ordinary implementation update.**
+hidden implementation state
 
-**It would represent foundational architectural change.**
+approximate equality
 
-**That is because later systems may come to depend upon the meaning of canonical reference within that domain.**
+The rule is:
 
-**The principle is:**
+At the Survey layer, equal means equal. Tolerance belongs above.
 
-**Refine within the domain. Do not casually redefine the domain itself.**
+This is one of the reasons the mathematical Specification remains deliberately unresolved.
 
-**But the Survey Domain limit should not be mistaken for:**
+BitPangea has established what the mathematics must accomplish before selecting exactly how those mathematics will accomplish it.
 
-**The Extent**
+<a id="ch07-s09"></a>
 
-**The Verge**
+### Finite Survey Domain
 
-**a World Boundary**
+The Survey Domain itself is finite.
 
-**an Exterior**
+Once the exact mathematical limits of that domain are formally adopted, changing them would not be an ordinary implementation update.
 
-**a coastline**
+It would represent foundational architectural change.
 
-**a territorial edge**
+That is because later systems may come to depend upon the meaning of canonical reference within that domain.
 
-**Again:**
+The principle is:
 
-**Survey Domain limits define reference capacity. World limits are established above.**
+Refine within the domain. Do not casually redefine the domain itself.
 
-**Precision Without Relocation**
+But the Survey Domain limit should not be mistaken for:
 
-**BitPangea requires the ability to become more spatially precise over time.**
+The Extent
 
-**But increasing precision must not relocate existing place.**
+The Verge
 
-**The 85 Findings therefore preserve the requirement for refinement without prematurely choosing one final mechanism.**
+a World Boundary
 
-**Future exact precision may eventually use:**
+an Exterior
 
-**hierarchical refinement**
+a coastline
 
-**coordinate extension**
+a territorial edge
 
-**symbolic subdivision**
+Again:
 
-**exact fractions**
+Survey Domain limits define reference capacity. World limits are established above.
 
-**another mathematically exact mechanism**
+<a id="ch07-s10"></a>
 
-**The requirement is not that one specific structure be used.**
+### Precision Without Relocation
 
-**The requirement is:**
+BitPangea requires the ability to become more spatially precise over time.
 
-**More precision must not change previously established canonical meaning.**
+But increasing precision must not relocate existing place.
 
-**The principle is:**
+The 85 Findings therefore preserve the requirement for refinement without prematurely choosing one final mechanism.
 
-**Precision by extension, not migration.**
+Future exact precision may eventually use:
 
-**A more precise future Survey reference should deepen the description of place.**
+hierarchical refinement
 
-**It should not move the place.**
+coordinate extension
 
-**Pang**
+symbolic subdivision
 
-**BitPangea preserves Pang as its native canonical unit of linear spatial measure.**
+exact fractions
 
-**Pang belongs to the Survey architecture.**
+another mathematically exact mechanism
 
-**It establishes canonical spatial scale.**
+The requirement is not that one specific structure be used.
 
-**But Pang should not force BitPangea into an unnecessary permanent hierarchy of named subunits.**
+The requirement is:
 
-**Sub-Pang precision may be expressed through whatever exact mathematical mechanism ultimately survives Specification and Conformance.**
+More precision must not change previously established canonical meaning.
 
-**The distinction is:**
+The principle is:
 
-**Pang names the scale. Mathematics supplies finer precision.**
+Precision by extension, not migration.
 
-**Higher layers may translate Pang-based measure into other human-readable or experiential units.**
+A more precise future Survey reference should deepen the description of place.
 
-**Those translations must not redefine canonical Survey meaning.**
+It should not move the place.
 
-**Native Canonical Orientation**
+<a id="ch07-s11"></a>
 
-**The Foundational Survey Fabric also requires deterministic orientation.**
+### Pang
 
-**BitPangea preserves four native canonical directions:**
+BitPangea preserves Pang as its native canonical unit of linear spatial measure.
 
-**Pankor — North**
+Pang belongs to the Survey architecture.
 
-**Panvath — South**
+It establishes canonical spatial scale.
 
-**Panoris — East**
+But Pang should not force BitPangea into an unnecessary permanent hierarchy of named subunits.
 
-**Panvel — West**
+Sub-Pang precision may be expressed through whatever exact mathematical mechanism ultimately survives Specification and Conformance.
 
-**These names belong to BitPangea’s canonical Survey orientation.**
+The distinction is:
 
-**Higher layers may display orientation differently.**
+Pang names the scale. Mathematics supplies finer precision.
 
-**Interfaces may use familiar directional language.**
+Higher layers may translate Pang-based measure into other human-readable or experiential units.
 
-**Other representational systems may transform orientation.**
+Those translations must not redefine canonical Survey meaning.
 
-**But authoritative results must remain deterministically resolvable to the canonical Survey frame.**
+<a id="ch07-s12"></a>
 
-**The Survey term is therefore orientation.**
+### Native Canonical Orientation
 
-**The constitutional concept The Direction remains distinct.**
+The Foundational Survey Fabric also requires deterministic orientation.
 
-**Spatial Separation, Length, and Geometric Relationship**
+BitPangea preserves four native canonical directions:
 
-**The terminology collision audit clarified several mathematical concepts within the Survey Fabric.**
+Pankor — North
 
-**The Survey layer should avoid casually reusing constitutional terms such as:**
+Panvath — South
 
-**The Distance**
+Panoris — East
 
-**The Adjacency**
+Panvel — West
 
-**The Contiguity**
+These names belong to BitPangea’s canonical Survey orientation.
 
-**The Direction**
+Higher layers may display orientation differently.
 
-**The Boundary**
+Interfaces may use familiar directional language.
 
-**Instead, Survey mathematics should use qualified or more precise language.**
+Other representational systems may transform orientation.
 
-**For example:**
+But authoritative results must remain deterministically resolvable to the canonical Survey frame.
 
-**spatial separation**
+The Survey term is therefore orientation.
 
-**describes direct mathematical gap.**
+The constitutional concept The Direction remains distinct.
 
-**path length**
+<a id="ch07-s13"></a>
 
-**describes the length of a path.**
+### Spatial Separation, Length, and Geometric Relationship
 
-**geometric boundary**
+The terminology collision audit clarified several mathematical concepts within the Survey Fabric.
 
-**describes mathematical boundary.**
+The Survey layer should avoid casually reusing constitutional terms such as:
 
-**touch or contact**
+The Distance
 
-**describes lower-level geometric contact.**
+The Adjacency
 
-**connectedness or continuity**
+The Contiguity
 
-**describes lower-level mathematical connection.**
+The Direction
 
-**This preserves a crucial principle:**
+The Boundary
 
-**Spatial separation measures direct gap. Length measures path. Higher layers decide what path means.**
+Instead, Survey mathematics should use qualified or more precise language.
 
-**The Survey Fabric supplies mathematically exact facts.**
+For example:
 
-**Higher Architecture determines which of those facts acquire constitutional or World-level meaning.**
+spatial separation
 
-**Representation-Independent Spatial Truth**
+describes direct mathematical gap.
 
-**One visitor may encounter BitPangea as a globe.**
+path length
 
-**Another may use the flat lived World.**
+describes the length of a path.
 
-**Another may inspect a Parcel.**
+geometric boundary
 
-**Another may use a Survey tool.**
+describes mathematical boundary.
 
-**Another may eventually experience the World through a technology that does not yet exist.**
+touch or contact
 
-**Those experiences may differ radically.**
+describes lower-level geometric contact.
 
-**Canonical place should not.**
+connectedness or continuity
 
-**Conceptually:**
+describes lower-level mathematical connection.
 
-**Foundational Survey Fabric**
+This preserves a crucial principle:
 
-**↓**
+Spatial separation measures direct gap. Length measures path. Higher layers decide what path means.
 
-**one canonical spatial meaning**
+The Survey Fabric supplies mathematically exact facts.
 
-**↓**
+Higher Architecture determines which of those facts acquire constitutional or World-level meaning.
 
-**many valid representations**
+<a id="ch07-s14"></a>
 
-**The representation may:**
+### Representation-Independent Spatial Truth
 
-**translate**
+One visitor may encounter BitPangea as a globe.
 
-**project**
+Another may use the flat lived World.
 
-**simplify**
+Another may inspect a Parcel.
 
-**display**
+Another may use a Survey tool.
 
-**query**
+Another may eventually experience the World through a technology that does not yet exist.
 
-**or visualize**
+Those experiences may differ radically.
 
-**the Survey truth.**
+Canonical place should not.
 
-**It should not redefine it.**
+Conceptually:
 
-**This is what allows BitPangea to survive technological change.**
+Foundational Survey Fabric
 
-**A renderer can disappear.**
+↓
 
-**A map system can be replaced.**
+one canonical spatial meaning
 
-**A software stack can become obsolete.**
+↓
 
-**The World’s canonical spatial reference remains.**
+many valid representations
 
-**Specification, Conformance, and Reference Vectors**
+The representation may:
 
-**The Foundational Survey Fabric is no longer merely an informal concept.**
+translate
 
-**Its institutional architecture now consists of four linked frameworks:**
+project
 
-**Requirements**
+simplify
 
-**↓**
+display
 
-**Specification**
+query
 
-**↓**
+or visualize
 
-**Conformance**
+the Survey truth.
 
-**↓**
+It should not redefine it.
 
-**Reference Vectors**
+This is what allows BitPangea to survive technological change.
 
-**The Requirements establish what the Foundational Survey Fabric must satisfy.**
+A renderer can disappear.
 
-**The Specification will define the exact mathematics that satisfy those Requirements.**
+A map system can be replaced.
 
-**The Conformance framework will define how independent implementations prove they correctly implement the Specification.**
+A software stack can become obsolete.
 
-**The Reference Vectors will provide canonical inputs and expected outputs against which implementations can be tested.**
+The World’s canonical spatial reference remains.
 
-**Their governing questions are:**
+<a id="ch07-s15"></a>
 
-**Requirements:  
-What must be true?**
+### Specification, Conformance, and Reference Vectors
 
-**Specification:  
-Precisely how does the Foundational Survey Fabric work?**
+The Foundational Survey Fabric is no longer merely an informal concept.
 
-**Conformance:  
-How does software prove it correctly implements that Specification?**
+Its institutional architecture now consists of four linked frameworks:
 
-**Reference Vectors:  
-Given this exact input, what exact answer must every conforming implementation produce?**
+Requirements
 
-**This institutional separation protects BitPangea from confusing mathematical design with implementation proof.**
+↓
 
-**Eighty-Five Requirements**
+Specification
 
-**The Foundational Survey Fabric currently rests upon 85 audited Requirements.**
+↓
 
-**Those Findings cover seven broad areas:**
+Conformance
 
-1.  **Foundation, Purpose & Scope**
+↓
 
-2.  **Addressability, Meaning & Refinement**
+Reference Vectors
 
-3.  **Authority, Consensus & Evolution**
+The Requirements establish what the Foundational Survey Fabric must satisfy.
 
-4.  **Mathematical Ontology and Survey Domain Structure**
+The Specification will define the exact mathematics that satisfy those Requirements.
 
-5.  **Measurements & Orientation**
+The Conformance framework will define how independent implementations prove they correctly implement the Specification.
 
-6.  **Geometry, Topology, Measurement & Operations**
+The Reference Vectors will provide canonical inputs and expected outputs against which implementations can be tested.
 
-7.  **Knowability, Computability & Conformance**
+Their governing questions are:
 
-**All 85 Findings remain Requirements.**
+Requirements:\
+What must be true?
 
-**None was discarded merely because the architecture matured.**
+Specification:\
+Precisely how does the Foundational Survey Fabric work?
 
-**Instead, the Requirements Integrity Audit clarified boundaries, removed premature assumptions, and strengthened the separation between Survey responsibility and higher Architecture.**
+Conformance:\
+How does software prove it correctly implements that Specification?
 
-**This matters because the Survey Fabric must be stable conceptually before its mathematics become canonical.**
+Reference Vectors:\
+Given this exact input, what exact answer must every conforming implementation produce?
 
-**Requirements Before Mathematics**
+This institutional separation protects BitPangea from confusing mathematical design with implementation proof.
 
-**The Foundational Survey Fabric deliberately has not yet selected its final mathematics.**
+<a id="ch07-s16"></a>
 
-**That restraint is intentional.**
+### Eighty-Five Requirements
 
-**The Requirements now establish enough constraint to judge future mathematical candidates without pretending that a preferred candidate has already won.**
+The Foundational Survey Fabric currently rests upon 85 audited Requirements.
 
-**A candidate mathematical architecture should be able to demonstrate that it:**
+Those Findings cover seven broad areas:
 
-**satisfies the Requirements**
+1. Foundation, Purpose & Scope
+2. Addressability, Meaning & Refinement
+3. Authority, Consensus & Evolution
+4. Mathematical Ontology and Survey Domain Structure
+5. Measurements & Orientation
+6. Geometry, Topology, Measurement & Operations
+7. Knowability, Computability & Conformance
 
-**contains no known contradiction**
+All 85 Findings remain Requirements.
 
-**supports exact independent implementation**
+None was discarded merely because the architecture matured.
 
-**avoids unnecessary approximation**
+Instead, the Requirements Integrity Audit clarified boundaries, removed premature assumptions, and strengthened the separation between Survey responsibility and higher Architecture.
 
-**terminates where required**
+This matters because the Survey Fabric must be stable conceptually before its mathematics become canonical.
 
-**avoids hidden dependency**
+<a id="ch07-s17"></a>
 
-**preserves canonical meaning**
+### Requirements Before Mathematics
 
-**does not absorb higher-layer responsibility**
+The Foundational Survey Fabric deliberately has not yet selected its final mathematics.
 
-**and can eventually survive Conformance and Reference Vector testing**
+That restraint is intentional.
 
-**The principle is:**
+The Requirements now establish enough constraint to judge future mathematical candidates without pretending that a preferred candidate has already won.
 
-**Design when the Requirements justify exploration. Adopt only after the architecture survives the Requirements.**
+A candidate mathematical architecture should be able to demonstrate that it:
 
-**Conformance Is Not Authority**
+satisfies the Requirements
 
-**A conforming implementation can prove that it correctly follows the Specification.**
+contains no known contradiction
 
-**It cannot, merely by doing so, decide what Specification is canonical.**
+supports exact independent implementation
 
-**This distinction matters.**
+avoids unnecessary approximation
 
-**Conformance may establish:**
+terminates where required
 
-**correctness**
+avoids hidden dependency
 
-**compatibility**
+preserves canonical meaning
 
-**deterministic behavior**
+does not absorb higher-layer responsibility
 
-**expected results**
+and can eventually survive Conformance and Reference Vector testing
 
-**It does not establish canonical institutional standing.**
+The principle is:
 
-**That belongs to valid BitPangea authority.**
+Design when the Requirements justify exploration. Adopt only after the architecture survives the Requirements.
 
-**The distinction is:**
+<a id="ch07-s18"></a>
 
-**Verification can prove correctness. Governance establishes canonical standing.**
+### Conformance Is Not Authority
 
-**And even governance should not possess authority to rewrite foundational spatial truth casually once that truth has been validly established.**
+A conforming implementation can prove that it correctly follows the Specification.
 
-**Normative Interchange**
+It cannot, merely by doing so, decide what Specification is canonical.
 
-**The Survey Fabric must eventually support exact machine interchange.**
+This distinction matters.
 
-**But exact interchange does not necessarily require one universal file format forever.**
+Conformance may establish:
 
-**The final Specification may define:**
+correctness
 
-**one canonical serialization**
+compatibility
 
-**or:**
+deterministic behavior
 
-**multiple explicitly governed lossless normative encodings**
+expected results
 
-**If multiple normative encodings exist, they must resolve deterministically to the same canonical mathematical meaning.**
+It does not establish canonical institutional standing.
 
-**Internal software representations may differ.**
+That belongs to valid BitPangea authority.
 
-**Human-facing representations may differ.**
+The distinction is:
 
-**Archival forms may evolve.**
+Verification can prove correctness. Governance establishes canonical standing.
 
-**But authoritative interchange must not become ambiguous.**
+And even governance should not possess authority to rewrite foundational spatial truth casually once that truth has been validly established.
 
-**The principle is:**
+<a id="ch07-s19"></a>
 
-**Implement however you like. Exchange without ambiguity.**
+### Normative Interchange
 
-**And:**
+The Survey Fabric must eventually support exact machine interchange.
 
-**One meaning. Many durable expressions.**
+But exact interchange does not necessarily require one universal file format forever.
 
-**General Spatial Interpretation**
+The final Specification may define:
 
-**General Spatial Interpretation is now recognized as an Architecture domain above Spatial Ground and beneath the Parcel Cadastre in the demonstrated spatial sequence.**
+one canonical serialization
 
-**Its existence should no longer be described merely as a speculative possibility that may disappear into arbitrary queries.**
+or:
 
-**Its precise internal responsibilities remain subject to later Architecture inquiry.**
+multiple explicitly governed lossless normative encodings
 
-**That is different from questioning whether the domain exists at all.**
+If multiple normative encodings exist, they must resolve deterministically to the same canonical mathematical meaning.
 
-**The important boundary is:**
+Internal software representations may differ.
 
-**General Spatial Interpretation may derive, interpret, or expose usable spatial meaning.**
+Human-facing representations may differ.
 
-**It must not redefine the canonical Survey truth beneath it.**
+Archival forms may evolve.
 
-**And it must not acquire authority over canonical Parcel truth belonging to the Parcel Cadastre.**
+But authoritative interchange must not become ambiguous.
 
-**The Foundational Survey Fabric therefore constrains General Spatial Interpretation without designing it from below.**
+The principle is:
 
-**Survey Before Geography**
+Implement however you like. Exchange without ambiguity.
 
-**The Survey Fabric remains distinct from geography.**
+And:
 
-**Geography gives place character.**
+One meaning. Many durable expressions.
 
-**Survey gives place canonical reference.**
+<a id="ch07-s20"></a>
 
-**A mountain may rise at a location.**
+### General Spatial Interpretation
 
-**A road may cross it.**
+General Spatial Interpretation is now recognized as an Architecture domain above Spatial Ground and beneath the Parcel Cadastre in the demonstrated spatial sequence.
 
-**A district may include it.**
+Its existence should no longer be described merely as a speculative possibility that may disappear into arbitrary queries.
 
-**A city may eventually develop there.**
+Its precise internal responsibilities remain subject to later Architecture inquiry.
 
-**The mountain may disappear.**
+That is different from questioning whether the domain exists at all.
 
-**The road may move.**
+The important boundary is:
 
-**The district may change.**
+General Spatial Interpretation may derive, interpret, or expose usable spatial meaning.
 
-**The city may be rebuilt.**
+It must not redefine the canonical Survey truth beneath it.
 
-**The canonical spatial reference should remain intelligible.**
+And it must not acquire authority over canonical Parcel truth belonging to the Parcel Cadastre.
 
-**The distinction is:**
+The Foundational Survey Fabric therefore constrains General Spatial Interpretation without designing it from below.
 
-**Survey**
+<a id="ch07-s21"></a>
 
-**→ where**
+### Survey Before Geography
 
-**Geography**
+The Survey Fabric remains distinct from geography.
 
-**→ what is there**
+Geography gives place character.
 
-**This protects permanent place from legitimate change.**
+Survey gives place canonical reference.
 
-**Survey Before Rights**
+A mountain may rise at a location.
 
-**The same principle applies to rights and control.**
+A road may cross it.
 
-**A Parcel’s location does not depend upon who controls it.**
+A district may include it.
 
-**A transfer of rights should not move it.**
+A city may eventually develop there.
 
-**A change in identity should not alter its geometry.**
+The mountain may disappear.
 
-**A new control relationship should not rewrite its Survey reference.**
+The road may move.
 
-**Conceptually:**
+The district may change.
 
-**Survey**
+The city may be rebuilt.
 
-**→ where is the place?**
+The canonical spatial reference should remain intelligible.
 
-**Parcel Cadastre**
+The distinction is:
 
-**→ which Parcel is it?**
+Survey
 
-**Identity / Rights / Control**
+→ where
 
-**→ what relationships exist between actors and that Parcel?**
+Geography
 
-**These are separate responsibilities.**
+→ what is there
 
-**Higher social or operational relationships must not redefine foundational spatial truth.**
+This protects permanent place from legitimate change.
 
-**Supporting Exactly 21,000,000 Parcels**
+<a id="ch07-s22"></a>
 
-**The Foundational Survey Fabric must ultimately support a World containing exactly:**
+### Survey Before Rights
 
-**21,000,000 Parcels**
+The same principle applies to rights and control.
 
-**But that requirement should be understood correctly.**
+A Parcel’s location does not depend upon who controls it.
 
-**The Survey Fabric does not itself create those Parcels.**
+A transfer of rights should not move it.
 
-**It must provide spatial reference sufficiently exact and durable that higher Architecture can establish them coherently.**
+A change in identity should not alter its geometry.
 
-**The full architecture must eventually reconcile:**
+A new control relationship should not rewrite its Survey reference.
 
-**one finite World**
+Conceptually:
 
-**The Extent**
+Survey
 
-**finite Survey Domain**
+→ where is the place?
 
-**World Form**
+Parcel Cadastre
 
-**canonical spatial reference**
+→ which Parcel is it?
 
-**exactly 21,000,000 Parcels**
+Identity / Rights / Control
 
-**equal-area preference**
+→ what relationships exist between actors and that Parcel?
 
-**Parcel Adjacency**
+These are separate responsibilities.
 
-**The Verge**
+Higher social or operational relationships must not redefine foundational spatial truth.
 
-**Outliers**
+<a id="ch07-s23"></a>
 
-**non-Parcel spatial structures where permitted**
+### Supporting Exactly 21,000,000 Parcels
 
-**multiple representations**
+The Foundational Survey Fabric must ultimately support a World containing exactly:
 
-**persistent Parcel identity**
+21,000,000 Parcels
 
-**A Survey architecture that cannot support those later obligations is insufficient.**
+But that requirement should be understood correctly.
 
-**But the Survey Fabric should not attempt to solve those higher layers internally.**
+The Survey Fabric does not itself create those Parcels.
 
-**Again:**
+It must provide spatial reference sufficiently exact and durable that higher Architecture can establish them coherently.
 
-**Protect the boundary. Do not design the layer above from the layer below.**
+The full architecture must eventually reconcile:
 
-**The Visible Parcel Grammar Is Not the Survey Fabric**
+one finite World
 
-**BitPangea’s Parcel exploration continues to favor a three-orientation rhombille family as a visible Parcel grammar.**
+The Extent
 
-**That does not make rhombille tiling the Survey Fabric.**
+finite Survey Domain
 
-**The deeper Architecture now preserves an important distinction:**
+World Form
 
-**substrate ≠ Parcel experience**
+canonical spatial reference
 
-**The mathematical Survey substrate may remain unseen.**
+exactly 21,000,000 Parcels
 
-**The Parcel Cadastre may define exact Parcel territory against that substrate.**
+equal-area preference
 
-**The visible Parcel representation may use a coherent three-orientation grammar above both.**
+Parcel Adjacency
 
-**This prevents the visible tiling from dictating the deepest mathematics merely because it is attractive or intuitive.**
+The Verge
 
-**The principle is:**
+Outliers
 
-**Survey first. Build later.**
+non-Parcel spatial structures where permitted
 
-**And:**
+multiple representations
 
-**The visible Parcel grammar must be supported by the Survey architecture, not mistaken for it.**
+persistent Parcel identity
 
-**World Form and the Survey Fabric**
+A Survey architecture that cannot support those later obligations is insufficient.
 
-**BitPangea’s World Form is intentionally organic and asymmetric.**
+But the Survey Fabric should not attempt to solve those higher layers internally.
 
-**The Foundational Survey Fabric must be exact and deterministic.**
+Again:
 
-**Those qualities are not contradictory.**
+Protect the boundary. Do not design the layer above from the layer below.
 
-**They belong at different levels.**
+<a id="ch07-s24"></a>
 
-**At World scale:**
+### The Visible Parcel Grammar Is Not the Survey Fabric
 
-**organic form**
+BitPangea’s Parcel exploration continues to favor a three-orientation rhombille family as a visible Parcel grammar.
 
-**may dominate.**
+That does not make rhombille tiling the Survey Fabric.
 
-**At Survey scale:**
+The deeper Architecture now preserves an important distinction:
 
-**mathematical exactness**
+substrate ≠ Parcel experience
 
-**must dominate.**
+The mathematical Survey substrate may remain unseen.
 
-**The Survey Fabric should therefore be rigorous enough that the visible World does not need to look mathematically regular everywhere.**
+The Parcel Cadastre may define exact Parcel territory against that substrate.
 
-**The governing principle is:**
+The visible Parcel representation may use a coherent three-orientation grammar above both.
 
-**The World may look organic because its deepest spatial architecture is sufficiently exact not to require visible regularity.**
+This prevents the visible tiling from dictating the deepest mathematics merely because it is attractive or intuitive.
 
-**The Verge and Other Non-Parcel Spatial Conditions**
+The principle is:
 
-**Earlier versions of this section used Frontier as though it were a terminal spatial morphology.**
+Survey first. Build later.
 
-**That language is now superseded.**
+And:
 
-**The Frontier is epistemic.**
+The visible Parcel grammar must be supported by the Survey architecture, not mistaken for it.
 
-**The relevant Creator-period spatial concept is The Verge.**
+<a id="ch07-s25"></a>
 
-**The Survey Fabric must be capable of referencing whatever spatial conditions higher Architecture legitimately establishes, including:**
+### World Form and the Survey Fabric
 
-**The Verge**
+BitPangea’s World Form is intentionally organic and asymmetric.
 
-**Outliers**
+The Foundational Survey Fabric must be exact and deterministic.
 
-**World-scale infrastructure**
+Those qualities are not contradictory.
 
-**other non-Parcel spatial structures**
+They belong at different levels.
 
-**if they become authoritative parts of the World.**
+At World scale:
 
-**Again, this does not mean the Survey Fabric defines them.**
+organic form
 
-**It means their authoritative spatial locations must remain representable.**
+may dominate.
 
-**The distinction is:**
+At Survey scale:
 
-**Survey tells where. Higher Architecture tells what.**
+mathematical exactness
 
-**Persistence**
+must dominate.
 
-**The word Foundational carries an obligation.**
+The Survey Fabric should therefore be rigorous enough that the visible World does not need to look mathematically regular everywhere.
 
-**The Survey Fabric is intended to endure.**
+The governing principle is:
 
-**That does not mean the first mathematical proposal should become immutable.**
+The World may look organic because its deepest spatial architecture is sufficiently exact not to require visible regularity.
 
-**Before canonical adoption:**
+<a id="ch07-s26"></a>
 
-**models should be tested**
+### The Verge and Other Non-Parcel Spatial Conditions
 
-**alternatives should be explored**
+Earlier versions of this section used Frontier as though it were a terminal spatial morphology.
 
-**contradictions should be exposed**
+That language is now superseded.
 
-**pathological cases should be attacked**
+The Frontier is epistemic.
 
-**better mathematics should be allowed to replace weaker candidates**
+The relevant Creator-period spatial concept is The Verge.
 
-**But once canonical spatial reference has been validly established, changing its meaning should be extraordinarily difficult.**
+The Survey Fabric must be capable of referencing whatever spatial conditions higher Architecture legitimately establishes, including:
 
-**Why?**
+The Verge
 
-**Because higher systems may depend upon it:**
+Outliers
 
-**Parcel identity**
+World-scale infrastructure
 
-**Parcel geometry**
+other non-Parcel spatial structures
 
-**geography**
+if they become authoritative parts of the World.
 
-**infrastructure**
+Again, this does not mean the Survey Fabric defines them.
 
-**construction**
+It means their authoritative spatial locations must remain representable.
 
-**rights**
+The distinction is:
 
-**history**
+Survey tells where. Higher Architecture tells what.
 
-**navigation**
+<a id="ch07-s27"></a>
 
-**services**
+### Persistence
 
-**institutions**
+The word Foundational carries an obligation.
 
-**civilization**
+The Survey Fabric is intended to endure.
 
-**The design process therefore carries an unusual responsibility:**
+That does not mean the first mathematical proposal should become immutable.
 
-**Experiment freely before the foundation is established so that the World does not have to experiment with its foundation afterward.**
+Before canonical adoption:
 
-**Authority and Derivation**
+models should be tested
 
-**BitPangea must preserve a distinction between authoritative truth and derived representation.**
+alternatives should be explored
 
-**For example:**
+contradictions should be exposed
 
-**Foundational Survey Fabric**
+pathological cases should be attacked
 
-**→ authoritative canonical spatial reference**
+better mathematics should be allowed to replace weaker candidates
 
-**Parcel Cadastre**
+But once canonical spatial reference has been validly established, changing its meaning should be extraordinarily difficult.
 
-**→ authoritative canonical Parcel truth**
+Why?
 
-**Map**
+Because higher systems may depend upon it:
 
-**→ represents spatial information**
+Parcel identity
 
-**Globe**
+Parcel geometry
 
-**→ represents the World at planetary scale**
+geography
 
-**Viewer**
+infrastructure
 
-**→ presents selected information**
+construction
 
-**Search**
+rights
 
-**→ discovers information**
+history
 
-**Builder**
+navigation
 
-**→ requests permissible World change**
+services
 
-**These systems may interact closely.**
+institutions
 
-**Reference does not transfer authority.**
+civilization
 
-**A map may display a Parcel accurately without becoming the Parcel Cadastre.**
+The design process therefore carries an unusual responsibility:
 
-**A globe may depict BitPangea without becoming the Survey Fabric.**
+Experiment freely before the foundation is established so that the World does not have to experiment with its foundation afterward.
 
-**A Builder may modify permitted World state without changing where the Parcel exists.**
+<a id="ch07-s28"></a>
 
-**This separation allows BitPangea to grow technically without losing institutional clarity.**
+### Authority and Derivation
 
-**A Survey Fabric Beneath History**
+BitPangea must preserve a distinction between authoritative truth and derived representation.
 
-**The Foundational Survey Fabric ultimately serves something larger than surveying.**
+For example:
 
-**It allows history to remain attached to place.**
+Foundational Survey Fabric
 
-**Imagine a location that begins undeveloped.**
+→ authoritative canonical spatial reference
 
-**Something is later built there.**
+Parcel Cadastre
 
-**A community forms.**
+→ authoritative canonical Parcel truth
 
-**An event occurs.**
+Map
 
-**The structure disappears.**
+→ represents spatial information
 
-**Another replaces it.**
+Globe
 
-**The place becomes culturally significant.**
+→ represents the World at planetary scale
 
-**Generations later, its history is remembered.**
+Viewer
 
-**For that sequence to possess spatial continuity, there must remain a durable answer to:**
+→ presents selected information
 
-**Where did this happen?**
+Search
 
-**The Survey Fabric exists, in part, to make that answer permanent.**
+→ discovers information
 
-**Without persistent place, history becomes a collection of detached events.**
+Builder
 
-**With persistent place, history can belong to a World.**
+→ requests permissible World change
 
-**What Is Established**
+These systems may interact closely.
 
-**The current Foundational Survey Fabric architecture supports the following statements:**
+Reference does not transfer authority.
 
-**BitPangea requires permanent canonical spatial reference.**
+A map may display a Parcel accurately without becoming the Parcel Cadastre.
 
-**That responsibility belongs to the Foundational Survey Fabric.**
+A globe may depict BitPangea without becoming the Survey Fabric.
 
-**The Foundational Survey Fabric is:**
+A Builder may modify permitted World state without changing where the Parcel exists.
 
-**minimal**
+This separation allows BitPangea to grow technically without losing institutional clarity.
 
-**exact**
+<a id="ch07-s29"></a>
 
-**finite**
+### A Survey Fabric Beneath History
 
-**planar**
+The Foundational Survey Fabric ultimately serves something larger than surveying.
 
-**semantically neutral**
+It allows history to remain attached to place.
 
-**The Survey Fabric exists beneath Spatial Ground, General Spatial Interpretation, and the Parcel Cadastre.**
+Imagine a location that begins undeveloped.
 
-**The demonstrated spatial dependency is:**
+Something is later built there.
 
-**Foundational Survey Fabric → Spatial Ground → General Spatial Interpretation → Parcel Cadastre**
+A community forms.
 
-**Survey units are not Parcels.**
+An event occurs.
 
-**The Survey Domain is not the World.**
+The structure disappears.
 
-**A valid Survey reference does not automatically establish World membership.**
+Another replaces it.
 
-**Every authoritative World-space location must be representable within the Survey Domain.**
+The place becomes culturally significant.
 
-**The Survey Domain is finite.**
+Generations later, its history is remembered.
 
-**Canonical Survey meaning must remain deterministic and representation-independent.**
+For that sequence to possess spatial continuity, there must remain a durable answer to:
 
-**Precision must be extensible without relocating previously established place.**
+Where did this happen?
 
-**Pang is BitPangea’s native canonical linear measure.**
+The Survey Fabric exists, in part, to make that answer permanent.
 
-**Pankor, Panvath, Panoris, and Panvel form the native canonical Survey orientation.**
+Without persistent place, history becomes a collection of detached events.
 
-**The Parcel Cadastre remains authoritative for Parcel identity and territorial definition.**
+With persistent place, history can belong to a World.
 
-**Geography does not redefine Survey truth.**
+<a id="ch07-s30"></a>
 
-**Rights and control do not redefine Survey truth.**
+### What Is Established
 
-**The Survey Fabric must support higher Architecture without designing those higher domains from below.**
+The current Foundational Survey Fabric architecture supports the following statements:
 
-**The Foundational Survey Fabric is institutionally organized as:**
+BitPangea requires permanent canonical spatial reference.
 
-**Requirements → Specification → Conformance → Reference Vectors**
+That responsibility belongs to the Foundational Survey Fabric.
 
-**All 85 Findings remain Requirements.**
+The Foundational Survey Fabric is:
 
-**The mathematics remain deliberately unresolved.**
+minimal
 
-**What Remains Open**
+exact
 
-**The Foundational Survey Fabric is institutionally established but mathematically incomplete.**
+finite
 
-**Important questions remain, including:**
+planar
 
-**the final Survey Domain geometry**
+semantically neutral
 
-**the exact mathematical origin**
+The Survey Fabric exists beneath Spatial Ground, General Spatial Interpretation, and the Parcel Cadastre.
 
-**the complete canonical frame**
+The demonstrated spatial dependency is:
 
-**the final canonical addressing mechanism**
+Foundational Survey Fabric → Spatial Ground → General Spatial Interpretation → Parcel Cadastre
 
-**the exact refinement mechanism**
+Survey units are not Parcels.
 
-**the maximum or unbounded precision model**
+The Survey Domain is not the World.
 
-**the final angular system**
+A valid Survey reference does not automatically establish World membership.
 
-**the final geometric primitive set**
+Every authoritative World-space location must be representable within the Survey Domain.
 
-**the canonical normalization rules**
+The Survey Domain is finite.
 
-**the final transformation mathematics**
+Canonical Survey meaning must remain deterministic and representation-independent.
 
-**the exact normative serialization model**
+Precision must be extensible without relocating previously established place.
 
-**whether one or multiple normative encodings are adopted**
+Pang is BitPangea’s native canonical linear measure.
 
-**the reference implementation or implementations**
+Pankor, Panvath, Panoris, and Panvel form the native canonical Survey orientation.
 
-**canonical Reference Vector values**
+The Parcel Cadastre remains authoritative for Parcel identity and territorial definition.
 
-**the final Conformance corpus**
+Geography does not redefine Survey truth.
 
-**the exact mathematical relationship between Survey space and higher World-space designation**
+Rights and control do not redefine Survey truth.
 
-**the precise mathematical support required for exactly 21,000,000 Parcels**
+The Survey Fabric must support higher Architecture without designing those higher domains from below.
 
-**These questions remain open deliberately.**
+The Foundational Survey Fabric is institutionally organized as:
 
-**The Requirements define the problem.**
+Requirements → Specification → Conformance → Reference Vectors
 
-**They do not pretend the solution has already been selected.**
+All 85 Findings remain Requirements.
 
-**The Principle**
+The mathematics remain deliberately unresolved.
 
-**The Foundational Survey Fabric is where BitPangea moves from the idea of persistent place toward the mathematics capable of preserving it.**
+<a id="ch07-s31"></a>
 
-**World Form tells us what BitPangea should become visibly.**
+### What Remains Open
 
-**The Parcel constraint tells us what must ultimately exist within the World.**
+The Foundational Survey Fabric is institutionally established but mathematically incomplete.
 
-**The Parcel Cadastre will tell us which Parcel occupies which authoritative place.**
+Important questions remain, including:
 
-**The Foundational Survey Fabric asks the deeper question:**
+the final Survey Domain geometry
 
-**What permanent canonical spatial truth must exist beneath all of them?**
+the exact mathematical origin
 
-**Its purpose is not to make BitPangea look mathematical.**
+the complete canonical frame
 
-**Its purpose is to make BitPangea spatially durable.**
+the final canonical addressing mechanism
 
-**Interfaces may change.**
+the exact refinement mechanism
 
-**Maps may change.**
+the maximum or unbounded precision model
 
-**Geography may change.**
+the final angular system
 
-**Buildings may change.**
+the final geometric primitive set
 
-**Infrastructure may change.**
+the canonical normalization rules
 
-**Rights may change.**
+the final transformation mathematics
 
-**Communities may change.**
+the exact normative serialization model
 
-**Civilization may change.**
+whether one or multiple normative encodings are adopted
 
-**But if BitPangea is to possess meaningful place across those changes, something beneath them must remain exact enough to answer the simplest spatial question:**
+the reference implementation or implementations
 
-**Where?**
+canonical Reference Vector values
 
-**That is the purpose of the Foundational Survey Fabric.**
+the final Conformance corpus
+
+the exact mathematical relationship between Survey space and higher World-space designation
+
+the precise mathematical support required for exactly 21,000,000 Parcels
+
+These questions remain open deliberately.
+
+The Requirements define the problem.
+
+They do not pretend the solution has already been selected.
+
+<a id="ch07-s32"></a>
+
+### The Principle
+
+The Foundational Survey Fabric is where BitPangea moves from the idea of persistent place toward the mathematics capable of preserving it.
+
+World Form tells us what BitPangea should become visibly.
+
+The Parcel constraint tells us what must ultimately exist within the World.
+
+The Parcel Cadastre will tell us which Parcel occupies which authoritative place.
+
+The Foundational Survey Fabric asks the deeper question:
+
+What permanent canonical spatial truth must exist beneath all of them?
+
+Its purpose is not to make BitPangea look mathematical.
+
+Its purpose is to make BitPangea spatially durable.
+
+Interfaces may change.
+
+Maps may change.
+
+Geography may change.
+
+Buildings may change.
+
+Infrastructure may change.
+
+Rights may change.
+
+Communities may change.
+
+Civilization may change.
+
+But if BitPangea is to possess meaningful place across those changes, something beneath them must remain exact enough to answer the simplest spatial question:
+
+Where?
+
+That is the purpose of the Foundational Survey Fabric.
+
+---
+
+<a id="ch08"></a>
 
 ## VIII. Parcel Geometry and Cadastre
 
-**The Foundational Survey Fabric establishes canonical spatial reference.**
+The Foundational Survey Fabric establishes canonical spatial reference.
 
-**The Parcel Cadastre establishes canonical Parcel identity and territorial definition against that reference.**
+The Parcel Cadastre establishes canonical Parcel identity and territorial definition against that reference.
 
-**Exactly 21,000,000 Parcels must exist.**
+Exactly 21,000,000 Parcels must exist.
 
-**But a fixed count alone does not create a cadastre.**
+But a fixed count alone does not create a cadastre.
 
-**For those Parcels to become part of one coherent World, BitPangea must determine:**
+For those Parcels to become part of one coherent World, BitPangea must determine:
 
-**where each Parcel exists**
+where each Parcel exists
 
-**how each Parcel is spatially defined**
+how each Parcel is spatially defined
 
-**how Parcels relate to one another**
+how Parcels relate to one another
 
-**how each Parcel remains uniquely identifiable**
+how each Parcel remains uniquely identifiable
 
-**and which Architecture domain possesses authority to say what a Parcel is**
+and which Architecture domain possesses authority to say what a Parcel is
 
-**These questions bring together two closely related but distinct subjects:**
+These questions bring together two closely related but distinct subjects:
 
-**Parcel Geometry concerns the spatial form and relationships of Parcels.**
+Parcel Geometry concerns the spatial form and relationships of Parcels.
 
-**Parcel Cadastre concerns their canonical identity, fixed position, territorial definition, and authoritative organization.**
+Parcel Cadastre concerns their canonical identity, fixed position, territorial definition, and authoritative organization.
 
-**The distinction is fundamental.**
+The distinction is fundamental.
 
-**Geometry gives the Parcel form. The Cadastre gives the Parcel identity.**
+Geometry gives the Parcel form. The Cadastre gives the Parcel identity.
 
-**Neither should be confused with the representation through which the Parcel is displayed.**
+Neither should be confused with the representation through which the Parcel is displayed.
 
-**From Survey Reference to Parcel Truth**
+<a id="ch08-s01"></a>
 
-**The Parcel Cadastre does not create the deepest spatial truth of BitPangea.**
+### From Survey Reference to Parcel Truth
 
-**It depends upon Architecture beneath it.**
+The Parcel Cadastre does not create the deepest spatial truth of BitPangea.
 
-**The strongest demonstrated spatial dependency is:**
+It depends upon Architecture beneath it.
 
-**Foundational Survey Fabric**
+The strongest demonstrated spatial dependency is:
 
-**↓**
+Foundational Survey Fabric
 
-**Spatial Ground**
+↓
 
-**↓**
+Spatial Ground
 
-**General Spatial Interpretation**
+↓
 
-**↓**
+General Spatial Interpretation
 
-**Parcel Cadastre**
+↓
 
-**This sequence matters because each domain carries a different responsibility.**
+Parcel Cadastre
 
-**The Foundational Survey Fabric establishes canonical spatial reference.**
+This sequence matters because each domain carries a different responsibility.
 
-**Spatial Ground carries that reference into the usable spatial basis of the World.**
+The Foundational Survey Fabric establishes canonical spatial reference.
 
-**General Spatial Interpretation derives and organizes broader spatial meaning without redefining the reference beneath it.**
+Spatial Ground carries that reference into the usable spatial basis of the World.
 
-**The Parcel Cadastre establishes:**
+General Spatial Interpretation derives and organizes broader spatial meaning without redefining the reference beneath it.
 
-**Which canonical Parcel occupies which authoritative place?**
+The Parcel Cadastre establishes:
 
-**This ordering protects the architecture.**
+Which canonical Parcel occupies which authoritative place?
 
-**The Survey Fabric can define canonical reference without turning every Survey construct into a Parcel.**
+This ordering protects the architecture.
 
-**The Parcel Cadastre can define Parcels without becoming the deepest mathematical substrate of the World.**
+The Survey Fabric can define canonical reference without turning every Survey construct into a Parcel.
 
-**Thus:**
+The Parcel Cadastre can define Parcels without becoming the deepest mathematical substrate of the World.
 
-**Survey establishes where. Cadastre establishes which Parcel.**
+Thus:
 
-**Survey Units Are Not Parcels**
+Survey establishes where. Cadastre establishes which Parcel.
 
-**One of the most important architectural distinctions is:**
+<a id="ch08-s02"></a>
 
-**Survey units are not Parcels.**
+### Survey Units Are Not Parcels
 
-**A mathematical cell, subdivision, reference element, coordinate construct, precision unit, or implementation structure inside the Foundational Survey Fabric should not automatically become a Parcel.**
+One of the most important architectural distinctions is:
 
-**BitPangea must contain exactly:**
+Survey units are not Parcels.
 
-**21,000,000 canonical Parcels**
+A mathematical cell, subdivision, reference element, coordinate construct, precision unit, or implementation structure inside the Foundational Survey Fabric should not automatically become a Parcel.
 
-**But that does not mean the Survey Fabric must contain exactly 21,000,000 mathematical units.**
+BitPangea must contain exactly:
 
-**This protects both systems.**
+21,000,000 canonical Parcels
 
-**The Survey architecture can remain sufficiently precise and extensible to describe the World.**
+But that does not mean the Survey Fabric must contain exactly 21,000,000 mathematical units.
 
-**The Parcel Cadastre can define exactly the Parcel supply BitPangea requires.**
+This protects both systems.
 
-**The two systems interact.**
+The Survey architecture can remain sufficiently precise and extensible to describe the World.
 
-**They should not collapse into one another.**
+The Parcel Cadastre can define exactly the Parcel supply BitPangea requires.
 
-**Why Geometry Matters**
+The two systems interact.
 
-**A Parcel could theoretically be nothing more than an identifier associated with an arbitrary area of digital space.**
+They should not collapse into one another.
 
-**BitPangea seeks something more coherent.**
+<a id="ch08-s03"></a>
 
-**Parcel geometry influences:**
+### Why Geometry Matters
 
-**Parcel Adjacency**
+A Parcel could theoretically be nothing more than an identifier associated with an arbitrary area of digital space.
 
-**local spatial coherence**
+BitPangea seeks something more coherent.
 
-**orientation**
+Parcel geometry influences:
 
-**construction**
+Parcel Adjacency
 
-**infrastructure**
+local spatial coherence
 
-**navigation**
+orientation
 
-**regional formation**
+construction
 
-**representation**
+infrastructure
 
-**World identity**
+navigation
 
-**The geometry therefore cannot be selected merely because it creates an attractive pattern.**
+regional formation
 
-**Nor should it be chosen solely because it is convenient to implement.**
+representation
 
-**The geometry must serve the architecture of the World.**
+World identity
 
-**That places several requirements around the search:**
+The geometry therefore cannot be selected merely because it creates an attractive pattern.
 
-**local coherence**
+Nor should it be chosen solely because it is convenient to implement.
 
-**equal-area preference**
+The geometry must serve the architecture of the World.
 
-**one dominant Parcel grammar**
+That places several requirements around the search:
 
-**deterministic spatial relationships**
+local coherence
 
-**compatibility with the Foundational Survey Fabric**
+equal-area preference
 
-**compatibility with World Form**
+one dominant Parcel grammar
 
-**compatibility with The Verge and other non-Parcel conditions**
+deterministic spatial relationships
 
-**compatibility with exactly 21,000,000 Parcels**
+compatibility with the Foundational Survey Fabric
 
-**These requirements constrain the design without pretending that the final Parcel geometry has already been solved.**
+compatibility with World Form
 
-**The Rhombille Direction**
+compatibility with The Verge and other non-Parcel conditions
 
-**The strongest visible Parcel-design direction remains a three-orientation rhombille family.**
+compatibility with exactly 21,000,000 Parcels
 
-**Rhombille geometry provides a repeating fabric of congruent rhombi organized through three principal orientations.**
+These requirements constrain the design without pretending that the final Parcel geometry has already been solved.
 
-**Within BitPangea, those orientations create a local grammar based upon 60° and 120° relationships.**
+<a id="ch08-s04"></a>
 
-**The significance is not merely aesthetic.**
+### The Rhombille Direction
 
-**A three-orientation Parcel grammar offers:**
+The strongest visible Parcel-design direction remains a three-orientation rhombille family.
 
-**strong local coherence**
+Rhombille geometry provides a repeating fabric of congruent rhombi organized through three principal orientations.
 
-**clear neighborhood relationships**
+Within BitPangea, those orientations create a local grammar based upon 60° and 120° relationships.
 
-**a recognizable visual identity**
+The significance is not merely aesthetic.
 
-**departure from conventional orthogonal grid logic**
+A three-orientation Parcel grammar offers:
 
-**potential compatibility with equal-area Parcels**
+strong local coherence
 
-**It can become distinctly BitPangean.**
+clear neighborhood relationships
 
-**But its architectural role should now be stated carefully.**
+a recognizable visual identity
 
-**The rhombille family is a leading Parcel grammar. It is not automatically the Foundational Survey Fabric.**
+departure from conventional orthogonal grid logic
 
-**The deeper Survey substrate may remain mathematically distinct and visually unseen.**
+potential compatibility with equal-area Parcels
 
-**This preserves the principle:**
+It can become distinctly BitPangean.
 
-**Substrate ≠ Parcel experience.**
+But its architectural role should now be stated carefully.
 
-**The visible Parcel fabric may derive from deeper canonical spatial truth without becoming identical to it.**
+The rhombille family is a leading Parcel grammar. It is not automatically the Foundational Survey Fabric.
 
-**Why Not a Conventional Square Grid?**
+The deeper Survey substrate may remain mathematically distinct and visually unseen.
 
-**A conventional square grid would make many things easier.**
+This preserves the principle:
 
-**Coordinates are familiar.**
+Substrate ≠ Parcel experience.
 
-**Indexing is straightforward.**
+The visible Parcel fabric may derive from deeper canonical spatial truth without becoming identical to it.
 
-**Neighbor relationships are simple.**
+<a id="ch08-s05"></a>
 
-**Rendering is convenient.**
+### Why Not a Conventional Square Grid?
 
-**Implementation tools already understand it.**
+A conventional square grid would make many things easier.
 
-**But convenience alone is not sufficient reason to make one geometry authoritative.**
+Coordinates are familiar.
 
-**A square grid could encourage the wrong architectural direction:**
+Indexing is straightforward.
 
-**easy grid**
+Neighbor relationships are simple.
 
-**↓**
+Rendering is convenient.
 
-**easy Parcel generation**
+Implementation tools already understand it.
 
-**↓**
+But convenience alone is not sufficient reason to make one geometry authoritative.
 
-**World forced to fit the grid**
+A square grid could encourage the wrong architectural direction:
 
-**BitPangea instead requires:**
+easy grid
 
-**World constraints**
+↓
 
-**↓**
+easy Parcel generation
 
-**canonical Survey architecture**
+↓
 
-**↓**
+World forced to fit the grid
 
-**Parcel Cadastre**
+BitPangea instead requires:
 
-**↓**
+World constraints
 
-**appropriate Parcel geometry**
+↓
 
-**The Parcel geometry must fit the architecture.**
+canonical Survey architecture
 
-**The architecture should not be rewritten merely to accommodate the easiest grid.**
+↓
 
-**Local Coherence**
+Parcel Cadastre
 
-**Parcel geometry must remain locally coherent.**
+↓
 
-**A visitor examining one part of BitPangea should encounter a Parcel fabric whose nearby relationships make sense.**
+appropriate Parcel geometry
 
-**Neighbors should be determinable.**
+The Parcel geometry must fit the architecture.
 
-**Orientation should be intelligible.**
+The architecture should not be rewritten merely to accommodate the easiest grid.
 
-**Shared relationships should follow consistent rules.**
+<a id="ch08-s06"></a>
 
-**Local structure should not change arbitrarily merely to solve a distant global problem.**
+### Local Coherence
 
-**This does not necessarily require every Parcel everywhere in BitPangea to share one single orientation.**
+Parcel geometry must remain locally coherent.
 
-**The stronger principle is:**
+A visitor examining one part of BitPangea should encounter a Parcel fabric whose nearby relationships make sense.
 
-**Local coherence does not require simplistic global uniformity.**
+Neighbors should be determinable.
 
-**The final global architecture may require more sophistication than a repeated pattern can provide by itself.**
+Orientation should be intelligible.
 
-**That sophistication should not destroy the intelligibility of the local Parcel fabric.**
+Shared relationships should follow consistent rules.
 
-**Three Orientations**
+Local structure should not change arbitrarily merely to solve a distant global problem.
 
-**The three-orientation character of the rhombille family is particularly valuable.**
+This does not necessarily require every Parcel everywhere in BitPangea to share one single orientation.
 
-**Rather than organizing the Parcel fabric around only horizontal and vertical relationships, BitPangea can possess a local directional grammar derived from three orientation families.**
+The stronger principle is:
 
-**This may eventually influence:**
+Local coherence does not require simplistic global uniformity.
 
-**Parcel Adjacency**
+The final global architecture may require more sophistication than a repeated pattern can provide by itself.
 
-**construction alignment**
+That sophistication should not destroy the intelligibility of the local Parcel fabric.
 
-**movement**
+<a id="ch08-s07"></a>
 
-**infrastructure**
+### Three Orientations
 
-**regional organization**
+The three-orientation character of the rhombille family is particularly valuable.
 
-**visual identity**
+Rather than organizing the Parcel fabric around only horizontal and vertical relationships, BitPangea can possess a local directional grammar derived from three orientation families.
 
-**But those consequences should not be prescribed before their Architecture domains are ready.**
+This may eventually influence:
 
-**At this stage, the important conclusion is narrower:**
+Parcel Adjacency
 
-**The Parcel fabric may possess a consistent three-orientation local grammar without becoming an ordinary square grid.**
+construction alignment
 
-**The final indexing system, transition rules, global arrangement, and relationship to World Form remain unresolved.**
+movement
 
-**Equal Area**
+infrastructure
 
-**BitPangea continues to strongly prefer equal-area Parcels.**
+regional organization
 
-**That preference should be interpreted carefully.**
+visual identity
 
-**Equal area means that, if the final architecture supports it, one canonical Parcel should represent the same amount of canonical spatial area as another.**
+But those consequences should not be prescribed before their Architecture domains are ready.
 
-**It does not mean all Parcels are equal in every other respect.**
+At this stage, the important conclusion is narrower:
 
-**Two equal-area Parcels may differ because of:**
+The Parcel fabric may possess a consistent three-orientation local grammar without becoming an ordinary square grid.
 
-**location**
+The final indexing system, transition rules, global arrangement, and relationship to World Form remain unresolved.
 
-**Parcel Adjacency**
+<a id="ch08-s08"></a>
 
-**geography**
+### Equal Area
 
-**access**
+BitPangea continues to strongly prefer equal-area Parcels.
 
-**infrastructure**
+That preference should be interpreted carefully.
 
-**development**
+Equal area means that, if the final architecture supports it, one canonical Parcel should represent the same amount of canonical spatial area as another.
 
-**history**
+It does not mean all Parcels are equal in every other respect.
 
-**culture**
+Two equal-area Parcels may differ because of:
 
-**community**
+location
 
-**use**
+Parcel Adjacency
 
-**Thus:**
+geography
 
-**equal area**
+access
 
-**≠**
+infrastructure
 
-**equal experience**
+development
 
-**equal area**
+history
 
-**≠**
+culture
 
-**equal desirability**
+community
 
-**equal area**
+use
 
-**≠**
+Thus:
 
-**equal significance**
+equal area
 
-**equal area**
+≠
 
-**≠**
+equal experience
 
-**equal economic value**
+equal area
 
-**Equal area can normalize the spatial unit.**
+≠
 
-**Civilization can still differentiate the place.**
+equal desirability
 
-**Because the final mathematics remain unresolved, equal area remains a strong design direction rather than a completed mathematical claim.**
+equal area
 
-**One Dominant Parcel Grammar**
+≠
 
-**BitPangea also favors one dominant Parcel morphology or visual grammar.**
+equal significance
 
-**The word dominant matters.**
+equal area
 
-**It should not be interpreted as:**
+≠
 
-**every spatial object everywhere must have one identical shape.**
+equal economic value
 
-**The purpose is to avoid a Cadastre composed arbitrarily from unrelated geometries.**
+Equal area can normalize the spatial unit.
 
-**A dominant Parcel grammar can provide:**
+Civilization can still differentiate the place.
 
-**coherence**
+Because the final mathematics remain unresolved, equal area remains a strong design direction rather than a completed mathematical claim.
 
-**recognizability**
+<a id="ch08-s09"></a>
 
-**predictability**
+### One Dominant Parcel Grammar
 
-**consistent Parcel relationships**
+BitPangea also favors one dominant Parcel morphology or visual grammar.
 
-**strong World identity**
+The word dominant matters.
 
-**If exceptions become necessary, they should arise because the architecture requires them.**
+It should not be interpreted as:
 
-**Not because variation is visually interesting.**
+every spatial object everywhere must have one identical shape.
 
-**The governing rule is:**
+The purpose is to avoid a Cadastre composed arbitrarily from unrelated geometries.
 
-**Prefer a rule before an exception.**
+A dominant Parcel grammar can provide:
 
-**And:**
+coherence
 
-**When an exception exists, it should be explainable.**
+recognizability
 
-**The Verge Is Not a Parcel Problem to Hide**
+predictability
 
-**Earlier versions of this section treated Frontier as non-Parcel terminal morphology.**
+consistent Parcel relationships
 
-**That terminology is now superseded.**
+strong World identity
 
-**The relevant spatial concept is The Verge.**
+If exceptions become necessary, they should arise because the architecture requires them.
 
-**The Verge belongs to Creator design space for terminal World-form expression.**
+Not because variation is visually interesting.
 
-**It should not be forced into ordinary Parcel geometry merely because the Parcel fabric approaches the terminal form of the World.**
+The governing rule is:
 
-**If the Parcel grammar encounters a complex terminal condition, it may be tempting to distort Parcels to make the tiling visually fill every remaining space.**
+Prefer a rule before an exception.
 
-**That could solve appearance while damaging the deeper architecture.**
+And:
 
-**BitPangea preserves a better possibility:**
+When an exception exists, it should be explainable.
 
-**The Parcel fabric may not exhaust the World.**
+<a id="ch08-s10"></a>
 
-**And:**
+### The Verge Is Not a Parcel Problem to Hide
 
-**The Verge does not have to become ordinary Parcel morphology.**
+Earlier versions of this section treated Frontier as non-Parcel terminal morphology.
 
-**Conceptually:**
+That terminology is now superseded.
 
-**The World**
+The relevant spatial concept is The Verge.
 
-**├── Parcel Cadastre  
-│ └── exactly 21,000,000 Parcels**
+The Verge belongs to Creator design space for terminal World-form expression.
 
-**and potentially:**
+It should not be forced into ordinary Parcel geometry merely because the Parcel fabric approaches the terminal form of the World.
 
-**└── non-Parcel spatial conditions  
-  including The Verge, Outliers, infrastructure, or other authorized spatial structures**
+If the Parcel grammar encounters a complex terminal condition, it may be tempting to distort Parcels to make the tiling visually fill every remaining space.
 
-**This may prove essential to reconciling rigorous Parcel geometry with organic World Form.**
+That could solve appearance while damaging the deeper architecture.
 
-**Parcel Identity**
+BitPangea preserves a better possibility:
 
-**Geometry alone is insufficient.**
+The Parcel fabric may not exhaust the World.
 
-**Every Parcel must possess persistent canonical identity.**
+And:
 
-**If a Parcel exists today and BitPangea is experienced through entirely different technology generations later, there must remain a deterministic way to establish that it is the same Parcel.**
+The Verge does not have to become ordinary Parcel morphology.
 
-**The Parcel Cadastre must eventually answer:**
+Conceptually:
 
-**Which Parcel is this?**
+The World
 
-**Where is it?**
+```text
+├── Parcel Cadastre
+│ └── exactly 21,000,000 Parcels
+```
 
-**What authoritative territory defines it?**
+and potentially:
 
-**Which Parcels are related to it?**
+```text
+└── non-Parcel spatial conditions
+    including The Verge, Outliers, infrastructure, or other authorized spatial structures
+```
 
-**Has its canonical identity remained stable?**
+This may prove essential to reconciling rigorous Parcel geometry with organic World Form.
 
-**These answers should not depend upon whether a particular interface is currently displaying the Parcel.**
+<a id="ch08-s11"></a>
 
-**The final identifier format remains open.**
+### Parcel Identity
 
-**The requirement does not:**
+Geometry alone is insufficient.
 
-**Every canonical Parcel must be uniquely and persistently identifiable.**
+Every Parcel must possess persistent canonical identity.
 
-**Fixed Position**
+If a Parcel exists today and BitPangea is experienced through entirely different technology generations later, there must remain a deterministic way to establish that it is the same Parcel.
 
-**Persistent identity must include persistent place.**
+The Parcel Cadastre must eventually answer:
 
-**A Parcel should not remain “the same Parcel” while silently moving somewhere else in canonical space.**
+Which Parcel is this?
 
-**The Parcel Cadastre must therefore preserve a stable relationship among:**
+Where is it?
 
-**Parcel identity**
+What authoritative territory defines it?
 
-**canonical Survey reference**
+Which Parcels are related to it?
 
-**authoritative territorial definition**
+Has its canonical identity remained stable?
 
-**The representation may change.**
+These answers should not depend upon whether a particular interface is currently displaying the Parcel.
 
-**The identifier encoding may evolve.**
+The final identifier format remains open.
 
-**The client may be replaced.**
+The requirement does not:
 
-**But canonical Parcel position should remain stable.**
+Every canonical Parcel must be uniquely and persistently identifiable.
 
-**This extends the Survey principle:**
+<a id="ch08-s12"></a>
 
-**Representation may change. Place must not.**
+### Fixed Position
 
-**to the cadastral level.**
+Persistent identity must include persistent place.
 
-**Identity Is Not Ownership**
+A Parcel should not remain “the same Parcel” while silently moving somewhere else in canonical space.
 
-**Canonical Parcel identity remains distinct from rights and control.**
+The Parcel Cadastre must therefore preserve a stable relationship among:
 
-**Conceptually:**
+Parcel identity
 
-**Parcel Identity**
+canonical Survey reference
 
-**→ What Parcel is this?**
+authoritative territorial definition
 
-**Rights / Control**
+The representation may change.
 
-**→ What relationships may actors possess with respect to that Parcel?**
+The identifier encoding may evolve.
 
-**Those questions are related.**
+The client may be replaced.
 
-**They are not the same.**
+But canonical Parcel position should remain stable.
 
-**A transfer of control should not create a new Parcel.**
+This extends the Survey principle:
 
-**A different actor should not move the Parcel.**
+Representation may change. Place must not.
 
-**A change in rights should not alter its canonical territory.**
+to the cadastral level.
 
-**A Parcel may accumulate a long history of changing actors, uses, structures, and relationships while preserving one spatial identity.**
+<a id="ch08-s13"></a>
 
-**This distinction allows meaningful cadastral history to exist.**
+### Identity Is Not Ownership
 
-**Parcel Adjacency**
+Canonical Parcel identity remains distinct from rights and control.
 
-**The terminology must also be precise.**
+Conceptually:
 
-**The Adjacency is a constitutional Parcel relationship.**
+Parcel Identity
 
-**The lower mathematics may determine facts such as:**
+→ What Parcel is this?
 
-**shared geometric boundary**
+Rights / Control
 
-**touch**
+→ What relationships may actors possess with respect to that Parcel?
 
-**point contact**
+Those questions are related.
 
-**spatial separation**
+They are not the same.
 
-**But the authoritative Parcel relationship must belong at the proper level.**
+A transfer of control should not create a new Parcel.
 
-**For the Parcel Cadastre, the important requirement is:**
+A different actor should not move the Parcel.
 
-**Parcel Adjacency must be deterministic.**
+A change in rights should not alter its canonical territory.
 
-**Two conforming systems should not disagree about whether Parcel A and Parcel B are adjacent.**
+A Parcel may accumulate a long history of changing actors, uses, structures, and relationships while preserving one spatial identity.
 
-**That relationship may later influence:**
+This distinction allows meaningful cadastral history to exist.
 
-**construction**
+<a id="ch08-s14"></a>
 
-**infrastructure**
+### Parcel Adjacency
 
-**movement**
+The terminology must also be precise.
 
-**access**
+The Adjacency is a constitutional Parcel relationship.
 
-**regional formation**
+The lower mathematics may determine facts such as:
 
-**rights**
+shared geometric boundary
 
-**World services**
+touch
 
-**The geometry therefore has consequences far above itself.**
+point contact
 
-**But those consequences should not all be designed inside the Cadastre.**
+spatial separation
 
-**Again:**
+But the authoritative Parcel relationship must belong at the proper level.
 
-**Protect the boundary. Do not design the layer above from the layer below.**
+For the Parcel Cadastre, the important requirement is:
 
-**Cadastre as Authority**
+Parcel Adjacency must be deterministic.
 
-**The Parcel Cadastre is the canonical authority for Parcel truth.**
+Two conforming systems should not disagree about whether Parcel A and Parcel B are adjacent.
 
-**It should ultimately establish or preserve authoritative answers concerning:**
+That relationship may later influence:
 
-**Parcel identity**
+construction
 
-**fixed position**
+infrastructure
 
-**authoritative territorial definition**
+movement
 
-**Parcel existence**
+access
 
-**canonical Parcel relationships**
+regional formation
 
-**appropriate cadastral state**
+rights
 
-**A map may display a Parcel.**
+World services
 
-**A globe may summarize it.**
+The geometry therefore has consequences far above itself.
 
-**A Builder may interact with it.**
+But those consequences should not all be designed inside the Cadastre.
 
-**Search may discover it.**
+Again:
 
-**A rights system may reference it.**
+Protect the boundary. Do not design the layer above from the layer below.
 
-**A marketplace might eventually reference it.**
+<a id="ch08-s15"></a>
 
-**None of those references gives those systems authority to redefine what the Parcel is.**
+### Cadastre as Authority
 
-**The principle is:**
+The Parcel Cadastre is the canonical authority for Parcel truth.
 
-**Reference does not transfer authority.**
+It should ultimately establish or preserve authoritative answers concerning:
 
-**This protects BitPangea from developing competing versions of the same Parcel.**
+Parcel identity
 
-**Geometry and Representation**
+fixed position
 
-**A rhombus shown on a screen is not necessarily the Parcel itself.**
+authoritative territorial definition
 
-**It is a representation of a canonical Parcel.**
+Parcel existence
 
-**That distinction becomes especially important as BitPangea moves among:**
+canonical Parcel relationships
 
-**globe representation**
+appropriate cadastral state
 
-**flat lived World**
+A map may display a Parcel.
 
-**Parcel view**
+A globe may summarize it.
 
-**Survey view**
+A Builder may interact with it.
 
-**Builder interface**
+Search may discover it.
 
-**future immersive experiences**
+A rights system may reference it.
 
-**Projection and representation may change how geometry appears.**
+A marketplace might eventually reference it.
 
-**The canonical territorial definition must survive those transformations.**
+None of those references gives those systems authority to redefine what the Parcel is.
 
-**Conceptually:**
+The principle is:
 
-**Canonical Parcel**
+Reference does not transfer authority.
 
-**↓**
+This protects BitPangea from developing competing versions of the same Parcel.
 
-**defined by authoritative cadastral truth**
+<a id="ch08-s16"></a>
 
-**Representation**
+### Geometry and Representation
 
-**↓**
+A rhombus shown on a screen is not necessarily the Parcel itself.
 
-**shows that Parcel for a particular purpose**
+It is a representation of a canonical Parcel.
 
-**The visual form should derive from the canonical object.**
+That distinction becomes especially important as BitPangea moves among:
 
-**The canonical object should not depend upon the visual form.**
+globe representation
 
-**Cadastre Before Geography**
+flat lived World
 
-**The Parcel Cadastre should remain beneath geographic meaning.**
+Parcel view
 
-**A Parcel can exist before a mountain, road, district, settlement, or cultural identity is associated with it.**
+Survey view
 
-**Conceptually:**
+Builder interface
 
-**Parcel**
+future immersive experiences
 
-**↓**
+Projection and representation may change how geometry appears.
 
-**persistent canonical place**
+The canonical territorial definition must survive those transformations.
 
-**above it:**
+Conceptually:
 
-**terrain**
+Canonical Parcel
 
-**infrastructure**
+↓
 
-**construction**
+defined by authoritative cadastral truth
 
-**community**
+Representation
 
-**history**
+↓
 
-**experience**
+shows that Parcel for a particular purpose
 
-**Those upper layers may change.**
+The visual form should derive from the canonical object.
 
-**The Parcel remains.**
+The canonical object should not depend upon the visual form.
 
-**That continuity allows the same place to acquire history.**
+<a id="ch08-s17"></a>
 
-**A Parcel once considered ordinary may later become one of the most significant places in the World.**
+### Cadastre Before Geography
 
-**Its cadastral identity makes that history spatially coherent.**
+The Parcel Cadastre should remain beneath geographic meaning.
 
-**Cadastre Before Civilization**
+A Parcel can exist before a mountain, road, district, settlement, or cultural identity is associated with it.
 
-**The 21,000,000 Parcels should not be created merely as economic placeholders.**
+Conceptually:
 
-**They are part of the permanent spatial architecture of BitPangea.**
+Parcel
 
-**Civilization may later attach:**
+↓
 
-**rights**
+persistent canonical place
 
-**names**
+above it:
 
-**uses**
+terrain
 
-**structures**
+infrastructure
 
-**records**
+construction
 
-**transactions**
+community
 
-**stories**
+history
 
-**institutions**
+experience
 
-**cultural meaning**
+Those upper layers may change.
 
-**to Parcels.**
+The Parcel remains.
 
-**But none of those later relationships should become the source of Parcel existence.**
+That continuity allows the same place to acquire history.
 
-**The Parcel exists because it belongs to the World.**
+A Parcel once considered ordinary may later become one of the most significant places in the World.
 
-**Its social meaning emerges because civilization encounters it.**
+Its cadastral identity makes that history spatially coherent.
 
-**Subdivision and Aggregation**
+<a id="ch08-s18"></a>
 
-**The fixed Parcel supply raises an important question:**
+### Cadastre Before Civilization
 
-**Can a canonical Parcel be subdivided?**
+The 21,000,000 Parcels should not be created merely as economic placeholders.
 
-**Can multiple canonical Parcels be aggregated?**
+They are part of the permanent spatial architecture of BitPangea.
 
-**These questions remain unresolved.**
+Civilization may later attach:
 
-**They must be handled carefully because they interact directly with:**
+rights
 
-**Exactly 21,000,000 Parcels.**
+names
 
-**If subdivision creates additional canonical Parcels, the fixed count would cease to mean what it currently means.**
+uses
 
-**If aggregation destroys canonical Parcels, the same problem occurs in reverse.**
+structures
 
-**Future systems may still support concepts such as:**
+records
 
-**sub-Parcel references**
+transactions
 
-**construction zones**
+stories
 
-**usage areas**
+institutions
 
-**multi-Parcel holdings**
+cultural meaning
 
-**administrative groupings**
+to Parcels.
 
-**shared projects**
+But none of those later relationships should become the source of Parcel existence.
 
-**without changing the canonical Parcel count.**
+The Parcel exists because it belongs to the World.
 
-**The principle remains:**
+Its social meaning emerges because civilization encounters it.
 
-**The canonical Parcel Cadastre contains exactly 21,000,000 Parcels.**
+<a id="ch08-s19"></a>
 
-**Any future subdivision or aggregation mechanism must respect that condition.**
+### Subdivision and Aggregation
 
-**Regions Do Not Redefine Parcels**
+The fixed Parcel supply raises an important question:
 
-**Regions present a similar issue.**
+Can a canonical Parcel be subdivided?
 
-**BitPangea may eventually contain:**
+Can multiple canonical Parcels be aggregated?
 
-**districts**
+These questions remain unresolved.
 
-**communities**
+They must be handled carefully because they interact directly with:
 
-**service areas**
+Exactly 21,000,000 Parcels.
 
-**cultural regions**
+If subdivision creates additional canonical Parcels, the fixed count would cease to mean what it currently means.
 
-**administrative regions**
+If aggregation destroys canonical Parcels, the same problem occurs in reverse.
 
-**development zones**
+Future systems may still support concepts such as:
 
-**Those areas may cross many Parcels.**
+sub-Parcel references
 
-**Their boundaries may change.**
+construction zones
 
-**Their names may change.**
+usage areas
 
-**Their significance may change.**
+multi-Parcel holdings
 
-**That does not require the underlying canonical Parcels to change.**
+administrative groupings
 
-**Conceptually:**
+shared projects
 
-**persistent Parcel Cadastre**
+without changing the canonical Parcel count.
 
-**↓**
+The principle remains:
 
-**supports**
+The canonical Parcel Cadastre contains exactly 21,000,000 Parcels.
 
-**↓**
+Any future subdivision or aggregation mechanism must respect that condition.
 
-**changing higher-layer regional interpretations**
+<a id="ch08-s20"></a>
 
-**This gives civilization flexibility without sacrificing place.**
+### Regions Do Not Redefine Parcels
 
-**The 21,000,000 Test**
+Regions present a similar issue.
 
-**Every proposed Parcel architecture must survive the fixed-count requirement.**
+BitPangea may eventually contain:
 
-**A geometry cannot merely tile space indefinitely.**
+districts
 
-**It must participate in an architecture capable of establishing exactly:**
+communities
 
-**21,000,000 canonical Parcels**
+service areas
 
-**within BitPangea.**
+cultural regions
 
-**That test must coexist with others.**
+administrative regions
 
-**Does the design:**
+development zones
 
-**support equal-area preference?**
+Those areas may cross many Parcels.
 
-**preserve local coherence?**
+Their boundaries may change.
 
-**support deterministic Parcel Adjacency?**
+Their names may change.
 
-**reconcile with World Form?**
+Their significance may change.
 
-**coexist with The Verge?**
+That does not require the underlying canonical Parcels to change.
 
-**support Outliers if adopted?**
+Conceptually:
 
-**derive correctly from deeper spatial architecture?**
+persistent Parcel Cadastre
 
-**preserve fixed Parcel identity?**
+↓
 
-**permit independent verification?**
+supports
 
-**avoid forcing non-Parcel conditions into Parcel geometry?**
+↓
 
-**A visually attractive geometry that fails these tests is insufficient.**
+changing higher-layer regional interpretations
 
-**The Cadastre must be architecturally true before it is visually satisfying.**
+This gives civilization flexibility without sacrificing place.
 
-**The Cadastre as Memory**
+<a id="ch08-s21"></a>
 
-**The Parcel Cadastre does more than organize the present.**
+### The 21,000,000 Test
 
-**It makes it possible for place to accumulate history.**
+Every proposed Parcel architecture must survive the fixed-count requirement.
 
-**Consider one Parcel:**
+A geometry cannot merely tile space indefinitely.
 
-**Parcel P**
+It must participate in an architecture capable of establishing exactly:
 
-**├── undeveloped  
-├── first construction  
-├── community use  
-├── significant event  
-├── redevelopment  
-├── ruin  
-└── later historical meaning**
+21,000,000 canonical Parcels
 
-**The objects upon it may change.**
+within BitPangea.
 
-**Its users may change.**
+That test must coexist with others.
 
-**Its rights may change.**
+Does the design:
 
-**Its cultural significance may change.**
+support equal-area preference?
 
-**But if its canonical identity remains stable, all of those events can be understood as occurring at:**
+preserve local coherence?
 
-**the same place**
+support deterministic Parcel Adjacency?
 
-**This is where the Parcel Cadastre begins to intersect with history.**
+reconcile with World Form?
 
-**Persistent Parcel identity allows BitPangea to remember where its history happened.**
+coexist with The Verge?
 
-**What Is Established**
+support Outliers if adopted?
 
-**The current Parcel architecture supports the following statements:**
+derive correctly from deeper spatial architecture?
 
-**The canonical Parcel Cadastre must contain exactly 21,000,000 Parcels.**
+preserve fixed Parcel identity?
 
-**The World precedes the Parcel.**
+permit independent verification?
 
-**The demonstrated spatial dependency is:**
+avoid forcing non-Parcel conditions into Parcel geometry?
 
-**Foundational Survey Fabric → Spatial Ground → General Spatial Interpretation → Parcel Cadastre**
+A visually attractive geometry that fails these tests is insufficient.
 
-**The Foundational Survey Fabric and Parcel Cadastre are distinct Architecture domains.**
+The Cadastre must be architecturally true before it is visually satisfying.
 
-**Survey units are not Parcels.**
+<a id="ch08-s22"></a>
 
-**The Parcel Cadastre is authoritative for canonical Parcel truth.**
+### The Cadastre as Memory
 
-**Every Parcel must ultimately possess:**
+The Parcel Cadastre does more than organize the present.
 
-**persistent identity**
+It makes it possible for place to accumulate history.
 
-**fixed position**
+Consider one Parcel:
 
-**authoritative territorial definition**
+Parcel P
 
-**Parcel identity is distinct from rights and control.**
+```text
+├── undeveloped
+├── first construction
+├── community use
+├── significant event
+├── redevelopment
+├── ruin
+└── later historical meaning
+```
 
-**Equal-area Parcels remain strongly preferred.**
+The objects upon it may change.
 
-**Local Parcel coherence is required.**
+Its users may change.
 
-**One dominant Parcel grammar is preferred.**
+Its rights may change.
 
-**The three-orientation rhombille family remains the leading visible Parcel-design direction.**
+Its cultural significance may change.
 
-**The rhombille family is not automatically the deepest Survey mathematics.**
+But if its canonical identity remains stable, all of those events can be understood as occurring at:
 
-**The Parcel fabric may not exhaust the World.**
+the same place
 
-**The Verge is not ordinary Parcel morphology.**
+This is where the Parcel Cadastre begins to intersect with history.
 
-**Outliers and other non-Parcel spatial conditions may require distinct treatment.**
+Persistent Parcel identity allows BitPangea to remember where its history happened.
 
-**Representation does not own Parcel truth.**
+<a id="ch08-s23"></a>
 
-**The canonical Parcel count must survive all future systems built above it.**
+### What Is Established
 
-**What Remains Open**
+The current Parcel architecture supports the following statements:
 
-**Significant work remains before the Parcel Cadastre can be considered complete.**
+The canonical Parcel Cadastre must contain exactly 21,000,000 Parcels.
 
-**Among the unresolved questions are:**
+The World precedes the Parcel.
 
-**the final Parcel geometry**
+The demonstrated spatial dependency is:
 
-**the mathematical proof of equal-area construction**
+Foundational Survey Fabric → Spatial Ground → General Spatial Interpretation → Parcel Cadastre
 
-**the exact global arrangement of the three orientations**
+The Foundational Survey Fabric and Parcel Cadastre are distinct Architecture domains.
 
-**the relationship between visible Parcel grammar and the underlying Survey substrate**
+Survey units are not Parcels.
 
-**the mechanism reconciling local coherence with World Form**
+The Parcel Cadastre is authoritative for canonical Parcel truth.
 
-**the precise relationship between Parcel fabric and The Verge**
+Every Parcel must ultimately possess:
 
-**the treatment of Outliers**
+persistent identity
 
-**the exact method through which 21,000,000 Parcels are established**
+fixed position
 
-**the canonical Parcel identifier structure**
+authoritative territorial definition
 
-**the authoritative territorial-definition model**
+Parcel identity is distinct from rights and control.
 
-**the complete Parcel Adjacency model**
+Equal-area Parcels remain strongly preferred.
 
-**the cadastral data model**
+Local Parcel coherence is required.
 
-**the treatment of Parcel history**
+One dominant Parcel grammar is preferred.
 
-**the permissible meaning of subdivision, if any**
+The three-orientation rhombille family remains the leading visible Parcel-design direction.
 
-**the permissible meaning of aggregation, if any**
+The rhombille family is not automatically the deepest Survey mathematics.
 
-**the relationship between Parcels and future regions**
+The Parcel fabric may not exhaust the World.
 
-**the eventual conformance model for Parcel Cadastre implementations**
+The Verge is not ordinary Parcel morphology.
 
-**These questions should remain open until the Architecture resolves them.**
+Outliers and other non-Parcel spatial conditions may require distinct treatment.
 
-**Origins should preserve the direction without inventing certainty.**
+Representation does not own Parcel truth.
 
-**The Principle**
+The canonical Parcel count must survive all future systems built above it.
 
-**The Parcel system is where BitPangea’s abstract commitment to digital Finitude becomes local.**
+<a id="ch08-s24"></a>
 
-**The World establishes that there is only one finite BitPangea.**
+### What Remains Open
 
-**The Parcel constraint establishes that exactly 21,000,000 canonical Parcels must exist within it.**
+Significant work remains before the Parcel Cadastre can be considered complete.
 
-**Geometry determines how those Parcels occupy space.**
+Among the unresolved questions are:
 
-**The Cadastre ensures that each remains itself.**
+the final Parcel geometry
 
-**Together, they make it possible for someone standing somewhere in BitPangea to eventually ask:**
+the mathematical proof of equal-area construction
 
-**Where am I?**
+the exact global arrangement of the three orientations
 
-**and receive an answer that is not merely graphical, temporary, or dependent upon whichever software currently displays the World.**
+the relationship between visible Parcel grammar and the underlying Survey substrate
 
-**The answer can refer to a persistent Parcel.**
+the mechanism reconciling local coherence with World Form
 
-**Centuries of digital change could occur above that Parcel without requiring the place itself to become something else.**
+the precise relationship between Parcel fabric and The Verge
 
-**The governing principle is therefore:**
+the treatment of Outliers
 
-**Geometry gives the Parcel form. The Cadastre gives the Parcel identity. The World gives the Parcel meaning as a place.**
+the exact method through which 21,000,000 Parcels are established
 
-## VIII. Parcel Geometry and Cadastre
+the canonical Parcel identifier structure
 
-**The Foundational Survey Fabric establishes canonical spatial reference.**
+the authoritative territorial-definition model
 
-**The Parcel Cadastre establishes canonical Parcel identity and territorial definition against that reference.**
+the complete Parcel Adjacency model
 
-**Exactly 21,000,000 Parcels must exist.**
+the cadastral data model
 
-**But a fixed count alone does not create a cadastre.**
+the treatment of Parcel history
 
-**For those Parcels to become part of one coherent World, BitPangea must determine:**
+the permissible meaning of subdivision, if any
 
-**where each Parcel exists**
+the permissible meaning of aggregation, if any
 
-**how each Parcel is spatially defined**
+the relationship between Parcels and future regions
 
-**how Parcels relate to one another**
+the eventual conformance model for Parcel Cadastre implementations
 
-**how each Parcel remains uniquely identifiable**
+These questions should remain open until the Architecture resolves them.
 
-**and which Architecture domain possesses authority to say what a Parcel is**
+Origins should preserve the direction without inventing certainty.
 
-**These questions bring together two closely related but distinct subjects:**
+<a id="ch08-s25"></a>
 
-**Parcel Geometry concerns the spatial form and relationships of Parcels.**
+### The Principle
 
-**Parcel Cadastre concerns their canonical identity, fixed position, territorial definition, and authoritative organization.**
+The Parcel system is where BitPangea’s abstract commitment to digital Finitude becomes local.
 
-**The distinction is fundamental.**
+The World establishes that there is only one finite BitPangea.
 
-**Geometry gives the Parcel form. The Cadastre gives the Parcel identity.**
+The Parcel constraint establishes that exactly 21,000,000 canonical Parcels must exist within it.
 
-**Neither should be confused with the representation through which the Parcel is displayed.**
+Geometry determines how those Parcels occupy space.
 
-**From Survey Reference to Parcel Truth**
+The Cadastre ensures that each remains itself.
 
-**The Parcel Cadastre does not create the deepest spatial truth of BitPangea.**
+Together, they make it possible for someone standing somewhere in BitPangea to eventually ask:
 
-**It depends upon Architecture beneath it.**
+Where am I?
 
-**The strongest demonstrated spatial dependency is:**
+and receive an answer that is not merely graphical, temporary, or dependent upon whichever software currently displays the World.
 
-**Foundational Survey Fabric**
+The answer can refer to a persistent Parcel.
 
-**↓**
+Centuries of digital change could occur above that Parcel without requiring the place itself to become something else.
 
-**Spatial Ground**
+The governing principle is therefore:
 
-**↓**
+Geometry gives the Parcel form. The Cadastre gives the Parcel identity. The World gives the Parcel meaning as a place.
 
-**General Spatial Interpretation**
+---
 
-**↓**
-
-**Parcel Cadastre**
-
-**This sequence matters because each domain carries a different responsibility.**
-
-**The Foundational Survey Fabric establishes canonical spatial reference.**
-
-**Spatial Ground carries that reference into the usable spatial basis of the World.**
-
-**General Spatial Interpretation derives and organizes broader spatial meaning without redefining the reference beneath it.**
-
-**The Parcel Cadastre establishes:**
-
-**Which canonical Parcel occupies which authoritative place?**
-
-**This ordering protects the architecture.**
-
-**The Survey Fabric can define canonical reference without turning every Survey construct into a Parcel.**
-
-**The Parcel Cadastre can define Parcels without becoming the deepest mathematical substrate of the World.**
-
-**Thus:**
-
-**Survey establishes where. Cadastre establishes which Parcel.**
-
-**Survey Units Are Not Parcels**
-
-**One of the most important architectural distinctions is:**
-
-**Survey units are not Parcels.**
-
-**A mathematical cell, subdivision, reference element, coordinate construct, precision unit, or implementation structure inside the Foundational Survey Fabric should not automatically become a Parcel.**
-
-**BitPangea must contain exactly:**
-
-**21,000,000 canonical Parcels**
-
-**But that does not mean the Survey Fabric must contain exactly 21,000,000 mathematical units.**
-
-**This protects both systems.**
-
-**The Survey architecture can remain sufficiently precise and extensible to describe the World.**
-
-**The Parcel Cadastre can define exactly the Parcel supply BitPangea requires.**
-
-**The two systems interact.**
-
-**They should not collapse into one another.**
-
-**Why Geometry Matters**
-
-**A Parcel could theoretically be nothing more than an identifier associated with an arbitrary area of digital space.**
-
-**BitPangea seeks something more coherent.**
-
-**Parcel geometry influences:**
-
-**Parcel Adjacency**
-
-**local spatial coherence**
-
-**orientation**
-
-**construction**
-
-**infrastructure**
-
-**navigation**
-
-**regional formation**
-
-**representation**
-
-**World identity**
-
-**The geometry therefore cannot be selected merely because it creates an attractive pattern.**
-
-**Nor should it be chosen solely because it is convenient to implement.**
-
-**The geometry must serve the architecture of the World.**
-
-**That places several requirements around the search:**
-
-**local coherence**
-
-**equal-area preference**
-
-**one dominant Parcel grammar**
-
-**deterministic spatial relationships**
-
-**compatibility with the Foundational Survey Fabric**
-
-**compatibility with World Form**
-
-**compatibility with The Verge and other non-Parcel conditions**
-
-**compatibility with exactly 21,000,000 Parcels**
-
-**These requirements constrain the design without pretending that the final Parcel geometry has already been solved.**
-
-**The Rhombille Direction**
-
-**The strongest visible Parcel-design direction remains a three-orientation rhombille family.**
-
-**Rhombille geometry provides a repeating fabric of congruent rhombi organized through three principal orientations.**
-
-**Within BitPangea, those orientations create a local grammar based upon 60° and 120° relationships.**
-
-**The significance is not merely aesthetic.**
-
-**A three-orientation Parcel grammar offers:**
-
-**strong local coherence**
-
-**clear neighborhood relationships**
-
-**a recognizable visual identity**
-
-**departure from conventional orthogonal grid logic**
-
-**potential compatibility with equal-area Parcels**
-
-**It can become distinctly BitPangean.**
-
-**But its architectural role should now be stated carefully.**
-
-**The rhombille family is a leading Parcel grammar. It is not automatically the Foundational Survey Fabric.**
-
-**The deeper Survey substrate may remain mathematically distinct and visually unseen.**
-
-**This preserves the principle:**
-
-**Substrate ≠ Parcel experience.**
-
-**The visible Parcel fabric may derive from deeper canonical spatial truth without becoming identical to it.**
-
-**Why Not a Conventional Square Grid?**
-
-**A conventional square grid would make many things easier.**
-
-**Coordinates are familiar.**
-
-**Indexing is straightforward.**
-
-**Neighbor relationships are simple.**
-
-**Rendering is convenient.**
-
-**Implementation tools already understand it.**
-
-**But convenience alone is not sufficient reason to make one geometry authoritative.**
-
-**A square grid could encourage the wrong architectural direction:**
-
-**easy grid**
-
-**↓**
-
-**easy Parcel generation**
-
-**↓**
-
-**World forced to fit the grid**
-
-**BitPangea instead requires:**
-
-**World constraints**
-
-**↓**
-
-**canonical Survey architecture**
-
-**↓**
-
-**Parcel Cadastre**
-
-**↓**
-
-**appropriate Parcel geometry**
-
-**The Parcel geometry must fit the architecture.**
-
-**The architecture should not be rewritten merely to accommodate the easiest grid.**
-
-**Local Coherence**
-
-**Parcel geometry must remain locally coherent.**
-
-**A visitor examining one part of BitPangea should encounter a Parcel fabric whose nearby relationships make sense.**
-
-**Neighbors should be determinable.**
-
-**Orientation should be intelligible.**
-
-**Shared relationships should follow consistent rules.**
-
-**Local structure should not change arbitrarily merely to solve a distant global problem.**
-
-**This does not necessarily require every Parcel everywhere in BitPangea to share one single orientation.**
-
-**The stronger principle is:**
-
-**Local coherence does not require simplistic global uniformity.**
-
-**The final global architecture may require more sophistication than a repeated pattern can provide by itself.**
-
-**That sophistication should not destroy the intelligibility of the local Parcel fabric.**
-
-**Three Orientations**
-
-**The three-orientation character of the rhombille family is particularly valuable.**
-
-**Rather than organizing the Parcel fabric around only horizontal and vertical relationships, BitPangea can possess a local directional grammar derived from three orientation families.**
-
-**This may eventually influence:**
-
-**Parcel Adjacency**
-
-**construction alignment**
-
-**movement**
-
-**infrastructure**
-
-**regional organization**
-
-**visual identity**
-
-**But those consequences should not be prescribed before their Architecture domains are ready.**
-
-**At this stage, the important conclusion is narrower:**
-
-**The Parcel fabric may possess a consistent three-orientation local grammar without becoming an ordinary square grid.**
-
-**The final indexing system, transition rules, global arrangement, and relationship to World Form remain unresolved.**
-
-**Equal Area**
-
-**BitPangea continues to strongly prefer equal-area Parcels.**
-
-**That preference should be interpreted carefully.**
-
-**Equal area means that, if the final architecture supports it, one canonical Parcel should represent the same amount of canonical spatial area as another.**
-
-**It does not mean all Parcels are equal in every other respect.**
-
-**Two equal-area Parcels may differ because of:**
-
-**location**
-
-**Parcel Adjacency**
-
-**geography**
-
-**access**
-
-**infrastructure**
-
-**development**
-
-**history**
-
-**culture**
-
-**community**
-
-**use**
-
-**Thus:**
-
-**equal area**
-
-**≠**
-
-**equal experience**
-
-**equal area**
-
-**≠**
-
-**equal desirability**
-
-**equal area**
-
-**≠**
-
-**equal significance**
-
-**equal area**
-
-**≠**
-
-**equal economic value**
-
-**Equal area can normalize the spatial unit.**
-
-**Civilization can still differentiate the place.**
-
-**Because the final mathematics remain unresolved, equal area remains a strong design direction rather than a completed mathematical claim.**
-
-**One Dominant Parcel Grammar**
-
-**BitPangea also favors one dominant Parcel morphology or visual grammar.**
-
-**The word dominant matters.**
-
-**It should not be interpreted as:**
-
-**every spatial object everywhere must have one identical shape.**
-
-**The purpose is to avoid a Cadastre composed arbitrarily from unrelated geometries.**
-
-**A dominant Parcel grammar can provide:**
-
-**coherence**
-
-**recognizability**
-
-**predictability**
-
-**consistent Parcel relationships**
-
-**strong World identity**
-
-**If exceptions become necessary, they should arise because the architecture requires them.**
-
-**Not because variation is visually interesting.**
-
-**The governing rule is:**
-
-**Prefer a rule before an exception.**
-
-**And:**
-
-**When an exception exists, it should be explainable.**
-
-**The Verge Is Not a Parcel Problem to Hide**
-
-**Earlier versions of this section treated Frontier as non-Parcel terminal morphology.**
-
-**That terminology is now superseded.**
-
-**The relevant spatial concept is The Verge.**
-
-**The Verge belongs to Creator design space for terminal World-form expression.**
-
-**It should not be forced into ordinary Parcel geometry merely because the Parcel fabric approaches the terminal form of the World.**
-
-**If the Parcel grammar encounters a complex terminal condition, it may be tempting to distort Parcels to make the tiling visually fill every remaining space.**
-
-**That could solve appearance while damaging the deeper architecture.**
-
-**BitPangea preserves a better possibility:**
-
-**The Parcel fabric may not exhaust the World.**
-
-**And:**
-
-**The Verge does not have to become ordinary Parcel morphology.**
-
-**Conceptually:**
-
-**The World**
-
-**├── Parcel Cadastre  
-│ └── exactly 21,000,000 Parcels**
-
-**and potentially:**
-
-**└── non-Parcel spatial conditions  
-  including The Verge, Outliers, infrastructure, or other authorized spatial structures**
-
-**This may prove essential to reconciling rigorous Parcel geometry with organic World Form.**
-
-**Parcel Identity**
-
-**Geometry alone is insufficient.**
-
-**Every Parcel must possess persistent canonical identity.**
-
-**If a Parcel exists today and BitPangea is experienced through entirely different technology generations later, there must remain a deterministic way to establish that it is the same Parcel.**
-
-**The Parcel Cadastre must eventually answer:**
-
-**Which Parcel is this?**
-
-**Where is it?**
-
-**What authoritative territory defines it?**
-
-**Which Parcels are related to it?**
-
-**Has its canonical identity remained stable?**
-
-**These answers should not depend upon whether a particular interface is currently displaying the Parcel.**
-
-**The final identifier format remains open.**
-
-**The requirement does not:**
-
-**Every canonical Parcel must be uniquely and persistently identifiable.**
-
-**Fixed Position**
-
-**Persistent identity must include persistent place.**
-
-**A Parcel should not remain “the same Parcel” while silently moving somewhere else in canonical space.**
-
-**The Parcel Cadastre must therefore preserve a stable relationship among:**
-
-**Parcel identity**
-
-**canonical Survey reference**
-
-**authoritative territorial definition**
-
-**The representation may change.**
-
-**The identifier encoding may evolve.**
-
-**The client may be replaced.**
-
-**But canonical Parcel position should remain stable.**
-
-**This extends the Survey principle:**
-
-**Representation may change. Place must not.**
-
-**to the cadastral level.**
-
-**Identity Is Not Ownership**
-
-**Canonical Parcel identity remains distinct from rights and control.**
-
-**Conceptually:**
-
-**Parcel Identity**
-
-**→ What Parcel is this?**
-
-**Rights / Control**
-
-**→ What relationships may actors possess with respect to that Parcel?**
-
-**Those questions are related.**
-
-**They are not the same.**
-
-**A transfer of control should not create a new Parcel.**
-
-**A different actor should not move the Parcel.**
-
-**A change in rights should not alter its canonical territory.**
-
-**A Parcel may accumulate a long history of changing actors, uses, structures, and relationships while preserving one spatial identity.**
-
-**This distinction allows meaningful cadastral history to exist.**
-
-**Parcel Adjacency**
-
-**The terminology must also be precise.**
-
-**The Adjacency is a constitutional Parcel relationship.**
-
-**The lower mathematics may determine facts such as:**
-
-**shared geometric boundary**
-
-**touch**
-
-**point contact**
-
-**spatial separation**
-
-**But the authoritative Parcel relationship must belong at the proper level.**
-
-**For the Parcel Cadastre, the important requirement is:**
-
-**Parcel Adjacency must be deterministic.**
-
-**Two conforming systems should not disagree about whether Parcel A and Parcel B are adjacent.**
-
-**That relationship may later influence:**
-
-**construction**
-
-**infrastructure**
-
-**movement**
-
-**access**
-
-**regional formation**
-
-**rights**
-
-**World services**
-
-**The geometry therefore has consequences far above itself.**
-
-**But those consequences should not all be designed inside the Cadastre.**
-
-**Again:**
-
-**Protect the boundary. Do not design the layer above from the layer below.**
-
-**Cadastre as Authority**
-
-**The Parcel Cadastre is the canonical authority for Parcel truth.**
-
-**It should ultimately establish or preserve authoritative answers concerning:**
-
-**Parcel identity**
-
-**fixed position**
-
-**authoritative territorial definition**
-
-**Parcel existence**
-
-**canonical Parcel relationships**
-
-**appropriate cadastral state**
-
-**A map may display a Parcel.**
-
-**A globe may summarize it.**
-
-**A Builder may interact with it.**
-
-**Search may discover it.**
-
-**A rights system may reference it.**
-
-**A marketplace might eventually reference it.**
-
-**None of those references gives those systems authority to redefine what the Parcel is.**
-
-**The principle is:**
-
-**Reference does not transfer authority.**
-
-**This protects BitPangea from developing competing versions of the same Parcel.**
-
-**Geometry and Representation**
-
-**A rhombus shown on a screen is not necessarily the Parcel itself.**
-
-**It is a representation of a canonical Parcel.**
-
-**That distinction becomes especially important as BitPangea moves among:**
-
-**globe representation**
-
-**flat lived World**
-
-**Parcel view**
-
-**Survey view**
-
-**Builder interface**
-
-**future immersive experiences**
-
-**Projection and representation may change how geometry appears.**
-
-**The canonical territorial definition must survive those transformations.**
-
-**Conceptually:**
-
-**Canonical Parcel**
-
-**↓**
-
-**defined by authoritative cadastral truth**
-
-**Representation**
-
-**↓**
-
-**shows that Parcel for a particular purpose**
-
-**The visual form should derive from the canonical object.**
-
-**The canonical object should not depend upon the visual form.**
-
-**Cadastre Before Geography**
-
-**The Parcel Cadastre should remain beneath geographic meaning.**
-
-**A Parcel can exist before a mountain, road, district, settlement, or cultural identity is associated with it.**
-
-**Conceptually:**
-
-**Parcel**
-
-**↓**
-
-**persistent canonical place**
-
-**above it:**
-
-**terrain**
-
-**infrastructure**
-
-**construction**
-
-**community**
-
-**history**
-
-**experience**
-
-**Those upper layers may change.**
-
-**The Parcel remains.**
-
-**That continuity allows the same place to acquire history.**
-
-**A Parcel once considered ordinary may later become one of the most significant places in the World.**
-
-**Its cadastral identity makes that history spatially coherent.**
-
-**Cadastre Before Civilization**
-
-**The 21,000,000 Parcels should not be created merely as economic placeholders.**
-
-**They are part of the permanent spatial architecture of BitPangea.**
-
-**Civilization may later attach:**
-
-**rights**
-
-**names**
-
-**uses**
-
-**structures**
-
-**records**
-
-**transactions**
-
-**stories**
-
-**institutions**
-
-**cultural meaning**
-
-**to Parcels.**
-
-**But none of those later relationships should become the source of Parcel existence.**
-
-**The Parcel exists because it belongs to the World.**
-
-**Its social meaning emerges because civilization encounters it.**
-
-**Subdivision and Aggregation**
-
-**The fixed Parcel supply raises an important question:**
-
-**Can a canonical Parcel be subdivided?**
-
-**Can multiple canonical Parcels be aggregated?**
-
-**These questions remain unresolved.**
-
-**They must be handled carefully because they interact directly with:**
-
-**Exactly 21,000,000 Parcels.**
-
-**If subdivision creates additional canonical Parcels, the fixed count would cease to mean what it currently means.**
-
-**If aggregation destroys canonical Parcels, the same problem occurs in reverse.**
-
-**Future systems may still support concepts such as:**
-
-**sub-Parcel references**
-
-**construction zones**
-
-**usage areas**
-
-**multi-Parcel holdings**
-
-**administrative groupings**
-
-**shared projects**
-
-**without changing the canonical Parcel count.**
-
-**The principle remains:**
-
-**The canonical Parcel Cadastre contains exactly 21,000,000 Parcels.**
-
-**Any future subdivision or aggregation mechanism must respect that condition.**
-
-**Regions Do Not Redefine Parcels**
-
-**Regions present a similar issue.**
-
-**BitPangea may eventually contain:**
-
-**districts**
-
-**communities**
-
-**service areas**
-
-**cultural regions**
-
-**administrative regions**
-
-**development zones**
-
-**Those areas may cross many Parcels.**
-
-**Their boundaries may change.**
-
-**Their names may change.**
-
-**Their significance may change.**
-
-**That does not require the underlying canonical Parcels to change.**
-
-**Conceptually:**
-
-**persistent Parcel Cadastre**
-
-**↓**
-
-**supports**
-
-**↓**
-
-**changing higher-layer regional interpretations**
-
-**This gives civilization flexibility without sacrificing place.**
-
-**The 21,000,000 Test**
-
-**Every proposed Parcel architecture must survive the fixed-count requirement.**
-
-**A geometry cannot merely tile space indefinitely.**
-
-**It must participate in an architecture capable of establishing exactly:**
-
-**21,000,000 canonical Parcels**
-
-**within BitPangea.**
-
-**That test must coexist with others.**
-
-**Does the design:**
-
-**support equal-area preference?**
-
-**preserve local coherence?**
-
-**support deterministic Parcel Adjacency?**
-
-**reconcile with World Form?**
-
-**coexist with The Verge?**
-
-**support Outliers if adopted?**
-
-**derive correctly from deeper spatial architecture?**
-
-**preserve fixed Parcel identity?**
-
-**permit independent verification?**
-
-**avoid forcing non-Parcel conditions into Parcel geometry?**
-
-**A visually attractive geometry that fails these tests is insufficient.**
-
-**The Cadastre must be architecturally true before it is visually satisfying.**
-
-**The Cadastre as Memory**
-
-**The Parcel Cadastre does more than organize the present.**
-
-**It makes it possible for place to accumulate history.**
-
-**Consider one Parcel:**
-
-**Parcel P**
-
-**├── undeveloped  
-├── first construction  
-├── community use  
-├── significant event  
-├── redevelopment  
-├── ruin  
-└── later historical meaning**
-
-**The objects upon it may change.**
-
-**Its users may change.**
-
-**Its rights may change.**
-
-**Its cultural significance may change.**
-
-**But if its canonical identity remains stable, all of those events can be understood as occurring at:**
-
-**the same place**
-
-**This is where the Parcel Cadastre begins to intersect with history.**
-
-**Persistent Parcel identity allows BitPangea to remember where its history happened.**
-
-**What Is Established**
-
-**The current Parcel architecture supports the following statements:**
-
-**The canonical Parcel Cadastre must contain exactly 21,000,000 Parcels.**
-
-**The World precedes the Parcel.**
-
-**The demonstrated spatial dependency is:**
-
-**Foundational Survey Fabric → Spatial Ground → General Spatial Interpretation → Parcel Cadastre**
-
-**The Foundational Survey Fabric and Parcel Cadastre are distinct Architecture domains.**
-
-**Survey units are not Parcels.**
-
-**The Parcel Cadastre is authoritative for canonical Parcel truth.**
-
-**Every Parcel must ultimately possess:**
-
-**persistent identity**
-
-**fixed position**
-
-**authoritative territorial definition**
-
-**Parcel identity is distinct from rights and control.**
-
-**Equal-area Parcels remain strongly preferred.**
-
-**Local Parcel coherence is required.**
-
-**One dominant Parcel grammar is preferred.**
-
-**The three-orientation rhombille family remains the leading visible Parcel-design direction.**
-
-**The rhombille family is not automatically the deepest Survey mathematics.**
-
-**The Parcel fabric may not exhaust the World.**
-
-**The Verge is not ordinary Parcel morphology.**
-
-**Outliers and other non-Parcel spatial conditions may require distinct treatment.**
-
-**Representation does not own Parcel truth.**
-
-**The canonical Parcel count must survive all future systems built above it.**
-
-**What Remains Open**
-
-**Significant work remains before the Parcel Cadastre can be considered complete.**
-
-**Among the unresolved questions are:**
-
-**the final Parcel geometry**
-
-**the mathematical proof of equal-area construction**
-
-**the exact global arrangement of the three orientations**
-
-**the relationship between visible Parcel grammar and the underlying Survey substrate**
-
-**the mechanism reconciling local coherence with World Form**
-
-**the precise relationship between Parcel fabric and The Verge**
-
-**the treatment of Outliers**
-
-**the exact method through which 21,000,000 Parcels are established**
-
-**the canonical Parcel identifier structure**
-
-**the authoritative territorial-definition model**
-
-**the complete Parcel Adjacency model**
-
-**the cadastral data model**
-
-**the treatment of Parcel history**
-
-**the permissible meaning of subdivision, if any**
-
-**the permissible meaning of aggregation, if any**
-
-**the relationship between Parcels and future regions**
-
-**the eventual conformance model for Parcel Cadastre implementations**
-
-**These questions should remain open until the Architecture resolves them.**
-
-**Origins should preserve the direction without inventing certainty.**
-
-**The Principle**
-
-**The Parcel system is where BitPangea’s abstract commitment to digital Finitude becomes local.**
-
-**The World establishes that there is only one finite BitPangea.**
-
-**The Parcel constraint establishes that exactly 21,000,000 canonical Parcels must exist within it.**
-
-**Geometry determines how those Parcels occupy space.**
-
-**The Cadastre ensures that each remains itself.**
-
-**Together, they make it possible for someone standing somewhere in BitPangea to eventually ask:**
-
-**Where am I?**
-
-**and receive an answer that is not merely graphical, temporary, or dependent upon whichever software currently displays the World.**
-
-**The answer can refer to a persistent Parcel.**
-
-**Centuries of digital change could occur above that Parcel without requiring the place itself to become something else.**
-
-**The governing principle is therefore:**
-
-**Geometry gives the Parcel form. The Cadastre gives the Parcel identity. The World gives the Parcel meaning as a place.**
+<a id="ch09"></a>
 
 ## IX. The Architecture
 
-**A World requires more than space.**
+A World requires more than space.
 
-**The preceding sections establish the spatial foundation of BitPangea:**
+The preceding sections establish the spatial foundation of BitPangea:
 
-**one finite World**
+one finite World
 
-**The Extent**
+The Extent
 
-**exactly 21,000,000 Parcels**
+exactly 21,000,000 Parcels
 
-**a distinctive World Form**
+a distinctive World Form
 
-**a Foundational Survey Fabric**
+a Foundational Survey Fabric
 
-**and a Parcel Cadastre**
+and a Parcel Cadastre
 
-**Those elements establish permanent place.**
+Those elements establish permanent place.
 
-**They do not, by themselves, make the World operational.**
+They do not, by themselves, make the World operational.
 
-**A persistent digital World must also be able to:**
+A persistent digital World must also be able to:
 
-**preserve state**
+preserve state
 
-**recognize actors**
+recognize actors
 
-**govern rights and control**
+govern rights and control
 
-**support legitimate change**
+support legitimate change
 
-**coordinate services**
+coordinate services
 
-**preserve provenance**
+preserve provenance
 
-**interoperate across systems**
+interoperate across systems
 
-**support Builders**
+support Builders
 
-**and remain experienceable through technologies that will change over time**
+and remain experienceable through technologies that will change over time
 
-**BitPangea therefore requires an enduring architecture above and around its spatial foundation.**
+BitPangea therefore requires an enduring architecture above and around its spatial foundation.
 
-**That architecture is now preserved within The Atlas as:**
+That architecture is now preserved within The Atlas as:
 
-**The Architecture**
+The Architecture
 
-**The Architecture is the branch of The Atlas that preserves the enduring systems through which permanent spatial truth becomes viable World architecture.**
+The Architecture is the branch of The Atlas that preserves the enduring systems through which permanent spatial truth becomes viable World architecture.
 
-**It is not a constitutional Domain of The Codex.**
+It is not a constitutional Domain of The Codex.
 
-**Its components are instead recognized as Architecture domains.**
+Its components are instead recognized as Architecture domains.
 
-**That distinction is important.**
+That distinction is important.
 
-**An Architecture domain may be permanent, foundational, or deeply important without thereby becoming constitutional.**
+An Architecture domain may be permanent, foundational, or deeply important without thereby becoming constitutional.
 
-**From the 3×3 Scaffold to The Architecture**
+<a id="ch09-s01"></a>
 
-**Earlier Creator-period inquiry explored a provisional three-category model:**
+### From the 3×3 Scaffold to The Architecture
 
-**Spatial Ground**
+Earlier Creator-period inquiry explored a provisional three-category model:
 
-**World Runtime**
+Spatial Ground
 
-**Civilization**
+World Runtime
 
-**That model was useful.**
+Civilization
 
-**It helped separate:**
+That model was useful.
 
-**designed foundations**
+It helped separate:
 
-**governed operation**
+designed foundations
 
-**and emergent civilization**
+governed operation
 
-**It also produced a provisional 3×3 framework containing concepts such as:**
+and emergent civilization
 
-**Foundational Survey Fabric**
+It also produced a provisional 3×3 framework containing concepts such as:
 
-**General Spatial Interpretation**
+Foundational Survey Fabric
 
-**Parcel Cadastre**
+General Spatial Interpretation
 
-**Persistent World State**
+Parcel Cadastre
 
-**Identity / Rights / Control**
+Persistent World State
 
-**Protocols / Services / Execution**
+Identity / Rights / Control
 
-**Builder / Creation**
+Protocols / Services / Execution
 
-**Social / Economic / Cultural**
+Builder / Creation
 
-**Experience**
+Social / Economic / Cultural
 
-**The model did not survive unchanged.**
+Experience
 
-**That is not a failure.**
+The model did not survive unchanged.
 
-**It did what a good scaffold should do:**
+That is not a failure.
 
-**it exposed responsibilities that required deeper separation.**
+It did what a good scaffold should do:
 
-**Several discoveries followed.**
+it exposed responsibilities that required deeper separation.
 
-**General Spatial Interpretation remained architecturally significant.**
+Several discoveries followed.
 
-**Identity / Rights / Control proved too important to treat casually as one undifferentiated concern.**
+General Spatial Interpretation remained architecturally significant.
 
-**Protocols, Services, and Execution revealed distinct responsibilities.**
+Identity / Rights / Control proved too important to treat casually as one undifferentiated concern.
 
-**Social, Economic, and Cultural activity increasingly appeared to belong to emergent civilization rather than a formal World layer.**
+Protocols, Services, and Execution revealed distinct responsibilities.
 
-**Persistence, provenance, interoperability, and experience each required more deliberate architectural treatment.**
+Social, Economic, and Cultural activity increasingly appeared to belong to emergent civilization rather than a formal World layer.
 
-**The 3×3 model therefore became part of the history of the Architecture rather than its final form.**
+Persistence, provenance, interoperability, and experience each required more deliberate architectural treatment.
 
-**The governing principle survived:**
+The 3×3 model therefore became part of the history of the Architecture rather than its final form.
 
-**The architecture must determine the diagram. The diagram must not determine the architecture.**
+The governing principle survived:
 
-**The Current Architecture Domains**
+The architecture must determine the diagram. The diagram must not determine the architecture.
 
-**The present Architecture recognizes nine enduring domains:**
+<a id="ch09-s02"></a>
 
-**Foundational Survey Fabric**
+### The Current Architecture Domains
 
-**Spatial Ground**
+The present Architecture recognizes nine enduring domains:
 
-**General Spatial Interpretation**
+Foundational Survey Fabric
 
-**Parcel Cadastre**
+Spatial Ground
 
-**World Runtime**
+General Spatial Interpretation
 
-**Identity / Rights / Control**
+Parcel Cadastre
 
-**Persistence / Provenance**
+World Runtime
 
-**Interoperability**
+Identity / Rights / Control
 
-**Experience Architecture**
+Persistence / Provenance
 
-**These domains represent recognized areas of enduring responsibility within BitPangea.**
+Interoperability
 
-**Their presence in The Architecture means:**
+Experience Architecture
 
-**BitPangea has identified a lasting architectural problem that requires explicit treatment.**
+These domains represent recognized areas of enduring responsibility within BitPangea.
 
-**It does not automatically mean:**
+Their presence in The Architecture means:
 
-**the domain is constitutional**
+BitPangea has identified a lasting architectural problem that requires explicit treatment.
 
-**the domain is fully designed**
+It does not automatically mean:
 
-**the domain is implemented**
+the domain is constitutional
 
-**the domain is equally mature with every other domain**
+the domain is fully designed
 
-**or that all nine domains form one strict dependency chain**
+the domain is implemented
 
-**That last distinction is especially important.**
+the domain is equally mature with every other domain
 
-**Architecture Membership Is Not Dependency Order**
+or that all nine domains form one strict dependency chain
 
-**A list can create an illusion of sequence.**
+That last distinction is especially important.
 
-**If one domain appears above another, a reader may assume:**
+<a id="ch09-s03"></a>
 
-**first domain**
+### Architecture Membership Is Not Dependency Order
 
-**↓**
+A list can create an illusion of sequence.
 
-**second domain**
+If one domain appears above another, a reader may assume:
 
-**↓**
+first domain
 
-**third domain**
+↓
 
-**↓**
+second domain
 
-**strict dependency**
+↓
 
-**That conclusion should not be made automatically.**
+third domain
 
-**The Architecture currently distinguishes two different ideas:**
+↓
 
-**membership**
+strict dependency
 
-**and:**
+That conclusion should not be made automatically.
 
-**dependency**
+The Architecture currently distinguishes two different ideas:
 
-**Membership answers:**
+membership
 
-**Which enduring responsibilities belong to The Architecture?**
+and:
 
-**Dependency asks:**
+dependency
 
-**Which Architecture domain must be sufficiently established before another can proceed without guessing?**
+Membership answers:
 
-**Those are not the same question.**
+Which enduring responsibilities belong to The Architecture?
 
-**The strongest demonstrated dependency currently remains:**
+Dependency asks:
 
-**Foundational Survey Fabric**
+Which Architecture domain must be sufficiently established before another can proceed without guessing?
 
-**↓**
+Those are not the same question.
 
-**Spatial Ground**
+The strongest demonstrated dependency currently remains:
 
-**↓**
+Foundational Survey Fabric
 
-**General Spatial Interpretation**
+↓
 
-**↓**
+Spatial Ground
 
-**Parcel Cadastre**
+↓
 
-**Beyond that point, the Architecture may become more networked.**
+General Spatial Interpretation
 
-**World Runtime, Identity / Rights / Control, Persistence / Provenance, and Interoperability may depend upon one another in more complex ways than a single vertical stack can express.**
+↓
 
-**Experience Architecture is likely downstream of several of them.**
+Parcel Cadastre
 
-**But that relationship should be demonstrated rather than assumed.**
+Beyond that point, the Architecture may become more networked.
 
-**The governing rule is:**
+World Runtime, Identity / Rights / Control, Persistence / Provenance, and Interoperability may depend upon one another in more complex ways than a single vertical stack can express.
 
-**Only claim strict ordering where dependency has actually been demonstrated.**
+Experience Architecture is likely downstream of several of them.
 
-**Why Architecture Domains Exist**
+But that relationship should be demonstrated rather than assumed.
 
-**The purpose of Architecture domains is not organizational neatness.**
+The governing rule is:
 
-**They exist because different enduring responsibilities require different authorities, different forms of permanence, and different freedoms to change.**
+Only claim strict ordering where dependency has actually been demonstrated.
 
-**A Parcel should not depend upon an interface.**
+<a id="ch09-s04"></a>
 
-**A rights system should not redefine Survey truth.**
+### Why Architecture Domains Exist
 
-**A Runtime should not become the Parcel Cadastre merely because it references Parcels.**
+The purpose of Architecture domains is not organizational neatness.
 
-**An experience should not become canonical World state merely because a visitor sees it.**
+They exist because different enduring responsibilities require different authorities, different forms of permanence, and different freedoms to change.
 
-**An interoperability layer should not acquire authority over the systems whose information it translates.**
+A Parcel should not depend upon an interface.
 
-**Persistence should preserve history without becoming authority over every truth it records.**
+A rights system should not redefine Survey truth.
 
-**Without architectural separation:**
+A Runtime should not become the Parcel Cadastre merely because it references Parcels.
 
-**reference can become authority**
+An experience should not become canonical World state merely because a visitor sees it.
 
-**implementation can become canon**
+An interoperability layer should not acquire authority over the systems whose information it translates.
 
-**representation can become truth**
+Persistence should preserve history without becoming authority over every truth it records.
 
-**convenience can become permanence**
+Without architectural separation:
 
-**The Architecture exists to prevent those collapses.**
+reference can become authority
 
-**The Architecture Boundary Rule**
+implementation can become canon
 
-**The Requirements Integrity Audit produced one of the most important governing rules for the Architecture:**
+representation can become truth
 
-**A lower Architecture domain may establish the constraints that higher domains must not violate, but it should not prescribe the internal responsibilities, organization, implementation, or lifecycle of a higher domain unless that dependency is irreducibly necessary to the lower domain itself.**
+convenience can become permanence
 
-**The working form is:**
+The Architecture exists to prevent those collapses.
 
-**Protect the boundary. Do not design the layer above from the layer below.**
+<a id="ch09-s05"></a>
 
-**This principle applies far beyond the Foundational Survey Fabric.**
+### The Architecture Boundary Rule
 
-**For example:**
+The Requirements Integrity Audit produced one of the most important governing rules for the Architecture:
 
-**The Parcel Cadastre may define canonical Parcel identity.**
+A lower Architecture domain may establish the constraints that higher domains must not violate, but it should not prescribe the internal responsibilities, organization, implementation, or lifecycle of a higher domain unless that dependency is irreducibly necessary to the lower domain itself.
 
-**It should not therefore define the complete rights architecture.**
+The working form is:
 
-**Identity / Rights / Control may determine whether an actor may perform an action.**
+Protect the boundary. Do not design the layer above from the layer below.
 
-**It should not therefore become World Runtime.**
+This principle applies far beyond the Foundational Survey Fabric.
 
-**World Runtime may execute legitimate change.**
+For example:
 
-**It should not therefore become authority over every canonical truth it references.**
+The Parcel Cadastre may define canonical Parcel identity.
 
-**Experience Architecture may expose World systems.**
+It should not therefore define the complete rights architecture.
 
-**It should not therefore redefine them.**
+Identity / Rights / Control may determine whether an actor may perform an action.
 
-**The Architecture is therefore built as much from boundaries of responsibility as from systems themselves.**
+It should not therefore become World Runtime.
 
-**Foundational Survey Fabric**
+World Runtime may execute legitimate change.
 
-**The Foundational Survey Fabric establishes BitPangea’s minimal, exact, finite, planar, semantically neutral canonical spatial reference architecture.**
+It should not therefore become authority over every canonical truth it references.
 
-**Its deepest question is:**
+Experience Architecture may expose World systems.
 
-**Where can canonical spatial reference be established?**
+It should not therefore redefine them.
 
-**It preserves the spatial truth upon which later Architecture depends.**
+The Architecture is therefore built as much from boundaries of responsibility as from systems themselves.
 
-**It does not define Parcels.**
+<a id="ch09-s06"></a>
 
-**It does not determine World membership.**
+### Foundational Survey Fabric
 
-**It does not determine rights.**
+The Foundational Survey Fabric establishes BitPangea’s minimal, exact, finite, planar, semantically neutral canonical spatial reference architecture.
 
-**It does not determine experience.**
+Its deepest question is:
 
-**Its responsibility is intentionally narrow.**
+Where can canonical spatial reference be established?
 
-**That narrowness is strength.**
+It preserves the spatial truth upon which later Architecture depends.
 
-**Spatial Ground**
+It does not define Parcels.
 
-**Spatial Ground is the next recognized Architecture domain above the Foundational Survey Fabric in the demonstrated spatial sequence.**
+It does not determine World membership.
 
-**Its full architecture remains to be developed.**
+It does not determine rights.
 
-**Its existence reflects a necessary distinction:**
+It does not determine experience.
 
-**canonical Survey reference is not yet the same thing as the complete usable spatial basis of the World.**
+Its responsibility is intentionally narrow.
 
-**Spatial Ground must therefore determine how the deeper Survey reference becomes usable as enduring World-space architecture without redefining the Survey Fabric beneath it.**
+That narrowness is strength.
 
-**Its precise responsibilities remain intentionally open pending formal inquiry.**
+<a id="ch09-s07"></a>
 
-**That inquiry should begin only when the Foundational Survey Fabric is sufficiently stable to support it.**
+### Spatial Ground
 
-**General Spatial Interpretation**
+Spatial Ground is the next recognized Architecture domain above the Foundational Survey Fabric in the demonstrated spatial sequence.
 
-**General Spatial Interpretation occupies the demonstrated sequence between Spatial Ground and the Parcel Cadastre.**
+Its full architecture remains to be developed.
 
-**Earlier inquiry questioned whether it might collapse entirely into derived queries.**
+Its existence reflects a necessary distinction:
 
-**The Architecture now preserves it as a recognized domain.**
+canonical Survey reference is not yet the same thing as the complete usable spatial basis of the World.
 
-**That does not mean every interpretation becomes authoritative state.**
+Spatial Ground must therefore determine how the deeper Survey reference becomes usable as enduring World-space architecture without redefining the Survey Fabric beneath it.
 
-**Its role is instead to address spatial meaning and interpretation that sits above the canonical Survey foundation but below canonical Parcel definition.**
+Its precise responsibilities remain intentionally open pending formal inquiry.
 
-**Its exact internal design remains unresolved.**
+That inquiry should begin only when the Foundational Survey Fabric is sufficiently stable to support it.
 
-**The key boundary is already clear:**
+<a id="ch09-s08"></a>
 
-**General Spatial Interpretation may derive and interpret spatial truth.**
+### General Spatial Interpretation
 
-**It must not redefine the Foundational Survey Fabric.**
+General Spatial Interpretation occupies the demonstrated sequence between Spatial Ground and the Parcel Cadastre.
 
-**And it must not replace the Parcel Cadastre’s authority over Parcel truth.**
+Earlier inquiry questioned whether it might collapse entirely into derived queries.
 
-**Parcel Cadastre**
+The Architecture now preserves it as a recognized domain.
 
-**The Parcel Cadastre establishes the permanent identities, fixed positions, and authoritative territorial definitions of exactly:**
+That does not mean every interpretation becomes authoritative state.
 
-**21,000,000 Parcels**
+Its role is instead to address spatial meaning and interpretation that sits above the canonical Survey foundation but below canonical Parcel definition.
 
-**Its governing question is:**
+Its exact internal design remains unresolved.
 
-**Which Parcel is this, and where does its canonical territory exist?**
+The key boundary is already clear:
 
-**The Cadastre owns Parcel truth.**
+General Spatial Interpretation may derive and interpret spatial truth.
 
-**It may depend upon deeper spatial architecture.**
+It must not redefine the Foundational Survey Fabric.
 
-**It does not thereby inherit authority over that deeper architecture.**
+And it must not replace the Parcel Cadastre’s authority over Parcel truth.
 
-**Likewise, systems above it may reference Parcel truth without acquiring cadastral authority.**
+<a id="ch09-s09"></a>
 
-**The Cadastre provides persistence of place at the Parcel level.**
+### Parcel Cadastre
 
-**World Runtime**
+The Parcel Cadastre establishes the permanent identities, fixed positions, and authoritative territorial definitions of exactly:
 
-**World Runtime concerns the operational existence of BitPangea.**
+21,000,000 Parcels
 
-**A spatially coherent World can still be inert.**
+Its governing question is:
 
-**Something must allow legitimate change to occur and persist.**
+Which Parcel is this, and where does its canonical territory exist?
 
-**World Runtime therefore concerns the architecture through which BitPangea can:**
+The Cadastre owns Parcel truth.
 
-**maintain operational state**
+It may depend upon deeper spatial architecture.
 
-**evaluate permissible change**
+It does not thereby inherit authority over that deeper architecture.
 
-**execute valid actions**
+Likewise, systems above it may reference Parcel truth without acquiring cadastral authority.
 
-**coordinate World services**
+The Cadastre provides persistence of place at the Parcel level.
 
-**preserve continuity across sessions and clients**
+<a id="ch09-s10"></a>
 
-**recover from failure**
+### World Runtime
 
-**and continue coherently through time**
+World Runtime concerns the operational existence of BitPangea.
 
-**Its governing question is:**
+A spatially coherent World can still be inert.
 
-**How does the World continue to exist and change without surrendering coherence?**
+Something must allow legitimate change to occur and persist.
 
-**World Runtime should not absorb every authority it references.**
+World Runtime therefore concerns the architecture through which BitPangea can:
 
-**It coordinates legitimate change.**
+maintain operational state
 
-**It does not become all truth.**
+evaluate permissible change
 
-**Identity / Rights / Control**
+execute valid actions
 
-**The Identity / Rights / Control domain preserves a cluster of related but distinct responsibilities.**
+coordinate World services
 
-**Identity asks:**
+preserve continuity across sessions and clients
 
-**Who or what is this?**
+recover from failure
 
-**Rights asks:**
+and continue coherently through time
 
-**What governed relationship exists?**
+Its governing question is:
 
-**Control asks:**
+How does the World continue to exist and change without surrendering coherence?
 
-**What authority may actually be exercised?**
+World Runtime should not absorb every authority it references.
 
-**These concepts remain grouped at the Architecture-domain level because they are deeply related.**
+It coordinates legitimate change.
 
-**That grouping should not be mistaken for proof that they must eventually be implemented as one system.**
+It does not become all truth.
 
-**The Architecture preserves the responsibility.**
+<a id="ch09-s11"></a>
 
-**Later design may further decompose it.**
+### Identity / Rights / Control
 
-**The essential distinction remains:**
+The Identity / Rights / Control domain preserves a cluster of related but distinct responsibilities.
 
-**Identity is not ownership.**
+Identity asks:
 
-**Ownership is not control.**
+Who or what is this?
 
-**Control is not permission.**
+Rights asks:
 
-**Permission is not authority.**
+What governed relationship exists?
 
-**Persistence / Provenance**
+Control asks:
 
-**A persistent World requires more than current state.**
+What authority may actually be exercised?
 
-**It requires the ability to know:**
+These concepts remain grouped at the Architecture-domain level because they are deeply related.
 
-**what changed**
+That grouping should not be mistaken for proof that they must eventually be implemented as one system.
 
-**where it came from**
+The Architecture preserves the responsibility.
 
-**what authority produced it**
+Later design may further decompose it.
 
-**what evidence supports it**
+The essential distinction remains:
 
-**what preceded it**
+Identity is not ownership.
 
-**and whether later changes altered the record**
+Ownership is not control.
 
-**That responsibility belongs to Persistence / Provenance.**
+Control is not permission.
 
-**Persistence concerns endurance.**
+Permission is not authority.
 
-**Provenance concerns origin and traceable lineage.**
+<a id="ch09-s12"></a>
 
-**Together they help BitPangea preserve continuity without collapsing current state, historical record, and authority into one concept.**
+### Persistence / Provenance
 
-**A World that remembers only its latest condition may persist operationally.**
+A persistent World requires more than current state.
 
-**A World that preserves provenance can also explain how that condition came to exist.**
+It requires the ability to know:
 
-**Interoperability**
+what changed
 
-**BitPangea should not become permanently dependent upon one software implementation.**
+where it came from
 
-**Systems will change.**
+what authority produced it
 
-**Services will be replaced.**
+what evidence supports it
 
-**Interfaces will evolve.**
+what preceded it
 
-**Future technologies may interact with the World in ways that cannot presently be predicted.**
+and whether later changes altered the record
 
-**Interoperability therefore exists as an Architecture domain concerned with the ability of distinct conforming systems to exchange, interpret, and act upon BitPangea information without changing its canonical meaning.**
+That responsibility belongs to Persistence / Provenance.
 
-**Its deepest principle is:**
+Persistence concerns endurance.
 
-**Implementation diversity must not become semantic diversity.**
+Provenance concerns origin and traceable lineage.
 
-**Interoperability allows systems to differ.**
+Together they help BitPangea preserve continuity without collapsing current state, historical record, and authority into one concept.
 
-**It does not permit them to disagree about authoritative World truth.**
+A World that remembers only its latest condition may persist operationally.
 
-**Experience Architecture**
+A World that preserves provenance can also explain how that condition came to exist.
 
-**Experience Architecture concerns how visitors, inhabitants, Builders, and future participants encounter and interact with BitPangea.**
+<a id="ch09-s13"></a>
 
-**It may eventually include:**
+### Interoperability
 
-**globe experience**
+BitPangea should not become permanently dependent upon one software implementation.
 
-**flat lived World**
+Systems will change.
 
-**navigation**
+Services will be replaced.
 
-**Parcel interaction**
+Interfaces will evolve.
 
-**Builder interfaces**
+Future technologies may interact with the World in ways that cannot presently be predicted.
 
-**discovery**
+Interoperability therefore exists as an Architecture domain concerned with the ability of distinct conforming systems to exchange, interpret, and act upon BitPangea information without changing its canonical meaning.
 
-**visualization**
+Its deepest principle is:
 
-**immersion**
+Implementation diversity must not become semantic diversity.
 
-**future interaction modes not yet imagined**
+Interoperability allows systems to differ.
 
-**Experience matters enormously.**
+It does not permit them to disagree about authoritative World truth.
 
-**But it belongs high in the Architecture for a reason.**
+<a id="ch09-s14"></a>
 
-**The experience should expose, translate, and interact with deeper systems.**
+### Experience Architecture
 
-**It should not become their source of truth.**
+Experience Architecture concerns how visitors, inhabitants, Builders, and future participants encounter and interact with BitPangea.
 
-**The principle remains:**
+It may eventually include:
 
-**Experience is where the World becomes perceptible—not where the World becomes authoritative.**
+globe experience
 
-**Civilization Is Not an Architecture Domain**
+flat lived World
 
-**One of the most important lessons of the earlier 3×3 model is what disappeared from the formal Architecture.**
+navigation
 
-**Civilization is not itself an Architecture domain.**
+Parcel interaction
 
-**This is deliberate.**
+Builder interfaces
 
-**BitPangea must create the conditions under which civilization may emerge.**
+discovery
 
-**It should not attempt to architect civilization itself as though:**
+visualization
 
-**culture**
+immersion
 
-**economy**
+future interaction modes not yet imagined
 
-**community**
+Experience matters enormously.
 
-**history**
+But it belongs high in the Architecture for a reason.
 
-**social organization**
+The experience should expose, translate, and interact with deeper systems.
 
-**collective meaning**
+It should not become their source of truth.
 
-**were software layers to be installed.**
+The principle remains:
 
-**The Architecture may provide capabilities that support them.**
+Experience is where the World becomes perceptible—not where the World becomes authoritative.
 
-**Civilization determines what those capabilities become.**
+<a id="ch09-s15"></a>
 
-**Thus:**
+### Civilization Is Not an Architecture Domain
 
-**Architecture enables. Civilization emerges.**
+One of the most important lessons of the earlier 3×3 model is what disappeared from the formal Architecture.
 
-**This is one of the clearest boundaries between the World the Creator must establish and the future that the Creator should leave open.**
+Civilization is not itself an Architecture domain.
 
-**Builders Belong Above the Architecture**
+This is deliberate.
 
-**The same principle applies to Builders.**
+BitPangea must create the conditions under which civilization may emerge.
 
-**Builders require Architecture beneath them.**
+It should not attempt to architect civilization itself as though:
 
-**They may depend upon:**
+culture
 
-**Parcel Cadastre**
+economy
 
-**Identity / Rights / Control**
+community
 
-**World Runtime**
+history
 
-**Persistence / Provenance**
+social organization
 
-**Interoperability**
+collective meaning
 
-**Experience Architecture**
+were software layers to be installed.
 
-**But Builder / Creation is not presently preserved as one of the nine Architecture domains.**
+The Architecture may provide capabilities that support them.
 
-**That distinction reflects a maturation of the earlier model.**
+Civilization determines what those capabilities become.
 
-**Builders are participants in the World.**
+Thus:
 
-**They use the Architecture.**
+Architecture enables. Civilization emerges.
 
-**They should not become another foundational authority merely because creation is essential to civilization.**
+This is one of the clearest boundaries between the World the Creator must establish and the future that the Creator should leave open.
 
-**The Creator establishes the World.**
+<a id="ch09-s16"></a>
 
-**The Architecture makes legitimate creation possible.**
+### Builders Belong Above the Architecture
 
-**Builders create within that World.**
+The same principle applies to Builders.
 
-**Authority Does Not Flow Through Page Order**
+Builders require Architecture beneath them.
 
-**Architecture diagrams can imply that authority travels upward or downward automatically.**
+They may depend upon:
 
-**It does not.**
+Parcel Cadastre
 
-**A lower domain does not own everything above it.**
+Identity / Rights / Control
 
-**A higher domain does not acquire authority over everything it references below.**
+World Runtime
 
-**Responsibilities remain bounded.**
+Persistence / Provenance
 
-**Conceptually:**
+Interoperability
 
-**Foundational Survey Fabric**
+Experience Architecture
 
-**→ canonical Survey reference**
+But Builder / Creation is not presently preserved as one of the nine Architecture domains.
 
-**Parcel Cadastre**
+That distinction reflects a maturation of the earlier model.
 
-**→ canonical Parcel truth**
+Builders are participants in the World.
 
-**Identity / Rights / Control**
+They use the Architecture.
 
-**→ governed actor relationships and authority**
+They should not become another foundational authority merely because creation is essential to civilization.
 
-**World Runtime**
+The Creator establishes the World.
 
-**→ legitimate operational change**
+The Architecture makes legitimate creation possible.
 
-**Persistence / Provenance**
+Builders create within that World.
 
-**→ durable continuity and lineage**
+<a id="ch09-s17"></a>
 
-**Interoperability**
+### Authority Does Not Flow Through Page Order
 
-**→ reliable exchange across systems**
+Architecture diagrams can imply that authority travels upward or downward automatically.
 
-**Experience Architecture**
+It does not.
 
-**→ human and machine encounter with the World**
+A lower domain does not own everything above it.
 
-**These systems must interact.**
+A higher domain does not acquire authority over everything it references below.
 
-**Interaction does not erase responsibility boundaries.**
+Responsibilities remain bounded.
 
-**The governing principle is:**
+Conceptually:
 
-**Reference does not transfer authority.**
+Foundational Survey Fabric
 
-**Permanence Is Unequal**
+→ canonical Survey reference
 
-**Not every Architecture domain should possess the same expected rate of change.**
+Parcel Cadastre
 
-**The deeper a system lies within the definition of the World, the more difficult casual change should become.**
+→ canonical Parcel truth
 
-**The closer a system lies to technology, interface, or experience, the more freedom it should possess to evolve.**
+Identity / Rights / Control
 
-**Conceptually:**
+→ governed actor relationships and authority
 
-**Foundational Survey Fabric**
+World Runtime
 
-**→ extreme persistence**
+→ legitimate operational change
 
-**Spatial Ground**
+Persistence / Provenance
 
-**→ very high persistence**
+→ durable continuity and lineage
 
-**General Spatial Interpretation**
+Interoperability
 
-**→ high architectural stability**
+→ reliable exchange across systems
 
-**Parcel Cadastre**
+Experience Architecture
 
-**→ permanent Parcel identity and territorial stability**
+→ human and machine encounter with the World
 
-**World Runtime / Identity / Persistence / Interoperability**
+These systems must interact.
 
-**→ governed evolution**
+Interaction does not erase responsibility boundaries.
 
-**Experience Architecture**
+The governing principle is:
 
-**→ comparatively high freedom to evolve**
+Reference does not transfer authority.
 
-**This should not yet be interpreted as a formal change-control hierarchy.**
+<a id="ch09-s18"></a>
 
-**It preserves a design principle:**
+### Permanence Is Unequal
 
-**The deeper the layer, the more permanent it should be. The closer the layer is to the user, the more freedom it should have to evolve.**
+Not every Architecture domain should possess the same expected rate of change.
 
-**The Architecture Must Permit Replacement**
+The deeper a system lies within the definition of the World, the more difficult casual change should become.
 
-**The Architecture also exists to protect BitPangea from technological obsolescence.**
+The closer a system lies to technology, interface, or experience, the more freedom it should possess to evolve.
 
-**Suppose the first renderer disappears.**
+Conceptually:
 
-**The World should remain.**
+Foundational Survey Fabric
 
-**Suppose a service implementation becomes obsolete.**
+→ extreme persistence
 
-**The service should be replaceable without relocating Parcels.**
+Spatial Ground
 
-**Suppose a new identity technology emerges.**
+→ very high persistence
 
-**It should be possible to evolve authentication without erasing actor continuity.**
+General Spatial Interpretation
 
-**Suppose future devices present BitPangea in ways no current interface anticipates.**
+→ high architectural stability
 
-**The underlying World should remain intelligible.**
+Parcel Cadastre
 
-**This produces an important architectural objective:**
+→ permanent Parcel identity and territorial stability
 
-**Implementations should be allowed to become obsolete without requiring the World to become obsolete with them.**
+World Runtime / Identity / Persistence / Interoperability
 
-**The Parcel should outlive the technology used to experience the Parcel.**
+→ governed evolution
 
-**The World should outlive the technology used to experience the World.**
+Experience Architecture
 
-**Cross-Domain Relationships**
+→ comparatively high freedom to evolve
 
-**A functioning BitPangea will require many Architecture domains to participate in the same operation.**
+This should not yet be interpreted as a formal change-control hierarchy.
 
-**A future construction event might conceptually involve:**
+It preserves a design principle:
 
-**actor identity**
+The deeper the layer, the more permanent it should be. The closer the layer is to the user, the more freedom it should have to evolve.
 
-**↓**
+<a id="ch09-s19"></a>
 
-**rights / control**
+### The Architecture Must Permit Replacement
 
-**↓**
+The Architecture also exists to protect BitPangea from technological obsolescence.
 
-**Parcel Cadastre reference**
+Suppose the first renderer disappears.
 
-**↓**
+The World should remain.
 
-**World Runtime validation and execution**
+Suppose a service implementation becomes obsolete.
 
-**↓**
+The service should be replaceable without relocating Parcels.
 
-**persistent state**
+Suppose a new identity technology emerges.
 
-**↓**
+It should be possible to evolve authentication without erasing actor continuity.
 
-**provenance**
+Suppose future devices present BitPangea in ways no current interface anticipates.
 
-**↓**
+The underlying World should remain intelligible.
 
-**interoperable exposure**
+This produces an important architectural objective:
 
-**↓**
+Implementations should be allowed to become obsolete without requiring the World to become obsolete with them.
 
-**experience representation**
+The Parcel should outlive the technology used to experience the Parcel.
 
-**That sequence does not imply that all participating domains should become one system.**
+The World should outlive the technology used to experience the World.
 
-**It demonstrates why responsibility boundaries matter.**
+<a id="ch09-s20"></a>
 
-**Each Architecture domain should eventually be able to answer:**
+### Cross-Domain Relationships
 
-**What truth do I own?**
+A functioning BitPangea will require many Architecture domains to participate in the same operation.
 
-**What truth do I reference?**
+A future construction event might conceptually involve:
 
-**What may I change?**
+actor identity
 
-**Whose authority do I rely upon?**
+↓
 
-**What evidence must I preserve?**
+rights / control
 
-**Those questions are more important than preserving a visually elegant diagram.**
+↓
 
-**Architecture Membership, Maturity, and Status**
+Parcel Cadastre reference
 
-**Architecture domains may also possess different levels of maturity.**
+↓
 
-**A domain can be:**
+World Runtime validation and execution
 
-**recognized**
+↓
 
-**provisional in design**
+persistent state
 
-**reserved for later work**
+↓
 
-**under active inquiry**
+provenance
 
-**institutionally established**
+↓
 
-**without those states implying a different position in dependency order.**
+interoperable exposure
 
-**This distinction matters because terms such as Reserved and Provisional should describe architectural standing or maturity rather than silently imply sequence.**
+↓
 
-**Likewise, presentation order should not be allowed to masquerade as dependency order.**
+experience representation
 
-**The next architectural clarification must therefore settle exactly how The Architecture communicates:**
+That sequence does not imply that all participating domains should become one system.
 
-**membership**
+It demonstrates why responsibility boundaries matter.
 
-**presentation**
+Each Architecture domain should eventually be able to answer:
 
-**maturity**
+What truth do I own?
 
-**and dependency**
+What truth do I reference?
 
-**without conflating them.**
+What may I change?
 
-**Until that work is complete:**
+Whose authority do I rely upon?
 
-**Only demonstrated dependencies should be presented as strict dependencies.**
+What evidence must I preserve?
 
-**What Is Established**
+Those questions are more important than preserving a visually elegant diagram.
 
-**The current Architecture supports the following statements:**
+<a id="ch09-s21"></a>
 
-**BitPangea requires enduring Architecture above its spatial foundation.**
+### Architecture Membership, Maturity, and Status
 
-**That Architecture belongs within The Atlas, not The Foundation.**
+Architecture domains may also possess different levels of maturity.
 
-**The Architecture currently recognizes nine domains:**
+A domain can be:
 
-**Foundational Survey Fabric**
+recognized
 
-**Spatial Ground**
+provisional in design
 
-**General Spatial Interpretation**
+reserved for later work
 
-**Parcel Cadastre**
+under active inquiry
 
-**World Runtime**
+institutionally established
 
-**Identity / Rights / Control**
+without those states implying a different position in dependency order.
 
-**Persistence / Provenance**
+This distinction matters because terms such as Reserved and Provisional should describe architectural standing or maturity rather than silently imply sequence.
 
-**Interoperability**
+Likewise, presentation order should not be allowed to masquerade as dependency order.
 
-**Experience Architecture**
+The next architectural clarification must therefore settle exactly how The Architecture communicates:
 
-**Architecture-domain membership does not establish constitutional status.**
+membership
 
-**Architecture-domain membership does not, by itself, establish strict dependency order.**
+presentation
 
-**The demonstrated spatial dependency is:**
+maturity
 
-**Foundational Survey Fabric → Spatial Ground → General Spatial Interpretation → Parcel Cadastre**
+and dependency
 
-**The relationships among the remaining Architecture domains require further dependency analysis.**
+without conflating them.
 
-**The Foundational Survey Fabric and Parcel Cadastre are distinct authorities.**
+Until that work is complete:
 
-**The Parcel Cadastre remains authoritative for Parcel truth.**
+Only demonstrated dependencies should be presented as strict dependencies.
 
-**World Runtime is required for governed operational continuity.**
+<a id="ch09-s22"></a>
 
-**Identity / Rights / Control requires explicit Architecture treatment.**
+### What Is Established
 
-**Persistence / Provenance requires explicit Architecture treatment.**
+The current Architecture supports the following statements:
 
-**Interoperability is necessary for technological durability.**
+BitPangea requires enduring Architecture above its spatial foundation.
 
-**Experience Architecture must remain distinct from deeper World authority.**
+That Architecture belongs within The Atlas, not The Foundation.
 
-**Civilization is not itself a formal Architecture domain.**
+The Architecture currently recognizes nine domains:
 
-**Builders operate through and above the Architecture rather than redefining its foundational truth.**
+Foundational Survey Fabric
 
-**Reference does not transfer authority.**
+Spatial Ground
 
-**And:**
+General Spatial Interpretation
 
-**The deeper the layer, the more permanent it should be. The closer the layer is to the user, the more freedom it should have to evolve.**
+Parcel Cadastre
 
-**What Remains Open**
+World Runtime
 
-**Important architectural questions remain.**
+Identity / Rights / Control
 
-**Among them are:**
+Persistence / Provenance
 
-**the final distinction between Architecture membership and presentation order**
+Interoperability
 
-**which dependencies beyond the first four domains are strict**
+Experience Architecture
 
-**which dependencies are cross-domain or bidirectional**
+Architecture-domain membership does not establish constitutional status.
 
-**the precise role of World Runtime relative to Identity / Rights / Control**
+Architecture-domain membership does not, by itself, establish strict dependency order.
 
-**the internal decomposition of Identity / Rights / Control**
+The demonstrated spatial dependency is:
 
-**the internal decomposition of World Runtime**
+Foundational Survey Fabric → Spatial Ground → General Spatial Interpretation → Parcel Cadastre
 
-**the exact responsibility boundary between World Runtime and Persistence / Provenance**
+The relationships among the remaining Architecture domains require further dependency analysis.
 
-**the relationship between Persistence / Provenance and historical institutions**
+The Foundational Survey Fabric and Parcel Cadastre are distinct authorities.
 
-**the precise role of Interoperability across the Architecture**
+The Parcel Cadastre remains authoritative for Parcel truth.
 
-**the eventual responsibilities of Experience Architecture**
+World Runtime is required for governed operational continuity.
 
-**the maturity and status model for Architecture domains**
+Identity / Rights / Control requires explicit Architecture treatment.
 
-**the final cross-domain authority model**
+Persistence / Provenance requires explicit Architecture treatment.
 
-**the technical implementations of every Architecture domain**
+Interoperability is necessary for technological durability.
 
-**These questions should remain open until the architecture itself justifies their answers.**
+Experience Architecture must remain distinct from deeper World authority.
 
-**Origins should preserve the fact that the Architecture was discovered progressively rather than pretend the present structure appeared fully formed.**
+Civilization is not itself a formal Architecture domain.
 
-**The Principle**
+Builders operate through and above the Architecture rather than redefining its foundational truth.
 
-**The Architecture exists to protect a simple idea:**
+Reference does not transfer authority.
 
-**Not everything in a World should possess the same authority, the same permanence, or the same freedom to change.**
+And:
 
-**Canonical spatial reference must remain stable enough to preserve place.**
+The deeper the layer, the more permanent it should be. The closer the layer is to the user, the more freedom it should have to evolve.
 
-**The Parcel Cadastre must remain stable enough to preserve the 21,000,000 Parcels.**
+<a id="ch09-s23"></a>
 
-**World Runtime must be governed enough to permit legitimate change.**
+### What Remains Open
 
-**Identity, rights, and control must remain explicit enough to prevent authority from becoming accidental.**
+Important architectural questions remain.
 
-**Persistence and provenance must preserve continuity.**
+Among them are:
 
-**Interoperability must allow technology to evolve.**
+the final distinction between Architecture membership and presentation order
 
-**Experience must remain free enough to improve.**
+which dependencies beyond the first four domains are strict
 
-**And civilization must remain open enough to become something the Creator did not completely design.**
+which dependencies are cross-domain or bidirectional
 
-**The earlier 3×3 model expressed this as:**
+the precise role of World Runtime relative to Identity / Rights / Control
 
-**Design the ground. Govern the runtime. Enable the civilization.**
+the internal decomposition of Identity / Rights / Control
 
-**The mature Architecture carries that principle forward more precisely:**
+the internal decomposition of World Runtime
 
-**Establish what must endure. Govern what must change. Leave open what should emerge.**
+the exact responsibility boundary between World Runtime and Persistence / Provenance
 
-**And once the Architecture has done enough—**
+the relationship between Persistence / Provenance and historical institutions
 
-**allow the World to happen.**
+the precise role of Interoperability across the Architecture
+
+the eventual responsibilities of Experience Architecture
+
+the maturity and status model for Architecture domains
+
+the final cross-domain authority model
+
+the technical implementations of every Architecture domain
+
+These questions should remain open until the architecture itself justifies their answers.
+
+Origins should preserve the fact that the Architecture was discovered progressively rather than pretend the present structure appeared fully formed.
+
+<a id="ch09-s24"></a>
+
+### The Principle
+
+The Architecture exists to protect a simple idea:
+
+Not everything in a World should possess the same authority, the same permanence, or the same freedom to change.
+
+Canonical spatial reference must remain stable enough to preserve place.
+
+The Parcel Cadastre must remain stable enough to preserve the 21,000,000 Parcels.
+
+World Runtime must be governed enough to permit legitimate change.
+
+Identity, rights, and control must remain explicit enough to prevent authority from becoming accidental.
+
+Persistence and provenance must preserve continuity.
+
+Interoperability must allow technology to evolve.
+
+Experience must remain free enough to improve.
+
+And civilization must remain open enough to become something the Creator did not completely design.
+
+The earlier 3×3 model expressed this as:
+
+Design the ground. Govern the runtime. Enable the civilization.
+
+The mature Architecture carries that principle forward more precisely:
+
+Establish what must endure. Govern what must change. Leave open what should emerge.
+
+And once the Architecture has done enough—
+
+allow the World to happen.
+
+---
+
+<a id="ch10"></a>
 
 ## X. Identity, Rights, and Control
 
-**A persistent World requires more than places.**
+A persistent World requires more than places.
 
-**It requires actors.**
+It requires actors.
 
-**It requires relationships between actors and World objects.**
+It requires relationships between actors and World objects.
 
-**It requires rules governing what those relationships permit.**
+It requires rules governing what those relationships permit.
 
-**And it requires a way to distinguish between:**
+And it requires a way to distinguish between:
 
-**association**
+association
 
-**entitlement**
+entitlement
 
-**permission**
+permission
 
-**control**
+control
 
-**and authority.**
+and authority.
 
-**These responsibilities belong to one of BitPangea’s recognized Architecture domains:**
+These responsibilities belong to one of BitPangea’s recognized Architecture domains:
 
-**Identity / Rights / Control**
+Identity / Rights / Control
 
-**The grouping is deliberate.**
+The grouping is deliberate.
 
-**The concepts are deeply related.**
+The concepts are deeply related.
 
-**But they are not the same thing.**
+But they are not the same thing.
 
-**BitPangea should preserve that distinction carefully.**
+BitPangea should preserve that distinction carefully.
 
-**Identity answers who.**
+Identity answers who.
 
-**Rights answer what governed relationship exists.**
+Rights answer what governed relationship exists.
 
-**Control answers what authority may actually be exercised.**
+Control answers what authority may actually be exercised.
 
-**Those questions may eventually require further internal separation.**
+Those questions may eventually require further internal separation.
 
-**The Architecture preserves the domain now because the responsibility is enduring, even though its final internal design remains unresolved.**
+The Architecture preserves the domain now because the responsibility is enduring, even though its final internal design remains unresolved.
 
-**The First Question: Who or What Is the Actor?**
+<a id="ch10-s01"></a>
 
-**Before a governed relationship can exist, BitPangea must be able to distinguish the actor to which that relationship applies.**
+### The First Question: Who or What Is the Actor?
 
-**This is the problem of Identity.**
+Before a governed relationship can exist, BitPangea must be able to distinguish the actor to which that relationship applies.
 
-**Identity asks:**
+This is the problem of Identity.
 
-**Who or what is this?**
+Identity asks:
 
-**The answer may eventually apply to more than human individuals.**
+Who or what is this?
 
-**BitPangea may need to recognize different classes of actors, including:**
+The answer may eventually apply to more than human individuals.
 
-**individuals**
+BitPangea may need to recognize different classes of actors, including:
 
-**organizations**
+individuals
 
-**institutions**
+organizations
 
-**services**
+institutions
 
-**Builders**
+services
 
-**automated agents**
+Builders
 
-**World systems**
+automated agents
 
-**other future actor types**
+World systems
 
-**The final actor model remains open.**
+other future actor types
 
-**The architectural requirement is already clear:**
+The final actor model remains open.
 
-**BitPangea must be able to distinguish actors persistently enough that rights, authority, actions, provenance, and history can refer to them meaningfully.**
+The architectural requirement is already clear:
 
-**Without persistent actor identity, every higher relationship becomes fragile.**
+BitPangea must be able to distinguish actors persistently enough that rights, authority, actions, provenance, and history can refer to them meaningfully.
 
-**Identity Is Not a Username**
+Without persistent actor identity, every higher relationship becomes fragile.
 
-**A username may identify someone to an interface.**
+<a id="ch10-s02"></a>
 
-**That does not make the username the canonical actor.**
+### Identity Is Not a Username
 
-**Likewise, an:**
+A username may identify someone to an interface.
 
-**email address**
+That does not make the username the canonical actor.
 
-**wallet address**
+Likewise, an:
 
-**account number**
+email address
 
-**public key**
+wallet address
 
-**credential**
+account number
 
-**device identifier**
+public key
 
-**external platform account**
+credential
 
-**may help authenticate or locate an actor.**
+device identifier
 
-**None should automatically become synonymous with BitPangea identity merely because it is convenient to implement.**
+external platform account
 
-**The distinction parallels the Foundational Survey Fabric.**
+may help authenticate or locate an actor.
 
-**Just as BitPangea should not confuse an implementation coordinate with canonical spatial reference, it should not confuse an implementation credential with persistent actor identity.**
+None should automatically become synonymous with BitPangea identity merely because it is convenient to implement.
 
-**Conceptually:**
+The distinction parallels the Foundational Survey Fabric.
 
-**Actor**
+Just as BitPangea should not confuse an implementation coordinate with canonical spatial reference, it should not confuse an implementation credential with persistent actor identity.
 
-**↓**
+Conceptually:
 
-**persistent BitPangea identity**
+Actor
 
-**may be associated with:**
+↓
 
-**username**
+persistent BitPangea identity
 
-**credential**
+may be associated with:
 
-**wallet**
+username
 
-**device**
+credential
 
-**account**
+wallet
 
-**profile**
+device
 
-**external identity**
+account
 
-**Those associations may change.**
+profile
 
-**The actor’s continuity should remain intelligible.**
+external identity
 
-**Authentication Is Not Identity**
+Those associations may change.
 
-**Authentication asks:**
+The actor’s continuity should remain intelligible.
 
-**Can this entity demonstrate control of credentials associated with an identity?**
+<a id="ch10-s03"></a>
 
-**Identity asks:**
+### Authentication Is Not Identity
 
-**Which actor is this?**
+Authentication asks:
 
-**They are related.**
+Can this entity demonstrate control of credentials associated with an identity?
 
-**They are not synonymous.**
+Identity asks:
 
-**Credentials may be:**
+Which actor is this?
 
-**rotated**
+They are related.
 
-**revoked**
+They are not synonymous.
 
-**recovered**
+Credentials may be:
 
-**replaced**
+rotated
 
-**superseded**
+revoked
 
-**or rendered obsolete by technology**
+recovered
 
-**A change in credentials should not necessarily create a new historical actor.**
+replaced
 
-**Conceptually:**
+superseded
 
-**Actor Identity**
+or rendered obsolete by technology
 
-**↓**
+A change in credentials should not necessarily create a new historical actor.
 
-**may use over time**
+Conceptually:
 
-**↓**
+Actor Identity
 
-**Authentication Credentials**
+↓
 
-**The mechanism remains open.**
+may use over time
 
-**The separation should not.**
+↓
 
-**Identity Is Not Ownership**
+Authentication Credentials
 
-**One of the most important distinctions in the domain is:**
+The mechanism remains open.
 
-**Identity does not imply ownership.**
+The separation should not.
 
-**Knowing who an actor is does not establish what that actor controls.**
+<a id="ch10-s04"></a>
 
-**Likewise:**
+### Identity Is Not Ownership
 
-**identity ≠ ownership**
+One of the most important distinctions in the domain is:
 
-**identity ≠ rights**
+Identity does not imply ownership.
 
-**identity ≠ permission**
+Knowing who an actor is does not establish what that actor controls.
 
-**identity ≠ authority**
+Likewise:
 
-**An actor may exist in BitPangea without possessing any special relationship to a Parcel.**
+identity ≠ ownership
 
-**An organization may possess a governed relationship that its individual members do not possess personally.**
+identity ≠ rights
 
-**A service may have narrowly scoped authority to perform an operation without owning anything.**
+identity ≠ permission
 
-**Identity makes governed relationships possible.**
+identity ≠ authority
 
-**Identity is not itself the governed relationship.**
+An actor may exist in BitPangea without possessing any special relationship to a Parcel.
 
-**The Second Question: What Relationship Exists?**
+An organization may possess a governed relationship that its individual members do not possess personally.
 
-**Once an actor can be identified, BitPangea can ask a different question:**
+A service may have narrowly scoped authority to perform an operation without owning anything.
 
-**What governed relationship exists between this actor and a World object, place, system, or capability?**
+Identity makes governed relationships possible.
 
-**This is the problem of Rights.**
+Identity is not itself the governed relationship.
 
-**The term should be used carefully.**
+<a id="ch10-s05"></a>
 
-**“Rights” can carry:**
+### The Second Question: What Relationship Exists?
 
-**legal**
+Once an actor can be identified, BitPangea can ask a different question:
 
-**political**
+What governed relationship exists between this actor and a World object, place, system, or capability?
 
-**moral**
+This is the problem of Rights.
 
-**contractual**
+The term should be used carefully.
 
-**technical**
+“Rights” can carry:
 
-**social**
+legal
 
-**meanings.**
+political
 
-**BitPangea has not yet adopted a final rights taxonomy.**
+moral
 
-**At the Architecture level, the concern is more general:**
+contractual
 
-**What recognized relationship gives an actor some governed standing with respect to something in the World?**
+technical
 
-**That relationship may eventually take many forms.**
+social
 
-**Origins should preserve the need for the architecture without inventing its final categories.**
+meanings.
 
-**Rights Require Provenance**
+BitPangea has not yet adopted a final rights taxonomy.
 
-**A right should not exist merely because an application claims that it exists.**
+At the Architecture level, the concern is more general:
 
-**BitPangea should ultimately be able to determine, for consequential governed relationships:**
+What recognized relationship gives an actor some governed standing with respect to something in the World?
 
-**What relationship is this?**
+That relationship may eventually take many forms.
 
-**Which actor possesses it?**
+Origins should preserve the need for the architecture without inventing its final categories.
 
-**To what object or capability does it apply?**
+<a id="ch10-s06"></a>
 
-**What does it permit?**
+### Rights Require Provenance
 
-**Where did it originate?**
+A right should not exist merely because an application claims that it exists.
 
-**Which authority established it?**
+BitPangea should ultimately be able to determine, for consequential governed relationships:
 
-**When did it become effective?**
+What relationship is this?
 
-**Can it expire?**
+Which actor possesses it?
 
-**Can it be delegated?**
+To what object or capability does it apply?
 
-**Can it be revoked?**
+What does it permit?
 
-**Can it be superseded?**
+Where did it originate?
 
-**What evidence supports its present standing?**
+Which authority established it?
 
-**Not every relationship will necessarily require every one of these properties.**
+When did it become effective?
 
-**But the broader requirement is important:**
+Can it expire?
 
-**Rights require provenance.**
+Can it be delegated?
 
-**A system that preserves a right while losing the authority from which it came risks confusing assertion with legitimate standing.**
+Can it be revoked?
 
-**This is one reason Persistence / Provenance is now a distinct Architecture domain.**
+Can it be superseded?
 
-**Identity / Rights / Control may establish and use governed relationships.**
+What evidence supports its present standing?
 
-**Persistence / Provenance helps preserve their lineage.**
+Not every relationship will necessarily require every one of these properties.
 
-**Rights Are Not the Parcel**
+But the broader requirement is important:
 
-**A Parcel may be the object to which a right refers.**
+Rights require provenance.
 
-**The right is not the Parcel.**
+A system that preserves a right while losing the authority from which it came risks confusing assertion with legitimate standing.
 
-**Conceptually:**
+This is one reason Persistence / Provenance is now a distinct Architecture domain.
 
-**Parcel**
+Identity / Rights / Control may establish and use governed relationships.
 
-**→ canonical spatial object**
+Persistence / Provenance helps preserve their lineage.
 
-**Right**
+<a id="ch10-s07"></a>
 
-**→ governed relationship involving that object**
+### Rights Are Not the Parcel
 
-**This distinction protects the Parcel Cadastre.**
+A Parcel may be the object to which a right refers.
 
-**If a right changes:**
+The right is not the Parcel.
 
-**the Parcel does not disappear.**
+Conceptually:
 
-**If a new actor acquires a relationship:**
+Parcel
 
-**the Parcel does not move.**
+→ canonical spatial object
 
-**If a right expires:**
+Right
 
-**the Parcel’s territorial definition does not change.**
+→ governed relationship involving that object
 
-**Thus:**
+This distinction protects the Parcel Cadastre.
 
-**The Parcel Cadastre owns Parcel truth. Identity / Rights / Control may reference Parcel truth without redefining it.**
+If a right changes:
 
-**This is an application of the broader architectural rule:**
+the Parcel does not disappear.
 
-**Reference does not transfer authority.**
+If a new actor acquires a relationship:
 
-**Ownership Is Only One Possible Relationship**
+the Parcel does not move.
 
-**Digital-land systems often jump immediately from Parcel existence to ownership.**
+If a right expires:
 
-**BitPangea should not.**
+the Parcel’s territorial definition does not change.
 
-**Ownership may eventually become an important BitPangea concept.**
+Thus:
 
-**But beginning with it would prematurely compress a richer architectural problem into one inherited word.**
+The Parcel Cadastre owns Parcel truth. Identity / Rights / Control may reference Parcel truth without redefining it.
 
-**Future governed relationships could potentially distinguish concepts such as:**
+This is an application of the broader architectural rule:
 
-**ownership**
+Reference does not transfer authority.
 
-**use**
+<a id="ch10-s08"></a>
 
-**access**
+### Ownership Is Only One Possible Relationship
 
-**construction authority**
+Digital-land systems often jump immediately from Parcel existence to ownership.
 
-**administrative authority**
+BitPangea should not.
 
-**delegated authority**
+Ownership may eventually become an important BitPangea concept.
 
-**temporary permission**
+But beginning with it would prematurely compress a richer architectural problem into one inherited word.
 
-**occupancy**
+Future governed relationships could potentially distinguish concepts such as:
 
-**custodianship**
+ownership
 
-**shared control**
+use
 
-**service authority**
+access
 
-**These are illustrative only.**
+construction authority
 
-**They are not adopted BitPangea rights classes.**
+administrative authority
 
-**The governing principle is:**
+delegated authority
 
-**Discover the relationships the World actually requires before deciding which inherited legal or technical words should describe them.**
+temporary permission
 
-**The Third Question: What May Actually Be Done?**
+occupancy
 
-**Rights describe governed relationships.**
+custodianship
 
-**Control concerns the ability to exercise authority.**
+shared control
 
-**The question becomes:**
+service authority
 
-**What may this actor actually cause to happen?**
+These are illustrative only.
 
-**That is different from merely recording that a relationship exists.**
+They are not adopted BitPangea rights classes.
 
-**An actor may possess some recognized right associated with a Parcel while still lacking authority to perform every possible operation affecting it.**
+The governing principle is:
 
-**Conceptually:**
+Discover the relationships the World actually requires before deciding which inherited legal or technical words should describe them.
 
-**Actor Identity**
+<a id="ch10-s09"></a>
 
-**↓**
+### The Third Question: What May Actually Be Done?
 
-**Rights Relationship**
+Rights describe governed relationships.
 
-**↓**
+Control concerns the ability to exercise authority.
 
-**Control / Authorization**
+The question becomes:
 
-**↓**
+What may this actor actually cause to happen?
 
-**permitted operation**
+That is different from merely recording that a relationship exists.
 
-**↓**
+An actor may possess some recognized right associated with a Parcel while still lacking authority to perform every possible operation affecting it.
 
-**World Runtime**
+Conceptually:
 
-**↓**
+Actor Identity
 
-**execution**
+↓
 
-**↓**
+Rights Relationship
 
-**resulting World state**
+↓
 
-**This sequence is important.**
+Control / Authorization
 
-**Rights describe standing.**
+↓
 
-**Authorization determines whether a specific action is permitted under current conditions.**
+permitted operation
 
-**Control concerns exercisable authority.**
+↓
 
-**Execution belongs to World Runtime.**
+World Runtime
 
-**Those responsibilities should not be collapsed into one field or one service merely because implementation would be simpler.**
+↓
 
-**Authorization Is Not Rights**
+execution
 
-**Rights and authorization should remain distinct.**
+↓
 
-**Rights describe governed relationships.**
+resulting World state
 
-**Authorization evaluates a specific proposed action.**
+This sequence is important.
 
-**An authorization decision may depend upon:**
+Rights describe standing.
 
-**rights**
+Authorization determines whether a specific action is permitted under current conditions.
 
-**current World state**
+Control concerns exercisable authority.
 
-**object state**
+Execution belongs to World Runtime.
 
-**time**
+Those responsibilities should not be collapsed into one field or one service merely because implementation would be simpler.
 
-**policy**
+<a id="ch10-s10"></a>
 
-**protocol**
+### Authorization Is Not Rights
 
-**delegation**
+Rights and authorization should remain distinct.
 
-**other governing conditions**
+Rights describe governed relationships.
 
-**Conceptually:**
+Authorization evaluates a specific proposed action.
 
-**Rights**
+An authorization decision may depend upon:
 
-- 
+rights
 
-**current conditions**
+current World state
 
-- 
+object state
 
-**applicable rules**
+time
 
-**↓**
+policy
 
-**Authorization decision**
+protocol
 
-**The exact mechanism remains unresolved.**
+delegation
 
-**The architectural distinction should remain.**
+other governing conditions
 
-**A right may contribute to permission.**
+Conceptually:
 
-**It does not necessarily guarantee every action.**
+Rights
 
-**Control Is Not Unlimited Authority**
+\+
 
-**Control must be scoped.**
+current conditions
 
-**Permission to perform one action should not silently become permission to perform everything.**
+\+
 
-**Future BitPangea architecture may distinguish authority to:**
+applicable rules
 
-**view**
+↓
 
-**enter**
+Authorization decision
 
-**build**
+The exact mechanism remains unresolved.
 
-**modify**
+The architectural distinction should remain.
 
-**operate**
+A right may contribute to permission.
 
-**delegate**
+It does not necessarily guarantee every action.
 
-**transfer**
+<a id="ch10-s11"></a>
 
-**administer**
+### Control Is Not Unlimited Authority
 
-**remove**
+Control must be scoped.
 
-**configure**
+Permission to perform one action should not silently become permission to perform everything.
 
-**Again, these are examples, not adopted categories.**
+Future BitPangea architecture may distinguish authority to:
 
-**The principle is:**
+view
 
-**Authority should be explicit enough that permission to do one thing does not silently become permission to do everything.**
+enter
 
-**This becomes increasingly important once Builders, infrastructure, services, and persistent World state begin interacting.**
+build
 
-**One Owner Field Is Not an Architecture**
+modify
 
-**A simplistic digital property system might store:**
+operate
 
-**Parcel 1042**
+delegate
 
-**Owner: Alice**
+transfer
 
-**That may be enough for a prototype.**
+administer
 
-**It does not answer the deeper architectural questions.**
+remove
 
-**What identifies Alice?**
+configure
 
-**What proves the relationship?**
+Again, these are examples, not adopted categories.
 
-**What authority created it?**
+The principle is:
 
-**What does “Owner” actually permit?**
+Authority should be explicit enough that permission to do one thing does not silently become permission to do everything.
 
-**Can authority be delegated?**
+This becomes increasingly important once Builders, infrastructure, services, and persistent World state begin interacting.
 
-**Can multiple actors hold different governed relationships?**
+<a id="ch10-s12"></a>
 
-**Can different rights apply to different functions?**
+### One Owner Field Is Not an Architecture
 
-**Can an actor temporarily exercise authority without acquiring ownership?**
+A simplistic digital property system might store:
 
-**What happens when credentials change?**
+Parcel 1042
 
-**How is a dispute represented?**
+Owner: Alice
 
-**What provenance is preserved?**
+That may be enough for a prototype.
 
-**What historical record remains after the relationship changes?**
+It does not answer the deeper architectural questions.
 
-**The point is not that every Parcel must become legally complicated.**
+What identifies Alice?
 
-**The point is that:**
+What proves the relationship?
 
-**simplicity should be the result of understanding the architecture—not a substitute for understanding it.**
+What authority created it?
 
-**Rights Need Not Be Parcel Rights**
+What does “Owner” actually permit?
 
-**The 21,000,000 Parcels make Parcel relationships an obvious use case.**
+Can authority be delegated?
 
-**But the Identity / Rights / Control domain should not be designed only around Parcels.**
+Can multiple actors hold different governed relationships?
 
-**Actors may eventually interact with:**
+Can different rights apply to different functions?
 
-**constructed objects**
+Can an actor temporarily exercise authority without acquiring ownership?
 
-**infrastructure**
+What happens when credentials change?
 
-**services**
+How is a dispute represented?
 
-**institutions**
+What provenance is preserved?
 
-**organizations**
+What historical record remains after the relationship changes?
 
-**shared systems**
+The point is not that every Parcel must become legally complicated.
 
-**creative works**
+The point is that:
 
-**World capabilities**
+simplicity should be the result of understanding the architecture—not a substitute for understanding it.
 
-**administrative functions**
+<a id="ch10-s13"></a>
 
-**Builder tools**
+### Rights Need Not Be Parcel Rights
 
-**future object classes not yet imagined**
+The 21,000,000 Parcels make Parcel relationships an obvious use case.
 
-**The Architecture should therefore be capable of supporting governed relationships beyond ordinary Parcel control.**
+But the Identity / Rights / Control domain should not be designed only around Parcels.
 
-**That does not require one universal rights model.**
+Actors may eventually interact with:
 
-**It requires avoiding a design so narrow that every new World object forces the domain to be reinvented.**
+constructed objects
 
-**Persistent Actor, Persistent Place, Changing Relationship**
+infrastructure
 
-**One of BitPangea’s strongest architectural advantages is the ability to separate persistent identities from changing relationships.**
+services
 
-**Conceptually:**
+institutions
 
-**Actor Identity**
+organizations
 
-**→ persistent actor**
+shared systems
 
-**Parcel Identity**
+creative works
 
-**→ persistent place**
+World capabilities
 
-**Rights Relationship**
+administrative functions
 
-**→ may change over time**
+Builder tools
 
-**Control**
+future object classes not yet imagined
 
-**→ may change according to the relationship and current conditions**
+The Architecture should therefore be capable of supporting governed relationships beyond ordinary Parcel control.
 
-**This allows BitPangea to preserve meaningful history.**
+That does not require one universal rights model.
 
-**The same Parcel can remain the same place while different actors hold different relationships to it across time.**
+It requires avoiding a design so narrow that every new World object forces the domain to be reinvented.
 
-**The same actor can preserve historical continuity even when credentials change.**
+<a id="ch10-s14"></a>
 
-**The governed relationships can evolve without either identity having to be recreated.**
+### Persistent Actor, Persistent Place, Changing Relationship
 
-**Delegation**
+One of BitPangea’s strongest architectural advantages is the ability to separate persistent identities from changing relationships.
 
-**Delegation is one likely future requirement.**
+Conceptually:
 
-**An actor possessing authority may need to permit another actor to exercise some subset of that authority.**
+Actor Identity
 
-**Conceptually:**
+→ persistent actor
 
-**Actor A**
+Parcel Identity
 
-**↓**
+→ persistent place
 
-**possesses authority**
+Rights Relationship
 
-**↓**
+→ may change over time
 
-**delegates limited authority**
+Control
 
-**↓**
+→ may change according to the relationship and current conditions
 
-**Actor B**
+This allows BitPangea to preserve meaningful history.
 
-**↓**
+The same Parcel can remain the same place while different actors hold different relationships to it across time.
 
-**may exercise specified capability**
+The same actor can preserve historical continuity even when credentials change.
 
-**If delegation exists, the Architecture will eventually need to answer:**
+The governed relationships can evolve without either identity having to be recreated.
 
-**Who may delegate?**
+<a id="ch10-s15"></a>
 
-**What may be delegated?**
+### Delegation
 
-**For how long?**
+Delegation is one likely future requirement.
 
-**Under what conditions?**
+An actor possessing authority may need to permit another actor to exercise some subset of that authority.
 
-**May delegated authority itself be delegated?**
+Conceptually:
 
-**Can it be revoked?**
+Actor A
 
-**What happens when the original authority ends?**
+↓
 
-**How is provenance preserved?**
+possesses authority
 
-**These questions remain open.**
+↓
 
-**Their existence reinforces why identity, rights, control, and provenance should not be treated as synonyms.**
+delegates limited authority
 
-**Shared and Multiple Relationships**
+↓
 
-**BitPangea should also avoid assuming that every object must always have exactly one relevant actor.**
+Actor B
 
-**A World may need relationships involving:**
+↓
 
-**multiple individuals**
+may exercise specified capability
 
-**organizations**
+If delegation exists, the Architecture will eventually need to answer:
 
-**institutions**
+Who may delegate?
 
-**groups**
+What may be delegated?
 
-**shared administration**
+For how long?
 
-**joint projects**
+Under what conditions?
 
-**delegated operators**
+May delegated authority itself be delegated?
 
-**The architecture should not accidentally make singular control a permanent World rule merely because an early implementation stores only one account identifier.**
+Can it be revoked?
 
-**Implementation convenience should not settle unresolved World relationships.**
+What happens when the original authority ends?
 
-**Time**
+How is provenance preserved?
 
-**Governed relationships may possess temporal dimensions.**
+These questions remain open.
 
-**A future relationship could theoretically be:**
+Their existence reinforces why identity, rights, control, and provenance should not be treated as synonyms.
 
-**permanent**
+<a id="ch10-s16"></a>
 
-**temporary**
+### Shared and Multiple Relationships
 
-**scheduled**
+BitPangea should also avoid assuming that every object must always have exactly one relevant actor.
 
-**conditional**
+A World may need relationships involving:
 
-**revocable**
+multiple individuals
 
-**expiring**
+organizations
 
-**future-effective**
+institutions
 
-**BitPangea has not adopted these as formal classes.**
+groups
 
-**But time matters because a persistent World must be able to distinguish:**
+shared administration
 
-**What is true now?**
+joint projects
 
-**from:**
+delegated operators
 
-**What was true before?**
+The architecture should not accidentally make singular control a permanent World rule merely because an early implementation stores only one account identifier.
 
-**and potentially:**
+Implementation convenience should not settle unresolved World relationships.
 
-**What becomes true later?**
+<a id="ch10-s17"></a>
 
-**This is another place where Identity / Rights / Control interacts with Persistence / Provenance.**
+### Time
 
-**The current relationship belongs to operational truth.**
+Governed relationships may possess temporal dimensions.
 
-**Its lineage belongs to historical and provenance truth.**
+A future relationship could theoretically be:
 
-**Identity, Rights, Control, and World Runtime**
+permanent
 
-**The Identity / Rights / Control domain does not itself need to execute every change it authorizes.**
+temporary
 
-**That responsibility belongs to World Runtime.**
+scheduled
 
-**A future consequential action might conceptually proceed:**
+conditional
 
-**Actor requests operation**
+revocable
 
-**↓**
+expiring
 
-**Identity resolved**
+future-effective
 
-**↓**
+BitPangea has not adopted these as formal classes.
 
-**relevant rights determined**
+But time matters because a persistent World must be able to distinguish:
 
-**↓**
+What is true now?
 
-**control / authorization evaluated**
+from:
 
-**↓**
+What was true before?
 
-**operation validated**
+and potentially:
 
-**↓**
+What becomes true later?
 
-**World Runtime executes**
+This is another place where Identity / Rights / Control interacts with Persistence / Provenance.
 
-**↓**
+The current relationship belongs to operational truth.
 
-**persistent World state changes**
+Its lineage belongs to historical and provenance truth.
 
-**↓**
+<a id="ch10-s18"></a>
 
-**Persistence / Provenance preserves lineage and evidence**
+### Identity, Rights, Control, and World Runtime
 
-**This sequence protects responsibility boundaries.**
+The Identity / Rights / Control domain does not itself need to execute every change it authorizes.
 
-**Identity / Rights / Control answers whether the actor has standing and authority.**
+That responsibility belongs to World Runtime.
 
-**World Runtime governs legitimate operational change.**
+A future consequential action might conceptually proceed:
 
-**Persistence / Provenance helps preserve how that condition arose.**
+Actor requests operation
 
-**None should silently absorb the others.**
+↓
 
-**Identity, Rights, Control, and Builders**
+Identity resolved
 
-**Builders make these distinctions operationally important.**
+↓
 
-**A Builder may eventually ask:**
+relevant rights determined
 
-**May this actor build here?**
+↓
 
-**What may the actor modify?**
+control / authorization evaluated
 
-**What may be removed?**
+↓
 
-**What constraints apply?**
+operation validated
 
-**What authority supports the request?**
+↓
 
-**The Builder should not invent these answers.**
+World Runtime executes
 
-**It should consume them from the relevant Architecture.**
+↓
 
-**Conceptually:**
+persistent World state changes
 
-**Builder**
+↓
 
-**↓**
+Persistence / Provenance preserves lineage and evidence
 
-**references Parcel Cadastre**
+This sequence protects responsibility boundaries.
 
-**↓**
+Identity / Rights / Control answers whether the actor has standing and authority.
 
-**references Identity / Rights / Control**
+World Runtime governs legitimate operational change.
 
-**↓**
+Persistence / Provenance helps preserve how that condition arose.
 
-**requests legitimate World change**
+None should silently absorb the others.
 
-**↓**
+<a id="ch10-s19"></a>
 
-**World Runtime validates and executes**
+### Identity, Rights, Control, and Builders
 
-**↓**
+Builders make these distinctions operationally important.
 
-**Persistence / Provenance preserves appropriate evidence**
+A Builder may eventually ask:
 
-**The Builder creates.**
+May this actor build here?
 
-**It does not become cadastral authority.**
+What may the actor modify?
 
-**It does not become rights authority.**
+What may be removed?
 
-**It does not become World Runtime merely because it initiates an action.**
+What constraints apply?
 
-**Infrastructure May Require Different Relationships**
+What authority supports the request?
 
-**World-scale infrastructure may introduce relationships that ordinary Parcel control cannot describe adequately.**
+The Builder should not invent these answers.
 
-**A future:**
+It should consume them from the relevant Architecture.
 
-**road**
+Conceptually:
 
-**transport system**
+Builder
 
-**communications network**
+↓
 
-**shared utility**
+references Parcel Cadastre
 
-**public service**
+↓
 
-**digital-native infrastructure system**
+references Identity / Rights / Control
 
-**may cross many Parcels.**
+↓
 
-**It would be architecturally weak to assume that all such systems must be modeled through the same relationship as one actor controlling one Parcel.**
+requests legitimate World change
 
-**The broader principle is:**
+↓
 
-**Different classes of World responsibility may require different classes of authority.**
+World Runtime validates and executes
 
-**The final relationships remain open.**
+↓
 
-**The Architecture should preserve enough flexibility to discover them.**
+Persistence / Provenance preserves appropriate evidence
 
-**Formal Rights and Social Relationships Are Different**
+The Builder creates.
 
-**BitPangea should also distinguish formal World-recognized relationships from relationships created socially by civilization.**
+It does not become cadastral authority.
 
-**A community may recognize:**
+It does not become rights authority.
 
-**custom**
+It does not become World Runtime merely because it initiates an action.
 
-**membership**
+<a id="ch10-s20"></a>
 
-**tradition**
+### Infrastructure May Require Different Relationships
 
-**reputation**
+World-scale infrastructure may introduce relationships that ordinary Parcel control cannot describe adequately.
 
-**voluntary obligation**
+A future:
 
-**local expectation**
+road
 
-**without those relationships becoming canonical World rights.**
+transport system
 
-**Similarly, not every social rule needs World Runtime enforcement.**
+communications network
 
-**The distinction is important:**
+shared utility
 
-**Architecture governs what must be governed. Civilization may create additional relationships that remain social rather than canonical.**
+public service
 
-**BitPangea should not turn every human relationship into protocol merely because it can represent one.**
+digital-native infrastructure system
 
-**Identity and Privacy**
+may cross many Parcels.
 
-**Persistent identity does not require universal public disclosure.**
+It would be architecturally weak to assume that all such systems must be modeled through the same relationship as one actor controlling one Parcel.
 
-**The Architecture may eventually need to distinguish among:**
+The broader principle is:
 
-**existence of identity**
+Different classes of World responsibility may require different classes of authority.
 
-**proof of identity**
+The final relationships remain open.
 
-**identity attributes**
+The Architecture should preserve enough flexibility to discover them.
 
-**credential data**
+<a id="ch10-s21"></a>
 
-**public presentation**
+### Formal Rights and Social Relationships Are Different
 
-**private attributes**
+BitPangea should also distinguish formal World-recognized relationships from relationships created socially by civilization.
 
-**authorization-relevant information**
+A community may recognize:
 
-**These are different concerns.**
+custom
 
-**BitPangea may need to know enough to establish legitimate authority without making every identity fact public to every participant.**
+membership
 
-**The governing distinction is:**
+tradition
 
-**Persistent identity and maximal disclosure are not the same requirement.**
+reputation
 
-**Identity and Pseudonymity**
+voluntary obligation
 
-**Meaningful identity also does not necessarily require a real-world legal name.**
+local expectation
 
-**A persistent pseudonymous actor may still accumulate:**
+without those relationships becoming canonical World rights.
 
-**history**
+Similarly, not every social rule needs World Runtime enforcement.
 
-**reputation**
+The distinction is important:
 
-**relationships**
+Architecture governs what must be governed. Civilization may create additional relationships that remain social rather than canonical.
 
-**rights**
+BitPangea should not turn every human relationship into protocol merely because it can represent one.
 
-**responsibility**
+<a id="ch10-s22"></a>
 
-**creative work**
+### Identity and Privacy
 
-**institutional roles**
+Persistent identity does not require universal public disclosure.
 
-**BitPangea should therefore determine identity assurance according to what a particular action requires rather than assuming one universal real-world identity standard.**
+The Architecture may eventually need to distinguish among:
 
-**Some actions may require stronger assurance.**
+existence of identity
 
-**Others may not.**
+proof of identity
 
-**That question remains open.**
+identity attributes
 
-**Authority Must Be Traceable**
+credential data
 
-**Consequential World actions should ultimately be explainable.**
+public presentation
 
-**For an important change, BitPangea should aspire to answer:**
+private attributes
 
-**Who acted?**
+authorization-relevant information
 
-**Under which persistent identity?**
+These are different concerns.
 
-**Against which World object or capability?**
+BitPangea may need to know enough to establish legitimate authority without making every identity fact public to every participant.
 
-**Using what authority?**
+The governing distinction is:
 
-**What rights or relationships supported the decision?**
+Persistent identity and maximal disclosure are not the same requirement.
 
-**What authorization was evaluated?**
+<a id="ch10-s23"></a>
 
-**What changed?**
+### Identity and Pseudonymity
 
-**When did it occur?**
+Meaningful identity also does not necessarily require a real-world legal name.
 
-**What provenance was preserved?**
+A persistent pseudonymous actor may still accumulate:
 
-**This does not mean every trivial action must become administratively heavy.**
+history
 
-**It establishes a principle for consequential World change:**
+reputation
 
-**Authority should be traceable.**
+relationships
 
-**A persistent World should be able to distinguish legitimate change from unexplained mutation.**
+rights
 
-**The Creator’s Authority**
+responsibility
 
-**This domain eventually applies to the Creator as well.**
+creative work
 
-**During the Creator Period, the Creator necessarily possesses extraordinary authority.**
+institutional roles
 
-**The World is still being established.**
+BitPangea should therefore determine identity assurance according to what a particular action requires rather than assuming one universal real-world identity standard.
 
-**Its enduring systems do not yet exist independently enough to govern every action.**
+Some actions may require stronger assurance.
 
-**But unlimited Creator authority should not automatically become the permanent model of a mature BitPangea.**
+Others may not.
 
-**As Architecture becomes established, authority should increasingly belong to explicit systems rather than informal intervention.**
+That question remains open.
 
-**The principle remains:**
+<a id="ch10-s24"></a>
 
-**The Creator should become progressively less authoritative as BitPangea moves from World creation toward civilization.**
+### Authority Must Be Traceable
 
-**This does not mean the Creator becomes irrelevant.**
+Consequential World actions should ultimately be explainable.
 
-**The role changes.**
+For an important change, BitPangea should aspire to answer:
 
-**Creation increasingly becomes stewardship.**
+Who acted?
 
-**A mature World should be capable of answering:**
+Under which persistent identity?
 
-**Why was this action permitted?**
+Against which World object or capability?
 
-**with something stronger than:**
+Using what authority?
 
-**Because the Creator could do it.**
+What rights or relationships supported the decision?
 
-**No Premature Tokenization**
+What authorization was evaluated?
 
-**BitPangea’s fixed Parcel count and Bitcoin inspiration make tokenization an obvious future possibility to consider.**
+What changed?
 
-**They do not make it a present architectural requirement.**
+When did it occur?
 
-**Parcel rights do not presently require:**
+What provenance was preserved?
 
-**NFTs**
+This does not mean every trivial action must become administratively heavy.
 
-**a Parcel token**
+It establishes a principle for consequential World change:
 
-**a particular blockchain**
+Authority should be traceable.
 
-**wallet-based ownership**
+A persistent World should be able to distinguish legitimate change from unexplained mutation.
 
-**on-chain governance**
+<a id="ch10-s25"></a>
 
-**a specific transfer protocol**
+### The Creator’s Authority
 
-**Any of those technologies may eventually be evaluated if they solve actual BitPangea requirements.**
+This domain eventually applies to the Creator as well.
 
-**The correct order remains:**
+During the Creator Period, the Creator necessarily possesses extraordinary authority.
 
-**requirement**
+The World is still being established.
 
-**↓**
+Its enduring systems do not yet exist independently enough to govern every action.
 
-**architecture**
+But unlimited Creator authority should not automatically become the permanent model of a mature BitPangea.
 
-**↓**
+As Architecture becomes established, authority should increasingly belong to explicit systems rather than informal intervention.
 
-**technical evaluation**
+The principle remains:
 
-**↓**
+The Creator should become progressively less authoritative as BitPangea moves from World creation toward civilization.
 
-**implementation**
+This does not mean the Creator becomes irrelevant.
 
-**not:**
+The role changes.
 
-**preferred technology**
+Creation increasingly becomes stewardship.
 
-**↓**
+A mature World should be capable of answering:
 
-**architecture invented to justify it**
+Why was this action permitted?
 
-**No Premature Legal Analogy**
+with something stronger than:
 
-**The same restraint applies to physical property law.**
+Because the Creator could do it.
 
-**Terms such as:**
+<a id="ch10-s26"></a>
 
-**deed**
+### No Premature Tokenization
 
-**title**
+BitPangea’s fixed Parcel count and Bitcoin inspiration make tokenization an obvious future possibility to consider.
 
-**lease**
+They do not make it a present architectural requirement.
 
-**easement**
+Parcel rights do not presently require:
 
-**tenant**
+NFTs
 
-**landlord**
+a Parcel token
 
-**estate**
+a particular blockchain
 
-**may someday provide useful analogies.**
+wallet-based ownership
 
-**But BitPangea should not inherit their full legal meaning merely because Parcels resemble territorial property.**
+on-chain governance
 
-**Some concepts may map well.**
+a specific transfer protocol
 
-**Others may not.**
+Any of those technologies may eventually be evaluated if they solve actual BitPangea requirements.
 
-**Digital place may require relationships for which physical land law has no clean equivalent.**
+The correct order remains:
 
-**The governing rule is:**
+requirement
 
-**Use analogy to aid understanding. Do not allow analogy to replace architectural reasoning.**
+↓
 
-**History of Authority**
+architecture
 
-**Persistent identity, governed relationships, control, Runtime execution, and provenance together create the possibility of reconstructing the history of authority.**
+↓
 
-**For a Parcel or another World object, future BitPangea may be able to determine:**
+technical evaluation
 
-**Which actor held which relationship?**
+↓
 
-**During what period?**
+implementation
 
-**Who established it?**
+not:
 
-**Was authority delegated?**
+preferred technology
 
-**Which actions occurred under it?**
+↓
 
-**How was that authority changed or superseded?**
+architecture invented to justify it
 
-**How did the present condition arise?**
+<a id="ch10-s27"></a>
 
-**Current state answers:**
+### No Premature Legal Analogy
 
-**What is true now?**
+The same restraint applies to physical property law.
 
-**Provenance and history answer:**
+Terms such as:
 
-**How did it become true?**
+deed
 
-**Those are distinct kinds of knowledge.**
+title
 
-**A mature World may require both.**
+lease
 
-**Internal Decomposition Remains Open**
+easement
 
-**Identity / Rights / Control is now a recognized Architecture domain.**
+tenant
 
-**That recognition does not mean the domain’s internal architecture is complete.**
+landlord
 
-**Continued design may ultimately distinguish separate authorities for:**
+estate
 
-**Identity**
+may someday provide useful analogies.
 
-**Rights**
+But BitPangea should not inherit their full legal meaning merely because Parcels resemble territorial property.
 
-**Authorization**
+Some concepts may map well.
 
-**Control**
+Others may not.
 
-**Policy**
+Digital place may require relationships for which physical land law has no clean equivalent.
 
-**Delegation**
+The governing rule is:
 
-**Credentialing**
+Use analogy to aid understanding. Do not allow analogy to replace architectural reasoning.
 
-**Recovery**
+<a id="ch10-s28"></a>
 
-**other responsibilities**
+### History of Authority
 
-**The domain should therefore not be treated as one monolithic service merely because its name contains three concepts.**
+Persistent identity, governed relationships, control, Runtime execution, and provenance together create the possibility of reconstructing the history of authority.
 
-**The Architecture has identified the enduring responsibility.**
+For a Parcel or another World object, future BitPangea may be able to determine:
 
-**Its internal decomposition remains an open design problem.**
+Which actor held which relationship?
 
-**What Is Established**
+During what period?
 
-**The current Architecture supports the following statements:**
+Who established it?
 
-**Identity / Rights / Control is a recognized Architecture domain.**
+Was authority delegated?
 
-**BitPangea requires persistent actor identity.**
+Which actions occurred under it?
 
-**Identity is distinct from authentication.**
+How was that authority changed or superseded?
 
-**Identity does not establish ownership, rights, permission, or authority by itself.**
+How did the present condition arise?
 
-**Rights describe governed relationships involving actors, World objects, or capabilities.**
+Current state answers:
 
-**Rights require traceable authority and provenance.**
+What is true now?
 
-**The Parcel Cadastre remains authoritative for Parcel truth.**
+Provenance and history answer:
 
-**Rights may reference Parcels without redefining them.**
+How did it become true?
 
-**Control concerns exercisable authority.**
+Those are distinct kinds of knowledge.
 
-**Authorization is distinct from the mere existence of a right.**
+A mature World may require both.
 
-**Authority should be explicitly scoped.**
+<a id="ch10-s29"></a>
 
-**World Runtime executes legitimate operational change.**
+### Internal Decomposition Remains Open
 
-**Identity / Rights / Control should inform Runtime authorization without becoming World Runtime itself.**
+Identity / Rights / Control is now a recognized Architecture domain.
 
-**Persistence / Provenance should preserve the lineage and evidence associated with consequential authority and change.**
+That recognition does not mean the domain’s internal architecture is complete.
 
-**Builders should consume rights and control information rather than invent it.**
+Continued design may ultimately distinguish separate authorities for:
 
-**The domain should not be reduced prematurely to “ownership.”**
+Identity
 
-**Parcel rights do not presently require tokens, NFTs, or any particular blockchain.**
+Rights
 
-**Persistent identity does not require universal public disclosure.**
+Authorization
 
-**Pseudonymous persistent identity remains architecturally possible.**
+Control
 
-**The domain may ultimately require substantial internal decomposition.**
+Policy
 
-**What Remains Open**
+Delegation
 
-**Major questions remain, including:**
+Credentialing
 
-**the canonical actor identity model**
+Recovery
 
-**which actor classes BitPangea recognizes**
+other responsibilities
 
-**the relationship between BitPangea identity and external identities**
+The domain should therefore not be treated as one monolithic service merely because its name contains three concepts.
 
-**authentication mechanisms**
+The Architecture has identified the enduring responsibility.
 
-**credential recovery**
+Its internal decomposition remains an open design problem.
 
-**identity continuity**
+<a id="ch10-s30"></a>
 
-**privacy architecture**
+### What Is Established
 
-**pseudonymity**
+The current Architecture supports the following statements:
 
-**identity assurance levels**
+Identity / Rights / Control is a recognized Architecture domain.
 
-**the formal categories of governed relationships**
+BitPangea requires persistent actor identity.
 
-**whether ownership becomes a canonical BitPangea term**
+Identity is distinct from authentication.
 
-**how rights originate**
+Identity does not establish ownership, rights, permission, or authority by itself.
 
-**how rights are transferred**
+Rights describe governed relationships involving actors, World objects, or capabilities.
 
-**how rights expire**
+Rights require traceable authority and provenance.
 
-**how rights are revoked**
+The Parcel Cadastre remains authoritative for Parcel truth.
 
-**delegation**
+Rights may reference Parcels without redefining them.
 
-**shared authority**
+Control concerns exercisable authority.
 
-**institutional authority**
+Authorization is distinct from the mere existence of a right.
 
-**infrastructure authority**
+Authority should be explicitly scoped.
 
-**authorization mechanisms**
+World Runtime executes legitimate operational change.
 
-**control boundaries**
+Identity / Rights / Control should inform Runtime authorization without becoming World Runtime itself.
 
-**policy architecture**
+Persistence / Provenance should preserve the lineage and evidence associated with consequential authority and change.
 
-**exception handling**
+Builders should consume rights and control information rather than invent it.
 
-**dispute handling**
+The domain should not be reduced prematurely to “ownership.”
 
-**recovery mechanisms**
+Parcel rights do not presently require tokens, NFTs, or any particular blockchain.
 
-**history of authority**
+Persistent identity does not require universal public disclosure.
 
-**the exact interface with Persistence / Provenance**
+Pseudonymous persistent identity remains architecturally possible.
 
-**the exact interface with World Runtime**
+The domain may ultimately require substantial internal decomposition.
 
-**the eventual internal decomposition of the domain**
+<a id="ch10-s31"></a>
 
-**These questions should remain open until the Architecture can justify their answers.**
+### What Remains Open
 
-**Origins should preserve the problem faithfully rather than manufacture a rights system simply to make the diagram look complete.**
+Major questions remain, including:
 
-**The Principle**
+the canonical actor identity model
 
-**Identity, Rights, and Control determine whether BitPangea can move from persistent digital place into a World where actors can participate without dissolving the boundaries among:**
+which actor classes BitPangea recognizes
 
-**actor**
+the relationship between BitPangea identity and external identities
 
-**place**
+authentication mechanisms
 
-**relationship**
+credential recovery
 
-**authority**
+identity continuity
 
-**and action.**
+privacy architecture
 
-**The essential distinctions are:**
+pseudonymity
 
-**Identity answers who.**
+identity assurance levels
 
-**Rights answer what governed relationship exists.**
+the formal categories of governed relationships
 
-**Control answers what authority may be exercised.**
+whether ownership becomes a canonical BitPangea term
 
-**Authorization determines whether a particular action is presently permitted.**
+how rights originate
 
-**World Runtime performs legitimate change.**
+how rights are transferred
 
-**Persistence / Provenance preserves how that authority and change came to exist.**
+how rights expire
 
-**And beneath all of them remains the question:**
+how rights are revoked
 
-**By whose authority?**
+delegation
 
-**That question prevents BitPangea from reducing its future social architecture to an owner field, a wallet address, or an access-control shortcut.**
+shared authority
 
-**A mature digital World should eventually be able to know:**
+institutional authority
 
-**who acted, what relationship supported the action, what authority was exercised, why the action was permitted, what changed, and how that change can later be explained.**
+infrastructure authority
 
-**The governing principle is therefore:**
+authorization mechanisms
 
-**Identity establishes the actor. Rights establish the relationship. Control establishes exercisable authority. None should silently inherit the authority of the others.**
+control boundaries
+
+policy architecture
+
+exception handling
+
+dispute handling
+
+recovery mechanisms
+
+history of authority
+
+the exact interface with Persistence / Provenance
+
+the exact interface with World Runtime
+
+the eventual internal decomposition of the domain
+
+These questions should remain open until the Architecture can justify their answers.
+
+Origins should preserve the problem faithfully rather than manufacture a rights system simply to make the diagram look complete.
+
+<a id="ch10-s32"></a>
+
+### The Principle
+
+Identity, Rights, and Control determine whether BitPangea can move from persistent digital place into a World where actors can participate without dissolving the boundaries among:
+
+actor
+
+place
+
+relationship
+
+authority
+
+and action.
+
+The essential distinctions are:
+
+Identity answers who.
+
+Rights answer what governed relationship exists.
+
+Control answers what authority may be exercised.
+
+Authorization determines whether a particular action is presently permitted.
+
+World Runtime performs legitimate change.
+
+Persistence / Provenance preserves how that authority and change came to exist.
+
+And beneath all of them remains the question:
+
+By whose authority?
+
+That question prevents BitPangea from reducing its future social architecture to an owner field, a wallet address, or an access-control shortcut.
+
+A mature digital World should eventually be able to know:
+
+who acted, what relationship supported the action, what authority was exercised, why the action was permitted, what changed, and how that change can later be explained.
+
+The governing principle is therefore:
+
+Identity establishes the actor. Rights establish the relationship. Control establishes exercisable authority. None should silently inherit the authority of the others.
+
+---
+
+<a id="ch11"></a>
 
 ## XI. World Runtime
 
-**A World can possess space without possessing operational life.**
+A World can possess space without possessing operational life.
 
-**It can have a complete Extent.**
+It can have a complete Extent.
 
-**It can contain exactly 21,000,000 Parcels.**
+It can contain exactly 21,000,000 Parcels.
 
-**It can possess a Foundational Survey Fabric.**
+It can possess a Foundational Survey Fabric.
 
-**It can possess a Parcel Cadastre.**
+It can possess a Parcel Cadastre.
 
-**It can possess actors, rights, and control relationships.**
+It can possess actors, rights, and control relationships.
 
-**But unless BitPangea can preserve what is happening from one moment to the next, it remains a static architecture.**
+But unless BitPangea can preserve what is happening from one moment to the next, it remains a static architecture.
 
-**That responsibility belongs to a recognized Architecture domain:**
+That responsibility belongs to a recognized Architecture domain:
 
-**World Runtime**
+World Runtime
 
-**World Runtime is the governed operational architecture through which BitPangea evaluates legitimate change, executes permitted operations, preserves current World condition, coordinates with other authoritative domains, and continues coherently through time.**
+World Runtime is the governed operational architecture through which BitPangea evaluates legitimate change, executes permitted operations, preserves current World condition, coordinates with other authoritative domains, and continues coherently through time.
 
-**It does not replace the spatial architecture beneath it.**
+It does not replace the spatial architecture beneath it.
 
-**It does not become Identity / Rights / Control.**
+It does not become Identity / Rights / Control.
 
-**It does not become Persistence / Provenance.**
+It does not become Persistence / Provenance.
 
-**It does not become Interoperability.**
+It does not become Interoperability.
 
-**It does not become Experience Architecture.**
+It does not become Experience Architecture.
 
-**Its responsibility is narrower and more important:**
+Its responsibility is narrower and more important:
 
-**Allow the World to change without surrendering coherence.**
+Allow the World to change without surrendering coherence.
 
-**From Spatial Truth to Operational Truth**
+<a id="ch11-s01"></a>
 
-**The deeper spatial Architecture answers questions such as:**
+### From Spatial Truth to Operational Truth
 
-**Where is this place?**
+The deeper spatial Architecture answers questions such as:
 
-**Which Parcel is this?**
+Where is this place?
 
-**What territory defines it?**
+Which Parcel is this?
 
-**What canonical spatial relationships exist?**
+What territory defines it?
 
-**World Runtime answers a different class of questions:**
+What canonical spatial relationships exist?
 
-**What exists here now?**
+World Runtime answers a different class of questions:
 
-**What operation is being requested?**
+What exists here now?
 
-**Is the operation permitted?**
+What operation is being requested?
 
-**What state should change?**
+Is the operation permitted?
 
-**What state should remain unchanged?**
+What state should change?
 
-**What must persist afterward?**
+What state should remain unchanged?
 
-**This distinction is fundamental.**
+What must persist afterward?
 
-**The Foundational Survey Fabric preserves canonical spatial reference.**
+This distinction is fundamental.
 
-**The Parcel Cadastre preserves canonical Parcel truth.**
+The Foundational Survey Fabric preserves canonical spatial reference.
 
-**World Runtime governs mutable operational truth.**
+The Parcel Cadastre preserves canonical Parcel truth.
 
-**Conceptually:**
+World Runtime governs mutable operational truth.
 
-**Spatial Architecture**
+Conceptually:
 
-**→ persistent place**
+Spatial Architecture
 
-**World Runtime**
+→ persistent place
 
-**→ persistent operational condition**
+World Runtime
 
-**A Parcel may remain the same Parcel while nearly everything upon it changes.**
+→ persistent operational condition
 
-**That difference is precisely why Runtime must remain a distinct Architecture domain.**
+A Parcel may remain the same Parcel while nearly everything upon it changes.
 
-**Persistent World State**
+That difference is precisely why Runtime must remain a distinct Architecture domain.
 
-**A persistent World requires memory of its current operational condition.**
+<a id="ch11-s02"></a>
 
-**If something is built, BitPangea must be capable of preserving the fact that it exists.**
+### Persistent World State
 
-**If legitimate infrastructure is established, later participants should encounter the resulting condition unless another legitimate change has occurred.**
+A persistent World requires memory of its current operational condition.
 
-**If an authorized operation changes the World, that change should survive the session, client, or interface that initiated it.**
+If something is built, BitPangea must be capable of preserving the fact that it exists.
 
-**Persistent World State may eventually include state associated with:**
+If legitimate infrastructure is established, later participants should encounter the resulting condition unless another legitimate change has occurred.
 
-**constructed objects**
+If an authorized operation changes the World, that change should survive the session, client, or interface that initiated it.
 
-**infrastructure**
+Persistent World State may eventually include state associated with:
 
-**World features**
+constructed objects
 
-**configuration**
+infrastructure
 
-**service condition**
+World features
 
-**authorized relationships**
+configuration
 
-**mutable environmental conditions**
+service condition
 
-**other legitimate World state**
+authorized relationships
 
-**The exact categories remain open.**
+mutable environmental conditions
 
-**The requirement does not:**
+other legitimate World state
 
-**What legitimately becomes true of the World must be capable of remaining true after the interaction that caused it has ended.**
+The exact categories remain open.
 
-**State Is Not Spatial Truth**
+The requirement does not:
 
-**Persistent World State must remain distinct from the spatial truth beneath it.**
+What legitimately becomes true of the World must be capable of remaining true after the interaction that caused it has ended.
 
-**Suppose a structure is constructed upon a Parcel.**
+<a id="ch11-s03"></a>
 
-**The structure belongs to mutable World state.**
+### State Is Not Spatial Truth
 
-**The Parcel belongs to canonical cadastral truth.**
+Persistent World State must remain distinct from the spatial truth beneath it.
 
-**The Parcel’s position ultimately depends upon deeper spatial Architecture.**
+Suppose a structure is constructed upon a Parcel.
 
-**If the structure later disappears, the Parcel remains.**
+The structure belongs to mutable World state.
 
-**Conceptually:**
+The Parcel belongs to canonical cadastral truth.
 
-**Foundational Survey Fabric**
+The Parcel’s position ultimately depends upon deeper spatial Architecture.
 
-**→ canonical spatial reference**
+If the structure later disappears, the Parcel remains.
 
-**Parcel Cadastre**
+Conceptually:
 
-**→ canonical Parcel identity and territory**
+Foundational Survey Fabric
 
-**World Runtime**
+→ canonical spatial reference
 
-**→ current mutable condition**
+Parcel Cadastre
 
-**This separation allows change without destabilizing place.**
+→ canonical Parcel identity and territory
 
-**The Runtime should therefore never treat ordinary World-state mutation as permission to alter the canonical spatial foundation.**
+World Runtime
 
-**Legitimate State Transition**
+→ current mutable condition
 
-**Persistence alone does not create a World Runtime.**
+This separation allows change without destabilizing place.
 
-**A database can remember data.**
+The Runtime should therefore never treat ordinary World-state mutation as permission to alter the canonical spatial foundation.
 
-**World Runtime must govern legitimate transition.**
+<a id="ch11-s04"></a>
 
-**It must eventually distinguish among:**
+### Legitimate State Transition
 
-**valid change**
+Persistence alone does not create a World Runtime.
 
-**invalid change**
+A database can remember data.
 
-**authorized change**
+World Runtime must govern legitimate transition.
 
-**unauthorized change**
+It must eventually distinguish among:
 
-**temporary change**
+valid change
 
-**persistent change**
+invalid change
 
-**failed change**
+authorized change
 
-**superseded change**
+unauthorized change
 
-**Identity / Rights / Control contributes the authority information needed to evaluate a proposed action.**
+temporary change
 
-**World Runtime consumes that information during operational decision-making.**
+persistent change
 
-**Conceptually:**
+failed change
 
-**Actor**
+superseded change
 
-**↓**
+Identity / Rights / Control contributes the authority information needed to evaluate a proposed action.
 
-**Identity resolved**
+World Runtime consumes that information during operational decision-making.
 
-**↓**
+Conceptually:
 
-**rights / control evaluated**
+Actor
 
-**↓**
+↓
 
-**requested operation validated**
+Identity resolved
 
-**↓**
+↓
 
-**World Runtime executes**
+rights / control evaluated
 
-**↓**
+↓
 
-**World State changes**
+requested operation validated
 
-**The World should not change merely because a client requests change.**
+↓
 
-**It should change because a valid operation has passed through the appropriate authorities and Runtime rules.**
+World Runtime executes
 
-**Request, Authorization, Execution, Result**
+↓
 
-**One of the most important Runtime distinctions is:**
+World State changes
 
-**request ≠ authorization ≠ execution ≠ result**
+The World should not change merely because a client requests change.
 
-**A request says:**
+It should change because a valid operation has passed through the appropriate authorities and Runtime rules.
 
-**Someone wants something to happen.**
+<a id="ch11-s05"></a>
 
-**Authorization says:**
+### Request, Authorization, Execution, Result
 
-**The action is presently permitted under the relevant authority and conditions.**
+One of the most important Runtime distinctions is:
 
-**Execution says:**
+request ≠ authorization ≠ execution ≠ result
 
-**The legitimate operation is actually carried out.**
+A request says:
 
-**Result says:**
+Someone wants something to happen.
 
-**The World now occupies a new operational condition.**
+Authorization says:
 
-**These stages should remain conceptually separable even if an implementation performs them quickly.**
+The action is presently permitted under the relevant authority and conditions.
 
-**A mature Runtime should ultimately be able to explain:**
+Execution says:
 
-**What operation was requested?**
+The legitimate operation is actually carried out.
 
-**Against which object or capability?**
+Result says:
 
-**Under whose authority?**
+The World now occupies a new operational condition.
 
-**What validation occurred?**
+These stages should remain conceptually separable even if an implementation performs them quickly.
 
-**What was executed?**
+A mature Runtime should ultimately be able to explain:
 
-**What changed?**
+What operation was requested?
 
-**What did not change?**
+Against which object or capability?
 
-**What became canonical World state afterward?**
+Under whose authority?
 
-**This does not require every trivial event to become administratively heavy.**
+What validation occurred?
 
-**It establishes clarity for consequential World mutation.**
+What was executed?
 
-**Execution**
+What changed?
 
-**Execution is where a permitted operation becomes actual World change.**
+What did not change?
 
-**Conceptually:**
+What became canonical World state afterward?
 
-**State A**
+This does not require every trivial event to become administratively heavy.
 
-**↓**
+It establishes clarity for consequential World mutation.
 
-**authorized valid operation**
+<a id="ch11-s06"></a>
 
-**↓**
+### Execution
 
-**execution**
+Execution is where a permitted operation becomes actual World change.
 
-**↓**
+Conceptually:
 
-**State B**
+State A
 
-**Execution belongs to World Runtime.**
+↓
 
-**It should not be confused with the authority that permitted the action.**
+authorized valid operation
 
-**Identity / Rights / Control may establish whether the actor has standing.**
+↓
 
-**Runtime executes the legitimate change.**
+execution
 
-**Persistence / Provenance may preserve how that change occurred.**
+↓
 
-**The distinction is:**
+State B
 
-**Authority permits. Runtime changes. Provenance remembers.**
+Execution belongs to World Runtime.
 
-**Runtime as Orchestration**
+It should not be confused with the authority that permitted the action.
 
-**World Runtime should be understood partly as an orchestration domain.**
+Identity / Rights / Control may establish whether the actor has standing.
 
-**A consequential operation may require information from several Architecture domains.**
+Runtime executes the legitimate change.
 
-**For example, a future construction action might involve:**
+Persistence / Provenance may preserve how that change occurred.
 
-1.  **An actor requests construction.**
+The distinction is:
 
-2.  **Identity is resolved.**
+Authority permits. Runtime changes. Provenance remembers.
 
-3.  **The target Parcel is resolved through the Parcel Cadastre.**
+<a id="ch11-s07"></a>
 
-4.  **Applicable rights and control are evaluated.**
+### Runtime as Orchestration
 
-5.  **Runtime validates the proposed operation.**
+World Runtime should be understood partly as an orchestration domain.
 
-6.  **Relevant protocols determine valid interaction.**
+A consequential operation may require information from several Architecture domains.
 
-7.  **Runtime executes the legitimate change.**
+For example, a future construction action might involve:
 
-8.  **Persistent World State is updated.**
+1. An actor requests construction.
+2. Identity is resolved.
+3. The target Parcel is resolved through the Parcel Cadastre.
+4. Applicable rights and control are evaluated.
+5. Runtime validates the proposed operation.
+6. Relevant protocols determine valid interaction.
+7. Runtime executes the legitimate change.
+8. Persistent World State is updated.
+9. Persistence / Provenance receives appropriate evidence.
+10. Interoperability exposes the resulting canonical condition to other conforming systems.
+11. Experience Architecture presents the result to participants.
 
-9.  **Persistence / Provenance receives appropriate evidence.**
+No single Architecture domain necessarily owns all of these responsibilities.
 
-10. **Interoperability exposes the resulting canonical condition to other conforming systems.**
+That is intentional.
 
-11. **Experience Architecture presents the result to participants.**
+The Runtime permits the World to operate across specialized authorities without collapsing them into one undifferentiated system.
 
-**No single Architecture domain necessarily owns all of these responsibilities.**
+<a id="ch11-s08"></a>
 
-**That is intentional.**
+### The Runtime Does Not Own Everything
 
-**The Runtime permits the World to operate across specialized authorities without collapsing them into one undifferentiated system.**
+Because World Runtime sits near the center of operational activity, it would be easy to make it the ultimate authority for the entire World.
 
-**The Runtime Does Not Own Everything**
+That would undermine the Architecture.
 
-**Because World Runtime sits near the center of operational activity, it would be easy to make it the ultimate authority for the entire World.**
+World Runtime should not become the authoritative source for:
 
-**That would undermine the Architecture.**
+The Extent
 
-**World Runtime should not become the authoritative source for:**
+canonical Survey reference
 
-**The Extent**
+Parcel identity
 
-**canonical Survey reference**
+Parcel territorial definition
 
-**Parcel identity**
+actor identity
 
-**Parcel territorial definition**
+rights provenance
 
-**actor identity**
+historical evidence
 
-**rights provenance**
+interoperability semantics
 
-**historical evidence**
+experience representation
 
-**interoperability semantics**
+Those responsibilities belong elsewhere.
 
-**experience representation**
+Runtime references them when needed.
 
-**Those responsibilities belong elsewhere.**
+Reference does not transfer authority.
 
-**Runtime references them when needed.**
+Conceptually:
 
-**Reference does not transfer authority.**
+World Runtime
 
-**Conceptually:**
+→ coordinates legitimate operation
 
-**World Runtime**
+not:
 
-**→ coordinates legitimate operation**
+World Runtime
 
-**not:**
+→ becomes all World authority
 
-**World Runtime**
+This boundary is essential.
 
-**→ becomes all World authority**
+<a id="ch11-s09"></a>
 
-**This boundary is essential.**
+### Protocols
 
-**Protocols**
+World Runtime requires coherent operational rules.
 
-**World Runtime requires coherent operational rules.**
+A protocol defines how legitimate interaction occurs.
 
-**A protocol defines how legitimate interaction occurs.**
+It may eventually specify:
 
-**It may eventually specify:**
+message structure
 
-**message structure**
+operation semantics
 
-**operation semantics**
+validation requirements
 
-**validation requirements**
+reference forms
 
-**reference forms**
+state-transition rules
 
-**state-transition rules**
+error behavior
 
-**error behavior**
+expected responses
 
-**expected responses**
+authority dependencies
 
-**authority dependencies**
+Protocols create a common operational language.
 
-**Protocols create a common operational language.**
+Without them, different implementations could assign different meanings to the same request.
 
-**Without them, different implementations could assign different meanings to the same request.**
+A Builder and Runtime must agree on what a construction request means.
 
-**A Builder and Runtime must agree on what a construction request means.**
+A Parcel reference must resolve consistently.
 
-**A Parcel reference must resolve consistently.**
+A state transition must not become one thing in one client and another thing elsewhere.
 
-**A state transition must not become one thing in one client and another thing elsewhere.**
+The principle is:
 
-**The principle is:**
+Protocols define coherent participation in World operation.
 
-**Protocols define coherent participation in World operation.**
+But:
 
-**But:**
+Protocol is not authority.
 
-**Protocol is not authority.**
+A protocol may specify how a Parcel is referenced.
 
-**A protocol may specify how a Parcel is referenced.**
+The Parcel Cadastre remains authoritative for Parcel truth.
 
-**The Parcel Cadastre remains authoritative for Parcel truth.**
+A protocol may specify how identity evidence is presented.
 
-**A protocol may specify how identity evidence is presented.**
+Identity / Rights / Control remains authoritative for the relevant governed relationship.
 
-**Identity / Rights / Control remains authoritative for the relevant governed relationship.**
+<a id="ch11-s10"></a>
 
-**Services**
+### Services
 
-**A service provides capability.**
+A service provides capability.
 
-**Services may eventually expose or perform functions related to:**
+Services may eventually expose or perform functions related to:
 
-**Parcel lookup**
+Parcel lookup
 
-**identity resolution**
+identity resolution
 
-**authorization**
+authorization
 
-**construction**
+construction
 
-**navigation**
+navigation
 
-**World state**
+World state
 
-**discovery**
+discovery
 
-**history**
+history
 
-**infrastructure**
+infrastructure
 
-**These are examples, not adopted service categories.**
+These are examples, not adopted service categories.
 
-**The architectural distinction is:**
+The architectural distinction is:
 
-**A protocol defines coherent interaction. A service provides capability.**
+A protocol defines coherent interaction. A service provides capability.
 
-**One service implementation may later replace another.**
+One service implementation may later replace another.
 
-**If canonical state, protocols, and authority boundaries are correctly designed, the World need not be redefined merely because software changes.**
+If canonical state, protocols, and authority boundaries are correctly designed, the World need not be redefined merely because software changes.
 
-**This supports a central durability principle:**
+This supports a central durability principle:
 
-**BitPangea should be able to replace software without replacing the World.**
+BitPangea should be able to replace software without replacing the World.
 
-**Services Are Not Architecture Authorities by Default**
+<a id="ch11-s11"></a>
 
-**A service may expose information from an authoritative domain.**
+### Services Are Not Architecture Authorities by Default
 
-**That does not automatically make the service authoritative.**
+A service may expose information from an authoritative domain.
 
-**For example:**
+That does not automatically make the service authoritative.
 
-**Parcel service**
+For example:
 
-**→ exposes cadastral information**
+Parcel service
 
-**Parcel Cadastre**
+→ exposes cadastral information
 
-**→ owns Parcel truth**
+Parcel Cadastre
 
-**Likewise:**
+→ owns Parcel truth
 
-**identity service**
+Likewise:
 
-**→ exposes identity capability**
+identity service
 
-**Identity / Rights / Control**
+→ exposes identity capability
 
-**→ owns the relevant governed identity relationship**
+Identity / Rights / Control
 
-**And:**
+→ owns the relevant governed identity relationship
 
-**history service**
+And:
 
-**→ exposes preserved records**
+history service
 
-**Persistence / Provenance**
+→ exposes preserved records
 
-**→ preserves authoritative lineage or evidence according to its own responsibility**
+Persistence / Provenance
 
-**The service is an implementation capability.**
+→ preserves authoritative lineage or evidence according to its own responsibility
 
-**The Architecture domain determines where authority belongs.**
+The service is an implementation capability.
 
-**Deterministic Canonical Change**
+The Architecture domain determines where authority belongs.
 
-**A persistent World benefits when equivalent valid operations produce compatible canonical outcomes.**
+<a id="ch11-s12"></a>
 
-**This does not mean every BitPangea experience must be deterministic.**
+### Deterministic Canonical Change
 
-**Civilization can contain uncertainty.**
+A persistent World benefits when equivalent valid operations produce compatible canonical outcomes.
 
-**Games can contain randomness.**
+This does not mean every BitPangea experience must be deterministic.
 
-**Creative systems can produce variation.**
+Civilization can contain uncertainty.
 
-**Simulations can contain stochastic behavior.**
+Games can contain randomness.
 
-**But the Runtime must distinguish deliberate uncertainty from accidental disagreement among implementations.**
+Creative systems can produce variation.
 
-**For a canonical state transition:**
+Simulations can contain stochastic behavior.
 
-**Equivalent authorized operations against equivalent relevant state should not produce contradictory canonical outcomes merely because different conforming software executed them.**
+But the Runtime must distinguish deliberate uncertainty from accidental disagreement among implementations.
 
-**That principle will eventually require sufficiently precise operational semantics.**
+For a canonical state transition:
 
-**The technical mechanism remains open.**
+Equivalent authorized operations against equivalent relevant state should not produce contradictory canonical outcomes merely because different conforming software executed them.
 
-**The architectural requirement does not.**
+That principle will eventually require sufficiently precise operational semantics.
 
-**Validation Before Mutation**
+The technical mechanism remains open.
 
-**A strong Runtime principle is:**
+The architectural requirement does not.
 
-**Validate before mutating canonical World state whenever possible.**
+<a id="ch11-s13"></a>
 
-**Conceptually:**
+### Validation Before Mutation
 
-**request**
+A strong Runtime principle is:
 
-**↓**
+Validate before mutating canonical World state whenever possible.
 
-**resolve canonical references**
+Conceptually:
 
-**↓**
+request
 
-**evaluate authority**
+↓
 
-**↓**
+resolve canonical references
 
-**validate operation**
+↓
 
-**↓**
+evaluate authority
 
-**execute**
+↓
 
-**↓**
+validate operation
 
-**persist resulting state**
+↓
 
-**This reduces the risk that an invalid request partially alters the World before being rejected.**
+execute
 
-**Complex operations may eventually require more sophisticated workflows.**
+↓
 
-**The general discipline remains important:**
+persist resulting state
 
-**Canonical World state should not be mutated casually.**
+This reduces the risk that an invalid request partially alters the World before being rejected.
 
-**Atomicity and Coherent Change**
+Complex operations may eventually require more sophisticated workflows.
 
-**Some operations may affect more than one World object or Architecture domain.**
+The general discipline remains important:
 
-**A future action could:**
+Canonical World state should not be mutated casually.
 
-**create a structure**
+<a id="ch11-s14"></a>
 
-**modify associated state**
+### Atomicity and Coherent Change
 
-**connect infrastructure**
+Some operations may affect more than one World object or Architecture domain.
 
-**change permissions**
+A future action could:
 
-**produce provenance evidence**
+create a structure
 
-**What happens if part of the operation succeeds and another part fails?**
+modify associated state
 
-**World Runtime must eventually address this class of problem.**
+connect infrastructure
 
-**Consequential change should either:**
+change permissions
 
-**complete coherently**
+produce provenance evidence
 
-**or:**
+What happens if part of the operation succeeds and another part fails?
 
-**fail in a manner that does not leave contradictory canonical state**
+World Runtime must eventually address this class of problem.
 
-**This does not require Origins to prescribe a specific database transaction model.**
+Consequential change should either:
 
-**The deeper architectural principle is:**
+complete coherently
 
-**Consequential World change should preserve consistency across every canonical state it affects.**
+or:
 
-**Runtime and Persistence / Provenance**
+fail in a manner that does not leave contradictory canonical state
 
-**Current World State answers:**
+This does not require Origins to prescribe a specific database transaction model.
 
-**What is true now?**
+The deeper architectural principle is:
 
-**Persistence / Provenance helps answer:**
+Consequential World change should preserve consistency across every canonical state it affects.
 
-**How did this become true?**
+<a id="ch11-s15"></a>
 
-**These responsibilities interact closely.**
+### Runtime and Persistence / Provenance
 
-**They should not collapse.**
+Current World State answers:
 
-**World Runtime may produce evidence such as:**
+What is true now?
 
-**operation identity**
+Persistence / Provenance helps answer:
 
-**actor reference**
+How did this become true?
 
-**authority reference**
+These responsibilities interact closely.
 
-**prior relevant state**
+They should not collapse.
 
-**resulting state**
+World Runtime may produce evidence such as:
 
-**time ordering**
+operation identity
 
-**execution outcome**
+actor reference
 
-**Persistence / Provenance may preserve appropriate lineage and evidence.**
+authority reference
 
-**The Runtime should not automatically become the permanent historical archive merely because it generates the event.**
+prior relevant state
 
-**Likewise, a historical record should not become Runtime authority merely because it remembers what occurred.**
+resulting state
 
-**The distinction is:**
+time ordering
 
-**Runtime changes the present. Provenance preserves the path to the present.**
+execution outcome
 
-**State Is More Than a Snapshot**
+Persistence / Provenance may preserve appropriate lineage and evidence.
 
-**A World that saves only its latest state can persist.**
+The Runtime should not automatically become the permanent historical archive merely because it generates the event.
 
-**It may still be unable to explain itself.**
+Likewise, a historical record should not become Runtime authority merely because it remembers what occurred.
 
-**For consequential World conditions, BitPangea may eventually need to distinguish:**
+The distinction is:
 
-**current state**
+Runtime changes the present. Provenance preserves the path to the present.
 
-**prior state**
+<a id="ch11-s16"></a>
 
-**transition**
+### State Is More Than a Snapshot
 
-**actor**
+A World that saves only its latest state can persist.
 
-**authority**
+It may still be unable to explain itself.
 
-**execution**
+For consequential World conditions, BitPangea may eventually need to distinguish:
 
-**time**
+current state
 
-**result**
+prior state
 
-**evidence**
+transition
 
-**The exact retention architecture remains unresolved.**
+actor
 
-**But a mature World should avoid being able to answer only:**
+authority
 
-**This is how things are.**
+execution
 
-**while being unable to answer:**
+time
 
-**How did they become this way?**
+result
 
-**That explanatory responsibility is one reason World Runtime and Persistence / Provenance must cooperate.**
+evidence
 
-**Time and Ordering**
+The exact retention architecture remains unresolved.
 
-**Persistent operation requires meaningful ordering.**
+But a mature World should avoid being able to answer only:
 
-**This does not mean BitPangea must reproduce Earth time as its deepest temporal architecture.**
+This is how things are.
 
-**It does not require a particular calendar.**
+while being unable to answer:
 
-**It does not require a simulated day/night cycle.**
+How did they become this way?
 
-**The requirement is more fundamental:**
+That explanatory responsibility is one reason World Runtime and Persistence / Provenance must cooperate.
 
-**Consequential World events and state transitions must be capable of meaningful ordering.**
+<a id="ch11-s17"></a>
 
-**BitPangea may need to distinguish:**
+### Time and Ordering
 
-**before**
+Persistent operation requires meaningful ordering.
 
-**after**
+This does not mean BitPangea must reproduce Earth time as its deepest temporal architecture.
 
-**current**
+It does not require a particular calendar.
 
-**previous**
+It does not require a simulated day/night cycle.
 
-**future-effective**
+The requirement is more fundamental:
 
-**expired**
+Consequential World events and state transitions must be capable of meaningful ordering.
 
-**superseded**
+BitPangea may need to distinguish:
 
-**where relevant.**
+before
 
-**Rights may begin or end.**
+after
 
-**Delegation may become effective later.**
+current
 
-**Concurrent changes may compete.**
+previous
 
-**History may depend upon sequence.**
+future-effective
 
-**The final temporal architecture remains open.**
+expired
 
-**The need for ordered change does not.**
+superseded
 
-**Concurrency**
+where relevant.
 
-**A World used by many actors may receive multiple valid requests at nearly the same time.**
+Rights may begin or end.
 
-**Those requests may conflict.**
+Delegation may become effective later.
 
-**Two actors may attempt to modify the same object.**
+Concurrent changes may compete.
 
-**One action may rely upon state changed by another.**
+History may depend upon sequence.
 
-**One operation may invalidate another operation’s assumptions.**
+The final temporal architecture remains open.
 
-**World Runtime will therefore require some concurrency model.**
+The need for ordered change does not.
 
-**It must eventually be capable of determining:**
+<a id="ch11-s18"></a>
 
-**Which operation becomes canonical first?**
+### Concurrency
 
-**Can both changes coexist?**
+A World used by many actors may receive multiple valid requests at nearly the same time.
 
-**Does one invalidate the other?**
+Those requests may conflict.
 
-**Must one be retried?**
+Two actors may attempt to modify the same object.
 
-**What state becomes authoritative afterward?**
+One action may rely upon state changed by another.
 
-**These are technical questions.**
+One operation may invalidate another operation’s assumptions.
 
-**But they arise from a deeper architectural condition:**
+World Runtime will therefore require some concurrency model.
 
-**BitPangea must remain one coherent operational World even when many actors interact with it simultaneously.**
+It must eventually be capable of determining:
 
-**Failure Is Part of the Architecture**
+Which operation becomes canonical first?
 
-**A durable World cannot assume perfect execution.**
+Can both changes coexist?
 
-**Networks fail.**
+Does one invalidate the other?
 
-**Services become unavailable.**
+Must one be retried?
 
-**Clients disconnect.**
+What state becomes authoritative afterward?
 
-**Messages arrive malformed.**
+These are technical questions.
 
-**Processes crash.**
+But they arise from a deeper architectural condition:
 
-**Implementations contain defects.**
+BitPangea must remain one coherent operational World even when many actors interact with it simultaneously.
 
-**Operations time out.**
+<a id="ch11-s19"></a>
 
-**Infrastructure becomes unavailable.**
+### Failure Is Part of the Architecture
 
-**Failure is not a strange exception to a digital World.**
+A durable World cannot assume perfect execution.
 
-**It is part of the environment in which the World must persist.**
+Networks fail.
 
-**Runtime architecture should therefore eventually support principles such as:**
+Services become unavailable.
 
-**failure containment**
+Clients disconnect.
 
-**safe retry**
+Messages arrive malformed.
 
-**state verification**
+Processes crash.
 
-**graceful degradation**
+Implementations contain defects.
 
-**recovery**
+Operations time out.
 
-**auditability**
+Infrastructure becomes unavailable.
 
-**consistency checking**
+Failure is not a strange exception to a digital World.
 
-**The exact mechanisms remain open.**
+It is part of the environment in which the World must persist.
 
-**The expectation should not.**
+Runtime architecture should therefore eventually support principles such as:
 
-**Recovery**
+failure containment
 
-**Persistence without recoverability is incomplete.**
+safe retry
 
-**The Runtime must eventually answer:**
+state verification
 
-**How can correct operational state be restored after failure without arbitrarily rewriting the World or its history?**
+graceful degradation
 
-**Possible mechanisms may eventually include:**
+recovery
 
-**validated checkpoints**
+auditability
 
-**replayable operations**
+consistency checking
 
-**redundant state**
+The exact mechanisms remain open.
 
-**integrity verification**
+The expectation should not.
 
-**authoritative recovery procedures**
+<a id="ch11-s20"></a>
 
-**Those are possibilities, not adopted designs.**
+### Recovery
 
-**The principle is:**
+Persistence without recoverability is incomplete.
 
-**Persistence must include the ability to recover coherent state.**
+The Runtime must eventually answer:
 
-**A World that remembers incorrectly after failure is not meaningfully persistent.**
+How can correct operational state be restored after failure without arbitrarily rewriting the World or its history?
 
-**Integrity**
+Possible mechanisms may eventually include:
 
-**Canonical World State must be trustworthy.**
+validated checkpoints
 
-**BitPangea must eventually be capable of determining that operational state is:**
+replayable operations
 
-**valid**
+redundant state
 
-**internally consistent**
+integrity verification
 
-**produced through legitimate transition**
+authoritative recovery procedures
 
-**not silently altered outside authorized pathways**
+Those are possibilities, not adopted designs.
 
-**This is the problem of integrity.**
+The principle is:
 
-**The exact technical mechanism remains unresolved.**
+Persistence must include the ability to recover coherent state.
 
-**It may eventually involve:**
+A World that remembers incorrectly after failure is not meaningfully persistent.
 
-**cryptography**
+<a id="ch11-s21"></a>
 
-**signatures**
+### Integrity
 
-**verification**
+Canonical World State must be trustworthy.
 
-**replication**
+BitPangea must eventually be capable of determining that operational state is:
 
-**consensus**
+valid
 
-**audit structures**
+internally consistent
 
-**other techniques**
+produced through legitimate transition
 
-**No particular mechanism is presently mandated.**
+not silently altered outside authorized pathways
 
-**The requirement comes first:**
+This is the problem of integrity.
 
-**Participants and systems must be able to distinguish legitimate World change from unexplained mutation.**
+The exact technical mechanism remains unresolved.
 
-**Runtime and Blockchain**
+It may eventually involve:
 
-**BitPangea’s Bitcoin heritage makes one question inevitable:**
+cryptography
 
-**Must World Runtime itself use a blockchain?**
+signatures
 
-**The answer remains:**
+verification
 
-**Not established.**
+replication
 
-**Some Runtime requirements may benefit from:**
+consensus
 
-**cryptographic verification**
+audit structures
 
-**distributed validation**
+other techniques
 
-**tamper-evident evidence**
+No particular mechanism is presently mandated.
 
-**consensus**
+The requirement comes first:
 
-**replication**
+Participants and systems must be able to distinguish legitimate World change from unexplained mutation.
 
-**Other responsibilities may be better served through different architecture.**
+<a id="ch11-s22"></a>
 
-**BitPangea should not choose a technology merely because it is thematically aligned.**
+### Runtime and Blockchain
 
-**The correct sequence remains:**
+BitPangea’s Bitcoin heritage makes one question inevitable:
 
-**World requirement**
+Must World Runtime itself use a blockchain?
 
-**↓**
+The answer remains:
 
-**Architecture requirement**
+Not established.
 
-**↓**
+Some Runtime requirements may benefit from:
 
-**technical evaluation**
+cryptographic verification
 
-**↓**
+distributed validation
 
-**implementation choice**
+tamper-evident evidence
 
-**not:**
+consensus
 
-**preferred technology**
+replication
 
-**↓**
+Other responsibilities may be better served through different architecture.
 
-**World redesigned to justify it**
+BitPangea should not choose a technology merely because it is thematically aligned.
 
-**Bitcoin demonstrates important principles of digital scarcity, verification, and durable rules.**
+The correct sequence remains:
 
-**It does not require every BitPangea subsystem to reproduce Bitcoin’s architecture.**
+World requirement
 
-**Runtime and Decentralization**
+↓
 
-**The same discipline applies to decentralization.**
+Architecture requirement
 
-**“Decentralized” may describe:**
+↓
 
-**authority**
+technical evaluation
 
-**governance**
+↓
 
-**hosting**
+implementation choice
 
-**execution**
+not:
 
-**validation**
+preferred technology
 
-**storage**
+↓
 
-**replication**
+World redesigned to justify it
 
-**identity**
+Bitcoin demonstrates important principles of digital scarcity, verification, and durable rules.
 
-**control**
+It does not require every BitPangea subsystem to reproduce Bitcoin’s architecture.
 
-**A system may be decentralized in one dimension and centralized in another.**
+<a id="ch11-s23"></a>
 
-**The meaningful architectural question is not:**
+### Runtime and Decentralization
 
-**Is BitPangea decentralized?**
+The same discipline applies to decentralization.
 
-**It is:**
+“Decentralized” may describe:
 
-**Which responsibilities should be distributed, among whom, for what purpose, and with what consequences for authority and continuity?**
+authority
 
-**That inquiry remains open.**
+governance
 
-**Origins should preserve optionality.**
+hosting
 
-**Runtime and Interoperability**
+execution
 
-**World Runtime will eventually operate across more than one implementation.**
+validation
 
-**That makes Interoperability critical.**
+storage
 
-**Different conforming systems may:**
+replication
 
-**submit operations**
+identity
 
-**read World state**
+control
 
-**expose services**
+A system may be decentralized in one dimension and centralized in another.
 
-**present experiences**
+The meaningful architectural question is not:
 
-**participate in Runtime workflows**
+Is BitPangea decentralized?
 
-**They must not reinterpret canonical operational meaning arbitrarily.**
+It is:
 
-**Interoperability therefore must ensure that:**
+Which responsibilities should be distributed, among whom, for what purpose, and with what consequences for authority and continuity?
 
-**references retain meaning**
+That inquiry remains open.
 
-**protocol semantics remain stable**
+Origins should preserve optionality.
 
-**state representations remain compatible**
+<a id="ch11-s24"></a>
 
-**valid results remain interpretable**
+### Runtime and Interoperability
 
-**implementation diversity does not create multiple contradictory Worlds**
+World Runtime will eventually operate across more than one implementation.
 
-**The principle is:**
+That makes Interoperability critical.
 
-**One operational World may support many conforming implementations.**
+Different conforming systems may:
 
-**Runtime and Builders**
+submit operations
 
-**World Runtime becomes especially important once Builders can create within BitPangea.**
+read World state
 
-**A Builder should not write directly into canonical World state however it chooses.**
+expose services
 
-**The safer architectural relationship is:**
+present experiences
 
-**Builder**
+participate in Runtime workflows
 
-**↓**
+They must not reinterpret canonical operational meaning arbitrarily.
 
-**requests legitimate change**
+Interoperability therefore must ensure that:
 
-**↓**
+references retain meaning
 
-**Identity / Rights / Control**
+protocol semantics remain stable
 
-**evaluates authority**
+state representations remain compatible
 
-**↓**
+valid results remain interpretable
 
-**World Runtime**
+implementation diversity does not create multiple contradictory Worlds
 
-**validates and executes**
+The principle is:
 
-**↓**
+One operational World may support many conforming implementations.
 
-**Persistent World State**
+<a id="ch11-s25"></a>
 
-**records resulting operational condition**
+### Runtime and Builders
 
-**↓**
+World Runtime becomes especially important once Builders can create within BitPangea.
 
-**Persistence / Provenance**
+A Builder should not write directly into canonical World state however it chooses.
 
-**preserves appropriate lineage**
+The safer architectural relationship is:
 
-**The Builder can therefore be powerful without becoming sovereign.**
+Builder
 
-**The Runtime protects the boundary between creative freedom and World integrity.**
+↓
 
-**Runtime and Experience Architecture**
+requests legitimate change
 
-**The same distinction applies to experiences.**
+↓
 
-**An experience may allow a participant to:**
+Identity / Rights / Control
 
-**walk**
+evaluates authority
 
-**inspect**
+↓
 
-**navigate**
+World Runtime
 
-**construct**
+validates and executes
 
-**communicate**
+↓
 
-**interact**
+Persistent World State
 
-**But something appearing in an interface does not automatically become canonical World state.**
+records resulting operational condition
 
-**Conceptually:**
+↓
 
-**Experience Architecture**
+Persistence / Provenance
 
-**→ presents and requests**
+preserves appropriate lineage
 
-**World Runtime**
+The Builder can therefore be powerful without becoming sovereign.
 
-**→ validates and executes**
+The Runtime protects the boundary between creative freedom and World integrity.
 
-**World State**
+<a id="ch11-s26"></a>
 
-**→ preserves the legitimate result**
+### Runtime and Experience Architecture
 
-**This allows many future experiences to coexist above one operational World.**
+The same distinction applies to experiences.
 
-**Experience does not own the truth merely because it displays it.**
+An experience may allow a participant to:
 
-**One World, Many Clients**
+walk
 
-**A mature BitPangea may eventually be encountered through many applications.**
+inspect
 
-**Those applications should not create incompatible Worlds merely because their interfaces differ.**
+navigate
 
-**The Runtime should support:**
+construct
 
-**one canonical operational BitPangea capable of being encountered through many conforming clients.**
+communicate
 
-**This mirrors the spatial architecture:**
+interact
 
-**one canonical spatial truth**
+But something appearing in an interface does not automatically become canonical World state.
 
-**→ many representations**
+Conceptually:
 
-**and:**
+Experience Architecture
 
-**one canonical operational World**
+→ presents and requests
 
-**→ many experiences**
+World Runtime
 
-**This separation is essential to technological durability.**
+→ validates and executes
 
-**Runtime Boundaries**
+World State
 
-**World Runtime must also know what not to persist.**
+→ preserves the legitimate result
 
-**Not every action surrounding BitPangea belongs to canonical World state.**
+This allows many future experiences to coexist above one operational World.
 
-**For example:**
+Experience does not own the truth merely because it displays it.
 
-**a temporary user-interface preference**
+<a id="ch11-s27"></a>
 
-**a private draft**
+### One World, Many Clients
 
-**a local camera position**
+A mature BitPangea may eventually be encountered through many applications.
 
-**an unsaved experiment**
+Those applications should not create incompatible Worlds merely because their interfaces differ.
 
-**a transient communication**
+The Runtime should support:
 
-**a client-only visualization**
+one canonical operational BitPangea capable of being encountered through many conforming clients.
 
-**may not need to alter the World.**
+This mirrors the spatial architecture:
 
-**This creates important distinctions:**
+one canonical spatial truth
 
-**client state ≠ World state**
+→ many representations
 
-**temporary state ≠ persistent state**
+and:
 
-**private representation ≠ canonical World condition**
+one canonical operational World
 
-**displayed possibility ≠ executed World change**
+→ many experiences
 
-**Runtime should preserve what belongs to the World.**
+This separation is essential to technological durability.
 
-**It should not attempt to own everything that happens around it.**
+<a id="ch11-s28"></a>
 
-**World State as a Shared Responsibility**
+### Runtime Boundaries
 
-**Changing canonical World state is qualitatively different from changing private local state.**
+World Runtime must also know what not to persist.
 
-**A legitimate persistent change says:**
+Not every action surrounding BitPangea belongs to canonical World state.
 
-**From this point forward, this is part of the operational World unless later legitimately changed.**
+For example:
 
-**That gives mutation architectural weight.**
+a temporary user-interface preference
 
-**It explains why:**
+a private draft
 
-**identity**
+a local camera position
 
-**rights**
+an unsaved experiment
 
-**authorization**
+a transient communication
 
-**validation**
+a client-only visualization
 
-**execution**
+may not need to alter the World.
 
-**persistence**
+This creates important distinctions:
 
-**provenance**
+client state ≠ World state
 
-**integrity**
+temporary state ≠ persistent state
 
-**all converge around Runtime activity.**
+private representation ≠ canonical World condition
 
-**The World must permit enough change to support life.**
+displayed possibility ≠ executed World change
 
-**It must preserve enough discipline to remain coherent.**
+Runtime should preserve what belongs to the World.
 
-**Change Without Loss of Identity**
+It should not attempt to own everything that happens around it.
 
-**The deepest purpose of World Runtime is not merely to preserve objects.**
+<a id="ch11-s29"></a>
 
-**It is to allow BitPangea to change while remaining BitPangea.**
+### World State as a Shared Responsibility
 
-**Earlier spatial Architecture established:**
+Changing canonical World state is qualitatively different from changing private local state.
 
-**The World should be capable of changing without losing where it is.**
+A legitimate persistent change says:
 
-**World Runtime extends that principle:**
+From this point forward, this is part of the operational World unless later legitimately changed.
 
-**The World should be capable of changing without losing what it is.**
+That gives mutation architectural weight.
 
-**Buildings may appear.**
+It explains why:
 
-**Infrastructure may evolve.**
+identity
 
-**Rights may change.**
+rights
 
-**Communities may form.**
+authorization
 
-**Services may improve.**
+validation
 
-**Technology may be replaced.**
+execution
 
-**Civilization may become increasingly complex.**
+persistence
 
-**Yet those changes should occur within an architectural frame strong enough that BitPangea remains one continuous World through time.**
+provenance
 
-**Internal Runtime Decomposition Remains Open**
+integrity
 
-**World Runtime is now a recognized Architecture domain.**
+all converge around Runtime activity.
 
-**Its internal architecture is not complete.**
+The World must permit enough change to support life.
 
-**Continued design may eventually distinguish separate responsibilities for:**
+It must preserve enough discipline to remain coherent.
 
-**protocols**
+<a id="ch11-s30"></a>
 
-**services**
+### Change Without Loss of Identity
 
-**validation**
+The deepest purpose of World Runtime is not merely to preserve objects.
 
-**authorization integration**
+It is to allow BitPangea to change while remaining BitPangea.
 
-**execution**
+Earlier spatial Architecture established:
 
-**state transition**
+The World should be capable of changing without losing where it is.
 
-**concurrency**
+World Runtime extends that principle:
 
-**recovery**
+The World should be capable of changing without losing what it is.
 
-**integrity**
+Buildings may appear.
 
-**operational scheduling**
+Infrastructure may evolve.
 
-**other Runtime concerns**
+Rights may change.
 
-**That does not weaken the domain.**
+Communities may form.
 
-**It demonstrates that the domain has been identified before its final internal decomposition has been prematurely frozen.**
+Services may improve.
 
-**Origins should preserve that distinction.**
+Technology may be replaced.
 
-**What Is Established**
+Civilization may become increasingly complex.
 
-**The current Architecture supports the following statements:**
+Yet those changes should occur within an architectural frame strong enough that BitPangea remains one continuous World through time.
 
-**World Runtime is a recognized Architecture domain.**
+<a id="ch11-s31"></a>
 
-**BitPangea requires persistent operational World State.**
+### Internal Runtime Decomposition Remains Open
 
-**World State is distinct from foundational spatial truth.**
+World Runtime is now a recognized Architecture domain.
 
-**Legitimate change must be evaluated before canonical state is mutated.**
+Its internal architecture is not complete.
 
-**Identity / Rights / Control informs authorization.**
+Continued design may eventually distinguish separate responsibilities for:
 
-**World Runtime executes legitimate operational change.**
+protocols
 
-**Request, authorization, execution, and result are distinct concepts.**
+services
 
-**Protocols define coherent operational interaction.**
+validation
 
-**Services provide capabilities.**
+authorization integration
 
-**Protocols and services do not automatically acquire authority over the canonical domains they reference.**
+execution
 
-**Reference does not transfer authority.**
+state transition
 
-**Runtime should coordinate specialized authorities rather than absorb them.**
+concurrency
 
-**Consequential state transitions should preserve consistency.**
+recovery
 
-**Persistent state must survive sessions, clients, and interface changes.**
+integrity
 
-**World Runtime must support many clients encountering one canonical operational World.**
+operational scheduling
 
-**Persistence should include recoverability and integrity.**
+other Runtime concerns
 
-**World Runtime should produce sufficient evidence for Persistence / Provenance to preserve meaningful lineage.**
+That does not weaken the domain.
 
-**Interoperability must allow multiple conforming implementations to participate without creating contradictory World meaning.**
+It demonstrates that the domain has been identified before its final internal decomposition has been prematurely frozen.
 
-**No particular blockchain, database architecture, consensus model, hosting model, or decentralization scheme is presently required.**
+Origins should preserve that distinction.
 
-**What Remains Open**
+<a id="ch11-s32"></a>
 
-**World Runtime remains one of BitPangea’s largest unresolved Architecture domains.**
+### What Is Established
 
-**Important questions include:**
+The current Architecture supports the following statements:
 
-**the canonical World State model**
+World Runtime is a recognized Architecture domain.
 
-**which classes of information belong to World State**
+BitPangea requires persistent operational World State.
 
-**the authoritative state store or stores**
+World State is distinct from foundational spatial truth.
 
-**the internal Runtime protocol architecture**
+Legitimate change must be evaluated before canonical state is mutated.
 
-**service boundaries**
+Identity / Rights / Control informs authorization.
 
-**execution model**
+World Runtime executes legitimate operational change.
 
-**authorization interface**
+Request, authorization, execution, and result are distinct concepts.
 
-**transaction and atomicity requirements**
+Protocols define coherent operational interaction.
 
-**concurrency model**
+Services provide capabilities.
 
-**temporal ordering**
+Protocols and services do not automatically acquire authority over the canonical domains they reference.
 
-**failure handling**
+Reference does not transfer authority.
 
-**recovery architecture**
+Runtime should coordinate specialized authorities rather than absorb them.
 
-**integrity mechanisms**
+Consequential state transitions should preserve consistency.
 
-**state history**
+Persistent state must survive sessions, clients, and interface changes.
 
-**event evidence**
+World Runtime must support many clients encountering one canonical operational World.
 
-**auditability**
+Persistence should include recoverability and integrity.
 
-**distribution**
+World Runtime should produce sufficient evidence for Persistence / Provenance to preserve meaningful lineage.
 
-**replication**
+Interoperability must allow multiple conforming implementations to participate without creating contradictory World meaning.
 
-**consensus, if required**
+No particular blockchain, database architecture, consensus model, hosting model, or decentralization scheme is presently required.
 
-**decentralization, if any**
+<a id="ch11-s33"></a>
 
-**cryptographic verification**
+### What Remains Open
 
-**Runtime conformance**
+World Runtime remains one of BitPangea’s largest unresolved Architecture domains.
 
-**interaction with Identity / Rights / Control**
+Important questions include:
 
-**interaction with Persistence / Provenance**
+the canonical World State model
 
-**interaction with Interoperability**
+which classes of information belong to World State
 
-**interaction with Builders**
+the authoritative state store or stores
 
-**interaction with infrastructure**
+the internal Runtime protocol architecture
 
-**interaction with future governance**
+service boundaries
 
-**These questions should remain open until actual World requirements justify their answers.**
+execution model
 
-**Origins should not manufacture implementation certainty where architecture has not yet earned it.**
+authorization interface
 
-**The Principle**
+transaction and atomicity requirements
 
-**World Runtime is what gives BitPangea a present tense.**
+concurrency model
 
-**The Foundational Survey Fabric preserves canonical where.**
+temporal ordering
 
-**The Parcel Cadastre preserves which Parcel.**
+failure handling
 
-**Identity identifies the actor.**
+recovery architecture
 
-**Rights describe the governed relationship.**
+integrity mechanisms
 
-**Control and authorization determine whether authority may be exercised.**
+state history
 
-**Protocols define coherent interaction.**
+event evidence
 
-**Services provide capability.**
+auditability
 
-**World Runtime performs legitimate change.**
+distribution
 
-**Persistent World State preserves the resulting condition.**
+replication
 
-**Persistence / Provenance preserves how that condition came to exist.**
+consensus, if required
 
-**Interoperability allows multiple systems to understand it.**
+decentralization, if any
 
-**Experience Architecture allows participants to encounter it.**
+cryptographic verification
 
-**Together, these responsibilities allow BitPangea to continue from one moment into the next without being recreated from scratch.**
+Runtime conformance
 
-**The governing principle is therefore:**
+interaction with Identity / Rights / Control
 
-**World Runtime exists to permit change without surrendering continuity.**
+interaction with Persistence / Provenance
 
-**A World that cannot change is only a model.**
+interaction with Interoperability
 
-**A World that changes without authority is incoherent.**
+interaction with Builders
 
-**A World that changes without persistence has no present.**
+interaction with infrastructure
 
-**A World that changes without provenance cannot explain its past.**
+interaction with future governance
 
-**BitPangea must therefore be able to:**
+These questions should remain open until actual World requirements justify their answers.
 
-**change, remain coherent, persist, and remember.**
+Origins should not manufacture implementation certainty where architecture has not yet earned it.
+
+<a id="ch11-s34"></a>
+
+### The Principle
+
+World Runtime is what gives BitPangea a present tense.
+
+The Foundational Survey Fabric preserves canonical where.
+
+The Parcel Cadastre preserves which Parcel.
+
+Identity identifies the actor.
+
+Rights describe the governed relationship.
+
+Control and authorization determine whether authority may be exercised.
+
+Protocols define coherent interaction.
+
+Services provide capability.
+
+World Runtime performs legitimate change.
+
+Persistent World State preserves the resulting condition.
+
+Persistence / Provenance preserves how that condition came to exist.
+
+Interoperability allows multiple systems to understand it.
+
+Experience Architecture allows participants to encounter it.
+
+Together, these responsibilities allow BitPangea to continue from one moment into the next without being recreated from scratch.
+
+The governing principle is therefore:
+
+World Runtime exists to permit change without surrendering continuity.
+
+A World that cannot change is only a model.
+
+A World that changes without authority is incoherent.
+
+A World that changes without persistence has no present.
+
+A World that changes without provenance cannot explain its past.
+
+BitPangea must therefore be able to:
+
+change, remain coherent, persist, and remember.
+
+---
+
+<a id="ch12"></a>
 
 ## XII. Builders and Civilization
 
-**A World can be spatially complete and operationally coherent while still remaining empty of civilization.**
+A World can be spatially complete and operationally coherent while still remaining empty of civilization.
 
-**BitPangea’s Architecture can establish place.**
+BitPangea’s Architecture can establish place.
 
-**It can preserve Parcel identity.**
+It can preserve Parcel identity.
 
-**It can recognize actors.**
+It can recognize actors.
 
-**It can govern legitimate change.**
+It can govern legitimate change.
 
-**It can preserve state.**
+It can preserve state.
 
-**It can record provenance.**
+It can record provenance.
 
-**It can support interoperable systems.**
+It can support interoperable systems.
 
-**It can provide experiences through which the World becomes perceptible.**
+It can provide experiences through which the World becomes perceptible.
 
-**None of those things, by themselves, creates civilization.**
+None of those things, by themselves, creates civilization.
 
-**Civilization begins when participants are able to make meaningful use of the World over time.**
+Civilization begins when participants are able to make meaningful use of the World over time.
 
-**That requires Builders.**
+That requires Builders.
 
-**Not merely software developers.**
+Not merely software developers.
 
-**Not merely system administrators.**
+Not merely system administrators.
 
-**But participants capable of creating within BitPangea.**
+But participants capable of creating within BitPangea.
 
-**Builders occupy an important position in the World:**
+Builders occupy an important position in the World:
 
-**They are not an Architecture domain. They are participants who use the Architecture to create.**
+They are not an Architecture domain. They are participants who use the Architecture to create.
 
-**The Creator establishes the World.**
+The Creator establishes the World.
 
-**The Architecture makes legitimate creation possible.**
+The Architecture makes legitimate creation possible.
 
-**Builders begin adding to the World.**
+Builders begin adding to the World.
 
-**Participants interact with what is created.**
+Participants interact with what is created.
 
-**History accumulates.**
+History accumulates.
 
-**Civilization may emerge.**
+Civilization may emerge.
 
-**The Creator Cannot Build Everything**
+<a id="ch12-s01"></a>
 
-**BitPangea should not become a World in which every important structure, service, institution, environment, artifact, and cultural expression must be created by its original Creator.**
+### The Creator Cannot Build Everything
 
-**That would produce a controlled environment.**
+BitPangea should not become a World in which every important structure, service, institution, environment, artifact, and cultural expression must be created by its original Creator.
 
-**It would not make sufficient room for civilization.**
+That would produce a controlled environment.
 
-**At some point, BitPangea must permit meaningful creation beyond the Creator.**
+It would not make sufficient room for civilization.
 
-**That creation may eventually include:**
+At some point, BitPangea must permit meaningful creation beyond the Creator.
 
-**structures**
+That creation may eventually include:
 
-**objects**
+structures
 
-**environments**
+objects
 
-**infrastructure**
+environments
 
-**services**
+infrastructure
 
-**information systems**
+services
 
-**public works**
+information systems
 
-**institutions**
+public works
 
-**social spaces**
+institutions
 
-**art**
+social spaces
 
-**commercial activity**
+art
 
-**digital-native forms not yet imagined**
+commercial activity
 
-**The final scope of Builder capability remains open.**
+digital-native forms not yet imagined
 
-**The requirement is clearer:**
+The final scope of Builder capability remains open.
 
-**BitPangea must eventually allow meaningful creation by actors other than the original Creator.**
+The requirement is clearer:
 
-**This is where the World begins to become capable of exceeding the imagination of the person who established it.**
+BitPangea must eventually allow meaningful creation by actors other than the original Creator.
 
-**Builders Are Not an Architecture Domain**
+This is where the World begins to become capable of exceeding the imagination of the person who established it.
 
-**Earlier Creator-period reasoning placed Builder / Creation inside the provisional 3×3 model.**
+<a id="ch12-s02"></a>
 
-**That was useful for discovery.**
+### Builders Are Not an Architecture Domain
 
-**The mature Architecture no longer treats Builders as one of its nine formal domains.**
+Earlier Creator-period reasoning placed Builder / Creation inside the provisional 3×3 model.
 
-**This distinction matters.**
+That was useful for discovery.
 
-**An Architecture domain preserves an enduring responsibility of the World.**
+The mature Architecture no longer treats Builders as one of its nine formal domains.
 
-**A Builder is an actor operating through those responsibilities.**
+This distinction matters.
 
-**Builders may depend upon:**
+An Architecture domain preserves an enduring responsibility of the World.
 
-**Parcel Cadastre**
+A Builder is an actor operating through those responsibilities.
 
-**Identity / Rights / Control**
+Builders may depend upon:
 
-**World Runtime**
+Parcel Cadastre
 
-**Persistence / Provenance**
+Identity / Rights / Control
 
-**Interoperability**
+World Runtime
 
-**Experience Architecture**
+Persistence / Provenance
 
-**But dependence upon Architecture does not make the Builder part of the Architecture itself.**
+Interoperability
 
-**Conceptually:**
+Experience Architecture
 
-**Architecture**
+But dependence upon Architecture does not make the Builder part of the Architecture itself.
 
-**→ establishes enduring World capabilities and constraints**
+Conceptually:
 
-**Builder**
+Architecture
 
-**→ uses those capabilities to create within the World**
+→ establishes enduring World capabilities and constraints
 
-**The Architecture enables creation.**
+Builder
 
-**The Builder performs it.**
+→ uses those capabilities to create within the World
 
-**Builder Does Not Mean Sovereign**
+The Architecture enables creation.
 
-**Enabling creation does not mean surrendering foundational coherence.**
+The Builder performs it.
 
-**A Builder should be able to create within BitPangea.**
+<a id="ch12-s03"></a>
 
-**A Builder should not casually redefine BitPangea.**
+### Builder Does Not Mean Sovereign
 
-**The Builder therefore operates inside constraints established elsewhere.**
+Enabling creation does not mean surrendering foundational coherence.
 
-**Those constraints may include:**
+A Builder should be able to create within BitPangea.
 
-**canonical Parcel truth**
+A Builder should not casually redefine BitPangea.
 
-**actor identity**
+The Builder therefore operates inside constraints established elsewhere.
 
-**rights**
+Those constraints may include:
 
-**control**
+canonical Parcel truth
 
-**authorization**
+actor identity
 
-**World Runtime rules**
+rights
 
-**infrastructure relationships**
+control
 
-**World-scale constraints**
+authorization
 
-**other legitimate Architecture requirements**
+World Runtime rules
 
-**A Builder consumes those truths.**
+infrastructure relationships
 
-**It does not own them.**
+World-scale constraints
 
-**The principle is:**
+other legitimate Architecture requirements
 
-**Creation may be powerful without becoming foundational authority.**
+A Builder consumes those truths.
 
-**A Builder should not be able to redefine a Parcel simply because it can build upon it.**
+It does not own them.
 
-**A Builder should not invent rights merely because it needs permission.**
+The principle is:
 
-**A Builder should not mutate canonical state outside World Runtime merely because the interface offers a tool.**
+Creation may be powerful without becoming foundational authority.
 
-**Creation Is a Governed Capability**
+A Builder should not be able to redefine a Parcel simply because it can build upon it.
 
-**A Builder action becomes architecturally consequential when it affects persistent World state.**
+A Builder should not invent rights merely because it needs permission.
 
-**That means persistent creation must participate in the same responsibility boundaries that govern other World changes.**
+A Builder should not mutate canonical state outside World Runtime merely because the interface offers a tool.
 
-**A future construction action may conceptually involve:**
+<a id="ch12-s04"></a>
 
-**Builder proposes change**
+### Creation Is a Governed Capability
 
-**↓**
+A Builder action becomes architecturally consequential when it affects persistent World state.
 
-**target place or Parcel resolved**
+That means persistent creation must participate in the same responsibility boundaries that govern other World changes.
 
-**↓**
+A future construction action may conceptually involve:
 
-**actor identity resolved**
+Builder proposes change
 
-**↓**
+↓
 
-**rights / control evaluated**
+target place or Parcel resolved
 
-**↓**
+↓
 
-**operation validated**
+actor identity resolved
 
-**↓**
+↓
 
-**World Runtime executes**
+rights / control evaluated
 
-**↓**
+↓
 
-**World State persists**
+operation validated
 
-**↓**
+↓
 
-**Persistence / Provenance preserves appropriate lineage**
+World Runtime executes
 
-**↓**
+↓
 
-**Interoperability exposes the resulting condition**
+World State persists
 
-**↓**
+↓
 
-**Experience Architecture presents it**
+Persistence / Provenance preserves appropriate lineage
 
-**This does not mean the Builder experience should feel bureaucratic.**
+↓
 
-**Much of the underlying process may be invisible to the participant.**
+Interoperability exposes the resulting condition
 
-**But the World should still be able to determine why a persistent change was legitimate.**
+↓
 
-**Building Is Not the Same as Rendering**
+Experience Architecture presents it
 
-**A Builder interface may display something that does not yet exist canonically in BitPangea.**
+This does not mean the Builder experience should feel bureaucratic.
 
-**This distinction is important.**
+Much of the underlying process may be invisible to the participant.
 
-**A future Builder environment may support concepts such as:**
+But the World should still be able to determine why a persistent change was legitimate.
 
-**private draft**
+<a id="ch12-s05"></a>
 
-**preview**
+### Building Is Not the Same as Rendering
 
-**simulation**
+A Builder interface may display something that does not yet exist canonically in BitPangea.
 
-**proposal**
+This distinction is important.
 
-**staged construction**
+A future Builder environment may support concepts such as:
 
-**committed World object**
+private draft
 
-**These are illustrative, not adopted Builder states.**
+preview
 
-**The deeper distinction is:**
+simulation
 
-**Something displayed is not necessarily something that exists in canonical World state.**
+proposal
 
-**A Builder should be able to experiment without every experiment becoming history.**
+staged construction
 
-**A draft can remain private.**
+committed World object
 
-**A preview can remain temporary.**
+These are illustrative, not adopted Builder states.
 
-**Only an intentional, authorized, valid transition should become part of the persistent World.**
+The deeper distinction is:
 
-**This protects both creativity and coherence.**
+Something displayed is not necessarily something that exists in canonical World state.
 
-**The World Constrains Creation Without Prescribing It**
+A Builder should be able to experiment without every experiment becoming history.
 
-**Builders require boundaries.**
+A draft can remain private.
 
-**Those boundaries may arise from:**
+A preview can remain temporary.
 
-**Parcel geometry**
+Only an intentional, authorized, valid transition should become part of the persistent World.
 
-**rights and control**
+This protects both creativity and coherence.
 
-**World Runtime rules**
+<a id="ch12-s06"></a>
 
-**infrastructure**
+### The World Constrains Creation Without Prescribing It
 
-**spatial relationships**
+Builders require boundaries.
 
-**safety requirements**
+Those boundaries may arise from:
 
-**technical limits**
+Parcel geometry
 
-**shared systems**
+rights and control
 
-**World-scale constraints**
+World Runtime rules
 
-**But constraint should not become aesthetic dictatorship.**
+infrastructure
 
-**The Creator’s responsibility is to preserve what BitPangea requires in order to remain BitPangea.**
+spatial relationships
 
-**The Creator should be much more cautious about deciding what future participants must build.**
+safety requirements
 
-**The relationship is:**
+technical limits
 
-**Architecture**
+shared systems
 
-**→ establishes what must remain true**
+World-scale constraints
 
-**Builder**
+But constraint should not become aesthetic dictatorship.
 
-**→ decides what to create within those truths**
+The Creator’s responsibility is to preserve what BitPangea requires in order to remain BitPangea.
 
-**This is where architectural constraint begins to create cultural freedom.**
+The Creator should be much more cautious about deciding what future participants must build.
 
-**Builders Operate Through Architecture**
+The relationship is:
 
-**A Builder should not directly rewrite canonical systems.**
+Architecture
 
-**It should operate through them.**
+→ establishes what must remain true
 
-**For example:**
+Builder
 
-**A Builder may reference a Parcel.**
+→ decides what to create within those truths
 
-**It does not become the Parcel Cadastre.**
+This is where architectural constraint begins to create cultural freedom.
 
-**A Builder may consult rights.**
+<a id="ch12-s07"></a>
 
-**It does not become Identity / Rights / Control.**
+### Builders Operate Through Architecture
 
-**A Builder may request a state change.**
+A Builder should not directly rewrite canonical systems.
 
-**It does not become World Runtime.**
+It should operate through them.
 
-**A Builder may create evidence of an action.**
+For example:
 
-**It does not become Persistence / Provenance.**
+A Builder may reference a Parcel.
 
-**A Builder may communicate through interoperable services.**
+It does not become the Parcel Cadastre.
 
-**It does not become Interoperability.**
+A Builder may consult rights.
 
-**A Builder may present tools through an interface.**
+It does not become Identity / Rights / Control.
 
-**It does not become Experience Architecture.**
+A Builder may request a state change.
 
-**This reflects one of BitPangea’s strongest architectural principles:**
+It does not become World Runtime.
 
-**Reference does not transfer authority.**
+A Builder may create evidence of an action.
 
-**Builders May Create More Than Structures**
+It does not become Persistence / Provenance.
 
-**It would be too narrow to define Builder as a tool for placing three-dimensional objects on Parcels.**
+A Builder may communicate through interoperable services.
 
-**Civilization may require many forms of creation.**
+It does not become Interoperability.
 
-**Builders may eventually operate across categories such as:**
+A Builder may present tools through an interface.
 
-**physical-looking structures**
+It does not become Experience Architecture.
 
-**digital-native structures**
+This reflects one of BitPangea’s strongest architectural principles:
 
-**interactive environments**
+Reference does not transfer authority.
 
-**services**
+<a id="ch12-s08"></a>
 
-**transport systems**
+### Builders May Create More Than Structures
 
-**public infrastructure**
+It would be too narrow to define Builder as a tool for placing three-dimensional objects on Parcels.
 
-**information systems**
+Civilization may require many forms of creation.
 
-**institutions**
+Builders may eventually operate across categories such as:
 
-**cultural works**
+physical-looking structures
 
-**shared spaces**
+digital-native structures
 
-**World-scale projects**
+interactive environments
 
-**Some of these may not resemble conventional construction at all.**
+services
 
-**The term Builder should therefore be understood broadly:**
+transport systems
 
-**a Builder is an authorized participant capable of creating persistent or potentially persistent things within BitPangea.**
+public infrastructure
 
-**That keeps BitPangea from reducing civilization to digital real-estate development.**
+information systems
 
-**Builders and Infrastructure**
+institutions
 
-**Infrastructure deserves special attention because it may cross many Parcels and involve responsibilities broader than ordinary Parcel relationships.**
+cultural works
 
-**A future:**
+shared spaces
 
-**road**
+World-scale projects
 
-**transport network**
+Some of these may not resemble conventional construction at all.
 
-**communications system**
+The term Builder should therefore be understood broadly:
 
-**utility**
+a Builder is an authorized participant capable of creating persistent or potentially persistent things within BitPangea.
 
-**public service**
+That keeps BitPangea from reducing civilization to digital real-estate development.
 
-**digital-native network**
+<a id="ch12-s09"></a>
 
-**may span large portions of the World.**
+### Builders and Infrastructure
 
-**A Builder architecture designed only around:**
+Infrastructure deserves special attention because it may cross many Parcels and involve responsibilities broader than ordinary Parcel relationships.
 
-**one actor**
+A future:
 
-- 
+road
 
-**one Parcel**
+transport network
 
-- 
+communications system
 
-**one isolated construction**
+utility
 
-**would be insufficient.**
+public service
 
-**World-scale infrastructure may require:**
+digital-native network
 
-**cross-Parcel coordination**
+may span large portions of the World.
 
-**shared authority**
+A Builder architecture designed only around:
 
-**institutional rights**
+one actor
 
-**public or delegated responsibility**
+\+
 
-**persistent service relationships**
+one Parcel
 
-**multi-actor participation**
+\+
 
-**The exact architecture remains open.**
+one isolated construction
 
-**The principle is already clear:**
+would be insufficient.
 
-**Builder capability must be able to support World-scale creation, not only isolated Parcel-scale construction.**
+World-scale infrastructure may require:
 
-**Builders and The Verge**
+cross-Parcel coordination
 
-**Earlier versions of this section referred to The Frontier as though it were a non-Parcel spatial morphology.**
+shared authority
 
-**That terminology is now superseded.**
+institutional rights
 
-**The relevant terminal World-form concept is The Verge.**
+public or delegated responsibility
 
-**Because The Verge is not automatically ordinary Parcel morphology, Builder systems should not assume that every spatial condition in BitPangea behaves like a standard Parcel.**
+persistent service relationships
 
-**This may eventually create distinctions among:**
+multi-actor participation
 
-**Parcel construction**
+The exact architecture remains open.
 
-**Verge interaction**
+The principle is already clear:
 
-**Outlier interaction**
+Builder capability must be able to support World-scale creation, not only isolated Parcel-scale construction.
 
-**World-scale infrastructure**
+<a id="ch12-s10"></a>
 
-**other non-Parcel spatial conditions**
+### Builders and The Verge
 
-**The exact rules remain open.**
+Earlier versions of this section referred to The Frontier as though it were a non-Parcel spatial morphology.
 
-**The principle is:**
+That terminology is now superseded.
 
-**Builder architecture must follow the actual spatial architecture of BitPangea rather than assume that all space behaves identically.**
+The relevant terminal World-form concept is The Verge.
 
-**The Frontier remains epistemic.**
+Because The Verge is not automatically ordinary Parcel morphology, Builder systems should not assume that every spatial condition in BitPangea behaves like a standard Parcel.
 
-**It is not a Builder-space category.**
+This may eventually create distinctions among:
 
-**The Creator and the Builder**
+Parcel construction
 
-**The relationship between Creator and Builder should remain explicit.**
+Verge interaction
 
-**The Creator’s role is foundational.**
+Outlier interaction
 
-**The Builder’s role is participatory.**
+World-scale infrastructure
 
-**Conceptually:**
+other non-Parcel spatial conditions
 
-**Creator**
+The exact rules remain open.
 
-**→ establishes the World and its enduring Architecture**
+The principle is:
 
-**Builder**
+Builder architecture must follow the actual spatial architecture of BitPangea rather than assume that all space behaves identically.
 
-**→ creates within the established World**
+The Frontier remains epistemic.
 
-**The Creator determines things such as:**
+It is not a Builder-space category.
 
-**one World**
+<a id="ch12-s11"></a>
 
-**Finitude**
+### The Creator and the Builder
 
-**The Extent**
+The relationship between Creator and Builder should remain explicit.
 
-**the fixed Parcel count**
+The Creator’s role is foundational.
 
-**foundational spatial truth**
+The Builder’s role is participatory.
 
-**core Architecture boundaries**
+Conceptually:
 
-**Builders should not casually redefine those conditions.**
+Creator
 
-**But Creator authority should also stop where it no longer needs to extend.**
+→ establishes the World and its enduring Architecture
 
-**The Creator should resist using foundational authority to dictate matters that can safely be left to Builders.**
+Builder
 
-**The principle is:**
+→ creates within the established World
 
-**The Creator should establish the minimum enduring structure required for the World to remain coherent, then increasingly make room for others.**
+The Creator determines things such as:
 
-**Civilization Is Not an Architecture Domain**
+one World
 
-**One of the most important lessons of the earlier 3×3 model is that Civilization does not belong inside The Architecture as though it were another system layer.**
+Finitude
 
-**Civilization cannot be installed like a service.**
+The Extent
 
-**It cannot be fully specified through protocol.**
+the fixed Parcel count
 
-**It cannot become authentic merely because an architecture diagram contains a box labeled “Civilization.”**
+foundational spatial truth
 
-**Civilization emerges from the accumulated actions of participants over time.**
+core Architecture boundaries
 
-**It may eventually include:**
+Builders should not casually redefine those conditions.
 
-**communities**
+But Creator authority should also stop where it no longer needs to extend.
 
-**commerce**
+The Creator should resist using foundational authority to dictate matters that can safely be left to Builders.
 
-**institutions**
+The principle is:
 
-**customs**
+The Creator should establish the minimum enduring structure required for the World to remain coherent, then increasingly make room for others.
 
-**art**
+<a id="ch12-s12"></a>
 
-**conflict**
+### Civilization Is Not an Architecture Domain
 
-**cooperation**
+One of the most important lessons of the earlier 3×3 model is that Civilization does not belong inside The Architecture as though it were another system layer.
 
-**traditions**
+Civilization cannot be installed like a service.
 
-**reputation**
+It cannot be fully specified through protocol.
 
-**culture**
+It cannot become authentic merely because an architecture diagram contains a box labeled “Civilization.”
 
-**history**
+Civilization emerges from the accumulated actions of participants over time.
 
-**shared memory**
+It may eventually include:
 
-**collective identity**
+communities
 
-**Architecture may support these things.**
+commerce
 
-**Architecture cannot predetermine their actual content.**
+institutions
 
-**The distinction is:**
+customs
 
-**The Architecture enables civilization. It does not author civilization.**
+art
 
-**Architecture Can Enable Society**
+conflict
 
-**This does not mean Architecture has no role in what civilization can become.**
+cooperation
 
-**Participants cannot build society if they lack the ability to:**
+traditions
 
-**communicate**
+reputation
 
-**create**
+culture
 
-**coordinate**
+history
 
-**exchange**
+shared memory
 
-**organize**
+collective identity
 
-**discover**
+Architecture may support these things.
 
-**associate**
+Architecture cannot predetermine their actual content.
 
-**preserve memory**
+The distinction is:
 
-**establish legitimate relationships**
+The Architecture enables civilization. It does not author civilization.
 
-**BitPangea may eventually provide capabilities that support these activities.**
+<a id="ch12-s13"></a>
 
-**But the distinction must remain:**
+### Architecture Can Enable Society
 
-**Architecture**
+This does not mean Architecture has no role in what civilization can become.
 
-**→ enables capability**
+Participants cannot build society if they lack the ability to:
 
-**Participants**
+communicate
 
-**→ determine use**
+create
 
-**Civilization**
+coordinate
 
-**→ produces emergent outcomes**
+exchange
 
-**A communication system does not create a community.**
+organize
 
-**A marketplace does not create an economy.**
+discover
 
-**A voting mechanism does not create political culture.**
+associate
 
-**A Builder does not create civilization merely by constructing buildings.**
+preserve memory
 
-**Architecture creates possibility.**
+establish legitimate relationships
 
-**Civilization creates meaning.**
+BitPangea may eventually provide capabilities that support these activities.
 
-**Social, Economic, and Cultural Are Emergent**
+But the distinction must remain:
 
-**The earlier provisional 3×3 model included:**
+Architecture
 
-**Social / Economic / Cultural**
+→ enables capability
 
-**as one of its cells.**
+Participants
 
-**That was useful because it identified important phenomena.**
+→ determine use
 
-**It was less useful as a final architectural classification.**
+Civilization
 
-**Social, economic, and cultural life are not merely subsystems of the World.**
+→ produces emergent outcomes
 
-**They are largely emergent consequences of how participants use World capabilities.**
+A communication system does not create a community.
 
-**Conceptually:**
+A marketplace does not create an economy.
 
-**Formal Architecture**
+A voting mechanism does not create political culture.
 
-**↓**
+A Builder does not create civilization merely by constructing buildings.
 
-**provides capabilities**
+Architecture creates possibility.
 
-**↓**
+Civilization creates meaning.
 
-**participants act**
+<a id="ch12-s14"></a>
 
-**↓**
+### Social, Economic, and Cultural Are Emergent
 
-**social / economic / cultural patterns emerge**
+The earlier provisional 3×3 model included:
 
-**This distinction matters because BitPangea should not treat:**
+Social / Economic / Cultural
 
-**culture**
+as one of its cells.
 
-**economy**
+That was useful because it identified important phenomena.
 
-**community**
+It was less useful as a final architectural classification.
 
-**social order**
+Social, economic, and cultural life are not merely subsystems of the World.
 
-**as software modules to be installed.**
+They are largely emergent consequences of how participants use World capabilities.
 
-**Those phenomena may rely upon formal systems.**
+Conceptually:
 
-**They should not be confused with the systems that enable them.**
+Formal Architecture
 
-**Economy Should Not Be Predesigned**
+↓
 
-**BitPangea’s finite Parcel supply may eventually have important economic consequences.**
+provides capabilities
 
-**Those consequences should not be mistaken for a predesigned economy.**
+↓
 
-**The Architecture has not established:**
+participants act
 
-**Parcel price**
+↓
 
-**currency**
+social / economic / cultural patterns emerge
 
-**market structure**
+This distinction matters because BitPangea should not treat:
 
-**rent**
+culture
 
-**taxation**
+economy
 
-**resource economy**
+community
 
-**interest**
+social order
 
-**monetary policy**
+as software modules to be installed.
 
-**financial governance**
+Those phenomena may rely upon formal systems.
 
-**investment return**
+They should not be confused with the systems that enable them.
 
-**Some of these concepts may eventually become relevant.**
+<a id="ch12-s15"></a>
 
-**Others may not.**
+### Economy Should Not Be Predesigned
 
-**The fixed Parcel count creates scarcity.**
+BitPangea’s finite Parcel supply may eventually have important economic consequences.
 
-**Scarcity creates economic possibility.**
+Those consequences should not be mistaken for a predesigned economy.
 
-**It does not determine economic outcome.**
+The Architecture has not established:
 
-**The principle is:**
+Parcel price
 
-**Finite territory may influence an economy. It does not predetermine one.**
+currency
 
-**A meaningful BitPangea economy should arise from actual use, demand, relationships, institutions, and participant behavior rather than from a table written during the Creator Period.**
+market structure
 
-**Culture Cannot Be Authored Into Authenticity**
+rent
 
-**The same principle applies even more strongly to culture.**
+taxation
 
-**The Creator may establish:**
+resource economy
 
-**symbols**
+interest
 
-**historical references**
+monetary policy
 
-**hidden tributes**
+financial governance
 
-**institutional language**
+investment return
 
-**places**
+Some of these concepts may eventually become relevant.
 
-**artifacts**
+Others may not.
 
-**World traditions established during creation**
+The fixed Parcel count creates scarcity.
 
-**The Creator may also provide spaces and capabilities through which future culture can develop.**
+Scarcity creates economic possibility.
 
-**But designed symbolism is not the same thing as emergent culture.**
+It does not determine economic outcome.
 
-**Authentic culture develops through:**
+The principle is:
 
-**shared behavior**
+Finite territory may influence an economy. It does not predetermine one.
 
-**memory**
+A meaningful BitPangea economy should arise from actual use, demand, relationships, institutions, and participant behavior rather than from a table written during the Creator Period.
 
-**ritual**
+<a id="ch12-s16"></a>
 
-**story**
+### Culture Cannot Be Authored Into Authenticity
 
-**humor**
+The same principle applies even more strongly to culture.
 
-**conflict**
+The Creator may establish:
 
-**reinterpretation**
+symbols
 
-**creative expression**
+historical references
 
-**time**
+hidden tributes
 
-**The distinction is:**
+institutional language
 
-**Designed symbolism can seed meaning. Civilization determines whether meaning becomes culture.**
+places
 
-**BitPangea should preserve both without confusing them.**
+artifacts
 
-**Institutions May Emerge**
+World traditions established during creation
 
-**A mature civilization may create institutions its Creator never imagined.**
+The Creator may also provide spaces and capabilities through which future culture can develop.
 
-**Those institutions might concern:**
+But designed symbolism is not the same thing as emergent culture.
 
-**commerce**
+Authentic culture develops through:
 
-**education**
+shared behavior
 
-**art**
+memory
 
-**historical preservation**
+ritual
 
-**public works**
+story
 
-**social organization**
+humor
 
-**governance**
+conflict
 
-**dispute resolution**
+reinterpretation
 
-**research**
+creative expression
 
-**communication**
+time
 
-**collective projects**
+The distinction is:
 
-**These examples are not a roadmap.**
+Designed symbolism can seed meaning. Civilization determines whether meaning becomes culture.
 
-**The architectural requirement is broader:**
+BitPangea should preserve both without confusing them.
 
-**BitPangea should be capable of supporting institutions that did not exist when the World was designed.**
+<a id="ch12-s17"></a>
 
-**A World that can support only institutions anticipated during the Creator Period remains too tightly authored.**
+### Institutions May Emerge
 
-**Civilization May Create Its Own Rules**
+A mature civilization may create institutions its Creator never imagined.
 
-**BitPangea requires foundational rules.**
+Those institutions might concern:
 
-**Civilization may develop additional rules.**
+commerce
 
-**Those are not automatically the same thing.**
+education
 
-**The Architecture may establish:**
+art
 
-**what constitutes a Parcel**
+historical preservation
 
-**how canonical state changes**
+public works
 
-**how actor identity is recognized**
+social organization
 
-**how authority is evaluated**
+governance
 
-**what systems possess which responsibilities**
+dispute resolution
 
-**A future community may establish:**
+research
 
-**customs**
+communication
 
-**membership requirements**
+collective projects
 
-**codes of conduct**
+These examples are not a roadmap.
 
-**local expectations**
+The architectural requirement is broader:
 
-**voluntary agreements**
+BitPangea should be capable of supporting institutions that did not exist when the World was designed.
 
-**shared practices**
+A World that can support only institutions anticipated during the Creator Period remains too tightly authored.
 
-**institutional rules**
+<a id="ch12-s18"></a>
 
-**Some of those rules may eventually require formal World support.**
+### Civilization May Create Its Own Rules
 
-**Others may remain entirely social.**
+BitPangea requires foundational rules.
 
-**The governing distinction is:**
+Civilization may develop additional rules.
 
-**World-governed rules and social convention should not be assumed to be identical.**
+Those are not automatically the same thing.
 
-**Not every community norm should become protocol.**
+The Architecture may establish:
 
-**Not every protocol should attempt to become culture.**
+what constitutes a Parcel
 
-**Governance Should Follow Need**
+how canonical state changes
 
-**Civilization eventually raises questions of governance.**
+how actor identity is recognized
 
-**Who may establish collective rules?**
+how authority is evaluated
 
-**Who administers shared systems?**
+what systems possess which responsibilities
 
-**How are disputes handled?**
+A future community may establish:
 
-**How does authority evolve?**
+customs
 
-**What should remain immutable?**
+membership requirements
 
-**What should become governable?**
+codes of conduct
 
-**These questions are important.**
+local expectations
 
-**They remain intentionally unresolved.**
+voluntary agreements
 
-**BitPangea should not invent a complete governance system merely because white papers often contain one.**
+shared practices
 
-**The correct sequence is closer to:**
+institutional rules
 
-**World established**
+Some of those rules may eventually require formal World support.
 
-**↓**
+Others may remain entirely social.
 
-**participants arrive**
+The governing distinction is:
 
-**↓**
+World-governed rules and social convention should not be assumed to be identical.
 
-**civilization develops**
+Not every community norm should become protocol.
 
-**↓**
+Not every protocol should attempt to become culture.
 
-**actual governance requirements become clearer**
+<a id="ch12-s19"></a>
 
-**↓**
+### Governance Should Follow Need
 
-**governance architecture is designed where necessary**
+Civilization eventually raises questions of governance.
 
-**rather than:**
+Who may establish collective rules?
 
-**governance ideology selected first**
+Who administers shared systems?
 
-**↓**
+How are disputes handled?
 
-**future civilization forced inside it**
+How does authority evolve?
 
-**This does not mean governance can be ignored indefinitely.**
+What should remain immutable?
 
-**It means governance should answer real World requirements rather than precede them without evidence.**
+What should become governable?
 
-**Emergence Requires Restraint**
+These questions are important.
 
-**Making room for civilization requires the Creator to leave some things unresolved.**
+They remain intentionally unresolved.
 
-**That can appear incomplete.**
+BitPangea should not invent a complete governance system merely because white papers often contain one.
 
-**But deliberate incompleteness and architectural failure are not the same thing.**
+The correct sequence is closer to:
 
-**Some unanswered questions represent:**
+World established
 
-**unfinished necessary work**
+↓
 
-**Others represent:**
+participants arrive
 
-**future freedom intentionally preserved**
+↓
 
-**The challenge is to distinguish them.**
+civilization develops
 
-**The principle is:**
+↓
 
-**A World that specifies every meaningful possibility in advance leaves little room for history.**
+actual governance requirements become clearer
 
-**BitPangea should fully design what must endure.**
+↓
 
-**It should govern what must remain coherent.**
+governance architecture is designed where necessary
 
-**It should intentionally leave open what should emerge.**
+rather than:
 
-**Freedom Above Constraint**
+governance ideology selected first
 
-**BitPangea becomes less prescriptive as responsibility moves away from the deepest definition of the World.**
+↓
 
-**At the deepest levels:**
+future civilization forced inside it
 
-**the World is one.**
+This does not mean governance can be ignored indefinitely.
 
-**Finitude is fixed.**
+It means governance should answer real World requirements rather than precede them without evidence.
 
-**The Extent is fixed in constitutional meaning.**
+<a id="ch12-s20"></a>
 
-**the canonical Parcel supply is fixed.**
+### Emergence Requires Restraint
 
-**canonical spatial truth must remain stable.**
+Making room for civilization requires the Creator to leave some things unresolved.
 
-**At operational levels:**
+That can appear incomplete.
 
-**change is governed.**
+But deliberate incompleteness and architectural failure are not the same thing.
 
-**authority is explicit.**
+Some unanswered questions represent:
 
-**state must remain coherent.**
+unfinished necessary work
 
-**provenance matters.**
+Others represent:
 
-**At participant and civilizational levels:**
+future freedom intentionally preserved
 
-**possibility expands.**
+The challenge is to distinguish them.
 
-**meaning diversifies.**
+The principle is:
 
-**outcomes become less predictable.**
+A World that specifies every meaningful possibility in advance leaves little room for history.
 
-**This gives BitPangea a deliberate architectural asymmetry:**
+BitPangea should fully design what must endure.
 
-**The deeper the layer, the more permanent it should be. The closer the layer is to the user, the more freedom it should have to evolve.**
+It should govern what must remain coherent.
 
-**Civilization exists beyond even that gradient.**
+It should intentionally leave open what should emerge.
 
-**It is not merely a highly mutable Architecture layer.**
+<a id="ch12-s21"></a>
 
-**It is what may emerge because the Architecture eventually stops deciding.**
+### Freedom Above Constraint
 
-**Builders Create History**
+BitPangea becomes less prescriptive as responsibility moves away from the deepest definition of the World.
 
-**Builder actions do more than create objects.**
+At the deepest levels:
 
-**Persistent creation can become history.**
+the World is one.
 
-**A structure may be built.**
+Finitude is fixed.
 
-**It may be modified.**
+The Extent is fixed in constitutional meaning.
 
-**It may survive for decades.**
+the canonical Parcel supply is fixed.
 
-**It may be destroyed.**
+canonical spatial truth must remain stable.
 
-**Something else may replace it.**
+At operational levels:
 
-**Its location may become culturally important.**
+change is governed.
 
-**A community may remember who built it.**
+authority is explicit.
 
-**Future generations may interpret it differently.**
+state must remain coherent.
 
-**Conceptually:**
+provenance matters.
 
-**Builder action**
+At participant and civilizational levels:
 
-**↓**
+possibility expands.
 
-**World Runtime change**
+meaning diversifies.
 
-**↓**
+outcomes become less predictable.
 
-**persistent place**
+This gives BitPangea a deliberate architectural asymmetry:
 
-**↓**
+The deeper the layer, the more permanent it should be. The closer the layer is to the user, the more freedom it should have to evolve.
 
-**provenance**
+Civilization exists beyond even that gradient.
 
-**↓**
+It is not merely a highly mutable Architecture layer.
 
-**time**
+It is what may emerge because the Architecture eventually stops deciding.
 
-**↓**
+<a id="ch12-s22"></a>
 
-**history**
+### Builders Create History
 
-**This relationship is possible because:**
+Builder actions do more than create objects.
 
-**the Parcel persists**
+Persistent creation can become history.
 
-**the World State records change**
+A structure may be built.
 
-**Persistence / Provenance preserves lineage**
+It may be modified.
 
-**and later historical institutions can preserve meaning**
+It may survive for decades.
 
-**The ability to connect event to place is what allows construction to become more than temporary content.**
+It may be destroyed.
 
-**Civilization Requires Memory**
+Something else may replace it.
 
-**Without memory, civilization remains trapped in perpetual present.**
+Its location may become culturally important.
 
-**Communities cannot form traditions if nothing persists.**
+A community may remember who built it.
 
-**Institutions cannot accumulate legitimacy if their origins disappear.**
+Future generations may interpret it differently.
 
-**Places cannot become historically significant if the World cannot remember what happened there.**
+Conceptually:
 
-**Civilization therefore depends upon BitPangea preserving enough continuity to answer questions such as:**
+Builder action
 
-**What existed here?**
+↓
 
-**What changed?**
+World Runtime change
 
-**Who participated?**
+↓
 
-**What endured?**
+persistent place
 
-**What disappeared?**
+↓
 
-**What became significant?**
+provenance
 
-**Not every event must be preserved forever.**
+↓
 
-**But a civilization capable of history requires more than current state.**
+time
 
-**This is one reason Persistence / Provenance matters beyond technical operations.**
+↓
 
-**It creates the conditions from which memory can later become history.**
+history
 
-**Experience Architecture Is the Threshold**
+This relationship is possible because:
 
-**Participants encounter BitPangea through Experience Architecture.**
+the Parcel persists
 
-**They should not need to understand:**
+the World State records change
 
-**Survey mathematics**
+Persistence / Provenance preserves lineage
 
-**Cadastre internals**
+and later historical institutions can preserve meaning
 
-**authorization logic**
+The ability to connect event to place is what allows construction to become more than temporary content.
 
-**Runtime orchestration**
+<a id="ch12-s23"></a>
 
-**provenance systems**
+### Civilization Requires Memory
 
-**interoperability protocols**
+Without memory, civilization remains trapped in perpetual present.
 
-**in order to experience the World naturally.**
+Communities cannot form traditions if nothing persists.
 
-**A participant may simply encounter:**
+Institutions cannot accumulate legitimacy if their origins disappear.
 
-**a globe**
+Places cannot become historically significant if the World cannot remember what happened there.
 
-**a place**
+Civilization therefore depends upon BitPangea preserving enough continuity to answer questions such as:
 
-**a Parcel**
+What existed here?
 
-**a structure**
+What changed?
 
-**another participant**
+Who participated?
 
-**a community**
+What endured?
 
-**a historical site**
+What disappeared?
 
-**a service**
+What became significant?
 
-**an institution**
+Not every event must be preserved forever.
 
-**This is appropriate.**
+But a civilization capable of history requires more than current state.
 
-**Good Architecture often disappears beneath the experience it enables.**
+This is one reason Persistence / Provenance matters beyond technical operations.
 
-**The principle is:**
+It creates the conditions from which memory can later become history.
 
-**The participant should encounter a World, not a stack diagram.**
+<a id="ch12-s24"></a>
 
-**Experience Is Not Civilization**
+### Experience Architecture Is the Threshold
 
-**Experience Architecture should also remain distinct from civilization.**
+Participants encounter BitPangea through Experience Architecture.
 
-**An interface can enable interaction.**
+They should not need to understand:
 
-**It does not determine what those interactions mean socially.**
+Survey mathematics
 
-**A social presence system can allow people to encounter one another.**
+Cadastre internals
 
-**It does not create friendship.**
+authorization logic
 
-**A marketplace interface can enable exchange.**
+Runtime orchestration
 
-**It does not create economic culture.**
+provenance systems
 
-**A historical view can expose records.**
+interoperability protocols
 
-**It does not dictate collective memory.**
+in order to experience the World naturally.
 
-**Thus:**
+A participant may simply encounter:
 
-**Experience Architecture**
+a globe
 
-**→ makes participation possible**
+a place
 
-**Civilization**
+a Parcel
 
-**→ determines what participation becomes**
+a structure
 
-**This preserves an important boundary between designed capability and emergent meaning.**
+another participant
 
-**Experience Should Not Become the World**
+a community
 
-**A particular experience may disappear.**
+a historical site
 
-**A new interface may replace it.**
+a service
 
-**Future technology may make today’s interfaces obsolete.**
+an institution
 
-**Builders and civilization should survive those transitions.**
+This is appropriate.
 
-**Thus:**
+Good Architecture often disappears beneath the experience it enables.
 
-**Experience**
+The principle is:
 
-**→ encounters and interacts with the World**
+The participant should encounter a World, not a stack diagram.
 
-**not:**
+<a id="ch12-s25"></a>
 
-**Experience**
+### Experience Is Not Civilization
 
-**→ defines whether the World exists**
+Experience Architecture should also remain distinct from civilization.
 
-**The World must remain deeper than any interface through which participants experience it.**
+An interface can enable interaction.
 
-**This is why Experience Architecture belongs within The Architecture while civilization does not.**
+It does not determine what those interactions mean socially.
 
-**Builder Diversity**
+A social presence system can allow people to encounter one another.
 
-**BitPangea may eventually support many Builder experiences.**
+It does not create friendship.
 
-**One might prioritize accessibility.**
+A marketplace interface can enable exchange.
 
-**Another might support sophisticated professional construction.**
+It does not create economic culture.
 
-**Another might focus on infrastructure.**
+A historical view can expose records.
 
-**Another might expose scripting.**
+It does not dictate collective memory.
 
-**Another might support digital-native creation impossible to describe through conventional building metaphors.**
+Thus:
 
-**This diversity is desirable if the deeper Architecture remains coherent.**
+Experience Architecture
 
-**Conceptually:**
+→ makes participation possible
 
-**Builder A**
+Civilization
 
-**Builder B**
+→ determines what participation becomes
 
-**Builder C**
+This preserves an important boundary between designed capability and emergent meaning.
 
-**↓**
+<a id="ch12-s26"></a>
 
-**use shared Architecture**
+### Experience Should Not Become the World
 
-**↓**
+A particular experience may disappear.
 
-**one BitPangea**
+A new interface may replace it.
 
-**The tools may differ.**
+Future technology may make today’s interfaces obsolete.
 
-**The World remains one.**
+Builders and civilization should survive those transitions.
 
-**Implementation diversity should expand capability without producing incompatible Worlds.**
+Thus:
 
-**Civilization Should Be Able to Surprise the Creator**
+Experience
 
-**One useful test of whether BitPangea has genuinely made room for civilization is:**
+→ encounters and interacts with the World
 
-**Can something meaningful emerge that the Creator did not anticipate?**
+not:
 
-**If the answer is no, the World may still be too tightly authored.**
+Experience
 
-**A civilization should eventually be capable of producing:**
+→ defines whether the World exists
 
-**unexpected communities**
+The World must remain deeper than any interface through which participants experience it.
 
-**unexpected uses of Parcels**
+This is why Experience Architecture belongs within The Architecture while civilization does not.
 
-**unexpected institutions**
+<a id="ch12-s27"></a>
 
-**unexpected art**
+### Builder Diversity
 
-**unexpected customs**
+BitPangea may eventually support many Builder experiences.
 
-**unexpected infrastructure**
+One might prioritize accessibility.
 
-**unexpected economic behavior**
+Another might support sophisticated professional construction.
 
-**unexpected historical significance**
+Another might focus on infrastructure.
 
-**unexpected interpretations of BitPangea itself**
+Another might expose scripting.
 
-**Not everything unexpected will necessarily be desirable.**
+Another might support digital-native creation impossible to describe through conventional building metaphors.
 
-**Architecture, rights, Runtime rules, safety requirements, and future governance may create legitimate limits.**
+This diversity is desirable if the deeper Architecture remains coherent.
 
-**But success should not require civilization to reproduce the Creator’s imagination exactly.**
+Conceptually:
 
-**A World capable of genuine civilization must preserve room for surprise.**
+Builder A
 
-**The Creator’s Role Changes**
+Builder B
 
-**BitPangea therefore contains an intentional transition in authorship.**
+Builder C
 
-**During the Creator Period:**
+↓
 
-**Creator**
+use shared Architecture
 
-**→ establishes foundational truth and enduring Architecture**
+↓
 
-**Later:**
+one BitPangea
 
-**Creator**
+The tools may differ.
 
-**→ increasingly stewards what must endure**
+The World remains one.
 
-**Builders**
+Implementation diversity should expand capability without producing incompatible Worlds.
 
-**→ create**
+<a id="ch12-s28"></a>
 
-**Participants**
+### Civilization Should Be Able to Surprise the Creator
 
-**→ interact**
+One useful test of whether BitPangea has genuinely made room for civilization is:
 
-**Institutions**
+Can something meaningful emerge that the Creator did not anticipate?
 
-**→ may form**
+If the answer is no, the World may still be too tightly authored.
 
-**History**
+A civilization should eventually be capable of producing:
 
-**→ accumulates**
+unexpected communities
 
-**Civilization**
+unexpected uses of Parcels
 
-**→ increasingly becomes its own author**
+unexpected institutions
 
-**The Creator does not disappear.**
+unexpected art
 
-**The role changes.**
+unexpected customs
 
-**Creation increasingly gives way to stewardship.**
+unexpected infrastructure
 
-**This transition may ultimately be necessary for BitPangea to become larger than its origin.**
+unexpected economic behavior
 
-**What Is Established**
+unexpected historical significance
 
-**The current direction supports the following statements:**
+unexpected interpretations of BitPangea itself
 
-**BitPangea must eventually support meaningful creation beyond the original Creator.**
+Not everything unexpected will necessarily be desirable.
 
-**Builders are participants, not Architecture domains.**
+Architecture, rights, Runtime rules, safety requirements, and future governance may create legitimate limits.
 
-**Builders create within the World.**
+But success should not require civilization to reproduce the Creator’s imagination exactly.
 
-**They do not possess automatic authority to redefine foundational World truth.**
+A World capable of genuine civilization must preserve room for surprise.
 
-**Persistent Builder actions must operate through appropriate Architecture.**
+<a id="ch12-s29"></a>
 
-**Builder systems must respect:**
+### The Creator’s Role Changes
 
-**the Parcel Cadastre**
+BitPangea therefore contains an intentional transition in authorship.
 
-**Identity / Rights / Control**
+During the Creator Period:
 
-**World Runtime**
+Creator
 
-**Persistence / Provenance**
+→ establishes foundational truth and enduring Architecture
 
-**Interoperability**
+Later:
 
-**Experience Architecture**
+Creator
 
-**Reference does not transfer authority.**
+→ increasingly stewards what must endure
 
-**Creation may exist in temporary or draft form before becoming canonical World state.**
+Builders
 
-**Builder capability may extend far beyond conventional structures.**
+→ create
 
-**World-scale infrastructure may require authority relationships different from ordinary Parcel control.**
+Participants
 
-**The Verge may require treatment different from ordinary Parcel construction.**
+→ interact
 
-**Civilization is not a formal Architecture domain.**
+Institutions
 
-**Social, economic, and cultural phenomena are primarily emergent rather than Architecture layers.**
+→ may form
 
-**Experience Architecture enables participation but does not create civilization.**
+History
 
-**The World should not predesign a complete economy.**
+→ accumulates
 
-**The World should not attempt to manufacture authentic culture.**
+Civilization
 
-**Governance remains unresolved.**
+→ increasingly becomes its own author
 
-**Persistent creation creates the possibility of history.**
+The Creator does not disappear.
 
-**The Creator should become progressively less prescriptive as responsibility moves toward Builders and civilization.**
+The role changes.
 
-**What Remains Open**
+Creation increasingly gives way to stewardship.
 
-**Many questions remain intentionally unresolved, including:**
+This transition may ultimately be necessary for BitPangea to become larger than its origin.
 
-**the final Builder model**
+<a id="ch12-s30"></a>
 
-**Builder capabilities**
+### What Is Established
 
-**Builder tool classes**
+The current direction supports the following statements:
 
-**construction constraints**
+BitPangea must eventually support meaningful creation beyond the original Creator.
 
-**canonical object model**
+Builders are participants, not Architecture domains.
 
-**infrastructure authority**
+Builders create within the World.
 
-**cross-Parcel construction**
+They do not possess automatic authority to redefine foundational World truth.
 
-**public and shared spaces**
+Persistent Builder actions must operate through appropriate Architecture.
 
-**interaction with The Verge**
+Builder systems must respect:
 
-**interaction with Outliers**
+the Parcel Cadastre
 
-**safety requirements**
+Identity / Rights / Control
 
-**content boundaries**
+World Runtime
 
-**economic capabilities**
+Persistence / Provenance
 
-**markets**
+Interoperability
 
-**currency, if any**
+Experience Architecture
 
-**institutional creation**
+Reference does not transfer authority.
 
-**communication systems**
+Creation may exist in temporary or draft form before becoming canonical World state.
 
-**community structures**
+Builder capability may extend far beyond conventional structures.
 
-**governance**
+World-scale infrastructure may require authority relationships different from ordinary Parcel control.
 
-**collective decision-making**
+The Verge may require treatment different from ordinary Parcel construction.
 
-**dispute resolution**
+Civilization is not a formal Architecture domain.
 
-**civilization-created rules**
+Social, economic, and cultural phenomena are primarily emergent rather than Architecture layers.
 
-**the boundary between World-enforced rules and social convention**
+Experience Architecture enables participation but does not create civilization.
 
-**historical preservation of Builder actions**
+The World should not predesign a complete economy.
 
-**the future relationship among Builders, institutions, and governance**
+The World should not attempt to manufacture authentic culture.
 
-**the long-term stewardship role of the Creator**
+Governance remains unresolved.
 
-**Many of these questions cannot be answered responsibly before the civilization that would make them meaningful exists.**
+Persistent creation creates the possibility of history.
 
-**They should remain open where openness is intentional.**
+The Creator should become progressively less prescriptive as responsibility moves toward Builders and civilization.
 
-**The Principle**
+<a id="ch12-s31"></a>
 
-**BitPangea begins with unusually strong constraints.**
+### What Remains Open
 
-**One World.**
+Many questions remain intentionally unresolved, including:
 
-**Finite Extent.**
+the final Builder model
 
-**Exactly 21,000,000 Parcels.**
+Builder capabilities
 
-**Permanent spatial truth.**
+Builder tool classes
 
-**Persistent Parcel identity.**
+construction constraints
 
-**Governed change.**
+canonical object model
 
-**Traceable authority.**
+infrastructure authority
 
-**Those constraints are necessary because a World requires continuity.**
+cross-Parcel construction
 
-**But continuity is not the final purpose.**
+public and shared spaces
 
-**The purpose is to establish a place substantial enough that others can begin doing things the Creator did not specify.**
+interaction with The Verge
 
-**Builders mark the beginning of that transition.**
+interaction with Outliers
 
-**The Architecture establishes what must endure.**
+safety requirements
 
-**World Runtime permits legitimate change.**
+content boundaries
 
-**Builders create.**
+economic capabilities
 
-**Participants interact.**
+markets
 
-**Persistence allows consequence to remain.**
+currency, if any
 
-**History accumulates.**
+institutional creation
 
-**Institutions may emerge.**
+communication systems
 
-**Culture develops.**
+community structures
 
-**Civilization becomes increasingly capable of authoring itself.**
+governance
 
-**The governing principle is therefore:**
+collective decision-making
 
-**The World must be designed strongly enough to endure civilization—and lightly enough not to prewrite it.**
+dispute resolution
 
-**Or more simply:**
+civilization-created rules
 
-**Build the World. Enable the Builders. Leave room for civilization.**
+the boundary between World-enforced rules and social convention
+
+historical preservation of Builder actions
+
+the future relationship among Builders, institutions, and governance
+
+the long-term stewardship role of the Creator
+
+Many of these questions cannot be answered responsibly before the civilization that would make them meaningful exists.
+
+They should remain open where openness is intentional.
+
+<a id="ch12-s32"></a>
+
+### The Principle
+
+BitPangea begins with unusually strong constraints.
+
+One World.
+
+Finite Extent.
+
+Exactly 21,000,000 Parcels.
+
+Permanent spatial truth.
+
+Persistent Parcel identity.
+
+Governed change.
+
+Traceable authority.
+
+Those constraints are necessary because a World requires continuity.
+
+But continuity is not the final purpose.
+
+The purpose is to establish a place substantial enough that others can begin doing things the Creator did not specify.
+
+Builders mark the beginning of that transition.
+
+The Architecture establishes what must endure.
+
+World Runtime permits legitimate change.
+
+Builders create.
+
+Participants interact.
+
+Persistence allows consequence to remain.
+
+History accumulates.
+
+Institutions may emerge.
+
+Culture develops.
+
+Civilization becomes increasingly capable of authoring itself.
+
+The governing principle is therefore:
+
+The World must be designed strongly enough to endure civilization—and lightly enough not to prewrite it.
+
+Or more simply:
+
+Build the World. Enable the Builders. Leave room for civilization.
+
+---
+
+<a id="ch13"></a>
 
 ## XIII. History, Memory, and Digital Antiquity
 
@@ -12379,7 +12630,9 @@ and to preserve some intelligible relationship between them.
 
 **Memory allows BitPangea to preserve continuity. History allows continuity to accumulate meaning.**
 
-**State, Provenance, and History Are Different**
+<a id="ch13-s01"></a>
+
+### State, Provenance, and History Are Different
 
 Several kinds of knowledge must remain distinct.
 
@@ -12433,7 +12686,9 @@ The current state alone cannot tell that story.
 
 History requires continuity across change.
 
-**Persistence / Provenance**
+<a id="ch13-s02"></a>
+
+### Persistence / Provenance
 
 BitPangea now recognizes **Persistence / Provenance** as an Architecture domain.
 
@@ -12471,7 +12726,9 @@ Not every historical interpretation belongs in canonical operational state.
 
 Each responsibility should remain bounded.
 
-**Place Makes History Possible**
+<a id="ch13-s03"></a>
+
+### Place Makes History Possible
 
 History becomes especially meaningful when events remain anchored to persistent place.
 
@@ -12521,7 +12778,9 @@ The history of a location is possible because persistent spatial reference survi
 
 The history of civilization becomes possible because events remain connected to one World rather than becoming isolated records from incompatible systems.
 
-**History Is Not Logging**
+<a id="ch13-s04"></a>
+
+### History Is Not Logging
 
 A technical system may record millions of events.
 
@@ -12571,7 +12830,9 @@ These categories may overlap.
 
 They should not be treated as synonyms.
 
-**Memory Has Different Responsibilities**
+<a id="ch13-s05"></a>
+
+### Memory Has Different Responsibilities
 
 BitPangea may eventually possess several different forms of memory.
 
@@ -12599,7 +12860,9 @@ They are different responsibilities within the broader problem of memory.
 
 The distinction prevents one institution from being asked to preserve every kind of truth.
 
-**The World Should Not Remember Everything Forever**
+<a id="ch13-s06"></a>
+
+### The World Should Not Remember Everything Forever
 
 Perfect memory may sound desirable.
 
@@ -12647,7 +12910,9 @@ Those are separate concerns.
 
 **A World capable of remembering should also be capable of deciding what should not become universal memory.**
 
-**Historical Significance Is Not Automatic**
+<a id="ch13-s07"></a>
+
+### Historical Significance Is Not Automatic
 
 An event does not become historically important merely because it occurred.
 
@@ -12669,7 +12934,9 @@ This creates an important design requirement:
 
 History should not depend entirely upon someone predicting importance correctly at the moment something occurs.
 
-**Event and Interpretation**
+<a id="ch13-s08"></a>
+
+### Event and Interpretation
 
 Historical meaning changes.
 
@@ -12713,7 +12980,9 @@ without requiring the original event to change.
 
 This allows BitPangea to preserve both factual continuity and cultural evolution.
 
-**Provenance Before Historical Authority**
+<a id="ch13-s09"></a>
+
+### Provenance Before Historical Authority
 
 Historical memory becomes stronger when provenance is clear.
 
@@ -12749,7 +13018,9 @@ The principle is:
 
 **History should be able to point backward toward evidence.**
 
-**Historical Authority Must Be Bounded**
+<a id="ch13-s10"></a>
+
+### Historical Authority Must Be Bounded
 
 No participant should automatically gain authority to rewrite the past merely because they participated in it.
 
@@ -12777,7 +13048,9 @@ Historical interpretation can reference evidence.
 
 It does not thereby acquire authority over the evidence itself.
 
-**Record and Narrative**
+<a id="ch13-s11"></a>
+
+### Record and Narrative
 
 A World with history will eventually produce narratives.
 
@@ -12815,7 +13088,9 @@ They should not collapse into one category.
 
 A mature historical system should allow civilization to tell stories without requiring BitPangea itself to declare every story objective truth.
 
-**Canon and Meaning**
+<a id="ch13-s12"></a>
+
+### Canon and Meaning
 
 This distinction becomes especially important in a created World.
 
@@ -12855,7 +13130,9 @@ The Architecture should not elevate everything meaningful into constitutional or
 
 That distinction leaves room for later civilization to reinterpret the World it inherits.
 
-**Digital Antiquity**
+<a id="ch13-s13"></a>
+
+### Digital Antiquity
 
 BitPangea also preserves a different form of historical memory:
 
@@ -12887,7 +13164,9 @@ that made a native digital World imaginable.
 
 Digital Antiquity provides a way for BitPangea to acknowledge that inheritance.
 
-**Digital Antiquity Is Not BitPangea History**
+<a id="ch13-s14"></a>
+
+### Digital Antiquity Is Not BitPangea History
 
 BitPangea’s own history begins with the creation and development of BitPangea.
 
@@ -12913,7 +13192,9 @@ A tribute to an earlier milestone of digital civilization belongs to Digital Ant
 
 That distinction should remain clear.
 
-**The Twelve Constellations of Digital Antiquity**
+<a id="ch13-s15"></a>
+
+### The Twelve Constellations of Digital Antiquity
 
 One of BitPangea’s deliberate expressions of Digital Antiquity is:
 
@@ -12971,7 +13252,9 @@ The mystery is part of the design.
 
 It should not be destroyed merely because a foundational manuscript could disclose it.
 
-**Discovery as Historical Experience**
+<a id="ch13-s16"></a>
+
+### Discovery as Historical Experience
 
 There is an important difference between being told that something matters and discovering why it matters.
 
@@ -12991,7 +13274,9 @@ Discoverable history supports encounter.
 
 A mature World can contain both without confusing them.
 
-**Hidden Does Not Mean Unrecorded**
+<a id="ch13-s17"></a>
+
+### Hidden Does Not Mean Unrecorded
 
 Intentional secrecy should never become accidental loss.
 
@@ -13021,7 +13306,9 @@ The requirement is clear:
 
 **Mystery should be intentional, not fragile.**
 
-**The Creator’s Memory Is Not Enough**
+<a id="ch13-s18"></a>
+
+### The Creator’s Memory Is Not Enough
 
 Early BitPangea history naturally depends heavily upon the Creator.
 
@@ -13053,7 +13340,9 @@ This is why BitPangea’s memory must become institutional.
 
 **Memory should become institutional before personal recollection becomes the only remaining authority.**
 
-**Chronicle, Atlas, and Origins**
+<a id="ch13-s19"></a>
+
+### Chronicle, Atlas, and Origins
 
 BitPangea already preserves different kinds of memory through different institutions and records.
 
@@ -13089,7 +13378,9 @@ They should not become interchangeable.
 
 A World requires multiple kinds of memory because no single record can preserve every form of truth equally well.
 
-**Chronicle Records When**
+<a id="ch13-s20"></a>
+
+### Chronicle Records When
 
 Chronology matters.
 
@@ -13117,7 +13408,9 @@ Others became enduring.
 
 History preserves the path by which architecture became architecture.
 
-**Atlas Records What**
+<a id="ch13-s21"></a>
+
+### Atlas Records What
 
 The Atlas serves a different purpose.
 
@@ -13141,7 +13434,9 @@ The principle is:
 
 **Chronicle can preserve the path. Atlas preserves the present structural understanding.**
 
-**Origins Preserves the Reasoning**
+<a id="ch13-s22"></a>
+
+### Origins Preserves the Reasoning
 
 Origins occupies another position.
 
@@ -13171,7 +13466,9 @@ That reasoning should not permanently bind future civilization.
 
 But preserving it means future participants do not have to guess why foundational choices were made.
 
-**Memory Must Preserve Uncertainty**
+<a id="ch13-s23"></a>
+
+### Memory Must Preserve Uncertainty
 
 Good historical records should not pretend that the past was more settled than it actually was.
 
@@ -13211,7 +13508,9 @@ but also:
 
 Retrospective certainty can distort origins.
 
-**Correction Without Erasure**
+<a id="ch13-s24"></a>
+
+### Correction Without Erasure
 
 Historical integrity does not require pretending every early record was correct.
 
@@ -13241,7 +13540,9 @@ The principle is:
 
 This is especially important for a World being documented while it is still being designed.
 
-**Preservation Without Fossilization**
+<a id="ch13-s25"></a>
+
+### Preservation Without Fossilization
 
 Historical preservation must not become a prohibition against legitimate change.
 
@@ -13267,7 +13568,9 @@ Thus:
 
 History and development must be allowed to coexist.
 
-**Authentic Ruins**
+<a id="ch13-s26"></a>
+
+### Authentic Ruins
 
 Persistent World history creates the possibility of something unusual:
 
@@ -13315,7 +13618,9 @@ abandoned projects
 
 forgotten places
 
-**Digital Archaeology**
+<a id="ch13-s27"></a>
+
+### Digital Archaeology
 
 If BitPangea persists long enough, future inhabitants may eventually practice something resembling **digital archaeology**.
 
@@ -13345,7 +13650,9 @@ This is one reason history should not be reduced to lore.
 
 A future discovery should be capable of revealing something that actually existed.
 
-**Historical Layers of Place**
+<a id="ch13-s28"></a>
+
+### Historical Layers of Place
 
 A persistent Parcel may eventually accumulate many historical layers.
 
@@ -13399,7 +13706,9 @@ and cultural interpretation
 
 begin to converge without becoming the same system.
 
-**Civilization May Remember Differently**
+<a id="ch13-s29"></a>
+
+### Civilization May Remember Differently
 
 Canonical evidence does not require canonical interpretation.
 
@@ -13423,7 +13732,9 @@ A persistent World should protect facts where facts are knowable.
 
 It should not attempt to prevent civilization from interpreting those facts.
 
-**Uncertainty Belongs in History**
+<a id="ch13-s30"></a>
+
+### Uncertainty Belongs in History
 
 A historical system should not pretend to be an omniscient truth machine.
 
@@ -13459,7 +13770,9 @@ The principle is:
 
 Forcing every historical claim into binary certainty can itself distort the record.
 
-**Memory and Privacy**
+<a id="ch13-s31"></a>
+
+### Memory and Privacy
 
 Historical preservation creates tension with privacy.
 
@@ -13491,7 +13804,9 @@ But the principle should be preserved now:
 
 Historical ambition is not a mandate for surveillance.
 
-**Memory and Integrity**
+<a id="ch13-s32"></a>
+
+### Memory and Integrity
 
 Memory becomes valuable only when it can be trusted.
 
@@ -13527,7 +13842,9 @@ The requirement does not:
 
 **The history of the record may itself need to be preserved.**
 
-**BitPangea Should Remember Its Own Creation**
+<a id="ch13-s33"></a>
+
+### BitPangea Should Remember Its Own Creation
 
 BitPangea occupies an unusual historical position.
 
@@ -13567,7 +13884,9 @@ The principle is:
 
 **Preserve the origin without pretending the origin was predestined.**
 
-**Antiquity Requires Time**
+<a id="ch13-s34"></a>
+
+### Antiquity Requires Time
 
 Nothing is ancient at the moment it is created.
 
@@ -13599,7 +13918,9 @@ That possibility is profound.
 
 **BitPangea does not need to fabricate an ancient past. It can create a World capable of becoming old.**
 
-**Two Forms of Digital Antiquity**
+<a id="ch13-s35"></a>
+
+### Two Forms of Digital Antiquity
 
 BitPangea may ultimately contain two distinct forms of antiquity.
 
@@ -13635,7 +13956,9 @@ may eventually become part of the second.
 
 This allows BitPangea both to remember the digital civilization that preceded it and to accumulate an antiquity of its own.
 
-**What Is Established**
+<a id="ch13-s36"></a>
+
+### What Is Established
 
 The current Architecture and Creator-period direction support the following statements:
 
@@ -13689,7 +14012,9 @@ BitPangea should preserve enough continuity to permit genuine ruins, historical 
 
 The World should be capable of becoming genuinely old rather than merely appearing old.
 
-**What Remains Open**
+<a id="ch13-s37"></a>
+
+### What Remains Open
 
 The architecture of history and memory remains substantially unfinished.
 
@@ -13751,7 +14076,9 @@ These questions should remain open until BitPangea’s historical requirements b
 
 Origins should preserve the problem without manufacturing the final archival system prematurely.
 
-**The Principle**
+<a id="ch13-s38"></a>
+
+### The Principle
 
 A World does not acquire history because its Creator writes lore about it.
 
@@ -13801,10910 +14128,11592 @@ And from that follows the longer ambition:
 
 **Build a World capable of remembering long enough that one day it can possess antiquity of its own.**
 
+---
+
+<a id="ch14"></a>
+
 ## XIV. Constitutional Architecture
 
-**A World with persistent place, persistent state, actors, rights, Builders, memory, and the possibility of civilization eventually confronts a deeper question:**
+A World with persistent place, persistent state, actors, rights, Builders, memory, and the possibility of civilization eventually confronts a deeper question:
 
-**Which decisions are allowed to define the World itself?**
+Which decisions are allowed to define the World itself?
 
-**BitPangea cannot treat every decision equally.**
+BitPangea cannot treat every decision equally.
 
-**Some ideas constrain what the World may become.**
+Some ideas constrain what the World may become.
 
-**Some define constitutional truth.**
+Some define constitutional truth.
 
-**Some identify durable World Properties.**
+Some identify durable World Properties.
 
-**Some establish enduring Architecture domains.**
+Some establish enduring Architecture domains.
 
-**Some are adopted Creator design directions.**
+Some are adopted Creator design directions.
 
-**Some remain provisional.**
+Some remain provisional.
 
-**Some belong only to implementation.**
+Some belong only to implementation.
 
-**Some should remain unresolved.**
+Some should remain unresolved.
 
-**And some should never be decided by the Creator at all because they properly belong to future civilization.**
+And some should never be decided by the Creator at all because they properly belong to future civilization.
 
-**Without disciplined separation among those categories, BitPangea risks two opposite failures.**
+Without disciplined separation among those categories, BitPangea risks two opposite failures.
 
-**It could make the World unstable by treating foundational truth casually.**
+It could make the World unstable by treating foundational truth casually.
 
-**Or it could make the future unnecessarily rigid by turning temporary choices into permanent canon.**
+Or it could make the future unnecessarily rigid by turning temporary choices into permanent canon.
 
-**The purpose of Constitutional Architecture is to prevent both.**
+The purpose of Constitutional Architecture is to prevent both.
 
-**Constitutional Architecture is the discipline through which BitPangea determines what must remain true of the World, where that truth belongs, what authority may establish it, and what should remain free to change above it.**
+Constitutional Architecture is the discipline through which BitPangea determines what must remain true of the World, where that truth belongs, what authority may establish it, and what should remain free to change above it.
 
-**It is not a political constitution in the conventional sense.**
+It is not a political constitution in the conventional sense.
 
-**It is the architecture of:**
+It is the architecture of:
 
-**truth**
+truth
 
-**authority**
+authority
 
-**dependency**
+dependency
 
-**and:**
+and:
 
-**permanence**
+permanence
 
-**Not Every Decision Is Constitutional**
+<a id="ch14-s01"></a>
 
-**BitPangea contains thousands of design decisions.**
+### Not Every Decision Is Constitutional
 
-**Most should never become constitutional.**
+BitPangea contains thousands of design decisions.
 
-**Compare:**
+Most should never become constitutional.
 
-**BitPangea contains exactly 21,000,000 Parcels.**
+Compare:
 
-**with:**
+BitPangea contains exactly 21,000,000 Parcels.
 
-**A current interface uses a particular navigation control.**
+with:
 
-**Both may be deliberate.**
+A current interface uses a particular navigation control.
 
-**They do not belong at the same level.**
+Both may be deliberate.
 
-**Likewise:**
+They do not belong at the same level.
 
-**BitPangea is finite.**
+Likewise:
 
-**is fundamentally different from:**
+BitPangea is finite.
 
-**A renderer uses a particular lighting system.**
+is fundamentally different from:
 
-**And:**
+A renderer uses a particular lighting system.
 
-**The Parcel Cadastre is authoritative for Parcel truth.**
+And:
 
-**is different from:**
+The Parcel Cadastre is authoritative for Parcel truth.
 
-**A current database uses a particular schema.**
+is different from:
 
-**If those distinctions are not made consciously, early implementation choices can become effectively permanent simply because later systems begin depending upon them.**
+A current database uses a particular schema.
 
-**Constitutional discipline exists to resist that drift.**
+If those distinctions are not made consciously, early implementation choices can become effectively permanent simply because later systems begin depending upon them.
 
-**The Governing Progression**
+Constitutional discipline exists to resist that drift.
 
-**BitPangea now possesses a clearer method for moving from first principles toward implementation:**
+<a id="ch14-s02"></a>
 
-**The Foundation constrains.**
+### The Governing Progression
 
-**The Codex defines.**
+BitPangea now possesses a clearer method for moving from first principles toward implementation:
 
-**The Atlas designs.**
+The Foundation constrains.
 
-**Implementation realizes.**
+The Codex defines.
 
-**Each institution performs different work.**
+The Atlas designs.
 
-**The Foundation establishes or preserves premises and constraints that shape later inquiry.**
+Implementation realizes.
 
-**The Codex defines constitutional truth.**
+Each institution performs different work.
 
-**The Atlas performs Creator-period design within those truths.**
+The Foundation establishes or preserves premises and constraints that shape later inquiry.
 
-**Implementation realizes adopted architecture through technology.**
+The Codex defines constitutional truth.
 
-**This progression is not merely editorial organization.**
+The Atlas performs Creator-period design within those truths.
 
-**It protects authority boundaries.**
+Implementation realizes adopted architecture through technology.
 
-**A technological implementation should not silently redefine Atlas Architecture.**
+This progression is not merely editorial organization.
 
-**An Atlas design should not silently rewrite a Codex truth.**
+It protects authority boundaries.
 
-**A Codex determination should not contradict a genuinely foundational premise merely because a later design would be more convenient.**
+A technological implementation should not silently redefine Atlas Architecture.
 
-**The deeper rule is:**
+An Atlas design should not silently rewrite a Codex truth.
 
-**Each level must respect the legitimate constraints beneath it without absorbing the responsibilities above it.**
+A Codex determination should not contradict a genuinely foundational premise merely because a later design would be more convenient.
 
-**Status Matters**
+The deeper rule is:
 
-**BitPangea increasingly distinguishes among several kinds of statement:**
+Each level must respect the legitimate constraints beneath it without absorbing the responsibilities above it.
 
-**Foundational Premise**
+<a id="ch14-s03"></a>
 
-**Constitutional Truth**
+### Status Matters
 
-**World Property**
+BitPangea increasingly distinguishes among several kinds of statement:
 
-**Architecture Domain**
+Foundational Premise
 
-**Adopted Design Direction**
+Constitutional Truth
 
-**Provisional Design**
+World Property
 
-**Implementation**
+Architecture Domain
 
-**Emergent Behavior**
+Adopted Design Direction
 
-**Unresolved Question**
+Provisional Design
 
-**These statuses are not interchangeable.**
+Implementation
 
-**They answer different questions.**
+Emergent Behavior
 
-**And they carry different expectations of permanence.**
+Unresolved Question
 
-**A strong idea may matter enormously without being constitutional.**
+These statuses are not interchangeable.
 
-**An Architecture domain may be enduring without becoming a Codex Domain.**
+They answer different questions.
 
-**A design direction may be adopted without becoming immutable.**
+And they carry different expectations of permanence.
 
-**An implementation may be necessary without becoming part of the identity of the World.**
+A strong idea may matter enormously without being constitutional.
 
-**An unresolved question may remain unresolved without representing failure.**
+An Architecture domain may be enduring without becoming a Codex Domain.
 
-**The status of a statement is therefore part of its meaning.**
+A design direction may be adopted without becoming immutable.
 
-**Foundational Premise**
+An implementation may be necessary without becoming part of the identity of the World.
 
-**A Foundational Premise expresses a condition or constraint from which later constitutional and architectural reasoning proceeds.**
+An unresolved question may remain unresolved without representing failure.
 
-**A Foundational Premise does not necessarily specify the detailed form of the World.**
+The status of a statement is therefore part of its meaning.
 
-**It constrains what later answers may legitimately become.**
+<a id="ch14-s04"></a>
 
-**For example, the Foundation-derived understanding that BitPangea is:**
+### Foundational Premise
 
-**one finite World**
+A Foundational Premise expresses a condition or constraint from which later constitutional and architectural reasoning proceeds.
 
-**one complete cartographic whole**
+A Foundational Premise does not necessarily specify the detailed form of the World.
 
-**and continuous in the relevant World sense**
+It constrains what later answers may legitimately become.
 
-**constrains later inquiry into matters such as:**
+For example, the Foundation-derived understanding that BitPangea is:
 
-**The Extent**
+one finite World
 
-**Form**
+one complete cartographic whole
 
-**Parcel architecture**
+and continuous in the relevant World sense
 
-**World-scale spatial relationships**
+constrains later inquiry into matters such as:
 
-**A Foundational Premise should therefore be adopted with care.**
+The Extent
 
-**Its purpose is not to solve every later design question.**
+Form
 
-**Its purpose is to establish enough truth that later inquiry cannot legitimately ignore it.**
+Parcel architecture
 
-**A premise constrains the search. It does not contain every answer.**
+World-scale spatial relationships
 
-**Constitutional Truth**
+A Foundational Premise should therefore be adopted with care.
 
-**A Constitutional Truth is something formally established about what BitPangea must remain.**
+Its purpose is not to solve every later design question.
 
-**It belongs to the constitutional layer rather than merely to design preference.**
+Its purpose is to establish enough truth that later inquiry cannot legitimately ignore it.
 
-**Constitutional Truth may determine:**
+A premise constrains the search. It does not contain every answer.
 
-**what must remain true**
+<a id="ch14-s05"></a>
 
-**what may not be contradicted**
+### Constitutional Truth
 
-**which later designs are permissible**
+A Constitutional Truth is something formally established about what BitPangea must remain.
 
-**and where Creator discretion ends**
+It belongs to the constitutional layer rather than merely to design preference.
 
-**The distinction between a Foundational Premise and Constitutional Truth matters.**
+Constitutional Truth may determine:
 
-**The Foundation may constrain the question.**
+what must remain true
 
-**The Codex determines what constitutional truth follows.**
+what may not be contradicted
 
-**The Creator should not silently move from:**
+which later designs are permissible
 
-**This premise strongly suggests X**
+and where Creator discretion ends
 
-**to:**
+The distinction between a Foundational Premise and Constitutional Truth matters.
 
-**X is now constitutional**
+The Foundation may constrain the question.
 
-**without the inquiry that earns that conclusion.**
+The Codex determines what constitutional truth follows.
 
-**World Property**
+The Creator should not silently move from:
 
-**A World Property is a formally recognized constitutional property of the World itself.**
+This premise strongly suggests X
 
-**The clearest example is:**
+to:
 
-**WP-S-I — The Extent**
+X is now constitutional
 
-**The Extent concerns the complete spatial scope of BitPangea.**
+without the inquiry that earns that conclusion.
 
-**The Finitude inquiry demonstrated how World Properties should be treated.**
+<a id="ch14-s06"></a>
 
-**Finitude proved essential.**
+### World Property
 
-**But inquiry concluded that Finitude should remain a condition of The Extent, not become a redundant standalone World Property.**
+A World Property is a formally recognized constitutional property of the World itself.
 
-**That result illustrates an important rule:**
+The clearest example is:
 
-**Importance alone does not justify a separate constitutional object.**
+WP-S-I — The Extent
 
-**A concept should become a World Property only when it performs distinct constitutional work.**
+The Extent concerns the complete spatial scope of BitPangea.
 
-**Constitutional Economy**
+The Finitude inquiry demonstrated how World Properties should be treated.
 
-**BitPangea therefore preserves the principle of constitutional economy.**
+Finitude proved essential.
 
-**The purpose of constitutional inquiry is not to create the largest possible canon.**
+But inquiry concluded that Finitude should remain a condition of The Extent, not become a redundant standalone World Property.
 
-**It is to identify the smallest enduring constitutional structure sufficient to preserve the World.**
+That result illustrates an important rule:
 
-**Thus:**
+Importance alone does not justify a separate constitutional object.
 
-**more terms**
+A concept should become a World Property only when it performs distinct constitutional work.
 
-**≠**
+<a id="ch14-s07"></a>
 
-**more rigor**
+### Constitutional Economy
 
-**more constitutional objects**
+BitPangea therefore preserves the principle of constitutional economy.
 
-**≠**
+The purpose of constitutional inquiry is not to create the largest possible canon.
 
-**more clarity**
+It is to identify the smallest enduring constitutional structure sufficient to preserve the World.
 
-**more canon**
+Thus:
 
-**≠**
+more terms
 
-**better architecture**
+≠
 
-**The Finitude inquiry demonstrated this directly.**
+more rigor
 
-**Concepts such as:**
+more constitutional objects
 
-**Edge**
+≠
 
-**Perimeter**
+more clarity
 
-**Exterior**
+more canon
 
-**World Boundary**
+≠
 
-**were not elevated merely because they could be imagined.**
+better architecture
 
-**Nor was Finitude turned into another World Property merely because it was important.**
+The Finitude inquiry demonstrated this directly.
 
-**The stronger result was narrower:**
+Concepts such as:
 
-**WP-S-I — The Extent**
+Edge
 
-**remains the World Property.**
+Perimeter
 
-**Finitude**
+Exterior
 
-**remains a condition of it.**
+World Boundary
 
-**The governing principle is:**
+were not elevated merely because they could be imagined.
 
-**Discovery does not require multiplication of canon.**
+Nor was Finitude turned into another World Property merely because it was important.
 
-**Architecture Domain**
+The stronger result was narrower:
 
-**An Architecture Domain identifies an enduring responsibility that belongs within The Architecture under The Atlas.**
+WP-S-I — The Extent
 
-**This status should not be confused with constitutional status.**
+remains the World Property.
 
-**Current recognized Architecture domains include:**
+Finitude
 
-**Foundational Survey Fabric**
+remains a condition of it.
 
-**Spatial Ground**
+The governing principle is:
 
-**General Spatial Interpretation**
+Discovery does not require multiplication of canon.
 
-**Parcel Cadastre**
+<a id="ch14-s08"></a>
 
-**World Runtime**
+### Architecture Domain
 
-**Identity / Rights / Control**
+An Architecture Domain identifies an enduring responsibility that belongs within The Architecture under The Atlas.
 
-**Persistence / Provenance**
+This status should not be confused with constitutional status.
 
-**Interoperability**
+Current recognized Architecture domains include:
 
-**Experience Architecture**
+Foundational Survey Fabric
 
-**Their recognition means BitPangea has identified enduring architectural work that must be addressed.**
+Spatial Ground
 
-**It does not mean each domain is:**
+General Spatial Interpretation
 
-**constitutional**
+Parcel Cadastre
 
-**fully designed**
+World Runtime
 
-**equally mature**
+Identity / Rights / Control
 
-**or part of one strict vertical dependency chain.**
+Persistence / Provenance
 
-**This is especially important because:**
+Interoperability
 
-**Architecture membership does not, by itself, prove Architecture dependency order.**
+Experience Architecture
 
-**Only dependencies actually demonstrated should be represented as strict dependencies.**
+Their recognition means BitPangea has identified enduring architectural work that must be addressed.
 
-**Adopted Design Direction**
+It does not mean each domain is:
 
-**An Adopted Design Direction is a Creator-period determination strong enough to guide further design without being elevated into constitutional truth.**
+constitutional
 
-**Examples include the current World Form direction:**
+fully designed
 
-**a singular, compositionally balanced, asymmetric digital supercontinent**
+equally mature
 
-**and the principle that BitPangea is:**
+or part of one strict vertical dependency chain.
 
-**organic in macro-form and digital in substance**
+This is especially important because:
 
-**These are meaningful Creator decisions.**
+Architecture membership does not, by itself, prove Architecture dependency order.
 
-**They guide later design.**
+Only dependencies actually demonstrated should be represented as strict dependencies.
 
-**But their status remains distinct from Codex truth.**
+<a id="ch14-s09"></a>
 
-**This distinction allows the Creator to commit to a direction without pretending that every design choice has become constitutional.**
+### Adopted Design Direction
 
-**Provisional Design**
+An Adopted Design Direction is a Creator-period determination strong enough to guide further design without being elevated into constitutional truth.
 
-**A Provisional Design is important enough to investigate seriously but not yet sufficiently established to be treated as adopted.**
+Examples include the current World Form direction:
 
-**This category protects exploration.**
+a singular, compositionally balanced, asymmetric digital supercontinent
 
-**Examples can include:**
+and the principle that BitPangea is:
 
-**a particular mathematical model**
+organic in macro-form and digital in substance
 
-**a candidate Parcel geometry**
+These are meaningful Creator decisions.
 
-**a proposed internal Architecture decomposition**
+They guide later design.
 
-**a particular Verge morphology**
+But their status remains distinct from Codex truth.
 
-**A provisional design may eventually become adopted.**
+This distinction allows the Creator to commit to a direction without pretending that every design choice has become constitutional.
 
-**It may be modified.**
+<a id="ch14-s10"></a>
 
-**It may fail.**
+### Provisional Design
 
-**It may reveal a better question.**
+A Provisional Design is important enough to investigate seriously but not yet sufficiently established to be treated as adopted.
 
-**The governing principle is:**
+This category protects exploration.
 
-**Provisionality should be explicit.**
+Examples can include:
 
-**BitPangea should never depend upon future readers guessing whether an idea was merely being explored.**
+a particular mathematical model
 
-**Implementation**
+a candidate Parcel geometry
 
-**An Implementation realizes architecture through technology.**
+a proposed internal Architecture decomposition
 
-**Examples may eventually include:**
+a particular Verge morphology
 
-**programming language**
+A provisional design may eventually become adopted.
 
-**database system**
+It may be modified.
 
-**storage architecture**
+It may fail.
 
-**runtime infrastructure**
+It may reveal a better question.
 
-**rendering technology**
+The governing principle is:
 
-**network stack**
+Provisionality should be explicit.
 
-**cryptographic library**
+BitPangea should never depend upon future readers guessing whether an idea was merely being explored.
 
-**serialization format**
+<a id="ch14-s11"></a>
 
-**hosting model**
+### Implementation
 
-**These choices may be technically consequential.**
+An Implementation realizes architecture through technology.
 
-**They do not become constitutional merely because they are difficult to change.**
+Examples may eventually include:
 
-**A strong Architecture should allow implementations to evolve beneath stable meaning.**
+programming language
 
-**The governing rule is:**
+database system
 
-**Implementation realizes the World. It does not define the World merely by arriving first.**
+storage architecture
 
-**Emergent Behavior**
+runtime infrastructure
 
-**Some important things should not be Creator decisions at all.**
+rendering technology
 
-**They should emerge.**
+network stack
 
-**Culture is the clearest example.**
+cryptographic library
 
-**So are many forms of:**
+serialization format
 
-**social organization**
+hosting model
 
-**economic behavior**
+These choices may be technically consequential.
 
-**custom**
+They do not become constitutional merely because they are difficult to change.
 
-**reputation**
+A strong Architecture should allow implementations to evolve beneath stable meaning.
 
-**institutional development**
+The governing rule is:
 
-**collective meaning**
+Implementation realizes the World. It does not define the World merely by arriving first.
 
-**historical interpretation**
+<a id="ch14-s12"></a>
 
-**An Emergent Behavior is produced through participants, institutions, and history rather than prescribed as a foundational or architectural condition.**
+### Emergent Behavior
 
-**This distinction protects civilization from becoming another Creator-designed subsystem.**
+Some important things should not be Creator decisions at all.
 
-**Architecture may create possibility. Civilization determines what possibility becomes.**
+They should emerge.
 
-**Unresolved Question**
+Culture is the clearest example.
 
-**An Unresolved Question is a legitimate architectural state.**
+So are many forms of:
 
-**It is not failure.**
+social organization
 
-**BitPangea should preserve uncertainty when evidence remains insufficient.**
+economic behavior
 
-**Current or recent examples include questions such as:**
+custom
 
-**the final Parcel geometry**
+reputation
 
-**the final mathematical Survey Specification**
+institutional development
 
-**the precise morphology of The Verge**
+collective meaning
 
-**the internal decomposition of several Architecture domains**
+historical interpretation
 
-**governance**
+An Emergent Behavior is produced through participants, institutions, and history rather than prescribed as a foundational or architectural condition.
 
-**the relationship among Architecture membership, presentation order, and dependency**
+This distinction protects civilization from becoming another Creator-designed subsystem.
 
-**An unresolved question should remain unresolved until the work justifies an answer.**
+Architecture may create possibility. Civilization determines what possibility becomes.
 
-**Premature certainty is not architectural progress.**
+<a id="ch14-s13"></a>
 
-**Undecided and Intentionally Open Are Different**
+### Unresolved Question
 
-**Not all unresolved matters are unresolved for the same reason.**
+An Unresolved Question is a legitimate architectural state.
 
-**Some are undecided because BitPangea still owes itself an architectural answer.**
+It is not failure.
 
-**Others are intentionally open because answering them would wrongly consume future freedom.**
+BitPangea should preserve uncertainty when evidence remains insufficient.
 
-**For example:**
+Current or recent examples include questions such as:
 
-**final Survey mathematics**
+the final Parcel geometry
 
-**→ undecided**
+the final mathematical Survey Specification
 
-**because architecture must eventually resolve it**
+the precise morphology of The Verge
 
-**while:**
+the internal decomposition of several Architecture domains
 
-**future cultural traditions**
+governance
 
-**→ intentionally open**
+the relationship among Architecture membership, presentation order, and dependency
 
-**because civilization should determine them**
+An unresolved question should remain unresolved until the work justifies an answer.
 
-**The distinction is essential.**
+Premature certainty is not architectural progress.
 
-**Some questions await answers. Others preserve freedom.**
+<a id="ch14-s14"></a>
 
-**Constitutional discipline must know which is which.**
+### Undecided and Intentionally Open Are Different
 
-**Canon Must Be Earned**
+Not all unresolved matters are unresolved for the same reason.
 
-**One of BitPangea’s strongest disciplines should remain:**
+Some are undecided because BitPangea still owes itself an architectural answer.
 
-**Canon is not the default state of an idea.**
+Others are intentionally open because answering them would wrongly consume future freedom.
 
-**An idea may begin as:**
+For example:
 
-**question**
+final Survey mathematics
 
-**↓**
+→ undecided
 
-**inquiry**
+because architecture must eventually resolve it
 
-**↓**
+while:
 
-**candidate**
+future cultural traditions
 
-**↓**
+→ intentionally open
 
-**provisional design**
+because civilization should determine them
 
-**↓**
+The distinction is essential.
 
-**adopted design direction**
+Some questions await answers. Others preserve freedom.
 
-**↓**
+Constitutional discipline must know which is which.
 
-**Architecture**
+<a id="ch14-s15"></a>
 
-**and only where warranted:**
+### Canon Must Be Earned
 
-**↓**
+One of BitPangea’s strongest disciplines should remain:
 
-**constitutional significance**
+Canon is not the default state of an idea.
 
-**This should not be treated as a mandatory workflow for every decision.**
+An idea may begin as:
 
-**It expresses the deeper principle that permanence should increase only as justification increases.**
+question
 
-**An idea should not become harder to change faster than its evidence becomes stronger.**
+↓
 
-**Foundation Constrains; Codex Defines**
+inquiry
 
-**A constitutional inquiry should not begin from a blank page.**
+↓
 
-**The Foundation may already constrain the answer.**
+candidate
 
-**That does not mean the Foundation itself should contain every detailed constitutional conclusion.**
+↓
 
-**The proper relationship is:**
+provisional design
 
-**Foundation-derived premise**
+↓
 
-**↓**
+adopted design direction
 
-**constrains inquiry**
+↓
 
-**Codex inquiry**
+Architecture
 
-**↓**
+and only where warranted:
 
-**determines constitutional truth**
+↓
 
-**Atlas design**
+constitutional significance
 
-**↓**
+This should not be treated as a mandatory workflow for every decision.
 
-**operates within that truth**
+It expresses the deeper principle that permanence should increase only as justification increases.
 
-**This relationship became especially important during the Finitude review.**
+An idea should not become harder to change faster than its evidence becomes stronger.
 
-**The review did not simply declare:**
+<a id="ch14-s16"></a>
 
-**“Finitude matters, therefore create a Finitude Codex.”**
+### Foundation Constrains; Codex Defines
 
-**Instead it asked what constitutional work the concept actually performed.**
+A constitutional inquiry should not begin from a blank page.
 
-**The result was:**
+The Foundation may already constrain the answer.
 
-**Finitude preserved**
+That does not mean the Foundation itself should contain every detailed constitutional conclusion.
 
-**but:**
+The proper relationship is:
 
-**Finitude not promoted unnecessarily**
+Foundation-derived premise
 
-**and:**
+↓
 
-**The Extent retained as the proper World Property.**
+constrains inquiry
 
-**That is constitutional discipline in practice.**
+Codex inquiry
 
-**Constitutional Inquiry**
+↓
 
-**When a design question appears to depend upon deeper World truth, BitPangea can perform a formal constitutional inquiry.**
+determines constitutional truth
 
-**The purpose is not to turn every design issue into constitutional law.**
+Atlas design
 
-**It is to determine whether the design question exposes something that belongs deeper.**
+↓
 
-**Conceptually:**
+operates within that truth
 
-**Design question**
+This relationship became especially important during the Finitude review.
 
-**↓**
+The review did not simply declare:
 
-**dependency discovered**
+“Finitude matters, therefore create a Finitude Codex.”
 
-**↓**
+Instead it asked what constitutional work the concept actually performed.
 
-**constitutional inquiry**
+The result was:
 
-**↓**
+Finitude preserved
 
-**constitutional result**
+but:
 
-**↓**
+Finitude not promoted unnecessarily
 
-**design resumes within clarified constraints**
+and:
 
-**This produces the working pattern:**
+The Extent retained as the proper World Property.
 
-**Design → Dependency → Constitutional Inquiry**
+That is constitutional discipline in practice.
 
-**when necessary.**
+<a id="ch14-s17"></a>
 
-**Not every design question requires this escalation.**
+### Constitutional Inquiry
 
-**The architecture should descend only as deeply as the question genuinely requires.**
+When a design question appears to depend upon deeper World truth, BitPangea can perform a formal constitutional inquiry.
 
-**Dependency Checks**
+The purpose is not to turn every design issue into constitutional law.
 
-**Constitutional work should also respect dependency.**
+It is to determine whether the design question exposes something that belongs deeper.
 
-**A question may appear ready for resolution while still depending upon another concept that has not yet been settled.**
+Conceptually:
 
-**For example:**
+Design question
 
-**Finitude constrained later consideration of Form.**
+↓
 
-**Form may affect whether Pattern deserves further inquiry.**
+dependency discovered
 
-**A Parcel-design question may depend upon Survey architecture.**
+↓
 
-**A rights question may depend upon actor identity.**
+constitutional inquiry
 
-**An operational question may depend upon authority boundaries.**
+↓
 
-**Thus, after an inquiry closes, BitPangea should not automatically proceed merely because an old queue says another topic is next.**
+constitutional result
 
-**A dependency check may be required.**
+↓
 
-**The governing principle is:**
+design resumes within clarified constraints
 
-**Proceed because the architecture permits the next inquiry—not because a list once placed it next.**
+This produces the working pattern:
 
-**Parked Is Not Abandoned**
+Design → Dependency → Constitutional Inquiry
 
-**Dependency discipline also requires a distinction among:**
+when necessary.
 
-**active**
+Not every design question requires this escalation.
 
-**deferred**
+The architecture should descend only as deeply as the question genuinely requires.
 
-**parked**
+<a id="ch14-s18"></a>
 
-**rejected**
+### Dependency Checks
 
-**superseded**
+Constitutional work should also respect dependency.
 
-**A concept may remain architecturally interesting but not currently justified.**
+A question may appear ready for resolution while still depending upon another concept that has not yet been settled.
 
-**That does not make it rejected.**
+For example:
 
-**For example, an inquiry may be parked because:**
+Finitude constrained later consideration of Form.
 
-**another dependency must be resolved first**
+Form may affect whether Pattern deserves further inquiry.
 
-**its constitutional necessity is unclear**
+A Parcel-design question may depend upon Survey architecture.
 
-**new evidence is required**
+A rights question may depend upon actor identity.
 
-**or the World has not yet reached the design stage where the question becomes meaningful**
+An operational question may depend upon authority boundaries.
 
-**This preserves optionality without pretending every possible question deserves immediate resolution.**
+Thus, after an inquiry closes, BitPangea should not automatically proceed merely because an old queue says another topic is next.
 
-**Rejection Is Architectural Knowledge**
+A dependency check may be required.
 
-**A rejected idea is not meaningless.**
+The governing principle is:
 
-**Rejection can establish an important negative result.**
+Proceed because the architecture permits the next inquiry—not because a list once placed it next.
 
-**If an inquiry determines that BitPangea does not require a constitutional:**
+<a id="ch14-s19"></a>
 
-**Edge**
+### Parked Is Not Abandoned
 
-**Exterior**
+Dependency discipline also requires a distinction among:
 
-**Perimeter**
+active
 
-**or World Boundary**
+deferred
 
-**that result constrains future work.**
+parked
 
-**It prevents old assumptions from quietly re-entering later designs as though they were still open.**
+rejected
 
-**Rejection therefore belongs to architectural history.**
+superseded
 
-**The record should distinguish:**
+A concept may remain architecturally interesting but not currently justified.
 
-**never considered**
+That does not make it rejected.
 
-**explored**
+For example, an inquiry may be parked because:
 
-**deferred**
+another dependency must be resolved first
 
-**parked**
+its constitutional necessity is unclear
 
-**rejected**
+new evidence is required
 
-**superseded**
+or the World has not yet reached the design stage where the question becomes meaningful
 
-**adopted**
+This preserves optionality without pretending every possible question deserves immediate resolution.
 
-**These states preserve the reasoning path accurately.**
+<a id="ch14-s20"></a>
 
-**Supersession Is Not Erasure**
+### Rejection Is Architectural Knowledge
 
-**Some BitPangea concepts will be replaced by better understanding.**
+A rejected idea is not meaningless.
 
-**That is already happening.**
+Rejection can establish an important negative result.
 
-**Earlier use of Frontier as a terminal spatial morphology has been superseded.**
+If an inquiry determines that BitPangea does not require a constitutional:
 
-**The Frontier is now preserved in its epistemic meaning.**
+Edge
 
-**The Verge is the relevant Creator design space for terminal World-form expression.**
+Exterior
 
-**Likewise, the earlier 3×3 architecture helped discover enduring responsibilities but is no longer the current Architecture.**
+Perimeter
 
-**This should not result in historical deletion.**
+or World Boundary
 
-**Instead:**
+that result constrains future work.
 
-**earlier understanding**
+It prevents old assumptions from quietly re-entering later designs as though they were still open.
 
-**↓**
+Rejection therefore belongs to architectural history.
 
-**remains historically visible**
+The record should distinguish:
 
-**later understanding**
+never considered
 
-**↓**
+explored
 
-**supersedes it structurally**
+deferred
 
-**The principle is:**
+parked
 
-**Supersession changes current authority without erasing developmental history.**
+rejected
 
-**Permanence Should Follow Consequence**
+superseded
 
-**The deeper a decision reaches into the identity of BitPangea, the stronger the burden required for adopting or changing it.**
+adopted
 
-**A user-interface arrangement may evolve easily.**
+These states preserve the reasoning path accurately.
 
-**A service implementation may be replaced with discipline.**
+<a id="ch14-s21"></a>
 
-**Experience Architecture should remain comparatively flexible.**
+### Supersession Is Not Erasure
 
-**World Runtime should change carefully.**
+Some BitPangea concepts will be replaced by better understanding.
 
-**The Parcel Cadastre requires much greater stability.**
+That is already happening.
 
-**The Foundational Survey Fabric requires extraordinary stability once mathematically established.**
+Earlier use of Frontier as a terminal spatial morphology has been superseded.
 
-**Constitutional truth requires the highest burden of all.**
+The Frontier is now preserved in its epistemic meaning.
 
-**This produces a general gradient:**
+The Verge is the relevant Creator design space for terminal World-form expression.
 
-**constitutional truth**
+Likewise, the earlier 3×3 architecture helped discover enduring responsibilities but is no longer the current Architecture.
 
-**→ extraordinary permanence**
+This should not result in historical deletion.
 
-**deep Architecture**
+Instead:
 
-**→ very high persistence**
+earlier understanding
 
-**operational Architecture**
+↓
 
-**→ governed evolution**
+remains historically visible
 
-**experience**
+later understanding
 
-**→ substantial freedom to evolve**
+↓
 
-**civilization**
+supersedes it structurally
 
-**→ emergence beyond architectural authorship**
+The principle is:
 
-**The precise change-control mechanisms remain unresolved.**
+Supersession changes current authority without erasing developmental history.
 
-**The principle does not:**
+<a id="ch14-s22"></a>
 
-**The deeper the consequence, the higher the burden for change.**
+### Permanence Should Follow Consequence
 
-**Constitutional Architecture Is Not Absolute Immutability**
+The deeper a decision reaches into the identity of BitPangea, the stronger the burden required for adopting or changing it.
 
-**High permanence does not mean BitPangea should pretend error is impossible.**
+A user-interface arrangement may evolve easily.
 
-**A contradiction might someday be discovered.**
+A service implementation may be replaced with discipline.
 
-**New evidence might reveal that an adopted formulation cannot actually satisfy the World.**
+Experience Architecture should remain comparatively flexible.
 
-**A technical impossibility might expose an unstated assumption.**
+World Runtime should change carefully.
 
-**Future circumstances may reveal something that no Creator-period inquiry could reasonably foresee.**
+The Parcel Cadastre requires much greater stability.
 
-**Thus BitPangea should distinguish:**
+The Foundational Survey Fabric requires extraordinary stability once mathematically established.
 
-**ordinary change**
+Constitutional truth requires the highest burden of all.
 
-**from:**
+This produces a general gradient:
 
-**constitutional change**
+constitutional truth
 
-**Ordinary change occurs within the World.**
+→ extraordinary permanence
 
-**Constitutional change alters something about what the World fundamentally is.**
+deep Architecture
 
-**The latter should require extraordinary justification.**
+→ very high persistence
 
-**But “extraordinary” need not mean literally impossible.**
+operational Architecture
 
-**Durability should protect truth, not trap error.**
+→ governed evolution
 
-**Change Should Know What It Changes**
+experience
 
-**Any future change system should understand the status of the thing being changed.**
+→ substantial freedom to evolve
 
-**Changing:**
+civilization
 
-**a visual preference**
+→ emergence beyond architectural authorship
 
-**is not equivalent to changing:**
+The precise change-control mechanisms remain unresolved.
 
-**Experience Architecture.**
+The principle does not:
 
-**Changing:**
+The deeper the consequence, the higher the burden for change.
 
-**a Runtime service**
+<a id="ch14-s23"></a>
 
-**is not equivalent to changing:**
+### Constitutional Architecture Is Not Absolute Immutability
 
-**World Runtime semantics.**
+High permanence does not mean BitPangea should pretend error is impossible.
 
-**Changing:**
+A contradiction might someday be discovered.
 
-**rights associated with a Parcel**
+New evidence might reveal that an adopted formulation cannot actually satisfy the World.
 
-**is not equivalent to changing:**
+A technical impossibility might expose an unstated assumption.
 
-**the Parcel itself.**
+Future circumstances may reveal something that no Creator-period inquiry could reasonably foresee.
 
-**Changing:**
+Thus BitPangea should distinguish:
 
-**Parcel geometry**
+ordinary change
 
-**is not equivalent to changing:**
+from:
 
-**the Foundational Survey Fabric.**
+constitutional change
 
-**And changing:**
+Ordinary change occurs within the World.
 
-**a World Property**
+Constitutional change alters something about what the World fundamentally is.
 
-**is a different class of act entirely.**
+The latter should require extraordinary justification.
 
-**Future change-control architecture may therefore need to ask:**
+But “extraordinary” need not mean literally impossible.
 
-**What kind of truth is being changed?**
+Durability should protect truth, not trap error.
 
-**What authority owns it?**
+<a id="ch14-s24"></a>
 
-**What dependencies rely upon it?**
+### Change Should Know What It Changes
 
-**What justification is required?**
+Any future change system should understand the status of the thing being changed.
 
-**What historical record must survive?**
+Changing:
 
-**What systems must be revalidated?**
+a visual preference
 
-**This is category-aware change.**
+is not equivalent to changing:
 
-**The mechanism remains open.**
+Experience Architecture.
 
-**The need is already apparent.**
+Changing:
 
-**Authority Must Match Responsibility**
+a Runtime service
 
-**Constitutional Architecture also constrains authority.**
+is not equivalent to changing:
 
-**A system should possess only the authority justified by its responsibility.**
+World Runtime semantics.
 
-**Thus:**
+Changing:
 
-**a Builder should not redefine Parcel truth.**
+rights associated with a Parcel
 
-**World Runtime should not redefine The Extent.**
+is not equivalent to changing:
 
-**Experience Architecture should not redefine World State.**
+the Parcel itself.
 
-**Persistence / Provenance should not become authority over the truths whose lineage it preserves.**
+Changing:
 
-**Interoperability should not acquire canonical authority merely because it translates between systems.**
+Parcel geometry
 
-**A historical institution should not rewrite Survey truth.**
+is not equivalent to changing:
 
-**The principle remains:**
+the Foundational Survey Fabric.
 
-**Reference does not transfer authority.**
+And changing:
 
-**Constitutional discipline adds:**
+a World Property
 
-**Authority should not exceed the responsibility that justifies it.**
+is a different class of act entirely.
 
-**This helps prevent accidental concentration of architectural power.**
+Future change-control architecture may therefore need to ask:
 
-**The Creator’s Constitutional Authority**
+What kind of truth is being changed?
 
-**During the Creator Period, broad Creator authority is unavoidable.**
+What authority owns it?
 
-**Someone must:**
+What dependencies rely upon it?
 
-**ask the questions**
+What justification is required?
 
-**conduct the inquiries**
+What historical record must survive?
 
-**adopt design directions**
+What systems must be revalidated?
 
-**reject unsuitable paths**
+This is category-aware change.
 
-**establish Architecture**
+The mechanism remains open.
 
-**preserve constitutional boundaries**
+The need is already apparent.
 
-**and determine what remains open**
+<a id="ch14-s25"></a>
 
-**But broad creation authority should not be confused with permanent universal authority.**
+### Authority Must Match Responsibility
 
-**As BitPangea matures, explicit institutions and Architecture should increasingly replace personal discretion wherever enduring responsibility can be institutionalized.**
+Constitutional Architecture also constrains authority.
 
-**Conceptually:**
+A system should possess only the authority justified by its responsibility.
 
-**Creator Period**
+Thus:
 
-**→ Creator establishes and discovers**
+a Builder should not redefine Parcel truth.
 
-**Maturing World**
+World Runtime should not redefine The Extent.
 
-**→ explicit systems assume bounded authority**
+Experience Architecture should not redefine World State.
 
-**Builders**
+Persistence / Provenance should not become authority over the truths whose lineage it preserves.
 
-**→ create within those boundaries**
+Interoperability should not acquire canonical authority merely because it translates between systems.
 
-**Civilization**
+A historical institution should not rewrite Survey truth.
 
-**→ develops institutions, meanings, and practices of its own**
+The principle remains:
 
-**This is not yet a governance system.**
+Reference does not transfer authority.
 
-**It is an architectural direction.**
+Constitutional discipline adds:
 
-**Stewardship Rather Than Permanent Sovereignty**
+Authority should not exceed the responsibility that justifies it.
 
-**The Creator’s long-term role may therefore be better understood as stewardship.**
+This helps prevent accidental concentration of architectural power.
 
-**Stewardship means protecting what legitimately must endure.**
+<a id="ch14-s26"></a>
 
-**It does not imply permanent authority over:**
+### The Creator’s Constitutional Authority
 
-**culture**
+During the Creator Period, broad Creator authority is unavoidable.
 
-**commerce**
+Someone must:
 
-**social organization**
+ask the questions
 
-**community**
+conduct the inquiries
 
-**institutional life**
+adopt design directions
 
-**historical interpretation**
+reject unsuitable paths
 
-**or every future decision made within BitPangea.**
+establish Architecture
 
-**Conceptually:**
+preserve constitutional boundaries
 
-**early**
+and determine what remains open
 
-**Creator → architect**
+But broad creation authority should not be confused with permanent universal authority.
 
-**later**
+As BitPangea matures, explicit institutions and Architecture should increasingly replace personal discretion wherever enduring responsibility can be institutionalized.
 
-**Creator → steward**
+Conceptually:
 
-**mature World**
+Creator Period
 
-**Creator → participant within a larger historical civilization**
+→ Creator establishes and discovers
 
-**Whether BitPangea ultimately reaches that state cannot be known.**
+Maturing World
 
-**Designing so that it could matters.**
+→ explicit systems assume bounded authority
 
-**Constitutional Restraint Can Protect Freedom**
+Builders
 
-**A constitution does not only protect fixed truths.**
+→ create within those boundaries
 
-**It can protect what must not be overdetermined.**
+Civilization
 
-**This is especially important for BitPangea.**
+→ develops institutions, meanings, and practices of its own
 
-**Some constitutional truths may say:**
+This is not yet a governance system.
 
-**this must remain true**
+It is an architectural direction.
 
-**Others may constrain present authority by implying:**
+<a id="ch14-s27"></a>
 
-**this must remain open**
+### Stewardship Rather Than Permanent Sovereignty
 
-**For example, the principle that civilization should not be fully prewritten by the Creator may itself constrain later attempts to constitutionalize social outcomes.**
+The Creator’s long-term role may therefore be better understood as stewardship.
 
-**This reveals an important function of constitutional restraint:**
+Stewardship means protecting what legitimately must endure.
 
-**The Constitution may protect future freedom by limiting present authority.**
+It does not imply permanent authority over:
 
-**World Properties Should Follow Inquiry**
+culture
 
-**BitPangea should not build a taxonomy and then search for concepts to populate it.**
+commerce
 
-**World Properties should arise because constitutional inquiry discovers that the World requires them.**
+social organization
 
-**The proper order is:**
+community
 
-**question**
+institutional life
 
-**↓**
+historical interpretation
 
-**inquiry**
+or every future decision made within BitPangea.
 
-**↓**
+Conceptually:
 
-**finding**
+early
 
-**↓**
+Creator → architect
 
-**constitutional determination**
+later
 
-**↓**
+Creator → steward
 
-**classification**
+mature World
 
-**not:**
+Creator → participant within a larger historical civilization
 
-**empty category**
+Whether BitPangea ultimately reaches that state cannot be known.
 
-**↓**
+Designing so that it could matters.
 
-**search for something to fill it**
+<a id="ch14-s28"></a>
 
-**The classification should describe the result of reasoning.**
+### Constitutional Restraint Can Protect Freedom
 
-**It should not drive the reasoning merely because an organizational slot exists.**
+A constitution does not only protect fixed truths.
 
-**Constraint Does Not Contain the Solution**
+It can protect what must not be overdetermined.
 
-**One of the most important disciplines of constitutional work is resisting the temptation to canonize every apparent consequence of a valid premise.**
+This is especially important for BitPangea.
 
-**For example:**
+Some constitutional truths may say:
 
-**BitPangea is finite**
+this must remain true
 
-**does not automatically determine:**
+Others may constrain present authority by implying:
 
-**The Verge morphology**
+this must remain open
 
-**Parcel geometry**
+For example, the principle that civilization should not be fully prewritten by the Creator may itself constrain later attempts to constitutionalize social outcomes.
 
-**navigation behavior**
+This reveals an important function of constitutional restraint:
 
-**World Form**
+The Constitution may protect future freedom by limiting present authority.
 
-**economic outcome**
+<a id="ch14-s29"></a>
 
-**Likewise:**
+### World Properties Should Follow Inquiry
 
-**Exactly 21,000,000 Parcels exist**
+BitPangea should not build a taxonomy and then search for concepts to populate it.
 
-**does not automatically determine:**
+World Properties should arise because constitutional inquiry discovers that the World requires them.
 
-**ownership**
+The proper order is:
 
-**price**
+question
 
-**tokenization**
+↓
 
-**distribution**
+inquiry
 
-**market structure**
+↓
 
-**economic value**
+finding
 
-**A constitutional truth constrains later design.**
+↓
 
-**It does not automatically solve it.**
+constitutional determination
 
-**The principle is:**
+↓
 
-**Constraint should narrow the solution space without pretending to contain the solution.**
+classification
 
-**Avoid Accidental Constitution**
+not:
 
-**One of the greatest risks during early World creation is accidental constitution.**
+empty category
 
-**This occurs when a temporary choice becomes effectively permanent because enough other systems quietly begin depending upon it.**
+↓
 
-**For example:**
+search for something to fill it
 
-**temporary reference model**
+The classification should describe the result of reasoning.
 
-**↓**
+It should not drive the reasoning merely because an organizational slot exists.
 
-**used everywhere**
+<a id="ch14-s30"></a>
 
-**↓**
+### Constraint Does Not Contain the Solution
 
-**becomes difficult to replace**
+One of the most important disciplines of constitutional work is resisting the temptation to canonize every apparent consequence of a valid premise.
 
-**prototype Parcel identifier**
+For example:
 
-**↓**
+BitPangea is finite
 
-**referenced by later systems**
+does not automatically determine:
 
-**↓**
+The Verge morphology
 
-**becomes de facto canonical**
+Parcel geometry
 
-**early rights assumption**
+navigation behavior
 
-**↓**
+World Form
 
-**embedded across services**
+economic outcome
 
-**↓**
+Likewise:
 
-**becomes architecture without inquiry**
+Exactly 21,000,000 Parcels exist
 
-**This is precisely the failure BitPangea must avoid.**
+does not automatically determine:
 
-**The rule should be:**
+ownership
 
-**Dependency should follow legitimate adoption. Adoption should not be inferred merely because dependency accumulated.**
+price
 
-**Prototype Freedom**
+tokenization
 
-**Avoiding accidental constitution does not mean avoiding experimentation.**
+distribution
 
-**Before something becomes permanent, BitPangea should be free to test aggressively.**
+market structure
 
-**That may include:**
+economic value
 
-**temporary models**
+A constitutional truth constrains later design.
 
-**simulations**
+It does not automatically solve it.
 
-**competing designs**
+The principle is:
 
-**disposable implementations**
+Constraint should narrow the solution space without pretending to contain the solution.
 
-**failed experiments**
+<a id="ch14-s31"></a>
 
-**mathematical prototypes**
+### Avoid Accidental Constitution
 
-**alternate representations**
+One of the greatest risks during early World creation is accidental constitution.
 
-**The important distinction is:**
+This occurs when a temporary choice becomes effectively permanent because enough other systems quietly begin depending upon it.
 
-**prototype**
+For example:
 
-**≠**
+temporary reference model
 
-**canonical architecture**
+↓
 
-**This produces the working principle:**
+used everywhere
 
-**Experiment freely before adoption. Govern carefully after adoption.**
+↓
 
-**The deeper the potential permanence, the more valuable this freedom becomes before canonization.**
+becomes difficult to replace
 
-**Conformance**
+prototype Parcel identifier
 
-**Once architecture becomes sufficiently mature, conformance provides a way to protect meaning without prescribing implementation.**
+↓
 
-**The Foundational Survey Fabric already demonstrates this pattern:**
+referenced by later systems
 
-**Requirements**
+↓
 
-**↓**
+becomes de facto canonical
 
-**Specification**
+early rights assumption
 
-**↓**
+↓
 
-**Conformance**
+embedded across services
 
-**↓**
+↓
 
-**Reference Vectors**
+becomes architecture without inquiry
 
-**This architecture allows BitPangea eventually to ask of an implementation:**
+This is precisely the failure BitPangea must avoid.
 
-**Does it correctly implement the canonical meaning?**
+The rule should be:
 
-**without requiring:**
+Dependency should follow legitimate adoption. Adoption should not be inferred merely because dependency accumulated.
 
-**Does it use the exact same internal code?**
+<a id="ch14-s32"></a>
 
-**The principle can extend beyond Survey where appropriate.**
+### Prototype Freedom
 
-**Conformance may eventually test whether systems preserve requirements such as:**
+Avoiding accidental constitution does not mean avoiding experimentation.
 
-**the fixed Parcel count**
+Before something becomes permanent, BitPangea should be free to test aggressively.
 
-**canonical Parcel identity**
+That may include:
 
-**authority boundaries**
+temporary models
 
-**valid World-state transitions**
+simulations
 
-**interoperable meaning**
+competing designs
 
-**other established Architecture constraints**
+disposable implementations
 
-**But conformance should be designed for the domain it serves.**
+failed experiments
 
-**It should not become one universal mechanism merely because the Survey Fabric uses it successfully.**
+mathematical prototypes
 
-**Conformance Does Not Create Authority**
+alternate representations
 
-**A conforming implementation proves that it follows the relevant canonical requirements.**
+The important distinction is:
 
-**It does not, merely by conforming, gain authority to redefine those requirements.**
+prototype
 
-**This distinction is crucial.**
+≠
 
-**Conformance proves correctness relative to authority. It does not create the authority itself.**
+canonical architecture
 
-**Likewise, technical verification should not be confused with constitutional legitimacy.**
+This produces the working principle:
 
-**A system can prove that an implementation matches a Specification.**
+Experiment freely before adoption. Govern carefully after adoption.
 
-**It cannot prove that the Specification deserves canonical standing unless BitPangea’s institutional authority has validly adopted it.**
+The deeper the potential permanence, the more valuable this freedom becomes before canonization.
 
-**The Immutable Core Should Be Small**
+<a id="ch14-s33"></a>
 
-**A persistent World needs a protected core.**
+### Conformance
 
-**That core should be as small as possible.**
+Once architecture becomes sufficiently mature, conformance provides a way to protect meaning without prescribing implementation.
 
-**If everything becomes permanently protected, the World cannot evolve.**
+The Foundational Survey Fabric already demonstrates this pattern:
 
-**If nothing is protected, the World eventually loses its identity.**
+Requirements
 
-**This produces one of BitPangea’s strongest design principles:**
+↓
 
-**The immutable core should be astonishingly small.**
+Specification
 
-**“Immutable” here expresses the desired degree of enduring protection, not necessarily literal technical impossibility of correction.**
+↓
 
-**The deeper goal is:**
+Conformance
 
-**minimum permanent architecture**
+↓
 
-**with:**
+Reference Vectors
 
-**maximum future extensibility**
+This architecture allows BitPangea eventually to ask of an implementation:
 
-**That balance protects both identity and freedom.**
+Does it correctly implement the canonical meaning?
 
-**Constitutional Records**
+without requiring:
 
-**As BitPangea matures, constitutional determinations should become reconstructable.**
+Does it use the exact same internal code?
 
-**A formal record may eventually preserve:**
+The principle can extend beyond Survey where appropriate.
 
-**question**
+Conformance may eventually test whether systems preserve requirements such as:
 
-**scope**
+the fixed Parcel count
 
-**Foundational constraints**
+canonical Parcel identity
 
-**evidence**
+authority boundaries
 
-**alternatives**
+valid World-state transitions
 
-**dependencies**
+interoperable meaning
 
-**determination**
+other established Architecture constraints
 
-**status**
+But conformance should be designed for the domain it serves.
 
-**authority**
+It should not become one universal mechanism merely because the Survey Fabric uses it successfully.
 
-**date**
+<a id="ch14-s34"></a>
 
-**supersession**
+### Conformance Does Not Create Authority
 
-**The precise institutional mechanism remains open.**
+A conforming implementation proves that it follows the relevant canonical requirements.
 
-**But the principle should not:**
+It does not, merely by conforming, gain authority to redefine those requirements.
 
-**Foundational decisions should be reconstructable.**
+This distinction is crucial.
 
-**Future participants should be able to understand not merely what was decided, but how and why that decision legitimately acquired authority.**
+Conformance proves correctness relative to authority. It does not create the authority itself.
 
-**Chronicle, Atlas, Origins, and Constitutional Determination**
+Likewise, technical verification should not be confused with constitutional legitimacy.
 
-**BitPangea already possesses several different documentary functions.**
+A system can prove that an implementation matches a Specification.
 
-**The governing distinctions are:**
+It cannot prove that the Specification deserves canonical standing unless BitPangea’s institutional authority has validly adopted it.
 
-**Chronicle records when.**
+<a id="ch14-s35"></a>
 
-**Atlas records what.**
+### The Immutable Core Should Be Small
 
-**Origins preserves how and why the understanding emerged.**
+A persistent World needs a protected core.
 
-**A future constitutional determination record may serve another purpose:**
+That core should be as small as possible.
 
-**what was formally established as constitutional truth, through what inquiry, and under what authority**
+If everything becomes permanently protected, the World cannot evolve.
 
-**Whether this requires a distinct artifact or can be preserved through existing institutions remains open.**
+If nothing is protected, the World eventually loses its identity.
 
-**The important point is that constitutional authority should not depend upon ambiguous statements scattered across historical prose.**
+This produces one of BitPangea’s strongest design principles:
 
-**Canon and History Must Remain Distinct**
+The immutable core should be astonishingly small.
 
-**Something can be historically important without remaining authoritative.**
+“Immutable” here expresses the desired degree of enduring protection, not necessarily literal technical impossibility of correction.
 
-**An earlier architecture can be superseded.**
+The deeper goal is:
 
-**A discarded model may remain important to Origins.**
+minimum permanent architecture
 
-**A rejected idea may remain important in the Chronicle.**
+with:
 
-**A provisional design may later become irrelevant.**
+maximum future extensibility
 
-**Thus:**
+That balance protects both identity and freedom.
 
-**historical existence**
+<a id="ch14-s36"></a>
 
-**≠**
+### Constitutional Records
 
-**current authority**
+As BitPangea matures, constitutional determinations should become reconstructable.
 
-**This distinction becomes increasingly important as BitPangea ages.**
+A formal record may eventually preserve:
 
-**A rich historical record should preserve previous understanding without forcing every historical state to remain current architecture.**
+question
 
-**What Is Established**
+scope
 
-**The current constitutional discipline supports the following statements:**
+Foundational constraints
 
-**Not every BitPangea decision is constitutional.**
+evidence
 
-**BitPangea distinguishes among:**
+alternatives
 
-**Foundational Premise**
+dependencies
 
-**Constitutional Truth**
+determination
 
-**World Property**
+status
 
-**Architecture Domain**
+authority
 
-**Adopted Design Direction**
+date
 
-**Provisional Design**
+supersession
 
-**Implementation**
+The precise institutional mechanism remains open.
 
-**Emergent Behavior**
+But the principle should not:
 
-**Unresolved Question**
+Foundational decisions should be reconstructable.
 
-**The governing progression is:**
+Future participants should be able to understand not merely what was decided, but how and why that decision legitimately acquired authority.
 
-**Foundation constrains → Codex defines → Atlas designs → Implementation realizes.**
+<a id="ch14-s37"></a>
 
-**Architecture belongs within The Atlas, not The Foundation.**
+### Chronicle, Atlas, Origins, and Constitutional Determination
 
-**World Properties arise through constitutional inquiry rather than arbitrary taxonomy.**
+BitPangea already possesses several different documentary functions.
 
-**Finitude is preserved as a condition of WP-S-I — The Extent, not as a redundant standalone World Property.**
+The governing distinctions are:
 
-**Constitutional economy is a governing discipline.**
+Chronicle records when.
 
-**Discovery does not require multiplication of canon.**
+Atlas records what.
 
-**Architecture-domain membership does not automatically establish constitutional status.**
+Origins preserves how and why the understanding emerged.
 
-**Architecture-domain membership does not automatically establish dependency order.**
+A future constitutional determination record may serve another purpose:
 
-**Only demonstrated dependencies should be treated as strict.**
+what was formally established as constitutional truth, through what inquiry, and under what authority
 
-**Canon should be earned.**
+Whether this requires a distinct artifact or can be preserved through existing institutions remains open.
 
-**Provisionality should be explicit.**
+The important point is that constitutional authority should not depend upon ambiguous statements scattered across historical prose.
 
-**Unresolved questions should remain unresolved until the work justifies an answer.**
+<a id="ch14-s38"></a>
 
-**Intentionally open questions should remain open where future freedom is the proper outcome.**
+### Canon and History Must Remain Distinct
 
-**Rejection, deferral, parking, adoption, and supersession should remain distinguishable.**
+Something can be historically important without remaining authoritative.
 
-**Supersession does not require historical erasure.**
+An earlier architecture can be superseded.
 
-**Authority should remain aligned with responsibility.**
+A discarded model may remain important to Origins.
 
-**Reference does not transfer authority.**
+A rejected idea may remain important in the Chronicle.
 
-**Conformance should protect canonical meaning without requiring one implementation.**
+A provisional design may later become irrelevant.
 
-**Conformance does not itself create canonical authority.**
+Thus:
 
-**The Creator possesses broad authority during the Creator Period, but enduring authority should increasingly be institutionalized through explicit Architecture and constitutional structure.**
+historical existence
 
-**The permanent core of BitPangea should remain as small as the World can responsibly permit.**
+≠
 
-**What Remains Open**
+current authority
 
-**The formal constitutional system remains under development.**
+This distinction becomes increasingly important as BitPangea ages.
 
-**Important questions include:**
+A rich historical record should preserve previous understanding without forcing every historical state to remain current architecture.
 
-**the exact formal status and institutional treatment of Foundational Premises**
+<a id="ch14-s39"></a>
 
-**the complete World Property architecture**
+### What Is Established
 
-**the final distinction among constitutional truth, Architecture, and adopted design**
+The current constitutional discipline supports the following statements:
 
-**formal constitutional inquiry procedures**
+Not every BitPangea decision is constitutional.
 
-**formal adoption thresholds**
+BitPangea distinguishes among:
 
-**constitutional change procedures**
+Foundational Premise
 
-**authority for future constitutional change**
+Constitutional Truth
 
-**the long-term stewardship role of the Creator**
+World Property
 
-**the relationship between constitutional change and future governance**
+Architecture Domain
 
-**the participation, if any, of future civilization in constitutional authority**
+Adopted Design Direction
 
-**constitutional record format**
+Provisional Design
 
-**dependency tracking**
+Implementation
 
-**supersession procedures**
+Emergent Behavior
 
-**formal review mechanisms**
+Unresolved Question
 
-**constitutional conformance outside the Survey domain**
+The governing progression is:
 
-**exception handling**
+Foundation constrains → Codex defines → Atlas designs → Implementation realizes.
 
-**emergency authority, if any**
+Architecture belongs within The Atlas, not The Foundation.
 
-**long-term stewardship of foundational truth**
+World Properties arise through constitutional inquiry rather than arbitrary taxonomy.
 
-**These questions concern the deepest authority relationships in BitPangea.**
+Finitude is preserved as a condition of WP-S-I — The Extent, not as a redundant standalone World Property.
 
-**They should not be resolved merely to make the system appear complete.**
+Constitutional economy is a governing discipline.
 
-**The Principle**
+Discovery does not require multiplication of canon.
 
-**BitPangea is being created through inquiry and discovery.**
+Architecture-domain membership does not automatically establish constitutional status.
 
-**That makes constitutional discipline essential.**
+Architecture-domain membership does not automatically establish dependency order.
 
-**A good idea is not automatically a law of the World.**
+Only demonstrated dependencies should be treated as strict.
 
-**A Foundational Premise is not automatically a completed constitutional answer.**
+Canon should be earned.
 
-**A useful prototype is not automatically Architecture.**
+Provisionality should be explicit.
 
-**A recognized Architecture domain is not automatically constitutional.**
+Unresolved questions should remain unresolved until the work justifies an answer.
 
-**An adopted design direction is not automatically permanent.**
+Intentionally open questions should remain open where future freedom is the proper outcome.
 
-**An implementation is not automatically canon.**
+Rejection, deferral, parking, adoption, and supersession should remain distinguishable.
 
-**A cultural outcome is not automatically a World rule.**
+Supersession does not require historical erasure.
 
-**And an unanswered question is not automatically a defect.**
+Authority should remain aligned with responsibility.
 
-**The World must preserve those distinctions.**
+Reference does not transfer authority.
 
-**The governing principle is:**
+Conformance should protect canonical meaning without requiring one implementation.
 
-**Only what must define the World should be permitted to define the World permanently.**
+Conformance does not itself create canonical authority.
 
-**Everything else should remain at the lowest legitimate level of authority.**
+The Creator possesses broad authority during the Creator Period, but enduring authority should increasingly be institutionalized through explicit Architecture and constitutional structure.
 
-**That protects BitPangea in two directions.**
+The permanent core of BitPangea should remain as small as the World can responsibly permit.
 
-**It protects the World from losing itself because foundational truth is treated casually.**
+<a id="ch14-s40"></a>
 
-**And it protects the future from being trapped because temporary Creator-period choices were treated as eternal truth.**
+### What Remains Open
 
-**The deeper constitutional objective is therefore not maximum permanence.**
+The formal constitutional system remains under development.
 
-**It is:**
+Important questions include:
 
-**correct permanence.**
+the exact formal status and institutional treatment of Foundational Premises
 
-**Preserve what must endure.**
+the complete World Property architecture
 
-**Govern what must change.**
+the final distinction among constitutional truth, Architecture, and adopted design
 
-**Design only what the Creator has legitimate reason to design.**
+formal constitutional inquiry procedures
 
-**And leave open what does not yet belong to us to decide.**
+formal adoption thresholds
+
+constitutional change procedures
+
+authority for future constitutional change
+
+the long-term stewardship role of the Creator
+
+the relationship between constitutional change and future governance
+
+the participation, if any, of future civilization in constitutional authority
+
+constitutional record format
+
+dependency tracking
+
+supersession procedures
+
+formal review mechanisms
+
+constitutional conformance outside the Survey domain
+
+exception handling
+
+emergency authority, if any
+
+long-term stewardship of foundational truth
+
+These questions concern the deepest authority relationships in BitPangea.
+
+They should not be resolved merely to make the system appear complete.
+
+<a id="ch14-s41"></a>
+
+### The Principle
+
+BitPangea is being created through inquiry and discovery.
+
+That makes constitutional discipline essential.
+
+A good idea is not automatically a law of the World.
+
+A Foundational Premise is not automatically a completed constitutional answer.
+
+A useful prototype is not automatically Architecture.
+
+A recognized Architecture domain is not automatically constitutional.
+
+An adopted design direction is not automatically permanent.
+
+An implementation is not automatically canon.
+
+A cultural outcome is not automatically a World rule.
+
+And an unanswered question is not automatically a defect.
+
+The World must preserve those distinctions.
+
+The governing principle is:
+
+Only what must define the World should be permitted to define the World permanently.
+
+Everything else should remain at the lowest legitimate level of authority.
+
+That protects BitPangea in two directions.
+
+It protects the World from losing itself because foundational truth is treated casually.
+
+And it protects the future from being trapped because temporary Creator-period choices were treated as eternal truth.
+
+The deeper constitutional objective is therefore not maximum permanence.
+
+It is:
+
+correct permanence.
+
+Preserve what must endure.
+
+Govern what must change.
+
+Design only what the Creator has legitimate reason to design.
+
+And leave open what does not yet belong to us to decide.
+
+---
+
+<a id="ch15"></a>
 
 ## XV. What Is Established
 
-**Origins should not only describe the reasoning through which BitPangea has developed.**
+Origins should not only describe the reasoning through which BitPangea has developed.
 
-**It should also make clear which conclusions have actually crossed the threshold from exploration into present confidence.**
+It should also make clear which conclusions have actually crossed the threshold from exploration into present confidence.
 
-**BitPangea remains incomplete by design.**
+BitPangea remains incomplete by design.
 
-**Its final Survey mathematics are unresolved.**
+Its final Survey mathematics are unresolved.
 
-**Its final Parcel geometry is unresolved.**
+Its final Parcel geometry is unresolved.
 
-**Its Runtime is not fully specified.**
+Its Runtime is not fully specified.
 
-**Its Identity / Rights / Control architecture remains incomplete.**
+Its Identity / Rights / Control architecture remains incomplete.
 
-**Its governance has not been determined.**
+Its governance has not been determined.
 
-**Its civilization does not yet exist.**
+Its civilization does not yet exist.
 
-**But incompleteness does not mean absence of foundation.**
+But incompleteness does not mean absence of foundation.
 
-**A substantial body of constitutional truth, Architecture, and adopted Creator-period direction is now sufficiently established to state with confidence.**
+A substantial body of constitutional truth, Architecture, and adopted Creator-period direction is now sufficiently established to state with confidence.
 
-**This section gathers those conclusions in one place.**
+This section gathers those conclusions in one place.
 
-**Its purpose is not to introduce new architecture.**
+Its purpose is not to introduce new architecture.
 
-**Its purpose is to answer a narrower question:**
+Its purpose is to answer a narrower question:
 
-**What can BitPangea presently say is established?**
+What can BitPangea presently say is established?
 
-**A Note on Meaning**
+<a id="ch15-s01"></a>
 
-**“Established” does not mean every statement in this section possesses identical status or permanence.**
+### A Note on Meaning
 
-**Some statements are:**
+“Established” does not mean every statement in this section possesses identical status or permanence.
 
-**Foundational Premises**
+Some statements are:
 
-**Constitutional Truths**
+Foundational Premises
 
-**World Properties**
+Constitutional Truths
 
-**Architecture-domain conclusions**
+World Properties
 
-**Adopted Design Directions**
+Architecture-domain conclusions
 
-**governing architectural principles**
+Adopted Design Directions
 
-**Those classifications remain important.**
+governing architectural principles
 
-**This section does not collapse them into one category.**
+Those classifications remain important.
 
-**Instead, it records conclusions that have moved beyond:**
+This section does not collapse them into one category.
 
-**passing idea**
+Instead, it records conclusions that have moved beyond:
 
-**unresolved hypothesis**
+passing idea
 
-**early prototype**
+unresolved hypothesis
 
-**temporary implementation preference**
+early prototype
 
-**or abandoned exploration.**
+temporary implementation preference
 
-**Conversely, this section deliberately excludes matters that remain genuinely provisional, mathematically unresolved, or intentionally open.**
+or abandoned exploration.
 
-**The value of an established record depends as much upon what it refuses to claim as upon what it includes.**
+Conversely, this section deliberately excludes matters that remain genuinely provisional, mathematically unresolved, or intentionally open.
 
-**The World**
+The value of an established record depends as much upon what it refuses to claim as upon what it includes.
 
-**BitPangea Is a World-First Project**
+<a id="ch15-s02"></a>
 
-**BitPangea begins with the World itself rather than with:**
+### The World
 
-**an application**
+BitPangea Is a World-First Project
 
-**a marketplace**
+BitPangea begins with the World itself rather than with:
 
-**a game**
+an application
 
-**a social platform**
+a marketplace
 
-**a token**
+a game
 
-**or an economic system.**
+a social platform
 
-**The governing premise remains:**
+a token
 
-**Create the World before attempting to create the civilization.**
+or an economic system.
 
-**Systems may eventually exist within BitPangea.**
+The governing premise remains:
 
-**They do not define why the World exists.**
+Create the World before attempting to create the civilization.
 
-**The broad direction is:**
+Systems may eventually exist within BitPangea.
 
-**World**
+They do not define why the World exists.
 
-**↓**
+The broad direction is:
 
-**permanent spatial truth**
+World
 
-**↓**
+↓
 
-**persistent place**
+permanent spatial truth
 
-**↓**
+↓
 
-**operational World**
+persistent place
 
-**↓**
+↓
 
-**Builders**
+operational World
 
-**↓**
+↓
 
-**civilization**
+Builders
 
-**This is not intended as a strict statement that every Architecture domain forms one vertical dependency chain.**
+↓
 
-**It expresses the more fundamental ordering:**
+civilization
 
-**The World comes first.**
+This is not intended as a strict statement that every Architecture domain forms one vertical dependency chain.
 
-**BitPangea Is One World**
+It expresses the more fundamental ordering:
 
-**BitPangea is one canonical World.**
+The World comes first.
 
-**It may eventually contain:**
+<a id="ch15-s03"></a>
 
-**regions**
+### BitPangea Is One World
 
-**communities**
+BitPangea is one canonical World.
 
-**institutions**
+It may eventually contain:
 
-**systems**
+regions
 
-**services**
+communities
 
-**environments**
+institutions
 
-**and many forms of experience.**
+systems
 
-**Those internal differences do not create separate canonical Worlds.**
+services
 
-**BitPangea is one World.**
+environments
 
-**This unity is foundational.**
+and many forms of experience.
 
-**BitPangea Is Finite**
+Those internal differences do not create separate canonical Worlds.
 
-**BitPangea possesses finite spatial scope.**
+BitPangea is one World.
 
-**Its architecture does not assume that more territory can simply be manufactured whenever demand arises.**
+This unity is foundational.
 
-**Finitude is intentional.**
+<a id="ch15-s04"></a>
 
-**It makes spatial scope consequential.**
+### BitPangea Is Finite
 
-**It forces later Architecture to solve problems within the World rather than defaulting to endless expansion.**
+BitPangea possesses finite spatial scope.
 
-**BitPangea is finite.**
+Its architecture does not assume that more territory can simply be manufactured whenever demand arises.
 
-**BitPangea Is Complete in Extent**
+Finitude is intentional.
 
-**Finitude is preserved as a condition of:**
+It makes spatial scope consequential.
 
-**WP-S-I — The Extent**
+It forces later Architecture to solve problems within the World rather than defaulting to endless expansion.
 
-**The Extent concerns the complete spatial scope of BitPangea.**
+BitPangea is finite.
 
-**The World is therefore not an indefinitely extending surface with only a temporary visible area.**
+<a id="ch15-s05"></a>
 
-**Its spatial scope can be complete even while:**
+### BitPangea Is Complete in Extent
 
-**civilization remains young**
+Finitude is preserved as a condition of:
 
-**geography evolves**
+WP-S-I — The Extent
 
-**construction remains incomplete**
+The Extent concerns the complete spatial scope of BitPangea.
 
-**institutions do not yet exist.**
+The World is therefore not an indefinitely extending surface with only a temporary visible area.
 
-**Spatial completeness and civilizational completion are different things.**
+Its spatial scope can be complete even while:
 
-**BitPangea Is a Complete, Continuous Cartographic Whole**
+civilization remains young
 
-**BitPangea is established as:**
+geography evolves
 
-**one finite, complete, continuous cartographic whole.**
+construction remains incomplete
 
-**Its spatial relationships belong to one coherent World.**
+institutions do not yet exist.
 
-**Places are not merely unrelated records.**
+Spatial completeness and civilizational completion are different things.
 
-**They participate in shared spatial truth.**
+<a id="ch15-s06"></a>
 
-**Later formal concepts such as Parcel Adjacency, Parcel Contiguity, The Distance, and The Direction may express parts of that truth at their appropriate levels.**
+### BitPangea Is a Complete, Continuous Cartographic Whole
 
-**The deeper principle is:**
+BitPangea is established as:
 
-**BitPangea is spatially coherent as one World.**
+one finite, complete, continuous cartographic whole.
 
-**One World, One Spatial Truth, Many Representations**
+Its spatial relationships belong to one coherent World.
 
-**BitPangea may eventually be encountered through:**
+Places are not merely unrelated records.
 
-**globe**
+They participate in shared spatial truth.
 
-**flat lived World**
+Later formal concepts such as Parcel Adjacency, Parcel Contiguity, The Distance, and The Direction may express parts of that truth at their appropriate levels.
 
-**map**
+The deeper principle is:
 
-**Survey view**
+BitPangea is spatially coherent as one World.
 
-**Parcel view**
+<a id="ch15-s07"></a>
 
-**Builder environment**
+### One World, One Spatial Truth, Many Representations
 
-**immersive interface**
+BitPangea may eventually be encountered through:
 
-**future representations not yet imagined.**
+globe
 
-**Those representations may differ.**
+flat lived World
 
-**The underlying spatial truth should not.**
+map
 
-**The governing principle is:**
+Survey view
 
-**One World → one coherent spatial truth → multiple valid representations.**
+Parcel view
 
-**Representation should derive from canonical truth rather than become a competing source of it.**
+Builder environment
 
-**The 21,000,000 Parcel Constraint**
+immersive interface
 
-**BitPangea Contains Exactly 21,000,000 Canonical Parcels**
+future representations not yet imagined.
 
-**The canonical Parcel count is exact:**
+Those representations may differ.
 
-**21,000,000 Parcels.**
+The underlying spatial truth should not.
 
-**Not approximately 21 million.**
+The governing principle is:
 
-**Not up to 21 million.**
+One World → one coherent spatial truth → multiple valid representations.
 
-**Not 21 million initially with additional canonical territorial issuance later.**
+Representation should derive from canonical truth rather than become a competing source of it.
 
-**BitPangea must ultimately reconcile exactly 21,000,000 canonical Parcels within one finite World.**
+<a id="ch15-s08"></a>
 
-**This is one of the defining constraints of BitPangea.**
+### The 21,000,000 Parcel Constraint
 
-**The Number Is a Spatial Constraint**
+BitPangea Contains Exactly 21,000,000 Canonical Parcels
 
-**The number is an intentional homage to Bitcoin’s 21 million supply.**
+The canonical Parcel count is exact:
 
-**The analogy is deliberately bounded.**
+21,000,000 Parcels.
 
-**A Parcel is not bitcoin.**
+Not approximately 21 million.
 
-**BitPangea is not automatically a blockchain.**
+Not up to 21 million.
 
-**The Parcel count does not, by itself, establish:**
+Not 21 million initially with additional canonical territorial issuance later.
 
-**price**
+BitPangea must ultimately reconcile exactly 21,000,000 canonical Parcels within one finite World.
 
-**ownership**
+This is one of the defining constraints of BitPangea.
 
-**currency**
+<a id="ch15-s09"></a>
 
-**market value**
+### The Number Is a Spatial Constraint
 
-**tokenization**
+The number is an intentional homage to Bitcoin’s 21 million supply.
 
-**financial return**
+The analogy is deliberately bounded.
 
-**distribution**
+A Parcel is not bitcoin.
 
-**economic system**
+BitPangea is not automatically a blockchain.
 
-**Its first architectural meaning is spatial:**
+The Parcel count does not, by itself, establish:
 
-**Exactly 21,000,000 canonical Parcels must exist within the World.**
+price
 
-**The World Precedes the Parcel**
+ownership
 
-**Parcels do not collectively create BitPangea.**
+currency
 
-**They exist within BitPangea.**
+market value
 
-**Thus:**
+tokenization
 
-**World**
+financial return
 
-**↓**
+distribution
 
-**spatial Architecture**
+economic system
 
-**↓**
+Its first architectural meaning is spatial:
 
-**Parcel Cadastre**
+Exactly 21,000,000 canonical Parcels must exist within the World.
 
-**↓**
+<a id="ch15-s10"></a>
 
-**exactly 21,000,000 Parcels**
+### The World Precedes the Parcel
 
-**not:**
+Parcels do not collectively create BitPangea.
 
-**21,000,000 independent objects**
+They exist within BitPangea.
 
-**↓**
+Thus:
 
-**assembled afterward into something called a World.**
+World
 
-**The governing principle is:**
+↓
 
-**The World precedes the Parcel.**
+spatial Architecture
 
-**Parcel Existence Is Distinct From Ownership**
+↓
 
-**A Parcel exists because it belongs to the canonical Parcel Cadastre.**
+Parcel Cadastre
 
-**Its existence does not depend upon:**
+↓
 
-**ownership**
+exactly 21,000,000 Parcels
 
-**control**
+not:
 
-**occupancy**
+21,000,000 independent objects
 
-**economic value**
+↓
 
-**development**
+assembled afterward into something called a World.
 
-**market activity**
+The governing principle is:
 
-**or any future rights relationship.**
+The World precedes the Parcel.
 
-**Thus:**
+<a id="ch15-s11"></a>
 
-**Parcel existence does not depend upon Parcel ownership.**
+### Parcel Existence Is Distinct From Ownership
 
-**Rights can change.**
+A Parcel exists because it belongs to the canonical Parcel Cadastre.
 
-**The Parcel remains.**
+Its existence does not depend upon:
 
-**World Form**
+ownership
 
-**BitPangea Is a Singular Digital Supercontinent**
+control
 
-**The adopted World Form direction is:**
+occupancy
 
-**a singular, compositionally balanced, asymmetric digital supercontinent.**
+economic value
 
-**Its supercontinental unity intentionally echoes Pangea.**
+development
 
-**It does not attempt to reproduce:**
+market activity
 
-**Earth**
+or any future rights relationship.
 
-**ancient Pangea**
+Thus:
 
-**terrestrial continental geography**
+Parcel existence does not depend upon Parcel ownership.
 
-**or physical geology.**
+Rights can change.
 
-**The homage concerns unity.**
+The Parcel remains.
 
-**The identity belongs to BitPangea.**
+<a id="ch15-s12"></a>
 
-**Organic in Macro-Form, Digital in Substance**
+### World Form
 
-**At World scale, BitPangea should not appear as a giant grid or exposed tiling exercise.**
+BitPangea Is a Singular Digital Supercontinent
 
-**Its broad form should feel coherent, asymmetric, and organic.**
+The adopted World Form direction is:
 
-**Its digital nature should become increasingly visible with proximity.**
+a singular, compositionally balanced, asymmetric digital supercontinent.
 
-**The adopted formulation is:**
+Its supercontinental unity intentionally echoes Pangea.
 
-**Organic in macro-form. Digital in substance.**
+It does not attempt to reproduce:
 
-**BitPangea Is Composed of Connectivity**
+Earth
 
-**Connectivity is intended to be intrinsic to the identity of BitPangea rather than merely added afterward as infrastructure.**
+ancient Pangea
 
-**The World should become digital through:**
+terrestrial continental geography
 
-**relationships**
+or physical geology.
 
-**connection**
+The homage concerns unity.
 
-**structure**
+The identity belongs to BitPangea.
 
-**and interaction**
+<a id="ch15-s13"></a>
 
-**rather than through decorative technological effects alone.**
+### Organic in Macro-Form, Digital in Substance
 
-**The established design principle is:**
+At World scale, BitPangea should not appear as a giant grid or exposed tiling exercise.
 
-**BitPangea is composed of connectivity.**
+Its broad form should feel coherent, asymmetric, and organic.
 
-**The precise visual and technical realization remains open.**
+Its digital nature should become increasingly visible with proximity.
 
-**Progressive Revelation**
+The adopted formulation is:
 
-**BitPangea should reveal more of itself as the visitor approaches.**
+Organic in macro-form. Digital in substance.
 
-**Conceptually:**
+<a id="ch15-s14"></a>
 
-**World**
+### BitPangea Is Composed of Connectivity
 
-**↓**
+Connectivity is intended to be intrinsic to the identity of BitPangea rather than merely added afterward as infrastructure.
 
-**supercontinental form**
+The World should become digital through:
 
-**↓**
+relationships
 
-**connectivity**
+connection
 
-**↓**
+structure
 
-**geography**
+and interaction
 
-**↓**
+rather than through decorative technological effects alone.
 
-**regional and spatial structure**
+The established design principle is:
 
-**↓**
+BitPangea is composed of connectivity.
 
-**Parcel fabric**
+The precise visual and technical realization remains open.
 
-**↓**
+<a id="ch15-s15"></a>
 
-**individual place**
+### Progressive Revelation
 
-**This is not a rigid interface sequence.**
+BitPangea should reveal more of itself as the visitor approaches.
 
-**It preserves the principle:**
+Conceptually:
 
-**Information should become visible at the scale where it becomes meaningful.**
+World
 
-**Serene at World Scale, Alive at Parcel Scale**
+↓
 
-**At planetary distance, BitPangea should remain calm and legible.**
+supercontinental form
 
-**Its digital nature should not require constant visual noise.**
+↓
 
-**As the visitor approaches, greater complexity may emerge.**
+connectivity
 
-**The paired design principle is:**
+↓
 
-**Serene at World scale. Alive at Parcel scale.**
+geography
 
-**The Globe Is the Primary Distant Representation**
+↓
 
-**The globe is the adopted primary representation through which BitPangea is encountered as a complete World from afar.**
+regional and spatial structure
 
-**As the visitor approaches, the current direction transitions toward a:**
+↓
 
-**flat lived World**
+Parcel fabric
 
-**The underlying spatial truth remains the same.**
+↓
 
-**Thus:**
+individual place
 
-**Globe and flat lived World are different ways of encountering the same BitPangea.**
+This is not a rigid interface sequence.
 
-**Finitude, The Extent, and The Verge**
+It preserves the principle:
 
-**Finitude Belongs to The Extent**
+Information should become visible at the scale where it becomes meaningful.
 
-**BitPangea does not preserve Finitude as a redundant standalone World Property.**
+<a id="ch15-s16"></a>
 
-**It remains a condition of:**
+### Serene at World Scale, Alive at Parcel Scale
 
-**WP-S-I — The Extent**
+At planetary distance, BitPangea should remain calm and legible.
 
-**This reflects constitutional economy.**
+Its digital nature should not require constant visual noise.
 
-**Importance does not automatically justify multiplication of canon.**
+As the visitor approaches, greater complexity may emerge.
 
-**The Extent Is Not the Survey Domain**
+The paired design principle is:
 
-**The Extent and Survey Domain are different things.**
+Serene at World scale. Alive at Parcel scale.
 
-**The Extent**
+<a id="ch15-s17"></a>
 
-**→ complete spatial scope of the World**
+### The Globe Is the Primary Distant Representation
 
-**Survey Domain**
+The globe is the adopted primary representation through which BitPangea is encountered as a complete World from afar.
 
-**→ finite canonical reference capacity of the Foundational Survey Fabric**
+As the visitor approaches, the current direction transitions toward a:
 
-**Every authoritative World-space location must be representable within the Survey Domain.**
+flat lived World
 
-**But:**
+The underlying spatial truth remains the same.
 
-**A valid Survey reference does not automatically establish World membership.**
+Thus:
 
-**The governing principle is:**
+Globe and flat lived World are different ways of encountering the same BitPangea.
 
-**Reference capacity is not territory.**
+<a id="ch15-s18"></a>
 
-**The Extent Does Not Establish an Edge**
+### Finitude, The Extent, and The Verge
 
-**BitPangea’s Finitude does not automatically create a constitutional:**
+Finitude Belongs to The Extent
 
-**Edge**
+BitPangea does not preserve Finitude as a redundant standalone World Property.
 
-**Perimeter**
+It remains a condition of:
 
-**Exterior**
+WP-S-I — The Extent
 
-**coastline**
+This reflects constitutional economy.
 
-**World Boundary.**
+Importance does not automatically justify multiplication of canon.
 
-**The World possesses a complete Extent.**
+<a id="ch15-s19"></a>
 
-**That does not predetermine how the terminal condition must appear.**
+### The Extent Is Not the Survey Domain
 
-**The Verge Is the Terminal World-Form Design Space**
+The Extent and Survey Domain are different things.
 
-**The spatial concept formerly explored through Frontier has been corrected.**
+The Extent
 
-**The Frontier is epistemic.**
+→ complete spatial scope of the World
 
-**The Verge is the Creator design space for terminal World-form expression.**
+Survey Domain
 
-**The distinction is:**
+→ finite canonical reference capacity of the Foundational Survey Fabric
 
-**The Extent**
+Every authoritative World-space location must be representable within the Survey Domain.
 
-**→ complete constitutional spatial scope**
+But:
 
-**Finitude**
+A valid Survey reference does not automatically establish World membership.
 
-**→ condition of that scope**
+The governing principle is:
 
-**The Verge**
+Reference capacity is not territory.
 
-**→ Creator design space for terminal World-form expression**
+<a id="ch15-s20"></a>
 
-**The Verge is not automatically:**
+### The Extent Does Not Establish an Edge
 
-**water**
+BitPangea’s Finitude does not automatically create a constitutional:
 
-**coastline**
+Edge
 
-**wall**
+Perimeter
 
-**Exterior**
+Exterior
 
-**or ordinary Parcel morphology.**
+coastline
 
-**Its final morphology remains open.**
+World Boundary.
 
-**Parcel Fabric Need Not Exhaust the World**
+The World possesses a complete Extent.
 
-**Exactly 21,000,000 Parcels must exist.**
+That does not predetermine how the terminal condition must appear.
 
-**That does not require every meaningful spatial condition in BitPangea to become a Parcel.**
+<a id="ch15-s21"></a>
 
-**The World may legitimately contain:**
+### The Verge Is the Terminal World-Form Design Space
 
-**The Verge**
+The spatial concept formerly explored through Frontier has been corrected.
 
-**Outliers**
+The Frontier is epistemic.
 
-**World-scale infrastructure**
+The Verge is the Creator design space for terminal World-form expression.
 
-**other non-Parcel spatial structures**
+The distinction is:
 
-**where permitted by Architecture.**
+The Extent
 
-**Thus:**
+→ complete constitutional spatial scope
 
-**The Parcel fabric may not exhaust the World.**
+Finitude
 
-**The World remains the greater whole.**
+→ condition of that scope
 
-**Foundational Survey Architecture**
+The Verge
 
-**BitPangea Requires a Foundational Survey Fabric**
+→ Creator design space for terminal World-form expression
 
-**BitPangea requires canonical spatial reference beneath:**
+The Verge is not automatically:
 
-**Parcel definition**
+water
 
-**geography**
+coastline
 
-**World representation**
+wall
 
-**construction**
+Exterior
 
-**Runtime**
+or ordinary Parcel morphology.
 
-**and experience.**
+Its final morphology remains open.
 
-**That responsibility belongs to the:**
+<a id="ch15-s22"></a>
 
-**Foundational Survey Fabric**
+### Parcel Fabric Need Not Exhaust the World
 
-**The Foundational Survey Fabric is established as BitPangea’s:**
+Exactly 21,000,000 Parcels must exist.
 
-**minimal, exact, finite, planar, semantically neutral canonical spatial reference architecture.**
+That does not require every meaningful spatial condition in BitPangea to become a Parcel.
 
-**Its purpose is to preserve:**
+The World may legitimately contain:
 
-**where**
+The Verge
 
-**The Survey Domain Is Not the World**
+Outliers
 
-**The Survey Fabric defines a finite Survey Domain within which canonical Survey references may be valid.**
+World-scale infrastructure
 
-**That domain does not automatically equal BitPangea territory.**
+other non-Parcel spatial structures
 
-**The Survey Fabric establishes reference.**
+where permitted by Architecture.
 
-**Higher Architecture determines World meaning.**
+Thus:
 
-**Thus:**
+The Parcel fabric may not exhaust the World.
 
-**Survey Domain ≠ World.**
+The World remains the greater whole.
 
-**Survey Units Are Not Parcels**
+<a id="ch15-s23"></a>
 
-**The Survey Fabric and Parcel Cadastre are distinct Architecture domains.**
+### Foundational Survey Architecture
 
-**A Survey cell, mathematical element, subdivision, coordinate construct, or reference unit is not automatically a Parcel.**
+BitPangea Requires a Foundational Survey Fabric
 
-**Thus:**
+BitPangea requires canonical spatial reference beneath:
 
-**Survey units are not Parcels.**
+Parcel definition
 
-**The Cadastre establishes canonical Parcel identity against deeper spatial reference.**
+geography
 
-**The Demonstrated Spatial Dependency**
+World representation
 
-**The strongest demonstrated strict spatial dependency currently is:**
+construction
 
-**Foundational Survey Fabric**
+Runtime
 
-**→ Spatial Ground**
+and experience.
 
-**→ General Spatial Interpretation**
+That responsibility belongs to the:
 
-**→ Parcel Cadastre**
+Foundational Survey Fabric
 
-**This is a demonstrated dependency sequence.**
+The Foundational Survey Fabric is established as BitPangea’s:
 
-**It should not be extended automatically into a claim that all nine Architecture domains form one strict vertical stack.**
+minimal, exact, finite, planar, semantically neutral canonical spatial reference architecture.
 
-**Requirements Precede Mathematics**
+Its purpose is to preserve:
 
-**The Foundational Survey Fabric now rests upon 85 audited Requirements.**
+where
 
-**Its institutional progression is:**
+<a id="ch15-s24"></a>
 
-**Requirements → Specification → Conformance → Reference Vectors**
+### The Survey Domain Is Not the World
 
-**The Requirements establish what must be true.**
+The Survey Fabric defines a finite Survey Domain within which canonical Survey references may be valid.
 
-**The Specification will define the final mathematics.**
+That domain does not automatically equal BitPangea territory.
 
-**Conformance will determine whether an implementation correctly realizes that Specification.**
+The Survey Fabric establishes reference.
 
-**Reference Vectors will provide exact canonical test cases.**
+Higher Architecture determines World meaning.
 
-**The present standing is:**
+Thus:
 
-**requirements established**
+Survey Domain ≠ World.
 
-**while:**
+<a id="ch15-s25"></a>
 
-**final mathematics remain deliberately unresolved**
+### Survey Units Are Not Parcels
 
-**Exactness Matters**
+The Survey Fabric and Parcel Cadastre are distinct Architecture domains.
 
-**The Survey Fabric must favor:**
+A Survey cell, mathematical element, subdivision, coordinate construct, or reference unit is not automatically a Parcel.
 
-**determinism**
+Thus:
 
-**reproducibility**
+Survey units are not Parcels.
 
-**exactness**
+The Cadastre establishes canonical Parcel identity against deeper spatial reference.
 
-**implementation independence**
+<a id="ch15-s26"></a>
 
-**stable spatial meaning**
+### The Demonstrated Spatial Dependency
 
-**The governing principle is:**
+The strongest demonstrated strict spatial dependency currently is:
 
-**At the Survey layer, equal means equal. Tolerance belongs above.**
+Foundational Survey Fabric
 
-**Pang and Native Canonical Orientation**
+→ Spatial Ground
 
-**Pang is recognized as BitPangea’s native canonical unit of linear spatial measure.**
+→ General Spatial Interpretation
 
-**The native canonical Survey directions are:**
+→ Parcel Cadastre
 
-**Pankor — North**
+This is a demonstrated dependency sequence.
 
-**Panvath — South**
+It should not be extended automatically into a claim that all nine Architecture domains form one strict vertical stack.
 
-**Panoris — East**
+<a id="ch15-s27"></a>
 
-**Panvel — West**
+### Requirements Precede Mathematics
 
-**These belong to the Survey architecture.**
+The Foundational Survey Fabric now rests upon 85 audited Requirements.
 
-**Their existence does not collapse them into the constitutional concepts of The Distance or The Direction.**
+Its institutional progression is:
 
-**Parcel Cadastre**
+Requirements → Specification → Conformance → Reference Vectors
 
-**The Parcel Cadastre Owns Parcel Truth**
+The Requirements establish what must be true.
 
-**The Parcel Cadastre is authoritative for:**
+The Specification will define the final mathematics.
 
-**canonical Parcel identity**
+Conformance will determine whether an implementation correctly realizes that Specification.
 
-**fixed Parcel position**
+Reference Vectors will provide exact canonical test cases.
 
-**authoritative Parcel territorial definition**
+The present standing is:
 
-**appropriate canonical Parcel relationships.**
+requirements established
 
-**Every canonical Parcel must remain persistently identifiable.**
+while:
 
-**The governing principle is:**
+final mathematics remain deliberately unresolved
 
-**The Cadastre owns Parcel truth.**
+<a id="ch15-s28"></a>
 
-**Other systems may reference a Parcel.**
+### Exactness Matters
 
-**Reference does not give them cadastral authority.**
+The Survey Fabric must favor:
 
-**Parcel Identity Must Persist**
+determinism
 
-**A Parcel should remain the same Parcel when:**
+reproducibility
 
-**rights change**
+exactness
 
-**controllers change**
+implementation independence
 
-**structures appear or disappear**
+stable spatial meaning
 
-**geography changes**
+The governing principle is:
 
-**culture changes**
+At the Survey layer, equal means equal. Tolerance belongs above.
 
-**historical significance changes.**
+<a id="ch15-s29"></a>
 
-**Persistent Parcel identity allows place to accumulate history.**
+### Pang and Native Canonical Orientation
 
-**Fixed Position Matters**
+Pang is recognized as BitPangea’s native canonical unit of linear spatial measure.
 
-**Parcel identity and place should remain inseparable.**
+The native canonical Survey directions are:
 
-**A Parcel should not remain notionally “the same” while silently relocating in canonical space.**
+Pankor — North
 
-**The principle inherited from the Survey layer is:**
+Panvath — South
 
-**Representation may change. Place must not.**
+Panoris — East
 
-**Geometry and Identity Are Distinct**
+Panvel — West
 
-**Parcel Geometry determines how Parcels occupy space.**
+These belong to the Survey architecture.
 
-**The Parcel Cadastre determines which Parcel each canonical territory is.**
+Their existence does not collapse them into the constitutional concepts of The Distance or The Direction.
 
-**Thus:**
+<a id="ch15-s30"></a>
 
-**Geometry gives the Parcel form.**
+### Parcel Cadastre
 
-**The Cadastre gives the Parcel identity.**
+The Parcel Cadastre Owns Parcel Truth
 
-**The World gives the Parcel meaning as a place.**
+The Parcel Cadastre is authoritative for:
 
-**Equal Area Remains a Strong Design Direction**
+canonical Parcel identity
 
-**BitPangea strongly favors equal-area Parcels.**
+fixed Parcel position
 
-**That does not imply equal:**
+authoritative Parcel territorial definition
 
-**use**
+appropriate canonical Parcel relationships.
 
-**experience**
+Every canonical Parcel must remain persistently identifiable.
 
-**importance**
+The governing principle is:
 
-**desirability**
+The Cadastre owns Parcel truth.
 
-**history**
+Other systems may reference a Parcel.
 
-**or economic value.**
+Reference does not give them cadastral authority.
 
-**The final mathematics have not yet established equal area.**
+<a id="ch15-s31"></a>
 
-**Therefore:**
+### Parcel Identity Must Persist
 
-**Equal area remains a strong design direction, not a completed mathematical fact.**
+A Parcel should remain the same Parcel when:
 
-**Local Coherence Is Required**
+rights change
 
-**Parcel geometry should remain locally intelligible.**
+controllers change
 
-**Parcel relationships should not appear arbitrary.**
+structures appear or disappear
 
-**The final geometry remains unresolved.**
+geography changes
 
-**The requirement for coherent local structure does not.**
+culture changes
 
-**The Three-Orientation Rhombille Family Is the Leading Visible Parcel Direction**
+historical significance changes.
 
-**The leading visible Parcel grammar remains a:**
+Persistent Parcel identity allows place to accumulate history.
 
-**three-orientation rhombille family**
+<a id="ch15-s32"></a>
 
-**with 60° / 120° relationships.**
+### Fixed Position Matters
 
-**It provides a distinctive local grammar.**
+Parcel identity and place should remain inseparable.
 
-**But:**
+A Parcel should not remain notionally “the same” while silently relocating in canonical space.
 
-**The visible rhombille grammar is not automatically the Foundational Survey Fabric.**
+The principle inherited from the Survey layer is:
 
-**The deeper substrate may remain mathematically distinct and unseen.**
+Representation may change. Place must not.
 
-**Thus:**
+<a id="ch15-s33"></a>
 
-**Substrate ≠ Parcel experience.**
+### Geometry and Identity Are Distinct
 
-**The Architecture**
+Parcel Geometry determines how Parcels occupy space.
 
-**Architecture Belongs Under The Atlas**
+The Parcel Cadastre determines which Parcel each canonical territory is.
 
-**BitPangea’s enduring Architecture belongs under:**
+Thus:
 
-**The Atlas**
+Geometry gives the Parcel form.
 
-**not:**
+The Cadastre gives the Parcel identity.
 
-**The Foundation**
+The World gives the Parcel meaning as a place.
 
-**The Foundation constrains.**
+<a id="ch15-s34"></a>
 
-**The Codex defines.**
+### Equal Area Remains a Strong Design Direction
 
-**The Atlas designs.**
+BitPangea strongly favors equal-area Parcels.
 
-**Implementation realizes.**
+That does not imply equal:
 
-**The governing progression is:**
+use
 
-**Foundation constrains → Codex defines → Atlas designs → Implementation realizes.**
+experience
 
-**Nine Architecture Domains Are Recognized**
+importance
 
-**The current Architecture recognizes nine domains:**
+desirability
 
-**Foundational Survey Fabric**
+history
 
-**Spatial Ground**
+or economic value.
 
-**General Spatial Interpretation**
+The final mathematics have not yet established equal area.
 
-**Parcel Cadastre**
+Therefore:
 
-**World Runtime**
+Equal area remains a strong design direction, not a completed mathematical fact.
 
-**Identity / Rights / Control**
+<a id="ch15-s35"></a>
 
-**Persistence / Provenance**
+### Local Coherence Is Required
 
-**Interoperability**
+Parcel geometry should remain locally intelligible.
 
-**Experience Architecture**
+Parcel relationships should not appear arbitrary.
 
-**Their recognition establishes enduring architectural responsibility.**
+The final geometry remains unresolved.
 
-**It does not automatically establish constitutional status.**
+The requirement for coherent local structure does not.
 
-**Architecture Membership Does Not Prove Strict Ordering**
+<a id="ch15-s36"></a>
 
-**Architecture-domain membership and dependency are different things.**
+### The Three-Orientation Rhombille Family Is the Leading Visible Parcel Direction
 
-**The nine domains should not automatically be treated as one strict chain.**
+The leading visible Parcel grammar remains a:
 
-**Only demonstrated dependencies should be described as strict.**
+three-orientation rhombille family
 
-**The currently demonstrated sequence is:**
+with 60° / 120° relationships.
 
-**Foundational Survey Fabric → Spatial Ground → General Spatial Interpretation → Parcel Cadastre**
+It provides a distinctive local grammar.
 
-**The dependencies among other domains remain subject to further architectural inquiry.**
+But:
 
-**The Architecture Boundary Rule Is Established**
+The visible rhombille grammar is not automatically the Foundational Survey Fabric.
 
-**A major governing rule is:**
+The deeper substrate may remain mathematically distinct and unseen.
 
-**A lower Architecture domain may establish the constraints that higher domains must not violate, but it should not prescribe the internal responsibilities, organization, implementation, or lifecycle of a higher domain unless that dependency is irreducibly necessary to the lower domain itself.**
+Thus:
 
-**The working form is:**
+Substrate ≠ Parcel experience.
 
-**Protect the boundary. Do not design the layer above from the layer below.**
+<a id="ch15-s37"></a>
 
-**Reference Does Not Transfer Authority**
+### The Architecture
 
-**Architecture domains must interact.**
+Architecture Belongs Under The Atlas
 
-**Interaction does not collapse responsibility.**
+BitPangea’s enduring Architecture belongs under:
 
-**Thus:**
+The Atlas
 
-**Reference does not transfer authority.**
+not:
 
-**A Runtime references Parcels without becoming the Cadastre.**
+The Foundation
 
-**A Builder references rights without becoming the rights authority.**
+The Foundation constrains.
 
-**Experience displays World State without becoming World Runtime.**
+The Codex defines.
 
-**Persistence / Provenance records lineage without becoming authority over every truth it preserves.**
+The Atlas designs.
 
-**Deeper Architecture Should Be More Permanent**
+Implementation realizes.
 
-**The Architecture follows a general permanence gradient:**
+The governing progression is:
 
-**The deeper the layer, the more permanent it should be. The closer the layer is to the user, the more freedom it should have to evolve.**
+Foundation constrains → Codex defines → Atlas designs → Implementation realizes.
 
-**This is a governing principle, not yet a formal change-control schedule.**
+<a id="ch15-s38"></a>
 
-**Identity / Rights / Control**
+### Nine Architecture Domains Are Recognized
 
-**Identity / Rights / Control Is a Recognized Architecture Domain**
+The current Architecture recognizes nine domains:
 
-**BitPangea explicitly recognizes:**
+Foundational Survey Fabric
 
-**Identity / Rights / Control**
+Spatial Ground
 
-**as an Architecture domain.**
+General Spatial Interpretation
 
-**Its internal decomposition remains unresolved.**
+Parcel Cadastre
 
-**The domain preserves the distinction among:**
+World Runtime
 
-**Identity — who or what is the actor?**
+Identity / Rights / Control
 
-**Rights — what governed relationship exists?**
+Persistence / Provenance
 
-**Control — what authority may be exercised?**
+Interoperability
 
-**These concepts are related.**
+Experience Architecture
 
-**They are not synonymous.**
+Their recognition establishes enduring architectural responsibility.
 
-**Identity Is Not Authentication**
+It does not automatically establish constitutional status.
 
-**Credentials may prove access to an identity.**
+<a id="ch15-s39"></a>
 
-**They are not necessarily the identity itself.**
+### Architecture Membership Does Not Prove Strict Ordering
 
-**An actor’s persistent identity may need to survive:**
+Architecture-domain membership and dependency are different things.
 
-**credential rotation**
+The nine domains should not automatically be treated as one strict chain.
 
-**credential loss**
+Only demonstrated dependencies should be described as strict.
 
-**technology replacement**
+The currently demonstrated sequence is:
 
-**authentication-system change.**
+Foundational Survey Fabric → Spatial Ground → General Spatial Interpretation → Parcel Cadastre
 
-**Identity Is Not Ownership**
+The dependencies among other domains remain subject to further architectural inquiry.
 
-**Identity does not automatically establish:**
+<a id="ch15-s40"></a>
 
-**ownership**
+### The Architecture Boundary Rule Is Established
 
-**rights**
+A major governing rule is:
 
-**permission**
+A lower Architecture domain may establish the constraints that higher domains must not violate, but it should not prescribe the internal responsibilities, organization, implementation, or lifecycle of a higher domain unless that dependency is irreducibly necessary to the lower domain itself.
 
-**control**
+The working form is:
 
-**or authority.**
+Protect the boundary. Do not design the layer above from the layer below.
 
-**Actor truth and relationship truth are different responsibilities.**
+<a id="ch15-s41"></a>
 
-**Rights Require Provenance**
+### Reference Does Not Transfer Authority
 
-**A legitimate rights relationship must ultimately be capable of being traced to valid authority.**
+Architecture domains must interact.
 
-**The Architecture should eventually be able to determine:**
+Interaction does not collapse responsibility.
 
-**what relationship exists**
+Thus:
 
-**which actor possesses it**
+Reference does not transfer authority.
 
-**what it applies to**
+A Runtime references Parcels without becoming the Cadastre.
 
-**what it permits**
+A Builder references rights without becoming the rights authority.
 
-**where it came from**
+Experience displays World State without becoming World Runtime.
 
-**whether it remains valid.**
+Persistence / Provenance records lineage without becoming authority over every truth it preserves.
 
-**This is one place where Identity / Rights / Control intersects with Persistence / Provenance.**
+<a id="ch15-s42"></a>
 
-**Rights Do Not Redefine Parcels**
+### Deeper Architecture Should Be More Permanent
 
-**A right may refer to a Parcel.**
+The Architecture follows a general permanence gradient:
 
-**It does not become the Parcel.**
+The deeper the layer, the more permanent it should be. The closer the layer is to the user, the more freedom it should have to evolve.
 
-**If rights change:**
+This is a governing principle, not yet a formal change-control schedule.
 
-**the Parcel remains.**
+<a id="ch15-s43"></a>
 
-**The Parcel Cadastre continues to own Parcel truth.**
+### Identity / Rights / Control
 
-**Parcel Rights Do Not Require a Particular Technology**
+Identity / Rights / Control Is a Recognized Architecture Domain
 
-**Nothing established presently requires Parcel rights to use:**
+BitPangea explicitly recognizes:
 
-**NFTs**
+Identity / Rights / Control
 
-**tokens**
+as an Architecture domain.
 
-**wallet-based ownership**
+Its internal decomposition remains unresolved.
 
-**a particular blockchain**
+The domain preserves the distinction among:
 
-**on-chain governance.**
+Identity — who or what is the actor?
 
-**Implementation should follow actual architectural requirements.**
+Rights — what governed relationship exists?
 
-**World Runtime**
+Control — what authority may be exercised?
 
-**World Runtime Is a Recognized Architecture Domain**
+These concepts are related.
 
-**World Runtime governs the operational continuity of BitPangea.**
+They are not synonymous.
 
-**It enables legitimate change without absorbing every authority it references.**
+<a id="ch15-s44"></a>
 
-**Its core responsibility is:**
+### Identity Is Not Authentication
 
-**allow the World to change without surrendering coherence.**
+Credentials may prove access to an identity.
 
-**Persistent World State Is Required**
+They are not necessarily the identity itself.
 
-**Legitimate World change must be capable of surviving:**
+An actor’s persistent identity may need to survive:
 
-**sessions**
+credential rotation
 
-**clients**
+credential loss
 
-**interface changes**
+technology replacement
 
-**and ordinary technological replacement.**
+authentication-system change.
 
-**What becomes canonically true of the operational World must be capable of remaining true until legitimately changed again.**
+<a id="ch15-s45"></a>
 
-**World State Is Distinct From Spatial Truth**
+### Identity Is Not Ownership
 
-**Spatial Architecture preserves place.**
+Identity does not automatically establish:
 
-**Runtime preserves current condition.**
+ownership
 
-**Thus:**
+rights
 
-**persistent place ≠ persistent state**
+permission
 
-**The Parcel may remain while what exists upon it changes.**
+control
 
-**Request, Authorization, Execution, and Result Are Distinct**
+or authority.
 
-**The Architecture distinguishes:**
+Actor truth and relationship truth are different responsibilities.
 
-**request**
+<a id="ch15-s46"></a>
 
-**authorization**
+### Rights Require Provenance
 
-**execution**
+A legitimate rights relationship must ultimately be capable of being traced to valid authority.
 
-**resulting state.**
+The Architecture should eventually be able to determine:
 
-**A requested action is not automatically permitted.**
+what relationship exists
 
-**A permitted action is not automatically executed.**
+which actor possesses it
 
-**An executed action must produce a resulting World condition.**
+what it applies to
 
-**These distinctions support coherent operation and provenance.**
+what it permits
 
-**Runtime Coordinates Authority Rather Than Absorbing It**
+where it came from
 
-**World Runtime may consult:**
+whether it remains valid.
 
-**Parcel Cadastre**
+This is one place where Identity / Rights / Control intersects with Persistence / Provenance.
 
-**Identity / Rights / Control**
+<a id="ch15-s47"></a>
 
-**Persistence / Provenance**
+### Rights Do Not Redefine Parcels
 
-**Interoperability**
+A right may refer to a Parcel.
 
-**other systems.**
+It does not become the Parcel.
 
-**That does not make World Runtime the authority for all of them.**
+If rights change:
 
-**Again:**
+the Parcel remains.
 
-**Reference does not transfer authority.**
+The Parcel Cadastre continues to own Parcel truth.
 
-**One Operational World, Many Clients**
+<a id="ch15-s48"></a>
 
-**BitPangea should eventually support:**
+### Parcel Rights Do Not Require a Particular Technology
 
-**one canonical operational World**
+Nothing established presently requires Parcel rights to use:
 
-**encountered through:**
+NFTs
 
-**many conforming clients**
+tokens
 
-**applications**
+wallet-based ownership
 
-**Builders**
+a particular blockchain
 
-**and experiences.**
+on-chain governance.
 
-**The tools may differ.**
+Implementation should follow actual architectural requirements.
 
-**The World remains one.**
+<a id="ch15-s49"></a>
 
-**No Runtime Technology Is Constitutionally Required**
+### World Runtime
 
-**BitPangea does not presently require:**
+World Runtime Is a Recognized Architecture Domain
 
-**a particular database**
+World Runtime governs the operational continuity of BitPangea.
 
-**a blockchain**
+It enables legitimate change without absorbing every authority it references.
 
-**a specific consensus system**
+Its core responsibility is:
 
-**a particular hosting model**
+allow the World to change without surrendering coherence.
 
-**a particular decentralization model**
+<a id="ch15-s50"></a>
 
-**or a fixed software stack.**
+### Persistent World State Is Required
 
-**The correct order remains:**
+Legitimate World change must be capable of surviving:
 
-**requirement → Architecture → technical evaluation → implementation**
+sessions
 
-**Persistence / Provenance**
+clients
 
-**Persistence / Provenance Is a Recognized Architecture Domain**
+interface changes
 
-**BitPangea now explicitly recognizes:**
+and ordinary technological replacement.
 
-**Persistence / Provenance**
+What becomes canonically true of the operational World must be capable of remaining true until legitimately changed again.
 
-**as an enduring architectural responsibility.**
+<a id="ch15-s51"></a>
 
-**World Runtime answers:**
+### World State Is Distinct From Spatial Truth
 
-**What changes now?**
+Spatial Architecture preserves place.
 
-**Persistence / Provenance helps answer:**
+Runtime preserves current condition.
 
-**How did this state, claim, object, or authority come to exist?**
+Thus:
 
-**The two interact.**
+persistent place ≠ persistent state
 
-**They are not the same.**
+The Parcel may remain while what exists upon it changes.
 
-**Provenance Should Preserve Lineage**
+<a id="ch15-s52"></a>
 
-**Consequential World change should eventually be capable of retaining enough evidence to determine:**
+### Request, Authorization, Execution, and Result Are Distinct
 
-**what changed**
+The Architecture distinguishes:
 
-**who or what acted**
+request
 
-**under what authority**
+authorization
 
-**what preceded the change**
+execution
 
-**what resulted**
+resulting state.
 
-**what evidence supports the record.**
+A requested action is not automatically permitted.
 
-**This provides a basis for both accountability and history.**
+A permitted action is not automatically executed.
 
-**Current State Is Not History**
+An executed action must produce a resulting World condition.
 
-**World State asks:**
+These distinctions support coherent operation and provenance.
 
-**What is true now?**
+<a id="ch15-s53"></a>
 
-**Provenance asks:**
+### Runtime Coordinates Authority Rather Than Absorbing It
 
-**How did it become true?**
+World Runtime may consult:
 
-**History asks:**
+Parcel Cadastre
 
-**What happened, and what became meaningful over time?**
+Identity / Rights / Control
 
-**These responsibilities should remain distinct.**
+Persistence / Provenance
 
-**Interoperability**
+Interoperability
 
-**Interoperability Is a Recognized Architecture Domain**
+other systems.
 
-**BitPangea is intended to survive technological change.**
+That does not make World Runtime the authority for all of them.
 
-**That requires multiple systems to exchange canonical meaning without creating contradictory Worlds.**
+Again:
 
-**The principle is:**
+Reference does not transfer authority.
 
-**Implementation diversity must not become semantic diversity.**
+<a id="ch15-s54"></a>
 
-**Different implementations may vary internally.**
+### One Operational World, Many Clients
 
-**They should still agree upon canonical meaning.**
+BitPangea should eventually support:
 
-**Technology Must Be Replaceable**
+one canonical operational World
 
-**BitPangea should permit:**
+encountered through:
 
-**renderers**
+many conforming clients
 
-**clients**
+applications
 
-**services**
+Builders
 
-**storage systems**
+and experiences.
 
-**Builder tools**
+The tools may differ.
 
-**and future technologies**
+The World remains one.
 
-**to become obsolete without requiring the World itself to become obsolete.**
+<a id="ch15-s55"></a>
 
-**The World should outlive its implementations.**
+### No Runtime Technology Is Constitutionally Required
 
-**Experience Architecture**
+BitPangea does not presently require:
 
-**Experience Architecture Is a Recognized Architecture Domain**
+a particular database
 
-**Experience Architecture governs how participants encounter and interact with BitPangea.**
+a blockchain
 
-**It may eventually include:**
+a specific consensus system
 
-**globe**
+a particular hosting model
 
-**flat lived World**
+a particular decentralization model
 
-**navigation**
+or a fixed software stack.
 
-**Parcel interaction**
+The correct order remains:
 
-**Builder experiences**
+requirement → Architecture → technical evaluation → implementation
 
-**discovery**
+<a id="ch15-s56"></a>
 
-**visualization**
+### Persistence / Provenance
 
-**immersive interfaces**
+Persistence / Provenance Is a Recognized Architecture Domain
 
-**future modes of interaction.**
+BitPangea now explicitly recognizes:
 
-**Experience matters deeply.**
+Persistence / Provenance
 
-**But:**
+as an enduring architectural responsibility.
 
-**Experience is where the World becomes perceptible—not where the World becomes authoritative.**
+World Runtime answers:
 
-**Builders and Civilization**
+What changes now?
 
-**Builders Are Participants, Not Architecture Domains**
+Persistence / Provenance helps answer:
 
-**Builders operate through The Architecture.**
+How did this state, claim, object, or authority come to exist?
 
-**They are not themselves one of the nine Architecture domains.**
+The two interact.
 
-**Builders may depend upon:**
+They are not the same.
 
-**Parcel Cadastre**
+<a id="ch15-s57"></a>
 
-**Identity / Rights / Control**
+### Provenance Should Preserve Lineage
 
-**World Runtime**
+Consequential World change should eventually be capable of retaining enough evidence to determine:
 
-**Persistence / Provenance**
+what changed
 
-**Interoperability**
+who or what acted
 
-**Experience Architecture**
+under what authority
 
-**without acquiring their authority.**
+what preceded the change
 
-**Creation Must Extend Beyond the Creator**
+what resulted
 
-**BitPangea should eventually support meaningful creation by actors other than the original Creator.**
+what evidence supports the record.
 
-**That creation may include:**
+This provides a basis for both accountability and history.
 
-**structures**
+<a id="ch15-s58"></a>
 
-**infrastructure**
+### Current State Is Not History
 
-**services**
+World State asks:
 
-**institutions**
+What is true now?
 
-**digital-native environments**
+Provenance asks:
 
-**and forms not yet imagined.**
+How did it become true?
 
-**The governing principle is:**
+History asks:
 
-**The Creator does not have to build the civilization. The Creator has to establish a World in which civilization can build itself.**
+What happened, and what became meaningful over time?
 
-**Builders Create Within the World**
+These responsibilities should remain distinct.
 
-**Builders should be powerful.**
+<a id="ch15-s59"></a>
 
-**They should not redefine foundational truth casually.**
+### Interoperability
 
-**Persistent Builder actions should pass through legitimate Architecture and World Runtime.**
+Interoperability Is a Recognized Architecture Domain
 
-**The governing principle remains:**
+BitPangea is intended to survive technological change.
 
-**Creation must be powerful without becoming foundational authority.**
+That requires multiple systems to exchange canonical meaning without creating contradictory Worlds.
 
-**Civilization Is Not an Architecture Domain**
+The principle is:
 
-**Civilization should not be treated as another designed software layer.**
+Implementation diversity must not become semantic diversity.
 
-**Social, economic, and cultural phenomena are primarily emergent.**
+Different implementations may vary internally.
 
-**Architecture may enable:**
+They should still agree upon canonical meaning.
 
-**communication**
+<a id="ch15-s60"></a>
 
-**creation**
+### Technology Must Be Replaceable
 
-**exchange**
+BitPangea should permit:
 
-**organization**
+renderers
 
-**memory**
+clients
 
-**institution formation**
+services
 
-**but participants determine what those capabilities become.**
+storage systems
 
-**Thus:**
+Builder tools
 
-**Architecture enables. Civilization emerges.**
+and future technologies
 
-**Economy Is Not Predetermined**
+to become obsolete without requiring the World itself to become obsolete.
 
-**BitPangea presently has no established:**
+The World should outlive its implementations.
 
-**Parcel pricing system**
+<a id="ch15-s61"></a>
 
-**currency**
+### Experience Architecture
 
-**market model**
+Experience Architecture Is a Recognized Architecture Domain
 
-**tax system**
+Experience Architecture governs how participants encounter and interact with BitPangea.
 
-**resource economy**
+It may eventually include:
 
-**monetary policy**
+globe
 
-**or guaranteed financial value.**
+flat lived World
 
-**Finite territory creates economic possibility.**
+navigation
 
-**It does not prescribe economic outcome.**
+Parcel interaction
 
-**Governance Is Not Yet Established**
+Builder experiences
 
-**BitPangea does not presently possess a final governance model.**
+discovery
 
-**That omission is intentional.**
+visualization
 
-**Governance should be designed against real responsibilities and dependencies rather than selected prematurely.**
+immersive interfaces
 
-**History, Memory, and Digital Antiquity**
+future modes of interaction.
 
-**BitPangea Should Be Capable of Genuine History**
+Experience matters deeply.
 
-**BitPangea is intended to possess the architectural conditions under which genuine history can accumulate.**
+But:
 
-**That requires:**
+Experience is where the World becomes perceptible—not where the World becomes authoritative.
 
-**persistent place**
+<a id="ch15-s62"></a>
 
-**persistent identity**
+### Builders and Civilization
 
-**governed change**
+Builders Are Participants, Not Architecture Domains
 
-**provenance**
+Builders operate through The Architecture.
 
-**memory**
+They are not themselves one of the nine Architecture domains.
 
-**time.**
+Builders may depend upon:
 
-**History should emerge because real things happen in persistent places.**
+Parcel Cadastre
 
-**Not merely because the Creator wrote backstory.**
+Identity / Rights / Control
 
-**Operational Record, Provenance, History, and Interpretation Are Distinct**
+World Runtime
 
-**BitPangea distinguishes among:**
+Persistence / Provenance
 
-**operational record**
+Interoperability
 
-**provenance**
+Experience Architecture
 
-**historical record**
+without acquiring their authority.
 
-**historical interpretation**
+<a id="ch15-s63"></a>
 
-**Not every event should become public history.**
+### Creation Must Extend Beyond the Creator
 
-**Not every interpretation should become canonical fact.**
+BitPangea should eventually support meaningful creation by actors other than the original Creator.
 
-**Chronicle, Atlas, and Origins Have Distinct Roles**
+That creation may include:
 
-**The editorial distinction is:**
+structures
 
-**Chronicle records when.**
+infrastructure
 
-**Atlas records what.**
+services
 
-**Origins preserves how and why the understanding emerged.**
+institutions
 
-**These records may overlap in subject.**
+digital-native environments
 
-**They should remain distinct in function.**
+and forms not yet imagined.
 
-**Digital Antiquity Is Distinct From BitPangea History**
+The governing principle is:
 
-**Digital Antiquity preserves historically significant ideas, symbols, systems, and turning points from the wider Digital Age.**
+The Creator does not have to build the civilization. The Creator has to establish a World in which civilization can build itself.
 
-**BitPangea History concerns events that occur in and around the World itself.**
+<a id="ch15-s64"></a>
 
-**The two are related.**
+### Builders Create Within the World
 
-**They are not identical.**
+Builders should be powerful.
 
-**The Twelve Constellations of Digital Antiquity Are Established as a Historical Structure**
+They should not redefine foundational truth casually.
 
-**The Twelve Constellations preserve aspects of inherited digital history through:**
+Persistent Builder actions should pass through legitimate Architecture and World Runtime.
 
-**symbolism**
+The governing principle remains:
 
-**discovery**
+Creation must be powerful without becoming foundational authority.
 
-**historical reference**
+<a id="ch15-s65"></a>
 
-**and intentional mystery.**
+### Civilization Is Not an Architecture Domain
 
-**Their protected placements and undisclosed relationships should remain protected.**
+Civilization should not be treated as another designed software layer.
 
-**Hidden does not mean unrecorded.**
+Social, economic, and cultural phenomena are primarily emergent.
 
-**BitPangea Should Be Capable of Becoming Old**
+Architecture may enable:
 
-**BitPangea does not need to fabricate an ancient past.**
+communication
 
-**It needs to preserve enough continuity that genuine antiquity may eventually emerge.**
+creation
 
-**Thus:**
+exchange
 
-**BitPangea should be capable of becoming old rather than merely appearing old.**
+organization
 
-**Constitutional Discipline**
+memory
 
-**Not Every Idea Is Canon**
+institution formation
 
-**BitPangea distinguishes among:**
+but participants determine what those capabilities become.
 
-**Foundational Premise**
+Thus:
 
-**Constitutional Truth**
+Architecture enables. Civilization emerges.
 
-**World Property**
+<a id="ch15-s66"></a>
 
-**Architecture Domain**
+### Economy Is Not Predetermined
 
-**Adopted Design Direction**
+BitPangea presently has no established:
 
-**Provisional Design**
+Parcel pricing system
 
-**Implementation**
+currency
 
-**Emergent Behavior**
+market model
 
-**Unresolved Question.**
+tax system
 
-**Their distinctions matter.**
+resource economy
 
-**The Governing Progression Is Established**
+monetary policy
 
-**The current institutional progression is:**
+or guaranteed financial value.
 
-**Foundation constrains → Codex defines → Atlas designs → Implementation realizes.**
+Finite territory creates economic possibility.
 
-**This protects constitutional truth from design preference and design from accidental implementation authority.**
+It does not prescribe economic outcome.
 
-**Canon Must Be Earned**
+<a id="ch15-s67"></a>
 
-**An idea does not become permanent merely because it is compelling.**
+### Governance Is Not Yet Established
 
-**A prototype is not automatically Architecture.**
+BitPangea does not presently possess a final governance model.
 
-**An Architecture domain is not automatically constitutional.**
+That omission is intentional.
 
-**An implementation is not automatically canon.**
+Governance should be designed against real responsibilities and dependencies rather than selected prematurely.
 
-**Canon is not the default state of an idea.**
+<a id="ch15-s68"></a>
 
-**Constitutional Economy Is Established**
+### History, Memory, and Digital Antiquity
 
-**BitPangea should preserve the smallest enduring constitutional structure sufficient to protect the World.**
+BitPangea Should Be Capable of Genuine History
 
-**Discovery does not require multiplication of canon.**
+BitPangea is intended to possess the architectural conditions under which genuine history can accumulate.
 
-**Finitude remaining a condition of The Extent rather than becoming a redundant World Property is an example of this discipline.**
+That requires:
 
-**Provisionality Must Be Explicit**
+persistent place
 
-**BitPangea should preserve clear distinctions among:**
+persistent identity
 
-**adopted**
+governed change
 
-**provisional**
+provenance
 
-**reserved**
+memory
 
-**deferred**
+time.
 
-**parked**
+History should emerge because real things happen in persistent places.
 
-**rejected**
+Not merely because the Creator wrote backstory.
 
-**superseded**
+<a id="ch15-s69"></a>
 
-**unresolved**
+### Operational Record, Provenance, History, and Interpretation Are Distinct
 
-**emergent.**
+BitPangea distinguishes among:
 
-**Historical status and current authority are not the same thing.**
+operational record
 
-**Authority Must Follow Responsibility**
+provenance
 
-**Systems should possess only the authority required by their legitimate responsibilities.**
+historical record
 
-**The Architecture preserves two related principles:**
+historical interpretation
 
-**Reference does not transfer authority.**
+Not every event should become public history.
 
-**and:**
+Not every interpretation should become canonical fact.
 
-**Protect the boundary. Do not design the layer above from the layer below.**
+<a id="ch15-s70"></a>
 
-**The Permanent Core Should Remain Small**
+### Chronicle, Atlas, and Origins Have Distinct Roles
 
-**BitPangea should protect only what genuinely requires extraordinary permanence.**
+The editorial distinction is:
 
-**The principle is:**
+Chronicle records when.
 
-**The immutable core should be astonishingly small.**
+Atlas records what.
 
-**The accompanying architectural objective is:**
+Origins preserves how and why the understanding emerged.
 
-**Minimum permanent architecture. Maximum future extensibility.**
+These records may overlap in subject.
 
-**Creator Authority Should Evolve Toward Stewardship**
+They should remain distinct in function.
 
-**The Creator necessarily possesses broad authority during the Creator Period.**
+<a id="ch15-s71"></a>
 
-**Over time, enduring responsibility should increasingly belong to explicit systems rather than informal personal discretion.**
+### Digital Antiquity Is Distinct From BitPangea History
 
-**The long-term direction is:**
+Digital Antiquity preserves historically significant ideas, symbols, systems, and turning points from the wider Digital Age.
 
-**Creator as architect**
+BitPangea History concerns events that occur in and around the World itself.
 
-**↓**
+The two are related.
 
-**Creator as steward**
+They are not identical.
 
-**↓**
+<a id="ch15-s72"></a>
 
-**civilization increasingly becomes its own author**
+### The Twelve Constellations of Digital Antiquity Are Established as a Historical Structure
 
-**This is not yet a governance model.**
+The Twelve Constellations preserve aspects of inherited digital history through:
 
-**It is an architectural direction.**
+symbolism
 
-**The Established Architecture in One View**
+discovery
 
-**No single diagram should pretend that every BitPangea responsibility forms one strict vertical chain.**
+historical reference
 
-**But the established architecture can be summarized in several related views.**
+and intentional mystery.
 
-**Constitutional and institutional progression**
+Their protected placements and undisclosed relationships should remain protected.
 
-**Foundation**
+Hidden does not mean unrecorded.
 
-**→ constrains**
+<a id="ch15-s73"></a>
 
-**Codex**
+### BitPangea Should Be Capable of Becoming Old
 
-**→ defines**
+BitPangea does not need to fabricate an ancient past.
 
-**Atlas**
+It needs to preserve enough continuity that genuine antiquity may eventually emerge.
 
-**→ designs**
+Thus:
 
-**Implementation**
+BitPangea should be capable of becoming old rather than merely appearing old.
 
-**→ realizes**
+<a id="ch15-s74"></a>
 
-**Demonstrated spatial dependency**
+### Constitutional Discipline
 
-**Foundational Survey Fabric**
+Not Every Idea Is Canon
 
-**→ Spatial Ground**
+BitPangea distinguishes among:
 
-**→ General Spatial Interpretation**
+Foundational Premise
 
-**→ Parcel Cadastre**
+Constitutional Truth
 
-**Enduring Architecture membership**
+World Property
 
-**Foundational Survey Fabric**
+Architecture Domain
 
-**Spatial Ground**
+Adopted Design Direction
 
-**General Spatial Interpretation**
+Provisional Design
 
-**Parcel Cadastre**
+Implementation
 
-**World Runtime**
+Emergent Behavior
 
-**Identity / Rights / Control**
+Unresolved Question.
 
-**Persistence / Provenance**
+Their distinctions matter.
 
-**Interoperability**
+<a id="ch15-s75"></a>
 
-**Experience Architecture**
+### The Governing Progression Is Established
 
-**World-to-civilization direction**
+The current institutional progression is:
 
-**One finite World**
+Foundation constrains → Codex defines → Atlas designs → Implementation realizes.
 
-**↓**
+This protects constitutional truth from design preference and design from accidental implementation authority.
 
-**permanent place**
+<a id="ch15-s76"></a>
 
-**↓**
+### Canon Must Be Earned
 
-**governed operation**
+An idea does not become permanent merely because it is compelling.
 
-**↓**
+A prototype is not automatically Architecture.
 
-**Builders**
+An Architecture domain is not automatically constitutional.
 
-**↓**
+An implementation is not automatically canon.
 
-**civilization**
+Canon is not the default state of an idea.
 
-**↓**
+<a id="ch15-s77"></a>
 
-**history**
+### Constitutional Economy Is Established
 
-**This final direction is conceptual rather than a strict Architecture dependency stack.**
+BitPangea should preserve the smallest enduring constitutional structure sufficient to protect the World.
 
-**Around all of these sit the governing principles:**
+Discovery does not require multiplication of canon.
 
-**The World precedes the Parcel.**
+Finitude remaining a condition of The Extent rather than becoming a redundant World Property is an example of this discipline.
 
-**Survey first. Cadastre later. Experience above both.**
+<a id="ch15-s78"></a>
 
-**Survey units are not Parcels.**
+### Provisionality Must Be Explicit
 
-**The Survey Domain is not the World.**
+BitPangea should preserve clear distinctions among:
 
-**Reference capacity is not territory.**
+adopted
 
-**Substrate ≠ Parcel experience.**
+provisional
 
-**Representation may change. Place must not.**
+reserved
 
-**Reference does not transfer authority.**
+deferred
 
-**Protect the boundary. Do not design the layer above from the layer below.**
+parked
 
-**The deeper the layer, the more permanent it should be. The closer the layer is to the user, the more freedom it should have to evolve.**
+rejected
 
-**The Creator does not have to build the civilization. The Creator has to establish a World in which civilization can build itself.**
+superseded
 
-**Minimum permanent architecture. Maximum future extensibility.**
+unresolved
 
-**Taken together, these now form a recognizable BitPangea architecture rather than a loose collection of ideas.**
+emergent.
 
-**What This Section Does Not Claim**
+Historical status and current authority are not the same thing.
 
-**This section intentionally does not establish:**
+<a id="ch15-s79"></a>
 
-**final Foundational Survey Fabric mathematics**
+### Authority Must Follow Responsibility
 
-**final Survey Domain geometry**
+Systems should possess only the authority required by their legitimate responsibilities.
 
-**final Parcel geometry**
+The Architecture preserves two related principles:
 
-**final proof of equal-area Parcels**
+Reference does not transfer authority.
 
-**final World silhouette**
+and:
 
-**final Verge morphology**
+Protect the boundary. Do not design the layer above from the layer below.
 
-**final Outlier treatment**
+<a id="ch15-s80"></a>
 
-**final Parcel identifier structure**
+### The Permanent Core Should Remain Small
 
-**final Parcel Adjacency model**
+BitPangea should protect only what genuinely requires extraordinary permanence.
 
-**final rights taxonomy**
+The principle is:
 
-**final ownership model**
+The immutable core should be astonishingly small.
 
-**tokenization**
+The accompanying architectural objective is:
 
-**NFTs**
+Minimum permanent architecture. Maximum future extensibility.
 
-**a required blockchain**
+<a id="ch15-s81"></a>
 
-**currency**
+### Creator Authority Should Evolve Toward Stewardship
 
-**Parcel pricing**
+The Creator necessarily possesses broad authority during the Creator Period.
 
-**economic policy**
+Over time, enduring responsibility should increasingly belong to explicit systems rather than informal personal discretion.
 
-**final World Runtime implementation**
+The long-term direction is:
 
-**final identity technology**
+Creator as architect
 
-**final Persistence / Provenance implementation**
+↓
 
-**final Interoperability mechanism**
+Creator as steward
 
-**final Experience Architecture**
+↓
 
-**final Builder system**
+civilization increasingly becomes its own author
 
-**final infrastructure model**
+This is not yet a governance model.
 
-**final governance**
+It is an architectural direction.
 
-**final civilization structure**
+<a id="ch15-s82"></a>
 
-**final historical archive architecture**
+### The Established Architecture in One View
 
-**or one strict dependency chain across all nine Architecture domains.**
+No single diagram should pretend that every BitPangea responsibility forms one strict vertical chain.
 
-**Those omissions are deliberate.**
+But the established architecture can be summarized in several related views.
 
-**Some represent unresolved architectural work.**
+Constitutional and institutional progression
 
-**Some belong to later implementation.**
+Foundation
 
-**Some are intentionally open.**
+→ constrains
 
-**Some may properly belong to future civilization rather than the Creator at all.**
+Codex
 
-**The strength of what is established depends upon refusing to claim answers the architecture has not earned.**
+→ defines
 
-**The Principle**
+Atlas
 
-**BitPangea is no longer only a premise.**
+→ designs
 
-**It has acquired:**
+Implementation
 
-**constitutional structure**
+→ realizes
 
-**Architecture**
+Demonstrated spatial dependency
 
-**design direction**
+Foundational Survey Fabric
 
-**institutional memory**
+→ Spatial Ground
 
-**and a disciplined method for continued discovery.**
+→ General Spatial Interpretation
 
-**The World is one.**
+→ Parcel Cadastre
 
-**The World is finite.**
+Enduring Architecture membership
 
-**The Extent establishes its complete spatial scope.**
+Foundational Survey Fabric
 
-**Exactly 21,000,000 Parcels must exist within it.**
+Spatial Ground
 
-**The Foundational Survey Fabric must preserve canonical spatial reference.**
+General Spatial Interpretation
 
-**The Parcel Cadastre must preserve Parcel identity and territory.**
+Parcel Cadastre
 
-**The Architecture must preserve responsibility boundaries.**
+World Runtime
 
-**Identity / Rights / Control must govern actor relationships without collapsing identity, rights, permission, and authority into one concept.**
+Identity / Rights / Control
 
-**World Runtime must permit legitimate change while preserving coherence.**
+Persistence / Provenance
 
-**Persistence / Provenance must preserve lineage.**
+Interoperability
 
-**Interoperability must allow technology to evolve without fragmenting meaning.**
+Experience Architecture
 
-**Experience Architecture must make the World perceptible without becoming the source of truth.**
+World-to-civilization direction
 
-**Builders must eventually create beyond the Creator.**
+One finite World
 
-**Civilization must remain capable of emergence.**
+↓
 
-**History must be capable of accumulating.**
+permanent place
 
-**And constitutional discipline must distinguish enduring truth from temporary choice.**
+↓
 
-**There remains far more to discover.**
+governed operation
 
-**That is appropriate.**
+↓
 
-**Origins should not disguise that fact.**
+Builders
 
-**Its purpose is to show that beneath the unresolved questions, a coherent World has begun to emerge.**
+↓
 
-**The governing statement for this section is therefore:**
+civilization
 
-**BitPangea is established where the architecture has earned confidence, provisional where discovery continues, and open where the future should remain free.**
+↓
 
-**That is enough foundation to continue.**
+history
 
-**It is not enough foundation to pretend the World is finished.**
+This final direction is conceptual rather than a strict Architecture dependency stack.
+
+Around all of these sit the governing principles:
+
+The World precedes the Parcel.
+
+Survey first. Cadastre later. Experience above both.
+
+Survey units are not Parcels.
+
+The Survey Domain is not the World.
+
+Reference capacity is not territory.
+
+Substrate ≠ Parcel experience.
+
+Representation may change. Place must not.
+
+Reference does not transfer authority.
+
+Protect the boundary. Do not design the layer above from the layer below.
+
+The deeper the layer, the more permanent it should be. The closer the layer is to the user, the more freedom it should have to evolve.
+
+The Creator does not have to build the civilization. The Creator has to establish a World in which civilization can build itself.
+
+Minimum permanent architecture. Maximum future extensibility.
+
+Taken together, these now form a recognizable BitPangea architecture rather than a loose collection of ideas.
+
+<a id="ch15-s83"></a>
+
+### What This Section Does Not Claim
+
+This section intentionally does not establish:
+
+final Foundational Survey Fabric mathematics
+
+final Survey Domain geometry
+
+final Parcel geometry
+
+final proof of equal-area Parcels
+
+final World silhouette
+
+final Verge morphology
+
+final Outlier treatment
+
+final Parcel identifier structure
+
+final Parcel Adjacency model
+
+final rights taxonomy
+
+final ownership model
+
+tokenization
+
+NFTs
+
+a required blockchain
+
+currency
+
+Parcel pricing
+
+economic policy
+
+final World Runtime implementation
+
+final identity technology
+
+final Persistence / Provenance implementation
+
+final Interoperability mechanism
+
+final Experience Architecture
+
+final Builder system
+
+final infrastructure model
+
+final governance
+
+final civilization structure
+
+final historical archive architecture
+
+or one strict dependency chain across all nine Architecture domains.
+
+Those omissions are deliberate.
+
+Some represent unresolved architectural work.
+
+Some belong to later implementation.
+
+Some are intentionally open.
+
+Some may properly belong to future civilization rather than the Creator at all.
+
+The strength of what is established depends upon refusing to claim answers the architecture has not earned.
+
+<a id="ch15-s84"></a>
+
+### The Principle
+
+BitPangea is no longer only a premise.
+
+It has acquired:
+
+constitutional structure
+
+Architecture
+
+design direction
+
+institutional memory
+
+and a disciplined method for continued discovery.
+
+The World is one.
+
+The World is finite.
+
+The Extent establishes its complete spatial scope.
+
+Exactly 21,000,000 Parcels must exist within it.
+
+The Foundational Survey Fabric must preserve canonical spatial reference.
+
+The Parcel Cadastre must preserve Parcel identity and territory.
+
+The Architecture must preserve responsibility boundaries.
+
+Identity / Rights / Control must govern actor relationships without collapsing identity, rights, permission, and authority into one concept.
+
+World Runtime must permit legitimate change while preserving coherence.
+
+Persistence / Provenance must preserve lineage.
+
+Interoperability must allow technology to evolve without fragmenting meaning.
+
+Experience Architecture must make the World perceptible without becoming the source of truth.
+
+Builders must eventually create beyond the Creator.
+
+Civilization must remain capable of emergence.
+
+History must be capable of accumulating.
+
+And constitutional discipline must distinguish enduring truth from temporary choice.
+
+There remains far more to discover.
+
+That is appropriate.
+
+Origins should not disguise that fact.
+
+Its purpose is to show that beneath the unresolved questions, a coherent World has begun to emerge.
+
+The governing statement for this section is therefore:
+
+BitPangea is established where the architecture has earned confidence, provisional where discovery continues, and open where the future should remain free.
+
+That is enough foundation to continue.
+
+It is not enough foundation to pretend the World is finished.
+
+---
+
+<a id="ch16"></a>
 
 ## XVI. What Remains Open
 
-**BitPangea now possesses enough constitutional structure and Architecture to identify not only what has been established, but what still requires discovery.**
+BitPangea now possesses enough constitutional structure and Architecture to identify not only what has been established, but what still requires discovery.
 
-**That distinction matters.**
+That distinction matters.
 
-**An open question is not merely unfinished work.**
+An open question is not merely unfinished work.
 
-**It may represent:**
+It may represent:
 
-**a problem that must eventually be resolved before the World can operate coherently**
+a problem that must eventually be resolved before the World can operate coherently
 
-**a problem that should wait until prerequisite Architecture matures**
+a problem that should wait until prerequisite Architecture matures
 
-**a question whose answer depends upon another unresolved inquiry**
+a question whose answer depends upon another unresolved inquiry
 
-**or:**
+or:
 
-**a question that should remain open because it properly belongs to future Builders, institutions, or civilization**
+a question that should remain open because it properly belongs to future Builders, institutions, or civilization
 
-**This section therefore does not function as a backlog.**
+This section therefore does not function as a backlog.
 
-**It is a map of architectural uncertainty.**
+It is a map of architectural uncertainty.
 
-**The governing discipline is:**
+The governing discipline is:
 
-**Resolve what coherence requires.**
+Resolve what coherence requires.
 
-**Defer what dependency requires.**
+Defer what dependency requires.
 
-**Preserve as open what civilization requires.**
+Preserve as open what civilization requires.
 
-**Different Kinds of Openness**
+<a id="ch16-s01"></a>
 
-**Not every unresolved matter belongs to the same category.**
+### Different Kinds of Openness
 
-**BitPangea increasingly distinguishes among at least four kinds of open question.**
+Not every unresolved matter belongs to the same category.
 
-**Required Resolution**
+BitPangea increasingly distinguishes among at least four kinds of open question.
 
-**These are questions the World eventually must answer in order to become canonically operational.**
+Required Resolution
 
-**They may concern:**
+These are questions the World eventually must answer in order to become canonically operational.
 
-**Survey mathematics**
+They may concern:
 
-**Parcel establishment**
+Survey mathematics
 
-**identity**
+Parcel establishment
 
-**authorization**
+identity
 
-**Runtime state**
+authorization
 
-**integrity**
+Runtime state
 
-**or other indispensable systems.**
+integrity
 
-**Their unresolved status is temporary.**
+or other indispensable systems.
 
-**Dependent Resolution**
+Their unresolved status is temporary.
 
-**These questions matter, but answering them now would require assumptions about Architecture that has not yet matured.**
+<a id="ch16-s02"></a>
 
-**Their proper status is:**
+### Dependent Resolution
 
-**wait for the dependency.**
+These questions matter, but answering them now would require assumptions about Architecture that has not yet matured.
 
-**A dependent question is not being ignored.**
+Their proper status is:
 
-**It is being protected from premature resolution.**
+wait for the dependency.
 
-**Parked Inquiry**
+A dependent question is not being ignored.
 
-**Some questions remain potentially important but currently lack enough evidence to justify active work.**
+It is being protected from premature resolution.
 
-**They are neither rejected nor necessarily required.**
+<a id="ch16-s03"></a>
 
-**They are parked.**
+### Parked Inquiry
 
-**A parked inquiry may return later if new Architecture gives it independent work to do.**
+Some questions remain potentially important but currently lack enough evidence to justify active work.
 
-**Intentional Openness**
+They are neither rejected nor necessarily required.
 
-**Some questions should not necessarily be answered by the Creator at all.**
+They are parked.
 
-**They concern things such as:**
+A parked inquiry may return later if new Architecture gives it independent work to do.
 
-**culture**
+<a id="ch16-s04"></a>
 
-**social convention**
+### Intentional Openness
 
-**future institutions**
+Some questions should not necessarily be answered by the Creator at all.
 
-**historical interpretation**
+They concern things such as:
 
-**many economic outcomes**
+culture
 
-**unexpected uses of the World.**
+social convention
 
-**These are not engineering debt.**
+future institutions
 
-**They are preserved freedom.**
+historical interpretation
 
-**Thus:**
+many economic outcomes
 
-**Some questions await answers. Others preserve possibility.**
+unexpected uses of the World.
 
-**The Extent**
+These are not engineering debt.
 
-**The constitutional meaning of WP-S-I — The Extent is established.**
+They are preserved freedom.
 
-**The Extent concerns:**
+Thus:
 
-**the complete spatial scope of BitPangea.**
+Some questions await answers. Others preserve possibility.
 
-**Finitude is preserved as a condition of that Extent.**
+<a id="ch16-s05"></a>
 
-**What remains unresolved is not whether the World is finite.**
+### The Extent
 
-**It is how the constitutional truth of The Extent will ultimately be supported by Architecture and mathematics.**
+The constitutional meaning of WP-S-I — The Extent is established.
 
-**Open questions include:**
+The Extent concerns:
 
-**How will The Extent relate formally to higher spatial Architecture?**
+the complete spatial scope of BitPangea.
 
-**How will the World’s complete scope be represented against the Foundational Survey Fabric?**
+Finitude is preserved as a condition of that Extent.
 
-**What mathematical relationship exists between The Extent and the finite Survey Domain?**
+What remains unresolved is not whether the World is finite.
 
-**How will canonical World-space membership be determined?**
+It is how the constitutional truth of The Extent will ultimately be supported by Architecture and mathematics.
 
-**How does World Form exist within The Extent?**
+Open questions include:
 
-**How should terminal World-form expression relate to The Extent without becoming synonymous with it?**
+How will The Extent relate formally to higher spatial Architecture?
 
-**The distinction must remain:**
+How will the World’s complete scope be represented against the Foundational Survey Fabric?
 
-**The Extent is constitutional.**
+What mathematical relationship exists between The Extent and the finite Survey Domain?
 
-**The Survey Domain is mathematical reference capacity.**
+How will canonical World-space membership be determined?
 
-**The Verge is Creator design space.**
+How does World Form exist within The Extent?
 
-**None should silently collapse into the others.**
+How should terminal World-form expression relate to The Extent without becoming synonymous with it?
 
-**The Limit**
+The distinction must remain:
 
-**The concept of Limit remains deliberately narrow.**
+The Extent is constitutional.
 
-**The question is no longer whether BitPangea is finite.**
+The Survey Domain is mathematical reference capacity.
 
-**That question is closed.**
+The Verge is Creator design space.
 
-**Nor should inquiry automatically reopen:**
+None should silently collapse into the others.
 
-**Edge**
+<a id="ch16-s06"></a>
 
-**Perimeter**
+### The Limit
 
-**Exterior**
+The concept of Limit remains deliberately narrow.
 
-**World Boundary**
+The question is no longer whether BitPangea is finite.
 
-**without new evidence.**
+That question is closed.
 
-**The remaining question is:**
+Nor should inquiry automatically reopen:
 
-**Does Limit perform constitutional work independent of The Extent, or is it simply the terminal expression of The Extent?**
+Edge
 
-**This is a narrow constitutional inquiry.**
+Perimeter
 
-**Constitutional economy argues against creating a separate object unless independent work can be demonstrated.**
+Exterior
 
-**Thus:**
+World Boundary
 
-**Limit remains unresolved because restraint presently has more justification than multiplication of canon.**
+without new evidence.
 
-**The Verge**
+The remaining question is:
 
-**The earlier spatial use of Frontier has been superseded.**
+Does Limit perform constitutional work independent of The Extent, or is it simply the terminal expression of The Extent?
 
-**The Frontier is epistemic.**
+This is a narrow constitutional inquiry.
 
-**The relevant spatial design concept is:**
+Constitutional economy argues against creating a separate object unless independent work can be demonstrated.
 
-**The Verge**
+Thus:
 
-**The Verge is permissible Creator design space for terminal World-form expression.**
+Limit remains unresolved because restraint presently has more justification than multiplication of canon.
 
-**Its existence as a useful design concept is established.**
+<a id="ch16-s07"></a>
 
-**Its final morphology is not.**
+### The Verge
 
-**Open questions include:**
+The earlier spatial use of Frontier has been superseded.
 
-**What visual and spatial character should The Verge possess?**
+The Frontier is epistemic.
 
-**How directly should it correspond to the terminal condition of The Extent?**
+The relevant spatial design concept is:
 
-**Can it contain non-Parcel spatial structures?**
+The Verge
 
-**How does it meet or interact with the canonical Parcel fabric?**
+The Verge is permissible Creator design space for terminal World-form expression.
 
-**What role, if any, do Outliers play near or beyond the dominant World Form?**
+Its existence as a useful design concept is established.
 
-**Can infrastructure interact with The Verge?**
+Its final morphology is not.
 
-**Can Builders interact with it?**
+Open questions include:
 
-**How should The Verge appear during globe-to-flat transition?**
+What visual and spatial character should The Verge possess?
 
-**How should it remain recognizably digital without becoming a conventional coastline, wall, void, or ocean?**
+How directly should it correspond to the terminal condition of The Extent?
 
-**The governing distinction is:**
+Can it contain non-Parcel spatial structures?
 
-**The Extent defines complete scope.**
+How does it meet or interact with the canonical Parcel fabric?
 
-**The Verge explores how terminal World form may be expressed.**
+What role, if any, do Outliers play near or beyond the dominant World Form?
 
-**Outliers**
+Can infrastructure interact with The Verge?
 
-**Outliers remain permissible Creator design space.**
+Can Builders interact with it?
 
-**They are not yet an adopted final morphology.**
+How should The Verge appear during globe-to-flat transition?
 
-**Questions include:**
+How should it remain recognizably digital without becoming a conventional coastline, wall, void, or ocean?
 
-**What qualifies as an Outlier?**
+The governing distinction is:
 
-**Must every Outlier contain Parcels?**
+The Extent defines complete scope.
 
-**Can an Outlier be non-Parcel spatial structure?**
+The Verge explores how terminal World form may be expressed.
 
-**How does an Outlier remain part of one World?**
+<a id="ch16-s08"></a>
 
-**How does it preserve World-scale Parcel Contiguity where required?**
+### Outliers
 
-**How does it relate to the principal supercontinental form?**
+Outliers remain permissible Creator design space.
 
-**Can Outliers become infrastructure, landmarks, or other World-scale features?**
+They are not yet an adopted final morphology.
 
-**Their permissibility is established.**
+Questions include:
 
-**Their role is not.**
+What qualifies as an Outlier?
 
-**World Form**
+Must every Outlier contain Parcels?
 
-**The adopted World Form direction is strong.**
+Can an Outlier be non-Parcel spatial structure?
 
-**The exact World Form remains unfinished.**
+How does an Outlier remain part of one World?
 
-**Established direction includes:**
+How does it preserve World-scale Parcel Contiguity where required?
 
-**one World**
+How does it relate to the principal supercontinental form?
 
-**singular digital supercontinent**
+Can Outliers become infrastructure, landmarks, or other World-scale features?
 
-**compositionally balanced asymmetry**
+Their permissibility is established.
 
-**organic macro-form**
+Their role is not.
 
-**digital substance**
+<a id="ch16-s09"></a>
 
-**connectivity as intrinsic identity**
+### World Form
 
-**progressive revelation**
+The adopted World Form direction is strong.
 
-**serene World scale**
+The exact World Form remains unfinished.
 
-**increasing digital intensity with approach**
+Established direction includes:
 
-**globe as the primary distant representation**
+one World
 
-**flat lived World as the strong closer-scale direction.**
+singular digital supercontinent
 
-**Still open:**
+compositionally balanced asymmetry
 
-**the final silhouette**
+organic macro-form
 
-**the exact supercontinental articulation**
+digital substance
 
-**the exact relationship between Form and The Extent**
+connectivity as intrinsic identity
 
-**the role of The Verge**
+progressive revelation
 
-**the role of Outliers**
+serene World scale
 
-**the regional organization of the World**
+increasing digital intensity with approach
 
-**the degree of authored geography**
+globe as the primary distant representation
 
-**the exact visual expression of connectivity**
+flat lived World as the strong closer-scale direction.
 
-**the transition through approach from globe to flat lived World**
+Still open:
 
-**the manner in which Parcel fabric becomes perceptible**
+the final silhouette
 
-**the final visual language of BitPangea at the scale of the Digital Age**
+the exact supercontinental articulation
 
-**World Form should not be dictated by Parcel tiling merely because one tiling is convenient.**
+the exact relationship between Form and The Extent
 
-**Likewise, Form should not ignore the deeper Architecture required to support it.**
+the role of The Verge
 
-**The reconciliation remains open.**
+the role of Outliers
 
-**Foundational Survey Fabric**
+the regional organization of the World
 
-**The Foundational Survey Fabric is no longer merely an undefined concept.**
+the degree of authored geography
 
-**Its architectural role is established.**
+the exact visual expression of connectivity
 
-**Its 85 Findings now stand as Requirements.**
+the transition through approach from globe to flat lived World
 
-**Its institutional structure is:**
+the manner in which Parcel fabric becomes perceptible
 
-**Requirements**
+the final visual language of BitPangea at the scale of the Digital Age
 
-**→ Specification**
+World Form should not be dictated by Parcel tiling merely because one tiling is convenient.
 
-**→ Conformance**
+Likewise, Form should not ignore the deeper Architecture required to support it.
 
-**→ Reference Vectors**
+The reconciliation remains open.
 
-**The present state is therefore:**
+<a id="ch16-s10"></a>
 
-**Requirements established.**
+### Foundational Survey Fabric
 
-**Final mathematics unresolved.**
+The Foundational Survey Fabric is no longer merely an undefined concept.
 
-**Open work includes:**
+Its architectural role is established.
 
-**the final Survey Domain geometry**
+Its 85 Findings now stand as Requirements.
 
-**the canonical mathematical origin**
+Its institutional structure is:
 
-**the exact orientation framework**
+Requirements
 
-**the final mathematical coordinate representation**
+→ Specification
 
-**the refinement mechanism**
+→ Conformance
 
-**the precision-extension mechanism**
+→ Reference Vectors
 
-**normalization rules**
+The present state is therefore:
 
-**exact arithmetic requirements**
+Requirements established.
 
-**canonical geometry operations**
+Final mathematics unresolved.
 
-**canonical spatial-separation rules**
+Open work includes:
 
-**normative serialization**
+the final Survey Domain geometry
 
-**lossless interchange encoding or encodings**
+the canonical mathematical origin
 
-**Reference Vector values**
+the exact orientation framework
 
-**Conformance tests**
+the final mathematical coordinate representation
 
-**implementation-readiness gates**
+the refinement mechanism
 
-**The Survey Fabric should not now be described merely as “integer-based.”**
+the precision-extension mechanism
 
-**Its deeper requirement is:**
+normalization rules
 
-**exact, deterministic, finite, planar, semantically neutral canonical spatial reference.**
+exact arithmetic requirements
 
-**Integer-based methods remain compatible with that direction, but the final Specification has not been adopted.**
+canonical geometry operations
 
-**The governing discipline remains:**
+canonical spatial-separation rules
 
-**Requirements before mathematics.**
+normative serialization
 
-**Survey Domain and World Membership**
+lossless interchange encoding or encodings
 
-**The Survey Domain is finite.**
+Reference Vector values
 
-**What remains unresolved is the exact mathematical relationship between:**
+Conformance tests
 
-**valid Survey reference**
+implementation-readiness gates
 
-**and:**
+The Survey Fabric should not now be described merely as “integer-based.”
 
-**authoritative World-space membership.**
+Its deeper requirement is:
 
-**The governing rule is already established:**
+exact, deterministic, finite, planar, semantically neutral canonical spatial reference.
 
-**Every authoritative World-space location must be representable within the Survey Domain.**
+Integer-based methods remain compatible with that direction, but the final Specification has not been adopted.
 
-**But:**
+The governing discipline remains:
 
-**Not every valid Survey reference is necessarily BitPangea territory.**
+Requirements before mathematics.
 
-**The open problem is therefore not:**
+<a id="ch16-s11"></a>
 
-**Does Survey equal World?**
+### Survey Domain and World Membership
 
-**It does not.**
+The Survey Domain is finite.
 
-**The question is:**
+What remains unresolved is the exact mathematical relationship between:
 
-**How will higher Architecture determine which Survey-addressable locations belong to the World?**
+valid Survey reference
 
-**That question belongs above the Foundational Survey Fabric.**
+and:
 
-**Spatial Ground**
+authoritative World-space membership.
 
-**Spatial Ground is now a recognized Architecture domain.**
+The governing rule is already established:
 
-**Its existence is established.**
+Every authoritative World-space location must be representable within the Survey Domain.
 
-**Its internal Architecture is not.**
+But:
 
-**The key question is:**
+Not every valid Survey reference is necessarily BitPangea territory.
 
-**How does canonical Survey reference become usable enduring World-space ground without causing the Survey Fabric itself to absorb higher spatial meaning?**
+The open problem is therefore not:
 
-**This is a required next-stage architectural inquiry once the Foundational Survey Fabric is sufficiently ready to support it.**
+Does Survey equal World?
 
-**Open questions include:**
+It does not.
 
-**what responsibilities belong uniquely to Spatial Ground**
+The question is:
 
-**what it derives from the Survey Fabric**
+How will higher Architecture determine which Survey-addressable locations belong to the World?
 
-**what it must expose upward**
+That question belongs above the Foundational Survey Fabric.
 
-**what it must not define**
+<a id="ch16-s12"></a>
 
-**how World-space designation is represented**
+### Spatial Ground
 
-**how it relates to The Extent**
+Spatial Ground is now a recognized Architecture domain.
 
-**how it constrains General Spatial Interpretation**
+Its existence is established.
 
-**how it avoids becoming either hidden Cadastre or hidden World Runtime.**
+Its internal Architecture is not.
 
-**General Spatial Interpretation**
+The key question is:
 
-**General Spatial Interpretation is now recognized as an Architecture domain.**
+How does canonical Survey reference become usable enduring World-space ground without causing the Survey Fabric itself to absorb higher spatial meaning?
 
-**Its membership is no longer the open question.**
+This is a required next-stage architectural inquiry once the Foundational Survey Fabric is sufficiently ready to support it.
 
-**Its internal responsibility remains open.**
+Open questions include:
 
-**The demonstrated spatial dependency is:**
+what responsibilities belong uniquely to Spatial Ground
 
-**Foundational Survey Fabric**
+what it derives from the Survey Fabric
 
-**→ Spatial Ground**
+what it must expose upward
 
-**→ General Spatial Interpretation**
+what it must not define
 
-**→ Parcel Cadastre**
+how World-space designation is represented
 
-**The remaining questions include:**
+how it relates to The Extent
 
-**Which spatial interpretations properly belong here?**
+how it constrains General Spatial Interpretation
 
-**What derived spatial meaning should be canonical versus computed?**
+how it avoids becoming either hidden Cadastre or hidden World Runtime.
 
-**What does the domain preserve versus calculate?**
+<a id="ch16-s13"></a>
 
-**How does it expose spatial interpretation without acquiring authority over Survey truth?**
+### General Spatial Interpretation
 
-**How does it avoid acquiring Parcel authority?**
+General Spatial Interpretation is now recognized as an Architecture domain.
 
-**What relationships should remain query results rather than persisted state?**
+Its membership is no longer the open question.
 
-**What conformance requirements, if any, will eventually apply?**
+Its internal responsibility remains open.
 
-**The question has evolved from:**
+The demonstrated spatial dependency is:
 
-**Does this domain exist?**
+Foundational Survey Fabric
 
-**to:**
+→ Spatial Ground
 
-**What exactly is this domain responsible for?**
+→ General Spatial Interpretation
 
-**Parcel Geometry**
+→ Parcel Cadastre
 
-**The final Parcel geometry remains unresolved.**
+The remaining questions include:
 
-**The leading visible direction remains a:**
+Which spatial interpretations properly belong here?
 
-**three-orientation rhombille family**
+What derived spatial meaning should be canonical versus computed?
 
-**But that direction must still survive deeper architectural tests.**
+What does the domain preserve versus calculate?
 
-**Open questions include:**
+How does it expose spatial interpretation without acquiring authority over Survey truth?
 
-**Can the visible Parcel grammar support exactly 21,000,000 canonical Parcels?**
+How does it avoid acquiring Parcel authority?
 
-**Can equal-area construction be proven?**
+What relationships should remain query results rather than persisted state?
 
-**How should the three orientations be arranged globally?**
+What conformance requirements, if any, will eventually apply?
 
-**How does local coherence survive across a complex asymmetric World Form?**
+The question has evolved from:
 
-**How are transitions handled?**
+Does this domain exist?
 
-**How does the visible Parcel grammar relate mathematically to the deeper Survey substrate?**
+to:
 
-**How does it meet The Verge?**
+What exactly is this domain responsible for?
 
-**How do Outliers interact with the Parcel grammar?**
+<a id="ch16-s14"></a>
 
-**Does one dominant Parcel morphology remain sufficient everywhere canonical Parcels exist?**
+### Parcel Geometry
 
-**The governing principle remains:**
+The final Parcel geometry remains unresolved.
 
-**The visible Parcel grammar must conform to the Architecture. The Architecture should not be distorted merely to preserve a preferred pattern.**
+The leading visible direction remains a:
 
-**The Exact 21,000,000 Arrangement**
+three-orientation rhombille family
 
-**The count is fixed.**
+But that direction must still survive deeper architectural tests.
 
-**The exact arrangement is not.**
+Open questions include:
 
-**BitPangea must eventually establish exactly:**
+Can the visible Parcel grammar support exactly 21,000,000 canonical Parcels?
 
-**21,000,000 canonical Parcels**
+Can equal-area construction be proven?
 
-**within one finite World.**
+How should the three orientations be arranged globally?
 
-**This requires far more than creating 21 million identifiers.**
+How does local coherence survive across a complex asymmetric World Form?
 
-**The final solution must reconcile:**
+How are transitions handled?
 
-**exact count**
+How does the visible Parcel grammar relate mathematically to the deeper Survey substrate?
 
-**canonical identity**
+How does it meet The Verge?
 
-**fixed position**
+How do Outliers interact with the Parcel grammar?
 
-**authoritative territorial definition**
+Does one dominant Parcel morphology remain sufficient everywhere canonical Parcels exist?
 
-**equal-area preference**
+The governing principle remains:
 
-**local coherence**
+The visible Parcel grammar must conform to the Architecture. The Architecture should not be distorted merely to preserve a preferred pattern.
 
-**Parcel Adjacency**
+<a id="ch16-s15"></a>
 
-**World Form**
+### The Exact 21,000,000 Arrangement
 
-**The Extent**
+The count is fixed.
 
-**The Verge**
+The exact arrangement is not.
 
-**Outliers where applicable**
+BitPangea must eventually establish exactly:
 
-**non-Parcel spatial conditions**
+21,000,000 canonical Parcels
 
-**Survey support**
+within one finite World.
 
-**representation independence**
+This requires far more than creating 21 million identifiers.
 
-**This is one of the clearest required-resolution problems in BitPangea.**
+The final solution must reconcile:
 
-**Parcel Identifier Architecture**
+exact count
 
-**Every Parcel must ultimately be persistently identifiable.**
+canonical identity
 
-**The identifier structure remains open.**
+fixed position
 
-**Questions include:**
+authoritative territorial definition
 
-**What constitutes the canonical Parcel identifier?**
+equal-area preference
 
-**Is it spatially meaningful?**
+local coherence
 
-**Is it opaque?**
+Parcel Adjacency
 
-**Is it hierarchical?**
+World Form
 
-**Is it derived?**
+The Extent
 
-**Is it human-readable?**
+The Verge
 
-**Can aliases exist?**
+Outliers where applicable
 
-**Can display identifiers change while canonical identity remains fixed?**
+non-Parcel spatial conditions
 
-**How does the identifier relate to authoritative territorial definition?**
+Survey support
 
-**How are invalid references handled?**
+representation independence
 
-**How are superseded encodings represented?**
+This is one of the clearest required-resolution problems in BitPangea.
 
-**The guiding principle is:**
+<a id="ch16-s16"></a>
 
-**Identifier representation may evolve. Parcel identity must not.**
+### Parcel Identifier Architecture
 
-**Parcel Adjacency**
+Every Parcel must ultimately be persistently identifiable.
 
-**The Adjacency exists as a constitutional Parcel relationship.**
+The identifier structure remains open.
 
-**The precise mathematical and cadastral realization remains unresolved.**
+Questions include:
 
-**The architecture must ultimately distinguish among lower-level geometric facts such as:**
+What constitutes the canonical Parcel identifier?
 
-**shared geometric boundary**
+Is it spatially meaningful?
 
-**point contact**
+Is it opaque?
 
-**touch**
+Is it hierarchical?
 
-**spatial separation**
+Is it derived?
 
-**and the formal Parcel relationship:**
+Is it human-readable?
 
-**Parcel Adjacency**
+Can aliases exist?
 
-**Open questions include:**
+Can display identifiers change while canonical identity remains fixed?
 
-**What geometric condition is sufficient to establish Parcel Adjacency?**
+How does the identifier relate to authoritative territorial definition?
 
-**Does point contact count?**
+How are invalid references handled?
 
-**Which facts belong canonically in the Cadastre?**
+How are superseded encodings represented?
 
-**Which remain derived through General Spatial Interpretation?**
+The guiding principle is:
 
-**How are implementations tested for agreement?**
+Identifier representation may evolve. Parcel identity must not.
 
-**The requirement is:**
+<a id="ch16-s17"></a>
 
-**Parcel Adjacency must eventually be deterministic.**
+### Parcel Adjacency
 
-**Parcel Contiguity**
+The Adjacency exists as a constitutional Parcel relationship.
 
-**The Contiguity is also a constitutional Parcel relationship.**
+The precise mathematical and cadastral realization remains unresolved.
 
-**The World-scale requirement is established.**
+The architecture must ultimately distinguish among lower-level geometric facts such as:
 
-**Its detailed mathematical realization remains open.**
+shared geometric boundary
 
-**Questions include:**
+point contact
 
-**How is World-scale Parcel Contiguity proven?**
+touch
 
-**How does The Verge interact with it?**
+spatial separation
 
-**How are Outliers treated?**
+and the formal Parcel relationship:
 
-**Can non-Parcel structures interrupt, support, or route around Parcel fabric without violating the constitutional condition?**
+Parcel Adjacency
 
-**What exact graph or topological proof model will demonstrate conformance?**
+Open questions include:
 
-**This problem will require careful separation between lower mathematical connectedness and constitutional Parcel Contiguity.**
+What geometric condition is sufficient to establish Parcel Adjacency?
 
-**Sub-Parcel Reference, Subdivision, and Aggregation**
+Does point contact count?
 
-**The canonical supply must remain exactly:**
+Which facts belong canonically in the Cadastre?
 
-**21,000,000 Parcels.**
+Which remain derived through General Spatial Interpretation?
 
-**What remains open is how higher systems may represent finer or larger units without changing that count.**
+How are implementations tested for agreement?
 
-**Possible future concepts include:**
+The requirement is:
 
-**sub-Parcel references**
+Parcel Adjacency must eventually be deterministic.
 
-**construction zones**
+<a id="ch16-s18"></a>
 
-**usage areas**
+### Parcel Contiguity
 
-**administrative overlays**
+The Contiguity is also a constitutional Parcel relationship.
 
-**multi-Parcel holdings**
+The World-scale requirement is established.
 
-**combined development areas**
+Its detailed mathematical realization remains open.
 
-**These should not silently create or destroy canonical Parcels.**
+Questions include:
 
-**The central unresolved question is:**
+How is World-scale Parcel Contiguity proven?
 
-**How can higher layers obtain spatial flexibility without changing canonical Parcel supply?**
+How does The Verge interact with it?
 
-**Regions**
+How are Outliers treated?
 
-**Region is already reserved terminology through WP-S-II — The Region.**
+Can non-Parcel structures interrupt, support, or route around Parcel fabric without violating the constitutional condition?
 
-**That means later design should not casually use “region” as a generic label for any grouping.**
+What exact graph or topological proof model will demonstrate conformance?
 
-**Questions remain about how constitutional Region concepts, if further developed, relate to:**
+This problem will require careful separation between lower mathematical connectedness and constitutional Parcel Contiguity.
 
-**geography**
+<a id="ch16-s19"></a>
 
-**administration**
+### Sub-Parcel Reference, Subdivision, and Aggregation
 
-**culture**
+The canonical supply must remain exactly:
 
-**navigation**
+21,000,000 Parcels.
 
-**infrastructure**
+What remains open is how higher systems may represent finer or larger units without changing that count.
 
-**history**
+Possible future concepts include:
 
-**Builder-created grouping**
+sub-Parcel references
 
-**service areas**
+construction zones
 
-**The terminology itself now constrains the inquiry.**
+usage areas
 
-**The World should not create multiple unrelated meanings for a reserved constitutional term merely because each would be convenient.**
+administrative overlays
 
-**Geography**
+multi-Parcel holdings
 
-**BitPangea does not yet possess a final geography architecture.**
+combined development areas
 
-**Open questions include:**
+These should not silently create or destroy canonical Parcels.
 
-**What qualifies as canonical geography?**
+The central unresolved question is:
 
-**What belongs to World State?**
+How can higher layers obtain spatial flexibility without changing canonical Parcel supply?
 
-**What is derived interpretation?**
+<a id="ch16-s20"></a>
 
-**What is purely visual representation?**
+### Regions
 
-**Can terrain change?**
+Region is already reserved terminology through WP-S-II — The Region.
 
-**Who may change it?**
+That means later design should not casually use “region” as a generic label for any grouping.
 
-**Which geographic features persist independently of Builders?**
+Questions remain about how constitutional Region concepts, if further developed, relate to:
 
-**Can geographic features span many Parcels?**
+geography
 
-**How does geography relate to Parcel boundaries?**
+administration
 
-**How does it relate to Spatial Ground and General Spatial Interpretation?**
+culture
 
-**What belongs to Creator design versus later World development?**
+navigation
 
-**Geography is a dependent-resolution problem.**
+infrastructure
 
-**It should not be finalized before deeper spatial Architecture is ready.**
+history
 
-**Infrastructure**
+Builder-created grouping
 
-**Infrastructure will almost certainly matter.**
+service areas
 
-**Its precise Architecture does not yet exist.**
+The terminology itself now constrains the inquiry.
 
-**Potential infrastructure may include:**
+The World should not create multiple unrelated meanings for a reserved constitutional term merely because each would be convenient.
 
-**transport**
+<a id="ch16-s21"></a>
 
-**communications**
+### Geography
 
-**shared services**
+BitPangea does not yet possess a final geography architecture.
 
-**network pathways**
+Open questions include:
 
-**utilities**
+What qualifies as canonical geography?
 
-**public systems**
+What belongs to World State?
 
-**digital-native connective structures**
+What is derived interpretation?
 
-**Open questions include:**
+What is purely visual representation?
 
-**Who may create infrastructure?**
+Can terrain change?
 
-**What authority permits it?**
+Who may change it?
 
-**Can infrastructure cross Parcels?**
+Which geographic features persist independently of Builders?
 
-**Can it cross or interact with The Verge?**
+Can geographic features span many Parcels?
 
-**Can it connect Outliers?**
+How does geography relate to Parcel boundaries?
 
-**Does infrastructure occupy Parcel territory?**
+How does it relate to Spatial Ground and General Spatial Interpretation?
 
-**Can it possess canonical identity?**
+What belongs to Creator design versus later World development?
 
-**What parts belong to World Runtime?**
+Geography is a dependent-resolution problem.
 
-**What parts belong to services?**
+It should not be finalized before deeper spatial Architecture is ready.
 
-**What parts require institutional authority?**
+<a id="ch16-s22"></a>
 
-**How is provenance preserved?**
+### Infrastructure
 
-**Infrastructure is likely to expose the limits of any architecture based only on simple actor-to-Parcel ownership relationships.**
+Infrastructure will almost certainly matter.
 
-**Identity / Rights / Control**
+Its precise Architecture does not yet exist.
 
-**Identity / Rights / Control is a recognized Architecture domain.**
+Potential infrastructure may include:
 
-**Its internal decomposition remains open.**
+transport
 
-**The architecture still must determine how responsibilities such as:**
+communications
 
-**identity**
+shared services
 
-**authentication**
+network pathways
 
-**rights**
+utilities
 
-**authorization**
+public systems
 
-**control**
+digital-native connective structures
 
-**delegation**
+Open questions include:
 
-**recovery**
+Who may create infrastructure?
 
-**policy**
+What authority permits it?
 
-**shared authority**
+Can infrastructure cross Parcels?
 
-**should be separated or combined.**
+Can it cross or interact with The Verge?
 
-**The important point is no longer whether these responsibilities exist.**
+Can it connect Outliers?
 
-**They do.**
+Does infrastructure occupy Parcel territory?
 
-**The question is:**
+Can it possess canonical identity?
 
-**How should they be organized without collapsing distinct forms of authority?**
+What parts belong to World Runtime?
 
-**Actor Identity**
+What parts belong to services?
 
-**Persistent actor identity is required.**
+What parts require institutional authority?
 
-**The final identity model remains open.**
+How is provenance preserved?
 
-**Questions include:**
+Infrastructure is likely to expose the limits of any architecture based only on simple actor-to-Parcel ownership relationships.
 
-**Which actor classes exist?**
+<a id="ch16-s23"></a>
 
-**Individuals?**
+### Identity / Rights / Control
 
-**Organizations?**
+Identity / Rights / Control is a recognized Architecture domain.
 
-**Institutions?**
+Its internal decomposition remains open.
 
-**Services?**
+The architecture still must determine how responsibilities such as:
 
-**Automated agents?**
+identity
 
-**World systems?**
+authentication
 
-**How is identity established?**
+rights
 
-**How is continuity preserved?**
+authorization
 
-**How are credentials rotated?**
+control
 
-**How does recovery work?**
+delegation
 
-**Can identities be pseudonymous?**
+recovery
 
-**Can one person legitimately operate more than one identity?**
+policy
 
-**Can one identity represent an organization?**
+shared authority
 
-**What information is public?**
+should be separated or combined.
 
-**What remains private?**
+The important point is no longer whether these responsibilities exist.
 
-**How does identity provenance work?**
+They do.
 
-**Identity must eventually become precise enough to support legitimate authority without requiring unnecessary disclosure.**
+The question is:
 
-**Authentication**
+How should they be organized without collapsing distinct forms of authority?
 
-**Authentication remains distinct from identity.**
+<a id="ch16-s24"></a>
 
-**The final mechanism is open.**
+### Actor Identity
 
-**Possible implementations might involve:**
+Persistent actor identity is required.
 
-**cryptographic keys**
+The final identity model remains open.
 
-**hardware credentials**
+Questions include:
 
-**password-based methods**
+Which actor classes exist?
 
-**multi-factor mechanisms**
+Individuals?
 
-**wallet signatures**
+Organizations?
 
-**federated systems**
+Institutions?
 
-**future mechanisms**
+Services?
 
-**No specific technology is required.**
+Automated agents?
 
-**The architectural requirement is:**
+World systems?
 
-**BitPangea must be able to establish sufficient confidence that an actor requesting an operation is authorized to act through the relevant identity.**
+How is identity established?
 
-**Rights**
+How is continuity preserved?
 
-**Rights remain one of the largest unresolved areas.**
+How are credentials rotated?
 
-**BitPangea has deliberately avoided reducing the entire domain to “ownership.”**
+How does recovery work?
 
-**Open questions include:**
+Can identities be pseudonymous?
 
-**What formal governed relationships exist?**
+Can one person legitimately operate more than one identity?
 
-**Does ownership become a canonical concept?**
+Can one identity represent an organization?
 
-**Can use exist without ownership?**
+What information is public?
 
-**Can construction authority be separate?**
+What remains private?
 
-**Can infrastructure authority be separate?**
+How does identity provenance work?
 
-**Can rights be temporary?**
+Identity must eventually become precise enough to support legitimate authority without requiring unnecessary disclosure.
 
-**Can rights expire?**
+<a id="ch16-s25"></a>
 
-**Can rights be revoked?**
+### Authentication
 
-**Can rights be shared?**
+Authentication remains distinct from identity.
 
-**Can rights conflict?**
+The final mechanism is open.
 
-**Can rights be inherited?**
+Possible implementations might involve:
 
-**Can rights attach to services?**
+cryptographic keys
 
-**Organizations?**
+hardware credentials
 
-**Infrastructure?**
+password-based methods
 
-**World objects?**
+multi-factor mechanisms
 
-**How are rights created?**
+wallet signatures
 
-**Under whose authority?**
+federated systems
 
-**What provenance must be preserved?**
+future mechanisms
 
-**These questions require eventual resolution for a mature multi-actor World.**
+No specific technology is required.
 
-**They should not be answered by copying physical land law uncritically.**
+The architectural requirement is:
 
-**Control and Authorization**
+BitPangea must be able to establish sufficient confidence that an actor requesting an operation is authorized to act through the relevant identity.
 
-**Rights do not automatically answer whether a particular action may occur now.**
+<a id="ch16-s26"></a>
 
-**BitPangea still needs a precise model for:**
+### Rights
 
-**authorization**
+Rights remain one of the largest unresolved areas.
 
-**control**
+BitPangea has deliberately avoided reducing the entire domain to “ownership.”
 
-**scope**
+Open questions include:
 
-**delegation**
+What formal governed relationships exist?
 
-**policy evaluation**
+Does ownership become a canonical concept?
 
-**revocation**
+Can use exist without ownership?
 
-**current conditions**
+Can construction authority be separate?
 
-**The core question is:**
+Can infrastructure authority be separate?
 
-**Given this actor, this governed relationship, this target, this World state, and this requested action—may the action occur now?**
+Can rights be temporary?
 
-**This is a required operational problem.**
+Can rights expire?
 
-**Delegation**
+Can rights be revoked?
 
-**Delegation is likely to become necessary.**
+Can rights be shared?
 
-**Its architecture remains open.**
+Can rights conflict?
 
-**Questions include:**
+Can rights be inherited?
 
-**Who may delegate authority?**
+Can rights attach to services?
 
-**What may be delegated?**
+Organizations?
 
-**For how long?**
+Infrastructure?
 
-**Can delegation be revoked?**
+World objects?
 
-**Can delegated authority be delegated again?**
+How are rights created?
 
-**What happens when the underlying authority expires?**
+Under whose authority?
 
-**Can organizations delegate?**
+What provenance must be preserved?
 
-**Can infrastructure authority be delegated?**
+These questions require eventual resolution for a mature multi-actor World.
 
-**How is provenance preserved?**
+They should not be answered by copying physical land law uncritically.
 
-**Delegation is likely to become one of the key tests of whether Identity / Rights / Control is sufficiently expressive.**
+<a id="ch16-s27"></a>
 
-**Shared Authority**
+### Control and Authorization
 
-**BitPangea should not assume every World object must always have one controlling actor.**
+Rights do not automatically answer whether a particular action may occur now.
 
-**Shared authority may become necessary for:**
+BitPangea still needs a precise model for:
 
-**organizations**
+authorization
 
-**institutions**
+control
 
-**infrastructure**
+scope
 
-**communities**
+delegation
 
-**joint projects**
+policy evaluation
 
-**public systems**
+revocation
 
-**The architecture remains open.**
+current conditions
 
-**This should not be prematurely collapsed into governance.**
+The core question is:
 
-**Shared control is an authority problem.**
+Given this actor, this governed relationship, this target, this World state, and this requested action—may the action occur now?
 
-**Governance may later build upon it.**
+This is a required operational problem.
 
-**Privacy**
+<a id="ch16-s28"></a>
 
-**Persistent identity, provenance, history, and accountability create real privacy obligations.**
+### Delegation
 
-**Open questions include:**
+Delegation is likely to become necessary.
 
-**What identity information is public?**
+Its architecture remains open.
 
-**What rights relationships are public?**
+Questions include:
 
-**What actions become public record?**
+Who may delegate authority?
 
-**What operational evidence remains protected?**
+What may be delegated?
 
-**Can activity remain private?**
+For how long?
 
-**What may expire?**
+Can delegation be revoked?
 
-**Who may inspect records?**
+Can delegated authority be delegated again?
 
-**What information must never become general World visibility?**
+What happens when the underlying authority expires?
 
-**The governing principle is already established:**
+Can organizations delegate?
 
-**Persistent identity and maximal disclosure are not the same requirement.**
+Can infrastructure authority be delegated?
 
-**And:**
+How is provenance preserved?
 
-**A World can remember without remembering everyone publicly.**
+Delegation is likely to become one of the key tests of whether Identity / Rights / Control is sufficiently expressive.
 
-**World Runtime**
+<a id="ch16-s29"></a>
 
-**World Runtime is a recognized Architecture domain.**
+### Shared Authority
 
-**Its existence is established.**
+BitPangea should not assume every World object must always have one controlling actor.
 
-**Its internal Architecture remains largely unresolved.**
+Shared authority may become necessary for:
 
-**Open questions include:**
+organizations
 
-**the canonical World State model**
+institutions
 
-**the classes of state that belong to Runtime**
+infrastructure
 
-**protocol boundaries**
+communities
 
-**service boundaries**
+joint projects
 
-**validation**
+public systems
 
-**execution**
+The architecture remains open.
 
-**authorization integration**
+This should not be prematurely collapsed into governance.
 
-**atomicity**
+Shared control is an authority problem.
 
-**concurrency**
+Governance may later build upon it.
 
-**ordering**
+<a id="ch16-s30"></a>
 
-**failure**
+### Privacy
 
-**recovery**
+Persistent identity, provenance, history, and accountability create real privacy obligations.
 
-**integrity**
+Open questions include:
 
-**operational scheduling**
+What identity information is public?
 
-**conformance**
+What rights relationships are public?
 
-**distribution**
+What actions become public record?
 
-**replication**
+What operational evidence remains protected?
 
-**Runtime must eventually answer:**
+Can activity remain private?
 
-**How does one operational BitPangea continue coherently while many actors and systems change it?**
+What may expire?
 
-**Canonical World State**
+Who may inspect records?
 
-**Persistent World State is required.**
+What information must never become general World visibility?
 
-**Its exact model is not.**
+The governing principle is already established:
 
-**Open questions include:**
+Persistent identity and maximal disclosure are not the same requirement.
 
-**What belongs to canonical state?**
+And:
 
-**What is derived?**
+A World can remember without remembering everyone publicly.
 
-**What is cached?**
+<a id="ch16-s31"></a>
 
-**What is temporary?**
+### World Runtime
 
-**What is local to a client?**
+World Runtime is a recognized Architecture domain.
 
-**What is private?**
+Its existence is established.
 
-**What belongs only to provenance?**
+Its internal Architecture remains largely unresolved.
 
-**What belongs only to history?**
+Open questions include:
 
-**What state is authoritative versus replicated?**
+the canonical World State model
 
-**Which Architecture domain owns which fact?**
+the classes of state that belong to Runtime
 
-**The distinction between World State and everything surrounding it will be central to Runtime clarity.**
+protocol boundaries
 
-**Protocols**
+service boundaries
 
-**Protocols are operationally necessary.**
+validation
 
-**Their final structure remains open.**
+execution
 
-**Questions include:**
+authorization integration
 
-**Which interactions require formal protocol?**
+atomicity
 
-**What semantics must be canonical?**
+concurrency
 
-**How are protocols versioned?**
+ordering
 
-**Can versions coexist?**
+failure
 
-**How are incompatible clients handled?**
+recovery
 
-**What constitutes protocol conformance?**
+integrity
 
-**Who possesses authority to change protocol?**
+operational scheduling
 
-**How does protocol evolution avoid changing canonical meaning accidentally?**
+conformance
 
-**Protocols must enable interoperability without becoming universal authority.**
+distribution
 
-**Services**
+replication
 
-**Services provide capabilities.**
+Runtime must eventually answer:
 
-**Their boundaries remain unresolved.**
+How does one operational BitPangea continue coherently while many actors and systems change it?
 
-**Questions include:**
+<a id="ch16-s32"></a>
 
-**Which capabilities deserve independent services?**
+### Canonical World State
 
-**Which services hold state?**
+Persistent World State is required.
 
-**Which remain stateless?**
+Its exact model is not.
 
-**Which may be replaced freely?**
+Open questions include:
 
-**How do services discover authoritative sources?**
+What belongs to canonical state?
 
-**How is failure isolated?**
+What is derived?
 
-**How do services demonstrate conformance?**
+What is cached?
 
-**How are service versions handled?**
+What is temporary?
 
-**A service should never become constitutionally permanent merely because an early implementation becomes popular.**
+What is local to a client?
 
-**Execution**
+What is private?
 
-**Execution remains an internal Runtime problem requiring future resolution.**
+What belongs only to provenance?
 
-**Questions include:**
+What belongs only to history?
 
-**How are operations validated?**
+What state is authoritative versus replicated?
 
-**What constitutes one canonical state transition?**
+Which Architecture domain owns which fact?
 
-**How are multi-domain effects coordinated?**
+The distinction between World State and everything surrounding it will be central to Runtime clarity.
 
-**How is authorization bound to execution?**
+<a id="ch16-s33"></a>
 
-**How are partial results prevented?**
+### Protocols
 
-**What happens when execution fails halfway?**
+Protocols are operationally necessary.
 
-**How are side effects represented?**
+Their final structure remains open.
 
-**How is provenance generated?**
+Questions include:
 
-**A World must eventually make legitimate change both operational and explainable.**
+Which interactions require formal protocol?
 
-**Concurrency**
+What semantics must be canonical?
 
-**A populated BitPangea will eventually receive simultaneous legitimate requests.**
+How are protocols versioned?
 
-**The Runtime will need to determine:**
+Can versions coexist?
 
-**ordering**
+How are incompatible clients handled?
 
-**conflict**
+What constitutes protocol conformance?
 
-**parallel compatibility**
+Who possesses authority to change protocol?
 
-**retry behavior**
+How does protocol evolution avoid changing canonical meaning accidentally?
 
-**canonical resolution**
+Protocols must enable interoperability without becoming universal authority.
 
-**cross-service coordination**
+<a id="ch16-s34"></a>
 
-**The architectural requirement is:**
+### Services
 
-**Many actors may act. One operational World must remain coherent.**
+Services provide capabilities.
 
-**No particular distributed-systems mechanism has yet been chosen.**
+Their boundaries remain unresolved.
 
-**Time**
+Questions include:
 
-**BitPangea requires meaningful ordering.**
+Which capabilities deserve independent services?
 
-**The final temporal architecture remains open.**
+Which services hold state?
 
-**Questions include:**
+Which remain stateless?
 
-**What constitutes canonical operational time?**
+Which may be replaced freely?
 
-**How are events ordered?**
+How do services discover authoritative sources?
 
-**How are timestamps represented?**
+How is failure isolated?
 
-**How are simultaneous events treated?**
+How do services demonstrate conformance?
 
-**Can rights become future-effective?**
+How are service versions handled?
 
-**How are expirations represented?**
+A service should never become constitutionally permanent merely because an early implementation becomes popular.
 
-**How does operational time relate to historical eras?**
+<a id="ch16-s35"></a>
 
-**Does BitPangea adopt a distinct World-time expression above deeper ordering?**
+### Execution
 
-**These questions concern temporal truth.**
+Execution remains an internal Runtime problem requiring future resolution.
 
-**They should not be confused with visual day/night cycles.**
+Questions include:
 
-**Failure and Recovery**
+How are operations validated?
 
-**Failure is inevitable.**
+What constitutes one canonical state transition?
 
-**Recovery Architecture is not yet established.**
+How are multi-domain effects coordinated?
 
-**Questions include:**
+How is authorization bound to execution?
 
-**How is canonical state reconstructed?**
+How are partial results prevented?
 
-**Can operations be replayed?**
+What happens when execution fails halfway?
 
-**What constitutes a valid checkpoint?**
+How are side effects represented?
 
-**How is corruption detected?**
+How is provenance generated?
 
-**How are conflicting recovery states resolved?**
+A World must eventually make legitimate change both operational and explainable.
 
-**What authority may perform exceptional recovery?**
+<a id="ch16-s36"></a>
 
-**How is recovery itself recorded?**
+### Concurrency
 
-**The requirement is:**
+A populated BitPangea will eventually receive simultaneous legitimate requests.
 
-**Persistence must include recoverability.**
+The Runtime will need to determine:
 
-**Integrity**
+ordering
 
-**BitPangea must ultimately be able to distinguish legitimate state from unexplained mutation.**
+conflict
 
-**The final integrity mechanism remains open.**
+parallel compatibility
 
-**Possible tools may include:**
+retry behavior
 
-**cryptographic hashes**
+canonical resolution
 
-**signatures**
+cross-service coordination
 
-**redundant records**
+The architectural requirement is:
 
-**independent verification**
+Many actors may act. One operational World must remain coherent.
 
-**tamper-evident structures**
+No particular distributed-systems mechanism has yet been chosen.
 
-**distributed validation**
+<a id="ch16-s37"></a>
 
-**or other methods.**
+### Time
 
-**No specific mechanism is presently required.**
+BitPangea requires meaningful ordering.
 
-**The requirement is:**
+The final temporal architecture remains open.
 
-**Canonical World state must be trustworthy enough to distinguish legitimate transition from unexplained alteration.**
+Questions include:
 
-**Persistence / Provenance**
+What constitutes canonical operational time?
 
-**Persistence / Provenance is a recognized Architecture domain.**
+How are events ordered?
 
-**Its internal Architecture remains open.**
+How are timestamps represented?
 
-**Questions include:**
+How are simultaneous events treated?
 
-**Which events require durable provenance?**
+Can rights become future-effective?
 
-**What evidence must be preserved?**
+How are expirations represented?
 
-**How are actor and authority references preserved?**
+How does operational time relate to historical eras?
 
-**How is supersession represented?**
+Does BitPangea adopt a distinct World-time expression above deeper ordering?
 
-**How are corrections handled?**
+These questions concern temporal truth.
 
-**How are sources classified?**
+They should not be confused with visual day/night cycles.
 
-**How long is evidence retained?**
+<a id="ch16-s38"></a>
 
-**How does provenance interact with privacy?**
+### Failure and Recovery
 
-**How does it expose information to historical institutions without becoming history itself?**
+Failure is inevitable.
 
-**The central question is:**
+Recovery Architecture is not yet established.
 
-**How does BitPangea preserve the lineage of consequential truth?**
+Questions include:
 
-**Interoperability**
+How is canonical state reconstructed?
 
-**Interoperability is a recognized Architecture domain.**
+Can operations be replayed?
 
-**Its exact mechanisms remain open.**
+What constitutes a valid checkpoint?
 
-**Questions include:**
+How is corruption detected?
 
-**What canonical interchange semantics must exist?**
+How are conflicting recovery states resolved?
 
-**What may differ between implementations?**
+What authority may perform exceptional recovery?
 
-**Which encodings are normative?**
+How is recovery itself recorded?
 
-**Can multiple lossless normative encodings coexist?**
+The requirement is:
 
-**How are protocol versions negotiated?**
+Persistence must include recoverability.
 
-**How are canonical identifiers exchanged?**
+<a id="ch16-s39"></a>
 
-**How is semantic equivalence tested?**
+### Integrity
 
-**How does conformance differ from interoperability?**
+BitPangea must ultimately be able to distinguish legitimate state from unexplained mutation.
 
-**The governing principle is established:**
+The final integrity mechanism remains open.
 
-**Implementation diversity must not become semantic diversity.**
+Possible tools may include:
 
-**Blockchain**
+cryptographic hashes
 
-**BitPangea’s relationship with blockchain remains intentionally open.**
+signatures
 
-**Nothing established requires:**
+redundant records
 
-**Parcels to be tokens**
+independent verification
 
-**rights to be on-chain**
+tamper-evident structures
 
-**World State to be on-chain**
+distributed validation
 
-**World Runtime to use blockchain**
+or other methods.
 
-**governance to use blockchain**
+No specific mechanism is presently required.
 
-**Bitcoin remains an important source of inspiration.**
+The requirement is:
 
-**It is not an implementation mandate.**
+Canonical World state must be trustworthy enough to distinguish legitimate transition from unexplained alteration.
 
-**The correct question is:**
+<a id="ch16-s40"></a>
 
-**Which specific BitPangea responsibilities, if any, are genuinely improved by blockchain or related cryptographic systems?**
+### Persistence / Provenance
 
-**Technology follows requirement.**
+Persistence / Provenance is a recognized Architecture domain.
 
-**Decentralization**
+Its internal Architecture remains open.
 
-**BitPangea has not adopted “decentralization” as one undifferentiated requirement.**
+Questions include:
 
-**Future inquiry may separately examine distribution of:**
+Which events require durable provenance?
 
-**hosting**
+What evidence must be preserved?
 
-**storage**
+How are actor and authority references preserved?
 
-**execution**
+How is supersession represented?
 
-**validation**
+How are corrections handled?
 
-**authority**
+How are sources classified?
 
-**governance**
+How long is evidence retained?
 
-**identity**
+How does provenance interact with privacy?
 
-**history**
+How does it expose information to historical institutions without becoming history itself?
 
-**discovery**
+The central question is:
 
-**Different responsibilities may justify different answers.**
+How does BitPangea preserve the lineage of consequential truth?
 
-**Thus:**
+<a id="ch16-s41"></a>
 
-**Decentralization should be analyzed as architecture, not adopted as slogan.**
+### Interoperability
 
-**Builders**
+Interoperability is a recognized Architecture domain.
 
-**Builders are required conceptually.**
+Its exact mechanisms remain open.
 
-**A final Builder architecture does not yet exist.**
+Questions include:
 
-**Builders are not themselves an Architecture domain.**
+What canonical interchange semantics must exist?
 
-**They will operate through the Architecture.**
+What may differ between implementations?
 
-**Open questions include:**
+Which encodings are normative?
 
-**What may Builders create?**
+Can multiple lossless normative encodings coexist?
 
-**What may they not create?**
+How are protocol versions negotiated?
 
-**How does drafting work?**
+How are canonical identifiers exchanged?
 
-**How does commitment to canonical World state occur?**
+How is semantic equivalence tested?
 
-**How are builds validated?**
+How does conformance differ from interoperability?
 
-**Can Builders create behaviors?**
+The governing principle is established:
 
-**Can Builders create services?**
+Implementation diversity must not become semantic diversity.
 
-**Can Builders create institutions?**
+<a id="ch16-s42"></a>
 
-**Can Builders create infrastructure?**
+### Blockchain
 
-**How are updates handled?**
+BitPangea’s relationship with blockchain remains intentionally open.
 
-**How are deletions handled?**
+Nothing established requires:
 
-**How does provenance attach to creation?**
+Parcels to be tokens
 
-**Builder design remains strongly dependent upon:**
+rights to be on-chain
 
-**Identity / Rights / Control**
+World State to be on-chain
 
-**World Runtime**
+World Runtime to use blockchain
 
-**Persistence / Provenance**
+governance to use blockchain
 
-**Interoperability**
+Bitcoin remains an important source of inspiration.
 
-**Experience Architecture**
+It is not an implementation mandate.
 
-**and the eventual World object model.**
+The correct question is:
 
-**World Objects**
+Which specific BitPangea responsibilities, if any, are genuinely improved by blockchain or related cryptographic systems?
 
-**BitPangea has not yet established a canonical World-object architecture.**
+Technology follows requirement.
 
-**Future objects may raise questions such as:**
+<a id="ch16-s43"></a>
 
-**Does every persistent object possess identity?**
+### Decentralization
 
-**Can objects move?**
+BitPangea has not adopted “decentralization” as one undifferentiated requirement.
 
-**Can objects span Parcels?**
+Future inquiry may separately examine distribution of:
 
-**Can objects contain other objects?**
+hosting
 
-**Can an object possess state?**
+storage
 
-**Can an object possess rights?**
+execution
 
-**Can an object initiate behavior?**
+validation
 
-**Can objects be versioned?**
+authority
 
-**Can they be copied?**
+governance
 
-**What makes two objects the same object across time?**
+identity
 
-**This Architecture will likely become one of the key bridges between Builders and Runtime.**
+history
 
-**Construction Rules**
+discovery
 
-**Universal construction constraints are not yet established.**
+Different responsibilities may justify different answers.
 
-**Possible future questions include:**
+Thus:
 
-**height**
+Decentralization should be analyzed as architecture, not adopted as slogan.
 
-**volume**
+<a id="ch16-s44"></a>
 
-**boundary crossing**
+### Builders
 
-**overlap**
+Builders are required conceptually.
 
-**collision**
+A final Builder architecture does not yet exist.
 
-**access**
+Builders are not themselves an Architecture domain.
 
-**shared structures**
+They will operate through the Architecture.
 
-**vertical stacking**
+Open questions include:
 
-**infrastructure connection**
+What may Builders create?
 
-**visual impact**
+What may they not create?
 
-**temporary structures**
+How does drafting work?
 
-**subsurface use**
+How does commitment to canonical World state occur?
 
-**These should not be copied automatically from conventional virtual worlds.**
+How are builds validated?
 
-**Construction rules should arise from BitPangea’s actual spatial and operational Architecture.**
+Can Builders create behaviors?
 
-**Verticality**
+Can Builders create services?
 
-**The canonical Parcel architecture is presently framed primarily through planar spatial truth.**
+Can Builders create institutions?
 
-**The role of vertical space remains unresolved.**
+Can Builders create infrastructure?
 
-**Questions include:**
+How are updates handled?
 
-**What relationship does a Parcel have to height?**
+How are deletions handled?
 
-**Can there be vertical limits?**
+How does provenance attach to creation?
 
-**Does subsurface space exist?**
+Builder design remains strongly dependent upon:
 
-**Can different actors possess different rights at different elevations?**
+Identity / Rights / Control
 
-**Can World objects occupy the same planar Parcel at different vertical positions?**
+World Runtime
 
-**How does 3D construction relate to 2D cadastral truth?**
+Persistence / Provenance
 
-**Verticality may become a major design question once Builder Architecture advances.**
+Interoperability
 
-**Experience Architecture**
+Experience Architecture
 
-**Experience Architecture is a recognized Architecture domain.**
+and the eventual World object model.
 
-**Its final design remains open.**
+<a id="ch16-s45"></a>
 
-**Questions include:**
+### World Objects
 
-**How does the globe transition into the flat lived World?**
+BitPangea has not yet established a canonical World-object architecture.
 
-**How is progressive revelation implemented?**
+Future objects may raise questions such as:
 
-**How do users navigate?**
+Does every persistent object possess identity?
 
-**How are Parcel boundaries revealed?**
+Can objects move?
 
-**How are canonical and derived information distinguished?**
+Can objects span Parcels?
 
-**How do Builders interact with the World?**
+Can objects contain other objects?
 
-**How does discovery work?**
+Can an object possess state?
 
-**What belongs to shared World experience versus private client preference?**
+Can an object possess rights?
 
-**Which technologies—web, 3D, AR, VR, future interfaces—should be supported?**
+Can an object initiate behavior?
 
-**The governing rule is already established:**
+Can objects be versioned?
 
-**Experience is where the World becomes perceptible—not where the World becomes authoritative.**
+Can they be copied?
 
-**Civilization**
+What makes two objects the same object across time?
 
-**Civilization remains intentionally underdetermined.**
+This Architecture will likely become one of the key bridges between Builders and Runtime.
 
-**That is not a deficiency.**
+<a id="ch16-s46"></a>
 
-**Possible future phenomena include:**
+### Construction Rules
 
-**communities**
+Universal construction constraints are not yet established.
 
-**organizations**
+Possible future questions include:
 
-**markets**
+height
 
-**institutions**
+volume
 
-**social norms**
+boundary crossing
 
-**cultural movements**
+overlap
 
-**education**
+collision
 
-**art**
+access
 
-**public life**
+shared structures
 
-**ritual**
+vertical stacking
 
-**collective identity**
+infrastructure connection
 
-**many of which should not be predesigned.**
+visual impact
 
-**The Creator’s responsibility is not to decide their outcomes.**
+temporary structures
 
-**It is to ensure that the World can support their emergence.**
+subsurface use
 
-**Economy**
+These should not be copied automatically from conventional virtual worlds.
 
-**BitPangea does not presently possess a defined economy.**
+Construction rules should arise from BitPangea’s actual spatial and operational Architecture.
 
-**Open questions include:**
+<a id="ch16-s47"></a>
 
-**Will Parcels be transferable?**
+### Verticality
 
-**Will markets exist?**
+The canonical Parcel architecture is presently framed primarily through planar spatial truth.
 
-**Will currency exist?**
+The role of vertical space remains unresolved.
 
-**Will Bitcoin have a direct operational role?**
+Questions include:
 
-**Can services charge fees?**
+What relationship does a Parcel have to height?
 
-**Can Builders receive value?**
+Can there be vertical limits?
 
-**Can communities create economic systems?**
+Does subsurface space exist?
 
-**How will scarcity interact with actual use?**
+Can different actors possess different rights at different elevations?
 
-**These questions may become important.**
+Can World objects occupy the same planar Parcel at different vertical positions?
 
-**They do not currently define the World itself.**
+How does 3D construction relate to 2D cadastral truth?
 
-**Economics should not be smuggled into spatial Architecture merely because territory is scarce.**
+Verticality may become a major design question once Builder Architecture advances.
 
-**Governance**
+<a id="ch16-s48"></a>
 
-**Governance remains intentionally unresolved.**
+### Experience Architecture
 
-**Future questions may include:**
+Experience Architecture is a recognized Architecture domain.
 
-**Who changes shared rules?**
+Its final design remains open.
 
-**Who administers common systems?**
+Questions include:
 
-**Who resolves disputes?**
+How does the globe transition into the flat lived World?
 
-**Who governs infrastructure?**
+How is progressive revelation implemented?
 
-**Who may alter protocols?**
+How do users navigate?
 
-**Who may propose constitutional change?**
+How are Parcel boundaries revealed?
 
-**Can communities self-govern?**
+How are canonical and derived information distinguished?
 
-**How are institutions recognized?**
+How do Builders interact with the World?
 
-**What authority remains with the Creator?**
+How does discovery work?
 
-**What authority belongs to future civilization?**
+What belongs to shared World experience versus private client preference?
 
-**Governance may eventually become unavoidable.**
+Which technologies—web, 3D, AR, VR, future interfaces—should be supported?
 
-**It should still follow the responsibilities that require governing.**
+The governing rule is already established:
 
-**Disputes**
+Experience is where the World becomes perceptible—not where the World becomes authoritative.
 
-**A multi-actor civilization will eventually produce disagreement.**
+<a id="ch16-s49"></a>
 
-**BitPangea has no final dispute-resolution architecture.**
+### Civilization
 
-**Possible dispute classes include:**
+Civilization remains intentionally underdetermined.
 
-**identity**
+That is not a deficiency.
 
-**rights**
+Possible future phenomena include:
 
-**control**
+communities
 
-**Builder actions**
+organizations
 
-**shared authority**
+markets
 
-**institutions**
+institutions
 
-**history**
+social norms
 
-**governance**
+cultural movements
 
-**constitutional interpretation**
+education
 
-**These may require different mechanisms.**
+art
 
-**The existence of disagreement does not imply that one universal court-like system should solve every category.**
+public life
 
-**The Long-Term Role of the Creator**
+ritual
 
-**The present architectural direction moves from Creator authority toward stewardship.**
+collective identity
 
-**The exact transition remains open.**
+many of which should not be predesigned.
 
-**Questions include:**
+The Creator’s responsibility is not to decide their outcomes.
 
-**Which authorities remain with the Creator?**
+It is to ensure that the World can support their emergence.
 
-**Which should become institutional?**
+<a id="ch16-s50"></a>
 
-**Can Creator authority be delegated?**
+### Economy
 
-**Can it expire?**
+BitPangea does not presently possess a defined economy.
 
-**Can it be superseded?**
+Open questions include:
 
-**What happens if the Creator becomes unavailable?**
+Will Parcels be transferable?
 
-**Who preserves foundational stewardship?**
+Will markets exist?
 
-**How is intent distinguished from authority?**
+Will currency exist?
 
-**How does future civilization interact with Creator-period decisions?**
+Will Bitcoin have a direct operational role?
 
-**These questions become more important as BitPangea approaches real operation.**
+Can services charge fees?
 
-**Constitutional Change**
+Can Builders receive value?
 
-**BitPangea has established that foundational change must carry a much higher burden than ordinary World change.**
+Can communities create economic systems?
 
-**The actual constitutional-change mechanism remains open.**
+How will scarcity interact with actual use?
 
-**Questions include:**
+These questions may become important.
 
-**What may be amended?**
+They do not currently define the World itself.
 
-**What should be effectively permanent?**
+Economics should not be smuggled into spatial Architecture merely because territory is scarce.
 
-**Who may propose constitutional change?**
+<a id="ch16-s51"></a>
 
-**Who evaluates it?**
+### Governance
 
-**What evidence is required?**
+Governance remains intentionally unresolved.
 
-**How are dependencies analyzed?**
+Future questions may include:
 
-**Does future civilization participate?**
+Who changes shared rules?
 
-**Can changes be reversed?**
+Who administers common systems?
 
-**How is supersession preserved?**
+Who resolves disputes?
 
-**How is constitutional provenance recorded?**
+Who governs infrastructure?
 
-**The principle is established.**
+Who may alter protocols?
 
-**The mechanism is not.**
+Who may propose constitutional change?
 
-**Conformance**
+Can communities self-govern?
 
-**Conformance is already explicit within the Foundational Survey Fabric.**
+How are institutions recognized?
 
-**Its future role elsewhere remains open.**
+What authority remains with the Creator?
 
-**Possible future conformance questions include:**
+What authority belongs to future civilization?
 
-**Does an implementation preserve canonical Parcel identity?**
+Governance may eventually become unavoidable.
 
-**Does it respect authority boundaries?**
+It should still follow the responsibilities that require governing.
 
-**Does it preserve Runtime semantics?**
+<a id="ch16-s52"></a>
 
-**Does it exchange canonical meaning correctly?**
+### Disputes
 
-**Does it preserve constitutional requirements?**
+A multi-actor civilization will eventually produce disagreement.
 
-**But conformance should remain domain-specific where necessary.**
+BitPangea has no final dispute-resolution architecture.
 
-**The existence of a Survey conformance framework does not automatically justify one universal conformance system for every Architecture domain.**
+Possible dispute classes include:
 
-**History Architecture**
+identity
 
-**BitPangea intends to be capable of genuine history.**
+rights
 
-**The full historical architecture remains open.**
+control
 
-**Questions include:**
+Builder actions
 
-**Which events become historical records?**
+shared authority
 
-**Which evidence is retained?**
+institutions
 
-**What becomes archival?**
+history
 
-**What remains private?**
+governance
 
-**How is significance added retrospectively?**
+constitutional interpretation
 
-**How are corrections represented?**
+These may require different mechanisms.
 
-**How are disputes preserved?**
+The existence of disagreement does not imply that one universal court-like system should solve every category.
 
-**How are interpretations distinguished from evidence?**
+<a id="ch16-s53"></a>
 
-**How is protected history handled?**
+### The Long-Term Role of the Creator
 
-**How does history interact with institutions?**
+The present architectural direction moves from Creator authority toward stewardship.
 
-**History should preserve evidence without becoming permanent universal surveillance.**
+The exact transition remains open.
 
-**Digital Antiquity**
+Questions include:
 
-**Digital Antiquity is established as a historical concept.**
+Which authorities remain with the Creator?
 
-**Its long-term institutional structure remains open.**
+Which should become institutional?
 
-**Questions include:**
+Can Creator authority be delegated?
 
-**How is Digital Antiquity curated?**
+Can it expire?
 
-**Who preserves it?**
+Can it be superseded?
 
-**How are artifacts authenticated?**
+What happens if the Creator becomes unavailable?
 
-**How are hidden elements protected?**
+Who preserves foundational stewardship?
 
-**How are discoveries recorded without exposing protected meaning?**
+How is intent distinguished from authority?
 
-**Can future civilization add new antiquities?**
+How does future civilization interact with Creator-period decisions?
 
-**How are symbolic interpretation and historical evidence separated?**
+These questions become more important as BitPangea approaches real operation.
 
-**The Twelve Constellations are one expression of Digital Antiquity.**
+<a id="ch16-s54"></a>
 
-**They do not exhaust it.**
+### Constitutional Change
 
-**Native BitPangean Antiquity**
+BitPangea has established that foundational change must carry a much higher burden than ordinary World change.
 
-**BitPangea cannot yet possess native antiquity.**
+The actual constitutional-change mechanism remains open.
 
-**Antiquity requires time.**
+Questions include:
 
-**The World can only establish the conditions under which native antiquity may eventually arise.**
+What may be amended?
 
-**Future civilization may need to confront questions involving:**
+What should be effectively permanent?
 
-**historic designation**
+Who may propose constitutional change?
 
-**ruins**
+Who evaluates it?
 
-**archaeological access**
+What evidence is required?
 
-**obsolete World states**
+How are dependencies analyzed?
 
-**historic Parcels**
+Does future civilization participate?
 
-**restoration**
+Can changes be reversed?
 
-**preservation**
+How is supersession preserved?
 
-**cultural heritage**
+How is constitutional provenance recorded?
 
-**These questions properly belong much later.**
+The principle is established.
 
-**Many should remain open until history itself creates the need.**
+The mechanism is not.
 
-**What Must Eventually Be Resolved**
+<a id="ch16-s55"></a>
 
-**Among all open questions, several are clearly prerequisite to durable canonical operation.**
+### Conformance
 
-**They include at minimum:**
+Conformance is already explicit within the Foundational Survey Fabric.
 
-**final Foundational Survey Fabric Specification**
+Its future role elsewhere remains open.
 
-**Spatial Ground Architecture**
+Possible future conformance questions include:
 
-**General Spatial Interpretation responsibilities**
+Does an implementation preserve canonical Parcel identity?
 
-**exact Parcel arrangement**
+Does it respect authority boundaries?
 
-**canonical Parcel identifiers**
+Does it preserve Runtime semantics?
 
-**deterministic Parcel Adjacency**
+Does it exchange canonical meaning correctly?
 
-**World-scale Parcel Contiguity realization**
+Does it preserve constitutional requirements?
 
-**canonical cadastral territorial definition**
+But conformance should remain domain-specific where necessary.
 
-**actor identity model**
+The existence of a Survey conformance framework does not automatically justify one universal conformance system for every Architecture domain.
 
-**rights and authorization architecture**
+<a id="ch16-s56"></a>
 
-**canonical World State model**
+### History Architecture
 
-**Runtime execution semantics**
+BitPangea intends to be capable of genuine history.
 
-**integrity**
+The full historical architecture remains open.
 
-**failure and recovery**
+Questions include:
 
-**core interoperability semantics**
+Which events become historical records?
 
-**Builder-to-Runtime interaction**
+Which evidence is retained?
 
-**These do not all need to be solved immediately.**
+What becomes archival?
 
-**They do need eventual answers if BitPangea is to become a durable multi-actor World.**
+What remains private?
 
-**What Should Wait**
+How is significance added retrospectively?
 
-**Other questions are important but depend upon earlier Architecture.**
+How are corrections represented?
 
-**Examples include:**
+How are disputes preserved?
 
-**detailed geography**
+How are interpretations distinguished from evidence?
 
-**final Builder system**
+How is protected history handled?
 
-**World-object model**
+How does history interact with institutions?
 
-**infrastructure architecture**
+History should preserve evidence without becoming permanent universal surveillance.
 
-**construction rules**
+<a id="ch16-s57"></a>
 
-**advanced Experience Architecture**
+### Digital Antiquity
 
-**economic capabilities**
+Digital Antiquity is established as a historical concept.
 
-**institutional Architecture**
+Its long-term institutional structure remains open.
 
-**constitutional amendment mechanisms**
+Questions include:
 
-**advanced history systems**
+How is Digital Antiquity curated?
 
-**Finalizing these too early could cause downstream design to impose requirements backward upon deeper layers.**
+Who preserves it?
 
-**The governing principle remains:**
+How are artifacts authenticated?
 
-**Do not design the layer above from the layer below—and do not let the layer above redesign the layer beneath by accident.**
+How are hidden elements protected?
 
-**What Should Remain Open**
+How are discoveries recorded without exposing protected meaning?
 
-**Some matters should never be treated as ordinary unresolved Architecture.**
+Can future civilization add new antiquities?
 
-**They represent freedom intentionally left to civilization.**
+How are symbolic interpretation and historical evidence separated?
 
-**These may include:**
+The Twelve Constellations are one expression of Digital Antiquity.
 
-**future cultures**
+They do not exhaust it.
 
-**artistic movements**
+<a id="ch16-s58"></a>
 
-**community identities**
+### Native BitPangean Antiquity
 
-**customs**
+BitPangea cannot yet possess native antiquity.
 
-**social norms**
+Antiquity requires time.
 
-**many forms of organization**
+The World can only establish the conditions under which native antiquity may eventually arise.
 
-**unexpected uses of Parcels**
+Future civilization may need to confront questions involving:
 
-**historical interpretation**
+historic designation
 
-**future institutions**
+ruins
 
-**much of economic behavior**
+archaeological access
 
-**collective meaning**
+obsolete World states
 
-**BitPangea should be capable of supporting these things.**
+historic Parcels
 
-**It should not claim authorship over their outcomes.**
+restoration
 
-**The absence of a predetermined answer can itself be an architectural success.**
+preservation
 
-**The Open Architecture in One View**
+cultural heritage
 
-**The unresolved landscape can be understood as several overlapping areas rather than one strict queue.**
+These questions properly belong much later.
 
-**Constitutional inquiries**
+Many should remain open until history itself creates the need.
 
-**Limit**
+<a id="ch16-s59"></a>
 
-**future constitutional change**
+### What Must Eventually Be Resolved
 
-**long-term stewardship**
+Among all open questions, several are clearly prerequisite to durable canonical operation.
 
-**future authority**
+They include at minimum:
 
-**possible additional World Properties only where independent constitutional work is demonstrated**
+final Foundational Survey Fabric Specification
 
-**Spatial Architecture**
+Spatial Ground Architecture
 
-**Foundational Survey Fabric Specification**
+General Spatial Interpretation responsibilities
 
-**Spatial Ground**
+exact Parcel arrangement
 
-**General Spatial Interpretation**
+canonical Parcel identifiers
 
-**Parcel Cadastre completion**
+deterministic Parcel Adjacency
 
-**exact 21,000,000 arrangement**
+World-scale Parcel Contiguity realization
 
-**Parcel geometry**
+canonical cadastral territorial definition
 
-**Parcel identifiers**
+actor identity model
 
-**Parcel Adjacency**
+rights and authorization architecture
 
-**Parcel Contiguity**
+canonical World State model
 
-**The Verge**
+Runtime execution semantics
 
-**Outliers**
+integrity
 
-**World Form reconciliation**
+failure and recovery
 
-**Operational Architecture**
+core interoperability semantics
 
-**Identity / Rights / Control**
+Builder-to-Runtime interaction
 
-**World Runtime**
+These do not all need to be solved immediately.
 
-**Persistence / Provenance**
+They do need eventual answers if BitPangea is to become a durable multi-actor World.
 
-**Interoperability**
+<a id="ch16-s60"></a>
 
-**state**
+### What Should Wait
 
-**authorization**
+Other questions are important but depend upon earlier Architecture.
 
-**protocols**
+Examples include:
 
-**services**
+detailed geography
 
-**execution**
+final Builder system
 
-**time**
+World-object model
 
-**concurrency**
+infrastructure architecture
 
-**integrity**
+construction rules
 
-**failure**
+advanced Experience Architecture
 
-**recovery**
+economic capabilities
 
-**Participation and creation**
+institutional Architecture
 
-**Builders**
+constitutional amendment mechanisms
 
-**World objects**
+advanced history systems
 
-**infrastructure**
+Finalizing these too early could cause downstream design to impose requirements backward upon deeper layers.
 
-**construction**
+The governing principle remains:
 
-**Experience Architecture**
+Do not design the layer above from the layer below—and do not let the layer above redesign the layer beneath by accident.
 
-**Civilizational openness**
+<a id="ch16-s61"></a>
 
-**economy**
+### What Should Remain Open
 
-**institutions**
+Some matters should never be treated as ordinary unresolved Architecture.
 
-**governance**
+They represent freedom intentionally left to civilization.
 
-**community**
+These may include:
 
-**culture**
+future cultures
 
-**social order**
+artistic movements
 
-**unexpected uses**
+community identities
 
-**Historical development**
+customs
 
-**history**
+social norms
 
-**archival systems**
+many forms of organization
 
-**Digital Antiquity**
+unexpected uses of Parcels
 
-**native BitPangean antiquity**
+historical interpretation
 
-**This is not a development schedule.**
+future institutions
 
-**It is a dependency landscape.**
+much of economic behavior
 
-**Open Does Not Mean Unconstrained**
+collective meaning
 
-**An unresolved question can still be heavily constrained.**
+BitPangea should be capable of supporting these things.
 
-**Final Parcel geometry remains open.**
+It should not claim authorship over their outcomes.
 
-**But any acceptable solution must still respect:**
+The absence of a predetermined answer can itself be an architectural success.
 
-**one finite World**
+<a id="ch16-s62"></a>
 
-**exactly 21,000,000 Parcels**
+### The Open Architecture in One View
 
-**persistent Parcel identity**
+The unresolved landscape can be understood as several overlapping areas rather than one strict queue.
 
-**fixed position**
+Constitutional inquiries
 
-**World Form**
+Limit
 
-**canonical Survey reference**
+future constitutional change
 
-**equal-area preference**
+long-term stewardship
 
-**local coherence**
+future authority
 
-**Parcel Adjacency**
+possible additional World Properties only where independent constitutional work is demonstrated
 
-**World-scale Parcel Contiguity**
+Spatial Architecture
 
-**The Verge**
+Foundational Survey Fabric Specification
 
-**Outliers where adopted**
+Spatial Ground
 
-**representation independence**
+General Spatial Interpretation
 
-**The solution is open.**
+Parcel Cadastre completion
 
-**The problem is not undefined.**
+exact 21,000,000 arrangement
 
-**This distinction is central to disciplined design.**
+Parcel geometry
 
-**Preserve the Question**
+Parcel identifiers
 
-**A well-formed unanswered question is an architectural asset.**
+Parcel Adjacency
 
-**A vague topic can be answered accidentally.**
+Parcel Contiguity
 
-**A precise inquiry preserves the actual problem.**
+The Verge
 
-**For example:**
+Outliers
 
-**“Figure out The Verge.”**
+World Form reconciliation
 
-**is weak.**
+Operational Architecture
 
-**A stronger inquiry asks:**
+Identity / Rights / Control
 
-**What terminal World-form morphology can express BitPangea’s Finitude without collapsing The Verge into The Extent, ordinary Parcel morphology, coastline, Exterior, or World Boundary, while remaining coherent with World Form, canonical spatial reference, and exactly 21,000,000 Parcels?**
+World Runtime
 
-**Likewise:**
+Persistence / Provenance
 
-**“Solve Parcel geometry.”**
+Interoperability
 
-**is weaker than:**
+state
 
-**What Parcel geometry can establish exactly 21,000,000 canonical Parcels with persistent identity, fixed position, equal-area preference, deterministic Parcel Adjacency, local coherence, and compatibility with the adopted World Form without causing the visible Parcel grammar to become the Foundational Survey Fabric?**
+authorization
 
-**Good questions protect the Architecture from shallow answers.**
+protocols
 
-**Good unanswered questions are part of the architecture of discovery.**
+services
 
-**Dependency Before Schedule**
+execution
 
-**BitPangea should not confuse sequence with calendar.**
+time
 
-**An inquiry should proceed because its dependencies are sufficiently mature.**
+concurrency
 
-**Not because a particular date arrived.**
+integrity
 
-**Not because an earlier list placed it next.**
+failure
 
-**Not because a Creator-period Day implies that it must be completed.**
+recovery
 
-**The working principle remains:**
+Participation and creation
 
-**The Days record progress. They do not command progress.**
+Builders
 
-**Architectural dependency has priority over scheduling neatness.**
+World objects
 
-**The Principle**
+infrastructure
 
-**BitPangea should not measure progress by how many questions it eliminates.**
+construction
 
-**Some questions must be solved.**
+Experience Architecture
 
-**Some must wait.**
+Civilizational openness
 
-**Some are parked until evidence returns.**
+economy
 
-**Some should remain open long enough for civilization itself to answer them.**
+institutions
 
-**The mature discipline is knowing which is which.**
+governance
 
-**BitPangea therefore proceeds under three central obligations:**
+community
 
-**Resolve what coherence requires.**
+culture
 
-**Defer what dependency requires.**
+social order
 
-**Preserve as open what civilization requires.**
+unexpected uses
 
-**And a fourth discipline follows:**
+Historical development
 
-**Do not answer a deeper question merely because an answer can be imagined.**
+history
 
-**That is not indecision.**
+archival systems
 
-**It is architectural restraint.**
+Digital Antiquity
 
-**The governing principle for this section is therefore:**
+native BitPangean antiquity
 
-**An open question should remain open until either the architecture requires an answer, the evidence justifies one, or the future earns the right to provide it.**
+This is not a development schedule.
 
-**BitPangea is not unfinished because unanswered questions remain.**
+It is a dependency landscape.
 
-**It would be unfinished if it could no longer distinguish the questions that require answers from the possibilities that require freedom.**
+<a id="ch16-s63"></a>
+
+### Open Does Not Mean Unconstrained
+
+An unresolved question can still be heavily constrained.
+
+Final Parcel geometry remains open.
+
+But any acceptable solution must still respect:
+
+one finite World
+
+exactly 21,000,000 Parcels
+
+persistent Parcel identity
+
+fixed position
+
+World Form
+
+canonical Survey reference
+
+equal-area preference
+
+local coherence
+
+Parcel Adjacency
+
+World-scale Parcel Contiguity
+
+The Verge
+
+Outliers where adopted
+
+representation independence
+
+The solution is open.
+
+The problem is not undefined.
+
+This distinction is central to disciplined design.
+
+<a id="ch16-s64"></a>
+
+### Preserve the Question
+
+A well-formed unanswered question is an architectural asset.
+
+A vague topic can be answered accidentally.
+
+A precise inquiry preserves the actual problem.
+
+For example:
+
+“Figure out The Verge.”
+
+is weak.
+
+A stronger inquiry asks:
+
+What terminal World-form morphology can express BitPangea’s Finitude without collapsing The Verge into The Extent, ordinary Parcel morphology, coastline, Exterior, or World Boundary, while remaining coherent with World Form, canonical spatial reference, and exactly 21,000,000 Parcels?
+
+Likewise:
+
+“Solve Parcel geometry.”
+
+is weaker than:
+
+What Parcel geometry can establish exactly 21,000,000 canonical Parcels with persistent identity, fixed position, equal-area preference, deterministic Parcel Adjacency, local coherence, and compatibility with the adopted World Form without causing the visible Parcel grammar to become the Foundational Survey Fabric?
+
+Good questions protect the Architecture from shallow answers.
+
+Good unanswered questions are part of the architecture of discovery.
+
+<a id="ch16-s65"></a>
+
+### Dependency Before Schedule
+
+BitPangea should not confuse sequence with calendar.
+
+An inquiry should proceed because its dependencies are sufficiently mature.
+
+Not because a particular date arrived.
+
+Not because an earlier list placed it next.
+
+Not because a Creator-period Day implies that it must be completed.
+
+The working principle remains:
+
+The Days record progress. They do not command progress.
+
+Architectural dependency has priority over scheduling neatness.
+
+<a id="ch16-s66"></a>
+
+### The Principle
+
+BitPangea should not measure progress by how many questions it eliminates.
+
+Some questions must be solved.
+
+Some must wait.
+
+Some are parked until evidence returns.
+
+Some should remain open long enough for civilization itself to answer them.
+
+The mature discipline is knowing which is which.
+
+BitPangea therefore proceeds under three central obligations:
+
+Resolve what coherence requires.
+
+Defer what dependency requires.
+
+Preserve as open what civilization requires.
+
+And a fourth discipline follows:
+
+Do not answer a deeper question merely because an answer can be imagined.
+
+That is not indecision.
+
+It is architectural restraint.
+
+The governing principle for this section is therefore:
+
+An open question should remain open until either the architecture requires an answer, the evidence justifies one, or the future earns the right to provide it.
+
+BitPangea is not unfinished because unanswered questions remain.
+
+It would be unfinished if it could no longer distinguish the questions that require answers from the possibilities that require freedom.
+
+---
+
+<a id="ch17"></a>
 
 ## XVII. Development Philosophy
 
-**BitPangea is not being developed by beginning with a technology stack and asking what kind of World can be constructed from it.**
+BitPangea is not being developed by beginning with a technology stack and asking what kind of World can be constructed from it.
 
-**It is being developed by asking:**
+It is being developed by asking:
 
-**What must this World be?**
+What must this World be?
 
-**and then requiring:**
+and then requiring:
 
-**constitutional reasoning**
+constitutional reasoning
 
-**Architecture**
+Architecture
 
-**mathematics**
+mathematics
 
-**technology**
+technology
 
-**and implementation**
+and implementation
 
-**to answer to that definition.**
+to answer to that definition.
 
-**That distinction shapes the entire project.**
+That distinction shapes the entire project.
 
-**BitPangea develops from World necessity outward, not from technological possibility inward.**
+BitPangea develops from World necessity outward, not from technological possibility inward.
 
-**The deeper the decision, the more carefully it should be earned.**
+The deeper the decision, the more carefully it should be earned.
 
-**The more replaceable the implementation, the more freely it should be tested.**
+The more replaceable the implementation, the more freely it should be tested.
 
-**The closer a decision lies to the permanent identity of the World, the greater the burden required before it becomes difficult to change.**
+The closer a decision lies to the permanent identity of the World, the greater the burden required before it becomes difficult to change.
 
-**World First**
+<a id="ch17-s01"></a>
 
-**The primary development principle remains:**
+### World First
 
-**Create the World before attempting to create the civilization.**
+The primary development principle remains:
 
-**BitPangea does not begin with:**
+Create the World before attempting to create the civilization.
 
-**a marketplace**
+BitPangea does not begin with:
 
-**a social platform**
+a marketplace
 
-**a game loop**
+a social platform
 
-**a token**
+a game loop
 
-**a governance mechanism**
+a token
 
-**a virtual-reality client**
+a governance mechanism
 
-**a Builder tool**
+a virtual-reality client
 
-**and then construct enough territory to support them.**
+a Builder tool
 
-**It begins with the World.**
+and then construct enough territory to support them.
 
-**The broad direction is:**
+It begins with the World.
 
-**World**
+The broad direction is:
 
-**↓**
+World
 
-**constitutional spatial conditions**
+↓
 
-**↓**
+constitutional spatial conditions
 
-**permanent spatial truth**
+↓
 
-**↓**
+permanent spatial truth
 
-**Parcel Cadastre**
+↓
 
-**↓**
+Parcel Cadastre
 
-**operational Architecture**
+↓
 
-**↓**
+operational Architecture
 
-**Builders**
+↓
 
-**↓**
+Builders
 
-**civilization**
+↓
 
-**This is not a claim that every Architecture domain forms one strict vertical chain.**
+civilization
 
-**It expresses something more fundamental:**
+This is not a claim that every Architecture domain forms one strict vertical chain.
 
-**The World must exist coherently before later systems can legitimately claim to operate within it.**
+It expresses something more fundamental:
 
-**Foundation Constrains, Codex Defines, Atlas Designs, Implementation Realizes**
+The World must exist coherently before later systems can legitimately claim to operate within it.
 
-**BitPangea’s development method now possesses a clearer institutional progression:**
+<a id="ch17-s02"></a>
 
-**The Foundation constrains.**
+### Foundation Constrains, Codex Defines, Atlas Designs, Implementation Realizes
 
-**The Codex defines.**
+BitPangea’s development method now possesses a clearer institutional progression:
 
-**The Atlas designs.**
+The Foundation constrains.
 
-**Implementation realizes.**
+The Codex defines.
 
-**Each level performs different work.**
+The Atlas designs.
 
-**The Foundation establishes or preserves the premises that constrain later inquiry.**
+Implementation realizes.
 
-**The Codex determines constitutional truth.**
+Each level performs different work.
 
-**The Atlas performs Creator-period Architecture and design within those truths.**
+The Foundation establishes or preserves the premises that constrain later inquiry.
 
-**Implementation realizes what has been validly established.**
+The Codex determines constitutional truth.
 
-**This progression prevents one of the most common failures in digital systems:**
+The Atlas performs Creator-period Architecture and design within those truths.
 
-**implementation becoming architecture merely because it happened first.**
+Implementation realizes what has been validly established.
 
-**A renderer should not define World truth.**
+This progression prevents one of the most common failures in digital systems:
 
-**A database should not define identity merely because it stores identity.**
+implementation becoming architecture merely because it happened first.
 
-**A prototype should not define a constitutional relationship merely because later systems reference it.**
+A renderer should not define World truth.
 
-**The development rule is:**
+A database should not define identity merely because it stores identity.
 
-**Meaning should descend into implementation. Implementation should not silently climb upward into canon.**
+A prototype should not define a constitutional relationship merely because later systems reference it.
 
-**Constraint Before Feature**
+The development rule is:
 
-**BitPangea treats constraint as a productive architectural instrument.**
+Meaning should descend into implementation. Implementation should not silently climb upward into canon.
 
-**The project does not begin by asking:**
+<a id="ch17-s03"></a>
 
-**What features can we add?**
+### Constraint Before Feature
 
-**It first asks:**
+BitPangea treats constraint as a productive architectural instrument.
 
-**What must remain true?**
+The project does not begin by asking:
 
-**That inquiry has already produced defining conditions such as:**
+What features can we add?
 
-**one World**
+It first asks:
 
-**Finitude**
+What must remain true?
 
-**The Extent**
+That inquiry has already produced defining conditions such as:
 
-**one complete continuous cartographic whole**
+one World
 
-**exactly 21,000,000 Parcels**
+Finitude
 
-**persistent spatial reference**
+The Extent
 
-**persistent Parcel identity**
+one complete continuous cartographic whole
 
-**World-scale Parcel Contiguity**
+exactly 21,000,000 Parcels
 
-**clear authority boundaries**
+persistent spatial reference
 
-**Those constraints are not obstacles to be designed around.**
+persistent Parcel identity
 
-**They are part of what makes BitPangea BitPangea.**
+World-scale Parcel Contiguity
 
-**Features must fit within them.**
+clear authority boundaries
 
-**The constraints should not be weakened merely because a desirable feature would be easier to implement without them.**
+Those constraints are not obstacles to be designed around.
 
-**The principle is:**
+They are part of what makes BitPangea BitPangea.
 
-**Architecture should constrain features before features begin constraining architecture.**
+Features must fit within them.
 
-**Requirement Before Technology**
+The constraints should not be weakened merely because a desirable feature would be easier to implement without them.
 
-**The correct developmental progression is:**
+The principle is:
 
-**World requirement**
+Architecture should constrain features before features begin constraining architecture.
 
-**↓**
+<a id="ch17-s04"></a>
 
-**architectural requirement**
+### Requirement Before Technology
 
-**↓**
+The correct developmental progression is:
 
-**technical requirement**
+World requirement
 
-**↓**
+↓
 
-**implementation choice**
+architectural requirement
 
-**The reverse direction is dangerous.**
+↓
 
-**For example:**
+technical requirement
 
-**preferred blockchain**
+↓
 
-**↓**
+implementation choice
 
-**rights architecture designed around it**
+The reverse direction is dangerous.
 
-**or:**
+For example:
 
-**preferred engine**
+preferred blockchain
 
-**↓**
+↓
 
-**engine coordinates become canonical spatial truth**
+rights architecture designed around it
 
-**or:**
+or:
 
-**preferred database**
+preferred engine
 
-**↓**
+↓
 
-**database schema becomes permanent identity**
+engine coordinates become canonical spatial truth
 
-**or:**
+or:
 
-**preferred interface**
+preferred database
 
-**↓**
+↓
 
-**visible geometry becomes the World**
+database schema becomes permanent identity
 
-**These paths convert technology into architecture by accident.**
+or:
 
-**BitPangea should instead determine what the World requires and evaluate technologies against those requirements.**
+preferred interface
 
-**The principle is:**
+↓
 
-**Technology can demonstrate implementation feasibility. It does not establish architectural necessity.**
+visible geometry becomes the World
 
-**Requirements Before Mathematics**
+These paths convert technology into architecture by accident.
 
-**The Foundational Survey Fabric has produced one of the clearest examples of this philosophy.**
+BitPangea should instead determine what the World requires and evaluate technologies against those requirements.
 
-**Rather than immediately choosing attractive mathematics, BitPangea first established what the Survey architecture must satisfy.**
+The principle is:
 
-**That work now produces the sequence:**
+Technology can demonstrate implementation feasibility. It does not establish architectural necessity.
 
-**Requirements**
+<a id="ch17-s05"></a>
 
-**↓**
+### Requirements Before Mathematics
 
-**Specification**
+The Foundational Survey Fabric has produced one of the clearest examples of this philosophy.
 
-**↓**
+Rather than immediately choosing attractive mathematics, BitPangea first established what the Survey architecture must satisfy.
 
-**Conformance**
+That work now produces the sequence:
 
-**↓**
+Requirements
 
-**Reference Vectors**
+↓
 
-**The Requirements ask:**
+Specification
 
-**What must be true?**
+↓
 
-**The Specification asks:**
+Conformance
 
-**What exact mathematics satisfy those Requirements?**
+↓
 
-**Conformance asks:**
+Reference Vectors
 
-**How does an implementation demonstrate that it correctly realizes the Specification?**
+The Requirements ask:
 
-**Reference Vectors ask:**
+What must be true?
 
-**Given this exact input, what exact answer must every conforming implementation produce?**
+The Specification asks:
 
-**This ordering is deliberate.**
+What exact mathematics satisfy those Requirements?
 
-**BitPangea should not select mathematics first and then weaken Requirements until the mathematics fit.**
+Conformance asks:
 
-**The principle is:**
+How does an implementation demonstrate that it correctly realizes the Specification?
 
-**Requirements define the problem. Mathematics must earn the right to solve it.**
+Reference Vectors ask:
 
-**Survey First**
+Given this exact input, what exact answer must every conforming implementation produce?
 
-**One of the clearest spatial development principles remains:**
+This ordering is deliberate.
 
-**Survey first. Cadastre later. Experience above both.**
+BitPangea should not select mathematics first and then weaken Requirements until the mathematics fit.
 
-**A tempting path would be:**
+The principle is:
 
-**draw the World**
+Requirements define the problem. Mathematics must earn the right to solve it.
 
-**↓**
+<a id="ch17-s06"></a>
 
-**tile the visible surface**
+### Survey First
 
-**↓**
+One of the clearest spatial development principles remains:
 
-**assign IDs**
+Survey first. Cadastre later. Experience above both.
 
-**↓**
+A tempting path would be:
 
-**declare the result canonical**
+draw the World
 
-**BitPangea deliberately rejects that inversion.**
+↓
 
-**The demonstrated spatial dependency is:**
+tile the visible surface
 
-**Foundational Survey Fabric**
+↓
 
-**→ Spatial Ground**
+assign IDs
 
-**→ General Spatial Interpretation**
+↓
 
-**→ Parcel Cadastre**
+declare the result canonical
 
-**The Survey Fabric establishes canonical spatial reference.**
+BitPangea deliberately rejects that inversion.
 
-**Higher Architecture progressively gives that reference World meaning.**
+The demonstrated spatial dependency is:
 
-**The Parcel Cadastre establishes canonical Parcel identity and territory.**
+Foundational Survey Fabric
 
-**Experience eventually allows participants to encounter those truths.**
+→ Spatial Ground
 
-**Thus:**
+→ General Spatial Interpretation
 
-**Survey units are not Parcels.**
+→ Parcel Cadastre
 
-**The Survey Domain is not the World.**
+The Survey Fabric establishes canonical spatial reference.
 
-**Representation is not authority.**
+Higher Architecture progressively gives that reference World meaning.
 
-**This ordering protects permanent place from whichever interface happens to be built first.**
+The Parcel Cadastre establishes canonical Parcel identity and territory.
 
-**Protect the Boundary**
+Experience eventually allows participants to encounter those truths.
 
-**Development should not merely separate systems.**
+Thus:
 
-**It should preserve the responsibility boundary between them.**
+Survey units are not Parcels.
 
-**The Architecture Boundary Rule states:**
+The Survey Domain is not the World.
 
-**A lower Architecture domain may establish the constraints that higher domains must not violate, but it should not prescribe the internal responsibilities, organization, implementation, or lifecycle of a higher domain unless that dependency is irreducibly necessary to the lower domain itself.**
+Representation is not authority.
 
-**The working form is:**
+This ordering protects permanent place from whichever interface happens to be built first.
 
-**Protect the boundary. Do not design the layer above from the layer below.**
+<a id="ch17-s07"></a>
 
-**This protects BitPangea from a subtle form of overdesign.**
+### Protect the Boundary
 
-**The Survey Fabric should constrain Spatial Ground.**
+Development should not merely separate systems.
 
-**It should not secretly become Spatial Ground.**
+It should preserve the responsibility boundary between them.
 
-**The Parcel Cadastre may constrain rights by establishing what the Parcel is.**
+The Architecture Boundary Rule states:
 
-**It should not define the rights system.**
+A lower Architecture domain may establish the constraints that higher domains must not violate, but it should not prescribe the internal responsibilities, organization, implementation, or lifecycle of a higher domain unless that dependency is irreducibly necessary to the lower domain itself.
 
-**Identity / Rights / Control may determine legitimate authority.**
+The working form is:
 
-**It should not become World Runtime.**
+Protect the boundary. Do not design the layer above from the layer below.
 
-**World Runtime may execute change.**
+This protects BitPangea from a subtle form of overdesign.
 
-**It should not become the authority for every truth it references.**
+The Survey Fabric should constrain Spatial Ground.
 
-**The development philosophy therefore asks repeatedly:**
+It should not secretly become Spatial Ground.
 
-**What must this layer establish?**
+The Parcel Cadastre may constrain rights by establishing what the Parcel is.
 
-**and equally:**
+It should not define the rights system.
 
-**What must this layer refuse to establish?**
+Identity / Rights / Control may determine legitimate authority.
 
-**Authority Before Convenience**
+It should not become World Runtime.
 
-**Development should identify which system possesses legitimate authority over a fact before applications begin depending upon it.**
+World Runtime may execute change.
 
-**Examples include:**
+It should not become the authority for every truth it references.
 
-**Foundational Survey Fabric**
+The development philosophy therefore asks repeatedly:
 
-**→ canonical Survey reference**
+What must this layer establish?
 
-**Parcel Cadastre**
+and equally:
 
-**→ canonical Parcel truth**
+What must this layer refuse to establish?
 
-**Identity / Rights / Control**
+<a id="ch17-s08"></a>
 
-**→ governed actor relationships and authority**
+### Authority Before Convenience
 
-**World Runtime**
+Development should identify which system possesses legitimate authority over a fact before applications begin depending upon it.
 
-**→ legitimate operational transition**
+Examples include:
 
-**Persistence / Provenance**
+Foundational Survey Fabric
 
-**→ lineage and evidentiary continuity**
+→ canonical Survey reference
 
-**Experience Architecture**
+Parcel Cadastre
 
-**→ presentation and interaction**
+→ canonical Parcel truth
 
-**The exact internal structure of several domains remains unresolved.**
+Identity / Rights / Control
 
-**The governing principle does not:**
+→ governed actor relationships and authority
 
-**Convenient access does not confer authority.**
+World Runtime
 
-**Or more simply:**
+→ legitimate operational transition
 
-**Reference does not transfer authority.**
+Persistence / Provenance
 
-**Canon Must Be Earned**
+→ lineage and evidentiary continuity
 
-**BitPangea should not treat a promising idea as something that deserves permanence merely because it is compelling.**
+Experience Architecture
 
-**Ideas should be allowed to possess different levels of confidence.**
+→ presentation and interaction
 
-**Conceptually:**
+The exact internal structure of several domains remains unresolved.
 
-**question**
+The governing principle does not:
 
-**↓**
+Convenient access does not confer authority.
 
-**inquiry**
+Or more simply:
 
-**↓**
+Reference does not transfer authority.
 
-**candidate**
+<a id="ch17-s09"></a>
 
-**↓**
+### Canon Must Be Earned
 
-**provisional design**
+BitPangea should not treat a promising idea as something that deserves permanence merely because it is compelling.
 
-**↓**
+Ideas should be allowed to possess different levels of confidence.
 
-**adopted design direction**
+Conceptually:
 
-**↓**
+question
 
-**Architecture**
+↓
 
-**and only where justified:**
+inquiry
 
-**↓**
+↓
 
-**constitutional significance**
+candidate
 
-**This is not a mandatory bureaucratic workflow.**
+↓
 
-**It expresses one discipline:**
+provisional design
 
-**Permanence should increase only as justification increases.**
+↓
 
-**The burden should rise with consequence.**
+adopted design direction
 
-**Status Is Part of the Architecture**
+↓
 
-**A project under active discovery must be able to say:**
+Architecture
 
-**We do not yet know.**
+and only where justified:
 
-**It must also be able to say:**
+↓
 
-**This is adopted design direction.**
+constitutional significance
 
-**Or:**
+This is not a mandatory bureaucratic workflow.
 
-**This is recognized Architecture, but its internal design remains provisional.**
+It expresses one discipline:
 
-**Or:**
+Permanence should increase only as justification increases.
 
-**This question is parked.**
+The burden should rise with consequence.
 
-**Or:**
+<a id="ch17-s10"></a>
 
-**This understanding has been superseded.**
+### Status Is Part of the Architecture
 
-**Useful status distinctions include:**
+A project under active discovery must be able to say:
 
-**adopted**
+We do not yet know.
 
-**established**
+It must also be able to say:
 
-**provisional**
+This is adopted design direction.
 
-**reserved**
+Or:
 
-**candidate**
+This is recognized Architecture, but its internal design remains provisional.
 
-**deferred**
+Or:
 
-**parked**
+This question is parked.
 
-**rejected**
+Or:
 
-**superseded**
+This understanding has been superseded.
 
-**open**
+Useful status distinctions include:
 
-**emergent**
+adopted
 
-**The status is not editorial decoration.**
+established
 
-**It is part of the architectural meaning.**
+provisional
 
-**Future readers should not have to infer whether an idea was:**
+reserved
 
-**being explored**
+candidate
 
-**formally adopted**
+deferred
 
-**historically superseded**
+parked
 
-**or intentionally left open.**
+rejected
 
-**Prototype Freedom**
+superseded
 
-**Care at the foundation should not become fear of experimentation.**
+open
 
-**Before something becomes canonical, BitPangea should test aggressively.**
+emergent
 
-**That may involve:**
+The status is not editorial decoration.
 
-**alternate mathematics**
+It is part of the architectural meaning.
 
-**temporary geometry**
+Future readers should not have to infer whether an idea was:
 
-**competing Parcel models**
+being explored
 
-**prototype interfaces**
+formally adopted
 
-**simulated Runtime flows**
+historically superseded
 
-**experimental Builder concepts**
+or intentionally left open.
 
-**disposable implementations**
+<a id="ch17-s11"></a>
 
-**failed models**
+### Prototype Freedom
 
-**Technical failure during exploration can be extremely valuable.**
+Care at the foundation should not become fear of experimentation.
 
-**The danger arises when exploratory systems accumulate dependencies before their architectural standing has been established.**
+Before something becomes canonical, BitPangea should test aggressively.
 
-**Thus:**
+That may involve:
 
-**Experiment freely before adoption. Govern carefully after adoption.**
+alternate mathematics
 
-**Freeze Late, Depend Late**
+temporary geometry
 
-**A useful development discipline follows:**
+competing Parcel models
 
-**Freeze deep decisions late enough to learn—but early enough that later Architecture can depend upon them responsibly.**
+prototype interfaces
 
-**And:**
+simulated Runtime flows
 
-**Allow deep dependency only after the thing being depended upon has earned sufficient stability.**
+experimental Builder concepts
 
-**This protects BitPangea from accidental constitution.**
+disposable implementations
 
-**A prototype coordinate scheme should not become permanent merely because it was convenient.**
+failed models
 
-**A temporary identifier should not become canonical merely because enough links point to it.**
+Technical failure during exploration can be extremely valuable.
 
-**An early rights assumption should not become Architecture merely because services were written around it.**
+The danger arises when exploratory systems accumulate dependencies before their architectural standing has been established.
 
-**The rule remains:**
+Thus:
 
-**Dependency should follow adoption. Adoption should not be inferred from dependency.**
+Experiment freely before adoption. Govern carefully after adoption.
 
-**Durable Meaning, Replaceable Implementation**
+<a id="ch17-s12"></a>
 
-**A successful implementation does not deserve permanence merely because it works.**
+### Freeze Late, Depend Late
 
-**Likewise, replacing an implementation should not require redefining the World.**
+A useful development discipline follows:
 
-**Wherever possible, BitPangea should seek:**
+Freeze deep decisions late enough to learn—but early enough that later Architecture can depend upon them responsibly.
 
-**durable architectural meaning**
+And:
 
-**with:**
+Allow deep dependency only after the thing being depended upon has earned sufficient stability.
 
-**replaceable technical realization**
+This protects BitPangea from accidental constitution.
 
-**This does not mean implementation is trivial.**
+A prototype coordinate scheme should not become permanent merely because it was convenient.
 
-**Some implementation decisions will be technically consequential.**
+A temporary identifier should not become canonical merely because enough links point to it.
 
-**The deeper goal is:**
+An early rights assumption should not become Architecture merely because services were written around it.
 
-**The Parcel should outlive the technology used to experience the Parcel.**
+The rule remains:
 
-**And:**
+Dependency should follow adoption. Adoption should not be inferred from dependency.
 
-**The World should outlive the technology used to experience the World.**
+<a id="ch17-s13"></a>
 
-**A renderer may disappear.**
+### Durable Meaning, Replaceable Implementation
 
-**A service may be rewritten.**
+A successful implementation does not deserve permanence merely because it works.
 
-**A database may be replaced.**
+Likewise, replacing an implementation should not require redefining the World.
 
-**A new interface may emerge.**
+Wherever possible, BitPangea should seek:
 
-**Canonical meaning should survive.**
+durable architectural meaning
 
-**Dependency-Aware Inquiry**
+with:
 
-**Architectural questions should not be answered in isolation.**
+replaceable technical realization
 
-**Many depend upon earlier work.**
+This does not mean implementation is trivial.
 
-**For example:**
+Some implementation decisions will be technically consequential.
 
-**Parcel Cadastre depends upon deeper spatial Architecture.**
+The deeper goal is:
 
-**Builder systems depend upon World Runtime and Identity / Rights / Control.**
+The Parcel should outlive the technology used to experience the Parcel.
 
-**Historical systems depend upon persistence and provenance.**
+And:
 
-**Governance depends upon knowing which responsibilities actually require governing.**
+The World should outlive the technology used to experience the World.
 
-**World Form questions may expose constitutional dependencies.**
+A renderer may disappear.
 
-**This means design sometimes encounters a deeper question than the one it was originally trying to solve.**
+A service may be rewritten.
 
-**When that occurs, the working sequence becomes:**
+A database may be replaced.
 
-**Design**
+A new interface may emerge.
 
-**↓**
+Canonical meaning should survive.
 
-**Dependency discovered**
+<a id="ch17-s14"></a>
 
-**↓**
+### Dependency-Aware Inquiry
 
-**Constitutional Inquiry**
+Architectural questions should not be answered in isolation.
 
-**↓**
+Many depend upon earlier work.
 
-**constraint clarified**
+For example:
 
-**↓**
+Parcel Cadastre depends upon deeper spatial Architecture.
 
-**Design resumes**
+Builder systems depend upon World Runtime and Identity / Rights / Control.
 
-**In shorthand:**
+Historical systems depend upon persistence and provenance.
 
-**Design → Dependency → Constitutional Inquiry**
+Governance depends upon knowing which responsibilities actually require governing.
 
-**when necessary.**
+World Form questions may expose constitutional dependencies.
 
-**The purpose is not to constitutionalize every design problem.**
+This means design sometimes encounters a deeper question than the one it was originally trying to solve.
 
-**It is to descend only as deeply as the dependency requires.**
+When that occurs, the working sequence becomes:
 
-**Solve the Earliest Constraining Problem**
+Design
 
-**A useful working principle is:**
+↓
 
-**Resolve the earliest unresolved question capable of legitimately constraining the later ones.**
+Dependency discovered
 
-**If Parcel geometry depends upon Spatial Ground, do not finalize Parcel geometry first.**
+↓
 
-**If rights architecture depends upon actor identity, clarify identity responsibilities first.**
+Constitutional Inquiry
 
-**If governance depends upon defined authority, do not begin with voting mechanisms.**
+↓
 
-**If Builder behavior depends upon canonical World State, establish what World State means before designing sophisticated creation workflows.**
+constraint clarified
 
-**This reduces rework.**
+↓
 
-**More importantly:**
+Design resumes
 
-**It prevents downstream convenience from defining upstream truth.**
+In shorthand:
 
-**Dependency Before Schedule**
+Design → Dependency → Constitutional Inquiry
 
-**BitPangea should not mistake time sequence for architectural sequence.**
+when necessary.
 
-**An inquiry should begin because:**
+The purpose is not to constitutionalize every design problem.
 
-**its dependencies are sufficiently mature**
+It is to descend only as deeply as the dependency requires.
 
-**its question has become meaningful**
+<a id="ch17-s15"></a>
 
-**and the work can now be conducted without inventing missing premises.**
+### Solve the Earliest Constraining Problem
 
-**Not because:**
+A useful working principle is:
 
-**a calendar says it is time**
+Resolve the earliest unresolved question capable of legitimately constraining the later ones.
 
-**a numbered list says it comes next**
+If Parcel geometry depends upon Spatial Ground, do not finalize Parcel geometry first.
 
-**or a Creator-period Day implies obligation.**
+If rights architecture depends upon actor identity, clarify identity responsibilities first.
 
-**The Creator-period discipline is:**
+If governance depends upon defined authority, do not begin with voting mechanisms.
 
-**The Days record progress. They do not command progress.**
+If Builder behavior depends upon canonical World State, establish what World State means before designing sophisticated creation workflows.
 
-**The step-by-step architectural path matters more than preserving an artificial schedule.**
+This reduces rework.
 
-**Narrow the Question**
+More importantly:
 
-**Strong inquiry begins with a precise question.**
+It prevents downstream convenience from defining upstream truth.
 
-**A weak question such as:**
+<a id="ch17-s16"></a>
 
-**What should The Verge look like?**
+### Dependency Before Schedule
 
-**can invite decorative answers before the architecture is ready.**
+BitPangea should not mistake time sequence for architectural sequence.
 
-**A stronger question asks:**
+An inquiry should begin because:
 
-**What terminal World-form expression can reveal BitPangea’s Finitude without collapsing The Verge into The Extent, ordinary Parcel morphology, coastline, Exterior, or World Boundary?**
+its dependencies are sufficiently mature
 
-**Likewise:**
+its question has become meaningful
 
-**How should Parcels work?**
+and the work can now be conducted without inventing missing premises.
 
-**is weaker than:**
+Not because:
 
-**What Parcel geometry can support exactly 21,000,000 canonical Parcels with persistent identity, fixed position, equal-area preference, deterministic Parcel Adjacency, and compatibility with the adopted World Form?**
+a calendar says it is time
 
-**A precise question protects the project from solving an easier but irrelevant problem.**
+a numbered list says it comes next
 
-**Discovering the right question is part of discovering the World.**
+or a Creator-period Day implies obligation.
 
-**Preserve the Question**
+The Creator-period discipline is:
 
-**Once an inquiry has been well formed, development should resist rewriting the question merely because one convenient implementation answers something else.**
+The Days record progress. They do not command progress.
 
-**A technical shortcut may still be useful.**
+The step-by-step architectural path matters more than preserving an artificial schedule.
 
-**A prototype may reveal valuable evidence.**
+<a id="ch17-s17"></a>
 
-**But if it does not answer the original inquiry, that distinction should remain explicit.**
+### Narrow the Question
 
-**The rule is:**
+Strong inquiry begins with a precise question.
 
-**Do not allow implementation convenience to redefine the question.**
+A weak question such as:
 
-**This protects BitPangea from false closure.**
+What should The Verge look like?
 
-**Constitutional Economy**
+can invite decorative answers before the architecture is ready.
 
-**BitPangea should remain reluctant to multiply foundational concepts.**
+A stronger question asks:
 
-**The correct progression is:**
+What terminal World-form expression can reveal BitPangea’s Finitude without collapsing The Verge into The Extent, ordinary Parcel morphology, coastline, Exterior, or World Boundary?
 
-**first ask:**
+Likewise:
 
-**Can an established concept already do the required work?**
+How should Parcels work?
 
-**then ask:**
+is weaker than:
 
-**Does a new concept perform genuinely distinct work?**
+What Parcel geometry can support exactly 21,000,000 canonical Parcels with persistent identity, fixed position, equal-area preference, deterministic Parcel Adjacency, and compatibility with the adopted World Form?
 
-**Only then consider additional canon.**
+A precise question protects the project from solving an easier but irrelevant problem.
 
-**The Finitude review demonstrated this discipline.**
+Discovering the right question is part of discovering the World.
 
-**Finitude mattered profoundly.**
+<a id="ch17-s18"></a>
 
-**Yet it did not require a standalone World Property because its constitutional work belonged within:**
+### Preserve the Question
 
-**WP-S-I — The Extent**
+Once an inquiry has been well formed, development should resist rewriting the question merely because one convenient implementation answers something else.
 
-**Likewise, terms such as:**
+A technical shortcut may still be useful.
 
-**Edge**
+A prototype may reveal valuable evidence.
 
-**Perimeter**
+But if it does not answer the original inquiry, that distinction should remain explicit.
 
-**Exterior**
+The rule is:
 
-**World Boundary**
+Do not allow implementation convenience to redefine the question.
 
-**should not be elevated merely because language makes them imaginable.**
+This protects BitPangea from false closure.
 
-**The governing principle remains:**
+<a id="ch17-s19"></a>
 
-**Discovery does not require multiplication of canon.**
+### Constitutional Economy
 
-**Fewer Strong Concepts**
+BitPangea should remain reluctant to multiply foundational concepts.
 
-**A World with a small number of precise foundational concepts is easier to reason about than one burdened with overlapping constitutional vocabulary.**
+The correct progression is:
 
-**This does not mean BitPangea should be simplistic.**
+first ask:
 
-**It means complexity should be earned.**
+Can an established concept already do the required work?
 
-**A useful test is:**
+then ask:
 
-**What distinct work does this concept perform that no established concept already performs?**
+Does a new concept perform genuinely distinct work?
 
-**If the answer is unclear, the concept may belong in explanation rather than canon.**
+Only then consider additional canon.
 
-**The goal is:**
+The Finitude review demonstrated this discipline.
 
-**minimum permanent architecture**
+Finitude mattered profoundly.
 
-**with:**
+Yet it did not require a standalone World Property because its constitutional work belonged within:
 
-**maximum future extensibility**
+WP-S-I — The Extent
 
-**Distinguish the World From Its Representations**
+Likewise, terms such as:
 
-**Development should repeatedly ask:**
+Edge
 
-**Does this system define the World, or does it merely represent the World?**
+Perimeter
 
-**This applies to:**
+Exterior
 
-**globe**
+World Boundary
 
-**flat map**
+should not be elevated merely because language makes them imaginable.
 
-**Parcel view**
+The governing principle remains:
 
-**Builder interface**
+Discovery does not require multiplication of canon.
 
-**3D environment**
+<a id="ch17-s20"></a>
 
-**navigation system**
+### Fewer Strong Concepts
 
-**search system**
+A World with a small number of precise foundational concepts is easier to reason about than one burdened with overlapping constitutional vocabulary.
 
-**future immersive experiences**
+This does not mean BitPangea should be simplistic.
 
-**A representation can be valuable, sophisticated, and even indispensable without becoming canonical authority.**
+It means complexity should be earned.
 
-**The principle is:**
+A useful test is:
 
-**The interface should reveal the World—not define the World by accident.**
+What distinct work does this concept perform that no established concept already performs?
 
-**Distinguish State From Experience**
+If the answer is unclear, the concept may belong in explanation rather than canon.
 
-**The same discipline applies to Runtime and Experience Architecture.**
+The goal is:
 
-**Something visible to one participant is not necessarily canonical World State.**
+minimum permanent architecture
 
-**A preview is not construction.**
+with:
 
-**A draft is not committed state.**
+maximum future extensibility
 
-**A client preference is not a World Property.**
+<a id="ch17-s21"></a>
 
-**A cache is not canonical authority.**
+### Distinguish the World From Its Representations
 
-**A local effect is not necessarily a persistent World event.**
+Development should repeatedly ask:
 
-**Development should therefore distinguish among:**
+Does this system define the World, or does it merely represent the World?
 
-**canonical state**
+This applies to:
 
-**derived state**
+globe
 
-**temporary state**
+flat map
 
-**private state**
+Parcel view
 
-**client-local state**
+Builder interface
 
-**representation.**
+3D environment
 
-**The exact technical architecture remains open.**
+navigation system
 
-**The conceptual separation should guide implementation from the beginning.**
+search system
 
-**Build for Multiple Representations**
+future immersive experiences
 
-**BitPangea should assume that today’s preferred interface will not be the final way civilization encounters the World.**
+A representation can be valuable, sophisticated, and even indispensable without becoming canonical authority.
 
-**Therefore:**
+The principle is:
 
-**one World**
+The interface should reveal the World—not define the World by accident.
 
-**should be capable of supporting:**
+<a id="ch17-s22"></a>
 
-**many representations**
+### Distinguish State From Experience
 
-**A globe should not make flat experience impossible.**
+The same discipline applies to Runtime and Experience Architecture.
 
-**A flat lived World should not make future immersive access impossible.**
+Something visible to one participant is not necessarily canonical World State.
 
-**A present Builder should not force future Builders to replace canonical Parcel truth.**
+A preview is not construction.
 
-**Experience may evolve.**
+A draft is not committed state.
 
-**Place should remain.**
+A client preference is not a World Property.
 
-**Design for Replacement**
+A cache is not canonical authority.
 
-**A useful development question is:**
+A local effect is not necessarily a persistent World event.
 
-**If this component disappears, does BitPangea survive?**
+Development should therefore distinguish among:
 
-**For many systems the answer should eventually be yes.**
+canonical state
 
-**Renderer replaced:**
+derived state
 
-**→ World survives.**
+temporary state
 
-**Client replaced:**
+private state
 
-**→ World survives.**
+client-local state
 
-**Builder tool replaced:**
+representation.
 
-**→ World survives.**
+The exact technical architecture remains open.
 
-**Service implementation replaced:**
+The conceptual separation should guide implementation from the beginning.
 
-**→ canonical meaning survives.**
+<a id="ch17-s23"></a>
 
-**Authentication mechanism replaced:**
+### Build for Multiple Representations
 
-**→ actor continuity should survive where legitimate.**
+BitPangea should assume that today’s preferred interface will not be the final way civilization encounters the World.
 
-**Deeper systems may require formal migration rather than simple replacement.**
+Therefore:
 
-**But the question exposes accidental coupling.**
+one World
 
-**The closer a component lies to pure implementation, the more replaceable it should ideally be.**
+should be capable of supporting:
 
-**Architecture Before Optimization**
+many representations
 
-**Performance matters.**
+A globe should not make flat experience impossible.
 
-**Scalability matters.**
+A flat lived World should not make future immersive access impossible.
 
-**Storage matters.**
+A present Builder should not force future Builders to replace canonical Parcel truth.
 
-**Latency matters.**
+Experience may evolve.
 
-**Operational cost matters.**
+Place should remain.
 
-**But optimization should not silently redefine foundational meaning.**
+<a id="ch17-s24"></a>
 
-**A technically efficient representation may still be architecturally wrong.**
+### Design for Replacement
 
-**The proper order is:**
+A useful development question is:
 
-**determine what must be true**
+If this component disappears, does BitPangea survive?
 
-**then:**
+For many systems the answer should eventually be yes.
 
-**determine how to make it practical**
+Renderer replaced:
 
-**This does not mean ignoring feasibility.**
+→ World survives.
 
-**It means feasibility tests Architecture rather than replacing Architecture.**
+Client replaced:
 
-**Engineering Is Evidence**
+→ World survives.
 
-**Architectural reasoning cannot remain detached from implementation forever.**
+Builder tool replaced:
 
-**A proposed architecture must eventually survive engineering.**
+→ World survives.
 
-**If an adopted direction proves:**
+Service implementation replaced:
 
-**mathematically impossible**
+→ canonical meaning survives.
 
-**internally contradictory**
+Authentication mechanism replaced:
 
-**operationally incoherent**
+→ actor continuity should survive where legitimate.
 
-**or catastrophically impractical**
+Deeper systems may require formal migration rather than simple replacement.
 
-**that evidence matters.**
+But the question exposes accidental coupling.
 
-**The relationship should therefore be iterative:**
+The closer a component lies to pure implementation, the more replaceable it should ideally be.
 
-**Architecture**
+<a id="ch17-s25"></a>
 
-**↓**
+### Architecture Before Optimization
 
-**Prototype**
+Performance matters.
 
-**↓**
+Scalability matters.
 
-**Observation**
+Storage matters.
 
-**↓**
+Latency matters.
 
-**Technical evidence**
+Operational cost matters.
 
-**↓**
+But optimization should not silently redefine foundational meaning.
 
-**Refinement**
+A technically efficient representation may still be architecturally wrong.
 
-**↓**
+The proper order is:
 
-**Architecture**
+determine what must be true
 
-**This is not technology-first design.**
+then:
 
-**It is Architecture willing to learn from reality.**
+determine how to make it practical
 
-**The principle is:**
+This does not mean ignoring feasibility.
 
-**Engineering should challenge Architecture without silently replacing it.**
+It means feasibility tests Architecture rather than replacing Architecture.
 
-**Mathematics Before Aesthetics Where Mathematics Is Foundational**
+<a id="ch17-s26"></a>
 
-**Some BitPangea problems require proof.**
+### Engineering Is Evidence
 
-**Exactly 21,000,000 Parcels is one.**
+Architectural reasoning cannot remain detached from implementation forever.
 
-**Equal-area Parcel construction may be another.**
+A proposed architecture must eventually survive engineering.
 
-**Canonical Survey mathematics certainly will.**
+If an adopted direction proves:
 
-**Deterministic Parcel Adjacency will require rigor.**
+mathematically impossible
 
-**Aesthetic preference cannot settle those questions.**
+internally contradictory
 
-**A Parcel fabric may be beautiful and still fail.**
+operationally incoherent
 
-**A mathematically convenient structure may still violate World Form.**
+or catastrophically impractical
 
-**Where the Architecture requires proof:**
+that evidence matters.
 
-**proof must win over preference.**
+The relationship should therefore be iterative:
 
-**Thus:**
+Architecture
 
-**Aesthetic success cannot substitute for mathematical conformance.**
+↓
 
-**Aesthetics Still Matter**
+Prototype
 
-**The reverse is also true.**
+↓
 
-**A mathematically valid World can still fail as a World.**
+Observation
 
-**BitPangea is intended to possess:**
+↓
 
-**identity**
+Technical evidence
 
-**recognizability**
+↓
 
-**serenity**
+Refinement
 
-**composition**
+↓
 
-**progressive revelation**
+Architecture
 
-**digital character**
+This is not technology-first design.
 
-**a sense of place.**
+It is Architecture willing to learn from reality.
 
-**Therefore the strongest solution must eventually reconcile:**
+The principle is:
 
-**mathematical integrity**
+Engineering should challenge Architecture without silently replacing it.
 
-- 
+<a id="ch17-s27"></a>
 
-**architectural coherence**
+### Mathematics Before Aesthetics Where Mathematics Is Foundational
 
-- 
+Some BitPangea problems require proof.
 
-**experiential identity**
+Exactly 21,000,000 Parcels is one.
 
-**BitPangea does not need to choose between mathematics and beauty.**
+Equal-area Parcel construction may be another.
 
-**It must discover where both can coexist honestly.**
+Canonical Survey mathematics certainly will.
 
-**Use Analogy Carefully**
+Deterministic Parcel Adjacency will require rigor.
 
-**BitPangea benefits from physical-world analogies.**
+Aesthetic preference cannot settle those questions.
 
-**Survey.**
+A Parcel fabric may be beautiful and still fail.
 
-**Cadastre.**
+A mathematically convenient structure may still violate World Form.
 
-**Parcel.**
+Where the Architecture requires proof:
 
-**Infrastructure.**
+proof must win over preference.
 
-**Geography.**
+Thus:
 
-**History.**
+Aesthetic success cannot substitute for mathematical conformance.
 
-**Archaeology.**
+<a id="ch17-s28"></a>
 
-**Property.**
+### Aesthetics Still Matter
 
-**These concepts provide useful language.**
+The reverse is also true.
 
-**They become dangerous when analogy supplies the answer automatically.**
+A mathematically valid World can still fail as a World.
 
-**For example:**
+BitPangea is intended to possess:
 
-**physical land has oceans**
+identity
 
-**therefore:**
+recognizability
 
-**The Verge must be coastline**
+serenity
 
-**does not follow.**
+composition
 
-**Likewise:**
+progressive revelation
 
-**physical property has deeds**
+digital character
 
-**therefore:**
+a sense of place.
 
-**BitPangea requires deeds**
+Therefore the strongest solution must eventually reconcile:
 
-**does not follow.**
+mathematical integrity
 
-**The principle is:**
+\+
 
-**Use analogy to ask better questions. Do not import answers merely because they are familiar.**
+architectural coherence
 
-**Bitcoin as Inspiration, Not Template**
+\+
 
-**Bitcoin provides deliberate inspiration for BitPangea.**
+experiential identity
 
-**Most visibly:**
+BitPangea does not need to choose between mathematics and beauty.
 
-**21,000,000**
+It must discover where both can coexist honestly.
 
-**But its deeper influence also includes:**
+<a id="ch17-s29"></a>
 
-**Finitude**
+### Use Analogy Carefully
 
-**digital scarcity**
+BitPangea benefits from physical-world analogies.
 
-**verification**
+Survey.
 
-**constraint**
+Cadastre.
 
-**durability**
+Parcel.
 
-**rule-based systems**
+Infrastructure.
 
-**Yet a monetary network and a spatial World solve different problems.**
+Geography.
 
-**BitPangea should therefore avoid mechanical imitation.**
+History.
 
-**The principle is:**
+Archaeology.
 
-**Honor the principle where it belongs. Do not force the mechanism where it does not.**
+Property.
 
-**Bitcoin may inspire an architectural question.**
+These concepts provide useful language.
 
-**It does not automatically answer it.**
+They become dangerous when analogy supplies the answer automatically.
 
-**External Ideas Are Inputs, Not Decisions**
+For example:
 
-**BitPangea can benefit from:**
+physical land has oceans
 
-**technical research**
+therefore:
 
-**external architecture review**
+The Verge must be coastline
 
-**historical examples**
+does not follow.
 
-**other digital systems**
+Likewise:
 
-**mathematical literature**
+physical property has deeds
 
-**critique**
+therefore:
 
-**artificial intelligence**
+BitPangea requires deeds
 
-**independent analysis.**
+does not follow.
 
-**But external advice does not become BitPangea merely by being persuasive.**
+The principle is:
 
-**The process should remain:**
+Use analogy to ask better questions. Do not import answers merely because they are familiar.
 
-**outside idea**
+<a id="ch17-s30"></a>
 
-**↓**
+### Bitcoin as Inspiration, Not Template
 
-**BitPangea inquiry**
+Bitcoin provides deliberate inspiration for BitPangea.
 
-**↓**
+Most visibly:
 
-**evaluation against established constraints**
+21,000,000
 
-**↓**
+But its deeper influence also includes:
 
-**Creator determination where appropriate**
+Finitude
 
-**↓**
+digital scarcity
 
-**status recorded**
+verification
 
-**The principle is:**
+constraint
 
-**Advice may inform Architecture. It does not adopt Architecture.**
+durability
 
-**Critique Should Be Welcomed**
+rule-based systems
 
-**Provisional Architecture becomes stronger when assumptions are challenged before they become expensive dependencies.**
+Yet a monetary network and a spatial World solve different problems.
 
-**Useful questions include:**
+BitPangea should therefore avoid mechanical imitation.
 
-**What assumption is hidden here?**
+The principle is:
 
-**Which authority has been conflated?**
+Honor the principle where it belongs. Do not force the mechanism where it does not.
 
-**What dependency has been skipped?**
+Bitcoin may inspire an architectural question.
 
-**What implementation detail is pretending to be Architecture?**
+It does not automatically answer it.
 
-**What constitutional truth has been assumed without inquiry?**
+<a id="ch17-s31"></a>
 
-**What future option would this decision eliminate?**
+### External Ideas Are Inputs, Not Decisions
 
-**What happens in 2150 if this remains permanent?**
+BitPangea can benefit from:
 
-**What breaks if this design becomes canonical?**
+technical research
 
-**Critique is most valuable before permanence.**
+external architecture review
 
-**That is when changing direction is cheapest.**
+historical examples
 
-**Do Not Defend Sunk Effort**
+other digital systems
 
-**Time spent on a design is not evidence that the design is correct.**
+mathematical literature
 
-**A Parcel model may require weeks of work.**
+critique
 
-**A prototype may be technically elegant.**
+artificial intelligence
 
-**A diagram may feel complete.**
+independent analysis.
 
-**A terminology system may become familiar.**
+But external advice does not become BitPangea merely by being persuasive.
 
-**None of those facts establishes architectural truth.**
+The process should remain:
 
-**BitPangea should be willing to discard or supersede work when stronger reasoning demands it.**
+outside idea
 
-**Effort already spent is not architectural evidence.**
+↓
 
-**Preserve Rejected Work**
+BitPangea inquiry
 
-**Discarding a design does not require erasing it.**
+↓
 
-**Rejected work can preserve valuable knowledge:**
+evaluation against established constraints
 
-**what was attempted**
+↓
 
-**why it appeared promising**
+Creator determination where appropriate
 
-**which assumptions failed**
+↓
 
-**what evidence emerged**
+status recorded
 
-**why another direction replaced it**
+The principle is:
 
-**This is especially important because BitPangea is documenting its own creation.**
+Advice may inform Architecture. It does not adopt Architecture.
 
-**Development should distinguish:**
+<a id="ch17-s32"></a>
 
-**rejected architecturally**
+### Critique Should Be Welcomed
 
-**from:**
+Provisional Architecture becomes stronger when assumptions are challenged before they become expensive dependencies.
 
-**forgotten historically**
+Useful questions include:
 
-**They are not the same.**
+What assumption is hidden here?
 
-**Documentation Is Part of Architectural Control**
+Which authority has been conflated?
 
-**Documentation is not administrative cleanup.**
+What dependency has been skipped?
 
-**In BitPangea, documentation helps preserve architectural authority and historical continuity.**
+What implementation detail is pretending to be Architecture?
 
-**Different institutions serve different functions:**
+What constitutional truth has been assumed without inquiry?
 
-**Chronicle records when.**
+What future option would this decision eliminate?
 
-**Atlas records what.**
+What happens in 2150 if this remains permanent?
 
-**Origins preserves how and why the understanding emerged.**
+What breaks if this design becomes canonical?
 
-**The Chronicle preserves sequence.**
+Critique is most valuable before permanence.
 
-**The Atlas preserves current structural understanding.**
+That is when changing direction is cheapest.
 
-**Origins preserves much of the reasoning and development path.**
+<a id="ch17-s33"></a>
 
-**These records should remain distinguishable.**
+### Do Not Defend Sunk Effort
 
-**Documentation should preserve not only an idea, but also the status and authority of that idea.**
+Time spent on a design is not evidence that the design is correct.
 
-**Record Status, Not Merely Content**
+A Parcel model may require weeks of work.
 
-**A future reader should not have to guess whether something was:**
+A prototype may be technically elegant.
 
-**proposed**
+A diagram may feel complete.
 
-**provisional**
+A terminology system may become familiar.
 
-**adopted**
+None of those facts establishes architectural truth.
 
-**deferred**
+BitPangea should be willing to discard or supersede work when stronger reasoning demands it.
 
-**parked**
+Effort already spent is not architectural evidence.
 
-**rejected**
+<a id="ch17-s34"></a>
 
-**superseded**
+### Preserve Rejected Work
 
-**still unresolved.**
+Discarding a design does not require erasing it.
 
-**The status is part of the record.**
+Rejected work can preserve valuable knowledge:
 
-**This is especially important because older documents may remain historically valuable long after their architectural conclusions have changed.**
+what was attempted
 
-**Thus:**
+why it appeared promising
 
-**Historical existence does not equal current authority.**
+which assumptions failed
 
-**Development Without False Completion**
+what evidence emerged
 
-**BitPangea should resist pressure to appear more complete than it is.**
+why another direction replaced it
 
-**A polished diagram can conceal unresolved dependencies.**
+This is especially important because BitPangea is documenting its own creation.
 
-**A detailed schema can imply authority that was never adopted.**
+Development should distinguish:
 
-**A working prototype can create false confidence in unfinished Architecture.**
+rejected architecturally
 
-**A manuscript can accidentally convert provisional language into apparent canon.**
+from:
 
-**The development philosophy therefore prefers:**
+forgotten historically
 
-**precise incompleteness**
+They are not the same.
 
-**over:**
+<a id="ch17-s35"></a>
 
-**artificial completeness.**
+### Documentation Is Part of Architectural Control
 
-**Knowing exactly what remains unresolved is a sign of architectural maturity.**
+Documentation is not administrative cleanup.
 
-**Open Questions Are Work Products**
+In BitPangea, documentation helps preserve architectural authority and historical continuity.
 
-**A well-formed unresolved question is itself a development result.**
+Different institutions serve different functions:
 
-**It identifies the boundary of present understanding.**
+Chronicle records when.
 
-**Discovering that the real question is not:**
+Atlas records what.
 
-**What should The Verge look like?**
+Origins preserves how and why the understanding emerged.
 
-**but:**
+The Chronicle preserves sequence.
 
-**What architectural function should terminal World-form expression perform within the constraints of The Extent and World Form?**
+The Atlas preserves current structural understanding.
 
-**is progress.**
+Origins preserves much of the reasoning and development path.
 
-**Likewise, discovering that the real question is not:**
+These records should remain distinguishable.
 
-**Which database should store Parcels?**
+Documentation should preserve not only an idea, but also the status and authority of that idea.
 
-**but:**
+<a id="ch17-s36"></a>
 
-**What canonical cadastral truth must survive every future database?**
+### Record Status, Not Merely Content
 
-**is progress.**
+A future reader should not have to guess whether something was:
 
-**Discovering the correct question is part of discovering BitPangea.**
+proposed
 
-**Resolve What Must Be Resolved**
+provisional
 
-**Architectural restraint does not mean indefinite deferral.**
+adopted
 
-**Some questions eventually become blockers.**
+deferred
 
-**The Foundational Survey Fabric cannot remain mathematically unresolved forever.**
+parked
 
-**Exactly 21,000,000 Parcels must eventually be proven and established.**
+rejected
 
-**Parcel identity must eventually become executable.**
+superseded
 
-**Runtime semantics must eventually support real change.**
+still unresolved.
 
-**Rights and authorization must eventually become operational.**
+The status is part of the record.
 
-**Interoperability must eventually support independent implementations.**
+This is especially important because older documents may remain historically valuable long after their architectural conclusions have changed.
 
-**The development philosophy therefore includes a willingness to close questions when:**
+Thus:
 
-**dependencies are ready**
+Historical existence does not equal current authority.
 
-**evidence is sufficient**
+<a id="ch17-s37"></a>
 
-**alternatives have been tested**
+### Development Without False Completion
 
-**and the answer has earned confidence.**
+BitPangea should resist pressure to appear more complete than it is.
 
-**Openness is valuable only until legitimate resolution becomes necessary and justified.**
+A polished diagram can conceal unresolved dependencies.
 
-**Leave Open What Should Remain Free**
+A detailed schema can imply authority that was never adopted.
 
-**As development moves toward civilization, the opposite rule applies.**
+A working prototype can create false confidence in unfinished Architecture.
 
-**BitPangea should not attempt to finalize:**
+A manuscript can accidentally convert provisional language into apparent canon.
 
-**future culture**
+The development philosophy therefore prefers:
 
-**community identity**
+precise incompleteness
 
-**artistic movements**
+over:
 
-**social customs**
+artificial completeness.
 
-**historical interpretation**
+Knowing exactly what remains unresolved is a sign of architectural maturity.
 
-**unexpected institutions**
+<a id="ch17-s38"></a>
 
-**collective meaning**
+### Open Questions Are Work Products
 
-**many forms of economic behavior**
+A well-formed unresolved question is itself a development result.
 
-**unexpected uses of place**
+It identifies the boundary of present understanding.
 
-**These are not missing specifications.**
+Discovering that the real question is not:
 
-**They are future possibilities.**
+What should The Verge look like?
 
-**Architectural completeness may therefore require:**
+but:
 
-**deliberate civilizational incompleteness.**
+What architectural function should terminal World-form expression perform within the constraints of The Extent and World Form?
 
-**Creator Restraint**
+is progress.
 
-**The Creator possesses extraordinary authority during formation.**
+Likewise, discovering that the real question is not:
 
-**That authority creates an obligation to distinguish:**
+Which database should store Parcels?
 
-**what only the Creator can establish now**
+but:
 
-**from:**
+What canonical cadastral truth must survive every future database?
 
-**what future participants should be allowed to determine later.**
+is progress.
 
-**The Creator should establish:**
+Discovering the correct question is part of discovering BitPangea.
 
-**the World**
+<a id="ch17-s39"></a>
 
-**the constitutional conditions**
+### Resolve What Must Be Resolved
 
-**the enduring Architecture necessary for continuity**
+Architectural restraint does not mean indefinite deferral.
 
-**the boundaries that protect coherence.**
+Some questions eventually become blockers.
 
-**The Creator should be cautious about establishing:**
+The Foundational Survey Fabric cannot remain mathematically unresolved forever.
 
-**future culture**
+Exactly 21,000,000 Parcels must eventually be proven and established.
 
-**economic outcomes**
+Parcel identity must eventually become executable.
 
-**institutional meaning**
+Runtime semantics must eventually support real change.
 
-**community behavior**
+Rights and authorization must eventually become operational.
 
-**historical interpretation.**
+Interoperability must eventually support independent implementations.
 
-**The governing principle is:**
+The development philosophy therefore includes a willingness to close questions when:
 
-**The Creator should use foundational authority to protect the possibility of a future beyond the Creator.**
+dependencies are ready
 
-**From Creator to Steward**
+evidence is sufficient
 
-**The development philosophy therefore changes with maturity.**
+alternatives have been tested
 
-**Early:**
+and the answer has earned confidence.
 
-**discover**
+Openness is valuable only until legitimate resolution becomes necessary and justified.
 
-**constrain**
+<a id="ch17-s40"></a>
 
-**define**
+### Leave Open What Should Remain Free
 
-**design**
+As development moves toward civilization, the opposite rule applies.
 
-**establish**
+BitPangea should not attempt to finalize:
 
-**Later:**
+future culture
 
-**protect**
+community identity
 
-**maintain**
+artistic movements
 
-**refine**
+social customs
 
-**enable**
+historical interpretation
 
-**And eventually, if BitPangea succeeds:**
+unexpected institutions
 
-**steward**
+collective meaning
 
-**may become a more accurate role than:**
+many forms of economic behavior
 
-**create**
+unexpected uses of place
 
-**A mature World should increasingly derive continuity from its institutions and Architecture rather than permanent personal intervention by its originator.**
+These are not missing specifications.
 
-**Build the Minimum Necessary Foundation**
+They are future possibilities.
 
-**World design creates a strong temptation to anticipate everything.**
+Architectural completeness may therefore require:
 
-**Every market.**
+deliberate civilizational incompleteness.
 
-**Every institution.**
+<a id="ch17-s41"></a>
 
-**Every dispute.**
+### Creator Restraint
 
-**Every Builder feature.**
+The Creator possesses extraordinary authority during formation.
 
-**Every cultural need.**
+That authority creates an obligation to distinguish:
 
-**Every governance problem.**
+what only the Creator can establish now
 
-**Trying to solve all of those during the Creator Period would likely produce excessive Architecture.**
+from:
 
-**The stronger approach is:**
+what future participants should be allowed to determine later.
 
-**Build the minimum necessary foundation capable of supporting future complexity without prescribing its form.**
+The Creator should establish:
 
-**This is not minimalism for aesthetic reasons.**
+the World
 
-**It is constitutional restraint.**
+the constitutional conditions
 
-**The paired principle is:**
+the enduring Architecture necessary for continuity
 
-**Minimum permanent architecture. Maximum future extensibility.**
+the boundaries that protect coherence.
 
-**The Immutable Core Should Be Astonishingly Small**
+The Creator should be cautious about establishing:
 
-**The permanent core of BitPangea should contain only what genuinely requires extraordinary protection.**
+future culture
 
-**If everything becomes permanent, BitPangea cannot evolve.**
+economic outcomes
 
-**If nothing becomes permanent, BitPangea cannot remain itself.**
+institutional meaning
 
-**The goal is therefore not maximal immutability.**
+community behavior
 
-**It is:**
+historical interpretation.
 
-**correct permanence.**
+The governing principle is:
 
-**The architectural expression is:**
+The Creator should use foundational authority to protect the possibility of a future beyond the Creator.
 
-**The immutable core should be astonishingly small.**
+<a id="ch17-s42"></a>
 
-**“Immutable” here describes intended durability, not the claim that error must become technically impossible to correct forever.**
+### From Creator to Steward
 
-**Simplicity Below, Complexity Above**
+The development philosophy therefore changes with maturity.
 
-**BitPangea should be capable of supporting enormous future complexity above relatively comprehensible foundational truth.**
+Early:
 
-**Conceptually:**
+discover
 
-**small constitutional core**
+constrain
 
-**↓**
+define
 
-**clear Architecture**
+design
 
-**↓**
+establish
 
-**rich World operation**
+Later:
 
-**↓**
+protect
 
-**open Builder creativity**
+maintain
 
-**↓**
+refine
 
-**complex civilization**
+enable
 
-**The civilization may eventually become extraordinarily complex.**
+And eventually, if BitPangea succeeds:
 
-**The constitutional core should not need to become equally complicated merely to permit it.**
+steward
 
-**Preserve Optionality Where It Has Value**
+may become a more accurate role than:
 
-**Not all optionality is desirable.**
+create
 
-**Foundational ambiguity can be dangerous.**
+A mature World should increasingly derive continuity from its institutions and Architecture rather than permanent personal intervention by its originator.
 
-**But implementation optionality is valuable when multiple technologies can satisfy the same established meaning.**
+<a id="ch17-s43"></a>
 
-**For example:**
+### Build the Minimum Necessary Foundation
 
-**BitPangea may define identity requirements before selecting one permanent credential technology.**
+World design creates a strong temptation to anticipate everything.
 
-**It may define integrity requirements without immediately choosing one blockchain.**
+Every market.
 
-**It may define interoperability requirements while allowing multiple conforming implementations.**
+Every institution.
 
-**Thus:**
+Every dispute.
 
-**Resolve architectural meaning as early as necessary. Preserve implementation optionality as long as responsibly possible.**
+Every Builder feature.
 
-**Verify Before Expansion**
+Every cultural need.
 
-**As Architecture grows, new design should be checked against existing constraints before additional complexity is built upon it.**
+Every governance problem.
 
-**Useful questions include:**
+Trying to solve all of those during the Creator Period would likely produce excessive Architecture.
 
-**Does this preserve one World?**
+The stronger approach is:
 
-**Does this preserve Finitude?**
+Build the minimum necessary foundation capable of supporting future complexity without prescribing its form.
 
-**Does this preserve The Extent?**
+This is not minimalism for aesthetic reasons.
 
-**Does this preserve exactly 21,000,000 Parcels?**
+It is constitutional restraint.
 
-**Does it respect the Foundational Survey Fabric?**
+The paired principle is:
 
-**Does it preserve cadastral authority?**
+Minimum permanent architecture. Maximum future extensibility.
 
-**Does it violate Architecture boundaries?**
+<a id="ch17-s44"></a>
 
-**Does it transfer authority improperly?**
+### The Immutable Core Should Be Astonishingly Small
 
-**Does it contradict another adopted design direction?**
+The permanent core of BitPangea should contain only what genuinely requires extraordinary protection.
 
-**Does it overconstrain future civilization?**
+If everything becomes permanent, BitPangea cannot evolve.
 
-**This is part of the emerging conformance mindset.**
+If nothing becomes permanent, BitPangea cannot remain itself.
 
-**BitPangea should expand by preserving coherence, not merely by accumulating capability.**
+The goal is therefore not maximal immutability.
 
-**The Long-Horizon Test**
+It is:
 
-**BitPangea is intended to outlive current technology assumptions.**
+correct permanence.
 
-**Therefore some design questions should be tested against a much longer horizon than ordinary software development.**
+The architectural expression is:
 
-**A useful discipline is:**
+The immutable core should be astonishingly small.
 
-**Design → 2150 Stress Test → Preserve Optionality**
+“Immutable” here describes intended durability, not the claim that error must become technically impossible to correct forever.
 
-**The question is not whether anyone can predict 2150.**
+<a id="ch17-s45"></a>
 
-**They cannot.**
+### Simplicity Below, Complexity Above
 
-**The purpose is to expose decisions that appear reasonable only because present technology is being mistaken for permanent reality.**
+BitPangea should be capable of supporting enormous future complexity above relatively comprehensible foundational truth.
 
-**A long-horizon review may ask:**
+Conceptually:
 
-**Would this concept still make sense if today’s interface disappeared?**
+small constitutional core
 
-**Does this require a technology that may be obsolete?**
+↓
 
-**Does this preserve canonical meaning independently of current implementation?**
+clear Architecture
 
-**Does this unnecessarily eliminate future design space?**
+↓
 
-**Does this decision belong deep enough to justify surviving generations of technology?**
+rich World operation
 
-**The goal is not prediction.**
+↓
 
-**It is humility about the present.**
+open Builder creativity
 
-**Development as Discovery**
+↓
 
-**The title Creator might imply that BitPangea is being invented through unconstrained authorship.**
+complex civilization
 
-**In practice, much of the work increasingly resembles discovery.**
+The civilization may eventually become extraordinarily complex.
 
-**The Creator can choose foundational constraints.**
+The constitutional core should not need to become equally complicated merely to permit it.
 
-**But once those constraints are adopted, later valid solutions become narrower.**
+<a id="ch17-s46"></a>
 
-**Exactly 21,000,000 Parcels must fit somehow.**
+### Preserve Optionality Where It Has Value
 
-**The Survey Fabric must support them without becoming them.**
+Not all optionality is desirable.
 
-**World Form must reconcile with spatial truth.**
+Foundational ambiguity can be dangerous.
 
-**The Verge must express terminal form without becoming constitutional Extent.**
+But implementation optionality is valuable when multiple technologies can satisfy the same established meaning.
 
-**Rights must coexist with persistent identity.**
+For example:
 
-**Runtime must permit legitimate change without absorbing every authority.**
+BitPangea may define identity requirements before selecting one permanent credential technology.
 
-**Each adopted truth eliminates some future answers.**
+It may define integrity requirements without immediately choosing one blockchain.
 
-**Thus:**
+It may define interoperability requirements while allowing multiple conforming implementations.
 
-**BitPangea is designed through choice, but increasingly discovered through consequence.**
+Thus:
 
-**Let Constraints Reveal Architecture**
+Resolve architectural meaning as early as necessary. Preserve implementation optionality as long as responsibly possible.
 
-**BitPangea does not seek to eliminate constraint.**
+<a id="ch17-s47"></a>
 
-**It uses constraint productively.**
+### Verify Before Expansion
 
-**The number 21,000,000 is not an inconvenience to be hidden.**
+As Architecture grows, new design should be checked against existing constraints before additional complexity is built upon it.
 
-**Finitude is not a defect to be worked around.**
+Useful questions include:
 
-**Persistent identity is not administrative overhead.**
+Does this preserve one World?
 
-**Architecture boundaries are not bureaucracy.**
+Does this preserve Finitude?
 
-**Conformance is not needless rigidity.**
+Does this preserve The Extent?
 
-**Each meaningful constraint forces the World to become more precise.**
+Does this preserve exactly 21,000,000 Parcels?
 
-**The development principle is:**
+Does it respect the Foundational Survey Fabric?
 
-**A sufficiently meaningful constraint can reveal architecture that unlimited optionality would never require.**
+Does it preserve cadastral authority?
 
-**The Creator-Period Design Loop**
+Does it violate Architecture boundaries?
 
-**The working Creator-period design loop has become:**
+Does it transfer authority improperly?
 
-**Imagine**
+Does it contradict another adopted design direction?
 
-**↓**
+Does it overconstrain future civilization?
 
-**Design**
+This is part of the emerging conformance mindset.
 
-**↓**
+BitPangea should expand by preserving coherence, not merely by accumulating capability.
 
-**Test**
+<a id="ch17-s48"></a>
 
-**↓**
+### The Long-Horizon Test
 
-**Observe**
+BitPangea is intended to outlive current technology assumptions.
 
-**↓**
+Therefore some design questions should be tested against a much longer horizon than ordinary software development.
 
-**Refine**
+A useful discipline is:
 
-**↓**
+Design → 2150 Stress Test → Preserve Optionality
 
-**Preserve**
+The question is not whether anyone can predict 2150.
 
-**Imagine allows possibility before commitment.**
+They cannot.
 
-**Design gives the possibility explicit form.**
+The purpose is to expose decisions that appear reasonable only because present technology is being mistaken for permanent reality.
 
-**Test places that form against constitutional, architectural, mathematical, experiential, and long-horizon constraints.**
+A long-horizon review may ask:
 
-**Observe treats the result as evidence rather than as proof of success merely because it exists.**
+Would this concept still make sense if today’s interface disappeared?
 
-**Refine corrects what the evidence exposes.**
+Does this require a technology that may be obsolete?
 
-**Preserve records what has actually earned standing.**
+Does this preserve canonical meaning independently of current implementation?
 
-**Then the process continues.**
+Does this unnecessarily eliminate future design space?
 
-**This loop is not a production workflow.**
+Does this decision belong deep enough to justify surviving generations of technology?
 
-**It is a discipline of discovery.**
+The goal is not prediction.
 
-**When the Design Reveals a Deeper Question**
+It is humility about the present.
 
-**Sometimes the design loop cannot proceed because the question depends upon something deeper.**
+<a id="ch17-s49"></a>
 
-**Then the path changes.**
+### Development as Discovery
 
-**Design**
+The title Creator might imply that BitPangea is being invented through unconstrained authorship.
 
-**↓**
+In practice, much of the work increasingly resembles discovery.
 
-**Dependency**
+The Creator can choose foundational constraints.
 
-**↓**
+But once those constraints are adopted, later valid solutions become narrower.
 
-**Constitutional Inquiry**
+Exactly 21,000,000 Parcels must fit somehow.
 
-**↓**
+The Survey Fabric must support them without becoming them.
 
-**clarified constraint**
+World Form must reconcile with spatial truth.
 
-**↓**
+The Verge must express terminal form without becoming constitutional Extent.
 
-**Design resumes**
+Rights must coexist with persistent identity.
 
-**The important discipline is recognizing when the Creator is facing:**
+Runtime must permit legitimate change without absorbing every authority.
 
-**a design problem**
+Each adopted truth eliminates some future answers.
 
-**versus:**
+Thus:
 
-**a constitutional problem.**
+BitPangea is designed through choice, but increasingly discovered through consequence.
 
-**Not every difficult design question needs constitutional escalation.**
+<a id="ch17-s50"></a>
 
-**But a constitutional dependency should not be disguised as design merely to keep progress moving.**
+### Let Constraints Reveal Architecture
 
-**Preserve Before Forgetting**
+BitPangea does not seek to eliminate constraint.
 
-**When a conclusion is reached, it should be preserved while:**
+It uses constraint productively.
 
-**its reasoning**
+The number 21,000,000 is not an inconvenience to be hidden.
 
-**status**
+Finitude is not a defect to be worked around.
 
-**alternatives**
+Persistent identity is not administrative overhead.
 
-**and context**
+Architecture boundaries are not bureaucracy.
 
-**remain clear.**
+Conformance is not needless rigidity.
 
-**This is especially important because BitPangea is being created over time.**
+Each meaningful constraint forces the World to become more precise.
 
-**The project should not depend upon perfect personal recollection.**
+The development principle is:
 
-**The working documentary rule remains:**
+A sufficiently meaningful constraint can reveal architecture that unlimited optionality would never require.
 
-**Chronicle records when.**
+<a id="ch17-s51"></a>
 
-**Atlas records what.**
+### The Creator-Period Design Loop
 
-**Origins preserves how and why the understanding emerged.**
+The working Creator-period design loop has become:
 
-**Preservation is part of development.**
+Imagine
 
-**It prevents future memory from silently rewriting past architectural standing.**
+↓
 
-**What This Philosophy Rejects**
+Design
 
-**BitPangea’s development philosophy rejects several tempting approaches:**
+↓
 
-**technology-first World design**
+Test
 
-**feature-first Architecture**
+↓
 
-**UI-defined spatial truth**
+Observe
 
-**prototype-defined canon**
+↓
 
-**premature tokenization**
+Refine
 
-**premature economics**
+↓
 
-**premature governance**
+Preserve
 
-**automatic import of physical-world assumptions**
+Imagine allows possibility before commitment.
 
-**architecture by terminology**
+Design gives the possibility explicit form.
 
-**false certainty**
+Test places that form against constitutional, architectural, mathematical, experiential, and long-horizon constraints.
 
-**permanent Creator control by default**
+Observe treats the result as evidence rather than as proof of success merely because it exists.
 
-**civilization treated as a finished design product**
+Refine corrects what the evidence exposes.
 
-**implementation convenience treated as architectural proof**
+Preserve records what has actually earned standing.
 
-**dependency accumulated before adoption**
+Then the process continues.
 
-**These approaches may make a project faster to describe.**
+This loop is not a production workflow.
 
-**They can make a World harder to preserve coherently.**
+It is a discipline of discovery.
 
-**What This Philosophy Favors**
+<a id="ch17-s52"></a>
 
-**Instead, BitPangea favors:**
+### When the Design Reveals a Deeper Question
 
-**World-first reasoning**
+Sometimes the design loop cannot proceed because the question depends upon something deeper.
 
-**constraint-first Architecture**
+Then the path changes.
 
-**Foundation before constitutional definition**
+Design
 
-**Codex before Creator-period design where constitutional truth is required**
+↓
 
-**Atlas before implementation**
+Dependency
 
-**Requirements before mathematics**
+↓
 
-**Survey before Cadastre**
+Constitutional Inquiry
 
-**clear authority boundaries**
+↓
 
-**constitutional economy**
+clarified constraint
 
-**explicit provisionality**
+↓
 
-**dependency-aware inquiry**
+Design resumes
 
-**precise unanswered questions**
+The important discipline is recognizing when the Creator is facing:
 
-**aggressive prototyping before adoption**
+a design problem
 
-**replaceable implementation**
+versus:
 
-**mathematical proof where mathematics is foundational**
+a constitutional problem.
 
-**experiential identity where experience matters**
+Not every difficult design question needs constitutional escalation.
 
-**documented reasoning**
+But a constitutional dependency should not be disguised as design merely to keep progress moving.
 
-**preservation of superseded and rejected paths**
+<a id="ch17-s53"></a>
 
-**long-horizon stress testing**
+### Preserve Before Forgetting
 
-**Creator restraint**
+When a conclusion is reached, it should be preserved while:
 
-**civilizational openness**
+its reasoning
 
-**These disciplines do not guarantee perfect decisions.**
+status
 
-**They improve the probability that errors will be found before they become difficult to reverse.**
+alternatives
 
-**Development Philosophy in One View**
+and context
 
-**The approach can now be expressed as:**
+remain clear.
 
-**WORLD BEFORE APPLICATION**
+This is especially important because BitPangea is being created over time.
 
-**CONSTRAINT BEFORE FEATURE**
+The project should not depend upon perfect personal recollection.
 
-**FOUNDATION BEFORE CONSTITUTIONAL DEFINITION**
+The working documentary rule remains:
 
-**CODEX BEFORE ATLAS WHERE CONSTITUTIONAL TRUTH IS REQUIRED**
+Chronicle records when.
 
-**ATLAS BEFORE IMPLEMENTATION**
+Atlas records what.
 
-**REQUIREMENTS BEFORE MATHEMATICS**
+Origins preserves how and why the understanding emerged.
 
-**SURVEY BEFORE CADASTRE**
+Preservation is part of development.
 
-**CADASTRE BEFORE PARCEL-DEPENDENT SYSTEMS**
+It prevents future memory from silently rewriting past architectural standing.
 
-**AUTHORITY BEFORE EXECUTION**
+<a id="ch17-s54"></a>
 
-**RUNTIME BEFORE CANONICAL OPERATIONAL CHANGE**
+### What This Philosophy Rejects
 
-**PROTOTYPE BEFORE CANON**
+BitPangea’s development philosophy rejects several tempting approaches:
 
-**EVIDENCE BEFORE PERMANENCE**
+technology-first World design
 
-**ARCHITECTURE BEFORE OPTIMIZATION**
+feature-first Architecture
 
-**AUTHORITY BEFORE CONVENIENCE**
+UI-defined spatial truth
 
-**DEPENDENCY BEFORE SCHEDULE**
+prototype-defined canon
 
-**DOCUMENTATION BEFORE FORGETTING**
+premature tokenization
 
-**RESTRAINT BEFORE OVERDESIGN**
+premature economics
 
-**FOUNDATION BEFORE EMERGENCE**
+premature governance
 
-**These are not absolute sequencing rules for every engineering action.**
+automatic import of physical-world assumptions
 
-**They describe the direction in which architectural legitimacy should flow.**
+architecture by terminology
 
-**The Principle**
+false certainty
 
-**BitPangea is not being developed merely to become functional.**
+permanent Creator control by default
 
-**It is being developed so that functionality emerges from a coherent understanding of what the World is.**
+civilization treated as a finished design product
 
-**That requires:**
+implementation convenience treated as architectural proof
 
-**patience at the foundation**
+dependency accumulated before adoption
 
-**freedom during exploration**
+These approaches may make a project faster to describe.
 
-**precision before adoption**
+They can make a World harder to preserve coherently.
 
-**evidence before permanence**
+<a id="ch17-s55"></a>
 
-**humility when evidence changes**
+### What This Philosophy Favors
 
-**restraint when a decision belongs to the future**
+Instead, BitPangea favors:
 
-**and willingness to let architectural consequence overrule aesthetic preference, technical convenience, sunk effort, or schedule.**
+World-first reasoning
 
-**The governing principle is therefore:**
+constraint-first Architecture
 
-**Discover the World before hardening the implementation.**
+Foundation before constitutional definition
 
-**And beneath that lies an even broader discipline:**
+Codex before Creator-period design where constitutional truth is required
 
-**Make permanent only what has earned permanence.**
+Atlas before implementation
 
-**Build deeply where the World requires depth.**
+Requirements before mathematics
 
-**Prototype freely where uncertainty remains.**
+Survey before Cadastre
 
-**Test against consequence rather than preference.**
+clear authority boundaries
 
-**Replace what technology makes obsolete.**
+constitutional economy
 
-**Preserve what Architecture establishes.**
+explicit provisionality
 
-**Record what history may need.**
+dependency-aware inquiry
 
-**Leave open what civilization should inherit.**
+precise unanswered questions
 
-**And make BitPangea durable enough that future Builders can create things its Creator could never have predicted.**
+aggressive prototyping before adoption
+
+replaceable implementation
+
+mathematical proof where mathematics is foundational
+
+experiential identity where experience matters
+
+documented reasoning
+
+preservation of superseded and rejected paths
+
+long-horizon stress testing
+
+Creator restraint
+
+civilizational openness
+
+These disciplines do not guarantee perfect decisions.
+
+They improve the probability that errors will be found before they become difficult to reverse.
+
+<a id="ch17-s56"></a>
+
+### Development Philosophy in One View
+
+The approach can now be expressed as:
+
+WORLD BEFORE APPLICATION
+
+CONSTRAINT BEFORE FEATURE
+
+FOUNDATION BEFORE CONSTITUTIONAL DEFINITION
+
+CODEX BEFORE ATLAS WHERE CONSTITUTIONAL TRUTH IS REQUIRED
+
+ATLAS BEFORE IMPLEMENTATION
+
+REQUIREMENTS BEFORE MATHEMATICS
+
+SURVEY BEFORE CADASTRE
+
+CADASTRE BEFORE PARCEL-DEPENDENT SYSTEMS
+
+AUTHORITY BEFORE EXECUTION
+
+RUNTIME BEFORE CANONICAL OPERATIONAL CHANGE
+
+PROTOTYPE BEFORE CANON
+
+EVIDENCE BEFORE PERMANENCE
+
+ARCHITECTURE BEFORE OPTIMIZATION
+
+AUTHORITY BEFORE CONVENIENCE
+
+DEPENDENCY BEFORE SCHEDULE
+
+DOCUMENTATION BEFORE FORGETTING
+
+RESTRAINT BEFORE OVERDESIGN
+
+FOUNDATION BEFORE EMERGENCE
+
+These are not absolute sequencing rules for every engineering action.
+
+They describe the direction in which architectural legitimacy should flow.
+
+<a id="ch17-s57"></a>
+
+### The Principle
+
+BitPangea is not being developed merely to become functional.
+
+It is being developed so that functionality emerges from a coherent understanding of what the World is.
+
+That requires:
+
+patience at the foundation
+
+freedom during exploration
+
+precision before adoption
+
+evidence before permanence
+
+humility when evidence changes
+
+restraint when a decision belongs to the future
+
+and willingness to let architectural consequence overrule aesthetic preference, technical convenience, sunk effort, or schedule.
+
+The governing principle is therefore:
+
+Discover the World before hardening the implementation.
+
+And beneath that lies an even broader discipline:
+
+Make permanent only what has earned permanence.
+
+Build deeply where the World requires depth.
+
+Prototype freely where uncertainty remains.
+
+Test against consequence rather than preference.
+
+Replace what technology makes obsolete.
+
+Preserve what Architecture establishes.
+
+Record what history may need.
+
+Leave open what civilization should inherit.
+
+And make BitPangea durable enough that future Builders can create things its Creator could never have predicted.
+
+---
+
+<a id="ch18"></a>
 
 ## XVIII. The Path Forward
 
-**BitPangea now possesses enough constitutional structure, Architecture, and Creator-period design direction to continue deliberately.**
+BitPangea now possesses enough constitutional structure, Architecture, and Creator-period design direction to continue deliberately.
 
-**The World has:**
+The World has:
 
-**one finite identity**
+one finite identity
 
-**a complete Extent**
+a complete Extent
 
-**exactly 21,000,000 Parcels**
+exactly 21,000,000 Parcels
 
-**an adopted World Form direction**
+an adopted World Form direction
 
-**a recognized Architecture**
+a recognized Architecture
 
-**a rigorously developed Foundational Survey Fabric**
+a rigorously developed Foundational Survey Fabric
 
-**a developing Parcel Cadastre**
+a developing Parcel Cadastre
 
-**recognized domains for World Runtime, Identity / Rights / Control, Persistence / Provenance, Interoperability, and Experience Architecture**
+recognized domains for World Runtime, Identity / Rights / Control, Persistence / Provenance, Interoperability, and Experience Architecture
 
-**and an increasingly disciplined method for deciding what must be resolved, what must wait, and what should remain open.**
+and an increasingly disciplined method for deciding what must be resolved, what must wait, and what should remain open.
 
-**But BitPangea is not ready to skip from architecture into civilization.**
+But BitPangea is not ready to skip from architecture into civilization.
 
-**Nor should it attempt to complete every open problem at once.**
+Nor should it attempt to complete every open problem at once.
 
-**The path forward is narrower:**
+The path forward is narrower:
 
-**Resolve the next question whose answer legitimately constrains what follows.**
+Resolve the next question whose answer legitimately constrains what follows.
 
-**The Path Is Architectural, Not Chronological**
+<a id="ch18-s01"></a>
 
-**Origins should not pretend that BitPangea can be completed through a rigid calendar.**
+### The Path Is Architectural, Not Chronological
 
-**Some questions resolve quickly.**
+Origins should not pretend that BitPangea can be completed through a rigid calendar.
 
-**Others expose deeper dependencies.**
+Some questions resolve quickly.
 
-**Some inquiries close entire branches of speculation.**
+Others expose deeper dependencies.
 
-**Others reveal that a supposedly technical problem is constitutional.**
+Some inquiries close entire branches of speculation.
 
-**A prototype may strengthen an adopted direction.**
+Others reveal that a supposedly technical problem is constitutional.
 
-**Another may invalidate months of assumption.**
+A prototype may strengthen an adopted direction.
 
-**That is acceptable.**
+Another may invalidate months of assumption.
 
-**The governing rule is:**
+That is acceptable.
 
-**Dependency before schedule.**
+The governing rule is:
 
-**The sequence matters more than the calendar.**
+Dependency before schedule.
 
-**This is also why the Creator Period should not be treated as a production timetable.**
+The sequence matters more than the calendar.
 
-**The working principle remains:**
+This is also why the Creator Period should not be treated as a production timetable.
 
-**The Days record progress. They do not command progress.**
+The working principle remains:
 
-**Do Not Turn Origins Into a Roadmap**
+The Days record progress. They do not command progress.
 
-**A conventional roadmap often suggests:**
+<a id="ch18-s02"></a>
 
-**Phase 1**
+### Do Not Turn Origins Into a Roadmap
 
-**↓**
+A conventional roadmap often suggests:
 
-**Phase 2**
+Phase 1
 
-**↓**
+↓
 
-**Phase 3**
+Phase 2
 
-**↓**
+↓
 
-**launch**
+Phase 3
 
-**That structure is useful only when the underlying architecture is already sufficiently understood.**
+↓
 
-**BitPangea is still discovering portions of its deepest structure.**
+launch
 
-**A rigid roadmap could create pressure to close a question merely because a later task is waiting.**
+That structure is useful only when the underlying architecture is already sufficiently understood.
 
-**That would reverse the proper relationship.**
+BitPangea is still discovering portions of its deepest structure.
 
-**Architecture determines readiness. A schedule does not manufacture it.**
+A rigid roadmap could create pressure to close a question merely because a later task is waiting.
 
-**Origins should therefore preserve direction and dependency without pretending to know every future step.**
+That would reverse the proper relationship.
 
-**The Current Constitutional Path**
+Architecture determines readiness. A schedule does not manufacture it.
 
-**The Finitude review changed the World Properties discovery path.**
+Origins should therefore preserve direction and dependency without pretending to know every future step.
 
-**Finitude is no longer an open candidate for its own constitutional object.**
+<a id="ch18-s03"></a>
 
-**That inquiry is complete.**
+### The Current Constitutional Path
 
-**The result is:**
+The Finitude review changed the World Properties discovery path.
 
-**Finitude remains a condition of WP-S-I — The Extent.**
+Finitude is no longer an open candidate for its own constitutional object.
 
-**It does not become a standalone Codex merely because it is important.**
+That inquiry is complete.
 
-**That conclusion now constrains the next constitutional work.**
+The result is:
 
-**The immediate constitutional sequence is narrower.**
+Finitude remains a condition of WP-S-I — The Extent.
 
-**First: Reconsider Limit Narrowly**
+It does not become a standalone Codex merely because it is important.
 
-**The remaining question concerning Limit is intentionally small.**
+That conclusion now constrains the next constitutional work.
 
-**The question is not:**
+The immediate constitutional sequence is narrower.
 
-**Is BitPangea finite?**
+<a id="ch18-s04"></a>
 
-**That is settled.**
+### First: Reconsider Limit Narrowly
 
-**Nor should this inquiry reopen:**
+The remaining question concerning Limit is intentionally small.
 
-**Edge**
+The question is not:
 
-**Perimeter**
+Is BitPangea finite?
 
-**Exterior**
+That is settled.
 
-**World Boundary**
+Nor should this inquiry reopen:
 
-**unless new evidence appears.**
+Edge
 
-**The only legitimate question is:**
+Perimeter
 
-**Does Limit perform constitutional work independent of The Extent, or is it merely the terminal expression of The Extent?**
+Exterior
 
-**If it performs no independent work, constitutional economy argues against adding another object to canon.**
+World Boundary
 
-**The goal is not to find a place for the word.**
+unless new evidence appears.
 
-**The goal is to determine whether the World requires the concept.**
+The only legitimate question is:
 
-**Then: Conduct the Formal Inquiry Into Form**
+Does Limit perform constitutional work independent of The Extent, or is it merely the terminal expression of The Extent?
 
-**After Limit, the next major constitutional inquiry should address Form.**
+If it performs no independent work, constitutional economy argues against adding another object to canon.
 
-**That inquiry should begin from what is already constrained by the Foundation:**
+The goal is not to find a place for the word.
 
-**BitPangea is one World.**
+The goal is to determine whether the World requires the concept.
 
-**It is finite.**
+<a id="ch18-s05"></a>
 
-**It is complete.**
+### Then: Conduct the Formal Inquiry Into Form
 
-**It is continuous as a cartographic whole.**
+After Limit, the next major constitutional inquiry should address Form.
 
-**The Form inquiry should therefore ask:**
+That inquiry should begin from what is already constrained by the Foundation:
 
-**What constitutional truth, if any, must be established about the Form of one finite, complete, continuous cartographic World?**
+BitPangea is one World.
 
-**It should not begin by constitutionalizing the current supercontinent design merely because that design is adopted Creator-period direction.**
+It is finite.
 
-**The distinction matters.**
+It is complete.
 
-**Constitutional Form**
+It is continuous as a cartographic whole.
 
-**and:**
+The Form inquiry should therefore ask:
 
-**Creator-period World Form**
+What constitutional truth, if any, must be established about the Form of one finite, complete, continuous cartographic World?
 
-**may interact.**
+It should not begin by constitutionalizing the current supercontinent design merely because that design is adopted Creator-period direction.
 
-**They are not automatically the same thing.**
+The distinction matters.
 
-**After Form: Perform a Dependency Check**
+Constitutional Form
 
-**The old approach might have proceeded directly from one World Property candidate to the next.**
+and:
 
-**That is no longer the preferred method.**
+Creator-period World Form
 
-**After Form, BitPangea should ask:**
+may interact.
 
-**What inquiry is actually justified next by the dependencies now known?**
+They are not automatically the same thing.
 
-**Not:**
+<a id="ch18-s06"></a>
 
-**What topic is next on an old list?**
+### After Form: Perform a Dependency Check
 
-**Pattern should not automatically follow Form.**
+The old approach might have proceeded directly from one World Property candidate to the next.
 
-**Distribution should not automatically follow Pattern.**
+That is no longer the preferred method.
 
-**Void should not automatically follow Distribution.**
+After Form, BitPangea should ask:
 
-**Compactness should not automatically follow Void.**
+What inquiry is actually justified next by the dependencies now known?
 
-**Those concepts remain parked.**
+Not:
 
-**They are not abandoned.**
+What topic is next on an old list?
 
-**The dependency check determines whether any of them now possess constitutional work to do.**
+Pattern should not automatically follow Form.
 
-**Unity / Continuity May Deserve Later Review**
+Distribution should not automatically follow Pattern.
 
-**A later Foundational Premise Review of:**
+Void should not automatically follow Distribution.
 
-**Unity**
+Compactness should not automatically follow Void.
 
-**and:**
+Those concepts remain parked.
 
-**Continuity**
+They are not abandoned.
 
-**may prove constitutionally useful.**
+The dependency check determines whether any of them now possess constitutional work to do.
 
-**That review should occur only if it adds clarity beyond what has already been established.**
+<a id="ch18-s07"></a>
 
-**Again, constitutional economy applies.**
+### Unity / Continuity May Deserve Later Review
 
-**The existence of an important word is not enough.**
+A later Foundational Premise Review of:
 
-**The concept must perform distinct work.**
+Unity
 
-**Meta-Inquiry Should Follow Evidence**
+and:
 
-**After the relevant constitutional work is complete, BitPangea can conduct another World Properties meta-inquiry.**
+Continuity
 
-**That inquiry should consider:**
+may prove constitutionally useful.
 
-**the Finitude result**
+That review should occur only if it adds clarity beyond what has already been established.
 
-**the Limit result**
+Again, constitutional economy applies.
 
-**the Form result**
+The existence of an important word is not enough.
 
-**the earlier Density deferral**
+The concept must perform distinct work.
 
-**any Unity / Continuity findings**
+<a id="ch18-s08"></a>
 
-**and the condition of parked concepts such as:**
+### Meta-Inquiry Should Follow Evidence
 
-**Pattern**
+After the relevant constitutional work is complete, BitPangea can conduct another World Properties meta-inquiry.
 
-**Distribution**
+That inquiry should consider:
 
-**Void**
+the Finitude result
 
-**Compactness**
+the Limit result
 
-**The point is not to revive an old queue.**
+the Form result
 
-**It is to ask:**
+the earlier Density deferral
 
-**What does the accumulated evidence now justify?**
+any Unity / Continuity findings
 
-**The Current Architecture Path**
+and the condition of parked concepts such as:
 
-**Constitutional inquiry is only one part of the path forward.**
+Pattern
 
-**The Atlas contains its own dependency work.**
+Distribution
 
-**The most important immediate Architecture fact is:**
+Void
 
-**The Foundational Survey Fabric Requirements work is complete enough to support the next domain inquiry.**
+Compactness
 
-**The Foundational Survey Fabric now possesses:**
+The point is not to revive an old queue.
 
-**85 Requirements**
+It is to ask:
 
-**organized through:**
+What does the accumulated evidence now justify?
 
-**Requirements → Specification → Conformance → Reference Vectors**
+<a id="ch18-s09"></a>
 
-**Its Requirements Integrity Audit is complete.**
+### The Current Architecture Path
 
-**Its institutional standing is established.**
+Constitutional inquiry is only one part of the path forward.
 
-**Its mathematics remain deliberately unresolved.**
+The Atlas contains its own dependency work.
 
-**This means the next Architecture question is no longer:**
+The most important immediate Architecture fact is:
 
-**What is the Foundational Survey Fabric?**
+The Foundational Survey Fabric Requirements work is complete enough to support the next domain inquiry.
 
-**It is increasingly:**
+The Foundational Survey Fabric now possesses:
 
-**What must Spatial Ground be, given what the Foundational Survey Fabric is now constrained to provide?**
+85 Requirements
 
-**The Foundational Survey Fabric Is Not “Finished”**
+organized through:
 
-**The Foundational Survey Fabric is established architecturally.**
+Requirements → Specification → Conformance → Reference Vectors
 
-**It is not mathematically complete.**
+Its Requirements Integrity Audit is complete.
 
-**Its current standing is best understood as:**
+Its institutional standing is established.
 
-**Requirements established.**
+Its mathematics remain deliberately unresolved.
 
-**Architecture integrity audited.**
+This means the next Architecture question is no longer:
 
-**Mathematics deliberately unresolved.**
+What is the Foundational Survey Fabric?
 
-**Ready to support Spatial Ground inquiry.**
+It is increasingly:
 
-**Not yet ready for final mathematical implementation.**
+What must Spatial Ground be, given what the Foundational Survey Fabric is now constrained to provide?
 
-**This distinction matters.**
+<a id="ch18-s10"></a>
 
-**BitPangea should not wait for every equation before asking what the next Architecture domain requires.**
+### The Foundational Survey Fabric Is Not “Finished”
 
-**But neither should it implement canonical Survey mathematics merely because the Requirements now exist.**
+The Foundational Survey Fabric is established architecturally.
 
-**The sequence remains:**
+It is not mathematically complete.
 
-**Requirements**
+Its current standing is best understood as:
 
-**↓**
+Requirements established.
 
-**Specification**
+Architecture integrity audited.
 
-**↓**
+Mathematics deliberately unresolved.
 
-**Conformance**
+Ready to support Spatial Ground inquiry.
 
-**↓**
+Not yet ready for final mathematical implementation.
 
-**Reference Vectors**
+This distinction matters.
 
-**The next Architecture inquiry and the later mathematical work can inform one another without collapsing their responsibilities.**
+BitPangea should not wait for every equation before asking what the next Architecture domain requires.
 
-**Next: Spatial Ground**
+But neither should it implement canonical Survey mathematics merely because the Requirements now exist.
 
-**The next demonstrated spatial dependency after the Foundational Survey Fabric is:**
+The sequence remains:
 
-**Spatial Ground**
+Requirements
 
-**Its existence is recognized.**
+↓
 
-**Its responsibilities are not yet fully defined.**
+Specification
 
-**The inquiry should ask:**
+↓
 
-**What transformation occurs between canonical Survey reference and usable World-space ground?**
+Conformance
 
-**What must Spatial Ground establish?**
+↓
 
-**What must it preserve from the Survey Fabric?**
+Reference Vectors
 
-**What must it refuse to decide?**
+The next Architecture inquiry and the later mathematical work can inform one another without collapsing their responsibilities.
 
-**How does it relate to The Extent?**
+<a id="ch18-s11"></a>
 
-**How does it support higher World-space meaning?**
+### Next: Spatial Ground
 
-**What information must it expose upward?**
+The next demonstrated spatial dependency after the Foundational Survey Fabric is:
 
-**What would improperly invade General Spatial Interpretation or the Parcel Cadastre?**
+Spatial Ground
 
-**This is where the Architecture Boundary Rule becomes especially important:**
+Its existence is recognized.
 
-**Protect the boundary. Do not design the layer above from the layer below.**
+Its responsibilities are not yet fully defined.
 
-**Then: General Spatial Interpretation**
+The inquiry should ask:
 
-**Once Spatial Ground is sufficiently understood, BitPangea can deepen General Spatial Interpretation.**
+What transformation occurs between canonical Survey reference and usable World-space ground?
 
-**Its existence as an Architecture domain is already recognized.**
+What must Spatial Ground establish?
 
-**The remaining problem is its responsibility.**
+What must it preserve from the Survey Fabric?
 
-**The inquiry should determine:**
+What must it refuse to decide?
 
-**what spatial meaning belongs here**
+How does it relate to The Extent?
 
-**what remains derived**
+How does it support higher World-space meaning?
 
-**what becomes persistent**
+What information must it expose upward?
 
-**what remains query-only**
+What would improperly invade General Spatial Interpretation or the Parcel Cadastre?
 
-**what authority the domain possesses**
+This is where the Architecture Boundary Rule becomes especially important:
 
-**what authority it explicitly does not possess**
+Protect the boundary. Do not design the layer above from the layer below.
 
-**how it depends upon Spatial Ground**
+<a id="ch18-s12"></a>
 
-**how it constrains the Parcel Cadastre without replacing it**
+### Then: General Spatial Interpretation
 
-**The goal is not to justify a box on a diagram.**
+Once Spatial Ground is sufficiently understood, BitPangea can deepen General Spatial Interpretation.
 
-**The goal is to discover the irreducible work the domain performs.**
+Its existence as an Architecture domain is already recognized.
 
-**Then: Parcel Cadastre**
+The remaining problem is its responsibility.
 
-**The demonstrated strict spatial dependency is:**
+The inquiry should determine:
 
-**Foundational Survey Fabric**
+what spatial meaning belongs here
 
-**→ Spatial Ground**
+what remains derived
 
-**→ General Spatial Interpretation**
+what becomes persistent
 
-**→ Parcel Cadastre**
+what remains query-only
 
-**Once the preceding domains are sufficiently mature, the Parcel Cadastre can be formalized more deeply.**
+what authority the domain possesses
 
-**That work must eventually establish:**
+what authority it explicitly does not possess
 
-**exactly 21,000,000 canonical Parcels**
+how it depends upon Spatial Ground
 
-**persistent Parcel identity**
+how it constrains the Parcel Cadastre without replacing it
 
-**fixed position**
+The goal is not to justify a box on a diagram.
 
-**authoritative territorial definition**
+The goal is to discover the irreducible work the domain performs.
 
-**deterministic Parcel Adjacency**
+<a id="ch18-s13"></a>
 
-**appropriate cadastral relationships**
+### Then: Parcel Cadastre
 
-**canonical identifier rules**
+The demonstrated strict spatial dependency is:
 
-**cadastral conformance**
+Foundational Survey Fabric
 
-**correction and supersession behavior**
+→ Spatial Ground
 
-**This will be one of the most consequential thresholds in BitPangea.**
+→ General Spatial Interpretation
 
-**Once higher systems depend deeply upon canonical Parcel truth, changing it becomes exceptionally expensive.**
+→ Parcel Cadastre
 
-**That is why:**
+Once the preceding domains are sufficiently mature, the Parcel Cadastre can be formalized more deeply.
 
-**the Cadastre should be established carefully before dependency hardens around it.**
+That work must eventually establish:
 
-**Solve the 21,000,000-Parcel Problem as a Proof Obligation**
+exactly 21,000,000 canonical Parcels
 
-**One of BitPangea’s most important future demonstrations will be a rigorous solution showing that the World can contain exactly:**
+persistent Parcel identity
 
-**21,000,000 canonical Parcels**
+fixed position
 
-**while satisfying the rest of the architecture.**
+authoritative territorial definition
 
-**This is not a counting problem.**
+deterministic Parcel Adjacency
 
-**The solution must reconcile:**
+appropriate cadastral relationships
 
-**one finite World**
+canonical identifier rules
 
-**The Extent**
+cadastral conformance
 
-**canonical Survey reference**
+correction and supersession behavior
 
-**Spatial Ground**
+This will be one of the most consequential thresholds in BitPangea.
 
-**General Spatial Interpretation**
+Once higher systems depend deeply upon canonical Parcel truth, changing it becomes exceptionally expensive.
 
-**persistent Parcel identity**
+That is why:
 
-**fixed position**
+the Cadastre should be established carefully before dependency hardens around it.
 
-**equal-area preference**
+<a id="ch18-s14"></a>
 
-**local coherence**
+### Solve the 21,000,000-Parcel Problem as a Proof Obligation
 
-**Parcel Adjacency**
+One of BitPangea’s most important future demonstrations will be a rigorous solution showing that the World can contain exactly:
 
-**World-scale Parcel Contiguity**
+21,000,000 canonical Parcels
 
-**World Form**
+while satisfying the rest of the architecture.
 
-**The Verge**
+This is not a counting problem.
 
-**Outliers where adopted**
+The solution must reconcile:
 
-**representation independence**
+one finite World
 
-**The governing principle is:**
+The Extent
 
-**The Parcel solution should be demonstrated, not assumed.**
+canonical Survey reference
 
-**Test the Rhombille Direction Rather Than Protect It**
+Spatial Ground
 
-**The three-orientation rhombille family remains the leading visible Parcel direction.**
+General Spatial Interpretation
 
-**That status should earn scrutiny, not protection.**
+persistent Parcel identity
 
-**The next serious Parcel-geometry work should test:**
+fixed position
 
-**whether equal area can be preserved**
+equal-area preference
 
-**whether exactly 21,000,000 Parcels can be established**
+local coherence
 
-**whether the three orientations remain coherent globally**
+Parcel Adjacency
 
-**whether local coherence survives transitions**
+World-scale Parcel Contiguity
 
-**whether the visible grammar reconciles with the asymmetric World Form**
+World Form
 
-**whether The Verge can remain distinct**
+The Verge
 
-**whether Outliers can be supported**
+Outliers where adopted
 
-**whether the visible Parcel grammar can remain separate from the deeper Survey substrate**
+representation independence
 
-**If the evidence remains strong, rhombille geometry may earn further adoption.**
+The governing principle is:
 
-**If not, BitPangea should abandon or revise it.**
+The Parcel solution should be demonstrated, not assumed.
 
-**A design direction exists to be tested, not defended.**
+<a id="ch18-s15"></a>
 
-**The Verge Should Follow Spatial Architecture**
+### Test the Rhombille Direction Rather Than Protect It
 
-**Earlier drafts treated Frontier morphology as a major spatial problem.**
+The three-orientation rhombille family remains the leading visible Parcel direction.
 
-**That terminology is now superseded.**
+That status should earn scrutiny, not protection.
 
-**The Frontier is epistemic.**
+The next serious Parcel-geometry work should test:
 
-**The relevant terminal World-form concept is:**
+whether equal area can be preserved
 
-**The Verge**
+whether exactly 21,000,000 Parcels can be established
 
-**The Verge should not be designed as a decorative perimeter first and justified architecturally afterward.**
+whether the three orientations remain coherent globally
 
-**Its design should follow from:**
+whether local coherence survives transitions
 
-**The Extent**
+whether the visible grammar reconciles with the asymmetric World Form
 
-**World Form**
+whether The Verge can remain distinct
 
-**Spatial Ground**
+whether Outliers can be supported
 
-**Parcel architecture**
+whether the visible Parcel grammar can remain separate from the deeper Survey substrate
 
-**World-scale Parcel Contiguity**
+If the evidence remains strong, rhombille geometry may earn further adoption.
 
-**non-Parcel spatial possibilities**
+If not, BitPangea should abandon or revise it.
 
-**The relevant questions include:**
+A design direction exists to be tested, not defended.
 
-**What does terminal World form need to express?**
+<a id="ch18-s16"></a>
 
-**What is Parcel?**
+### The Verge Should Follow Spatial Architecture
 
-**What is non-Parcel?**
+Earlier drafts treated Frontier morphology as a major spatial problem.
 
-**How can The Verge be visually meaningful without becoming constitutional Edge?**
+That terminology is now superseded.
 
-**How should it interact with Outliers?**
+The Frontier is epistemic.
 
-**How should it appear at globe scale?**
+The relevant terminal World-form concept is:
 
-**How should it behave in the flat lived World?**
+The Verge
 
-**How can it remain spatially coherent without importing coastline or ocean assumptions?**
+The Verge should not be designed as a decorative perimeter first and justified architecturally afterward.
 
-**The Verge is a design consequence of deeper truth—not a substitute for it.**
+Its design should follow from:
 
-**Reconcile World Form With Deeper Architecture**
+The Extent
 
-**The adopted World Form is strong.**
+World Form
 
-**It is not mathematically complete.**
+Spatial Ground
 
-**Eventually BitPangea must demonstrate compatibility among:**
+Parcel architecture
 
-**The Extent**
+World-scale Parcel Contiguity
 
-**the Survey Domain**
+non-Parcel spatial possibilities
 
-**Spatial Ground**
+The relevant questions include:
 
-**General Spatial Interpretation**
+What does terminal World form need to express?
 
-**the Parcel Cadastre**
+What is Parcel?
 
-**the 21,000,000-Parcel arrangement**
+What is non-Parcel?
 
-**The Verge**
+How can The Verge be visually meaningful without becoming constitutional Edge?
 
-**Outliers**
+How should it interact with Outliers?
 
-**and the singular asymmetric supercontinental form**
+How should it appear at globe scale?
 
-**No one system should dominate the others merely because it was explored first.**
+How should it behave in the flat lived World?
 
-**The reconciliation must satisfy both:**
+How can it remain spatially coherent without importing coastline or ocean assumptions?
 
-**architectural truth**
+The Verge is a design consequence of deeper truth—not a substitute for it.
 
-**and:**
+<a id="ch18-s17"></a>
 
-**World identity**
+### Reconcile World Form With Deeper Architecture
 
-**This is one of the places where BitPangea must hold mathematics and design together rather than choosing one at the expense of the other.**
+The adopted World Form is strong.
 
-**Do Not Force All Nine Architecture Domains Into One Queue**
+It is not mathematically complete.
 
-**After the Parcel Cadastre, the path becomes less obviously linear.**
+Eventually BitPangea must demonstrate compatibility among:
 
-**BitPangea recognizes nine Architecture domains:**
+The Extent
 
-**Foundational Survey Fabric**
+the Survey Domain
 
-**Spatial Ground**
+Spatial Ground
 
-**General Spatial Interpretation**
+General Spatial Interpretation
 
-**Parcel Cadastre**
+the Parcel Cadastre
 
-**World Runtime**
+the 21,000,000-Parcel arrangement
 
-**Identity / Rights / Control**
+The Verge
 
-**Persistence / Provenance**
+Outliers
 
-**Interoperability**
+and the singular asymmetric supercontinental form
 
-**Experience Architecture**
+No one system should dominate the others merely because it was explored first.
 
-**But recognition does not prove one strict order among all nine.**
+The reconciliation must satisfy both:
 
-**The Architecture should therefore resist a simplistic roadmap such as:**
+architectural truth
 
-**Domain 1**
+and:
 
-**↓**
+World identity
 
-**Domain 2**
+This is one of the places where BitPangea must hold mathematics and design together rather than choosing one at the expense of the other.
 
-**↓**
+<a id="ch18-s18"></a>
 
-**Domain 3**
+### Do Not Force All Nine Architecture Domains Into One Queue
 
-**↓**
+After the Parcel Cadastre, the path becomes less obviously linear.
 
-**until Domain 9**
+BitPangea recognizes nine Architecture domains:
 
-**Instead, the correct question becomes:**
+Foundational Survey Fabric
 
-**Which domain dependencies have actually been demonstrated?**
+Spatial Ground
 
-**Only those should govern strict sequence.**
+General Spatial Interpretation
 
-**Other domains may develop through overlapping or cross-cutting inquiry.**
+Parcel Cadastre
 
-**Clarify Architecture Ordering Versus Membership**
+World Runtime
 
-**One important unresolved Architecture problem is how BitPangea communicates:**
+Identity / Rights / Control
 
-**membership**
+Persistence / Provenance
 
-**presentation order**
+Interoperability
 
-**maturity**
+Experience Architecture
 
-**status**
+But recognition does not prove one strict order among all nine.
 
-**and dependency**
+The Architecture should therefore resist a simplistic roadmap such as:
 
-**without conflating them.**
+Domain 1
 
-**A domain may appear earlier on a page because that presentation is clearer.**
+↓
 
-**That does not mean every later domain depends strictly upon it.**
+Domain 2
 
-**Likewise, a domain may be Reserved or Provisional without those statuses defining its position in a chain.**
+↓
 
-**The Architecture should eventually make these distinctions explicit enough that the diagram cannot accidentally become doctrine.**
+Domain 3
 
-**Develop World Runtime From Actual Responsibilities**
+↓
 
-**World Runtime should not be designed as a giant catch-all system.**
+until Domain 9
 
-**Its work should emerge from actual responsibilities.**
+Instead, the correct question becomes:
 
-**The inquiry must eventually establish:**
+Which domain dependencies have actually been demonstrated?
 
-**canonical World State**
+Only those should govern strict sequence.
 
-**legitimate state transition**
+Other domains may develop through overlapping or cross-cutting inquiry.
 
-**execution semantics**
+<a id="ch18-s19"></a>
 
-**validation**
+### Clarify Architecture Ordering Versus Membership
 
-**protocols**
+One important unresolved Architecture problem is how BitPangea communicates:
 
-**services**
+membership
 
-**failure**
+presentation order
 
-**recovery**
+maturity
 
-**integrity**
+status
 
-**concurrency**
+and dependency
 
-**time ordering**
+without conflating them.
 
-**operational conformance**
+A domain may appear earlier on a page because that presentation is clearer.
 
-**The Runtime should coordinate specialized authorities.**
+That does not mean every later domain depends strictly upon it.
 
-**It should not absorb them.**
+Likewise, a domain may be Reserved or Provisional without those statuses defining its position in a chain.
 
-**The central principle remains:**
+The Architecture should eventually make these distinctions explicit enough that the diagram cannot accidentally become doctrine.
 
-**World Runtime exists to permit change without surrendering continuity.**
+<a id="ch18-s20"></a>
 
-**Identity / Rights / Control Should Mature Alongside Runtime**
+### Develop World Runtime From Actual Responsibilities
 
-**Identity / Rights / Control and World Runtime will likely need significant mutual clarification.**
+World Runtime should not be designed as a giant catch-all system.
 
-**That does not mean they should collapse.**
+Its work should emerge from actual responsibilities.
 
-**Identity / Rights / Control must determine:**
+The inquiry must eventually establish:
 
-**who the actor is**
+canonical World State
 
-**what governed relationship exists**
+legitimate state transition
 
-**what authority may be exercised**
+execution semantics
 
-**World Runtime must determine:**
+validation
 
-**how legitimate change is executed**
+protocols
 
-**The deeper path should clarify:**
+services
 
-**actor classes**
+failure
 
-**identity continuity**
+recovery
 
-**authentication**
+integrity
 
-**rights**
+concurrency
 
-**authorization**
+time ordering
 
-**control**
+operational conformance
 
-**delegation**
+The Runtime should coordinate specialized authorities.
 
-**shared authority**
+It should not absorb them.
 
-**privacy**
+The central principle remains:
 
-**recovery**
+World Runtime exists to permit change without surrendering continuity.
 
-**The goal is not to construct an enormous rights taxonomy immediately.**
+<a id="ch18-s21"></a>
 
-**It is to identify the minimum governed relationships BitPangea actually requires.**
+### Identity / Rights / Control Should Mature Alongside Runtime
 
-**Persistence / Provenance Must Grow With Operation**
+Identity / Rights / Control and World Runtime will likely need significant mutual clarification.
 
-**Persistence / Provenance should not be added after BitPangea has already accumulated years of unexplained operational change.**
+That does not mean they should collapse.
 
-**As Runtime matures, provenance should mature with it.**
+Identity / Rights / Control must determine:
 
-**For consequential operations, BitPangea should eventually preserve enough lineage to determine:**
+who the actor is
 
-**what changed**
+what governed relationship exists
 
-**what preceded it**
+what authority may be exercised
 
-**who or what acted**
+World Runtime must determine:
 
-**under what authority**
+how legitimate change is executed
 
-**what evidence supports the change**
+The deeper path should clarify:
 
-**what resulted**
+actor classes
 
-**This does not mean every Runtime event becomes history.**
+identity continuity
 
-**It means history should not become impossible because operational evidence was discarded before anyone understood its value.**
+authentication
 
-**Interoperability Should Be Designed Before Implementation Diversity Becomes Fragmentation**
+rights
 
-**BitPangea intends to support one World through potentially many implementations.**
+authorization
 
-**That requires Interoperability before implementation diversity becomes semantic divergence.**
+control
 
-**The Architecture should eventually establish:**
+delegation
 
-**canonical interchange meaning**
+shared authority
 
-**identifier exchange**
+privacy
 
-**protocol compatibility**
+recovery
 
-**version behavior**
+The goal is not to construct an enormous rights taxonomy immediately.
 
-**normative encodings where needed**
+It is to identify the minimum governed relationships BitPangea actually requires.
 
-**conformance expectations**
+<a id="ch18-s22"></a>
 
-**semantic equivalence**
+### Persistence / Provenance Must Grow With Operation
 
-**The principle remains:**
+Persistence / Provenance should not be added after BitPangea has already accumulated years of unexplained operational change.
 
-**Implementation diversity must not become semantic diversity.**
+As Runtime matures, provenance should mature with it.
 
-**Experience Architecture Should Follow Canonical Meaning**
+For consequential operations, BitPangea should eventually preserve enough lineage to determine:
 
-**Experience Architecture will eventually determine how participants encounter:**
+what changed
 
-**the globe**
+what preceded it
 
-**the flat lived World**
+who or what acted
 
-**Parcels**
+under what authority
 
-**Builders**
+what evidence supports the change
 
-**discovery**
+what resulted
 
-**history**
+This does not mean every Runtime event becomes history.
 
-**other actors**
+It means history should not become impossible because operational evidence was discarded before anyone understood its value.
 
-**services**
+<a id="ch18-s23"></a>
 
-**institutions**
+### Interoperability Should Be Designed Before Implementation Diversity Becomes Fragmentation
 
-**But experience should remain downstream of canonical meaning.**
+BitPangea intends to support one World through potentially many implementations.
 
-**The path should therefore preserve:**
+That requires Interoperability before implementation diversity becomes semantic divergence.
 
-**World truth first**
+The Architecture should eventually establish:
 
-**then:**
+canonical interchange meaning
 
-**experience of World truth**
+identifier exchange
 
-**A beautiful interface that quietly invents a different World is not successful Experience Architecture.**
+protocol compatibility
 
-**Build the Runtime Before Depending Upon Civilization**
+version behavior
 
-**BitPangea will eventually face strong pressure to look inhabited.**
+normative encodings where needed
 
-**A visually populated World can create the appearance of maturity.**
+conformance expectations
 
-**That appearance should not be allowed to outrun operational truth.**
+semantic equivalence
 
-**Before large-scale Builder participation, BitPangea should be able to:**
+The principle remains:
 
-**recognize canonical place**
+Implementation diversity must not become semantic diversity.
 
-**recognize actors**
+<a id="ch18-s24"></a>
 
-**evaluate authority**
+### Experience Architecture Should Follow Canonical Meaning
 
-**execute legitimate change**
+Experience Architecture will eventually determine how participants encounter:
 
-**preserve state**
+the globe
 
-**recover from failure**
+the flat lived World
 
-**preserve provenance**
+Parcels
 
-**exchange canonical meaning**
+Builders
 
-**A World should not require civilization to hide architectural incompleteness.**
+discovery
 
-**Builders Should Become Authorized Creators**
+history
 
-**When the underlying Architecture is ready, Builder work can move from conceptual exploration toward production architecture.**
+other actors
 
-**The governing principle is:**
+services
 
-**Create within the World without redefining the World.**
+institutions
 
-**Builders should interact with:**
+But experience should remain downstream of canonical meaning.
 
-**Parcel Cadastre**
+The path should therefore preserve:
 
-**Identity / Rights / Control**
+World truth first
 
-**World Runtime**
+then:
 
-**Persistence / Provenance**
+experience of World truth
 
-**Interoperability**
+A beautiful interface that quietly invents a different World is not successful Experience Architecture.
 
-**Experience Architecture**
+<a id="ch18-s25"></a>
 
-**without implementing private competing versions of those authorities.**
+### Build the Runtime Before Depending Upon Civilization
 
-**Separate Draft From Canonical Creation**
+BitPangea will eventually face strong pressure to look inhabited.
 
-**Builder Architecture should preserve creative freedom before commitment.**
+A visually populated World can create the appearance of maturity.
 
-**A future lifecycle might distinguish:**
+That appearance should not be allowed to outrun operational truth.
 
-**draft**
+Before large-scale Builder participation, BitPangea should be able to:
 
-**preview**
+recognize canonical place
 
-**simulation**
+recognize actors
 
-**proposal**
+evaluate authority
 
-**validation**
+execute legitimate change
 
-**authorized publication**
+preserve state
 
-**canonical World object**
+recover from failure
 
-**The exact states remain open.**
+preserve provenance
 
-**The principle does not:**
+exchange canonical meaning
 
-**Creative experimentation should be cheap. Canonical World mutation should be deliberate.**
+A World should not require civilization to hide architectural incompleteness.
 
-**This gives Builders freedom without converting every experiment into permanent state.**
+<a id="ch18-s26"></a>
 
-**Develop the World Object Model From Need**
+### Builders Should Become Authorized Creators
 
-**BitPangea will likely require a canonical or governed World-object model before Builders become broadly capable.**
+When the underlying Architecture is ready, Builder work can move from conceptual exploration toward production architecture.
 
-**But that model should not be invented abstractly merely to populate another Architecture diagram.**
+The governing principle is:
 
-**It should emerge from actual questions such as:**
+Create within the World without redefining the World.
 
-**What persists?**
+Builders should interact with:
 
-**What has identity?**
+Parcel Cadastre
 
-**What can move?**
+Identity / Rights / Control
 
-**What can span Parcels?**
+World Runtime
 
-**What can contain other objects?**
+Persistence / Provenance
 
-**What has state?**
+Interoperability
 
-**What can be versioned?**
+Experience Architecture
 
-**What can be destroyed?**
+without implementing private competing versions of those authorities.
 
-**What provenance survives destruction?**
+<a id="ch18-s27"></a>
 
-**The object model should solve actual World problems.**
+### Separate Draft From Canonical Creation
 
-**Infrastructure Deserves Its Own Inquiry**
+Builder Architecture should preserve creative freedom before commitment.
 
-**Infrastructure should not be treated merely as a large building.**
+A future lifecycle might distinguish:
 
-**World-scale infrastructure may:**
+draft
 
-**cross many Parcels**
+preview
 
-**require shared authority**
+simulation
 
-**connect Outliers**
+proposal
 
-**interact with The Verge**
+validation
 
-**depend upon services**
+authorized publication
 
-**persist through changing local control**
+canonical World object
 
-**require maintenance**
+The exact states remain open.
 
-**fail**
+The principle does not:
 
-**become historically important**
+Creative experimentation should be cheap. Canonical World mutation should be deliberate.
 
-**Infrastructure may therefore become one of the strongest tests of:**
+This gives Builders freedom without converting every experiment into permanent state.
 
-**rights**
+<a id="ch18-s28"></a>
 
-**shared authority**
+### Develop the World Object Model From Need
 
-**Runtime**
+BitPangea will likely require a canonical or governed World-object model before Builders become broadly capable.
 
-**provenance**
+But that model should not be invented abstractly merely to populate another Architecture diagram.
 
-**World-scale relationships**
+It should emerge from actual questions such as:
 
-**future governance**
+What persists?
 
-**It should be treated as its own architectural problem when dependencies are ready.**
+What has identity?
 
-**Civilization Comes Later Because It Is Meant to Be Free**
+What can move?
 
-**Once BitPangea can support:**
+What can span Parcels?
 
-**persistent actors**
+What can contain other objects?
 
-**legitimate creation**
+What has state?
 
-**persistent World change**
+What can be versioned?
 
-**institutions**
+What can be destroyed?
 
-**memory**
+What provenance survives destruction?
 
-**and multi-actor operation**
+The object model should solve actual World problems.
 
-**the World can widen toward civilization.**
+<a id="ch18-s29"></a>
 
-**The Architecture should enable:**
+### Infrastructure Deserves Its Own Inquiry
 
-**community**
+Infrastructure should not be treated merely as a large building.
 
-**commerce**
+World-scale infrastructure may:
 
-**art**
+cross many Parcels
 
-**institutions**
+require shared authority
 
-**public life**
+connect Outliers
 
-**culture**
+interact with The Verge
 
-**unexpected uses**
+depend upon services
 
-**unexpected organization**
+persist through changing local control
 
-**without requiring those outcomes to follow a prewritten social model.**
+require maintenance
 
-**The goal is not to create civilization in advance.**
+fail
 
-**It is to create conditions in which civilization can become real.**
+become historically important
 
-**Do Not Design Culture**
+Infrastructure may therefore become one of the strongest tests of:
 
-**Culture should never appear as:**
+rights
 
-**Phase 12 — Add Culture**
+shared authority
 
-**Culture cannot be installed.**
+Runtime
 
-**BitPangea can provide:**
+provenance
 
-**place**
+World-scale relationships
 
-**memory**
+future governance
 
-**interaction**
+It should be treated as its own architectural problem when dependencies are ready.
 
-**creation**
+<a id="ch18-s30"></a>
 
-**history**
+### Civilization Comes Later Because It Is Meant to Be Free
 
-**institutions**
+Once BitPangea can support:
 
-**identity**
+persistent actors
 
-**services**
+legitimate creation
 
-**shared experience**
+persistent World change
 
-**Civilization determines what those conditions become.**
+institutions
 
-**The principle is:**
+memory
 
-**The path toward culture is to preserve the conditions under which culture can emerge.**
+and multi-actor operation
 
-**Let Economics Follow Real Use**
+the World can widen toward civilization.
 
-**The same discipline applies to economics.**
+The Architecture should enable:
 
-**The Parcel count may affect scarcity.**
+community
 
-**It does not automatically determine:**
+commerce
 
-**price**
+art
 
-**market structure**
+institutions
 
-**currency**
+public life
 
-**rent**
+culture
 
-**financialization**
+unexpected uses
 
-**tokenization**
+unexpected organization
 
-**or economic policy.**
+without requiring those outcomes to follow a prewritten social model.
 
-**Those questions should emerge from actual needs of a functioning World.**
+The goal is not to create civilization in advance.
 
-**The relationship is:**
+It is to create conditions in which civilization can become real.
 
-**Spatial scarcity is foundational. Economic interpretation is downstream.**
+<a id="ch18-s31"></a>
 
-**Governance Should Follow Governed Responsibilities**
+### Do Not Design Culture
 
-**Governance should not begin with voting.**
+Culture should never appear as:
 
-**It should begin with responsibility.**
+Phase 12 — Add Culture
 
-**BitPangea should first know:**
+Culture cannot be installed.
 
-**what needs governing**
+BitPangea can provide:
 
-**what authority exists**
+place
 
-**what conflicts occur**
+memory
 
-**which systems require stewardship**
+interaction
 
-**which constitutional matters could conceivably change**
+creation
 
-**Only then should it ask:**
+history
 
-**who governs**
+institutions
 
-**under what authority**
+identity
 
-**through what mechanism.**
+services
 
-**A governance mechanism without a clearly defined subject of governance is architecture in search of a problem.**
+shared experience
 
-**Grow History With the World**
+Civilization determines what those conditions become.
 
-**History should not be added as a cultural feature years after operation begins.**
+The principle is:
 
-**As BitPangea becomes operational, it should preserve enough provenance and evidence that future history remains possible.**
+The path toward culture is to preserve the conditions under which culture can emerge.
 
-**The progression may eventually look like:**
+<a id="ch18-s32"></a>
 
-**operational evidence**
+### Let Economics Follow Real Use
 
-**↓**
+The same discipline applies to economics.
 
-**provenance**
+The Parcel count may affect scarcity.
 
-**↓**
+It does not automatically determine:
 
-**historical record**
+price
 
-**↓**
+market structure
 
-**cultural memory**
+currency
 
-**But those responsibilities should remain distinct.**
+rent
 
-**Not every event deserves permanent preservation.**
+financialization
 
-**Enough should survive that meaningful history can emerge.**
+tokenization
 
-**Protect Digital Antiquity During Expansion**
+or economic policy.
 
-**The Twelve Constellations of Digital Antiquity and other intentionally hidden historical structures should remain protected as BitPangea becomes more discoverable.**
+Those questions should emerge from actual needs of a functioning World.
 
-**The path forward should therefore eventually support a sophisticated distinction:**
+The relationship is:
 
-**discoverable**
+Spatial scarcity is foundational. Economic interpretation is downstream.
 
-**does not mean:**
+<a id="ch18-s33"></a>
 
-**fully disclosed**
+### Governance Should Follow Governed Responsibilities
 
-**and:**
+Governance should not begin with voting.
 
-**hidden**
+It should begin with responsibility.
 
-**does not mean:**
+BitPangea should first know:
 
-**unrecorded**
+what needs governing
 
-**Experience Architecture and historical systems should eventually be capable of preserving intended mystery without risking accidental loss.**
+what authority exists
 
-**Let Native Antiquity Begin Naturally**
+what conflicts occur
 
-**BitPangea should not fabricate a false ancient past.**
+which systems require stewardship
 
-**Native antiquity begins by preserving the present well enough that time can transform it into the past.**
+which constitutional matters could conceivably change
 
-**The first:**
+Only then should it ask:
 
-**structures**
+who governs
 
-**Builders**
+under what authority
 
-**institutions**
+through what mechanism.
 
-**communities**
+A governance mechanism without a clearly defined subject of governance is architecture in search of a problem.
 
-**abandoned places**
+<a id="ch18-s34"></a>
 
-**historic Parcels**
+### Grow History With the World
 
-**turning points**
+History should not be added as a cultural feature years after operation begins.
 
-**may someday become antiquities.**
+As BitPangea becomes operational, it should preserve enough provenance and evidence that future history remains possible.
 
-**None should be declared ancient now.**
+The progression may eventually look like:
 
-**The path to authentic digital antiquity is continuity plus time.**
+operational evidence
 
-**Institutionalize Memory**
+↓
 
-**As the World grows, memory should depend less upon the personal recollection of its Creator.**
+provenance
 
-**BitPangea already preserves distinct documentary functions:**
+↓
 
-**Chronicle records when.**
+historical record
 
-**Atlas records what.**
+↓
 
-**Origins preserves how and why the understanding emerged.**
+cultural memory
 
-**Additional institutional records may later be required for:**
+But those responsibilities should remain distinct.
 
-**constitutional determinations**
+Not every event deserves permanent preservation.
 
-**technical Specifications**
+Enough should survive that meaningful history can emerge.
 
-**Conformance**
+<a id="ch18-s35"></a>
 
-**Reference Vectors**
+### Protect Digital Antiquity During Expansion
 
-**cadastral authority**
+The Twelve Constellations of Digital Antiquity and other intentionally hidden historical structures should remain protected as BitPangea becomes more discoverable.
 
-**Runtime protocols**
+The path forward should therefore eventually support a sophisticated distinction:
 
-**provenance**
+discoverable
 
-**historical preservation**
+does not mean:
 
-**Those records should be created because distinct responsibilities require them.**
+fully disclosed
 
-**Not because institutional complexity is desirable by itself.**
+and:
 
-**Origins Should Evolve Without Erasing Its Own History**
+hidden
 
-**Origins should not become a frozen artifact pretending that the World stopped developing when a manuscript version was published.**
+does not mean:
 
-**Future versions may need to:**
+unrecorded
 
-**correct terminology**
+Experience Architecture and historical systems should eventually be capable of preserving intended mystery without risking accidental loss.
 
-**replace superseded Architecture**
+<a id="ch18-s36"></a>
 
-**clarify statuses**
+### Let Native Antiquity Begin Naturally
 
-**incorporate new constitutional results**
+BitPangea should not fabricate a false ancient past.
 
-**preserve rejected or historical reasoning**
+Native antiquity begins by preserving the present well enough that time can transform it into the past.
 
-**The discipline should be:**
+The first:
 
-**supersede current understanding where necessary without erasing the developmental record that produced it.**
+structures
 
-**Origins is a historical architectural manuscript.**
+Builders
 
-**That is different from pretending every sentence remains permanently authoritative.**
+institutions
 
-**Review Existing Architecture Before Adding New Canon**
+communities
 
-**As BitPangea matures, the default response to a new problem should not be:**
+abandoned places
 
-**create another foundational concept.**
+historic Parcels
 
-**It should first ask:**
+turning points
 
-**Can current Architecture already support this?**
+may someday become antiquities.
 
-**Is the problem caused by an implementation mistake?**
+None should be declared ancient now.
 
-**Does an existing domain already own the responsibility?**
+The path to authentic digital antiquity is continuity plus time.
 
-**Would a new concept duplicate work already performed elsewhere?**
+<a id="ch18-s37"></a>
 
-**Only where existing architecture cannot legitimately solve the problem should new constitutional or architectural structure be considered.**
+### Institutionalize Memory
 
-**This preserves:**
+As the World grows, memory should depend less upon the personal recollection of its Creator.
 
-**constitutional economy**
+BitPangea already preserves distinct documentary functions:
 
-**and:**
+Chronicle records when.
 
-**minimum permanent architecture**
+Atlas records what.
 
-**Conduct Periodic Dependency Reviews**
+Origins preserves how and why the understanding emerged.
 
-**As BitPangea grows, it should periodically inspect whether responsibility has drifted across boundaries.**
+Additional institutional records may later be required for:
 
-**A dependency review might ask:**
+constitutional determinations
 
-**Has a renderer become authoritative?**
+technical Specifications
 
-**Has a service become de facto constitutional?**
+Conformance
 
-**Has a Builder invented its own Parcel truth?**
+Reference Vectors
 
-**Has Runtime absorbed rights authority?**
+cadastral authority
 
-**Has Persistence / Provenance become authority over the facts it records?**
+Runtime protocols
 
-**Has Interoperability begun redefining semantics?**
+provenance
 
-**Has an implementation detail become impossible to replace?**
+historical preservation
 
-**Has civilization been constrained by a temporary Creator-period assumption?**
+Those records should be created because distinct responsibilities require them.
 
-**Dependency review protects against architectural erosion after initial design.**
+Not because institutional complexity is desirable by itself.
 
-**Test Replacement**
+<a id="ch18-s38"></a>
 
-**BitPangea should eventually test Architecture by replacing what is supposed to be replaceable.**
+### Origins Should Evolve Without Erasing Its Own History
 
-**Examples include:**
+Origins should not become a frozen artifact pretending that the World stopped developing when a manuscript version was published.
 
-**replace the renderer**
+Future versions may need to:
 
-**replace a client**
+correct terminology
 
-**replace a Builder**
+replace superseded Architecture
 
-**replace a service implementation**
+clarify statuses
 
-**rotate credential technology**
+incorporate new constitutional results
 
-**upgrade protocol versions**
+preserve rejected or historical reasoning
 
-**change storage engines**
+The discipline should be:
 
-**If replacement unexpectedly requires redefining canonical World truth, an architectural boundary may have failed.**
+supersede current understanding where necessary without erasing the developmental record that produced it.
 
-**Replacement is therefore more than maintenance.**
+Origins is a historical architectural manuscript.
 
-**It can become a test of whether BitPangea successfully separated:**
+That is different from pretending every sentence remains permanently authoritative.
 
-**meaning**
+<a id="ch18-s39"></a>
 
-**from:**
+### Review Existing Architecture Before Adding New Canon
 
-**implementation**
+As BitPangea matures, the default response to a new problem should not be:
 
-**Test Recovery**
+create another foundational concept.
 
-**A persistent World should rehearse failure before failure becomes catastrophic.**
+It should first ask:
 
-**Future testing should ask:**
+Can current Architecture already support this?
 
-**Can canonical state be reconstructed?**
+Is the problem caused by an implementation mistake?
 
-**Can corrupted implementations be replaced?**
+Does an existing domain already own the responsibility?
 
-**Can Parcel truth be independently verified?**
+Would a new concept duplicate work already performed elsewhere?
 
-**Can rights provenance survive service loss?**
+Only where existing architecture cannot legitimately solve the problem should new constitutional or architectural structure be considered.
 
-**Can Runtime transitions be replayed where appropriate?**
+This preserves:
 
-**Can historical evidence survive operational replacement?**
+constitutional economy
 
-**Can protected records remain intact?**
+and:
 
-**A World intended to persist should not discover its recovery Architecture during its first existential failure.**
+minimum permanent architecture
 
-**Test Scale Without Redefining the World**
+<a id="ch18-s40"></a>
 
-**Growth should increase activity inside BitPangea.**
+### Conduct Periodic Dependency Reviews
 
-**It should not force BitPangea to redefine itself.**
+As BitPangea grows, it should periodically inspect whether responsibility has drifted across boundaries.
 
-**More participants should not require:**
+A dependency review might ask:
 
-**more canonical Parcels.**
+Has a renderer become authoritative?
 
-**More construction should not require:**
+Has a service become de facto constitutional?
 
-**a larger Extent.**
+Has a Builder invented its own Parcel truth?
 
-**More clients should not create:**
+Has Runtime absorbed rights authority?
 
-**multiple canonical Worlds.**
+Has Persistence / Provenance become authority over the facts it records?
 
-**More services should not create:**
+Has Interoperability begun redefining semantics?
 
-**conflicting authority.**
+Has an implementation detail become impossible to replace?
 
-**The principle is:**
+Has civilization been constrained by a temporary Creator-period assumption?
 
-**Scale should increase what happens within BitPangea—not change what BitPangea fundamentally is.**
+Dependency review protects against architectural erosion after initial design.
 
-**Test the World Before Civilization**
+<a id="ch18-s41"></a>
 
-**Before BitPangea depends upon large populations, the World itself should be demonstrably coherent.**
+### Test Replacement
 
-**BitPangea should eventually be able to show, even while largely empty:**
+BitPangea should eventually test Architecture by replacing what is supposed to be replaceable.
 
-**The Extent is constitutionally coherent.**
+Examples include:
 
-**Survey reference is deterministic.**
+replace the renderer
 
-**The relevant spatial Architecture works.**
+replace a client
 
-**Exactly 21,000,000 Parcels exist.**
+replace a Builder
 
-**Parcel identities persist.**
+replace a service implementation
 
-**Parcel relationships are deterministic.**
+rotate credential technology
 
-**World Runtime can preserve state.**
+upgrade protocol versions
 
-**Legitimate changes can occur.**
+change storage engines
 
-**Provenance can explain consequential change.**
+If replacement unexpectedly requires redefining canonical World truth, an architectural boundary may have failed.
 
-**Interoperable systems can agree.**
+Replacement is therefore more than maintenance.
 
-**Civilization should not be required to conceal foundational incompleteness.**
+It can become a test of whether BitPangea successfully separated:
 
-**Later: Test Civilization Without Creator Intervention**
+meaning
 
-**At a much later stage, the opposite test becomes important.**
+from:
 
-**Can Builders create without manual Creator approval of ordinary actions?**
+implementation
 
-**Can actors possess and exercise legitimate authority?**
+<a id="ch18-s42"></a>
 
-**Can institutions operate?**
+### Test Recovery
 
-**Can services recover?**
+A persistent World should rehearse failure before failure becomes catastrophic.
 
-**Can communities form?**
+Future testing should ask:
 
-**Can history accumulate?**
+Can canonical state be reconstructed?
 
-**Can ordinary disputes be addressed?**
+Can corrupted implementations be replaced?
 
-**Can BitPangea continue functioning while the Creator is absent?**
+Can Parcel truth be independently verified?
 
-**That would represent a profound threshold.**
+Can rights provenance survive service loss?
 
-**A mature World should continue because its Architecture works—not because its Creator is continuously present.**
+Can Runtime transitions be replayed where appropriate?
 
-**The Creator’s Role Must Change With Progress**
+Can historical evidence survive operational replacement?
 
-**The path forward is also a change in the Creator’s role.**
+Can protected records remain intact?
 
-**Conceptually:**
+A World intended to persist should not discover its recovery Architecture during its first existential failure.
 
-**FOUNDATION**
+<a id="ch18-s43"></a>
 
-**Creator establishes constraints**
+### Test Scale Without Redefining the World
 
-**↓**
+Growth should increase activity inside BitPangea.
 
-**CONSTITUTIONAL INQUIRY**
+It should not force BitPangea to redefine itself.
 
-**Creator determines what must remain true**
+More participants should not require:
 
-**↓**
+more canonical Parcels.
 
-**ARCHITECTURE**
+More construction should not require:
 
-**Creator designs within increasingly explicit constraints**
+a larger Extent.
 
-**↓**
+More clients should not create:
 
-**OPERATION**
+multiple canonical Worlds.
 
-**systems assume bounded authority**
+More services should not create:
 
-**↓**
+conflicting authority.
 
-**BUILDING**
+The principle is:
 
-**other actors create**
+Scale should increase what happens within BitPangea—not change what BitPangea fundamentally is.
 
-**↓**
+<a id="ch18-s44"></a>
 
-**CIVILIZATION**
+### Test the World Before Civilization
 
-**participants produce emergent outcomes**
+Before BitPangea depends upon large populations, the World itself should be demonstrably coherent.
 
-**↓**
+BitPangea should eventually be able to show, even while largely empty:
 
-**STEWARDSHIP**
+The Extent is constitutionally coherent.
 
-**Creator protects coherence without authoring every consequence**
+Survey reference is deterministic.
 
-**This transition should follow readiness.**
+The relevant spatial Architecture works.
 
-**It should not be forced by ideology or schedule.**
+Exactly 21,000,000 Parcels exist.
 
-**Do Not Rush the Transfer**
+Parcel identities persist.
 
-**Creator restraint does not mean abandoning responsibility prematurely.**
+Parcel relationships are deterministic.
 
-**A World whose authority boundaries remain incomplete may require strong Creator involvement during formation.**
+World Runtime can preserve state.
 
-**The goal is neither:**
+Legitimate changes can occur.
 
-**permanent personal sovereignty**
+Provenance can explain consequential change.
 
-**nor:**
+Interoperable systems can agree.
 
-**premature withdrawal.**
+Civilization should not be required to conceal foundational incompleteness.
 
-**The direction is:**
+<a id="ch18-s45"></a>
 
-**progressive movement from discretionary Creator authority toward explicit Architecture, bounded institutions, and legitimate future participation.**
+### Later: Test Civilization Without Creator Intervention
 
-**The exact mechanism remains open.**
+At a much later stage, the opposite test becomes important.
 
-**Architectural Thresholds Ahead**
+Can Builders create without manual Creator approval of ordinary actions?
 
-**Without attaching dates, BitPangea can recognize several future conditions of maturity.**
+Can actors possess and exercise legitimate authority?
 
-**Constitutional Coherence**
+Can institutions operate?
 
-**The World’s foundational constitutional questions are sufficiently clear that Atlas design no longer depends upon hidden constitutional assumptions.**
+Can services recover?
 
-**Survey Coherence**
+Can communities form?
 
-**The Foundational Survey Fabric has an adopted Specification, Conformance model, and Reference Vectors capable of preserving canonical spatial meaning.**
+Can history accumulate?
 
-**Spatial-Ground Coherence**
+Can ordinary disputes be addressed?
 
-**Spatial Ground and General Spatial Interpretation are sufficiently defined to support canonical World-space meaning.**
+Can BitPangea continue functioning while the Creator is absent?
 
-**Cadastral Coherence**
+That would represent a profound threshold.
 
-**Exactly 21,000,000 canonical Parcels exist within that Architecture with persistent identity, fixed position, and deterministic relationships.**
+A mature World should continue because its Architecture works—not because its Creator is continuously present.
 
-**Operational Coherence**
+<a id="ch18-s46"></a>
 
-**Actors can perform legitimate operations that produce persistent canonical World State.**
+### The Creator’s Role Must Change With Progress
 
-**Provenance Coherence**
+The path forward is also a change in the Creator’s role.
 
-**Consequential state and authority can be traced through durable lineage.**
+Conceptually:
 
-**Interoperability Coherence**
+FOUNDATION
 
-**Multiple conforming implementations can participate in one BitPangea without semantic fragmentation.**
+Creator establishes constraints
 
-**Creative Coherence**
+↓
 
-**Builders can create persistent World objects and infrastructure without redefining foundational truth.**
+CONSTITUTIONAL INQUIRY
 
-**Civilizational Readiness**
+Creator determines what must remain true
 
-**Multiple actors can create, interact, organize, and produce unexpected outcomes without continuous Creator intervention.**
+↓
 
-**Historical Continuity**
+ARCHITECTURE
 
-**The World preserves enough place, identity, evidence, and memory for genuine history to accumulate.**
+Creator designs within increasingly explicit constraints
 
-**These are not release names.**
+↓
 
-**They are architectural conditions.**
+OPERATION
 
-**Progress Should Be Measured by Capability**
+systems assume bounded authority
 
-**BitPangea can easily mistake visible production for progress.**
+↓
 
-**A beautiful interface may exist before the architecture beneath it is ready.**
+BUILDING
 
-**A large codebase may exist without canonical meaning.**
+other actors create
 
-**A marketplace may function before the World possesses mature rights.**
+↓
 
-**A map may display Parcels that do not yet possess rigorous cadastral identity.**
+CIVILIZATION
 
-**Progress should therefore be measured by deeper questions:**
+participants produce emergent outcomes
 
-**Can the World explain its Extent?**
+↓
 
-**Can Survey reference be independently reproduced?**
+STEWARDSHIP
 
-**Can conforming implementations obtain the same canonical answer?**
+Creator protects coherence without authoring every consequence
 
-**Can exactly 21,000,000 Parcels be demonstrated?**
+This transition should follow readiness.
 
-**Can Parcel identity survive representation changes?**
+It should not be forced by ideology or schedule.
 
-**Can authorized change be explained?**
+<a id="ch18-s47"></a>
 
-**Can canonical state recover from failure?**
+### Do Not Rush the Transfer
 
-**Can an implementation be replaced without redefining the World?**
+Creator restraint does not mean abandoning responsibility prematurely.
 
-**Can a Builder create without gaining foundational authority?**
+A World whose authority boundaries remain incomplete may require strong Creator involvement during formation.
 
-**Can the Creator step away from ordinary operation?**
+The goal is neither:
 
-**Can history explain how consequential conditions arose?**
+permanent personal sovereignty
 
-**Capability reveals architectural maturity more reliably than feature count.**
+nor:
 
-**Preserve the Ability to Change Course**
+premature withdrawal.
 
-**The path should remain disciplined without becoming rigid.**
+The direction is:
 
-**New mathematics may invalidate Parcel geometry.**
+progressive movement from discretionary Creator authority toward explicit Architecture, bounded institutions, and legitimate future participation.
 
-**Spatial Ground may reveal a missing responsibility.**
+The exact mechanism remains open.
 
-**Runtime work may expose an Identity / Rights / Control distinction not previously recognized.**
+<a id="ch18-s48"></a>
 
-**Builder experiments may expose weaknesses in the object model.**
+### Architectural Thresholds Ahead
 
-**Long-horizon review may expose present-day assumptions masquerading as permanent truth.**
+Without attaching dates, BitPangea can recognize several future conditions of maturity.
 
-**The architecture should be able to respond.**
+Constitutional Coherence
 
-**The principle is:**
+The World’s foundational constitutional questions are sufficiently clear that Atlas design no longer depends upon hidden constitutional assumptions.
 
-**The path is constrained by established truth, not imprisoned by prediction.**
+Survey Coherence
 
-**Return to Deeper Inquiry When Evidence Requires It**
+The Foundational Survey Fabric has an adopted Specification, Conformance model, and Reference Vectors capable of preserving canonical spatial meaning.
 
-**BitPangea should not be embarrassed to descend into deeper inquiry if later work exposes a genuine contradiction.**
+Spatial-Ground Coherence
 
-**If a design problem reveals a constitutional dependency, the correct response may be:**
+Spatial Ground and General Spatial Interpretation are sufficiently defined to support canonical World-space meaning.
 
-**Design → Dependency → Constitutional Inquiry**
+Cadastral Coherence
 
-**If a higher Architecture domain exposes a flaw in a lower assumption, that evidence should be examined.**
+Exactly 21,000,000 canonical Parcels exist within that Architecture with persistent identity, fixed position, and deterministic relationships.
 
-**But reopening must be disciplined.**
+Operational Coherence
 
-**Foundational truth should not be reconsidered merely because an implementation finds it inconvenient.**
+Actors can perform legitimate operations that produce persistent canonical World State.
 
-**The standard should be:**
+Provenance Coherence
 
-**Reopen foundations for architectural evidence, not implementation impatience.**
+Consequential state and authority can be traced through durable lineage.
 
-**Avoid Endless Reopening**
+Interoperability Coherence
 
-**The opposite danger is equally real.**
+Multiple conforming implementations can participate in one BitPangea without semantic fragmentation.
 
-**If every adopted decision remains permanently tentative, no dependent Architecture can ever become stable.**
+Creative Coherence
 
-**BitPangea must eventually allow sufficiently proven truth to acquire permanence.**
+Builders can create persistent World objects and infrastructure without redefining foundational truth.
 
-**Architectural maturity requires both:**
+Civilizational Readiness
 
-**the willingness to reopen**
+Multiple actors can create, interact, organize, and produce unexpected outcomes without continuous Creator intervention.
 
-**when evidence justifies it**
+Historical Continuity
 
-**and:**
+The World preserves enough place, identity, evidence, and memory for genuine history to accumulate.
 
-**the willingness to close**
+These are not release names.
 
-**when inquiry has genuinely earned closure.**
+They are architectural conditions.
 
-**Curiosity alone cannot build a World.**
+<a id="ch18-s49"></a>
 
-**Closure without evidence cannot either.**
+### Progress Should Be Measured by Capability
 
-**The Path Narrows Below and Widens Above**
+BitPangea can easily mistake visible production for progress.
 
-**The deepest Architecture should become increasingly constrained.**
+A beautiful interface may exist before the architecture beneath it is ready.
 
-**The higher reaches of civilization should become increasingly open.**
+A large codebase may exist without canonical meaning.
 
-**Conceptually:**
+A marketplace may function before the World possesses mature rights.
 
-**CONSTITUTIONAL WORLD**
+A map may display Parcels that do not yet possess rigorous cadastral identity.
 
-**narrowest legitimate solution space**
+Progress should therefore be measured by deeper questions:
 
-**↓**
+Can the World explain its Extent?
 
-**DEEP ARCHITECTURE**
+Can Survey reference be independently reproduced?
 
-**high constraint**
+Can conforming implementations obtain the same canonical answer?
 
-**↓**
+Can exactly 21,000,000 Parcels be demonstrated?
 
-**WORLD RUNTIME**
+Can Parcel identity survive representation changes?
 
-**governed change**
+Can authorized change be explained?
 
-**↓**
+Can canonical state recover from failure?
 
-**BUILDERS**
+Can an implementation be replaced without redefining the World?
 
-**broad creative freedom**
+Can a Builder create without gaining foundational authority?
 
-**↓**
+Can the Creator step away from ordinary operation?
 
-**CIVILIZATION**
+Can history explain how consequential conditions arose?
 
-**open-ended possibility**
+Capability reveals architectural maturity more reliably than feature count.
 
-**This shape is intentional.**
+<a id="ch18-s50"></a>
 
-**BitPangea should become more precise as it approaches foundational truth and more permissive as it approaches civilization.**
+### Preserve the Ability to Change Course
 
-**The World Should Become Harder to Redefine and Easier to Build Upon**
+The path should remain disciplined without becoming rigid.
 
-**A mature foundation should become difficult to change casually.**
+New mathematics may invalidate Parcel geometry.
 
-**At the same time, ordinary creation upon that foundation should become progressively easier.**
+Spatial Ground may reveal a missing responsibility.
 
-**That is one of the clearest signs of successful Architecture:**
+Runtime work may expose an Identity / Rights / Control distinction not previously recognized.
 
-**hard to redefine the World**
+Builder experiments may expose weaknesses in the object model.
 
-**easy to create within the World**
+Long-horizon review may expose present-day assumptions masquerading as permanent truth.
 
-**The opposite condition would indicate failure:**
+The architecture should be able to respond.
 
-**easy to mutate foundational truth**
+The principle is:
 
-**hard to perform ordinary legitimate creation**
+The path is constrained by established truth, not imprisoned by prediction.
 
-**The path forward should deliberately move toward the first condition.**
+<a id="ch18-s51"></a>
 
-**What Comes First**
+### Return to Deeper Inquiry When Evidence Requires It
 
-**There should no longer be one overly simplified ten-step roadmap.**
+BitPangea should not be embarrassed to descend into deeper inquiry if later work exposes a genuine contradiction.
 
-**The immediate path is better understood as several dependency tracks.**
+If a design problem reveals a constitutional dependency, the correct response may be:
 
-**Constitutional track**
+Design → Dependency → Constitutional Inquiry
 
-1.  **Complete the narrow Limit reconsideration.**
+If a higher Architecture domain exposes a flaw in a lower assumption, that evidence should be examined.
 
-2.  **Conduct the formal constitutional inquiry into Form.**
+But reopening must be disciplined.
 
-3.  **Perform a dependency check.**
+Foundational truth should not be reconsidered merely because an implementation finds it inconvenient.
 
-4.  **Review Unity / Continuity later if justified.**
+The standard should be:
 
-5.  **Conduct the next World Properties meta-inquiry from accumulated evidence.**
+Reopen foundations for architectural evidence, not implementation impatience.
 
-**Spatial Architecture track**
+<a id="ch18-s52"></a>
 
-1.  **Use the completed Foundational Survey Fabric Requirements as the basis for Spatial Ground inquiry.**
+### Avoid Endless Reopening
 
-2.  **Define Spatial Ground.**
+The opposite danger is equally real.
 
-3.  **Refine General Spatial Interpretation.**
+If every adopted decision remains permanently tentative, no dependent Architecture can ever become stable.
 
-4.  **Deepen the Parcel Cadastre.**
+BitPangea must eventually allow sufficiently proven truth to acquire permanence.
 
-5.  **Resolve the exact 21,000,000-Parcel architecture.**
+Architectural maturity requires both:
 
-6.  **Test and either strengthen or reject the rhombille direction.**
+the willingness to reopen
 
-7.  **Reconcile Parcel architecture, World Form, The Verge, Outliers, and World-scale Parcel Contiguity.**
+when evidence justifies it
 
-8.  **Complete Foundational Survey Fabric Specification, Conformance, and Reference Vectors when the mathematics have earned adoption.**
+and:
 
-**Operational Architecture track**
+the willingness to close
 
-**As dependencies become clear:**
+when inquiry has genuinely earned closure.
 
-1.  **Mature Identity / Rights / Control.**
+Curiosity alone cannot build a World.
 
-2.  **Define canonical World State.**
+Closure without evidence cannot either.
 
-3.  **Formalize legitimate Runtime transition.**
+<a id="ch18-s53"></a>
 
-4.  **Develop Persistence / Provenance alongside operation.**
+### The Path Narrows Below and Widens Above
 
-5.  **Establish Interoperability requirements.**
+The deepest Architecture should become increasingly constrained.
 
-6.  **Develop failure, recovery, integrity, concurrency, and time.**
+The higher reaches of civilization should become increasingly open.
 
-7.  **Establish appropriate domain-specific conformance.**
+Conceptually:
 
-**Participation track**
+CONSTITUTIONAL WORLD
 
-**Only when deeper Architecture can support it:**
+narrowest legitimate solution space
 
-1.  **Develop World-object Architecture.**
+↓
 
-2.  **Develop authorized Builder creation.**
+DEEP ARCHITECTURE
 
-3.  **Develop infrastructure.**
+high constraint
 
-4.  **Mature Experience Architecture.**
+↓
 
-5.  **Widen participation.**
+WORLD RUNTIME
 
-6.  **Allow institutions and civilization to emerge.**
+governed change
 
-**These tracks may overlap.**
+↓
 
-**They are not a calendar.**
+BUILDERS
 
-**They are dependency-guided work.**
+broad creative freedom
 
-**What Should Not Come First**
+↓
 
-**Several attractive subjects should remain deliberately downstream:**
+CIVILIZATION
 
-**final tokenomics**
+open-ended possibility
 
-**Parcel price**
+This shape is intentional.
 
-**market speculation**
+BitPangea should become more precise as it approaches foundational truth and more permissive as it approaches civilization.
 
-**premature currency design**
+<a id="ch18-s54"></a>
 
-**elaborate governance**
+### The World Should Become Harder to Redefine and Easier to Build Upon
 
-**mass Builder feature sets**
+A mature foundation should become difficult to change casually.
 
-**manufactured culture**
+At the same time, ordinary creation upon that foundation should become progressively easier.
 
-**predetermined institutions**
+That is one of the clearest signs of successful Architecture:
 
-**artificial ancient history**
+hard to redefine the World
 
-**launch pressure**
+easy to create within the World
 
-**technology chosen for thematic appeal**
+The opposite condition would indicate failure:
 
-**They may create visible momentum.**
+easy to mutate foundational truth
 
-**They may also harden assumptions before the World is ready.**
+hard to perform ordinary legitimate creation
 
-**Success Is Not Launch**
+The path forward should deliberately move toward the first condition.
 
-**A product can launch while its foundations remain weak.**
+<a id="ch18-s55"></a>
 
-**BitPangea should use a different standard.**
+### What Comes First
 
-**Launch is an event.**
+There should no longer be one overly simplified ten-step roadmap.
 
-**Persistence is an architectural condition.**
+The immediate path is better understood as several dependency tracks.
 
-**The deeper objective is:**
+Constitutional track
 
-**to make BitPangea capable of remaining itself while everything within it changes.**
+1. Complete the narrow Limit reconsideration.
+2. Conduct the formal constitutional inquiry into Form.
+3. Perform a dependency check.
+4. Review Unity / Continuity later if justified.
+5. Conduct the next World Properties meta-inquiry from accumulated evidence.
 
-**That standard is harder.**
+Spatial Architecture track
 
-**It is also more appropriate for a World intended to persist beyond the technologies that first realize it.**
+1. Use the completed Foundational Survey Fabric Requirements as the basis for Spatial Ground inquiry.
+2. Define Spatial Ground.
+3. Refine General Spatial Interpretation.
+4. Deepen the Parcel Cadastre.
+5. Resolve the exact 21,000,000-Parcel architecture.
+6. Test and either strengthen or reject the rhombille direction.
+7. Reconcile Parcel architecture, World Form, The Verge, Outliers, and World-scale Parcel Contiguity.
+8. Complete Foundational Survey Fabric Specification, Conformance, and Reference Vectors when the mathematics have earned adoption.
 
-**The Path Forward Is a Transfer of Authorship**
+Operational Architecture track
 
-**If BitPangea succeeds, progress will eventually require the Creator to decide less.**
+As dependencies become clear:
 
-**Not because foundational truth becomes less important.**
+1. Mature Identity / Rights / Control.
+2. Define canonical World State.
+3. Formalize legitimate Runtime transition.
+4. Develop Persistence / Provenance alongside operation.
+5. Establish Interoperability requirements.
+6. Develop failure, recovery, integrity, concurrency, and time.
+7. Establish appropriate domain-specific conformance.
 
-**Because it becomes strong enough to support other people making legitimate decisions above it.**
+Participation track
 
-**The long direction is therefore:**
+Only when deeper Architecture can support it:
 
-**more explicit Architecture**
+1. Develop World-object Architecture.
+2. Develop authorized Builder creation.
+3. Develop infrastructure.
+4. Mature Experience Architecture.
+5. Widen participation.
+6. Allow institutions and civilization to emerge.
 
-**↓**
+These tracks may overlap.
 
-**less informal discretion**
+They are not a calendar.
 
-**↓**
+They are dependency-guided work.
 
-**more Builder creation**
+<a id="ch18-s56"></a>
 
-**↓**
+### What Should Not Come First
 
-**less Creator authorship**
+Several attractive subjects should remain deliberately downstream:
 
-**↓**
+final tokenomics
 
-**more emergent institutional life**
+Parcel price
 
-**↓**
+market speculation
 
-**more genuine history**
+premature currency design
 
-**This is not the abandonment of architectural rigor.**
+elaborate governance
 
-**It is one of the reasons rigorous Architecture is necessary.**
+mass Builder feature sets
 
-**The Principle**
+manufactured culture
 
-**The path forward begins by resolving what only foundational inquiry can decide.**
+predetermined institutions
 
-**Then it moves upward according to demonstrated dependency.**
+artificial ancient history
 
-**Foundation constrains.**
+launch pressure
 
-**Codex defines.**
+technology chosen for thematic appeal
 
-**Atlas designs.**
+They may create visible momentum.
 
-**Implementation realizes.**
+They may also harden assumptions before the World is ready.
 
-**Within the demonstrated spatial Architecture:**
+<a id="ch18-s57"></a>
 
-**Foundational Survey Fabric**
+### Success Is Not Launch
 
-**before:**
+A product can launch while its foundations remain weak.
 
-**Spatial Ground**
+BitPangea should use a different standard.
 
-**before:**
+Launch is an event.
 
-**General Spatial Interpretation**
+Persistence is an architectural condition.
 
-**before:**
+The deeper objective is:
 
-**Parcel Cadastre**
+to make BitPangea capable of remaining itself while everything within it changes.
 
-**Beyond that point, dependencies should be demonstrated rather than invented.**
+That standard is harder.
 
-**At every stage, BitPangea should ask:**
+It is also more appropriate for a World intended to persist beyond the technologies that first realize it.
 
-**Does this question require resolution now?**
+<a id="ch18-s58"></a>
 
-**Does another dependency come first?**
+### The Path Forward Is a Transfer of Authorship
 
-**Is this properly a Creator decision?**
+If BitPangea succeeds, progress will eventually require the Creator to decide less.
 
-**Or is the correct architectural act to leave it open?**
+Not because foundational truth becomes less important.
 
-**The governing principle is:**
+Because it becomes strong enough to support other people making legitimate decisions above it.
 
-**Resolve the foundations until the World can stand without improvisation. Then open the Architecture until civilization can grow without being prewritten.**
+The long direction is therefore:
 
-**BitPangea’s path forward is therefore neither a race toward launch nor a campaign to eliminate every unknown.**
+more explicit Architecture
 
-**It is a controlled transition:**
+↓
 
-**from premise to constitutional truth,**
+less informal discretion
 
-**from constitutional truth to Architecture,**
+↓
 
-**from Architecture to operation,**
+more Builder creation
 
-**from operation to creation,**
+↓
 
-**from creation to civilization,**
+less Creator authorship
 
-**and from civilization to history.**
+↓
 
-**The World comes first.**
+more emergent institutional life
 
-**What happens within it comes afterward.**
+↓
 
-**That is the path.**
+more genuine history
+
+This is not the abandonment of architectural rigor.
+
+It is one of the reasons rigorous Architecture is necessary.
+
+<a id="ch18-s59"></a>
+
+### The Principle
+
+The path forward begins by resolving what only foundational inquiry can decide.
+
+Then it moves upward according to demonstrated dependency.
+
+Foundation constrains.
+
+Codex defines.
+
+Atlas designs.
+
+Implementation realizes.
+
+Within the demonstrated spatial Architecture:
+
+Foundational Survey Fabric
+
+before:
+
+Spatial Ground
+
+before:
+
+General Spatial Interpretation
+
+before:
+
+Parcel Cadastre
+
+Beyond that point, dependencies should be demonstrated rather than invented.
+
+At every stage, BitPangea should ask:
+
+Does this question require resolution now?
+
+Does another dependency come first?
+
+Is this properly a Creator decision?
+
+Or is the correct architectural act to leave it open?
+
+The governing principle is:
+
+Resolve the foundations until the World can stand without improvisation. Then open the Architecture until civilization can grow without being prewritten.
+
+BitPangea’s path forward is therefore neither a race toward launch nor a campaign to eliminate every unknown.
+
+It is a controlled transition:
+
+from premise to constitutional truth,
+
+from constitutional truth to Architecture,
+
+from Architecture to operation,
+
+from operation to creation,
+
+from creation to civilization,
+
+and from civilization to history.
+
+The World comes first.
+
+What happens within it comes afterward.
+
+That is the path.
+
+---
+
+<a id="ch19"></a>
 
 ## XIX. Conclusion — A World Before a Civilization
 
-**BitPangea begins with an inversion.**
+BitPangea begins with an inversion.
 
-**Most digital environments begin with something people are expected to do.**
+Most digital environments begin with something people are expected to do.
 
-**Play.**
+Play.
 
-**Trade.**
+Trade.
 
-**Communicate.**
+Communicate.
 
-**Build.**
+Build.
 
-**Buy.**
+Buy.
 
-**Compete.**
+Compete.
 
-**Socialize.**
+Socialize.
 
-**Then space is created around those activities.**
+Then space is created around those activities.
 
-**BitPangea begins somewhere else.**
+BitPangea begins somewhere else.
 
-**It begins with the place itself.**
+It begins with the place itself.
 
-**Before there can be a digital civilization, there must first be a World in which that civilization can exist.**
+Before there can be a digital civilization, there must first be a World in which that civilization can exist.
 
-**That premise has guided the architectural reasoning preserved throughout BitPangea: Origins.**
+That premise has guided the architectural reasoning preserved throughout BitPangea: Origins.
 
-**The World comes first.**
+The World comes first.
 
-**Everything else must learn to fit within it.**
+Everything else must learn to fit within it.
 
-**A World Before an Application**
+<a id="ch19-s01"></a>
 
-**BitPangea is not intended to exist merely as the backdrop for a product.**
+### A World Before an Application
 
-**Its identity should not depend upon:**
+BitPangea is not intended to exist merely as the backdrop for a product.
 
-**one client**
+Its identity should not depend upon:
 
-**one renderer**
+one client
 
-**one game engine**
+one renderer
 
-**one marketplace**
+one game engine
 
-**one Builder**
+one marketplace
 
-**one social system**
+one Builder
 
-**one database**
+one social system
 
-**one protocol implementation**
+one database
 
-**or one generation of technology.**
+one protocol implementation
 
-**Applications may come and go.**
+or one generation of technology.
 
-**Interfaces may disappear.**
+Applications may come and go.
 
-**Services may be rewritten.**
+Interfaces may disappear.
 
-**Builders may evolve.**
+Services may be rewritten.
 
-**Institutions may change.**
+Builders may evolve.
 
-**Civilization may become something the Creator could not anticipate.**
+Institutions may change.
 
-**The World should remain.**
+Civilization may become something the Creator could not anticipate.
 
-**BitPangea should be deeper than any application used to experience it.**
+The World should remain.
 
-**That is why representation must remain distinct from authority.**
+BitPangea should be deeper than any application used to experience it.
 
-**A globe may reveal the World.**
+That is why representation must remain distinct from authority.
 
-**It does not create the World.**
+A globe may reveal the World.
 
-**A flat lived World may allow someone to inhabit it.**
+It does not create the World.
 
-**It does not become canonical spatial truth merely because it is visible.**
+A flat lived World may allow someone to inhabit it.
 
-**A Builder may change what exists within BitPangea.**
+It does not become canonical spatial truth merely because it is visible.
 
-**It should not redefine the architecture beneath it.**
+A Builder may change what exists within BitPangea.
 
-**A client may allow someone to experience the World.**
+It should not redefine the architecture beneath it.
 
-**The World should continue to exist when that client is gone.**
+A client may allow someone to experience the World.
 
-**One World Before Many Systems**
+The World should continue to exist when that client is gone.
 
-**BitPangea is one World.**
+<a id="ch19-s02"></a>
 
-**It may eventually contain:**
+### One World Before Many Systems
 
-**regions**
+BitPangea is one World.
 
-**communities**
+It may eventually contain:
 
-**institutions**
+regions
 
-**services**
+communities
 
-**Builder systems**
+institutions
 
-**economic activity**
+services
 
-**cultural movements**
+Builder systems
 
-**historical places**
+economic activity
 
-**many forms of experience.**
+cultural movements
 
-**Those things may differ profoundly.**
+historical places
 
-**They do not create separate canonical BitPangeas.**
+many forms of experience.
 
-**The foundational proposition remains:**
+Those things may differ profoundly.
 
-**one finite, complete, continuous cartographic World**
+They do not create separate canonical BitPangeas.
 
-**upon which increasingly complex systems may develop.**
+The foundational proposition remains:
 
-**Unity comes before multiplicity.**
+one finite, complete, continuous cartographic World
 
-**The World remains the whole.**
+upon which increasingly complex systems may develop.
 
-**Everything else exists within it.**
+Unity comes before multiplicity.
 
-**Place Before Asset**
+The World remains the whole.
 
-**The 21,000,000 Parcel constraint could easily have led BitPangea toward an asset-first design.**
+Everything else exists within it.
 
-**Create 21 million digital objects.**
+<a id="ch19-s03"></a>
 
-**Assign identifiers.**
+### Place Before Asset
 
-**Attach ownership.**
+The 21,000,000 Parcel constraint could easily have led BitPangea toward an asset-first design.
 
-**Create markets.**
+Create 21 million digital objects.
 
-**Call the result land.**
+Assign identifiers.
 
-**That is not the architecture developed here.**
+Attach ownership.
 
-**BitPangea reverses the relationship.**
+Create markets.
 
-**The World precedes the Parcel.**
+Call the result land.
 
-**The Parcel is meaningful because it belongs somewhere.**
+That is not the architecture developed here.
 
-**Its identity depends upon persistent spatial truth.**
+BitPangea reverses the relationship.
 
-**Its position must remain stable.**
+The World precedes the Parcel.
 
-**Its relationships to other Parcels must be coherent.**
+The Parcel is meaningful because it belongs somewhere.
 
-**Its place within the World must survive changes in:**
+Its identity depends upon persistent spatial truth.
 
-**rights**
+Its position must remain stable.
 
-**control**
+Its relationships to other Parcels must be coherent.
 
-**construction**
+Its place within the World must survive changes in:
 
-**representation**
+rights
 
-**technology**
+control
 
-**culture**
+construction
 
-**and history.**
+representation
 
-**Only after the Parcel exists as persistent place does it make sense to ask what governed relationships actors may form with it.**
+technology
 
-**Thus:**
+culture
 
-**A Parcel may someday become an asset. It must first be a place.**
+and history.
 
-**Exactly 21,000,000 Places**
+Only after the Parcel exists as persistent place does it make sense to ask what governed relationships actors may form with it.
 
-**The Parcel count is exact:**
+Thus:
 
-**21,000,000**
+A Parcel may someday become an asset. It must first be a place.
 
-**Not approximately 21 million.**
+<a id="ch19-s04"></a>
 
-**Not up to 21 million.**
+### Exactly 21,000,000 Places
 
-**Not 21 million initially with later canonical expansion.**
+The Parcel count is exact:
 
-**This is one of BitPangea’s defining constraints.**
+21,000,000
 
-**But the number should be understood correctly.**
+Not approximately 21 million.
 
-**It is not primarily:**
+Not up to 21 million.
 
-**a token supply**
+Not 21 million initially with later canonical expansion.
 
-**an investment thesis**
+This is one of BitPangea’s defining constraints.
 
-**a market cap**
+But the number should be understood correctly.
 
-**or a financial mechanism.**
+It is not primarily:
 
-**It is first a spatial obligation.**
+a token supply
 
-**Exactly 21,000,000 canonical Parcels must exist within one finite World.**
+an investment thesis
 
-**Everything else must conform to that fact.**
+a market cap
 
-**The number is a homage to Bitcoin.**
+or a financial mechanism.
 
-**The architecture remains BitPangea’s own.**
+It is first a spatial obligation.
 
-**Architecture Before Economy**
+Exactly 21,000,000 canonical Parcels must exist within one finite World.
 
-**Scarcity creates economic possibility.**
+Everything else must conform to that fact.
 
-**It does not create an economy.**
+The number is a homage to Bitcoin.
 
-**Exactly 21,000,000 Parcels may someday have significant economic consequences.**
+The architecture remains BitPangea’s own.
 
-**Origins deliberately refuses to pretend those consequences are already known.**
+<a id="ch19-s05"></a>
 
-**BitPangea does not presently establish:**
+### Architecture Before Economy
 
-**a Parcel price**
+Scarcity creates economic possibility.
 
-**a currency**
+It does not create an economy.
 
-**a marketplace**
+Exactly 21,000,000 Parcels may someday have significant economic consequences.
 
-**tokenization**
+Origins deliberately refuses to pretend those consequences are already known.
 
-**NFTs**
+BitPangea does not presently establish:
 
-**a monetary system**
+a Parcel price
 
-**a taxation system**
+a currency
 
-**a guaranteed financial value**
+a marketplace
 
-**or an investment thesis.**
+tokenization
 
-**Those questions are downstream.**
+NFTs
 
-**The foundational question is harder:**
+a monetary system
 
-**Can one finite digital World coherently contain exactly 21,000,000 persistent canonical places?**
+a taxation system
 
-**Until that problem is solved architecturally and mathematically, economic certainty would be premature.**
+a guaranteed financial value
 
-**The principle is:**
+or an investment thesis.
 
-**BitPangea should discover what its space is before deciding what its space is worth.**
+Those questions are downstream.
 
-**Survey Before Parcel**
+The foundational question is harder:
 
-**Persistent place requires something deeper than a visible map.**
+Can one finite digital World coherently contain exactly 21,000,000 persistent canonical places?
 
-**That is why the Foundational Survey Fabric matters.**
+Until that problem is solved architecturally and mathematically, economic certainty would be premature.
 
-**The demonstrated spatial dependency is:**
+The principle is:
 
-**Foundational Survey Fabric**
+BitPangea should discover what its space is before deciding what its space is worth.
 
-**→ Spatial Ground**
+<a id="ch19-s06"></a>
 
-**→ General Spatial Interpretation**
+### Survey Before Parcel
 
-**→ Parcel Cadastre**
+Persistent place requires something deeper than a visible map.
 
-**The Foundational Survey Fabric preserves canonical spatial reference.**
+That is why the Foundational Survey Fabric matters.
 
-**Spatial Ground carries that reference into usable World-space architecture.**
+The demonstrated spatial dependency is:
 
-**General Spatial Interpretation gives higher spatial meaning without redefining the Survey truth beneath it.**
+Foundational Survey Fabric
 
-**The Parcel Cadastre establishes exactly which canonical Parcel occupies which authoritative place.**
+→ Spatial Ground
 
-**Thus:**
+→ General Spatial Interpretation
 
-**Survey units are not Parcels.**
+→ Parcel Cadastre
 
-**The Survey Domain is not the World.**
+The Foundational Survey Fabric preserves canonical spatial reference.
 
-**Reference capacity is not territory.**
+Spatial Ground carries that reference into usable World-space architecture.
 
-**And:**
+General Spatial Interpretation gives higher spatial meaning without redefining the Survey truth beneath it.
 
-**Survey first. Cadastre later. Experience above both.**
+The Parcel Cadastre establishes exactly which canonical Parcel occupies which authoritative place.
 
-**Place Before Rights**
+Thus:
 
-**A World should know what a place is before determining who may exercise authority in relation to it.**
+Survey units are not Parcels.
 
-**That is why the Parcel Cadastre remains distinct from Identity / Rights / Control.**
+The Survey Domain is not the World.
 
-**The Cadastre answers:**
+Reference capacity is not territory.
 
-**Which Parcel is this?**
+And:
 
-**Identity / Rights / Control asks:**
+Survey first. Cadastre later. Experience above both.
 
-**Who is the actor?**
+<a id="ch19-s07"></a>
 
-**What governed relationship exists?**
+### Place Before Rights
 
-**What authority may be exercised?**
+A World should know what a place is before determining who may exercise authority in relation to it.
 
-**Those systems may interact deeply.**
+That is why the Parcel Cadastre remains distinct from Identity / Rights / Control.
 
-**They should not redefine one another.**
+The Cadastre answers:
 
-**A change in rights should not move the Parcel.**
+Which Parcel is this?
 
-**A change in control should not create a new Parcel.**
+Identity / Rights / Control asks:
 
-**A change in identity credentials should not rewrite canonical place.**
+Who is the actor?
 
-**The principle remains:**
+What governed relationship exists?
 
-**Reference does not transfer authority.**
+What authority may be exercised?
 
-**The Architecture Has Boundaries**
+Those systems may interact deeply.
 
-**BitPangea now recognizes enduring Architecture within The Atlas.**
+They should not redefine one another.
 
-**Its current Architecture domains are:**
+A change in rights should not move the Parcel.
 
-**Foundational Survey Fabric**
+A change in control should not create a new Parcel.
 
-**Spatial Ground**
+A change in identity credentials should not rewrite canonical place.
 
-**General Spatial Interpretation**
+The principle remains:
 
-**Parcel Cadastre**
+Reference does not transfer authority.
 
-**World Runtime**
+<a id="ch19-s08"></a>
 
-**Identity / Rights / Control**
+### The Architecture Has Boundaries
 
-**Persistence / Provenance**
+BitPangea now recognizes enduring Architecture within The Atlas.
 
-**Interoperability**
+Its current Architecture domains are:
 
-**Experience Architecture**
+Foundational Survey Fabric
 
-**Their recognition means BitPangea has identified enduring architectural responsibilities.**
+Spatial Ground
 
-**It does not mean every domain has equal maturity.**
+General Spatial Interpretation
 
-**It does not mean every domain is constitutional.**
+Parcel Cadastre
 
-**And it does not mean all nine form one strict dependency chain.**
+World Runtime
 
-**Only demonstrated dependencies should be treated as strict.**
+Identity / Rights / Control
 
-**The governing institutional progression is:**
+Persistence / Provenance
 
-**Foundation constrains.**
+Interoperability
 
-**Codex defines.**
+Experience Architecture
 
-**Atlas designs.**
+Their recognition means BitPangea has identified enduring architectural responsibilities.
 
-**Implementation realizes.**
+It does not mean every domain has equal maturity.
 
-**This is how BitPangea protects deep truth from accidental implementation authority.**
+It does not mean every domain is constitutional.
 
-**The World Must Be Able to Change**
+And it does not mean all nine form one strict dependency chain.
 
-**A perfectly surveyed World that never changes would remain only a model.**
+Only demonstrated dependencies should be treated as strict.
 
-**BitPangea therefore requires World Runtime.**
+The governing institutional progression is:
 
-**World Runtime allows legitimate change to occur while preserving coherence.**
+Foundation constrains.
 
-**It must eventually distinguish:**
+Codex defines.
 
-**request**
+Atlas designs.
 
-**authorization**
+Implementation realizes.
 
-**execution**
+This is how BitPangea protects deep truth from accidental implementation authority.
 
-**result**
+<a id="ch19-s09"></a>
 
-**persistent state.**
+### The World Must Be Able to Change
 
-**Identity / Rights / Control helps determine whether authority may be exercised.**
+A perfectly surveyed World that never changes would remain only a model.
 
-**World Runtime performs legitimate operational change.**
+BitPangea therefore requires World Runtime.
 
-**Persistence / Provenance preserves the lineage of consequential change.**
+World Runtime allows legitimate change to occur while preserving coherence.
 
-**The governing relationship is:**
+It must eventually distinguish:
 
-**Authority permits.**
+request
 
-**Runtime changes.**
+authorization
 
-**Provenance remembers.**
+execution
 
-**Persistence Before History**
+result
 
-**A World does not acquire history because its Creator writes lore.**
+persistent state.
 
-**History requires continuity.**
+Identity / Rights / Control helps determine whether authority may be exercised.
 
-**A place must remain identifiable.**
+World Runtime performs legitimate operational change.
 
-**Actors must remain distinguishable.**
+Persistence / Provenance preserves the lineage of consequential change.
 
-**World State must persist.**
+The governing relationship is:
 
-**Consequential change must leave evidence.**
+Authority permits.
 
-**Later participants must be able to encounter the results of things that occurred before them.**
+Runtime changes.
 
-**Only then can the World begin to possess a past.**
+Provenance remembers.
 
-**History begins when change leaves continuity behind.**
+<a id="ch19-s10"></a>
 
-**This is why persistence is more than a technical concern.**
+### Persistence Before History
 
-**Persistent place makes historical location possible.**
+A World does not acquire history because its Creator writes lore.
 
-**Persistent identity makes continuity of actors and objects possible.**
+History requires continuity.
 
-**Provenance makes change explainable.**
+A place must remain identifiable.
 
-**Memory allows consequence to endure.**
+Actors must remain distinguishable.
 
-**And enough continuity, over enough time, may eventually produce something rarer:**
+World State must persist.
 
-**antiquity.**
+Consequential change must leave evidence.
 
-**A World Capable of Becoming Old**
+Later participants must be able to encounter the results of things that occurred before them.
 
-**Every new digital environment begins without age.**
+Only then can the World begin to possess a past.
 
-**Age cannot be created honestly through decoration.**
+History begins when change leaves continuity behind.
 
-**A newly created ruin is scenery.**
+This is why persistence is more than a technical concern.
 
-**A structure that was:**
+Persistent place makes historical location possible.
 
-**built**
+Persistent identity makes continuity of actors and objects possible.
 
-**used**
+Provenance makes change explainable.
 
-**modified**
+Memory allows consequence to endure.
 
-**abandoned**
+And enough continuity, over enough time, may eventually produce something rarer:
 
-**remembered**
+antiquity.
 
-**rediscovered**
+<a id="ch19-s11"></a>
 
-**may eventually become something else.**
+### A World Capable of Becoming Old
 
-**History.**
+Every new digital environment begins without age.
 
-**Later still:**
+Age cannot be created honestly through decoration.
 
-**antiquity.**
+A newly created ruin is scenery.
 
-**BitPangea should not counterfeit age.**
+A structure that was:
 
-**It should preserve continuity long enough for age to become real.**
+built
 
-**The deeper ambition is:**
+used
 
-**Create a digital World capable of becoming old.**
+modified
 
-**Not merely visually old.**
+abandoned
 
-**Historically old.**
+remembered
 
-**Inherited Digital Antiquity**
+rediscovered
 
-**BitPangea also begins with an awareness that it did not arise from nothing.**
+may eventually become something else.
 
-**The Digital Age came before it.**
+History.
 
-**Computing came before it.**
+Later still:
 
-**Networks came before it.**
+antiquity.
 
-**Interfaces came before it.**
+BitPangea should not counterfeit age.
 
-**Cryptography came before it.**
+It should preserve continuity long enough for age to become real.
 
-**Bitcoin came before it.**
+The deeper ambition is:
 
-**Generations of invention, experimentation, failure, and discovery made a World such as BitPangea conceivable.**
+Create a digital World capable of becoming old.
 
-**Digital Antiquity preserves part of that inheritance.**
+Not merely visually old.
 
-**The Twelve Constellations of Digital Antiquity are one deliberate expression of it.**
+Historically old.
 
-**But the distinction must remain clear.**
+<a id="ch19-s12"></a>
 
-**Digital Antiquity**
+### Inherited Digital Antiquity
 
-**→ remembers the digital civilization that preceded BitPangea.**
+BitPangea also begins with an awareness that it did not arise from nothing.
 
-**BitPangea History**
+The Digital Age came before it.
 
-**→ records what happens to and within the World itself.**
+Computing came before it.
 
-**BitPangea may inherit a past.**
+Networks came before it.
 
-**It should not pretend to have already lived through one.**
+Interfaces came before it.
 
-**Designed Memory, Emergent History**
+Cryptography came before it.
 
-**This distinction can be expressed simply:**
+Bitcoin came before it.
 
-**INHERITED DIGITAL ANTIQUITY**
+Generations of invention, experimentation, failure, and discovery made a World such as BitPangea conceivable.
 
-**what the Creator intentionally preserves**
+Digital Antiquity preserves part of that inheritance.
 
-**↓**
+The Twelve Constellations of Digital Antiquity are one deliberate expression of it.
 
-**BITPANGEA HISTORY**
+But the distinction must remain clear.
 
-**what actually happens**
+Digital Antiquity
 
-**↓**
+→ remembers the digital civilization that preceded BitPangea.
 
-**CULTURAL MEMORY**
+BitPangea History
 
-**what civilization remembers and interprets**
+→ records what happens to and within the World itself.
 
-**↓**
+BitPangea may inherit a past.
 
-**NATIVE BITPANGEAN ANTIQUITY**
+It should not pretend to have already lived through one.
 
-**what time eventually transforms into antiquity**
+<a id="ch19-s13"></a>
 
-**The Creator can establish the conditions.**
+### Designed Memory, Emergent History
 
-**Only events, civilization, memory, and time can supply the rest.**
+This distinction can be expressed simply:
 
-**BitPangea may begin with historical inheritance. Its own future must remain unwritten.**
+INHERITED DIGITAL ANTIQUITY
 
-**The Verge Is Not a Fabricated Edge**
+what the Creator intentionally preserves
 
-**BitPangea is finite.**
+↓
 
-**That does not require:**
+BITPANGEA HISTORY
 
-**a coastline**
+what actually happens
 
-**an ocean**
+↓
 
-**a wall**
+CULTURAL MEMORY
 
-**an Exterior**
+what civilization remembers and interprets
 
-**a constitutional Edge**
+↓
 
-**or a World Boundary.**
+NATIVE BITPANGEAN ANTIQUITY
 
-**The constitutional concept is:**
+what time eventually transforms into antiquity
 
-**The Extent**
+The Creator can establish the conditions.
 
-**Finitude is a condition of it.**
+Only events, civilization, memory, and time can supply the rest.
 
-**The Creator-period design space for terminal World-form expression is:**
+BitPangea may begin with historical inheritance. Its own future must remain unwritten.
 
-**The Verge**
+<a id="ch19-s14"></a>
 
-**The Verge should eventually emerge from the reconciliation of:**
+### The Verge Is Not a Fabricated Edge
 
-**The Extent**
+BitPangea is finite.
 
-**World Form**
+That does not require:
 
-**spatial Architecture**
+a coastline
 
-**Parcel geometry**
+an ocean
 
-**non-Parcel conditions**
+a wall
 
-**and World-scale Parcel Contiguity.**
+an Exterior
 
-**It should not be imposed as a familiar physical-world boundary merely because such imagery is easy to understand.**
+a constitutional Edge
 
-**BitPangea should look like itself.**
+or a World Boundary.
 
-**Constraint Before Possibility**
+The constitutional concept is:
 
-**BitPangea is deliberately constrained at its foundation.**
+The Extent
 
-**One World.**
+Finitude is a condition of it.
 
-**Finitude.**
+The Creator-period design space for terminal World-form expression is:
 
-**Complete Extent.**
+The Verge
 
-**Persistent spatial reference.**
+The Verge should eventually emerge from the reconciliation of:
 
-**Exactly 21,000,000 Parcels.**
+The Extent
 
-**Persistent Parcel identity.**
+World Form
 
-**Bounded authority.**
+spatial Architecture
 
-**Governed state transition.**
+Parcel geometry
 
-**Those constraints do not diminish the ambition of the World.**
+non-Parcel conditions
 
-**They give its possibilities consequence.**
+and World-scale Parcel Contiguity.
 
-**Unlimited territory makes place easier to replace.**
+It should not be imposed as a familiar physical-world boundary merely because such imagery is easy to understand.
 
-**Finite territory makes place matter.**
+BitPangea should look like itself.
 
-**Disposable identity makes continuity optional.**
+<a id="ch19-s15"></a>
 
-**Persistent identity makes history possible.**
+### Constraint Before Possibility
 
-**Unbounded mutation makes change cheap.**
+BitPangea is deliberately constrained at its foundation.
 
-**Governed change makes consequence real.**
+One World.
 
-**The principle is:**
+Finitude.
 
-**Constraint gives possibility something to push against.**
+Complete Extent.
 
-**Precision Below, Freedom Above**
+Persistent spatial reference.
 
-**The architecture increasingly reveals a particular shape.**
+Exactly 21,000,000 Parcels.
 
-**At the deepest levels:**
+Persistent Parcel identity.
 
-**precision increases.**
+Bounded authority.
 
-**At the highest levels:**
+Governed state transition.
 
-**freedom increases.**
+Those constraints do not diminish the ambition of the World.
 
-**Conceptually:**
+They give its possibilities consequence.
 
-**CONSTITUTIONAL WORLD**
+Unlimited territory makes place easier to replace.
 
-**most constrained**
+Finite territory makes place matter.
 
-**↓**
+Disposable identity makes continuity optional.
 
-**DEEP ARCHITECTURE**
+Persistent identity makes history possible.
 
-**highly precise**
+Unbounded mutation makes change cheap.
 
-**↓**
+Governed change makes consequence real.
 
-**WORLD RUNTIME**
+The principle is:
 
-**governed change**
+Constraint gives possibility something to push against.
 
-**↓**
+<a id="ch19-s16"></a>
 
-**BUILDERS**
+### Precision Below, Freedom Above
 
-**creative freedom**
+The architecture increasingly reveals a particular shape.
 
-**↓**
+At the deepest levels:
 
-**CIVILIZATION**
+precision increases.
 
-**open emergence**
+At the highest levels:
 
-**This is not a rigid software stack.**
+freedom increases.
 
-**It expresses a gradient of permanence and authorship.**
+Conceptually:
 
-**The governing principle is:**
+CONSTITUTIONAL WORLD
 
-**The deeper the layer, the more permanent it should be. The closer the layer is to the user, the more freedom it should have to evolve.**
+most constrained
 
-**And beyond Architecture:**
+↓
 
-**civilization should eventually become increasingly capable of authoring itself.**
+DEEP ARCHITECTURE
 
-**The Creator Cannot Author the Destination**
+highly precise
 
-**The Creator can establish:**
+↓
 
-**one World**
+WORLD RUNTIME
 
-**Finitude**
+governed change
 
-**The Extent**
+↓
 
-**the constitutional spatial conditions**
+BUILDERS
 
-**the exact Parcel count**
+creative freedom
 
-**the Architecture**
+↓
 
-**the rules by which canonical change may occur.**
+CIVILIZATION
 
-**But the Creator should not attempt to determine in advance:**
+open emergence
 
-**every community**
+This is not a rigid software stack.
 
-**every institution**
+It expresses a gradient of permanence and authorship.
 
-**every market**
+The governing principle is:
 
-**every artistic movement**
+The deeper the layer, the more permanent it should be. The closer the layer is to the user, the more freedom it should have to evolve.
 
-**every tradition**
+And beyond Architecture:
 
-**every conflict**
+civilization should eventually become increasingly capable of authoring itself.
 
-**every social norm**
+<a id="ch19-s17"></a>
 
-**every cultural meaning**
+### The Creator Cannot Author the Destination
 
-**every future historical interpretation.**
+The Creator can establish:
 
-**If all of those are prewritten, BitPangea may become an elaborate authored environment.**
+one World
 
-**It will not have made enough room for civilization.**
+Finitude
 
-**A civilization must eventually be capable of surprising its Creator.**
+The Extent
 
-**That surprise is not necessarily evidence of architectural failure.**
+the constitutional spatial conditions
 
-**It may be evidence that the Architecture finally succeeded.**
+the exact Parcel count
 
-**The Creator’s Responsibility Is Also Restraint**
+the Architecture
 
-**The deepest responsibility of the Creator may therefore not be to decide everything.**
+the rules by which canonical change may occur.
 
-**It may be to determine:**
+But the Creator should not attempt to determine in advance:
 
-**what must be decided now**
+every community
 
-**and:**
+every institution
 
-**what must be protected from premature decision.**
+every market
 
-**That requires restraint.**
+every artistic movement
 
-**It requires leaving some questions unresolved.**
+every tradition
 
-**It requires recognizing that some unresolved matters are not flaws.**
+every conflict
 
-**It requires resisting the temptation to transform every powerful idea into canon.**
+every social norm
 
-**It requires building enough Architecture that future participants can act without requiring the Creator to personally invent every answer.**
+every cultural meaning
 
-**The principle is:**
+every future historical interpretation.
 
-**The Creator should use foundational authority to protect the possibility of a future beyond the Creator.**
+If all of those are prewritten, BitPangea may become an elaborate authored environment.
 
-**From Creator to Steward**
+It will not have made enough room for civilization.
 
-**If BitPangea succeeds, the Creator’s role should change.**
+A civilization must eventually be capable of surprising its Creator.
 
-**Early:**
+That surprise is not necessarily evidence of architectural failure.
 
-**Creator as architect**
+It may be evidence that the Architecture finally succeeded.
 
-**Later:**
+<a id="ch19-s18"></a>
 
-**Creator as steward**
+### The Creator’s Responsibility Is Also Restraint
 
-**Eventually:**
+The deepest responsibility of the Creator may therefore not be to decide everything.
 
-**Creator as one participant within a larger historical World**
+It may be to determine:
 
-**This transition should not be rushed.**
+what must be decided now
 
-**Nor should unlimited personal authority be treated as the permanent architecture by default.**
+and:
 
-**The mature goal is:**
+what must be protected from premature decision.
 
-**less implicit discretion**
+That requires restraint.
 
-**and:**
+It requires leaving some questions unresolved.
 
-**more explicit Architecture**
+It requires recognizing that some unresolved matters are not flaws.
 
-**A World becomes more durable when its ordinary continuation no longer depends upon the constant presence of the person who began it.**
+It requires resisting the temptation to transform every powerful idea into canon.
 
-**The Permanent Core Should Remain Small**
+It requires building enough Architecture that future participants can act without requiring the Creator to personally invent every answer.
 
-**BitPangea may someday contain extraordinary complexity.**
+The principle is:
 
-**Its permanent core should not attempt to contain all of it.**
+The Creator should use foundational authority to protect the possibility of a future beyond the Creator.
 
-**The constitutional and foundational structure should preserve only what genuinely requires extraordinary protection.**
+<a id="ch19-s19"></a>
 
-**The principle is:**
+### From Creator to Steward
 
-**The immutable core should be astonishingly small.**
+If BitPangea succeeds, the Creator’s role should change.
 
-**And the architectural objective is:**
+Early:
 
-**Minimum permanent architecture. Maximum future extensibility.**
+Creator as architect
 
-**This does not mean BitPangea should lack rules.**
+Later:
 
-**It means rules should exist at the lowest legitimate level of authority.**
+Creator as steward
 
-**The Constitution should not attempt to become the civilization.**
+Eventually:
 
-**Technology Will Change**
+Creator as one participant within a larger historical World
 
-**The technology used to realize BitPangea today will not be the technology used forever.**
+This transition should not be rushed.
 
-**Programming languages will change.**
+Nor should unlimited personal authority be treated as the permanent architecture by default.
 
-**Storage systems will change.**
+The mature goal is:
 
-**Databases will change.**
+less implicit discretion
 
-**Renderers will change.**
+and:
 
-**Cryptographic systems will change.**
+more explicit Architecture
 
-**Interfaces will change.**
+A World becomes more durable when its ordinary continuation no longer depends upon the constant presence of the person who began it.
 
-**Hardware will change.**
+<a id="ch19-s20"></a>
 
-**Standards will change.**
+### The Permanent Core Should Remain Small
 
-**Entire technological categories may emerge that do not yet exist.**
+BitPangea may someday contain extraordinary complexity.
 
-**If BitPangea is intended to persist, its identity cannot depend upon those technologies remaining permanent.**
+Its permanent core should not attempt to contain all of it.
 
-**The principle is:**
+The constitutional and foundational structure should preserve only what genuinely requires extraordinary protection.
 
-**The World should survive the obsolescence of the tools that first built it.**
+The principle is:
 
-**Or more locally:**
+The immutable core should be astonishingly small.
 
-**The Parcel should outlive the technology used to experience the Parcel.**
+And the architectural objective is:
 
-**Interoperability Protects One World**
+Minimum permanent architecture. Maximum future extensibility.
 
-**Technological replacement requires more than good intentions.**
+This does not mean BitPangea should lack rules.
 
-**It requires Interoperability.**
+It means rules should exist at the lowest legitimate level of authority.
 
-**Multiple conforming implementations may eventually:**
+The Constitution should not attempt to become the civilization.
 
-**display the World**
+<a id="ch19-s21"></a>
 
-**query it**
+### Technology Will Change
 
-**build within it**
+The technology used to realize BitPangea today will not be the technology used forever.
 
-**exchange canonical identifiers**
+Programming languages will change.
 
-**participate in Runtime operations**
+Storage systems will change.
 
-**preserve records.**
+Databases will change.
 
-**They should not create incompatible meanings merely because their internal technology differs.**
+Renderers will change.
 
-**The governing principle is:**
+Cryptographic systems will change.
 
-**Implementation diversity must not become semantic diversity.**
+Interfaces will change.
 
-**Many systems may encounter BitPangea.**
+Hardware will change.
 
-**There should remain one canonical World.**
+Standards will change.
 
-**Experience Must Remain Above Truth**
+Entire technological categories may emerge that do not yet exist.
 
-**Experience Architecture matters because civilization encounters BitPangea through experience.**
+If BitPangea is intended to persist, its identity cannot depend upon those technologies remaining permanent.
 
-**Participants should not have to understand:**
+The principle is:
 
-**Survey mathematics**
+The World should survive the obsolescence of the tools that first built it.
 
-**Cadastre internals**
+Or more locally:
 
-**Runtime semantics**
+The Parcel should outlive the technology used to experience the Parcel.
 
-**provenance structures**
+<a id="ch19-s22"></a>
 
-**interoperability rules**
+### Interoperability Protects One World
 
-**to experience the World naturally.**
+Technological replacement requires more than good intentions.
 
-**The inhabitant should encounter:**
+It requires Interoperability.
 
-**a World**
+Multiple conforming implementations may eventually:
 
-**a place**
+display the World
 
-**a Parcel**
+query it
 
-**a structure**
+build within it
 
-**another participant**
+exchange canonical identifiers
 
-**a history**
+participate in Runtime operations
 
-**not:**
+preserve records.
 
-**a stack diagram.**
+They should not create incompatible meanings merely because their internal technology differs.
 
-**But experience must remain accountable to deeper truth.**
+The governing principle is:
 
-**Thus:**
+Implementation diversity must not become semantic diversity.
 
-**Experience is where the World becomes perceptible—not where the World becomes authoritative.**
+Many systems may encounter BitPangea.
 
-**One World, Many Futures**
+There should remain one canonical World.
 
-**A strong foundation should not produce one predetermined outcome.**
+<a id="ch19-s23"></a>
 
-**It should permit many.**
+### Experience Must Remain Above Truth
 
-**BitPangea may someday contain things that cannot presently be imagined:**
+Experience Architecture matters because civilization encounters BitPangea through experience.
 
-**new forms of community**
+Participants should not have to understand:
 
-**new institutions**
+Survey mathematics
 
-**new art**
+Cadastre internals
 
-**new infrastructure**
+Runtime semantics
 
-**new forms of digital place**
+provenance structures
 
-**new Builder practices**
+interoperability rules
 
-**new economies**
+to experience the World naturally.
 
-**new historical traditions**
+The inhabitant should encounter:
 
-**new ways of understanding identity**
+a World
 
-**new ways of experiencing the World itself.**
+a place
 
-**That possibility depends upon BitPangea remaining stable enough that new activity can occur within the World without requiring the World to redefine itself each time.**
+a Parcel
 
-**The principle is:**
+a structure
 
-**The purpose of the foundation is not to predict the future. It is to make many futures possible without sacrificing the identity of the World.**
+another participant
 
-**A World Worth Inheriting**
+a history
 
-**Any World intended to persist eventually stops belonging only to its originator.**
+not:
 
-**Future participants may inherit:**
+a stack diagram.
 
-**places they did not create**
+But experience must remain accountable to deeper truth.
 
-**rules they did not write**
+Thus:
 
-**structures they did not build**
+Experience is where the World becomes perceptible—not where the World becomes authoritative.
 
-**institutions they did not found**
+<a id="ch19-s24"></a>
 
-**history they did not witness**
+### One World, Many Futures
 
-**questions their predecessors never solved.**
+A strong foundation should not produce one predetermined outcome.
 
-**That is normal for civilization.**
+It should permit many.
 
-**BitPangea should therefore be designed not only for its first participants, but for people who may encounter it much later.**
+BitPangea may someday contain things that cannot presently be imagined:
 
-**They should be able to ask:**
+new forms of community
 
-**Why is BitPangea finite?**
+new institutions
 
-**Why are there exactly 21,000,000 Parcels?**
+new art
 
-**Why does this Parcel exist here?**
+new infrastructure
 
-**What Architecture determines this place?**
+new forms of digital place
 
-**Why does this system possess authority?**
+new Builder practices
 
-**Who changed this location?**
+new economies
 
-**What existed here before?**
+new historical traditions
 
-**Why was this foundational decision made?**
+new ways of understanding identity
 
-**And BitPangea should preserve enough institutional memory to answer.**
+new ways of experiencing the World itself.
 
-**A World Worth Questioning**
+That possibility depends upon BitPangea remaining stable enough that new activity can occur within the World without requiring the World to redefine itself each time.
 
-**Future generations should also be free to question some of those answers.**
+The principle is:
 
-**Architecture requires continuity.**
+The purpose of the foundation is not to predict the future. It is to make many futures possible without sacrificing the identity of the World.
 
-**Civilization requires interpretation.**
+<a id="ch19-s25"></a>
 
-**The Creator’s reasoning should be preserved.**
+### A World Worth Inheriting
 
-**It should not become unquestionable merely because it came first.**
+Any World intended to persist eventually stops belonging only to its originator.
 
-**That is one of the reasons Origins matters.**
+Future participants may inherit:
 
-**Origins should expose:**
+places they did not create
 
-**the questions**
+rules they did not write
 
-**the reasoning**
+structures they did not build
 
-**the alternatives**
+institutions they did not found
 
-**the uncertainty**
+history they did not witness
 
-**the mistakes**
+questions their predecessors never solved.
 
-**the superseded understandings**
+That is normal for civilization.
 
-**and the conclusions**
+BitPangea should therefore be designed not only for its first participants, but for people who may encounter it much later.
 
-**through which BitPangea became what it is.**
+They should be able to ask:
 
-**A durable World should preserve its origins without requiring its descendants to worship them.**
+Why is BitPangea finite?
 
-**Chronicle, Atlas, and Origins**
+Why are there exactly 21,000,000 Parcels?
 
-**BitPangea therefore preserves multiple forms of institutional memory.**
+Why does this Parcel exist here?
 
-**The distinction is:**
+What Architecture determines this place?
 
-**Chronicle records when.**
+Why does this system possess authority?
 
-**Atlas records what.**
+Who changed this location?
 
-**Origins preserves how and why the understanding emerged.**
+What existed here before?
 
-**The Chronicle preserves sequence.**
+Why was this foundational decision made?
 
-**The Atlas preserves current structural understanding.**
+And BitPangea should preserve enough institutional memory to answer.
 
-**Origins preserves much of the developmental reasoning that produced it.**
+<a id="ch19-s26"></a>
 
-**These functions may overlap in subject.**
+### A World Worth Questioning
 
-**They should remain distinct in authority and purpose.**
+Future generations should also be free to question some of those answers.
 
-**Historical existence does not equal current authority.**
+Architecture requires continuity.
 
-**Superseded understanding should remain historically visible without remaining structurally authoritative.**
+Civilization requires interpretation.
 
-**Origins Does Not Claim Completion**
+The Creator’s reasoning should be preserved.
 
-**Origins does not claim that BitPangea is complete.**
+It should not become unquestionable merely because it came first.
 
-**It does not claim that every architectural question has been resolved.**
+That is one of the reasons Origins matters.
 
-**It does not claim that every current design direction will survive.**
+Origins should expose:
 
-**It does not present a finished technical implementation.**
+the questions
 
-**It does not promise an economy.**
+the reasoning
 
-**It does not promise value.**
+the alternatives
 
-**It does not promise governance.**
+the uncertainty
 
-**It does not pretend civilization already exists.**
+the mistakes
 
-**Its claim is narrower:**
+the superseded understandings
 
-**BitPangea now possesses a coherent enough constitutional and architectural foundation that its unanswered questions can be asked in relation to one World rather than as isolated design problems.**
+and the conclusions
 
-**That is a meaningful threshold.**
+through which BitPangea became what it is.
 
-**The questions are no longer merely:**
+A durable World should preserve its origins without requiring its descendants to worship them.
 
-**What feature should be added?**
+<a id="ch19-s27"></a>
 
-**Which platform should be used?**
+### Chronicle, Atlas, and Origins
 
-**What should people buy?**
+BitPangea therefore preserves multiple forms of institutional memory.
 
-**What should the interface look like?**
+The distinction is:
 
-**The deeper questions are:**
+Chronicle records when.
 
-**What must remain true of the World?**
+Atlas records what.
 
-**What constitutes permanent place?**
+Origins preserves how and why the understanding emerged.
 
-**How can exactly 21,000,000 Parcels exist coherently?**
+The Chronicle preserves sequence.
 
-**What belongs to constitutional truth?**
+The Atlas preserves current structural understanding.
 
-**What belongs to Architecture?**
+Origins preserves much of the developmental reasoning that produced it.
 
-**What authority belongs where?**
+These functions may overlap in subject.
 
-**How does legitimate change occur?**
+They should remain distinct in authority and purpose.
 
-**How can technology change without changing the World?**
+Historical existence does not equal current authority.
 
-**What must become permanent?**
+Superseded understanding should remain historically visible without remaining structurally authoritative.
 
-**What should remain provisional?**
+<a id="ch19-s28"></a>
 
-**What should remain open?**
+### Origins Does Not Claim Completion
 
-**What must the Creator decide?**
+Origins does not claim that BitPangea is complete.
 
-**And what must the Creator leave for the future?**
+It does not claim that every architectural question has been resolved.
 
-**Those are World questions.**
+It does not claim that every current design direction will survive.
 
-**The Architecture in Its Simplest Form**
+It does not present a finished technical implementation.
 
-**After all of the distinctions, inquiries, domains, diagrams, Requirements, and unresolved questions, BitPangea can still be described simply.**
+It does not promise an economy.
 
-**It is intended to be:**
+It does not promise value.
 
-**one finite digital World**
+It does not promise governance.
 
-**with:**
+It does not pretend civilization already exists.
 
-**permanent canonical spatial truth**
+Its claim is narrower:
 
-**containing:**
+BitPangea now possesses a coherent enough constitutional and architectural foundation that its unanswered questions can be asked in relation to one World rather than as isolated design problems.
 
-**exactly 21,000,000 persistent Parcels**
+That is a meaningful threshold.
 
-**supported by:**
+The questions are no longer merely:
 
-**bounded, durable Architecture**
+What feature should be added?
 
-**through which:**
+Which platform should be used?
 
-**legitimate change can occur**
+What should people buy?
 
-**so that:**
+What should the interface look like?
 
-**Builders may create**
+The deeper questions are:
 
-**and:**
+What must remain true of the World?
 
-**civilization may emerge**
+What constitutes permanent place?
 
-**while:**
+How can exactly 21,000,000 Parcels exist coherently?
 
-**history accumulates.**
+What belongs to constitutional truth?
 
-**That is the project.**
+What belongs to Architecture?
 
-**Everything else exists to make those statements coherent.**
+What authority belongs where?
 
-**The Institutional Sequence**
+How does legitimate change occur?
 
-**At the deepest level, BitPangea now works through the progression:**
+How can technology change without changing the World?
 
-**FOUNDATION**
+What must become permanent?
 
-**constrains**
+What should remain provisional?
 
-**↓**
+What should remain open?
 
-**CODEX**
+What must the Creator decide?
 
-**defines**
+And what must the Creator leave for the future?
 
-**↓**
+Those are World questions.
 
-**ATLAS**
+<a id="ch19-s29"></a>
 
-**designs**
+### The Architecture in Its Simplest Form
 
-**↓**
+After all of the distinctions, inquiries, domains, diagrams, Requirements, and unresolved questions, BitPangea can still be described simply.
 
-**IMPLEMENTATION**
+It is intended to be:
 
-**realizes**
+one finite digital World
 
-**This sequence protects meaning from accidental technological authority.**
+with:
 
-**The Human Sequence**
+permanent canonical spatial truth
 
-**The broader World-to-civilization direction is different:**
+containing:
 
-**WORLD**
+exactly 21,000,000 persistent Parcels
 
-**↓**
+supported by:
 
-**PLACE**
+bounded, durable Architecture
 
-**↓**
+through which:
 
-**PERSISTENCE**
+legitimate change can occur
 
-**↓**
+so that:
 
-**AUTHORITY**
+Builders may create
 
-**↓**
+and:
 
-**LEGITIMATE CHANGE**
+civilization may emerge
 
-**↓**
+while:
 
-**CREATION**
+history accumulates.
 
-**↓**
+That is the project.
 
-**CIVILIZATION**
+Everything else exists to make those statements coherent.
 
-**↓**
+<a id="ch19-s30"></a>
 
-**HISTORY**
+### The Institutional Sequence
 
-**This is not a strict claim about all nine Architecture-domain dependencies.**
+At the deepest level, BitPangea now works through the progression:
 
-**It is the human and civilizational progression made possible by the World.**
+FOUNDATION
 
-**Each stage requires truths established beneath it.**
+constrains
 
-**None should silently become authority over the thing beneath it.**
+↓
 
-**The Final Principle**
+CODEX
 
-**BitPangea should not attempt to create a civilization by simulating the appearance of one.**
+defines
 
-**It should create the conditions under which civilization could become real in the only sense available to a digital World:**
+↓
 
-**through persistent place**
+ATLAS
 
-**shared experience**
+designs
 
-**legitimate action**
+↓
 
-**creation**
+IMPLEMENTATION
 
-**memory**
+realizes
 
-**consequence**
+This sequence protects meaning from accidental technological authority.
 
-**and time.**
+<a id="ch19-s31"></a>
 
-**The ambition is therefore not merely to construct a large digital environment.**
+### The Human Sequence
 
-**It is to establish something capable of outgrowing the intentions of the person who began it.**
+The broader World-to-civilization direction is different:
 
-**Build the World strongly enough that civilization does not need to be scripted.**
+WORLD
 
-**And then—**
+↓
 
-**let Builders build.**
+PLACE
 
-**Let communities form.**
+↓
 
-**Let institutions emerge.**
+PERSISTENCE
 
-**Let unexpected uses appear.**
+↓
 
-**Let places acquire meaning.**
+AUTHORITY
 
-**Let history happen.**
+↓
 
-**Let some things disappear.**
+LEGITIMATE CHANGE
 
-**Let other things endure.**
+↓
 
-**Let memory accumulate.**
+CREATION
 
-**Let future inhabitants discover what came before them.**
+↓
 
-**Let the World be reinterpreted.**
+CIVILIZATION
 
-**Let its civilization become capable of surprising its Creator.**
+↓
 
-**And allow BitPangea, one day, to become something that could not have been fully designed at the beginning—**
+HISTORY
 
-**because its most important content had not happened yet.**
+This is not a strict claim about all nine Architecture-domain dependencies.
 
-**That is why the World must come first.**
+It is the human and civilizational progression made possible by the World.
 
-**The World requires structure. Civilization requires possibility.**
+Each stage requires truths established beneath it.
 
-**BitPangea begins by establishing the structure.**
+None should silently become authority over the thing beneath it.
 
-**Its future belongs to the possibility.**
+<a id="ch19-s32"></a>
 
-**Closing Statement**
+### The Final Principle
 
-**BitPangea is an inquiry into what becomes possible when a digital world is designed as a World first.**
+BitPangea should not attempt to create a civilization by simulating the appearance of one.
 
-**One finite World.**
+It should create the conditions under which civilization could become real in the only sense available to a digital World:
 
-**One complete Extent.**
+through persistent place
 
-**Permanent canonical spatial truth.**
+shared experience
 
-**Exactly 21,000,000 Parcels.**
+legitimate action
 
-**An Architecture capable of preserving place, authority, change, provenance, interoperability, and experience.**
+creation
 
-**Builders capable of creation.**
+memory
 
-**Civilization capable of emergence.**
+consequence
 
-**History capable of becoming real.**
+and time.
 
-**And enough restraint to leave the future unwritten.**
+The ambition is therefore not merely to construct a large digital environment.
 
-**A World before a civilization.**
+It is to establish something capable of outgrowing the intentions of the person who began it.
+
+Build the World strongly enough that civilization does not need to be scripted.
+
+And then—
+
+let Builders build.
+
+Let communities form.
+
+Let institutions emerge.
+
+Let unexpected uses appear.
+
+Let places acquire meaning.
+
+Let history happen.
+
+Let some things disappear.
+
+Let other things endure.
+
+Let memory accumulate.
+
+Let future inhabitants discover what came before them.
+
+Let the World be reinterpreted.
+
+Let its civilization become capable of surprising its Creator.
+
+And allow BitPangea, one day, to become something that could not have been fully designed at the beginning—
+
+because its most important content had not happened yet.
+
+That is why the World must come first.
+
+The World requires structure. Civilization requires possibility.
+
+BitPangea begins by establishing the structure.
+
+Its future belongs to the possibility.
+
+<a id="ch19-s33"></a>
+
+### Closing Statement
+
+BitPangea is an inquiry into what becomes possible when a digital world is designed as a World first.
+
+One finite World.
+
+One complete Extent.
+
+Permanent canonical spatial truth.
+
+Exactly 21,000,000 Parcels.
+
+An Architecture capable of preserving place, authority, change, provenance, interoperability, and experience.
+
+Builders capable of creation.
+
+Civilization capable of emergence.
+
+History capable of becoming real.
+
+And enough restraint to leave the future unwritten.
+
+A World before a civilization.
