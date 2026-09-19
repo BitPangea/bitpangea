@@ -230,6 +230,76 @@ blockquote {
   margin-bottom: 12px;
 }
 
+.architecture-model {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+  margin-top: 28px;
+}
+
+.architecture-model-card {
+  padding: 28px 30px;
+  background: rgba(0,0,0,.34);
+  border: 1px solid rgba(212,169,56,.16);
+}
+
+.architecture-model-card h3 {
+  color: var(--gold);
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.architecture-model-card p {
+  font-size: 16px;
+  color: rgba(255,255,255,.84);
+  margin-bottom: 0;
+}
+
+.dependency-chain {
+  margin: 28px 0 8px;
+  padding: 24px 26px;
+  background: rgba(0,0,0,.48);
+  border: 1px solid rgba(0,200,215,.18);
+  color: var(--white);
+  font-size: 17px;
+  line-height: 1.8;
+  text-align: center;
+  letter-spacing: .3px;
+}
+
+.dependency-chain strong { color: var(--gold); }
+
+.status-legend {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.status-legend-card {
+  padding: 24px;
+  background: rgba(0,0,0,.30);
+  border: 1px solid rgba(212,169,56,.16);
+}
+
+.status-legend-card h3 {
+  color: var(--cyan);
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.status-legend-card.reserved h3 { color: var(--gold); }
+
+.status-legend-card p {
+  font-size: 15px;
+  color: rgba(255,255,255,.82);
+  margin-bottom: 0;
+}
+
 .architecture-index {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -377,7 +447,9 @@ blockquote {
 
 @media (max-width: 980px) {
   .architecture-index,
-  .relationship-grid {
+  .relationship-grid,
+  .architecture-model,
+  .status-legend {
     grid-template-columns: 1fr;
   }
 }
@@ -443,7 +515,11 @@ blockquote {
   </p>
 
   <p>
-    <strong>Domain Order and Dependency.</strong> The order in which Architecture domains are presented does not, by itself, establish a mandatory dependency chain. Dependencies should be recognized only where architectural inquiry demonstrates that one domain genuinely requires another. Some domains may form ordered foundations; others may interact through cross-domain relationships without belonging to one linear stack.
+    <strong>Architecture Membership and Dependency.</strong> The Architecture is an institutional catalog of nine recognized architectural domains. Membership establishes that a domain belongs within the enduring structural design record of BitPangea; membership does not, by itself, establish dependency order.
+  </p>
+
+  <p>
+    The order in which Architecture domains are presented is a documentary presentation order, not a universal dependency stack. Dependencies should be recognized only where architectural inquiry demonstrates that one domain genuinely requires another. Some domains may form ordered foundations; others may interact through cross-domain relationships without belonging to one linear chain.
   </p>
 
   <blockquote>
@@ -471,6 +547,69 @@ blockquote {
       <p>Implementations realize architectural design through replaceable technologies without becoming the permanent truth they implement.</p>
     </div>
   </div>
+</section>
+
+<section class="section">
+  <h2>Membership, Dependency, and Status</h2>
+
+  <p>
+    The Architecture recognizes nine enduring domains. Their inclusion establishes architectural membership; it does not establish a single numbered stack. Presentation order, demonstrated dependency, and domain status are separate architectural properties and should not be conflated.
+  </p>
+
+  <div class="architecture-model">
+    <div class="architecture-model-card">
+      <h3>Architecture Membership</h3>
+      <p>All nine recognized domains belong within the architectural catalog regardless of current maturity or position in any demonstrated dependency relationship.</p>
+    </div>
+    <div class="architecture-model-card">
+      <h3>Presentation Order</h3>
+      <p>The sequence used by this index is documentary. It provides a stable way to encounter the catalog but does not independently establish dependency.</p>
+    </div>
+    <div class="architecture-model-card">
+      <h3>Demonstrated Dependency</h3>
+      <p>Dependency is recorded only where architectural inquiry establishes that one domain requires another. Where dependency has not been demonstrated, no linear ordering should be inferred.</p>
+    </div>
+    <div class="architecture-model-card">
+      <h3>Working Sequence</h3>
+      <p>Architectural work may proceed in strict sequence where dependency is demonstrated. Beyond that point, subsequent domains should enter a dependency-resolved queue rather than inherit an artificial place in a universal stack.</p>
+    </div>
+  </div>
+
+  <p style="margin-top:30px;">
+    <strong>Demonstrated Spatial Dependency.</strong> The first four domains currently form the demonstrated spatial dependency through which canonical reference becomes stable World-space, shared spatial interpretation, and ultimately authoritative Parcel truth.
+  </p>
+
+  <div class="dependency-chain">
+    <strong>Foundational Survey Fabric</strong> &nbsp;→&nbsp; <strong>Spatial Ground</strong> &nbsp;→&nbsp; <strong>General Spatial Interpretation</strong> &nbsp;→&nbsp; <strong>Parcel Cadastre</strong>
+  </div>
+
+  <p>
+    No equivalent strict chain is presently established among Identity / Rights / Control, Persistence / Provenance, Interoperability, World Runtime, and Experience Architecture. Those domains may contain cross-dependencies, downstream relationships, or implementation-facing dependencies that should be established individually as inquiry proceeds.
+  </p>
+
+  <div class="status-legend">
+    <div class="status-legend-card">
+      <h3>Established</h3>
+      <p>The domain's architectural responsibility and governing structure are sufficiently developed to function as an active architectural record.</p>
+    </div>
+    <div class="status-legend-card">
+      <h3>Provisional</h3>
+      <p>The domain is recognized and its general responsibility and boundary are understood, while substantial internal architecture remains unresolved.</p>
+    </div>
+    <div class="status-legend-card reserved">
+      <h3>Reserved</h3>
+      <p>BitPangea has determined that a distinct architectural responsibility requires a permanent institutional home, while its governing architecture remains intentionally undeveloped.</p>
+    </div>
+  </div>
+
+  <p style="margin-top:28px;">
+    <strong>Status and order are independent.</strong> Established, Provisional, and Reserved describe architectural maturity or institutional standing. They do not determine dependency position, presentation order, or working priority.
+  </p>
+</section>
+
+<section class="section">
+  <h2>Architecture Domain Catalog</h2>
+  <p>The following nine domains comprise the current Architecture membership. Their sequence below is a stable presentation order for the institutional catalog and should not be read as a complete dependency chain.</p>
 </section>
 
 <div class="architecture-index">
@@ -562,7 +701,7 @@ blockquote {
   <h2>Architectural Boundaries</h2>
 
   <p>
-    The Architecture is intentionally layered. A lower domain should provide the stable reference or capability needed by higher domains without absorbing the identities, meanings, rights, state, or experiences those higher domains create.
+    The Architecture contains layered relationships where dependency has been demonstrated, but it is not presumed to be one universal linear stack. Where a lower domain provides stable reference or capability to a dependent domain above it, that lower domain should do so without absorbing the identities, meanings, rights, state, or experiences the dependent domain creates.
   </p>
 
   <p>
@@ -593,7 +732,7 @@ blockquote {
   <p>This is The Architecture.</p>
   <p>The structural design record of BitPangea.</p>
   <p>
-    One World. Distinct architectural domains. A durable structure for preserving permanent truth while allowing systems, institutions, technologies, and experience to evolve above it.
+    One World. Nine recognized architectural domains. Demonstrated dependencies where they are known. A durable structure for preserving permanent truth while allowing systems, institutions, technologies, and experience to evolve above it.
   </p>
 </section>
 
