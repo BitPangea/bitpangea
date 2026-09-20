@@ -19,7 +19,7 @@ BitPangea is a digital supercontinent exploring finite geography, constitutional
 - No Expansion
 - No Duplication
 
-Everything else remains open to discovery.
+Everything else remains open to constitutional discovery and intentional design.
 
 ---
 
@@ -31,11 +31,11 @@ Everything else remains open to discovery.
 
 ## Overview
 
-BitPangea is an active digital-world, constitutional, and cartographic exploration project.
+BitPangea is an active digital-world, constitutional, cartographic, and architectural design project.
 
-The project begins by defining the World before determining how later systems, institutions, or forms of civilization should function within it.
+The project begins by establishing what the World must remain, then intentionally designs what the World may become within those constraints.
 
-Its development is organized through foundational works, conceptual Domains, public institutions, preserved records, and experiential series.
+Its development is organized through foundational works, constitutional Domains, The Atlas and its Architecture, public institutions, preserved records, and experiential series.
 
 ---
 
@@ -43,7 +43,7 @@ Its development is organized through foundational works, conceptual Domains, pub
 
 BitPangea remains under active development.
 
-Its constitutional, cartographic, relational, historical, and institutional architecture continues to evolve.
+Its constitutional, cartographic, architectural, historical, and institutional record continues to evolve. The Creator Period is actively developing The Atlas while preserving the distinction between permanent World truth, architectural design, and future implementation.
 
 The project does not presently represent:
 
@@ -125,7 +125,7 @@ Preserves records, references, earlier versions, and historical materials of end
 
 ### The Atlas
 
-The canonical cartographic institution of BitPangea, preserving the developing map and spatial expression of the World.
+The canonical map and structural design record of the World. The Atlas preserves what BitPangea now structurally is, what is being designed, what remains provisional or open, and the Architecture through which permanent World truth receives durable structural expression.
 
 ### The Chronicle
 
@@ -169,19 +169,47 @@ A numbered series of philosophical, constitutional, and experiential works prese
 
 ---
 
-# Domain Architecture
+# Constitutional Domain Architecture
 
-BitPangea’s conceptual development is organized through five major Domains.
+The Codex presently recognizes three constitutional Domains.
 
-| Domain | Foundational Question |
-|---|---|
-| **Structural (ST)** | What is the World? |
-| **Relational (RL)** | How do things relate? |
-| **World Properties (WP)** | What exists within the World? |
-| **Epistemic (EP)** | How is the World known? |
-| **Civilizational (CV)** | What do inhabitants do? |
+| Domain | Foundational Question | Standing |
+|---|---|---|
+| **Structural (ST)** | What is the World? | Presently complete at its first-order foundational level; constitutionally open |
+| **Relational (RL)** | How do things relate? | Presently complete in its first-order grammar; constitutionally open |
+| **World Properties (WP)** | What properties does the World possess? | Open; presently resting |
 
-The Domains provide an ordered progression from the existence and structure of the World toward knowledge and future civilization.
+Future Domains are not predetermined stages in a fixed sequence. They may be recognized only when constitutional inquiry demonstrates that a distinct field of knowledge requires its own enduring institutional home.
+
+Discovery determines order. Order does not determine discovery.
+
+---
+
+# The Architecture
+
+Within The Atlas, **The Architecture** is the institutional catalog of the enduring systems through which BitPangea is made viable.
+
+It currently recognizes nine architectural domains:
+
+1. **Foundational Survey Fabric** — Established
+2. **Spatial Ground** — Provisional
+3. **General Spatial Interpretation** — Provisional
+4. **Parcel Cadastre** — Provisional
+5. **Identity / Rights / Control** — Provisional
+6. **Persistence / Provenance** — Provisional
+7. **Interoperability** — Provisional
+8. **World Runtime** — Reserved
+9. **Experience Architecture** — Provisional
+
+Architecture membership does not by itself establish dependency order.
+
+The demonstrated spatial dependency is:
+
+**Foundational Survey Fabric → Spatial Ground → General Spatial Interpretation → Parcel Cadastre**
+
+The remaining architectural relationships are resolved only where dependency is actually demonstrated.
+
+The **Foundational Survey Fabric** is institutionally established while its exact mathematics remain deliberately unresolved. It is ready to support Spatial Ground inquiry, but not yet ready for mathematical implementation.
 
 ---
 
@@ -191,7 +219,7 @@ BitPangea develops according to several recurring principles:
 
 ### Finitude
 
-The World is bounded and cannot be arbitrarily expanded.
+The World is finite, complete in Extent, and cannot be arbitrarily expanded. Finitude does not by itself require a geographic edge, perimeter, exterior, or conventional boundary.
 
 ### Permanence
 
@@ -203,7 +231,11 @@ The World should be carried forward with restraint and responsibility.
 
 ### Discovery
 
-Understanding should reveal what belongs within the World rather than create concepts without foundation.
+Constitutional understanding should reveal what the World requires rather than create concepts without foundation.
+
+### Intentional Design
+
+Within constitutional constraints, The Atlas may intentionally design what the Constitution leaves open. Not everything that exists in BitPangea must become a Codex.
 
 ### Continuity
 
