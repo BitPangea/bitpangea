@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Requirements Traceability Matrix | Foundational Survey Fabric | BitPangea</title>
-<meta name="description" content="Day #108 Requirements Traceability Matrix for Foundational Survey Fabric Findings #1–#85."/>
+<meta content="Requirements Traceability Matrix for Foundational Survey Fabric Findings #1–#85, refreshed on Day #115 for Reference Vector reverse-traceability closure." name="description"/>
 <style>
 *{box-sizing:border-box}
 html,body{margin:0;background:#02050a;color:#fff;font-family:Arial,Helvetica,sans-serif}
@@ -48,39 +49,34 @@ tr.explicit-row td:first-child{border-left:3px solid rgba(0,200,215,.45)}
 <main class="page">
 <div class="eyebrow">The Atlas · The Architecture · Foundational Survey Fabric</div>
 <h1>Requirements Traceability Matrix</h1>
-<div class="subtitle">Day #108 · Findings #1–#85</div>
-
+<div class="subtitle">Day #108 Matrix · Day #115 Reference Vector Traceability Refresh · Findings #1–#85</div>
 <div class="intro">
 <p>This matrix traces every audited Requirement to its downstream Specification section(s), Conformance section(s), and Reference Vector category/categories. It distinguishes what the current audited pages already cite from traceability assignments that are logically supported by the audited architecture but are not yet explicit in those pages.</p>
+<p><strong>Day #115 refresh:</strong> Reference Vector subsection reverse traceability has now been completed across all twelve vector sections. The Reference Vector column has been updated where today’s citation-closure work made previously derived mappings explicit. Specification and Conformance traceability remain unchanged from the Day #108 audit.</p>
 </div>
-
 <blockquote>
 <strong>Traceability rule:</strong> Every Requirement must have a downstream home. Every downstream obligation must be traceable back to an authoritative Requirement. A missing citation is a documentation-level traceability gap until proved otherwise—not automatically an architectural defect.
 </blockquote>
-
 <div class="summary">
-  <div class="card"><strong>85</strong><span>Audited Findings</span></div>
-  <div class="card"><strong>28</strong><span>Rows Fully Explicit Today</span></div>
-  <div class="card"><strong>55</strong><span>Rows Needing ≥1 Basis Update</span></div>
-  <div class="card"><strong>2</strong><span>Specification N/A by Design</span></div>
+<div class="card"><strong>85</strong><span>Audited Findings</span></div>
+<div class="card"><strong>28</strong><span>Rows Fully Explicit Today</span></div>
+<div class="card"><strong>55</strong><span>Rows Needing ≥1 Basis Update</span></div>
+<div class="card"><strong>2</strong><span>Specification N/A by Design</span></div>
 </div>
-
 <div class="legend">
 <span class="tag explicit">E</span> Explicitly named/ranged in the current audited downstream page's Requirements Basis.
 <span class="tag derived">D</span> Derived traceability assignment; supported by the audited requirement and downstream section scope, but not yet explicitly cited there.
 <span class="tag na">N/A</span> Intentionally outside that downstream framework.
 </div>
-
 <div class="controls">
-  <input id="search" type="search" placeholder="Filter by finding, title, or section..." />
-  <select id="status">
-    <option value="">All rows</option>
-    <option value="Fully explicit">Fully explicit</option>
-    <option value="Basis update needed">Basis update needed</option>
-    <option value="Specification N/A">Specification N/A by design</option>
-  </select>
+<input id="search" placeholder="Filter by finding, title, or section..." type="search"/>
+<select id="status">
+<option value="">All rows</option>
+<option value="Fully explicit">Fully explicit</option>
+<option value="Basis update needed">Basis update needed</option>
+<option value="Specification N/A">Specification N/A by design</option>
+</select>
 </div>
-
 <div class="table-wrap">
 <table id="matrix">
 <thead>
@@ -94,694 +90,690 @@ tr.explicit-row td:first-child{border-left:3px solid rgba(0,200,215,.45)}
 </tr>
 </thead>
 <tbody>
-
-<tr class="needs-update" data-status="Basis update needed" data-finding="1">
-  <td class="finding">#1</td>
-  <td><div class="req-title">Minimum Permanent Spatial Content</div><div class="domain">I · Foundational Purpose and Scope</div></td>
-  <td>S01 Survey Domain &amp; Ground Model <span class="tag derived">D</span>; S07 Computability Rules <span class="tag derived">D</span></td>
-  <td>C02 Mandatory Core <span class="tag derived">D</span>; C10 Conformance Report &amp; Declaration <span class="tag derived">D</span></td>
-  <td>V12 Pathological Edge Cases <span class="tag derived">D</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="2">
-  <td class="finding">#2</td>
-  <td><div class="req-title">Survey Units Are Not Parcels</div><div class="domain">I · Foundational Purpose and Scope</div></td>
-  <td>S01 Survey Domain &amp; Ground Model <span class="tag derived">D</span>; S04 Spatial Expressions &amp; Geometry <span class="tag derived">D</span></td>
-  <td>C02 Mandatory Core <span class="tag derived">D</span>; C09 Failure Conditions <span class="tag derived">D</span></td>
-  <td>V05 Geometry Vectors <span class="tag derived">D</span>; V12 Pathological Edge Cases <span class="tag derived">D</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="3">
-  <td class="finding">#3</td>
-  <td><div class="req-title">Immutability Protects Spatial Identity</div><div class="domain">I · Foundational Purpose and Scope</div></td>
-  <td>S03 Canonical Addressing &amp; Precision <span class="tag derived">D</span>; S06 Serialization &amp; Specification Identity <span class="tag derived">D</span></td>
-  <td>C02 Mandatory Core <span class="tag derived">D</span>; C07 Version Compatibility <span class="tag derived">D</span></td>
-  <td>V11 Version / Conformance Vectors <span class="tag derived">D</span>; V12 Pathological Edge Cases <span class="tag derived">D</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="4">
-  <td class="finding">#4</td>
-  <td><div class="req-title">Higher-Layer Functions Remain Outside the Survey Fabric</div><div class="domain">I · Foundational Purpose and Scope</div></td>
-  <td>S01 Survey Domain &amp; Ground Model <span class="tag derived">D</span>; S04 Spatial Expressions &amp; Geometry <span class="tag derived">D</span></td>
-  <td>C02 Mandatory Core <span class="tag derived">D</span>; C09 Failure Conditions <span class="tag derived">D</span></td>
-  <td>V12 Pathological Edge Cases <span class="tag derived">D</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="5">
-  <td class="finding">#5</td>
-  <td><div class="req-title">Extension Over Mutation</div><div class="domain">I · Foundational Purpose and Scope</div></td>
-  <td>S03 Canonical Addressing &amp; Precision <span class="tag derived">D</span>; S06 Serialization &amp; Specification Identity <span class="tag derived">D</span></td>
-  <td>C07 Version Compatibility <span class="tag derived">D</span>; C09 Failure Conditions <span class="tag derived">D</span></td>
-  <td>V11 Version / Conformance Vectors <span class="tag derived">D</span>; V12 Pathological Edge Cases <span class="tag derived">D</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="6">
-  <td class="finding">#6</td>
-  <td><div class="req-title">Preserve Unknown Future Use</div><div class="domain">I · Foundational Purpose and Scope</div></td>
-  <td>S01 Survey Domain &amp; Ground Model <span class="tag derived">D</span>; S04 Spatial Expressions &amp; Geometry <span class="tag derived">D</span></td>
-  <td>C01 Conformance Classes <span class="tag derived">D</span>; C10 Conformance Report &amp; Declaration <span class="tag derived">D</span></td>
-  <td>V11 Version / Conformance Vectors <span class="tag derived">D</span>; V12 Pathological Edge Cases <span class="tag derived">D</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="7">
-  <td class="finding">#7</td>
-  <td><div class="req-title">Universal Addressability Within the Survey Domain</div><div class="domain">II · Addressability, Canonical Meaning, and Refinement</div></td>
-  <td>S03 Canonical Addressing &amp; Precision <span class="tag explicit">E</span></td>
-  <td>C02 Mandatory Core <span class="tag derived">D</span>; C04 Validation Behavior <span class="tag derived">D</span></td>
-  <td>V01 Addressing Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="8">
-  <td class="finding">#8</td>
-  <td><div class="req-title">Permanent Canonical Address Meaning</div><div class="domain">II · Addressability, Canonical Meaning, and Refinement</div></td>
-  <td>S03 Canonical Addressing &amp; Precision <span class="tag explicit">E</span></td>
-  <td>C02 Mandatory Core <span class="tag derived">D</span>; C03 Canonical Result Equivalence <span class="tag derived">D</span>; C07 Version Compatibility <span class="tag derived">D</span></td>
-  <td>V01 Addressing Vectors <span class="tag explicit">E</span>; V06 Normalization Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="9">
-  <td class="finding">#9</td>
-  <td><div class="req-title">Precision by Extension</div><div class="domain">II · Addressability, Canonical Meaning, and Refinement</div></td>
-  <td>S03 Canonical Addressing &amp; Precision <span class="tag explicit">E</span></td>
-  <td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span>; C07 Version Compatibility <span class="tag derived">D</span></td>
-  <td>V01 Addressing Vectors <span class="tag explicit">E</span>; V08 Precision Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="10">
-  <td class="finding">#10</td>
-  <td><div class="req-title">Independent Implementations, Identical Results</div><div class="domain">II · Addressability, Canonical Meaning, and Refinement</div></td>
-  <td>S07 Computability Rules <span class="tag derived">D</span></td>
-  <td>C01 Conformance Classes <span class="tag explicit">E</span>; C03 Canonical Result Equivalence <span class="tag explicit">E</span>; C08 Independent Implementation Requirement <span class="tag explicit">E</span>; C09 Failure Conditions <span class="tag explicit">E</span>; C10 Conformance Report &amp; Declaration <span class="tag explicit">E</span></td>
-  <td>V01 Addressing Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span>; V10 Serialization Vectors <span class="tag explicit">E</span>; V11 Version / Conformance Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="11">
-  <td class="finding">#11</td>
-  <td><div class="req-title">The Survey Fabric Knows Space, Not the Things in Space</div><div class="domain">II · Addressability, Canonical Meaning, and Refinement</div></td>
-  <td>S04 Spatial Expressions &amp; Geometry <span class="tag derived">D</span></td>
-  <td>C02 Mandatory Core <span class="tag derived">D</span>; C09 Failure Conditions <span class="tag derived">D</span></td>
-  <td>V05 Geometry Vectors <span class="tag derived">D</span>; V12 Pathological Edge Cases <span class="tag derived">D</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="12">
-  <td class="finding">#12</td>
-  <td><div class="req-title">Derived Spatial Relationships</div><div class="domain">II · Addressability, Canonical Meaning, and Refinement</div></td>
-  <td>S04 Spatial Expressions &amp; Geometry <span class="tag derived">D</span>; S05 Canonical Operations <span class="tag derived">D</span></td>
-  <td>C03 Canonical Result Equivalence <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
-  <td>V05 Geometry Vectors <span class="tag derived">D</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="13">
-  <td class="finding">#13</td>
-  <td><div class="req-title">Survey Domain Need Not Match World Form</div><div class="domain">II · Addressability, Canonical Meaning, and Refinement</div></td>
-  <td>S01 Survey Domain &amp; Ground Model <span class="tag derived">D</span></td>
-  <td>C02 Mandatory Core <span class="tag derived">D</span>; C04 Validation Behavior <span class="tag derived">D</span>; C09 Failure Conditions <span class="tag derived">D</span></td>
-  <td>V02 Domain-Boundary Vectors <span class="tag explicit">E</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="14">
-  <td class="finding">#14</td>
-  <td><div class="req-title">Specification Over Materialization</div><div class="domain">II · Addressability, Canonical Meaning, and Refinement</div></td>
-  <td>S03 Canonical Addressing &amp; Precision <span class="tag derived">D</span>; S07 Computability Rules <span class="tag derived">D</span></td>
-  <td>C08 Independent Implementation Requirement <span class="tag explicit">E</span></td>
-  <td>V01 Addressing Vectors <span class="tag derived">D</span>; V08 Precision Vectors <span class="tag derived">D</span>; V12 Pathological Edge Cases <span class="tag derived">D</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="15">
-  <td class="finding">#15</td>
-  <td><div class="req-title">One Foundational Reference, Many Derived Views</div><div class="domain">II · Addressability, Canonical Meaning, and Refinement</div></td>
-  <td>S02 Canonical Frame &amp; Measurement <span class="tag derived">D</span>; S04 Spatial Expressions &amp; Geometry <span class="tag derived">D</span></td>
-  <td>C03 Canonical Result Equivalence <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
-  <td>V07 Transformation Vectors <span class="tag explicit">E</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="16">
-  <td class="finding">#16</td>
-  <td><div class="req-title">Canonical Authority Is Governed Above the Mathematics</div><div class="domain">II · Addressability, Canonical Meaning, and Refinement</div></td>
-  <td>S06 Serialization &amp; Specification Identity <span class="tag derived">D</span></td>
-  <td>C07 Version Compatibility <span class="tag explicit">E</span>; C10 Conformance Report &amp; Declaration <span class="tag explicit">E</span></td>
-  <td>V11 Version / Conformance Vectors <span class="tag explicit">E</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="17">
-  <td class="finding">#17</td>
-  <td><div class="req-title">Specification Evolution Without Spatial Mutation</div><div class="domain">II · Addressability, Canonical Meaning, and Refinement</div></td>
-  <td>S06 Serialization &amp; Specification Identity <span class="tag derived">D</span></td>
-  <td>C07 Version Compatibility <span class="tag explicit">E</span>; C10 Conformance Report &amp; Declaration <span class="tag explicit">E</span></td>
-  <td>V11 Version / Conformance Vectors <span class="tag explicit">E</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="18">
-  <td class="finding">#18</td>
-  <td><div class="req-title">Cells Are Not Foundational Objects by Default</div><div class="domain">III · Ontology and Structural Neutrality</div></td>
-  <td>S01 Survey Domain &amp; Ground Model <span class="tag explicit">E</span></td>
-  <td>C02 Mandatory Core <span class="tag derived">D</span>; C09 Failure Conditions <span class="tag derived">D</span></td>
-  <td>V02 Domain-Boundary Vectors <span class="tag derived">D</span>; V12 Pathological Edge Cases <span class="tag derived">D</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="19">
-  <td class="finding">#19</td>
-  <td><div class="req-title">Finite Canonical Survey Domain</div><div class="domain">III · Ontology and Structural Neutrality</div></td>
-  <td>S01 Survey Domain &amp; Ground Model <span class="tag explicit">E</span></td>
-  <td>C02 Mandatory Core <span class="tag derived">D</span>; C04 Validation Behavior <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
-  <td>V02 Domain-Boundary Vectors <span class="tag explicit">E</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="20">
-  <td class="finding">#20</td>
-  <td><div class="req-title">Extensible Precision</div><div class="domain">III · Ontology and Structural Neutrality</div></td>
-  <td>S03 Canonical Addressing &amp; Precision <span class="tag explicit">E</span></td>
-  <td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
-  <td>V01 Addressing Vectors <span class="tag explicit">E</span>; V08 Precision Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="21">
-  <td class="finding">#21</td>
-  <td><div class="req-title">Self-Resolving Canonical Addresses</div><div class="domain">III · Ontology and Structural Neutrality</div></td>
-  <td>S03 Canonical Addressing &amp; Precision <span class="tag explicit">E</span></td>
-  <td>C02 Mandatory Core <span class="tag derived">D</span>; C04 Validation Behavior <span class="tag derived">D</span></td>
-  <td>V01 Addressing Vectors <span class="tag explicit">E</span>; V06 Normalization Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="explicit-row" data-status="Fully explicit" data-finding="22">
-  <td class="finding">#22</td>
-  <td><div class="req-title">Canonical References Are Never Reused</div><div class="domain">III · Ontology and Structural Neutrality</div></td>
-  <td>S03 Canonical Addressing &amp; Precision <span class="tag explicit">E</span></td>
-  <td>C07 Version Compatibility <span class="tag explicit">E</span></td>
-  <td>V01 Addressing Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span>; V11 Version / Conformance Vectors <span class="tag explicit">E</span></td>
-  <td>Fully explicit</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="23">
-  <td class="finding">#23</td>
-  <td><div class="req-title">Two-Dimensional Planar Ground</div><div class="domain">III · Ontology and Structural Neutrality</div></td>
-  <td>S01 Survey Domain &amp; Ground Model <span class="tag explicit">E</span></td>
-  <td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
-  <td>V02 Domain-Boundary Vectors <span class="tag explicit">E</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="explicit-row" data-status="Fully explicit" data-finding="24">
-  <td class="finding">#24</td>
-  <td><div class="req-title">Exact Foundational Mathematics</div><div class="domain">III · Ontology and Structural Neutrality</div></td>
-  <td>S04 Spatial Expressions &amp; Geometry <span class="tag explicit">E</span></td>
-  <td>C01 Conformance Classes <span class="tag explicit">E</span>; C03 Canonical Result Equivalence <span class="tag explicit">E</span>; C05 Exactness Requirements <span class="tag explicit">E</span>; C08 Independent Implementation Requirement <span class="tag explicit">E</span>; C09 Failure Conditions <span class="tag explicit">E</span></td>
-  <td>V03 Pang Measurement Vectors <span class="tag explicit">E</span>; V05 Geometry Vectors <span class="tag explicit">E</span>; V08 Precision Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
-  <td>Fully explicit</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="25">
-  <td class="finding">#25</td>
-  <td><div class="req-title">Boundaries Are Not Foundational Semantic Objects</div><div class="domain">III · Ontology and Structural Neutrality</div></td>
-  <td>S04 Spatial Expressions &amp; Geometry <span class="tag explicit">E</span></td>
-  <td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span>; C09 Failure Conditions <span class="tag derived">D</span></td>
-  <td>V05 Geometry Vectors <span class="tag explicit">E</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="26">
-  <td class="finding">#26</td>
-  <td><div class="req-title">Semantic Containment Belongs Above</div><div class="domain">III · Ontology and Structural Neutrality</div></td>
-  <td>S04 Spatial Expressions &amp; Geometry <span class="tag explicit">E</span></td>
-  <td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
-  <td>V05 Geometry Vectors <span class="tag derived">D</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="27">
-  <td class="finding">#27</td>
-  <td><div class="req-title">Space Without Time</div><div class="domain">III · Ontology and Structural Neutrality</div></td>
-  <td>S04 Spatial Expressions &amp; Geometry <span class="tag explicit">E</span></td>
-  <td>C02 Mandatory Core <span class="tag derived">D</span>; C07 Version Compatibility <span class="tag derived">D</span></td>
-  <td>V01 Addressing Vectors <span class="tag derived">D</span>; V11 Version / Conformance Vectors <span class="tag derived">D</span>; V12 Pathological Edge Cases <span class="tag derived">D</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="28">
-  <td class="finding">#28</td>
-  <td><div class="req-title">Higher-Layer Geometry Need Not Align to the Grid</div><div class="domain">III · Ontology and Structural Neutrality</div></td>
-  <td>S01 Survey Domain &amp; Ground Model <span class="tag explicit">E</span>; S04 Spatial Expressions &amp; Geometry <span class="tag explicit">E</span></td>
-  <td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span>; C09 Failure Conditions <span class="tag derived">D</span></td>
-  <td>V05 Geometry Vectors <span class="tag derived">D</span>; V12 Pathological Edge Cases <span class="tag derived">D</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="29">
-  <td class="finding">#29</td>
-  <td><div class="req-title">World Membership Belongs Above</div><div class="domain">III · Ontology and Structural Neutrality</div></td>
-  <td>S01 Survey Domain &amp; Ground Model <span class="tag explicit">E</span>; S04 Spatial Expressions &amp; Geometry <span class="tag explicit">E</span></td>
-  <td>C02 Mandatory Core <span class="tag derived">D</span>; C04 Validation Behavior <span class="tag derived">D</span>; C09 Failure Conditions <span class="tag derived">D</span></td>
-  <td>V02 Domain-Boundary Vectors <span class="tag explicit">E</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="explicit-row" data-status="Fully explicit" data-finding="30">
-  <td class="finding">#30</td>
-  <td><div class="req-title">Deterministic Canonicalization</div><div class="domain">III · Ontology and Structural Neutrality</div></td>
-  <td>S03 Canonical Addressing &amp; Precision <span class="tag explicit">E</span>; S04 Spatial Expressions &amp; Geometry <span class="tag explicit">E</span></td>
-  <td>C01 Conformance Classes <span class="tag explicit">E</span>; C03 Canonical Result Equivalence <span class="tag explicit">E</span>; C04 Validation Behavior <span class="tag explicit">E</span>; C05 Exactness Requirements <span class="tag explicit">E</span>; C06 Serialization Compatibility <span class="tag explicit">E</span>; C09 Failure Conditions <span class="tag explicit">E</span></td>
-  <td>V01 Addressing Vectors <span class="tag explicit">E</span>; V06 Normalization Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span>; V10 Serialization Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
-  <td>Fully explicit</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="31">
-  <td class="finding">#31</td>
-  <td><div class="req-title">Canonical Spatial Extents</div><div class="domain">III · Ontology and Structural Neutrality</div></td>
-  <td>S04 Spatial Expressions &amp; Geometry <span class="tag explicit">E</span></td>
-  <td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
-  <td>V05 Geometry Vectors <span class="tag explicit">E</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="explicit-row" data-status="Fully explicit" data-finding="32">
-  <td class="finding">#32</td>
-  <td><div class="req-title">Exact Edge Semantics</div><div class="domain">III · Ontology and Structural Neutrality</div></td>
-  <td>S04 Spatial Expressions &amp; Geometry <span class="tag explicit">E</span></td>
-  <td>C01 Conformance Classes <span class="tag explicit">E</span></td>
-  <td>V02 Domain-Boundary Vectors <span class="tag explicit">E</span>; V05 Geometry Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
-  <td>Fully explicit</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="33">
-  <td class="finding">#33</td>
-  <td><div class="req-title">One Mathematics, Many Spatial Expressions</div><div class="domain">III · Ontology and Structural Neutrality</div></td>
-  <td>S04 Spatial Expressions &amp; Geometry <span class="tag explicit">E</span></td>
-  <td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
-  <td>V05 Geometry Vectors <span class="tag explicit">E</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="34">
-  <td class="finding">#34</td>
-  <td><div class="req-title">Native Spatial Scale: Pang</div><div class="domain">IV · Native Measurement and Orientation</div></td>
-  <td>S02 Canonical Frame &amp; Measurement <span class="tag explicit">E</span></td>
-  <td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
-  <td>V03 Pang Measurement Vectors <span class="tag explicit">E</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="35">
-  <td class="finding">#35</td>
-  <td><div class="req-title">Pang Defines Scale</div><div class="domain">IV · Native Measurement and Orientation</div></td>
-  <td>S02 Canonical Frame &amp; Measurement <span class="tag explicit">E</span></td>
-  <td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
-  <td>V03 Pang Measurement Vectors <span class="tag explicit">E</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="36">
-  <td class="finding">#36</td>
-  <td><div class="req-title">Canonical Spatial Separation</div><div class="domain">IV · Native Measurement and Orientation</div></td>
-  <td>S02 Canonical Frame &amp; Measurement <span class="tag explicit">E</span></td>
-  <td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
-  <td>V03 Pang Measurement Vectors <span class="tag explicit">E</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="37">
-  <td class="finding">#37</td>
-  <td><div class="req-title">Canonical Area</div><div class="domain">IV · Native Measurement and Orientation</div></td>
-  <td>S02 Canonical Frame &amp; Measurement <span class="tag explicit">E</span></td>
-  <td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
-  <td>V03 Pang Measurement Vectors <span class="tag explicit">E</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="38">
-  <td class="finding">#38</td>
-  <td><div class="req-title">Native Canonical Directions</div><div class="domain">IV · Native Measurement and Orientation</div></td>
-  <td>S02 Canonical Frame &amp; Measurement <span class="tag explicit">E</span></td>
-  <td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
-  <td>V04 Orientation Vectors <span class="tag explicit">E</span>; V07 Transformation Vectors <span class="tag explicit">E</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="39">
-  <td class="finding">#39</td>
-  <td><div class="req-title">Permanent Canonical Origin</div><div class="domain">IV · Native Measurement and Orientation</div></td>
-  <td>S02 Canonical Frame &amp; Measurement <span class="tag explicit">E</span></td>
-  <td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
-  <td>V02 Domain-Boundary Vectors <span class="tag explicit">E</span>; V04 Orientation Vectors <span class="tag explicit">E</span>; V07 Transformation Vectors <span class="tag explicit">E</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="40">
-  <td class="finding">#40</td>
-  <td><div class="req-title">One Global Canonical Frame</div><div class="domain">IV · Native Measurement and Orientation</div></td>
-  <td>S02 Canonical Frame &amp; Measurement <span class="tag explicit">E</span></td>
-  <td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
-  <td>V02 Domain-Boundary Vectors <span class="tag explicit">E</span>; V04 Orientation Vectors <span class="tag explicit">E</span>; V07 Transformation Vectors <span class="tag explicit">E</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="41">
-  <td class="finding">#41</td>
-  <td><div class="req-title">Address and Pang Measurement Must Agree</div><div class="domain">IV · Native Measurement and Orientation</div></td>
-  <td>S02 Canonical Frame &amp; Measurement <span class="tag explicit">E</span>; S03 Canonical Addressing &amp; Precision <span class="tag explicit">E</span></td>
-  <td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
-  <td>V01 Addressing Vectors <span class="tag explicit">E</span>; V03 Pang Measurement Vectors <span class="tag explicit">E</span>; V04 Orientation Vectors <span class="tag explicit">E</span>; V07 Transformation Vectors <span class="tag explicit">E</span>; V08 Precision Vectors <span class="tag explicit">E</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="42">
-  <td class="finding">#42</td>
-  <td><div class="req-title">Absolute Canonical Reference</div><div class="domain">IV · Native Measurement and Orientation</div></td>
-  <td>S02 Canonical Frame &amp; Measurement <span class="tag explicit">E</span>; S03 Canonical Addressing &amp; Precision <span class="tag explicit">E</span></td>
-  <td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
-  <td>V01 Addressing Vectors <span class="tag explicit">E</span>; V04 Orientation Vectors <span class="tag explicit">E</span>; V07 Transformation Vectors <span class="tag explicit">E</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="43">
-  <td class="finding">#43</td>
-  <td><div class="req-title">Canonical Angular System</div><div class="domain">IV · Native Measurement and Orientation</div></td>
-  <td>S02 Canonical Frame &amp; Measurement <span class="tag explicit">E</span></td>
-  <td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
-  <td>V04 Orientation Vectors <span class="tag explicit">E</span>; V07 Transformation Vectors <span class="tag explicit">E</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="44">
-  <td class="finding">#44</td>
-  <td><div class="req-title">Exact Continuity and Connectedness</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
-  <td>S04 Spatial Expressions &amp; Geometry <span class="tag explicit">E</span></td>
-  <td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
-  <td>V05 Geometry Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="45">
-  <td class="finding">#45</td>
-  <td><div class="req-title">Derived Spatial Predicates</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
-  <td>S04 Spatial Expressions &amp; Geometry <span class="tag explicit">E</span></td>
-  <td>C02 Mandatory Core <span class="tag derived">D</span>; C03 Canonical Result Equivalence <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
-  <td>V05 Geometry Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="46">
-  <td class="finding">#46</td>
-  <td><div class="req-title">No Entity Identity in the Survey Fabric</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
-  <td>S04 Spatial Expressions &amp; Geometry <span class="tag explicit">E</span></td>
-  <td>C02 Mandatory Core <span class="tag derived">D</span>; C09 Failure Conditions <span class="tag derived">D</span></td>
-  <td>V05 Geometry Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="47">
-  <td class="finding">#47</td>
-  <td><div class="req-title">Nonexclusive Spatial Reference</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
-  <td>S04 Spatial Expressions &amp; Geometry <span class="tag explicit">E</span></td>
-  <td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
-  <td>V05 Geometry Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="48">
-  <td class="finding">#48</td>
-  <td><div class="req-title">Exact Survey Domain Limits</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
-  <td>S01 Survey Domain &amp; Ground Model <span class="tag explicit">E</span>; S04 Spatial Expressions &amp; Geometry <span class="tag explicit">E</span></td>
-  <td>C02 Mandatory Core <span class="tag derived">D</span>; C04 Validation Behavior <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
-  <td>V02 Domain-Boundary Vectors <span class="tag explicit">E</span>; V05 Geometry Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="49">
-  <td class="finding">#49</td>
-  <td><div class="req-title">No Privileged Foundational Center</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
-  <td>S01 Survey Domain &amp; Ground Model <span class="tag explicit">E</span>; S04 Spatial Expressions &amp; Geometry <span class="tag explicit">E</span></td>
-  <td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
-  <td>V02 Domain-Boundary Vectors <span class="tag explicit">E</span>; V05 Geometry Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="50">
-  <td class="finding">#50</td>
-  <td><div class="req-title">Transform the View, Not the Truth</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
-  <td>S04 Spatial Expressions &amp; Geometry <span class="tag explicit">E</span></td>
-  <td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
-  <td>V04 Orientation Vectors <span class="tag explicit">E</span>; V05 Geometry Vectors <span class="tag explicit">E</span>; V07 Transformation Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="51">
-  <td class="finding">#51</td>
-  <td><div class="req-title">Elevation and Terrain Belong Above</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
-  <td>S01 Survey Domain &amp; Ground Model <span class="tag explicit">E</span></td>
-  <td>C02 Mandatory Core <span class="tag derived">D</span>; C09 Failure Conditions <span class="tag derived">D</span></td>
-  <td>V05 Geometry Vectors <span class="tag derived">D</span>; V12 Pathological Edge Cases <span class="tag derived">D</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="52">
-  <td class="finding">#52</td>
-  <td><div class="req-title">Surface Is a Higher-Layer Construct</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
-  <td>S01 Survey Domain &amp; Ground Model <span class="tag explicit">E</span></td>
-  <td>C02 Mandatory Core <span class="tag derived">D</span>; C09 Failure Conditions <span class="tag derived">D</span></td>
-  <td>V05 Geometry Vectors <span class="tag derived">D</span>; V12 Pathological Edge Cases <span class="tag derived">D</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="explicit-row" data-status="Fully explicit" data-finding="53">
-  <td class="finding">#53</td>
-  <td><div class="req-title">Uniform Pang Scale</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
-  <td>S02 Canonical Frame &amp; Measurement <span class="tag explicit">E</span></td>
-  <td>C05 Exactness Requirements <span class="tag explicit">E</span></td>
-  <td>V03 Pang Measurement Vectors <span class="tag explicit">E</span>; V04 Orientation Vectors <span class="tag explicit">E</span>; V07 Transformation Vectors <span class="tag explicit">E</span>; V08 Precision Vectors <span class="tag explicit">E</span></td>
-  <td>Fully explicit</td>
-</tr>
-<tr class="explicit-row" data-status="Fully explicit" data-finding="54">
-  <td class="finding">#54</td>
-  <td><div class="req-title">Sub-Pang Precision Through Exact Refinement</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
-  <td>S02 Canonical Frame &amp; Measurement <span class="tag explicit">E</span>; S03 Canonical Addressing &amp; Precision <span class="tag explicit">E</span></td>
-  <td>C05 Exactness Requirements <span class="tag explicit">E</span></td>
-  <td>V01 Addressing Vectors <span class="tag explicit">E</span>; V03 Pang Measurement Vectors <span class="tag explicit">E</span>; V08 Precision Vectors <span class="tag explicit">E</span></td>
-  <td>Fully explicit</td>
-</tr>
-<tr class="explicit-row" data-status="Fully explicit" data-finding="55">
-  <td class="finding">#55</td>
-  <td><div class="req-title">Canonical Path and Boundary Length</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
-  <td>S02 Canonical Frame &amp; Measurement <span class="tag explicit">E</span>; S05 Canonical Operations <span class="tag explicit">E</span></td>
-  <td>C05 Exactness Requirements <span class="tag explicit">E</span></td>
-  <td>V03 Pang Measurement Vectors <span class="tag explicit">E</span></td>
-  <td>Fully explicit</td>
-</tr>
-<tr class="explicit-row" data-status="Fully explicit" data-finding="56">
-  <td class="finding">#56</td>
-  <td><div class="req-title">Exact Spatial Composition</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
-  <td>S05 Canonical Operations <span class="tag explicit">E</span></td>
-  <td>C05 Exactness Requirements <span class="tag explicit">E</span></td>
-  <td>V05 Geometry Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
-  <td>Fully explicit</td>
-</tr>
-<tr class="explicit-row" data-status="Fully explicit" data-finding="57">
-  <td class="finding">#57</td>
-  <td><div class="req-title">Deterministic Validity and Normalization</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
-  <td>S05 Canonical Operations <span class="tag explicit">E</span></td>
-  <td>C01 Conformance Classes <span class="tag explicit">E</span>; C03 Canonical Result Equivalence <span class="tag explicit">E</span>; C04 Validation Behavior <span class="tag explicit">E</span>; C05 Exactness Requirements <span class="tag explicit">E</span>; C06 Serialization Compatibility <span class="tag explicit">E</span>; C09 Failure Conditions <span class="tag explicit">E</span>; C10 Conformance Report &amp; Declaration <span class="tag explicit">E</span></td>
-  <td>V01 Addressing Vectors <span class="tag explicit">E</span>; V02 Domain-Boundary Vectors <span class="tag explicit">E</span>; V06 Normalization Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span>; V10 Serialization Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
-  <td>Fully explicit</td>
-</tr>
-<tr class="explicit-row" data-status="Fully explicit" data-finding="58">
-  <td class="finding">#58</td>
-  <td><div class="req-title">Canonical Ordering Without Hierarchy</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
-  <td>S05 Canonical Operations <span class="tag explicit">E</span></td>
-  <td>C01 Conformance Classes <span class="tag explicit">E</span>; C03 Canonical Result Equivalence <span class="tag explicit">E</span>; C06 Serialization Compatibility <span class="tag explicit">E</span>; C10 Conformance Report &amp; Declaration <span class="tag explicit">E</span></td>
-  <td>V06 Normalization Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span>; V10 Serialization Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
-  <td>Fully explicit</td>
-</tr>
-<tr class="explicit-row" data-status="Fully explicit" data-finding="59">
-  <td class="finding">#59</td>
-  <td><div class="req-title">Canonical Serialization and Interchange</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
-  <td>S06 Serialization &amp; Specification Identity <span class="tag explicit">E</span></td>
-  <td>C01 Conformance Classes <span class="tag explicit">E</span>; C03 Canonical Result Equivalence <span class="tag explicit">E</span>; C06 Serialization Compatibility <span class="tag explicit">E</span>; C07 Version Compatibility <span class="tag explicit">E</span>; C10 Conformance Report &amp; Declaration <span class="tag explicit">E</span></td>
-  <td>V01 Addressing Vectors <span class="tag explicit">E</span>; V06 Normalization Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span>; V10 Serialization Vectors <span class="tag explicit">E</span>; V11 Version / Conformance Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
-  <td>Fully explicit</td>
-</tr>
-<tr class="explicit-row" data-status="Fully explicit" data-finding="60">
-  <td class="finding">#60</td>
-  <td><div class="req-title">Version the Standard, Not the Place</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
-  <td>S06 Serialization &amp; Specification Identity <span class="tag explicit">E</span></td>
-  <td>C01 Conformance Classes <span class="tag explicit">E</span>; C03 Canonical Result Equivalence <span class="tag explicit">E</span>; C06 Serialization Compatibility <span class="tag explicit">E</span>; C07 Version Compatibility <span class="tag explicit">E</span>; C10 Conformance Report &amp; Declaration <span class="tag explicit">E</span></td>
-  <td>V09 Invalid-Input Vectors <span class="tag explicit">E</span>; V10 Serialization Vectors <span class="tag explicit">E</span>; V11 Version / Conformance Vectors <span class="tag explicit">E</span></td>
-  <td>Fully explicit</td>
-</tr>
-<tr class="explicit-row" data-status="Fully explicit" data-finding="61">
-  <td class="finding">#61</td>
-  <td><div class="req-title">Spatial Meaning Independent of Verification Technology</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
-  <td>S06 Serialization &amp; Specification Identity <span class="tag explicit">E</span></td>
-  <td>C07 Version Compatibility <span class="tag explicit">E</span>; C08 Independent Implementation Requirement <span class="tag explicit">E</span></td>
-  <td>V10 Serialization Vectors <span class="tag explicit">E</span>; V11 Version / Conformance Vectors <span class="tag explicit">E</span></td>
-  <td>Fully explicit</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="62">
-  <td class="finding">#62</td>
-  <td><div class="req-title">Rights and Ownership Belong Above</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
-  <td>S04 Spatial Expressions &amp; Geometry <span class="tag derived">D</span></td>
-  <td>C02 Mandatory Core <span class="tag derived">D</span>; C09 Failure Conditions <span class="tag derived">D</span>; C10 Conformance Report &amp; Declaration <span class="tag derived">D</span></td>
-  <td>V12 Pathological Edge Cases <span class="tag derived">D</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="63">
-  <td class="finding">#63</td>
-  <td><div class="req-title">Openly Inspectable and Independently Implementable</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
-  <td>S06 Serialization &amp; Specification Identity <span class="tag derived">D</span>; S07 Computability Rules <span class="tag derived">D</span></td>
-  <td>C01 Conformance Classes <span class="tag explicit">E</span>; C03 Canonical Result Equivalence <span class="tag explicit">E</span>; C06 Serialization Compatibility <span class="tag explicit">E</span>; C08 Independent Implementation Requirement <span class="tag explicit">E</span>; C09 Failure Conditions <span class="tag explicit">E</span>; C10 Conformance Report &amp; Declaration <span class="tag explicit">E</span></td>
-  <td>V10 Serialization Vectors <span class="tag explicit">E</span>; V11 Version / Conformance Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="explicit-row" data-status="Fully explicit" data-finding="64">
-  <td class="finding">#64</td>
-  <td><div class="req-title">One Meaning, Many Durable Expressions</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
-  <td>S06 Serialization &amp; Specification Identity <span class="tag explicit">E</span></td>
-  <td>C01 Conformance Classes <span class="tag explicit">E</span>; C03 Canonical Result Equivalence <span class="tag explicit">E</span>; C06 Serialization Compatibility <span class="tag explicit">E</span>; C07 Version Compatibility <span class="tag explicit">E</span>; C08 Independent Implementation Requirement <span class="tag explicit">E</span>; C10 Conformance Report &amp; Declaration <span class="tag explicit">E</span></td>
-  <td>V06 Normalization Vectors <span class="tag explicit">E</span>; V10 Serialization Vectors <span class="tag explicit">E</span>; V11 Version / Conformance Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
-  <td>Fully explicit</td>
-</tr>
-<tr class="explicit-row" data-status="Fully explicit" data-finding="65">
-  <td class="finding">#65</td>
-  <td><div class="req-title">Neutral Conflict Detection</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
-  <td>S05 Canonical Operations <span class="tag explicit">E</span></td>
-  <td>C01 Conformance Classes <span class="tag explicit">E</span>; C03 Canonical Result Equivalence <span class="tag explicit">E</span></td>
-  <td>V05 Geometry Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
-  <td>Fully explicit</td>
-</tr>
-<tr class="explicit-row" data-status="Fully explicit" data-finding="66">
-  <td class="finding">#66</td>
-  <td><div class="req-title">Exact Spatial Equivalence</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
-  <td>S05 Canonical Operations <span class="tag explicit">E</span></td>
-  <td>C01 Conformance Classes <span class="tag explicit">E</span>; C03 Canonical Result Equivalence <span class="tag explicit">E</span>; C05 Exactness Requirements <span class="tag explicit">E</span>; C06 Serialization Compatibility <span class="tag explicit">E</span>; C09 Failure Conditions <span class="tag explicit">E</span></td>
-  <td>V03 Pang Measurement Vectors <span class="tag explicit">E</span>; V05 Geometry Vectors <span class="tag explicit">E</span>; V06 Normalization Vectors <span class="tag explicit">E</span>; V10 Serialization Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
-  <td>Fully explicit</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="67">
-  <td class="finding">#67</td>
-  <td><div class="req-title">Scale Transformations Are Derived</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
-  <td>S02 Canonical Frame &amp; Measurement <span class="tag explicit">E</span>; S05 Canonical Operations <span class="tag explicit">E</span></td>
-  <td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
-  <td>V03 Pang Measurement Vectors <span class="tag explicit">E</span>; V04 Orientation Vectors <span class="tag explicit">E</span>; V07 Transformation Vectors <span class="tag explicit">E</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="explicit-row" data-status="Fully explicit" data-finding="68">
-  <td class="finding">#68</td>
-  <td><div class="req-title">Singular Mathematical Orientation</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
-  <td>S02 Canonical Frame &amp; Measurement <span class="tag explicit">E</span>; S05 Canonical Operations <span class="tag explicit">E</span></td>
-  <td>C01 Conformance Classes <span class="tag explicit">E</span></td>
-  <td>V04 Orientation Vectors <span class="tag explicit">E</span>; V07 Transformation Vectors <span class="tag explicit">E</span></td>
-  <td>Fully explicit</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="69">
-  <td class="finding">#69</td>
-  <td><div class="req-title">Exact Closeness, Higher-Layer Meaning</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
-  <td>S02 Canonical Frame &amp; Measurement <span class="tag explicit">E</span>; S05 Canonical Operations <span class="tag explicit">E</span></td>
-  <td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
-  <td>V03 Pang Measurement Vectors <span class="tag explicit">E</span>; V05 Geometry Vectors <span class="tag explicit">E</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="70">
-  <td class="finding">#70</td>
-  <td><div class="req-title">Refinement Depth Without Semantic Tiers</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
-  <td>S03 Canonical Addressing &amp; Precision <span class="tag explicit">E</span>; S05 Canonical Operations <span class="tag explicit">E</span></td>
-  <td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
-  <td>V01 Addressing Vectors <span class="tag explicit">E</span>; V06 Normalization Vectors <span class="tag explicit">E</span>; V08 Precision Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="explicit-row" data-status="Fully explicit" data-finding="71">
-  <td class="finding">#71</td>
-  <td><div class="req-title">Exact Addressability Without Pretending Infinity Fits in an Address</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
-  <td>S03 Canonical Addressing &amp; Precision <span class="tag explicit">E</span>; S05 Canonical Operations <span class="tag explicit">E</span>; S07 Computability Rules <span class="tag explicit">E</span></td>
-  <td>C01 Conformance Classes <span class="tag explicit">E</span>; C04 Validation Behavior <span class="tag explicit">E</span>; C09 Failure Conditions <span class="tag explicit">E</span></td>
-  <td>V01 Addressing Vectors <span class="tag explicit">E</span>; V06 Normalization Vectors <span class="tag explicit">E</span>; V08 Precision Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
-  <td>Fully explicit</td>
-</tr>
-<tr class="explicit-row" data-status="Fully explicit" data-finding="72">
-  <td class="finding">#72</td>
-  <td><div class="req-title">Separate Canonical, Storage, and Rendering Precision</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
-  <td>S05 Canonical Operations <span class="tag explicit">E</span>; S07 Computability Rules <span class="tag explicit">E</span></td>
-  <td>C01 Conformance Classes <span class="tag explicit">E</span>; C04 Validation Behavior <span class="tag explicit">E</span>; C05 Exactness Requirements <span class="tag explicit">E</span>; C06 Serialization Compatibility <span class="tag explicit">E</span>; C09 Failure Conditions <span class="tag explicit">E</span></td>
-  <td>V01 Addressing Vectors <span class="tag explicit">E</span>; V03 Pang Measurement Vectors <span class="tag explicit">E</span>; V06 Normalization Vectors <span class="tag explicit">E</span>; V08 Precision Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span>; V10 Serialization Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
-  <td>Fully explicit</td>
-</tr>
-<tr class="explicit-row" data-status="Fully explicit" data-finding="73">
-  <td class="finding">#73</td>
-  <td><div class="req-title">Lossless Versus Lossy Precision Conversion</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
-  <td>S05 Canonical Operations <span class="tag explicit">E</span>; S07 Computability Rules <span class="tag explicit">E</span></td>
-  <td>C01 Conformance Classes <span class="tag explicit">E</span>; C04 Validation Behavior <span class="tag explicit">E</span>; C05 Exactness Requirements <span class="tag explicit">E</span>; C06 Serialization Compatibility <span class="tag explicit">E</span>; C09 Failure Conditions <span class="tag explicit">E</span></td>
-  <td>V01 Addressing Vectors <span class="tag explicit">E</span>; V03 Pang Measurement Vectors <span class="tag explicit">E</span>; V06 Normalization Vectors <span class="tag explicit">E</span>; V08 Precision Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span>; V10 Serialization Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
-  <td>Fully explicit</td>
-</tr>
-<tr class="explicit-row" data-status="Fully explicit" data-finding="74">
-  <td class="finding">#74</td>
-  <td><div class="req-title">Exact Comparison at the Foundation</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
-  <td>S05 Canonical Operations <span class="tag explicit">E</span>; S07 Computability Rules <span class="tag explicit">E</span></td>
-  <td>C01 Conformance Classes <span class="tag explicit">E</span>; C03 Canonical Result Equivalence <span class="tag explicit">E</span>; C04 Validation Behavior <span class="tag explicit">E</span>; C05 Exactness Requirements <span class="tag explicit">E</span>; C06 Serialization Compatibility <span class="tag explicit">E</span>; C09 Failure Conditions <span class="tag explicit">E</span></td>
-  <td>V01 Addressing Vectors <span class="tag explicit">E</span>; V02 Domain-Boundary Vectors <span class="tag explicit">E</span>; V03 Pang Measurement Vectors <span class="tag explicit">E</span>; V04 Orientation Vectors <span class="tag explicit">E</span>; V05 Geometry Vectors <span class="tag explicit">E</span>; V06 Normalization Vectors <span class="tag explicit">E</span>; V07 Transformation Vectors <span class="tag explicit">E</span>; V08 Precision Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span>; V10 Serialization Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
-  <td>Fully explicit</td>
-</tr>
-<tr class="explicit-row" data-status="Fully explicit" data-finding="75">
-  <td class="finding">#75</td>
-  <td><div class="req-title">No Silent Snapping</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
-  <td>S05 Canonical Operations <span class="tag explicit">E</span>; S07 Computability Rules <span class="tag explicit">E</span></td>
-  <td>C01 Conformance Classes <span class="tag explicit">E</span>; C04 Validation Behavior <span class="tag explicit">E</span>; C05 Exactness Requirements <span class="tag explicit">E</span>; C06 Serialization Compatibility <span class="tag explicit">E</span>; C09 Failure Conditions <span class="tag explicit">E</span></td>
-  <td>V01 Addressing Vectors <span class="tag explicit">E</span>; V02 Domain-Boundary Vectors <span class="tag explicit">E</span>; V05 Geometry Vectors <span class="tag explicit">E</span>; V06 Normalization Vectors <span class="tag explicit">E</span>; V07 Transformation Vectors <span class="tag explicit">E</span>; V08 Precision Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span>; V10 Serialization Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
-  <td>Fully explicit</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="76">
-  <td class="finding">#76</td>
-  <td><div class="req-title">One Connected Reference Domain</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
-  <td>S01 Survey Domain &amp; Ground Model <span class="tag explicit">E</span>; S07 Computability Rules <span class="tag explicit">E</span></td>
-  <td>C02 Mandatory Core <span class="tag derived">D</span>; C04 Validation Behavior <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
-  <td>V02 Domain-Boundary Vectors <span class="tag explicit">E</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="needs-update" data-status="Basis update needed" data-finding="77">
-  <td class="finding">#77</td>
-  <td><div class="req-title">No Semantic Privilege for Internal Partitions</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
-  <td>S01 Survey Domain &amp; Ground Model <span class="tag explicit">E</span>; S07 Computability Rules <span class="tag explicit">E</span></td>
-  <td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
-  <td>V02 Domain-Boundary Vectors <span class="tag derived">D</span>; V12 Pathological Edge Cases <span class="tag derived">D</span></td>
-  <td>Basis update needed</td>
-</tr>
-<tr class="explicit-row" data-status="Fully explicit" data-finding="78">
-  <td class="finding">#78</td>
-  <td><div class="req-title">Finitely Representable Canonical Truth</div><div class="domain">VI · Knowability, Computability, and Conformance</div></td>
-  <td>S07 Computability Rules <span class="tag explicit">E</span></td>
-  <td>C01 Conformance Classes <span class="tag explicit">E</span>; C03 Canonical Result Equivalence <span class="tag explicit">E</span>; C04 Validation Behavior <span class="tag explicit">E</span>; C05 Exactness Requirements <span class="tag explicit">E</span>; C06 Serialization Compatibility <span class="tag explicit">E</span>; C08 Independent Implementation Requirement <span class="tag explicit">E</span>; C09 Failure Conditions <span class="tag explicit">E</span>; C10 Conformance Report &amp; Declaration <span class="tag explicit">E</span></td>
-  <td>V01 Addressing Vectors <span class="tag explicit">E</span>; V02 Domain-Boundary Vectors <span class="tag explicit">E</span>; V03 Pang Measurement Vectors <span class="tag explicit">E</span>; V04 Orientation Vectors <span class="tag explicit">E</span>; V05 Geometry Vectors <span class="tag explicit">E</span>; V06 Normalization Vectors <span class="tag explicit">E</span>; V07 Transformation Vectors <span class="tag explicit">E</span>; V08 Precision Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span>; V10 Serialization Vectors <span class="tag explicit">E</span>; V11 Version / Conformance Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
-  <td>Fully explicit</td>
-</tr>
-<tr class="explicit-row" data-status="Fully explicit" data-finding="79">
-  <td class="finding">#79</td>
-  <td><div class="req-title">Minimal Canonical Primitive Set</div><div class="domain">VI · Knowability, Computability, and Conformance</div></td>
-  <td>S07 Computability Rules <span class="tag explicit">E</span></td>
-  <td>C01 Conformance Classes <span class="tag explicit">E</span>; C03 Canonical Result Equivalence <span class="tag explicit">E</span>; C05 Exactness Requirements <span class="tag explicit">E</span>; C06 Serialization Compatibility <span class="tag explicit">E</span>; C08 Independent Implementation Requirement <span class="tag explicit">E</span>; C09 Failure Conditions <span class="tag explicit">E</span>; C10 Conformance Report &amp; Declaration <span class="tag explicit">E</span></td>
-  <td>V01 Addressing Vectors <span class="tag explicit">E</span>; V02 Domain-Boundary Vectors <span class="tag explicit">E</span>; V03 Pang Measurement Vectors <span class="tag explicit">E</span>; V04 Orientation Vectors <span class="tag explicit">E</span>; V05 Geometry Vectors <span class="tag explicit">E</span>; V06 Normalization Vectors <span class="tag explicit">E</span>; V07 Transformation Vectors <span class="tag explicit">E</span>; V08 Precision Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span>; V10 Serialization Vectors <span class="tag explicit">E</span>; V11 Version / Conformance Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
-  <td>Fully explicit</td>
-</tr>
-<tr class="explicit-row" data-status="Fully explicit" data-finding="80">
-  <td class="finding">#80</td>
-  <td><div class="req-title">No Hidden-State Dependence</div><div class="domain">VI · Knowability, Computability, and Conformance</div></td>
-  <td>S07 Computability Rules <span class="tag explicit">E</span></td>
-  <td>C01 Conformance Classes <span class="tag explicit">E</span>; C03 Canonical Result Equivalence <span class="tag explicit">E</span>; C04 Validation Behavior <span class="tag explicit">E</span>; C05 Exactness Requirements <span class="tag explicit">E</span>; C06 Serialization Compatibility <span class="tag explicit">E</span>; C08 Independent Implementation Requirement <span class="tag explicit">E</span>; C09 Failure Conditions <span class="tag explicit">E</span>; C10 Conformance Report &amp; Declaration <span class="tag explicit">E</span></td>
-  <td>V01 Addressing Vectors <span class="tag explicit">E</span>; V02 Domain-Boundary Vectors <span class="tag explicit">E</span>; V03 Pang Measurement Vectors <span class="tag explicit">E</span>; V04 Orientation Vectors <span class="tag explicit">E</span>; V05 Geometry Vectors <span class="tag explicit">E</span>; V06 Normalization Vectors <span class="tag explicit">E</span>; V07 Transformation Vectors <span class="tag explicit">E</span>; V08 Precision Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span>; V10 Serialization Vectors <span class="tag explicit">E</span>; V11 Version / Conformance Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
-  <td>Fully explicit</td>
-</tr>
-<tr class="explicit-row" data-status="Fully explicit" data-finding="81">
-  <td class="finding">#81</td>
-  <td><div class="req-title">Canonical Truth Must Terminate</div><div class="domain">VI · Knowability, Computability, and Conformance</div></td>
-  <td>S07 Computability Rules <span class="tag explicit">E</span></td>
-  <td>C01 Conformance Classes <span class="tag explicit">E</span>; C03 Canonical Result Equivalence <span class="tag explicit">E</span>; C04 Validation Behavior <span class="tag explicit">E</span>; C05 Exactness Requirements <span class="tag explicit">E</span>; C06 Serialization Compatibility <span class="tag explicit">E</span>; C08 Independent Implementation Requirement <span class="tag explicit">E</span>; C09 Failure Conditions <span class="tag explicit">E</span>; C10 Conformance Report &amp; Declaration <span class="tag explicit">E</span></td>
-  <td>V01 Addressing Vectors <span class="tag explicit">E</span>; V02 Domain-Boundary Vectors <span class="tag explicit">E</span>; V03 Pang Measurement Vectors <span class="tag explicit">E</span>; V04 Orientation Vectors <span class="tag explicit">E</span>; V05 Geometry Vectors <span class="tag explicit">E</span>; V06 Normalization Vectors <span class="tag explicit">E</span>; V07 Transformation Vectors <span class="tag explicit">E</span>; V08 Precision Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span>; V10 Serialization Vectors <span class="tag explicit">E</span>; V11 Version / Conformance Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
-  <td>Fully explicit</td>
-</tr>
-<tr class="explicit-row" data-status="Fully explicit" data-finding="82">
-  <td class="finding">#82</td>
-  <td><div class="req-title">Controlled Canonical Complexity</div><div class="domain">VI · Knowability, Computability, and Conformance</div></td>
-  <td>S07 Computability Rules <span class="tag explicit">E</span></td>
-  <td>C01 Conformance Classes <span class="tag explicit">E</span>; C03 Canonical Result Equivalence <span class="tag explicit">E</span>; C04 Validation Behavior <span class="tag explicit">E</span>; C05 Exactness Requirements <span class="tag explicit">E</span>; C06 Serialization Compatibility <span class="tag explicit">E</span>; C09 Failure Conditions <span class="tag explicit">E</span>; C10 Conformance Report &amp; Declaration <span class="tag explicit">E</span></td>
-  <td>V01 Addressing Vectors <span class="tag explicit">E</span>; V02 Domain-Boundary Vectors <span class="tag explicit">E</span>; V03 Pang Measurement Vectors <span class="tag explicit">E</span>; V04 Orientation Vectors <span class="tag explicit">E</span>; V05 Geometry Vectors <span class="tag explicit">E</span>; V06 Normalization Vectors <span class="tag explicit">E</span>; V07 Transformation Vectors <span class="tag explicit">E</span>; V08 Precision Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span>; V10 Serialization Vectors <span class="tag explicit">E</span>; V11 Version / Conformance Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
-  <td>Fully explicit</td>
-</tr>
-<tr class="explicit-row" data-status="Fully explicit" data-finding="83">
-  <td class="finding">#83</td>
-  <td><div class="req-title">No Vague Canonical Spatial States</div><div class="domain">VI · Knowability, Computability, and Conformance</div></td>
-  <td>S07 Computability Rules <span class="tag explicit">E</span></td>
-  <td>C01 Conformance Classes <span class="tag explicit">E</span>; C03 Canonical Result Equivalence <span class="tag explicit">E</span>; C04 Validation Behavior <span class="tag explicit">E</span>; C05 Exactness Requirements <span class="tag explicit">E</span>; C06 Serialization Compatibility <span class="tag explicit">E</span>; C09 Failure Conditions <span class="tag explicit">E</span>; C10 Conformance Report &amp; Declaration <span class="tag explicit">E</span></td>
-  <td>V01 Addressing Vectors <span class="tag explicit">E</span>; V02 Domain-Boundary Vectors <span class="tag explicit">E</span>; V03 Pang Measurement Vectors <span class="tag explicit">E</span>; V04 Orientation Vectors <span class="tag explicit">E</span>; V05 Geometry Vectors <span class="tag explicit">E</span>; V06 Normalization Vectors <span class="tag explicit">E</span>; V07 Transformation Vectors <span class="tag explicit">E</span>; V08 Precision Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span>; V10 Serialization Vectors <span class="tag explicit">E</span>; V11 Version / Conformance Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
-  <td>Fully explicit</td>
-</tr>
-<tr class="explicit-row spec-na" data-status="Specification N/A by design" data-finding="84">
-  <td class="finding">#84</td>
-  <td><div class="req-title">Mandatory Conformance Core</div><div class="domain">VI · Knowability, Computability, and Conformance</div></td>
-  <td><span class="tag na">N/A</span>  requirement governs Conformance/readiness rather than Specification content</td>
-  <td>C01 Conformance Classes <span class="tag explicit">E</span>; C02 Mandatory Core <span class="tag explicit">E</span>; C07 Version Compatibility <span class="tag explicit">E</span>; C08 Independent Implementation Requirement <span class="tag explicit">E</span>; C09 Failure Conditions <span class="tag explicit">E</span>; C10 Conformance Report &amp; Declaration <span class="tag explicit">E</span></td>
-  <td>V10 Serialization Vectors <span class="tag explicit">E</span>; V11 Version / Conformance Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
-  <td>Specification N/A by design</td>
-</tr>
-<tr class="explicit-row spec-na" data-status="Specification N/A by design" data-finding="85">
-  <td class="finding">#85</td>
-  <td><div class="req-title">Readiness Gates for Mathematical Design, Prototype, and Canonical Adoption</div><div class="domain">VI · Knowability, Computability, and Conformance</div></td>
-  <td><span class="tag na">N/A</span>  requirement governs Conformance/readiness rather than Specification content</td>
-  <td>C01 Conformance Classes <span class="tag explicit">E</span>; C07 Version Compatibility <span class="tag explicit">E</span>; C08 Independent Implementation Requirement <span class="tag explicit">E</span>; C09 Failure Conditions <span class="tag explicit">E</span>; C10 Conformance Report &amp; Declaration <span class="tag explicit">E</span></td>
-  <td>V11 Version / Conformance Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
-  <td>Specification N/A by design</td>
+<tr class="needs-update" data-finding="1" data-status="Basis update needed">
+<td class="finding">#1</td>
+<td><div class="req-title">Minimum Permanent Spatial Content</div><div class="domain">I · Foundational Purpose and Scope</div></td>
+<td>S01 Survey Domain &amp; Ground Model <span class="tag derived">D</span>; S07 Computability Rules <span class="tag derived">D</span></td>
+<td>C02 Mandatory Core <span class="tag derived">D</span>; C10 Conformance Report &amp; Declaration <span class="tag derived">D</span></td>
+<td>V12 Pathological Edge Cases <span class="tag derived">D</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="needs-update" data-finding="2" data-status="Basis update needed">
+<td class="finding">#2</td>
+<td><div class="req-title">Survey Units Are Not Parcels</div><div class="domain">I · Foundational Purpose and Scope</div></td>
+<td>S01 Survey Domain &amp; Ground Model <span class="tag derived">D</span>; S04 Spatial Expressions &amp; Geometry <span class="tag derived">D</span></td>
+<td>C02 Mandatory Core <span class="tag derived">D</span>; C09 Failure Conditions <span class="tag derived">D</span></td>
+<td>V05 Geometry Vectors <span class="tag derived">D</span>; V12 Pathological Edge Cases <span class="tag derived">D</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="needs-update" data-finding="3" data-status="Basis update needed">
+<td class="finding">#3</td>
+<td><div class="req-title">Immutability Protects Spatial Identity</div><div class="domain">I · Foundational Purpose and Scope</div></td>
+<td>S03 Canonical Addressing &amp; Precision <span class="tag derived">D</span>; S06 Serialization &amp; Specification Identity <span class="tag derived">D</span></td>
+<td>C02 Mandatory Core <span class="tag derived">D</span>; C07 Version Compatibility <span class="tag derived">D</span></td>
+<td>V11 Version / Conformance Vectors <span class="tag derived">D</span>; V12 Pathological Edge Cases <span class="tag derived">D</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="needs-update" data-finding="4" data-status="Basis update needed">
+<td class="finding">#4</td>
+<td><div class="req-title">Higher-Layer Functions Remain Outside the Survey Fabric</div><div class="domain">I · Foundational Purpose and Scope</div></td>
+<td>S01 Survey Domain &amp; Ground Model <span class="tag derived">D</span>; S04 Spatial Expressions &amp; Geometry <span class="tag derived">D</span></td>
+<td>C02 Mandatory Core <span class="tag derived">D</span>; C09 Failure Conditions <span class="tag derived">D</span></td>
+<td>V12 Pathological Edge Cases <span class="tag derived">D</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="needs-update" data-finding="5" data-status="Basis update needed">
+<td class="finding">#5</td>
+<td><div class="req-title">Extension Over Mutation</div><div class="domain">I · Foundational Purpose and Scope</div></td>
+<td>S03 Canonical Addressing &amp; Precision <span class="tag derived">D</span>; S06 Serialization &amp; Specification Identity <span class="tag derived">D</span></td>
+<td>C07 Version Compatibility <span class="tag derived">D</span>; C09 Failure Conditions <span class="tag derived">D</span></td>
+<td>V11 Version / Conformance Vectors <span class="tag derived">D</span>; V12 Pathological Edge Cases <span class="tag derived">D</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="needs-update" data-finding="6" data-status="Basis update needed">
+<td class="finding">#6</td>
+<td><div class="req-title">Preserve Unknown Future Use</div><div class="domain">I · Foundational Purpose and Scope</div></td>
+<td>S01 Survey Domain &amp; Ground Model <span class="tag derived">D</span>; S04 Spatial Expressions &amp; Geometry <span class="tag derived">D</span></td>
+<td>C01 Conformance Classes <span class="tag derived">D</span>; C10 Conformance Report &amp; Declaration <span class="tag derived">D</span></td>
+<td>V11 Version / Conformance Vectors <span class="tag derived">D</span>; V12 Pathological Edge Cases <span class="tag derived">D</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="needs-update" data-finding="7" data-status="Basis update needed">
+<td class="finding">#7</td>
+<td><div class="req-title">Universal Addressability Within the Survey Domain</div><div class="domain">II · Addressability, Canonical Meaning, and Refinement</div></td>
+<td>S03 Canonical Addressing &amp; Precision <span class="tag explicit">E</span></td>
+<td>C02 Mandatory Core <span class="tag derived">D</span>; C04 Validation Behavior <span class="tag derived">D</span></td>
+<td>V01 Addressing Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="needs-update" data-finding="8" data-status="Basis update needed">
+<td class="finding">#8</td>
+<td><div class="req-title">Permanent Canonical Address Meaning</div><div class="domain">II · Addressability, Canonical Meaning, and Refinement</div></td>
+<td>S03 Canonical Addressing &amp; Precision <span class="tag explicit">E</span></td>
+<td>C02 Mandatory Core <span class="tag derived">D</span>; C03 Canonical Result Equivalence <span class="tag derived">D</span>; C07 Version Compatibility <span class="tag derived">D</span></td>
+<td>V01 Addressing Vectors <span class="tag explicit">E</span>; V06 Normalization Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="needs-update" data-finding="9" data-status="Basis update needed">
+<td class="finding">#9</td>
+<td><div class="req-title">Precision by Extension</div><div class="domain">II · Addressability, Canonical Meaning, and Refinement</div></td>
+<td>S03 Canonical Addressing &amp; Precision <span class="tag explicit">E</span></td>
+<td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span>; C07 Version Compatibility <span class="tag derived">D</span></td>
+<td>V01 Addressing Vectors <span class="tag explicit">E</span>; V02 Domain-Boundary Vectors <span class="tag explicit">E</span>; V08 Precision Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="needs-update" data-finding="10" data-status="Basis update needed">
+<td class="finding">#10</td>
+<td><div class="req-title">Independent Implementations, Identical Results</div><div class="domain">II · Addressability, Canonical Meaning, and Refinement</div></td>
+<td>S07 Computability Rules <span class="tag derived">D</span></td>
+<td>C01 Conformance Classes <span class="tag explicit">E</span>; C03 Canonical Result Equivalence <span class="tag explicit">E</span>; C08 Independent Implementation Requirement <span class="tag explicit">E</span>; C09 Failure Conditions <span class="tag explicit">E</span>; C10 Conformance Report &amp; Declaration <span class="tag explicit">E</span></td>
+<td>V01 Addressing Vectors <span class="tag explicit">E</span>; V02 Domain-Boundary Vectors <span class="tag explicit">E</span>; V03 Pang Measurement Vectors <span class="tag explicit">E</span>; V04 Orientation Vectors <span class="tag explicit">E</span>; V05 Geometry Vectors <span class="tag explicit">E</span>; V06 Normalization Vectors <span class="tag explicit">E</span>; V07 Transformation Vectors <span class="tag explicit">E</span>; V08 Precision Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span>; V10 Serialization Vectors <span class="tag explicit">E</span>; V11 Version / Conformance Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="needs-update" data-finding="11" data-status="Basis update needed">
+<td class="finding">#11</td>
+<td><div class="req-title">The Survey Fabric Knows Space, Not the Things in Space</div><div class="domain">II · Addressability, Canonical Meaning, and Refinement</div></td>
+<td>S04 Spatial Expressions &amp; Geometry <span class="tag derived">D</span></td>
+<td>C02 Mandatory Core <span class="tag derived">D</span>; C09 Failure Conditions <span class="tag derived">D</span></td>
+<td>V05 Geometry Vectors <span class="tag derived">D</span>; V12 Pathological Edge Cases <span class="tag derived">D</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="needs-update" data-finding="12" data-status="Basis update needed">
+<td class="finding">#12</td>
+<td><div class="req-title">Derived Spatial Relationships</div><div class="domain">II · Addressability, Canonical Meaning, and Refinement</div></td>
+<td>S04 Spatial Expressions &amp; Geometry <span class="tag derived">D</span>; S05 Canonical Operations <span class="tag derived">D</span></td>
+<td>C03 Canonical Result Equivalence <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
+<td>V05 Geometry Vectors <span class="tag derived">D</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="needs-update" data-finding="13" data-status="Basis update needed">
+<td class="finding">#13</td>
+<td><div class="req-title">Survey Domain Need Not Match World Form</div><div class="domain">II · Addressability, Canonical Meaning, and Refinement</div></td>
+<td>S01 Survey Domain &amp; Ground Model <span class="tag derived">D</span></td>
+<td>C02 Mandatory Core <span class="tag derived">D</span>; C04 Validation Behavior <span class="tag derived">D</span>; C09 Failure Conditions <span class="tag derived">D</span></td>
+<td>V02 Domain-Boundary Vectors <span class="tag explicit">E</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="needs-update" data-finding="14" data-status="Basis update needed">
+<td class="finding">#14</td>
+<td><div class="req-title">Specification Over Materialization</div><div class="domain">II · Addressability, Canonical Meaning, and Refinement</div></td>
+<td>S03 Canonical Addressing &amp; Precision <span class="tag derived">D</span>; S07 Computability Rules <span class="tag derived">D</span></td>
+<td>C08 Independent Implementation Requirement <span class="tag explicit">E</span></td>
+<td>V01 Addressing Vectors <span class="tag derived">D</span>; V08 Precision Vectors <span class="tag derived">D</span>; V12 Pathological Edge Cases <span class="tag derived">D</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="needs-update" data-finding="15" data-status="Basis update needed">
+<td class="finding">#15</td>
+<td><div class="req-title">One Foundational Reference, Many Derived Views</div><div class="domain">II · Addressability, Canonical Meaning, and Refinement</div></td>
+<td>S02 Canonical Frame &amp; Measurement <span class="tag derived">D</span>; S04 Spatial Expressions &amp; Geometry <span class="tag derived">D</span></td>
+<td>C03 Canonical Result Equivalence <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
+<td>V07 Transformation Vectors <span class="tag explicit">E</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="needs-update" data-finding="16" data-status="Basis update needed">
+<td class="finding">#16</td>
+<td><div class="req-title">Canonical Authority Is Governed Above the Mathematics</div><div class="domain">II · Addressability, Canonical Meaning, and Refinement</div></td>
+<td>S06 Serialization &amp; Specification Identity <span class="tag derived">D</span></td>
+<td>C07 Version Compatibility <span class="tag explicit">E</span>; C10 Conformance Report &amp; Declaration <span class="tag explicit">E</span></td>
+<td>V11 Version / Conformance Vectors <span class="tag explicit">E</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="needs-update" data-finding="17" data-status="Basis update needed">
+<td class="finding">#17</td>
+<td><div class="req-title">Specification Evolution Without Spatial Mutation</div><div class="domain">II · Addressability, Canonical Meaning, and Refinement</div></td>
+<td>S06 Serialization &amp; Specification Identity <span class="tag derived">D</span></td>
+<td>C07 Version Compatibility <span class="tag explicit">E</span>; C10 Conformance Report &amp; Declaration <span class="tag explicit">E</span></td>
+<td>V01 Addressing Vectors <span class="tag explicit">E</span>; V11 Version / Conformance Vectors <span class="tag explicit">E</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="needs-update" data-finding="18" data-status="Basis update needed">
+<td class="finding">#18</td>
+<td><div class="req-title">Cells Are Not Foundational Objects by Default</div><div class="domain">III · Ontology and Structural Neutrality</div></td>
+<td>S01 Survey Domain &amp; Ground Model <span class="tag explicit">E</span></td>
+<td>C02 Mandatory Core <span class="tag derived">D</span>; C09 Failure Conditions <span class="tag derived">D</span></td>
+<td>V02 Domain-Boundary Vectors <span class="tag derived">D</span>; V12 Pathological Edge Cases <span class="tag derived">D</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="needs-update" data-finding="19" data-status="Basis update needed">
+<td class="finding">#19</td>
+<td><div class="req-title">Finite Canonical Survey Domain</div><div class="domain">III · Ontology and Structural Neutrality</div></td>
+<td>S01 Survey Domain &amp; Ground Model <span class="tag explicit">E</span></td>
+<td>C02 Mandatory Core <span class="tag derived">D</span>; C04 Validation Behavior <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
+<td>V02 Domain-Boundary Vectors <span class="tag explicit">E</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="needs-update" data-finding="20" data-status="Basis update needed">
+<td class="finding">#20</td>
+<td><div class="req-title">Extensible Precision</div><div class="domain">III · Ontology and Structural Neutrality</div></td>
+<td>S03 Canonical Addressing &amp; Precision <span class="tag explicit">E</span></td>
+<td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
+<td>V01 Addressing Vectors <span class="tag explicit">E</span>; V02 Domain-Boundary Vectors <span class="tag explicit">E</span>; V08 Precision Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="needs-update" data-finding="21" data-status="Basis update needed">
+<td class="finding">#21</td>
+<td><div class="req-title">Self-Resolving Canonical Addresses</div><div class="domain">III · Ontology and Structural Neutrality</div></td>
+<td>S03 Canonical Addressing &amp; Precision <span class="tag explicit">E</span></td>
+<td>C02 Mandatory Core <span class="tag derived">D</span>; C04 Validation Behavior <span class="tag derived">D</span></td>
+<td>V01 Addressing Vectors <span class="tag explicit">E</span>; V06 Normalization Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="explicit-row" data-finding="22" data-status="Fully explicit">
+<td class="finding">#22</td>
+<td><div class="req-title">Canonical References Are Never Reused</div><div class="domain">III · Ontology and Structural Neutrality</div></td>
+<td>S03 Canonical Addressing &amp; Precision <span class="tag explicit">E</span></td>
+<td>C07 Version Compatibility <span class="tag explicit">E</span></td>
+<td>V01 Addressing Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span>; V11 Version / Conformance Vectors <span class="tag explicit">E</span></td>
+<td>Fully explicit</td>
+</tr>
+<tr class="needs-update" data-finding="23" data-status="Basis update needed">
+<td class="finding">#23</td>
+<td><div class="req-title">Two-Dimensional Planar Ground</div><div class="domain">III · Ontology and Structural Neutrality</div></td>
+<td>S01 Survey Domain &amp; Ground Model <span class="tag explicit">E</span></td>
+<td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
+<td>V02 Domain-Boundary Vectors <span class="tag explicit">E</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="explicit-row" data-finding="24" data-status="Fully explicit">
+<td class="finding">#24</td>
+<td><div class="req-title">Exact Foundational Mathematics</div><div class="domain">III · Ontology and Structural Neutrality</div></td>
+<td>S04 Spatial Expressions &amp; Geometry <span class="tag explicit">E</span></td>
+<td>C01 Conformance Classes <span class="tag explicit">E</span>; C03 Canonical Result Equivalence <span class="tag explicit">E</span>; C05 Exactness Requirements <span class="tag explicit">E</span>; C08 Independent Implementation Requirement <span class="tag explicit">E</span>; C09 Failure Conditions <span class="tag explicit">E</span></td>
+<td>V03 Pang Measurement Vectors <span class="tag explicit">E</span>; V05 Geometry Vectors <span class="tag explicit">E</span>; V08 Precision Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
+<td>Fully explicit</td>
+</tr>
+<tr class="needs-update" data-finding="25" data-status="Basis update needed">
+<td class="finding">#25</td>
+<td><div class="req-title">Boundaries Are Not Foundational Semantic Objects</div><div class="domain">III · Ontology and Structural Neutrality</div></td>
+<td>S04 Spatial Expressions &amp; Geometry <span class="tag explicit">E</span></td>
+<td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span>; C09 Failure Conditions <span class="tag derived">D</span></td>
+<td>V05 Geometry Vectors <span class="tag explicit">E</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="needs-update" data-finding="26" data-status="Basis update needed">
+<td class="finding">#26</td>
+<td><div class="req-title">Semantic Containment Belongs Above</div><div class="domain">III · Ontology and Structural Neutrality</div></td>
+<td>S04 Spatial Expressions &amp; Geometry <span class="tag explicit">E</span></td>
+<td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
+<td>V05 Geometry Vectors <span class="tag explicit">E</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="needs-update" data-finding="27" data-status="Basis update needed">
+<td class="finding">#27</td>
+<td><div class="req-title">Space Without Time</div><div class="domain">III · Ontology and Structural Neutrality</div></td>
+<td>S04 Spatial Expressions &amp; Geometry <span class="tag explicit">E</span></td>
+<td>C02 Mandatory Core <span class="tag derived">D</span>; C07 Version Compatibility <span class="tag derived">D</span></td>
+<td>V01 Addressing Vectors <span class="tag derived">D</span>; V11 Version / Conformance Vectors <span class="tag derived">D</span>; V12 Pathological Edge Cases <span class="tag derived">D</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="needs-update" data-finding="28" data-status="Basis update needed">
+<td class="finding">#28</td>
+<td><div class="req-title">Higher-Layer Geometry Need Not Align to the Grid</div><div class="domain">III · Ontology and Structural Neutrality</div></td>
+<td>S01 Survey Domain &amp; Ground Model <span class="tag explicit">E</span>; S04 Spatial Expressions &amp; Geometry <span class="tag explicit">E</span></td>
+<td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span>; C09 Failure Conditions <span class="tag derived">D</span></td>
+<td>V05 Geometry Vectors <span class="tag derived">D</span>; V12 Pathological Edge Cases <span class="tag derived">D</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="needs-update" data-finding="29" data-status="Basis update needed">
+<td class="finding">#29</td>
+<td><div class="req-title">World Membership Belongs Above</div><div class="domain">III · Ontology and Structural Neutrality</div></td>
+<td>S01 Survey Domain &amp; Ground Model <span class="tag explicit">E</span>; S04 Spatial Expressions &amp; Geometry <span class="tag explicit">E</span></td>
+<td>C02 Mandatory Core <span class="tag derived">D</span>; C04 Validation Behavior <span class="tag derived">D</span>; C09 Failure Conditions <span class="tag derived">D</span></td>
+<td>V02 Domain-Boundary Vectors <span class="tag explicit">E</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="explicit-row" data-finding="30" data-status="Fully explicit">
+<td class="finding">#30</td>
+<td><div class="req-title">Deterministic Canonicalization</div><div class="domain">III · Ontology and Structural Neutrality</div></td>
+<td>S03 Canonical Addressing &amp; Precision <span class="tag explicit">E</span>; S04 Spatial Expressions &amp; Geometry <span class="tag explicit">E</span></td>
+<td>C01 Conformance Classes <span class="tag explicit">E</span>; C03 Canonical Result Equivalence <span class="tag explicit">E</span>; C04 Validation Behavior <span class="tag explicit">E</span>; C05 Exactness Requirements <span class="tag explicit">E</span>; C06 Serialization Compatibility <span class="tag explicit">E</span>; C09 Failure Conditions <span class="tag explicit">E</span></td>
+<td>V01 Addressing Vectors <span class="tag explicit">E</span>; V06 Normalization Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span>; V10 Serialization Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
+<td>Fully explicit</td>
+</tr>
+<tr class="needs-update" data-finding="31" data-status="Basis update needed">
+<td class="finding">#31</td>
+<td><div class="req-title">Canonical Spatial Extents</div><div class="domain">III · Ontology and Structural Neutrality</div></td>
+<td>S04 Spatial Expressions &amp; Geometry <span class="tag explicit">E</span></td>
+<td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
+<td>V05 Geometry Vectors <span class="tag explicit">E</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="explicit-row" data-finding="32" data-status="Fully explicit">
+<td class="finding">#32</td>
+<td><div class="req-title">Exact Edge Semantics</div><div class="domain">III · Ontology and Structural Neutrality</div></td>
+<td>S04 Spatial Expressions &amp; Geometry <span class="tag explicit">E</span></td>
+<td>C01 Conformance Classes <span class="tag explicit">E</span></td>
+<td>V02 Domain-Boundary Vectors <span class="tag explicit">E</span>; V05 Geometry Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
+<td>Fully explicit</td>
+</tr>
+<tr class="needs-update" data-finding="33" data-status="Basis update needed">
+<td class="finding">#33</td>
+<td><div class="req-title">One Mathematics, Many Spatial Expressions</div><div class="domain">III · Ontology and Structural Neutrality</div></td>
+<td>S04 Spatial Expressions &amp; Geometry <span class="tag explicit">E</span></td>
+<td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
+<td>V05 Geometry Vectors <span class="tag explicit">E</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="needs-update" data-finding="34" data-status="Basis update needed">
+<td class="finding">#34</td>
+<td><div class="req-title">Native Spatial Scale: Pang</div><div class="domain">IV · Native Measurement and Orientation</div></td>
+<td>S02 Canonical Frame &amp; Measurement <span class="tag explicit">E</span></td>
+<td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
+<td>V03 Pang Measurement Vectors <span class="tag explicit">E</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="needs-update" data-finding="35" data-status="Basis update needed">
+<td class="finding">#35</td>
+<td><div class="req-title">Pang Defines Scale</div><div class="domain">IV · Native Measurement and Orientation</div></td>
+<td>S02 Canonical Frame &amp; Measurement <span class="tag explicit">E</span></td>
+<td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
+<td>V03 Pang Measurement Vectors <span class="tag explicit">E</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="needs-update" data-finding="36" data-status="Basis update needed">
+<td class="finding">#36</td>
+<td><div class="req-title">Canonical Spatial Separation</div><div class="domain">IV · Native Measurement and Orientation</div></td>
+<td>S02 Canonical Frame &amp; Measurement <span class="tag explicit">E</span></td>
+<td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
+<td>V03 Pang Measurement Vectors <span class="tag explicit">E</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="needs-update" data-finding="37" data-status="Basis update needed">
+<td class="finding">#37</td>
+<td><div class="req-title">Canonical Area</div><div class="domain">IV · Native Measurement and Orientation</div></td>
+<td>S02 Canonical Frame &amp; Measurement <span class="tag explicit">E</span></td>
+<td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
+<td>V03 Pang Measurement Vectors <span class="tag explicit">E</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="needs-update" data-finding="38" data-status="Basis update needed">
+<td class="finding">#38</td>
+<td><div class="req-title">Native Canonical Directions</div><div class="domain">IV · Native Measurement and Orientation</div></td>
+<td>S02 Canonical Frame &amp; Measurement <span class="tag explicit">E</span></td>
+<td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
+<td>V04 Orientation Vectors <span class="tag explicit">E</span>; V07 Transformation Vectors <span class="tag explicit">E</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="needs-update" data-finding="39" data-status="Basis update needed">
+<td class="finding">#39</td>
+<td><div class="req-title">Permanent Canonical Origin</div><div class="domain">IV · Native Measurement and Orientation</div></td>
+<td>S02 Canonical Frame &amp; Measurement <span class="tag explicit">E</span></td>
+<td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
+<td>V02 Domain-Boundary Vectors <span class="tag explicit">E</span>; V04 Orientation Vectors <span class="tag explicit">E</span>; V07 Transformation Vectors <span class="tag explicit">E</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="needs-update" data-finding="40" data-status="Basis update needed">
+<td class="finding">#40</td>
+<td><div class="req-title">One Global Canonical Frame</div><div class="domain">IV · Native Measurement and Orientation</div></td>
+<td>S02 Canonical Frame &amp; Measurement <span class="tag explicit">E</span></td>
+<td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
+<td>V02 Domain-Boundary Vectors <span class="tag explicit">E</span>; V04 Orientation Vectors <span class="tag explicit">E</span>; V07 Transformation Vectors <span class="tag explicit">E</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="needs-update" data-finding="41" data-status="Basis update needed">
+<td class="finding">#41</td>
+<td><div class="req-title">Address and Pang Measurement Must Agree</div><div class="domain">IV · Native Measurement and Orientation</div></td>
+<td>S02 Canonical Frame &amp; Measurement <span class="tag explicit">E</span>; S03 Canonical Addressing &amp; Precision <span class="tag explicit">E</span></td>
+<td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
+<td>V01 Addressing Vectors <span class="tag explicit">E</span>; V03 Pang Measurement Vectors <span class="tag explicit">E</span>; V04 Orientation Vectors <span class="tag explicit">E</span>; V07 Transformation Vectors <span class="tag explicit">E</span>; V08 Precision Vectors <span class="tag explicit">E</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="needs-update" data-finding="42" data-status="Basis update needed">
+<td class="finding">#42</td>
+<td><div class="req-title">Absolute Canonical Reference</div><div class="domain">IV · Native Measurement and Orientation</div></td>
+<td>S02 Canonical Frame &amp; Measurement <span class="tag explicit">E</span>; S03 Canonical Addressing &amp; Precision <span class="tag explicit">E</span></td>
+<td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
+<td>V01 Addressing Vectors <span class="tag explicit">E</span>; V04 Orientation Vectors <span class="tag explicit">E</span>; V07 Transformation Vectors <span class="tag explicit">E</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="needs-update" data-finding="43" data-status="Basis update needed">
+<td class="finding">#43</td>
+<td><div class="req-title">Canonical Angular System</div><div class="domain">IV · Native Measurement and Orientation</div></td>
+<td>S02 Canonical Frame &amp; Measurement <span class="tag explicit">E</span></td>
+<td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
+<td>V04 Orientation Vectors <span class="tag explicit">E</span>; V07 Transformation Vectors <span class="tag explicit">E</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="needs-update" data-finding="44" data-status="Basis update needed">
+<td class="finding">#44</td>
+<td><div class="req-title">Exact Continuity and Connectedness</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
+<td>S04 Spatial Expressions &amp; Geometry <span class="tag explicit">E</span></td>
+<td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
+<td>V05 Geometry Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="needs-update" data-finding="45" data-status="Basis update needed">
+<td class="finding">#45</td>
+<td><div class="req-title">Derived Spatial Predicates</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
+<td>S04 Spatial Expressions &amp; Geometry <span class="tag explicit">E</span></td>
+<td>C02 Mandatory Core <span class="tag derived">D</span>; C03 Canonical Result Equivalence <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
+<td>V05 Geometry Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="needs-update" data-finding="46" data-status="Basis update needed">
+<td class="finding">#46</td>
+<td><div class="req-title">No Entity Identity in the Survey Fabric</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
+<td>S04 Spatial Expressions &amp; Geometry <span class="tag explicit">E</span></td>
+<td>C02 Mandatory Core <span class="tag derived">D</span>; C09 Failure Conditions <span class="tag derived">D</span></td>
+<td>V05 Geometry Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="needs-update" data-finding="47" data-status="Basis update needed">
+<td class="finding">#47</td>
+<td><div class="req-title">Nonexclusive Spatial Reference</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
+<td>S04 Spatial Expressions &amp; Geometry <span class="tag explicit">E</span></td>
+<td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
+<td>V05 Geometry Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="needs-update" data-finding="48" data-status="Basis update needed">
+<td class="finding">#48</td>
+<td><div class="req-title">Exact Survey Domain Limits</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
+<td>S01 Survey Domain &amp; Ground Model <span class="tag explicit">E</span>; S04 Spatial Expressions &amp; Geometry <span class="tag explicit">E</span></td>
+<td>C02 Mandatory Core <span class="tag derived">D</span>; C04 Validation Behavior <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
+<td>V02 Domain-Boundary Vectors <span class="tag explicit">E</span>; V05 Geometry Vectors <span class="tag explicit">E</span>; V07 Transformation Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="needs-update" data-finding="49" data-status="Basis update needed">
+<td class="finding">#49</td>
+<td><div class="req-title">No Privileged Foundational Center</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
+<td>S01 Survey Domain &amp; Ground Model <span class="tag explicit">E</span>; S04 Spatial Expressions &amp; Geometry <span class="tag explicit">E</span></td>
+<td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
+<td>V02 Domain-Boundary Vectors <span class="tag explicit">E</span>; V05 Geometry Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="needs-update" data-finding="50" data-status="Basis update needed">
+<td class="finding">#50</td>
+<td><div class="req-title">Transform the View, Not the Truth</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
+<td>S04 Spatial Expressions &amp; Geometry <span class="tag explicit">E</span></td>
+<td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
+<td>V04 Orientation Vectors <span class="tag explicit">E</span>; V05 Geometry Vectors <span class="tag explicit">E</span>; V07 Transformation Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="needs-update" data-finding="51" data-status="Basis update needed">
+<td class="finding">#51</td>
+<td><div class="req-title">Elevation and Terrain Belong Above</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
+<td>S01 Survey Domain &amp; Ground Model <span class="tag explicit">E</span></td>
+<td>C02 Mandatory Core <span class="tag derived">D</span>; C09 Failure Conditions <span class="tag derived">D</span></td>
+<td>V05 Geometry Vectors <span class="tag derived">D</span>; V12 Pathological Edge Cases <span class="tag derived">D</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="needs-update" data-finding="52" data-status="Basis update needed">
+<td class="finding">#52</td>
+<td><div class="req-title">Surface Is a Higher-Layer Construct</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
+<td>S01 Survey Domain &amp; Ground Model <span class="tag explicit">E</span></td>
+<td>C02 Mandatory Core <span class="tag derived">D</span>; C09 Failure Conditions <span class="tag derived">D</span></td>
+<td>V05 Geometry Vectors <span class="tag derived">D</span>; V12 Pathological Edge Cases <span class="tag derived">D</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="explicit-row" data-finding="53" data-status="Fully explicit">
+<td class="finding">#53</td>
+<td><div class="req-title">Uniform Pang Scale</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
+<td>S02 Canonical Frame &amp; Measurement <span class="tag explicit">E</span></td>
+<td>C05 Exactness Requirements <span class="tag explicit">E</span></td>
+<td>V03 Pang Measurement Vectors <span class="tag explicit">E</span>; V04 Orientation Vectors <span class="tag explicit">E</span>; V07 Transformation Vectors <span class="tag explicit">E</span>; V08 Precision Vectors <span class="tag explicit">E</span></td>
+<td>Fully explicit</td>
+</tr>
+<tr class="explicit-row" data-finding="54" data-status="Fully explicit">
+<td class="finding">#54</td>
+<td><div class="req-title">Sub-Pang Precision Through Exact Refinement</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
+<td>S02 Canonical Frame &amp; Measurement <span class="tag explicit">E</span>; S03 Canonical Addressing &amp; Precision <span class="tag explicit">E</span></td>
+<td>C05 Exactness Requirements <span class="tag explicit">E</span></td>
+<td>V01 Addressing Vectors <span class="tag explicit">E</span>; V03 Pang Measurement Vectors <span class="tag explicit">E</span>; V08 Precision Vectors <span class="tag explicit">E</span></td>
+<td>Fully explicit</td>
+</tr>
+<tr class="explicit-row" data-finding="55" data-status="Fully explicit">
+<td class="finding">#55</td>
+<td><div class="req-title">Canonical Path and Boundary Length</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
+<td>S02 Canonical Frame &amp; Measurement <span class="tag explicit">E</span>; S05 Canonical Operations <span class="tag explicit">E</span></td>
+<td>C05 Exactness Requirements <span class="tag explicit">E</span></td>
+<td>V03 Pang Measurement Vectors <span class="tag explicit">E</span></td>
+<td>Fully explicit</td>
+</tr>
+<tr class="explicit-row" data-finding="56" data-status="Fully explicit">
+<td class="finding">#56</td>
+<td><div class="req-title">Exact Spatial Composition</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
+<td>S05 Canonical Operations <span class="tag explicit">E</span></td>
+<td>C05 Exactness Requirements <span class="tag explicit">E</span></td>
+<td>V05 Geometry Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
+<td>Fully explicit</td>
+</tr>
+<tr class="explicit-row" data-finding="57" data-status="Fully explicit">
+<td class="finding">#57</td>
+<td><div class="req-title">Deterministic Validity and Normalization</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
+<td>S05 Canonical Operations <span class="tag explicit">E</span></td>
+<td>C01 Conformance Classes <span class="tag explicit">E</span>; C03 Canonical Result Equivalence <span class="tag explicit">E</span>; C04 Validation Behavior <span class="tag explicit">E</span>; C05 Exactness Requirements <span class="tag explicit">E</span>; C06 Serialization Compatibility <span class="tag explicit">E</span>; C09 Failure Conditions <span class="tag explicit">E</span>; C10 Conformance Report &amp; Declaration <span class="tag explicit">E</span></td>
+<td>V01 Addressing Vectors <span class="tag explicit">E</span>; V02 Domain-Boundary Vectors <span class="tag explicit">E</span>; V06 Normalization Vectors <span class="tag explicit">E</span>; V07 Transformation Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span>; V10 Serialization Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
+<td>Fully explicit</td>
+</tr>
+<tr class="explicit-row" data-finding="58" data-status="Fully explicit">
+<td class="finding">#58</td>
+<td><div class="req-title">Canonical Ordering Without Hierarchy</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
+<td>S05 Canonical Operations <span class="tag explicit">E</span></td>
+<td>C01 Conformance Classes <span class="tag explicit">E</span>; C03 Canonical Result Equivalence <span class="tag explicit">E</span>; C06 Serialization Compatibility <span class="tag explicit">E</span>; C10 Conformance Report &amp; Declaration <span class="tag explicit">E</span></td>
+<td>V06 Normalization Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span>; V10 Serialization Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
+<td>Fully explicit</td>
+</tr>
+<tr class="explicit-row" data-finding="59" data-status="Fully explicit">
+<td class="finding">#59</td>
+<td><div class="req-title">Canonical Serialization and Interchange</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
+<td>S06 Serialization &amp; Specification Identity <span class="tag explicit">E</span></td>
+<td>C01 Conformance Classes <span class="tag explicit">E</span>; C03 Canonical Result Equivalence <span class="tag explicit">E</span>; C06 Serialization Compatibility <span class="tag explicit">E</span>; C07 Version Compatibility <span class="tag explicit">E</span>; C10 Conformance Report &amp; Declaration <span class="tag explicit">E</span></td>
+<td>V01 Addressing Vectors <span class="tag explicit">E</span>; V06 Normalization Vectors <span class="tag explicit">E</span>; V08 Precision Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span>; V10 Serialization Vectors <span class="tag explicit">E</span>; V11 Version / Conformance Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
+<td>Fully explicit</td>
+</tr>
+<tr class="explicit-row" data-finding="60" data-status="Fully explicit">
+<td class="finding">#60</td>
+<td><div class="req-title">Version the Standard, Not the Place</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
+<td>S06 Serialization &amp; Specification Identity <span class="tag explicit">E</span></td>
+<td>C01 Conformance Classes <span class="tag explicit">E</span>; C03 Canonical Result Equivalence <span class="tag explicit">E</span>; C06 Serialization Compatibility <span class="tag explicit">E</span>; C07 Version Compatibility <span class="tag explicit">E</span>; C10 Conformance Report &amp; Declaration <span class="tag explicit">E</span></td>
+<td>V09 Invalid-Input Vectors <span class="tag explicit">E</span>; V10 Serialization Vectors <span class="tag explicit">E</span>; V11 Version / Conformance Vectors <span class="tag explicit">E</span></td>
+<td>Fully explicit</td>
+</tr>
+<tr class="explicit-row" data-finding="61" data-status="Fully explicit">
+<td class="finding">#61</td>
+<td><div class="req-title">Spatial Meaning Independent of Verification Technology</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
+<td>S06 Serialization &amp; Specification Identity <span class="tag explicit">E</span></td>
+<td>C07 Version Compatibility <span class="tag explicit">E</span>; C08 Independent Implementation Requirement <span class="tag explicit">E</span></td>
+<td>V10 Serialization Vectors <span class="tag explicit">E</span>; V11 Version / Conformance Vectors <span class="tag explicit">E</span></td>
+<td>Fully explicit</td>
+</tr>
+<tr class="needs-update" data-finding="62" data-status="Basis update needed">
+<td class="finding">#62</td>
+<td><div class="req-title">Rights and Ownership Belong Above</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
+<td>S04 Spatial Expressions &amp; Geometry <span class="tag derived">D</span></td>
+<td>C02 Mandatory Core <span class="tag derived">D</span>; C09 Failure Conditions <span class="tag derived">D</span>; C10 Conformance Report &amp; Declaration <span class="tag derived">D</span></td>
+<td>V12 Pathological Edge Cases <span class="tag derived">D</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="needs-update" data-finding="63" data-status="Basis update needed">
+<td class="finding">#63</td>
+<td><div class="req-title">Openly Inspectable and Independently Implementable</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
+<td>S06 Serialization &amp; Specification Identity <span class="tag derived">D</span>; S07 Computability Rules <span class="tag derived">D</span></td>
+<td>C01 Conformance Classes <span class="tag explicit">E</span>; C03 Canonical Result Equivalence <span class="tag explicit">E</span>; C06 Serialization Compatibility <span class="tag explicit">E</span>; C08 Independent Implementation Requirement <span class="tag explicit">E</span>; C09 Failure Conditions <span class="tag explicit">E</span>; C10 Conformance Report &amp; Declaration <span class="tag explicit">E</span></td>
+<td>V10 Serialization Vectors <span class="tag explicit">E</span>; V11 Version / Conformance Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="explicit-row" data-finding="64" data-status="Fully explicit">
+<td class="finding">#64</td>
+<td><div class="req-title">One Meaning, Many Durable Expressions</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
+<td>S06 Serialization &amp; Specification Identity <span class="tag explicit">E</span></td>
+<td>C01 Conformance Classes <span class="tag explicit">E</span>; C03 Canonical Result Equivalence <span class="tag explicit">E</span>; C06 Serialization Compatibility <span class="tag explicit">E</span>; C07 Version Compatibility <span class="tag explicit">E</span>; C08 Independent Implementation Requirement <span class="tag explicit">E</span>; C10 Conformance Report &amp; Declaration <span class="tag explicit">E</span></td>
+<td>V01 Addressing Vectors <span class="tag explicit">E</span>; V06 Normalization Vectors <span class="tag explicit">E</span>; V08 Precision Vectors <span class="tag explicit">E</span>; V10 Serialization Vectors <span class="tag explicit">E</span>; V11 Version / Conformance Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
+<td>Fully explicit</td>
+</tr>
+<tr class="explicit-row" data-finding="65" data-status="Fully explicit">
+<td class="finding">#65</td>
+<td><div class="req-title">Neutral Conflict Detection</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
+<td>S05 Canonical Operations <span class="tag explicit">E</span></td>
+<td>C01 Conformance Classes <span class="tag explicit">E</span>; C03 Canonical Result Equivalence <span class="tag explicit">E</span></td>
+<td>V05 Geometry Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
+<td>Fully explicit</td>
+</tr>
+<tr class="explicit-row" data-finding="66" data-status="Fully explicit">
+<td class="finding">#66</td>
+<td><div class="req-title">Exact Spatial Equivalence</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
+<td>S05 Canonical Operations <span class="tag explicit">E</span></td>
+<td>C01 Conformance Classes <span class="tag explicit">E</span>; C03 Canonical Result Equivalence <span class="tag explicit">E</span>; C05 Exactness Requirements <span class="tag explicit">E</span>; C06 Serialization Compatibility <span class="tag explicit">E</span>; C09 Failure Conditions <span class="tag explicit">E</span></td>
+<td>V03 Pang Measurement Vectors <span class="tag explicit">E</span>; V05 Geometry Vectors <span class="tag explicit">E</span>; V06 Normalization Vectors <span class="tag explicit">E</span>; V10 Serialization Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
+<td>Fully explicit</td>
+</tr>
+<tr class="needs-update" data-finding="67" data-status="Basis update needed">
+<td class="finding">#67</td>
+<td><div class="req-title">Scale Transformations Are Derived</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
+<td>S02 Canonical Frame &amp; Measurement <span class="tag explicit">E</span>; S05 Canonical Operations <span class="tag explicit">E</span></td>
+<td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
+<td>V03 Pang Measurement Vectors <span class="tag explicit">E</span>; V04 Orientation Vectors <span class="tag explicit">E</span>; V07 Transformation Vectors <span class="tag explicit">E</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="explicit-row" data-finding="68" data-status="Fully explicit">
+<td class="finding">#68</td>
+<td><div class="req-title">Singular Mathematical Orientation</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
+<td>S02 Canonical Frame &amp; Measurement <span class="tag explicit">E</span>; S05 Canonical Operations <span class="tag explicit">E</span></td>
+<td>C01 Conformance Classes <span class="tag explicit">E</span></td>
+<td>V04 Orientation Vectors <span class="tag explicit">E</span>; V07 Transformation Vectors <span class="tag explicit">E</span></td>
+<td>Fully explicit</td>
+</tr>
+<tr class="needs-update" data-finding="69" data-status="Basis update needed">
+<td class="finding">#69</td>
+<td><div class="req-title">Exact Closeness, Higher-Layer Meaning</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
+<td>S02 Canonical Frame &amp; Measurement <span class="tag explicit">E</span>; S05 Canonical Operations <span class="tag explicit">E</span></td>
+<td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
+<td>V03 Pang Measurement Vectors <span class="tag explicit">E</span>; V05 Geometry Vectors <span class="tag explicit">E</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="needs-update" data-finding="70" data-status="Basis update needed">
+<td class="finding">#70</td>
+<td><div class="req-title">Refinement Depth Without Semantic Tiers</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
+<td>S03 Canonical Addressing &amp; Precision <span class="tag explicit">E</span>; S05 Canonical Operations <span class="tag explicit">E</span></td>
+<td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
+<td>V01 Addressing Vectors <span class="tag explicit">E</span>; V06 Normalization Vectors <span class="tag explicit">E</span>; V08 Precision Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="explicit-row" data-finding="71" data-status="Fully explicit">
+<td class="finding">#71</td>
+<td><div class="req-title">Exact Addressability Without Pretending Infinity Fits in an Address</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
+<td>S03 Canonical Addressing &amp; Precision <span class="tag explicit">E</span>; S05 Canonical Operations <span class="tag explicit">E</span>; S07 Computability Rules <span class="tag explicit">E</span></td>
+<td>C01 Conformance Classes <span class="tag explicit">E</span>; C04 Validation Behavior <span class="tag explicit">E</span>; C09 Failure Conditions <span class="tag explicit">E</span></td>
+<td>V01 Addressing Vectors <span class="tag explicit">E</span>; V06 Normalization Vectors <span class="tag explicit">E</span>; V08 Precision Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
+<td>Fully explicit</td>
+</tr>
+<tr class="explicit-row" data-finding="72" data-status="Fully explicit">
+<td class="finding">#72</td>
+<td><div class="req-title">Separate Canonical, Storage, and Rendering Precision</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
+<td>S05 Canonical Operations <span class="tag explicit">E</span>; S07 Computability Rules <span class="tag explicit">E</span></td>
+<td>C01 Conformance Classes <span class="tag explicit">E</span>; C04 Validation Behavior <span class="tag explicit">E</span>; C05 Exactness Requirements <span class="tag explicit">E</span>; C06 Serialization Compatibility <span class="tag explicit">E</span>; C09 Failure Conditions <span class="tag explicit">E</span></td>
+<td>V01 Addressing Vectors <span class="tag explicit">E</span>; V03 Pang Measurement Vectors <span class="tag explicit">E</span>; V06 Normalization Vectors <span class="tag explicit">E</span>; V08 Precision Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span>; V10 Serialization Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
+<td>Fully explicit</td>
+</tr>
+<tr class="explicit-row" data-finding="73" data-status="Fully explicit">
+<td class="finding">#73</td>
+<td><div class="req-title">Lossless Versus Lossy Precision Conversion</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
+<td>S05 Canonical Operations <span class="tag explicit">E</span>; S07 Computability Rules <span class="tag explicit">E</span></td>
+<td>C01 Conformance Classes <span class="tag explicit">E</span>; C04 Validation Behavior <span class="tag explicit">E</span>; C05 Exactness Requirements <span class="tag explicit">E</span>; C06 Serialization Compatibility <span class="tag explicit">E</span>; C09 Failure Conditions <span class="tag explicit">E</span></td>
+<td>V01 Addressing Vectors <span class="tag explicit">E</span>; V03 Pang Measurement Vectors <span class="tag explicit">E</span>; V06 Normalization Vectors <span class="tag explicit">E</span>; V08 Precision Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span>; V10 Serialization Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
+<td>Fully explicit</td>
+</tr>
+<tr class="explicit-row" data-finding="74" data-status="Fully explicit">
+<td class="finding">#74</td>
+<td><div class="req-title">Exact Comparison at the Foundation</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
+<td>S05 Canonical Operations <span class="tag explicit">E</span>; S07 Computability Rules <span class="tag explicit">E</span></td>
+<td>C01 Conformance Classes <span class="tag explicit">E</span>; C03 Canonical Result Equivalence <span class="tag explicit">E</span>; C04 Validation Behavior <span class="tag explicit">E</span>; C05 Exactness Requirements <span class="tag explicit">E</span>; C06 Serialization Compatibility <span class="tag explicit">E</span>; C09 Failure Conditions <span class="tag explicit">E</span></td>
+<td>V01 Addressing Vectors <span class="tag explicit">E</span>; V02 Domain-Boundary Vectors <span class="tag explicit">E</span>; V03 Pang Measurement Vectors <span class="tag explicit">E</span>; V04 Orientation Vectors <span class="tag explicit">E</span>; V05 Geometry Vectors <span class="tag explicit">E</span>; V06 Normalization Vectors <span class="tag explicit">E</span>; V07 Transformation Vectors <span class="tag explicit">E</span>; V08 Precision Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span>; V10 Serialization Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
+<td>Fully explicit</td>
+</tr>
+<tr class="explicit-row" data-finding="75" data-status="Fully explicit">
+<td class="finding">#75</td>
+<td><div class="req-title">No Silent Snapping</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
+<td>S05 Canonical Operations <span class="tag explicit">E</span>; S07 Computability Rules <span class="tag explicit">E</span></td>
+<td>C01 Conformance Classes <span class="tag explicit">E</span>; C04 Validation Behavior <span class="tag explicit">E</span>; C05 Exactness Requirements <span class="tag explicit">E</span>; C06 Serialization Compatibility <span class="tag explicit">E</span>; C09 Failure Conditions <span class="tag explicit">E</span></td>
+<td>V01 Addressing Vectors <span class="tag explicit">E</span>; V02 Domain-Boundary Vectors <span class="tag explicit">E</span>; V05 Geometry Vectors <span class="tag explicit">E</span>; V06 Normalization Vectors <span class="tag explicit">E</span>; V07 Transformation Vectors <span class="tag explicit">E</span>; V08 Precision Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span>; V10 Serialization Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
+<td>Fully explicit</td>
+</tr>
+<tr class="needs-update" data-finding="76" data-status="Basis update needed">
+<td class="finding">#76</td>
+<td><div class="req-title">One Connected Reference Domain</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
+<td>S01 Survey Domain &amp; Ground Model <span class="tag explicit">E</span>; S07 Computability Rules <span class="tag explicit">E</span></td>
+<td>C02 Mandatory Core <span class="tag derived">D</span>; C04 Validation Behavior <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
+<td>V02 Domain-Boundary Vectors <span class="tag explicit">E</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="needs-update" data-finding="77" data-status="Basis update needed">
+<td class="finding">#77</td>
+<td><div class="req-title">No Semantic Privilege for Internal Partitions</div><div class="domain">V · Geometry, Topology, Measurement, and Operations</div></td>
+<td>S01 Survey Domain &amp; Ground Model <span class="tag explicit">E</span>; S07 Computability Rules <span class="tag explicit">E</span></td>
+<td>C02 Mandatory Core <span class="tag derived">D</span>; C05 Exactness Requirements <span class="tag derived">D</span></td>
+<td>V02 Domain-Boundary Vectors <span class="tag derived">D</span>; V12 Pathological Edge Cases <span class="tag derived">D</span></td>
+<td>Basis update needed</td>
+</tr>
+<tr class="explicit-row" data-finding="78" data-status="Fully explicit">
+<td class="finding">#78</td>
+<td><div class="req-title">Finitely Representable Canonical Truth</div><div class="domain">VI · Knowability, Computability, and Conformance</div></td>
+<td>S07 Computability Rules <span class="tag explicit">E</span></td>
+<td>C01 Conformance Classes <span class="tag explicit">E</span>; C03 Canonical Result Equivalence <span class="tag explicit">E</span>; C04 Validation Behavior <span class="tag explicit">E</span>; C05 Exactness Requirements <span class="tag explicit">E</span>; C06 Serialization Compatibility <span class="tag explicit">E</span>; C08 Independent Implementation Requirement <span class="tag explicit">E</span>; C09 Failure Conditions <span class="tag explicit">E</span>; C10 Conformance Report &amp; Declaration <span class="tag explicit">E</span></td>
+<td>V01 Addressing Vectors <span class="tag explicit">E</span>; V02 Domain-Boundary Vectors <span class="tag explicit">E</span>; V03 Pang Measurement Vectors <span class="tag explicit">E</span>; V04 Orientation Vectors <span class="tag explicit">E</span>; V05 Geometry Vectors <span class="tag explicit">E</span>; V06 Normalization Vectors <span class="tag explicit">E</span>; V07 Transformation Vectors <span class="tag explicit">E</span>; V08 Precision Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span>; V10 Serialization Vectors <span class="tag explicit">E</span>; V11 Version / Conformance Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
+<td>Fully explicit</td>
+</tr>
+<tr class="explicit-row" data-finding="79" data-status="Fully explicit">
+<td class="finding">#79</td>
+<td><div class="req-title">Minimal Canonical Primitive Set</div><div class="domain">VI · Knowability, Computability, and Conformance</div></td>
+<td>S07 Computability Rules <span class="tag explicit">E</span></td>
+<td>C01 Conformance Classes <span class="tag explicit">E</span>; C03 Canonical Result Equivalence <span class="tag explicit">E</span>; C05 Exactness Requirements <span class="tag explicit">E</span>; C06 Serialization Compatibility <span class="tag explicit">E</span>; C08 Independent Implementation Requirement <span class="tag explicit">E</span>; C09 Failure Conditions <span class="tag explicit">E</span>; C10 Conformance Report &amp; Declaration <span class="tag explicit">E</span></td>
+<td>V01 Addressing Vectors <span class="tag explicit">E</span>; V02 Domain-Boundary Vectors <span class="tag explicit">E</span>; V03 Pang Measurement Vectors <span class="tag explicit">E</span>; V04 Orientation Vectors <span class="tag explicit">E</span>; V05 Geometry Vectors <span class="tag explicit">E</span>; V06 Normalization Vectors <span class="tag explicit">E</span>; V07 Transformation Vectors <span class="tag explicit">E</span>; V08 Precision Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span>; V10 Serialization Vectors <span class="tag explicit">E</span>; V11 Version / Conformance Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
+<td>Fully explicit</td>
+</tr>
+<tr class="explicit-row" data-finding="80" data-status="Fully explicit">
+<td class="finding">#80</td>
+<td><div class="req-title">No Hidden-State Dependence</div><div class="domain">VI · Knowability, Computability, and Conformance</div></td>
+<td>S07 Computability Rules <span class="tag explicit">E</span></td>
+<td>C01 Conformance Classes <span class="tag explicit">E</span>; C03 Canonical Result Equivalence <span class="tag explicit">E</span>; C04 Validation Behavior <span class="tag explicit">E</span>; C05 Exactness Requirements <span class="tag explicit">E</span>; C06 Serialization Compatibility <span class="tag explicit">E</span>; C08 Independent Implementation Requirement <span class="tag explicit">E</span>; C09 Failure Conditions <span class="tag explicit">E</span>; C10 Conformance Report &amp; Declaration <span class="tag explicit">E</span></td>
+<td>V01 Addressing Vectors <span class="tag explicit">E</span>; V02 Domain-Boundary Vectors <span class="tag explicit">E</span>; V03 Pang Measurement Vectors <span class="tag explicit">E</span>; V04 Orientation Vectors <span class="tag explicit">E</span>; V05 Geometry Vectors <span class="tag explicit">E</span>; V06 Normalization Vectors <span class="tag explicit">E</span>; V07 Transformation Vectors <span class="tag explicit">E</span>; V08 Precision Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span>; V10 Serialization Vectors <span class="tag explicit">E</span>; V11 Version / Conformance Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
+<td>Fully explicit</td>
+</tr>
+<tr class="explicit-row" data-finding="81" data-status="Fully explicit">
+<td class="finding">#81</td>
+<td><div class="req-title">Canonical Truth Must Terminate</div><div class="domain">VI · Knowability, Computability, and Conformance</div></td>
+<td>S07 Computability Rules <span class="tag explicit">E</span></td>
+<td>C01 Conformance Classes <span class="tag explicit">E</span>; C03 Canonical Result Equivalence <span class="tag explicit">E</span>; C04 Validation Behavior <span class="tag explicit">E</span>; C05 Exactness Requirements <span class="tag explicit">E</span>; C06 Serialization Compatibility <span class="tag explicit">E</span>; C08 Independent Implementation Requirement <span class="tag explicit">E</span>; C09 Failure Conditions <span class="tag explicit">E</span>; C10 Conformance Report &amp; Declaration <span class="tag explicit">E</span></td>
+<td>V01 Addressing Vectors <span class="tag explicit">E</span>; V02 Domain-Boundary Vectors <span class="tag explicit">E</span>; V03 Pang Measurement Vectors <span class="tag explicit">E</span>; V04 Orientation Vectors <span class="tag explicit">E</span>; V05 Geometry Vectors <span class="tag explicit">E</span>; V06 Normalization Vectors <span class="tag explicit">E</span>; V07 Transformation Vectors <span class="tag explicit">E</span>; V08 Precision Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span>; V10 Serialization Vectors <span class="tag explicit">E</span>; V11 Version / Conformance Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
+<td>Fully explicit</td>
+</tr>
+<tr class="explicit-row" data-finding="82" data-status="Fully explicit">
+<td class="finding">#82</td>
+<td><div class="req-title">Controlled Canonical Complexity</div><div class="domain">VI · Knowability, Computability, and Conformance</div></td>
+<td>S07 Computability Rules <span class="tag explicit">E</span></td>
+<td>C01 Conformance Classes <span class="tag explicit">E</span>; C03 Canonical Result Equivalence <span class="tag explicit">E</span>; C04 Validation Behavior <span class="tag explicit">E</span>; C05 Exactness Requirements <span class="tag explicit">E</span>; C06 Serialization Compatibility <span class="tag explicit">E</span>; C09 Failure Conditions <span class="tag explicit">E</span>; C10 Conformance Report &amp; Declaration <span class="tag explicit">E</span></td>
+<td>V01 Addressing Vectors <span class="tag explicit">E</span>; V02 Domain-Boundary Vectors <span class="tag explicit">E</span>; V03 Pang Measurement Vectors <span class="tag explicit">E</span>; V04 Orientation Vectors <span class="tag explicit">E</span>; V05 Geometry Vectors <span class="tag explicit">E</span>; V06 Normalization Vectors <span class="tag explicit">E</span>; V07 Transformation Vectors <span class="tag explicit">E</span>; V08 Precision Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span>; V10 Serialization Vectors <span class="tag explicit">E</span>; V11 Version / Conformance Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
+<td>Fully explicit</td>
+</tr>
+<tr class="explicit-row" data-finding="83" data-status="Fully explicit">
+<td class="finding">#83</td>
+<td><div class="req-title">No Vague Canonical Spatial States</div><div class="domain">VI · Knowability, Computability, and Conformance</div></td>
+<td>S07 Computability Rules <span class="tag explicit">E</span></td>
+<td>C01 Conformance Classes <span class="tag explicit">E</span>; C03 Canonical Result Equivalence <span class="tag explicit">E</span>; C04 Validation Behavior <span class="tag explicit">E</span>; C05 Exactness Requirements <span class="tag explicit">E</span>; C06 Serialization Compatibility <span class="tag explicit">E</span>; C09 Failure Conditions <span class="tag explicit">E</span>; C10 Conformance Report &amp; Declaration <span class="tag explicit">E</span></td>
+<td>V01 Addressing Vectors <span class="tag explicit">E</span>; V02 Domain-Boundary Vectors <span class="tag explicit">E</span>; V03 Pang Measurement Vectors <span class="tag explicit">E</span>; V04 Orientation Vectors <span class="tag explicit">E</span>; V05 Geometry Vectors <span class="tag explicit">E</span>; V06 Normalization Vectors <span class="tag explicit">E</span>; V07 Transformation Vectors <span class="tag explicit">E</span>; V08 Precision Vectors <span class="tag explicit">E</span>; V09 Invalid-Input Vectors <span class="tag explicit">E</span>; V10 Serialization Vectors <span class="tag explicit">E</span>; V11 Version / Conformance Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
+<td>Fully explicit</td>
+</tr>
+<tr class="spec-na explicit-row" data-finding="84" data-status="Specification N/A by design">
+<td class="finding">#84</td>
+<td><div class="req-title">Mandatory Conformance Core</div><div class="domain">VI · Knowability, Computability, and Conformance</div></td>
+<td><span class="tag na">N/A</span>  requirement governs Conformance/readiness rather than Specification content</td>
+<td>C01 Conformance Classes <span class="tag explicit">E</span>; C02 Mandatory Core <span class="tag explicit">E</span>; C07 Version Compatibility <span class="tag explicit">E</span>; C08 Independent Implementation Requirement <span class="tag explicit">E</span>; C09 Failure Conditions <span class="tag explicit">E</span>; C10 Conformance Report &amp; Declaration <span class="tag explicit">E</span></td>
+<td>V10 Serialization Vectors <span class="tag explicit">E</span>; V11 Version / Conformance Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
+<td>Specification N/A by design</td>
+</tr>
+<tr class="spec-na explicit-row" data-finding="85" data-status="Specification N/A by design">
+<td class="finding">#85</td>
+<td><div class="req-title">Readiness Gates for Mathematical Design, Prototype, and Canonical Adoption</div><div class="domain">VI · Knowability, Computability, and Conformance</div></td>
+<td><span class="tag na">N/A</span>  requirement governs Conformance/readiness rather than Specification content</td>
+<td>C01 Conformance Classes <span class="tag explicit">E</span>; C07 Version Compatibility <span class="tag explicit">E</span>; C08 Independent Implementation Requirement <span class="tag explicit">E</span>; C09 Failure Conditions <span class="tag explicit">E</span>; C10 Conformance Report &amp; Declaration <span class="tag explicit">E</span></td>
+<td>V11 Version / Conformance Vectors <span class="tag explicit">E</span>; V12 Pathological Edge Cases <span class="tag explicit">E</span></td>
+<td>Specification N/A by design</td>
 </tr>
 </tbody>
 </table>
 </div>
-
-<div class="note">
-<strong>Scope note.</strong> This is a page/section-level Requirements Traceability Matrix. The existing audited downstream pages provide Requirements Basis citations at the page level, not for every individual subsection. Accordingly, this matrix can prove forward traceability at the framework-section level and identify where citations should be strengthened. A later reverse-traceability pass should map each individual Specification, Conformance, and Reference Vector subsection back to one or more Findings before the Foundational Survey Fabric is declared fully traceability-closed.
-</div>
+<div class="note"><strong>Day #115 Reference Vector closure.</strong> All 144 Reference Vector subsections have been reverse-traced to Findings #1–#85. The citation-closure edits for V01–V08 are reflected here; V09–V12 required no additional Requirements-basis changes. No new Requirement was created and no mathematical choice was selected.</div><div class="note"><strong>Scope note.</strong> This remains a page/section-level Requirements Traceability Matrix. Day #115 completed subsection-level reverse traceability for all twelve Reference Vector sections and closed the Reference Vector citation mappings reflected in this column. Specification and Conformance subsection-level reverse traceability have not been re-audited by this refresh and therefore retain their Day #108 [E]/[D] standing. Accordingly, the Foundational Survey Fabric Reference Vector framework is traceability-closed, while the matrix as a whole still identifies any remaining Specification or Conformance basis updates separately.</div>
 </main>
 <script>
 const search = document.getElementById('search');
