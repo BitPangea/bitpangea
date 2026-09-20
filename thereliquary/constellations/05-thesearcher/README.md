@@ -1,37 +1,32 @@
-# The Reliquary — The Cursor
+# The Reliquary — The Searcher
 
-## Constellation IV of XII
+## Constellation V of XII
 
 **Digital Antiquity**  
-**Domain: Exploration**  
-**Status: Preserved**
+**Domain: Knowledge**
 
-This directory contains the BitPangea Reliquary record for **The Cursor**, preserved as **Constellation IV of XII** within the **Twelve Constellations of Digital Antiquity**.
+This directory contains the BitPangea Reliquary record for **The Searcher**, preserved as **Constellation V of XII** within the **Twelve Constellations of Digital Antiquity**.
 
-The record preserves the Cursor as the first visible extension of human intention within digital space.
+The record preserves inquiry, indexing, retrieval, and understanding as the sequence through which an expanding digital world became searchable and increasingly comprehensible.
 
-Its central inscription is:
+Its defining identity is:
 
-> **The first path through digital space began with a point that moved.**
+> **The Searcher · The force that transformed information into understanding.**
 
 ---
 
 ## Public / Canonical Path
 
-Canonical URL:
-
-**https://bitpangea.com/thereliquary/constellations/04-thecursor/**
-
-Repository path:
+Public path represented by this record:
 
 ```text
-/thereliquary/constellations/04-thecursor/index.html
+/thereliquary/constellations/05-thesearcher/
 ```
 
 Recommended directory README path:
 
 ```text
-/thereliquary/constellations/04-thecursor/README.md
+/thereliquary/constellations/05-thesearcher/README.md
 ```
 
 Parent collection:
@@ -40,238 +35,303 @@ Parent collection:
 /thereliquary/
 ```
 
-The source page is publicly indexable:
+The source page identifies this record as:
 
 ```text
-index,follow
+Constellation V of XII · Domain: Knowledge
 ```
 
 ---
 
 ## Record Role
 
-**The Cursor** is preserved as the fourth Constellation of Digital Antiquity.
+**The Searcher** is preserved as the fifth Constellation of Digital Antiquity.
 
 Its domain is:
 
 ```text
-Exploration
+Knowledge
 ```
 
-It represents:
+The page begins from a new problem created by earlier digital capabilities:
 
-- Movement
-- Discovery
-- Navigation
+> **The Digital World had become visible. It could be crossed. It could be explored. But as information multiplied, knowing where to look was no longer enough.**
 
-The page frames the Cursor as the first wanderer of digital space: a visible point through which human intention could move, choose, navigate, and discover.
+The Searcher therefore preserves the transition from navigation through digital space to structured inquiry within an expanding field of information.
 
 ---
 
-## Preservation
+## Inquiry
 
-The record begins from the premise that before the Digital World could be explored, something had to move within it.
-
-The Cursor:
-
-- gave position a visible form;
-- crossed the surface of the screen;
-- entered windows;
-- followed paths;
-- uncovered hidden places;
-- carried human intention into spaces without roads.
-
-The source is explicit that the Cursor did not create the systems beneath it.
-
-It states:
-
-> **The Cursor did not create the world.**
-
-> **It did not carry the message.**
-
-> **It did not open the Window.**
-
-Instead:
-
-> **It wandered through what computation, communication, and interface had made possible.**
-
----
-
-## From Position to Exploration
-
-The page preserves a progression from position to movement and discovery.
-
-Its animated journey includes:
+The interactive experience begins with the query:
 
 ```text
-Origin / Position 000
-↓
-Movement
-↓
-Discovery
-↓
-Navigation
-↓
-Known Space
+find what is not yet understood
 ```
 
-The journey caption states:
+This opening establishes inquiry as the first movement of the record.
 
-> **A position becomes a direction. A direction becomes a path. A path becomes discovery.**
+The page does not begin with an answer.
 
-The animation therefore reinforces the preserved idea that movement transforms digital space from something merely visible into somewhere that can be explored.
+It begins with a search.
 
----
-
-## Human Intention Made Visible
-
-The Observation section states:
-
-> **The Cursor preserves more than a pointer.**
-
-> **It preserves the moment human intention became visible inside the machine.**
-
-The source then expresses that idea through three possibilities:
-
-- a position could be chosen;
-- a direction could be followed;
-- a world could be explored.
-
-This is the defining interpretive scope of the record.
+That distinction should remain intact.
 
 ---
 
-## The Digital World Becomes Somewhere to Go
+## Phase I — Indexing
 
-The source describes the transition:
-
-> **The Digital World was no longer something humanity could only see.**
-
-> **It had become somewhere humanity could go.**
-
-This distinction separates The Cursor from The Window.
-
-The Window made the Digital World visible.
-
-The Cursor made it traversable.
-
----
-
-## Constellation Identity
-
-The source page identifies:
+The first preserved phase is:
 
 ```text
-Designation: Constellation IV of XII
-Constellation: The Cursor
-Domain: Exploration
-Status: Preserved
-Period: Digital Antiquity
+I · Indexing
 ```
 
-It also preserves the represented concepts:
+Its central statement is:
+
+> **Information gained structure.**
+
+The source explains that fragments once scattered across:
+
+- files;
+- pages;
+- paths;
+- names
+
+could be organized into something searchable.
+
+The animated archive field reinforces this idea through fragments, indexed references, and retrieved signals.
+
+---
+
+## Phase II — Retrieval
+
+The second preserved phase is:
 
 ```text
-Movement
-Discovery
-Navigation
+II · Retrieval
 ```
 
-These designations should remain synchronized wherever the record is maintained.
+Its central statement is:
+
+> **The answer could be brought forward.**
+
+The source states:
+
+> **You no longer needed to know where something was in order to find it.**
+
+The retrieval panel preserves three examples:
+
+```text
+INDEX / DIGITAL-WORLD
+→ Linked references found across previously separate paths.
+
+QUERY / RELATION
+→ Relevant fragments surfaced from a larger field of information.
+
+RETRIEVAL / CONTEXT
+→ Information returned not merely as location, but as meaning.
+```
+
+The record therefore distinguishes retrieval from simple location.
+
+The important result is not merely finding where something is, but bringing relevant information into context.
 
 ---
 
-## Constellation Inscription
+## Phase III — Knowledge
 
-The preserved inscription is:
+The third preserved phase is:
 
-> **The first path through digital space began with a point that moved.**
+```text
+III · Knowledge
+```
 
-This sentence functions as the chamber’s central memorial statement.
+Its central statement is:
 
-It captures the transition from static position to intentional digital movement.
+> **Fragments became connected.**
+
+The page then defines the dependency:
+
+> **Inquiry found the path. Indexing gave information structure. Retrieval brought what mattered into view.**
+
+The constellation visualization represents scattered information forming meaningful relationships.
+
+Knowledge is therefore presented as something emerging from connected and retrieved fragments rather than isolated data.
 
 ---
 
-## Interactive Journey
+## Understanding
 
-The page includes an animated journey representing:
+The interactive sequence culminates in:
 
-- origin;
-- movement;
-- discovery;
-- navigation;
-- arrival in known space.
+```text
+Understanding
+```
 
-A replay control allows the journey to be restarted.
+The closing statement is:
 
-The animation is presentation rather than additional documentary canon, but it is part of the intended identity of this constellation page.
+> **Information could be found. And what could be found could begin to be understood.**
 
-The source also includes reduced-motion handling so the page remains accessible when animation is disabled or minimized by user preference.
+The final identity is:
+
+> **The Searcher · The force that transformed information into understanding.**
+
+This defines the scope of Constellation V.
+
+The Searcher does not preserve information itself.
+
+It preserves the process through which information becomes discoverable, retrievable, connected, and potentially understood.
+
+---
+
+## Preserved Sequence
+
+The page’s central progression is:
+
+```text
+Inquiry
+↓
+Indexing
+↓
+Retrieval
+↓
+Knowledge
+↓
+Understanding
+```
+
+This sequence should remain explicit whenever the record is maintained.
+
+The source also condenses part of that sequence as:
+
+```text
+Inquiry · Indexing · Retrieval
+```
+
+immediately before the emergence of **Understanding**.
+
+---
+
+## Interactive Preservation Experience
+
+The Searcher is presented as an interactive preservation experience rather than a static chamber.
+
+Its major interactive components include:
+
+- search prompt;
+- **Begin Search** control;
+- animated archive fragments;
+- indexing lines;
+- highlighted retrieved fragments;
+- staged retrieval results;
+- constellation nodes and connecting lines;
+- final Understanding reveal.
+
+These interactions are part of the intended presentation of this constellation page.
+
+They visually enact the transformation:
+
+```text
+scattered information
+→ indexed information
+→ retrieved information
+→ connected knowledge
+→ understanding
+```
+
+---
+
+## Reduced-Motion Accessibility
+
+The source includes `prefers-reduced-motion` handling.
+
+When reduced motion is requested:
+
+- smooth scrolling is disabled;
+- cursor animation is disabled;
+- transitions are removed.
+
+This accessibility behavior should be preserved unless the interaction model is intentionally redesigned.
 
 ---
 
 ## Relationship to Earlier Constellations
 
-The page itself distinguishes The Cursor from earlier preserved functions.
+The opening text establishes continuity with the earlier Digital Antiquity sequence.
 
-Its conceptual sequence is:
+The Digital World had already become:
+
+```text
+visible
+crossable
+explorable
+```
+
+The Searcher addresses what follows when information multiplies beyond what direct navigation alone can manage.
+
+Its conceptual place can therefore be expressed as:
 
 ```text
 computation
-→ made digital systems possible
+→ digital capability
 
 communication
-→ carried information
+→ transmission
 
 interface
-→ made the digital world visible
+→ visibility
 
 exploration
-→ made the digital world traversable
+→ navigation
+
+knowledge
+→ inquiry, indexing, retrieval, and understanding
 ```
 
-The Cursor does not replace those earlier conditions.
-
-It moves through what they made possible.
+This is documentary synthesis of the source page’s opening framing and should not be expanded beyond that role.
 
 ---
 
 ## Relationship to the Twelve Constellations
 
-The page states:
+The source identifies The Searcher as:
 
-> **Part of the Twelve Constellations of Digital Antiquity.**
+```text
+Constellation V of XII
+```
 
-The Cursor is one preserved Constellation within that larger inherited record.
+It therefore belongs to the **Twelve Constellations of Digital Antiquity**.
 
-This page documents only **The Cursor** and should not be expanded into a complete Twelve Constellations catalog unless the source itself is intentionally revised.
+This page documents only **The Searcher** and should not be expanded into a complete Constellation catalog unless the broader Reliquary documentation itself is intentionally revised.
 
 ---
 
-## Footnote Language
+## Visual Language
 
-The page closes with:
+The page uses a distinct knowledge/search visual vocabulary built around:
 
-> Some worlds are calculated.
+- near-black background;
+- cyan indexing signals;
+- gold retrieval/understanding highlights;
+- terminal-like query language;
+- scattered archive fragments;
+- constellation nodes and links;
+- staged emergence of Understanding.
 
-> Some worlds are carried.
-
-> Some worlds are seen.
-
-> Some worlds must be explored.
-
-These lines preserve the chamber’s progression from computation through communication and interface into exploration.
+The interaction and color language reinforce the preservation theme without changing the documentary meaning of the record.
 
 ---
 
 ## Relationship to Digital Antiquity
 
-The Cursor belongs to BitPangea’s preservation of **Digital Antiquity**.
+The Searcher belongs to BitPangea’s preservation of **Digital Antiquity**.
 
-Its role is historical and memorial rather than a current technical navigation specification.
+Its role is memorial and conceptual rather than a current search-engine specification.
 
-It preserves the inherited idea that digital space became explorable when human intention could be represented visibly as movement within the machine.
+It preserves the inherited transformation by which large bodies of digital information became indexable, retrievable, connected, and capable of supporting understanding.
+
+It should remain distinct from current BitPangea search, indexing, navigation, or knowledge-system implementation documentation.
 
 ---
 
@@ -279,33 +339,33 @@ It preserves the inherited idea that digital space became explorable when human 
 
 When maintaining this directory:
 
-1. preserve the title **The Cursor**;
-2. preserve the canonical path `/thereliquary/constellations/04-thecursor/`;
-3. preserve **Constellation IV of XII**;
-4. preserve **Domain: Exploration**;
-5. preserve **Status: Preserved**;
-6. preserve **Period: Digital Antiquity**;
-7. preserve the represented concepts **Movement / Discovery / Navigation**;
-8. preserve the subtitle **The first wanderer of digital space.**
-9. preserve the premise that before the Digital World could be explored, something had to move within it;
-10. preserve **The Cursor gave position a visible form.**
-11. preserve the statements **The Cursor did not create the world. It did not carry the message. It did not open the Window.**
-12. preserve **It wandered through what computation, communication, and interface had made possible.**
-13. preserve the progression from movement to discovery and navigation;
-14. preserve **A position becomes a direction. A direction becomes a path. A path becomes discovery.**
-15. preserve the inscription **The first path through digital space began with a point that moved.**
-16. preserve **The Cursor preserves more than a pointer.**
-17. preserve **It preserves the moment human intention became visible inside the machine.**
-18. preserve the statements that a position could be chosen, a direction could be followed, and a world could be explored;
-19. preserve **The Digital World was no longer something humanity could only see. It had become somewhere humanity could go.**
-20. preserve the interactive journey and replay behavior unless the page presentation is intentionally redesigned;
-21. preserve reduced-motion accessibility behavior;
-22. preserve the footnote language **Some worlds are calculated. Some worlds are carried. Some worlds are seen. Some worlds must be explored.**
-23. preserve the relationship to the **Twelve Constellations of Digital Antiquity**;
-24. preserve `index,follow` unless the Reliquary publication model is intentionally revised;
-25. keep canonical, Open Graph, Twitter, description, theme-color, and structured-data metadata aligned with the record;
-26. do not broaden this page into a general history of pointing devices or graphical navigation;
-27. do not recast the relic as current BitPangea navigation or Experience Architecture documentation.
+1. preserve the title **The Searcher**;
+2. preserve **Constellation V of XII**;
+3. preserve **Domain: Knowledge**;
+4. preserve the opening statement that the Digital World had become visible, crossable, and explorable, but growing information made knowing where to look insufficient;
+5. preserve the inquiry prompt **find what is not yet understood**;
+6. preserve the interactive **Begin Search** entry point;
+7. preserve **I · Indexing**;
+8. preserve **Information gained structure.**
+9. preserve the description of scattered files, pages, paths, and names becoming searchable;
+10. preserve **II · Retrieval**;
+11. preserve **The answer could be brought forward.**
+12. preserve **You no longer needed to know where something was in order to find it.**
+13. preserve the three retrieval records **INDEX / DIGITAL-WORLD**, **QUERY / RELATION**, and **RETRIEVAL / CONTEXT** with their meanings;
+14. preserve the distinction between locating information and returning it with meaning;
+15. preserve **III · Knowledge**;
+16. preserve **Fragments became connected.**
+17. preserve **Inquiry found the path. Indexing gave information structure. Retrieval brought what mattered into view.**
+18. preserve the emergence of **Understanding** as the culmination of the experience;
+19. preserve **Information could be found. And what could be found could begin to be understood.**
+20. preserve the identity **The Searcher · The force that transformed information into understanding.**
+21. preserve the overall sequence **Inquiry → Indexing → Retrieval → Knowledge → Understanding**;
+22. preserve the interactive archive, retrieval, constellation, and understanding stages unless the page presentation is intentionally redesigned;
+23. preserve reduced-motion accessibility behavior;
+24. preserve the relationship to the **Twelve Constellations of Digital Antiquity**;
+25. keep title, description, theme-color, favicon, and other page metadata aligned with the record;
+26. do not broaden this page into a general history of search engines, indexing, information retrieval, or the web;
+27. do not recast this relic as current BitPangea search infrastructure or implementation documentation.
 
 ---
 
@@ -313,11 +373,11 @@ When maintaining this directory:
 
 **The Reliquary**
 
-**The Cursor**
+**The Searcher**
 
-**Constellation IV of XII**
+**Constellation V of XII**
 
-**Exploration · Preserved · Digital Antiquity**
+**Knowledge · Digital Antiquity**
 
 ---
 
