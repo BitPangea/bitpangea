@@ -1,0 +1,34 @@
+﻿id,section,type,independent_or_consequence,abstract_statement,parents,final_requirement_number
+SG-CORE-01,§1,Governing head,Head,Spatial Ground canonically expresses and preserves which canonical Survey space is BitPangea World-space.,,SG-CORE-01
+SG-CORE-02,§3–§5,Core,Independent,"World-space is contained in, but not definitionally identical with, canonical Survey space.",,SG-CORE-02
+SG-CORE-03,§3–§5,Core,Independent,"Membership is total, closed two-valued, and deterministic for every valid Survey location.",,SG-CORE-03
+SG-CORE-04,§3–§5,Core,Independent,Exactly one canonical World-space definition governs.,,SG-CORE-04
+SG-CORE-05,§3–§5,Core,Independent,"Membership depends only on the canonical definition and inherited Survey truth, not hidden or operational inputs.",,SG-CORE-05
+SG-CORE-06,§3–§5,Core,Independent,Adopted membership is permanent.,,SG-CORE-06
+SG-CORE-07,§3–§5,Core,Independent,Canonical meaning is representation-independent.,,SG-CORE-07
+SG-CONST-01,§2,Constitutional,Independent expressed constraint,Spatial Ground remains subordinate to applicable constitutional sources.,,SG-CONST-01
+SG-CONST-02,§2,Constitutional,Independent expressed constraint,BitPangea has one singular canonical World-space.,,SG-CONST-02
+SG-CONST-03,§2,Constitutional,Independent expressed constraint,Canonical World-space is non-empty.,,SG-CONST-03
+SG-CONST-04,§2,Constitutional,Independent expressed constraint,Canonical World-space is connected under inherited Survey topology.,,SG-CONST-04
+SG-CONST-05,§2,Constitutional,Independent expressed constraint,Canonical World-space conforms to constitutional Extent.,,SG-CONST-05
+SG-DEF-01,§6,Definition,Consequence,One primary authority/form exists for each semantic element.,SG-CORE-04,SG-DEF-01
+SG-DEF-02,§6,Definition,Consequence,The definition is reconstructably closed from canonical rules and inputs.,SG-CORE-03; SG-CORE-05,SG-DEF-02
+SG-DEF-03,§6,Definition,Independent,The definition is finitely expressible and membership is decidable.,,SG-DEF-03
+SG-DEF-04,§6,Definition,Independent,Definition validity is decidable.,,SG-DEF-04
+SG-DEF-05,§6,Definition,Independent,Representation equivalence is decidable where applicable.,,SG-DEF-05
+SG-DEF-06,§6,Definition,Independent,Membership is closed under supported Survey refinement.,,SG-DEF-06
+SG-DOWN-01,§7,Downward contract,Independent,Spatial Ground references but does not redefine the Foundational Survey Fabric.,,SG-DOWN-01
+SG-DOWN-02,§7,Downward contract,Consequence,Equal Survey references receive the same Ground answer.,SG-DOWN-01; SG-CORE-03,SG-DOWN-02
+SG-DOWN-03,§7,Downward contract,Consequence,Ground creates no finer spatial distinction than inherited Survey truth supports.,SG-DOWN-01,SG-DOWN-03
+SG-DOWN-04,§7,Downward contract,Consequence,Survey dependencies are declared and deficiencies route to the owning architecture.,SG-DOWN-01,SG-DOWN-04
+SG-BOUND-01,§8,Layer boundary,Independent,Ground-native meaning is membership and nothing else.,,SG-BOUND-01
+SG-BOUND-02,§8,Layer boundary,Consequence,Ground's responsibility set is closed; scope change is governed.,SG-BOUND-01,SG-BOUND-02
+SG-LIM-01,§3,Derived limit,Consequence,The canonical limit is where membership changes.,SG-CORE-03,SG-LIM-01
+SG-UP-01,§9,Upward contract,Consequence/reference,Ground supplies exact stable membership upward.,SG-CORE-03; SG-CORE-06,SG-UP-01
+SG-UP-02,§9,Upward contract,Consequence/reference,"Ground guarantees no higher-layer eligibility, ownership, terrain, region, parcel, or experiential meaning.",SG-BOUND-01,SG-UP-02
+SG-UP-03,§9,Upward contract,Consequence/reference,Higher layers cannot alter membership; deficiencies return to the owning layer.,SG-CORE-06; SG-BOUND-01,SG-UP-03
+SG-IF-01,§10,Institutional interface,Independent,Canonical status arises only from recorded adoption.,SG-CORE-04,SG-IF-01
+SG-IF-02,§10,Institutional interface,Consequence/reference,Governance events establish record status but never become membership inputs.,SG-CORE-05; SG-CORE-03,SG-IF-02
+SG-IF-03,§10,Institutional interface,Consequence/reference,No Ground or Atlas mechanism may alter established World-space.,SG-CORE-06; SG-CONST-01,SG-IF-03
+SG-IF-04,§10,Institutional interface,Consequence/reference,"Correction, supersession, model replacement, and scope change are governed and cannot alter established membership.",SG-CORE-06; SG-BOUND-02,SG-IF-04
+SG-IF-05,§10,Institutional interface,Consequence/reference,Preservation and Conformance originate no Ground truth.,SG-CORE-01; SG-DEF-02,SG-IF-05

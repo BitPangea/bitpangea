@@ -1,0 +1,6 @@
+﻿CONST id,source document,provision,locator,Ground-side expression,conformity check,constrains-not-determines
+SG-CONST-01,The Declaration; Codex Principles,Creator Period Clarification / architecture doctrine,/thedeclaration/README.md,Constitutional subordination,No Ground statement may originate or broaden constitutional truth.,TRUE
+SG-CONST-02,The Declaration; One World; Codex ST-IV,One World / singular continuous whole,/thedeclaration/one-world/,One canonical World-space; no rival canon,Exactly one canonical World-space instance.,TRUE
+SG-CONST-03,The Declaration; One World,The World exists,/thedeclaration/; /thedeclaration/one-world/,Canonical World-space non-empty,At least one valid Survey location resolves World-space.,TRUE
+SG-CONST-04,One World; Codex ST-IV; Codex Principles,"singular, continuous cartographic whole / Contiguity",/thedeclaration/one-world/,Connectedness under inherited Survey topology,World-space is connected under applicable topology and compatible refinement.,TRUE
+SG-CONST-05,Codex WP-S-I — The Extent,Extent describes finite spatial scope without prescribing geometry,/thecodex/003-world-properties/codex-WP-S-I/,Membership definition conforms to Extent,Finite permanent scope; no Ground expansion/contraction.,TRUE
