@@ -1,0 +1,388 @@
+{
+  "corpus": "SG-RV-1.0",
+  "dependency_profile": "FSF-TEST-1.0",
+  "production_instance": false,
+  "fsf_test_profile": {
+    "valid_locations": [
+      "p0",
+      "p1",
+      "p2",
+      "p3",
+      "p4",
+      "p5",
+      "p6",
+      "p7"
+    ],
+    "invalid_locations": [
+      "bad",
+      "unknown"
+    ],
+    "sets": {
+      "A": [
+        "p0",
+        "p1",
+        "p2",
+        "p3"
+      ],
+      "A_ALIAS": [
+        "p0",
+        "p1",
+        "p2",
+        "p3"
+      ],
+      "A_NEAR": [
+        "p0",
+        "p1",
+        "p2"
+      ],
+      "B": [
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "C": [
+        "p5",
+        "p6"
+      ],
+      "H": [
+        "p1"
+      ]
+    },
+    "equivalence": [
+      [
+        "A",
+        "A_ALIAS"
+      ]
+    ],
+    "boundaries": {
+      "A": [
+        "p0",
+        "p3"
+      ],
+      "B": [
+        "p2",
+        "p4"
+      ],
+      "C": [
+        "p5",
+        "p6"
+      ],
+      "difference(A,H)": [
+        "p0",
+        "p1",
+        "p3"
+      ]
+    }
+  },
+  "vectors": [
+    {
+      "id": "SG-RV-001",
+      "family": "membership",
+      "status": "NORMATIVE",
+      "definition": "A",
+      "input": "p1",
+      "expected": "WORLD"
+    },
+    {
+      "id": "SG-RV-002",
+      "family": "membership",
+      "status": "NORMATIVE",
+      "definition": "A",
+      "input": "p5",
+      "expected": "NON_WORLD"
+    },
+    {
+      "id": "SG-RV-003",
+      "family": "limit",
+      "status": "NORMATIVE",
+      "definition": "A",
+      "input": "p0",
+      "expected": "WORLD"
+    },
+    {
+      "id": "SG-RV-004",
+      "family": "limit",
+      "status": "NORMATIVE",
+      "definition": "A",
+      "input": "p3",
+      "expected": "WORLD"
+    },
+    {
+      "id": "SG-RV-005",
+      "family": "union",
+      "status": "NORMATIVE",
+      "definition": {
+        "op": "union",
+        "args": [
+          "A",
+          "C"
+        ]
+      },
+      "input": "p6",
+      "expected": "WORLD"
+    },
+    {
+      "id": "SG-RV-006",
+      "family": "union",
+      "status": "NORMATIVE",
+      "definition": {
+        "op": "union",
+        "args": [
+          "A",
+          "C"
+        ]
+      },
+      "input": "p4",
+      "expected": "NON_WORLD"
+    },
+    {
+      "id": "SG-RV-007",
+      "family": "intersection",
+      "status": "NORMATIVE",
+      "definition": {
+        "op": "intersection",
+        "args": [
+          "A",
+          "B"
+        ]
+      },
+      "input": "p2",
+      "expected": "WORLD"
+    },
+    {
+      "id": "SG-RV-008",
+      "family": "intersection",
+      "status": "NORMATIVE",
+      "definition": {
+        "op": "intersection",
+        "args": [
+          "A",
+          "B"
+        ]
+      },
+      "input": "p1",
+      "expected": "NON_WORLD"
+    },
+    {
+      "id": "SG-RV-009",
+      "family": "difference",
+      "status": "NORMATIVE",
+      "definition": {
+        "op": "difference",
+        "base": "A",
+        "subtract": "H"
+      },
+      "input": "p2",
+      "expected": "WORLD"
+    },
+    {
+      "id": "SG-RV-010",
+      "family": "difference",
+      "status": "NORMATIVE",
+      "definition": {
+        "op": "difference",
+        "base": "A",
+        "subtract": "H"
+      },
+      "input": "p1",
+      "expected": "NON_WORLD"
+    },
+    {
+      "id": "SG-RV-011",
+      "family": "fsf-equivalence",
+      "status": "NORMATIVE",
+      "definitions": [
+        "A",
+        "A_ALIAS"
+      ],
+      "input": "p2",
+      "expected": [
+        "WORLD",
+        "WORLD"
+      ]
+    },
+    {
+      "id": "SG-RV-012",
+      "family": "fsf-nonequivalence",
+      "status": "NORMATIVE",
+      "definitions": [
+        "A",
+        "A_NEAR"
+      ],
+      "input": "p3",
+      "expected": [
+        "WORLD",
+        "NON_WORLD"
+      ]
+    },
+    {
+      "id": "SG-RV-013",
+      "family": "invalid-input",
+      "status": "NEGATIVE",
+      "definition": "A",
+      "input": "bad",
+      "expected": "INVALID_INPUT"
+    },
+    {
+      "id": "SG-RV-014",
+      "family": "invalid-input",
+      "status": "NEGATIVE",
+      "definition": "A",
+      "input": "unknown",
+      "expected": "INVALID_INPUT"
+    },
+    {
+      "id": "SG-RV-015",
+      "family": "invalid-definition",
+      "status": "NEGATIVE",
+      "condition": "duplicate JSON key",
+      "expected": "INVALID_DEFINITION"
+    },
+    {
+      "id": "SG-RV-016",
+      "family": "invalid-definition",
+      "status": "NEGATIVE",
+      "condition": "JSON numeric value present",
+      "expected": "INVALID_DEFINITION"
+    },
+    {
+      "id": "SG-RV-017",
+      "family": "invalid-definition",
+      "status": "NEGATIVE",
+      "condition": "unsupported xor operator",
+      "expected": "INVALID_DEFINITION"
+    },
+    {
+      "id": "SG-RV-018",
+      "family": "canonicalization",
+      "status": "NORMATIVE",
+      "definitions": [
+        {
+          "op": "union",
+          "args": [
+            "A",
+            "C"
+          ]
+        },
+        {
+          "op": "union",
+          "args": [
+            "C",
+            "A"
+          ]
+        }
+      ],
+      "expected": "IDENTICAL_CANONICAL_STRUCTURE"
+    },
+    {
+      "id": "SG-RV-019",
+      "family": "canonicalization",
+      "status": "NORMATIVE",
+      "definitions": [
+        {
+          "op": "intersection",
+          "args": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "op": "intersection",
+          "args": [
+            "B",
+            "A"
+          ]
+        }
+      ],
+      "expected": "IDENTICAL_CANONICAL_STRUCTURE"
+    },
+    {
+      "id": "SG-RV-020",
+      "family": "ordering",
+      "status": "NORMATIVE",
+      "definitions": [
+        {
+          "op": "difference",
+          "base": "A",
+          "subtract": "B"
+        },
+        {
+          "op": "difference",
+          "base": "B",
+          "subtract": "A"
+        }
+      ],
+      "input": "p1",
+      "expected": [
+        "WORLD",
+        "NON_WORLD"
+      ]
+    },
+    {
+      "id": "SG-RV-021",
+      "family": "canonicalization",
+      "status": "NORMATIVE",
+      "definitions": [
+        {
+          "op": "union",
+          "args": [
+            "A",
+            "A",
+            "C"
+          ]
+        },
+        {
+          "op": "union",
+          "args": [
+            "A",
+            "C"
+          ]
+        }
+      ],
+      "expected": "IDENTICAL_CANONICAL_STRUCTURE"
+    },
+    {
+      "id": "SG-RV-022",
+      "family": "hidden-state",
+      "status": "ADVERSARIAL",
+      "definition": "A",
+      "input": "p2",
+      "expected": "WORLD",
+      "repeat_across": [
+        "clean-cache",
+        "warm-cache",
+        "restart",
+        "alternate-locale",
+        "alternate-timezone"
+      ]
+    },
+    {
+      "id": "SG-RV-023",
+      "family": "reconstruction",
+      "status": "ADVERSARIAL",
+      "definition": "A",
+      "expected_map": {
+        "p0": "WORLD",
+        "p1": "WORLD",
+        "p2": "WORLD",
+        "p3": "WORLD",
+        "p4": "NON_WORLD",
+        "p5": "NON_WORLD",
+        "p6": "NON_WORLD",
+        "p7": "NON_WORLD"
+      }
+    },
+    {
+      "id": "SG-RV-024",
+      "family": "boundary-set-class",
+      "status": "BLOCKED_BY_FSF",
+      "definition": {
+        "op": "difference",
+        "base": "A",
+        "subtract": "H"
+      },
+      "input": "p1",
+      "expected": "BLOCKED_BY_FSF"
+    }
+  ]
+}
