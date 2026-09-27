@@ -1,0 +1,150 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bitpangea.com/theatlas/spatial-ground/specification/ground-definition/sg-cjson-1.0.schema.json",
+  "title": "BitPangea Spatial Ground Canonical JSON 1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "type",
+    "format",
+    "model",
+    "specification",
+    "fsf",
+    "limit_convention",
+    "expression"
+  ],
+  "properties": {
+    "type": {
+      "const": "bitpangea.spatial-ground.definition"
+    },
+    "format": {
+      "const": "SG-CJSON-1.0"
+    },
+    "model": {
+      "const": "CMPM-1.0"
+    },
+    "specification": {
+      "type": "string",
+      "minLength": 1
+    },
+    "fsf": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "specification",
+        "lineage"
+      ],
+      "properties": {
+        "specification": {
+          "type": "string",
+          "minLength": 1
+        },
+        "lineage": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "limit_convention": {
+      "const": "closed-world-space"
+    },
+    "expression": {
+      "$ref": "#/$defs/expression"
+    }
+  },
+  "$defs": {
+    "expression": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/fsf"
+        },
+        {
+          "$ref": "#/$defs/union"
+        },
+        {
+          "$ref": "#/$defs/intersection"
+        },
+        {
+          "$ref": "#/$defs/difference"
+        }
+      ]
+    },
+    "fsf": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "op",
+        "value"
+      ],
+      "properties": {
+        "op": {
+          "const": "fsf"
+        },
+        "value": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "union": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "op",
+        "args"
+      ],
+      "properties": {
+        "op": {
+          "const": "union"
+        },
+        "args": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "$ref": "#/$defs/expression"
+          }
+        }
+      }
+    },
+    "intersection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "op",
+        "args"
+      ],
+      "properties": {
+        "op": {
+          "const": "intersection"
+        },
+        "args": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "$ref": "#/$defs/expression"
+          }
+        }
+      }
+    },
+    "difference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "op",
+        "base",
+        "subtract"
+      ],
+      "properties": {
+        "op": {
+          "const": "difference"
+        },
+        "base": {
+          "$ref": "#/$defs/expression"
+        },
+        "subtract": {
+          "$ref": "#/$defs/expression"
+        }
+      }
+    }
+  }
+}
