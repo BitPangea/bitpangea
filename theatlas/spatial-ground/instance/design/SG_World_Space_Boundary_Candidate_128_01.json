@@ -1,0 +1,982 @@
+{
+  "record": "SG-WORLD-BOUNDARY-CANDIDATE-128-01",
+  "status": "creator-design-candidate",
+  "method": "FEBCM refinement pass 02",
+  "canonical": false,
+  "source_candidate": "SG-WORLD-BOUNDARY-CANDIDATE-64-01",
+  "frame": "Normalized Design Frame",
+  "vertex_count": 128,
+  "boundary_orientation_diagnostic": "clockwise",
+  "self_intersections": [],
+  "bounding_box": {
+    "xmin": "-0.954087",
+    "xmax": "0.952435",
+    "ymin": "-0.730000",
+    "ymax": "0.730000"
+  },
+  "bounding_aspect": "1.305837271",
+  "diagnostic_area": "2.038180803",
+  "diagnostic_perimeter": "7.114582769",
+  "vertices": [
+    {
+      "id": "V000",
+      "x": "-0.100000",
+      "y": "0.730000",
+      "kind": "source-64",
+      "source_vertex": "V000"
+    },
+    {
+      "id": "V001",
+      "x": "-0.038638",
+      "y": "0.728455",
+      "kind": "refinement",
+      "source_edge": "V000->V001",
+      "normal_offset": "0.006000"
+    },
+    {
+      "id": "V002",
+      "x": "0.021250",
+      "y": "0.715000",
+      "kind": "source-64",
+      "source_vertex": "V001"
+    },
+    {
+      "id": "V003",
+      "x": "0.084576",
+      "y": "0.693640",
+      "kind": "refinement",
+      "source_edge": "V001->V002",
+      "normal_offset": "-0.004000"
+    },
+    {
+      "id": "V004",
+      "x": "0.150000",
+      "y": "0.680000",
+      "kind": "source-64",
+      "source_vertex": "V002"
+    },
+    {
+      "id": "V005",
+      "x": "0.206065",
+      "y": "0.650980",
+      "kind": "refinement",
+      "source_edge": "V002->V003",
+      "normal_offset": "0.006000"
+    },
+    {
+      "id": "V006",
+      "x": "0.255625",
+      "y": "0.611875",
+      "kind": "source-64",
+      "source_vertex": "V003"
+    },
+    {
+      "id": "V007",
+      "x": "0.306032",
+      "y": "0.582356",
+      "kind": "refinement",
+      "source_edge": "V003->V004",
+      "normal_offset": "-0.004000"
+    },
+    {
+      "id": "V008",
+      "x": "0.360000",
+      "y": "0.560000",
+      "kind": "source-64",
+      "source_vertex": "V004"
+    },
+    {
+      "id": "V009",
+      "x": "0.399030",
+      "y": "0.563710",
+      "kind": "refinement",
+      "source_edge": "V004->V005",
+      "normal_offset": "-0.003000"
+    },
+    {
+      "id": "V010",
+      "x": "0.437037",
+      "y": "0.573333",
+      "kind": "source-64",
+      "source_vertex": "V005"
+    },
+    {
+      "id": "V011",
+      "x": "0.477222",
+      "y": "0.591111",
+      "kind": "refinement",
+      "source_edge": "V005->V006",
+      "normal_offset": "0.000000"
+    },
+    {
+      "id": "V012",
+      "x": "0.517407",
+      "y": "0.608889",
+      "kind": "source-64",
+      "source_vertex": "V006"
+    },
+    {
+      "id": "V013",
+      "x": "0.558704",
+      "y": "0.624445",
+      "kind": "refinement",
+      "source_edge": "V006->V007",
+      "normal_offset": "0.000000"
+    },
+    {
+      "id": "V014",
+      "x": "0.600000",
+      "y": "0.640000",
+      "kind": "source-64",
+      "source_vertex": "V007"
+    },
+    {
+      "id": "V015",
+      "x": "0.645741",
+      "y": "0.652593",
+      "kind": "refinement",
+      "source_edge": "V007->V008",
+      "normal_offset": "0.000000"
+    },
+    {
+      "id": "V016",
+      "x": "0.691481",
+      "y": "0.665185",
+      "kind": "source-64",
+      "source_vertex": "V008"
+    },
+    {
+      "id": "V017",
+      "x": "0.738333",
+      "y": "0.675555",
+      "kind": "refinement",
+      "source_edge": "V008->V009",
+      "normal_offset": "0.000000"
+    },
+    {
+      "id": "V018",
+      "x": "0.785185",
+      "y": "0.685926",
+      "kind": "source-64",
+      "source_vertex": "V009"
+    },
+    {
+      "id": "V019",
+      "x": "0.822593",
+      "y": "0.682963",
+      "kind": "refinement",
+      "source_edge": "V009->V010",
+      "normal_offset": "0.000000"
+    },
+    {
+      "id": "V020",
+      "x": "0.860000",
+      "y": "0.680000",
+      "kind": "source-64",
+      "source_vertex": "V010"
+    },
+    {
+      "id": "V021",
+      "x": "0.886481",
+      "y": "0.653703",
+      "kind": "refinement",
+      "source_edge": "V010->V011",
+      "normal_offset": "0.000000"
+    },
+    {
+      "id": "V022",
+      "x": "0.912963",
+      "y": "0.627407",
+      "kind": "source-64",
+      "source_vertex": "V011"
+    },
+    {
+      "id": "V023",
+      "x": "0.930000",
+      "y": "0.587778",
+      "kind": "refinement",
+      "source_edge": "V011->V012",
+      "normal_offset": "0.000000"
+    },
+    {
+      "id": "V024",
+      "x": "0.947037",
+      "y": "0.548148",
+      "kind": "source-64",
+      "source_vertex": "V012"
+    },
+    {
+      "id": "V025",
+      "x": "0.948519",
+      "y": "0.514074",
+      "kind": "refinement",
+      "source_edge": "V012->V013",
+      "normal_offset": "0.000000"
+    },
+    {
+      "id": "V026",
+      "x": "0.950000",
+      "y": "0.480000",
+      "kind": "source-64",
+      "source_vertex": "V013"
+    },
+    {
+      "id": "V027",
+      "x": "0.931852",
+      "y": "0.458334",
+      "kind": "refinement",
+      "source_edge": "V013->V014",
+      "normal_offset": "0.000000"
+    },
+    {
+      "id": "V028",
+      "x": "0.913704",
+      "y": "0.436667",
+      "kind": "source-64",
+      "source_vertex": "V014"
+    },
+    {
+      "id": "V029",
+      "x": "0.880000",
+      "y": "0.420556",
+      "kind": "refinement",
+      "source_edge": "V014->V015",
+      "normal_offset": "0.000000"
+    },
+    {
+      "id": "V030",
+      "x": "0.846296",
+      "y": "0.404444",
+      "kind": "source-64",
+      "source_vertex": "V015"
+    },
+    {
+      "id": "V031",
+      "x": "0.803148",
+      "y": "0.392222",
+      "kind": "refinement",
+      "source_edge": "V015->V016",
+      "normal_offset": "0.000000"
+    },
+    {
+      "id": "V032",
+      "x": "0.760000",
+      "y": "0.380000",
+      "kind": "source-64",
+      "source_vertex": "V016"
+    },
+    {
+      "id": "V033",
+      "x": "0.701954",
+      "y": "0.377803",
+      "kind": "refinement",
+      "source_edge": "V016->V017",
+      "normal_offset": "-0.003000"
+    },
+    {
+      "id": "V034",
+      "x": "0.644444",
+      "y": "0.369630",
+      "kind": "source-64",
+      "source_vertex": "V017"
+    },
+    {
+      "id": "V035",
+      "x": "0.577261",
+      "y": "0.366334",
+      "kind": "refinement",
+      "source_edge": "V017->V018",
+      "normal_offset": "0.002000"
+    },
+    {
+      "id": "V036",
+      "x": "0.510000",
+      "y": "0.367037",
+      "kind": "source-64",
+      "source_vertex": "V018"
+    },
+    {
+      "id": "V037",
+      "x": "0.454541",
+      "y": "0.361483",
+      "kind": "refinement",
+      "source_edge": "V018->V019",
+      "normal_offset": "-0.003000"
+    },
+    {
+      "id": "V038",
+      "x": "0.400000",
+      "y": "0.350000",
+      "kind": "source-64",
+      "source_vertex": "V019"
+    },
+    {
+      "id": "V039",
+      "x": "0.358363",
+      "y": "0.325095",
+      "kind": "refinement",
+      "source_edge": "V019->V020",
+      "normal_offset": "0.002000"
+    },
+    {
+      "id": "V040",
+      "x": "0.314815",
+      "y": "0.303704",
+      "kind": "source-64",
+      "source_vertex": "V020"
+    },
+    {
+      "id": "V041",
+      "x": "0.282323",
+      "y": "0.275455",
+      "kind": "refinement",
+      "source_edge": "V020->V021",
+      "normal_offset": "-0.003000"
+    },
+    {
+      "id": "V042",
+      "x": "0.254074",
+      "y": "0.242963",
+      "kind": "source-64",
+      "source_vertex": "V021"
+    },
+    {
+      "id": "V043",
+      "x": "0.259025",
+      "y": "0.216704",
+      "kind": "refinement",
+      "source_edge": "V021->V022",
+      "normal_offset": "0.002000"
+    },
+    {
+      "id": "V044",
+      "x": "0.260000",
+      "y": "0.190000",
+      "kind": "source-64",
+      "source_vertex": "V022"
+    },
+    {
+      "id": "V045",
+      "x": "0.318814",
+      "y": "0.170261",
+      "kind": "refinement",
+      "source_edge": "V022->V023",
+      "normal_offset": "-0.003000"
+    },
+    {
+      "id": "V046",
+      "x": "0.379259",
+      "y": "0.156296",
+      "kind": "source-64",
+      "source_vertex": "V023"
+    },
+    {
+      "id": "V047",
+      "x": "0.472498",
+      "y": "0.145314",
+      "kind": "refinement",
+      "source_edge": "V023->V024",
+      "normal_offset": "0.002000"
+    },
+    {
+      "id": "V048",
+      "x": "0.565185",
+      "y": "0.130370",
+      "kind": "source-64",
+      "source_vertex": "V024"
+    },
+    {
+      "id": "V049",
+      "x": "0.642015",
+      "y": "0.112241",
+      "kind": "refinement",
+      "source_edge": "V024->V025",
+      "normal_offset": "-0.003000"
+    },
+    {
+      "id": "V050",
+      "x": "0.720000",
+      "y": "0.100000",
+      "kind": "source-64",
+      "source_vertex": "V025"
+    },
+    {
+      "id": "V051",
+      "x": "0.762778",
+      "y": "0.080556",
+      "kind": "refinement",
+      "source_edge": "V025->V026",
+      "normal_offset": "0.000000"
+    },
+    {
+      "id": "V052",
+      "x": "0.805556",
+      "y": "0.061111",
+      "kind": "source-64",
+      "source_vertex": "V026"
+    },
+    {
+      "id": "V053",
+      "x": "0.835269",
+      "y": "0.042574",
+      "kind": "refinement",
+      "source_edge": "V026->V027",
+      "normal_offset": "0.004000"
+    },
+    {
+      "id": "V054",
+      "x": "0.860000",
+      "y": "0.017778",
+      "kind": "source-64",
+      "source_vertex": "V027"
+    },
+    {
+      "id": "V055",
+      "x": "0.887668",
+      "y": "0.000308",
+      "kind": "refinement",
+      "source_edge": "V027->V028",
+      "normal_offset": "0.010000"
+    },
+    {
+      "id": "V056",
+      "x": "0.900000",
+      "y": "-0.030000",
+      "kind": "source-64",
+      "source_vertex": "V028"
+    },
+    {
+      "id": "V057",
+      "x": "0.918362",
+      "y": "-0.070387",
+      "kind": "refinement",
+      "source_edge": "V028->V029",
+      "normal_offset": "-0.006000"
+    },
+    {
+      "id": "V058",
+      "x": "0.946875",
+      "y": "-0.104375",
+      "kind": "source-64",
+      "source_vertex": "V029"
+    },
+    {
+      "id": "V059",
+      "x": "0.952435",
+      "y": "-0.152057",
+      "kind": "refinement",
+      "source_edge": "V029->V030",
+      "normal_offset": "0.004000"
+    },
+    {
+      "id": "V060",
+      "x": "0.950000",
+      "y": "-0.200000",
+      "kind": "source-64",
+      "source_vertex": "V030"
+    },
+    {
+      "id": "V061",
+      "x": "0.926349",
+      "y": "-0.279008",
+      "kind": "refinement",
+      "source_edge": "V030->V031",
+      "normal_offset": "0.010000"
+    },
+    {
+      "id": "V062",
+      "x": "0.884375",
+      "y": "-0.350000",
+      "kind": "source-64",
+      "source_vertex": "V031"
+    },
+    {
+      "id": "V063",
+      "x": "0.827262",
+      "y": "-0.421573",
+      "kind": "refinement",
+      "source_edge": "V031->V032",
+      "normal_offset": "-0.006000"
+    },
+    {
+      "id": "V064",
+      "x": "0.780000",
+      "y": "-0.500000",
+      "kind": "source-64",
+      "source_vertex": "V032"
+    },
+    {
+      "id": "V065",
+      "x": "0.719039",
+      "y": "-0.553142",
+      "kind": "refinement",
+      "source_edge": "V032->V033",
+      "normal_offset": "0.004000"
+    },
+    {
+      "id": "V066",
+      "x": "0.653125",
+      "y": "-0.600000",
+      "kind": "source-64",
+      "source_vertex": "V033"
+    },
+    {
+      "id": "V067",
+      "x": "0.591217",
+      "y": "-0.643851",
+      "kind": "refinement",
+      "source_edge": "V033->V034",
+      "normal_offset": "0.010000"
+    },
+    {
+      "id": "V068",
+      "x": "0.520000",
+      "y": "-0.670000",
+      "kind": "source-64",
+      "source_vertex": "V034"
+    },
+    {
+      "id": "V069",
+      "x": "0.459856",
+      "y": "-0.688846",
+      "kind": "refinement",
+      "source_edge": "V034->V035",
+      "normal_offset": "-0.006000"
+    },
+    {
+      "id": "V070",
+      "x": "0.404375",
+      "y": "-0.718750",
+      "kind": "source-64",
+      "source_vertex": "V035"
+    },
+    {
+      "id": "V071",
+      "x": "0.352187",
+      "y": "-0.724375",
+      "kind": "refinement",
+      "source_edge": "V035->V036",
+      "normal_offset": "0.000000"
+    },
+    {
+      "id": "V072",
+      "x": "0.300000",
+      "y": "-0.730000",
+      "kind": "source-64",
+      "source_vertex": "V036"
+    },
+    {
+      "id": "V073",
+      "x": "0.270000",
+      "y": "-0.716852",
+      "kind": "refinement",
+      "source_edge": "V036->V037",
+      "normal_offset": "0.000000"
+    },
+    {
+      "id": "V074",
+      "x": "0.240000",
+      "y": "-0.703704",
+      "kind": "source-64",
+      "source_vertex": "V037"
+    },
+    {
+      "id": "V075",
+      "x": "0.212778",
+      "y": "-0.680000",
+      "kind": "refinement",
+      "source_edge": "V037->V038",
+      "normal_offset": "0.000000"
+    },
+    {
+      "id": "V076",
+      "x": "0.185556",
+      "y": "-0.656296",
+      "kind": "source-64",
+      "source_vertex": "V038"
+    },
+    {
+      "id": "V077",
+      "x": "0.159913",
+      "y": "-0.626041",
+      "kind": "refinement",
+      "source_edge": "V038->V039",
+      "normal_offset": "-0.003000"
+    },
+    {
+      "id": "V078",
+      "x": "0.130000",
+      "y": "-0.600000",
+      "kind": "source-64",
+      "source_vertex": "V039"
+    },
+    {
+      "id": "V079",
+      "x": "0.099497",
+      "y": "-0.561737",
+      "kind": "refinement",
+      "source_edge": "V039->V040",
+      "normal_offset": "0.002000"
+    },
+    {
+      "id": "V080",
+      "x": "0.072222",
+      "y": "-0.521111",
+      "kind": "source-64",
+      "source_vertex": "V040"
+    },
+    {
+      "id": "V081",
+      "x": "0.045269",
+      "y": "-0.475551",
+      "kind": "refinement",
+      "source_edge": "V040->V041",
+      "normal_offset": "-0.003000"
+    },
+    {
+      "id": "V082",
+      "x": "0.013333",
+      "y": "-0.433333",
+      "kind": "source-64",
+      "source_vertex": "V041"
+    },
+    {
+      "id": "V083",
+      "x": "-0.019463",
+      "y": "-0.413317",
+      "kind": "refinement",
+      "source_edge": "V041->V042",
+      "normal_offset": "0.002000"
+    },
+    {
+      "id": "V084",
+      "x": "-0.050000",
+      "y": "-0.390000",
+      "kind": "source-64",
+      "source_vertex": "V042"
+    },
+    {
+      "id": "V085",
+      "x": "-0.105810",
+      "y": "-0.426312",
+      "kind": "refinement",
+      "source_edge": "V042->V043",
+      "normal_offset": "-0.003000"
+    },
+    {
+      "id": "V086",
+      "x": "-0.158125",
+      "y": "-0.467500",
+      "kind": "source-64",
+      "source_vertex": "V043"
+    },
+    {
+      "id": "V087",
+      "x": "-0.212644",
+      "y": "-0.525160",
+      "kind": "refinement",
+      "source_edge": "V043->V044",
+      "normal_offset": "0.002000"
+    },
+    {
+      "id": "V088",
+      "x": "-0.270000",
+      "y": "-0.580000",
+      "kind": "source-64",
+      "source_vertex": "V044"
+    },
+    {
+      "id": "V089",
+      "x": "-0.321980",
+      "y": "-0.602948",
+      "kind": "refinement",
+      "source_edge": "V044->V045",
+      "normal_offset": "-0.003000"
+    },
+    {
+      "id": "V090",
+      "x": "-0.371250",
+      "y": "-0.631250",
+      "kind": "source-64",
+      "source_vertex": "V045"
+    },
+    {
+      "id": "V091",
+      "x": "-0.426305",
+      "y": "-0.636683",
+      "kind": "refinement",
+      "source_edge": "V045->V046",
+      "normal_offset": "-0.004000"
+    },
+    {
+      "id": "V092",
+      "x": "-0.480000",
+      "y": "-0.650000",
+      "kind": "source-64",
+      "source_vertex": "V046"
+    },
+    {
+      "id": "V093",
+      "x": "-0.552188",
+      "y": "-0.641563",
+      "kind": "refinement",
+      "source_edge": "V046->V047",
+      "normal_offset": "0.000000"
+    },
+    {
+      "id": "V094",
+      "x": "-0.624375",
+      "y": "-0.633125",
+      "kind": "source-64",
+      "source_vertex": "V047"
+    },
+    {
+      "id": "V095",
+      "x": "-0.692187",
+      "y": "-0.606563",
+      "kind": "refinement",
+      "source_edge": "V047->V048",
+      "normal_offset": "0.000000"
+    },
+    {
+      "id": "V096",
+      "x": "-0.760000",
+      "y": "-0.580000",
+      "kind": "source-64",
+      "source_vertex": "V048"
+    },
+    {
+      "id": "V097",
+      "x": "-0.810616",
+      "y": "-0.535053",
+      "kind": "refinement",
+      "source_edge": "V048->V049",
+      "normal_offset": "0.006000"
+    },
+    {
+      "id": "V098",
+      "x": "-0.852500",
+      "y": "-0.481875",
+      "kind": "source-64",
+      "source_vertex": "V049"
+    },
+    {
+      "id": "V099",
+      "x": "-0.872523",
+      "y": "-0.419485",
+      "kind": "refinement",
+      "source_edge": "V049->V050",
+      "normal_offset": "-0.004000"
+    },
+    {
+      "id": "V100",
+      "x": "-0.900000",
+      "y": "-0.360000",
+      "kind": "source-64",
+      "source_vertex": "V050"
+    },
+    {
+      "id": "V101",
+      "x": "-0.880313",
+      "y": "-0.295000",
+      "kind": "refinement",
+      "source_edge": "V050->V051",
+      "normal_offset": "0.000000"
+    },
+    {
+      "id": "V102",
+      "x": "-0.860625",
+      "y": "-0.230000",
+      "kind": "source-64",
+      "source_vertex": "V051"
+    },
+    {
+      "id": "V103",
+      "x": "-0.840313",
+      "y": "-0.165000",
+      "kind": "refinement",
+      "source_edge": "V051->V052",
+      "normal_offset": "0.000000"
+    },
+    {
+      "id": "V104",
+      "x": "-0.820000",
+      "y": "-0.100000",
+      "kind": "source-64",
+      "source_vertex": "V052"
+    },
+    {
+      "id": "V105",
+      "x": "-0.852187",
+      "y": "-0.044375",
+      "kind": "refinement",
+      "source_edge": "V052->V053",
+      "normal_offset": "0.000000"
+    },
+    {
+      "id": "V106",
+      "x": "-0.884375",
+      "y": "0.011250",
+      "kind": "source-64",
+      "source_vertex": "V053"
+    },
+    {
+      "id": "V107",
+      "x": "-0.917188",
+      "y": "0.065625",
+      "kind": "refinement",
+      "source_edge": "V053->V054",
+      "normal_offset": "0.000000"
+    },
+    {
+      "id": "V108",
+      "x": "-0.950000",
+      "y": "0.120000",
+      "kind": "source-64",
+      "source_vertex": "V054"
+    },
+    {
+      "id": "V109",
+      "x": "-0.954087",
+      "y": "0.181549",
+      "kind": "refinement",
+      "source_edge": "V054->V055",
+      "normal_offset": "0.012000"
+    },
+    {
+      "id": "V110",
+      "x": "-0.934375",
+      "y": "0.240000",
+      "kind": "source-64",
+      "source_vertex": "V055"
+    },
+    {
+      "id": "V111",
+      "x": "-0.899901",
+      "y": "0.296698",
+      "kind": "refinement",
+      "source_edge": "V055->V056",
+      "normal_offset": "-0.008000"
+    },
+    {
+      "id": "V112",
+      "x": "-0.880000",
+      "y": "0.360000",
+      "kind": "source-64",
+      "source_vertex": "V056"
+    },
+    {
+      "id": "V113",
+      "x": "-0.845121",
+      "y": "0.422426",
+      "kind": "refinement",
+      "source_edge": "V056->V057",
+      "normal_offset": "0.005000"
+    },
+    {
+      "id": "V114",
+      "x": "-0.801875",
+      "y": "0.479375",
+      "kind": "source-64",
+      "source_vertex": "V057"
+    },
+    {
+      "id": "V115",
+      "x": "-0.759370",
+      "y": "0.538225",
+      "kind": "refinement",
+      "source_edge": "V057->V058",
+      "normal_offset": "0.012000"
+    },
+    {
+      "id": "V116",
+      "x": "-0.700000",
+      "y": "0.580000",
+      "kind": "source-64",
+      "source_vertex": "V058"
+    },
+    {
+      "id": "V117",
+      "x": "-0.632063",
+      "y": "0.601440",
+      "kind": "refinement",
+      "source_edge": "V058->V059",
+      "normal_offset": "-0.008000"
+    },
+    {
+      "id": "V118",
+      "x": "-0.570625",
+      "y": "0.637500",
+      "kind": "source-64",
+      "source_vertex": "V059"
+    },
+    {
+      "id": "V119",
+      "x": "-0.505313",
+      "y": "0.653750",
+      "kind": "refinement",
+      "source_edge": "V059->V060",
+      "normal_offset": "0.000000"
+    },
+    {
+      "id": "V120",
+      "x": "-0.440000",
+      "y": "0.670000",
+      "kind": "source-64",
+      "source_vertex": "V060"
+    },
+    {
+      "id": "V121",
+      "x": "-0.389829",
+      "y": "0.682513",
+      "kind": "refinement",
+      "source_edge": "V060->V061",
+      "normal_offset": "0.006000"
+    },
+    {
+      "id": "V122",
+      "x": "-0.338125",
+      "y": "0.683125",
+      "kind": "source-64",
+      "source_vertex": "V061"
+    },
+    {
+      "id": "V123",
+      "x": "-0.293751",
+      "y": "0.682575",
+      "kind": "refinement",
+      "source_edge": "V061->V062",
+      "normal_offset": "-0.004000"
+    },
+    {
+      "id": "V124",
+      "x": "-0.250000",
+      "y": "0.690000",
+      "kind": "source-64",
+      "source_vertex": "V062"
+    },
+    {
+      "id": "V125",
+      "x": "-0.216317",
+      "y": "0.707864",
+      "kind": "refinement",
+      "source_edge": "V062->V063",
+      "normal_offset": "0.006000"
+    },
+    {
+      "id": "V126",
+      "x": "-0.178750",
+      "y": "0.714375",
+      "kind": "source-64",
+      "source_vertex": "V063"
+    },
+    {
+      "id": "V127",
+      "x": "-0.138597",
+      "y": "0.718264",
+      "kind": "refinement",
+      "source_edge": "V063->V000",
+      "normal_offset": "-0.004000"
+    }
+  ]
+}
