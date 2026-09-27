@@ -1,0 +1,34 @@
+# Spatial Ground Independent Implementation B — JavaScript
+
+**Implementation ID:** `SG-IMPL-B-JS-1.0`  
+**Conformance Role:** SG-C4 independent reimplementation candidate  
+**Language:** JavaScript / Node.js  
+**Dependency Profile:** `FSF-TEST-1.0`
+
+Implementation B was written independently of Implementation A and does not import, wrap, call, or share evaluator code with it.
+
+It contains:
+
+- an independent strict JSON parser with duplicate-key and numeric-value rejection;
+- an independently written SG-CJSON validator;
+- an independently written canonical serializer;
+- an independently written expression normalizer;
+- an independently written CMPM evaluator;
+- an independently written FSF-TEST adapter;
+- a separate SG-RV-1.0 harness.
+
+## Files
+
+- `spatial_ground_impl_b.mjs`
+- `run_sg_rv_1_0_impl_b.mjs`
+- `spatial-ground-reference-vectors-1.0.json`
+- `SG_Impl_B_Conformance_Report.json`
+- `SG_Impl_B_Conformance_Report.md`
+
+## Run
+
+```bash
+node run_sg_rv_1_0_impl_b.mjs
+```
+
+`SG-RV-024` is expected to remain `BLOCKED_BY_FSF`. The implementation must not invent the missing FSF boundary/set-class rule.
