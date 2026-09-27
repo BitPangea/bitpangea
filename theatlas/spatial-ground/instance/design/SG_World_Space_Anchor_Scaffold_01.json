@@ -1,0 +1,245 @@
+{
+  "record": "SG-WORLD-INSTANCE-SCAFFOLD-01",
+  "status": "creator-design-candidate",
+  "frame": {
+    "name": "Normalized Design Frame",
+    "canonical": false,
+    "x_range": [
+      "-0.95",
+      "0.95"
+    ],
+    "y_range": [
+      "-0.73",
+      "0.73"
+    ],
+    "width_to_height": "1.3013698630",
+    "note": "Construction aid only; not FSF coordinates and not canonical Spatial Ground."
+  },
+  "boundary_order": [
+    "A00",
+    "A01",
+    "A02",
+    "A03",
+    "A04",
+    "A05",
+    "A06",
+    "A07",
+    "A08",
+    "A09",
+    "A10",
+    "A11",
+    "A12",
+    "A13",
+    "A14",
+    "A15",
+    "A16",
+    "A17",
+    "A18",
+    "A19",
+    "A20",
+    "A21",
+    "A22",
+    "A23",
+    "A24",
+    "A25",
+    "A26"
+  ],
+  "anchors": [
+    {
+      "id": "A00",
+      "name": "North Extreme",
+      "x": "-0.10",
+      "y": "0.73",
+      "role": "extreme"
+    },
+    {
+      "id": "A01",
+      "name": "Central NE Shoulder",
+      "x": "0.15",
+      "y": "0.68",
+      "role": "shoulder"
+    },
+    {
+      "id": "A02",
+      "name": "Waist Upper",
+      "x": "0.36",
+      "y": "0.56",
+      "role": "waist"
+    },
+    {
+      "id": "A03",
+      "name": "Lobe B Upper Shoulder",
+      "x": "0.60",
+      "y": "0.64",
+      "role": "shoulder"
+    },
+    {
+      "id": "A04",
+      "name": "Lobe B NE Tip",
+      "x": "0.86",
+      "y": "0.68",
+      "role": "lobe-tip"
+    },
+    {
+      "id": "A05",
+      "name": "Lobe B East Tip",
+      "x": "0.95",
+      "y": "0.48",
+      "role": "lobe-tip"
+    },
+    {
+      "id": "A06",
+      "name": "Lobe B Lower Shoulder / Bay 1 North Mouth",
+      "x": "0.76",
+      "y": "0.38",
+      "role": "bay-mouth"
+    },
+    {
+      "id": "A07",
+      "name": "Waist Lower",
+      "x": "0.40",
+      "y": "0.35",
+      "role": "waist"
+    },
+    {
+      "id": "A08",
+      "name": "Principal Bay 1 Bottom",
+      "x": "0.26",
+      "y": "0.19",
+      "role": "bay-bottom"
+    },
+    {
+      "id": "A09",
+      "name": "Principal Bay 1 South Mouth",
+      "x": "0.72",
+      "y": "0.10",
+      "role": "bay-mouth"
+    },
+    {
+      "id": "A10",
+      "name": "Lobe C Upper Outer",
+      "x": "0.90",
+      "y": "-0.03",
+      "role": "shoulder"
+    },
+    {
+      "id": "A11",
+      "name": "East Extreme",
+      "x": "0.95",
+      "y": "-0.20",
+      "role": "extreme"
+    },
+    {
+      "id": "A12",
+      "name": "Lobe C Southeast Tip",
+      "x": "0.78",
+      "y": "-0.50",
+      "role": "lobe-tip"
+    },
+    {
+      "id": "A13",
+      "name": "Lobe C South Shoulder",
+      "x": "0.52",
+      "y": "-0.67",
+      "role": "shoulder"
+    },
+    {
+      "id": "A14",
+      "name": "South Extreme",
+      "x": "0.30",
+      "y": "-0.73",
+      "role": "extreme"
+    },
+    {
+      "id": "A15",
+      "name": "Principal Bay 2 East Mouth",
+      "x": "0.13",
+      "y": "-0.60",
+      "role": "bay-mouth"
+    },
+    {
+      "id": "A16",
+      "name": "Principal Bay 2 Bottom",
+      "x": "-0.05",
+      "y": "-0.39",
+      "role": "bay-bottom"
+    },
+    {
+      "id": "A17",
+      "name": "Principal Bay 2 West Mouth",
+      "x": "-0.27",
+      "y": "-0.58",
+      "role": "bay-mouth"
+    },
+    {
+      "id": "A18",
+      "name": "Lobe D South Shoulder",
+      "x": "-0.48",
+      "y": "-0.65",
+      "role": "shoulder"
+    },
+    {
+      "id": "A19",
+      "name": "Lobe D Southwest Tip",
+      "x": "-0.76",
+      "y": "-0.58",
+      "role": "lobe-tip"
+    },
+    {
+      "id": "A20",
+      "name": "West-Southwest Extreme",
+      "x": "-0.90",
+      "y": "-0.36",
+      "role": "extreme"
+    },
+    {
+      "id": "A21",
+      "name": "Lobe D Upper Shoulder",
+      "x": "-0.82",
+      "y": "-0.10",
+      "role": "shoulder"
+    },
+    {
+      "id": "A22",
+      "name": "West Extreme",
+      "x": "-0.95",
+      "y": "0.12",
+      "role": "extreme"
+    },
+    {
+      "id": "A23",
+      "name": "Lobe A West Tip",
+      "x": "-0.88",
+      "y": "0.36",
+      "role": "lobe-tip"
+    },
+    {
+      "id": "A24",
+      "name": "Lobe A Northwest Tip",
+      "x": "-0.70",
+      "y": "0.58",
+      "role": "lobe-tip"
+    },
+    {
+      "id": "A25",
+      "name": "Lobe A Upper Shoulder",
+      "x": "-0.44",
+      "y": "0.67",
+      "role": "shoulder"
+    },
+    {
+      "id": "A26",
+      "name": "Central NW Shoulder",
+      "x": "-0.25",
+      "y": "0.69",
+      "role": "shoulder"
+    }
+  ],
+  "validation": {
+    "closed_cycle_if_connected_in_order": true,
+    "self_intersection_detected": false,
+    "holes_defined": 0,
+    "intended_topology": "one simple closed region",
+    "note": "Straight anchor-to-anchor chords are diagnostic scaffold edges only, not the final boundary."
+  }
+}
