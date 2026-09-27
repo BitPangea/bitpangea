@@ -1,0 +1,568 @@
+{
+  "record": "SG-WORLD-BOUNDARY-CANDIDATE-64-01",
+  "status": "creator-design-candidate",
+  "method": "FEBCM refinement pass 01",
+  "canonical": false,
+  "frame": "Normalized Design Frame",
+  "vertex_count": 64,
+  "boundary_orientation_diagnostic": "clockwise",
+  "self_intersections": [],
+  "bounding_box": {
+    "xmin": "-0.950000",
+    "xmax": "0.950000",
+    "ymin": "-0.730000",
+    "ymax": "0.730000"
+  },
+  "bounding_aspect": "1.301369863",
+  "vertices": [
+    {
+      "id": "V000",
+      "x": "-0.100000",
+      "y": "0.730000",
+      "kind": "anchor",
+      "anchor_id": "A00",
+      "anchor_name": "North Extreme"
+    },
+    {
+      "id": "V001",
+      "x": "0.021250",
+      "y": "0.715000",
+      "kind": "refinement",
+      "segment": "A00->A01",
+      "sample": 1,
+      "t": 0.5
+    },
+    {
+      "id": "V002",
+      "x": "0.150000",
+      "y": "0.680000",
+      "kind": "anchor",
+      "anchor_id": "A01",
+      "anchor_name": "Central NE Shoulder"
+    },
+    {
+      "id": "V003",
+      "x": "0.255625",
+      "y": "0.611875",
+      "kind": "refinement",
+      "segment": "A01->A02",
+      "sample": 1,
+      "t": 0.5
+    },
+    {
+      "id": "V004",
+      "x": "0.360000",
+      "y": "0.560000",
+      "kind": "anchor",
+      "anchor_id": "A02",
+      "anchor_name": "Waist Upper"
+    },
+    {
+      "id": "V005",
+      "x": "0.437037",
+      "y": "0.573333",
+      "kind": "refinement",
+      "segment": "A02->A03",
+      "sample": 1,
+      "t": 0.333333
+    },
+    {
+      "id": "V006",
+      "x": "0.517407",
+      "y": "0.608889",
+      "kind": "refinement",
+      "segment": "A02->A03",
+      "sample": 2,
+      "t": 0.666667
+    },
+    {
+      "id": "V007",
+      "x": "0.600000",
+      "y": "0.640000",
+      "kind": "anchor",
+      "anchor_id": "A03",
+      "anchor_name": "Lobe B Upper Shoulder"
+    },
+    {
+      "id": "V008",
+      "x": "0.691481",
+      "y": "0.665185",
+      "kind": "refinement",
+      "segment": "A03->A04",
+      "sample": 1,
+      "t": 0.333333
+    },
+    {
+      "id": "V009",
+      "x": "0.785185",
+      "y": "0.685926",
+      "kind": "refinement",
+      "segment": "A03->A04",
+      "sample": 2,
+      "t": 0.666667
+    },
+    {
+      "id": "V010",
+      "x": "0.860000",
+      "y": "0.680000",
+      "kind": "anchor",
+      "anchor_id": "A04",
+      "anchor_name": "Lobe B NE Tip"
+    },
+    {
+      "id": "V011",
+      "x": "0.912963",
+      "y": "0.627407",
+      "kind": "refinement",
+      "segment": "A04->A05",
+      "sample": 1,
+      "t": 0.333333
+    },
+    {
+      "id": "V012",
+      "x": "0.947037",
+      "y": "0.548148",
+      "kind": "refinement",
+      "segment": "A04->A05",
+      "sample": 2,
+      "t": 0.666667
+    },
+    {
+      "id": "V013",
+      "x": "0.950000",
+      "y": "0.480000",
+      "kind": "anchor",
+      "anchor_id": "A05",
+      "anchor_name": "Lobe B East Tip"
+    },
+    {
+      "id": "V014",
+      "x": "0.913704",
+      "y": "0.436667",
+      "kind": "refinement",
+      "segment": "A05->A06",
+      "sample": 1,
+      "t": 0.333333
+    },
+    {
+      "id": "V015",
+      "x": "0.846296",
+      "y": "0.404444",
+      "kind": "refinement",
+      "segment": "A05->A06",
+      "sample": 2,
+      "t": 0.666667
+    },
+    {
+      "id": "V016",
+      "x": "0.760000",
+      "y": "0.380000",
+      "kind": "anchor",
+      "anchor_id": "A06",
+      "anchor_name": "Lobe B Lower Shoulder / Bay 1 North Mouth"
+    },
+    {
+      "id": "V017",
+      "x": "0.644444",
+      "y": "0.369630",
+      "kind": "refinement",
+      "segment": "A06->A07",
+      "sample": 1,
+      "t": 0.333333
+    },
+    {
+      "id": "V018",
+      "x": "0.510000",
+      "y": "0.367037",
+      "kind": "refinement",
+      "segment": "A06->A07",
+      "sample": 2,
+      "t": 0.666667
+    },
+    {
+      "id": "V019",
+      "x": "0.400000",
+      "y": "0.350000",
+      "kind": "anchor",
+      "anchor_id": "A07",
+      "anchor_name": "Waist Lower"
+    },
+    {
+      "id": "V020",
+      "x": "0.314815",
+      "y": "0.303704",
+      "kind": "refinement",
+      "segment": "A07->A08",
+      "sample": 1,
+      "t": 0.333333
+    },
+    {
+      "id": "V021",
+      "x": "0.254074",
+      "y": "0.242963",
+      "kind": "refinement",
+      "segment": "A07->A08",
+      "sample": 2,
+      "t": 0.666667
+    },
+    {
+      "id": "V022",
+      "x": "0.260000",
+      "y": "0.190000",
+      "kind": "anchor",
+      "anchor_id": "A08",
+      "anchor_name": "Principal Bay 1 Bottom"
+    },
+    {
+      "id": "V023",
+      "x": "0.379259",
+      "y": "0.156296",
+      "kind": "refinement",
+      "segment": "A08->A09",
+      "sample": 1,
+      "t": 0.333333
+    },
+    {
+      "id": "V024",
+      "x": "0.565185",
+      "y": "0.130370",
+      "kind": "refinement",
+      "segment": "A08->A09",
+      "sample": 2,
+      "t": 0.666667
+    },
+    {
+      "id": "V025",
+      "x": "0.720000",
+      "y": "0.100000",
+      "kind": "anchor",
+      "anchor_id": "A09",
+      "anchor_name": "Principal Bay 1 South Mouth"
+    },
+    {
+      "id": "V026",
+      "x": "0.805556",
+      "y": "0.061111",
+      "kind": "refinement",
+      "segment": "A09->A10",
+      "sample": 1,
+      "t": 0.333333
+    },
+    {
+      "id": "V027",
+      "x": "0.860000",
+      "y": "0.017778",
+      "kind": "refinement",
+      "segment": "A09->A10",
+      "sample": 2,
+      "t": 0.666667
+    },
+    {
+      "id": "V028",
+      "x": "0.900000",
+      "y": "-0.030000",
+      "kind": "anchor",
+      "anchor_id": "A10",
+      "anchor_name": "Lobe C Upper Outer"
+    },
+    {
+      "id": "V029",
+      "x": "0.946875",
+      "y": "-0.104375",
+      "kind": "refinement",
+      "segment": "A10->A11",
+      "sample": 1,
+      "t": 0.5
+    },
+    {
+      "id": "V030",
+      "x": "0.950000",
+      "y": "-0.200000",
+      "kind": "anchor",
+      "anchor_id": "A11",
+      "anchor_name": "East Extreme"
+    },
+    {
+      "id": "V031",
+      "x": "0.884375",
+      "y": "-0.350000",
+      "kind": "refinement",
+      "segment": "A11->A12",
+      "sample": 1,
+      "t": 0.5
+    },
+    {
+      "id": "V032",
+      "x": "0.780000",
+      "y": "-0.500000",
+      "kind": "anchor",
+      "anchor_id": "A12",
+      "anchor_name": "Lobe C Southeast Tip"
+    },
+    {
+      "id": "V033",
+      "x": "0.653125",
+      "y": "-0.600000",
+      "kind": "refinement",
+      "segment": "A12->A13",
+      "sample": 1,
+      "t": 0.5
+    },
+    {
+      "id": "V034",
+      "x": "0.520000",
+      "y": "-0.670000",
+      "kind": "anchor",
+      "anchor_id": "A13",
+      "anchor_name": "Lobe C South Shoulder"
+    },
+    {
+      "id": "V035",
+      "x": "0.404375",
+      "y": "-0.718750",
+      "kind": "refinement",
+      "segment": "A13->A14",
+      "sample": 1,
+      "t": 0.5
+    },
+    {
+      "id": "V036",
+      "x": "0.300000",
+      "y": "-0.730000",
+      "kind": "anchor",
+      "anchor_id": "A14",
+      "anchor_name": "South Extreme"
+    },
+    {
+      "id": "V037",
+      "x": "0.240000",
+      "y": "-0.703704",
+      "kind": "refinement",
+      "segment": "A14->A15",
+      "sample": 1,
+      "t": 0.333333
+    },
+    {
+      "id": "V038",
+      "x": "0.185556",
+      "y": "-0.656296",
+      "kind": "refinement",
+      "segment": "A14->A15",
+      "sample": 2,
+      "t": 0.666667
+    },
+    {
+      "id": "V039",
+      "x": "0.130000",
+      "y": "-0.600000",
+      "kind": "anchor",
+      "anchor_id": "A15",
+      "anchor_name": "Principal Bay 2 East Mouth"
+    },
+    {
+      "id": "V040",
+      "x": "0.072222",
+      "y": "-0.521111",
+      "kind": "refinement",
+      "segment": "A15->A16",
+      "sample": 1,
+      "t": 0.333333
+    },
+    {
+      "id": "V041",
+      "x": "0.013333",
+      "y": "-0.433333",
+      "kind": "refinement",
+      "segment": "A15->A16",
+      "sample": 2,
+      "t": 0.666667
+    },
+    {
+      "id": "V042",
+      "x": "-0.050000",
+      "y": "-0.390000",
+      "kind": "anchor",
+      "anchor_id": "A16",
+      "anchor_name": "Principal Bay 2 Bottom"
+    },
+    {
+      "id": "V043",
+      "x": "-0.158125",
+      "y": "-0.467500",
+      "kind": "refinement",
+      "segment": "A16->A17",
+      "sample": 1,
+      "t": 0.5
+    },
+    {
+      "id": "V044",
+      "x": "-0.270000",
+      "y": "-0.580000",
+      "kind": "anchor",
+      "anchor_id": "A17",
+      "anchor_name": "Principal Bay 2 West Mouth"
+    },
+    {
+      "id": "V045",
+      "x": "-0.371250",
+      "y": "-0.631250",
+      "kind": "refinement",
+      "segment": "A17->A18",
+      "sample": 1,
+      "t": 0.5
+    },
+    {
+      "id": "V046",
+      "x": "-0.480000",
+      "y": "-0.650000",
+      "kind": "anchor",
+      "anchor_id": "A18",
+      "anchor_name": "Lobe D South Shoulder"
+    },
+    {
+      "id": "V047",
+      "x": "-0.624375",
+      "y": "-0.633125",
+      "kind": "refinement",
+      "segment": "A18->A19",
+      "sample": 1,
+      "t": 0.5
+    },
+    {
+      "id": "V048",
+      "x": "-0.760000",
+      "y": "-0.580000",
+      "kind": "anchor",
+      "anchor_id": "A19",
+      "anchor_name": "Lobe D Southwest Tip"
+    },
+    {
+      "id": "V049",
+      "x": "-0.852500",
+      "y": "-0.481875",
+      "kind": "refinement",
+      "segment": "A19->A20",
+      "sample": 1,
+      "t": 0.5
+    },
+    {
+      "id": "V050",
+      "x": "-0.900000",
+      "y": "-0.360000",
+      "kind": "anchor",
+      "anchor_id": "A20",
+      "anchor_name": "West-Southwest Extreme"
+    },
+    {
+      "id": "V051",
+      "x": "-0.860625",
+      "y": "-0.230000",
+      "kind": "refinement",
+      "segment": "A20->A21",
+      "sample": 1,
+      "t": 0.5
+    },
+    {
+      "id": "V052",
+      "x": "-0.820000",
+      "y": "-0.100000",
+      "kind": "anchor",
+      "anchor_id": "A21",
+      "anchor_name": "Lobe D Upper Shoulder"
+    },
+    {
+      "id": "V053",
+      "x": "-0.884375",
+      "y": "0.011250",
+      "kind": "refinement",
+      "segment": "A21->A22",
+      "sample": 1,
+      "t": 0.5
+    },
+    {
+      "id": "V054",
+      "x": "-0.950000",
+      "y": "0.120000",
+      "kind": "anchor",
+      "anchor_id": "A22",
+      "anchor_name": "West Extreme"
+    },
+    {
+      "id": "V055",
+      "x": "-0.934375",
+      "y": "0.240000",
+      "kind": "refinement",
+      "segment": "A22->A23",
+      "sample": 1,
+      "t": 0.5
+    },
+    {
+      "id": "V056",
+      "x": "-0.880000",
+      "y": "0.360000",
+      "kind": "anchor",
+      "anchor_id": "A23",
+      "anchor_name": "Lobe A West Tip"
+    },
+    {
+      "id": "V057",
+      "x": "-0.801875",
+      "y": "0.479375",
+      "kind": "refinement",
+      "segment": "A23->A24",
+      "sample": 1,
+      "t": 0.5
+    },
+    {
+      "id": "V058",
+      "x": "-0.700000",
+      "y": "0.580000",
+      "kind": "anchor",
+      "anchor_id": "A24",
+      "anchor_name": "Lobe A Northwest Tip"
+    },
+    {
+      "id": "V059",
+      "x": "-0.570625",
+      "y": "0.637500",
+      "kind": "refinement",
+      "segment": "A24->A25",
+      "sample": 1,
+      "t": 0.5
+    },
+    {
+      "id": "V060",
+      "x": "-0.440000",
+      "y": "0.670000",
+      "kind": "anchor",
+      "anchor_id": "A25",
+      "anchor_name": "Lobe A Upper Shoulder"
+    },
+    {
+      "id": "V061",
+      "x": "-0.338125",
+      "y": "0.683125",
+      "kind": "refinement",
+      "segment": "A25->A26",
+      "sample": 1,
+      "t": 0.5
+    },
+    {
+      "id": "V062",
+      "x": "-0.250000",
+      "y": "0.690000",
+      "kind": "anchor",
+      "anchor_id": "A26",
+      "anchor_name": "Central NW Shoulder"
+    },
+    {
+      "id": "V063",
+      "x": "-0.178750",
+      "y": "0.714375",
+      "kind": "refinement",
+      "segment": "A26->A00",
+      "sample": 1,
+      "t": 0.5
+    }
+  ]
+}
