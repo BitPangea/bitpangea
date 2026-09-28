@@ -1,0 +1,239 @@
+# Foundational Survey Fabric — Requirements Traceability Matrix
+
+## Findings #1–#85
+
+**Institution:** The Atlas · Foundational Survey Fabric  
+**Artifact:** Requirements Traceability Matrix  
+**Current Review:** Day #123 · September 27, 2026  
+**Status:** Reviewed after FMD-01 through FMD-09 Specification integration
+
+---
+
+## Purpose
+
+This matrix traces every audited Foundational Survey Fabric Requirement to its downstream:
+
+- Specification section(s);
+- Conformance section(s);
+- Reference Vector category/categories.
+
+Its governing rule is:
+
+> **Every Requirement must have a downstream home. Every downstream obligation must be traceable back to an authoritative Requirement.**
+
+A missing explicit citation is a documentation-level traceability gap until proven otherwise. It is not automatically an architectural defect.
+
+---
+
+## Traceability Marks
+
+The matrix uses:
+
+```text
+E   Explicit
+D   Derived
+N/A Intentionally outside that downstream framework
+```
+
+### Explicit
+
+`E` means the Requirement is explicitly named or included in the cited downstream page's **Requirements Basis**.
+
+### Derived
+
+`D` means the downstream assignment is supported by the Requirement and by the audited architectural scope of the downstream section, but that downstream page's Requirements Basis does not yet explicitly cite it.
+
+### N/A
+
+`N/A` means the Requirement intentionally governs another downstream framework rather than the framework represented by that column.
+
+---
+
+## Day #123 Review Result
+
+Specification Sections 01–07 have now completed their first candidate-mathematics integration pass against:
+
+```text
+FMD-01 through FMD-09
+```
+
+The substantive Specification content therefore changed materially.
+
+However, during that integration pass the existing **Requirements Basis** ranges at the bottom of each Specification section were preserved.
+
+That distinction matters.
+
+The matrix defines Specification explicitness using those Requirements Basis citations, not merely by whether the body text now contains a rule implementing the Requirement.
+
+Therefore:
+
+```text
+Specification section assignment validity
+    -> re-reviewed
+
+Specification E/D basis status
+    -> unchanged in this pass
+```
+
+This is intentional and preserves audit discipline.
+
+A Requirement should not be promoted from `D` to `E` until the downstream Specification page actually cites it in its Requirements Basis.
+
+---
+
+## Current Matrix Standing
+
+The reviewed matrix retains:
+
+```text
+85  Audited Findings
+28  Rows Fully Explicit in Current Basis Audit
+55  Rows Needing at Least One Explicit Basis Update
+2   Specification N/A by Design
+```
+
+The two Specification-N/A findings remain:
+
+```text
+#84 — Mandatory Conformance Core
+#85 — Readiness Gates for Mathematical Design, Prototype, and Canonical Adoption
+```
+
+Those findings govern Conformance/readiness rather than substantive Specification mathematics.
+
+---
+
+## Specification Integration Consequence
+
+The Day #123 Specification integration strengthens the architectural basis for many existing `D` mappings.
+
+Examples include Requirements concerning:
+
+- finite Survey Domain;
+- World-space separation;
+- exact coordinates;
+- precision extension;
+- geometry neutrality;
+- primitive geometry;
+- connectedness;
+- transformations;
+- deterministic implementation;
+- serialization;
+- computability.
+
+But stronger substantive support does not itself convert `D` to `E`.
+
+The correct documentation sequence is:
+
+```text
+Requirement
+    ↓
+Specification content implements Requirement
+    ↓
+Specification Requirements Basis explicitly cites Requirement
+    ↓
+Matrix mapping may become E
+```
+
+---
+
+## Recommended Next Traceability Cleanup
+
+The next traceability-specific action should be a **Specification Requirements Basis reconciliation** across Sections 01–07.
+
+That pass should:
+
+1. review every `D` Specification mapping in this matrix;
+2. determine whether the now-integrated Specification section substantively carries that Requirement;
+3. add the Requirement finding or range to that section's Requirements Basis where justified;
+4. leave genuinely indirect relationships as `D`;
+5. regenerate this matrix from the corrected basis citations;
+6. recalculate the fully-explicit / basis-update counts.
+
+This should be treated as documentation reconciliation.
+
+It should **not** reopen the mathematics selected through FMD-01 through FMD-09.
+
+---
+
+## Conformance Standing
+
+Conformance traceability has not yet received the equivalent Day #123 integration reconciliation.
+
+Accordingly, Conformance `E` / `D` standing remains as previously audited.
+
+When Conformance is updated against the integrated Specification core, its Requirements Basis should be reconciled and the matrix refreshed again.
+
+---
+
+## Reference Vector Standing
+
+Reference Vector subsection reverse traceability was closed on Day #115.
+
+All twelve Reference Vector sections were reverse-traced to Findings #1–#85.
+
+That standing remains preserved.
+
+The Day #123 Specification integration does not reopen Reference Vector Requirements traceability merely because future executable vectors will need revision or expansion for the newly integrated mathematics.
+
+---
+
+## Relationship to the Specification Integration
+
+The seven integrated Specification sections are:
+
+```text
+S01 — Survey Domain and Ground Model
+S02 — Canonical Frame and Measurement
+S03 — Canonical Addressing and Precision
+S04 — Spatial Expressions and Geometry
+S05 — Canonical Operations
+S06 — Serialization and Specification Identity
+S07 — Computability Rules
+```
+
+The matrix remains the Requirement-to-downstream audit bridge across those sections.
+
+---
+
+## Repository Placement
+
+Recommended location:
+
+```text
+theatlas/foundational-survey-fabric/requirements/traceability/
+```
+
+Recommended files:
+
+```text
+index.html
+README.md
+```
+
+If the repository already uses a different established traceability path, preserve that existing path rather than relocating the artifact solely for normalization.
+
+---
+
+## Standing
+
+```text
+REQUIREMENTS FINDINGS — 85
+SPECIFICATION SECTIONS — 7
+CONFORMANCE FRAMEWORK — MAPPED
+REFERENCE VECTOR FRAMEWORK — REVERSE-TRACEABILITY CLOSED
+
+DAY #123 SPECIFICATION CONTENT REVIEW — COMPLETE
+SPECIFICATION SECTION ASSIGNMENTS — STILL VALID
+SPECIFICATION BASIS-CITATION EXPLICITNESS — NOT YET RECONCILED
+CONFORMANCE BASIS RECONCILIATION — NOT YET RE-RUN
+REFERENCE VECTOR TRACEABILITY — CLOSED FROM DAY #115
+
+NEXT TRACEABILITY TASK — SPECIFICATION REQUIREMENTS BASIS RECONCILIATION
+```
+
+---
+
+## Governing Closing Statement
+
+> **Traceability is not satisfied merely because a rule appears in the right document. The authoritative Requirement must be able to reach that rule explicitly, and the rule must be able to trace back to the Requirement that justifies it.**
