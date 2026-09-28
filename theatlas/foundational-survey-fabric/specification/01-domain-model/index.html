@@ -234,10 +234,10 @@ h1{
 
 <div class="req-intro">
 <p>
-  This section translates accepted Foundational Survey Fabric requirements into the specification scope for the Survey Domain and Ground Model. It defines the properties that the eventual formal mathematics must satisfy before any exact domain geometry, coordinate encoding, addressing grammar, or implementation representation can be adopted.
+  This section translates accepted Foundational Survey Fabric requirements into the specification rules for the Survey Domain and Ground Model. It preserves the Requirements-level commitments to a finite, connected, two-dimensional canonical reference domain while incorporating the candidate mathematical design selected through Formal Mathematical Decisions FMD-01 through FMD-09 where those decisions directly govern Domain semantics.
 </p>
 <p>
-  This page does not yet select the final mathematical shape of the Survey Domain. It records the required formal model that the eventual specification must realize.
+  The integrated candidate now selects an exact mathematical Domain geometry, exact numerical bounds, exact boundary inclusion, and exact Domain-validity test. These mathematical selections remain <strong>candidate Specification content</strong> pending Conformance, Reference Vector testing, independent implementation, adversarial review, and formal adoption.
 </p>
 </div>
 
@@ -247,10 +247,24 @@ h1{
 </blockquote>
 
 <section class="spec-card">
+  <div class="spec-label">01.0 · Candidate Mathematics Integration</div>
+  <h2>Selected Mathematics, Not Yet Adopted Canon</h2>
+  <p>
+    This section now integrates the Domain-relevant results of the candidate FSF mathematical design. In particular, FMD-01 supplies exact reduced rational Pang coordinates; FMD-03 supplies the permanent origin rule; and FMD-04 supplies the candidate Domain geometry, numerical bounds, and closed-boundary convention.
+  </p>
+  <p>
+    FMD-02, FMD-05 through FMD-08, and FMD-09 remain compatible with this section but primarily govern the frame, primitive geometry, predicates, normalization, serialization, and precision semantics specified elsewhere. Their relevant consequences are reflected here only where needed to define Domain validity and preserve the boundary between foundational reference capacity and higher-layer meaning.
+  </p>
+</section>
+
+<section class="spec-card">
   <div class="spec-label">01.1 · Canonical Survey Domain</div>
   <h2>Finite Reference Domain</h2>
   <p>
-    The Foundational Survey Fabric shall define one finite canonical Survey Domain. The domain establishes the exact scope within which canonical BitPangea spatial reference is valid.
+    The Foundational Survey Fabric shall define one finite canonical Survey Domain. The Domain establishes the exact scope within which canonical BitPangea spatial reference is valid.
+  </p>
+  <p>
+    Under the current candidate mathematical design, the Survey Domain is one <strong>closed, axis-aligned square</strong> centered on the permanent Survey origin and expressed through exact CRPC Pang coordinates.
   </p>
   <p>
     The Survey Domain is a reference architecture, not a cartographic declaration of World membership. A location may be validly referenceable within the Survey Domain without thereby becoming BitPangea World-space.
@@ -261,7 +275,7 @@ h1{
   <div class="spec-label">01.2 · Dimensional Model</div>
   <h2>Two-Dimensional Planar Ground</h2>
   <p>
-    The canonical Survey Domain shall presently be modeled as a two-dimensional planar spatial ground. Vertical, volumetric, immersive, nested, terrain, elevation, and other higher-dimensional or surface expressions belong above the Foundational Survey Fabric.
+    The canonical Survey Domain shall be modeled as a two-dimensional planar spatial ground. Vertical, volumetric, immersive, nested, terrain, elevation, and other higher-dimensional or surface expressions belong above the Foundational Survey Fabric.
   </p>
   <p>
     The Survey Fabric therefore anchors permanent ground position without becoming the visible, geographic, architectural, rendered, or experiential surface of BitPangea.
@@ -270,9 +284,12 @@ h1{
 
 <section class="spec-card">
   <div class="spec-label">01.3 · Domain Coherence</div>
-  <h2>One Connected Reference Space</h2>
+  <h2>One Connected Closed Reference Space</h2>
   <p>
     The canonical Survey Domain shall be one connected and internally coherent reference domain rather than a collection of disconnected sectors or a domain containing arbitrary internal holes where canonical reference is unavailable.
+  </p>
+  <p>
+    Under the current candidate mathematics, the Domain is a single closed square and is therefore connected, path-connected, bounded, and hole-free as a foundational reference extent.
   </p>
   <p>
     Higher spatial layers may designate portions of that reference capacity differently without requiring corresponding gaps in the foundational reference system.
@@ -280,60 +297,82 @@ h1{
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">01.4 · Domain Limits</div>
-  <h2>Exact Reference Extent</h2>
+  <div class="spec-label">01.4 · Exact Domain Geometry and Limits</div>
+  <h2>Closed Square · Exact Pang Bounds</h2>
   <p>
-    The Survey Domain shall possess exact mathematically defined limits that determine where valid canonical Survey reference ends.
+    Under the candidate mathematical design, the canonical Survey Domain is:
   </p>
   <p>
-    Those limits shall not themselves be treated as BitPangea’s World boundary, Extent expression, Verge, coastline, Exterior, or other cartographic feature. Every authoritative World-space location shall remain representable within the canonical Survey Domain. Beyond the canonical Survey Domain, there is simply no valid BitPangea Survey reference.
+    <strong>D = [-1,000,000,+1,000,000] × [-1,000,000,+1,000,000] Pang</strong>
+  </p>
+  <p>
+    The Domain therefore has an exact width of <strong>2,000,000 Pang</strong>, exact height of <strong>2,000,000 Pang</strong>, and exact area of <strong>4,000,000,000,000 square Pang</strong>. Its four boundary edges and four corner points are included in valid Survey space.
+  </p>
+  <p>
+    These limits determine where valid canonical Survey reference ends. They shall not themselves be treated as BitPangea’s World boundary, Extent expression, Verge, coastline, Exterior, or other cartographic feature. Beyond the canonical Survey Domain, there is no valid BitPangea Survey reference.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">01.5 · World-Space Separation</div>
+  <div class="spec-label">01.5 · Exact Domain Validity</div>
+  <h2>Valid Survey Position or Invalid Reference</h2>
+  <p>
+    Let a candidate canonical Point be <strong>p = (x,y)</strong>, with both coordinates expressed as valid normalized CRPC Pang values.
+  </p>
+  <p>
+    The Point belongs to the Survey Domain exactly when:
+    <strong>-1,000,000 ≤ x ≤ +1,000,000</strong> and
+    <strong>-1,000,000 ≤ y ≤ +1,000,000</strong>.
+  </p>
+  <p>
+    The comparison is exact. No tolerance, epsilon, snapping, rounding, or nearest-valid-position rule is permitted. A Point outside either bound is invalid as a canonical Survey Point rather than merely classified as non-World.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">01.6 · World-Space Separation</div>
   <h2>Reference Capacity and World Membership</h2>
   <p>
-    World membership shall be established by higher spatial Architecture domains using canonical Survey Fabric references. The Foundational Survey Fabric shall determine where canonical reference is valid, while those higher spatial domains determine what portions of that reference capacity constitute The World.
+    World membership shall be established by higher spatial Architecture domains using valid canonical Survey Fabric references. The Foundational Survey Fabric determines where canonical reference is possible; higher spatial domains determine what portions of that reference capacity constitute The World.
   </p>
   <p>
-    The Survey Domain is therefore not required to geometrically match BitPangea’s irregular supercontinental World Form.
+    The Survey Domain is therefore not required to geometrically match BitPangea’s irregular supercontinental World Form. The selected production Spatial Ground design may occupy a strict subset of the Survey Domain, but that production choice shall not redefine the foundational meaning of the Domain itself.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">01.6 · Higher-Layer Geometry</div>
+  <div class="spec-label">01.7 · Higher-Layer Geometry</div>
   <h2>No Required Alignment to Survey Subdivision</h2>
   <p>
-    Higher-layer spatial entities shall not be required to align their authoritative geometry with Survey Fabric subdivisions, grid lines, or indexing structures merely because those structures exist.
+    Higher-layer spatial entities shall not be required to align their authoritative geometry with Survey Fabric subdivisions, grid lines, tiles, cells, or indexing structures merely because such derived structures may exist.
   </p>
   <p>
-    The Survey Fabric provides reference. Higher layers remain responsible for shape.
+    The current candidate precision model uses exact coordinate extension rather than a mandatory hierarchical grid or parent/child Point system. The Survey Fabric provides reference. Higher layers remain responsible for shape.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">01.7 · Center and Internal Partitions</div>
-  <h2>No Foundational Semantic Privilege</h2>
+  <div class="spec-label">01.8 · Center and Internal Partitions</div>
+  <h2>Mathematical Origin Without Semantic Privilege</h2>
   <p>
-    The Survey Domain shall not establish a privileged civic, cultural, geographic, or institutional center. Any mathematically derived midpoint or centroid remains a geometric property unless a higher layer assigns meaning to it.
+    The permanent canonical origin is <strong>(0,0)</strong>, selected as the midpoint of the Domain’s exact coordinate bounds. It is mathematically privileged as the zero-reference of the Survey frame and nothing more.
   </p>
   <p>
-    Internal sectors, quadrants, regions, zones, or partitions used for indexing, computation, precision, or serialization shall likewise remain semantically neutral at the foundational level.
+    The Survey Domain shall not establish a privileged civic, cultural, geographic, political, economic, or institutional center. Internal sectors, quadrants, regions, zones, grids, or partitions used for indexing, computation, precision, or serialization shall likewise remain semantically neutral at the foundational level.
   </p>
 </section>
 
 <div class="status-grid">
   <div class="status-card">
-    <h3>Established by Requirements</h3>
+    <h3>Integrated Candidate Mathematics</h3>
     <p>
-      Finite domain; planar two-dimensional ground; one connected reference space; exact domain limits; every authoritative World-space location representable within the Survey Domain; separation of reference capacity from World-space; no mandatory grid alignment for higher geometry; terrain and surface above the Foundational Survey Fabric; no privileged foundational center or semantic internal partition.
+      Finite two-dimensional Domain; one connected closed square; exact CRPC Pang bounds; permanent origin at (0,0); exact boundary inclusion; exact Domain-validity comparisons; separation of Survey validity from World membership; no mandatory grid alignment; no foundational semantic privilege for origin or internal partitions.
     </p>
   </div>
   <div class="status-card">
-    <h3>Still Open in the Specification</h3>
+    <h3>Still Outside This Section / Still Open</h3>
     <p>
-      The exact mathematical geometry of the finite Survey Domain, its numerical dimensions, its precise boundary representation, the exact coordinate mathematics, and the final addressing and precision system remain unresolved until the candidate mathematical design is selected and tested against the complete requirements framework.
+      Final canonical address grammar, angular representation, exact general distance and path-length scalar closure, arbitrary exact rotation and transformation closure, general Boolean/composition closure, operation-output closure, Specification identity details, governed complexity limits, and formal adoption remain outside this section or still unresolved at full-FSF scope.
     </p>
   </div>
 </div>
@@ -354,6 +393,17 @@ h1{
   </div>
 </section>
 
+<section class="spec-card">
+  <div class="spec-label">Candidate Integration Standing</div>
+  <h2>Specification 01 Is Mathematically Ready for Core Prototype Use</h2>
+  <p>
+    No contradiction was found between this integrated Domain model and FMD-01 through FMD-09. The Domain-relevant candidate mathematics are sufficiently exact to support prototype validation of canonical Points and the later placement of the selected Spatial Ground World SCPE.
+  </p>
+  <p>
+    This readiness does not constitute formal adoption. Canonical adoption remains contingent on Specification-wide integration, Conformance, Reference Vectors, independent implementation, adversarial testing, traceability, and the applicable adoption act.
+  </p>
+</section>
+
 <blockquote>
   <span class="quote-label">Architectural Boundary</span>
   The Survey Domain defines where canonical reference is possible and bounds the reference capacity within which authoritative World-space must be expressible. Higher spatial Architecture domains determine what portions of that capacity constitute The World and what that referenced space becomes.
@@ -365,7 +415,7 @@ h1{
   <a href="/theatlas/foundational-survey-fabric/specification/">Specification Index</a>
 </div>
 
-<div class="note">Foundational Survey Fabric · Specification 01 · Survey Domain and Ground Model</div>
+<div class="note">Foundational Survey Fabric · Specification 01 · Survey Domain and Ground Model · Candidate Mathematics Integrated</div>
 
 </article>
 </main>
