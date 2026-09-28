@@ -237,10 +237,10 @@ h1{
 
 <div class="req-intro">
 <p>
-  This section translates accepted Foundational Survey Fabric requirements into the specification scope for serialization and specification identity. It defines how authoritative Survey references, extents, and foundational spatial expressions must be represented through deterministic normative interchange across independent conforming implementations.
+  This section translates accepted Foundational Survey Fabric requirements into the specification rules for serialization and specification identity. It now incorporates the candidate mathematical design selected through Formal Mathematical Decisions FMD-01 through FMD-09 where those decisions resolve canonical machine representation, deterministic normalization, exact numeric encoding, representation equivalence, and compatibility-preserving evolution.
 </p>
 <p>
-  It also establishes the distinction between the mathematical truth of canonical space and the documents, encodings, versions, or verification systems used to describe and exchange that truth. Formats may evolve. Canonical spatial meaning must remain unchanged.
+  The candidate core now selects <strong>FSF-CJSON-1.0</strong> as the primary canonical machine-readable serialization for the current Point / Segment / SCPE geometry profile. This closes the principal machine-interchange question for the solved core, while preserving the distinction between mathematical meaning, canonical bytes, Specification identity, future compatible encodings, and any public human-readable address grammar.
 </p>
 </div>
 
@@ -250,140 +250,195 @@ h1{
 </blockquote>
 
 <section class="spec-card">
-  <div class="spec-label">06.1 · Normative Serialization and Interchange</div>
-  <h2>Deterministic Authoritative Exchange</h2>
+  <div class="spec-label">06.0 · Candidate Mathematics Integration</div>
+  <h2>Primary Canonical Machine Representation Selected</h2>
   <p>
-    The Foundational Survey Fabric shall define deterministic normative serialization and interchange rules for authoritative Survey references, spatial extents, and other foundational spatial expressions.
+    FMD-08 selects <strong>FSF-CJSON-1.0</strong> as the primary canonical machine representation for the current core geometry profile. FMD-01 supplies the exact CRPC values serialized by that format. FMD-07 supplies the canonical geometry normalization that must occur before serialization. FMD-09 supplies the compatibility rule that future representational capability may expand without moving established place.
   </p>
   <p>
-    The governing Specification may define one canonical serialization or multiple explicitly governed lossless encodings, provided every normative form resolves deterministically to the same canonical spatial meaning and authoritative interchange remains unambiguous.
-  </p>
-  <p>
-    Independent conforming implementations may use different internal data structures or storage methods, but those internal choices shall not alter the normative interchange semantics established by the Specification.
+    FMD-02 through FMD-06 define mathematical meaning that serialization must preserve. The serialization format does not create those semantics; it carries them deterministically. The final Specification identifier scheme, compatibility-declaration syntax, and any future additional normative encoding remain open.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">06.2 · Deterministic Encoding</div>
-  <h2>Unambiguous Machine Representation</h2>
+  <div class="spec-label">06.1 · Primary Canonical Serialization</div>
+  <h2>FSF-CJSON-1.0</h2>
   <p>
-    Every normative encoding shall be deterministic within its own rules so that conforming implementations produce and interpret that encoding without ambiguity.
+    The current candidate core uses <strong>FSF-CJSON-1.0</strong> as the primary canonical machine-readable representation for supported FSF geometry.
   </p>
   <p>
-    Where more than one normative encoding is permitted, differently encoded authoritative expressions shall be deterministically recognizable as the same canonical spatial meaning when they are semantically equivalent.
+    Canonical FSF-CJSON shall be encoded as compact UTF-8 JSON with no byte-order mark and no insignificant whitespace. Canonical exact coordinate values shall not use JSON numeric literals.
   </p>
   <p>
-    Valid non-normative or convenience encodings may exist, but they shall not acquire canonical authority merely by representing the same place.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">06.3 · Representation Classes</div>
-  <h2>One Governing Meaning Across Durable Forms</h2>
-  <p>
-    The Survey Specification may be documented or encoded through multiple human-readable, machine-readable, formal, archival, or future durable representations.
-  </p>
-  <p>
-    Any representation designated normative shall express the same canonical mathematical meaning and shall participate in the Specification’s deterministic equivalence and conflict-resolution rules.
-  </p>
-  <p>
-    Non-normative explanatory, archival, or presentation forms may evolve independently, but they shall not establish or override canonical spatial truth.
+    The canonical byte sequence is produced only after the underlying mathematical object has been validated and normalized.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">06.4 · Representation Consistency</div>
-  <h2>Deterministic Agreement Across Normative Forms</h2>
+  <div class="spec-label">06.2 · Exact Numeric Encoding</div>
+  <h2>CRPC as Structured Exact Data</h2>
   <p>
-    Where multiple normative representations are maintained, the Specification shall define deterministic semantic-equivalence rules sufficient for conforming implementations to recognize when those representations express the same canonical meaning.
+    A CRPC scalar <strong>n/d Pang</strong> shall be serialized as an object containing canonical integer strings for numerator and denominator.
   </p>
   <p>
-    If a conflict arises among normative representations, the governing Specification shall provide an explicit precedence or conflict-resolution rule so disagreement among forms cannot create competing canonical meanings.
+    The canonical object shape is:
+    <strong>{"d":"&lt;positive-integer&gt;","n":"&lt;signed-integer&gt;"}</strong>.
+  </p>
+  <p>
+    The denominator shall be positive; the fraction shall already be reduced; canonical zero shall be represented as <strong>{"d":"1","n":"0"}</strong>. JSON number syntax, exponent notation, positive signs, leading zeros, and negative zero shall not establish canonical exact values.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">06.5 · Specification Identity</div>
+  <div class="spec-label">06.3 · Canonical Geometry Encoding</div>
+  <h2>Typed Point, Segment, and SCPE Structures</h2>
+  <p>
+    The current candidate format defines canonical typed representations for <strong>Point</strong>, <strong>Segment</strong>, and <strong>SCPE</strong> geometry.
+  </p>
+  <p>
+    Geometry shall be normalized under FMD-07 before serialization. Segment endpoint order and SCPE traversal/start-vertex order therefore enter serialization already canonicalized rather than being corrected by the serializer.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">06.4 · Deterministic Object Encoding</div>
+  <h2>Same Normalized Meaning, Same Canonical Bytes</h2>
+  <p>
+    Canonical object keys shall be emitted in ascending Unicode code-point lexicographic order. Array order shall preserve the semantic order defined by the geometry model.
+  </p>
+  <p>
+    Duplicate keys are invalid. Unknown fields are invalid unless introduced by a governed future format version. Strings shall be valid Unicode and normalized to NFC.
+  </p>
+  <p>
+    For the same normalized supported geometry under the same governing format version, conforming implementations shall emit identical canonical UTF-8 bytes.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">06.5 · Representation Classes</div>
+  <h2>Canonical, Lossless Alternate, and Non-Normative Forms</h2>
+  <p>
+    FSF-CJSON-1.0 is the current primary canonical machine representation for the solved core.
+  </p>
+  <p>
+    Other lossless representations may exist or be introduced later, but they shall not become co-equal canonical representations merely because they encode the same mathematical meaning. Any future normative representation must be explicitly governed and must participate in deterministic semantic-equivalence and precedence rules.
+  </p>
+  <p>
+    Explanatory, archival, debugging, display, or convenience encodings remain non-normative unless explicitly designated otherwise.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">06.6 · Representation Consistency</div>
+  <h2>Mathematics Before Bytes</h2>
+  <p>
+    Mathematical equivalence shall be established through the governing FSF semantics and normalization rules before canonical serialization is compared.
+  </p>
+  <p>
+    For the current core:
+    <strong>same canonical geometry meaning → same normalized structure → same FSF-CJSON-1.0 bytes</strong>.
+  </p>
+  <p>
+    A byte mismatch after canonical normalization indicates a serialization or conformance failure rather than permission for competing canonical meanings.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">06.7 · Specification Identity</div>
   <h2>The Standard Must Be Identifiable</h2>
   <p>
-    The Foundational Survey Fabric specification, serialization rules, conformance profiles, and reference materials shall carry explicit identity information sufficient for independent implementations to determine which governing standard applies.
+    The Foundational Survey Fabric Specification, serialization rules, Conformance profiles, Reference Vectors, and other normative materials shall carry explicit identity sufficient for an implementation to determine which governing standard applies.
   </p>
   <p>
-    Specification identity shall identify the standard and its applicable rules without becoming part of the spatial identity of the places described by that standard.
+    The current canonical serialization identifier is <strong>FSF-CJSON-1.0</strong>. This identifies the serialization format, not the spatial identity of any place encoded under it.
+  </p>
+  <p>
+    The final top-level FSF Specification identifier and complete identifier syntax remain to be selected during Specification-wide integration and adoption preparation.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">06.6 · Versioning</div>
+  <div class="spec-label">06.8 · Versioning</div>
   <h2>Version the Standard, Not the Place</h2>
   <p>
-    Specification documents, serialization rules, conformance profiles, and test materials may carry governed version history.
+    Specification documents, serialization rules, Conformance profiles, schemas, and Reference Vectors may carry governed version history.
   </p>
   <p>
-    Compatible specification evolution shall preserve previously established canonical spatial meaning. A new document version shall not renumber, relocate, reinterpret, or otherwise change an existing canonical place.
+    Compatible evolution shall preserve previously established canonical spatial meaning. A new format or Specification version shall not renumber, relocate, reinterpret, snap, or otherwise change an existing canonical place.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">06.7 · Compatibility</div>
-  <h2>Preserve Established Spatial Meaning</h2>
+  <div class="spec-label">06.9 · Compatibility</div>
+  <h2>Compatible Extension Preserves Old Meaning</h2>
   <p>
-    Conforming implementations shall be able to determine whether a Specification version or normative encoding version is compatible with previously established canonical Survey meaning.
+    Compatible successor Specifications may expand exact representational capability, add explicitly governed lossless encodings, extend supported geometry, or strengthen conformance material, provided previously valid canonical spatial meaning remains unchanged.
   </p>
   <p>
-    Compatible changes may clarify rules, extend capabilities, improve conformance material, or add durable representations, provided they do not alter established spatial truth.
+    Where <strong>R<sub>v</sub></strong> is the valid reference set of version <strong>v</strong>, compatible extension shall preserve old meaning for previously valid references. Serialization evolution therefore follows the same ECEM principle as precision evolution: extend capability without migrating established place.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">06.8 · Spatial Meaning Independent of Format</div>
+  <div class="spec-label">06.10 · Spatial Meaning Independent of Format</div>
   <h2>The Format Is Not the Place</h2>
   <p>
-    Canonical spatial meaning shall remain independent of any particular text format, binary encoding, data structure, schema language, storage system, or interchange technology.
+    Canonical spatial meaning remains mathematical and shall not depend on JSON, a specific schema language, text encoding technology, database layout, file extension, or storage system.
   </p>
   <p>
-    A representation may become obsolete while the mathematical place it describes remains unchanged and recoverable through the governing specification.
+    FSF-CJSON-1.0 is the current canonical machine representation of the solved core, not the ontological source of the geometry it represents.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">06.9 · Verification Independence</div>
-  <h2>Mathematics Before Verification Technology</h2>
+  <div class="spec-label">06.11 · Verification Independence</div>
+  <h2>Canonical Bytes Before Integrity Technology</h2>
   <p>
-    Canonical Survey meaning shall not depend on any particular cryptographic algorithm, signature scheme, blockchain, consensus network, database, or authentication technology.
+    Cryptographic hashes, signatures, Merkle structures, blockchains, databases, or other verification technologies may authenticate or preserve canonical material, but they do not define spatial meaning.
   </p>
   <p>
-    Such technologies may authenticate specifications, records, or canonical succession above the spatial mathematics, but they shall not define where a Survey reference points.
+    Where integrity evidence is applied to FSF-CJSON, it shall operate over the canonical UTF-8 byte sequence produced by the governing normalization and serialization rules. The specific integrity algorithm remains outside the current serialization decision.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">06.10 · Provenance Boundary</div>
+  <div class="spec-label">06.12 · Provenance Boundary</div>
   <h2>Identity of the Standard Is Not Identity of the Place</h2>
   <p>
-    Specification identity, document provenance, publication history, signatures, and verification metadata may establish which standard or representation is authoritative.
+    Specification identity, publication history, signatures, adoption acts, provenance metadata, and integrity evidence may establish which rules or artifacts are authoritative.
   </p>
   <p>
-    Those mechanisms shall remain separate from the canonical spatial meaning of references established under that standard.
+    Those mechanisms remain separate from the canonical spatial meaning of the Points, Segments, or extents described under those rules.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">06.11 · Interoperable Exchange</div>
-  <h2>Many Implementations, One Interchange Truth</h2>
+  <div class="spec-label">06.13 · Interoperable Exchange</div>
+  <h2>Many Implementations, One Canonical Byte Result</h2>
   <p>
-    A conforming implementation shall be able to emit, receive, parse, validate, and interpret the normative Survey encodings it claims to support without dependence on proprietary internal state or inaccessible implementation knowledge.
+    A conforming implementation claiming FSF-CJSON-1.0 support shall be able to emit, receive, parse, validate, normalize, and interpret the format without dependence on proprietary hidden state.
   </p>
   <p>
-    Normative interchange shall therefore support independent verification, deterministic semantic equivalence, and reproducibility across implementations.
+    Independent conforming implementations shall be capable of producing identical canonical bytes from the same normalized supported FSF geometry.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">06.12 · Durable Expression</div>
+  <div class="spec-label">06.14 · Schema Boundary</div>
+  <h2>Syntax Validation Does Not Replace Semantic Validation</h2>
+  <p>
+    A machine-readable schema may validate the structural shape of FSF-CJSON-1.0.
+  </p>
+  <p>
+    Schema validity alone does not prove reduced-rational correctness, Domain validity, geometry validity, SCPE simplicity, canonical normalization, or semantic equivalence. Those remain validator responsibilities defined by the mathematical Specification and Conformance model.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">06.15 · Durable Expression</div>
   <h2>Spatial Truth Should Outlive Its Formats</h2>
   <p>
-    The governing specification shall preserve enough formal meaning that canonical Survey truth can be re-expressed in future durable formats without changing the mathematics beneath it.
+    The governing Specification shall preserve enough mathematical meaning that canonical Survey truth can be re-expressed in future durable formats without changing the mathematics beneath it.
   </p>
   <p>
     New representations may be introduced where useful, but no representation shall create an alternate canonical space.
@@ -392,18 +447,29 @@ h1{
 
 <div class="status-grid">
   <div class="status-card">
-    <h3>Established by Requirements</h3>
+    <h3>Integrated Candidate Mathematics</h3>
     <p>
-      Deterministic normative serialization and interchange; permission for one canonical serialization or multiple explicitly governed lossless normative encodings; deterministic semantic equivalence across authoritative forms; explicit specification identity and versioning; persistence of spatial meaning across compatible specification evolution; independence of spatial meaning from cryptographic, blockchain, database, or verification technology; and preservation of one canonical mathematical truth across multiple durable representations.
+      FSF-CJSON-1.0 as primary canonical machine representation; compact UTF-8 canonical bytes; exact CRPC object encoding; deterministic key order; duplicate-key rejection; normalized geometry before serialization; Point / Segment / SCPE typed structures; same normalized meaning yielding identical canonical bytes; versioned format identity.
     </p>
   </div>
   <div class="status-card">
     <h3>Still Open in the Specification</h3>
     <p>
-      Whether authoritative interchange uses one canonical serialization or multiple governed lossless normative encodings; the exact machine-readable format or formats, encoding syntax, field order, byte-level canonicalization rules where applicable, schema language, version identifier format, normative-representation precedence rule, compatibility declaration format, and cryptographic or provenance mechanisms used above the spatial mathematics remain unresolved until the formal Specification and conformance model are selected and tested.
+      Final top-level FSF Specification identifier; complete compatibility-declaration syntax; any future additional normative encoding and its precedence rules; hash/signature algorithm selection above the spatial mathematics; serialization for future geometry types not yet formally selected; and final adoption/version-governance procedure.
     </p>
   </div>
 </div>
+
+<section class="spec-card">
+  <div class="spec-label">Candidate Integration Standing</div>
+  <h2>Core Serialization Is Selected and Ready for Conformance Work</h2>
+  <p>
+    No contradiction was found between Specification 06 and FMD-01 through FMD-09 for the current Point / Segment / SCPE profile. The solved core now has a deterministic path from exact mathematical meaning through normalization to canonical machine bytes.
+  </p>
+  <p>
+    Formal adoption remains contingent on Specification-wide integration, executable schema/semantic validators, Reference Vectors, independent implementation, adversarial testing, traceability, compatibility policy, and the applicable adoption act.
+  </p>
+</section>
 
 <section class="spec-card">
   <div class="spec-label">Requirements Basis</div>
@@ -428,7 +494,7 @@ h1{
   <a href="/theatlas/foundational-survey-fabric/specification/">Specification Index</a>
 </div>
 
-<div class="note">Foundational Survey Fabric · Specification 06 · Serialization and Specification Identity</div>
+<div class="note">Foundational Survey Fabric · Specification 06 · Serialization and Specification Identity · Candidate Mathematics Integrated</div>
 
 </article>
 </main>
