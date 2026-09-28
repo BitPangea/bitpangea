@@ -236,10 +236,10 @@ h1{
 
 <div class="req-intro">
 <p>
-  This section translates accepted Foundational Survey Fabric requirements into the specification scope for canonical frame and measurement. It defines the formal requirements that the eventual mathematics must satisfy for scale, orientation, origin, angular relationship, spatial separation, area, and geometric length.
+  This section translates accepted Foundational Survey Fabric requirements into the specification rules for canonical frame and measurement. It now incorporates the candidate mathematical design selected through Formal Mathematical Decisions FMD-01 through FMD-09 wherever those decisions directly resolve frame, coordinate, origin, orientation, area, or precision questions.
 </p>
 <p>
-  This page does not yet choose the final coordinate representation, positive rotational convention, angular unit, distance formula, area formula, or path-length mathematics. Those remain open until the candidate mathematical design is selected and tested against the complete requirements framework.
+  Several measurement obligations remain intentionally open. The candidate mathematics now resolve exact coordinate representation, axis meaning, handedness, positive rotation, origin placement, rational-coordinate polygon area, and precision semantics. They do <strong>not</strong> yet resolve the canonical angular unit, exact general straight-distance scalar representation, exact general path or boundary-length scalar representation, or arbitrary exact rotation closure. Those remain visible Specification gates.
 </p>
 </div>
 
@@ -254,24 +254,41 @@ h1{
 </blockquote>
 
 <section class="spec-card">
+  <div class="spec-label">02.0 · Candidate Mathematics Integration</div>
+  <h2>Frame Mathematics Selected · Measurement Closure Partial</h2>
+  <p>
+    FMD-01 establishes exact reduced rational Pang coordinates. FMD-02 establishes the canonical axis mapping, handedness, and positive rotational convention. FMD-03 establishes the permanent origin. FMD-05 and FMD-06 supply exact polygonal geometry and exact orientation predicates. FMD-09 supplies the precision model.
+  </p>
+  <p>
+    FMD-04 provides the exact Domain bounds used by the frame but belongs primarily to Specification 01. FMD-07 and FMD-08 govern normalization and serialization elsewhere. None of Decisions 01–09 selects the final canonical angular unit or an exact scalar family sufficient to represent all Euclidean distances and arbitrary path lengths, so those obligations remain open rather than being approximated.
+  </p>
+</section>
+
+<section class="spec-card">
   <div class="spec-label">02.1 · Native Linear Scale</div>
   <h2>Pang</h2>
   <p>
     The Foundational Survey Fabric shall use the <strong>Pang</strong> as BitPangea’s native canonical unit of linear spatial measure.
   </p>
   <p>
-    Pang defines spatial scale. It does not define Parcel identity, Survey-cell identity, display scale, physical-world distance, or ultimate spatial precision. One Pang shall have the same exact canonical meaning everywhere within the Survey Domain, while finer precision shall be supplied by the exact precision mechanism established elsewhere in the governing Survey mathematics.
+    Pang defines spatial scale. It does not define Parcel identity, Survey-cell identity, display scale, physical-world distance, or ultimate spatial precision. One Pang shall have the same exact canonical meaning everywhere within the Survey Domain.
+  </p>
+  <p>
+    Under the current candidate precision model, sub-Pang position is represented through exact CRPC fractions rather than through a mandatory hierarchy of named subunits.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">02.2 · Canonical Area</div>
-  <h2>Square Pang</h2>
+  <div class="spec-label">02.2 · Canonical Coordinate Scalars</div>
+  <h2>Exact Rational Pang Coordinates</h2>
   <p>
-    Canonical area shall be expressed in <strong>square Pangs</strong>. Area shall describe the exact amount of canonical BitPangea space occupied by an extent without assigning ownership, value, use, zoning, identity, or other higher-layer meaning.
+    Canonical Survey position coordinates shall use <strong>Canonical Rational Pang Coordinates (CRPC)</strong>. Each coordinate scalar is an exact reduced rational value:
   </p>
   <p>
-    The precise mathematical method used to compute canonical area remains unresolved pending selection of the Survey Fabric’s formal geometry.
+    <strong>q = n/d Pang</strong>, where <strong>n ∈ ℤ</strong>, <strong>d ∈ ℕ+</strong>, <strong>gcd(|n|,d)=1</strong>, and canonical zero is <strong>0/1</strong>.
+  </p>
+  <p>
+    Coordinate exactness does not imply that every derived measurement is rational. General Euclidean distance, arbitrary rotation, and some path-length results may require a broader exact scalar representation, which remains a later formal decision.
   </p>
 </section>
 
@@ -279,16 +296,16 @@ h1{
   <div class="spec-label">02.3 · Native Directional Frame</div>
   <h2>Pankor · Panvath · Panoris · Panvel</h2>
   <p>
-    The canonical directional frame shall use BitPangea-native directional terminology:
+    The canonical two-dimensional frame uses:
   </p>
   <ul class="spec-list">
-    <li><strong>Pankor</strong> — North</li>
-    <li><strong>Panvath</strong> — South</li>
-    <li><strong>Panoris</strong> — East</li>
-    <li><strong>Panvel</strong> — West</li>
+    <li><strong>+x = Panoris</strong> — East</li>
+    <li><strong>-x = Panvel</strong> — West</li>
+    <li><strong>+y = Pankor</strong> — North</li>
+    <li><strong>-y = Panvath</strong> — South</li>
   </ul>
   <p>
-    Higher layers may translate, rotate, mirror, rename, or otherwise present direction differently, provided those representations remain deterministically resolvable to the canonical Survey frame.
+    Canonical coordinate tuples are ordered <strong>(x,y)</strong>. Higher layers may translate, rotate, mirror, rename, or otherwise present direction differently, provided those representations remain deterministically resolvable to the canonical Survey frame.
   </p>
 </section>
 
@@ -296,10 +313,10 @@ h1{
   <div class="spec-label">02.4 · Canonical Origin</div>
   <h2>One Permanent Zero-Reference</h2>
   <p>
-    The Foundational Survey Fabric shall establish one permanent canonical origin from which authoritative spatial position is determined.
+    The permanent canonical Survey origin is <strong>(0,0)</strong>.
   </p>
   <p>
-    The origin shall serve mathematical reference rather than geographic, civic, cultural, economic, or symbolic importance. Its exact placement remains open until the final mathematical design is selected.
+    It is selected as the midpoint of the exact Survey Domain coordinate bounds and serves mathematical reference only. It carries no geographic, civic, cultural, political, economic, or symbolic privilege.
   </p>
 </section>
 
@@ -307,43 +324,55 @@ h1{
   <div class="spec-label">02.5 · Global Coordinate Frame</div>
   <h2>One Foundational Frame</h2>
   <p>
-    All authoritative BitPangea spatial location shall resolve to one global canonical coordinate frame defined by the permanent origin, canonical orientation, native Pang scale, and exact reference mathematics.
+    All authoritative BitPangea spatial location shall resolve to one global canonical coordinate frame defined by the permanent origin, the `(x,y)` tuple order, canonical directional axes, native Pang scale, and exact CRPC coordinate mathematics.
   </p>
   <p>
-    Local, Parcel-relative, regional, dimensional, application-specific, and user-facing coordinate systems may exist above the Foundational Survey Fabric, but they shall not become competing sources of canonical World-space truth.
+    Local, Parcel-relative, regional, dimensional, application-specific, and user-facing coordinate systems may exist above the Foundational Survey Fabric, but they shall not become competing sources of canonical spatial truth.
   </p>
 </section>
 
 <section class="spec-card">
   <div class="spec-label">02.6 · Handedness and Rotation</div>
-  <h2>Singular Mathematical Orientation</h2>
+  <h2>Right-Handed Frame · Counterclockwise Positive Rotation</h2>
   <p>
-    The canonical two-dimensional coordinate frame shall use one permanent handedness and one canonical rotational orientation so that direction, transformation, geometry, and angular interpretation remain identical across conforming implementations.
+    The canonical two-dimensional Survey frame is <strong>right-handed</strong>.
   </p>
   <p>
-    The specific positive rotational convention remains unresolved until the formal mathematical design is selected. Once established, mirrored or reversed views shall be treated only as derived transformations.
+    Positive rotation is <strong>counterclockwise</strong> as viewed from the positive normal to the Survey plane. Mirrored or reversed views are derived representations only and do not redefine canonical orientation.
+  </p>
+  <p>
+    For valid Points A, B, and C, exact orientation is determined by:
+    <strong>orient(A,B,C) = (x₂-x₁)(y₃-y₁) - (y₂-y₁)(x₃-x₁)</strong>.
+    Positive means left / counterclockwise, negative means right / clockwise, and zero means collinear.
   </p>
 </section>
 
 <section class="spec-card">
   <div class="spec-label">02.7 · Canonical Angular System</div>
-  <h2>One Exact Way to Turn</h2>
+  <h2>One Exact Way to Turn — Unit Still Open</h2>
   <p>
-    The Foundational Survey Fabric shall define one exact canonical angular system for orientation and rotation relative to the permanent directional frame.
+    The Foundational Survey Fabric shall define one exact canonical angular system for orientation and rotation relative to the permanent frame.
   </p>
   <p>
-    The specific canonical angular unit and notation remain unresolved. Degrees, headings, local directions, and other presentation conventions may be used above the Foundational Survey Fabric when they map exactly back to the canonical angular system.
+    The orientation baseline is now fixed: zero-direction reference is Panoris / +x and positive rotation is counterclockwise. However, the final canonical angular unit, exact angle representation, and closure rules for arbitrary rotations remain unresolved.
+  </p>
+  <p>
+    Degrees, headings, local directions, and other presentation conventions may be used above the Foundational Survey Fabric only when they map exactly back to the eventual canonical angular system.
   </p>
 </section>
 
 <section class="spec-card">
   <div class="spec-label">02.8 · Canonical Spatial Separation</div>
-  <h2>Exact Spatial Separation</h2>
+  <h2>Exact Straight Spatial Separation — Scalar Closure Still Open</h2>
   <p>
     The Foundational Survey Fabric shall define one exact canonical measure of straight spatial separation expressed in Pangs.
   </p>
   <p>
-    Canonical spatial separation shall describe geometry only. Routing distance, traversal time, accessibility, travel cost, perceived distance, network distance, and other functional meanings remain higher-layer concerns. The exact spatial-separation mathematics remains open pending selection of the formal geometry.
+    For Points with CRPC coordinates, squared Euclidean separation is exactly representable as:
+    <strong>Δx² + Δy²</strong>. The corresponding distance may require an irrational algebraic value such as a square root of a rational number.
+  </p>
+  <p>
+    The Specification therefore shall not substitute floating-point approximation for canonical truth. The exact scalar representation for general straight distance remains open pending a dedicated formal decision.
   </p>
 </section>
 
@@ -351,21 +380,27 @@ h1{
   <div class="spec-label">02.9 · Canonical Area</div>
   <h2>Exact Spatial Measure</h2>
   <p>
-    The Foundational Survey Fabric shall define one exact canonical method for determining area in square Pangs for valid canonical spatial extents.
+    Canonical area shall be expressed in <strong>square Pangs</strong>.
   </p>
   <p>
-    Canonical area shall remain independent of ownership, use, value, identity, governance, or other higher-layer semantics.
+    For a valid polygonal SCPE with CRPC vertices, exact signed area is computed by the rational shoelace expression. Absolute area is therefore exactly representable as a rational number of square Pangs.
+  </p>
+  <p>
+    Canonical area remains geometric only and independent of ownership, use, value, identity, governance, or other higher-layer semantics.
   </p>
 </section>
 
 <section class="spec-card">
   <div class="spec-label">02.10 · Canonical Length</div>
-  <h2>Path and Geometric Boundary Length</h2>
+  <h2>Path and Geometric Boundary Length — General Scalar Closure Still Open</h2>
   <p>
     The Foundational Survey Fabric shall define one exact canonical method for measuring the length of paths, lines, boundaries, and other line-like spatial expressions.
   </p>
   <p>
-    Canonical length shall remain distinct from straight-line spatial separation. The Survey Fabric determines geometric length; higher layers determine what the measured path or boundary means.
+    Individual Segment length may require an exact square-root scalar even when both endpoints use CRPC coordinates. Summed path or polygon boundary length may therefore require exact expressions beyond rational numbers.
+  </p>
+  <p>
+    The general exact scalar representation and normalization rules for such lengths remain open. Approximate decimal length is not canonical truth.
   </p>
 </section>
 
@@ -376,7 +411,7 @@ h1{
     Canonical Survey references and Pang-based position, spatial separation, area, and extent shall remain exactly and reproducibly related.
   </p>
   <p>
-    The eventual specification may use direct Pang coordinates, hierarchical addressing, exact coordinate extension, symbolic subdivision, or another exact representation, but authoritative address and authoritative measurement must resolve to the same canonical spatial truth.
+    The current candidate position model uses CRPC coordinates and Exact Coordinate Extension rather than a mandatory hierarchical precision system. A future canonical address grammar must resolve deterministically to that same exact Survey meaning.
   </p>
 </section>
 
@@ -384,27 +419,41 @@ h1{
   <div class="spec-label">02.12 · Transformation and Scale</div>
   <h2>Transform the Representation, Not the Truth</h2>
   <p>
-    Derived views may rotate, mirror, translate, zoom, enlarge, compress, or otherwise transform presentation, but no transformation may redefine canonical orientation, Pang scale, or authoritative World-space location.
+    Derived views may rotate, mirror, translate, zoom, enlarge, compress, or otherwise transform presentation, but no derived transformation may redefine canonical orientation, Pang scale, or authoritative Survey position.
   </p>
   <p>
-    One Pang shall remain one Pang everywhere, regardless of how a higher-layer view represents it.
+    Translation by exact CRPC offsets and uniform scaling by positive rational factors preserve CRPC coordinates. Arbitrary rotation may generate non-rational coordinates and therefore is not yet closed as a canonical-position operation under the current candidate mathematics.
+  </p>
+  <p>
+    One Pang remains one Pang everywhere, regardless of how a higher-layer view represents it.
   </p>
 </section>
 
 <div class="status-grid">
   <div class="status-card">
-    <h3>Established by Requirements</h3>
+    <h3>Integrated Candidate Mathematics</h3>
     <p>
-      Pang as native linear scale; square Pang as canonical area measure; Pankor, Panvath, Panoris, and Panvel as native directions; one permanent origin; one global canonical frame; uniform Pang scale; absolute canonical reference; singular mathematical orientation; exact canonical spatial separation, area, and path or geometric boundary length; and exact agreement between canonical reference and measurement.
+      Pang and square Pang; CRPC coordinates; tuple order (x,y); +x Panoris, -x Panvel, +y Pankor, -y Panvath; origin (0,0); one right-handed global frame; counterclockwise positive rotation; exact orientation determinant; exact rational polygon area; ECEM sub-Pang precision.
     </p>
   </div>
   <div class="status-card">
     <h3>Still Open in the Specification</h3>
     <p>
-      Exact coordinate representation; exact origin placement; positive rotational convention; angular unit and notation; exact spatial-separation mathematics; exact area mathematics; exact path-length mathematics; the final exact precision mechanism; and the formal relationship between canonical addressing and Pang-based coordinate measure remain unresolved until the candidate mathematical design is selected and tested.
+      Canonical angular unit and exact angle representation; arbitrary exact rotation closure; exact general straight-distance scalar representation; exact general path and boundary-length scalar representation; and complete transformation-result closure.
     </p>
   </div>
 </div>
+
+<section class="spec-card">
+  <div class="spec-label">Candidate Integration Standing</div>
+  <h2>Frame Core Ready · Measurement System Partially Closed</h2>
+  <p>
+    No contradiction was found between Specification 02 and FMD-01 through FMD-09. The frame, coordinate, origin, orientation, area, and precision components are sufficiently defined for core prototype work and for exact production placement of the selected Spatial Ground World SCPE using rational translation and uniform positive rational scale.
+  </p>
+  <p>
+    The full measurement system is not yet complete. Canonical adoption of Specification 02 must wait until its still-open angular, distance, path-length, and transformation-closure obligations are formally resolved and the integrated Specification passes Conformance, Reference Vector, independent implementation, adversarial, and adoption review.
+  </p>
+</section>
 
 <section class="spec-card">
   <div class="spec-label">Requirements Basis</div>
@@ -430,7 +479,7 @@ h1{
   <a href="/theatlas/foundational-survey-fabric/specification/">Specification Index</a>
 </div>
 
-<div class="note">Foundational Survey Fabric · Specification 02 · Canonical Frame and Measurement</div>
+<div class="note">Foundational Survey Fabric · Specification 02 · Canonical Frame and Measurement · Candidate Mathematics Integrated</div>
 
 </article>
 </main>
