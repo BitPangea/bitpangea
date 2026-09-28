@@ -239,10 +239,10 @@ h1{
 
 <div class="req-intro">
 <p>
-  This section translates accepted Foundational Survey Fabric requirements into the specification scope for computability. It establishes the conditions that the eventual formal mathematics must satisfy for finite representation, exactness, canonical precision, controlled complexity, termination, validity, and authoritative results.
+  This section translates accepted Foundational Survey Fabric requirements into the specification rules for computability. It now incorporates the candidate mathematical design selected through Formal Mathematical Decisions FMD-01 through FMD-09 wherever those decisions resolve finite exact representation, canonical precision, primitive geometry, deterministic validation, normalization, serialization, and implementation-independent canonical output.
 </p>
 <p>
-  This page intentionally does <strong>not</strong> claim to contain the final computability specification. Findings #71–#83 deliberately preserve several mathematical choices as unresolved. Accordingly, this section records the required computational behavior and the questions the completed specification must answer once the underlying mathematics are selected and tested.
+  The candidate core is now sufficiently deterministic for executable prototype and Conformance work across CRPC coordinates, Point / Segment / SCPE geometry, exact predicates, canonical normalization, FSF-CJSON-1.0 serialization, and ECEM precision semantics. The full computability specification remains intentionally incomplete where the broader FSF mathematics are still open, including general composition closure, exact non-rational measurement scalars, arbitrary rotation closure, final complexity limits, and the complete canonical error taxonomy.
 </p>
 </div>
 
@@ -252,13 +252,24 @@ h1{
 </blockquote>
 
 <section class="spec-card">
-  <div class="spec-label">07.1 · Finite Canonical Representation</div>
-  <h2>Every Authoritative Expression Must Be Finite</h2>
+  <div class="spec-label">07.0 · Candidate Mathematics Integration</div>
+  <h2>Executable Core Selected · Full Computational Closure Still Open</h2>
   <p>
-    Every canonical Survey reference, spatial extent, and foundational geometric expression shall possess a finite representation capable of exact interpretation under the governing specification.
+    FMD-01 supplies exact finite CRPC coordinate representation. FMD-05 defines the current minimal primitive geometry. FMD-06 supplies exact deterministic predicates and validation. FMD-07 supplies canonical normalization. FMD-08 supplies deterministic canonical serialization. FMD-09 supplies exact precision and compatibility semantics.
   </p>
   <p>
-    Canonical spatial truth shall not depend on infinitely long descriptions, irreducible approximation, or unresolved mathematical limits.
+    FMD-02 through FMD-04 provide the inherited frame, origin, and Survey Domain validity envelope. Together, these decisions now define a computable candidate core that can be independently implemented and tested without floating-point tolerance or hidden state.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">07.1 · Finite Canonical Representation</div>
+  <h2>Every Authoritative Core Expression Is Finite</h2>
+  <p>
+    Every canonical Point, Segment, SCPE, CRPC scalar, and FSF-CJSON-1.0 expression in the current core shall possess a finite representation capable of exact interpretation under the governing Specification.
+  </p>
+  <p>
+    Canonical spatial truth shall not depend on infinitely long descriptions, unresolved mathematical limits, or irreducible numerical approximation.
   </p>
 </section>
 
@@ -266,87 +277,92 @@ h1{
   <div class="spec-label">07.2 · Exactness</div>
   <h2>Canonical Results Are Exact</h2>
   <p>
-    Authoritative Survey results shall be produced through exact deterministic mathematics rather than implementation-specific floating-point tolerance, approximation, or convergence behavior.
+    Authoritative Survey results shall be produced through exact deterministic mathematics rather than implementation-specific floating-point tolerance, epsilon comparison, numerical convergence, or approximate snapping.
   </p>
   <p>
-    Approximate numerical methods may be used by higher Architecture domains for rendering, visualization, simulation, or convenience, but such approximations shall not establish canonical spatial meaning.
+    Approximate numerical methods may be used above the Foundational Survey Fabric for rendering, visualization, simulation, indexing, or convenience, but they shall not establish canonical Survey truth.
   </p>
 </section>
 
 <section class="spec-card">
   <div class="spec-label">07.3 · Canonical Precision</div>
-  <h2>Precision Belongs to the Mathematics</h2>
+  <h2>Precision Is Mathematical, Not Device-Defined</h2>
   <p>
-    Canonical precision shall be defined by the Survey Fabric’s exact mathematical precision model rather than by the storage capacity, display resolution, or numerical limitations of a particular implementation.
+    Canonical Point precision follows the Exact Coordinate Extension Model. A valid canonical Point is already exact and is not a coarse, approximate, parent, or uncertainty Point.
   </p>
   <p>
-    Implementations may store, transmit, or render reduced precision where useful, but reduced precision shall remain distinguishable from the complete canonical expression.
+    Storage precision, display precision, and rendering resolution remain implementation or presentation choices and shall not alter the exact canonical coordinate values.
   </p>
 </section>
 
 <section class="spec-card">
   <div class="spec-label">07.4 · Representable Address Space</div>
-  <h2>Exact Addressability Without an Infinite Address Requirement</h2>
+  <h2>Exact Addressability Without Pretending to Encode the Real Continuum</h2>
   <p>
-    The Survey Fabric shall provide exact addressability for every valid location representable under its canonical mathematics.
+    Every valid Point representable under the canonical coordinate mathematics shall be exactly addressable.
   </p>
   <p>
-    It shall not be required to assign finite canonical addresses to every theoretical point of an unrestricted real-number continuum merely to simulate mathematical infinity.
+    The Survey Fabric is not required to assign finite canonical references to every theoretical point of the unrestricted real-number continuum. A Point outside the governed representational domain of a Specification version is invalid for that version rather than approximated into validity.
   </p>
 </section>
 
 <section class="spec-card">
   <div class="spec-label">07.5 · Minimal Primitive Set</div>
-  <h2>Keep the Survey Layer Primitive</h2>
+  <h2>Point · Segment · SCPE</h2>
   <p>
-    The completed specification shall use the smallest practical set of canonical primitives necessary to express permanent Survey truth exactly and deterministically.
+    The current candidate computable core uses the smallest selected primitive set:
+    <strong>Point</strong>, <strong>Segment</strong>, and <strong>Simple Closed Polygonal Extent (SCPE)</strong>.
   </p>
   <p>
-    Additional primitives shall be justified only when existing primitives cannot represent a required Survey-layer truth without ambiguity or loss.
+    Additional primitives shall be introduced only if a required Survey-layer truth cannot be expressed exactly, deterministically, and finitely using the existing core.
   </p>
 </section>
 
 <section class="spec-card">
   <div class="spec-label">07.6 · Controlled Complexity</div>
-  <h2>Necessary Detail Without Pathological Form</h2>
+  <h2>Finite, Parseable, Normalizable Expressions</h2>
   <p>
-    Canonical expressions may become as detailed as legitimately required, but the specification shall define formal and normalization rules that keep valid expressions finitely parseable, unambiguous, and suitable for exact verification.
+    Canonical expressions may contain as much exact detail as legitimately required, but they shall remain finite, parseable, unambiguous, and suitable for deterministic validation and normalization.
   </p>
   <p>
-    Redundant or pathological representations need not be accepted as canonical when an equivalent normalized form can be deterministically produced.
+    Exact redundant representation may normalize away where FMD-07 explicitly permits it. Invalid or unsupported complexity shall not be silently simplified into a different canonical object.
+  </p>
+  <p>
+    Final formal complexity limits, parser limits, maximum supported sizes, and resource bounds remain to be specified.
   </p>
 </section>
 
 <section class="spec-card">
   <div class="spec-label">07.7 · Hidden-State Independence</div>
-  <h2>State May Speed the Calculation, Not Change the Truth</h2>
+  <h2>State May Accelerate Computation, Not Change Truth</h2>
   <p>
-    Authoritative Survey results shall depend only on explicit canonical inputs and the governing specification.
+    Authoritative Survey results shall depend only on explicit canonical inputs and the governing Specification.
   </p>
   <p>
-    Cache history, database sequence, random state, user identity, ownership, session context, wall-clock time, or other hidden mutable conditions shall not alter canonical spatial meaning or the result of a canonical operation.
+    Cache history, database sequence, random state, user identity, ownership, session context, wall-clock time, process order, storage layout, or other hidden mutable conditions shall not alter canonical spatial meaning or operation results.
   </p>
 </section>
 
 <section class="spec-card">
   <div class="spec-label">07.8 · Deterministic Termination</div>
-  <h2>Canonical Operations Must Finish</h2>
+  <h2>Core Canonical Operations Must Finish</h2>
   <p>
-    Every operation required to interpret, validate, normalize, compare, measure, serialize, or otherwise establish authoritative Survey truth shall deterministically terminate for valid finite canonical inputs.
+    For valid finite inputs in the current candidate core, parsing, CRPC normalization, Domain validation, Point / Segment / SCPE validation, exact predicates, normalization, and FSF-CJSON-1.0 serialization shall deterministically terminate.
   </p>
   <p>
-    The specification shall not require indefinite convergence, implementation-specific approximation, or potentially non-terminating interpretation to determine canonical meaning.
+    Canonical interpretation shall not depend on indefinite convergence or implementation-specific approximation.
   </p>
 </section>
 
 <section class="spec-card">
   <div class="spec-label">07.9 · Validity States</div>
-  <h2>Exact or Invalid</h2>
+  <h2>Canonical Valid · Valid Noncanonical · Invalid</h2>
   <p>
-    A candidate canonical reference, extent, or foundational expression shall either resolve exactly under the governing specification or fail validation as canonical Survey truth.
+    The current core shall distinguish:
+    <strong>canonical valid</strong>, <strong>valid noncanonical</strong>, and <strong>invalid</strong>.
   </p>
   <p>
-    Unknown, unresolved, estimated, approximate, pending, or disputed states may be represented by higher Architecture domains, but shall not be treated as canonical spatial truth within the Foundational Survey Fabric.
+    A valid noncanonical representation may normalize to canonical form only when exact mathematical meaning is preserved. Invalid input shall not be silently repaired, guessed, snapped, rounded, or reinterpreted into canonical truth.
   </p>
 </section>
 
@@ -354,10 +370,10 @@ h1{
   <div class="spec-label">07.10 · Lossless and Lossy Results</div>
   <h2>Precision Loss Must Be Detectable</h2>
   <p>
-    The specification shall distinguish exact lossless transformations from lossy reduction, truncation, approximation, or generalization.
+    A transformation or conversion is lossless only when the exact mathematical object is unchanged.
   </p>
   <p>
-    A result that discards canonical precision may remain useful as a derived representation, but shall not be represented as fully equivalent to the authoritative expression.
+    Any reduction, truncation, decimal approximation, rasterization, simplification, or other operation that discards canonical information shall be identifiable as lossy and shall not be represented as fully equivalent canonical truth.
   </p>
 </section>
 
@@ -365,60 +381,107 @@ h1{
   <div class="spec-label">07.11 · Authoritative Result</div>
   <h2>What Counts as Canonical Output</h2>
   <p>
-    An authoritative Survey result shall be one that is valid under the governing specification, derived solely from explicit canonical inputs, exactly and finitely resolvable, deterministically reproducible, and expressible in the canonical form required for that operation.
+    An authoritative Survey result shall be valid under the governing Specification, derived solely from explicit canonical inputs, exactly and finitely resolvable, deterministically reproducible, and expressible in a canonical output form defined for that operation.
   </p>
   <p>
-    A result that depends on approximation, hidden state, unresolved ambiguity, silent snapping, or implementation-specific tolerance shall not constitute canonical Survey truth.
+    A mathematically meaningful result does not automatically become a canonical FSF result when the Specification lacks a governed result type, normalization rule, serialization, or Conformance behavior for that output.
   </p>
 </section>
 
 <section class="spec-card">
   <div class="spec-label">07.12 · Implementation Independence</div>
-  <h2>Many Implementations, One Result</h2>
+  <h2>Many Implementations, One Canonical Result</h2>
   <p>
-    Independent conforming implementations shall be capable of deriving identical canonical results from identical canonical inputs.
+    Independent conforming implementations shall be capable of deriving identical canonical results from identical canonical inputs for every operation they claim to support.
   </p>
   <p>
-    Internal algorithms, optimization strategies, caches, storage models, and programming languages may differ so long as they do not alter the authoritative answer.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">07.13 · Computational Limits</div>
-  <h2>Limits Must Not Redefine Canonical Truth</h2>
-  <p>
-    Implementations may impose practical resource limits on memory, runtime, storage, or expression size, but such implementation limits shall not redefine the underlying canonical mathematics.
-  </p>
-  <p>
-    The exact relationship between formal computability guarantees and practical implementation limits remains unresolved until the candidate mathematical design is selected and tested.
+    Internal algorithms, programming languages, cache strategies, data structures, optimization methods, or storage systems may differ so long as those choices do not alter authoritative output.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">07.14 · Specification Completion Condition</div>
-  <h2>Requirements Before Mathematics, Deterministic Rules Before Serious Conformance</h2>
+  <div class="spec-label">07.13 · Canonical Serialization as Computational Output</div>
+  <h2>Same Normalized Meaning, Same Bytes</h2>
   <p>
-    This section cannot become a complete formal computability specification until the Survey Domain mathematics, coordinate frame, canonical addressing and precision model, geometric primitives, canonical operations, and normative serialization/interchange rules are formally selected.
+    For supported Point / Segment / SCPE geometry, canonical computational output may be serialized through FSF-CJSON-1.0 after successful validation and normalization.
   </p>
   <p>
-    Formal mathematical design may proceed while some details remain unresolved, provided the candidate remains credibly mapped to the accepted requirements and contains no known contradiction with immutable spatial truth. Serious prototype and conformance testing shall begin only when the governing rules are sufficiently complete to produce deterministic canonical results. Once the relevant dependencies are resolved, this section shall define the exact computational rules by which conforming implementations establish authoritative Survey results.
+    Under the same governing format version, the same normalized supported geometry shall produce identical canonical UTF-8 bytes across conforming implementations.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">07.14 · Computational Limits</div>
+  <h2>Implementation Limits Must Not Redefine Mathematics</h2>
+  <p>
+    Implementations may impose practical limits on memory, runtime, input size, denominator size, vertex count, or other resources.
+  </p>
+  <p>
+    Such implementation limits shall not silently redefine canonical mathematics. The final Specification shall distinguish normative complexity limits, if adopted, from implementation-specific operational limits.
+  </p>
+  <p>
+    Final canonical complexity limits remain open.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">07.15 · Unsupported Canonical Closure</div>
+  <h2>Open Mathematics Must Fail Explicitly</h2>
+  <p>
+    Where the complete FSF Specification has not yet defined canonical output closure—such as arbitrary Boolean composition, arbitrary exact rotation, or exact general non-rational measurement scalars—an implementation shall not invent a private canonical answer.
+  </p>
+  <p>
+    Such cases shall remain unsupported or invalid under the claimed profile until the governing Specification defines their exact semantics and result forms.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">07.16 · Prototype and Conformance Readiness</div>
+  <h2>The Solved Core May Now Be Implemented and Attacked</h2>
+  <p>
+    The current candidate core is sufficiently deterministic to support executable validators, Reference Vectors, independent reimplementation, cross-implementation comparison, and adversarial testing for CRPC, Point / Segment / SCPE geometry, exact predicates, normalization, and FSF-CJSON-1.0.
+  </p>
+  <p>
+    This readiness applies only to the solved profile. It does not imply that unresolved full-FSF operations have become canonical by omission.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">07.17 · Canonical Adoption Condition</div>
+  <h2>Executable Does Not Mean Adopted</h2>
+  <p>
+    Candidate mathematics may enter prototype and Conformance work once their deterministic rules are sufficiently complete, but canonical adoption remains a later institutional gate.
+  </p>
+  <p>
+    Adoption shall require Specification-wide traceability, Conformance analysis, Reference Vectors, independent implementation, adversarial testing, resolution or explicit scoping of material open gates, and the applicable adoption act.
   </p>
 </section>
 
 <div class="status-grid">
   <div class="status-card">
-    <h3>Established by Requirements</h3>
+    <h3>Integrated Candidate Computability</h3>
     <p>
-      Finite exact representation; exact canonical mathematics; distinction between canonical, storage, and rendering precision; detectable loss of precision; exact comparison; no silent snapping; finite addressability without pretending an unrestricted real-number continuum fits into canonical addressing; minimal primitives; hidden-state independence; deterministic termination; controlled complexity; exact-or-invalid canonical states; and implementation-independent authoritative results.
+      Finite CRPC representation; exact Point / Segment / SCPE core; deterministic validation and predicates; canonical normalization; exact-or-invalid behavior; ECEM precision semantics; lossless/lossy distinction; hidden-state independence; deterministic termination for the solved core; FSF-CJSON-1.0 canonical output; independent implementation readiness.
     </p>
   </div>
   <div class="status-card">
-    <h3>Not Yet Possessed</h3>
+    <h3>Still Open in the Specification</h3>
     <p>
-      The completed computability specification does not yet exist. Exact primitive encodings, canonical numeric representation, precision mathematics, operation algorithms, formal complexity constraints, parser limits, termination proofs, canonical error taxonomy, authoritative return structures, normative interchange behavior, and executable conformance rules depend on mathematical choices that Findings #1–#85 intentionally left unresolved.
+      Final formal complexity limits; complete parser/resource limits; full canonical error taxonomy; exact scalar representation for general distance and path length; arbitrary rotation closure; general union/intersection/difference output closure; complete composition result types; and computability rules for future geometry beyond the current core.
     </p>
   </div>
 </div>
+
+<section class="spec-card">
+  <div class="spec-label">Candidate Integration Standing</div>
+  <h2>Computable Core Ready for Executable Proof</h2>
+  <p>
+    No contradiction was found between Specification 07 and FMD-01 through FMD-09 for the solved Point / Segment / SCPE profile. The prerequisites previously identified by this section are now sufficiently selected to begin serious prototype and Conformance testing for that profile.
+  </p>
+  <p>
+    The complete FSF computability specification is not yet closed. Full adoption remains blocked by the unresolved mathematical and governance gates explicitly preserved above.
+  </p>
+</section>
 
 <section class="spec-card">
   <div class="spec-label">Requirements Basis</div>
@@ -434,7 +497,7 @@ h1{
 
 <blockquote>
   <span class="quote-label">Specification Standing</span>
-  The Specification answers: <strong>Precisely how does the Foundational Survey Fabric work?</strong> That answer is not yet complete because the requirements deliberately came first. Formal design may now proceed within the audited requirements envelope; prototype and conformance testing must wait for sufficiently complete deterministic rules; canonical adoption remains a later gate requiring traceability, adversarial testing, conformance analysis, and independent implementation.
+  The solved FSF core is now sufficiently deterministic for prototype, Conformance, Reference Vector, independent implementation, and adversarial work. The complete Specification remains open where the mathematics remain open, and canonical adoption remains a later gate requiring successful proof and institutional adoption.
 </blockquote>
 
 <div class="section-nav">
@@ -443,7 +506,7 @@ h1{
   <a href="/theatlas/foundational-survey-fabric/specification/">Specification Index</a>
 </div>
 
-<div class="note">Foundational Survey Fabric · Specification 07 · Computability Rules</div>
+<div class="note">Foundational Survey Fabric · Specification 07 · Computability Rules · Candidate Mathematics Integrated</div>
 
 </article>
 </main>
