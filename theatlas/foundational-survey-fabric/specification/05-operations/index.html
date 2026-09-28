@@ -238,10 +238,10 @@ h1{
 
 <div class="req-intro">
 <p>
-  This section translates accepted Foundational Survey Fabric requirements into the specification scope for canonical spatial operations. It defines the behaviors that the eventual formal mathematics must support for measurement, composition, comparison, equivalence, ordering, precision conversion, and normalization.
+  This section translates accepted Foundational Survey Fabric requirements into the specification rules for canonical spatial operations. It now incorporates the candidate mathematical design selected through Formal Mathematical Decisions FMD-01 through FMD-09 wherever those decisions directly resolve exact comparison, geometric predicates, normalization, ordering, validity, precision conversion, and transformation behavior.
 </p>
 <p>
-  These operations must remain exact, deterministic, semantically neutral, implementation-independent, and incapable of silently moving, approximating, or redefining canonical space.
+  The candidate core now defines a deterministic exact operational profile for Point, Segment, and SCPE geometry. General Boolean composition remains intentionally incomplete: union, intersection-result geometry, and difference-result geometry still require formal closure rules for arbitrary outputs, and the known closed-set / difference compatibility issue remains open. This section therefore integrates what is solved without pretending that the complete operations algebra is finished.
 </p>
 </div>
 
@@ -251,57 +251,80 @@ h1{
 </blockquote>
 
 <section class="spec-card">
-  <div class="spec-label">05.1 · Canonical Measurement</div>
-  <h2>Exact Measure of Spatial Expressions</h2>
+  <div class="spec-label">05.0 · Candidate Mathematics Integration</div>
+  <h2>Exact Core Operations Selected · General Composition Still Open</h2>
   <p>
-    The Foundational Survey Fabric shall support exact canonical measurement of valid spatial expressions, including straight spatial separation, area, path length, and boundary length where applicable.
+    FMD-01 supplies exact CRPC arithmetic. FMD-05 defines the current primitive geometry. FMD-06 supplies exact predicates and validity rules. FMD-07 supplies deterministic normalization and canonical ordering. FMD-09 supplies exact precision-conversion semantics and prohibits silent snapping.
   </p>
   <p>
-    Measurement shall remain geometric. Functional meanings such as travel cost, accessibility, convenience, or legal significance belong to the higher Architecture domains responsible for them.
+    FMD-02 supplies orientation sign conventions, FMD-03 and FMD-04 provide the inherited frame and Domain validity envelope, and FMD-08 supplies canonical machine serialization. None of FMD-01 through FMD-09 establishes a complete closed algebra for arbitrary union, intersection, or difference outputs, so those composition obligations remain open.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">05.1 · Canonical Measurement</div>
+  <h2>Exact Measure Where the Scalar Model Is Closed</h2>
+  <p>
+    The Foundational Survey Fabric shall support exact canonical measurement of valid spatial expressions.
+  </p>
+  <p>
+    Exact polygonal area is currently closed for valid CRPC SCPE geometry through rational shoelace mathematics. Straight separation, Segment length, path length, and boundary length may require exact non-rational scalar forms that are not yet fully specified.
+  </p>
+  <p>
+    Measurement shall remain geometric. Functional meanings such as travel cost, accessibility, convenience, or legal significance belong to higher Architecture domains.
   </p>
 </section>
 
 <section class="spec-card">
   <div class="spec-label">05.2 · Union</div>
-  <h2>Exact Spatial Combination</h2>
+  <h2>Required Operation · General Canonical Output Form Still Open</h2>
   <p>
-    The specification shall support exact union of canonical spatial references or extents where mathematically valid.
+    The specification shall support exact union of valid canonical spatial expressions where mathematically defined.
   </p>
   <p>
-    Union shall produce the exact combined canonical spatial extent without determining whether the resulting space constitutes one higher-layer entity, ownership extent, Region, or other semantic construct.
+    The current Point / Segment / SCPE primitive set does not yet guarantee that every union result can be represented as one canonical SCPE. A union may produce a disconnected set, a more complex boundary, or geometry requiring a composite canonical form not yet selected.
+  </p>
+  <p>
+    Therefore union is a required operation whose complete canonical result algebra remains open.
   </p>
 </section>
 
 <section class="spec-card">
   <div class="spec-label">05.3 · Intersection</div>
-  <h2>Exact Common Spatial Result</h2>
+  <h2>Exact Relationship Known · General Result Geometry Still Open</h2>
   <p>
-    The specification shall support exact intersection operations that determine the canonical common space shared by valid spatial expressions.
+    The current core can determine exact geometric intersection relationships among supported primitives, including Segment intersection classes and Point/SCPE containment.
   </p>
   <p>
-    The geometric result shall remain authoritative only as spatial truth. Any legal, institutional, ownership, governance, or access consequence remains outside the Survey Fabric.
+    Where an operation is required to return the exact common geometry itself, the canonical result form remains open when the result is not directly representable as one current primitive.
+  </p>
+  <p>
+    Intersection remains geometric only and creates no ownership, access, governance, or institutional meaning.
   </p>
 </section>
 
 <section class="spec-card">
   <div class="spec-label">05.4 · Difference</div>
-  <h2>Exact Spatial Subtraction</h2>
+  <h2>Exact Spatial Subtraction · Closure Issue Explicitly Preserved</h2>
   <p>
     The Foundational Survey Fabric shall support exact difference operations sufficient to derive the portion of one valid canonical extent not shared by another.
   </p>
   <p>
-    Difference shall remain a geometric operation and shall not itself imply removal, transfer, exclusion, loss of rights, or any higher-layer semantic consequence.
+    General canonical closure is not yet established. In particular, subtracting one closed set from another may yield a result that is not closed, which conflicts with any universal assumption that all canonical extent results remain closed.
+  </p>
+  <p>
+    The Specification shall not silently replace ordinary set difference with regularized, closure-forcing, or application-specific semantics merely to force a closed result. The operation must remain mathematically explicit.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">05.5 · Comparison</div>
-  <h2>Exact Canonical Comparison</h2>
+  <div class="spec-label">05.5 · Exact Comparison</div>
+  <h2>Canonical Predicates Use Exact Truth</h2>
   <p>
-    Equality, touch, intersection, containment, boundary contact, and related Survey-layer comparisons shall be evaluated exactly rather than through implementation-specific tolerance.
+    Equality, ordering, orientation, incidence, touch, crossing, containment, boundary contact, separation, and related Survey-layer comparisons shall be evaluated exactly.
   </p>
   <p>
-    Approximate comparison, engineering margins, fuzzy matching, and rendering thresholds may exist above the Foundational Survey Fabric, but shall not redefine canonical Survey truth.
+    Approximate comparison, engineering margins, fuzzy matching, rendering thresholds, and epsilon-based coincidence may exist above the Foundational Survey Fabric, but shall not redefine canonical Survey truth.
   </p>
 </section>
 
@@ -309,10 +332,10 @@ h1{
   <div class="spec-label">05.6 · Equivalence</div>
   <h2>Equivalent Space, One Canonical Meaning</h2>
   <p>
-    The specification shall define exact rules for determining whether differently expressed references, extents, compositions, or geometric constructions represent the same canonical BitPangea space.
+    Two supported spatial expressions are canonically equivalent when they denote the same exact spatial meaning under the governing Specification.
   </p>
   <p>
-    Equivalent space does not imply equivalent higher-layer identity, ownership, rights, history, function, or authority.
+    For Point, Segment, and SCPE geometry, equivalent valid inputs normalize to the same canonical representation. Equivalent space does not imply equivalent higher-layer identity, ownership, rights, history, function, or authority.
   </p>
 </section>
 
@@ -320,43 +343,57 @@ h1{
   <div class="spec-label">05.7 · Canonical Ordering</div>
   <h2>Deterministic Order Without Semantic Rank</h2>
   <p>
-    The Foundational Survey Fabric shall support deterministic ordering of canonical references and derived spatial components wherever required for normalization, serialization, verification, exact reproducibility, or conformance.
+    Canonical ordering shall be deterministic wherever needed for normalization, serialization, verification, exact reproducibility, or conformance.
   </p>
   <p>
-    Canonical ordering shall remain semantically neutral and shall not imply importance, priority, ownership rank, cultural hierarchy, or geographic significance.
+    The current core uses lexicographic Point ordering by <strong>(x,y)</strong> for Segment endpoint order and SCPE start-vertex selection.
+  </p>
+  <p>
+    Canonical ordering remains semantically neutral and implies no importance, priority, ownership rank, cultural hierarchy, or geographic significance.
   </p>
 </section>
 
 <section class="spec-card">
   <div class="spec-label">05.8 · Normalization</div>
-  <h2>Canonicalize Equivalence</h2>
+  <h2>Canonicalize Equivalence Without Moving Space</h2>
   <p>
-    The specification shall define deterministic normalization rules capable of converting valid noncanonical but equivalent expressions into canonical form.
+    Point coordinates normalize to reduced CRPC form. Standalone Segment endpoints normalize to lexicographic order. SCPE normalization removes exact redundant collinear middle vertices, enforces counterclockwise traversal, selects the lexicographically least start vertex, and omits a repeated terminal closure vertex.
   </p>
   <p>
-    Normalization shall preserve spatial meaning exactly. It shall never move a location, alter an extent, or reinterpret a valid canonical place.
+    Normalization shall satisfy:
+    <strong>N(N(G)) = N(G)</strong> and <strong>geom(N(G)) = geom(G)</strong>.
+  </p>
+  <p>
+    Invalid geometry shall not be silently repaired into valid geometry through normalization.
   </p>
 </section>
 
 <section class="spec-card">
   <div class="spec-label">05.9 · Validity</div>
-  <h2>Canonical, Noncanonical, or Invalid</h2>
+  <h2>Canonical, Valid Noncanonical, or Invalid</h2>
   <p>
-    Conforming implementations shall be able to distinguish canonical expressions, valid noncanonical representations, malformed expressions, impossible precision expressions, and references outside the canonical Survey Domain.
+    Conforming implementations shall distinguish at least:
+    <strong>canonical valid</strong>, <strong>valid noncanonical</strong>, and <strong>invalid</strong>.
   </p>
   <p>
-    Invalid or ambiguous inputs shall not be silently assigned spatial meaning through implementation-specific guesswork.
+    Invalid conditions include malformed exact values, coordinates outside the valid Survey Domain, impossible or unsupported geometry, self-intersecting SCPEs, zero-area SCPEs, prohibited duplicate vertices, and other failures defined by the governing primitive validators.
+  </p>
+  <p>
+    Invalid or ambiguous input shall not be assigned canonical spatial meaning through guesswork.
   </p>
 </section>
 
 <section class="spec-card">
   <div class="spec-label">05.10 · Precision Conversion</div>
-  <h2>Lossless and Lossy Transformation</h2>
+  <h2>Lossless Means Same Exact Meaning</h2>
   <p>
-    The specification shall define deterministic rules that distinguish exact lossless transformations of canonical precision from lossy reduction, truncation, approximation, or generalization.
+    A precision conversion is lossless only when the exact mathematical object before and after conversion is identical.
   </p>
   <p>
-    A lossy representation may be useful for rendering, storage, transmission, or convenience, but it shall not be treated as equivalent to complete canonical truth.
+    For example, <strong>2/4 → 1/2</strong> is lossless CRPC normalization. By contrast, converting exact <strong>1/3</strong> to exact decimal rational <strong>0.333</strong> changes the value and is therefore lossy.
+  </p>
+  <p>
+    Lossy reduction may be useful for rendering, display, storage, or convenience, but shall never be represented as complete canonical truth.
   </p>
 </section>
 
@@ -364,10 +401,10 @@ h1{
   <div class="spec-label">05.11 · Canonical vs. Storage vs. Rendering Precision</div>
   <h2>Separate Truth From Representation</h2>
   <p>
-    Canonical spatial precision shall remain distinct from implementation storage precision and user-facing rendering precision.
+    Canonical precision is the exact mathematical value. Storage precision is an implementation choice. Rendering precision is a presentation choice.
   </p>
   <p>
-    Implementations may store or display less detail where useful, provided that any reduction is recognized as a partial or approximate representation rather than a redefinition of authoritative space.
+    Implementations may store or display less detail where useful, provided any reduction is distinguishable from the complete canonical expression and does not alter canonical meaning.
   </p>
 </section>
 
@@ -375,10 +412,10 @@ h1{
   <div class="spec-label">05.12 · No Silent Snapping</div>
   <h2>Operations Must Not Move Place</h2>
   <p>
-    Canonical operations shall not silently snap references to grid lines, precision boundaries, subdivision boundaries, vertices, preferred increments, or nearby representable positions.
+    Canonical operations shall not silently snap references to grid lines, precision boundaries, subdivision boundaries, vertices, preferred increments, nearby rational values, or other derived structures.
   </p>
   <p>
-    Snapping and alignment may exist above the Foundational Survey Fabric only as explicit intentional transformations.
+    If an input is not valid under the governing canonical mathematics, the result is invalid rather than a nearby replacement.
   </p>
 </section>
 
@@ -386,49 +423,77 @@ h1{
   <div class="spec-label">05.13 · Neutral Conflict Detection</div>
   <h2>Reveal Spatial Conflict Without Adjudication</h2>
   <p>
-    The Survey Fabric shall provide exact canonical facts and geometric results sufficient for higher Architecture domains to detect conflicts, contradictions, overlaps, or invalid spatial relationships.
+    Exact predicates shall provide sufficient geometric truth for higher Architecture domains to detect overlap, boundary conflict, invalid containment, incompatible extents, or other spatial contradictions.
   </p>
   <p>
-    The Foundational Survey Fabric shall not adjudicate the institutional, legal, ownership, access, or governance consequences of those conflicts.
+    The Foundational Survey Fabric does not decide the institutional, legal, ownership, access, or governance consequences of those facts.
   </p>
 </section>
 
 <section class="spec-card">
   <div class="spec-label">05.14 · Transformation Integrity</div>
-  <h2>Derived Operations Must Resolve Back to Canonical Space</h2>
+  <h2>Derived Operations Must Preserve Canonical Meaning</h2>
   <p>
-    Rotation, mirroring, reflection, translation, scaling, zoom, compression, and related transformations may be used by derived views and higher Architecture domains.
+    Exact translation by CRPC offsets and uniform scaling by positive rational factors preserve the current CRPC coordinate domain when outputs remain inside the valid Survey Domain.
   </p>
   <p>
-    Such operations shall remain exactly resolvable to the canonical Survey frame and shall not redefine Pang scale, canonical orientation, or authoritative World-space location.
+    Arbitrary rotation and more general transformations may produce coordinates outside the current rational scalar domain. Their complete canonical output representation therefore remains open.
+  </p>
+  <p>
+    Derived transformations shall not redefine Pang scale, permanent orientation, or authoritative Survey position.
   </p>
 </section>
 
 <section class="spec-card">
   <div class="spec-label">05.15 · Proximity</div>
-  <h2>Exact Closeness Without Semantic Meaning</h2>
+  <h2>Exact Threshold Tests Without Semantic Meaning</h2>
   <p>
-    The Foundational Survey Fabric shall support exact spatial separation and threshold-based proximity where required.
+    Threshold-based proximity may be evaluated exactly where the required scalar comparison is exactly representable under the governing measurement rules.
   </p>
   <p>
-    Terms such as near, local, neighboring, remote, or convenient remain higher-layer interpretations and shall not become Survey-layer spatial semantics.
+    Terms such as near, local, neighboring, remote, or convenient remain higher-layer interpretations and shall not become Survey-layer semantics.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">05.16 · Operation Output Discipline</div>
+  <h2>An Operation Is Canonical Only If Its Result Type Is Defined</h2>
+  <p>
+    A mathematically meaningful operation does not automatically have a canonical FSF result merely because the set-theoretic answer exists.
+  </p>
+  <p>
+    Canonical operation closure requires that the Specification define a valid result type, exact normalization rules, deterministic serialization, and conformance behavior for the output.
+  </p>
+  <p>
+    Where those are not yet defined, the operation remains mathematically required but Specification-open rather than implementation-defined.
   </p>
 </section>
 
 <div class="status-grid">
   <div class="status-card">
-    <h3>Established by Requirements</h3>
+    <h3>Integrated Candidate Mathematics</h3>
     <p>
-      Exact measurement; spatial union, intersection, and difference; deterministic validity and normalization; canonical ordering; neutral conflict detection; exact spatial equivalence; derived scale transformation; exact proximity; separation of canonical, storage, and rendering precision; lossless versus lossy conversion; exact comparison; and prohibition of silent snapping.
+      Exact comparison and predicates; lexicographic ordering; deterministic Point / Segment / SCPE normalization; validity classes; lossless versus lossy precision conversion; no silent snapping; exact polygon area; exact CRPC-preserving translation and positive rational scaling; neutral conflict detection.
     </p>
   </div>
   <div class="status-card">
     <h3>Still Open in the Specification</h3>
     <p>
-      The exact mathematical algorithms for composition, equivalence, ordering, normalization, precision conversion, and comparison; operation syntax; error classes; edge-case behavior; canonical return forms; and computational complexity limits remain unresolved until the formal mathematical design is selected and tested.
+      General canonical output forms for union, intersection, and difference; closed-set / difference compatibility; exact general distance and path-length scalar closure; arbitrary rotation/transformation closure; complete operation syntax; complete error taxonomy; and final complexity/resource limits.
     </p>
   </div>
 </div>
+
+<section class="spec-card">
+  <div class="spec-label">Candidate Integration Standing</div>
+  <h2>Core Predicate and Normalization Operations Ready · Composition Algebra Not Yet Closed</h2>
+  <p>
+    No contradiction was found between Specification 05 and FMD-01 through FMD-09. The solved operational core is sufficiently exact for prototype validators, geometry normalization, Point/Segment/SCPE comparison, Spatial Ground membership support, and first-wave Conformance and Reference Vectors.
+  </p>
+  <p>
+    Full Specification 05 adoption remains blocked by unresolved general composition/output closure, the difference-closure issue, full measurement scalar closure, arbitrary transformation closure, and the usual Specification-wide Conformance, independent implementation, adversarial, traceability, and adoption gates.
+  </p>
+</section>
 
 <section class="spec-card">
   <div class="spec-label">Requirements Basis</div>
@@ -453,7 +518,7 @@ h1{
   <a href="/theatlas/foundational-survey-fabric/specification/">Specification Index</a>
 </div>
 
-<div class="note">Foundational Survey Fabric · Specification 05 · Canonical Operations</div>
+<div class="note">Foundational Survey Fabric · Specification 05 · Canonical Operations · Candidate Mathematics Integrated</div>
 
 </article>
 </main>
