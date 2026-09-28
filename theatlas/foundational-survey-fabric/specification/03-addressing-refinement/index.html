@@ -238,10 +238,10 @@ h1{
 
 <div class="req-intro">
 <p>
-  This section translates accepted Foundational Survey Fabric requirements into the specification scope for canonical addressing and precision. It defines what the eventual address grammar and exact precision mathematics must accomplish without prematurely fixing their final syntax, encoding, or refinement structure.
+  This section translates accepted Foundational Survey Fabric requirements into the specification rules for canonical addressing and precision. It now incorporates the candidate mathematical design selected through Formal Mathematical Decisions FMD-01 through FMD-09 where those decisions resolve reference meaning, exact coordinate representation, normalization, precision extension, and canonical machine representation.
 </p>
 <p>
-  The governing requirement is that canonical address meaning remain exact, deterministic, permanent, self-resolving, and extensible. Greater precision must extend the established reference system rather than renumber, relocate, reinterpret, or silently snap existing canonical places. The precise mathematical mechanism may involve refinement, coordinate extension, subdivision, exact fractional representation, or another exact method selected later by formal design.
+  The candidate mathematics now establish that canonical Point meaning is exact, coordinate-based, permanent, and non-hierarchical: a valid canonical Point denotes one exact Survey position rather than an uncertainty area, parent cell, rounded location, or family of finer descendants. The final public canonical address grammar and human-facing address syntax remain open and shall not be invented merely because the underlying mathematical reference model is now selected.
 </p>
 </div>
 
@@ -251,35 +251,49 @@ h1{
 </blockquote>
 
 <section class="spec-card">
+  <div class="spec-label">03.0 · Candidate Mathematics Integration</div>
+  <h2>Exact Reference Meaning Selected · Public Address Grammar Still Open</h2>
+  <p>
+    FMD-01 establishes exact reduced rational Pang coordinates. FMD-07 establishes deterministic normalization for supported canonical geometry. FMD-08 establishes FSF-CJSON-1.0 as the primary canonical machine serialization for the current core geometry profile. FMD-09 establishes the Exact Coordinate Extension Model (ECEM), eliminating ambiguity about coarse/fine and parent/child Point semantics.
+  </p>
+  <p>
+    These decisions resolve the mathematical meaning of canonical Point reference and its precision behavior. They do <strong>not</strong> yet select a public address string, display alphabet, compact human-readable syntax, or final canonical address grammar. Those remain later Specification work provided any adopted address form resolves deterministically to the exact Survey meaning defined here.
+  </p>
+</section>
+
+<section class="spec-card">
   <div class="spec-label">03.1 · Universal Addressability</div>
-  <h2>Every Valid Representable Place Can Be Named</h2>
+  <h2>Every Valid Representable Point Can Be Named</h2>
   <p>
-    Every valid location representable within the canonical Survey Domain shall be addressable whether or not any Parcel, infrastructure element, stored object, or other higher-layer entity exists there.
+    Every valid Point representable under the canonical Survey mathematics shall be addressable whether or not any Parcel, infrastructure element, stored object, or other higher-layer entity exists there.
   </p>
   <p>
-    Addressability shall not depend on materialization. The canonical address space may be complete while stored records remain sparse.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">03.2 · Canonical Address Meaning</div>
-  <h2>Permanent and Deterministic Reference</h2>
-  <p>
-    A canonical Survey address shall always resolve to the same canonical spatial meaning under the governing specification. The same canonical spatial meaning shall normalize to the same authoritative reference.
+    Addressability shall not depend on materialization. Canonical mathematical reference may be complete while stored records remain sparse.
   </p>
   <p>
-    Display forms, aliases, encodings, human-readable labels, and local coordinate views may evolve, but they shall not redefine the canonical place beneath them.
+    A Point outside the valid Survey Domain is not an addressable canonical Survey Point.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">03.3 · Address Grammar</div>
-  <h2>Self-Resolving Canonical Structure</h2>
+  <div class="spec-label">03.2 · Canonical Reference Meaning</div>
+  <h2>One Exact Position Per Canonical Point Reference</h2>
   <p>
-    The canonical address grammar shall contain enough mathematical structure for a conforming implementation to resolve the spatial meaning of a valid address directly from the governing specification and the reference itself.
+    A canonical Point reference shall resolve to one exact Survey position under the governing Specification. It shall not denote an uncertainty area, parent cell, rounded location, approximate position, or set of finer descendants.
   </p>
   <p>
-    Canonical Survey references shall not depend on an authoritative lookup registry that assigns meaning to otherwise opaque identifiers.
+    The same canonical spatial meaning shall normalize to the same authoritative mathematical reference. Display forms, aliases, encodings, human-readable labels, and local coordinate views may evolve, but they shall not redefine the canonical place beneath them.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">03.3 · Mathematical Reference Structure</div>
+  <h2>Self-Resolving Exact Coordinates</h2>
+  <p>
+    Canonical Point meaning is grounded in exact CRPC coordinate values in the one global Survey frame. A valid Point therefore resolves mathematically from the governing Specification and its exact coordinate content rather than from an opaque registry assignment.
+  </p>
+  <p>
+    The final public address grammar may wrap, abbreviate, encode, or otherwise present that reference, but it shall remain self-resolving or deterministically reducible to the exact canonical Point without requiring an authoritative lookup table to assign spatial meaning.
   </p>
 </section>
 
@@ -287,46 +301,53 @@ h1{
   <div class="spec-label">03.4 · Absolute Reference</div>
   <h2>Independent of Higher-Layer Objects</h2>
   <p>
-    Canonical Survey references shall be absolute within BitPangea’s one global canonical coordinate frame.
+    Canonical Survey references are absolute within BitPangea’s one global canonical coordinate frame.
   </p>
   <p>
-    Their foundational meaning shall not depend on Parcels, Regions, landmarks, neighboring entities, ownership, or any other higher-layer object or relationship.
+    Their foundational meaning shall not depend on Parcels, Regions, landmarks, neighboring entities, ownership, World membership, or any other higher-layer object or relationship.
   </p>
 </section>
 
 <section class="spec-card">
   <div class="spec-label">03.5 · Extensible Precision</div>
-  <h2>More Precision Without Rewriting Place</h2>
+  <h2>More Representational Capacity Without Rewriting Place</h2>
   <p>
-    The Foundational Survey Fabric shall support additional canonical precision through an exact mechanism that extends established spatial reference rather than replacing it.
+    The Foundational Survey Fabric shall support additional canonical precision through <strong>Exact Coordinate Extension</strong>. Compatible successor Specifications may increase the exact finite coordinate values or expressions they can represent without changing the meaning of any previously valid reference.
   </p>
   <p>
-    Additional precision shall not renumber, relocate, reinterpret, or invalidate previously established canonical references. Higher Architecture domains shall remain able to continue referencing established canonical space without requiring mutation of the foundational references upon which they already depend.
+    If <strong>R<sub>v</sub></strong> is the set of valid references under compatible Specification version <strong>v</strong>, then a compatible precision-extending successor shall preserve:
+    <strong>R<sub>v</sub> ⊆ R<sub>v+1</sub></strong>.
   </p>
   <p>
-    The exact relationship between coarser and finer canonical references remains unresolved until the precision system is formally designed.
+    For every previously valid reference <strong>r</strong>, its spatial meaning shall remain invariant across compatible versions. Additional precision shall not renumber, relocate, reinterpret, invalidate, or silently snap established canonical place.
   </p>
 </section>
 
 <section class="spec-card">
   <div class="spec-label">03.6 · Precision Structure</div>
-  <h2>Precision Without Semantic Tiers</h2>
+  <h2>No Foundational Coarse/Fine Point Hierarchy</h2>
   <p>
-    Canonical precision shall be representable without assigning civilizational, functional, object-specific, or application-specific meaning to any particular precision depth, level, subdivision, or representational tier.
+    Canonical Point references do not possess foundational parent/child, coarse/fine, zoom-level, or descendant semantics.
   </p>
   <p>
-    Higher layers may define convenient resolution profiles or names, but those shall remain exact translations of the underlying canonical precision mathematics and shall not constrain future precision.
+    A Point expressed with one exact rational coordinate pair is already exact. Another Point with a different exact coordinate pair is a different Point, not a finer child of the first merely because more digits, a larger denominator, or a different textual representation are used.
+  </p>
+  <p>
+    Higher layers may define resolution profiles, tiles, cells, indexes, or hierarchical subdivisions, but those derived structures shall not redefine canonical Point meaning.
   </p>
 </section>
 
 <section class="spec-card">
   <div class="spec-label">03.7 · Sub-Pang Precision</div>
-  <h2>Exact Precision Below the Pang</h2>
+  <h2>Exact Precision Below the Pang Through CRPC</h2>
   <p>
-    Spatial positions, distances, and extents smaller than one Pang shall be expressible through the Survey Fabric’s exact canonical precision mechanism.
+    Spatial positions below one Pang shall be expressible through exact reduced rational Pang coordinates.
   </p>
   <p>
-    The Pang remains the native canonical scale. The eventual mathematical design may use refinement, subdivision, exact fractional representation, coordinate extension, or another exact method. The specification shall not require a permanently named hierarchy of subunits unless later formal design proves such names necessary.
+    Examples include <strong>1/2 Pang</strong>, <strong>1/3 Pang</strong>, and other finite reduced rational values permitted by the governing Specification.
+  </p>
+  <p>
+    No permanently named hierarchy such as milli-Pang, micro-Pang, or recursive Point levels is required to obtain canonical sub-Pang precision.
   </p>
 </section>
 
@@ -334,43 +355,49 @@ h1{
   <div class="spec-label">03.8 · Finite Exact Representation</div>
   <h2>No Pretended Infinite Address</h2>
   <p>
-    The canonical address system shall not require every theoretical real-number point to possess a finite address.
+    The canonical reference system shall not require every theoretical real-number point to possess a finite canonical reference.
   </p>
   <p>
-    Every valid location representable under the canonical Survey mathematics shall be exactly addressable, and actual canonical references shall remain finite and deterministically computable.
+    Every valid Point representable under the canonical Survey mathematics shall be exactly and finitely expressible, and actual canonical references shall remain deterministically computable.
+  </p>
+  <p>
+    A value outside the governed representational limits of a Specification version is invalid for that version rather than rounded, truncated, or snapped into validity.
   </p>
 </section>
 
 <section class="spec-card">
   <div class="spec-label">03.9 · Canonicalization</div>
-  <h2>One Authoritative Reference for One Meaning</h2>
+  <h2>Equivalent Representation, One Normal Form</h2>
   <p>
-    The specification shall define deterministic normalization rules so that mathematically equivalent valid representations resolve to one canonical Survey reference.
+    Canonicalization shall normalize only mathematically equivalent representations.
   </p>
   <p>
-    Alternative textual forms, aliases, local-coordinate expressions, and equivalent encodings may exist, but canonicalization shall preserve place rather than alter it.
+    CRPC scalar values shall normalize to reduced form with positive denominator and canonical zero <strong>0/1</strong>. Supported Point, Segment, and SCPE geometry shall normalize under the rules established by FMD-07.
+  </p>
+  <p>
+    Canonicalization shall preserve place exactly. It shall not move a Point or alter an extent.
   </p>
 </section>
 
 <section class="spec-card">
   <div class="spec-label">03.10 · No Reuse</div>
-  <h2>Canonical References Remain Permanent</h2>
+  <h2>Canonical Spatial Meaning Remains Permanent</h2>
   <p>
-    A canonical Survey reference shall never be reused or reassigned to a different spatial meaning because a higher-layer entity moves, disappears, changes ownership, or ceases to exist.
+    A canonical Survey reference shall never be reused or reassigned to a different spatial meaning because a higher-layer entity moves, disappears, changes ownership, changes World membership, or ceases to exist.
   </p>
   <p>
-    A place may become unused. Its canonical address shall not become available for somewhere else.
+    A place may become unused. Its canonical spatial meaning does not become available for somewhere else.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">03.11 · Address and Measurement Agreement</div>
-  <h2>Reference and Pang Mathematics Must Agree</h2>
+  <div class="spec-label">03.11 · Reference and Measurement Agreement</div>
+  <h2>CRPC Position and Pang Mathematics Must Agree</h2>
   <p>
-    Canonical Survey references and Pang-based position, distance, and extent shall remain exactly and reproducibly related.
+    Canonical Point references resolve to exact CRPC coordinates expressed in Pangs within the permanent global frame. Therefore authoritative Point reference and authoritative Pang-based position are two expressions of one spatial truth rather than separate coordinate systems.
   </p>
   <p>
-    The eventual design may use direct coordinates, hierarchical addressing, exact coordinate extension, symbolic subdivision, or another exact representation, but address meaning and canonical measurement shall resolve to the same spatial truth.
+    Derived measurement may require exact scalar types beyond CRPC, but no measurement or future address grammar may reinterpret the underlying canonical Point.
   </p>
 </section>
 
@@ -378,27 +405,60 @@ h1{
   <div class="spec-label">03.12 · No Silent Snapping</div>
   <h2>Normalization Does Not Move Place</h2>
   <p>
-    Canonicalization shall normalize only mathematically equivalent references. It shall not move a location to a nearby grid line, refinement boundary, preferred increment, vertex, or other derived structure.
+    Canonicalization shall not move a location to a nearby grid line, subdivision boundary, preferred increment, vertex, tile center, or other derived structure.
   </p>
   <p>
-    Any snapping or alignment performed by higher layers shall be an explicit spatial change rather than an interpretation of canonical address meaning.
+    Any snapping or alignment performed by higher layers shall be an explicit spatial transformation rather than an interpretation of canonical reference meaning.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">03.13 · Canonical Machine Representation</div>
+  <h2>FSF-CJSON Carries Exact Reference Meaning</h2>
+  <p>
+    The current candidate core uses <strong>FSF-CJSON-1.0</strong> as the primary canonical machine-readable serialization for exact FSF geometry.
+  </p>
+  <p>
+    This machine representation does not automatically become the public canonical address syntax. Specification 06 owns normative serialization and interchange; this section owns the spatial meaning that any address or encoding must preserve.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">03.14 · Version Compatibility</div>
+  <h2>Version the Standard, Not the Place</h2>
+  <p>
+    Compatible Specification evolution may expand representational capability, add lossless encodings, clarify rules, or introduce future address forms, provided previously valid canonical spatial meaning remains unchanged.
+  </p>
+  <p>
+    A new Specification version shall not renumber, relocate, reinterpret, or reuse an established canonical place.
   </p>
 </section>
 
 <div class="status-grid">
   <div class="status-card">
-    <h3>Established by Requirements</h3>
+    <h3>Integrated Candidate Mathematics</h3>
     <p>
-      Addressability across all locations representable under the canonical Survey mathematics; permanent deterministic address meaning; precision by extension; self-resolving canonical addresses; non-reuse of references; deterministic canonicalization; absolute foundational reference; exact agreement between address and Pang measurement; exact sub-Pang precision; precision without semantic tiers; and finite exact addressability rather than an unrestricted real-number continuum.
+      Exact CRPC Point meaning; self-resolving mathematical reference; ECEM precision extension; no parent/child or coarse/fine Point hierarchy; exact sub-Pang rational precision; deterministic normalization; no silent snapping; FSF-CJSON-1.0 as the current canonical machine serialization; compatible evolution without place migration.
     </p>
   </div>
   <div class="status-card">
     <h3>Still Open in the Specification</h3>
     <p>
-      The exact address syntax, canonical grammar, encoding alphabet, coordinate-versus-hierarchical representation, precision mechanism, any refinement or subdivision notation, maximum precision policy, canonical normalization algorithm, and final machine-readable serialization remain unresolved until the formal mathematical design is selected and tested.
+      Final public canonical address grammar; human-readable address syntax; compact encoding alphabet if one is desired; formal address-version identifier rules; governed complexity limits; and any optional future derived subdivision or indexing syntax that does not alter canonical Point meaning.
     </p>
   </div>
 </div>
+
+<section class="spec-card">
+  <div class="spec-label">Candidate Integration Standing</div>
+  <h2>Reference Meaning and Precision Semantics Are Closed at Candidate Level</h2>
+  <p>
+    No contradiction was found between Specification 03 and FMD-01 through FMD-09. The mathematical meaning of canonical Point reference, normalization, sub-Pang precision, and compatible refinement is sufficiently defined for core prototype and conformance work.
+  </p>
+  <p>
+    The remaining address-grammar questions are representational rather than unresolved Point semantics. Formal adoption remains contingent on Specification-wide integration, Conformance, Reference Vectors, independent implementation, adversarial testing, traceability, and the applicable adoption act.
+  </p>
+</section>
 
 <section class="spec-card">
   <div class="spec-label">Requirements Basis</div>
@@ -427,7 +487,7 @@ h1{
   <a href="/theatlas/foundational-survey-fabric/specification/">Specification Index</a>
 </div>
 
-<div class="note">Foundational Survey Fabric · Specification 03 · Canonical Addressing and Precision</div>
+<div class="note">Foundational Survey Fabric · Specification 03 · Canonical Addressing and Precision · Candidate Mathematics Integrated</div>
 
 </article>
 </main>
