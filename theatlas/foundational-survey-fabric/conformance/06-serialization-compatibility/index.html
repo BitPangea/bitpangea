@@ -101,7 +101,10 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <strong>Serialization Compatibility</strong> establishes how a conforming implementation proves that its machine-readable Survey expressions are compatible with the normative serialization and interchange rules defined by the Specification.
 </p>
 <p>
-  Implementations may use different internal storage models, data structures, encodings, or APIs. Where authoritative interchange is required, those differences must resolve deterministically to one canonical spatial meaning. The Specification may require one canonical serialization or permit multiple explicitly governed lossless normative encodings.
+  The integrated Specification now makes the current machine-interchange profile concrete: <strong>FSF-CJSON-1.0</strong> is the candidate canonical serialization for the solved Point / Segment / SCPE core, with exact structured CRPC values, deterministic normalization-before-serialization, deterministic key ordering, duplicate-key rejection, governed unknown-field handling, NFC string normalization, and canonical UTF-8 byte output.
+</p>
+<p>
+  Implementations may use any internal representation they choose. Where canonical interchange is claimed, they shall reproduce the governed FSF-CJSON-1.0 meaning and bytes exactly. Future alternate normative encodings remain a separate Specification-level question and shall not be invented by Conformance.
 </p>
 </div>
 
@@ -111,151 +114,274 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 </blockquote>
 
 <section class="spec-card">
+  <div class="spec-label">06.0 · Integrated Specification Standing</div>
+  <h2>The Current Canonical Interchange Profile Is Now Testable</h2>
+  <p>
+    Specification 06 now defines FSF-CJSON-1.0 as the current candidate canonical machine representation for the solved core.
+  </p>
+  <p>
+    Conformance may therefore test exact parsing, validation, normalization, serialization, byte identity, round-trip behavior, and cross-implementation exchange for that profile.
+  </p>
+</section>
+
+<section class="spec-card">
   <div class="spec-label">06.1 · Normative Interchange Requirement</div>
-  <h2>Authoritative Exchange Follows Governed Encoding Rules</h2>
+  <h2>Authoritative Exchange Uses FSF-CJSON-1.0 for the Current Core</h2>
   <p>
-    A conforming implementation shall satisfy the normative machine-readable interchange requirements established by the governing Specification for all Mandatory Core references, extents, expressions, and results within scope.
+    Every implementation claiming serialization compatibility with the current Mandatory Core shall support FSF-CJSON-1.0 for the canonical Point / Segment / SCPE profile.
   </p>
   <p>
-    The Specification may require one canonical serialization or permit multiple explicitly governed lossless normative encodings. Internal representations may differ, but authoritative exchange shall conform to the applicable normative encoding rules and preserve one canonical spatial meaning.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">06.2 · Deterministic Serialization</div>
-  <h2>Same Meaning, Deterministic Normative Encoding</h2>
-  <p>
-    Within each normative encoding defined by the Specification, the same canonical spatial meaning shall serialize deterministically according to that encoding’s rules.
-  </p>
-  <p>
-    Where the Specification requires one unique canonical serialization, a conforming implementation shall reproduce that form exactly. Where multiple normative encodings are permitted, each may remain distinct so long as none creates a competing canonical meaning.
+    Internal representations may differ, but authoritative exchange shall satisfy the applicable canonical format rules and preserve one exact Survey meaning.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">06.3 · Deterministic Parsing</div>
-  <h2>Canonical Input Must Be Interpreted Identically</h2>
+  <div class="spec-label">06.2 · Validate Before Canonical Serialization</div>
+  <h2>Canonical Bytes Follow Valid Canonical Meaning</h2>
   <p>
-    Independent conforming implementations shall parse the same valid normative serialized input to the same authoritative Survey meaning.
+    Canonical serialization shall operate on valid supported FSF objects.
   </p>
   <p>
-    Parsing shall not depend on undocumented defaults, locale, implementation-specific field interpretation, database state, or other hidden context.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">06.4 · Noncanonical Representation Handling</div>
-  <h2>Valid Alternatives Must Normalize</h2>
-  <p>
-    Where the Specification permits valid non-normative or alternate representations, conforming implementations shall classify and normalize or resolve them deterministically according to the governing rules.
+    The governing processing discipline is:
+    <strong>validate → normalize → serialize</strong>.
   </p>
   <p>
-    Equivalent alternate forms may be accepted for convenience, but they shall not acquire normative authority merely by representing the same spatial meaning.
+    Invalid input shall not become canonical merely because it can be encoded as syntactically valid JSON.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">06.5 · Field and Encoding Integrity</div>
-  <h2>Encoding Must Preserve Meaning</h2>
+  <div class="spec-label">06.3 · Deterministic CRPC Encoding</div>
+  <h2>Exact Values Are Structural, Not Floating</h2>
   <p>
-    Required fields, ordering rules, delimiters, nesting, identifiers, precision markers, and other encoding elements defined by each applicable normative encoding shall be interpreted consistently.
+    Canonical exact coordinate values shall use the structured CRPC representation defined by FSF-CJSON-1.0.
   </p>
   <p>
-    Omission, duplication, malformed encoding, or conflicting values shall be handled according to the governing validation rules rather than implementation-specific guesswork.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">06.6 · Precision Preservation</div>
-  <h2>Serialization Must Not Silently Lose Canonical Precision</h2>
-  <p>
-    Normative interchange shall preserve the complete canonical precision required by the serialized Survey expression.
+    JSON numeric literals shall not substitute for canonical exact coordinate components where the format requires exact integer-string fields.
   </p>
   <p>
-    Truncation, rounding, lossy compression, reduced numeric precision, or other precision loss shall not be represented as normatively equivalent authoritative interchange unless the transformation is mathematically lossless.
+    Equivalent rational values shall first normalize mathematically before canonical serialization.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">06.7 · Round-Trip Compatibility</div>
-  <h2>Serialize, Parse, and Preserve Meaning</h2>
+  <div class="spec-label">06.4 · Deterministic Geometry Encoding</div>
+  <h2>Point · Segment · SCPE Must Serialize Canonically</h2>
   <p>
-    A normative Survey expression serialized by a conforming implementation and parsed by another conforming implementation shall preserve identical canonical meaning.
+    Supported Point, Segment, and SCPE objects shall serialize according to the exact type structures and normalized geometry rules defined by the Specification.
   </p>
   <p>
-    Where a unique canonical representation is required, the round-trip result shall reproduce that representation exactly. Where multiple governed normative encodings are permitted, round-trip compatibility shall preserve the same canonical meaning while respecting the rules of the encoding used.
+    Segment endpoint order and SCPE traversal/start-vertex form shall therefore be normalized before byte comparison.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">06.8 · Cross-Implementation Exchange</div>
+  <div class="spec-label">06.5 · Deterministic Object-Key Order</div>
+  <h2>Canonical Object Structure Has One Key Order</h2>
+  <p>
+    Canonical FSF-CJSON-1.0 object members shall appear in the deterministic order required by the Specification.
+  </p>
+  <p>
+    Implementations shall not emit semantically equivalent but differently ordered canonical objects where one exact canonical key order is required.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">06.6 · Semantic Array Order</div>
+  <h2>Array Order Is Preserved Where Meaning Requires It</h2>
+  <p>
+    Arrays shall preserve the semantic order defined by the serialized object.
+  </p>
+  <p>
+    Conformance shall not arbitrarily reorder vertices, sequence elements, or other ordered content unless normalization explicitly defines the canonical order before serialization.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">06.7 · Duplicate-Key and Unknown-Field Discipline</div>
+  <h2>Canonical Parsing Must Reject Ambiguous Object Structure</h2>
+  <p>
+    Duplicate object keys shall be invalid in canonical FSF-CJSON-1.0 input.
+  </p>
+  <p>
+    Unknown or prohibited fields shall be rejected according to the governing format rules rather than ignored, guessed, or treated as harmless extensions.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">06.8 · Text and Unicode Canonicalization</div>
+  <h2>Canonical Text Must Be Deterministic</h2>
+  <p>
+    Canonical serialization shall use UTF-8, omit a byte-order mark, apply required Unicode normalization, and follow the shortest required JSON escaping behavior defined by the Specification.
+  </p>
+  <p>
+    Locale, platform defaults, pretty-print settings, or implementation-specific escaping preferences shall not alter canonical output.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">06.9 · Whitespace and Presentation Independence</div>
+  <h2>Canonical Serialization Is Compact</h2>
+  <p>
+    Canonical FSF-CJSON-1.0 shall contain no insignificant presentation whitespace.
+  </p>
+  <p>
+    Pretty-printed, indented, annotated, or UI-oriented JSON may exist as noncanonical presentation, but shall not be confused with canonical machine interchange.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">06.10 · Deterministic Parsing</div>
+  <h2>The Same Canonical Bytes Must Produce the Same Meaning</h2>
+  <p>
+    Independent conforming implementations shall parse the same valid FSF-CJSON-1.0 canonical bytes to the same authoritative FSF object and spatial meaning.
+  </p>
+  <p>
+    Parsing shall not depend on undocumented defaults, locale, implementation-specific field interpretation, hidden registries, database state, or other mutable context.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">06.11 · Canonical Byte Equality</div>
+  <h2>Same Normalized Object, Same Canonical Bytes</h2>
+  <p>
+    For every supported normalized object in the current profile, conforming implementations shall produce identical FSF-CJSON-1.0 canonical UTF-8 bytes.
+  </p>
+  <p>
+    Semantic equivalence does not excuse a byte mismatch where the current canonical format defines one exact serialization.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">06.12 · Round-Trip Compatibility</div>
+  <h2>Parse and Serialize Without Semantic Drift</h2>
+  <p>
+    A canonical FSF-CJSON-1.0 object serialized by one conforming implementation and parsed by another shall preserve identical canonical meaning.
+  </p>
+  <p>
+    Re-serialization of the normalized parsed object shall reproduce the required canonical bytes exactly.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">06.13 · Valid Noncanonical Serialization</div>
+  <h2>Convenience Input Does Not Acquire Canonical Authority</h2>
+  <p>
+    If a future or implementation-facing parser accepts valid noncanonical input forms, those forms shall remain distinguishable from canonical FSF-CJSON-1.0 and shall normalize deterministically before any canonical serialization claim is made.
+  </p>
+  <p>
+    Conformance shall not treat arbitrary JSON that can be interpreted as equivalent as canonical bytes.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">06.14 · Precision Preservation</div>
+  <h2>Serialization Must Not Silently Lose Exact Meaning</h2>
+  <p>
+    Canonical interchange shall preserve the complete exact CRPC and geometry meaning required by the serialized object.
+  </p>
+  <p>
+    Truncation, rounding, floating conversion, lossy compression, reduced numeric precision, or approximate geometry substitution shall not be represented as canonical interchange.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">06.15 · Cross-Implementation Exchange</div>
   <h2>Interchange Must Not Require Shared Internals</h2>
   <p>
-    Normatively encoded Survey data shall be independently exchangeable across conforming implementations without dependence on proprietary internal structures, private schema extensions, hidden registries, or inaccessible services.
+    Canonical FSF-CJSON-1.0 data shall be independently exchangeable across conforming implementations without proprietary internal structures, private schema extensions, hidden registries, inaccessible services, or shared implementation libraries.
   </p>
   <p>
-    Compatibility shall arise from the published Specification and conformance rules.
+    Compatibility shall arise from the published Specification and Conformance rules.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">06.9 · Specification Identity</div>
-  <h2>Serialized Meaning Must Identify Its Governing Standard</h2>
+  <div class="spec-label">06.16 · Specification and Format Identity</div>
+  <h2>The Encoding Identity Must Be Explicit</h2>
   <p>
-    Where required by the Specification, normative serialized data shall carry or be unambiguously associated with sufficient Specification, version, and encoding identity to determine the applicable canonical interpretation rules.
+    A current serialization conformance claim shall identify <strong>FSF-CJSON-1.0</strong> wherever the format is being tested.
   </p>
   <p>
-    Such identity identifies the governing standard and shall not become part of the spatial identity of the place being described.
+    Final top-level FSF Specification identifier syntax and future compatibility-declaration syntax remain open and shall not be invented by Conformance.
+  </p>
+  <p>
+    Format identity identifies the governing representation. It does not become part of the spatial identity of the place or geometry described.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">06.10 · Unknown and Unsupported Forms</div>
+  <div class="spec-label">06.17 · Unknown and Unsupported Forms</div>
   <h2>Unsupported Serialization Must Fail Clearly</h2>
   <p>
-    A conforming implementation shall not silently reinterpret an unknown, unsupported, malformed, or incompatible normative encoding as valid canonical Survey input.
+    A conforming implementation shall not silently reinterpret an unknown, unsupported, malformed, or incompatible encoding as valid canonical Survey input.
   </p>
   <p>
-    Unsupported forms shall be rejected or classified according to the governing validation and version-compatibility rules.
+    Unsupported forms shall be rejected or classified according to the governing validation and profile/version rules.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">06.11 · Canonical Byte or Text Equality</div>
-  <h2>Representation Equality Depends on the Specification</h2>
+  <div class="spec-label">06.18 · Future-Encoding Boundary</div>
+  <h2>One Current Canonical Format Does Not Pre-Adopt Future Encodings</h2>
   <p>
-    Where the Specification defines a unique canonical byte sequence, text form, or other normative serialized representation, conforming implementations shall reproduce that representation exactly.
+    FSF-CJSON-1.0 is the current candidate canonical machine representation for the solved core.
   </p>
   <p>
-    Where canonical mathematical meaning is normative across more than one governed encoding, representational equivalence shall be determined through the semantic-equivalence and normalization rules defined by the Specification rather than superficial byte or formatting comparison.
+    A future Specification may adopt another normative representation only through an explicit governed decision defining its relationship to existing canonical meaning and compatibility obligations.
+  </p>
+  <p>
+    Conformance 06 shall not presume that future alternate encodings are already canonical or normatively equivalent.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">06.12 · Serialization Failure</div>
+  <div class="spec-label">06.19 · Reference Vector Interchange Proof</div>
+  <h2>Serialization Compatibility Must Be Proven With Exact Fixtures</h2>
+  <p>
+    Reference Vectors or equivalent executable fixtures shall test parse success, parse failure, normalization-before-serialization, canonical structured CRPC encoding, deterministic object ordering, canonical geometry encoding, canonical byte equality, and round-trip reproduction.
+  </p>
+  <p>
+    The current solved core is sufficiently deterministic for those fixtures to be authored now.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">06.20 · Serialization Failure</div>
   <h2>Interchange Disagreement Is a Conformance Issue</h2>
   <p>
-    If conforming implementations cannot exchange, parse, interpret, normalize where required, or reproduce the obligations of an applicable normative encoding consistently, the disagreement shall be treated as a conformance, implementation, or Specification issue.
+    Failure to parse valid canonical bytes, acceptance of invalid canonical serialization, disagreement about canonical meaning, noncanonical key order, incorrect normalization, precision loss, or canonical-byte mismatch shall constitute a Conformance failure where the applicable rule is mandatory.
   </p>
   <p>
-    Proprietary convention or implementation preference shall not resolve a disagreement in normative interchange or canonical spatial meaning.
+    Proprietary convention or implementation preference shall not resolve disagreement in normative interchange or canonical spatial meaning.
   </p>
 </section>
 
 <div class="status-grid">
   <div class="status-card">
-    <h3>Established by Requirements</h3>
+    <h3>Current Serialization Profile Now Executable</h3>
     <p>
-      The requirements establish deterministic normative serialization and interchange; permission for one canonical serialization or multiple explicitly governed lossless normative encodings; deterministic semantic equivalence across authoritative forms; one mathematical meaning across durable representations; implementation independence; exact canonical precision; and unambiguous exchange of authoritative Survey truth.
+      FSF-CJSON-1.0; structured CRPC values; validate → normalize → serialize; Point / Segment / SCPE encoding; deterministic key order; semantic arrays; duplicate-key rejection; governed unknown fields; UTF-8 canonical text; compact bytes; deterministic parsing; exact byte equality; round-trip proof.
     </p>
   </div>
   <div class="status-card">
     <h3>Still Open in Conformance</h3>
     <p>
-      Whether authoritative interchange uses one canonical serialization or multiple governed normative encodings; the exact format or formats, field ordering, byte-level canonicalization rules where applicable, schema language, text encoding, semantic-equivalence procedure, normalization procedure, round-trip tests, compatibility fixtures, machine-readable error codes, and formal interchange test suite remain unresolved until the Specification is sufficiently complete.
+      Final top-level FSF Specification identifier; full cross-version compatibility syntax; future normative encoding precedence; machine-readable serialization error identifiers; final formal interchange test-suite identifiers; and conformance rules for any future additional normative encoding.
     </p>
   </div>
 </div>
+
+<section class="spec-card">
+  <div class="spec-label">Conformance Integration Standing</div>
+  <h2>Serialization Has Moved From Abstract Interchange to One Testable Canonical Format</h2>
+  <p>
+    The original section correctly preserved the possibility of one canonical serialization or multiple governed normative encodings because the Specification had not yet selected a format.
+  </p>
+  <p>
+    The integrated Specification has now selected FSF-CJSON-1.0 for the current solved core. Conformance 06 therefore tests that format directly while preserving future-format governance as a later Specification decision.
+  </p>
+</section>
 
 <section class="spec-card">
   <div class="spec-label">Requirements Basis</div>
@@ -285,7 +411,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <a href="/theatlas/foundational-survey-fabric/conformance/">Conformance Index</a>
 </div>
 
-<div class="note">Foundational Survey Fabric · Conformance 06 · Serialization Compatibility</div>
+<div class="note">Foundational Survey Fabric · Conformance 06 · Serialization Compatibility · FSF-CJSON-1.0</div>
 
 </article>
 </main>
