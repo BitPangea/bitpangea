@@ -100,10 +100,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 
 <div class="req-intro">
 <p>
-  <strong>Independent Implementation Requirement</strong> establishes that Foundational Survey Fabric conformance must be demonstrable by implementations created independently from the governing specification and conformance materials.
+  <strong>Independent Implementation Requirement</strong> establishes that Foundational Survey Fabric conformance must be demonstrable by implementations created independently from the published Specification, Conformance rules, and applicable Reference Vectors.
 </p>
 <p>
-  Canonical BitPangea spatial truth must not depend on one codebase, one vendor, one service, one database, one institution, or one privileged interpretation. Independence is therefore not merely a software preference; it is a test of whether the published standard is sufficiently exact to reproduce one spatial truth. Successful independent reproduction verifies the standard’s determinism; it does not by itself establish canonical authority over that standard.
+  The integrated Specification now provides a sufficiently concrete candidate core for meaningful independent implementation work. Separate implementers can now reproduce CRPC behavior, canonical frame semantics, Point / Segment / SCPE geometry, exact predicates, deterministic normalization, ECEM precision semantics, and FSF-CJSON-1.0 interchange without relying on one privileged codebase.
+</p>
+<p>
+  Successful independent reproduction is evidence that canonical behavior comes from the standard rather than from hidden implementation knowledge. It does not itself create canonical authority over the standard.
 </p>
 </div>
 
@@ -113,18 +116,40 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 </blockquote>
 
 <section class="spec-card">
-  <div class="spec-label">08.1 · Independent Implementability</div>
-  <h2>The Standard Must Stand Without a Reference Codebase</h2>
+  <div class="spec-label">08.0 · Integrated Specification Standing</div>
+  <h2>Independent Implementation Is Now Practically Testable</h2>
   <p>
-    The Foundational Survey Fabric shall be specified with sufficient completeness and precision that an implementation can be created independently from the published governing Specification and Conformance rules, together with applicable Reference Vectors once the canonical vector corpus has been established from sufficiently complete formal mathematics.
+    The solved candidate core now defines enough exact behavior for independently developed implementations to attempt the same Mandatory Core without consulting an existing codebase.
   </p>
   <p>
-    Access to an existing implementation shall not be required in order to determine canonical spatial meaning.
+    This makes independent implementation a current proof obligation for the solved profile rather than a purely future institutional idea.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">08.2 · No Proprietary Dependency</div>
+  <div class="spec-label">08.1 · Independent Implementability</div>
+  <h2>The Standard Must Stand Without a Reference Codebase</h2>
+  <p>
+    The Foundational Survey Fabric shall be specified with sufficient completeness and precision that an implementation can be created independently from the published governing Specification, Conformance rules, and applicable Reference Vectors.
+  </p>
+  <p>
+    Access to an existing implementation shall not be required to determine canonical spatial meaning or the expected behavior of the solved Mandatory Core.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">08.2 · Minimum Independent Reproduction Surface</div>
+  <h2>The Solved Core Must Be Reproducible Independently</h2>
+  <p>
+    Independent implementations shall be capable of reproducing the current candidate core, including CRPC parsing and normalization, canonical frame interpretation, Point / Segment / SCPE validation, exact predicates, deterministic normalization, ECEM semantics, and FSF-CJSON-1.0 parsing and serialization.
+  </p>
+  <p>
+    The purpose is not to require one implementation architecture. It is to prove that different architectures converge because the governing rules are sufficiently exact.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">08.3 · No Proprietary Dependency</div>
   <h2>Canonical Meaning Must Not Depend on Exclusive Software</h2>
   <p>
     A conformance claim shall not require proprietary software, closed algorithms, inaccessible services, private libraries, or exclusive vendor infrastructure to reproduce authoritative Survey results.
@@ -135,21 +160,24 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">08.3 · No Hidden Institutional Knowledge</div>
+  <div class="spec-label">08.4 · No Hidden Institutional Knowledge</div>
   <h2>Unpublished Convention Cannot Be Part of Canonical Truth</h2>
   <p>
     A conforming implementation shall not depend on undocumented institutional practice, private interpretation, oral tradition, unpublished exceptions, or tacit knowledge to determine authoritative results.
   </p>
   <p>
-    Any rule necessary to produce canonical truth belongs in the governing specification or conformance materials.
+    Any rule necessary to produce canonical truth belongs in the governing Specification, Conformance materials, or explicitly governed Reference Vector explanation.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">08.4 · Independent Result Reproduction</div>
+  <div class="spec-label">08.5 · Independent Result Reproduction</div>
   <h2>Separate Implementers Must Reach the Same Answer</h2>
   <p>
-    Independently developed conforming implementations shall reproduce the same authoritative canonical meaning for identical canonical inputs within the same applicable conformance scope. Where the governing Specification requires one unique canonical representation, that representation shall also agree exactly.
+    Independently developed conforming implementations shall reproduce the same authoritative canonical meaning for identical valid canonical inputs within the same applicable profile.
+  </p>
+  <p>
+    Where the governing Specification requires one unique normalized form or canonical byte sequence, those outputs shall also agree exactly.
   </p>
   <p>
     Independent agreement is evidence that canonical behavior is determined by the Specification rather than by one implementation.
@@ -157,54 +185,101 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">08.5 · Technology Neutrality</div>
+  <div class="spec-label">08.6 · Independent Validation Reproduction</div>
+  <h2>The Same Input Must Receive the Same Validity Judgment</h2>
+  <p>
+    Independent implementations shall classify the same candidate input identically under the same profile as canonical valid, valid noncanonical, invalid, or unsupported where the governing Conformance profile defines those outcomes.
+  </p>
+  <p>
+    Where valid noncanonical normalization is permitted, independently developed implementations shall also produce the same canonical normalized result.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">08.7 · Independent Predicate Reproduction</div>
+  <h2>Exact Geometry Truth Must Converge Across Implementations</h2>
+  <p>
+    Independent implementations shall agree exactly on the supported predicate profile, including Point equality and order, orientation, Point-on-Segment, Segment intersection, Point-on-boundary, Point-in-SCPE, polygon validity, connectedness, containment, and geometric equivalence where defined.
+  </p>
+  <p>
+    Divergence shall be investigated as a Conformance, fixture, Specification, or implementation issue rather than hidden through tolerance.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">08.8 · Independent Serialization Reproduction</div>
+  <h2>FSF-CJSON-1.0 Must Be Reproducible Without Shared Code</h2>
+  <p>
+    Independently developed implementations claiming FSF-CJSON-1.0 compatibility shall be able to parse the same valid canonical bytes to the same canonical object and serialize the same normalized object to identical canonical bytes.
+  </p>
+  <p>
+    Shared serializer libraries, shared parser code, or proprietary reference services shall not be necessary for canonical byte agreement.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">08.9 · Technology Neutrality</div>
   <h2>Implementation Choice Must Remain Open</h2>
   <p>
-    Conformance shall not require a particular programming language, operating system, database, hardware architecture, execution environment, cryptographic technology, blockchain, or vendor stack unless a later requirement proves such dependency irreducibly necessary.
+    Conformance shall not require a particular programming language, operating system, database, hardware architecture, execution environment, cryptographic technology, blockchain, or vendor stack unless a later Requirement proves such dependency irreducibly necessary.
   </p>
   <p>
-    Different technical approaches are permitted where they preserve the same canonical meaning and all representation-specific obligations required by the governing Specification.
+    Different technical approaches remain permissible where they preserve the same canonical meaning and satisfy representation-specific obligations required by the governing Specification.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">08.6 · Open Specification Basis</div>
+  <div class="spec-label">08.10 · Open Specification Basis</div>
   <h2>The Governing Rules Must Be Inspectable</h2>
   <p>
-    The specification and conformance materials necessary to reproduce canonical Survey behavior shall be openly inspectable.
+    The Specification and Conformance materials necessary to reproduce canonical Survey behavior shall be openly inspectable.
   </p>
   <p>
-    An implementer shall be able to determine the required mathematics, canonical operations, validation behavior, normative serialization and interchange rules, version rules, and conformance obligations from the governing materials themselves.
+    An independent implementer shall be able to determine the required mathematics, primitive geometry, validation behavior, normalization rules, canonical serialization, precision semantics, profile boundaries, and Conformance obligations from the governing materials themselves.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">08.7 · Reference Vector Availability</div>
+  <div class="spec-label">08.11 · Reference Vector Availability</div>
   <h2>Canonical Expectations Must Be Testable Independently</h2>
   <p>
-    Once the governing mathematics are sufficiently complete to define exact canonical inputs and required results, the Reference Vectors used to establish conformance shall be openly available in sufficient form for independent implementations to execute the same cases and verify the required authoritative outcomes.
+    Applicable Reference Vectors used to establish Conformance shall be openly available in sufficient form for independent implementations to execute the same cases and verify the required authoritative outcomes.
   </p>
   <p>
-    Reference Vector categories and proof obligations may be defined before that corpus exists, but exact vectors shall not be invented ahead of the mathematics that determines them. Hidden test suites may supplement quality assurance, but canonical compatibility shall not depend solely on tests that implementers cannot inspect or reproduce.
+    The solved core is now sufficiently deterministic for vectors covering CRPC normalization, validation, exact predicates, geometry normalization, ECEM semantics, and FSF-CJSON-1.0 bytes.
+  </p>
+  <p>
+    Hidden test suites may supplement quality assurance, but canonical compatibility shall not depend solely on tests that implementers cannot inspect or reproduce.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">08.8 · Implementation Diversity</div>
+  <div class="spec-label">08.12 · Implementation Diversity</div>
   <h2>Different Architectures Should Still Converge</h2>
   <p>
-    Independent implementations should be free to differ in internal architecture, performance strategy, data representation, caching, indexing, memory model, and execution technique.
+    Independent implementations may differ in architecture, algorithms, performance strategy, internal data representation, caching, indexing, memory model, and execution technique.
   </p>
   <p>
-    Diversity is compatible with conformance only where authoritative canonical meaning remains the same and all unique-representation obligations, where specified, are satisfied.
+    Diversity is compatible with Conformance only where authoritative canonical meaning remains the same and all unique-representation obligations are satisfied.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">08.9 · No Reference-Implementation Authority</div>
+  <div class="spec-label">08.13 · Independence of Development</div>
+  <h2>Independent Means More Than a Second Build of the Same Code</h2>
+  <p>
+    Formal independent-implementation evidence shall ultimately require enough separation that reproduced results are not merely artifacts of shared hidden assumptions, copied algorithms, common unpublished libraries, or one implementation wrapped in another interface.
+  </p>
+  <p>
+    The exact evaluator and implementation-independence criteria remain open, but the intent is substantive independence of derivation from the governing standard.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">08.14 · No Reference-Implementation Authority</div>
   <h2>Code May Illustrate the Standard, Not Replace It</h2>
   <p>
-    A reference implementation may eventually assist testing, education, or interoperability, but it shall not become an independent source of canonical spatial truth where its behavior conflicts with the governing Specification.
+    A reference implementation may assist testing, education, interoperability, or fixture generation, but it shall not become an independent source of canonical spatial truth where its behavior conflicts with the governing Specification.
   </p>
   <p>
     The standard governs the code. The code does not silently govern the standard.
@@ -212,10 +287,10 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">08.10 · Independent Conformance Evaluation</div>
+  <div class="spec-label">08.15 · Independent Conformance Evaluation</div>
   <h2>Conformance Judgment Must Be Reproducible</h2>
   <p>
-    Separate evaluators applying the same Specification, Conformance rules, and applicable Reference Vectors once those vectors formally exist should be able to reach the same judgment regarding an implementation’s compatibility.
+    Separate evaluators applying the same Specification, Conformance rules, and applicable Reference Vectors should be able to reach the same judgment regarding an implementation’s compatibility.
   </p>
   <p>
     Conformance status shall not depend on discretionary private interpretation where the governing materials can define an objective result.
@@ -223,41 +298,77 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">08.11 · Independence From Operational State</div>
+  <div class="spec-label">08.16 · Independence From Operational State</div>
   <h2>Canonical Truth Must Survive Outside a Running Service</h2>
   <p>
-    The ability to interpret and verify canonical Survey truth shall not depend on continued operation of a particular server, database, hosted API, account system, or network service.
+    The ability to interpret and verify canonical Survey truth shall not depend on continued operation of a particular server, database, hosted API, account system, network service, or vendor platform.
   </p>
   <p>
-    Operational systems may provide convenience and performance, but the underlying spatial truth must remain reconstructable from the specification.
+    Operational systems may provide convenience and performance, but the underlying spatial truth shall remain reconstructable from the published standard and governed test materials.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">08.12 · Independence Failure</div>
-  <h2>Exclusive Dependency Prevents Canonical Conformance</h2>
+  <div class="spec-label">08.17 · Open-Gate Independence Boundary</div>
+  <h2>Independent Agreement Cannot Canonize Undefined Mathematics</h2>
   <p>
-    If authoritative Survey results can be reproduced only through inaccessible code, private data, undocumented convention, proprietary service, or exclusive institutional control, the implementation shall not satisfy the independent implementation requirement.
+    Two independent implementations agreeing on behavior for a Specification-open capability does not make that behavior canonical.
   </p>
   <p>
-    Such dependency indicates that canonical truth has escaped the published standard and therefore has not been fully specified.
+    Current examples include general Boolean/composite output closure, arbitrary exact rotation, unresolved general distance and path-length scalar forms, future geometry not yet selected, and other open operation-result domains.
+  </p>
+  <p>
+    Independent implementation proves reproducibility only within a defined Specification scope.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">08.18 · Adoption-Evidence Boundary</div>
+  <h2>Independent Reproduction Is Necessary Evidence, Not Canonical Authority</h2>
+  <p>
+    Independent implementation is part of the evidence required before a candidate mathematical architecture can credibly advance toward canonical adoption.
+  </p>
+  <p>
+    Successful reproduction demonstrates determinism and implementability. It does not itself adopt the Specification, create institutional authority, or supersede the governing adoption process.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">08.19 · Independence Failure</div>
+  <h2>Exclusive Dependency Prevents Canonical Conformance</h2>
+  <p>
+    If authoritative Survey results can be reproduced only through inaccessible code, private data, undocumented convention, proprietary service, exclusive institutional control, or a privileged hidden implementation dependency, the implementation shall not satisfy the independent implementation requirement.
+  </p>
+  <p>
+    Such dependency indicates that canonical truth has escaped the published standard or that the evidence of reproducibility is insufficient.
   </p>
 </section>
 
 <div class="status-grid">
   <div class="status-card">
-    <h3>Established by Requirements</h3>
+    <h3>Independent Proof Surface Now Concrete</h3>
     <p>
-      The requirements establish independent implementation and reproducible canonical meaning, exact implementation-independent mathematics, openly inspectable governing Specifications, independence from proprietary software and verification technology, finite computability, hidden-state independence, and a canonical-adoption gate requiring independent implementation as part of the evidence before a candidate mathematical architecture may be adopted.
+      CRPC; canonical frame; Point / Segment / SCPE validity; exact predicates; deterministic normalization; ECEM semantics; FSF-CJSON-1.0 parsing and byte reproduction; Reference Vector execution; cross-implementation result identity; independence from proprietary operational state.
     </p>
   </div>
   <div class="status-card">
     <h3>Still Open in Conformance</h3>
     <p>
-      The minimum number of independent implementations required for formal validation, evaluator independence rules, publication requirements for implementation evidence, acceptable reference-implementation roles, certification procedure, reproducibility documentation format, eventual Reference Vector coverage, and exact independence test suite remain unresolved until the Specification and complete Conformance framework are sufficiently mature.
+      Minimum independent-implementation count; formal evaluator-independence rules; implementation-separation criteria; evidence publication requirements; certification procedure; reproducibility-report format; acceptable reference-implementation role; final vector coverage; and formal independence test suite.
     </p>
   </div>
 </div>
+
+<section class="spec-card">
+  <div class="spec-label">Conformance Integration Standing</div>
+  <h2>Independent Implementation Has Moved From Future Gate to Current Candidate Proof Obligation</h2>
+  <p>
+    The original section correctly required canonical truth to remain reproducible without privileged software or knowledge. The solved Specification core now provides enough exact behavior for genuinely independent implementations to be attempted and compared.
+  </p>
+  <p>
+    The formal number of implementations, evaluator rules, certification process, and evidence-publication requirements remain open. The architectural requirement itself is now executable for the solved profile.
+  </p>
+</section>
 
 <section class="spec-card">
   <div class="spec-label">Requirements Basis</div>
@@ -286,7 +397,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <a href="/theatlas/foundational-survey-fabric/conformance/">Conformance Index</a>
 </div>
 
-<div class="note">Foundational Survey Fabric · Conformance 08 · Independent Implementation Requirement</div>
+<div class="note">Foundational Survey Fabric · Conformance 08 · Independent Implementation Requirement · Candidate Proof Obligation</div>
 
 </article>
 </main>
