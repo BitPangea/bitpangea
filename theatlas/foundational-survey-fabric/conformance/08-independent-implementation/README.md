@@ -3,16 +3,18 @@
 ## Foundational Survey Fabric · Conformance Section 08
 
 **The Atlas · The Architecture · Foundational Survey Fabric · Conformance**  
-**Section: 08 — Independent Implementation Requirement**  
-**Scope: Reproducibility Without Dependency**
+**Section:** 08 — Independent Implementation Requirement  
+**Scope:** Reproducibility Without Dependency  
+**Status:** Candidate Independent-Proof Surface Defined  
+**Canonical Adoption:** Not yet performed
 
 This directory contains **Conformance Section 08 — Independent Implementation Requirement** for the BitPangea **Foundational Survey Fabric**.
 
-The source page defines the section as:
+The governing statement remains:
 
 > **The conformance requirement that canonical Survey truth be independently implementable, reproducible, and verifiable without proprietary dependency or exclusive institutional knowledge.**
 
-Its governing principle is:
+Its governing principle remains:
 
 > **Spatial truth should be open to verification, not dependent on permission to understand it.**
 
@@ -30,262 +32,418 @@ Repository path:
 /theatlas/foundational-survey-fabric/conformance/08-independent-implementation/index.html
 ```
 
-Recommended directory README path:
+README path:
 
 ```text
 /theatlas/foundational-survey-fabric/conformance/08-independent-implementation/README.md
 ```
 
-The source page is publicly indexable:
+---
+
+## Integration Standing
+
+The original section correctly established independent implementation as a canonical-adoption evidence requirement.
+
+The integrated Specification now provides enough exact candidate behavior to make that requirement practically executable for the solved core.
+
+Independent implementations can now attempt to reproduce:
 
 ```text
-index,follow
+CRPC
+canonical frame
+Point
+Segment
+SCPE
+exact predicates
+validation
+normalization
+ECEM
+FSF-CJSON-1.0
 ```
 
----
-
-## Purpose
-
-**Independent Implementation Requirement** establishes that Foundational Survey Fabric conformance must be demonstrable by implementations created independently from the governing Specification and Conformance materials.
-
-Canonical BitPangea spatial truth must not depend on:
-
-- one codebase;
-- one vendor;
-- one service;
-- one database;
-- one institution;
-- one privileged interpretation.
-
-The source explicitly frames independence as more than a software preference.
-
-It is a test of whether the published standard is sufficiently exact to reproduce one spatial truth.
-
-Successful independent reproduction verifies determinism of the standard.
-
-It does **not** by itself establish canonical authority over that standard.
+without consulting a privileged codebase.
 
 ---
 
-## 08.1 — Independent Implementability
+## Independent Implementability
 
-### The Standard Must Stand Without a Reference Codebase
+The standard must stand on its own.
 
-The Foundational Survey Fabric must be specified with sufficient completeness and precision that an implementation can be created independently from:
+An implementer should be able to build the solved profile from:
 
-- the published governing Specification;
-- the Conformance rules;
-- applicable Reference Vectors once the canonical vector corpus exists.
+```text
+published Specification
++
+published Conformance rules
++
+applicable Reference Vectors
+```
 
-Access to an existing implementation must not be required to determine canonical spatial meaning.
+Access to an existing implementation must not be necessary to determine canonical truth.
 
 ---
 
-## 08.2 — No Proprietary Dependency
+## Minimum Reproduction Surface
 
-### Canonical Meaning Must Not Depend on Exclusive Software
+The current independent proof surface includes:
 
-A conformance claim must not require:
+```text
+CRPC parsing
+CRPC normalization
+canonical frame interpretation
+Point validation
+Segment validation
+SCPE validation
+exact predicates
+canonical geometry normalization
+validity classification
+ECEM semantics
+FSF-CJSON-1.0 parsing
+FSF-CJSON-1.0 serialization
+canonical byte reproduction
+```
+
+Independent implementations need not share architecture.
+
+They must share results.
+
+---
+
+## No Proprietary Dependency
+
+A valid independent implementation claim shall not require:
 
 - proprietary software;
 - closed algorithms;
-- inaccessible services;
 - private libraries;
-- exclusive vendor infrastructure
-
-to reproduce authoritative Survey results.
+- inaccessible hosted services;
+- exclusive vendor infrastructure;
+- inaccessible proprietary data.
 
 Proprietary implementations may exist.
 
-Canonical truth must remain independently derivable from public governing materials.
+Canonical truth must remain reproducible without them.
 
 ---
 
-## 08.3 — No Hidden Institutional Knowledge
+## No Hidden Institutional Knowledge
 
-### Unpublished Convention Cannot Be Part of Canonical Truth
+Canonical truth may not depend on:
 
-A conforming implementation must not depend on:
-
-- undocumented institutional practice;
-- private interpretation;
 - oral tradition;
-- unpublished exceptions;
-- tacit knowledge
+- undocumented exceptions;
+- tacit institutional convention;
+- private interpretation;
+- unpublished implementation behavior.
 
-to determine authoritative results.
-
-The source states:
-
-> **Any rule necessary to produce canonical truth belongs in the governing specification or conformance materials.**
+Any rule necessary to reproduce canonical output belongs in the governing materials.
 
 ---
 
-## 08.4 — Independent Result Reproduction
+## Independent Result Reproduction
 
-### Separate Implementers Must Reach the Same Answer
+For identical valid canonical inputs:
 
-Independently developed conforming implementations must reproduce the same authoritative canonical meaning for identical canonical inputs within the same applicable conformance scope.
+```text
+Independent Implementation A
+Independent Implementation B
+Independent Implementation C
+        ↓
+same authoritative canonical meaning
+```
 
-Where the governing Specification requires one unique canonical representation, that representation must also agree exactly.
+Where unique normalization or serialization is governed:
 
-Independent agreement is evidence that canonical behavior is determined by the Specification rather than by one implementation.
+```text
+same normalized result
+same canonical bytes
+```
+
+Independent agreement is evidence of determinism.
 
 ---
 
-## 08.5 — Technology Neutrality
+## Independent Validation Reproduction
 
-### Implementation Choice Must Remain Open
+For the same input and profile:
 
-Conformance must not require a particular:
+```text
+same validity classification
+```
 
-- programming language;
+The current model includes:
+
+```text
+CANONICAL VALID
+VALID NONCANONICAL
+INVALID
+```
+
+and unsupported behavior where the profile explicitly distinguishes it.
+
+Valid noncanonical normalization must also converge.
+
+---
+
+## Independent Predicate Reproduction
+
+Independent implementations should agree exactly on:
+
+```text
+Point equality
+Point ordering
+orientation
+Point-on-Segment
+Segment intersection
+Point-on-boundary
+Point-in-SCPE
+polygon validity
+connectedness
+containment
+geometric equivalence
+```
+
+Tolerance cannot be used to hide disagreement.
+
+---
+
+## Independent Serialization Reproduction
+
+For:
+
+```text
+FSF-CJSON-1.0
+```
+
+independent implementations must be able to:
+
+```text
+parse same canonical bytes
+    -> same canonical object
+
+serialize same normalized object
+    -> same canonical bytes
+```
+
+Shared serializer code is not the proof.
+
+Independent reproduction is.
+
+---
+
+## Technology Neutrality
+
+Conformance does not require one:
+
+- language;
 - operating system;
 - database;
 - hardware architecture;
 - execution environment;
-- cryptographic technology;
 - blockchain;
-- vendor stack
+- cryptographic platform;
+- vendor stack.
 
-unless a later requirement proves such dependency irreducibly necessary.
-
-Different technical approaches remain permissible where they preserve the same canonical meaning and satisfy representation-specific obligations required by the governing Specification.
-
----
-
-## 08.6 — Open Specification Basis
-
-### The Governing Rules Must Be Inspectable
-
-The Specification and Conformance materials necessary to reproduce canonical Survey behavior must be openly inspectable.
-
-An implementer must be able to determine from the governing materials:
-
-- required mathematics;
-- canonical operations;
-- validation behavior;
-- normative serialization and interchange rules;
-- version rules;
-- conformance obligations.
+Different technologies are acceptable if canonical results remain identical.
 
 ---
 
-## 08.7 — Reference Vector Availability
+## Open Specification Basis
 
-### Canonical Expectations Must Be Testable Independently
+The governing materials must be inspectable enough to determine:
 
-Once the governing mathematics are sufficiently complete to define exact canonical inputs and required results, the Reference Vectors used to establish conformance must be openly available in sufficient form for independent implementations to execute the same cases and verify required authoritative outcomes.
+- exact mathematics;
+- primitive geometry;
+- validation;
+- normalization;
+- canonical serialization;
+- precision semantics;
+- conformance profiles;
+- proof obligations.
 
-The source also preserves an important timing boundary:
-
-> **Reference Vector categories and proof obligations may be defined before that corpus exists, but exact vectors shall not be invented ahead of the mathematics that determines them.**
-
-Hidden test suites may supplement quality assurance, but canonical compatibility must not depend solely on tests that implementers cannot inspect or reproduce.
+If an essential rule exists only inside one implementation, the standard is incomplete.
 
 ---
 
-## 08.8 — Implementation Diversity
+## Reference Vector Availability
 
-### Different Architectures Should Still Converge
+Applicable Reference Vectors should be openly available.
+
+The solved core is now mature enough for vectors covering:
+
+```text
+CRPC normalization
+validity
+exact predicates
+SCPE normalization
+ECEM semantics
+FSF-CJSON-1.0 canonical bytes
+```
+
+Hidden QA tests may exist.
+
+Canonical compatibility cannot depend exclusively on hidden tests.
+
+---
+
+## Implementation Diversity
 
 Independent implementations may differ in:
 
-- internal architecture;
-- performance strategy;
-- data representation;
+- architecture;
+- algorithm;
+- memory model;
 - caching;
 - indexing;
-- memory model;
-- execution technique.
+- storage;
+- internal data structures;
+- optimization.
 
-Diversity is compatible with conformance only where authoritative canonical meaning remains the same and all unique-representation obligations, where specified, are satisfied.
+Diversity is desirable evidence when those implementations still converge on the same canonical output.
 
 ---
 
-## 08.9 — No Reference-Implementation Authority
+## Independence of Development
 
-### Code May Illustrate the Standard, Not Replace It
+A second implementation is not automatically independent merely because it is in another repository.
 
-A reference implementation may eventually assist:
+Formal evidence should eventually consider whether implementations share:
 
-- testing;
+- copied algorithms;
+- unpublished libraries;
+- hidden test logic;
+- common proprietary components;
+- a single underlying service;
+- one implementation wrapped through another interface.
+
+The exact independence criteria remain open.
+
+---
+
+## No Reference-Implementation Authority
+
+A reference implementation may help:
+
 - education;
-- interoperability.
+- interoperability;
+- fixture generation;
+- debugging;
+- test development.
 
-But it must not become an independent source of canonical spatial truth where its behavior conflicts with the governing Specification.
-
-The source states:
+But:
 
 > **The standard governs the code. The code does not silently govern the standard.**
 
----
-
-## 08.10 — Independent Conformance Evaluation
-
-### Conformance Judgment Must Be Reproducible
-
-Separate evaluators applying the same Specification, Conformance rules, and applicable Reference Vectors should be able to reach the same judgment about implementation compatibility once those vectors formally exist.
-
-Conformance status must not depend on discretionary private interpretation where the governing materials can define an objective result.
+If reference code and Specification disagree, the disagreement must be resolved at the proper governing layer.
 
 ---
 
-## 08.11 — Independence From Operational State
+## Independent Conformance Evaluation
 
-### Canonical Truth Must Survive Outside a Running Service
+Different evaluators applying the same materials should reach the same Conformance judgment.
 
-The ability to interpret and verify canonical Survey truth must not depend on continued operation of a particular:
+Evaluation should depend on:
 
-- server;
-- database;
-- hosted API;
-- account system;
-- network service.
+```text
+published rules
+published fixtures
+objective outcomes
+```
 
-Operational systems may provide convenience and performance.
-
-The underlying spatial truth must remain reconstructable from the Specification.
+not discretionary private interpretation.
 
 ---
 
-## 08.12 — Independence Failure
+## Independence From Operational State
 
-### Exclusive Dependency Prevents Canonical Conformance
+Canonical truth must survive outside a running service.
 
-If authoritative Survey results can be reproduced only through:
+It shall not depend on continued availability of:
+
+- one database;
+- one server;
+- one API;
+- one account system;
+- one cloud platform;
+- one vendor.
+
+Operational infrastructure may provide access or convenience.
+
+It must not own the meaning.
+
+---
+
+## Open-Gate Independence Boundary
+
+Independent agreement does not canonize undefined mathematics.
+
+Examples of current open capability include:
+
+```text
+general Boolean / composite output closure
+arbitrary exact rotation
+general exact distance scalar
+general path / boundary-length scalar
+future geometry not yet selected
+```
+
+Two implementations agreeing experimentally is interesting evidence.
+
+It is not canonical Conformance until the Specification defines the semantics.
+
+---
+
+## Adoption-Evidence Boundary
+
+Independent implementation is necessary evidence on the road toward canonical adoption.
+
+It helps prove:
+
+```text
+determinism
+implementability
+reproducibility
+absence of hidden implementation dependence
+```
+
+It does not itself:
+
+```text
+adopt the Specification
+create canonical authority
+replace institutional governance
+```
+
+---
+
+## Independence Failure
+
+The requirement fails where canonical truth can be reproduced only through:
 
 - inaccessible code;
 - private data;
-- undocumented convention;
 - proprietary service;
-- exclusive institutional control
+- undocumented convention;
+- privileged institutional access;
+- one hidden implementation dependency.
 
-the implementation does not satisfy the independent implementation requirement.
+That means either:
 
-The source states that such dependency indicates canonical truth has escaped the published standard and therefore has not been fully specified.
+```text
+the standard is insufficiently specified
+```
 
----
+or:
 
-## Established by Requirements
-
-The source states that the Requirements framework already establishes:
-
-- independent implementation and reproducible canonical meaning;
-- exact implementation-independent mathematics;
-- openly inspectable governing Specifications;
-- independence from proprietary software and verification technology;
-- finite computability;
-- hidden-state independence;
-- a canonical-adoption gate requiring independent implementation as part of the evidence before a candidate mathematical architecture may be adopted.
-
-These constraints govern this Conformance section.
+```text
+the claimed reproducibility evidence is insufficient
+```
 
 ---
 
 ## Requirements Basis
 
-The source derives this section especially from:
+This section remains derived especially from:
 
 ```text
 #10
@@ -299,121 +457,101 @@ The source derives this section especially from:
 
 These Findings remain authoritative within the Requirements Framework.
 
-This Conformance section applies them; it does not replace them.
+Conformance applies them.
+
+It does not replace them.
 
 ---
 
-## Still Open in Conformance
+## What Changed From the Previous Page
 
-The source leaves the following unresolved until the Specification and complete Conformance framework are sufficiently mature:
+The previous page already correctly established:
 
-- minimum number of independent implementations required for formal validation;
-- evaluator independence rules;
-- publication requirements for implementation evidence;
-- acceptable reference-implementation roles;
-- certification procedure;
-- reproducibility documentation format;
-- eventual Reference Vector coverage;
-- exact independence test suite.
+- independent implementability;
+- no proprietary dependency;
+- no hidden institutional knowledge;
+- independent result reproduction;
+- technology neutrality;
+- open governing materials;
+- Reference Vector availability;
+- implementation diversity;
+- no reference-implementation authority;
+- independent evaluation;
+- independence from operational state;
+- exclusive dependency as failure.
 
-These items should remain open until formally resolved.
+Those principles remain.
+
+The substantive change is that the solved candidate core now makes independent implementation actionable rather than merely future-facing.
+
+Previously:
+
+```text
+independent implementation
+    -> required future evidence
+```
+
+Now:
+
+```text
+solved candidate profile
+    -> sufficient for independent implementation attempts
+    -> suitable for direct cross-implementation comparison
+```
+
+---
+
+## Still Open
+
+The remaining Conformance design work includes:
+
+```text
+minimum number of independent implementations
+formal evaluator-independence rules
+implementation-separation criteria
+publication requirements for implementation evidence
+certification procedure
+reproducibility-report format
+acceptable reference-implementation role
+final Reference Vector coverage
+formal independence test suite
+```
 
 ---
 
 ## Architectural Boundary
 
-The source states:
-
 > **Canonical truth must be reproducible from the standard, not inherited from a privileged implementation. Reproducibility proves implementation correctness; it does not establish canonical authority over the standard itself.**
 
-This is the defining architectural boundary of Conformance Section 08.
-
----
-
-## Navigation
-
-The source page links to:
-
-```text
-/theatlas/foundational-survey-fabric/conformance/07-version-compatibility/
-```
-
-```text
-/theatlas/foundational-survey-fabric/requirements/
-```
-
-```text
-/theatlas/foundational-survey-fabric/specification/
-```
-
-```text
-/theatlas/foundational-survey-fabric/conformance/
-```
-
-These provide navigation to Conformance 07, the Requirements Framework, the Specification, and the Conformance Index.
-
----
-
-## Metadata Identity
-
-The source page includes:
-
-```text
-Title: Independent Implementation Requirement | Foundational Survey Fabric Conformance | BitPangea
-Description: Independent Implementation Requirement — Conformance Section 08 for the BitPangea Foundational Survey Fabric.
-Canonical: https://bitpangea.com/theatlas/foundational-survey-fabric/conformance/08-independent-implementation/
-Theme Color: #00c8d7
-Robots: index,follow
-OG Type: website
-```
-
-These values should remain aligned with the page.
-
----
-
-## Repository Guidance
-
-When maintaining this directory:
-
-1. preserve the title **Independent Implementation Requirement**;
-2. preserve **Conformance Section 08 · Reproducibility Without Dependency**;
-3. preserve the canonical path `/theatlas/foundational-survey-fabric/conformance/08-independent-implementation/`;
-4. preserve **Spatial truth should be open to verification, not dependent on permission to understand it.**
-5. preserve independent implementability from published governing materials;
-6. preserve the prohibition on proprietary dependency;
-7. preserve the prohibition on hidden institutional knowledge;
-8. preserve independent result reproduction;
-9. preserve technology neutrality unless a later requirement proves a dependency irreducibly necessary;
-10. preserve openly inspectable governing materials;
-11. preserve open Reference Vector availability once exact vectors can be derived from sufficiently complete mathematics;
-12. preserve the rule that exact vectors must not be invented ahead of governing mathematics;
-13. preserve implementation diversity where canonical meaning remains unchanged;
-14. preserve the rule that a reference implementation does not become canonical authority;
-15. preserve reproducible independent conformance evaluation;
-16. preserve independence from continued operational state;
-17. preserve the rule that exclusive dependency prevents satisfaction of this requirement;
-18. preserve the listed Requirements basis Findings;
-19. preserve the open status of independent-implementation count, evaluator rules, evidence publication, reference-implementation role, certification, reproducibility documentation, vector coverage, and independence test suite;
-20. preserve the Architectural Boundary exactly as stated;
-21. preserve `index,follow` unless the publication model is intentionally revised;
-22. keep canonical, Open Graph, description, theme-color, favicon, framework, and navigation references aligned with the page;
-23. do not let a reference codebase replace the Specification;
-24. do not permit proprietary services or private institutional knowledge to become necessary sources of canonical truth;
-25. do not treat reproducibility itself as authority over the governing standard.
+This remains the defining boundary of Conformance Section 08.
 
 ---
 
 ## Status
 
-**Foundational Survey Fabric**
+```text
+FOUNDATIONAL SURVEY FABRIC — CONFORMANCE
 
-**Conformance**
+SECTION 08 — INDEPENDENT IMPLEMENTATION REQUIREMENT
 
-**Section 08 — Independent Implementation Requirement**
+SOLVED CANDIDATE PROFILE — INDEPENDENTLY IMPLEMENTABLE
+CRPC — REPRODUCIBLE
+POINT / SEGMENT / SCPE — REPRODUCIBLE
+CORE PREDICATES — REPRODUCIBLE
+NORMALIZATION — REPRODUCIBLE
+ECEM — REPRODUCIBLE
+FSF-CJSON-1.0 — REPRODUCIBLE
+REFERENCE VECTOR EXECUTION — REQUIRED
+PROPRIETARY DEPENDENCY — PROHIBITED
+HIDDEN INSTITUTIONAL KNOWLEDGE — PROHIBITED
+REFERENCE IMPLEMENTATION AUTHORITY — PROHIBITED
 
-**Reproducibility Without Dependency**
-
-**Formal Validation Count, Evaluator Rules, and Independence Test Suite Remain Open**
+MINIMUM IMPLEMENTATION COUNT — OPEN
+EVALUATOR-INDEPENDENCE RULES — OPEN
+FORMAL CERTIFICATION PROCEDURE — OPEN
+INDEPENDENCE TEST SUITE — OPEN
+CANONICAL ADOPTION — NOT YET PERFORMED
+```
 
 ---
 
