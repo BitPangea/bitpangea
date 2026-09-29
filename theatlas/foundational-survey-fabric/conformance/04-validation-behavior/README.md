@@ -3,16 +3,18 @@
 ## Foundational Survey Fabric · Conformance Section 04
 
 **The Atlas · The Architecture · Foundational Survey Fabric · Conformance**  
-**Section: 04 — Validation Behavior**  
-**Scope: Canonical Input Classification**
+**Section:** 04 — Validation Behavior  
+**Scope:** Canonical Input Classification  
+**Status:** Integrated Specification Core Reflected  
+**Canonical Adoption:** Not yet performed
 
 This directory contains **Conformance Section 04 — Validation Behavior** for the BitPangea **Foundational Survey Fabric**.
 
-The source page defines the section as:
+The governing statement remains:
 
 > **The conformance rules for how implementations classify, accept, normalize, or reject canonical and noncanonical Survey expressions.**
 
-Its governing principle is:
+Its governing principle remains:
 
 > **Canonicalize what is equivalent. Reject what is not valid.**
 
@@ -30,234 +32,447 @@ Repository path:
 /theatlas/foundational-survey-fabric/conformance/04-validation-behavior/index.html
 ```
 
-Recommended directory README path:
+README path:
 
 ```text
 /theatlas/foundational-survey-fabric/conformance/04-validation-behavior/README.md
 ```
 
-The source page is publicly indexable:
+---
+
+## Integration Standing
+
+The original Validation Behavior page correctly established the acceptance / normalization / rejection architecture but left many concrete validation mechanics dependent on future Specification mathematics.
+
+The solved candidate core now provides enough deterministic mathematics to make validation executable for:
 
 ```text
-index,follow
+CRPC
+Point
+Segment
+SCPE
+exact predicates
+canonical normalization
+ECEM
+FSF-CJSON-1.0
+```
+
+The current conformance validity model is therefore:
+
+```text
+CANONICAL VALID
+VALID NONCANONICAL
+INVALID
+```
+
+with unsupported open-gate behavior kept outside canonical validity.
+
+---
+
+## Canonical Valid Input
+
+Canonical-valid input:
+
+- satisfies the governing Specification;
+- is already in canonical form where canonical form is required;
+- has exact mathematical meaning;
+- requires no semantic repair;
+- may be consumed directly as authoritative input.
+
+Examples include:
+
+```text
+reduced CRPC value
+canonical Point
+canonical Segment
+normalized canonical SCPE
+valid canonical FSF-CJSON-1.0 object
 ```
 
 ---
 
-## Purpose
+## Valid Noncanonical Representation
 
-**Validation Behavior** defines the canonical judgment an implementation must make when presented with a Survey reference, extent, precision expression, normative encoding, or other foundational spatial input.
+A valid noncanonical input has legitimate exact meaning but requires a permitted deterministic normalization step.
 
-Conforming software must distinguish among:
+Examples may include:
 
-- valid canonical input;
-- valid but noncanonical representation;
-- malformed expression;
-- out-of-domain reference;
-- impossible precision expression;
-- ambiguous input;
-- other invalid states.
+```text
+reducible rational form
+Segment with reversible endpoint order
+SCPE using noncanonical start vertex
+SCPE using clockwise traversal
+SCPE containing exact redundant collinear middle vertices
+other explicitly permitted equivalent forms
+```
 
-The source explicitly rejects guesswork and silent invention of spatial meaning.
+The test is not:
 
----
+```text
+Can software repair it?
+```
 
-## 04.1 — Canonical Valid Input
+The test is:
 
-### Accept Authoritative Form
+```text
+Does the Specification define one exact semantics-preserving normalization?
+```
 
-An input that satisfies the governing Specification and is already expressed in the canonical or normative form required for its operation or encoding must be accepted as valid authoritative Survey input.
-
-Its spatial meaning must be interpreted exactly and without modification.
-
----
-
-## 04.2 — Valid Noncanonical Representation
-
-### Normalize Equivalent Meaning
-
-A valid input that expresses legitimate canonical spatial meaning but is not in canonical form may be accepted where the Specification permits such representations.
-
-The implementation must:
-
-- resolve it deterministically to the same authoritative canonical meaning;
-- normalize it to the required canonical form where the Specification requires one.
+If not, it is not valid noncanonical merely because a repair seems obvious.
 
 ---
 
-## 04.3 — Malformed Expression
+## Invalid Input
 
-### Reject Invalid Structure
+Invalid means no canonical interpretation exists under the claimed profile.
 
-An expression that violates required grammar, normative encoding structure, field rules, precision syntax, or other formal construction requirements must be rejected as malformed.
+Invalid input shall not be:
 
-The source explicitly states:
-
-> **A conforming implementation shall not infer intended spatial meaning from structurally invalid input.**
-
----
-
-## 04.4 — Out-of-Domain Reference
-
-### Reject Reference Beyond the Survey Domain
-
-A mathematically structured reference that resolves outside the valid canonical Survey Domain must fail validation as a BitPangea Survey reference.
-
-The page explicitly prohibits reinterpreting it as:
-
-- Exterior;
-- neighboring territory;
-- alternate World-space;
-- another spatial category
-
-merely because its syntax can be parsed.
+- guessed;
+- rounded;
+- snapped;
+- repaired;
+- coerced;
+- completed from context;
+- assigned inferred defaults;
+- converted into a different valid object.
 
 ---
 
-## 04.5 — Impossible Precision Expression
+## CRPC Validation
 
-### Reject Invalid Precision Structure
+CRPC validation must enforce the governing exact rational rules.
 
-A precision expression that violates canonical precision mathematics or cannot resolve under the Specification must be rejected.
+Required considerations include:
 
-The source includes invalid conditions such as:
+```text
+finite integer components
+positive denominator
+exact rational meaning
+canonical reduction where canonical form is required
+canonical zero where required
+valid integer-string representation in canonical interchange
+```
 
-- impossible values;
-- impossible structures;
-- invalid subdivisions;
-- invalid extensions;
-- invalid representational states.
+Reducible rational form may be valid noncanonical only where that input form is permitted.
 
-Implementations must not repair such input through:
-
-- silent truncation;
-- substitution;
-- coercion;
-- snapping.
+Malformed or impossible exact-value structure is invalid.
 
 ---
 
-## 04.6 — Ambiguous Input
+## Domain Validation
 
-### Do Not Guess Canonical Meaning
+Spatial validity is evaluated against the governed Survey Domain.
 
-An input that permits more than one possible canonical interpretation under the applicable rules must not be accepted as authoritative Survey truth.
+An otherwise parseable Point or geometry outside the Domain is not automatically:
 
-Ambiguity must result in deterministic validation failure unless the governing Specification defines an exact normalization rule that resolves the ambiguity without changing spatial meaning.
+```text
+Exterior
+NON_WORLD
+neighboring territory
+alternate World-space
+```
 
----
+Those are different semantic questions.
 
-## 04.7 — Approximate or Estimated Input
+The ordering remains:
 
-### Approximation Is Not Canonical Truth
+```text
+Survey validity
+    ↓
+only then higher-layer membership
+```
 
-Estimated, rounded, approximate, pending, disputed, or incomplete spatial values must not be accepted as canonical Survey truth unless they resolve exactly to a valid canonical representation.
-
-Higher Architecture domains may preserve such states for their own purposes, but the Foundational Survey Fabric must classify them separately from authoritative canonical input.
-
----
-
-## 04.8 — Noncanonical Precision Reduction
-
-### Detect Loss Rather Than Hide It
-
-Inputs produced through truncation, generalization, reduced storage precision, or lossy conversion must be recognized as reduced representations where precision has been discarded.
-
-Such inputs must not be treated as fully equivalent to the original canonical expression unless the transformation is demonstrably lossless.
+The Domain’s numerical capacity is governed by the applicable Specification state; Conformance does not independently select or alter it.
 
 ---
 
-## 04.9 — Canonicalization Boundary
+## Point Validation
 
-### Normalization Must Preserve Place
+A valid Point requires:
 
-Validation may normalize:
+- valid exact coordinate values;
+- correct tuple structure;
+- compliance with applicable Survey Domain rules;
+- no hidden approximate interpretation.
 
-- equivalent forms;
-- canonical ordering;
-- normative encoding;
-- representational syntax
+Under ECEM, the Point denotes one exact position.
 
-only where the resulting expression preserves identical canonical spatial meaning.
+---
 
-Validation must not:
+## Segment Validation
 
-- relocate a position;
-- alter an extent;
+A valid Segment requires:
+
+- two valid Point endpoints;
+- exact structural compliance;
+- any additional Segment validity conditions defined by the Specification.
+
+Where zero-length Segment geometry is prohibited, identical endpoints are invalid rather than silently collapsed.
+
+Canonical endpoint ordering belongs to normalization, not semantic reinvention.
+
+---
+
+## SCPE Validation
+
+A candidate SCPE must satisfy exact polygonal validity rules.
+
+Current requirements include:
+
+```text
+sufficient distinct vertices
+valid Points
+valid consecutive Segments
+one closed cycle
+simple geometry
+no prohibited self-intersection
+nonzero area
+Domain validity
+```
+
+Exact redundant collinear middle vertices may be valid noncanonical where deterministic normalization removes them without changing geometry.
+
+Invalid topology may not be repaired into a different polygon.
+
+---
+
+## Canonical Serialization Validation
+
+For:
+
+```text
+FSF-CJSON-1.0
+```
+
+validation includes the applicable structural and canonical encoding rules from Specification 06.
+
+Potential invalid conditions include:
+
+- malformed JSON;
+- duplicate keys;
+- prohibited fields;
+- invalid type structures;
+- prohibited JSON numeric literals for exact coordinates;
+- invalid CRPC object form;
+- noncanonical exact-value strings;
+- prohibited byte-level form;
+- semantically invalid geometry inside syntactically valid JSON.
+
+Schema validity alone does not prove semantic validity.
+
+---
+
+## Precision-Semantics Validation
+
+ECEM requires:
+
+> **A canonical Point denotes one exact Survey position.**
+
+Canonical Point semantics shall not be interpreted as:
+
+```text
+coarse Point
+fine Point
+parent Point
+child Point
+uncertainty region
+rounded location
+descendant set
+```
+
+A future Specification may define new types.
+
+Conformance 04 shall not invent them.
+
+---
+
+## Ambiguous Input
+
+Ambiguous input fails canonical validation unless one exact Specification-defined normalization rule resolves it without changing meaning.
+
+The implementation may not guess which interpretation the user intended.
+
+---
+
+## Approximate or Estimated Input
+
+Approximate values are not canonical merely because they are useful.
+
+Examples include:
+
+- rounded coordinates;
+- estimated positions;
+- render-derived positions;
+- pending survey values;
+- disputed values;
+- incomplete geometry.
+
+Higher domains may preserve such states.
+
+FSF canonical validation does not promote them to exact truth.
+
+---
+
+## Lossless and Lossy Conversion
+
+Lossless conversion preserves the exact object.
+
+Lossy conversion discards canonical information.
+
+Examples of potentially lossy behavior include:
+
+```text
+rounding
+truncation
+rasterization
+approximate simplification
+reduced storage precision
+floating conversion
+```
+
+Loss shall remain detectable.
+
+---
+
+## Canonicalization Boundary
+
+Validation may normalize only where the Specification explicitly permits exact semantic preservation.
+
+Examples include:
+
+```text
+CRPC reduction
+Segment endpoint ordering
+SCPE canonical traversal
+exact redundant-collinear removal
+canonical serialization ordering
+```
+
+Normalization may not:
+
+- relocate a Point;
+- alter an Extent;
 - change precision meaning;
-- substitute a nearby representable value.
+- substitute a nearby representable value;
+- turn invalid geometry into a different valid object.
 
 ---
 
-## 04.10 — Deterministic Validation Result
+## Deterministic Validation Result
 
-### The Same Input Receives the Same Judgment
+For the same input under the same profile:
 
-Independent conforming implementations must reach the same validation classification for the same input under the same Specification.
+```text
+Implementation A
+Implementation B
+Implementation C
+        ↓
+same validity classification
+```
 
-Validation behavior must therefore be reproducible and implementation-independent.
+Where valid noncanonical normalization applies:
 
----
-
-## 04.11 — Failure Classification
-
-### Reject for Defined Reasons
-
-The Conformance framework must ultimately define deterministic failure classes sufficient to distinguish:
-
-- malformed syntax;
-- invalid canonical structure;
-- out-of-domain reference;
-- impossible precision expression;
-- ambiguity;
-- unsupported Specification version;
-- unsupported normative-encoding version;
-- other relevant validation failures.
-
-Human-readable error wording may vary.
-
-The canonical failure condition may not.
+```text
+same canonical normalized result
+```
 
 ---
 
-## 04.12 — No Hidden Repair
+## Open-Gate Validation Boundary
 
-### Invalid Input Must Not Be Silently Corrected
+A capability that remains mathematically open in the Specification does not become valid canonical behavior merely because an implementation supports it.
 
-A conforming implementation must not silently repair invalid canonical input through:
+Examples include:
+
+```text
+general Boolean / composite output closure
+general union / intersection / difference result forms
+arbitrary exact rotation
+general exact distance scalar
+general path / boundary-length scalar
+future geometry not yet selected
+```
+
+Such behavior may be:
+
+```text
+unsupported
+experimental
+outside claimed profile
+```
+
+but not canonically validated without governing Specification semantics.
+
+---
+
+## Failure Classification
+
+The Conformance framework should distinguish failures such as:
+
+```text
+malformed syntax
+invalid exact-value structure
+invalid geometry
+out-of-Domain reference
+invalid serialization
+unsupported capability
+profile/version mismatch
+other governed validation failure
+```
+
+The complete machine-readable error taxonomy remains open.
+
+Human-readable diagnostics may vary unless later standardized.
+
+---
+
+## No Hidden Repair
+
+Invalid input must not be silently corrected through:
 
 - snapping;
 - rounding;
 - truncation;
+- coercion;
 - inferred defaults;
 - guessed intent;
-- implementation-specific fallback behavior.
+- fallback geometry;
+- hidden normalization not permitted by the Specification.
 
-Any higher-domain convenience feature that proposes a correction must remain explicitly separate from canonical validation.
+Any higher-layer correction workflow must remain separate from canonical validation.
 
 ---
 
-## Established by Requirements
+## Reference Vector Validation Proof
 
-The source states that the Requirements framework already establishes:
+Validation behavior is now concrete enough for executable fixtures.
 
-- deterministic validity and normalization;
-- exact canonicalization;
-- rejection of malformed or ambiguous input;
-- exact addressability within the Survey Domain;
-- no silent snapping;
-- detectable precision loss;
-- exact-or-invalid canonical states;
-- hidden-state independence;
-- implementation-independent authoritative behavior.
+Reference Vectors should cover:
 
-These are governing constraints on this Conformance section.
+```text
+canonical-valid input
+valid-noncanonical normalization
+invalid CRPC
+invalid Point
+invalid Segment
+invalid SCPE
+Domain failure
+malformed FSF-CJSON
+semantic FSF-CJSON failure
+lossy representation
+unsupported open-gate capability
+```
+
+The fixtures demonstrate rules already present in the Specification.
+
+They do not define new validity semantics.
 
 ---
 
 ## Requirements Basis
 
-The source derives this section especially from:
+This section remains derived especially from:
 
 ```text
 #30
@@ -267,125 +482,104 @@ The source derives this section especially from:
 #80–#83
 ```
 
-with additional support from permanent addressability and exactness requirements.
+with additional support from the permanent addressability and exactness Requirements.
 
 These Findings remain authoritative within the Requirements Framework.
 
-This Conformance page references and applies them; it does not replace them.
+Conformance applies them.
+
+It does not replace them.
 
 ---
 
-## Still Open in Conformance
+## What Changed From the Previous Page
 
-The source leaves the following unresolved until the Specification is sufficiently complete:
+The previous page correctly established:
 
-- formal validation status codes;
-- machine-readable error taxonomy;
-- exact parser behavior;
-- Specification-version mismatch handling;
-- normative-encoding-version mismatch handling;
-- distinction between recoverable and terminal validation failures;
-- canonical diagnostics;
-- eventual Reference Vector corpus.
+- canonical acceptance;
+- valid noncanonical normalization;
+- malformed-input rejection;
+- out-of-Domain rejection;
+- precision-invalidity rejection;
+- ambiguity rejection;
+- approximate/canonical separation;
+- detectable loss;
+- place-preserving normalization;
+- deterministic judgment;
+- failure classification;
+- no hidden repair.
 
-These items should remain open until formally resolved.
+Those principles remain.
+
+The substantive change is that the integrated Specification now supplies exact candidate rules for the current primitive and serialization profile.
+
+Previously:
+
+```text
+validation categories
+    -> established
+exact mechanics
+    -> largely pending
+```
+
+Now:
+
+```text
+solved candidate core
+    -> executable validation
+
+open mathematics
+    -> outside canonical validation
+```
+
+---
+
+## Still Open
+
+The remaining Conformance design work includes:
+
+```text
+final machine-readable validation codes
+complete canonical error taxonomy
+parser error identifiers
+cross-version/profile mismatch policy
+recoverable-versus-terminal diagnostic policy
+canonical diagnostic wording if ever required
+validation rules for future Specification extensions
+```
 
 ---
 
 ## Architectural Boundary
 
-The source states:
-
 > **Validation may recognize canonical truth, normalize equivalent valid representation where permitted, or reject invalid input. It may not manufacture truth from ambiguity, silently repair spatial meaning, or create authority over the governing Specification.**
 
-This is the defining architectural boundary of Conformance Section 04.
-
----
-
-## Navigation
-
-The source page links to:
-
-```text
-/theatlas/foundational-survey-fabric/conformance/03-canonical-result-equivalence/
-```
-
-```text
-/theatlas/foundational-survey-fabric/requirements/
-```
-
-```text
-/theatlas/foundational-survey-fabric/specification/
-```
-
-```text
-/theatlas/foundational-survey-fabric/conformance/
-```
-
-These provide navigation to Conformance 03, the Requirements Framework, the Specification, and the Conformance Index.
-
----
-
-## Metadata Identity
-
-The source page includes:
-
-```text
-Title: Validation Behavior | Foundational Survey Fabric Conformance | BitPangea
-Description: Validation Behavior — Conformance Section 04 for the BitPangea Foundational Survey Fabric.
-Canonical: https://bitpangea.com/theatlas/foundational-survey-fabric/conformance/04-validation-behavior/
-Theme Color: #00c8d7
-Robots: index,follow
-OG Type: website
-```
-
-These values should remain aligned with the page.
-
----
-
-## Repository Guidance
-
-When maintaining this directory:
-
-1. preserve the title **Validation Behavior**;
-2. preserve **Conformance Section 04 · Canonical Input Classification**;
-3. preserve the canonical path `/theatlas/foundational-survey-fabric/conformance/04-validation-behavior/`;
-4. preserve **Canonicalize what is equivalent. Reject what is not valid.**
-5. preserve exact acceptance of canonical valid input;
-6. preserve normalization of valid noncanonical representation only where the Specification permits it;
-7. preserve rejection of malformed structure;
-8. preserve rejection of references outside the canonical Survey Domain;
-9. preserve rejection of impossible precision expressions;
-10. preserve deterministic failure for ambiguity unless an exact normalization rule exists;
-11. preserve the separation between approximate/estimated values and authoritative canonical Survey truth;
-12. preserve detectable precision loss;
-13. preserve the rule that normalization must preserve place exactly;
-14. preserve implementation-independent validation classification;
-15. preserve the future requirement for deterministic failure classes;
-16. preserve the prohibition on hidden repair;
-17. preserve the listed Requirements basis Findings;
-18. preserve the open status of validation codes, error taxonomy, parser behavior, version mismatch handling, recoverability classification, diagnostics, and the eventual Reference Vector corpus;
-19. preserve the Architectural Boundary exactly as stated;
-20. preserve `index,follow` unless the publication model is intentionally revised;
-21. keep canonical, Open Graph, description, theme-color, favicon, framework, and navigation references aligned with the page;
-22. do not infer intended spatial meaning from malformed input;
-23. do not reinterpret out-of-domain references as Exterior or another spatial category;
-24. do not silently repair invalid input through snapping, rounding, truncation, coercion, inferred defaults, or guessed intent;
-25. do not allow Validation to manufacture canonical truth or create authority over the governing Specification.
+This remains the defining boundary of Conformance Section 04.
 
 ---
 
 ## Status
 
-**Foundational Survey Fabric**
+```text
+FOUNDATIONAL SURVEY FABRIC — CONFORMANCE
 
-**Conformance**
+SECTION 04 — VALIDATION BEHAVIOR
 
-**Section 04 — Validation Behavior**
+CANONICAL VALID — DEFINED
+VALID NONCANONICAL — DEFINED
+INVALID — DEFINED
+CRPC VALIDATION — EXECUTABLE
+POINT / SEGMENT / SCPE VALIDATION — EXECUTABLE
+NORMALIZATION ELIGIBILITY — EXECUTABLE
+ECEM SEMANTICS — VALIDATABLE
+FSF-CJSON-1.0 VALIDATION — EXECUTABLE
+NO HIDDEN REPAIR — REQUIRED
+OPEN SPECIFICATION MATHEMATICS — OUTSIDE CANONICAL VALIDATION
 
-**Canonical Input Classification**
-
-**Formal Validation Codes and Error Taxonomy Remain Open**
+FINAL ERROR TAXONOMY — OPEN
+FORMAL VALIDATION CODES — OPEN
+CANONICAL ADOPTION — NOT YET PERFORMED
+```
 
 ---
 
