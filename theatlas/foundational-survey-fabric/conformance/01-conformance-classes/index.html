@@ -94,10 +94,10 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 
 <div class="req-intro">
 <p>
-  <strong>Conformance Classes</strong> organize the capabilities an implementation must demonstrate when claiming Foundational Survey Fabric compatibility. They do not create alternate levels of canonical spatial truth. Every conforming implementation remains subject to the same mandatory foundational meaning.
+  <strong>Conformance Classes</strong> organize the capabilities an implementation must demonstrate when claiming Foundational Survey Fabric compatibility. They do not create alternate levels of canonical spatial truth. Every conforming implementation remains subject to the same governing Specification meaning.
 </p>
 <p>
-  The precise conformance-class taxonomy cannot be finalized until the Specification is complete. This page therefore establishes the governing structure: which capabilities may be grouped for testing, which capabilities must ultimately belong to the mandatory core, and how optional implementation features remain subordinate to one canonical result.
+  The integrated Specification now defines a deterministic candidate core covering exact CRPC coordinates, the canonical frame, Point / Segment / SCPE geometry, exact predicates, normalization, FSF-CJSON-1.0, and ECEM precision semantics. Conformance may therefore define and test a <strong>candidate mandatory core scope</strong> for those solved capabilities without pretending that unresolved full-FSF mathematics have become conformant by omission.
 </p>
 </div>
 
@@ -107,10 +107,21 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 </blockquote>
 
 <section class="spec-card">
+  <div class="spec-label">01.0 · Integrated Specification Standing</div>
+  <h2>Conformance May Now Test the Solved Core</h2>
+  <p>
+    Specification Sections 01–07 now contain an integrated candidate core sufficiently deterministic for executable Conformance work. Conformance shall test that defined core exactly as specified; it shall not invent semantics for open mathematical gates.
+  </p>
+  <p>
+    The current candidate mandatory scope includes exact coordinate representation, canonical frame behavior, core primitive geometry, exact validation and predicates, deterministic normalization, canonical machine serialization, precision-extension semantics, and implementation-independent canonical output.
+  </p>
+</section>
+
+<section class="spec-card">
   <div class="spec-label">01.1 · Purpose of Conformance Classes</div>
   <h2>Classify Capability, Not Truth</h2>
   <p>
-    Conformance classes shall provide a structured way to describe which portions of the Foundational Survey Fabric specification an implementation supports and has successfully demonstrated.
+    Conformance classes shall provide a structured way to describe which defined portions of the Foundational Survey Fabric Specification an implementation supports and has successfully demonstrated.
   </p>
   <p>
     A conformance class may organize required tests, interfaces, representations, or optional capabilities, but it shall not create a competing canonical interpretation of BitPangea space.
@@ -118,13 +129,17 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">01.2 · Mandatory Foundational Class</div>
-  <h2>A Common Core Is Required</h2>
+  <div class="spec-label">01.2 · Candidate Mandatory Core</div>
+  <h2>A Common Exact Core Is Required</h2>
   <p>
-    Every implementation claiming Foundational Survey Fabric compatibility shall ultimately satisfy the mandatory conformance core defined by the governing Conformance specification.
+    Every implementation claiming compatibility with the current candidate FSF core shall satisfy the mandatory behavior defined for all solved foundational capabilities within that claimed profile.
   </p>
   <p>
-    No optional class, optimization, encoding, or extension may substitute for failure to satisfy that mandatory core.
+    The candidate mandatory core presently includes, at minimum:
+    exact CRPC parsing and normalization; canonical frame interpretation; Point, Segment, and SCPE validation; exact core geometry predicates; canonical geometry normalization; FSF-CJSON-1.0 parsing and serialization; ECEM-compatible precision behavior; deterministic validity handling; no silent snapping; and reproducible canonical results.
+  </p>
+  <p>
+    No optional class, optimization, alternate internal representation, derived encoding, or extension may substitute for failure to satisfy that mandatory core.
   </p>
 </section>
 
@@ -132,18 +147,35 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">01.3 · Optional Capability Classes</div>
   <h2>Additional Capability May Be Declared Separately</h2>
   <p>
-    The Conformance specification may define optional capability classes for functions or representations that are useful but not necessary to establish basic canonical compatibility.
+    Conformance may define optional capability classes for functions, representations, or future Specification profiles that are useful but not required to establish compatibility with the candidate mandatory core.
   </p>
   <p>
     Optional classes shall extend implementation capability without altering, overriding, weakening, or creating an alternate form of mandatory canonical truth.
   </p>
+  <p>
+    No optional class shall be used to claim canonical support for mathematics that remain open in the Specification.
+  </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">01.4 · Class Independence</div>
+  <div class="spec-label">01.4 · Open-Gate Boundary</div>
+  <h2>Unspecified Mathematics Are Not Conformance Classes</h2>
+  <p>
+    A capability whose canonical semantics or output closure remain unresolved in the Specification shall not be promoted into a conformant optional class merely because an implementation can compute some result.
+  </p>
+  <p>
+    Current examples include general Boolean/composite output closure, arbitrary exact rotation closure, unresolved exact general distance and path-length scalar forms, and other explicitly open Specification gates.
+  </p>
+  <p>
+    Conformance shall mark such capabilities unsupported, outside the claimed profile, or otherwise noncanonical until the governing Specification defines them.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">01.5 · Class Independence</div>
   <h2>Capability Boundaries Must Be Explicit</h2>
   <p>
-    Each conformance class shall define its own scope, dependencies, required behaviors, applicable Reference Vector categories or proof obligations, and success conditions. Exact canonical vectors shall be attached only after the governing mathematics are sufficiently specified to produce deterministic expected results.
+    Each conformance class or profile shall define its scope, dependencies, required behaviors, applicable Reference Vector categories or proof obligations, and success conditions.
   </p>
   <p>
     Implementations shall not infer compliance with one class solely from successful implementation of another unless the governing Conformance specification explicitly establishes that dependency.
@@ -151,85 +183,127 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">01.5 · Canonical Result Requirement</div>
+  <div class="spec-label">01.6 · Canonical Result Requirement</div>
   <h2>All Classes Resolve to the Same Spatial Truth</h2>
   <p>
-    Where two implementations claim support for the same canonical operation or expression, identical valid canonical inputs shall produce the same authoritative canonical meaning. Where the governing Specification requires a unique canonical representation for that operation, the produced representation shall also be identical.
+    Where two implementations claim support for the same canonical operation or expression, identical valid canonical inputs shall produce the same authoritative canonical meaning.
   </p>
   <p>
-    Differences in programming language, architecture, storage, caching, performance optimization, or internal representation shall not alter canonical output.
+    Where the governing Specification defines a unique canonical representation, normalization, or canonical byte sequence, conforming implementations shall produce that same canonical result.
+  </p>
+  <p>
+    Differences in programming language, architecture, storage, caching, optimization, or internal representation shall not alter authoritative output.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">01.6 · Validation Requirement</div>
+  <div class="spec-label">01.7 · Validation Requirement</div>
   <h2>Classes Must Define Valid and Invalid Behavior</h2>
   <p>
-    A conformance class shall identify the validation behavior required for the expressions and operations within its scope, including treatment of canonical input, valid noncanonical input, malformed expressions, out-of-domain references, and other invalid states applicable to that class.
+    A conformance class shall identify the required validation behavior for the expressions and operations within its scope, including treatment of canonical input, valid noncanonical input, malformed expressions, out-of-domain references, unsupported result forms, and other invalid states applicable to that class.
   </p>
   <p>
-    Conformance shall require deterministic behavior rather than implementation-specific guesswork.
+    For the current core, Conformance shall preserve the distinction among <strong>canonical valid</strong>, <strong>valid noncanonical</strong>, and <strong>invalid</strong>.
+  </p>
+  <p>
+    Invalid input shall not be silently repaired, rounded, snapped, guessed, or reinterpreted into canonical truth.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">01.7 · Exactness Requirement</div>
+  <div class="spec-label">01.8 · Exactness Requirement</div>
   <h2>No Reduced Truth Through Class Selection</h2>
   <p>
-    No conformance class may replace canonical exactness with tolerance-based equality, hidden snapping, unresolved approximation, or implementation-specific state.
+    No conformance class may replace canonical exactness with tolerance-based equality, hidden snapping, unresolved approximation, implementation-specific state, or device-dependent precision.
   </p>
   <p>
-    A class may permit derived or lossy representations where explicitly defined, but such representations shall remain distinguishable from authoritative canonical output.
+    Derived or lossy representations may be tested where explicitly defined, but they shall remain distinguishable from authoritative canonical output.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">01.8 · Serialization and Version Scope</div>
+  <div class="spec-label">01.9 · Serialization and Version Scope</div>
   <h2>Compatibility Must Be Identifiable</h2>
   <p>
-    Each conformance claim shall identify the applicable Specification identity, version, normative serialization/interchange rules, and conformance class or classes against which the implementation was evaluated.
+    Each conformance claim shall identify the applicable Specification identity or governed profile, version information where defined, normative serialization/interchange rules, and conformance class or classes against which the implementation was evaluated.
   </p>
   <p>
-    A conformance claim shall therefore describe compatibility with a defined standard rather than assert compatibility in the abstract.
+    For the current solved core, canonical machine interchange is governed by <strong>FSF-CJSON-1.0</strong>. A claim covering canonical serialization shall therefore identify that format explicitly.
+  </p>
+  <p>
+    Final top-level FSF Specification identifier syntax remains a Specification-wide open item and shall not be invented by Conformance.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">01.9 · Independent Reproducibility</div>
+  <div class="spec-label">01.10 · Reference Vector Applicability</div>
+  <h2>Every Tested Capability Needs Reproducible Proof</h2>
+  <p>
+    Each mandatory conformance capability shall be associated with applicable Reference Vectors or equivalent executable proof obligations sufficient to establish deterministic expected behavior.
+  </p>
+  <p>
+    Reference Vectors demonstrate the Specification. They do not create missing semantics, replace Specification text, or authorize behavior outside the defined profile.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">01.11 · Independent Reproducibility</div>
   <h2>Conformance Must Be Independently Demonstrable</h2>
   <p>
-    A valid conformance class shall be defined so that independent implementers can evaluate the same requirements, execute the same applicable Reference Vectors once those vectors formally exist, and reach the same conformance judgment.
+    A valid conformance class shall be defined so that independent implementers can evaluate the same requirements, execute the same applicable Reference Vectors or proof obligations, and reach the same conformance judgment.
   </p>
   <p>
-    Conformance shall not depend on proprietary interpretation, unpublished behavior, hidden test logic, or exclusive institutional knowledge.
+    Conformance shall not depend on proprietary interpretation, unpublished behavior, hidden test logic, exclusive institutional knowledge, or shared implementation state.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">01.10 · Claim Boundary</div>
+  <div class="spec-label">01.12 · Claim Boundary</div>
   <h2>An Implementation May Claim Only What It Proves</h2>
   <p>
-    An implementation shall claim only those conformance classes for which all mandatory tests and conditions applicable to that class have been satisfied.
+    An implementation shall claim only those conformance classes or profiles for which all mandatory tests and conditions applicable to that scope have been satisfied.
   </p>
   <p>
-    Partial support, experimental behavior, implementation-specific extensions, or untested functions shall not be represented as canonical conformance unless the governing Conformance specification explicitly permits and identifies them as such.
+    Partial support, experimental behavior, implementation-specific extensions, untested functions, or behavior for Specification-open mathematics shall not be represented as canonical conformance.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">01.13 · Failure Discipline</div>
+  <h2>Failure Must Remain Visible</h2>
+  <p>
+    A failed mandatory test, canonical-byte mismatch, invalid normalization result, unsupported open-gate operation, or other required proof failure shall remain a conformance failure or unsupported capability as defined by the applicable profile.
+  </p>
+  <p>
+    Conformance shall not convert failure into success by tolerance, fallback interpretation, alternate canonical meaning, or implementation-specific exception.
   </p>
 </section>
 
 <div class="status-grid">
   <div class="status-card">
-    <h3>Established by Requirements</h3>
+    <h3>Candidate Mandatory Core Now Testable</h3>
     <p>
-      Independent implementations must reproduce the same canonical meaning from the same canonical inputs; canonical mathematics must remain exact and deterministic; validation and normalization must be defined; normative interchange must be unambiguous; spatial meaning must remain independently implementable; finite canonical truth must be resolvable; and every conforming implementation must ultimately satisfy a mandatory minimum conformance core.
+      CRPC exact values; canonical frame interpretation; Point / Segment / SCPE validation; exact core predicates; deterministic normalization; valid / noncanonical / invalid behavior; no silent snapping; FSF-CJSON-1.0; ECEM compatibility; deterministic canonical results; independent reproducibility.
     </p>
   </div>
   <div class="status-card">
     <h3>Still Open in Conformance</h3>
     <p>
-      The final names and number of conformance classes, exact capability groupings, dependencies among classes, required test suites, class identifiers, pass criteria, optional extension categories, and formal declaration syntax remain unresolved until the Specification and Conformance framework are completed.
+      Final formal class identifiers and declaration syntax; optional future profiles; complete pass/fail taxonomy across all sections; complexity and resource-limit policy; Conformance treatment of future geometry and operations; and any capability whose underlying Specification mathematics remain open.
     </p>
   </div>
 </div>
+
+<section class="spec-card">
+  <div class="spec-label">Conformance Integration Standing</div>
+  <h2>Mandatory-Core Scope Is Now Concrete Enough to Test</h2>
+  <p>
+    The previous Conformance 01 structure correctly required one mandatory foundational truth and optional capability above it. The integrated Specification now makes the solved mandatory-core scope sufficiently concrete for executable Conformance design.
+  </p>
+  <p>
+    This section does not canonically adopt a final taxonomy for every future FSF capability. It establishes the testable candidate mandatory core and the rule that unresolved Specification mathematics remain outside canonical conformance until formally defined.
+  </p>
+</section>
 
 <section class="spec-card">
   <div class="spec-label">Requirements Basis</div>
@@ -263,7 +337,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <a href="/theatlas/foundational-survey-fabric/conformance/">Conformance Index</a>
 </div>
 
-<div class="note">Foundational Survey Fabric · Conformance 01 · Conformance Classes</div>
+<div class="note">Foundational Survey Fabric · Conformance 01 · Conformance Classes · Integrated Specification Core</div>
 
 </article>
 </main>
@@ -271,3 +345,4 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 <div id="bp-footer"></div>
 </body>
 </html>
+
