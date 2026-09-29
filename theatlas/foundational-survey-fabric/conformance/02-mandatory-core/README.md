@@ -3,16 +3,18 @@
 ## Foundational Survey Fabric · Conformance Section 02
 
 **The Atlas · The Architecture · Foundational Survey Fabric · Conformance**  
-**Section: 02 — Mandatory Core**  
-**Scope: Required Canonical Compatibility**
+**Section:** 02 — Mandatory Core  
+**Scope:** Required Canonical Compatibility  
+**Status:** Candidate Mandatory Core Defined for Executable Conformance  
+**Canonical Adoption:** Not yet performed
 
 This directory contains **Conformance Section 02 — Mandatory Core** for the BitPangea **Foundational Survey Fabric**.
 
-The source page defines the Mandatory Core as:
+The governing statement remains:
 
 > **The minimum set of canonical behaviors every implementation must satisfy before it may claim Foundational Survey Fabric compatibility.**
 
-Its governing principle is:
+Its governing principle remains:
 
 > **One mandatory truth. Optional capability above it.**
 
@@ -30,170 +32,442 @@ Repository path:
 /theatlas/foundational-survey-fabric/conformance/02-mandatory-core/index.html
 ```
 
-Recommended directory README path:
+README path:
 
 ```text
 /theatlas/foundational-survey-fabric/conformance/02-mandatory-core/README.md
-```
-
-The source page is publicly indexable:
-
-```text
-index,follow
 ```
 
 ---
 
 ## Purpose
 
-The **Mandatory Core** is the direct conformance realization of **Requirements Finding #84 — Mandatory Conformance Core**.
+The **Mandatory Core** is the direct conformance realization of:
 
-The source establishes that Foundational Survey Fabric compatibility cannot be defined by selective implementation of convenient parts of the Specification.
+**Requirements Finding #84 — Mandatory Conformance Core**
 
-Every conforming implementation must ultimately satisfy one common body of mandatory canonical behavior.
+Finding #84 prevents FSF compatibility from becoming a selective or self-declared subset chosen by each implementation.
 
-Optional encodings, optimizations, extensions, interfaces, or implementation features may exist above the core, but none may weaken, override, or create competing spatial truth.
+A conforming implementation must prove one common body of mandatory canonical behavior.
 
----
+Optional features may exist above that body.
 
-## 02.1 — Purpose of the Mandatory Core
-
-### Establish the Minimum Claim of Compatibility
-
-The Mandatory Core defines the minimum canonical capabilities and behaviors that every implementation must demonstrate before claiming compatibility with the Foundational Survey Fabric.
-
-> **An implementation that does not satisfy the Mandatory Core shall not claim Foundational Survey Fabric conformance, regardless of how many optional features or higher-layer capabilities it provides.**
+They may not substitute for it.
 
 ---
 
-## 02.2 — One Canonical Meaning
+## Integration Standing
 
-### No Competing Foundational Truth
+The original page correctly defined the Mandatory Core in principle, but its exact proof surface remained abstract because the governing Specification was not yet sufficiently integrated.
 
-All Mandatory Core behavior must resolve to the same canonical Survey meaning defined by the governing Specification.
+That has changed for the solved candidate profile.
 
-Implementations may differ internally, but the Mandatory Core must not permit alternate interpretations of canonical address meaning, geometry, measurement, normalization, serialization, or authoritative result.
+Specification Sections 01–07 now define deterministic candidate behavior for:
 
----
+```text
+CRPC
+canonical frame
+Point
+Segment
+SCPE
+exact predicates
+validation
+normalization
+FSF-CJSON-1.0
+ECEM
+exact-or-invalid behavior
+deterministic canonical output
+```
 
-## 02.3 — Required Interpretation
-
-### Canonical Inputs Must Resolve Correctly
-
-Every conforming implementation must correctly interpret the canonical references and foundational spatial expressions required by the governing Specification.
-
-Correct interpretation includes preserving permanent spatial meaning, respecting the canonical frame and measurement system, and resolving valid expressions without dependence on hidden implementation state.
-
----
-
-## 02.4 — Required Validation
-
-### Valid and Invalid States Must Be Distinguished
-
-The Mandatory Core requires deterministic validation of canonical references and expressions within scope.
-
-The source identifies canonical input, valid noncanonical input, malformed expressions, impossible precision expressions, out-of-domain references, and other invalid states as conditions that must be distinguished according to the governing Specification rather than implementation-specific guesswork.
+Therefore the Mandatory Core can now be defined concretely enough for executable Conformance work.
 
 ---
 
-## 02.5 — Required Canonicalization
+## Candidate Mandatory Core Scope
 
-### Equivalent Meaning Must Normalize Identically
+The current candidate Mandatory Core includes at minimum:
 
-Where the Specification permits multiple equivalent representations, every conforming implementation must resolve them to the same authoritative canonical meaning.
+```text
+CRPC parsing and normalization
+canonical frame interpretation
+Point validation
+Segment validation
+SCPE validation
+exact Point equality
+exact Point ordering
+exact orientation
+Point-on-Segment
+Segment intersection
+Point-on-boundary
+Point-in-SCPE
+polygon validity
+connectedness
+containment
+geometric equivalence
+canonical geometry normalization
+canonical-valid / valid-noncanonical / invalid behavior
+no silent snapping
+ECEM-compatible precision behavior
+FSF-CJSON-1.0 parsing
+FSF-CJSON-1.0 canonical serialization
+deterministic authoritative results
+independent reproducibility
+```
 
-Where the Specification requires a unique canonical form for an operation or encoding, implementations must produce that required form.
+These capabilities are one proof surface.
 
-Canonicalization must preserve place exactly and must not silently move, snap, approximate, or reinterpret spatial meaning.
-
----
-
-## 02.6 — Required Exactness
-
-### Canonical Truth Is Not Tolerance-Based
-
-Mandatory Core operations must use the exact comparison, measurement, equivalence, and geometric behavior established by the Specification.
-
-Tolerance-based equality, floating approximation, hidden snapping, or implementation-specific convergence may not substitute for canonical exactness.
-
----
-
-## 02.7 — Required Result Equivalence
-
-### Identical Inputs, Identical Authoritative Results
-
-Independent implementations receiving identical valid canonical inputs must produce the same authoritative canonical result for every Mandatory Core operation within scope.
-
-Where the governing Specification requires a unique canonical representation of that result, the representation must also be identical.
-
-Performance, programming language, storage model, cache strategy, internal representation, and optimization may differ without changing the canonical answer.
-
----
-
-## 02.8 — Required Normative Interchange
-
-### Canonical Results Must Be Interchangeable
-
-Every conforming implementation must satisfy the normative serialization and interchange obligations that the governing Specification assigns to the Mandatory Core.
-
-The Specification may require one canonical serialization or permit multiple explicitly governed lossless normative encodings.
-
-A Mandatory Core implementation must support the required encoding scope it claims and preserve deterministic canonical meaning across that scope.
-
-Proprietary internal or presentation formats may not substitute for authoritative interchange requirements.
+Selective success does not establish Mandatory Core conformance.
 
 ---
 
-## 02.9 — Specification and Version Identity
+## One Canonical Meaning
 
-### The Governing Standard Must Be Explicit
+The Mandatory Core does not permit competing foundational truth.
 
-A Mandatory Core conformance claim must identify the governing Foundational Survey Fabric Specification and the applicable version or compatibility identity.
+Implementations may differ in:
 
-Conformance is therefore asserted against a defined canonical standard rather than an unspecified interpretation of the Survey Fabric.
+- programming language;
+- algorithms;
+- cache strategies;
+- internal storage;
+- optimization;
+- data structures.
+
+They may not differ in canonical meaning.
+
+For identical valid canonical inputs:
+
+```text
+same Specification
+        ↓
+same authoritative meaning
+```
+
+Where the Specification defines unique normalization or serialization:
+
+```text
+same authoritative meaning
+        ↓
+same normalized form
+        ↓
+same canonical bytes
+```
 
 ---
 
-## 02.10 — Independent Reproducibility
+## Required Interpretation
 
-### The Core Must Be Open to Independent Proof
+Mandatory Core implementations must correctly interpret:
 
-Mandatory Core conformance must be independently testable from openly inspectable Specifications, conformance rules, and applicable Reference Vectors once the canonical vector corpus has been established from sufficiently complete formal mathematics.
+```text
+CRPC coordinates
+canonical (x,y) frame
+Point
+Segment
+SCPE
+ECEM precision semantics
+FSF-CJSON-1.0
+```
 
-No proprietary software, unpublished algorithm, exclusive service, secret convention, or institutional permission may be required to understand or reproduce the canonical result.
+A canonical Point means one exact Survey position.
+
+It does not mean:
+
+- a parent Point;
+- a coarse cell;
+- a rounded location;
+- an uncertainty region;
+- a set of descendants.
 
 ---
 
-## 02.11 — Optional Capability Boundary
+## Required Validation
 
-### Optional Features May Extend, Never Replace
+The current core distinguishes:
 
-Optional conformance classes, representations, accelerators, extensions, or implementation conveniences may provide additional capabilities above the Mandatory Core.
+```text
+CANONICAL VALID
+VALID NONCANONICAL
+INVALID
+```
 
-Such capabilities must not alter Mandatory Core semantics, weaken exactness, bypass validation behavior, or create an alternate source of canonical spatial truth.
+Examples of invalidity may include:
+
+- malformed CRPC;
+- invalid denominator form;
+- coordinate outside the governed Survey Domain;
+- zero-length Segment;
+- invalid SCPE;
+- self-intersection;
+- zero area;
+- malformed FSF-CJSON;
+- unsupported operation result type.
+
+Invalid input may not be silently repaired.
 
 ---
 
-## 02.12 — Failure of the Mandatory Core
+## Required Canonicalization
 
-### Core Failure Prevents Compatibility Claim
+The current Mandatory Core requires deterministic normalization.
 
-Failure of any required Mandatory Core behavior prevents an implementation from claiming full Foundational Survey Fabric compatibility.
+### CRPC
 
-Partial implementation may be described accurately for development or testing purposes, but it may not be represented as conforming unless the governing Conformance specification explicitly defines a permissible nonconforming or provisional status.
+Reduce exact fractions to canonical form.
+
+### Segment
+
+Place the lexicographically lesser endpoint first.
+
+### SCPE
+
+Canonical normalization includes:
+
+```text
+normalize CRPC vertices
+remove exact redundant collinear middle vertices
+enforce counterclockwise traversal
+select lexicographically least start vertex
+omit repeated terminal closure vertex
+```
+
+Required invariants:
+
+```text
+N(N(G)) = N(G)
+```
+
+and:
+
+```text
+geom(N(G)) = geom(G)
+```
+
+Normalization may remove representational redundancy.
+
+It may not move place.
+
+---
+
+## Required Exactness
+
+Mandatory Core truth shall not depend on:
+
+- epsilon equality;
+- tolerance;
+- floating approximation;
+- hidden snapping;
+- rendering resolution;
+- device precision;
+- implementation-specific convergence.
+
+The governing rule remains:
+
+> **Canonical geometry does not use epsilon.**
+
+---
+
+## Required Geometry Behavior
+
+The current primitive profile is:
+
+```text
+Point
+Segment
+SCPE
+```
+
+Mandatory proof must cover the applicable exact predicate behavior defined by the Specification, including:
+
+```text
+Point equality
+Point ordering
+orientation
+Point-on-Segment
+Segment intersection
+Point-on-boundary
+Point-in-SCPE
+polygon validity
+connectedness
+containment
+geometric equivalence
+```
+
+---
+
+## Required Precision Semantics
+
+The Mandatory Core preserves:
+
+**Exact Coordinate Extension Model — ECEM**
+
+The rule is:
+
+> **A canonical Point is already exact.**
+
+Compatible future representational growth may expand capability.
+
+It may not migrate an existing place.
+
+---
+
+## Required Normative Interchange
+
+For the current machine-interchange profile:
+
+```text
+FSF-CJSON-1.0
+```
+
+is the candidate canonical format.
+
+A Mandatory Core implementation claiming serialization conformance must satisfy its governing rules, including:
+
+- UTF-8;
+- no BOM;
+- compact canonical representation;
+- exact structured CRPC objects;
+- deterministic key ordering;
+- required string normalization;
+- duplicate-key rejection;
+- governed unknown-field behavior;
+- geometry normalization before serialization;
+- identical canonical bytes for identical normalized supported geometry.
+
+Proprietary internal formats do not substitute for canonical interchange.
+
+---
+
+## Specification and Version Identity
+
+A conformance claim must identify the standard it proves.
+
+Current serialization claims shall identify:
+
+```text
+FSF-CJSON-1.0
+```
+
+where applicable.
+
+The final top-level FSF Specification identifier syntax remains open.
+
+Conformance must not invent it.
+
+---
+
+## Reference Vector Proof
+
+Mandatory Core capability must be executably demonstrable.
+
+Applicable proof should include:
+
+- canonical valid examples;
+- valid noncanonical examples that normalize exactly;
+- invalid examples;
+- exact predicate outcomes;
+- canonical serialization bytes;
+- failure cases;
+- cross-implementation result identity.
+
+Reference Vectors prove behavior already defined by the Specification.
+
+They do not define new behavior.
+
+---
+
+## Independent Reproducibility
+
+Mandatory Core conformance must be independently reproducible.
+
+It shall not require:
+
+- proprietary software;
+- unpublished algorithms;
+- hidden test logic;
+- exclusive service access;
+- secret conventions;
+- institutional permission;
+- shared hidden implementation state.
+
+---
+
+## Open-Gate Exclusion
+
+The Mandatory Core shall not claim canonical support for unresolved Specification mathematics.
+
+Current exclusions include:
+
+```text
+general Boolean / composite output closure
+general union result closure
+general intersection-result closure
+general difference-result closure
+closed-set / difference compatibility
+arbitrary exact rotation closure
+general transformation closure
+general exact distance scalar closure
+general exact path / boundary-length scalar closure
+future geometry not yet selected
+```
+
+Experimental implementation is allowed.
+
+Canonical conformance claims are not.
+
+---
+
+## Optional Capability Boundary
+
+Optional capability may extend the Mandatory Core only where the underlying Specification defines the semantics.
+
+Optional capability may not:
+
+- weaken exactness;
+- bypass validation;
+- replace canonical serialization;
+- override ECEM;
+- redefine geometry;
+- compensate for Mandatory Core failure;
+- create alternate spatial truth.
+
+---
+
+## Failure of the Mandatory Core
+
+Mandatory failure prevents a full conformance claim.
+
+Examples include:
+
+```text
+required test fails
+invalid input accepted
+canonical normalization mismatch
+exact predicate mismatch
+canonical byte mismatch
+silent snapping
+hidden-state-dependent result
+cross-implementation result mismatch
+open-gate behavior claimed as canonical
+```
+
+Partial implementation may be described accurately.
+
+It is not Mandatory Core conformance.
 
 ---
 
 ## Requirements Basis
 
-This section directly realizes **Requirements Finding #84 — Mandatory Conformance Core**.
-
-The source also references supporting requirements governing exactness, deterministic canonicalization, independent implementation, normative serialization and interchange, finite computability, and authoritative results.
-
-Primary referenced Findings:
+This section directly realizes:
 
 ```text
-#84
+#84 — Mandatory Conformance Core
+```
+
+Supporting Requirements include:
+
+```text
 #10
 #24
 #30
@@ -203,135 +477,99 @@ Primary referenced Findings:
 #78–#83
 ```
 
-These Findings remain authoritative within the Requirements Framework.
+These Findings remain authoritative in the Requirements Framework.
 
-This Conformance section realizes and references them; it does not replace them.
+Conformance realizes and tests them.
 
----
-
-## Established by Requirements
-
-The source states that Finding #84 requires a mandatory minimum conformance core for every implementation claiming canonical compatibility.
-
-Supporting Findings establish the exactness, reproducibility, normalization, normative interchange, finite representation, validity, and implementation independence that the Mandatory Core must ultimately prove.
+It does not replace them.
 
 ---
 
-## Still Open in Conformance
+## What Changed From the Previous Page
 
-The source leaves the following unresolved until the Specification and remaining Conformance sections are complete:
+The previous page already correctly established:
 
-- exact Mandatory Core test inventory;
-- operation list;
-- required Reference Vector categories;
-- eventual canonical vectors;
-- canonical test identifiers;
-- pass thresholds where binary pass/fail is insufficient;
-- required normative encoding scope;
-- declaration syntax;
-- treatment of provisional implementations.
+- one mandatory common core;
+- one canonical meaning;
+- deterministic validation;
+- deterministic canonicalization;
+- exactness;
+- identical results for identical inputs;
+- normative interchange;
+- explicit Specification identity;
+- independent reproducibility;
+- optional capability above the core;
+- mandatory failure prevents full compatibility.
 
-These items should not be prematurely fixed.
+Those principles remain.
+
+The substantive change is that the integrated Specification now provides enough exact mathematics to state the present candidate Mandatory Core explicitly.
+
+The previous wording that the exact core must wait generally for completion of the Specification is therefore no longer correct for the solved profile.
+
+The new rule is:
+
+```text
+solved Specification capability
+    -> eligible for Mandatory Core proof
+
+open Specification capability
+    -> excluded from canonical conformance
+```
+
+---
+
+## Still Open
+
+The remaining Conformance design work includes:
+
+```text
+final canonical test identifiers
+complete test inventory
+test-to-Specification traceability
+test-to-Requirements traceability
+formal conformance declaration syntax
+complexity/resource-limit policy
+provisional implementation policy, if retained
+optional future profiles
+treatment of future Specification extensions
+```
+
+These should be resolved through later Conformance sections and executable proof work.
 
 ---
 
 ## Architectural Boundary
 
-The source states:
-
 > **Optional capability may extend what an implementation can do. It may not change what canonical spatial truth means, substitute for failure of the Mandatory Core, or create authority over the governing Specification.**
 
-This is the key architectural boundary of the section.
-
----
-
-## Navigation
-
-The source page links to:
-
-```text
-/theatlas/foundational-survey-fabric/conformance/01-conformance-classes/
-```
-
-```text
-/theatlas/foundational-survey-fabric/requirements/
-```
-
-```text
-/theatlas/foundational-survey-fabric/specification/
-```
-
-```text
-/theatlas/foundational-survey-fabric/conformance/
-```
-
-These provide navigation to Conformance 01, the Requirements Framework, the Specification, and the Conformance Index.
-
----
-
-## Metadata Identity
-
-The source page includes:
-
-```text
-Title: Mandatory Core | Foundational Survey Fabric Conformance | BitPangea
-Description: Mandatory Core — Conformance Section 02 for the BitPangea Foundational Survey Fabric.
-Canonical: https://bitpangea.com/theatlas/foundational-survey-fabric/conformance/02-mandatory-core/
-Theme Color: #00c8d7
-Robots: index,follow
-OG Type: website
-```
-
-These values should remain aligned with the page.
-
----
-
-## Repository Guidance
-
-When maintaining this directory:
-
-1. preserve the title **Mandatory Core**;
-2. preserve **Conformance Section 02 · Required Canonical Compatibility**;
-3. preserve the canonical path `/theatlas/foundational-survey-fabric/conformance/02-mandatory-core/`;
-4. preserve the statement that the Mandatory Core is the minimum set of canonical behaviors required for compatibility;
-5. preserve the direct relationship to **Requirements Finding #84**;
-6. preserve **One mandatory truth. Optional capability above it.**
-7. preserve the rule that selective support cannot establish full compatibility;
-8. preserve the requirement for one common body of mandatory canonical behavior;
-9. preserve one canonical Survey meaning;
-10. preserve required interpretation of canonical references and foundational expressions;
-11. preserve deterministic validation of valid and invalid states;
-12. preserve canonicalization that retains exact place and does not silently move, snap, approximate, or reinterpret;
-13. preserve the prohibition on tolerance-based canonical truth;
-14. preserve identical authoritative results for identical valid canonical inputs;
-15. preserve normative serialization and interchange obligations;
-16. preserve explicit Specification/version identity in conformance claims;
-17. preserve independent reproducibility from openly inspectable materials;
-18. preserve the prohibition on proprietary software, unpublished algorithms, exclusive services, secret conventions, or institutional permission as requirements for reproducing canonical results;
-19. preserve the optional-capability boundary;
-20. preserve the rule that failure of any required Mandatory Core behavior prevents a full compatibility claim;
-21. preserve the supporting Requirements Findings listed by the page;
-22. preserve the unresolved status of the exact test inventory, operation list, vector categories, vectors, identifiers, thresholds, encoding scope, declaration syntax, and provisional treatment;
-23. preserve the Architectural Boundary exactly as stated;
-24. preserve `index,follow` unless the publication model is intentionally revised;
-25. keep canonical, Open Graph, description, theme-color, favicon, framework, and navigation references aligned with the page;
-26. do not invent the final Mandatory Core operation inventory before the Specification is complete;
-27. do not allow optional features to substitute for Mandatory Core failure;
-28. do not allow Conformance to create authority over the governing Specification or canonical spatial truth.
+This boundary remains unchanged.
 
 ---
 
 ## Status
 
-**Foundational Survey Fabric**
+```text
+FOUNDATIONAL SURVEY FABRIC — CONFORMANCE
 
-**Conformance**
+SECTION 02 — MANDATORY CORE
 
-**Section 02 — Mandatory Core**
+REQUIREMENTS FINDING #84 — DIRECTLY REALIZED
+CANDIDATE MANDATORY CORE — NOW EXPLICIT
+CRPC — REQUIRED
+POINT / SEGMENT / SCPE — REQUIRED
+CORE EXACT PREDICATES — REQUIRED
+NORMALIZATION — REQUIRED
+ECEM — REQUIRED
+FSF-CJSON-1.0 — REQUIRED FOR CURRENT SERIALIZATION PROFILE
+NO SILENT SNAPPING — REQUIRED
+INDEPENDENT REPRODUCIBILITY — REQUIRED
 
-**Required Canonical Compatibility**
-
-**Final Test Inventory and Formal Declaration Details Remain Open**
+OPEN SPECIFICATION MATHEMATICS — EXCLUDED FROM CANONICAL CONFORMANCE
+FINAL TEST INVENTORY — OPEN
+FORMAL CLAIM SYNTAX — OPEN
+CANONICAL ADOPTION — NOT YET PERFORMED
+```
 
 ---
 
