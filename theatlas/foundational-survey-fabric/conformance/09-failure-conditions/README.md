@@ -3,16 +3,18 @@
 ## Foundational Survey Fabric · Conformance Section 09
 
 **The Atlas · The Architecture · Foundational Survey Fabric · Conformance**  
-**Section: 09 — Failure Conditions**  
-**Scope: Conditions That Defeat Compatibility**
+**Section:** 09 — Failure Conditions  
+**Scope:** Conditions That Defeat Compatibility  
+**Status:** Integrated Specification Core Reflected  
+**Canonical Adoption:** Not yet performed
 
 This directory contains **Conformance Section 09 — Failure Conditions** for the BitPangea **Foundational Survey Fabric**.
 
-The source page defines the section as:
+The governing statement remains:
 
 > **The conformance conditions under which an implementation must be judged incompatible, nonconforming, indeterminate, or unable to support a claimed Foundational Survey Fabric capability.**
 
-Its governing principle is:
+Its governing principle remains:
 
 > **A conformance claim is meaningful only if failure is defined.**
 
@@ -30,270 +32,485 @@ Repository path:
 /theatlas/foundational-survey-fabric/conformance/09-failure-conditions/index.html
 ```
 
-Recommended directory README path:
+README path:
 
 ```text
 /theatlas/foundational-survey-fabric/conformance/09-failure-conditions/README.md
 ```
 
-The source page is publicly indexable:
+---
+
+## Integration Standing
+
+The original Failure Conditions page correctly defined the need to distinguish true implementation failure from unsupported capability and Specification ambiguity.
+
+The integrated Specification now makes many failure conditions directly executable for the solved candidate core.
+
+That core includes:
 
 ```text
-index,follow
+CRPC
+canonical frame
+Point
+Segment
+SCPE
+exact predicates
+validation
+normalization
+ECEM
+FSF-CJSON-1.0
+```
+
+Failure is therefore no longer only a future taxonomy problem.
+
+Many conditions can now be tested exactly.
+
+---
+
+## Canonical Result Mismatch
+
+For the same valid canonical input and profile:
+
+```text
+required result = R
+implementation result = S
+R != S
+```
+
+then:
+
+```text
+FAIL
+```
+
+unless the underlying test fixture or Specification is shown to be defective or ambiguous.
+
+Tolerance and implementation preference do not excuse canonical mismatch.
+
+---
+
+## Validity Classification Failure
+
+The current solved profile distinguishes:
+
+```text
+CANONICAL VALID
+VALID NONCANONICAL
+INVALID
+```
+
+and unsupported behavior where the profile defines it.
+
+Failure includes:
+
+- canonical input classified invalid;
+- invalid input accepted as canonical;
+- valid noncanonical input misclassified;
+- deterministic normalization path ignored;
+- unsupported capability falsely classified as canonical success.
+
+---
+
+## Invalid Acceptance
+
+Examples include accepting:
+
+```text
+malformed CRPC
+out-of-Domain coordinate
+zero-length prohibited Segment
+self-intersecting SCPE
+zero-area SCPE
+malformed FSF-CJSON
+duplicate-key canonical JSON
+prohibited unknown fields
+ambiguous input
+```
+
+as authoritative canonical truth.
+
+That is failure.
+
+---
+
+## Valid Rejection
+
+Rejecting required valid canonical input is also failure.
+
+Examples include rejecting:
+
+- valid reduced CRPC;
+- canonical Point;
+- canonical Segment;
+- canonical SCPE;
+- valid exact predicate input;
+- valid FSF-CJSON-1.0 canonical bytes
+
+inside the claimed Mandatory Core profile.
+
+---
+
+## Normalization Failure
+
+Conformance failure includes:
+
+```text
+incorrect CRPC reduction
+wrong Segment endpoint order
+SCPE normalization not idempotent
+wrong SCPE orientation
+wrong canonical start vertex
+failure to remove exact redundant collinear middle vertices
+meaning-changing normalization
+```
+
+Required invariants include:
+
+```text
+N(N(G)) = N(G)
+geom(N(G)) = geom(G)
 ```
 
 ---
 
-## Purpose
+## Exact Predicate Failure
 
-**Failure Conditions** define when an implementation has not satisfied the governing Specification and Conformance rules.
+Incorrect exact predicate truth is failure.
 
-The source establishes that conformance must define not only success, but also:
+Current predicate surface includes:
 
-- behaviors that invalidate a compatibility claim;
-- the distinction between implementation defect and unsupported capability;
-- the distinction between implementation defect and Specification ambiguity;
-- conditions that prevent noncanonical behavior from being mislabeled as authoritative Survey truth.
-
----
-
-## 09.1 — Canonical Result Mismatch
-
-### Different Authoritative Results Constitute Failure
-
-If an implementation produces authoritative canonical meaning that differs from the result required by the governing Specification for the same canonical input, the applicable conformance claim fails.
-
-Once applicable Reference Vectors formally exist, disagreement with their required canonical outcomes also constitutes failure.
-
-Implementation-specific preference, optimization, or tolerance cannot excuse disagreement in canonical truth.
+```text
+Point equality
+Point ordering
+orientation
+Point-on-Segment
+Segment intersection
+Point-on-boundary
+Point-in-SCPE
+polygon validity
+connectedness
+containment
+geometric equivalence
+```
 
 ---
 
-## 09.2 — Invalid Acceptance
+## Exactness Failure
 
-### Invalid Input Must Not Be Treated as Canonical
+Failure includes using any of the following to establish authoritative truth:
 
-An implementation fails the applicable conformance requirement if it accepts malformed, impossible, ambiguous, out-of-domain, or otherwise invalid input as authoritative canonical Survey truth.
-
-Convenience repair may exist in a higher Architecture domain only where it remains explicitly separate from canonical validation.
-
----
-
-## 09.3 — Valid Rejection
-
-### Required Canonical Input Must Not Be Rejected
-
-An implementation fails conformance if it rejects a valid canonical:
-
-- reference;
-- expression;
-- operation;
-- normative encoding;
-- interchange representation
-
-that the governing Specification requires it to support within its claimed conformance scope.
-
----
-
-## 09.4 — Noncanonical Normalization Failure
-
-### Equivalent Input Must Normalize Correctly
-
-Where valid alternate or noncanonical representations are supported, failure to resolve them to the required canonical meaning constitutes conformance failure.
-
-Where the Specification explicitly requires one unique canonical form, failure to normalize to that form also constitutes failure.
-
-Normalization that changes spatial meaning is likewise a failure.
-
----
-
-## 09.5 — Exactness Failure
-
-### Tolerance and Approximation Cannot Establish Canonical Truth
-
-The source identifies conformance failure where authoritative Survey results rely on:
-
-- tolerance-based equality;
+- epsilon;
+- tolerance;
 - silent rounding;
 - hidden snapping;
-- unresolved floating approximation;
-- implementation-specific convergence
+- approximate predicate truth;
+- unresolved floating convergence;
+- undetected lossy conversion.
 
-when exact canonical behavior is required.
-
-Approximate behavior may exist in higher Architecture domains or noncanonical implementation features, but it must not be labeled as foundational truth.
+Approximation may exist outside canonical FSF truth.
 
 ---
 
-## 09.6 — Hidden-State Failure
+## Hidden-State Failure
 
-### Mutable Context Must Not Change Canonical Output
+Canonical output must not depend on:
 
-The applicable conformance claim fails if authoritative results change because of:
-
-- cache history;
-- database sequence;
-- session context;
+- cache state;
+- database order;
 - random state;
+- session context;
 - user identity;
 - ownership;
+- machine locale;
 - wall-clock time;
-- other hidden mutable conditions.
+- hidden mutable state.
 
-The source states:
-
-> **State may improve performance. It may not participate in spatial truth.**
+If changing hidden context changes canonical output, Conformance fails.
 
 ---
 
-## 09.7 — Normative Interchange Failure
+## ECEM Semantics Failure
 
-### Authoritative Exchange Must Satisfy the Governing Encoding Rules
+Under ECEM:
 
-An implementation fails interchange conformance if it cannot correctly:
+```text
+Point = one exact Survey position
+```
 
-- emit;
-- parse;
-- interpret;
-- normalize where required;
-- preserve the obligations of
+Failure includes interpreting a canonical Point as:
 
-a normative encoding required by the governing Specification or claimed by the implementation.
+```text
+coarse cell
+parent reference
+uncertainty region
+rounded location
+descendant set
+```
 
-The source also identifies as failure:
+Compatible representational extension may add new exact values.
 
-- silent precision loss;
-- incompatible field interpretation;
-- failure of deterministic semantic equivalence;
-- unauthorized authoritative encoding;
-- failure to reproduce a unique canonical representation exactly where required.
-
----
-
-## 09.8 — Version Compatibility Failure
-
-### Compatible Evolution Must Not Change Place
-
-A conformance claim fails if a supposedly compatible version is applied in a manner that:
-
-- renumbers;
-- relocates;
-- reinterprets;
-- otherwise changes
-
-established canonical spatial meaning.
-
-Unsupported Specification versions and unsupported normative-encoding versions must be identified explicitly rather than guessed.
+It may not change old Point meaning.
 
 ---
 
-## 09.9 — Independence Failure
+## FSF-CJSON-1.0 Failure
 
-### Canonical Truth Must Not Depend on Exclusive Access
+Serialization failure includes:
 
-An implementation fails the independent implementation requirement if authoritative results can be reproduced only through:
+```text
+valid canonical bytes rejected
+invalid canonical bytes accepted
+wrong CRPC interpretation
+wrong geometry interpretation
+duplicate keys accepted
+wrong key order
+precision loss
+wrong normalization
+wrong canonical bytes
+non-UTF-8 canonical output
+hidden parser defaults
+```
 
-- inaccessible software;
-- proprietary services;
+Where one exact canonical byte sequence is required, byte mismatch is failure.
+
+---
+
+## Round-Trip Failure
+
+Required behavior:
+
+```text
+canonical object
+    ↓ serialize
+canonical bytes
+    ↓ parse
+same canonical object
+    ↓ serialize
+same canonical bytes
+```
+
+Semantic drift or byte drift under unchanged canonical rules is failure.
+
+---
+
+## Version Compatibility Failure
+
+Supposedly compatible evolution must not alter:
+
+```text
+CRPC meaning
+Point meaning
+Segment meaning
+SCPE meaning
+predicate truth
+normalization
+ECEM semantics
+FSF-CJSON-1.0 meaning or unchanged-byte obligations
+```
+
+Meaning drift is failure.
+
+Unknown versions must not be guessed.
+
+---
+
+## Independence Failure
+
+The independent-implementation requirement fails where canonical truth can be reproduced only through:
+
+- inaccessible code;
+- proprietary service;
 - private data;
 - undocumented convention;
-- exclusive institutional knowledge.
+- exclusive institutional knowledge;
+- one hidden implementation dependency.
 
-Canonical meaning must remain derivable from the published governing materials.
-
----
-
-## 09.10 — Incomplete Mandatory Core
-
-### Partial Core Support Is Not Full Conformance
-
-Failure to satisfy any required Mandatory Core capability prevents an implementation from claiming full Foundational Survey Fabric compatibility.
-
-Partial, experimental, or developmental implementation may be described accurately, but it must not be represented as fully conforming.
+Canonical meaning must remain derivable from governing materials.
 
 ---
 
-## 09.11 — Nontermination or Unresolvable Result
+## Incomplete Mandatory Core
 
-### Canonical Truth Must Be Reachable
+Partial core support is not full Conformance.
 
-An implementation fails the applicable conformance requirement if a valid finite canonical input cannot be resolved to completion where the Specification requires a deterministic authoritative result.
+An implementation may describe itself as:
 
-The source identifies as incompatible with canonical conformance:
+```text
+partial
+experimental
+developmental
+prototype
+```
 
-- indefinite convergence;
-- unresolved ambiguity;
-- hidden dependency;
-- potentially nonterminating interpretation;
-- authoritative truth dependent on unresolved approximation.
+where accurate.
 
----
-
-## 09.12 — Unsupported Capability
-
-### Unsupported Is Not the Same as Incorrect
-
-An implementation may encounter an optional capability or extension it does not support.
-
-Where that capability lies outside its declared conformance scope, unsupported behavior need not constitute failure of the Mandatory Core.
-
-The implementation must identify the unsupported capability clearly and must not fabricate canonical behavior for it.
+It may not claim full Mandatory Core compatibility unless all required capabilities in the claimed profile pass.
 
 ---
 
-## 09.13 — Specification Ambiguity
+## Nontermination or Unresolvable Result
 
-### Some Disagreement May Reveal a Defect in the Standard
+A valid finite canonical input requiring deterministic output must terminate.
 
-If independent implementations reasonably produce different results because the governing Specification does not determine one authoritative answer, the issue must be classified as a **Specification ambiguity** rather than automatically assigning implementation fault.
+Failure includes:
 
-The ambiguity must be resolved through the proper BitPangea authority and Specification-governance process before a definitive conformance judgment can be made for the affected case.
-
-The source also preserves this boundary:
-
-> **Conformance disagreement may reveal the need for clarification, but conformance testing does not itself establish canonical succession or amendment authority.**
-
----
-
-## 09.14 — Conformance Claim Misrepresentation
-
-### An Implementation May Claim Only What It Proves
-
-A declaration exceeding the conformance classes, Specification versions, normative encoding scope, operations, or capabilities actually demonstrated is invalid.
-
-Conformance reporting must distinguish proven compatibility from:
-
-- unsupported behavior;
-- untested behavior;
-- experimental behavior;
-- noncanonical behavior.
+```text
+indefinite convergence
+potential nontermination
+unresolved ambiguity
+hidden dependency
+authoritative result requiring unresolved approximation
+```
 
 ---
 
-## Established by Requirements
+## Unsupported Capability
 
-The source states that the Requirements framework already establishes:
+Unsupported is not automatically failure.
 
-- exact canonical truth;
-- deterministic validity and normalization;
-- rejection of ambiguity;
-- no silent snapping;
-- detectable precision loss;
-- independent implementation;
-- finite representation;
-- hidden-state independence;
-- termination;
-- exact-or-invalid canonical states;
-- a mandatory conformance core;
-- canonical-adoption attempts designed to expose ambiguity, hidden dependency, nontermination, unresolved approximation, or higher-domain leakage before acceptance.
+If a capability is outside the implementation’s declared profile and not part of the Mandatory Core, the correct outcome may be:
 
-These constraints govern this Conformance section.
+```text
+UNSUPPORTED
+```
+
+The implementation must not fabricate canonical behavior.
+
+---
+
+## Open-Gate Outcome
+
+Open Specification mathematics require special care.
+
+Current examples include:
+
+```text
+general Boolean / composite output closure
+arbitrary exact rotation
+general exact distance scalar
+general path / boundary-length scalar
+future geometry not yet selected
+```
+
+Such cases shall not be forced into a fake canonical pass/fail result.
+
+They may be outside the current profile or indeterminate until the Specification defines them.
+
+---
+
+## Specification Ambiguity
+
+Where the governing Specification genuinely fails to determine one authoritative answer, the result should be classified as:
+
+```text
+SPECIFICATION AMBIGUITY
+```
+
+rather than automatically:
+
+```text
+IMPLEMENTATION FAILURE
+```
+
+Conformance testing can reveal ambiguity.
+
+It does not possess amendment authority.
+
+---
+
+## Test / Fixture Defect
+
+The test infrastructure can also be wrong.
+
+A failed comparison may result from:
+
+```text
+wrong expected result
+bad Reference Vector
+broken parser in test harness
+wrong comparator
+profile mismatch
+fixture transcription error
+```
+
+The final Conformance framework should preserve a distinct test/fixture-defect outcome.
+
+---
+
+## Conformance Claim Misrepresentation
+
+An implementation may claim only what it proves.
+
+A declaration is invalid if it exceeds:
+
+- tested profile;
+- tested version;
+- tested serialization;
+- tested operation set;
+- tested capability;
+- tested Reference Vector coverage.
+
+Reporting must distinguish:
+
+```text
+proven
+unsupported
+untested
+experimental
+noncanonical
+open
+```
+
+---
+
+## Candidate Failure Disposition Concepts
+
+The final status identifiers remain open, but the framework should be able to distinguish at minimum:
+
+```text
+FAIL
+UNSUPPORTED
+INDETERMINATE
+SPECIFICATION AMBIGUITY
+TEST / FIXTURE DEFECT
+```
+
+These are candidate concepts, not yet final machine-readable canonical codes.
+
+---
+
+## Retest and Remediation
+
+A failure may be corrected and retested.
+
+But:
+
+```text
+original failure
+```
+
+and:
+
+```text
+later successful retest
+```
+
+should remain distinguishable in evidence.
+
+Formal rules remain open for:
+
+- retest;
+- remediation;
+- evidence retention;
+- withdrawal;
+- supersession;
+- corrected declarations.
 
 ---
 
 ## Requirements Basis
 
-The source derives this section especially from:
+This section remains derived especially from:
 
 ```text
 #10
@@ -308,124 +525,105 @@ The source derives this section especially from:
 
 These Findings remain authoritative within the Requirements Framework.
 
-This Conformance section applies them; it does not replace them.
+Conformance applies them.
+
+It does not replace them.
 
 ---
 
-## Still Open in Conformance
+## What Changed From the Previous Page
 
-The source leaves the following unresolved until the complete Conformance framework is defined:
+The prior page already correctly established:
 
-- formal failure-code taxonomy;
-- severity classes;
-- test-case disposition rules;
-- retest procedure;
-- distinction among fail, unsupported, indeterminate, and Specification-defect outcomes;
-- remediation process;
-- treatment of withdrawn or superseded conformance declarations;
-- machine-readable failure report format.
+- canonical result mismatch;
+- invalid acceptance;
+- valid rejection;
+- normalization failure;
+- exactness failure;
+- hidden-state failure;
+- interchange failure;
+- version failure;
+- independence failure;
+- incomplete Mandatory Core;
+- nontermination;
+- unsupported capability;
+- Specification ambiguity;
+- claim misrepresentation.
 
-These items should remain open until formally resolved.
+Those principles remain.
+
+The major change is that the solved candidate profile now allows many of those failures to be described concretely in terms of:
+
+```text
+CRPC
+Point / Segment / SCPE
+exact predicates
+normalization
+ECEM
+FSF-CJSON-1.0
+```
+
+It also now makes sense to distinguish test/fixture defect as its own outcome rather than treating every vector mismatch as implementation fault.
+
+---
+
+## Still Open
+
+The remaining Failure Conditions design work includes:
+
+```text
+final machine-readable failure codes
+severity levels
+formal disposition taxonomy
+retest procedure
+remediation process
+test-harness defect procedure
+withdrawn/superseded declaration handling
+failure-report schema
+final treatment of indeterminate open-gate cases
+```
 
 ---
 
 ## Architectural Boundary
 
-The source states:
-
 > **Failure must expose incompatibility, ambiguity, hidden dependency, or unsupported scope. It must not be hidden by approximation, convenience, higher-domain leakage, or ambiguous claims.**
 
-This is the defining architectural boundary of Conformance Section 09.
-
----
-
-## Navigation
-
-The source page links to:
-
-```text
-/theatlas/foundational-survey-fabric/conformance/08-independent-implementation/
-```
-
-```text
-/theatlas/foundational-survey-fabric/requirements/
-```
-
-```text
-/theatlas/foundational-survey-fabric/specification/
-```
-
-```text
-/theatlas/foundational-survey-fabric/conformance/
-```
-
-These provide navigation to Conformance 08, the Requirements Framework, the Specification, and the Conformance Index.
-
----
-
-## Metadata Identity
-
-The source page includes:
-
-```text
-Title: Failure Conditions | Foundational Survey Fabric Conformance | BitPangea
-Description: Failure Conditions — Conformance Section 09 for the BitPangea Foundational Survey Fabric.
-Canonical: https://bitpangea.com/theatlas/foundational-survey-fabric/conformance/09-failure-conditions/
-Theme Color: #00c8d7
-Robots: index,follow
-OG Type: website
-```
-
-These values should remain aligned with the page.
-
----
-
-## Repository Guidance
-
-When maintaining this directory:
-
-1. preserve the title **Failure Conditions**;
-2. preserve **Conformance Section 09 · Conditions That Defeat Compatibility**;
-3. preserve the canonical path `/theatlas/foundational-survey-fabric/conformance/09-failure-conditions/`;
-4. preserve **A conformance claim is meaningful only if failure is defined.**
-5. preserve canonical-result mismatch as failure;
-6. preserve invalid acceptance as failure;
-7. preserve rejection of required valid canonical input as failure;
-8. preserve normalization failure and meaning-changing normalization as failure;
-9. preserve exactness failure for tolerance, snapping, unresolved approximation, and implementation-specific convergence;
-10. preserve hidden-state failure;
-11. preserve normative interchange failure;
-12. preserve version-compatibility failure where supposedly compatible evolution changes established place;
-13. preserve independence failure where canonical truth depends on exclusive access;
-14. preserve the rule that incomplete Mandatory Core support is not full conformance;
-15. preserve deterministic termination and resolvability requirements;
-16. preserve the distinction between unsupported optional capability and actual incorrectness;
-17. preserve Specification ambiguity as a distinct outcome where the governing standard does not determine one authoritative answer;
-18. preserve the rule that conformance testing does not itself establish succession or amendment authority;
-19. preserve the prohibition on conformance-claim misrepresentation;
-20. preserve the Requirements basis Findings listed by the page;
-21. preserve the open status of failure codes, severity classes, disposition rules, retesting, outcome classification, remediation, superseded declarations, and machine-readable reporting;
-22. preserve the Architectural Boundary exactly as stated;
-23. preserve `index,follow` unless the publication model is intentionally revised;
-24. keep canonical, Open Graph, description, theme-color, favicon, framework, and navigation references aligned with the page;
-25. do not hide failure through approximation, convenience behavior, higher-domain leakage, or ambiguous claims;
-26. do not treat unsupported capability as automatic Mandatory Core failure when it lies outside declared conformance scope;
-27. do not assign implementation fault where the Specification itself is genuinely ambiguous;
-28. do not allow a conformance declaration to exceed what has actually been demonstrated.
+This remains the defining boundary of Conformance Section 09.
 
 ---
 
 ## Status
 
-**Foundational Survey Fabric**
+```text
+FOUNDATIONAL SURVEY FABRIC — CONFORMANCE
 
-**Conformance**
+SECTION 09 — FAILURE CONDITIONS
 
-**Section 09 — Failure Conditions**
+CANONICAL RESULT MISMATCH — FAILURE
+VALIDITY MISMATCH — FAILURE
+INVALID ACCEPTANCE — FAILURE
+VALID REJECTION — FAILURE
+NORMALIZATION ERROR — FAILURE
+EXACT PREDICATE ERROR — FAILURE
+APPROXIMATE CANONICAL TRUTH — FAILURE
+HIDDEN-STATE DEPENDENCE — FAILURE
+ECEM MEANING DRIFT — FAILURE
+FSF-CJSON-1.0 VIOLATION — FAILURE
+ROUND-TRIP DRIFT — FAILURE
+COMPATIBILITY MEANING DRIFT — FAILURE
+EXCLUSIVE DEPENDENCY — FAILURE
+INCOMPLETE MANDATORY CORE — NOT FULL CONFORMANCE
+UNSUPPORTED CAPABILITY — DISTINCT OUTCOME
+SPECIFICATION AMBIGUITY — DISTINCT OUTCOME
+TEST / FIXTURE DEFECT — DISTINCT OUTCOME
 
-**Conditions That Defeat Compatibility**
-
-**Formal Failure Taxonomy and Disposition Rules Remain Open**
+FINAL FAILURE CODES — OPEN
+SEVERITY MODEL — OPEN
+RETEST / REMEDIATION PROCEDURE — OPEN
+MACHINE-READABLE FAILURE REPORT — OPEN
+CANONICAL ADOPTION — NOT YET PERFORMED
+```
 
 ---
 
