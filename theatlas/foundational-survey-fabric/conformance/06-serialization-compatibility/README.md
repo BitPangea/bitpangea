@@ -3,16 +3,18 @@
 ## Foundational Survey Fabric · Conformance Section 06
 
 **The Atlas · The Architecture · Foundational Survey Fabric · Conformance**  
-**Section: 06 — Serialization Compatibility**  
-**Scope: Canonical Interchange Compatibility**
+**Section:** 06 — Serialization Compatibility  
+**Scope:** Canonical Interchange Compatibility  
+**Status:** FSF-CJSON-1.0 Candidate Profile Integrated  
+**Canonical Adoption:** Not yet performed
 
 This directory contains **Conformance Section 06 — Serialization Compatibility** for the BitPangea **Foundational Survey Fabric**.
 
-The source page defines the section as:
+The governing statement remains:
 
 > **The conformance rules ensuring that independent implementations exchange, parse, normalize, and reproduce normative Survey representations without ambiguity while preserving one canonical spatial meaning.**
 
-Its governing principle is:
+Its governing principle remains:
 
 > **Implement however you like. Exchange one spatial truth.**
 
@@ -30,220 +32,478 @@ Repository path:
 /theatlas/foundational-survey-fabric/conformance/06-serialization-compatibility/index.html
 ```
 
-Recommended directory README path:
+README path:
 
 ```text
 /theatlas/foundational-survey-fabric/conformance/06-serialization-compatibility/README.md
 ```
 
-The source page is publicly indexable:
+---
+
+## Integration Standing
+
+The original Serialization Compatibility page correctly defined the principles of normative interchange while leaving open whether FSF would ultimately use:
 
 ```text
-index,follow
+one canonical serialization
+```
+
+or:
+
+```text
+multiple governed normative encodings
+```
+
+That question is now resolved for the current solved candidate profile.
+
+The integrated Specification selects:
+
+```text
+FSF-CJSON-1.0
+```
+
+as the current candidate canonical machine representation for:
+
+```text
+CRPC
+Point
+Segment
+SCPE
+```
+
+Conformance 06 can therefore test one concrete canonical serialization.
+
+This does not pre-adopt future encodings.
+
+---
+
+## Governing Processing Sequence
+
+Canonical machine output follows:
+
+```text
+validate
+    ↓
+normalize
+    ↓
+serialize
+```
+
+Serialization does not repair invalid mathematics.
+
+A syntactically valid JSON object is not automatically a valid canonical FSF object.
+
+---
+
+## FSF-CJSON-1.0
+
+The current candidate canonical representation uses:
+
+```text
+UTF-8
+no BOM
+compact JSON
+deterministic object-key order
+semantic array order
+structured exact CRPC values
+canonical integer strings
+duplicate keys invalid
+unknown/prohibited fields invalid where governed
+NFC string normalization
+shortest required escaping
+```
+
+Canonical exact coordinate components are not represented by JSON floating-point numbers.
+
+---
+
+## Structured CRPC Values
+
+Exact rational values use structural representation.
+
+Example:
+
+```json
+{"d":"2","n":"1"}
+```
+
+means exactly:
+
+```text
+1/2 Pang
+```
+
+Conformance should test:
+
+- valid integer-string syntax;
+- positive denominator;
+- reduced canonical form where required;
+- canonical zero;
+- exact rational meaning;
+- rejection of prohibited numeric-literal substitution.
+
+---
+
+## Point Encoding
+
+Canonical Points use the governed FSF Point structure.
+
+A canonical Point must already contain:
+
+- valid normalized CRPC values;
+- correct field structure;
+- applicable Survey validity.
+
+Canonical serialization does not round or simplify the coordinates.
+
+---
+
+## Segment Encoding
+
+Segment geometry is normalized before serialization.
+
+Therefore canonical Segment interchange must preserve:
+
+```text
+lexicographically lesser endpoint first
+```
+
+Equivalent reversed input may be accepted only where valid noncanonical input is allowed.
+
+Canonical bytes reflect the normalized Segment.
+
+---
+
+## SCPE Encoding
+
+SCPE geometry is normalized before serialization.
+
+Canonical SCPE form includes:
+
+```text
+normalized CRPC vertices
+exact redundant-collinear removal
+counterclockwise traversal
+lexicographically least start vertex
+no repeated terminal closure vertex
+```
+
+Canonical byte identity is therefore downstream of canonical geometry normalization.
+
+---
+
+## Deterministic Key Order
+
+FSF-CJSON-1.0 requires deterministic object-key ordering.
+
+A serializer shall not emit arbitrary map/hash iteration order.
+
+Where the Specification defines one canonical order:
+
+```text
+same object
+    -> same key sequence
 ```
 
 ---
 
-## Purpose
+## Semantic Array Order
 
-**Serialization Compatibility** establishes how a conforming implementation proves that its machine-readable Survey expressions are compatible with the normative serialization and interchange rules defined by the Specification.
+Array order is meaningful where the represented structure is ordered.
 
-Implementations may differ internally in:
+Conformance shall preserve:
 
-- storage models;
-- data structures;
-- encodings;
-- APIs.
+- vertex order after normalization;
+- ordered geometry components;
+- any other sequence whose order carries canonical meaning.
 
-Where authoritative interchange is required, those differences must resolve deterministically to one canonical spatial meaning.
-
-The source leaves open whether the governing Specification will require:
-
-- one canonical serialization; or
-- multiple explicitly governed lossless normative encodings.
+Arrays are not globally sortable merely for serialization convenience.
 
 ---
 
-## 06.1 — Normative Interchange Requirement
+## Duplicate Keys
 
-### Authoritative Exchange Follows Governed Encoding Rules
+Duplicate keys are invalid.
 
-A conforming implementation must satisfy the normative machine-readable interchange requirements established by the governing Specification for Mandatory Core references, extents, expressions, and results within scope.
+An implementation shall not:
 
-Internal representations may differ, but authoritative exchange must conform to the applicable normative encoding rules and preserve one canonical spatial meaning.
+- select the first duplicate;
+- select the last duplicate;
+- merge values;
+- rely on parser-specific behavior.
 
----
-
-## 06.2 — Deterministic Serialization
-
-### Same Meaning, Deterministic Normative Encoding
-
-Within each normative encoding defined by the Specification, the same canonical spatial meaning must serialize deterministically according to that encoding’s rules.
-
-Where the Specification requires one unique canonical serialization, conforming implementations must reproduce that form exactly.
-
-Where multiple normative encodings are permitted, each may remain distinct so long as none creates a competing canonical meaning.
+Canonical input must be unambiguous.
 
 ---
 
-## 06.3 — Deterministic Parsing
+## Unknown Fields
 
-### Canonical Input Must Be Interpreted Identically
+Unknown or prohibited fields shall be handled according to the governed format rules.
 
-Independent conforming implementations must parse the same valid normative serialized input to the same authoritative Survey meaning.
+For the current canonical format, they shall not be silently ignored where doing so would permit undeclared extension behavior inside canonical interchange.
 
-Parsing must not depend on:
+Future extension rules require explicit governance.
 
-- undocumented defaults;
+---
+
+## Text and Unicode
+
+Canonical representation uses:
+
+```text
+UTF-8
+```
+
+without a BOM.
+
+Where strings occur, the required Unicode normalization and escaping rules apply.
+
+Canonical bytes shall not depend on:
+
+- platform locale;
+- preferred newline format;
+- pretty printer;
+- JSON library defaults;
+- arbitrary escaping style.
+
+---
+
+## Compact Canonical Form
+
+Canonical FSF-CJSON-1.0 contains no insignificant presentation whitespace.
+
+Pretty-printed JSON may be useful for:
+
+- documentation;
+- debugging;
+- UI;
+- logs.
+
+It is not canonical interchange unless it happens to match the exact governed canonical bytes.
+
+---
+
+## Deterministic Parsing
+
+The same valid FSF-CJSON-1.0 bytes must parse to:
+
+```text
+the same canonical object
+the same mathematical meaning
+the same spatial meaning
+```
+
+Parsing shall not depend on:
+
 - locale;
-- implementation-specific field interpretation;
+- hidden registry;
 - database state;
-- hidden context.
+- parser preference;
+- implementation defaults;
+- user identity;
+- external mutable state.
 
 ---
 
-## 06.4 — Noncanonical Representation Handling
+## Canonical Byte Equality
 
-### Valid Alternatives Must Normalize
+For supported normalized objects:
 
-Where the Specification permits valid non-normative or alternate representations, conforming implementations must classify and normalize or resolve them deterministically according to the governing rules.
+```text
+same canonical object
+    ↓
+same FSF-CJSON-1.0 bytes
+```
 
-Equivalent alternate forms may be accepted for convenience, but they do not acquire normative authority merely because they represent the same spatial meaning.
+This is stronger than semantic equivalence.
 
----
-
-## 06.5 — Field and Encoding Integrity
-
-### Encoding Must Preserve Meaning
-
-Required fields, ordering rules, delimiters, nesting, identifiers, precision markers, and other encoding elements defined by each applicable normative encoding must be interpreted consistently.
-
-Omission, duplication, malformed encoding, or conflicting values must be handled according to governing validation rules rather than implementation-specific guesswork.
+If two serializers produce semantically equivalent but byte-different output where one canonical encoding is required, at least one is nonconforming.
 
 ---
 
-## 06.6 — Precision Preservation
+## Round-Trip Compatibility
 
-### Serialization Must Not Silently Lose Canonical Precision
+Canonical round-trip behavior is:
 
-Normative interchange must preserve the complete canonical precision required by the serialized Survey expression.
+```text
+canonical object
+    ↓ serialize
+canonical bytes
+    ↓ parse
+same canonical object
+    ↓ serialize
+same canonical bytes
+```
 
-The source prohibits treating any of the following as normatively equivalent authoritative interchange unless the transformation is mathematically lossless:
+Round-trip proof must preserve both meaning and canonical representation.
 
-- truncation;
-- rounding;
+---
+
+## Valid Noncanonical Input
+
+An implementation may support convenience input beyond canonical FSF-CJSON-1.0 only where the governing profile permits it.
+
+Such input must remain distinguishable as:
+
+```text
+VALID NONCANONICAL
+```
+
+until normalized.
+
+Arbitrary JSON that can be interpreted as equivalent does not automatically become canonical input.
+
+---
+
+## Precision Preservation
+
+Canonical serialization preserves exact mathematical meaning.
+
+It shall not use:
+
+- rounded decimals;
+- binary floating substitution;
+- truncated coordinates;
+- reduced precision;
 - lossy compression;
-- reduced numeric precision;
-- other precision loss.
+- approximate geometry.
+
+Lossy representation belongs outside canonical interchange.
 
 ---
 
-## 06.7 — Round-Trip Compatibility
+## Cross-Implementation Exchange
 
-### Serialize, Parse, and Preserve Meaning
+FSF-CJSON-1.0 must be independently usable.
 
-A normative Survey expression serialized by one conforming implementation and parsed by another must preserve identical canonical meaning.
+Canonical exchange shall not require:
 
-Where a unique canonical representation is required, the round-trip result must reproduce that representation exactly.
-
-Where multiple governed normative encodings are permitted, round-trip compatibility must preserve the same canonical meaning while respecting the rules of the encoding used.
-
----
-
-## 06.8 — Cross-Implementation Exchange
-
-### Interchange Must Not Require Shared Internals
-
-Normatively encoded Survey data must be independently exchangeable across conforming implementations without dependence on:
-
-- proprietary internal structures;
+- proprietary object models;
 - private schema extensions;
 - hidden registries;
-- inaccessible services.
+- inaccessible services;
+- shared codebase;
+- favored software vendor.
 
-Compatibility must arise from the published Specification and conformance rules.
+Compatibility arises from the published Specification.
 
 ---
 
-## 06.9 — Specification Identity
+## Format Identity
 
-### Serialized Meaning Must Identify Its Governing Standard
+Current canonical format identity:
 
-Where required by the Specification, normative serialized data must carry or be unambiguously associated with sufficient:
+```text
+FSF-CJSON-1.0
+```
 
-- Specification identity;
+A serialization conformance claim should identify it explicitly.
+
+The final top-level FSF Specification identifier remains open.
+
+Format identity identifies the governing representation.
+
+It does not become spatial identity.
+
+---
+
+## Unknown and Unsupported Forms
+
+Unknown, malformed, unsupported, or incompatible serialization shall not be silently reinterpreted as valid canonical input.
+
+Depending on future profile/version rules, it may be classified as:
+
+```text
+INVALID
+UNSUPPORTED
+INCOMPATIBLE VERSION
+```
+
+The complete machine-readable error taxonomy remains open.
+
+---
+
+## Future-Encoding Boundary
+
+FSF-CJSON-1.0 is the current candidate canonical representation.
+
+That does not mean:
+
+```text
+all future FSF encodings are already normative
+```
+
+A future normative format would require an explicit Specification decision defining:
+
+- its role;
+- canonical status;
+- losslessness requirements;
+- equivalence relationship;
 - version identity;
-- encoding identity
+- compatibility rules;
+- precedence relative to existing formats.
 
-to determine the applicable canonical interpretation rules.
-
-The source explicitly states that such identity identifies the governing standard and does **not** become part of the spatial identity of the place being described.
-
----
-
-## 06.10 — Unknown and Unsupported Forms
-
-### Unsupported Serialization Must Fail Clearly
-
-A conforming implementation must not silently reinterpret an unknown, unsupported, malformed, or incompatible normative encoding as valid canonical Survey input.
-
-Unsupported forms must be rejected or classified according to governing validation and version-compatibility rules.
+Conformance shall not invent that policy.
 
 ---
 
-## 06.11 — Canonical Byte or Text Equality
+## Reference Vector Interchange Proof
 
-### Representation Equality Depends on the Specification
+Serialization vectors should test:
 
-Where the Specification defines a unique canonical:
+```text
+canonical CRPC objects
+canonical Point objects
+canonical Segment objects
+canonical SCPE objects
+invalid duplicate keys
+invalid unknown fields
+invalid exact-value forms
+noncanonical equivalent input where permitted
+canonical key order
+canonical string behavior
+canonical byte output
+round-trip reproduction
+cross-implementation byte equality
+```
 
-- byte sequence;
-- text form;
-- other normative serialized representation
+Reference Vectors demonstrate format behavior already defined by the Specification.
 
-conforming implementations must reproduce that representation exactly.
-
-Where canonical mathematical meaning is normative across more than one governed encoding, representational equivalence must be determined through the semantic-equivalence and normalization rules defined by the Specification rather than superficial byte or formatting comparison.
-
----
-
-## 06.12 — Serialization Failure
-
-### Interchange Disagreement Is a Conformance Issue
-
-If conforming implementations cannot consistently:
-
-- exchange;
-- parse;
-- interpret;
-- normalize where required;
-- reproduce the obligations of an applicable normative encoding
-
-the disagreement must be treated as a conformance, implementation, or Specification issue.
-
-The source explicitly states that proprietary convention or implementation preference must not resolve disagreement in normative interchange or canonical spatial meaning.
+They do not replace it.
 
 ---
 
-## Established by Requirements
+## Serialization Failure
 
-The source states that the Requirements framework already establishes:
+Examples of Conformance failure include:
 
-- deterministic normative serialization and interchange;
-- permission for one canonical serialization or multiple explicitly governed lossless normative encodings;
-- deterministic semantic equivalence across authoritative forms;
-- one mathematical meaning across durable representations;
-- implementation independence;
-- exact canonical precision;
-- unambiguous exchange of authoritative Survey truth.
+```text
+valid canonical bytes rejected
+invalid canonical encoding accepted
+wrong CRPC meaning
+wrong geometry meaning
+incorrect key order
+precision loss
+normalization omitted
+different canonical bytes
+hidden implementation dependence
+proprietary extension required for interpretation
+```
 
-These constraints govern the eventual serialization model.
+Interchange disagreement is evidence of:
+
+- implementation defect;
+- fixture defect;
+- Specification ambiguity;
+- profile/version mismatch.
+
+It is not resolved through implementation preference.
 
 ---
 
 ## Requirements Basis
 
-The source derives this section especially from:
+This section remains derived especially from:
 
 ```text
 #30
@@ -256,124 +516,97 @@ The source derives this section especially from:
 
 These Findings remain authoritative within the Requirements Framework.
 
-This Conformance section applies them; it does not replace them.
+Conformance applies them.
+
+It does not replace them.
 
 ---
 
-## Still Open in Conformance
+## What Changed From the Previous Page
 
-The source leaves the following unresolved until the Specification is sufficiently complete:
+The previous page correctly established:
 
-- whether authoritative interchange uses one canonical serialization or multiple governed normative encodings;
-- exact format or formats;
-- field ordering;
-- byte-level canonicalization rules where applicable;
-- schema language;
-- text encoding;
-- semantic-equivalence procedure;
-- normalization procedure;
-- round-trip tests;
-- compatibility fixtures;
-- machine-readable error codes;
-- formal interchange test suite.
+- normative interchange;
+- deterministic serialization;
+- deterministic parsing;
+- normalization of permitted alternatives;
+- field integrity;
+- precision preservation;
+- round-trip behavior;
+- cross-implementation exchange;
+- identity/version association;
+- clear handling of unsupported forms;
+- exact representation equality where uniquely governed.
 
-These items should remain open until formally resolved.
+Those principles remain.
+
+The major change is that the Specification has now selected one concrete format for the solved core.
+
+Previously:
+
+```text
+serialization model
+    -> architecture defined
+format count and byte rules
+    -> open
+```
+
+Now:
+
+```text
+FSF-CJSON-1.0
+    -> current candidate canonical format
+    -> directly testable
+```
+
+---
+
+## Still Open
+
+The remaining serialization-related Conformance work includes:
+
+```text
+final top-level FSF Specification identifier
+full cross-version compatibility syntax
+future normative encoding precedence
+machine-readable serialization error identifiers
+formal interchange test identifiers
+governance for future additional normative encodings
+```
 
 ---
 
 ## Architectural Boundary
 
-The source states:
-
 > **Formats may differ internally and, where governed by the Specification, normatively. They may not disagree about canonical spatial meaning or create competing authoritative truths.**
 
-This is the defining boundary of Conformance Section 06.
-
----
-
-## Navigation
-
-The source page links to:
-
-```text
-/theatlas/foundational-survey-fabric/conformance/05-exactness-requirements/
-```
-
-```text
-/theatlas/foundational-survey-fabric/requirements/
-```
-
-```text
-/theatlas/foundational-survey-fabric/specification/
-```
-
-```text
-/theatlas/foundational-survey-fabric/conformance/
-```
-
-These provide navigation to Conformance 05, the Requirements Framework, the Specification, and the Conformance Index.
-
----
-
-## Metadata Identity
-
-The source page includes:
-
-```text
-Title: Serialization Compatibility | Foundational Survey Fabric Conformance | BitPangea
-Description: Serialization Compatibility — Conformance Section 06 for the BitPangea Foundational Survey Fabric.
-Canonical: https://bitpangea.com/theatlas/foundational-survey-fabric/conformance/06-serialization-compatibility/
-Theme Color: #00c8d7
-Robots: index,follow
-OG Type: website
-```
-
-These values should remain aligned with the page.
-
----
-
-## Repository Guidance
-
-When maintaining this directory:
-
-1. preserve the title **Serialization Compatibility**;
-2. preserve **Conformance Section 06 · Canonical Interchange Compatibility**;
-3. preserve the canonical path `/theatlas/foundational-survey-fabric/conformance/06-serialization-compatibility/`;
-4. preserve **Implement however you like. Exchange one spatial truth.**
-5. preserve the normative interchange requirement;
-6. preserve deterministic serialization within each governed normative encoding;
-7. preserve deterministic parsing;
-8. preserve deterministic normalization of permitted noncanonical alternatives;
-9. preserve field and encoding integrity;
-10. preserve canonical precision through interchange;
-11. preserve round-trip compatibility;
-12. preserve cross-implementation exchange without shared proprietary internals;
-13. preserve Specification, version, and encoding identity where required;
-14. preserve clear failure of unknown or unsupported forms;
-15. preserve the distinction between exact representation equality and semantic equivalence across governed encodings;
-16. preserve the rule that serialization disagreement is a conformance, implementation, or Specification issue;
-17. preserve the Requirements basis Findings listed by the page;
-18. preserve the open status of serialization count, formats, field ordering, byte-level rules, schema language, text encoding, semantic equivalence, normalization procedure, fixtures, errors, and test suite;
-19. preserve the Architectural Boundary exactly as stated;
-20. preserve `index,follow` unless the publication model is intentionally revised;
-21. keep canonical, Open Graph, description, theme-color, favicon, framework, and navigation references aligned with the page;
-22. do not silently reinterpret unsupported serialization as valid canonical input;
-23. do not permit proprietary interchange conventions to override published normative rules;
-24. do not allow normative encoding differences to create competing canonical spatial meaning.
+This remains the defining boundary of Conformance Section 06.
 
 ---
 
 ## Status
 
-**Foundational Survey Fabric**
+```text
+FOUNDATIONAL SURVEY FABRIC — CONFORMANCE
 
-**Conformance**
+SECTION 06 — SERIALIZATION COMPATIBILITY
 
-**Section 06 — Serialization Compatibility**
+FSF-CJSON-1.0 — CURRENT CANDIDATE CANONICAL FORMAT
+CRPC STRUCTURED ENCODING — REQUIRED
+VALIDATE → NORMALIZE → SERIALIZE — REQUIRED
+DETERMINISTIC PARSING — REQUIRED
+DETERMINISTIC KEY ORDER — REQUIRED
+DUPLICATE KEYS — INVALID
+GOVERNED UNKNOWN FIELDS — REQUIRED
+UTF-8 CANONICAL BYTES — REQUIRED
+ROUND-TRIP REPRODUCTION — REQUIRED
+CROSS-IMPLEMENTATION BYTE EQUALITY — REQUIRED
 
-**Canonical Interchange Compatibility**
-
-**Final Serialization Model and Formal Interchange Test Suite Remain Open**
+TOP-LEVEL FSF SPECIFICATION IDENTITY — OPEN
+CROSS-VERSION COMPATIBILITY SYNTAX — OPEN
+FUTURE NORMATIVE ENCODING GOVERNANCE — OPEN
+CANONICAL ADOPTION — NOT YET PERFORMED
+```
 
 ---
 
