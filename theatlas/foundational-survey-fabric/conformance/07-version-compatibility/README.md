@@ -3,16 +3,18 @@
 ## Foundational Survey Fabric · Conformance Section 07
 
 **The Atlas · The Architecture · Foundational Survey Fabric · Conformance**  
-**Section: 07 — Version Compatibility**  
-**Scope: Specification Evolution Compatibility**
+**Section:** 07 — Version Compatibility  
+**Scope:** Specification Evolution Compatibility  
+**Status:** Candidate Compatibility Baseline Defined  
+**Canonical Adoption:** Not yet performed
 
 This directory contains **Conformance Section 07 — Version Compatibility** for the BitPangea **Foundational Survey Fabric**.
 
-The source page defines the section as:
+The governing statement remains:
 
 > **The conformance rules for determining whether implementations, normative encodings, durable representations, and Specifications remain compatible as the governing Survey standard evolves.**
 
-Its governing principle is:
+Its governing principle remains:
 
 > **Version the standard. Do not version the place.**
 
@@ -30,230 +32,395 @@ Repository path:
 /theatlas/foundational-survey-fabric/conformance/07-version-compatibility/index.html
 ```
 
-Recommended directory README path:
+README path:
 
 ```text
 /theatlas/foundational-survey-fabric/conformance/07-version-compatibility/README.md
-```
-
-The source page is publicly indexable:
-
-```text
-index,follow
 ```
 
 ---
 
 ## Purpose
 
-**Version Compatibility** establishes how a conforming implementation proves that it applies the correct governing Survey specification and preserves established canonical spatial meaning across compatible specification evolution.
+Version Compatibility defines the continuity rules that future FSF versions, profiles, and governed representations must satisfy.
 
-The source allows the standard to acquire:
+The central rule is:
 
-- new versions;
-- clarifications;
-- conformance materials;
-- encodings;
-- optional capabilities.
+```text
+the standard may evolve
+the place may not
+```
 
-But established canonical place must not be renumbered, relocated, reinterpreted, or otherwise altered merely because the specification document changes.
+A compatible change may expand capability.
 
----
-
-## 07.1 — Governing Version Identification
-
-### The Applicable Standard Must Be Explicit
-
-A conforming implementation must identify the governing Foundational Survey Fabric Specification version or compatibility identity applicable to:
-
-- the canonical operation;
-- normative encoding or interchange rule;
-- conformance claim being evaluated.
-
-Version ambiguity must not be permitted to alter authoritative interpretation.
+It may not mutate established canonical meaning.
 
 ---
 
-## 07.2 — Compatible Evolution
+## Candidate Compatibility Baseline
 
-### New Versions May Extend Without Moving Place
+The current solved candidate profile provides concrete invariants future compatible evolution must preserve:
 
-A later compatible Specification version may:
+```text
+CRPC exact meaning
+canonical frame meaning
+Point meaning
+Segment meaning
+SCPE meaning
+exact predicate results
+normalization behavior
+ECEM precision semantics
+FSF-CJSON-1.0 meaning and byte rules
+```
 
-- clarify rules;
-- improve conformance material;
-- add optional capabilities;
-- introduce additional durable representations.
-
-Such evolution must preserve all previously established canonical spatial meaning.
-
----
-
-## 07.3 — Spatial Meaning Preservation
-
-### Established Canonical References Must Remain Stable
-
-A compatible version must not:
-
-- renumber;
-- relocate;
-- reinterpret;
-- reuse;
-- otherwise change
-
-the canonical spatial meaning of an established Survey reference.
-
-An implementation applying a newer version must continue to resolve previously established canonical references to the same authoritative place.
+These invariants make version compatibility testable.
 
 ---
 
-## 07.4 — Cross-Version Result Equivalence
+## Governing Version and Profile Identification
 
-### Compatible Versions Preserve Canonical Results
+A formal conformance claim should identify:
 
-Where an operation and its canonical semantics remain unchanged across compatible Specification versions, identical canonical inputs must continue to produce the same authoritative canonical meaning.
+```text
+Specification version or compatibility identity
+conformance profile
+normative encoding identity
+```
 
-Where the Specification requires one unique canonical representation, that representation must also remain identical.
+where those identifiers are formally defined.
 
-A version change must not silently alter canonical output under an unchanged rule set.
+For current serialization claims:
 
----
+```text
+FSF-CJSON-1.0
+```
 
-## 07.5 — Normative Encoding Version Compatibility
+should be identified explicitly.
 
-### Versioned Representations Must Preserve Meaning
+The final top-level FSF Specification identifier syntax remains open.
 
-Where normative encodings or interchange representations evolve, conforming implementations must determine whether a representation:
-
-- is compatible with the governing Specification;
-- is compatible with the encoding version;
-- can be interpreted without loss or reinterpretation of canonical meaning.
-
-Compatible encoding evolution may:
-
-- change representation;
-- add a new governed lossless encoding;
-- revise an existing encoding
-
-while preserving the same canonical mathematical truth.
-
-No encoding version may create a competing spatial meaning.
+Conformance must not invent it.
 
 ---
 
-## 07.6 — Unsupported Version Handling
+## Compatible Evolution
 
-### Do Not Guess Across Unknown Versions
+A compatible future version may:
 
-An implementation must not silently interpret an unknown or unsupported:
+- clarify text;
+- improve Conformance material;
+- add Reference Vectors;
+- add optional capability;
+- expand exact finite representational capability;
+- introduce a new governed representation;
+- add a future geometry or operation after Specification adoption.
 
-- Specification version;
-- normative-encoding version
-
-according to a different version’s rules.
-
-Unsupported or indeterminate versions must be rejected or explicitly classified according to the governing Conformance rules.
-
----
-
-## 07.7 — Incompatible Change Boundary
-
-### Spatial Mutation Is Not Ordinary Compatibility
-
-A proposed change that would alter established canonical spatial meaning must not be treated as ordinary compatible specification evolution.
-
-The source states that such a change belongs to a fundamentally different class of architectural or constitutional decision.
-
-It must not be disguised as routine version evolution.
-
-The page further states:
-
-> **Governance over the standard does not create authority to reinterpret protected immutable spatial truth.**
+But it must preserve old canonical meaning.
 
 ---
 
-## 07.8 — Backward Compatibility
+## CRPC Meaning Preservation
 
-### Previously Valid Canonical Truth Must Remain Interpretable
+Previously valid CRPC values must retain identical exact mathematical meaning.
 
-A compatible implementation of a later Specification version must remain able to interpret previously valid canonical references and expressions whose meaning was established under earlier compatible versions, subject to governing compatibility rules.
+A compatible extension may make more exact values representable.
 
-Historical canonical truth must not become ambiguous merely because the standard gains new capability.
+It may not reinterpret existing values.
 
----
+Conceptually:
 
-## 07.9 — Forward Compatibility
-
-### Unknown Capability Must Not Be Invented
-
-An implementation encountering a future extension or optional capability it does not understand must not fabricate canonical interpretation for that unsupported feature.
-
-Forward compatibility must:
-
-- preserve known canonical meaning;
-- clearly identify unsupported capability.
+```text
+old valid value
+    -> remains valid
+    -> retains same exact meaning
+```
 
 ---
 
-## 07.10 — Conformance Claim Version Scope
+## ECEM Compatibility
 
-### Compatibility Claims Must Name Their Basis
+ECEM requires:
 
-Every formal conformance claim must identify:
+> **A canonical Point is already exact.**
 
-- Specification version;
-- compatibility identity;
-- normative encoding or interchange version where applicable;
-- conformance profile used for testing.
+Compatible future evolution may expand the set of exactly representable Points.
 
-Compatibility must be demonstrable against a defined standard rather than asserted generically.
+It may not turn an established Point into:
 
----
+```text
+coarse Point
+parent Point
+uncertainty region
+rounded location
+different position
+```
 
-## 07.11 — Version Transition Testing
+Precision extension expands capability.
 
-### Compatibility Must Be Proven Across Change
-
-Conformance testing must ultimately include Reference Vectors and transition cases sufficient to demonstrate that compatible Specification evolution preserves:
-
-- established spatial meaning;
-- required canonical results.
-
-These tests can be established once the underlying mathematics are sufficiently complete to define them exactly.
-
-Version transition tests should expose unintended reinterpretation before a compatibility claim is accepted.
+It does not migrate place.
 
 ---
 
-## 07.12 — Version Compatibility Failure
+## Geometry Meaning Preservation
 
-### Meaning Drift Is a Conformance Failure
+Previously valid:
 
-If an implementation changes established canonical meaning solely because it applies a different supposedly compatible Specification version, that behavior constitutes a conformance failure.
+```text
+Point
+Segment
+SCPE
+```
 
-The source states:
+must retain their canonical meaning across compatible profiles.
 
-> **Compatibility requires continuity of canonical spatial truth, not merely successful parsing of a newer document or format.**
+Future geometry may be added only through explicit Specification governance.
+
+New geometry must not reinterpret old geometry.
 
 ---
 
-## Established by Requirements
+## Predicate and Normalization Stability
 
-The source states that the Requirements framework already establishes:
+Where rules remain inside a compatibility claim, previously governed results must remain stable.
 
-- canonical adoption, succession, amendment, or replacement of the standard only through valid BitPangea authority;
-- compatible Specification evolution may not mutate established spatial meaning;
-- version and Specification identity must remain explicit;
-- canonical meaning must persist across compatible versions and durable representations;
-- verification or implementation technology may evolve without becoming the source of canonical authority or changing Survey truth.
+That includes:
 
-These constraints govern this Conformance section.
+- Point equality;
+- Point ordering;
+- orientation;
+- incidence;
+- Segment intersection;
+- containment;
+- SCPE validity;
+- geometric equivalence;
+- canonical normalization.
+
+A supposedly compatible version may not silently change an old exact result.
+
+---
+
+## FSF-CJSON-1.0 Compatibility
+
+The current candidate canonical machine representation is:
+
+```text
+FSF-CJSON-1.0
+```
+
+Any later profile claiming continued FSF-CJSON-1.0 compatibility must preserve the governed format semantics for previously valid objects.
+
+Where the format continues unchanged:
+
+```text
+same canonical object
+    -> same canonical bytes
+```
+
+A future normative format requires its own explicit Specification decision.
+
+---
+
+## Cross-Version Result Equivalence
+
+For unchanged canonical semantics:
+
+```text
+same canonical input
++
+compatible old profile
+    -> result R
+
+same canonical input
++
+compatible new profile
+    -> same result R
+```
+
+If the governing canonical representation is also unchanged, that representation must remain identical.
+
+---
+
+## Backward Compatibility
+
+A compatible later implementation must continue to understand previously valid canonical truth within the declared compatibility scope.
+
+Older valid expressions shall not become ambiguous merely because newer capability exists.
+
+---
+
+## Forward Compatibility
+
+An older implementation encountering unknown future capability shall not guess.
+
+It should preserve what it knows and clearly identify what it does not.
+
+Unknown future behavior may be:
+
+```text
+unsupported
+unknown profile
+unknown type
+unknown encoding
+```
+
+It shall not be fabricated as canonical meaning.
+
+---
+
+## Unsupported Version Handling
+
+An implementation must not apply the wrong rules to an unknown version.
+
+It shall not silently interpret:
+
+```text
+unknown Specification profile
+unknown encoding version
+incompatible profile
+```
+
+under a different profile’s semantics.
+
+---
+
+## Open-Gate Compatibility Boundary
+
+Compatibility applies only to already-defined canonical behavior.
+
+Current open examples include:
+
+```text
+general Boolean / composite output closure
+general union result closure
+general intersection-result closure
+general difference-result closure
+arbitrary exact rotation
+general exact distance scalar
+general path / boundary-length scalar
+future geometry not yet selected
+```
+
+A future version may resolve these questions.
+
+That does not imply that earlier versions already possessed canonical behavior for them.
+
+---
+
+## Incompatible Change Boundary
+
+A change is not ordinary compatible evolution if it would:
+
+- move established place;
+- change established coordinate meaning;
+- reinterpret Point meaning;
+- change old SCPE geometry;
+- alter old exact predicate truth;
+- change old normalization meaning;
+- reinterpret old canonical bytes;
+- reuse a canonical reference for different meaning.
+
+Such a change requires an explicitly different decision class.
+
+It must not be mislabeled as compatibility.
+
+---
+
+## Conformance Claim Version Scope
+
+A conformance claim should be scoped to a defined baseline.
+
+For example:
+
+```text
+FSF candidate profile
++
+Conformance profile
++
+FSF-CJSON-1.0
+```
+
+Generic claims such as:
+
+```text
+FSF compatible
+```
+
+are insufficient once multiple versions or profiles exist unless the applicable identity can be resolved unambiguously.
+
+---
+
+## Version Transition Testing
+
+Future compatibility transitions should be tested through exact fixtures.
+
+Transition vectors should prove continuity of:
+
+```text
+CRPC meaning
+Point meaning
+geometry meaning
+validity
+normalization
+predicate results
+ECEM behavior
+serialization meaning
+canonical bytes where applicable
+```
+
+Transition testing exists to catch meaning drift before compatibility is declared.
+
+---
+
+## Compatibility Matrix
+
+As multiple versions, profiles, or formats emerge, their relationships should be declared explicitly.
+
+A future compatibility matrix may need to express relationships such as:
+
+```text
+compatible
+backward compatible
+forward readable
+unsupported
+requires migration
+incompatible
+```
+
+The final categories and machine-readable syntax remain open.
+
+---
+
+## Deprecation Boundary
+
+Deprecation may discourage future use.
+
+It does not erase historical canonical meaning.
+
+If an older canonical representation becomes deprecated, its previously established meaning remains part of the historical Survey record unless a different constitutional decision explicitly governs otherwise.
+
+---
+
+## Version Compatibility Failure
+
+Examples of failure include:
+
+```text
+old Point moves under new compatible version
+old CRPC value changes meaning
+old exact predicate result changes silently
+old canonical geometry normalizes differently without incompatible classification
+FSF-CJSON-1.0 bytes change for an unchanged object under unchanged rules
+unknown future type is guessed
+wrong version rules are silently applied
+```
+
+Meaning drift is not compatibility.
 
 ---
 
 ## Requirements Basis
 
-The source derives this section especially from:
+This section remains derived especially from:
 
 ```text
 #16–#17
@@ -265,122 +432,106 @@ The source derives this section especially from:
 
 These Findings remain authoritative within the Requirements Framework.
 
-This Conformance section applies them; it does not replace them.
+Conformance applies them.
+
+It does not replace them.
 
 ---
 
-## Still Open in Conformance
+## What Changed From the Previous Page
 
-The source leaves the following unresolved until the Specification and Conformance model are sufficiently complete:
+The prior page already correctly established:
 
-- exact Specification version identifier format;
-- exact normative-encoding version identifier format;
-- compatibility matrix;
-- transition rules;
-- backward-compatibility guarantees;
-- forward-compatibility behavior;
-- deprecation policy;
-- eventual transition Reference Vectors;
-- machine-readable compatibility declarations;
-- formal classification of incompatible change.
+- explicit version identity;
+- compatible evolution without moving place;
+- stable canonical references;
+- cross-version result equivalence;
+- encoding compatibility;
+- unsupported-version rejection;
+- incompatible-change boundary;
+- backward compatibility;
+- forward compatibility without invention;
+- version-scoped claims;
+- transition testing;
+- meaning drift as failure.
 
-These items should remain open until formally resolved.
+Those principles remain.
+
+The main change is that the solved candidate profile now provides concrete invariants that future compatibility can test.
+
+Previously:
+
+```text
+compatibility doctrine
+    -> defined
+concrete candidate baseline
+    -> largely abstract
+```
+
+Now:
+
+```text
+candidate core semantics
+    -> compatibility baseline
+
+FSF-CJSON-1.0
+    -> concrete serialization identity
+
+future compatibility mechanics
+    -> still open
+```
+
+---
+
+## Still Open
+
+The remaining Version Compatibility design work includes:
+
+```text
+final top-level FSF Specification version identifier
+machine-readable compatibility declarations
+complete compatibility matrix
+transition classification syntax
+future encoding-version policy
+deprecation policy
+final transition Reference Vector inventory
+compatibility rules for future Specification extensions
+```
 
 ---
 
 ## Architectural Boundary
 
-The source states:
-
 > **The Specification may evolve through valid authority. Established spatial meaning may not be rewritten by ordinary versioning, implementation preference, or conformance declaration.**
 
-This is the defining boundary of Conformance Section 07.
-
----
-
-## Navigation
-
-The source page links to:
-
-```text
-/theatlas/foundational-survey-fabric/conformance/06-serialization-compatibility/
-```
-
-```text
-/theatlas/foundational-survey-fabric/requirements/
-```
-
-```text
-/theatlas/foundational-survey-fabric/specification/
-```
-
-```text
-/theatlas/foundational-survey-fabric/conformance/
-```
-
-These provide navigation to Conformance 06, the Requirements Framework, the Specification, and the Conformance Index.
-
----
-
-## Metadata Identity
-
-The source page includes:
-
-```text
-Title: Version Compatibility | Foundational Survey Fabric Conformance | BitPangea
-Description: Version Compatibility — Conformance Section 07 for the BitPangea Foundational Survey Fabric.
-Canonical: https://bitpangea.com/theatlas/foundational-survey-fabric/conformance/07-version-compatibility/
-Theme Color: #00c8d7
-Robots: index,follow
-OG Type: website
-```
-
-These values should remain aligned with the page.
-
----
-
-## Repository Guidance
-
-When maintaining this directory:
-
-1. preserve the title **Version Compatibility**;
-2. preserve **Conformance Section 07 · Specification Evolution Compatibility**;
-3. preserve the canonical path `/theatlas/foundational-survey-fabric/conformance/07-version-compatibility/`;
-4. preserve **Version the standard. Do not version the place.**
-5. preserve explicit governing version identification;
-6. preserve compatible evolution without mutation of established spatial meaning;
-7. preserve stable canonical references across compatible versions;
-8. preserve cross-version result equivalence;
-9. preserve normative encoding version compatibility without competing spatial meaning;
-10. preserve clear rejection or classification of unsupported versions;
-11. preserve the incompatible-change boundary;
-12. preserve backward compatibility for previously established canonical truth;
-13. preserve forward compatibility without inventing unsupported meaning;
-14. preserve version-scoped conformance claims;
-15. preserve future transition testing through exact Reference Vectors;
-16. preserve the rule that meaning drift across supposedly compatible versions is a conformance failure;
-17. preserve the Requirements basis Findings listed by the page;
-18. preserve the open status of identifier formats, compatibility matrix, transition rules, backward/forward guarantees, deprecation policy, transition vectors, machine-readable declarations, and incompatible-change classification;
-19. preserve the Architectural Boundary exactly as stated;
-20. preserve `index,follow` unless the publication model is intentionally revised;
-21. keep canonical, Open Graph, description, theme-color, favicon, framework, and navigation references aligned with the page;
-22. do not allow ordinary versioning to renumber, relocate, reinterpret, reuse, or otherwise mutate established canonical place;
-23. do not allow unsupported versions to be silently interpreted under different rules;
-24. do not allow implementation preference or conformance declaration to rewrite established spatial meaning.
+This remains the defining boundary of Conformance Section 07.
 
 ---
 
 ## Status
 
-**Foundational Survey Fabric**
+```text
+FOUNDATIONAL SURVEY FABRIC — CONFORMANCE
 
-**Conformance**
+SECTION 07 — VERSION COMPATIBILITY
 
-**Section 07 — Version Compatibility**
+CRPC MEANING PRESERVATION — REQUIRED
+ECEM NO-MIGRATION SEMANTICS — REQUIRED
+POINT / SEGMENT / SCPE MEANING PRESERVATION — REQUIRED
+EXACT RESULT CONTINUITY — REQUIRED
+NORMALIZATION CONTINUITY — REQUIRED
+FSF-CJSON-1.0 COMPATIBILITY — GOVERNED
+BACKWARD INTERPRETABILITY — REQUIRED
+UNKNOWN FUTURE CAPABILITY — MUST NOT BE INVENTED
+MEANING DRIFT — CONFORMANCE FAILURE
 
-**Specification Evolution Compatibility**
-
-**Compatibility Matrix and Transition Rules Remain Open**
+TOP-LEVEL VERSION IDENTIFIER — OPEN
+COMPATIBILITY MATRIX — OPEN
+TRANSITION DECLARATION SYNTAX — OPEN
+DEPRECATION POLICY — OPEN
+FUTURE FORMAT COMPATIBILITY RULES — OPEN
+CANONICAL ADOPTION — NOT YET PERFORMED
+```
 
 ---
 
