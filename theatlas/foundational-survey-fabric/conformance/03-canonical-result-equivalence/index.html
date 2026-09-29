@@ -96,10 +96,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 
 <div class="req-intro">
 <p>
-  <strong>Canonical Result Equivalence</strong> establishes the central reproducibility test of Foundational Survey Fabric conformance. If two independent implementations receive the same canonical input under the same governing Specification, the authoritative canonical meaning must be the same. Where the Specification requires a unique canonical representation, that representation must also agree exactly.
+  <strong>Canonical Result Equivalence</strong> establishes the central reproducibility test of Foundational Survey Fabric conformance. If two independent implementations receive the same valid canonical input under the same governing Specification profile, they shall reach the same authoritative canonical meaning.
 </p>
 <p>
-  Internal architecture may differ radically. Programming language, storage model, optimization strategy, caching, indexing, execution order, and implementation technology may all vary. None of those differences may alter canonical spatial truth.
+  The integrated Specification now defines enough of the candidate core to make that requirement directly executable for CRPC coordinates, canonical frame behavior, Point / Segment / SCPE geometry, exact predicates, validation, normalization, FSF-CJSON-1.0 serialization, and ECEM precision semantics.
+</p>
+<p>
+  Equivalence applies only to Specification-defined behavior. Conformance shall not invent comparison rules for mathematical capabilities whose canonical semantics or result forms remain open.
 </p>
 </div>
 
@@ -109,24 +112,41 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 </blockquote>
 
 <section class="spec-card">
+  <div class="spec-label">03.0 · Integrated Specification Standing</div>
+  <h2>Canonical Equivalence Is Now Executable for the Solved Core</h2>
+  <p>
+    Specification Sections 01–07 now provide deterministic candidate rules sufficient to compare independent implementations across the current Mandatory Core.
+  </p>
+  <p>
+    Conformance may therefore require exact agreement in validity, normalization, predicate outcomes, canonical geometry, and canonical FSF-CJSON-1.0 bytes wherever the governing Specification defines one unique result.
+  </p>
+</section>
+
+<section class="spec-card">
   <div class="spec-label">03.1 · Equivalence Requirement</div>
   <h2>Identical Canonical Inputs, One Authoritative Meaning</h2>
   <p>
-    Any two conforming implementations shall produce the same authoritative canonical meaning when given identical valid canonical inputs under the same applicable Specification. If the governing Specification requires one unique canonical representation for that result, conforming implementations shall produce that representation identically.
+    Any two conforming implementations shall produce the same authoritative canonical meaning when given identical valid canonical inputs under the same applicable Specification profile.
   </p>
   <p>
-    A disagreement in authoritative result indicates a conformance failure, a specification ambiguity, an implementation defect, or an unresolved incompatibility that must be identified rather than silently tolerated.
+    Where the governing Specification requires one unique canonical representation, normalized form, or canonical byte sequence for that result, conforming implementations shall produce that result identically.
+  </p>
+  <p>
+    A disagreement indicates a conformance failure, Specification ambiguity, implementation defect, incompatible profile/version, or an attempt to evaluate mathematics that remain outside the defined canonical scope.
   </p>
 </section>
 
 <section class="spec-card">
   <div class="spec-label">03.2 · Scope of Equivalence</div>
-  <h2>Equivalence Applies Wherever Canonical Truth Is Produced</h2>
+  <h2>Equivalence Applies Wherever the Specification Defines Canonical Truth</h2>
   <p>
-    Canonical Result Equivalence shall apply to every mandatory operation that produces authoritative Survey truth, including interpretation, normalization, validation, measurement, geometric predicates, composition, comparison, normative interchange, and other canonical outputs defined by the Specification.
+    Canonical Result Equivalence applies to every Mandatory Core capability that produces or classifies authoritative Survey truth.
   </p>
   <p>
-    Optional features may add capability, but where they claim canonical behavior they remain subject to the same equivalence requirement.
+    The current solved profile includes interpretation of CRPC values and canonical frame meaning; validation of Point, Segment, and SCPE geometry; exact predicate results; canonical normalization; ECEM precision behavior; and FSF-CJSON-1.0 machine interchange.
+  </p>
+  <p>
+    Open capabilities are outside canonical comparison until the Specification defines their exact semantics and result forms.
   </p>
 </section>
 
@@ -145,7 +165,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">03.4 · Exact Equivalence</div>
   <h2>Canonical Equality Is Exact</h2>
   <p>
-    Authoritative result equivalence shall be determined by the exact canonical rules of the Specification rather than tolerance bands, approximate numeric agreement, implementation-specific rounding, or “close enough” comparison.
+    Authoritative result equivalence shall be determined by the exact canonical rules of the Specification rather than tolerance bands, approximate numeric agreement, implementation-specific rounding, device precision, or “close enough” comparison.
   </p>
   <p>
     Where a result is canonical, equivalent means mathematically equivalent under the governing Survey rules.
@@ -153,57 +173,96 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">03.5 · Canonicalization Before Comparison</div>
-  <h2>Compare Meaning in Canonical Form</h2>
+  <div class="spec-label">03.5 · Validation Equivalence</div>
+  <h2>The Same Input Must Receive the Same Validity Judgment</h2>
   <p>
-    Where multiple valid representations can express the same canonical spatial meaning, conforming implementations shall apply the governing canonicalization and equivalence rules required by the Specification before comparing authoritative results.
+    Independent implementations shall classify the same input identically under the same Specification profile.
   </p>
   <p>
-    Result comparison shall distinguish permitted representational variation, including different governed normative encodings where allowed, from actual disagreement in canonical meaning.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">03.6 · Normative Interchange Equivalence</div>
-  <h2>Authoritative Exchange Must Preserve One Meaning</h2>
-  <p>
-    When an authoritative result is exchanged through a normative encoding, conforming implementations shall satisfy the exact interchange rules applicable to that encoding under the governing Specification.
+    For the current core, the required validity classes include:
+    <strong>canonical valid</strong>, <strong>valid noncanonical</strong>, and <strong>invalid</strong>.
   </p>
   <p>
-    If the Specification defines one canonical serialization, conforming implementations shall reproduce that representation exactly where required. If the Specification permits multiple explicitly governed lossless normative encodings, those different encodings may remain valid so long as they are deterministically recognizable as expressing the same canonical spatial meaning.
-  </p>
-  <p>
-    Internal or presentation formats remain implementation freedoms only where they map unambiguously to the governing normative interchange semantics.
+    An input shall not be canonical in one conforming implementation, valid noncanonical in another, and invalid in a third when all claim the same profile.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">03.7 · Validation Equivalence</div>
-  <h2>The Same Input Must Receive the Same Canonical Judgment</h2>
+  <div class="spec-label">03.6 · Canonicalization Equivalence</div>
+  <h2>Equivalent Meaning Must Normalize to One Form</h2>
   <p>
-    Independent implementations shall reach the same canonical validity judgment for the same input under the same Specification.
+    Valid equivalent representations shall normalize according to the deterministic rules of the governing Specification before authoritative result comparison.
   </p>
   <p>
-    An input shall not be canonical in one conforming implementation and invalid, ambiguous, or differently interpreted in another.
+    For the current core, this includes reduced CRPC values, lexicographically ordered Segment endpoints, and canonical SCPE normalization through exact redundant-collinear removal, counterclockwise traversal, lexicographically least start vertex, and omission of repeated terminal closure.
+  </p>
+  <p>
+    Conforming implementations shall satisfy:
+    <strong>N(N(G)) = N(G)</strong> and <strong>geom(N(G)) = geom(G)</strong> for supported normalized geometry.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">03.8 · Error Equivalence</div>
+  <div class="spec-label">03.7 · Predicate Equivalence</div>
+  <h2>Exact Geometry Questions Must Have the Same Answer</h2>
+  <p>
+    Independent implementations shall return identical authoritative outcomes for exact predicates within the current core.
+  </p>
+  <p>
+    These include Point equality and ordering, orientation, Point-on-Segment, Segment intersection classification, Point-on-boundary, Point-in-SCPE, polygon validity, connectedness, containment, and geometric equivalence where defined by the Specification.
+  </p>
+  <p>
+    No implementation may substitute epsilon geometry or tolerance-based coincidence for those exact outcomes.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">03.8 · Precision-Semantics Equivalence</div>
+  <h2>ECEM Must Mean the Same Thing Everywhere</h2>
+  <p>
+    Independent implementations shall interpret a canonical Point under the Exact Coordinate Extension Model as one exact Survey position.
+  </p>
+  <p>
+    No conforming implementation may reinterpret the same Point as a parent cell, coarse reference, uncertainty region, rounded location, or collection of finer descendants.
+  </p>
+  <p>
+    Compatible representational extension shall preserve previously valid Point meaning exactly.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">03.9 · Normative Interchange Equivalence</div>
+  <h2>FSF-CJSON-1.0 Must Produce the Same Canonical Bytes</h2>
+  <p>
+    For supported normalized Point, Segment, and SCPE geometry, independent implementations claiming FSF-CJSON-1.0 conformance shall produce identical canonical UTF-8 bytes from the same canonical geometry.
+  </p>
+  <p>
+    Deterministic comparison therefore includes structured CRPC encoding, required object-key order, semantic array order, prohibited duplicate keys, governed unknown-field behavior, NFC string normalization, and the other byte-level rules defined by Specification 06.
+  </p>
+  <p>
+    Internal or presentation formats may differ. Canonical FSF-CJSON-1.0 output may not.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">03.10 · Error Equivalence</div>
   <h2>Invalid Inputs Must Fail Consistently</h2>
   <p>
-    Where the Specification defines an input or operation as invalid, conforming implementations shall reject it consistently according to the applicable failure rules.
+    Where the Specification defines an input or result as invalid, conforming implementations shall reject it consistently.
   </p>
   <p>
-    Implementations may expose different human-readable diagnostics, but they shall not invent canonical meaning for an input that another conforming implementation correctly rejects.
+    Human-readable diagnostics may differ unless the governing test requires a specific canonical failure identifier. Canonical treatment shall not differ.
+  </p>
+  <p>
+    An implementation shall not invent canonical meaning for input another conforming implementation correctly rejects under the same profile.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">03.9 · Hidden-State Prohibition</div>
+  <div class="spec-label">03.11 · Hidden-State Prohibition</div>
   <h2>Equivalent Results Must Not Depend on Hidden Context</h2>
   <p>
-    Cache state, database sequence, randomization, user identity, ownership state, session context, wall-clock time, or other mutable implementation conditions shall not cause canonical results to differ.
+    Cache state, database sequence, randomization, user identity, ownership state, session context, wall-clock time, storage ordering, machine locale, or other mutable implementation conditions shall not cause canonical results to differ.
   </p>
   <p>
     Hidden state may improve performance. It may not participate in foundational spatial meaning.
@@ -211,52 +270,97 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">03.10 · Reference Vector Proof</div>
-  <h2>Equivalence Must Be Testable</h2>
+  <div class="spec-label">03.12 · Reference Vector Proof</div>
+  <h2>Equivalence Must Be Demonstrated, Not Assumed</h2>
   <p>
-    Canonical Result Equivalence shall ultimately be demonstrated through shared Reference Vectors containing defined canonical inputs and their required authoritative results once the formal mathematics are sufficiently complete to establish those vectors exactly.
+    Canonical Result Equivalence shall be demonstrated through shared Reference Vectors or equivalent executable fixtures containing defined inputs and required authoritative outcomes.
   </p>
   <p>
-    A conforming implementation shall reproduce the required canonical meaning exactly for every Mandatory Core vector applicable to its conformance claim, and shall reproduce an identical representation wherever the vector and governing Specification require one unique canonical form.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">03.11 · Cross-Implementation Testing</div>
-  <h2>Independent Implementations Should Be Compared Directly</h2>
-  <p>
-    Conformance testing should permit outputs from independent implementations to be compared directly after applying the governing canonicalization, semantic-equivalence, and normative-encoding rules.
+    The current solved core is sufficiently deterministic for such vectors to test validity classification, normalization, exact predicates, precision semantics, and canonical FSF-CJSON-1.0 output.
   </p>
   <p>
-    Cross-implementation disagreement is valuable evidence: it should expose ambiguity or defect rather than be concealed by implementation-specific tolerance.
+    A conforming implementation shall reproduce every applicable Mandatory Core vector exactly where the Specification defines an exact result.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">03.12 · Disagreement Handling</div>
+  <div class="spec-label">03.13 · Cross-Implementation Testing</div>
+  <h2>Independent Implementations Must Be Compared Directly</h2>
+  <p>
+    Conformance testing shall permit outputs from independent implementations to be compared directly after applying the governing validation, normalization, semantic-equivalence, and canonical serialization rules.
+  </p>
+  <p>
+    Cross-implementation disagreement is evidence to investigate. It shall not be concealed through tolerance, majority vote, implementation preference, or post-hoc output adjustment.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">03.14 · Comparison Order</div>
+  <h2>Compare the Right Thing at the Right Stage</h2>
+  <p>
+    Result comparison should proceed in the governing semantic order:
+  </p>
+  <p>
+    <strong>validate → normalize where permitted → evaluate canonical meaning → compare canonical result → compare canonical bytes where uniquely governed.</strong>
+  </p>
+  <p>
+    Byte comparison shall not replace semantic validation, and semantic equivalence shall not excuse a byte mismatch where FSF-CJSON-1.0 requires one exact canonical byte sequence.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">03.15 · Open-Gate Comparison Boundary</div>
+  <h2>No Equivalence Claim Without Defined Canonical Semantics</h2>
+  <p>
+    Conformance shall not require or accept canonical equivalence claims for mathematics that remain open in the Specification.
+  </p>
+  <p>
+    Current examples include general Boolean/composite output closure, arbitrary exact rotation, unresolved general distance and path-length scalar forms, and future geometry or operation result types not yet governed.
+  </p>
+  <p>
+    Two implementations agreeing on an experimental result does not make that result canonical.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">03.16 · Disagreement Handling</div>
   <h2>Conflict Must Be Resolved at the Correct Layer</h2>
   <p>
-    If independent implementations produce different authoritative results from the same canonical inputs, the disagreement shall be treated as a conformance or specification issue.
+    If independent implementations produce different authoritative results from the same canonical inputs, the disagreement shall be treated as a Conformance or Specification issue.
   </p>
   <p>
-    The correct response is to determine whether the Specification is ambiguous, one or more implementations are defective, or incompatible versions are being applied. Consensus or implementation preference shall not simply choose among conflicting mathematical answers.
+    The investigation shall determine whether the cause is an implementation defect, Specification ambiguity, incompatible profile/version, invalid test fixture, or evaluation of a capability whose canonical semantics remain open.
+  </p>
+  <p>
+    Consensus, majority output, implementation popularity, or institutional preference shall not simply choose among conflicting mathematical answers.
   </p>
 </section>
 
 <div class="status-grid">
   <div class="status-card">
-    <h3>Established by Requirements</h3>
+    <h3>Executable Equivalence Now Defined for the Core</h3>
     <p>
-      Finding #10 requires independent conforming implementations to derive the same canonical result meaning from identical inputs. Supporting requirements establish exact mathematics, deterministic canonicalization, normative serialization and interchange, exact equivalence, exact comparison, finite representation, hidden-state independence, and deterministic termination.
+      CRPC validity and normalization; canonical frame interpretation; Point / Segment / SCPE validity; exact core predicates; deterministic geometry normalization; ECEM Point meaning; canonical validity classes; FSF-CJSON-1.0 canonical bytes; hidden-state independence; exact cross-implementation comparison.
     </p>
   </div>
   <div class="status-card">
     <h3>Still Open in Conformance</h3>
     <p>
-      The exact comparison harness, eventual Reference Vector corpus, canonical meaning-comparison rules, encoding-specific output-diff rules where unique representations are required, error equivalence taxonomy, cross-version comparison rules, tolerance for noncanonical diagnostics, and formal procedure for resolving implementation disagreement remain to be defined after the Specification is sufficiently complete.
+      Final comparison-harness implementation; canonical test identifiers; complete error-code taxonomy; cross-version/profile comparison policy; noncanonical diagnostic comparison policy; formal disagreement-escalation procedure; and equivalence rules for Specification capabilities whose mathematics remain open.
     </p>
   </div>
 </div>
+
+<section class="spec-card">
+  <div class="spec-label">Conformance Integration Standing</div>
+  <h2>Result Equivalence Has Moved From Principle to Executable Proof</h2>
+  <p>
+    The original section correctly required independent implementations to produce one authoritative result. The integrated Specification now provides enough exact candidate behavior to make that requirement executable across the solved Mandatory Core.
+  </p>
+  <p>
+    This section does not declare equivalence rules for open mathematics. It establishes exact comparison only where the Specification already defines canonical truth.
+  </p>
+</section>
 
 <section class="spec-card">
   <div class="spec-label">Requirements Basis</div>
@@ -286,7 +390,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <a href="/theatlas/foundational-survey-fabric/conformance/">Conformance Index</a>
 </div>
 
-<div class="note">Foundational Survey Fabric · Conformance 03 · Canonical Result Equivalence</div>
+<div class="note">Foundational Survey Fabric · Conformance 03 · Canonical Result Equivalence · Integrated Specification Core</div>
 
 </article>
 </main>
