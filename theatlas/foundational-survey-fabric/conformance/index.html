@@ -235,10 +235,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 
 <div class="req-intro">
 <p>
-  <strong>Foundational Survey Fabric Conformance</strong> defines how an implementation demonstrates compatibility with the governing Specification. It translates requirements and formal mathematics into observable proof: canonical results, validation behavior, exactness, serialization compatibility, version compatibility, independent reproducibility, failure conditions, and formal declaration.
+  <strong>Foundational Survey Fabric Conformance</strong> defines how an implementation demonstrates compatibility with the governing Specification. It translates Requirements and formal mathematics into observable proof: canonical results, validation behavior, exactness, serialization compatibility, version compatibility, independent reproducibility, failure conditions, and formal declaration.
 </p>
 <p>
   Conformance does not redefine the Requirements or the Specification. The Requirements establish what must be satisfied. The Specification defines the mathematics that satisfies it. Conformance defines how software proves that it follows that Specification correctly.
+</p>
+<p>
+  The first integrated candidate pass through Conformance Sections 01–10 now provides a substantial executable proof surface for the solved candidate core. Conformance applies only where the governing Specification actually defines canonical behavior; unresolved mathematical gates remain outside canonical Conformance.
 </p>
 </div>
 
@@ -254,71 +257,84 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 <a class="spec-index-card" href="/theatlas/foundational-survey-fabric/conformance/01-conformance-classes/">
   <div class="spec-index-number">Conformance 01</div>
   <h2>Conformance Classes</h2>
-  <p>Defines the capability classes through which an implementation may claim Foundational Survey Fabric compatibility without creating alternate forms of canonical spatial truth.</p>
+  <p>Defines the capability classes and profiles through which an implementation may claim compatibility while preserving one common canonical truth. Capacity-independent candidate core behavior is now testable; open Specification mathematics remain outside canonical Conformance.</p>
   <span class="spec-index-range">Classes · Scope · Capability · Compatibility →</span>
 </a>
+
 <a class="spec-index-card" href="/theatlas/foundational-survey-fabric/conformance/02-mandatory-core/">
   <div class="spec-index-number">Conformance 02</div>
   <h2>Mandatory Core</h2>
-  <p>Defines the minimum body of canonical behavior every implementation must satisfy before claiming Foundational Survey Fabric compatibility.</p>
+  <p>Defines the minimum body of solved canonical behavior an implementation must satisfy before claiming compatibility with the current candidate Mandatory Core profile.</p>
   <span class="spec-index-range">Mandatory Core · Required Behavior · Canonical Truth →</span>
 </a>
+
 <a class="spec-index-card" href="/theatlas/foundational-survey-fabric/conformance/03-canonical-result-equivalence/">
   <div class="spec-index-number">Conformance 03</div>
   <h2>Canonical Result Equivalence</h2>
-  <p>Defines the requirement that independent implementations return identical authoritative results for identical canonical inputs.</p>
+  <p>Defines the requirement that independent implementations return identical authoritative results for identical canonical inputs wherever the governing Specification defines one exact result.</p>
   <span class="spec-index-range">Equivalence · Reproducibility · Canonical Results →</span>
 </a>
+
 <a class="spec-index-card" href="/theatlas/foundational-survey-fabric/conformance/04-validation-behavior/">
   <div class="spec-index-number">Conformance 04</div>
   <h2>Validation Behavior</h2>
-  <p>Defines how implementations distinguish canonical input, valid noncanonical representation, malformed expression, out-of-domain reference, impossible precision expression, ambiguity, and other invalid states.</p>
+  <p>Defines deterministic classification of canonical-valid, valid-noncanonical, invalid, and explicitly unsupported behavior across the solved candidate profile.</p>
   <span class="spec-index-range">Validation · Normalization · Rejection · Classification →</span>
 </a>
+
 <a class="spec-index-card" href="/theatlas/foundational-survey-fabric/conformance/05-exactness-requirements/">
   <div class="spec-index-number">Conformance 05</div>
   <h2>Exactness Requirements</h2>
-  <p>Defines the exactness discipline required at the canonical level, including prohibition of tolerance-based equality, silent snapping, hidden implementation state, and undetected precision loss.</p>
+  <p>Defines exact canonical equality, exact predicates, no silent snapping, deterministic normalization, precision integrity, ECEM exactness, and canonical-byte exactness for the solved core.</p>
   <span class="spec-index-range">Exactness · Precision · Determinism · No Snapping →</span>
 </a>
+
 <a class="spec-index-card" href="/theatlas/foundational-survey-fabric/conformance/06-serialization-compatibility/">
   <div class="spec-index-number">Conformance 06</div>
   <h2>Serialization Compatibility</h2>
-  <p>Defines how independent implementations prove compatibility with the governing normative Survey interchange rules, including parsing, normalization, supported normative encodings, deterministic semantic equivalence, and precision-preserving exchange.</p>
-  <span class="spec-index-range">Serialization · Interchange · Parsing · Round-Trip →</span>
+  <p>Defines compatibility with the current candidate canonical machine-interchange profile, FSF-CJSON-1.0, including deterministic parsing, normalization, serialization, byte identity, and round-trip behavior.</p>
+  <span class="spec-index-range">FSF-CJSON-1.0 · Interchange · Parsing · Round-Trip →</span>
 </a>
+
 <a class="spec-index-card" href="/theatlas/foundational-survey-fabric/conformance/07-version-compatibility/">
   <div class="spec-index-number">Conformance 07</div>
   <h2>Version Compatibility</h2>
-  <p>Defines how implementations preserve established canonical spatial meaning across compatible Specification evolution and versioned normative representations or encodings.</p>
+  <p>Defines how compatible Specification evolution preserves established CRPC, Point, geometry, predicate, normalization, ECEM, and serialization meaning without moving place.</p>
   <span class="spec-index-range">Versioning · Compatibility · Continuity · Evolution →</span>
 </a>
+
 <a class="spec-index-card" href="/theatlas/foundational-survey-fabric/conformance/08-independent-implementation/">
   <div class="spec-index-number">Conformance 08</div>
   <h2>Independent Implementation Requirement</h2>
-  <p>Defines the requirement that canonical Survey truth be independently implementable, reproducible, and verifiable without proprietary dependency or exclusive institutional knowledge.</p>
+  <p>Defines the requirement that the solved candidate core be independently implementable, reproducible, and verifiable without proprietary dependency, hidden institutional knowledge, or privileged code.</p>
   <span class="spec-index-range">Independence · Reproducibility · Open Verification →</span>
 </a>
+
 <a class="spec-index-card" href="/theatlas/foundational-survey-fabric/conformance/09-failure-conditions/">
   <div class="spec-index-number">Conformance 09</div>
   <h2>Failure Conditions</h2>
-  <p>Defines the conditions under which an implementation must be judged incompatible, nonconforming, unsupported, indeterminate, or unable to sustain a claimed capability.</p>
-  <span class="spec-index-range">Failure · Incompatibility · Unsupported · Indeterminate →</span>
+  <p>Defines executable failure conditions and preserves distinctions among failure, unsupported capability, indeterminate open-gate behavior, Specification ambiguity, and test or fixture defect.</p>
+  <span class="spec-index-range">Failure · Unsupported · Ambiguity · Test Defect →</span>
 </a>
+
 <a class="spec-index-card" href="/theatlas/foundational-survey-fabric/conformance/10-conformance-declaration/">
   <div class="spec-index-number">Conformance 10</div>
   <h2>Conformance Report / Declaration</h2>
-  <p>Defines the formal evidence record and resulting compatibility declaration by which software demonstrates that it correctly implements the governing Specification, without itself establishing canonical authority over that Specification.</p>
+  <p>Defines the candidate evidence model by which test results, Reference Vectors, exact outputs, failures, independent reproducibility, and claim limitations are preserved and summarized.</p>
   <span class="spec-index-range">Report · Evidence · Declaration · Proof →</span>
 </a>
+
 </div>
 
 <div class="specification-map">
 <p>
-  Together, these ten sections define the intended proof architecture for Foundational Survey Fabric compatibility: what must be supported, what is mandatory, how authoritative results are compared, how inputs are validated, how exactness is preserved, how normative interchange and versioned encodings remain compatible, how independence is demonstrated, what constitutes failure, and how the resulting evidence is formally reported and declared.
+  Together, these ten sections define the candidate proof architecture for Foundational Survey Fabric compatibility: what must be supported, what is mandatory, how authoritative results are compared, how inputs are validated, how exactness is preserved, how canonical interchange and compatible evolution are tested, how independence is demonstrated, what constitutes failure, and how resulting evidence is reported and declared.
 </p>
 <p>
-  The complete Conformance framework remains subordinate to the governing Requirements and Specification. It may classify, test, verify, and report implementation behavior, but it may not create alternate spatial truth, weaken the canonical rules established beneath it, or establish canonical authority merely by declaring an implementation conforming.
+  The integrated candidate core now makes substantial Conformance work executable for CRPC, the canonical frame, Point / Segment / SCPE geometry, exact predicates, deterministic normalization, ECEM precision semantics, and FSF-CJSON-1.0. This does not close mathematical questions that remain open in the governing Specification.
+</p>
+<p>
+  In particular, Conformance must not independently select unresolved Survey Domain numerical capacity or other open mathematical parameters. Where the Specification remains open, Conformance may preserve the proof obligation but shall not invent the canonical answer.
 </p>
 </div>
 
@@ -328,8 +344,18 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 </blockquote>
 
 <blockquote>
+  <span class="quote-label">Current Candidate Proof Surface</span>
+  CRPC · canonical frame · Point · Segment · SCPE · exact predicates · deterministic validation · canonical normalization · ECEM · FSF-CJSON-1.0 · result equivalence · independent reproducibility · explicit failure conditions · evidence and declaration structure.
+</blockquote>
+
+<blockquote>
+  <span class="quote-label">Open-Gate Boundary</span>
+  Conformance applies only to behavior whose canonical semantics are defined by the governing Specification. Unresolved general Boolean/composite output closure, arbitrary exact rotation, general exact distance and path-length scalar forms, future geometry, and unresolved Survey Domain numerical capacity remain outside final canonical Conformance until the Specification resolves them.
+</blockquote>
+
+<blockquote>
   <span class="quote-label">Conformance Standing</span>
-  The Conformance framework is institutionally established as the proof architecture subordinate to the governing Requirements and future completed Specification. Serious executable conformance testing begins only when the Specification is sufficiently complete to produce deterministic canonical results. Day #115 confirmed the Reference Vector proof categories and their Requirements ownership, but exact canonical test corpora and implementation-level conformance evidence must still follow the formal mathematics rather than precede it.
+  The Conformance framework is institutionally established and its first integrated candidate pass through Sections 01–10 is complete. Capacity-independent portions of the solved candidate core are now sufficiently deterministic for executable Conformance and Reference Vector work. Final canonical test corpora, final status and error vocabularies, unresolved mathematical gates, final report/declaration schemas, and canonical adoption remain open.
 </blockquote>
 
 <div class="section-nav">
@@ -339,7 +365,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <a href="/thearchitecture/">The Architecture</a>
 </div>
 
-<div class="note">Foundational Survey Fabric · Conformance · Implementation Proof Framework</div>
+<div class="note">Foundational Survey Fabric · Conformance · Implementation Proof Framework · Candidate Integration Pass</div>
 
 </article>
 </main>
