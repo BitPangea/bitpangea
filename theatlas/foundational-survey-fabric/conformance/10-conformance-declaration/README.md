@@ -3,16 +3,18 @@
 ## Foundational Survey Fabric · Conformance Section 10
 
 **The Atlas · The Architecture · Foundational Survey Fabric · Conformance**  
-**Section: 10 — Conformance Report / Conformance Declaration**  
-**Scope: Formal Compatibility Evidence**
+**Section:** 10 — Conformance Report / Conformance Declaration  
+**Scope:** Formal Compatibility Evidence  
+**Status:** Candidate Evidence Model Defined  
+**Canonical Adoption:** Not yet performed
 
 This directory contains **Conformance Section 10 — Conformance Report / Conformance Declaration** for the BitPangea **Foundational Survey Fabric**.
 
-The source page defines this section as:
+The governing statement remains:
 
 > **The formal record by which an implementation demonstrates, limits, and declares its compatibility with the Foundational Survey Fabric Specification.**
 
-Its governing question is:
+Its governing question remains:
 
 > **How does software prove that it correctly implements the Specification?**
 
@@ -30,344 +32,482 @@ Repository path:
 /theatlas/foundational-survey-fabric/conformance/10-conformance-declaration/index.html
 ```
 
-Recommended directory README path:
+README path:
 
 ```text
 /theatlas/foundational-survey-fabric/conformance/10-conformance-declaration/README.md
-```
-
-The source page is publicly indexable:
-
-```text
-index,follow
 ```
 
 ---
 
 ## Purpose
 
-**Conformance Report / Conformance Declaration** is the final evidentiary layer of Foundational Survey Fabric conformance.
+The section distinguishes two records:
 
-The source distinguishes two related records:
+### Conformance Report
 
-- the **Conformance Report**, which preserves the evidence;
-- the **Conformance Declaration**, which summarizes the compatibility claim supported by that evidence.
+Preserves the evidence.
 
-A declaration is not a substitute for proof.
+### Conformance Declaration
 
-Neither the report nor the declaration establishes canonical authority over:
+Summarizes the compatibility claim supported by that evidence.
 
-- the governing Specification;
-- its succession;
-- the spatial truth defined by that Specification.
+The governing sequence is:
 
----
+```text
+Specification
+    ↓
+Conformance rules
+    ↓
+Reference Vectors / executable fixtures
+    ↓
+test execution
+    ↓
+evidence
+    ↓
+Conformance Report
+    ↓
+Conformance Declaration
+```
 
-## 10.1 — Purpose of the Conformance Report
-
-### Preserve the Evidence Behind the Claim
-
-A conformance report must preserve the evidence necessary to evaluate whether an implementation satisfies applicable Foundational Survey Fabric Conformance requirements.
-
-The report must identify:
-
-- the tested implementation;
-- governing Specification identity;
-- applicable version;
-- declared conformance classes;
-- applicable normative encoding or interchange scope;
-- applicable Reference Vectors once formally established;
-- test outcomes;
-- failures;
-- unsupported capabilities;
-- other evidence required by the Conformance framework.
+The declaration does not precede proof.
 
 ---
 
-## 10.2 — Purpose of the Conformance Declaration
+## Integration Standing
 
-### State Only What the Evidence Supports
+The candidate Conformance model now has enough concrete behavior for a meaningful report structure.
 
-A Conformance Declaration states the compatibility claim established by the completed report.
+Current evidence can cover:
 
-It must not claim broader compatibility than the evidence supports.
+```text
+CRPC
+canonical frame
+Point
+Segment
+SCPE
+exact predicates
+validation
+normalization
+ECEM
+FSF-CJSON-1.0
+version scope
+failure outcomes
+independent reproduction
+```
 
-The declaration must identify:
-
-- Specification version;
-- conformance scope;
-- applicable normative encoding or interchange scope where relevant;
-- limitations applicable to the declaration.
-
----
-
-## 10.3 — Implementation Identity
-
-### The Tested Software Must Be Identifiable
-
-The report must identify the implementation precisely enough to distinguish the tested software from materially different:
-
-- builds;
-- configurations;
-- forks;
-- releases.
-
-The exact identity mechanism remains open.
-
-Its purpose is to permit later verification of what implementation was actually evaluated.
+The final formal report and declaration schemas remain open.
 
 ---
 
-## 10.4 — Governing Specification Identity
+## Implementation Identity
 
-### The Standard Under Test Must Be Explicit
+The tested implementation must be identifiable.
 
-Every report must identify the governing Foundational Survey Fabric Specification and applicable version or compatibility identity used for conformance evaluation.
+Candidate identity evidence may include:
 
-The source states:
+```text
+implementation name
+release
+source revision
+build identifier
+artifact digest
+configuration
+execution package
+```
 
-> **A Conformance Declaration without a defined governing standard shall not constitute a complete compatibility claim.**
+The exact required fields remain open.
 
----
-
-## 10.5 — Conformance Class Scope
-
-### The Claim Must Define Its Boundaries
-
-The report must identify each conformance class claimed by the implementation.
-
-This includes:
-
-- the Mandatory Core;
-- optional capability classes successfully demonstrated.
-
-Capabilities that were not tested, remain unsupported, are experimental, or fall outside the claimed scope must be identified separately rather than implied as conforming.
+The purpose is to distinguish what was actually tested from materially different software.
 
 ---
 
-## 10.6 — Test and Reference Vector Record
+## Governing Specification and Profile Identity
 
-### Canonical Expectations Must Be Traceable
+Every report must identify its governing baseline.
 
-The report must record required conformance tests applicable to the declared scope.
+A future formal record should include the applicable:
 
-Once formal mathematics are sufficiently complete to establish exact vectors, the report must also record:
+```text
+FSF Specification version / compatibility identity
+Conformance profile
+serialization identity
+```
 
-- applicable Reference Vectors;
-- expected authoritative outcomes;
-- observed implementation results.
+For current serialization claims:
 
-The source preserves an important boundary:
+```text
+FSF-CJSON-1.0
+```
 
-> **Reference Vector categories and proof obligations may be defined before the exact vector corpus exists, but reports shall not imply that unestablished vectors were executed.**
+should be identified explicitly.
 
----
-
-## 10.7 — Result Classification
-
-### Pass, Fail, Unsupported, and Indeterminate Must Be Distinguished
-
-Each applicable conformance test must ultimately receive a deterministic disposition defined by the Conformance framework.
-
-The source explicitly distinguishes:
-
-- successful behavior;
-- implementation failure;
-- unsupported optional capability;
-- Specification ambiguity;
-- other non-equivalent outcomes.
-
-These must not be collapsed into one generic status.
+The final top-level FSF Specification identifier syntax remains open.
 
 ---
 
-## 10.8 — Failure Disclosure
+## Mandatory Core Scope
 
-### Failures Must Remain Visible
+A report claiming current candidate Mandatory Core compatibility should identify proof for the applicable solved capabilities:
 
-A conformance report must preserve all material:
+```text
+CRPC
+canonical frame interpretation
+Point validation
+Segment validation
+SCPE validation
+exact core predicates
+canonical normalization
+ECEM
+FSF-CJSON-1.0
+deterministic canonical output
+```
 
-- failures;
-- mismatches;
-- unresolved ambiguities;
-- unsupported mandatory capabilities
-
-discovered during testing.
-
-A Conformance Declaration must not omit known evidence that invalidates or materially limits the compatibility claim.
-
----
-
-## 10.9 — Independent Reproducibility
-
-### The Evidence Must Be Verifiable by Others
-
-The report should preserve enough information for an independent evaluator to reproduce applicable tests and confirm the claimed result from the same governing materials.
-
-Where independent implementation or evaluator evidence is required, that evidence must be referenced explicitly.
+Partial support is not full Mandatory Core support.
 
 ---
 
-## 10.10 — Conformance Declaration Integrity
+## Optional and Open Scope
 
-### The Claim Must Not Exceed the Proof
+A report must distinguish:
 
-A Conformance Declaration is invalid if it claims compatibility beyond the tested:
+```text
+PROVEN
+UNSUPPORTED
+UNTESTED
+EXPERIMENTAL
+NONCANONICAL
+SPECIFICATION-OPEN
+```
 
-- Specification version;
-- demonstrated conformance classes;
-- applicable normative encoding or interchange scope;
-- successfully completed Mandatory Core requirements.
-
-The declaration must accurately represent the boundaries of proven compatibility.
-
----
-
-## 10.11 — Report and Conformance Declaration Versioning
-
-### Evidence Must Remain Bound to What Was Tested
-
-Conformance Reports and Conformance Declarations must carry sufficient identity and version information to determine:
-
-- implementation build;
-- Specification version;
-- normative encoding or interchange scope;
-- applicable test corpus;
-- Conformance rules
-
-that produced the recorded result.
-
-A later implementation release or Specification revision does not automatically inherit an earlier declaration.
-
-Any reevaluation requirement remains governed by the Conformance framework.
+Behavior for unresolved mathematical gates shall not be implied as canonically conformant.
 
 ---
 
-## 10.12 — Provenance and Authenticity
+## Test Run Identity
 
-### The Record May Be Verified Without Becoming Spatial Truth
+Each formal execution should eventually have a distinct identity.
 
-Conformance records may use:
+The test-run record should make it possible to determine:
 
+```text
+what implementation ran
+what profile applied
+what fixtures applied
+what environment/evaluator applied where material
+what results were observed
+```
+
+The final identifier syntax remains open.
+
+---
+
+## Reference Vector and Fixture Traceability
+
+Each applicable executed case should preserve:
+
+```text
+fixture/vector identity
+governing profile
+expected result
+observed result
+disposition
+```
+
+Reports shall not claim execution of vectors that do not formally exist.
+
+---
+
+## Validation Evidence
+
+Validation evidence should show the correct classification of inputs as applicable:
+
+```text
+CANONICAL VALID
+VALID NONCANONICAL
+INVALID
+UNSUPPORTED
+```
+
+Where normalization occurs:
+
+```text
+input
+    ↓
+normalization rule
+    ↓
+canonical normalized output
+```
+
+should remain traceable.
+
+---
+
+## Exactness Evidence
+
+Where the Specification defines exact canonical truth, the report should preserve exact expected and observed values.
+
+This applies to:
+
+```text
+CRPC normalization
+exact predicates
+geometry normalization
+exact supported measurements
+other exact Mandatory Core results
+```
+
+Approximate decimal summaries do not replace exact proof.
+
+---
+
+## FSF-CJSON-1.0 Evidence
+
+A serialization compatibility report should preserve evidence for:
+
+```text
+valid canonical parsing
+invalid parsing cases
+structured CRPC meaning
+validate → normalize → serialize
+Point encoding
+Segment encoding
+SCPE encoding
+key ordering
+duplicate-key rejection
+governed unknown-field handling
+UTF-8 canonical bytes
+round-trip behavior
+canonical byte identity
+```
+
+Where canonical bytes are required, byte evidence matters.
+
+---
+
+## Candidate Result Dispositions
+
+The final canonical status identifiers remain open.
+
+Current candidate concepts include:
+
+```text
+PASS
+FAIL
+UNSUPPORTED
+INDETERMINATE
+SPECIFICATION AMBIGUITY
+TEST / FIXTURE DEFECT
+```
+
+These should not yet be treated as finalized machine-readable codes.
+
+---
+
+## Failure Disclosure
+
+A Conformance Report must preserve material failure.
+
+It must not omit:
+
+- result mismatch;
+- invalid acceptance;
+- valid rejection;
+- normalization error;
+- exactness error;
+- serialization error;
+- compatibility drift;
+- independent-reproduction failure;
+- unsupported mandatory capability;
+- unresolved Specification ambiguity;
+- material fixture defect.
+
+The declaration must remain consistent with that evidence.
+
+---
+
+## Retest and Supersession
+
+A later successful retest should not erase the historical existence of an earlier failed run.
+
+The evidence model should distinguish:
+
+```text
+original result
+corrected implementation
+new test run
+later result
+```
+
+The final rules for:
+
+- retest;
+- remediation;
+- withdrawal;
+- supersession;
+- evidence retention
+
+remain open.
+
+---
+
+## Independent Reproducibility Evidence
+
+Where independent implementation is part of the proof, the report should identify:
+
+```text
+independent implementation identity
+applicable profile
+fixture set
+comparison result
+disagreements if any
+resolution standing
+```
+
+The evidence should be sufficient for another evaluator to understand how reproducibility was established.
+
+---
+
+## Declaration Integrity
+
+A Conformance Declaration must not exceed the evidence.
+
+It may not claim more than was proven across:
+
+```text
+Specification/profile
+Conformance scope
+Mandatory Core
+optional classes
+serialization identity
+operation set
+Reference Vector coverage
+independent implementation evidence
+```
+
+---
+
+## Report and Declaration Versioning
+
+Reports and declarations must remain bound to what was actually tested.
+
+A later:
+
+```text
+implementation release
+Specification revision
+profile revision
+serialization revision
+Mandatory Core revision
+```
+
+does not automatically inherit an earlier declaration.
+
+---
+
+## Provenance and Authenticity
+
+Conformance evidence may use:
+
+- cryptographic hashes;
 - signatures;
-- hashes;
 - publication records;
+- content-addressed storage;
 - provenance systems;
-- other verification mechanisms
+- attestations.
 
-to establish authenticity and integrity.
+These mechanisms can authenticate the record.
 
-The source is explicit that these mechanisms authenticate the conformance record.
-
-They do not:
-
-- define canonical spatial meaning;
-- establish canonical standing for the Specification;
-- grant authority to amend or succeed it.
+They do not make the underlying Specification canonical.
 
 ---
 
-## 10.13 — Machine-Readable Conformance Declaration
+## Candidate Machine-Readable Declaration
 
-### Conformance Should Be Interoperably Expressible
+A future deterministic machine-readable declaration may need fields for:
 
-The completed Conformance framework should support a deterministic machine-readable representation of the Conformance Declaration.
+```text
+implementation identity
+Specification/profile identity
+serialization identity
+claimed Conformance scope
+test-run identity
+overall standing
+limitations
+evidence references
+provenance
+declaration identity
+```
 
-This would allow:
-
-- software;
-- registries;
-- validators;
-- future infrastructure
-
-to evaluate compatibility claims consistently.
-
-The exact:
-
-- declaration schema;
-- normative or administrative encoding;
-- interchange rules
-
-remain unresolved until the Conformance model is finalized.
+The exact schema and encoding remain open.
 
 ---
 
-## 10.14 — Human-Readable Conformance Declaration
+## Human-Readable Declaration
 
-### The Claim Must Also Be Understandable
+A human-readable declaration should concisely identify:
 
-Conformance should also be expressible in a concise human-readable form that identifies:
+```text
+what was tested
+against what
+for which scope
+using which serialization where applicable
+with what overall result
+with what limitations
+```
 
-- what implementation was tested;
-- against what Specification;
-- for which conformance classes;
-- with what overall result.
-
-Human-readable summaries must remain faithful to underlying machine-verifiable evidence.
-
----
-
-## 10.15 — Reassessment Boundary
-
-### Material Change May Require New Proof
-
-Material changes to:
-
-- implementation behavior;
-- governing Specification version;
-- normative serialization or interchange rules;
-- conformance classes;
-- Mandatory Core requirements
-
-may require renewed conformance evaluation.
-
-The exact reassessment triggers remain open.
-
-The source explicitly states that a declaration must not be treated as timeless evidence for software or rules materially different from what was tested.
+It must faithfully summarize the evidence.
 
 ---
 
-## 10.16 — Final Conformance Standing
+## Reassessment Boundary
 
-### Proof Produces the Claim
+Material change may require new proof.
 
-An implementation may declare Foundational Survey Fabric compatibility only after satisfying the applicable:
+Possible triggers include:
 
-- Mandatory Core;
-- requirements of each claimed conformance class;
-- validation rules;
-- exactness rules;
-- normative serialization and interchange obligations;
-- version compatibility requirements;
-- independent implementation obligations;
-- failure conditions.
+```text
+implementation behavior changes
+Specification/profile changes
+serialization changes
+Mandatory Core changes
+Conformance-rule changes
+test-corpus changes
+```
 
-The source states:
-
-> **The Conformance Declaration is therefore the outcome of the Conformance framework—not an assertion that precedes it, and not a source of canonical authority beyond the compatibility scope actually proven.**
+The exact reassessment rules remain open.
 
 ---
 
-## Established by Requirements
+## Proof Produces the Claim
 
-The source states that the Requirements framework already establishes:
+The order is fundamental:
 
-- independent reproducibility;
-- canonical result equivalence;
-- exactness;
-- deterministic validation;
-- normative serialization and interchange;
-- Specification identity and versioning;
-- a mandatory conformance core;
-- a staged readiness model in which canonical adoption requires traceability, conformance analysis, edge and pathological testing, independent implementation, and deliberate attempts to expose ambiguity, hidden dependency, nontermination, unresolved approximation, or higher-domain leakage.
+```text
+proof
+    ↓
+report
+    ↓
+declaration
+```
 
-These constraints govern this final Conformance section.
+not:
+
+```text
+declaration
+    ↓
+assumed proof
+```
+
+A declaration records proven compatibility.
+
+It does not create compatibility by assertion.
 
 ---
 
 ## Requirements Basis
 
-The source derives this section especially from:
+This section remains derived especially from:
 
 ```text
 #10
@@ -377,136 +517,122 @@ The source derives this section especially from:
 #78–#85
 ```
 
-The source further identifies:
+with:
 
-- **Finding #84** as establishing the Mandatory Core;
-- **Finding #85** as establishing staged readiness gates.
+```text
+#84 — Mandatory Conformance Core
+#85 — Staged Readiness Gates
+```
 
-The page states that formal mathematical design may proceed within the audited requirements envelope, serious conformance testing follows sufficiently deterministic rules, and canonical adoption requires conformance analysis, adversarial testing, and independent implementation evidence.
+playing especially important roles.
 
 These Findings remain authoritative within the Requirements Framework.
 
-This Conformance section applies them; it does not replace them.
+Conformance applies them.
+
+It does not replace them.
 
 ---
 
-## Still Open in Conformance
+## What Changed From the Previous Page
 
-The source leaves the following unresolved until the complete Conformance framework and Specification are sufficiently mature:
+The previous page already correctly established:
 
-- exact report schema;
-- exact Conformance Declaration schema;
-- machine-readable format;
-- evaluator identity requirements;
-- evidence-retention rules;
-- any future certification or registry role if separately authorized;
-- signing or provenance mechanism;
-- test-run identifiers;
-- reassessment triggers;
-- publication process;
-- formal status vocabulary.
+- report versus declaration;
+- implementation identity;
+- governing Specification identity;
+- claimed-class scope;
+- Reference Vector traceability;
+- deterministic result classification;
+- failure disclosure;
+- independent reproducibility;
+- declaration integrity;
+- report/declaration versioning;
+- provenance boundary;
+- future machine-readable declaration;
+- human-readable declaration;
+- reassessment boundary;
+- proof before declaration.
 
-These items should remain open until formally resolved.
+Those principles remain.
+
+The main change is that Conformance Sections 01–09 and the integrated candidate Specification now give the evidence model much more concrete content.
+
+Previously:
+
+```text
+report/declaration architecture
+    -> defined
+most executable evidence
+    -> future
+```
+
+Now:
+
+```text
+candidate core evidence
+    -> structurally definable now
+
+final schemas and lifecycle
+    -> still open
+```
+
+---
+
+## Still Open
+
+The remaining design work includes:
+
+```text
+final Conformance Report schema
+final machine-readable Declaration schema
+final canonical status vocabulary
+evaluator identity requirements
+evidence-retention policy
+certification or registry role if separately authorized
+signing / provenance mechanism
+formal test-run identifier syntax
+reassessment triggers
+publication process
+withdrawal / supersession lifecycle
+```
 
 ---
 
 ## Architectural Boundary
 
-The source states:
-
 > **Conformance is demonstrated by evidence. The Conformance Declaration records the result of that evidence. Neither evidence nor the Conformance Declaration makes the governing Specification canonical; canonical standing belongs to valid BitPangea authority.**
 
-This is the defining architectural boundary of Conformance Section 10.
-
----
-
-## Navigation
-
-The source page links to:
-
-```text
-/theatlas/foundational-survey-fabric/conformance/09-failure-conditions/
-```
-
-```text
-/theatlas/foundational-survey-fabric/requirements/
-```
-
-```text
-/theatlas/foundational-survey-fabric/specification/
-```
-
-```text
-/theatlas/foundational-survey-fabric/conformance/
-```
-
-These provide navigation to Conformance 09, the Requirements Framework, the Specification, and the Conformance Index.
-
----
-
-## Metadata Identity
-
-The source page includes:
-
-```text
-Title: Conformance Report / Conformance Declaration | Foundational Survey Fabric Conformance | BitPangea
-Description: Conformance Report / Conformance Declaration — Conformance Section 10 for the BitPangea Foundational Survey Fabric.
-Canonical: https://bitpangea.com/theatlas/foundational-survey-fabric/conformance/10-conformance-declaration/
-Theme Color: #00c8d7
-Robots: index,follow
-OG Type: website
-```
-
-These values should remain aligned with the page.
-
----
-
-## Repository Guidance
-
-When maintaining this directory:
-
-1. preserve the title **Conformance Report / Conformance Declaration**;
-2. preserve **Conformance Section 10 · Formal Compatibility Evidence**;
-3. preserve the canonical path `/theatlas/foundational-survey-fabric/conformance/10-conformance-declaration/`;
-4. preserve the distinction between the evidence-preserving **Conformance Report** and the evidence-derived **Conformance Declaration**;
-5. preserve **How does software prove that it correctly implements the Specification?**
-6. preserve implementation identity requirements;
-7. preserve governing Specification and version identity;
-8. preserve explicit conformance-class scope;
-9. preserve traceability to tests and applicable Reference Vectors once those vectors formally exist;
-10. preserve the rule that reports must not imply execution of unestablished vectors;
-11. preserve deterministic result classification;
-12. preserve failure disclosure;
-13. preserve independent reproducibility of evidence;
-14. preserve the rule that the declaration must not exceed the proof;
-15. preserve binding of reports and declarations to the exact implementation, Specification, interchange scope, test corpus, and Conformance rules evaluated;
-16. preserve provenance/authenticity mechanisms as verification of records rather than sources of spatial truth or authority;
-17. preserve eventual machine-readable and human-readable declaration forms;
-18. preserve the reassessment boundary for material change;
-19. preserve the rule that proof produces the compatibility claim;
-20. preserve the listed Requirements basis Findings and the specific roles of Findings #84 and #85;
-21. preserve the open status of report/declaration schemas, evaluator identity rules, evidence retention, certification/registry role, provenance mechanism, test-run IDs, reassessment triggers, publication process, and status vocabulary;
-22. preserve the Architectural Boundary exactly as stated;
-23. preserve `index,follow` unless the publication model is intentionally revised;
-24. keep canonical, Open Graph, description, theme-color, favicon, framework, and navigation references aligned with the page;
-25. do not allow a declaration to precede evidence;
-26. do not allow a declaration to claim more than was actually tested and proven;
-27. do not treat provenance, signatures, registry records, or declarations as sources of canonical spatial authority;
-28. do not allow conformance evidence itself to establish canonical standing for the governing Specification.
+This remains the defining boundary of Conformance Section 10.
 
 ---
 
 ## Status
 
-**Foundational Survey Fabric**
+```text
+FOUNDATIONAL SURVEY FABRIC — CONFORMANCE
 
-**Conformance**
+SECTION 10 — CONFORMANCE REPORT / CONFORMANCE DECLARATION
 
-**Section 10 — Conformance Report / Conformance Declaration**
+CANDIDATE EVIDENCE MODEL — DEFINED
+IMPLEMENTATION IDENTITY — REQUIRED
+GOVERNING PROFILE IDENTITY — REQUIRED
+MANDATORY CORE SCOPE — REQUIRED
+REFERENCE VECTOR / FIXTURE TRACEABILITY — REQUIRED
+VALIDATION EVIDENCE — REQUIRED
+EXACT RESULT EVIDENCE — REQUIRED
+FSF-CJSON-1.0 EVIDENCE — REQUIRED WHERE CLAIMED
+FAILURE DISCLOSURE — REQUIRED
+INDEPENDENT REPRODUCIBILITY EVIDENCE — REQUIRED WHERE APPLICABLE
+CLAIM MUST NOT EXCEED PROOF — REQUIRED
+RETEST / SUPERSESSION HISTORY — TO BE PRESERVED
 
-**Formal Compatibility Evidence**
-
-**Final Report / Declaration Schemas and Status Vocabulary Remain Open**
+FINAL REPORT SCHEMA — OPEN
+FINAL DECLARATION SCHEMA — OPEN
+FINAL STATUS VOCABULARY — OPEN
+PUBLICATION / CERTIFICATION LIFECYCLE — OPEN
+CANONICAL ADOPTION — NOT YET PERFORMED
+```
 
 ---
 
