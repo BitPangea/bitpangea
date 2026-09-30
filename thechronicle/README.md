@@ -151,6 +151,25 @@ The Chronicle should preserve design milestones when they materially shape BitPa
 
 ---
 
+## Executive Briefing
+
+The public Chronicle may present a current **Executive Briefing** above the period chronology.
+
+Its purpose is to summarize the latest completed day or major active milestone without replacing the full historical entry preserved below.
+
+The Executive Briefing should:
+
+- identify the current Day number and date;
+- summarize the principal historical result;
+- distinguish completed work from open dependencies;
+- avoid elevating candidate, design, or implementation work into constitutional adoption;
+- remain consistent with the detailed Chronicle entry for the same day.
+
+When a newer briefing is published, the earlier day remains preserved in the Creator Period chronology.
+
+
+---
+
 ## Entry Standard
 
 A Chronicle entry should:
@@ -204,7 +223,7 @@ Its purpose is to preserve the history that matters.
 
 ## Status
 
-**Active Historical Institution · Creator Period Transition Preserved**
+**Active Historical Institution · Creator Period Ongoing**
 
 ---
 
