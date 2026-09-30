@@ -94,10 +94,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 
 <div class="req-intro">
 <p>
-  <strong>Version / Conformance Vectors</strong> define the reference cases through which implementations will prove that earlier canonical spatial meaning remains unchanged across compatible Specification and normative-encoding evolution and that known implementation behavior is classified consistently under a defined Conformance profile.
+  <strong>Version / Conformance Vectors</strong> define exact executable cases proving that compatible Specification evolution preserves canonical spatial meaning and that Conformance outcomes are classified deterministically under a declared profile.
 </p>
 <p>
-  These vectors intentionally join version continuity and conformance disposition because both concern interpretation of the same governing standard over time: what remains canonically unchanged, what a specific implementation is required to support, and whether observed behavior should pass, fail, be unsupported, or remain indeterminate.
+  The integrated candidate Conformance framework now defines a usable proof architecture around the Mandatory Core, profile-scoped capability, exact Reference Vector execution, pass/fail disposition, unsupported capability, report evidence, declaration consistency, and independent reproduction. The Specification also establishes the governing compatibility principle: compatible evolution may extend representational capability or governed interchange without renumbering, relocating, or reinterpreting established canonical place.
+</p>
+<p>
+  One boundary remains essential: Conformance proves behavior against a governing Specification and profile; it does not itself establish which Specification version has canonical institutional standing. Likewise, unresolved mathematics shall not be converted into false pass/fail outcomes merely because a test harness exists.
 </p>
 </div>
 
@@ -107,173 +110,244 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 </blockquote>
 
 <section class="spec-card">
-  <div class="spec-label">11.1 · Cross-Version Canonical Meaning Vectors</div>
-  <h2>Compatible Versions Must Preserve Place</h2>
+  <div class="spec-label">11.0 · Current Version / Conformance Model</div>
+  <h2>Compatibility Preserves Meaning; Conformance Proves Defined Behavior</h2>
   <p>
-    The vector set shall include canonical references and expressions established under an earlier compatible Specification version together with the authoritative result required under a later compatible Specification version.
+    The present candidate model separates three questions:
   </p>
   <p>
-    The expected result shall demonstrate that established canonical spatial meaning remains unchanged.
+    <strong>What does the governing Specification define?</strong><br/>
+    <strong>What capability does the declared Conformance profile require?</strong><br/>
+    <strong>What did the implementation actually prove?</strong>
+  </p>
+  <p>
+    Reference Vectors provide evidence for those questions. They do not create missing Specification mathematics or canonical institutional authority.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">11.1 · Cross-Version Meaning Preservation Vectors</div>
+  <h2>Compatible Evolution Must Preserve Established Place</h2>
+  <p>
+    Reference Vectors shall include canonical Points, Segments, SCPEs, and other supported objects established under an earlier compatible Specification and evaluated under a later compatible Specification.
+  </p>
+  <p>
+    Previously valid canonical spatial meaning shall remain unchanged. Compatible evolution may add newly expressible exact values or governed capabilities, but it shall not migrate or reinterpret established objects.
   </p>
 </section>
 
 <section class="spec-card">
   <div class="spec-label">11.2 · Cross-Version Result Equivalence Vectors</div>
-  <h2>Unchanged Rules Must Produce Unchanged Results</h2>
+  <h2>Unchanged Operations Must Produce Unchanged Results</h2>
   <p>
-    Reference vectors shall include operations whose semantics are unchanged across compatible specification versions.
+    Where an operation's governing semantics are unchanged across compatible versions, the same canonical input shall produce the same canonical result.
   </p>
   <p>
-    Identical canonical inputs shall continue to produce the same authoritative canonical meaning under each compatible version. Where the Specification requires one unique canonical representation, that representation shall also remain identical.
+    If a later version changes only representation while preserving mathematical meaning, Reference Vectors shall distinguish representational difference from semantic incompatibility.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">11.3 · Versioned Normative Encoding Vectors</div>
-  <h2>Representation May Evolve Without Moving Canonical Meaning</h2>
+  <div class="spec-label">11.3 · FSF-CJSON Version Compatibility Vectors</div>
+  <h2>Encoding Evolution Must Preserve Canonical Meaning</h2>
   <p>
-    The corpus shall include versioned normative encodings or interchange forms that represent the same canonical Survey truth under compatible Specification or encoding versions.
+    Reference Vectors shall test compatible interchange evolution around <strong>FSF-CJSON-1.0</strong> and any later explicitly governed profile.
   </p>
   <p>
-    Conforming implementations shall preserve the same underlying canonical spatial meaning even where the representation changes. Where multiple governed lossless encodings are permitted, version compatibility shall preserve deterministic semantic equivalence rather than forcing byte-for-byte identity across distinct encodings.
+    Where compatible versions permit different lossless encodings, semantic equivalence shall remain exact even if byte identity across distinct encoding versions is not required.
   </p>
 </section>
 
 <section class="spec-card">
   <div class="spec-label">11.4 · Backward-Compatibility Vectors</div>
-  <h2>Later Implementations Must Preserve Earlier Canonical Truth</h2>
+  <h2>Later Compatible Implementations Must Continue to Understand Earlier Canonical Truth</h2>
   <p>
-    Reference vectors shall include previously valid canonical inputs that a later compatible implementation must continue to interpret correctly.
+    The corpus shall include earlier valid canonical objects and serialized forms that a later compatible implementation is required to interpret correctly.
   </p>
   <p>
-    Compatible evolution shall not make established Survey references ambiguous, invalid, or spatially different.
+    Backward compatibility shall preserve exact meaning rather than merely accepting syntax while changing interpretation.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">11.5 · Forward-Compatibility Vectors</div>
-  <h2>Unsupported Future Capability Must Be Identified, Not Guessed</h2>
+  <div class="spec-label">11.5 · Forward-Compatibility / Unsupported Vectors</div>
+  <h2>Future Capability Must Be Identified Rather Than Guessed</h2>
   <p>
-    The vector set shall include cases where an implementation encounters a future optional feature, extension, representation, or normative-encoding version beyond its supported Conformance scope.
+    Reference Vectors shall include valid future or optional capability outside the implementation's declared support scope.
   </p>
   <p>
-    The expected result shall distinguish unsupported capability from invalid canonical truth and shall prohibit fabricated interpretation.
+    Such cases shall be classified as <strong>VALID BUT UNSUPPORTED</strong> where the governing profile permits that state. Unsupported capability shall not be fabricated, approximated, or misreported as invalid canonical mathematics.
   </p>
 </section>
 
 <section class="spec-card">
   <div class="spec-label">11.6 · Compatible-Change Vectors</div>
-  <h2>Clarification and Extension Must Preserve Established Truth</h2>
+  <h2>Extension Must Not Mutate Existing Canonical Meaning</h2>
   <p>
-    The corpus shall include Specification or normative-encoding changes classified as compatible, such as clarification, additional Conformance material, optional capability, or introduction of an explicitly governed lossless encoding.
+    Reference Vectors shall demonstrate changes that are compatible because they preserve prior canonical meaning while adding clarification, new optional capability, additional Reference Vectors, broader exact representational capacity, or explicitly governed lossless interchange.
   </p>
   <p>
-    Reference outcomes shall prove that those changes do not alter established canonical spatial meaning.
+    Compatibility is therefore a semantic preservation claim, not merely a shared version family label.
   </p>
 </section>
 
 <section class="spec-card">
   <div class="spec-label">11.7 · Incompatible-Change Vectors</div>
-  <h2>Spatial Mutation Must Not Be Classified as Routine Compatibility</h2>
+  <h2>Spatial Mutation Must Be Classified as Incompatible</h2>
   <p>
-    Reference vectors shall include hypothetical or historical cases sufficient to demonstrate when a change would renumber, relocate, reinterpret, or otherwise alter established canonical spatial truth.
+    A change that renumbers, relocates, reinterprets, or reuses an established canonical Point or geometry shall not be classified as compatible evolution.
   </p>
   <p>
-    Such a case shall be classified as incompatible rather than ordinary version evolution. Conformance may detect that incompatibility, but it does not authorize the change or establish canonical succession.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">11.8 · Pass Vectors</div>
-  <h2>Correct Mandatory Behavior Must Pass</h2>
-  <p>
-    The vector set shall include known implementation behaviors that fully satisfy the applicable conformance profile and therefore must receive a passing disposition.
-  </p>
-  <p>
-    Every evaluator applying the same governing rules shall reach the same result.
+    Reference Vectors shall expose such mutation as an incompatibility. Conformance may detect the condition; it does not authorize it.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">11.9 · Fail Vectors</div>
-  <h2>Incorrect Canonical Behavior Must Fail</h2>
+  <div class="spec-label">11.8 · Mandatory Core Pass Vectors</div>
+  <h2>Required Defined Behavior Must Pass</h2>
   <p>
-    Reference vectors shall include known implementation results that violate required canonical behavior within the claimed conformance scope.
+    The corpus shall include known-good implementation outcomes for Mandatory Core behavior whose Specification semantics are fully defined.
   </p>
   <p>
-    Such cases shall receive a deterministic failure disposition rather than being excused as implementation variation.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">11.10 · Unsupported Vectors</div>
-  <h2>Optional Capability Outside the Claim Must Be Identified Correctly</h2>
-  <p>
-    The corpus shall include cases where an implementation does not support an optional capability outside its declared conformance scope.
-  </p>
-  <p>
-    Those cases shall be classified as unsupported rather than automatically failing the Mandatory Core.
+    Every evaluator applying the same Specification, Conformance profile, fixture, and expected result shall classify those cases as PASS.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">11.11 · Indeterminate Vectors</div>
-  <h2>Specification Ambiguity Must Not Be Misclassified as Implementation Failure</h2>
+  <div class="spec-label">11.9 · Mandatory Core Fail Vectors</div>
+  <h2>Incorrect Required Behavior Must Fail</h2>
   <p>
-    Where the governing Specification does not yet determine one authoritative result, a reference case may be classified as indeterminate until the ambiguity is resolved through the proper BitPangea authority and Specification-governance process.
+    Reference Vectors shall include outcomes that violate defined Mandatory Core behavior, including incorrect exact result, incorrect canonical normalization, incorrect canonical bytes where required, or incorrect validity classification.
   </p>
   <p>
-    Such cases shall remain visibly distinct from pass, fail, and unsupported outcomes.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">11.12 · Conformance Profile Vectors</div>
-  <h2>One Implementation May Have Different Outcomes Under Different Declared Scopes</h2>
-  <p>
-    Reference vectors shall demonstrate how the same observed implementation behavior is evaluated under explicitly different conformance classes or profiles where those distinctions are permitted.
-  </p>
-  <p>
-    Profile differences shall classify capability, not create alternate canonical spatial truth.
+    Such cases shall receive deterministic FAIL disposition rather than being excused as implementation variation.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">11.13 · Conformance Declaration Consistency Vectors</div>
-  <h2>Formal Claims Must Match Proven Outcomes</h2>
+  <div class="spec-label">11.10 · Unsupported Capability Vectors</div>
+  <h2>Outside-Scope Optional Capability Must Not Automatically Fail the Core</h2>
   <p>
-    The vector corpus shall include Conformance-report and Conformance Declaration cases to prove that a formal compatibility claim does not exceed the Specification version, normative encoding/interchange scope, Conformance profile, or test outcomes actually demonstrated.
+    Where a capability is optional or outside the implementation's declared Conformance profile, absence of that capability shall be classified as UNSUPPORTED rather than automatically causing Mandatory Core failure.
   </p>
   <p>
-    A Conformance Declaration inconsistent with its evidence shall be classified as invalid.
+    The profile claim itself remains testable: an implementation may not claim capability it did not prove.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">11.14 · Cross-Implementation Conformance Agreement</div>
-  <h2>Independent Evaluators Must Reach the Same Disposition</h2>
+  <div class="spec-label">11.11 · Open-Mathematics / Indeterminate Vectors</div>
+  <h2>Undefined Mathematics Must Not Produce Fabricated Conformance Truth</h2>
   <p>
-    Independent evaluators applying the same Specification, Conformance rules, profile, and vector input shall reach the same pass, fail, unsupported, indeterminate, or compatibility judgment. Agreement on conformance does not itself establish canonical standing for a Specification version or encoding version.
+    Where the governing Specification has not yet selected one authoritative mathematical result, Reference Vectors shall not manufacture an expected canonical output.
   </p>
   <p>
-    Disagreement indicates ambiguity in the rules, incorrect evaluation, or an unresolved version dependency requiring correction.
+    Such cases shall remain outside final conformance disposition or be explicitly classified as indeterminate under the governing candidate framework until the Specification closes the dependency.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">11.12 · Profile-Scope Vectors</div>
+  <h2>Conformance Outcome Depends on Declared Required Scope, Not Alternate Spatial Truth</h2>
+  <p>
+    Reference Vectors shall demonstrate how the same observed implementation capability may be PASS under one valid profile and UNSUPPORTED or FAIL under another, depending upon what that profile requires.
+  </p>
+  <p>
+    Profile scope classifies implementation obligation. It does not create alternate versions of canonical space.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">11.13 · Conformance Report Evidence Vectors</div>
+  <h2>Every Formal Outcome Must Be Traceable to Evidence</h2>
+  <p>
+    The corpus shall include Conformance Report examples linking implementation identity, governing Specification version, Conformance profile, Reference Vector or fixture identity, observed result, expected result, disposition, and supporting canonical output where applicable.
+  </p>
+  <p>
+    A PASS without traceable evidence is not equivalent to demonstrated conformance.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">11.14 · Conformance Declaration Consistency Vectors</div>
+  <h2>Formal Claims Must Not Exceed Proven Scope</h2>
+  <p>
+    Reference Vectors shall test whether a Conformance Declaration accurately reflects the evidence contained in its governing Conformance Report.
+  </p>
+  <p>
+    A declaration that claims a broader Specification version, profile, encoding scope, or successful outcome than the evidence demonstrates shall be invalid.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">11.15 · Independent Reproduction Vectors</div>
+  <h2>Conformance Must Be Reproducible Beyond One Implementation Environment</h2>
+  <p>
+    Where the Conformance framework requires independent reproduction, Reference Vectors shall support execution by a second implementation or evaluator using the same governing inputs and expected outputs.
+  </p>
+  <p>
+    Agreement strengthens proof of deterministic Specification behavior. Disagreement requires investigation rather than majority voting.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">11.16 · Canonical Result Equivalence Vectors</div>
+  <h2>Equivalent Canonical Meaning Must Be Distinguished From Byte Identity</h2>
+  <p>
+    Where the Specification requires one canonical representation, conformance requires that exact representation. Where multiple explicitly governed lossless representations are permitted, conformance may instead require deterministic canonical-result equivalence.
+  </p>
+  <p>
+    Reference Vectors shall make that distinction explicit rather than assuming every semantic equivalence test is also a byte-identity test.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">11.17 · Version Identity / Spatial Identity Separation</div>
+  <h2>Version Metadata Governs Interpretation; It Does Not Become the Place</h2>
+  <p>
+    Specification, encoding, and Conformance-profile identifiers may govern how an object is interpreted or tested.
+  </p>
+  <p>
+    Those identifiers shall not become part of the canonical spatial identity of the Point, Segment, SCPE, or Survey location represented.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">11.18 · Cross-Evaluator Agreement</div>
+  <h2>Independent Evaluators Must Reach the Same Governed Disposition</h2>
+  <p>
+    Independent evaluators applying the same Specification, profile, fixture, expected result, and evidence rules shall reach the same PASS, FAIL, UNSUPPORTED, compatibility, or permitted indeterminate disposition.
+  </p>
+  <p>
+    Disagreement indicates evaluation defect, Specification ambiguity, profile ambiguity, fixture defect, or unresolved version dependency.
   </p>
 </section>
 
 <div class="status-grid">
   <div class="status-card">
-    <h3>Established by Requirements and Conformance Scope</h3>
+    <h3>Executable Now</h3>
     <p>
-      The Survey Fabric must preserve established canonical meaning across compatible Specification and normative-encoding evolution, identify governing Specification and encoding versions where applicable, distinguish compatible change from spatial mutation, support independently reproducible Conformance judgments, and preserve a Mandatory Core while allowing explicitly scoped optional capability above it. Canonical standing for a standard remains a matter of valid BitPangea authority rather than conformance outcome.
+      Compatible meaning preservation; backward compatibility for defined core objects; unsupported-capability distinction; Mandatory Core PASS / FAIL; profile-scope evaluation; canonical-result equivalence; Conformance Report evidence linkage; Declaration consistency; independent reproduction; version identity versus spatial identity; cross-evaluator agreement.
     </p>
   </div>
   <div class="status-card">
-    <h3>Canonical Vector Corpus Not Yet Possessed</h3>
+    <h3>Still Open or Conditional</h3>
     <p>
-      Actual Specification-version and normative-encoding-version pairs, compatibility fixtures, profile identifiers, pass/fail/unsupported/indeterminate examples, transition vectors, Conformance Declaration cases, and authoritative machine-readable outcomes cannot be created until the versioning model, final Conformance profiles, test taxonomy, Conformance Declaration format, and applicable normative interchange rules are formally established.
+      Final institutional adoption/version succession rules; final profile identifiers if not yet frozen; final globally frozen failure/disposition identifiers; cases depending upon unresolved mathematics such as numerical Domain capacity H or non-rational derived scalars; final vector identifiers and corpus packaging.
     </p>
   </div>
 </div>
+
+<section class="spec-card">
+  <div class="spec-label">Reference Vector Integration Standing</div>
+  <h2>Version and Conformance Testing Now Has an Executable Candidate Proof Model</h2>
+  <p>
+    The original page already captured the correct conceptual separation among compatible evolution, Conformance profiles, and canonical authority. The principal change is that the Conformance framework is now concrete enough to support real candidate evidence cases rather than only future categories.
+  </p>
+  <p>
+    Section 11 can therefore test compatibility preservation, Mandatory Core outcomes, unsupported capability, profile scope, evidence traceability, declaration consistency, and independent reproduction. It shall still refuse to turn unresolved Specification mathematics into artificial pass/fail truth.
+  </p>
+</section>
 
 <section class="spec-card">
   <div class="spec-label">Primary Requirements Basis</div>
@@ -303,7 +377,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <a href="/theatlas/foundational-survey-fabric/reference-vectors/">Reference Vectors Index</a>
 </div>
 
-<div class="note">Foundational Survey Fabric · Reference Vectors 11 · Version / Conformance Vectors</div>
+<div class="note">Foundational Survey Fabric · Reference Vectors 11 · Version / Conformance Vectors · Compatibility and Proof Profile</div>
 
 </article>
 </main>
