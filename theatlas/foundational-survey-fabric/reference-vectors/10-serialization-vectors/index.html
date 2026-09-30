@@ -94,10 +94,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 
 <div class="req-intro">
 <p>
-  <strong>Serialization Vectors</strong> define the reference cases through which implementations will prove that canonical Survey expressions can be encoded, parsed, normalized or semantically resolved, exchanged, and reproduced without ambiguity or loss of spatial meaning.
+  <strong>Serialization Vectors</strong> define exact executable cases proving that canonical Foundational Survey Fabric objects are encoded, parsed, normalized, exchanged, and reproduced without ambiguity or loss of mathematical meaning.
 </p>
 <p>
-  The final vector corpus does not yet exist because the normative serialization/interchange model, field ordering, schema language, byte or text representation, semantic-equivalence rules, and normalization procedures remain unresolved within the Specification. This page therefore establishes the required serialization tests without prematurely assuming either one universal canonical encoding or a particular family of governed encodings.
+  The integrated candidate Specification now defines a concrete canonical interchange profile: <strong>FSF-CJSON-1.0</strong>. The profile provides structured machine-readable representation for supported canonical objects, exact CRPC values, deterministic canonicalization, UTF-8 serialization, and exact byte agreement where one canonical representation is required.
+</p>
+<p>
+  Reference Vectors may therefore move from generic serialization planning into exact candidate fixtures for canonical objects and bytes. The remaining boundary concerns representations or result types not yet admitted by the Specification, including future alternate encodings, future address syntaxes, unresolved non-rational derived-scalar types, and geometry families outside the current primitive model.
 </p>
 </div>
 
@@ -107,151 +110,234 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 </blockquote>
 
 <section class="spec-card">
-  <div class="spec-label">10.1 · Normative Encoding Vectors</div>
-  <h2>Canonical Meaning Must Be Encoded According to the Governing Rules</h2>
+  <div class="spec-label">10.0 · Current Interchange Model</div>
+  <h2>FSF-CJSON-1.0 Is the Candidate Canonical Serialization Profile</h2>
   <p>
-    The vector set shall include canonical Survey references, extents, and Survey-layer expressions together with the exact machine-readable encoding obligations established by the Specification.
+    The current candidate interchange model is <strong>FSF-CJSON-1.0</strong>, a deterministic JSON-based canonical representation for supported Foundational Survey Fabric objects.
   </p>
   <p>
-    If the Specification defines one unique canonical serialization, independent implementations shall emit that identical authoritative encoding for the same canonical meaning. If the Specification permits multiple explicitly governed lossless normative encodings, vectors shall prove exact compliance within each encoding and deterministic semantic equivalence across them.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">10.2 · Canonical Parsing Vectors</div>
-  <h2>Authoritative Encoding Must Resolve Identically</h2>
-  <p>
-    Reference Vectors shall include normative serialized inputs and the exact Survey meaning each must resolve to.
-  </p>
-  <p>
-    Parsing shall be deterministic and independent of locale, undocumented defaults, database state, or other hidden implementation context.
+    The profile shall preserve exact CRPC values, required object identity, deterministic structure, canonical integer-string form, canonical field ordering where prescribed, UTF-8 encoding, and exact canonical bytes.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">10.3 · Alternate Representation Vectors</div>
-  <h2>Permitted Alternate Forms Must Resolve Deterministically</h2>
+  <div class="spec-label">10.1 · CRPC Serialization Vectors</div>
+  <h2>Exact Rational Values Must Survive Interchange</h2>
   <p>
-    Where valid alternate or noncanonical serialized representations are permitted, Reference Vectors shall demonstrate their exact classification and deterministic resolution to canonical meaning, including normalization to a unique canonical form where the Specification requires one.
+    Reference Vectors shall include exact CRPC values and their required FSF-CJSON representation.
   </p>
   <p>
-    Alternate encodings may aid convenience or interoperability, and multiple normative encodings may coexist where explicitly governed, but none may create a competing canonical spatial truth.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">10.4 · Field Requirement Vectors</div>
-  <h2>Required Encoding Must Be Testable</h2>
-  <p>
-    The corpus shall include cases proving the presence, meaning, and exact interpretation of required fields, elements, markers, or components defined by each applicable governing normative encoding.
-  </p>
-  <p>
-    Missing, duplicated, malformed, or conflicting required fields shall be handled according to the governing validation rules.
+    Canonical serialization shall preserve numerator, denominator, sign, reduction, and canonical zero without conversion to floating-point or approximate decimal form.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">10.5 · Field-Order Vectors</div>
-  <h2>Ordering Rules Must Be Deterministic</h2>
+  <div class="spec-label">10.2 · Point Serialization Vectors</div>
+  <h2>Canonical Points Must Encode Deterministically</h2>
   <p>
-    Where field or component ordering is normative, vectors shall prove the exact required order.
+    The corpus shall include canonical Points represented through exact CRPC x and y components using the governing FSF-CJSON object structure.
   </p>
   <p>
-    Where ordering is semantically irrelevant but a governing normative encoding or canonicalization rule requires one deterministic sequence, vectors shall demonstrate convergence to that sequence.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">10.6 · Normative Whitespace and Formatting Vectors</div>
-  <h2>Formatting Variance Must Not Create Meaning Variance</h2>
-  <p>
-    Where a text-based normative or accepted representation permits insignificant formatting differences, Reference Vectors shall demonstrate which differences normalize away or remain semantically equivalent and which are invalid.
-  </p>
-  <p>
-    If the final canonical form requires exact formatting, conforming implementations shall reproduce that form exactly.
+    Independent implementations shall serialize the same canonical Point to the same canonical representation and parse that representation back to the same exact Point.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">10.7 · Precision-Preserving Serialization Vectors</div>
-  <h2>Encoding Must Preserve Canonical Precision</h2>
+  <div class="spec-label">10.3 · Segment Serialization Vectors</div>
+  <h2>Canonical Endpoint Order Must Survive Machine Representation</h2>
   <p>
-    The vector set shall include higher-precision and sub-Pang expressions to prove that normative serialization/interchange preserves every required element of canonical spatial precision regardless of the precision mechanism ultimately specified.
+    Reference Vectors shall include canonical Segments whose endpoints have already been normalized into deterministic lexicographic order.
   </p>
   <p>
-    Truncation, rounding, or lossy conversion shall not be accepted as canonical interchange where exact representation is required.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">10.8 · Round-Trip Vectors</div>
-  <h2>Encode, Parse, and Recover the Same Canonical Truth</h2>
-  <p>
-    Reference Vectors shall test serialize-parse and parse-serialize round trips for each applicable normative encoding and for any permitted normalization path between alternate forms and normative forms.
-  </p>
-  <p>
-    Where one unique canonical serialization is defined, lossless round trip shall restore both identical canonical meaning and the identical required representation. Where multiple governed lossless normative encodings are permitted, round trip shall preserve canonical meaning exactly and reproduce the governing obligations of the encoding being tested.
+    Serialization shall preserve that order and shall not reintroduce a noncanonical endpoint permutation.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">10.9 · Cross-Implementation Exchange Vectors</div>
-  <h2>One Implementation Must Read Another’s Canonical Output</h2>
+  <div class="spec-label">10.4 · SCPE Serialization Vectors</div>
+  <h2>Canonical Polygon Cycles Must Encode Exactly</h2>
   <p>
-    The corpus shall include interchange cases proving that normative output produced by one conforming implementation can be parsed and interpreted with the same canonical meaning by another.
+    The corpus shall include normalized SCPEs using counterclockwise traversal, the lexicographically least canonical start vertex, no repeated terminal closure point, and no redundant collinear middle vertices.
   </p>
   <p>
-    Exchange shall not depend on shared proprietary data structures, hidden registries, or private conventions.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">10.10 · Specification Identity Vectors</div>
-  <h2>Governing Standard Identity Must Be Interpretable</h2>
-  <p>
-    Where a normative encoding carries or references Specification identity, encoding version, Conformance profile, or compatibility metadata, Reference Vectors shall prove that those identifiers are encoded and interpreted consistently.
-  </p>
-  <p>
-    Such metadata identifies the governing standard and shall not become part of the spatial identity of the place described.
+    FSF-CJSON serialization shall preserve the canonical ordered vertex sequence exactly.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">10.11 · Invalid Interchange Vectors</div>
-  <h2>Malformed Machine Representation Must Fail Deterministically</h2>
+  <div class="spec-label">10.5 · Canonical Integer-String Vectors</div>
+  <h2>Integer Text Must Have One Canonical Form</h2>
   <p>
-    The vector corpus shall include malformed, incomplete, contradictory, unsupported, unauthorized, or precision-corrupting serialized or interchange forms.
+    Reference Vectors shall test the canonical integer-string rules used inside FSF-CJSON, including sign handling, prohibited redundant formatting, and canonical zero.
   </p>
   <p>
-    Conforming implementations shall reject or classify those forms consistently rather than invent canonical meaning.
+    Equivalent numeric meaning shall not be represented through multiple canonical integer strings.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">10.12 · Exact Machine-Output Agreement</div>
-  <h2>Every Implementation Must Satisfy the Required Encoding Obligations</h2>
+  <div class="spec-label">10.6 · Canonical Object-Key Ordering Vectors</div>
+  <h2>Deterministic Object Order Must Produce Deterministic Bytes</h2>
   <p>
-    Independent conforming implementations shall produce identical authoritative machine-readable output wherever the Specification defines a unique canonical serialization.
+    Where FSF-CJSON prescribes object-key order, Reference Vectors shall prove that every conforming serializer emits keys in that exact sequence.
   </p>
   <p>
-    Where multiple explicitly governed lossless normative encodings exist, implementations may produce representationally different outputs only as permitted by those encoding rules, while preserving deterministic semantic equivalence and one canonical mathematical meaning.
+    Parser acceptance of valid noncanonical key order, if permitted by the applicable input profile, shall remain distinct from canonical serialization output.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">10.7 · UTF-8 and Canonical Byte Vectors</div>
+  <h2>Canonical Serialization Is a Byte-Level Proof Obligation</h2>
+  <p>
+    Reference Vectors shall include exact UTF-8 byte sequences for canonical FSF-CJSON fixtures where the profile requires one canonical serialization.
+  </p>
+  <p>
+    Two conforming serializers given the same canonical object shall emit byte-identical canonical output.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">10.8 · Parse / Normalize / Serialize Vectors</div>
+  <h2>Permitted Input Must Converge to Canonical Output</h2>
+  <p>
+    Where a valid supported noncanonical representation is permitted, vectors shall prove the deterministic path:
+  </p>
+  <p>
+    <strong>parse → validate → normalize → canonical object → canonical serialize</strong>.
+  </p>
+  <p>
+    Repeating that process on the canonical output shall reproduce the same canonical object and same canonical bytes.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">10.9 · Canonical Round-Trip Vectors</div>
+  <h2>Canonical Meaning and Bytes Must Survive Repeated Exchange</h2>
+  <p>
+    Reference Vectors shall test:
+  </p>
+  <p>
+    <strong>canonical object → canonical bytes → parse → canonical object → canonical bytes</strong>.
+  </p>
+  <p>
+    Where one canonical serialization is required, both mathematical meaning and byte representation shall remain identical through repeated round trips.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">10.10 · Required / Prohibited Field Vectors</div>
+  <h2>Schema Obligations Must Be Enforced Exactly</h2>
+  <p>
+    The corpus shall include required-field success cases and missing-field failure cases, together with prohibited unknown-field cases where the profile forbids extension at that object location.
+  </p>
+  <p>
+    Implementations shall not silently invent defaults, discard prohibited content, or reinterpret unknown fields as though they were part of FSF-CJSON-1.0.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">10.11 · Duplicate / Conflicting Field Vectors</div>
+  <h2>Contradictory Machine Representation Must Fail</h2>
+  <p>
+    Reference Vectors shall include duplicate or conflicting field conditions prohibited by the profile.
+  </p>
+  <p>
+    A conforming implementation shall reject such input rather than select one occurrence opportunistically.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">10.12 · Precision-Preservation Vectors</div>
+  <h2>Serialization Must Preserve Exact CRPC Meaning</h2>
+  <p>
+    Reference Vectors shall include sub-Pang and other exact rational values proving that serialization does not truncate, decimalize, round, or otherwise reduce canonical precision.
+  </p>
+  <p>
+    Lossy display or convenience formats remain outside canonical serialization unless explicitly identified as derived and noncanonical.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">10.13 · Specification / Profile Identity Vectors</div>
+  <h2>Governing Interchange Identity Must Be Interpretable</h2>
+  <p>
+    Where FSF-CJSON-1.0 or the governing Conformance profile carries explicit version or profile identity, Reference Vectors shall prove that those identifiers are encoded and interpreted deterministically.
+  </p>
+  <p>
+    Such metadata identifies the governing standard. It does not become part of the spatial identity of the Point, Segment, SCPE, or other canonical object represented.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">10.14 · Cross-Implementation Exchange Vectors</div>
+  <h2>One Conforming Implementation Must Read Another's Canonical Output</h2>
+  <p>
+    The corpus shall include producer / consumer exchange cases in which canonical FSF-CJSON emitted by one conforming implementation is parsed by another.
+  </p>
+  <p>
+    The receiving implementation shall recover the same canonical mathematical object without proprietary registries, hidden defaults, or implementation-specific state.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">10.15 · Unsupported Representation Boundary</div>
+  <h2>Unknown Encodings Must Not Be Guessed</h2>
+  <p>
+    JSON-like, alternate text, binary, or future interchange forms not governed by the active Specification / Conformance profile shall remain unsupported unless explicitly admitted.
+  </p>
+  <p>
+    Reference Vectors shall not treat similarity to FSF-CJSON as authority to reinterpret an unknown format.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">10.16 · Derived-Scalar Serialization Boundary</div>
+  <h2>Open Mathematical Result Types Cannot Receive Invented Encodings</h2>
+  <p>
+    The current profile can serialize defined canonical object and scalar types. Some future exact derived results—such as non-rational distance or arbitrary rotated-coordinate values—do not yet have a closed canonical scalar representation.
+  </p>
+  <p>
+    Serialization Vectors shall not invent a representation for those open mathematical types before the Specification defines the underlying canonical value model.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">10.17 · Exact Machine-Output Agreement</div>
+  <h2>Every Implementation Must Produce the Same Canonical Output Where Required</h2>
+  <p>
+    Independent conforming implementations shall produce identical canonical FSF-CJSON output and identical canonical bytes for the same canonical supported object where the governing profile requires one unique serialization.
+  </p>
+  <p>
+    A mismatch indicates implementation defect, Specification ambiguity, version/profile incompatibility, fixture defect, or serialization of an object outside current mathematical closure.
   </p>
 </section>
 
 <div class="status-grid">
   <div class="status-card">
-    <h3>Established by Requirements and Specification Scope</h3>
+    <h3>Executable Now</h3>
     <p>
-      The Survey Fabric must support deterministic normative serialization and interchange, whether through one canonical serialization or multiple explicitly governed lossless encodings; deterministic normalization or semantic equivalence; one mathematical meaning across durable representations; explicit Specification and encoding identity where required; precision-preserving exchange; independent implementation; and exact machine interpretation without hidden state.
+      CRPC serialization; Point serialization; Segment serialization; SCPE serialization; canonical integer strings; deterministic object-key order; UTF-8 canonical bytes; required / prohibited fields; duplicate / conflicting field rejection; parse / normalize / serialize convergence; canonical round-trip; precision preservation; cross-implementation exchange.
     </p>
   </div>
   <div class="status-card">
-    <h3>Canonical Vector Corpus Not Yet Possessed</h3>
+    <h3>Still Open or Conditional</h3>
     <p>
-      Actual normative bytes or text, schemas, field names, field order, formatting rules, Specification and encoding identifiers, normalization or semantic-equivalence examples, round-trip fixtures, and exact machine-readable expected outputs cannot be created until the final normative serialization/interchange and identity rules are specified and tested.
+      Future alternate normative encodings; future human-facing address serialization; non-rational derived-scalar serialization; future geometry-family encodings; final vector identifiers and corpus packaging; final canonical adoption.
     </p>
   </div>
 </div>
+
+<section class="spec-card">
+  <div class="spec-label">Reference Vector Integration Standing</div>
+  <h2>Serialization Has Moved From Open Design Space to a Concrete Candidate Profile</h2>
+  <p>
+    The original page correctly deferred executable vectors while serialization format, field rules, byte representation, and canonicalization remained unresolved. That condition has materially changed.
+  </p>
+  <p>
+    FSF-CJSON-1.0 now provides a concrete candidate interchange profile for the solved FSF core. Section 10 can therefore support exact object, parser, canonicalization, round-trip, and byte-level fixtures. Future encodings and still-open mathematical result types remain outside that closed serialization surface.
+  </p>
+</section>
 
 <section class="spec-card">
   <div class="spec-label">Primary Requirements Basis</div>
@@ -280,7 +366,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <a href="/theatlas/foundational-survey-fabric/reference-vectors/">Reference Vectors Index</a>
 </div>
 
-<div class="note">Foundational Survey Fabric · Reference Vectors 10 · Serialization Vectors</div>
+<div class="note">Foundational Survey Fabric · Reference Vectors 10 · Serialization Vectors · FSF-CJSON-1.0 Canonical Interchange Profile</div>
 
 </article>
 </main>
