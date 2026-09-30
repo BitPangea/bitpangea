@@ -94,10 +94,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 
 <div class="req-intro">
 <p>
-  <strong>Survey Domain Limit Vectors</strong> define the reference cases through which implementations will prove exact agreement on the canonical origin, the exact limits of the finite Survey Domain, references immediately inside or on those limits, and references that must fail because they lie outside the Survey Domain.
+  <strong>Survey Domain Limit Vectors</strong> define exact executable cases for the canonical origin and for the mathematical boundary behavior of the finite Survey Domain.
 </p>
 <p>
-  The final vector corpus does not yet exist because the formal Survey Domain geometry and exact boundary conventions remain unresolved within the Specification. This page therefore establishes the required vector categories and proof obligations without inventing Survey Domain limit coordinates prematurely.
+  The candidate Specification now resolves the Domain's geometry and boundary form sufficiently to test it symbolically and parametrically: the Survey Domain is a closed, axis-aligned square centered at the canonical origin, represented as <strong>D<sub>H</sub> = {(x,y) : -H ≤ x ≤ H and -H ≤ y ≤ H}</strong>, where <strong>H</strong> is an exact positive CRPC value.
+</p>
+<p>
+  The remaining open question is numerical capacity: the canonical value of <strong>H</strong> has not yet been selected. Reference Vectors may therefore prove the exact boundary rules, inclusion semantics, origin behavior, and symbolic inside/on/outside classification, but they shall not invent a numerical half-span merely to complete the corpus.
 </p>
 </div>
 
@@ -107,90 +110,119 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 </blockquote>
 
 <section class="spec-card">
+  <div class="spec-label">02.0 · Current Survey Domain Model</div>
+  <h2>The Geometry Is Defined; Numerical Capacity Is Still Open</h2>
+  <p>
+    The candidate Survey Domain is a finite, connected, closed, axis-aligned square centered at the canonical origin:
+  </p>
+  <p>
+    <strong>D<sub>H</sub> = {(x,y) : -H ≤ x ≤ H and -H ≤ y ≤ H}</strong>
+  </p>
+  <p>
+    with <strong>H &gt; 0</strong> represented exactly in CRPC. The origin is <strong>(0,0)</strong>. The boundary is included because the Domain is closed.
+  </p>
+  <p>
+    The shape, closure, centering, axis alignment, and boundary semantics are therefore testable now. The numerical value of <strong>H</strong> remains an upstream Specification decision.
+  </p>
+</section>
+
+<section class="spec-card">
   <div class="spec-label">02.1 · Canonical Origin Vectors</div>
   <h2>The Zero-Reference Must Resolve Identically</h2>
   <p>
-    The vector set shall include the permanent canonical origin and sufficient neighboring cases to prove that all conforming implementations interpret the zero-reference identically.
+    The vector set shall include the canonical origin <strong>(0,0)</strong> and exact neighboring Points sufficient to prove that all conforming implementations interpret the zero-reference identically.
   </p>
   <p>
-    The origin shall be tested as a mathematical reference point only and shall not imply Parcel, civic, cultural, or geographic importance.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">02.2 · Exact Survey Domain Limit Vectors</div>
-  <h2>The Finite Survey Domain Must Have One Exact Extent</h2>
-  <p>
-    Reference Vectors shall identify the exact mathematical limits of the canonical Survey Domain once its formal geometry is specified.
-  </p>
-  <p>
-    Independent implementations shall derive the same valid reference extent and the same boundary conditions from the governing Specification.
+    The origin is a mathematical reference point only. It does not imply Parcel identity, World membership, landmark status, civic importance, ownership, or cultural meaning.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">02.3 · Interior-Near-Boundary Vectors</div>
-  <h2>Just-Inside References Must Remain Valid</h2>
+  <div class="spec-label">02.2 · Symbolic Boundary Vectors</div>
+  <h2>The Four Canonical Domain Limits Are Exact</h2>
   <p>
-    The vector corpus shall include canonical references positioned immediately inside the Survey Domain limits at the finest testable precision selected for the relevant test suite.
+    The corpus shall test the four boundary equations:
   </p>
   <p>
-    These cases shall prove that valid near-boundary positions are not rejected merely because they lie close to a Survey Domain limit.
+    <strong>x = -H</strong>, <strong>x = +H</strong>, <strong>y = -H</strong>, and <strong>y = +H</strong>.
+  </p>
+  <p>
+    These vectors shall prove that all conforming implementations classify Points against the same exact parameterized Domain, even before a numerical value for <strong>H</strong> is selected.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">02.3 · Interior Vectors</div>
+  <h2>Strictly Interior Points Must Be Valid</h2>
+  <p>
+    A Point satisfying <strong>-H &lt; x &lt; H</strong> and <strong>-H &lt; y &lt; H</strong> is strictly interior to the Survey Domain and shall be classified as valid Survey reference.
+  </p>
+  <p>
+    Capacity-independent fixtures may use symbolic or parameterized coordinates that prove the rule without assuming a final numerical value for <strong>H</strong>.
   </p>
 </section>
 
 <section class="spec-card">
   <div class="spec-label">02.4 · Exact-Boundary Vectors</div>
-  <h2>Boundary Inclusion Must Be Deterministic</h2>
+  <h2>Boundary Inclusion Is Deterministic</h2>
   <p>
-    The vector set shall include references that lie exactly on canonical Survey Domain boundaries wherever the formal Survey Domain model permits such references.
+    Because the candidate Survey Domain is closed, Points satisfying the Domain inequalities with equality on one or more sides are valid Survey references.
   </p>
   <p>
-    Expected results shall prove the precise inclusion, exclusion, endpoint, and edge semantics established by the Specification.
+    Examples include Points with <strong>x = ±H</strong> and <strong>-H ≤ y ≤ H</strong>, or <strong>y = ±H</strong> and <strong>-H ≤ x ≤ H</strong>.
+  </p>
+  <p>
+    No implementation may treat an exact boundary Point as outside solely because it lies on the Domain edge.
   </p>
 </section>
 
 <section class="spec-card">
   <div class="spec-label">02.5 · Outside-Boundary Vectors</div>
-  <h2>Just-Outside References Must Fail</h2>
+  <h2>Any Coordinate Beyond H Must Fail</h2>
   <p>
-    The corpus shall include references immediately beyond each applicable Survey Domain limit to prove deterministic rejection of out-of-domain spatial claims.
+    A Point is outside the Survey Domain if <strong>x &lt; -H</strong>, <strong>x &gt; H</strong>, <strong>y &lt; -H</strong>, or <strong>y &gt; H</strong>.
   </p>
   <p>
-    Such references shall not be silently clipped, snapped, wrapped, translated, or reinterpreted as valid Survey positions.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">02.6 · Corner and Intersection Vectors</div>
-  <h2>Multiple Boundary Conditions Must Agree</h2>
-  <p>
-    Where the specified Survey Domain geometry contains corners, vertices, joined limits, or equivalent compound boundary conditions, the vector set shall include exact cases at those intersections.
-  </p>
-  <p>
-    These vectors shall prove that multiple simultaneous boundary rules produce one deterministic result.
+    Such a Point shall fail as a valid canonical Survey reference. It shall not be clipped, snapped, wrapped, translated, rounded, or otherwise repaired into the Domain.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">02.7 · Boundary Precision Vectors</div>
-  <h2>Greater Precision Must Not Change the Domain</h2>
+  <div class="spec-label">02.6 · Corner Vectors</div>
+  <h2>Simultaneous Boundary Conditions Produce One Result</h2>
   <p>
-    The corpus shall test references near Survey Domain limits across multiple supported precision levels or states to prove that increasing precision does not expand, contract, or reinterpret the finite Survey Domain.
+    The four corners are:
   </p>
   <p>
-    The eventual precision mechanism may increase positional exactness through refinement, exact coordinate extension, symbolic subdivision, exact fractional representation, or another exact method. None may migrate the canonical Survey Domain extent.
+    <strong>(-H,-H)</strong>, <strong>(-H,+H)</strong>, <strong>(+H,-H)</strong>, and <strong>(+H,+H)</strong>.
+  </p>
+  <p>
+    Each corner lies on two included boundaries simultaneously and is therefore a valid Survey Point under the current closed-Domain model.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">02.7 · ECEM Boundary Stability Vectors</div>
+  <h2>Greater Representational Capacity Must Not Move the Boundary</h2>
+  <p>
+    Under ECEM, expansion of exact coordinate representability does not expand, contract, or reinterpret the Survey Domain.
+  </p>
+  <p>
+    A future compatible version may represent additional exact Points near the boundary, but the governing inequalities remain the same and previously valid or invalid Points retain their meaning.
   </p>
 </section>
 
 <section class="spec-card">
   <div class="spec-label">02.8 · Domain Validity Vectors</div>
-  <h2>Referenceable and Nonreferenceable Space Must Be Distinguishable</h2>
+  <h2>Valid Survey Reference and Invalid Survey Reference Must Be Distinguishable</h2>
   <p>
-    Vectors shall demonstrate the exact transition between valid Survey reference and the absence of valid Survey reference beyond the canonical Survey Domain.
+    Vectors shall prove the exact three-way geometric distinction among:
   </p>
   <p>
-    A location outside the Survey Domain shall simply fail as a canonical BitPangea Survey reference; the failure shall not assign cartographic or territorial meaning to that space.
+    <strong>INTERIOR</strong>, <strong>BOUNDARY</strong>, and <strong>OUTSIDE</strong>.
+  </p>
+  <p>
+    For Survey validity, INTERIOR and BOUNDARY are valid; OUTSIDE is invalid. These labels describe Survey Domain relation only and do not by themselves determine World membership.
   </p>
 </section>
 
@@ -198,38 +230,71 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">02.9 · World-Space Separation Vectors</div>
   <h2>Survey Validity Is Not World Membership</h2>
   <p>
-    Where appropriate, vectors shall demonstrate that a location may be validly referenceable within the Survey Domain without thereby proving that the location constitutes BitPangea World-space.
+    Reference Vectors shall preserve the architectural distinction between the FSF Survey Domain and Spatial Ground membership.
   </p>
   <p>
-    These cases shall preserve the architectural distinction between canonical reference capacity and World membership established by higher spatial Architecture domains.
+    A Point may be a valid Survey reference inside <strong>D<sub>H</sub></strong> while still being classified by Spatial Ground as <strong>NON_WORLD</strong>. FSF proves reference capacity; Spatial Ground determines canonical participation in The World.
   </p>
 </section>
 
 <section class="spec-card">
   <div class="spec-label">02.10 · Cross-Implementation Boundary Agreement</div>
-  <h2>Every Implementation Must Draw the Same Mathematical Limit</h2>
+  <h2>Every Implementation Must Classify the Same Point the Same Way</h2>
   <p>
-    Independent conforming implementations shall classify every boundary vector identically under the same governing Specification.
+    Independent conforming implementations shall classify the same exact Point identically as interior, boundary, or outside under the same governing <strong>H</strong> and Specification profile.
   </p>
   <p>
-    A disagreement about whether a reference is inside, on, or outside the Survey Domain indicates an implementation defect, specification ambiguity, or version incompatibility requiring resolution.
+    A disagreement indicates implementation defect, Specification ambiguity, version incompatibility, or fixture defect requiring resolution.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">02.11 · Numerical H Dependency</div>
+  <h2>Concrete Edge Fixtures Must Wait for Capacity Selection</h2>
+  <p>
+    The unresolved value of <strong>H</strong> prevents final publication of concrete numerical vectors such as “the eastern boundary is x = N Pang” or “this specific coordinate is one exact unit outside the Domain.”
+  </p>
+  <p>
+    Such examples become canonical only after the Specification selects the numerical Domain capacity through a justified mathematical decision. Until then, symbolic and parameterized fixtures are the correct Reference Vector form.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">02.12 · No Inference Beyond the Domain</div>
+  <h2>Outside the Survey Domain Means No Valid FSF Reference</h2>
+  <p>
+    A failed Survey reference outside <strong>D<sub>H</sub></strong> does not imply an exterior realm, alternate geography, World edge, Verge, ownership boundary, or any other higher-layer ontology.
+  </p>
+  <p>
+    The Reference Vector proves only that the input is outside the canonical FSF reference domain.
   </p>
 </section>
 
 <div class="status-grid">
   <div class="status-card">
-    <h3>Established by Requirements and Specification Scope</h3>
+    <h3>Executable Now</h3>
     <p>
-      The Survey Domain must be finite, connected, exact in extent, globally canonical, independent of World membership, and governed by deterministic endpoint and boundary semantics. The permanent canonical origin must serve as one exact zero-reference without acquiring higher-layer importance.
+      Canonical origin; parameterized Domain geometry; closed-boundary semantics; symbolic interior/on-boundary/outside classification; corner inclusion; ECEM boundary stability; Survey-validity versus World-membership separation; cross-implementation classification agreement.
     </p>
   </div>
   <div class="status-card">
-    <h3>Canonical Vector Corpus Not Yet Possessed</h3>
+    <h3>Still Open</h3>
     <p>
-      Actual origin coordinates, Survey Domain-limit values, exact geometric boundary expressions, inclusion conventions, near-boundary precision cases, and authoritative machine-readable expected results cannot be created until the formal Survey Domain geometry, canonical frame, addressing model, precision mechanism, and normative serialization/interchange rules are specified.
+      Numerical value of H; final numerical edge coordinates; concrete just-inside / just-outside canonical fixtures tied to one selected H; final vector identifiers, corpus packaging, and canonical publication/adoption.
     </p>
   </div>
 </div>
+
+<section class="spec-card">
+  <div class="spec-label">Reference Vector Integration Standing</div>
+  <h2>Boundary Semantics Are Testable Before Numerical Capacity Is Final</h2>
+  <p>
+    The original page correctly deferred Survey Domain vectors while both geometry and boundary conventions were unresolved. That is no longer the current standing.
+  </p>
+  <p>
+    The candidate Specification now defines the Domain as a closed axis-aligned square centered at the origin, so exact symbolic and parameterized boundary behavior can be tested. What remains open is only the numerical capacity parameter <strong>H</strong>. Reference Vectors therefore may prove the rules now without inventing the missing number.
+  </p>
+</section>
 
 <section class="spec-card">
   <div class="spec-label">Primary Requirements Basis</div>
@@ -259,7 +324,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <a href="/theatlas/foundational-survey-fabric/reference-vectors/">Reference Vectors Index</a>
 </div>
 
-<div class="note">Foundational Survey Fabric · Reference Vectors 02 · Survey Domain Limit Vectors</div>
+<div class="note">Foundational Survey Fabric · Reference Vectors 02 · Survey Domain Limit Vectors · Parameterized Boundary Model</div>
 
 </article>
 </main>
