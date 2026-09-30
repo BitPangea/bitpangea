@@ -92,10 +92,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 
 <div class="req-intro">
 <p>
-  <strong>Orientation Vectors</strong> define the reference cases through which implementations will prove identical interpretation of the native directions <strong>Pankor</strong>, <strong>Panvath</strong>, <strong>Panoris</strong>, and <strong>Panvel</strong>, together with the canonical rotational convention, frame handedness, and exact transformations of orientation.
+  <strong>Orientation Vectors</strong> define exact executable cases proving agreement on the permanent canonical frame, native directions, handedness, zero direction, orientation predicates, and the boundary between solved frame semantics and still-open arbitrary rotation mathematics.
 </p>
 <p>
-  The final vector corpus does not yet exist because the exact angular unit, positive rotational convention, and formal transformation mathematics remain unresolved within the Specification. This page therefore establishes the required orientation tests without inventing those canonical values prematurely.
+  The integrated candidate Specification now resolves substantially more than the original page reflected. The frame is right-handed; <strong>+x = Panoris</strong>, <strong>-x = Panvel</strong>, <strong>+y = Pankor</strong>, and <strong>-y = Panvath</strong>; positive rotation is counterclockwise when viewed from the positive normal; and Panoris is the zero direction.
+</p>
+<p>
+  The remaining open area is narrower: the final angular unit and a fully closed exact representation for arbitrary rotations have not yet been selected. Reference Vectors may therefore prove the canonical frame, cardinal oppositions, determinant orientation, handedness, zero direction, and exact orientation-preserving transformations already supported by the Specification, while arbitrary-angle rotation fixtures remain non-final.
 </p>
 </div>
 
@@ -105,151 +108,200 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 </blockquote>
 
 <section class="spec-card">
-  <div class="spec-label">04.1 · Pankor Vectors</div>
-  <h2>Canonical Pankor Must Resolve Identically</h2>
+  <div class="spec-label">04.0 · Current Canonical Orientation Model</div>
+  <h2>The Frame and Handedness Are Defined</h2>
   <p>
-    The vector set shall include canonical orientation cases aligned with <strong>Pankor</strong> to prove that all conforming implementations interpret the same canonical Survey orientation identically.
+    The candidate canonical frame is:
   </p>
   <p>
-    Presentation in higher Architecture domains may translate Pankor as North or display it differently, but the canonical Survey orientation shall remain unchanged.
+    <strong>+x = Panoris = East</strong><br/>
+    <strong>-x = Panvel = West</strong><br/>
+    <strong>+y = Pankor = North</strong><br/>
+    <strong>-y = Panvath = South</strong>
+  </p>
+  <p>
+    The planar frame is right-handed. Positive rotation is counterclockwise when viewed from the positive normal. The canonical zero direction is Panoris.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">04.1 · Pankor Vectors</div>
+  <h2>Pankor Is Exactly +y</h2>
+  <p>
+    Reference Vectors shall prove that canonical Pankor corresponds exactly to the positive y-axis of the Survey frame.
+  </p>
+  <p>
+    Presentation layers may label, rotate, or render the frame differently, but they may not alter the canonical mathematical meaning of Pankor.
   </p>
 </section>
 
 <section class="spec-card">
   <div class="spec-label">04.2 · Panvath Vectors</div>
-  <h2>Canonical Panvath Must Resolve Identically</h2>
+  <h2>Panvath Is Exactly -y</h2>
   <p>
-    Reference vectors shall include exact cases aligned with <strong>Panvath</strong> and shall prove the deterministic relationship between Panvath and the rest of the canonical directional frame.
+    Reference Vectors shall prove that canonical Panvath corresponds exactly to the negative y-axis and is the exact opposed direction to Pankor.
   </p>
   <p>
-    A conforming implementation shall not reinterpret Panvath through local or user-facing orientation conventions.
+    Local or user-facing orientation conventions shall not redefine that relationship.
   </p>
 </section>
 
 <section class="spec-card">
   <div class="spec-label">04.3 · Panoris Vectors</div>
-  <h2>Canonical Panoris Must Resolve Identically</h2>
+  <h2>Panoris Is Exactly +x and the Zero Direction</h2>
   <p>
-    The corpus shall include exact cases aligned with <strong>Panoris</strong> to prove implementation-independent interpretation of the canonical eastward direction of the Survey frame.
+    The corpus shall prove that Panoris corresponds exactly to the positive x-axis of the canonical frame.
   </p>
   <p>
-    Derived views may rotate or mirror presentation, but canonical Panoris shall remain mathematically fixed.
+    Panoris also serves as the canonical zero direction from which positive rotational orientation is interpreted.
   </p>
 </section>
 
 <section class="spec-card">
   <div class="spec-label">04.4 · Panvel Vectors</div>
-  <h2>Canonical Panvel Must Resolve Identically</h2>
+  <h2>Panvel Is Exactly -x</h2>
   <p>
-    The vector set shall include exact cases aligned with <strong>Panvel</strong> and shall prove its stable relationship to the canonical global frame.
+    Reference Vectors shall prove that Panvel corresponds exactly to the negative x-axis and is the exact opposed direction to Panoris.
   </p>
   <p>
-    Panvel shall remain part of one permanent canonical Survey orientation rather than a viewpoint-dependent direction.
+    Derived views may mirror or rotate presentation, but canonical Panvel remains fixed within the Survey frame.
   </p>
 </section>
 
 <section class="spec-card">
   <div class="spec-label">04.5 · Opposed-Direction Vectors</div>
-  <h2>Canonical Oppositions Must Be Exact</h2>
+  <h2>Canonical Oppositions Are Exact</h2>
   <p>
-    Reference Vectors shall prove the exact mathematical opposition between Pankor and Panvath and between Panoris and Panvel once the formal angular system is specified.
+    The corpus shall demonstrate:
   </p>
   <p>
-    Independent implementations shall derive the same canonical relationship from the same orientation inputs.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">04.6 · Canonical Rotation Vectors</div>
-  <h2>One Exact Way to Turn</h2>
-  <p>
-    The corpus shall include exact rotational cases sufficient to prove the canonical angular and rotational rules of the Survey frame.
+    <strong>Pankor ↔ Panvath</strong><br/>
+    <strong>Panoris ↔ Panvel</strong>
   </p>
   <p>
-    Once the formal angular unit and positive rotational convention are established, identical rotation inputs shall produce identical canonical orientation results.
+    These are exact axis oppositions in the canonical frame and do not depend upon a future choice of named angular unit.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">04.7 · Full-Cycle Rotation Vectors</div>
-  <h2>Complete Rotation Must Return to Identical Orientation</h2>
+  <div class="spec-label">04.6 · Handedness Vectors</div>
+  <h2>The Canonical Frame Is Right-Handed</h2>
   <p>
-    Reference vectors shall include complete-cycle rotations that must resolve exactly to the original canonical orientation.
+    Reference Vectors shall include ordered Point triples and basis cases sufficient to prove the permanent right-handed orientation of the canonical frame.
   </p>
   <p>
-    No cumulative approximation or implementation-specific drift shall be permitted in canonical rotational truth.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">04.8 · Handedness Vectors</div>
-  <h2>The Coordinate Frame Must Have One Mathematical Handedness</h2>
-  <p>
-    The vector set shall include orientation cases sufficient to prove the permanent handedness of the two-dimensional canonical frame once that convention is formally specified.
-  </p>
-  <p>
-    Mirrored presentation may exist as a derived transformation, but it shall not redefine the canonical handedness.
+    Exact determinant sign shall distinguish positive orientation, negative orientation, and collinearity without tolerance or floating-point approximation.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">04.9 · Mirrored-View Vectors</div>
-  <h2>Reflection Must Remain a Derived Transformation</h2>
+  <div class="spec-label">04.7 · Orientation Predicate Vectors</div>
+  <h2>Turn Direction Is Exactly Testable</h2>
   <p>
-    Reference vectors shall demonstrate how reflected or mirrored orientation is mapped exactly back to the unchanged canonical frame.
+    For ordered Points <strong>A</strong>, <strong>B</strong>, and <strong>C</strong>, the exact orientation determinant:
   </p>
   <p>
-    A mirrored view shall not create a second canonical Survey orientation or competing directional truth.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">04.10 · Rotated-View Vectors</div>
-  <h2>Presentation Rotation Must Resolve Back to Canonical Orientation</h2>
-  <p>
-    The corpus shall include derived local or presentation rotations to prove that transformed orientation can be deterministically mapped back to Pankor, Panvath, Panoris, Panvel, and the canonical rotational frame.
+    <strong>orient(A,B,C) = (Bx-Ax)(Cy-Ay) - (By-Ay)(Cx-Ax)</strong>
   </p>
   <p>
-    Transform the view, not the truth.
+    shall classify the turn deterministically as positive, negative, or collinear.
+  </p>
+  <p>
+    These vectors directly support geometry validation, segment intersection, SCPE normalization, and traversal orientation.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">04.11 · Combined Transformation Vectors</div>
-  <h2>Rotation and Reflection Must Compose Deterministically</h2>
+  <div class="spec-label">04.8 · Positive-Rotation Convention Vectors</div>
+  <h2>Positive Rotation Is Counterclockwise</h2>
   <p>
-    Where the Specification supports composed orientation transformations, Reference Vectors shall test combinations of rotation, reflection, and inverse transformation, together with any other formally specified frame transformation needed to prove deterministic orientation behavior.
+    Reference Vectors shall prove the selected positive rotational convention using cardinal and orientation-predicate cases that do not require a final angular unit.
   </p>
   <p>
-    Every valid composition shall resolve to one exact canonical orientation result.
+    Viewed from the positive normal, a positive turn proceeds counterclockwise from Panoris toward Pankor.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">04.12 · Cross-Implementation Orientation Agreement</div>
-  <h2>Every Implementation Must Resolve the Same Canonical Orientation</h2>
+  <div class="spec-label">04.9 · Orientation-Preserving Transformation Vectors</div>
+  <h2>Allowed Transformations Must Preserve Handedness</h2>
   <p>
-    Independent conforming implementations shall return the same authoritative canonical orientation, rotational, and handedness meaning for identical inputs under the same governing Specification. Where the Specification requires one unique canonical representation of an orientation result, that representation shall also agree exactly.
+    Where the candidate mathematics permit orientation-preserving uniform affine placement, vectors shall prove that positive uniform scale and translation preserve canonical orientation.
   </p>
   <p>
-    A disagreement indicates an implementation defect, specification ambiguity, version incompatibility, or unresolved mathematical dependency requiring correction.
+    Nonuniform scaling, shear, and reflection are not part of that placement model. They shall not be treated as equivalent canonical transformations.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">04.10 · Reflection Boundary Vectors</div>
+  <h2>Reflection Is Not Canonical Orientation Preservation</h2>
+  <p>
+    A reflected or mirrored presentation may exist at a higher layer, but reflection reverses handedness and therefore cannot silently become an equivalent canonical Survey transformation.
+  </p>
+  <p>
+    Reference Vectors shall distinguish presentation reflection from preservation of canonical orientation truth.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">04.11 · Arbitrary Rotation Boundary</div>
+  <h2>General Rotation Is Not Yet Fully Closed</h2>
+  <p>
+    Arbitrary exact rotation may map rational-coordinate Points to non-rational coordinates. The candidate Specification has therefore not yet closed a universal exact rotation representation compatible with CRPC.
+  </p>
+  <p>
+    Reference Vectors shall not publish arbitrary-angle rotated coordinate results as final canonical outputs until the Specification defines the exact result type and angular representation.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">04.12 · Angular Unit Boundary</div>
+  <h2>Orientation Semantics Do Not Require Premature Unit Selection</h2>
+  <p>
+    The canonical frame, handedness, zero direction, opposed directions, determinant orientation, and positive-turn convention are already testable.
+  </p>
+  <p>
+    The final angular unit remains open. Reference Vectors shall therefore avoid inventing degrees, radians, turns, or another canonical unit unless and until the Specification selects one.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">04.13 · Cross-Implementation Orientation Agreement</div>
+  <h2>Defined Orientation Semantics Must Reproduce Exactly</h2>
+  <p>
+    Independent conforming implementations shall return the same canonical direction, handedness, determinant sign, and supported transformation result for identical inputs under the same governing Specification.
+  </p>
+  <p>
+    A mismatch indicates implementation defect, Specification ambiguity, version incompatibility, fixture defect, or an orientation operation tested beyond the current mathematical closure.
   </p>
 </section>
 
 <div class="status-grid">
   <div class="status-card">
-    <h3>Established by Requirements and Specification Scope</h3>
+    <h3>Executable Now</h3>
     <p>
-      BitPangea has one permanent canonical orientation frame using Pankor, Panvath, Panoris, and Panvel; one global coordinate frame; one canonical angular system must eventually be defined; and handedness, rotation, mirroring, and transformed views must remain exact and deterministically resolvable to the singular canonical Survey orientation.
+      Pankor / Panvath / Panoris / Panvel axis meaning; exact opposed-direction relations; right-handed frame; Panoris zero direction; counterclockwise positive rotation convention; exact determinant orientation; handedness preservation under translation and positive uniform scale; reflection detection.
     </p>
   </div>
   <div class="status-card">
-    <h3>Canonical Vector Corpus Not Yet Possessed</h3>
+    <h3>Still Open or Conditional</h3>
     <p>
-      Actual angular values, positive rotation convention, exact handedness declaration, normative orientation encodings where applicable, transformation matrices or equivalent formalism, and authoritative expected outputs cannot be defined until the final angular and transformation mathematics are specified and tested.
+      Final angular unit; universal arbitrary-angle exact rotation representation; canonical encoding of arbitrary orientation values; rotated-coordinate result type where CRPC closure fails; final vector identifiers and corpus packaging.
     </p>
   </div>
 </div>
+
+<section class="spec-card">
+  <div class="spec-label">Reference Vector Integration Standing</div>
+  <h2>Orientation Is Partly Executable Without a Final Angular Unit</h2>
+  <p>
+    The original page deferred nearly the entire corpus because positive rotation, handedness, and angular mathematics were all unresolved. That is no longer the current standing.
+  </p>
+  <p>
+    The frame, native directions, handedness, zero direction, determinant orientation, and positive rotational convention are now candidate-defined and testable. The unresolved work is concentrated in arbitrary rotation and angular-unit representation. Reference Vectors shall advance on the solved orientation semantics without inventing the remaining mathematics.
+  </p>
+</section>
 
 <section class="spec-card">
   <div class="spec-label">Primary Requirements Basis</div>
@@ -279,7 +331,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <a href="/theatlas/foundational-survey-fabric/reference-vectors/">Reference Vectors Index</a>
 </div>
 
-<div class="note">Foundational Survey Fabric · Reference Vectors 04 · Orientation Vectors</div>
+<div class="note">Foundational Survey Fabric · Reference Vectors 04 · Orientation Vectors · Canonical Frame Profile</div>
 
 </article>
 </main>
