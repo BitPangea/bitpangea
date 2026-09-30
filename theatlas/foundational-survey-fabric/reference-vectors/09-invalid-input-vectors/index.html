@@ -94,10 +94,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 
 <div class="req-intro">
 <p>
-  <strong>Invalid-Input Vectors</strong> define the reference cases through which implementations will prove that inputs lacking valid canonical Survey meaning are rejected consistently and without silent repair.
+  <strong>Invalid-Input Vectors</strong> define exact executable negative cases proving that malformed, impossible, ambiguous, unsupported, out-of-domain, nonconforming, and semantically invalid inputs fail deterministically without silent repair.
 </p>
 <p>
-  The final vector corpus does not yet exist because the exact address grammar, precision mechanism, normative serialization/interchange model, version identifiers, and error taxonomy remain unresolved within the Specification and Conformance framework. This page therefore establishes the required negative-test categories without inventing invalid examples or presuming unresolved mathematics prematurely.
+  The integrated candidate Specification and Conformance framework now define substantially more of the invalidity surface than the original page reflected. CRPC structure, Point / Segment / SCPE validity, Survey Domain classification, FSF-CJSON-1.0 canonical structure, normalization boundaries, exact-or-invalid semantics, unsupported-state handling, and version/profile compatibility rules now provide concrete negative-test families.
+</p>
+<p>
+  One distinction remains essential: <strong>INVALID</strong> and <strong>UNSUPPORTED</strong> are not interchangeable. An input may be mathematically valid but unsupported by a particular implementation or profile, while malformed, contradictory, out-of-domain, or semantically impossible input is invalid. Reference Vectors shall preserve that separation.
 </p>
 </div>
 
@@ -107,151 +110,237 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 </blockquote>
 
 <section class="spec-card">
-  <div class="spec-label">09.1 · Malformed Expression Vectors</div>
-  <h2>Invalid Structure Must Fail</h2>
+  <div class="spec-label">09.0 · Current Negative-Test Model</div>
+  <h2>Failure Classification Must Preserve Invalid / Unsupported Separation</h2>
   <p>
-    The vector set shall include expressions that violate the required grammar, syntax, structure, field rules, or formal construction defined by the governing Specification.
+    The current candidate framework distinguishes at least three operational states:
   </p>
   <p>
-    Conforming implementations shall reject those inputs rather than infer intended spatial meaning.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">09.2 · Impossible Precision Expression Vectors</div>
-  <h2>Invalid Precision Structure Must Fail</h2>
-  <p>
-    Reference Vectors shall include precision expressions that cannot exist under the canonical precision mathematics ultimately specified.
+    <strong>VALID AND SUPPORTED</strong><br/>
+    <strong>VALID BUT UNSUPPORTED</strong><br/>
+    <strong>INVALID</strong>
   </p>
   <p>
-    Implementations shall reject impossible precision states, malformed extensions, invalid subdivisions, unsupported exact representations, or other impossible precision combinations without truncation, substitution, or silent repair.
+    Reference Vectors shall test that implementations do not collapse these states into one generic failure condition.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">09.3 · Ambiguous Input Vectors</div>
-  <h2>More Than One Possible Meaning Is Not Canonical</h2>
+  <div class="spec-label">09.1 · Malformed CRPC Vectors</div>
+  <h2>Invalid Rational Structure Must Fail</h2>
   <p>
-    The corpus shall include expressions that permit multiple plausible interpretations where no deterministic normalization rule resolves the ambiguity.
+    Reference Vectors shall include malformed CRPC values such as zero denominators, structurally invalid integer fields, prohibited sign forms, or other expressions that cannot represent a valid canonical rational Pang value.
   </p>
   <p>
-    Such inputs shall fail canonical validation rather than be assigned an implementation-specific meaning.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">09.4 · Out-of-Domain Reference Vectors</div>
-  <h2>Reference Beyond the Survey Domain Must Fail</h2>
-  <p>
-    Reference vectors shall include syntactically plausible positions or extents that resolve outside the canonical finite Survey Domain.
-  </p>
-  <p>
-    Implementations shall reject them rather than clip, wrap, snap, translate, or reinterpret them as valid Survey locations.
+    Conforming implementations shall reject malformed CRPC rather than infer, coerce, round, or repair it.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">09.5 · Unsupported Representation Vectors</div>
-  <h2>Unknown Form Must Not Be Guessed</h2>
+  <div class="spec-label">09.2 · Noncanonical-but-Valid CRPC Boundary</div>
+  <h2>Valid Noncanonical Form Must Not Be Misclassified as Invalid Where Accepted</h2>
   <p>
-    The vector set shall include encodings, formats, extensions, or forms not supported by the applicable Conformance profile, Specification version, or claimed normative encoding/interchange scope.
+    Where an input interface explicitly permits valid noncanonical rational forms, values such as unreduced fractions shall normalize rather than fail.
   </p>
   <p>
-    Unsupported input shall be identified explicitly rather than silently interpreted through a nearby known form.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">09.6 · Unsupported Version Vectors</div>
-  <h2>Unknown Version Must Fail Clearly</h2>
-  <p>
-    The corpus shall include expressions associated with unknown, unsupported, or incompatible Specification versions and, where applicable, unknown, unsupported, or incompatible normative-encoding versions.
-  </p>
-  <p>
-    Conforming implementations shall not reinterpret them using a different version’s rules unless the governing compatibility model explicitly permits that behavior.
+    Invalid-Input Vectors shall therefore distinguish a normalizable valid representation from an actually malformed rational expression.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">09.7 · Invalid Canonicalization Vectors</div>
+  <div class="spec-label">09.3 · Malformed Point Vectors</div>
+  <h2>Invalid Point Structure Must Fail</h2>
+  <p>
+    The corpus shall include Points with missing coordinate components, malformed CRPC components, prohibited extra structure, or other violations of the canonical Point contract.
+  </p>
+  <p>
+    A malformed Point shall not acquire canonical meaning through field guessing or positional inference.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">09.4 · Invalid Segment Vectors</div>
+  <h2>Segment Definitions Must Satisfy the Primitive Contract</h2>
+  <p>
+    Reference Vectors shall include malformed Segment structures, invalid endpoint Points, and zero-length Segment candidates where distinct endpoints are required.
+  </p>
+  <p>
+    Invalid Segment input shall be rejected rather than silently expanded, collapsed, or rewritten into another geometry type.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">09.5 · Invalid SCPE Vectors</div>
+  <h2>Polygon Invalidity Must Be Deterministic</h2>
+  <p>
+    The corpus shall include SCPE candidates with too few distinct vertices, consecutive duplicate vertices, zero area, prohibited nonadjacent intersections, malformed Points, invalid closure structure, and other violations of the SCPE contract.
+  </p>
+  <p>
+    Only explicitly permitted normalization—such as removal of redundant collinear middle vertices or an accepted repeated terminal closure marker—may alter representation before validity is determined.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">09.6 · Out-of-Domain Vectors</div>
+  <h2>Geometry Beyond the Survey Domain Must Fail Survey Validity</h2>
+  <p>
+    Reference Vectors shall include exact Points and supported geometry that fall outside <strong>D<sub>H</sub> = {(x,y) : -H ≤ x ≤ H and -H ≤ y ≤ H}</strong>.
+  </p>
+  <p>
+    Such input shall not be clipped, wrapped, snapped, translated, or reinterpreted as valid Survey geometry.
+  </p>
+  <p>
+    Because the numerical value of <strong>H</strong> remains open, symbolic and parameterized outside cases may be used now, while final concrete numerical edge fixtures remain dependent upon the Specification's eventual capacity selection.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">09.7 · Ambiguous Input Vectors</div>
+  <h2>More Than One Plausible Meaning Is Not Canonical</h2>
+  <p>
+    The corpus shall include supported input forms whose structure is insufficient to determine one canonical meaning and for which no Specification-defined normalization rule resolves the ambiguity.
+  </p>
+  <p>
+    Such input shall fail rather than receive an implementation-specific interpretation.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">09.8 · FSF-CJSON Structural Failure Vectors</div>
+  <h2>Canonical Interchange Structure Must Be Enforced</h2>
+  <p>
+    Reference Vectors shall include malformed FSF-CJSON-1.0 objects, missing required fields, invalid field types, prohibited unknown fields where the profile forbids them, invalid canonical integer strings, and other structural violations.
+  </p>
+  <p>
+    A conforming parser shall reject invalid canonical structure rather than silently drop, rename, default, or reinterpret prohibited content.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">09.9 · Duplicate and Conflicting Field Vectors</div>
+  <h2>Contradictory Encodings Must Not Be Resolved Opportunistically</h2>
+  <p>
+    Where a representation contains duplicate, contradictory, or mutually incompatible fields, Reference Vectors shall require deterministic rejection according to the governing serialization and validation rules.
+  </p>
+  <p>
+    An implementation shall not select whichever conflicting value is easiest to consume.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">09.10 · Unsupported Representation Vectors</div>
+  <h2>Valid but Unsupported Form Must Remain Distinct From Invalidity</h2>
+  <p>
+    Reference Vectors shall include representations that may be valid in another governed profile, version, or future extension but are unsupported by the implementation under test.
+  </p>
+  <p>
+    Such cases shall be classified as unsupported where the governing Conformance framework permits that state, rather than being misreported as malformed canonical mathematics.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">09.11 · Unsupported Version / Profile Vectors</div>
+  <h2>Unknown or Incompatible Version Must Fail Clearly</h2>
+  <p>
+    The corpus shall include unknown, unsupported, or incompatible Specification versions, FSF-CJSON profile versions, and Conformance profiles.
+  </p>
+  <p>
+    Implementations shall not reinterpret those inputs under a different version's rules unless the compatibility model explicitly authorizes the conversion.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">09.12 · Invalid Normalization Vectors</div>
   <h2>Normalization Must Not Manufacture Validity</h2>
   <p>
-    Reference vectors shall include malformed or semantically invalid expressions that superficially resemble valid noncanonical input.
+    Reference Vectors shall include malformed or semantically invalid inputs that superficially resemble valid noncanonical forms.
   </p>
   <p>
-    Conforming implementations shall reject them rather than “normalize” them into a valid canonical expression by changing meaning.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">09.8 · Precision-Loss Misrepresentation Vectors</div>
-  <h2>Lossy Input Must Not Masquerade as Exact Truth</h2>
-  <p>
-    The vector set shall include truncated, rounded, generalized, or otherwise precision-reduced expressions presented as though they were complete canonical values.
-  </p>
-  <p>
-    Implementations shall identify the loss or reject the representation according to the governing rules rather than silently accepting false exactness.
+    The implementation shall reject those inputs rather than “normalize” them by changing their mathematical meaning.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">09.9 · Hidden-Snapping Trap Vectors</div>
-  <h2>Nearby Invalidity Must Not Become Validity</h2>
+  <div class="spec-label">09.13 · Hidden-Snapping and Tolerance Trap Vectors</div>
+  <h2>Near Is Not Equal</h2>
   <p>
-    The corpus shall include inputs lying near valid precision or subdivision boundaries, vertices, increments, or Survey Domain limits to prove that implementations do not silently snap invalid input to a nearby valid location.
+    The corpus shall include values near valid Points, Segment boundaries, SCPE boundaries, and Survey Domain limits to prove that exact canonical truth is not replaced by epsilon, tolerance, snapping, or floating proximity.
   </p>
   <p>
-    Proximity shall never substitute for canonical identity.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">09.10 · Conflicting-Field Vectors</div>
-  <h2>Contradictory Representations Must Fail</h2>
-  <p>
-    Where a normative encoding or other governed representation can contain multiple fields or representations that jointly determine canonical meaning, Reference Vectors shall include internally inconsistent combinations.
-  </p>
-  <p>
-    Conforming implementations shall reject contradiction rather than choose one field opportunistically.
+    Invalid or distinct exact input remains invalid or distinct even when visually close to valid geometry.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">09.11 · Nonterminating or Pathological Input Vectors</div>
-  <h2>Invalid Complexity Must Not Defeat Canonical Resolution</h2>
+  <div class="spec-label">09.14 · Precision-Loss Misrepresentation Vectors</div>
+  <h2>Approximation Must Not Masquerade as Exact Canonical Value</h2>
   <p>
-    Where applicable, the corpus shall include inputs designed to expose pathological recursion, excessive redundancy, unresolved convergence, hidden dependency, unresolved approximation, or other behavior incompatible with finite canonical interpretation.
+    Reference Vectors shall include rounded, truncated, decimalized, or generalized representations presented as though they were exact.
   </p>
   <p>
-    Implementations shall reject invalid pathological structures according to deterministic rules rather than hang, diverge, or produce implementation-specific results.
+    The implementation shall preserve the distinction between exact canonical value and lossy derived representation.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">09.12 · Cross-Implementation Rejection Agreement</div>
-  <h2>Every Implementation Must Fail the Same Invalid Case</h2>
+  <div class="spec-label">09.15 · Unsupported Operation Vectors</div>
+  <h2>Open Mathematics Must Not Be Guessed Into Existence</h2>
   <p>
-    Independent conforming implementations shall reach the same canonical validity judgment and applicable failure classification for the same invalid input under the same governing Specification and Conformance profile.
+    The corpus shall include requests for operations whose canonical mathematics or result type remain outside the current Specification closure, such as arbitrary exact rotation or general Boolean result geometry where no canonical output type has yet been defined.
   </p>
   <p>
-    Human-readable diagnostics may vary, but the canonical validity judgment shall not.
+    A conforming implementation shall report the operation as unsupported or outside the governing profile rather than fabricate an approximate or implementation-specific canonical answer.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">09.16 · Pathological / Complexity Vectors</div>
+  <h2>Invalid or Unsupported Complexity Must Terminate Deterministically</h2>
+  <p>
+    Reference Vectors shall include pathological redundancy, excessive but bounded structures, invalid recursive forms where applicable, and other cases intended to expose nontermination, hidden recursion, or uncontrolled implementation behavior.
+  </p>
+  <p>
+    Conforming behavior shall terminate deterministically under the applicable profile and classify the case according to the governing complexity and validity rules.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">09.17 · Cross-Implementation Rejection Agreement</div>
+  <h2>Every Implementation Must Reach the Same Canonical Judgment</h2>
+  <p>
+    Independent conforming implementations shall reach the same validity judgment and the same required failure or unsupported-state classification for identical input under the same Specification and Conformance profile.
+  </p>
+  <p>
+    Human-readable diagnostic wording may vary. Canonical validity and governed failure classification may not.
   </p>
 </section>
 
 <div class="status-grid">
   <div class="status-card">
-    <h3>Established by Requirements and Conformance Scope</h3>
+    <h3>Executable Now</h3>
     <p>
-      The Survey Fabric must distinguish canonical input, valid alternate or noncanonical representation, malformed expression, impossible precision expression, out-of-domain reference, ambiguity, precision loss, unsupported forms, and exact-or-invalid canonical states. Invalid input must not acquire meaning through guesswork, tolerance, snapping, hidden dependency, or silent repair.
+      Malformed CRPC; malformed Point; invalid Segment; invalid SCPE; symbolic / parameterized out-of-Domain cases; invalid normalization; hidden snapping / tolerance traps; FSF-CJSON structural failures; duplicate / conflicting fields where prohibited; unsupported representation and version/profile distinction; lossy-exactness misrepresentation; unsupported-operation classification.
     </p>
   </div>
   <div class="status-card">
-    <h3>Canonical Vector Corpus Not Yet Possessed</h3>
+    <h3>Still Open or Conditional</h3>
     <p>
-      Actual malformed strings, impossible precision fixtures, unsupported normative encodings, Specification or encoding-version errors, conflicting-field cases, exact failure identifiers, pathological inputs, and machine-readable expected rejection results cannot be created until the final grammar, precision, normative serialization/interchange, versioning, and validation rules are specified.
+      Final concrete numerical Domain-edge failures requiring H; final globally frozen failure identifiers if not yet adopted; final complexity ceilings; future address grammar failures; future representation-family failures; final vector identifiers and corpus packaging.
     </p>
   </div>
 </div>
+
+<section class="spec-card">
+  <div class="spec-label">Reference Vector Integration Standing</div>
+  <h2>Negative Testing Is Now a Concrete Candidate Proof Surface</h2>
+  <p>
+    The original page correctly deferred actual invalid fixtures while grammar, precision, serialization, and Conformance failure handling were unresolved. Those dependencies are now substantially defined for the candidate core.
+  </p>
+  <p>
+    Section 09 can therefore support a real negative corpus across CRPC, Point, Segment, SCPE, Domain validity, normalization, FSF-CJSON, version/profile compatibility, unsupported states, and exactness traps. Remaining open work is concentrated in final error identifiers, numerical Domain capacity, future grammars, and final corpus packaging.
+  </p>
+</section>
+
 <section class="spec-card">
   <div class="spec-label">Primary Requirements Basis</div>
   <h2>Referenced Requirements</h2>
@@ -276,7 +365,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <a href="/theatlas/foundational-survey-fabric/conformance/">Conformance</a>
   <a href="/theatlas/foundational-survey-fabric/reference-vectors/">Reference Vectors Index</a>
 </div>
-<div class="note">Foundational Survey Fabric · Reference Vectors 09 · Invalid-Input Vectors</div>
+<div class="note">Foundational Survey Fabric · Reference Vectors 09 · Invalid-Input Vectors · Deterministic Failure Profile</div>
 </article>
 </main>
 <div id="bp-footer"></div>
