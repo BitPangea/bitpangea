@@ -236,13 +236,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 
 <div class="req-intro">
 <p>
-  <strong>Foundational Survey Fabric Reference Vectors</strong> define the exact input-and-expected-result cases that will allow independent implementations to prove agreement with the governing Specification and Conformance framework.
+  <strong>Foundational Survey Fabric Reference Vectors</strong> define the exact input-and-expected-result cases through which independent implementations prove agreement with the governing Specification and Conformance framework.
 </p>
 <p>
-  Reference Vectors do not select the Survey mathematics. The Requirements establish what must be satisfied. The Specification defines the mathematics that satisfies those requirements. Conformance defines how an implementation proves compatibility. Reference Vectors then provide canonical examples, negative cases, and adversarial tests against which that implementation can be evaluated.
+  Reference Vectors do not select Survey mathematics. The Requirements establish what must be satisfied. The Specification defines the mathematics that satisfies those requirements. Conformance defines how an implementation proves compatibility. Reference Vectors provide canonical examples, negative cases, adversarial cases, and machine-verifiable expected results derived from that already-defined mathematics.
 </p>
 <p>
-  Because the final Survey mathematics are not yet selected, these pages establish the required vector categories and proof obligations rather than inventing authoritative input/output data prematurely. Day #115 completed Requirements-basis citation closure and subsection-level reverse traceability across all twelve Reference Vector sections: all <strong>144 Reference Vector subsections</strong> now trace to authoritative Findings #1–#85.
+  All twelve Reference Vector sections have now been reconciled against the integrated candidate Specification and Conformance architecture. The corpus is no longer uniformly blocked on future mathematics: substantial portions are executable now, while a smaller set of dependencies remains explicitly open.
 </p>
 </div>
 
@@ -251,6 +251,27 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   Given this exact input, what exact answer must every conforming implementation produce?
 </blockquote>
 
+<h2>Current Corpus Standing</h2>
+
+<div class="req-status">
+  <h3>Integrated Candidate Reference Vector Architecture</h3>
+  <p>
+    The twelve-section framework now distinguishes three classes of work: <strong>executable now</strong>, <strong>parameterized or conditional</strong>, and <strong>still open because the Specification has not yet closed the mathematics</strong>. Reference Vectors shall advance only within those boundaries.
+  </p>
+</div>
+
+<div class="requirements-map">
+<p>
+  <strong>Executable candidate core:</strong> CRPC exact coordinates and arithmetic; canonical Point / Segment / SCPE geometry; exact predicates; deterministic normalization; ECEM meaning preservation; exact SCPE area; canonical orientation frame; restricted exact transformation through translation and positive uniform scale; FSF-CJSON-1.0 canonical interchange; invalid / unsupported separation; Conformance evidence and compatibility testing; and adversarial stress across those defined behaviors.
+</p>
+<p>
+  <strong>Parameterized or conditional:</strong> Survey Domain boundary behavior using <strong>D<sub>H</sub> = {(x,y) : -H ≤ x ≤ H and -H ≤ y ≤ H}</strong>; Domain-edge fixtures may be expressed symbolically or parametrically until the numerical half-span <strong>H</strong> is selected.
+</p>
+<p>
+  <strong>Still open:</strong> numerical Survey Domain capacity <strong>H</strong>; final angular unit; arbitrary exact rotation and its result coordinate class; exact non-rational derived-scalar representation for some distances and lengths; general Boolean / composite result geometry; final complexity ceilings; and final corpus identifiers, packaging, and canonical adoption.
+</p>
+</div>
+
 <h2>Reference Vector Structure</h2>
 
 <div class="spec-index-grid">
@@ -258,83 +279,98 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 <a class="spec-index-card" href="/theatlas/foundational-survey-fabric/reference-vectors/01-addressing-vectors/">
   <div class="spec-index-number">Reference Vectors 01</div>
   <h2>Addressing Vectors</h2>
-  <p>Tests canonical address interpretation, precision extension, normalization, permanence, and resolution across independent implementations without presuming one precision mechanism.</p>
-  <span class="spec-index-range">Addressing · Precision · Canonicalization · Permanence →</span>
+  <p>Tests CRPC Point addressing, exact equality and ordering, ECEM exact-place semantics, frame interpretation, canonical serialization, and version-preserved meaning while keeping numerical Domain capacity separate.</p>
+  <span class="spec-index-range">CRPC · Point · ECEM · Equality · Ordering →</span>
 </a>
+
 <a class="spec-index-card" href="/theatlas/foundational-survey-fabric/reference-vectors/02-domain-boundary-vectors/">
   <div class="spec-index-number">Reference Vectors 02</div>
   <h2>Survey Domain Limit Vectors</h2>
-  <p>Tests the canonical origin, finite Survey Domain limits, exact boundary inclusion, near-boundary validity, and the separation between Survey validity and World membership.</p>
-  <span class="spec-index-range">Origin · Survey Domain Limits · Geometric Boundary · Validity →</span>
+  <p>Tests the closed square Survey Domain parametrically through H, including origin, interior, boundary, corners, outside classification, ECEM stability, and separation from World membership.</p>
+  <span class="spec-index-range">Origin · D_H · Closed Boundary · Validity →</span>
 </a>
+
 <a class="spec-index-card" href="/theatlas/foundational-survey-fabric/reference-vectors/03-pang-measurement-vectors/">
   <div class="spec-index-number">Reference Vectors 03</div>
   <h2>Pang Measurement Vectors</h2>
-  <p>Tests canonical spatial separation, square-Pang area, path and geometric boundary length, uniform Pang scale, and exact sub-Pang measurement.</p>
-  <span class="spec-index-range">Pang · Spatial Separation · Area · Length · Sub-Pang →</span>
+  <p>Tests uniform Pang scale, exact coordinate differences, rational sub-Pang values, exact SCPE area, normalization-invariant measure, and lossless versus lossy measurement representation.</p>
+  <span class="spec-index-range">Pang · CRPC Difference · Exact Area · Sub-Pang →</span>
 </a>
+
 <a class="spec-index-card" href="/theatlas/foundational-survey-fabric/reference-vectors/04-orientation-vectors/">
   <div class="spec-index-number">Reference Vectors 04</div>
   <h2>Orientation Vectors</h2>
-  <p>Tests Pankor, Panvath, Panoris, Panvel, canonical rotation, handedness, mirrored views, and transformed orientation.</p>
-  <span class="spec-index-range">Orientation · Rotation · Handedness · Transformation →</span>
+  <p>Tests Pankor, Panvath, Panoris, Panvel, the right-handed canonical frame, Panoris zero direction, counterclockwise positive rotation convention, and exact determinant orientation.</p>
+  <span class="spec-index-range">Axes · Handedness · Zero Direction · Orientation →</span>
 </a>
+
 <a class="spec-index-card" href="/theatlas/foundational-survey-fabric/reference-vectors/05-geometry-vectors/">
   <div class="spec-index-number">Reference Vectors 05</div>
   <h2>Geometry Vectors</h2>
-  <p>Tests exact touch, intersection, overlap, containment, separation, shared boundary, connectedness, continuity, and related predicates.</p>
-  <span class="spec-index-range">Touch · Intersection · Containment · Connectedness →</span>
+  <p>Tests Point, Segment, and SCPE validity, exact predicates, Segment intersection, Point-in-SCPE, containment, connectedness, normalization, and semantic geometry equality.</p>
+  <span class="spec-index-range">Point · Segment · SCPE · Exact Predicates →</span>
 </a>
+
 <a class="spec-index-card" href="/theatlas/foundational-survey-fabric/reference-vectors/06-normalization-vectors/">
   <div class="spec-index-number">Reference Vectors 06</div>
   <h2>Normalization Vectors</h2>
-  <p>Tests whether different valid syntactic or mathematical expressions of the same spatial truth converge to one canonical result.</p>
-  <span class="spec-index-range">Normalization · Equivalence · Canonical Convergence →</span>
+  <p>Tests CRPC reduction, canonical zero, Segment endpoint order, SCPE traversal and start normalization, redundant-collinear removal, idempotence, no snapping, and canonical convergence.</p>
+  <span class="spec-index-range">CRPC · Geometry · Idempotence · Canonical Convergence →</span>
 </a>
+
 <a class="spec-index-card" href="/theatlas/foundational-survey-fabric/reference-vectors/07-transformation-vectors/">
   <div class="spec-index-number">Reference Vectors 07</div>
   <h2>Transformation Vectors</h2>
-  <p>Tests rotation, reflection, translation, scaling where permitted, inverse transformation, composition, and exact resolution back to canonical Survey space.</p>
-  <span class="spec-index-range">Rotation · Reflection · Translation · Inversion →</span>
+  <p>Tests the restricted exact transformation profile: translation, positive uniform scale, identity, inverse, composition, orientation preservation, exactness preservation, and Survey Domain validity.</p>
+  <span class="spec-index-range">Translation · Uniform Scale · Inverse · Composition →</span>
 </a>
+
 <a class="spec-index-card" href="/theatlas/foundational-survey-fabric/reference-vectors/08-precision-vectors/">
   <div class="spec-index-number">Reference Vectors 08</div>
   <h2>Precision Vectors</h2>
-  <p>Tests exact extensible precision, sub-Pang representation, canonical/storage/render distinctions, lossless conversion, and detectable lossy reduction without presuming a hierarchical refinement model.</p>
-  <span class="spec-index-range">Precision · Extension · Lossless · Lossy →</span>
+  <p>Tests CRPC exact rational precision, ECEM meaning preservation, sub-Pang exactness, canonical/storage/rendering separation, lossless conversion, lossy reduction, and exact round-trip preservation.</p>
+  <span class="spec-index-range">CRPC · ECEM · Sub-Pang · Lossless / Lossy →</span>
 </a>
+
 <a class="spec-index-card" href="/theatlas/foundational-survey-fabric/reference-vectors/09-invalid-input-vectors/">
   <div class="spec-index-number">Reference Vectors 09</div>
   <h2>Invalid-Input Vectors</h2>
-  <p>Tests deterministic failure for malformed expressions, impossible precision expressions, ambiguity, out-of-domain references, unsupported forms, and other invalid states.</p>
-  <span class="spec-index-range">Malformed · Ambiguous · Unsupported · Reject →</span>
+  <p>Tests deterministic rejection and classification for malformed CRPC, invalid geometry, out-of-Domain input, ambiguous input, invalid FSF-CJSON, unsupported versions or profiles, snapping traps, and unsupported operations.</p>
+  <span class="spec-index-range">Invalid · Unsupported · Reject · No Silent Repair →</span>
 </a>
+
 <a class="spec-index-card" href="/theatlas/foundational-survey-fabric/reference-vectors/10-serialization-vectors/">
   <div class="spec-index-number">Reference Vectors 10</div>
   <h2>Serialization Vectors</h2>
-  <p>Tests normative encoding, parsing, normalization, semantic equivalence, field and order requirements, round trips, and exact machine-readable interchange across one canonical serialization or multiple governed lossless encodings.</p>
-  <span class="spec-index-range">Normative Encoding · Parsing · Round-Trip · Interchange →</span>
+  <p>Tests FSF-CJSON-1.0 canonical object encoding, exact CRPC preservation, deterministic key order, UTF-8 canonical bytes, required fields, canonical round-trip, and cross-implementation exchange.</p>
+  <span class="spec-index-range">FSF-CJSON-1.0 · Canonical Bytes · Round-Trip →</span>
 </a>
+
 <a class="spec-index-card" href="/theatlas/foundational-survey-fabric/reference-vectors/11-version-conformance-vectors/">
   <div class="spec-index-number">Reference Vectors 11</div>
   <h2>Version / Conformance Vectors</h2>
-  <p>Tests preservation of canonical truth across compatible Specification and normative-encoding versions and deterministic pass, fail, unsupported, or indeterminate conformance outcomes.</p>
-  <span class="spec-index-range">Versioning · Compatibility · Pass · Fail →</span>
+  <p>Tests compatible meaning preservation, Mandatory Core PASS / FAIL, valid-but-unsupported capability, profile scope, evidence traceability, declaration consistency, independent reproduction, and evaluator agreement.</p>
+  <span class="spec-index-range">Compatibility · PASS · FAIL · UNSUPPORTED · Evidence →</span>
 </a>
+
 <a class="spec-index-card" href="/theatlas/foundational-survey-fabric/reference-vectors/12-pathological-edge-cases/">
   <div class="spec-index-number">Reference Vectors 12</div>
   <h2>Pathological Edge Cases</h2>
-  <p>Deliberately attacks the architecture with exact boundary contact, equivalent but representationally different geometry, extreme precision cases, complex finite extents, normative-encoding stress, and normalization stress.</p>
-  <span class="spec-index-range">Adversarial · Edge Cases · Stress · Ambiguity →</span>
+  <p>Adversarially stresses exact predicates, normalization fixed points, extreme CRPC, Domain classification, Point-in-SCPE, exact area, supported transformation chains, canonical serialization, hidden-state independence, and Specification ambiguity.</p>
+  <span class="spec-index-range">Adversarial · Stress · Hidden State · Ambiguity Exposure →</span>
 </a>
+
 </div>
 
 <div class="specification-map">
 <p>
-  Together, these twelve sections define the intended canonical test architecture for the Foundational Survey Fabric: address resolution, Survey Domain limits, Pang measurement, orientation, geometry, normalization, transformation, precision, invalid-input rejection, normative serialization and interchange, version and conformance behavior, and deliberate pathological stress.
+  Together, these twelve sections define the integrated candidate Reference Vector architecture for the Foundational Survey Fabric. The corpus now covers exact reference, Domain classification, Pang-based mathematics, orientation, geometry, normalization, transformation, precision, invalid-input handling, canonical interchange, version / Conformance behavior, and adversarial stress.
 </p>
 <p>
-  The Reference Vector corpus remains subordinate to the governing Requirements, Specification, and Conformance framework. Its institutional traceability is closed, but its exact canonical fixture data remain dependency-blocked on future mathematics. It may prove, expose, compare, and reproduce expected behavior, but it may not invent spatial truth, fill unresolved mathematical gaps, choose among unresolved mathematical mechanisms, or override the canonical rules established by the Specification. Exact canonical vectors shall be created only after the Specification determines the mathematics needed to derive their expected results.
+  The corpus remains subordinate to Requirements, Specification, and Conformance. It may prove, expose, compare, reproduce, and stress behavior that the Specification actually defines. It may not invent spatial truth, choose unresolved mathematics, fill missing result types, redefine canonical authority, or allow higher Architecture domains to leak into FSF outcomes.
+</p>
+<p>
+  The correct standing is therefore not “the corpus is blocked until all mathematics are complete.” The correct standing is: <strong>build executable vectors for the solved core; use symbolic or parameterized vectors where the governing mathematics is parameterized; and leave unresolved mathematics visibly open until the Specification closes it.</strong>
 </p>
 </div>
 
@@ -345,7 +381,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 
 <blockquote>
   <span class="quote-label">Reference Vector Standing</span>
-  Requirements ownership and reverse traceability are closed across all twelve Reference Vector sections. Define the categories and proof obligations now; do not invent exact inputs or expected outputs for mathematical choices BitPangea has not yet made.
+  Requirements ownership and reverse traceability remain closed across all twelve sections. The integrated candidate corpus now advances wherever the Specification supplies exact mathematics, remains parameterized where the mathematics is parameterized, and stays explicitly open where the Specification has not yet selected one canonical answer.
 </blockquote>
 
 <div class="section-nav">
@@ -356,7 +392,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <a href="/thearchitecture/">The Architecture</a>
 </div>
 
-<div class="note">Foundational Survey Fabric · Reference Vectors · Canonical Test Corpus Framework</div>
+<div class="note">Foundational Survey Fabric · Reference Vectors · Integrated Candidate Test Corpus Framework</div>
 
 </article>
 </main>
