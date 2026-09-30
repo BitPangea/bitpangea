@@ -94,10 +94,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 
 <div class="req-intro">
 <p>
-  <strong>Precision Vectors</strong> define the reference cases through which implementations will prove that canonical precision remains exact and distinguishable from storage precision, rendering precision, and intentionally reduced representations.
+  <strong>Precision Vectors</strong> define exact executable cases proving that canonical precision is preserved, extended, normalized, serialized, and distinguished from storage or rendering precision under the current Foundational Survey Fabric candidate mathematics.
 </p>
 <p>
-  The final vector corpus does not yet exist because the exact precision mechanism, canonical numeric representation, storage encodings, and conversion rules remain unresolved within the Specification. This page therefore establishes the required precision tests without inventing canonical values or choosing a precision structure prematurely.
+  The integrated candidate Specification now resolves the principal precision mechanism for the canonical coordinate core: <strong>CRPC</strong> exact reduced rational Pang coordinates combined with the <strong>Exact Coordinate Extension Model (ECEM)</strong>. Sub-Pang exactness is therefore directly expressible through rational coordinates rather than through a hierarchy of coarse and fine semantic address states.
+</p>
+<p>
+  Precision Vectors may now test exact rational representation, normalization, semantic equality, lossless conversion, lossy reduction, no-silent-rounding behavior, canonical serialization, and compatible expansion of representable exact Points. The remaining open precision questions are concentrated in result types not closed by CRPC alone, including some irrational derived measurements and arbitrary rotated-coordinate outputs.
 </p>
 </div>
 
@@ -107,90 +110,104 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 </blockquote>
 
 <section class="spec-card">
-  <div class="spec-label">08.1 · Extensible Precision Vectors</div>
-  <h2>Greater Precision Must Extend, Not Rewrite</h2>
+  <div class="spec-label">08.0 · Current Precision Model</div>
+  <h2>CRPC and ECEM Define the Candidate Precision Core</h2>
   <p>
-    The vector set shall include canonical references expressed at multiple supported precision levels, states, or exact representations to prove that increased precision extends the existing reference system without renumbering, relocating, invalidating, or reinterpreting established spatial meaning.
+    Canonical coordinate precision is represented by exact reduced rational Pang values:
   </p>
   <p>
-    The eventual mechanism may use hierarchical refinement, exact coordinate extension, symbolic subdivision, exact fractional representation, or another exact method. Independent implementations shall derive the same authoritative canonical meaning from identical inputs under the mechanism actually specified.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">08.2 · Sub-Pang Representation Vectors</div>
-  <h2>Precision Below One Pang Must Remain Exact</h2>
-  <p>
-    Reference Vectors shall include canonical positions, lengths, separations, or extents smaller than one Pang to prove exact sub-Pang representation under the precision mechanism ultimately specified.
+    <strong>q = n/d Pang</strong>, with <strong>n ∈ Z</strong>, <strong>d ∈ N+</strong>, <strong>gcd(|n|,d)=1</strong>, and canonical zero <strong>0/1</strong>.
   </p>
   <p>
-    These cases shall not require named subunits unless the final Specification later establishes them.
+    Under ECEM, a valid Point denotes one exact Survey position. Additional representational capacity may make more exact Points expressible, but it does not refine an existing Point into a different place.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">08.3 · Canonical Precision Vectors</div>
-  <h2>The Authoritative Precision Must Be Identifiable</h2>
+  <div class="spec-label">08.1 · Exact Rational Precision Vectors</div>
+  <h2>Canonical Precision Is Exact Rational Value</h2>
   <p>
-    The corpus shall include examples that demonstrate the exact canonical precision carried by a Survey expression.
+    Reference Vectors shall include integer Pang values and exact rational sub-Pang values to prove that canonical precision is determined by exact value rather than decimal digit count.
   </p>
   <p>
-    A conforming implementation shall preserve and report canonical meaning independently from the amount of precision it chooses to materialize or display.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">08.4 · Storage Precision Vectors</div>
-  <h2>Stored Representation May Be Reduced Without Redefining Truth</h2>
-  <p>
-    Reference vectors shall include implementation storage cases where only a subset or transformed representation of canonical precision is retained.
-  </p>
-  <p>
-    Conforming behavior shall distinguish the stored representation from the complete canonical truth and shall not silently promote reduced storage precision to authoritative status.
+    Equivalent rational inputs shall normalize to the same CRPC value where such noncanonical input forms are permitted.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">08.5 · Rendering Precision Vectors</div>
-  <h2>Display Precision Must Remain a Presentation Choice</h2>
+  <div class="spec-label">08.2 · Sub-Pang Precision Vectors</div>
+  <h2>Exact Values Below One Pang Are Native</h2>
   <p>
-    The vector set shall include rendering or presentation cases that intentionally display less precision than the underlying canonical expression.
+    The corpus shall include exact values such as <strong>1/2 Pang</strong>, <strong>1/3 Pang</strong>, <strong>7/16 Pang</strong>, and other reduced rational quantities.
   </p>
   <p>
-    Reduced rendering precision shall not alter the canonical reference beneath the presentation.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">08.6 · Lossless Conversion Vectors</div>
-  <h2>Exact Transformation Must Preserve Canonical Meaning</h2>
-  <p>
-    Reference vectors shall include conversions between permitted exact representations where no canonical information is lost.
-  </p>
-  <p>
-    Every conforming implementation shall recognize such transformations as lossless and produce the same authoritative result.
+    These are canonical exact values, not approximate decimal renderings and not named subordinate units.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">08.7 · Lossy Reduction Vectors</div>
-  <h2>Precision Loss Must Be Detectable</h2>
+  <div class="spec-label">08.3 · ECEM Meaning-Preservation Vectors</div>
+  <h2>Greater Expressive Capacity Must Not Move Existing Points</h2>
   <p>
-    The corpus shall include reductions produced through truncation, rounding, generalization, compression, or other loss of canonical spatial precision.
+    Reference Vectors shall prove that later compatible support for additional exact CRPC values does not renumber, relocate, invalidate, or reinterpret previously valid canonical Points.
   </p>
   <p>
-    Conforming implementations shall identify those outputs as lossy derived representations rather than treating them as exactly equivalent to the original canonical expression.
+    ECEM extends what can be expressed. It does not create hierarchical semantic refinement states for an already exact Point.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">08.8 · Mixed-Precision Comparison Vectors</div>
-  <h2>Different Precision Expressions Must Compare Exactly</h2>
+  <div class="spec-label">08.4 · Canonical / Storage / Rendering Separation</div>
+  <h2>Implementation Representation Must Not Redefine Canonical Truth</h2>
   <p>
-    Reference Vectors shall include comparisons between canonical expressions represented at different supported precision levels, states, or exact representations.
+    Reference Vectors shall distinguish the exact canonical value from any implementation storage format or rendered display form.
   </p>
   <p>
-    Implementations shall determine equivalence, containment, separation, or other applicable relationships from the exact mathematics rather than from superficial textual precision.
+    A storage or rendering layer may choose a different internal or visible representation only where it preserves or explicitly marks any loss relative to the canonical value.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">08.5 · Lossless Rational Conversion Vectors</div>
+  <h2>Equivalent Exact Representations Must Preserve Value</h2>
+  <p>
+    Where valid noncanonical rational forms are accepted, vectors shall prove lossless conversion to canonical CRPC.
+  </p>
+  <p>
+    For example, a permitted input representing <strong>2/4 Pang</strong> shall normalize exactly to <strong>1/2 Pang</strong> without changing mathematical meaning.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">08.6 · Lossy Reduction Vectors</div>
+  <h2>Information Loss Must Be Explicit and Detectable</h2>
+  <p>
+    The corpus shall include rounding, truncation, decimal approximation, display reduction, and other transformations that discard canonical information.
+  </p>
+  <p>
+    Such outputs shall be classified as derived or lossy representations and shall never be treated as exactly equivalent to the original canonical value merely because they appear visually close.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">08.7 · No-Silent-Rounding Vectors</div>
+  <h2>Exact Canonical Values Must Not Be Quietly Reduced</h2>
+  <p>
+    Reference Vectors shall include exact rational values close to common decimal or implementation boundaries to prove that conforming implementations do not silently round, truncate, snap, or quantize canonical input.
+  </p>
+  <p>
+    Any deliberate approximation must be explicit and distinguishable from canonical truth.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">08.8 · Mixed Exact-Representation Vectors</div>
+  <h2>Different Exact Forms Must Compare by Mathematics, Not Appearance</h2>
+  <p>
+    Reference Vectors shall include mathematically equivalent exact inputs expressed through different permitted syntactic forms.
+  </p>
+  <p>
+    Equality shall follow normalized exact value rather than string length, decimal digit count, storage width, or display formatting.
   </p>
 </section>
 
@@ -198,60 +215,104 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">08.9 · Precision Normalization Vectors</div>
   <h2>Normalization Must Preserve All Canonical Information</h2>
   <p>
-    The vector set shall include exact expressions whose syntax or ordering changes during normalization while their canonical precision remains unchanged.
+    CRPC normalization shall reduce representation without reducing mathematical precision.
   </p>
   <p>
-    A normalization operation that discards spatial precision shall be classified as lossy conversion rather than canonicalization.
+    A transformation that loses exact spatial information is not normalization. It is a lossy conversion and must be identified as such.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">08.10 · No-Silent-Rounding Vectors</div>
-  <h2>Canonical Precision Must Not Be Quietly Reduced</h2>
+  <div class="spec-label">08.10 · FSF-CJSON Precision Vectors</div>
+  <h2>Canonical Interchange Must Preserve Exact CRPC Meaning</h2>
   <p>
-    Reference Vectors shall include values near representational, precision, or subdivision boundaries to prove that implementations do not silently round, truncate, or snap canonical input.
+    Reference Vectors shall include FSF-CJSON-1.0 objects containing exact CRPC values and exact expected canonical serialization.
   </p>
   <p>
-    Any deliberate reduction must be explicit and detectable.
+    Parsing and reserializing a canonical object shall restore the same exact canonical values and, where required, the same canonical bytes.
   </p>
 </section>
 
 <section class="spec-card">
   <div class="spec-label">08.11 · Precision Round-Trip Vectors</div>
-  <h2>Lossless Encoding and Parsing Must Restore Exact Meaning</h2>
+  <h2>Lossless Parse / Serialize Cycles Must Preserve Exact Meaning</h2>
   <p>
-    The corpus shall include serialize-parse or encode-decode round trips for higher-precision canonical expressions across applicable normative encodings.
+    The corpus shall test exact round trips through supported canonical object and serialization layers.
   </p>
   <p>
-    Where the transformation is defined as lossless, the resulting canonical precision shall be exactly identical to the source expression.
+    Where the pathway is defined as lossless, the resulting canonical value shall be mathematically identical to the source value after every round trip.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">08.12 · Cross-Implementation Precision Agreement</div>
-  <h2>Every Implementation Must Preserve the Same Precision Truth</h2>
+  <div class="spec-label">08.12 · Version-Compatible Precision Vectors</div>
+  <h2>Compatible Evolution May Add Values, Not Change Old Ones</h2>
   <p>
-    Independent conforming implementations shall classify canonical precision state, exactness, lossless conversion, and lossy reduction consistently for the same inputs under the same governing Specification. Where the Specification requires one unique representation, that representation shall also agree exactly.
+    Reference Vectors shall prove that a later compatible Specification may admit newly representable exact values while preserving the meaning of every previously valid canonical Point and measurement.
   </p>
   <p>
-    A disagreement indicates an implementation defect, specification ambiguity, version incompatibility, or unresolved precision dependency requiring correction.
+    Version compatibility therefore concerns preservation of canonical meaning, not preservation of implementation limits.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">08.13 · Derived-Scalar Boundary</div>
+  <h2>Not Every Exact Result Is Necessarily Rational</h2>
+  <p>
+    Some derived operations may produce exact values outside CRPC, such as Euclidean distances involving square roots or arbitrary rotations producing non-rational coordinates.
+  </p>
+  <p>
+    Reference Vectors shall not force such results into rational or decimal form merely to fit the current coordinate scalar. Those cases remain open until the Specification selects the required exact derived-scalar representation.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">08.14 · Implementation-Limit Boundary</div>
+  <h2>Implementation Capacity Must Not Redefine Canonical Precision</h2>
+  <p>
+    A conforming implementation may have finite practical limits, but those limits shall not silently redefine which mathematically valid canonical values mean what.
+  </p>
+  <p>
+    Unsupported capability shall remain distinguishable from invalid canonical mathematics.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">08.15 · Cross-Implementation Precision Agreement</div>
+  <h2>Every Implementation Must Preserve the Same Exact Precision Truth</h2>
+  <p>
+    Independent conforming implementations shall agree on exact CRPC value, normalized representation, semantic equality, lossless versus lossy classification, canonical serialization, and version-preserved meaning for identical supported inputs.
+  </p>
+  <p>
+    A mismatch indicates implementation defect, Specification ambiguity, version incompatibility, fixture defect, or a precision case tested beyond current mathematical closure.
   </p>
 </section>
 
 <div class="status-grid">
   <div class="status-card">
-    <h3>Established by Requirements and Specification Scope</h3>
+    <h3>Executable Now</h3>
     <p>
-      The Survey Fabric must support extensible exact precision without prematurely fixing the mechanism, exact sub-Pang representation, separation of canonical, storage, and rendering precision, deterministic distinction between lossless and lossy conversion, exact comparison, no silent snapping, finite exact representation of canonical truth, and preservation of canonical meaning independent of implementation limits.
+      CRPC exact rational values; sub-Pang values; CRPC normalization; ECEM meaning preservation; canonical / storage / rendering separation; lossless rational conversion; lossy reduction detection; no silent rounding; exact comparison; FSF-CJSON precision preservation; lossless round-trip; version-compatible meaning preservation.
     </p>
   </div>
   <div class="status-card">
-    <h3>Canonical Vector Corpus Not Yet Possessed</h3>
+    <h3>Still Open or Conditional</h3>
     <p>
-      Actual precision states or levels, sub-Pang fixtures, canonical numeric forms, storage encodings, rendering examples, conversion cases, round-trip data, and authoritative expected outputs cannot be created until the final precision mechanism, representation rules, and normative serialization/interchange model are specified and tested.
+      Exact derived-scalar types beyond CRPC; irrational Euclidean-distance results; arbitrary rotated-coordinate result representation; any future alternate precision syntax or encoding; final vector identifiers and corpus packaging.
     </p>
   </div>
 </div>
+
+<section class="spec-card">
+  <div class="spec-label">Reference Vector Integration Standing</div>
+  <h2>Precision Has Moved From Mechanism-Agnostic Planning to an Exact Candidate Core</h2>
+  <p>
+    The original page correctly avoided choosing a precision mechanism while that decision remained open. The candidate Specification has now selected CRPC and ECEM for the canonical coordinate core.
+  </p>
+  <p>
+    Section 08 can therefore support exact candidate Precision Vectors now. The unresolved precision work no longer concerns basic sub-Pang coordinate representation; it concerns exact result classes for operations whose outputs may fall outside rational-coordinate closure.
+  </p>
+</section>
 
 <section class="spec-card">
   <div class="spec-label">Primary Requirements Basis</div>
@@ -281,7 +342,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <a href="/theatlas/foundational-survey-fabric/reference-vectors/">Reference Vectors Index</a>
 </div>
 
-<div class="note">Foundational Survey Fabric · Reference Vectors 08 · Precision Vectors</div>
+<div class="note">Foundational Survey Fabric · Reference Vectors 08 · Precision Vectors · CRPC / ECEM Precision Profile</div>
 
 </article>
 </main>
