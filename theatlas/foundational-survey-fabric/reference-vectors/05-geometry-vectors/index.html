@@ -92,10 +92,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 
 <div class="req-intro">
 <p>
-  <strong>Geometry Vectors</strong> define the reference cases through which implementations will prove identical interpretation of exact spatial relationships among canonical positions and extents.
+  <strong>Geometry Vectors</strong> define exact executable cases proving agreement on the canonical geometry primitives, exact predicates, validity rules, containment, intersection classification, connectedness, and semantic equivalence supported by the current Foundational Survey Fabric candidate mathematics.
 </p>
 <p>
-  The final vector corpus does not yet exist because the formal geometric primitive set, extent representation, boundary conventions, and predicate algorithms remain unresolved within the Specification. This page therefore establishes the required geometric test categories without inventing canonical geometry prematurely.
+  The integrated candidate Specification now resolves the foundational primitive set as <strong>Point</strong>, <strong>Segment</strong>, and <strong>SCPE</strong> (Simple Closed Polygonal Extent), together with exact CRPC-based predicates for Point equality, orientation, Point-on-Segment, Segment intersection, Point-on-boundary, Point-in-SCPE, polygon simplicity, containment, connectedness, and SCPE semantic set equality.
+</p>
+<p>
+  The remaining boundary is not primitive geometry itself but broader operation closure. General Boolean or composite geometry output—such as arbitrary union, difference, or intersection producing a new canonical result object—remains open where the Specification has not yet defined a closed result type. Reference Vectors shall therefore prove the predicates and canonical geometry already defined without inventing missing composite-output mathematics.
 </p>
 </div>
 
@@ -105,151 +108,203 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 </blockquote>
 
 <section class="spec-card">
-  <div class="spec-label">05.1 · Touch Vectors</div>
-  <h2>Boundary Contact Must Resolve Exactly</h2>
+  <div class="spec-label">05.0 · Current Canonical Geometry Model</div>
+  <h2>Point, Segment, and SCPE Are the Foundational Primitives</h2>
   <p>
-    The vector set shall include spatial expressions that touch at exact canonical boundaries without overlapping in interior extent.
+    The candidate geometry model supports:
   </p>
   <p>
-    Conforming implementations shall return the same canonical touch predicate according to the governing endpoint and boundary conventions.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">05.2 · Intersection Vectors</div>
-  <h2>Common Space Must Be Identified Deterministically</h2>
-  <p>
-    Reference vectors shall include exact cases where two canonical spatial expressions intersect.
+    <strong>Point</strong> — one exact CRPC coordinate pair.<br/>
+    <strong>Segment</strong> — the closed straight segment between two valid distinct Points.<br/>
+    <strong>SCPE</strong> — a finite ordered simple closed polygonal cycle representing its boundary together with its interior.
   </p>
   <p>
-    The resulting intersection predicate and any canonical intersection extent required by the Specification shall be identical across conforming implementations.
+    SCPE is primitive-level hole-free geometry. Curves, raster cells, grids, meshes, and general composite geometry are not part of the foundational primitive set.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">05.3 · Overlap Vectors</div>
-  <h2>Shared Interior Extent Must Be Exact</h2>
+  <div class="spec-label">05.1 · Point Equality Vectors</div>
+  <h2>Exact Point Equality Requires Exact Coordinate Equality</h2>
   <p>
-    The corpus shall include cases where canonical extents share nonzero spatial extent and therefore overlap under the governing geometry.
+    Reference Vectors shall prove that two Points are equal exactly when their normalized CRPC x-components and y-components are equal.
   </p>
   <p>
-    Overlap shall be distinguished exactly from mere touch or boundary contact.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">05.4 · Containment Vectors</div>
-  <h2>Spatial Nesting Must Resolve Identically</h2>
-  <p>
-    Reference vectors shall include cases of complete containment, partial containment where applicable, equality of extents, and containment at exact boundaries.
-  </p>
-  <p>
-    Conforming implementations shall derive the same canonical containment result without assigning semantic meaning to the relationship.
+    Visual coincidence, floating proximity, rendering resolution, or epsilon tolerance shall never substitute for canonical Point equality.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">05.5 · Separation Vectors</div>
-  <h2>Noncontact Must Be Distinguished From Contact</h2>
+  <div class="spec-label">05.2 · Point-on-Segment Vectors</div>
+  <h2>Segment Membership Is Exact</h2>
   <p>
-    The vector set shall include spatial expressions that are exactly separated under the canonical geometry.
+    The corpus shall include Points lying exactly on a Segment interior, exactly on either endpoint, and strictly off the Segment.
   </p>
   <p>
-    These cases shall prove that conforming implementations do not confuse small separation with touch, overlap, or equivalence.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">05.6 · Shared-Boundary Vectors</div>
-  <h2>Common Boundary Must Be Deterministically Derived</h2>
-  <p>
-    The corpus shall include extents that share a canonical boundary segment or other exact boundary expression as defined by the final Specification.
-  </p>
-  <p>
-    Shared-boundary results shall remain geometric facts and shall not imply Parcel adjacency, ownership, jurisdiction, or other consequences belonging to higher Architecture domains.
+    Classification shall use exact orientation and coordinate-range tests without tolerance or snapping.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">05.7 · Connectedness Vectors</div>
-  <h2>Canonical Connection Must Be Exact</h2>
+  <div class="spec-label">05.3 · Segment Intersection Vectors</div>
+  <h2>Intersection Classes Must Be Deterministic</h2>
   <p>
-    Reference vectors shall include expressions that are connected, disconnected, or connected only through exact boundary contact where the governing mathematics distinguishes those states.
+    Reference Vectors shall cover the exact Segment intersection classes defined by the Specification, including proper crossing, endpoint contact, collinear overlap where applicable, and disjoint Segments.
   </p>
   <p>
-    Each case shall produce one deterministic connectedness result across implementations.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">05.8 · Continuity and Discontinuity Vectors</div>
-  <h2>Continuity Must Follow the Canonical Mathematics</h2>
-  <p>
-    The vector set shall include spatial expressions that demonstrate the exact continuity and discontinuity rules of the Survey geometry.
-  </p>
-  <p>
-    Meaning belonging to higher Architecture domains shall remain outside the vector result; the test concerns only canonical geometric structure.
+    Every conforming implementation shall assign the same intersection classification to the same exact Segment pair.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">05.9 · Equivalent Geometry Vectors</div>
-  <h2>Differently Expressed Geometry May Still Be the Same Space</h2>
+  <div class="spec-label">05.4 · Touch and Contact Vectors</div>
+  <h2>Boundary Contact Must Be Distinguished From Interior Crossing</h2>
   <p>
-    Reference vectors shall include differently expressed spatial constructions that resolve to the same canonical geometry where the Specification permits equivalent forms.
+    Where supported geometry touches only through exact boundary contact, Reference Vectors shall distinguish that condition from proper intersection through interiors or from complete separation.
   </p>
   <p>
-    Every conforming implementation shall recognize exact spatial equivalence and resolve those expressions to the same authoritative canonical geometry. Where the Specification requires one unique canonical representation, that representation shall also agree exactly.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">05.10 · Boundary-Inclusion Vectors</div>
-  <h2>Edge Membership Must Be Unambiguous</h2>
-  <p>
-    The corpus shall include positions or extents lying exactly on boundaries to prove the canonical inclusion, exclusion, endpoint, and shared-edge conventions.
-  </p>
-  <p>
-    No implementation-specific tolerance shall determine whether a boundary position belongs to an extent.
+    The vector result remains geometric. It does not imply Parcel adjacency, legal contact, ownership, jurisdiction, or any higher-layer consequence.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">05.11 · Degenerate and Limit Geometry Vectors</div>
-  <h2>Edge Cases Must Still Produce One Exact Result</h2>
+  <div class="spec-label">05.5 · Point-in-SCPE Vectors</div>
+  <h2>Interior, Boundary, and Exterior Must Resolve Exactly</h2>
   <p>
-    Where permitted by the final primitive model, reference vectors shall include zero-area, zero-length, coincident, repeated, or other mathematically limiting cases sufficient to expose ambiguity in predicate behavior.
+    The corpus shall include Points that lie strictly inside an SCPE, exactly on its boundary, and strictly outside it.
   </p>
   <p>
-    Such cases shall be accepted, normalized, or rejected according to the formal Specification rather than implementation preference.
+    The candidate Point-in-SCPE rule uses exact horizontal-ray parity with a half-open y convention. No tolerance or rendering heuristic may determine the result.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">05.12 · Cross-Implementation Geometry Agreement</div>
-  <h2>Every Implementation Must Derive the Same Predicate</h2>
+  <div class="spec-label">05.6 · SCPE Validity Vectors</div>
+  <h2>Polygon Validity Must Follow the Primitive Contract</h2>
   <p>
-    Independent conforming implementations shall return the same authoritative canonical touch, intersection, overlap, containment, separation, shared-boundary, connectedness, continuity, and equivalence meaning for identical canonical geometry. Where the Specification requires one unique canonical representation of a result, that representation shall also agree exactly.
+    Reference Vectors shall test valid and invalid SCPE candidates against the governing structural rules: at least three distinct vertices, valid Points, no consecutive duplicate vertices, nonzero area, one closed cycle, no forbidden nonadjacent intersections, and containment within the Survey Domain.
   </p>
   <p>
-    Disagreement indicates an implementation defect, specification ambiguity, version incompatibility, or unresolved geometric dependency requiring correction.
+    Redundant collinear middle vertices may be valid input where otherwise permitted, but canonical normalization removes them deterministically.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">05.7 · Containment Vectors</div>
+  <h2>Containment Is an Exact Geometric Predicate</h2>
+  <p>
+    The corpus shall include exact supported cases of Point containment and SCPE containment according to the governing predicate definitions.
+  </p>
+  <p>
+    Boundary inclusion shall follow the exact closed-set semantics selected by the primitive model rather than implementation preference.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">05.8 · Connectedness Vectors</div>
+  <h2>Connected and Disconnected Geometry Must Be Reproducible</h2>
+  <p>
+    Reference Vectors shall include supported cases sufficient to prove deterministic connectedness classification under the candidate geometry model.
+  </p>
+  <p>
+    Where boundary contact affects connectedness under the defined semantics, exact boundary classification shall control the result.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">05.9 · Canonical Normalization Vectors</div>
+  <h2>Equivalent Supported Geometry Must Normalize Identically</h2>
+  <p>
+    Reference Vectors shall demonstrate the canonical normalization rules selected for supported geometry.
+  </p>
+  <p>
+    For Segments, endpoint order is canonicalized lexicographically. For SCPEs, normalization removes a repeated terminal closure point if present in an accepted input form, removes redundant collinear middle vertices to a fixed point, selects counterclockwise traversal, and chooses the unique lexicographically least start vertex.
+  </p>
+  <p>
+    The normalization function shall be idempotent: <strong>N(N(G)) = N(G)</strong>.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">05.10 · Semantic Geometry Equality Vectors</div>
+  <h2>Same Supported Spatial Set Means the Same Canonical Geometry</h2>
+  <p>
+    Where two valid supported geometry representations denote the same canonical geometric set, their normalized representations shall agree.
+  </p>
+  <p>
+    For supported canonical geometry, semantic equality is therefore testable through deterministic normalization rather than visual comparison.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">05.11 · Degenerate and Invalid Geometry Vectors</div>
+  <h2>Invalid Geometry Must Not Be Repaired Into Canonical Truth</h2>
+  <p>
+    The corpus shall include repeated consecutive vertices, zero-area polygon candidates, self-intersections, invalid Segment definitions, malformed Points, and other cases that violate the primitive contract.
+  </p>
+  <p>
+    Such inputs shall be rejected or classified according to the Specification. They shall not be silently snapped, simplified, re-ordered into validity, or otherwise repaired unless an exact permitted normalization rule already applies.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">05.12 · Domain-Containment Dependency</div>
+  <h2>Geometry Validity Must Respect the Survey Domain Without Inventing H</h2>
+  <p>
+    Supported canonical geometry must lie within the Survey Domain. The Domain geometry is parameterized as <strong>D<sub>H</sub> = {(x,y) : -H ≤ x ≤ H and -H ≤ y ≤ H}</strong>.
+  </p>
+  <p>
+    Because the numerical value of <strong>H</strong> remains open, capacity-independent geometry fixtures and symbolic Domain-relative cases may proceed now, while final numerical edge-dependent geometry fixtures must wait for the Specification to select <strong>H</strong>.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">05.13 · Boolean / Composite Output Boundary</div>
+  <h2>Predicate Truth Does Not Automatically Define a Canonical Result Geometry</h2>
+  <p>
+    The Specification may determine that two supported geometries intersect, overlap, or stand in another exact relation without yet defining a canonical geometry object representing the full result of an arbitrary Boolean operation.
+  </p>
+  <p>
+    Reference Vectors shall distinguish <strong>predicate conformance</strong> from <strong>result-geometry closure</strong>. They shall not invent union, difference, or arbitrary intersection result forms ahead of the Specification.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">05.14 · Cross-Implementation Geometry Agreement</div>
+  <h2>Defined Geometry Predicates Must Reproduce Exactly</h2>
+  <p>
+    Independent conforming implementations shall return the same exact validity, equality, orientation, Point-on-Segment, Segment intersection, Point-in-SCPE, containment, connectedness, and normalization results for identical supported inputs.
+  </p>
+  <p>
+    A mismatch indicates implementation defect, Specification ambiguity, version incompatibility, fixture defect, or a geometry operation tested beyond current mathematical closure.
   </p>
 </section>
 
 <div class="status-grid">
   <div class="status-card">
-    <h3>Established by Requirements and Specification Scope</h3>
+    <h3>Executable Now</h3>
     <p>
-      The Survey Fabric must support exact canonical positions and extents, exact endpoint and boundary semantics, exact continuity and connectedness, and deterministic derivation of touch, intersection, overlap, containment, separation, shared boundary, equivalence, and related spatial predicates from one canonical geometry.
+      Point equality; exact orientation; Point-on-Segment; Segment intersection classification; Point-in-SCPE; SCPE validity; supported containment; connectedness; Segment normalization; SCPE normalization; normalization idempotence; semantic equality of supported geometry; capacity-independent geometry fixtures.
     </p>
   </div>
   <div class="status-card">
-    <h3>Canonical Vector Corpus Not Yet Possessed</h3>
+    <h3>Still Open or Conditional</h3>
     <p>
-      Actual geometric coordinates, primitive or normative encodings where applicable, extent fixtures, boundary cases, predicate outputs, canonical equivalence examples, and authoritative machine-readable expected results cannot be created until the final geometric primitive set, extent representation, boundary conventions, and relevant normative interchange rules are specified and tested.
+      General Boolean/composite geometry result closure; arbitrary result geometry beyond Point / Segment / SCPE; final numerical Domain-edge fixtures requiring H; future curves or other geometry families; final vector identifiers and corpus packaging.
     </p>
   </div>
 </div>
+
+<section class="spec-card">
+  <div class="spec-label">Reference Vector Integration Standing</div>
+  <h2>Geometry Has Moved From Planned Categories to Exact Predicate Proof</h2>
+  <p>
+    The original page correctly deferred executable vectors while the primitive set and predicate mathematics were unresolved. That condition has materially changed.
+  </p>
+  <p>
+    Point, Segment, SCPE, exact predicates, validity rules, deterministic normalization, and semantic equality now provide a substantial capacity-independent Reference Vector surface. Broader Boolean result geometry remains open and must stay separate from the predicate corpus until the Specification closes that operation layer.
+  </p>
+</section>
 
 <section class="spec-card">
   <div class="spec-label">Primary Requirements Basis</div>
@@ -279,7 +334,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <a href="/theatlas/foundational-survey-fabric/reference-vectors/">Reference Vectors Index</a>
 </div>
 
-<div class="note">Foundational Survey Fabric · Reference Vectors 05 · Geometry Vectors</div>
+<div class="note">Foundational Survey Fabric · Reference Vectors 05 · Geometry Vectors · Exact Predicate Profile</div>
 
 </article>
 </main>
