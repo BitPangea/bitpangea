@@ -94,10 +94,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 
 <div class="req-intro">
 <p>
-  <strong>Pathological Edge Cases</strong> define the reference cases through which the Foundational Survey Fabric is deliberately stressed at its most difficult boundaries: exact contact, extreme precision, representationally different but equivalent geometry, complex finite extents, normalization stress, normative-interchange stress, and other cases most likely to reveal ambiguity, hidden dependency, approximation, or implementation dependence.
+  <strong>Pathological Edge Cases</strong> define adversarial Reference Vectors designed to expose ambiguity, hidden state, tolerance leakage, normalization instability, serialization drift, boundary mistakes, implementation shortcuts, and Specification gaps at the hardest edges of the current Foundational Survey Fabric candidate mathematics.
 </p>
 <p>
-  These vectors are not exceptions to the Specification. They are proof that the Specification remains exact when the easy cases end. The final corpus cannot yet be constructed because the formal mathematics, precision mechanism, normative serialization/interchange model, and normalization rules remain unresolved. This page therefore establishes the adversarial categories the completed architecture must survive without inventing unresolved mathematics prematurely.
+  The original page correctly treated these cases as a future stress corpus while the mathematics and interchange model were broadly unresolved. That standing has changed substantially. CRPC, Point / Segment / SCPE geometry, exact predicates, deterministic normalization, ECEM, FSF-CJSON-1.0, restricted exact transformation, Conformance evidence, and invalid / unsupported separation now provide a concrete adversarial surface.
+</p>
+<p>
+  Pathological vectors shall stress only mathematics that the Specification actually defines. They shall not invent expected outputs for still-open questions such as the numerical Survey Domain half-span <strong>H</strong>, arbitrary exact rotation, non-rational derived-scalar representation, or general Boolean result geometry.
 </p>
 </div>
 
@@ -107,173 +110,269 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 </blockquote>
 
 <section class="spec-card">
+  <div class="spec-label">12.0 · Current Adversarial Model</div>
+  <h2>Stress Defined Mathematics; Expose Undefined Mathematics</h2>
+  <p>
+    Pathological testing has two legitimate outcomes:
+  </p>
+  <p>
+    <strong>defined behavior survives the hard case exactly</strong><br/>
+    or<br/>
+    <strong>the case reveals a genuine Specification gap, unsupported capability, or unresolved dependency</strong>.
+  </p>
+  <p>
+    It shall never force an implementation to fabricate canonical truth merely because a stress case demands an answer.
+  </p>
+</section>
+
+<section class="spec-card">
   <div class="spec-label">12.1 · Exact Boundary-Contact Cases</div>
   <h2>Touching at the Limit Must Not Become Overlap or Separation</h2>
   <p>
-    The vector set shall include spatial expressions that meet at exact canonical boundaries, endpoints, vertices, or shared edges without interior overlap.
+    Reference Vectors shall include exact endpoint contact, vertex contact, Point-on-Segment cases, SCPE boundary contact, and shared-edge conditions supported by the current geometry model.
   </p>
   <p>
-    Conforming implementations shall distinguish exact contact from overlap and separation according to the governing boundary semantics.
+    Exact predicates shall determine contact. No epsilon, rendering tolerance, or floating proximity may alter the classification.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">12.2 · Equivalent but Representationally Different Geometry</div>
-  <h2>Different Construction Must Not Create Different Truth</h2>
+  <div class="spec-label">12.2 · Adversarial Point Equality Cases</div>
+  <h2>Different Syntax Must Not Defeat Exact Equality</h2>
   <p>
-    Reference vectors shall include geometrically equivalent extents expressed through substantially different valid structures, orderings, decompositions, or compositions.
+    The corpus shall include mathematically equal CRPC coordinates supplied through different permitted rational forms and visually similar but mathematically distinct Points.
   </p>
   <p>
-    Every conforming implementation shall recognize the same canonical spatial meaning despite representational complexity.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">12.3 · Extreme Precision Cases</div>
-  <h2>Extreme Precision Must Remain Exact and Reachable</h2>
-  <p>
-    The corpus shall include valid references at demanding supported precision levels, states, or exact representations selected for practical Conformance stress testing once the governing precision mechanism is specified.
-  </p>
-  <p>
-    These cases shall prove finite parsing, exact resolution, deterministic termination, and preservation of canonical meaning under extreme but valid precision without presuming that precision is organized as hierarchical refinement.
+    Equal Points shall normalize to equality. Near-but-distinct Points shall remain distinct.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">12.4 · Complex Finite Extent Cases</div>
-  <h2>High Complexity Must Remain Finitely Knowable</h2>
+  <div class="spec-label">12.3 · Adversarial Segment Intersection Cases</div>
+  <h2>Near-Degenerate Intersections Must Still Classify Exactly</h2>
   <p>
-    Reference vectors shall include valid spatial extents with substantial but finite geometric complexity.
+    Reference Vectors shall stress proper crossing, endpoint contact, collinear overlap, collinear disjointness, nearly parallel Segments, and Points lying extremely close to but not on another Segment.
   </p>
   <p>
-    Conforming implementations shall interpret, normalize or semantically resolve, compare, measure, and exchange such expressions through applicable normative encodings without ambiguity or nontermination.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">12.5 · Normalization Stress Cases</div>
-  <h2>Redundancy and Reordering Must Still Converge</h2>
-  <p>
-    The vector set shall include highly redundant, deeply nested, differently ordered, or compositionally complex valid expressions that nevertheless resolve to a simpler canonical meaning.
-  </p>
-  <p>
-    Normalization or semantic resolution shall remove or govern unnecessary representational complexity without changing spatial truth. One unique normalized representation is required only where the Specification explicitly requires it.
+    Exact orientation and range predicates shall control the result rather than numerical tolerance.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">12.6 · Precision-Boundary Cases</div>
+  <div class="spec-label">12.4 · SCPE Simplicity Stress Cases</div>
+  <h2>Complex Polygon Boundaries Must Still Produce One Validity Judgment</h2>
+  <p>
+    The corpus shall include high-vertex-count SCPE candidates, near-self-intersections, exact vertex contacts, redundant collinear runs, reversed traversal, alternate starting vertices, and invalid nonadjacent crossings.
+  </p>
+  <p>
+    Conforming implementations shall reach the same SCPE validity and normalization result from the same exact input.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">12.5 · Normalization Fixed-Point Stress Cases</div>
+  <h2>Repeated Canonicalization Must Converge and Stop</h2>
+  <p>
+    Reference Vectors shall include SCPEs with multiple removable collinear middle vertices, alternate traversal, repeated accepted closure markers, reducible CRPC components, and other permitted representational redundancy.
+  </p>
+  <p>
+    Normalization shall converge deterministically to a fixed point and satisfy <strong>N(N(G)) = N(G)</strong>.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">12.6 · Extreme CRPC Cases</div>
+  <h2>Large and Fine Rational Values Must Remain Exact</h2>
+  <p>
+    The corpus shall include valid CRPC values with large numerators or denominators and exact sub-Pang quantities chosen to stress parsing, reduction, comparison, and arithmetic without leaving the supported mathematical model.
+  </p>
+  <p>
+    Finite exact representation shall remain finite, deterministic, and free from floating substitution.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">12.7 · Precision-Boundary Cases</div>
   <h2>Nearness Must Not Become Identity</h2>
   <p>
-    The corpus shall include references or measurements positioned immediately on opposite sides of precision, subdivision, equality, or geometric decision boundaries.
+    Reference Vectors shall place exact values on opposite sides of equality, containment, intersection, or boundary decisions while remaining arbitrarily close in display terms.
   </p>
   <p>
-    Implementations shall not collapse distinct canonical values through tolerance, rounding, or hidden snapping.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">12.7 · Domain-Limit Stress Cases</div>
-  <h2>Extreme Validity Near the Survey Domain Limit Must Remain Deterministic</h2>
-  <p>
-    Reference vectors shall include positions and extents touching, approaching, crossing, or narrowly exceeding canonical Survey Domain limits.
-  </p>
-  <p>
-    Exact validity shall be determined from the formal Survey Domain rules rather than implementation convenience or numerical tolerance.
+    Distinct exact values shall remain distinct regardless of apparent visual coincidence.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">12.8 · Transformation Composition Stress Cases</div>
-  <h2>Long Transformation Chains Must Still Resolve Exactly</h2>
+  <div class="spec-label">12.8 · Survey Domain Stress Cases</div>
+  <h2>Boundary Classification Must Survive the Hardest Parameterized Cases</h2>
   <p>
-    Where permitted by the Specification, the vector corpus shall include nontrivial compositions of rotations, reflections, translations, scaling, and inverse operations.
+    Reference Vectors shall stress symbolic or parameterized Points at <strong>x = ±H</strong>, <strong>y = ±H</strong>, the four corners, strict interior, and exact outside conditions.
   </p>
   <p>
-    Equivalent transformation chains shall resolve to the same authoritative canonical meaning without cumulative approximation or drift, with identical representation required only where the Specification mandates one.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">12.9 · Normative Interchange Stress Cases</div>
-  <h2>Complex Canonical Meaning Must Survive Interchange</h2>
-  <p>
-    Reference Vectors shall include complex but valid canonical expressions whose normative interchange exercises encoding rules, field ordering where applicable, precision preservation, normalization or semantic equivalence, parsing, and round-trip behavior simultaneously.
-  </p>
-  <p>
-    Interchange shall preserve exact canonical meaning even when the encoded expression is large or structurally intricate. Where multiple governed lossless normative encodings exist, stress cases shall test both encoding-specific obligations and deterministic semantic equivalence across them.
+    Final concrete numerical edge fixtures remain blocked until the Specification selects the numerical value of <strong>H</strong>. Pathological testing shall not invent that number.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">12.10 · Hidden-State Detection Cases</div>
-  <h2>The Same Input Must Remain the Same Under Different Execution Histories</h2>
+  <div class="spec-label">12.9 · Point-in-SCPE Ray-Casting Stress Cases</div>
+  <h2>Vertex and Horizontal-Edge Cases Must Not Break Containment</h2>
   <p>
-    The vector set shall include repeated evaluations under varied cache state, execution order, process history, or other implementation conditions to prove that hidden mutable state does not alter canonical meaning or any uniquely required canonical output.
+    The corpus shall include Points whose horizontal test ray passes through vertices, aligns with horizontal edges, meets exact boundary Points, or encounters multiple candidate crossings.
   </p>
   <p>
-    State may affect performance. It shall not affect truth.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">12.11 · Termination Stress Cases</div>
-  <h2>Difficult Valid Input Must Still Finish</h2>
-  <p>
-    Reference vectors shall include valid finite expressions intentionally chosen to challenge parsing, normalization, geometry, comparison, or measurement complexity.
-  </p>
-  <p>
-    Conforming implementations shall deterministically complete the required canonical operation without indefinite convergence or unresolved recursion.
+    The half-open y convention and exact boundary test shall produce one deterministic INTERIOR, BOUNDARY, or EXTERIOR result.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">12.12 · Ambiguity-Exposure Cases</div>
-  <h2>The Corpus Should Attack the Specification, Not Merely the Code</h2>
+  <div class="spec-label">12.10 · Exact Area Stress Cases</div>
+  <h2>Large Coordinate Arithmetic Must Preserve Exact SCPE Area</h2>
   <p>
-    The edge-case corpus shall include cases specifically designed to expose underspecified behavior, conflicting interpretation, hidden dependency, unresolved approximation, or responsibility leakage into higher Architecture domains within the governing Specification itself.
+    Reference Vectors shall include valid SCPEs whose shoelace arithmetic stresses numerator size, cancellation, orientation reversal, and normalization.
   </p>
   <p>
-    If independent implementations reasonably disagree because the Specification does not determine one authoritative result, the case shall reveal a Specification ambiguity or unresolved dependency rather than be concealed as implementation variation.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">12.13 · Adversarial Equivalence Cases</div>
-  <h2>Canonical Equality Must Survive Hostile Representation</h2>
-  <p>
-    Reference vectors shall include expressions intentionally structured to make equivalent geometry difficult to recognize through superficial textual or representational comparison.
-  </p>
-  <p>
-    Exact equivalence shall depend on canonical mathematics rather than representational similarity.
+    Exact rational square-Pang area shall remain identical for semantically equivalent normalized geometry.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">12.14 · Cross-Implementation Stress Agreement</div>
-  <h2>Every Implementation Must Survive the Same Hard Cases</h2>
+  <div class="spec-label">12.11 · Transformation Chain Stress Cases</div>
+  <h2>Supported Exact Transformations Must Not Accumulate Drift</h2>
   <p>
-    Independent conforming implementations shall produce the same authoritative canonical meaning for every valid pathological case and the same canonical rejection or applicable classification for every invalid adversarial case. Where the Specification requires one unique representation, that representation shall also agree exactly.
+    The corpus shall include long but finite chains of supported exact translations and positive uniform scales, including exact inverses and identity-producing compositions.
   </p>
   <p>
-    Divergence under stress is evidence of implementation defect, Specification ambiguity, version incompatibility, hidden dependency, unresolved approximation, or higher-Architecture-domain leakage requiring correction before canonical adoption can be justified.
+    Arbitrary rotation, reflection as canonical placement, nonuniform scaling, and shear shall not be smuggled into the stress corpus as though they were already closed operations.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">12.12 · FSF-CJSON Canonicalization Stress Cases</div>
+  <h2>Large Valid Objects Must Still Produce Canonical Bytes</h2>
+  <p>
+    Reference Vectors shall include large but valid canonical Points, Segments, and SCPEs serialized through FSF-CJSON-1.0.
+  </p>
+  <p>
+    Canonical integer strings, object-key ordering, UTF-8 serialization, field rules, and canonical byte output shall remain deterministic under increased object size and representational complexity.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">12.13 · Parse / Normalize / Serialize Stress Cases</div>
+  <h2>Repeated Interchange Must Not Drift</h2>
+  <p>
+    The corpus shall repeatedly apply:
+  </p>
+  <p>
+    <strong>parse → validate → normalize → canonical serialize → parse</strong>
+  </p>
+  <p>
+    to supported complex fixtures and prove that the canonical object and canonical bytes stabilize rather than mutate across cycles.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">12.14 · Hidden-State Detection Cases</div>
+  <h2>Execution History May Affect Performance, Never Truth</h2>
+  <p>
+    Reference Vectors shall repeat identical cases under varied cache state, execution order, process lifetime, test ordering, and independent implementation history.
+  </p>
+  <p>
+    Canonical results, validity judgments, and required canonical bytes shall remain unchanged.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">12.15 · Unsupported / Invalid Separation Stress Cases</div>
+  <h2>Difficult Input Must Not Collapse Failure Taxonomy</h2>
+  <p>
+    The corpus shall include hard cases that are mathematically valid but unsupported, genuinely malformed or invalid, and supported but computationally demanding.
+  </p>
+  <p>
+    Conforming implementations shall preserve the distinction among <strong>VALID AND SUPPORTED</strong>, <strong>VALID BUT UNSUPPORTED</strong>, and <strong>INVALID</strong>.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">12.16 · Open-Mathematics Exposure Cases</div>
+  <h2>The Stress Corpus Must Reveal Rather Than Conceal Missing Closure</h2>
+  <p>
+    Reference Vectors shall deliberately probe operations that remain open, including arbitrary exact rotation, non-rational derived-scalar measurement, general Boolean result geometry, and concrete numerical Domain-edge behavior requiring <strong>H</strong>.
+  </p>
+  <p>
+    The expected outcome is not an invented canonical result. It is a documented open dependency or unsupported state until the governing Specification closes the mathematics.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">12.17 · Termination Stress Cases</div>
+  <h2>Difficult Finite Input Must Still Terminate Deterministically</h2>
+  <p>
+    The corpus shall include finite but demanding inputs designed to stress parsing, CRPC reduction, normalization, exact predicates, SCPE validation, canonical serialization, and Conformance evaluation.
+  </p>
+  <p>
+    Where the profile requires support, the implementation shall terminate deterministically. Final quantitative complexity ceilings remain subject to the governing Specification and Conformance profile.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">12.18 · Specification Ambiguity Probes</div>
+  <h2>The Corpus Must Attack the Specification as Well as the Implementation</h2>
+  <p>
+    Adversarial vectors shall include cases specifically designed to expose underspecified predicate behavior, unclear profile obligations, contradictory normalization rules, representation ambiguity, hidden dependency, or higher-layer leakage.
+  </p>
+  <p>
+    If competent independent implementations disagree because the Specification itself does not determine one result, the vector has successfully exposed a Specification defect rather than an implementation variation.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">12.19 · Higher-Layer Leakage Cases</div>
+  <h2>FSF Stress Must Not Pull Parcel or World Meaning Into Geometry</h2>
+  <p>
+    Reference Vectors shall include geometrically difficult cases near World membership, Parcel-like boundaries, or other higher-layer concepts to prove that the FSF returns only canonical reference and mathematical truth.
+  </p>
+  <p>
+    Spatial Ground, GSI, Parcel Cadastre, governance, ownership, rights, and civilization semantics remain outside the FSF result.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">12.20 · Cross-Implementation Stress Agreement</div>
+  <h2>Independent Implementations Must Survive the Same Hard Cases</h2>
+  <p>
+    For every adversarial case whose governing mathematics is defined, independent conforming implementations shall return the same exact result, validity judgment, normalization result, canonical serialization, or governed unsupported classification.
+  </p>
+  <p>
+    Divergence under stress indicates implementation defect, Specification ambiguity, version/profile incompatibility, fixture defect, hidden state, unresolved mathematics, or higher-layer leakage requiring correction before adoption readiness can be argued.
   </p>
 </section>
 
 <div class="status-grid">
   <div class="status-card">
-    <h3>Established by Requirements and Conformance Scope</h3>
+    <h3>Executable Now</h3>
     <p>
-      The Survey Fabric must remain exact, finitely representable, independently reproducible, hidden-state independent, deterministically terminating, normalization- or semantic-resolution-stable, resistant to silent snapping, precision loss, unresolved approximation, and higher-Architecture-domain leakage, and capable of exposing ambiguity or hidden dependency through deliberate edge-case and adversarial testing.
+      Boundary-contact stress; Point equality traps; Segment intersection stress; SCPE simplicity stress; normalization fixed-point cases; extreme CRPC; precision-boundary cases; parameterized Domain stress; Point-in-SCPE ray-casting stress; exact area stress; supported transformation chains; FSF-CJSON stress; repeated canonical round-trip; hidden-state detection; invalid / unsupported separation; termination stress; ambiguity probes; higher-layer leakage probes.
     </p>
   </div>
   <div class="status-card">
-    <h3>Canonical Vector Corpus Not Yet Possessed</h3>
+    <h3>Still Open or Conditional</h3>
     <p>
-      Actual pathological fixtures, extreme-precision cases, complex finite extents, adversarial normalization inputs, transformation chains, normative-interchange stress cases, ambiguity probes, and authoritative expected results cannot be created until the formal Survey mathematics, precision mechanism, normative interchange rules, and complete Conformance rules are specified and tested.
+      Final numerical Domain-edge cases requiring H; arbitrary exact rotation stress with canonical output; non-rational derived-scalar stress with canonical output; general Boolean result-geometry stress; final quantitative complexity ceilings; final vector identifiers and corpus packaging.
     </p>
   </div>
 </div>
+
+<section class="spec-card">
+  <div class="spec-label">Reference Vector Integration Standing</div>
+  <h2>The Adversarial Corpus Can Now Be Built Around the Solved Core</h2>
+  <p>
+    The original page correctly reserved pathological testing until enough of the mathematics existed to make hard cases meaningful. That threshold has now been crossed for the candidate core.
+  </p>
+  <p>
+    Section 12 can therefore support adversarial fixtures across CRPC, exact predicates, SCPE validity and normalization, Domain classification, exact area, restricted transformations, FSF-CJSON, hidden-state independence, termination, and Conformance classification. Open mathematics remains visible as open rather than being papered over by stress-test expectations.
+  </p>
+</section>
 
 <section class="spec-card">
   <div class="spec-label">Primary Requirements Basis</div>
@@ -303,7 +402,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <a href="/theatlas/foundational-survey-fabric/reference-vectors/">Reference Vectors Index</a>
 </div>
 
-<div class="note">Foundational Survey Fabric · Reference Vectors 12 · Pathological Edge Cases</div>
+<div class="note">Foundational Survey Fabric · Reference Vectors 12 · Pathological Edge Cases · Adversarial Candidate Proof Profile</div>
 
 </article>
 </main>
