@@ -103,10 +103,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 
 <div class="req-intro">
 <p>
-  <strong>Addressing Vectors</strong> define the reference cases through which implementations will prove consistent interpretation of basic addresses, higher-precision addresses, canonicalization behavior, valid alternate forms, aliases where permitted, and expected canonical resolution.
+  <strong>Addressing Vectors</strong> define exact executable cases proving that independent implementations interpret, normalize, compare, serialize, and preserve canonical Survey references identically.
 </p>
 <p>
-  The final vector corpus does not yet exist because the formal addressing grammar and exact precision mechanism remain unresolved within the Specification. This page therefore establishes the required vector categories and proof obligations without inventing canonical addresses or choosing among possible precision mechanisms prematurely.
+  The integrated candidate Specification now supplies a concrete addressing model for the capacity-independent core: exact reduced rational Pang coordinates (<strong>CRPC</strong>), canonical Point semantics, deterministic normalization, <strong>ECEM</strong> exact-place meaning, and <strong>FSF-CJSON-1.0</strong> machine representation. Reference Vectors may therefore move from category-only planning into actual exact fixtures for those solved behaviors.
+</p>
+<p>
+  One upstream limit remains important: the numerical half-span of the Survey Domain is not yet canonically selected. Addressing Vectors may therefore use coordinates whose validity is independent of the eventual numerical Domain capacity, or symbolic/domain-relative cases where appropriate, but they shall not canonize a concrete Domain bound by example.
 </p>
 </div>
 
@@ -116,129 +119,118 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 </blockquote>
 
 <section class="spec-card">
-  <div class="spec-label">01.1 · Basic Address Vectors</div>
-  <h2>Canonical References at Foundational Precision</h2>
-  <p>
-    The Addressing Vector set shall include basic canonical Survey references sufficient to prove that independent implementations interpret the same valid address as the same exact canonical place.
-  </p>
-  <p>
-    These vectors shall eventually include representative positions across the Survey Domain without assigning higher-layer meaning to those positions.
-  </p>
+  <div class="spec-label">01.0 · Current Addressing Model</div>
+  <h2>The Candidate Address Semantics Are Now Concrete</h2>
+  <p>A canonical Survey Point is represented by an ordered pair <strong>(x, y)</strong> in the canonical frame, where each coordinate is an exact reduced rational Pang value.</p>
+  <p><strong>q = n/d Pang</strong>, with <strong>n ∈ Z</strong>, <strong>d ∈ N+</strong>, <strong>gcd(|n|, d) = 1</strong>, and zero normalized as <strong>0/1</strong>.</p>
+  <p>The canonical frame is <strong>+x = Panoris (East)</strong>, <strong>-x = Panvel (West)</strong>, <strong>+y = Pankor (North)</strong>, and <strong>-y = Panvath (South)</strong>.</p>
+  <p>Under ECEM, every valid canonical Point denotes one exact Survey position. It is not a cell, uncertainty region, parent reference, rounded location, or set of finer descendants.</p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">01.2 · Higher-Precision Address Vectors</div>
-  <h2>Increasing Precision Without Rewriting Place</h2>
-  <p>
-    The vector set shall include canonical references expressed at multiple supported precision levels or states to prove that increased precision extends canonical reference without renumbering, relocating, invalidating, or reinterpreting previously established spatial meaning.
-  </p>
-  <p>
-    These vectors shall demonstrate the exact relationship between lower-precision and higher-precision canonical references once the Specification formally selects the precision mechanism, whether by refinement, exact coordinate extension, symbolic subdivision, exact fractional representation, or another exact method.
-  </p>
+  <div class="spec-label">01.1 · Basic Canonical Point Vectors</div>
+  <h2>Exact References in the Canonical Frame</h2>
+  <p>The vector set shall include exact canonical Points sufficient to prove that independent implementations interpret identical CRPC coordinate pairs as the same exact Survey position.</p>
+  <p>Capacity-independent fixtures should favor positions whose in-Domain validity does not depend upon the unresolved numerical half-span, including the canonical origin <strong>(0,0)</strong> and other coordinates that may be explicitly framed as conditional upon <strong>H</strong> where necessary.</p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">01.3 · Canonicalization Vectors</div>
-  <h2>Equivalent Meaning Must Normalize Identically</h2>
-  <p>
-    The vector set shall include valid expressions that differ in representation but resolve to the same canonical spatial meaning where the Specification permits such equivalence.
-  </p>
-  <p>
-    Every conforming implementation shall resolve each applicable case to the same authoritative canonical meaning and, where the Specification requires one unique canonical representation, to that same required form.
-  </p>
+  <div class="spec-label">01.2 · CRPC Normalization Vectors</div>
+  <h2>Equivalent Rational Inputs Must Reduce Identically</h2>
+  <p>The corpus shall include mathematically equivalent rational coordinate components expressed in nonreduced form where the input pathway permits them, together with the exact normalized CRPC result.</p>
+  <p>Examples shall prove sign normalization, denominator positivity, greatest-common-divisor reduction, and canonical zero representation without rounding or decimal approximation.</p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">01.4 · Valid Noncanonical Representation Vectors</div>
-  <h2>Recognize Valid Form Without Creating Alternate Truth</h2>
-  <p>
-    Where the Specification permits valid alternate or noncanonical address forms, Reference Vectors shall demonstrate how those forms are classified and deterministically resolved to canonical meaning, including conversion to a unique canonical representation where the Specification requires one.
-  </p>
-  <p>
-    A valid alternate form may be accepted for interchange or convenience, but it shall not establish an independent spatial truth or acquire normative authority merely by being accepted.
-  </p>
+  <div class="spec-label">01.3 · ECEM Exact-Place Vectors</div>
+  <h2>Greater Expressive Precision Must Not Move Place</h2>
+  <p>Addressing Vectors shall demonstrate the ECEM rule that exact Points do not possess coarse and fine semantic states. A previously valid Point continues to denote the same exact place when future compatible Specification versions support additional exact coordinate values.</p>
+  <p>The corpus shall therefore test <strong>meaning preservation</strong>, not hierarchical refinement of an existing Point into descendants.</p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">01.5 · Alias Vectors</div>
-  <h2>Aliases Resolve to Canonical Reference Where Permitted</h2>
-  <p>
-    If the completed Specification permits aliases or alternate human-facing address expressions, the vector set shall demonstrate their exact deterministic resolution to canonical Survey references.
-  </p>
-  <p>
-    Aliases shall remain presentation mechanisms and shall not alter the permanent canonical meaning of place.
-  </p>
+  <div class="spec-label">01.4 · Canonical Point Equality Vectors</div>
+  <h2>Equal Coordinates Mean One Exact Place</h2>
+  <p>Point equality shall be demonstrated through exact normalized CRPC component equality. Two supported Point representations denote the same canonical Point exactly when their normalized x-components are equal and their normalized y-components are equal.</p>
+  <p>No epsilon, tolerance, floating comparison, display precision, or rendering proximity may participate in canonical Point equality.</p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">01.5 · Canonical Ordering Vectors</div>
+  <h2>Deterministic Ordering Supports Canonical Geometry</h2>
+  <p>The corpus shall include Point ordering cases sufficient to prove deterministic lexicographic ordering under exact CRPC comparison.</p>
+  <p>These vectors support later canonical Segment endpoint ordering, SCPE start-vertex selection, and other normalization rules that depend upon one implementation-independent Point order.</p>
 </section>
 
 <section class="spec-card">
   <div class="spec-label">01.6 · Absolute Reference Vectors</div>
-  <h2>Canonical Addressing Must Stand Without Higher-Layer Objects</h2>
-  <p>
-    Reference Vectors shall demonstrate that canonical Survey addresses resolve independently of Parcels, Regions, landmarks, ownership, or other entities and semantics belonging to higher Architecture domains.
-  </p>
-  <p>
-    The expected result shall be derivable solely from the canonical address and governing Survey mathematics.
-  </p>
+  <h2>Canonical Points Stand Without Higher-Layer Objects</h2>
+  <p>Reference Vectors shall demonstrate that canonical Survey Points resolve independently of Parcels, Regions, landmarks, ownership, membership, or other higher-layer semantics.</p>
+  <p>The expected result shall be derivable solely from the canonical Point representation and governing Survey mathematics.</p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">01.7 · Address and Measurement Agreement</div>
-  <h2>Reference and Pang Mathematics Must Resolve to One Place</h2>
-  <p>
-    Once the formal relationship between canonical addressing and Pang-based measurement is specified, vectors shall demonstrate that canonical address resolution and canonical measurement agree exactly.
-  </p>
-  <p>
-    No conforming implementation may resolve an address to one place while its canonical Pang interpretation resolves to another.
-  </p>
+  <div class="spec-label">01.7 · Frame Interpretation Vectors</div>
+  <h2>Coordinate Sign and Native Direction Must Agree</h2>
+  <p>The corpus shall include exact cases demonstrating the canonical directional interpretation of coordinate sign.</p>
+  <p><strong>+x Panoris · -x Panvel · +y Pankor · -y Panvath.</strong></p>
+  <p>These vectors shall prove consistent interpretation of quadrants, axes, and the origin without assigning higher-layer geographic meaning.</p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">01.8 · Canonical Reference Permanence</div>
-  <h2>The Same Address Must Keep the Same Meaning</h2>
-  <p>
-    The vector corpus shall include stability cases sufficient to prove that previously established canonical references retain identical spatial meaning under compatible specification evolution.
-  </p>
-  <p>
-    Address reuse, reassignment, or reinterpretation shall never be represented as compatible behavior.
-  </p>
+  <div class="spec-label">01.8 · FSF-CJSON-1.0 Point Vectors</div>
+  <h2>Canonical Meaning Must Survive Machine Interchange</h2>
+  <p>Addressing Vectors shall include canonical FSF-CJSON-1.0 Point fixtures demonstrating structured CRPC components, canonical integer-string form, deterministic object-key order, UTF-8 canonical bytes, and exact parse/serialize round-trip behavior.</p>
+  <p>Where one canonical byte sequence is required, every conforming implementation shall produce the same bytes for the same normalized Point.</p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">01.9 · Representation Independence</div>
-  <h2>Display Form Must Not Change Canonical Resolution</h2>
-  <p>
-    Where multiple textual, machine-readable, normative, or presentation forms represent one canonical address, vectors shall demonstrate deterministic semantic equivalence and identical canonical meaning, with representation identity required only where the Specification mandates one unique form.
-  </p>
-  <p>
-    Presentation may vary. Place must not.
-  </p>
+  <div class="spec-label">01.9 · Valid Noncanonical Input Vectors</div>
+  <h2>Equivalent Input May Normalize; Invalid Input May Not Be Repaired</h2>
+  <p>Where the implementation interface permits valid noncanonical rational or object representation, vectors shall demonstrate deterministic normalization to canonical CRPC and canonical Point form.</p>
+  <p>Invalid input shall remain invalid. Reference Vectors shall not use normalization as a mechanism for guessing, snapping, coercing, or silently repairing malformed or semantically invalid coordinates.</p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">01.10 · Boundary Between Addressing and Invalidity</div>
-  <h2>Addressing Vectors Define Success; Invalid-Input Vectors Define Failure</h2>
-  <p>
-    This section shall focus primarily on valid canonical and valid noncanonical address behavior.
-  </p>
-  <p>
-    Malformed, impossible, ambiguous, or out-of-domain cases may be referenced here where necessary to establish the addressing boundary, but the comprehensive negative corpus belongs in the dedicated Invalid-Input Vectors section.
-  </p>
+  <div class="spec-label">01.10 · Version-Preservation Vectors</div>
+  <h2>Compatible Evolution Must Preserve Established Point Meaning</h2>
+  <p>The corpus shall include compatibility cases proving that a Point valid under an earlier compatible Specification remains the same exact Survey position under a later compatible Specification.</p>
+  <p>Expansion of representational capacity may add newly expressible exact Points. It may not migrate, renumber, reinterpret, or reuse established Points.</p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">01.11 · Domain-Boundary Dependency</div>
+  <h2>Concrete Edge Cases Must Wait for the Numerical Domain Capacity</h2>
+  <p>The candidate Survey Domain geometry is a closed axis-aligned square centered at the canonical origin and may be expressed parametrically as:</p>
+  <p><strong>D<sub>H</sub> = &#123;(x,y) : -H ≤ x ≤ H and -H ≤ y ≤ H&#125;</strong>, with exact positive CRPC parameter <strong>H</strong>.</p>
+  <p>Because the numerical value of <strong>H</strong> remains unresolved, Reference Vectors shall not yet publish concrete canonical fixtures whose pass/fail status depends upon one specific numerical Domain edge.</p>
+  <p>Symbolic or parameterized Domain-boundary cases may document the intended rule, but final numerical edge fixtures require the governing Specification to select <strong>H</strong>.</p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">01.12 · Addressing / Invalidity Boundary</div>
+  <h2>Positive Addressing Cases and Negative Input Cases Remain Distinct</h2>
+  <p>This section shall primarily establish exact valid Point meaning, normalization, equality, ordering, frame interpretation, serialization, and compatible meaning preservation.</p>
+  <p>Malformed CRPC, malformed Point structures, prohibited JSON forms, ambiguous input, and concrete out-of-Domain cases belong primarily in the dedicated Invalid-Input Vectors corpus, with cross-reference here where needed.</p>
 </section>
 
 <div class="status-grid">
   <div class="status-card">
-    <h3>Established by Requirements and Specification Scope</h3>
-    <p>
-      Canonical addresses must be deterministic, permanent in meaning, self-resolving from the governing Specification, absolute within one global frame, capable of extensible exact precision, independently reproducible, and deterministically equivalent or canonicalizable where multiple valid representations exist.
-    </p>
+    <h3>Executable Now</h3>
+    <p>CRPC reduction and comparison; canonical zero; exact Point equality; Point ordering; frame interpretation; ECEM exact-place semantics; capacity-independent Point fixtures; FSF-CJSON-1.0 Point serialization; deterministic round-trip; compatible Point-meaning preservation.</p>
   </div>
   <div class="status-card">
-    <h3>Canonical Vector Corpus Not Yet Possessed</h3>
-    <p>
-      Actual address strings, higher-precision examples, alias forms, canonicalization or semantic-equivalence outputs, encoded test fixtures, and expected machine-readable results cannot be defined until the formal address grammar, precision mathematics, and normative serialization/interchange rules are specified and tested.
-    </p>
+    <h3>Still Blocked or Open</h3>
+    <p>Concrete numerical Domain-edge fixtures requiring a selected H; any alias system not defined by the Specification; future human-facing address syntax; unresolved higher geometry or operation cases outside Point addressing; final corpus identifiers and packaging.</p>
   </div>
 </div>
+
+<section class="spec-card">
+  <div class="spec-label">Reference Vector Integration Standing</div>
+  <h2>Addressing Has Moved From Category Planning to Exact Candidate Fixtures</h2>
+  <p>The original page correctly refused to invent an address grammar before the mathematics existed. That condition has now changed for the capacity-independent core: CRPC, canonical Point semantics, ECEM, normalization, the canonical frame, and FSF-CJSON-1.0 provide enough exact behavior for real Reference Vectors.</p>
+  <p>The unresolved numerical Survey Domain capacity remains a real boundary. Reference Vectors may prove the rules around exact reference and Domain membership, but they may not choose the missing numerical half-span on the Specification's behalf.</p>
+</section>
 
 <section class="spec-card">
   <div class="spec-label">Primary Requirements Basis</div>
@@ -268,7 +260,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <a href="/theatlas/foundational-survey-fabric/conformance/">Conformance</a>
 </div>
 
-<div class="note">Foundational Survey Fabric · Reference Vectors 01 · Addressing Vectors</div>
+<div class="note">Foundational Survey Fabric · Reference Vectors 01 · Addressing Vectors · Candidate Exact Fixture Model</div>
 
 </article>
 </main>
