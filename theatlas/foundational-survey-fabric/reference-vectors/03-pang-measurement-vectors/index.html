@@ -94,10 +94,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 
 <div class="req-intro">
 <p>
-  <strong>Pang Measurement Vectors</strong> define the reference cases through which implementations will prove identical canonical measurement of spatial separation, area, path length, geometric boundary length, and exact precision below one Pang.
+  <strong>Pang Measurement Vectors</strong> define exact executable cases proving agreement on the native Pang scale, exact rational coordinate differences, exact polygon area, sub-Pang representation, lossless versus lossy conversion, and cross-implementation measurement behavior.
 </p>
 <p>
-  The final vector corpus does not yet exist because the exact spatial-separation, area, length, angular, and precision mathematics remain unresolved within the Specification. This page therefore establishes the measurement cases that must eventually be tested without inventing formulas, precision mechanisms, or expected values prematurely.
+  The integrated candidate Specification now resolves several measurement semantics that were previously open. Pang is the native linear scale, CRPC supplies exact rational coordinate values below one Pang, exact coordinate differences are directly testable, and SCPE area is exactly computable by the shoelace formula.
+</p>
+<p>
+  Not every measurement family is equally resolved. General Euclidean spatial separation, arbitrary path length, geometric boundary length, and the final scalar model for irrational derived values remain open beyond the exact cases already established. Reference Vectors shall therefore test only the measurement semantics actually defined by the Specification and shall not invent a universal distance or length model to complete the corpus.
 </p>
 </div>
 
@@ -107,151 +110,207 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 </blockquote>
 
 <section class="spec-card">
-  <div class="spec-label">03.1 · Pang Unit Vectors</div>
-  <h2>One Pang Must Mean the Same Thing Everywhere</h2>
+  <div class="spec-label">03.0 · Current Measurement Model</div>
+  <h2>Pang Defines Scale; Canonical Mathematics Defines Precision</h2>
   <p>
-    The vector set shall include canonical cases that demonstrate the exact linear meaning of one Pang within the global Survey frame.
+    Pang is the native canonical unit of linear measure in the Foundational Survey Fabric. Canonical coordinate values are exact reduced rational Pang quantities:
   </p>
   <p>
-    Conforming implementations shall reproduce the same canonical measure regardless of location within the Survey Domain.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">03.2 · Canonical Spatial Separation Vectors</div>
-  <h2>Exact Spatial Separation Between Canonical Positions</h2>
-  <p>
-    Reference vectors shall include pairs of canonical positions whose exact spatial separation must be measured identically by every conforming implementation.
+    <strong>q = n/d Pang</strong>
   </p>
   <p>
-    These cases shall test the canonical spatial-separation mathematics only and shall not imply routing, travel time, network cost, or experiential distance.
+    where <strong>n ∈ Z</strong>, <strong>d ∈ N+</strong>, and the fraction is reduced exactly.
+  </p>
+  <p>
+    Coordinate exactness therefore does not depend upon decimal digits or named subunits. Derived measurements may belong to different exact scalar classes; for example, a straight-line Euclidean distance between rational-coordinate Points may be algebraic rather than rational.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">03.3 · Zero-Separation Vectors</div>
-  <h2>Equivalent Position Must Measure Zero Separation</h2>
+  <div class="spec-label">03.1 · Pang Scale Vectors</div>
+  <h2>One Pang Must Mean the Same Scale Everywhere</h2>
   <p>
-    The corpus shall include differently expressed but canonically equivalent positions where applicable to prove that equivalent canonical location produces exactly zero spatial separation.
+    Reference Vectors shall demonstrate the uniformity of Pang scale across the Survey frame using exact coordinate differences.
   </p>
   <p>
-    Any nonzero result for canonically identical position shall constitute a conformance failure.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">03.4 · Square Pang Area Vectors</div>
-  <h2>Canonical Area Must Be Exact</h2>
-  <p>
-    The vector set shall include exact spatial extents whose area can be expressed canonically in square Pangs once the formal area mathematics are specified.
-  </p>
-  <p>
-    Independent implementations shall produce identical authoritative area results for identical extents.
+    A displacement of exactly one Pang along a canonical axis shall have the same linear scale regardless of where the participating Points lie, provided the test Points are valid within the governing Survey Domain.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">03.5 · Composite Area Vectors</div>
-  <h2>Composition Must Preserve Exact Measure</h2>
+  <div class="spec-label">03.2 · Exact Coordinate-Difference Vectors</div>
+  <h2>Axis-Aligned Separation Components Are Exactly Rational</h2>
   <p>
-    Reference vectors shall include unions, differences, intersections, or other exact compositions where area can be tested across derived spatial extents.
+    Given Points <strong>A = (x1,y1)</strong> and <strong>B = (x2,y2)</strong>, Reference Vectors may directly test the exact coordinate differences:
   </p>
   <p>
-    These cases shall help prove consistency between geometric composition and canonical area measurement.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">03.6 · Path Length Vectors</div>
-  <h2>Length Is Distinct From Separation</h2>
-  <p>
-    The corpus shall include exact line-like or path-like spatial expressions whose canonical length must be measured independently from the straight-line separation between endpoints.
+    <strong>Δx = x2 - x1</strong> and <strong>Δy = y2 - y1</strong>.
   </p>
   <p>
-    The expected result shall test geometric path length only and shall not assign semantic meaning to the path.
+    Because CRPC arithmetic is exact, these component differences are exact rational Pang quantities and require no tolerance or approximation.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">03.7 · Geometric Boundary Length Vectors</div>
-  <h2>Exact Perimeter-Like Measure Without Higher-Layer Meaning</h2>
+  <div class="spec-label">03.3 · Zero-Difference Vectors</div>
+  <h2>Identical Canonical Points Produce Zero Coordinate Difference</h2>
   <p>
-    Where canonical extents possess measurable boundaries, reference vectors shall test exact geometric boundary length according to the governing Survey mathematics.
+    Canonically equal Points shall produce exactly <strong>Δx = 0</strong> and <strong>Δy = 0</strong>.
   </p>
   <p>
-    The Survey result shall remain geometric only and shall not imply Parcel perimeter, legal boundary, or other interpretation belonging to higher Architecture domains.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">03.8 · Sub-Pang Precision Vectors</div>
-  <h2>Canonical Mathematics Must Support Exact Measure Below One Pang</h2>
-  <p>
-    The vector set shall include positions, separations, lengths, and extents smaller than one Pang to prove exact sub-Pang measurement through the precision mechanism ultimately defined by the Specification.
-  </p>
-  <p>
-    That mechanism may use refinement, exact coordinate extension, symbolic subdivision, exact fractional representation, or another exact method. These cases shall not require permanently named subunits unless the final Specification later establishes them.
+    Any nonzero component difference for equal canonical Points constitutes a conformance failure.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">03.9 · Mixed-Precision Vectors</div>
-  <h2>Different Precision Expressions Must Resolve Exactly</h2>
+  <div class="spec-label">03.4 · Rational Sub-Pang Vectors</div>
+  <h2>Exact Measure Below One Pang Is Already Supported</h2>
   <p>
-    Reference Vectors shall include calculations involving canonical inputs expressed at different supported precision levels, states, or exact representations once the governing precision model is specified.
+    The corpus shall include exact rational values below one Pang, such as one-half, one-third, or other reduced rational Pang quantities, where the selected fixtures remain valid under the governing Survey Domain.
   </p>
   <p>
-    Every conforming implementation shall resolve the operation without silently discarding precision, changing canonical meaning, or redefining the Pang scale.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">03.10 · Lossless Measurement Conversion Vectors</div>
-  <h2>Equivalent Precision Must Remain Equivalent</h2>
-  <p>
-    Where canonical measurement may be expressed through different exact representations, the vector corpus shall demonstrate lossless conversion and identical canonical meaning.
-  </p>
-  <p>
-    Lossless transformation shall preserve the exact authoritative measurement.
+    These cases prove that sub-Pang precision is not a future hierarchical refinement mechanism. It already follows directly from exact rational coordinate representation.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">03.11 · Lossy Measurement Reduction Vectors</div>
-  <h2>Reduced Precision Must Be Detectable</h2>
+  <div class="spec-label">03.5 · Exact SCPE Area Vectors</div>
+  <h2>Polygon Area Is Exactly Testable</h2>
   <p>
-    The corpus shall include measurement representations whose precision has been truncated, rounded, generalized, or otherwise reduced.
+    For a valid normalized SCPE with CRPC vertices, Reference Vectors shall test exact area using the canonical shoelace construction.
   </p>
   <p>
-    Conforming implementations shall distinguish those derived approximations from complete canonical measurement rather than treating them as exactly equivalent.
+    Because all vertex coordinates are rational, the resulting signed double-area and absolute area are exact rational square-Pang quantities.
+  </p>
+  <p>
+    Independent implementations shall produce exactly the same authoritative area result for the same canonical SCPE.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">03.12 · Cross-Implementation Measurement Agreement</div>
-  <h2>Every Implementation Must Return the Same Measure</h2>
+  <div class="spec-label">03.6 · Area Normalization Invariance Vectors</div>
+  <h2>Canonical Normalization Must Preserve Exact Area</h2>
   <p>
-    Independent conforming implementations shall produce the same authoritative canonical spatial separation, area, path length, geometric boundary length, and sub-Pang meaning from identical canonical inputs. Where the governing Specification requires one unique canonical representation of a measurement result, that representation shall also agree exactly.
+    Reference Vectors shall demonstrate that permitted normalization steps—such as traversal normalization, unique start-vertex selection, and removal of redundant collinear middle vertices—do not change the exact represented area.
   </p>
   <p>
-    A mismatch indicates an implementation defect, specification ambiguity, version incompatibility, or unresolved mathematical dependency requiring correction.
+    If two valid supported polygon representations are semantically equivalent and normalize to the same SCPE, their exact area shall agree.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">03.7 · Composite Area Boundary</div>
+  <h2>Do Not Invent Boolean Area Semantics Ahead of Closure Rules</h2>
+  <p>
+    The original vector plan anticipated unions, differences, intersections, and other composed extents. Those cases remain conditional because the general Boolean/composite output model is not yet fully closed in the Specification.
+  </p>
+  <p>
+    Reference Vectors may test exact area of canonical SCPE inputs and any composition whose result type and normalization are already explicitly governed. They shall not invent a general composite geometry model merely to exercise area arithmetic.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">03.8 · General Spatial Separation Boundary</div>
+  <h2>Coordinate Difference Is Solved; Universal Distance Is Not</h2>
+  <p>
+    Exact coordinate differences are executable now. A general canonical Euclidean spatial-separation operation requires an exact result scalar capable of representing values such as <strong>√r</strong> when the squared distance is rational but not a rational square.
+  </p>
+  <p>
+    Until that derived-scalar representation and operation contract are formally governed, Reference Vectors shall not publish arbitrary diagonal-distance results as final canonical outputs.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">03.9 · Path Length Boundary</div>
+  <h2>General Path Length Remains Open</h2>
+  <p>
+    Segment and polygon geometry are defined, but a universal canonical scalar contract for arbitrary path length is not yet fully specified.
+  </p>
+  <p>
+    Reference Vectors may preserve the proof obligation and may test any special exact case whose result form is already governed. General path-length fixtures remain non-final until the Specification defines the exact output scalar and operation semantics.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">03.10 · Geometric Boundary Length Boundary</div>
+  <h2>Perimeter-Like Measurement Is Not Yet a Closed General Operation</h2>
+  <p>
+    SCPE boundaries are exact geometric objects, but their total Euclidean length may contain irrational segment lengths.
+  </p>
+  <p>
+    The corpus shall therefore distinguish exact boundary geometry from a still-open general canonical boundary-length scalar representation. No approximate decimal perimeter may be promoted to canonical truth.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">03.11 · Lossless Representation Vectors</div>
+  <h2>Exact Representation Changes Must Preserve the Measurement</h2>
+  <p>
+    Where one exact measurement can be expressed through multiple supported exact forms, a lossless conversion shall preserve identical mathematical meaning.
+  </p>
+  <p>
+    For CRPC values, normalization to reduced rational form is exact and lossless. Canonicalization shall never change the represented quantity.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">03.12 · Lossy Reduction Vectors</div>
+  <h2>Approximation Must Never Masquerade as Canonical Measurement</h2>
+  <p>
+    The corpus shall include derived display or interchange examples in which an exact value is rounded, truncated, decimalized, generalized, or otherwise reduced.
+  </p>
+  <p>
+    Conforming implementations shall distinguish such approximations from the exact canonical value. A lossy result shall not silently re-enter the canonical layer as though no information were lost.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">03.13 · Mixed Exact-Representation Vectors</div>
+  <h2>Different Exact Forms Must Resolve Without Precision Loss</h2>
+  <p>
+    Where supported inputs use mathematically equivalent rational forms, implementations shall normalize and compute without silently discarding exactness.
+  </p>
+  <p>
+    ECEM does not define coarse and fine semantic states. Mixed-form testing therefore concerns exact representational equivalence, not hierarchical precision inheritance.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">03.14 · Cross-Implementation Measurement Agreement</div>
+  <h2>Defined Measurements Must Reproduce Exactly</h2>
+  <p>
+    For every measurement operation whose canonical mathematics and result form are actually defined, independent conforming implementations shall return the same exact authoritative result.
+  </p>
+  <p>
+    A mismatch indicates implementation defect, Specification ambiguity, version incompatibility, fixture defect, or an operation that was tested before its mathematical output contract was sufficiently specified.
   </p>
 </section>
 
 <div class="status-grid">
   <div class="status-card">
-    <h3>Established by Requirements and Specification Scope</h3>
+    <h3>Executable Now</h3>
     <p>
-      Pang is BitPangea’s native canonical unit of linear measure; square Pangs measure area; canonical spatial separation, area, path length, and geometric boundary length must be exact; Pang scale must remain uniform across the Survey Domain; and sub-Pang precision must be supplied through an exact mechanism without prematurely requiring a hierarchy of named subunits.
+      Pang scale through exact coordinate differences; CRPC sub-Pang values; zero coordinate difference; exact rational component arithmetic; exact SCPE area; area preservation under canonical normalization; lossless CRPC normalization; explicit lossy-versus-exact distinction.
     </p>
   </div>
   <div class="status-card">
-    <h3>Canonical Vector Corpus Not Yet Possessed</h3>
+    <h3>Still Open or Conditional</h3>
     <p>
-      Actual measurement inputs, exact expected Pang values, square-Pang results, path and geometric-boundary formulas, sub-Pang examples, mixed-precision fixtures, and authoritative machine-readable outputs cannot be defined until the final measurement mathematics, precision mechanism, and normative serialization/interchange rules are specified and tested.
+      General Euclidean spatial-separation result scalar; arbitrary path length; general SCPE boundary length; composite/Boolean measurement where result geometry is not yet closed; final measurement-result serialization for non-rational derived scalars; final vector identifiers and packaging.
     </p>
   </div>
 </div>
+
+<section class="spec-card">
+  <div class="spec-label">Reference Vector Integration Standing</div>
+  <h2>Measurement Vectors Must Follow the Exact Result Type</h2>
+  <p>
+    The original page correctly refused to invent formulas while the measurement model was broadly unresolved. The present candidate mathematics now support a narrower but real executable core.
+  </p>
+  <p>
+    CRPC arithmetic and exact polygon area are ready for Reference Vector construction. General distance and length operations are not yet equally mature because their exact derived-scalar representation remains open. The corpus shall therefore advance by operation, not by pretending that every measurement family has reached the same level of closure.
+  </p>
+</section>
 
 <section class="spec-card">
   <div class="spec-label">Primary Requirements Basis</div>
@@ -282,7 +341,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <a href="/theatlas/foundational-survey-fabric/reference-vectors/">Reference Vectors Index</a>
 </div>
 
-<div class="note">Foundational Survey Fabric · Reference Vectors 03 · Pang Measurement Vectors</div>
+<div class="note">Foundational Survey Fabric · Reference Vectors 03 · Pang Measurement Vectors · Partial Exact Measurement Profile</div>
 
 </article>
 </main>
