@@ -94,10 +94,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 
 <div class="req-intro">
 <p>
-  <strong>Normalization Vectors</strong> define the reference cases through which implementations will prove that different valid expressions of the same canonical spatial truth resolve deterministically to one authoritative meaning and, where required, one canonical form.
+  <strong>Normalization Vectors</strong> define exact executable cases proving that valid equivalent CRPC, Segment, SCPE, and FSF-CJSON representations converge deterministically without changing canonical spatial meaning.
 </p>
 <p>
-  The final vector corpus does not yet exist because the exact address grammar, geometric primitive set, ordering rules, normative serialization/interchange model, and normalization algorithms remain unresolved within the Specification. This page therefore establishes the required normalization tests without inventing canonical forms or forcing a single encoding model prematurely.
+  The integrated candidate Specification now resolves the principal normalization rules that were previously open: CRPC reduction, canonical zero, lexicographic Point order, deterministic Segment endpoint order, SCPE normalization, normalization idempotence, and FSF-CJSON-1.0 canonical serialization.
+</p>
+<p>
+  Reference Vectors may therefore move from abstract normalization categories into exact candidate fixtures. The remaining boundaries concern forms not yet defined by the Specification—such as future human-facing aliases, unresolved higher geometry, and any interchange form outside the current canonical FSF-CJSON profile.
 </p>
 </div>
 
@@ -107,151 +110,215 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 </blockquote>
 
 <section class="spec-card">
-  <div class="spec-label">06.1 · Canonical-Form Vectors</div>
-  <h2>Canonical Input Must Remain Canonical</h2>
+  <div class="spec-label">06.0 · Current Normalization Model</div>
+  <h2>Normalization Is Now a Deterministic Candidate Function</h2>
   <p>
-    The vector set shall include already-canonical references, extents, expressions, and applicable normative encodings to prove that normalization preserves authoritative spatial meaning and any unique canonical form explicitly required by the Specification.
+    The candidate mathematics define normalization over supported canonical objects rather than treating normalization as an open future concept.
   </p>
   <p>
-    A conforming implementation shall not alter canonical input merely because an alternative internal representation is more convenient.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">06.2 · Equivalent Address Vectors</div>
-  <h2>Different Valid Address Forms Must Converge</h2>
-  <p>
-    Where the Specification permits multiple valid expressions for the same canonical Survey address, Reference Vectors shall demonstrate their deterministic resolution to one authoritative canonical reference meaning and, where required, one canonical representation.
+    At minimum, the executable normalization surface includes CRPC values, Points through normalized components, Segments, SCPEs, and FSF-CJSON-1.0 canonical serialization.
   </p>
   <p>
-    Equivalent address syntax shall not create competing place identities.
+    Normalization may change representation. It may not change exact spatial meaning.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">06.3 · Equivalent Geometry Vectors</div>
-  <h2>Different Constructions May Describe the Same Space</h2>
+  <div class="spec-label">06.1 · CRPC Reduction Vectors</div>
+  <h2>Equivalent Rational Values Must Reduce Identically</h2>
   <p>
-    The corpus shall include differently structured geometric expressions that represent exactly the same canonical spatial extent.
+    Reference Vectors shall include valid mathematically equivalent rational inputs whose canonical result is one reduced CRPC value.
   </p>
   <p>
-    Conforming implementations shall recognize their equivalence and normalize them to the same canonical meaning or canonical representation required by the Specification.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">06.4 · Ordering Normalization Vectors</div>
-  <h2>Equivalent Components Must Acquire One Canonical Order</h2>
-  <p>
-    Where canonical or normative expressions contain multiple components whose order does not change spatial meaning, Reference Vectors shall prove any deterministic ordering rules required by the governing representation for normalization, exact comparison, or reproducibility.
-  </p>
-  <p>
-    Canonical ordering shall serve exact comparison and interchange without implying semantic hierarchy.
+    The normalization rules include greatest-common-divisor reduction, positive denominator, normalized sign, and canonical zero as <strong>0/1</strong>.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">06.5 · Redundancy-Elimination Vectors</div>
-  <h2>Unnecessary Structure Must Not Create Alternate Truth</h2>
+  <div class="spec-label">06.2 · Canonical Point Vectors</div>
+  <h2>Point Normalization Is Component Normalization</h2>
   <p>
-    Reference vectors shall include valid but redundant representations where the Specification permits deterministic simplification to a canonical form.
+    A Point is canonical when its x and y CRPC components are canonical.
   </p>
   <p>
-    Normalization shall eliminate unnecessary representational redundancy without removing required canonical information or changing spatial meaning.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">06.6 · Normative Interchange Normalization Vectors</div>
-  <h2>Equivalent Encodings Must Resolve to One Canonical Meaning</h2>
-  <p>
-    Where valid alternate, noncanonical, or multiple normative encodings are permitted, Reference Vectors shall demonstrate deterministic normalization or semantic-equivalence behavior according to the governing Specification.
-  </p>
-  <p>
-    If the Specification defines one unique canonical serialization, applicable cases shall normalize to that exact form. If it permits multiple explicitly governed lossless normative encodings, those encodings may remain representationally distinct while resolving to the same canonical meaning under deterministic equivalence rules.
+    Differently expressed valid rational components that denote the same exact values shall normalize to the same canonical Point.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">06.7 · Precision-Preserving Normalization Vectors</div>
-  <h2>Normalization Must Preserve Exact Precision</h2>
+  <div class="spec-label">06.3 · Segment Normalization Vectors</div>
+  <h2>Segment Endpoint Order Must Be Deterministic</h2>
   <p>
-    The vector corpus shall include expressions carrying exact higher precision or sub-Pang precision to prove that normalization does not silently truncate, round, generalize, or otherwise reduce canonical precision, regardless of the precision mechanism ultimately specified.
+    Reference Vectors shall include the same valid Segment supplied with reversed endpoint order.
   </p>
   <p>
-    Any transformation that loses precision belongs to lossy conversion, not canonical normalization.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">06.8 · No-Snapping Vectors</div>
-  <h2>Normalization Must Not Move Place</h2>
-  <p>
-    Reference vectors shall include positions near canonical boundaries, preferred increments, or other derived structures to prove that normalization does not move them to a nearby location.
-  </p>
-  <p>
-    Canonicalization may change representation. It shall not change position.
+    Canonical Segment normalization orders the two endpoints lexicographically so that equivalent endpoint permutations produce one canonical Segment representation.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">06.9 · Idempotence Vectors</div>
+  <div class="spec-label">06.4 · SCPE Traversal Normalization Vectors</div>
+  <h2>Equivalent Polygon Traversals Must Converge</h2>
+  <p>
+    Reference Vectors shall include valid SCPE representations differing only by traversal direction or starting vertex.
+  </p>
+  <p>
+    Canonical normalization selects counterclockwise traversal and then selects the unique lexicographically least vertex as the canonical start vertex.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">06.5 · Redundant Collinear Vertex Vectors</div>
+  <h2>Redundant Middle Vertices Must Disappear Deterministically</h2>
+  <p>
+    Where a valid SCPE contains a vertex lying exactly between adjacent collinear vertices, normalization removes that redundant middle vertex.
+  </p>
+  <p>
+    The reduction shall repeat to a fixed point so that equivalent polygonal boundaries do not acquire distinct canonical forms merely because one input contains unnecessary collinear subdivision.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">06.6 · Closure-Point Vectors</div>
+  <h2>Repeated Terminal Closure Must Not Create Alternate Geometry</h2>
+  <p>
+    Where an accepted input form repeats the first SCPE vertex as a terminal closure marker, Reference Vectors shall prove that canonical normalization removes the repeated terminal Point.
+  </p>
+  <p>
+    The canonical SCPE representation stores the cycle without duplicating the first vertex at the end.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">06.7 · Canonical Geometry Equality Vectors</div>
+  <h2>Equivalent Supported Geometry Must Normalize to Equality</h2>
+  <p>
+    Reference Vectors shall demonstrate that valid supported geometry representing the same canonical spatial set produces identical normalized geometry.
+  </p>
+  <p>
+    Semantic equivalence shall therefore be reproducible through exact normalization rather than visual similarity or implementation-specific simplification.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">06.8 · FSF-CJSON Canonical Serialization Vectors</div>
+  <h2>Canonical Objects Must Produce Canonical Bytes</h2>
+  <p>
+    Reference Vectors shall include canonical FSF-CJSON-1.0 objects and exact expected serialization where the profile requires one canonical byte sequence.
+  </p>
+  <p>
+    The corpus shall prove canonical integer-string representation, required object structure, deterministic key ordering, prohibited unknown fields where applicable, UTF-8 encoding, and exact canonical bytes.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">06.9 · Parse / Normalize / Serialize Vectors</div>
+  <h2>Canonical Round-Trip Must Converge</h2>
+  <p>
+    Where a valid supported noncanonical input form is permitted, vectors shall demonstrate the deterministic path:
+  </p>
+  <p>
+    <strong>parse → validate → normalize → canonical object → canonical serialize</strong>.
+  </p>
+  <p>
+    Repeating the process on the canonical output shall produce the same canonical object and the same canonical bytes.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">06.10 · Idempotence Vectors</div>
   <h2>Normalizing Canonical Output Again Must Change Nothing</h2>
   <p>
-    The vector set shall include cases proving that once an expression has been normalized or deterministically resolved, applying the same process again preserves the identical canonical meaning and any unique canonical form required by the Specification.
+    For every supported normalized object <strong>G</strong>, Reference Vectors shall prove:
   </p>
   <p>
-    Canonical normalization should therefore be stable and idempotent.
+    <strong>N(N(G)) = N(G)</strong>.
+  </p>
+  <p>
+    Idempotence applies to the mathematical canonical object and, where canonical serialization is defined, to the resulting canonical representation.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">06.10 · Cross-Representation Convergence Vectors</div>
-  <h2>Human, Machine, and Formal Forms Must Resolve to One Meaning</h2>
+  <div class="spec-label">06.11 · No-Snapping Vectors</div>
+  <h2>Normalization Must Never Move Place</h2>
   <p>
-    Where multiple authoritative or permitted durable representations exist, vectors shall prove that they resolve to the same canonical mathematical truth.
+    Reference Vectors shall include exact Points and geometry near other representable values to prove that normalization performs only permitted exact canonicalization.
   </p>
   <p>
-    Representation diversity may survive. Canonical spatial meaning may not diverge.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">06.11 · Invalid Normalization Boundary Vectors</div>
-  <h2>Invalid Input Must Not Be Normalized Into Validity</h2>
-  <p>
-    The corpus shall include cases that superficially resemble valid expressions but contain malformed, ambiguous, impossible, or out-of-domain meaning.
-  </p>
-  <p>
-    Conforming implementations shall reject those cases rather than silently “repair” them through normalization.
+    It shall not round, snap, approximate, quantize, migrate, or otherwise change the represented position or extent.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">06.12 · Cross-Implementation Normalization Agreement</div>
+  <div class="spec-label">06.12 · Exactness-Preservation Vectors</div>
+  <h2>Normalization Cannot Become Lossy Conversion</h2>
+  <p>
+    Exact CRPC values and geometry shall retain all canonical mathematical information through normalization.
+  </p>
+  <p>
+    Any operation that truncates, rounds, decimalizes, generalizes, or otherwise loses information belongs to a lossy conversion pathway and shall not be reported as canonical normalization.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">06.13 · Invalid Normalization Boundary Vectors</div>
+  <h2>Invalid Input Must Remain Invalid</h2>
+  <p>
+    Reference Vectors shall include malformed CRPC, malformed geometry, invalid SCPEs, prohibited serialization forms, duplicate or unknown fields where forbidden, and other invalid cases that superficially resemble normalizable input.
+  </p>
+  <p>
+    A conforming implementation shall reject those cases rather than infer intent or silently repair them into canonical validity.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">06.14 · Representation-Boundary Vectors</div>
+  <h2>Only Defined Alternate Forms May Participate in Normalization</h2>
+  <p>
+    The current candidate profile supports normalization and canonical serialization for the representations explicitly defined by the Specification.
+  </p>
+  <p>
+    Future aliases, human-readable syntaxes, alternate interchange formats, or geometry families shall not be treated as valid normalization inputs until the Specification formally defines their semantics and conversion rules.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">06.15 · Cross-Implementation Normalization Agreement</div>
   <h2>Every Implementation Must Converge to the Same Canonical Result</h2>
   <p>
-    Independent conforming implementations shall produce the same authoritative canonical meaning for every valid equivalent input in the vector corpus. Where the Specification requires one unique canonical normalized representation, that output shall also agree exactly.
+    Independent conforming implementations shall produce the same normalized CRPC, Point, Segment, SCPE, and canonical FSF-CJSON result for identical supported inputs.
   </p>
   <p>
-    A disagreement indicates an implementation defect, specification ambiguity, version incompatibility, or unresolved normalization dependency requiring correction.
+    A mismatch indicates implementation defect, Specification ambiguity, version incompatibility, fixture defect, or an input form tested beyond the current normalization contract.
   </p>
 </section>
 
 <div class="status-grid">
   <div class="status-card">
-    <h3>Established by Requirements and Specification Scope</h3>
+    <h3>Executable Now</h3>
     <p>
-      The Survey Fabric must provide deterministic canonicalization or semantic resolution, exact validity and normalization, canonical ordering where required, exact equivalence, governed normative serialization/interchange, no silent snapping, preservation of canonical precision, controlled canonical complexity, and one authoritative spatial meaning despite multiple valid representations.
+      CRPC reduction; canonical zero; Point component normalization; Segment endpoint ordering; SCPE traversal normalization; redundant-collinear removal; closure-point removal; lexicographically least SCPE start; normalization idempotence; exactness preservation; no snapping; FSF-CJSON canonical serialization; parse/normalize/serialize round-trip.
     </p>
   </div>
   <div class="status-card">
-    <h3>Canonical Vector Corpus Not Yet Possessed</h3>
+    <h3>Still Open or Conditional</h3>
     <p>
-      Actual equivalent address forms, geometric normalization cases, ordering fixtures, redundancy examples, normative encoding and semantic-equivalence fixtures, idempotence cases, and authoritative machine-readable expected results cannot be created until the final addressing, geometry, normative serialization/interchange, precision, and normalization rules are formally specified.
+      Future human-facing aliases; alternate address syntaxes not yet specified; interchange formats outside FSF-CJSON-1.0; normalization of future geometry families or general composite geometry; final vector identifiers and corpus packaging.
     </p>
   </div>
 </div>
+
+<section class="spec-card">
+  <div class="spec-label">Reference Vector Integration Standing</div>
+  <h2>Normalization Is Now One of the Strongest Executable FSF Proof Surfaces</h2>
+  <p>
+    The original page correctly deferred the corpus while addressing, geometry, ordering, serialization, and normalization algorithms were unresolved. Those dependencies are now substantially defined for the candidate core.
+  </p>
+  <p>
+    Section 06 can therefore support exact executable Reference Vectors across CRPC, Segment, SCPE, and FSF-CJSON normalization. The remaining work is concentrated in future representations and geometry families that the Specification has not yet admitted.
+  </p>
+</section>
 
 <section class="spec-card">
   <div class="spec-label">Primary Requirements Basis</div>
@@ -280,7 +347,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <a href="/theatlas/foundational-survey-fabric/reference-vectors/">Reference Vectors Index</a>
 </div>
 
-<div class="note">Foundational Survey Fabric · Reference Vectors 06 · Normalization Vectors</div>
+<div class="note">Foundational Survey Fabric · Reference Vectors 06 · Normalization Vectors · Canonical Convergence Profile</div>
 
 </article>
 </main>
