@@ -109,10 +109,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 
 <div class="req-intro">
 <p>
-  <strong>Transformation Vectors</strong> define the reference cases through which implementations will prove that derived spatial transformations preserve one underlying canonical Survey truth.
+  <strong>Transformation Vectors</strong> define exact executable cases proving the transformation behavior that is already closed by the current candidate Specification, while preserving an explicit boundary around arbitrary rotation and any transformation whose exact result type is not yet governed.
 </p>
 <p>
-  The final vector corpus does not yet exist because the precise transformation notation, canonical angular system, scaling rules, and formal transformation mathematics remain unresolved within the Specification. This page therefore establishes the required transformation tests without inventing canonical formulas prematurely.
+  The current candidate mathematics support exact translation by CRPC vectors, positive uniform scaling by exact factors where the result remains representable, identity transformation, inverse translation and inverse positive uniform scale, deterministic composition of those supported operations, and preservation of canonical orientation under translation and positive uniform scaling.
+</p>
+<p>
+  The final angular unit and universal arbitrary-angle rotation model remain open. Reflection also reverses handedness and therefore cannot be treated as an orientation-preserving canonical placement transformation. Reference Vectors shall prove the supported transformation core without inventing missing rotation or reflection semantics.
 </p>
 </div>
 
@@ -122,151 +125,215 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 </blockquote>
 
 <section class="spec-card">
-  <div class="spec-label">07.1 · Rotation Vectors</div>
-  <h2>Canonical Rotation Must Resolve Exactly</h2>
+  <div class="spec-label">07.0 · Current Transformation Model</div>
+  <h2>A Restricted Exact Transformation Core Is Defined</h2>
   <p>
-    The vector set shall include exact rotational transformations relative to the canonical Survey frame once the angular system and positive rotational convention are formally established.
+    The present candidate transformation core supports exact operations that preserve the Foundational Survey Fabric's canonical frame and exact coordinate semantics.
   </p>
   <p>
-    Identical rotation inputs shall produce identical transformed results across conforming implementations.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">07.2 · Reflection Vectors</div>
-  <h2>Mirroring Must Remain a Derived View</h2>
-  <p>
-    Reference vectors shall include exact reflection or mirroring transformations where supported by the Specification.
+    The directly testable core includes <strong>translation</strong>, <strong>positive uniform scaling</strong>, identity cases, inverses of those supported transformations, deterministic composition, and orientation preservation.
   </p>
   <p>
-    A reflected result shall remain deterministically resolvable to the unchanged canonical Survey frame and shall not create a competing Survey orientation.
+    Arbitrary rotation and reflection are not part of the same closed canonical placement profile.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">07.3 · Translation Vectors</div>
-  <h2>Translated Geometry Must Preserve Exact Relationship</h2>
+  <div class="spec-label">07.1 · Translation Vectors</div>
+  <h2>Exact CRPC Translation Must Reproduce Identically</h2>
   <p>
-    Where translation is supported as a derived geometric operation, vectors shall test exact displacement of canonical spatial expressions.
+    Given a Point <strong>P = (x,y)</strong> and an exact translation vector <strong>T = (tx,ty)</strong>, the transformed Point is:
   </p>
   <p>
-    The transformed result shall remain precisely related to the original through the governing transformation rules.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">07.4 · Scaling Vectors</div>
-  <h2>Scale the Representation, Not the Pang</h2>
-  <p>
-    The corpus shall include exact scaling transformations where permitted by the Specification, while preserving the invariant canonical meaning of the Pang.
+    <strong>P' = (x + tx, y + ty)</strong>.
   </p>
   <p>
-    Scaling shall transform derived geometry or representation without redefining the canonical Survey scale.
+    Where all values are valid CRPC and the resulting Point remains within the Survey Domain, independent implementations shall produce the same exact transformed Point.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">07.5 · Inverse Transformation Vectors</div>
-  <h2>Every Valid Transformation Should Resolve Back Exactly</h2>
+  <div class="spec-label">07.2 · Geometry Translation Vectors</div>
+  <h2>Supported Geometry Translates Pointwise</h2>
   <p>
-    Reference vectors shall include inverse operations sufficient to prove that a valid transformation can be deterministically resolved back to its canonical spatial source where mathematically invertible.
+    Reference Vectors shall include translated Segments and SCPEs produced by applying the same exact translation to every constituent Point.
   </p>
   <p>
-    Inversion shall restore exact canonical meaning rather than an approximate reconstruction.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">07.6 · Composition Vectors</div>
-  <h2>Combined Transformations Must Compose Deterministically</h2>
-  <p>
-    The vector set shall include compositions of supported transformations such as rotation followed by translation, reflection followed by rotation, or other valid combinations.
-  </p>
-  <p>
-    Equivalent transformation sequences shall converge to the same canonical result where the governing mathematics establishes equivalence.
+    Translation shall preserve exact relative geometry, orientation, Segment structure, SCPE simplicity where Domain validity is retained, and semantic geometry apart from absolute position.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">07.7 · Identity Transformation Vectors</div>
-  <h2>No-Op Transformations Must Preserve Exact Meaning</h2>
+  <div class="spec-label">07.3 · Positive Uniform Scale Vectors</div>
+  <h2>Uniform Positive Scaling Preserves Orientation</h2>
   <p>
-    The corpus shall include identity cases such as zero rotation, zero translation, neutral scale, or equivalent composed transformations.
+    Where supported by the candidate placement model, positive uniform scaling applies one exact positive scale factor to both canonical axes.
   </p>
   <p>
-    Identity transformations shall return the original canonical spatial meaning exactly.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">07.8 · Canonical Frame Resolution Vectors</div>
-  <h2>Derived Views Must Map Back to One Canonical Survey Frame</h2>
-  <p>
-    Reference Vectors shall prove that transformed local, rotated, mirrored, or scaled representations can be deterministically resolved to the single canonical Survey frame wherever authoritative Survey-space location must be recovered.
+    Reference Vectors shall prove that the same factor is applied consistently to x and y, preserving handedness and avoiding the distortion introduced by nonuniform scale.
   </p>
   <p>
-    Derived coordinate systems may vary. Canonical Survey truth may not.
+    The Pang itself is not redefined. The geometry is transformed within Pang-based canonical space.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">07.9 · Precision-Preserving Transformation Vectors</div>
-  <h2>Transformation Must Not Silently Reduce Precision</h2>
+  <div class="spec-label">07.4 · Identity Transformation Vectors</div>
+  <h2>Identity Must Return the Original Canonical Geometry</h2>
   <p>
-    The vector corpus shall include higher-precision or sub-Pang geometry to prove that exact transformations preserve canonical precision where mathematically lossless, regardless of the precision mechanism ultimately specified.
+    The corpus shall include zero translation and neutral positive uniform scale.
   </p>
   <p>
-    Any transformation that reduces precision shall be identified as lossy rather than canonical equivalence.
-  </p>
-</section>
-
-<section class="spec-card">
-  <div class="spec-label">07.10 · Boundary Transformation Vectors</div>
-  <h2>Transformed Geometry Must Respect Survey Domain and Geometric Boundary Rules</h2>
-  <p>
-    Reference vectors shall include transformed positions or extents that approach, touch, cross, or move beyond canonical Survey Domain limits where such cases are mathematically permitted.
-  </p>
-  <p>
-    Implementations shall classify resulting geometry according to the same exact Survey Domain and validity rules applied without transformation.
+    These identity transformations shall return the original canonical Point, Segment, or SCPE exactly after any required canonical normalization.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">07.11 · Equivalent Transformation Vectors</div>
-  <h2>Different Paths to the Same Geometry Must Converge</h2>
+  <div class="spec-label">07.5 · Inverse Translation Vectors</div>
+  <h2>Translation Must Reverse Exactly</h2>
   <p>
-    Where multiple transformation sequences produce the same canonical spatial result, Reference Vectors shall demonstrate exact equivalence and deterministic resolution to the same canonical meaning, with one unique normalized representation only where the Specification requires it.
+    For a valid translation vector <strong>T</strong>, applying <strong>T</strong> and then <strong>-T</strong> shall restore the original canonical geometry exactly.
   </p>
   <p>
-    Different operational histories shall not create distinct canonical truths for equivalent transformed space.
+    No rounding or approximate reconstruction is permitted.
   </p>
 </section>
 
 <section class="spec-card">
-  <div class="spec-label">07.12 · Cross-Implementation Transformation Agreement</div>
-  <h2>Every Implementation Must Return the Same Transformed Result</h2>
+  <div class="spec-label">07.6 · Inverse Uniform Scale Vectors</div>
+  <h2>Invertible Positive Scale Must Restore Exact Meaning</h2>
   <p>
-    Independent conforming implementations shall produce the same authoritative canonical transformed meaning for the same transformation inputs under the same governing Specification. Where the Specification requires one unique canonical representation of a transformed result, that representation shall also agree exactly.
+    Where a positive uniform scale factor and its reciprocal are both exactly representable under the governing candidate mathematics, scaling and then applying the exact inverse scale shall restore the original canonical geometry.
   </p>
   <p>
-    A disagreement indicates an implementation defect, specification ambiguity, version incompatibility, or unresolved transformation dependency requiring correction.
+    Fixtures shall remain within the exact representational and Survey Domain constraints of the Specification.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">07.7 · Composition Vectors</div>
+  <h2>Supported Transformations Must Compose Deterministically</h2>
+  <p>
+    Reference Vectors shall include valid compositions of exact translation and positive uniform scaling.
+  </p>
+  <p>
+    Equivalent supported sequences shall produce the same canonical result where the governing mathematics establishes equivalence. Sequence order shall remain significant where the operations do not commute.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">07.8 · Orientation-Preservation Vectors</div>
+  <h2>Translation and Positive Uniform Scale Preserve Handedness</h2>
+  <p>
+    Reference Vectors shall prove that the exact orientation sign of ordered Point triples is preserved under translation and positive uniform scaling.
+  </p>
+  <p>
+    A valid orientation-preserving placement shall therefore retain the canonical right-handed frame rather than introduce reflection.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">07.9 · Domain-Validity Vectors</div>
+  <h2>A Valid Transformation Result Must Still Lie Within the Survey Domain</h2>
+  <p>
+    A transformation may be mathematically defined yet produce geometry outside the canonical Survey Domain.
+  </p>
+  <p>
+    Reference Vectors shall distinguish a valid transformation rule from a valid final Survey geometry result. Resulting Points or extents outside <strong>D<sub>H</sub></strong> shall fail Survey-domain validity rather than being clipped, wrapped, or repaired.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">07.10 · Precision-Preservation Vectors</div>
+  <h2>Exact Supported Transformations Must Remain Exact</h2>
+  <p>
+    Translation and supported positive uniform scaling shall preserve exact CRPC meaning whenever the resulting coordinates remain within the supported exact representation.
+  </p>
+  <p>
+    Any implementation that substitutes floating approximation for an exact supported result fails the candidate exactness contract.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">07.11 · Reflection Boundary</div>
+  <h2>Reflection Reverses Handedness</h2>
+  <p>
+    Reflection is not an orientation-preserving transformation of the canonical Survey frame.
+  </p>
+  <p>
+    A mirrored presentation may exist at another layer, but Reference Vectors shall not treat reflection as canonically equivalent to translation plus positive uniform scaling or as a second canonical orientation.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">07.12 · Nonuniform Scale and Shear Boundary</div>
+  <h2>Distorting Affine Transformations Are Outside the Current Placement Profile</h2>
+  <p>
+    Nonuniform scaling and shear are not part of the current orientation-preserving uniform affine placement model.
+  </p>
+  <p>
+    Reference Vectors shall therefore classify such operations as outside the present canonical placement profile unless a later Specification revision explicitly admits and governs them.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">07.13 · Arbitrary Rotation Boundary</div>
+  <h2>General Exact Rotation Remains Open</h2>
+  <p>
+    Arbitrary rotation can map rational CRPC coordinates to non-rational coordinates. The Specification has not yet selected the universal exact result type, angular unit, and canonical representation needed to close that operation generally.
+  </p>
+  <p>
+    Reference Vectors shall therefore not publish arbitrary-angle rotated coordinates as final canonical outputs.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">07.14 · Rotation-Optional Placement Boundary</div>
+  <h2>Rotation Is Not Assumed Merely Because Transformation Exists</h2>
+  <p>
+    The current production placement rule favors positive uniform scale plus translation and permits rotation only if the final governing frame mathematics compels or explicitly supports it.
+  </p>
+  <p>
+    Reference Vectors shall preserve that boundary rather than treating rotation as an automatically available canonical placement operation.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">07.15 · Cross-Implementation Transformation Agreement</div>
+  <h2>Every Defined Transformation Must Reproduce Exactly</h2>
+  <p>
+    Independent conforming implementations shall return the same exact translated, uniformly scaled, composed, inverted, and normalized result for identical supported transformation inputs.
+  </p>
+  <p>
+    A mismatch indicates implementation defect, Specification ambiguity, version incompatibility, fixture defect, or an operation tested beyond current mathematical closure.
   </p>
 </section>
 
 <div class="status-grid">
   <div class="status-card">
-    <h3>Established by Requirements and Specification Scope</h3>
+    <h3>Executable Now</h3>
     <p>
-      The Survey Fabric must support exact interpretation of rotation, reflection, scaling, translation, and other derived transformations relative to one canonical frame; transformed views must remain resolvable to canonical space; scale transformation must not redefine the Pang; and handedness and orientation must remain singular and implementation-independent.
+      Exact CRPC translation; Point / Segment / SCPE translation; positive uniform scaling where exact and valid; identity transformation; inverse translation; inverse positive uniform scale where exact; deterministic composition of supported operations; orientation preservation; Domain-validity checking; exactness preservation.
     </p>
   </div>
   <div class="status-card">
-    <h3>Canonical Vector Corpus Not Yet Possessed</h3>
+    <h3>Still Open or Outside Current Profile</h3>
     <p>
-      Actual transformation inputs, matrices or equivalent formalism, angular values, scale factors, inverse fixtures, composed transformation cases, higher-precision fixtures, and authoritative expected outputs cannot be created until the final transformation, angular, precision, and applicable normative interchange rules are specified and tested.
+      Final angular unit; arbitrary exact rotation; universal rotated-coordinate result type; reflection as canonical placement; nonuniform scale; shear; arbitrary affine or nonlinear warp; final transformation encoding and vector corpus packaging.
     </p>
   </div>
 </div>
+
+<section class="spec-card">
+  <div class="spec-label">Reference Vector Integration Standing</div>
+  <h2>Transformation Is Partially Closed, Not Universally Closed</h2>
+  <p>
+    The original page correctly deferred the corpus while transformation notation, scaling rules, and orientation mathematics were unresolved. The current candidate Specification now supports a restricted exact transformation core.
+  </p>
+  <p>
+    Section 07 can therefore move into executable fixtures for translation, positive uniform scale, identity, inverse, composition, orientation preservation, and Survey-domain validity. Arbitrary rotation, reflection as canonical placement, and distorting affine transformations remain outside the present closed profile.
+  </p>
+</section>
 
 <section class="spec-card">
   <div class="spec-label">Primary Requirements Basis</div>
@@ -296,7 +363,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <a href="/theatlas/foundational-survey-fabric/reference-vectors/">Reference Vectors Index</a>
 </div>
 
-<div class="note">Foundational Survey Fabric · Reference Vectors 07 · Transformation Vectors</div>
+<div class="note">Foundational Survey Fabric · Reference Vectors 07 · Transformation Vectors · Restricted Exact Transformation Profile</div>
 
 </article>
 </main>
