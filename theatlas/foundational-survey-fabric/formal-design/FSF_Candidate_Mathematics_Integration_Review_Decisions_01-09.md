@@ -4,7 +4,9 @@
 **Record Type:** Formal Mathematical Integration Review  
 **Creator Period:** Day #123 · September 27, 2026  
 **Scope:** Formal Mathematical Decisions 01–09  
-**Status:** COMPLETE — INTEGRATION REVIEW PASS WITH REMAINING FORMAL GATES  
+**Status:** COMPLETE — INTEGRATION REVIEW PASS WITH REMAINING FORMAL GATES · AMENDED FOR FMD-04 CAPACITY CORRECTION  
+**Original Review:** Day #123 · September 27, 2026  
+**Current Amendment:** Day #126 · September 30, 2026  
 **Adoption Standing:** Candidate mathematics only; no FSF Specification adoption occurs through this record.
 
 ---
@@ -12,6 +14,9 @@
 # 1. Purpose
 
 This review asks whether Formal Mathematical Decisions 01–09 form one coherent candidate mathematical system when read together and tested against the governing Foundational Survey Fabric Requirements.
+
+> **Day #126 Amendment — FMD-04 Capacity Correction**  
+> The original Day #123 review treated the ±1,000,000 Pang Survey Domain half-span as resolved. Subsequent reconciliation determined that no source-derived capacity criterion supported that numerical selection. This record is therefore amended to preserve the candidate **closed, axis-aligned square geometry centered at `(0,0)`** while reopening the numerical half-span as **FMD-04B**. The governing parameterized Domain is `D_H = {(x,y) : -H ≤ x ≤ H and -H ≤ y ≤ H}`, with exact positive `H` still open. This correction does not reopen the already-coherent capacity-independent FSF core.
 
 The review does **not** ask whether every FSF mathematical question has now been solved.
 
@@ -33,7 +38,8 @@ The candidate system consists of:
 | **FMD-01** | Exact Coordinate Representation | Reduced rational Pang coordinates — CRPC |
 | **FMD-02** | Canonical Frame & Handedness | `(x,y)`, +x Panoris, +y Pankor, right-handed, CCW positive |
 | **FMD-03** | Canonical Origin Placement | `(0,0)` at midpoint of Domain coordinate bounds |
-| **FMD-04** | Survey Domain Geometry & Dimensions | Closed square, ±1,000,000 Pang on both axes |
+| **FMD-04A** | Survey Domain Geometry & Boundary | Closed axis-aligned square centered at `(0,0)` |
+| **FMD-04B** | Survey Domain Numerical Capacity | **OPEN** — exact positive half-span `H` remains to be selected |
 | **FMD-05** | Canonical Primitive Geometry | Point, Segment, Simple Closed Polygonal Extent |
 | **FMD-06** | Geometry Predicates & Validation | Exact rational predicates; no epsilon |
 | **FMD-07** | Geometry Normalization | CCW SCPE, lexicographic start, exact redundancy removal |
@@ -67,7 +73,7 @@ The candidate mathematics now provide a coherent exact framework for:
 - canonical machine serialization;
 - extensible precision without migration.
 
-This is enough to satisfy the **production-critical FSF dependency required by the selected Spatial Ground World-space instance**.
+This is enough to satisfy the **capacity-independent production-critical FSF dependency required by the selected Spatial Ground World-space instance**. Concrete canonical placement that depends upon final Survey Domain numerical capacity remains gated by **FMD-04B**.
 
 It is not yet enough to claim that the complete Foundational Survey Fabric Specification is finished.
 
@@ -135,12 +141,18 @@ Origin:
 
 ## 4.3 Survey Domain
 
+The candidate Domain geometry is:
+
 ```text
-D =
-[-1,000,000,+1,000,000]
-×
-[-1,000,000,+1,000,000]
-Pang
+D_H =
+{(x,y) : -H ≤ x ≤ H and -H ≤ y ≤ H}
+```
+
+where:
+
+```text
+H > 0
+H is an exact CRPC value
 ```
 
 The Domain is:
@@ -151,9 +163,14 @@ closed
 connected
 planar
 axis-aligned
+centered at (0,0)
 ```
 
-and has no semantic equivalence to The World.
+The geometry and boundary semantics are resolved at the candidate level.
+
+The **numerical value of `H` is not resolved**. The earlier working value of ±1,000,000 Pang is noncanonical and is superseded as a numerical selection.
+
+The Survey Domain has no semantic equivalence to The World.
 
 ---
 
@@ -285,17 +302,19 @@ No special numeric exception is needed.
 
 ## 5.3 Origin ↔ Survey Domain
 
-**PASS**
+**PASS FOR GEOMETRY / BOUNDARY; NUMERICAL CAPACITY OPEN**
 
-The Domain:
+The parameterized Domain:
 
 ```text
-[-1,000,000,+1,000,000]^2
+D_H = {(x,y) : -H ≤ x ≤ H and -H ≤ y ≤ H}
 ```
 
-is symmetric around `(0,0)` exactly as Decision 03 requires.
+is symmetric around `(0,0)` exactly as Decision 03 requires for every exact positive `H`.
 
 The origin lies strictly in the Domain interior.
+
+This consistency result does **not** select the numerical value of `H`.
 
 ---
 
@@ -369,7 +388,7 @@ Exact fractions provide sub-Pang precision without a mandatory subdivision hiera
 
 **PASS**
 
-The Domain is finite in extent while CRPC precision inside that Domain remains extensible.
+The Domain is finite in extent for every selected exact positive `H`, while CRPC precision inside that Domain remains extensible.
 
 No contradiction exists between:
 
@@ -605,7 +624,8 @@ The original Spatial Ground blocker register can now be reconciled.
 | FSF-B01 Exact coordinate representation | **RESOLVED** |
 | FSF-B02 Exact canonical frame | **RESOLVED** |
 | FSF-B03 Exact origin placement | **RESOLVED** |
-| FSF-B04 Numerical Survey Domain geometry | **RESOLVED** |
+| FSF-B04A Survey Domain geometry / boundary | **RESOLVED AT CANDIDATE LEVEL** |
+| FSF-B04B Survey Domain numerical capacity | **OPEN — exact positive half-span `H` not yet selected** |
 | FSF-B05 Exact polygon / extent semantics | **RESOLVED** |
 | FSF-B06 Exact geometry operations | **RESOLVED FOR PRODUCTION SCPE PATH** |
 | FSF-B07 Exact precision mechanism | **RESOLVED** |
@@ -616,7 +636,9 @@ The original Spatial Ground blocker register can now be reconciled.
 
 Therefore:
 
-> **THE SELECTED SINGLE-SCPE BITPANGEA WORLD INSTANCE IS NO LONGER BLOCKED BY MISSING FSF CORE REFERENCE MATHEMATICS.**
+> **THE SELECTED SINGLE-SCPE BITPANGEA WORLD INSTANCE IS NO LONGER BLOCKED BY MISSING CAPACITY-INDEPENDENT FSF CORE REFERENCE MATHEMATICS.**
+
+Final canonical placement remains numerically capacity-dependent until **FMD-04B** selects `H`.
 
 It remains blocked from **canonical adoption** until the selected FSF candidate mathematics are Specification-integrated, tested, and institutionally adopted.
 
@@ -777,19 +799,19 @@ A crucial distinction now exists.
 
 For the selected single-SCPE World instance:
 
-> **NO ADDITIONAL NEW FSF MATHEMATICAL DESIGN IS REQUIRED BEFORE A PROTOTYPE PRODUCTION PLACEMENT CAN BE CONSTRUCTED.**
+> **NO ADDITIONAL NEW CAPACITY-INDEPENDENT FSF MATHEMATICAL DESIGN IS REQUIRED BEFORE A PROTOTYPE PLACEMENT CAN BE CONSTRUCTED.**
 
 The current candidate provides enough mathematics to:
 
 - choose rational scale;
 - choose rational translation;
 - transform the preferred silhouette;
-- validate the resulting SCPE;
+- validate the resulting SCPE against a **parameterized** Survey Domain;
 - normalize it;
 - serialize it;
 - evaluate exact Point membership.
 
-This means prototype work may begin after Specification integration.
+This means prototype work may begin after Specification integration, but a **final canonical placement whose validity depends on the numerical Domain edge cannot close until `H` is selected**.
 
 ---
 
@@ -798,6 +820,7 @@ This means prototype work may begin after Specification integration.
 Still open:
 
 - canonical addressing grammar;
+- exact Survey Domain numerical half-span `H`;
 - exact angular unit / representation;
 - exact distance scalar closure;
 - exact path and general boundary-length closure;
@@ -836,7 +859,7 @@ and not:
 
 The next work block may now begin with:
 
-1. integrate Decisions 01–09 into the seven FSF Specification sections;
+1. integrate Decisions 01–09 into the seven FSF Specification sections, preserving FMD-04A / FMD-04B separation;
 2. create the candidate Specification profile;
 3. define the executable Mandatory Conformance Core for the solved profile;
 4. generate exact Reference Vector fixtures for solved categories;
@@ -865,7 +888,7 @@ Do not:
 
 - declare Decisions 01–09 canonically adopted;
 - declare the entire FSF Specification complete;
-- hide the unresolved rotation/distance/composition gates;
+- hide the unresolved Survey Domain numerical capacity, rotation, distance, or composition gates;
 - treat the prototype World placement as canonical World-space immediately;
 - resolve SG-RV-024 by inventing regularized set semantics without a formal decision;
 - let Conformance or Reference Vectors create missing mathematics.
@@ -884,13 +907,14 @@ Detailed standing:
 ```text
 CROSS-DECISION CONTRADICTION — NONE FOUND
 REQUIREMENTS REOPENING — NOT REQUIRED
-CORE REFERENCE MATHEMATICS — COHERENT
+CORE CAPACITY-INDEPENDENT REFERENCE MATHEMATICS — COHERENT
 CORE POLYGONAL GEOMETRY — COHERENT
 CORE NORMALIZATION — COHERENT
 CORE SERIALIZATION — COHERENT
 PRECISION / REFINEMENT — COHERENT
-SPATIAL GROUND PRODUCTION DEPENDENCY — SATISFIED AT DESIGN LEVEL
+SPATIAL GROUND CAPACITY-INDEPENDENT PRODUCTION DEPENDENCY — SATISFIED AT DESIGN LEVEL
 
+SURVEY DOMAIN NUMERICAL CAPACITY H — OPEN
 FULL ROTATION / TRANSFORMATION CLOSURE — OPEN
 FULL DISTANCE / PATH-LENGTH CLOSURE — OPEN
 GENERAL COMPOSITION / OUTPUT CLOSURE — OPEN
@@ -913,7 +937,7 @@ The work completed in this session now forms one coherent arc:
 ```text
 Spatial Ground identifies exact upstream blockers
 → FSF returns to formal mathematics
-→ Decisions 01–09 resolve the production-critical core
+→ Decisions 01–09 resolve the capacity-independent production-critical core while FMD-04B remains open
 → integrated review tests the decisions as one system
 → candidate core passes
 ```
@@ -928,4 +952,4 @@ without reopening tonight's mathematical decisions unless testing later exposes 
 
 # 18. Governing Closing Statement
 
-> **The Survey Fabric's production-critical mathematical core now hangs together as one system. The remaining work is no longer to discover how BitPangea can possess exact canonical space; it is to formalize, implement, attack, and prove the mathematics already selected—while finishing the broader operations that the full Survey Fabric still owes.**
+> **The Survey Fabric's capacity-independent production-critical mathematical core now hangs together as one system. The remaining work is to formalize, implement, attack, and prove the mathematics already selected while completing the still-open gates—including the numerical Survey Domain half-span `H`—before final canonical closure.**
