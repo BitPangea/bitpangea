@@ -2,10 +2,10 @@
 
 ## Open Mathematical Questions Register
 
-### Day #115 Working Consolidation Record
+### Day #115 Working Consolidation Record · Day #126 Reconciliation Amendment
 
 **Date:** September 19, 2026  
-**Status:** Working Review Record — Open Questions Consolidated, Not Resolved  
+**Status:** AUDITED CONSOLIDATION RECORD — RECONCILED THROUGH DAY #126  
 **Institutional Role:** Internal Foundational Survey Fabric closeout record. This register does not create a new Architecture domain, Specification section, Requirement, or canonical mathematical rule.
 
 ---
@@ -26,13 +26,19 @@ The governing sequence remains:
 
 **Requirements establish governing constraints. Specification converts accepted requirements into normative formal rules. Conformance proves that an implementation follows those rules. Reference Vectors provide canonical examples and test cases proving expected results.**
 
-The current Foundational Survey Fabric standing remains:
+The original Day #115 standing recorded the Foundational Survey Fabric before the subsequent formal mathematical decisions, Specification integration, Conformance integration, and Reference Vector reconciliation.
 
-**FOUNDATIONAL SURVEY FABRIC — INSTITUTIONALLY ESTABLISHED / MATHEMATICS DELIBERATELY UNRESOLVED**
+The current Day #126 standing is:
+
+**FOUNDATIONAL SURVEY FABRIC — INSTITUTIONALLY ESTABLISHED / CANDIDATE CORE MATHEMATICS INTEGRATED / REMAINING FORMAL GATES OPEN**
 
 and:
 
-**READY TO SUPPORT SPATIAL GROUND INQUIRY — NOT YET READY FOR MATHEMATICAL IMPLEMENTATION**
+**READY FOR EXECUTABLE CANDIDATE PROOF WORK — NOT YET READY FOR CANONICAL MATHEMATICAL ADOPTION**
+
+This register now serves as a reconciled ledger of questions that are **RESOLVED AT CANDIDATE LEVEL**, **PARTIALLY RESOLVED**, **CONDITIONAL**, **OUT OF SCOPE**, or still **OPEN**.
+
+> **Day #126 correction:** the earlier ±1,000,000 Pang Survey Domain half-span is not canonical. Survey Domain geometry / boundary is treated separately from numerical capacity. The candidate Domain is `D_H = {(x,y) : -H ≤ x ≤ H and -H ≤ y ≤ H}`, with exact positive numerical `H` still OPEN.
 
 ---
 
@@ -46,7 +52,7 @@ Each register entry records:
 - **Downstream Dependency** — later Specification, Conformance, Reference Vector, or higher-Architecture work that depends on resolution
 - **Resolution Gate** — the minimum condition required before the item can be considered resolved
 
-All entries remain **OPEN** unless explicitly changed through later formal mathematical design and review.
+Entries retain their original identifiers for traceability, but their statuses are updated below where later formal mathematical design and integration have changed the standing.
 
 ---
 
@@ -54,7 +60,7 @@ All entries remain **OPEN** unless explicitly changed through later formal mathe
 
 ## OMQ-01 — Exact Survey Domain Geometry
 
-**Status:** OPEN
+**Status:** RESOLVED AT CANDIDATE LEVEL — CLOSED AXIS-ALIGNED SQUARE
 
 **Open Question:** What exact mathematical geometry defines the finite canonical Survey Domain?
 
@@ -68,7 +74,7 @@ All entries remain **OPEN** unless explicitly changed through later formal mathe
 
 ## OMQ-02 — Numerical Survey Domain Dimensions
 
-**Status:** OPEN
+**Status:** OPEN — NUMERICAL HALF-SPAN `H` NOT YET SELECTED
 
 **Open Question:** What exact numerical dimensions, magnitudes, or parameter values define the finite Survey Domain?
 
@@ -82,7 +88,7 @@ All entries remain **OPEN** unless explicitly changed through later formal mathe
 
 ## OMQ-03 — Survey Domain Boundary Representation
 
-**Status:** OPEN
+**Status:** RESOLVED AT CANDIDATE LEVEL — CLOSED BOUNDARY
 
 **Open Question:** How are the exact limits of the Survey Domain represented mathematically?
 
@@ -96,7 +102,7 @@ All entries remain **OPEN** unless explicitly changed through later formal mathe
 
 ## OMQ-04 — Exact Ground Coordinate Mathematics
 
-**Status:** OPEN
+**Status:** RESOLVED AT CANDIDATE LEVEL — CRPC
 
 **Open Question:** What formal coordinate mathematics expresses canonical position on the two-dimensional planar Survey ground?
 
@@ -114,7 +120,7 @@ All entries remain **OPEN** unless explicitly changed through later formal mathe
 
 ## OMQ-05 — Exact Canonical Origin Placement
 
-**Status:** OPEN
+**Status:** RESOLVED AT CANDIDATE LEVEL — `(0,0)` AT DOMAIN MIDPOINT
 
 **Open Question:** Where exactly is the one permanent canonical origin placed within the Survey Domain?
 
@@ -128,7 +134,7 @@ All entries remain **OPEN** unless explicitly changed through later formal mathe
 
 ## OMQ-06 — Exact Global Coordinate Representation
 
-**Status:** OPEN
+**Status:** RESOLVED AT CANDIDATE LEVEL — `(x,y)` CRPC FRAME
 
 **Open Question:** How is the one global canonical coordinate frame formally represented?
 
@@ -142,7 +148,7 @@ All entries remain **OPEN** unless explicitly changed through later formal mathe
 
 ## OMQ-07 — Canonical Handedness
 
-**Status:** OPEN
+**Status:** RESOLVED AT CANDIDATE LEVEL — RIGHT-HANDED
 
 **Open Question:** Which permanent handedness governs the canonical two-dimensional frame?
 
@@ -156,7 +162,7 @@ All entries remain **OPEN** unless explicitly changed through later formal mathe
 
 ## OMQ-08 — Positive Rotational Convention
 
-**Status:** OPEN
+**Status:** RESOLVED AT CANDIDATE LEVEL — COUNTERCLOCKWISE POSITIVE
 
 **Open Question:** Which direction of rotation is mathematically positive in the canonical frame?
 
@@ -184,7 +190,7 @@ All entries remain **OPEN** unless explicitly changed through later formal mathe
 
 ## OMQ-10 — Formal Relationship of Native Directions to the Mathematical Frame
 
-**Status:** OPEN
+**Status:** RESOLVED AT CANDIDATE LEVEL
 
 **Open Question:** How are Pankor, Panvath, Panoris, and Panvel encoded formally within the canonical frame and angular system?
 
@@ -202,7 +208,7 @@ All entries remain **OPEN** unless explicitly changed through later formal mathe
 
 ## OMQ-11 — Canonical Distance Mathematics
 
-**Status:** OPEN
+**Status:** PARTIAL — CORE COORDINATE DIFFERENCE EXACT; GENERAL EUCLIDEAN SCALAR CLOSURE OPEN
 
 **Open Question:** What exact mathematical rule defines straight canonical spatial separation in Pangs?
 
@@ -216,7 +222,7 @@ All entries remain **OPEN** unless explicitly changed through later formal mathe
 
 ## OMQ-12 — Canonical Area Mathematics
 
-**Status:** OPEN
+**Status:** RESOLVED FOR SCPE CANDIDATE CORE — EXACT SHOELACE AREA
 
 **Open Question:** What exact mathematical rule computes canonical area in square Pangs?
 
@@ -244,7 +250,7 @@ All entries remain **OPEN** unless explicitly changed through later formal mathe
 
 ## OMQ-14 — Address-to-Measure Formal Relationship
 
-**Status:** OPEN
+**Status:** PARTIAL — CRPC / PANG CORE ALIGNED; FINAL ADDRESS GRAMMAR OPEN
 
 **Open Question:** What formal mathematical relationship guarantees exact agreement between canonical Survey references and Pang-based position, distance, area, and extent?
 
@@ -304,7 +310,7 @@ All entries remain **OPEN** unless explicitly changed through later formal mathe
 
 ## OMQ-18 — Coordinate-Based vs. Hierarchical vs. Other Address Representation
 
-**Status:** OPEN
+**Status:** RESOLVED AT CANDIDATE LEVEL — EXACT COORDINATE EXTENSION
 
 **Open Question:** Does canonical addressing use direct coordinates, hierarchical refinement, symbolic subdivision, exact coordinate extension, or another exact mechanism?
 
@@ -318,7 +324,7 @@ All entries remain **OPEN** unless explicitly changed through later formal mathe
 
 ## OMQ-19 — Exact Precision Mechanism
 
-**Status:** OPEN
+**Status:** RESOLVED AT CANDIDATE LEVEL — ECEM OVER CRPC
 
 **Open Question:** How does the Survey Fabric represent canonical precision finer than one Pang?
 
@@ -332,7 +338,7 @@ All entries remain **OPEN** unless explicitly changed through later formal mathe
 
 ## OMQ-20 — Coarse-to-Fine Reference Relationship
 
-**Status:** OPEN
+**Status:** RESOLVED AT CANDIDATE LEVEL — NO HIERARCHICAL COARSE/FINE PLACE STATES
 
 **Open Question:** What exact mathematical relationship exists between a coarser canonical reference and a finer canonical reference?
 
@@ -346,7 +352,7 @@ All entries remain **OPEN** unless explicitly changed through later formal mathe
 
 ## OMQ-21 — Refinement or Subdivision Notation
 
-**Status:** OPEN
+**Status:** RESOLVED BY NON-REQUIREMENT — NO FOUNDATIONAL SUBDIVISION NOTATION REQUIRED
 
 **Open Question:** If the precision system uses refinement or subdivision, how is that refinement formally expressed?
 
@@ -360,7 +366,7 @@ All entries remain **OPEN** unless explicitly changed through later formal mathe
 
 ## OMQ-22 — Maximum Precision Policy
 
-**Status:** OPEN
+**Status:** PARTIAL — EXACT FINITE CRPC MODEL SELECTED; FINAL GOVERNED COMPLEXITY LIMITS OPEN
 
 **Open Question:** Is there a formal maximum canonical precision, an implementation-independent finite bound, or another governed precision policy?
 
@@ -374,7 +380,7 @@ All entries remain **OPEN** unless explicitly changed through later formal mathe
 
 ## OMQ-23 — Canonical Normalization Algorithm for Addresses
 
-**Status:** OPEN
+**Status:** PARTIAL — CRPC / GEOMETRY NORMALIZATION RESOLVED; FINAL ADDRESS GRAMMAR OPEN
 
 **Open Question:** How do mathematically equivalent valid address expressions normalize to one authoritative canonical reference?
 
@@ -392,7 +398,7 @@ All entries remain **OPEN** unless explicitly changed through later formal mathe
 
 ## OMQ-24 — Minimal Canonical Primitive Set
 
-**Status:** OPEN
+**Status:** RESOLVED FOR CANDIDATE CORE — POINT / SEGMENT / SCPE
 
 **Open Question:** What is the smallest practical set of canonical geometric primitives necessary to express permanent Survey truth?
 
@@ -406,7 +412,7 @@ All entries remain **OPEN** unless explicitly changed through later formal mathe
 
 ## OMQ-25 — Formal Representation of Canonical Position
 
-**Status:** OPEN
+**Status:** RESOLVED AT CANDIDATE LEVEL — CRPC POINT
 
 **Open Question:** How is an exact canonical position represented mathematically?
 
@@ -420,7 +426,7 @@ All entries remain **OPEN** unless explicitly changed through later formal mathe
 
 ## OMQ-26 — Formal Representation of Canonical Extent
 
-**Status:** OPEN
+**Status:** RESOLVED FOR CANDIDATE CORE — SCPE
 
 **Open Question:** How are exact spatial extents represented mathematically?
 
@@ -434,7 +440,7 @@ All entries remain **OPEN** unless explicitly changed through later formal mathe
 
 ## OMQ-27 — Endpoint Semantics
 
-**Status:** OPEN
+**Status:** RESOLVED FOR SEGMENT CANDIDATE CORE — CLOSED SEGMENTS
 
 **Open Question:** What exact conventions govern endpoints of paths, lines, boundaries, and other spatial expressions?
 
@@ -448,7 +454,7 @@ All entries remain **OPEN** unless explicitly changed through later formal mathe
 
 ## OMQ-28 — Boundary Inclusion and Shared-Edge Rules
 
-**Status:** OPEN
+**Status:** RESOLVED FOR CANDIDATE CORE — EXACT CLOSED-SET PREDICATES
 
 **Open Question:** What exact rules determine inclusion, exclusion, contact, and shared boundaries among canonical extents?
 
@@ -462,7 +468,7 @@ All entries remain **OPEN** unless explicitly changed through later formal mathe
 
 ## OMQ-29 — Canonical Line and Curve Representation
 
-**Status:** OPEN
+**Status:** PARTIAL — SEGMENT RESOLVED; GENERAL CURVE / PATH REPRESENTATION OPEN
 
 **Open Question:** Which exact mathematical forms represent paths, lines, curves, and boundaries?
 
@@ -476,7 +482,7 @@ All entries remain **OPEN** unless explicitly changed through later formal mathe
 
 ## OMQ-30 — Spatial Predicate Algorithms
 
-**Status:** OPEN
+**Status:** RESOLVED FOR CANDIDATE CORE
 
 **Open Question:** What exact algorithms determine touch, intersection, overlap, containment, separation, shared boundary, connectedness, continuity, and related derived predicates?
 
@@ -490,7 +496,7 @@ All entries remain **OPEN** unless explicitly changed through later formal mathe
 
 ## OMQ-31 — Transformation Mathematics and Notation
 
-**Status:** OPEN
+**Status:** PARTIAL — TRANSLATION / POSITIVE UNIFORM SCALE RESOLVED; ARBITRARY ROTATION / BROADER TRANSFORMS OPEN
 
 **Open Question:** How are translation, rotation, reflection, mirroring, scaling where permitted, inverse transformation, and composition expressed exactly?
 
@@ -504,7 +510,7 @@ All entries remain **OPEN** unless explicitly changed through later formal mathe
 
 ## OMQ-32 — Canonical Geometric Equivalence Algorithm
 
-**Status:** OPEN
+**Status:** RESOLVED FOR POINT / SEGMENT / SCPE CANDIDATE CORE
 
 **Open Question:** How is exact equivalence determined when different references, extents, compositions, or constructions represent the same canonical space?
 
@@ -518,7 +524,7 @@ All entries remain **OPEN** unless explicitly changed through later formal mathe
 
 ## OMQ-33 — Canonical Composition Rules
 
-**Status:** OPEN
+**Status:** OPEN — GENERAL COMPOSITE / BOOLEAN RESULT GEOMETRY NOT CLOSED
 
 **Open Question:** What formal rules govern composition of valid spatial expressions into larger or more complex canonical extents?
 
@@ -550,7 +556,7 @@ All entries remain **OPEN** unless explicitly changed through later formal mathe
 
 ## OMQ-35 — Canonical Ordering Algorithm
 
-**Status:** OPEN
+**Status:** RESOLVED FOR CANDIDATE CORE — LEXICOGRAPHIC WHERE GOVERNED
 
 **Open Question:** What deterministic ordering rule governs canonical references and derived components where ordering is needed for normalization, serialization, verification, or conformance?
 
@@ -564,7 +570,7 @@ All entries remain **OPEN** unless explicitly changed through later formal mathe
 
 ## OMQ-36 — Precision Conversion Rules
 
-**Status:** OPEN
+**Status:** RESOLVED FOR CANDIDATE CORE — LOSSLESS VS. LOSSY DISTINCTION
 
 **Open Question:** How are exact lossless precision transformations distinguished from lossy reduction, truncation, approximation, or generalization?
 
@@ -578,7 +584,7 @@ All entries remain **OPEN** unless explicitly changed through later formal mathe
 
 ## OMQ-37 — Canonical Comparison Algorithms
 
-**Status:** OPEN
+**Status:** RESOLVED FOR CANDIDATE CORE — EXACT / NO EPSILON
 
 **Open Question:** What exact algorithms govern equality, spatial comparison, boundary contact, containment, separation, and other foundational comparisons?
 
@@ -606,7 +612,7 @@ All entries remain **OPEN** unless explicitly changed through later formal mathe
 
 ## OMQ-39 — Canonical Error Classes
 
-**Status:** OPEN
+**Status:** PARTIAL — INVALID / UNSUPPORTED / CONFORMANCE DISPOSITIONS DEFINED; FINAL FROZEN ERROR IDENTIFIERS OPEN
 
 **Open Question:** What exact formal error or failure classes distinguish malformed, ambiguous, impossible-precision, out-of-domain, unsupported, noncanonical, and other invalid conditions?
 
@@ -620,7 +626,7 @@ All entries remain **OPEN** unless explicitly changed through later formal mathe
 
 ## OMQ-40 — Edge-Case Behavior and Canonical Return Forms
 
-**Status:** OPEN
+**Status:** PARTIAL — SOLVED CORE DEFINED; OPEN OPERATIONS REMAIN OPEN
 
 **Open Question:** What exact outputs are returned for degenerate, empty, boundary-only, equivalent, pathological, or otherwise difficult valid operations?
 
@@ -638,7 +644,7 @@ All entries remain **OPEN** unless explicitly changed through later formal mathe
 
 ## OMQ-41 — One Canonical Serialization vs. Multiple Normative Encodings
 
-**Status:** OPEN
+**Status:** RESOLVED FOR 1.0 — ONE PRIMARY CANONICAL SERIALIZATION; FUTURE GOVERNED LOSSLESS REPRESENTATIONS PERMITTED
 
 **Open Question:** Will authoritative interchange use one canonical serialization or multiple explicitly governed lossless normative encodings?
 
@@ -652,7 +658,7 @@ All entries remain **OPEN** unless explicitly changed through later formal mathe
 
 ## OMQ-42 — Exact Machine-Readable Format or Formats
 
-**Status:** OPEN
+**Status:** RESOLVED FOR 1.0 — FSF-CJSON-1.0
 
 **Open Question:** Which machine-readable format or formats carry authoritative Survey interchange?
 
@@ -666,7 +672,7 @@ All entries remain **OPEN** unless explicitly changed through later formal mathe
 
 ## OMQ-43 — Encoding Syntax, Field Order, and Canonical Byte Rules
 
-**Status:** CONDITIONAL — REPRESENTATION QUESTION
+**Status:** RESOLVED FOR FSF-CJSON-1.0
 
 **Open Question:** What exact syntax, field ordering, whitespace rules, numeric formatting, byte ordering, and byte-level canonicalization apply where relevant?
 
@@ -680,7 +686,7 @@ All entries remain **OPEN** unless explicitly changed through later formal mathe
 
 ## OMQ-44 — Normative Schema or Grammar Mechanism, If Required
 
-**Status:** CONDITIONAL — REPRESENTATION GOVERNANCE
+**Status:** CONDITIONAL — SEPARATE SCHEMA MECHANISM NOT YET REQUIRED
 
 **Open Question:** What formal schema or grammar language, if any, defines machine-readable normative structures?
 
@@ -694,7 +700,7 @@ All entries remain **OPEN** unless explicitly changed through later formal mathe
 
 ## OMQ-45 — Specification and Version Identifier Format
 
-**Status:** OPEN
+**Status:** OPEN — FINAL INSTITUTIONAL IDENTIFIER / SUCCESSION SCHEME NOT YET SELECTED
 
 **Open Question:** How are the governing Specification, serialization rules, conformance profiles, and reference materials identified and versioned?
 
@@ -708,7 +714,7 @@ All entries remain **OPEN** unless explicitly changed through later formal mathe
 
 ## OMQ-46 — Normative Representation Precedence / Conflict Resolution
 
-**Status:** OPEN
+**Status:** PARTIAL — CANONICAL MATHEMATICAL CORRESPONDENCE RULE DEFINED; MULTI-NORMATIVE PRECEDENCE GOVERNANCE OPEN
 
 **Open Question:** If multiple normative representations disagree, what deterministic precedence or conflict-resolution rule governs?
 
@@ -720,9 +726,19 @@ All entries remain **OPEN** unless explicitly changed through later formal mathe
 
 **Resolution Gate:** The governing Specification must define one deterministic rule capable of resolving normative-form conflicts without changing canonical place.
 
+### Day #126 Compatibility Continuity Rule
+
+The reconciled FMD-08 / FMD-09 candidate architecture establishes the following mathematical compatibility principle:
+
+> **Representations may evolve. Canonical place may not drift.**
+
+Where two governed representations or versions are declared compatible, they must preserve lossless, deterministic correspondence to the same normalized mathematical object.
+
+This resolves the **semantic compatibility rule** at candidate-design level while leaving final institutional version identifiers, succession, migration, declaration format, and conflict-precedence governance open.
+
 ## OMQ-47 — Formal Compatibility Declaration, If Required
 
-**Status:** CONDITIONAL — CONFORMANCE-DESIGN QUESTION
+**Status:** PARTIAL / CONDITIONAL — COMPATIBILITY SEMANTICS DEFINED; DECLARATION FORMAT / GOVERNANCE OPEN
 
 **Open Question:** How is compatibility between Specification versions and normative encoding versions formally declared and interpreted?
 
@@ -754,7 +770,7 @@ All entries remain **OPEN** unless explicitly changed through later formal mathe
 
 ## OMQ-49 — Exact Canonical Numeric Representation
 
-**Status:** OPEN
+**Status:** RESOLVED AT CANDIDATE LEVEL — CRPC
 
 **Open Question:** What exact numeric representation underlies canonical Survey mathematics?
 
@@ -768,7 +784,7 @@ All entries remain **OPEN** unless explicitly changed through later formal mathe
 
 ## OMQ-50 — Exact Primitive Encodings
 
-**Status:** OPEN
+**Status:** RESOLVED FOR CANDIDATE CORE — FSF-CJSON-1.0
 
 **Open Question:** How are each of the final canonical primitives encoded for exact computation and interchange?
 
@@ -810,7 +826,7 @@ All entries remain **OPEN** unless explicitly changed through later formal mathe
 
 ## OMQ-53 — Termination Proofs
 
-**Status:** OPEN
+**Status:** PARTIAL — DETERMINISTIC TERMINATION REQUIRED; FINAL FORMAL COMPLEXITY / PROOF BOUNDS OPEN
 
 **Open Question:** How will the Specification formally demonstrate deterministic termination for every mandatory operation on valid finite canonical inputs?
 
@@ -852,7 +868,7 @@ All entries remain **OPEN** unless explicitly changed through later formal mathe
 
 ## OMQ-56 — Formal Relationship Between Computability Guarantees and Practical Resource Limits
 
-**Status:** OPEN
+**Status:** PARTIAL — VALID / UNSUPPORTED DISTINCTION DEFINED; FINAL RESOURCE / COMPLEXITY POLICY OPEN
 
 **Open Question:** How does the Specification preserve mathematical computability guarantees while allowing implementations to impose practical limits on memory, runtime, storage, or expression size?
 
@@ -866,81 +882,81 @@ All entries remain **OPEN** unless explicitly changed through later formal mathe
 
 ---
 
-# IX. Dependency-Blocked Proof Artifacts
+# IX. Reference Vector Proof Artifacts — Day #126 Reconciled Standing
 
-These are not independent mathematical choices. They are proof artifacts whose exact content cannot be completed until the governing mathematics above are resolved.
+These are not independent mathematical choices. They are proof artifacts derived from the governing mathematics. As of Day #126, the twelve Reference Vector sections have been reconciled: executable vectors proceed for the solved core, symbolic / parameterized vectors proceed where the mathematics is parameterized, and unresolved mathematics remain explicitly open.
 
 ## OMQ-57 — Exact Addressing Reference Vector Corpus
 
-**Status:** BLOCKED BY OPEN MATHEMATICS
+**Status:** RECONCILED — EXECUTABLE FOR CAPACITY-INDEPENDENT ADDRESSING CORE; FINAL ADDRESS GRAMMAR OPEN
 
-Requires resolution of canonical address syntax, grammar, precision, normalization, and canonicalization.
+Current core exercises CRPC addressing, exact equality/order, ECEM, normalization, and canonical serialization. Final public/canonical address syntax and grammar remain open.
 
 ## OMQ-58 — Exact Survey Domain Limit Vector Corpus
 
-**Status:** BLOCKED BY OPEN MATHEMATICS
+**Status:** RECONCILED — PARAMETERIZED / SYMBOLIC VECTORS EXECUTABLE; FINAL NUMERICAL EDGE FIXTURES OPEN UNTIL `H`
 
-Requires resolution of domain geometry, limits, boundary representation, origin, and validity semantics.
+Domain geometry, closed boundary, origin, and validity semantics are candidate-resolved. Numerical half-span `H` remains open, so final concrete numerical edge fixtures remain pending.
 
 ## OMQ-59 — Exact Pang Measurement Vector Corpus
 
-**Status:** BLOCKED BY OPEN MATHEMATICS
+**Status:** RECONCILED — PARTIAL EXACT MEASUREMENT PROFILE EXECUTABLE
 
-Requires resolution of distance, area, path/boundary length, sub-Pang precision, and address/measure agreement.
+Exact coordinate difference, rational sub-Pang precision, and exact SCPE area are executable. General Euclidean distance and path / boundary-length scalar closure remain open.
 
 ## OMQ-60 — Exact Orientation Vector Corpus
 
-**Status:** BLOCKED BY OPEN MATHEMATICS
+**Status:** RECONCILED — CANONICAL FRAME PROFILE EXECUTABLE; ANGULAR UNIT / ARBITRARY ROTATION OPEN
 
-Requires resolution of handedness, positive rotation, angular system, transformation rules, and formal directional encoding.
+Handedness, positive rotation, axis-direction mapping, and determinant orientation are executable. Final angular unit and arbitrary exact rotation remain open.
 
 ## OMQ-61 — Exact Geometry Vector Corpus
 
-**Status:** BLOCKED BY OPEN MATHEMATICS
+**Status:** RECONCILED — EXACT PREDICATE PROFILE EXECUTABLE
 
-Requires resolution of canonical primitives, positions/extents, endpoint and boundary conventions, line/curve representation, and predicate algorithms.
+Point, Segment, SCPE, endpoint/boundary semantics, exact predicates, and supported equivalence are executable. General curve families and Boolean result geometry remain open.
 
 ## OMQ-62 — Exact Normalization Vector Corpus
 
-**Status:** BLOCKED BY OPEN MATHEMATICS
+**Status:** RECONCILED — CANONICAL CONVERGENCE PROFILE EXECUTABLE
 
-Requires resolution of address normalization, geometric equivalence, canonical ordering, and canonical return forms.
+CRPC and supported geometry normalization, ordering, equivalence, and idempotence are executable. Future address grammar and future geometry families remain open.
 
 ## OMQ-63 — Exact Transformation Vector Corpus
 
-**Status:** BLOCKED BY OPEN MATHEMATICS
+**Status:** RECONCILED — RESTRICTED EXACT TRANSFORMATION PROFILE EXECUTABLE
 
-Requires resolution of canonical transformation mathematics, notation, inverses, composition, and exact return to canonical Survey space.
+Translation, positive uniform scale, identity, inverse, composition, orientation preservation, and Domain validity are executable. Arbitrary exact rotation and broader transforms remain open.
 
 ## OMQ-64 — Exact Precision Vector Corpus
 
-**Status:** BLOCKED BY OPEN MATHEMATICS
+**Status:** RECONCILED — CRPC / ECEM PRECISION PROFILE EXECUTABLE
 
-Requires resolution of sub-Pang precision, refinement/extension, maximum precision policy, and lossless/lossy conversion rules.
+CRPC / ECEM, sub-Pang exactness, normalization, lossless/lossy distinction, and round-trip preservation are executable. Final complexity / maximum-policy governance remains open.
 
 ## OMQ-65 — Exact Invalid-Input Vector Corpus
 
-**Status:** BLOCKED BY OPEN MATHEMATICS
+**Status:** RECONCILED — DETERMINISTIC FAILURE PROFILE EXECUTABLE
 
-Requires resolution of grammar, validity states, error taxonomy, impossible precision semantics, unsupported forms, and domain-limit rules.
+Malformed / invalid input, unsupported states, exactness traps, FSF-CJSON structural failures, and parameterized Domain failures are executable. Final frozen error IDs and numerical H-dependent cases remain open.
 
 ## OMQ-66 — Exact Serialization Vector Corpus
 
-**Status:** BLOCKED BY OPEN MATHEMATICS
+**Status:** RECONCILED — FSF-CJSON-1.0 INTERCHANGE PROFILE EXECUTABLE
 
-Requires resolution of normative format(s), canonical encoding, field order, byte rules where applicable, schema, parsing, normalization, and round-trip semantics.
+FSF-CJSON-1.0, canonical integer strings, key order, UTF-8 bytes, parsing, normalization, and round-trip semantics are executable. Future alternate encodings and unresolved result types remain open.
 
 ## OMQ-67 — Exact Version / Conformance Vector Corpus
 
-**Status:** BLOCKED BY OPEN MATHEMATICS
+**Status:** RECONCILED — COMPATIBILITY / PROOF PROFILE EXECUTABLE FOR DEFINED CORE
 
-Requires resolution of Specification identity, version identifiers, compatibility declarations, conformance classes, normative representation precedence, and authoritative results.
+Candidate compatibility semantics, PASS / FAIL / UNSUPPORTED profile behavior, evidence linkage, declaration consistency, and independent reproduction are executable. Final institutional version identifiers, succession, migration, and precedence governance remain open.
 
 ## OMQ-68 — Exact Pathological Edge-Case Corpus
 
-**Status:** BLOCKED BY OPEN MATHEMATICS
+**Status:** RECONCILED — ADVERSARIAL CANDIDATE PROOF PROFILE EXECUTABLE FOR DEFINED CORE
 
-Requires sufficiently complete formal geometry, precision, operations, serialization, normalization, and computational limits before adversarial expected results can be authoritative.
+Adversarial fixtures are executable across the solved core. Open mathematics and final complexity ceilings remain explicit stress boundaries rather than invented expected results.
 
 ---
 
@@ -1047,7 +1063,54 @@ The questions remain open until the governing Specification formally resolves th
 
 ---
 
-# XIII. Source Pages Reviewed
+# XIII. Day #126 Reconciled Standing
+
+The original Day #115 register intentionally captured unresolved mathematics before formal mathematical selection.
+
+Subsequent work has materially changed the status of many entries.
+
+Current high-level standing:
+
+```text
+SURVEY DOMAIN GEOMETRY / BOUNDARY — CANDIDATE RESOLVED
+SURVEY DOMAIN NUMERICAL HALF-SPAN H — OPEN
+CRPC — CANDIDATE RESOLVED
+CANONICAL FRAME / ORIGIN / HANDEDNESS — CANDIDATE RESOLVED
+ECEM PRECISION / REFINEMENT — CANDIDATE RESOLVED
+POINT / SEGMENT / SCPE CORE — CANDIDATE RESOLVED
+EXACT CORE PREDICATES — CANDIDATE RESOLVED
+CORE NORMALIZATION — CANDIDATE RESOLVED
+FSF-CJSON-1.0 — CANDIDATE RESOLVED
+REPRESENTATION / LINEAGE CONTINUITY — CANDIDATE SEMANTICS RESOLVED
+
+CANONICAL ADDRESS GRAMMAR — OPEN
+FINAL ANGULAR UNIT — OPEN
+GENERAL EUCLIDEAN DISTANCE SCALAR CLOSURE — OPEN
+GENERAL PATH / BOUNDARY-LENGTH CLOSURE — OPEN
+ARBITRARY EXACT ROTATION — OPEN
+GENERAL BOOLEAN / COMPOSITE RESULT GEOMETRY — OPEN
+FINAL SPECIFICATION IDENTITY / VERSION SUCCESSION / MIGRATION GOVERNANCE — OPEN
+FINAL COMPLEXITY LIMITS — OPEN
+```
+
+The governing corpus rule is now:
+
+```text
+if mathematics is defined:
+    build exact executable vectors
+
+if mathematics is parameterized:
+    build symbolic / parameterized vectors
+
+if mathematics is unresolved:
+    preserve the dependency as OPEN
+```
+
+The register remains a tracking record. It does not itself canonically adopt any candidate decision.
+
+---
+
+# XIV. Source Pages Reviewed
 
 ## Requirements
 
@@ -1074,7 +1137,7 @@ The questions remain open until the governing Specification formally resolves th
 
 ---
 
-# XIV. Requirements-Basis Audit — Findings #1–#85
+# XV. Requirements-Basis Audit — Findings #1–#85
 
 **Audit Date:** September 19, 2026 · Day #115  
 **Audit Result:** PASS WITH DOCUMENTARY CORRECTIONS
@@ -1096,7 +1159,7 @@ The register was audited against the complete Findings #1–#85 Requirements Fra
    - OMQ-44 — separate schema/grammar mechanism, if required
    - OMQ-47 — formal compatibility declaration format, if adopted by Conformance
 7. **OMQ-29 was tightened** so the register does not presume that “curve” must become a distinct canonical expression class. Findings require paths, lines, boundaries, and other line-like expressions; the final primitive/expression model remains open.
-8. **The twelve Reference Vector entries remain correctly classified as dependency-blocked proof artifacts, not independent mathematical choices.**
+8. **The twelve Reference Vector entries remain proof artifacts rather than independent mathematical choices; as of Day #126 they are no longer uniformly blocked and have been reconciled into executable, parameterized, and still-open portions.**
 
 ## Requirements-Basis Map
 
@@ -1148,7 +1211,7 @@ The numeric OMQ identifiers are preserved for traceability; they are not renumbe
 
 **DUPLICATE QUESTIONS — MERGED WITHOUT RENUMBERING**
 
-**REFERENCE VECTOR CORPORA — CORRECTLY BLOCKED PENDING MATHEMATICS**
+**REFERENCE VECTOR CORPORA — DAY #126 RECONCILED; EXECUTABLE / PARAMETERIZED / OPEN BOUNDARIES DISTINGUISHED**
 
 No mathematical choice was adopted through this audit.
 
@@ -1158,9 +1221,9 @@ No Architecture domain was changed.
 
 No higher-layer responsibility was pulled into the Foundational Survey Fabric.
 
-The Open Mathematical Questions Register may now be treated as **audited and consolidated for Foundational Survey Fabric closeout work**.
+The Open Mathematical Questions Register may now be treated as **audited, consolidated, and reconciled through the Day #126 candidate-mathematics / lineage review**.
 
-The next closeout task is the **normative-language audit**.
+Remaining open questions must continue to be resolved through the governing Specification process rather than by Conformance, Reference Vectors, or implementation convenience.
 
 ---
 
