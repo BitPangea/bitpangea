@@ -75,6 +75,17 @@ FSF-CJSON-1.0 meaning and byte rules
 
 These invariants make version compatibility testable.
 
+Day #126 lineage reconciliation further distinguishes:
+
+```text
+mathematical identity
+≠ representation identity
+≠ format identity
+≠ Specification identity
+```
+
+Compatible evolution may alter representation, format, or Specification identity only where lossless, deterministic correspondence preserves the same normalized mathematical object and established canonical place.
+
 ---
 
 ## Governing Version and Profile Identification
@@ -116,6 +127,8 @@ A compatible future version may:
 - add a future geometry or operation after Specification adoption.
 
 But it must preserve old canonical meaning.
+
+> **Representations may evolve. Canonical place may not drift.**
 
 ---
 
@@ -290,6 +303,7 @@ Compatibility applies only to already-defined canonical behavior.
 Current open examples include:
 
 ```text
+Survey Domain numerical half-span H
 general Boolean / composite output closure
 general union result closure
 general intersection-result closure
@@ -322,6 +336,27 @@ A change is not ordinary compatible evolution if it would:
 Such a change requires an explicitly different decision class.
 
 It must not be mislabeled as compatibility.
+
+If BitPangea ever authorizes an intentionally incompatible successor, that transition would require separate institutional Specification succession / migration governance. Conformance may detect and classify the incompatibility; it does not authorize the transition.
+
+---
+
+## Identity Separation Across Versions
+
+The candidate lineage model distinguishes:
+
+```text
+mathematical identity
+representation identity
+format identity
+Specification identity
+```
+
+Version identifiers and format labels govern interpretation, proof scope, and compatibility claims.
+
+They do not become part of the canonical spatial identity of the Point, Segment, SCPE, or Survey location represented.
+
+Where compatibility is claimed, differing governed versions or representations must correspond losslessly and deterministically to the same normalized mathematical object.
 
 ---
 
@@ -489,6 +524,8 @@ The remaining Version Compatibility design work includes:
 
 ```text
 final top-level FSF Specification version identifier
+formal Specification version-succession rules
+incompatible-transition / migration governance if ever required
 machine-readable compatibility declarations
 complete compatibility matrix
 transition classification syntax
@@ -524,8 +561,11 @@ FSF-CJSON-1.0 COMPATIBILITY — GOVERNED
 BACKWARD INTERPRETABILITY — REQUIRED
 UNKNOWN FUTURE CAPABILITY — MUST NOT BE INVENTED
 MEANING DRIFT — CONFORMANCE FAILURE
+MATHEMATICAL / REPRESENTATION / FORMAT / SPECIFICATION IDENTITY SEPARATION — DEFINED
 
 TOP-LEVEL VERSION IDENTIFIER — OPEN
+FORMAL SPECIFICATION VERSION SUCCESSION — OPEN
+INCOMPATIBLE-TRANSITION / MIGRATION GOVERNANCE — OPEN IF EVER REQUIRED
 COMPATIBILITY MATRIX — OPEN
 TRANSITION DECLARATION SYNTAX — OPEN
 DEPRECATION POLICY — OPEN
