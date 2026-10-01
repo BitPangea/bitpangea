@@ -64,6 +64,17 @@ Reference Vectors provide evidence.
 
 They do not create missing mathematics.
 
+Day #126 lineage reconciliation also distinguishes:
+
+```text
+mathematical identity
+≠ representation identity
+≠ format identity
+≠ Specification identity
+```
+
+Compatible evolution may change representation, format, or Specification identity only where lossless, deterministic correspondence preserves the same normalized mathematical object and established canonical place.
+
 ---
 
 ## Compatible Meaning Preservation
@@ -135,7 +146,9 @@ Unsupported capability shall not be guessed into existence.
 
 A change is compatible only when it preserves established canonical meaning.
 
-Version numbering alone does not establish compatibility.
+> **Representations may evolve. Canonical place may not drift.**
+
+Version numbering alone does not establish compatibility. Compatible succession may expand exact capability, governed limits, or lossless representation forms, but it may not silently migrate established place.
 
 ---
 
@@ -153,6 +166,8 @@ reuse canonical identity for a different place
 Conformance can detect incompatibility.
 
 It cannot authorize it.
+
+If an intentionally incompatible successor is ever authorized, that requires separate institutional succession / migration governance and cannot be described as ordinary compatible refinement.
 
 ---
 
@@ -318,7 +333,16 @@ may be the required cross-encoding result even though bytes differ.
 
 ---
 
-## Version Identity Is Not Spatial Identity
+## Mathematical, Representation, Format, and Specification Identity
+
+The candidate lineage model distinguishes:
+
+```text
+mathematical identity
+representation identity
+format identity
+Specification identity
+```
 
 Metadata such as:
 
@@ -331,6 +355,8 @@ Conformance profile
 governs interpretation and proof.
 
 It does not become part of the Point, Segment, SCPE, or place itself.
+
+Where compatibility is claimed, differing governed representations or versions must map losslessly and deterministically to the same normalized mathematical object.
 
 ---
 
@@ -411,6 +437,7 @@ Remaining Section 11 work includes:
 
 ```text
 final institutional version-adoption / succession rules
+incompatible-transition / migration governance if ever required
 final frozen Conformance profile identifiers where not yet adopted
 final frozen disposition / failure identifiers where not yet adopted
 cases dependent on unresolved numerical H
@@ -445,7 +472,7 @@ CANONICAL RESULT EQUIVALENCE — TESTABLE
 CONFORMANCE REPORT EVIDENCE — TESTABLE
 DECLARATION CONSISTENCY — TESTABLE
 INDEPENDENT REPRODUCTION — TESTABLE
-VERSION / SPATIAL IDENTITY SEPARATION — TESTABLE
+MATHEMATICAL / REPRESENTATION / FORMAT / SPECIFICATION IDENTITY SEPARATION — TESTABLE
 CROSS-EVALUATOR AGREEMENT — TESTABLE
 
 FINAL INSTITUTIONAL VERSION SUCCESSION — OPEN
