@@ -129,6 +129,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 </p>
 </div>
 
+<div class="req-status">
+  <h3>Current Requirements Interpretation</h3>
+  <p>
+    These Requirements remain governing constraints. Subsequent FSF formal mathematical design has selected Point, Segment, and SCPE as the current candidate primitive core; exact rational predicates with no epsilon; deterministic normalization; FSF-CJSON-1.0; CRPC / ECEM precision semantics; and a right-handed frame with counterclockwise positive rotation. General Boolean-result geometry, arbitrary exact rotation, general path / boundary-length scalar closure, final Specification identity / version succession governance, and final complexity limits remain open.
+  </p>
+</div>
+
 <blockquote>
   <span class="quote-label">Atlas Working Principle</span>
   Define the geometry once. Derive the relationships when needed.
@@ -201,7 +208,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="finding-number">Requirement Finding #54</div>
   <h2>Sub-Pang Precision Through Exact Refinement</h2>
   <p>Spatial positions, distances, and extents smaller than one Pang should be expressible through the Foundational Survey Fabric’s exact precision mechanism without requiring a permanently prescribed hierarchy of named subunits.</p>
-  <p>The Pang should remain the native canonical unit of spatial scale, while the eventual mathematical design determines how exact sub-Pang precision is represented. That mechanism may involve refinement, subdivision, exact fractional representation, or another exact method consistent with the Specification.</p>
+  <p>The Pang remains the native canonical unit of spatial scale. Subsequent formal mathematical design has selected <strong>CRPC</strong> with the <strong>Exact Coordinate Extension Model (ECEM)</strong> as the current candidate mechanism for exact sub-Pang precision. This expands representational capacity without imposing mandatory hierarchical place states or changing established canonical meaning.</p>
   <p>Named subunits or convenient display conventions may be introduced later where useful, provided they remain exact translations of canonical Survey mathematics and do not constrain or redefine the underlying precision system.</p>
   <div class="finding-principle"><span class="quote-label">Governing Principle</span>Pang names the scale. Mathematics supplies the finer precision.</div>
 </section>
@@ -226,14 +233,14 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 <section class="finding" id="finding-58">
   <div class="finding-number">Requirement Finding #58</div>
   <h2>Canonical Ordering Without Hierarchy</h2>
-  <p>The Foundational Survey Fabric should support a deterministic canonical ordering of spatial references and derived spatial components where such ordering is necessary for normalization, serialization, conformance, verification, or exact reproducibility. That ordering should remain semantically neutral and must not imply ownership priority, cultural importance, geographic rank, or other higher-layer meaning. The specific ordering method should remain unresolved until the Survey Fabric’s mathematical and addressing design is selected.</p>
+  <p>The Foundational Survey Fabric should support a deterministic canonical ordering of spatial references and derived spatial components where such ordering is necessary for normalization, serialization, conformance, verification, or exact reproducibility. That ordering should remain semantically neutral and must not imply ownership priority, cultural importance, geographic rank, or other higher-layer meaning. Subsequent formal mathematical design has selected lexicographic ordering where required for the current CRPC / Point / Segment / SCPE candidate core, while future geometry or addressing structures may require separately governed ordering rules.</p>
   <div class="finding-principle"><span class="quote-label">Governing Principle</span>Order may serve reproducibility without creating hierarchy.</div>
 </section>
 <section class="finding" id="finding-59">
   <div class="finding-number">Requirement Finding #59</div>
   <h2>Canonical Serialization and Interchange</h2>
-  <p>The Foundational Survey Fabric should ultimately define deterministic normative serialization and interchange rules for authoritative Survey references, spatial extents, and other foundational spatial expressions so that independent conforming implementations can exchange and verify spatial data without ambiguity.</p>
-  <p>The Specification may define one canonical serialization or multiple explicitly governed lossless encodings, provided all normative forms resolve deterministically to the same canonical spatial meaning and equivalent data can be recognized as equivalent without implementation-specific guesswork.</p>
+  <p>The Foundational Survey Fabric should define deterministic normative serialization and interchange rules for authoritative Survey references, spatial extents, and other foundational spatial expressions so that independent conforming implementations can exchange and verify spatial data without ambiguity.</p>
+  <p>Subsequent formal mathematical design has selected <strong>FSF-CJSON-1.0</strong> as the current primary canonical machine-readable representation for the supported core. Future governed lossless representations may exist only if they preserve deterministic correspondence to the same normalized mathematical object.</p>
   <p>Implementations may use different internal storage or computational representations, and higher layers may present alternative user-facing forms, but authoritative interchange must remain exactly defined by the governing Survey specification.</p>
   <div class="finding-principle"><span class="quote-label">Governing Principle</span>Implement however you like. Exchange without ambiguity.</div>
 </section>
@@ -290,7 +297,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 <section class="finding" id="finding-68">
   <div class="finding-number">Requirement Finding #68</div>
   <h2>Singular Mathematical Orientation</h2>
-  <p>The Foundational Survey Fabric should establish one permanent canonical handedness and rotational orientation for its two-dimensional coordinate frame so that direction, angular measurement, transformation, and geometric interpretation remain identical across conforming implementations. The specific positive rotational convention should remain unresolved until the Survey Fabric’s mathematical design is selected, but once canonically established it should not vary by implementation or higher-layer presentation. Mirrored or reversed coordinate views may exist as derived transformations, not as competing foundational orientations.</p>
+  <p>The Foundational Survey Fabric should establish one permanent canonical handedness and rotational orientation for its two-dimensional coordinate frame so that direction, angular measurement, transformation, and geometric interpretation remain identical across conforming implementations. Subsequent formal mathematical design has selected a <strong>right-handed</strong> frame with <strong>counterclockwise-positive</strong> rotation as the current candidate convention. Mirrored or reversed coordinate views may exist as derived transformations, not as competing foundational orientations. The final canonical angular unit and arbitrary exact rotation representation remain open.</p>
   <div class="finding-principle"><span class="quote-label">Governing Principle</span>The World may be mirrored in experience. Its mathematical orientation should remain singular.</div>
 </section>
 <section class="finding" id="finding-69">
@@ -351,7 +358,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 <div class="req-status">
   <h3>Section Standing</h3>
   <p>
-    Findings #44–#77 establish the Survey Fabric’s audited geometry, topology, measurement, and spatial-operation requirements: exact continuity and predicates, semantically neutral reference, exact finite Survey Domain limits distinct from World limits, derived transformations, separation of terrain and surface from the Survey layer, uniform Pang scale, exact sub-Pang precision without premature commitment to one mechanism, canonical path and geometric boundary length, exact spatial composition, deterministic validity and ordering, normative serialization and interchange, versioning, independence from verification technology and rights systems, open implementation, one canonical spatial meaning across durable representations, exact spatial equivalence, singular orientation, exact proximity, precision without semantic tiers, lossless versus lossy conversion, exact comparison, no silent snapping, one connected Survey Domain, and no semantic privilege for internal partitions.
+    Findings #44–#77 establish the Survey Fabric’s audited geometry, topology, measurement, and spatial-operation requirements: exact continuity and predicates, semantically neutral reference, exact finite Survey Domain limits distinct from World limits, derived transformations, separation of terrain and surface from the Survey layer, uniform Pang scale, exact sub-Pang precision, canonical path and geometric boundary length, exact spatial composition, deterministic validity and ordering, normative serialization and interchange, versioning, independence from verification technology and rights systems, open implementation, one canonical spatial meaning across durable representations, exact spatial equivalence, singular orientation, exact proximity, precision without semantic tiers, lossless versus lossy conversion, exact comparison, no silent snapping, one connected Survey Domain, and no semantic privilege for internal partitions. Later formal mathematical design has resolved the current Point / Segment / SCPE core, exact predicates, normalization, CRPC / ECEM precision, FSF-CJSON-1.0 serialization, lexicographic ordering where required, and canonical handedness / positive rotation, while broader operation closure and several measurement / transformation gates remain open.
   </p>
 </div>
 
