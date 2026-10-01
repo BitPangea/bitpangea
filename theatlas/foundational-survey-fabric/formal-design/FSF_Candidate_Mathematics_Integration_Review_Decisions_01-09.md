@@ -4,7 +4,7 @@
 **Record Type:** Formal Mathematical Integration Review  
 **Creator Period:** Day #123 · September 27, 2026  
 **Scope:** Formal Mathematical Decisions 01–09  
-**Status:** COMPLETE — INTEGRATION REVIEW PASS WITH REMAINING FORMAL GATES · AMENDED FOR FMD-04 CAPACITY CORRECTION  
+**Status:** COMPLETE — INTEGRATION REVIEW PASS WITH REMAINING FORMAL GATES · AMENDED FOR FMD-04 CAPACITY AND LINEAGE / VERSION-COMPATIBILITY RECONCILIATION  
 **Original Review:** Day #123 · September 27, 2026  
 **Current Amendment:** Day #126 · September 30, 2026  
 **Adoption Standing:** Candidate mathematics only; no FSF Specification adoption occurs through this record.
@@ -17,6 +17,9 @@ This review asks whether Formal Mathematical Decisions 01–09 form one coherent
 
 > **Day #126 Amendment — FMD-04 Capacity Correction**  
 > The original Day #123 review treated the ±1,000,000 Pang Survey Domain half-span as resolved. Subsequent reconciliation determined that no source-derived capacity criterion supported that numerical selection. This record is therefore amended to preserve the candidate **closed, axis-aligned square geometry centered at `(0,0)`** while reopening the numerical half-span as **FMD-04B**. The governing parameterized Domain is `D_H = {(x,y) : -H ≤ x ≤ H and -H ≤ y ≤ H}`, with exact positive `H` still open. This correction does not reopen the already-coherent capacity-independent FSF core.
+
+> **Day #126 Amendment — Lineage / Version-Compatibility Clarification**  
+> FMD-08 and FMD-09 together now make the candidate continuity rule explicit: governed representations and representational capacity may evolve, but established canonical place and supported geometry may not drift. Compatible representations require lossless, deterministic correspondence to the same normalized mathematical object. Final institutional Specification identity, version succession, adoption authority, and migration policy remain separate governance questions.
 
 The review does **not** ask whether every FSF mathematical question has now been solved.
 
@@ -416,6 +419,33 @@ Increasing representational capacity cannot change a previously normalized Point
 
 ---
 
+## 5.11 Serialization ↔ Version / Lineage Continuity
+
+**PASS AT CANDIDATE DESIGN LEVEL**
+
+FMD-08 and FMD-09 now express one coherent continuity rule:
+
+```text
+representation may evolve
+representational capacity may expand
+canonical mathematical meaning may not drift
+```
+
+Where two governed representations are declared compatible, each must map losslessly and deterministically to the same normalized mathematical object.
+
+Format identity, Specification identity, and representation identity remain distinct from spatial identity.
+
+Still open at the institutional / governance level:
+
+- final Specification identity scheme;
+- formal version succession rules;
+- adoption authority;
+- incompatible-transition / migration policy.
+
+These open governance questions do not create a mathematical contradiction in the candidate core.
+
+---
+
 # 6. Requirements Compatibility Review
 
 The eighty-five Requirements are organized into seven governing sections.
@@ -483,10 +513,17 @@ No decision claims adoption by virtue of technical selection.
 
 Compatible precision evolution preserves established place.
 
-Still required later:
+FMD-08 and FMD-09 now also establish candidate compatibility semantics for durable representation continuity:
+
+- governed compatible representations must preserve the same normalized mathematical object;
+- representational evolution must be lossless and deterministic where compatibility is claimed;
+- format or representation change may not move, renumber, or reinterpret established canonical place.
+
+Still required later at the institutional / governance level:
 
 - final Specification identity;
-- compatibility/version rules;
+- formal version succession rules;
+- incompatible-transition / migration policy;
 - adoption act / canonical status process.
 
 These are not mathematical contradictions.
@@ -607,7 +644,7 @@ Decisions 01–09 were tested against them.
 | Exact rotation / transformation closure | **OPEN** |
 | Exact distance / area / path-length closure | **PARTIAL — AREA PASS; DISTANCE/PATH OPEN** |
 | Operation-domain / output closure | **OPEN** |
-| Deterministic semantic equivalence across durable representations | **PASS FOR POINT/SEGMENT/SCPE CORE** |
+| Deterministic semantic equivalence across durable representations | **PASS FOR POINT/SEGMENT/SCPE CORE; COMPATIBILITY CORRESPONDENCE DEFINED AT CANDIDATE LEVEL** |
 
 This is the most important integration result.
 
@@ -827,7 +864,7 @@ Still open:
 - arbitrary exact rotation / transformation representation;
 - general composition and Boolean-result closure;
 - operation-domain / output closure;
-- Specification identity / compatibility details;
+- final Specification identity / version-succession / migration governance;
 - governed complexity limits;
 - FSF-B11 general set-difference compatibility.
 
@@ -912,6 +949,7 @@ CORE POLYGONAL GEOMETRY — COHERENT
 CORE NORMALIZATION — COHERENT
 CORE SERIALIZATION — COHERENT
 PRECISION / REFINEMENT — COHERENT
+REPRESENTATION / LINEAGE CONTINUITY — COHERENT AT CANDIDATE DESIGN LEVEL
 SPATIAL GROUND CAPACITY-INDEPENDENT PRODUCTION DEPENDENCY — SATISFIED AT DESIGN LEVEL
 
 SURVEY DOMAIN NUMERICAL CAPACITY H — OPEN
@@ -919,7 +957,8 @@ FULL ROTATION / TRANSFORMATION CLOSURE — OPEN
 FULL DISTANCE / PATH-LENGTH CLOSURE — OPEN
 GENERAL COMPOSITION / OUTPUT CLOSURE — OPEN
 CANONICAL ADDRESS GRAMMAR — OPEN
-SPECIFICATION IDENTITY / COMPLEXITY LIMITS — OPEN
+SPECIFICATION IDENTITY / VERSION SUCCESSION / MIGRATION GOVERNANCE — OPEN
+COMPLEXITY LIMITS — OPEN
 FSF-B11 GENERAL DIFFERENCE COMPATIBILITY — OPEN
 
 EXECUTABLE CORE PROTOTYPING — PERMITTED
@@ -952,4 +991,4 @@ without reopening tonight's mathematical decisions unless testing later exposes 
 
 # 18. Governing Closing Statement
 
-> **The Survey Fabric's capacity-independent production-critical mathematical core now hangs together as one system. The remaining work is to formalize, implement, attack, and prove the mathematics already selected while completing the still-open gates—including the numerical Survey Domain half-span `H`—before final canonical closure.**
+> **The Survey Fabric's capacity-independent production-critical mathematical core now hangs together as one system, including a coherent rule that representations may evolve while canonical place may not drift. The remaining work is to formalize, implement, attack, and prove the mathematics already selected while completing the still-open gates—including the numerical Survey Domain half-span `H` and final version-succession governance—before canonical closure.**
