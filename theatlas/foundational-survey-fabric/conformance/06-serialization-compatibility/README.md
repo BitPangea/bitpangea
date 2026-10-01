@@ -75,6 +75,19 @@ Conformance 06 can therefore test one concrete canonical serialization.
 
 This does not pre-adopt future encodings.
 
+Day #126 lineage reconciliation further distinguishes:
+
+```text
+mathematical identity
+≠ representation identity
+≠ format identity
+≠ Specification identity
+```
+
+FSF-CJSON-1.0 is a governed canonical representation of supported mathematical objects.
+
+It is not itself the spatial identity of those objects.
+
 ---
 
 ## Governing Processing Sequence
@@ -405,6 +418,8 @@ Format identity identifies the governing representation.
 
 It does not become spatial identity.
 
+Where compatibility is claimed across governed formats or Specification versions, the representations must correspond losslessly and deterministically to the same normalized mathematical object.
+
 ---
 
 ## Unknown and Unsupported Forms
@@ -444,6 +459,30 @@ A future normative format would require an explicit Specification decision defin
 - precedence relative to existing formats.
 
 Conformance shall not invent that policy.
+
+> **Representations may evolve. Canonical place may not drift.**
+
+A future encoding may differ in syntax or bytes only where the governing Specification explicitly defines its normative status, precedence, and exact compatibility relationship to existing canonical meaning.
+
+---
+
+## Incompatible-Transition Boundary
+
+Conformance may detect that a future encoding is not compatible with the current canonical representation.
+
+It may not authorize the transition.
+
+If a future representation cannot preserve:
+
+```text
+lossless
+deterministic
+meaning-preserving
+```
+
+correspondence to the same normalized mathematical object, it is not ordinary compatible serialization evolution.
+
+Any intentionally incompatible successor would require separate institutional Specification succession / migration governance.
 
 ---
 
@@ -567,8 +606,10 @@ The remaining serialization-related Conformance work includes:
 
 ```text
 final top-level FSF Specification identifier
+formal Specification version-succession rules
 full cross-version compatibility syntax
 future normative encoding precedence
+incompatible-transition / migration governance if ever required
 machine-readable serialization error identifiers
 formal interchange test identifiers
 governance for future additional normative encodings
@@ -601,9 +642,12 @@ GOVERNED UNKNOWN FIELDS — REQUIRED
 UTF-8 CANONICAL BYTES — REQUIRED
 ROUND-TRIP REPRODUCTION — REQUIRED
 CROSS-IMPLEMENTATION BYTE EQUALITY — REQUIRED
+MATHEMATICAL / REPRESENTATION / FORMAT / SPECIFICATION IDENTITY SEPARATION — DEFINED
 
 TOP-LEVEL FSF SPECIFICATION IDENTITY — OPEN
+FORMAL SPECIFICATION VERSION SUCCESSION — OPEN
 CROSS-VERSION COMPATIBILITY SYNTAX — OPEN
+INCOMPATIBLE-TRANSITION / MIGRATION GOVERNANCE — OPEN IF EVER REQUIRED
 FUTURE NORMATIVE ENCODING GOVERNANCE — OPEN
 CANONICAL ADOPTION — NOT YET PERFORMED
 ```
