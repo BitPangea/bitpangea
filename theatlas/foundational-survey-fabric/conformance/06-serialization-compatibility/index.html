@@ -106,6 +106,9 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 <p>
   Implementations may use any internal representation they choose. Where canonical interchange is claimed, they shall reproduce the governed FSF-CJSON-1.0 meaning and bytes exactly. Future alternate normative encodings remain a separate Specification-level question and shall not be invented by Conformance.
 </p>
+<p>
+  Day #126 lineage reconciliation further distinguishes <strong>mathematical identity</strong>, <strong>representation identity</strong>, <strong>format identity</strong>, and <strong>Specification identity</strong>. FSF-CJSON-1.0 is a governed canonical representation of supported mathematical objects; it is not itself the spatial identity of those objects.
+</p>
 </div>
 
 <blockquote>
@@ -308,6 +311,9 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <p>
     Format identity identifies the governing representation. It does not become part of the spatial identity of the place or geometry described.
   </p>
+  <p>
+    Where compatibility is claimed across governed formats or Specification versions, the representations must correspond <strong>losslessly and deterministically</strong> to the same normalized mathematical object.
+  </p>
 </section>
 
 <section class="spec-card">
@@ -332,6 +338,9 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   </p>
   <p>
     Conformance 06 shall not presume that future alternate encodings are already canonical or normatively equivalent.
+  </p>
+  <p>
+    <strong>Representations may evolve. Canonical place may not drift.</strong> A future encoding may differ in syntax or bytes only where the governing Specification explicitly defines its status, precedence, and exact compatibility relationship to existing canonical meaning.
   </p>
 </section>
 
@@ -367,7 +376,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="status-card">
     <h3>Still Open in Conformance</h3>
     <p>
-      Final top-level FSF Specification identifier; full cross-version compatibility syntax; future normative encoding precedence; machine-readable serialization error identifiers; final formal interchange test-suite identifiers; and conformance rules for any future additional normative encoding.
+      Final top-level FSF Specification identifier; formal Specification version-succession rules; full cross-version compatibility syntax; future normative encoding precedence; incompatible-transition / migration governance if ever required; machine-readable serialization error identifiers; final formal interchange test-suite identifiers; and conformance rules for any future additional normative encoding.
     </p>
   </div>
 </div>
@@ -380,6 +389,17 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   </p>
   <p>
     The integrated Specification has now selected FSF-CJSON-1.0 for the current solved core. Conformance 06 therefore tests that format directly while preserving future-format governance as a later Specification decision.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">06.21 · Incompatible-Transition Boundary</div>
+  <h2>Conformance May Detect Encoding Incompatibility; It Does Not Authorize Succession</h2>
+  <p>
+    If a future representation cannot preserve lossless deterministic correspondence to the same normalized mathematical object, Conformance shall classify that relationship according to the governing incompatibility rules rather than treating it as compatible serialization evolution.
+  </p>
+  <p>
+    Any intentionally incompatible successor would require separate institutional Specification succession / migration governance. Conformance may prove the difference; it does not grant authority to adopt it.
   </p>
 </section>
 
