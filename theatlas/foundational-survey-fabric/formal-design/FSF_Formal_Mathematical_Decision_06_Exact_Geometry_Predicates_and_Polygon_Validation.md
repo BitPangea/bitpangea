@@ -4,8 +4,12 @@
 **Record Type:** Formal Mathematical Design Decision  
 **Creator Period:** Day #123 · September 27, 2026  
 **Subject:** Exact Geometry Predicates and Polygon Validation  
-**Status:** COMPLETE — MATHEMATICAL DESIGN SELECTED  
-**Adoption Standing:** Selected for Specification development; not yet a formally adopted FSF Specification rule.
+**Status:** COMPLETE — MATHEMATICAL DESIGN SELECTED · AMENDED FOR DAY #126 INTEGRATION RECONCILIATION  
+**Adoption Standing:** Integrated into the candidate FSF Specification / Conformance / Reference Vector architecture; not yet canonically adopted.
+
+> **Day #126 Amendment — Integration Standing**  
+> The exact predicate design remains unchanged. Subsequent Decisions 07–09, the Decisions 01–09 Integration Review, candidate Specification integration, Conformance work, and Reference Vector reconciliation have completed several items that this Day #123 record still described as pending. This amendment updates those downstream standings without changing the selected predicate mathematics.
+
 
 ---
 
@@ -640,7 +644,7 @@ These three geometric classes are mutually exclusive and collectively exhaustive
 
 ## 33. Invalid Survey Point Handling
 
-If a supplied coordinate Point lies outside the Survey Domain, predicates requiring a valid Point SHALL return:
+If a supplied coordinate Point lies outside the governing Survey Domain, predicates requiring a valid Point SHALL return:
 
 ```text
 INVALID
@@ -653,6 +657,16 @@ EXTERIOR
 ```
 
 because "outside SCPE" and "outside Survey validity" are different questions.
+
+The candidate Survey Domain is currently parameterized as:
+
+```text
+D_H = {(x,y) : -H ≤ x ≤ H and -H ≤ y ≤ H}
+```
+
+with exact positive `H`.
+
+The geometry and closed-boundary semantics are candidate-resolved, while the final numerical value of `H` remains OPEN. Therefore concrete numerical out-of-Domain fixtures remain conditional on the governing Specification's eventual selection of `H`.
 
 This distinction is essential for Spatial Ground.
 
@@ -777,9 +791,9 @@ No irrational scalar representation is required for the core predicate set selec
 
 ---
 
-## 40. Spatial Ground Production Effect
+## 40. Spatial Ground Candidate Integration Effect
 
-Given a production World SCPE:
+Given the selected single-SCPE World candidate instance:
 
 ```text
 W
@@ -803,7 +817,7 @@ EXTERIOR -> NON_WORLD
 
 provided `P` is a valid Survey Point.
 
-This creates the exact executable bridge needed by CMPM without moving membership semantics into FSF.
+This establishes the candidate exact executable bridge needed by CMPM without moving membership semantics into FSF. Canonical production use remains contingent on the governing FSF and Spatial Ground adoption gates.
 
 ---
 
@@ -858,9 +872,9 @@ Any disagreement is a Conformance failure.
 
 ---
 
-## 44. Required Reference Vector Classes
+## 44. Reference Vector Standing
 
-The future executable FSF corpus SHALL include:
+The reconciled executable FSF geometry corpus now covers the defined predicate core. Required coverage includes:
 
 ### Orientation
 
@@ -974,40 +988,65 @@ containment — RESOLVED
 geometric equality semantics — RESOLVED
 ```
 
-Still pending elsewhere:
+Subsequent formal work has advanced this standing:
 
 ```text
-canonical normalization algorithm
-canonical serialization
-general Boolean composition semantics
-exact derived distance/path-length scalar representation
+canonical normalization algorithm — RESOLVED AT CANDIDATE LEVEL (FMD-07)
+canonical serialization — RESOLVED AT CANDIDATE LEVEL (FMD-08 / FSF-CJSON-1.0)
+precision / refinement semantics — RESOLVED AT CANDIDATE LEVEL (FMD-09 / ECEM)
+
+general Boolean composition result geometry — OPEN
+exact derived distance/path-length scalar representation — OPEN
+final complexity limits — OPEN
 ```
 
-These are separate formal decisions.
+The open items remain separate formal gates and are not resolved by these predicates.
 
 ---
 
-## 48. Next Formal Mathematical Decision
+## 48. Subsequent Formal-Design Standing
 
-The next decision SHALL address:
+The next decision identified by the original Day #123 record — **Canonical Geometry Normalization** — has since been completed as FMD-07.
 
-> **Canonical Geometry Normalization**
+Subsequent work also completed:
 
-It must select:
+- FMD-08 — Canonical Serialization and Interchange;
+- FMD-09 — Exact Precision and Refinement Semantics;
+- the Decisions 01–09 Integration Review;
+- candidate Specification integration;
+- candidate Conformance integration;
+- reconciled Reference Vector coverage for the defined geometry core.
 
-- SCPE traversal direction;
-- canonical start vertex;
-- redundant collinear-vertex removal;
-- duplicate handling;
-- canonical Segment endpoint order where needed;
-- canonical Point ordering usage;
-- unique normalized representation of equivalent SCPE geometry.
+Accordingly, FMD-06 is no longer awaiting normalization before becoming usable within the candidate architecture.
 
-This is the next major step toward resolving FSF-B08.
+Its remaining dependencies are the broader open gates that lie outside this predicate decision, including general Boolean-result geometry, unresolved exact derived measurement scalar types, final complexity limits, and final canonical adoption.
 
 ---
 
-## 49. Standing
+## 49. Day #126 Representation / Equivalence Consequence
+
+FMD-06 defines geometric truth independently of representation.
+
+For the supported core:
+
+```text
+equal normalized geometry
+→ same canonical geometric meaning
+```
+
+Different valid representations may normalize to the same Point, Segment, or SCPE without creating different spatial truth.
+
+This aligns with the Day #126 continuity rule:
+
+> **Representations may evolve. Canonical place may not drift.**
+
+FSF-CJSON-1.0 provides the current candidate canonical machine representation, but serialization identity does not replace geometric-set identity.
+
+Where future governed representations claim compatibility, they must preserve lossless, deterministic correspondence to the same normalized mathematical object.
+
+---
+
+## 50. Standing
 
 **POINT EQUALITY — EXACT**
 
@@ -1029,14 +1068,24 @@ This is the next major step toward resolving FSF-B08.
 
 **EPSILON GEOMETRY — PROHIBITED**
 
-**SPATIAL GROUND EXECUTABLE GEOMETRY BRIDGE — ESTABLISHED**
+**SPATIAL GROUND EXECUTABLE GEOMETRY BRIDGE — ESTABLISHED AT CANDIDATE LEVEL**
 
-**CANONICAL NORMALIZATION — NEXT**
+**CANONICAL NORMALIZATION — CANDIDATE RESOLVED (FMD-07)**
+
+**CANONICAL SERIALIZATION — CANDIDATE RESOLVED (FMD-08 / FSF-CJSON-1.0)**
+
+**PRECISION / REFINEMENT — CANDIDATE RESOLVED (FMD-09 / ECEM)**
+
+**GENERAL BOOLEAN RESULT GEOMETRY — OPEN**
+
+**GENERAL DISTANCE / PATH-LENGTH SCALAR CLOSURE — OPEN**
+
+**SURVEY DOMAIN NUMERICAL HALF-SPAN `H` — OPEN**
 
 **FORMAL SPECIFICATION ADOPTION — NOT YET PERFORMED**
 
 ---
 
-## 50. Governing Closing Statement
+## 51. Governing Closing Statement
 
 > **In the Survey Fabric, geometry does not become true because two implementations agree that values are close. A point is on the boundary or it is not; segments cross or they do not; a region contains a place or it does not. Canonical geometry is exact enough to answer without tolerance.**
