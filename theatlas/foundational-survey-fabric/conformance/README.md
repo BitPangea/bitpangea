@@ -99,6 +99,17 @@ This does **not** mean the entire Foundational Survey Fabric has been canonicall
 
 Conformance applies only where the governing Specification defines canonical behavior.
 
+Day #126 lineage reconciliation further distinguishes:
+
+```text
+mathematical identity
+≠ representation identity
+≠ format identity
+≠ Specification identity
+```
+
+Conformance may prove lossless, deterministic correspondence among compatible governed representations or versions, but it may not treat representation, format, or Specification metadata as the spatial identity of the canonical object itself.
+
 ---
 
 # Conformance Structure
@@ -328,9 +339,13 @@ backward interpretability
 unsupported future capability must not be invented
 ```
 
-Governing principle:
+Governing principles:
 
 > **Version the standard. Do not version the place.**
+
+> **Representations may evolve. Canonical place may not drift.**
+
+Compatibility is a semantic-preservation claim. A compatible successor may expand exact capability, governed limits, or lossless representation forms only where the same normalized mathematical object and established canonical place are preserved.
 
 ---
 
@@ -587,6 +602,16 @@ The code does not silently govern the standard.
 
 ---
 
+# Version-Succession Boundary
+
+Conformance can test whether two governed versions or representations satisfy defined compatibility rules.
+
+It cannot itself authorize an intentionally incompatible transition.
+
+If BitPangea ever adopts an incompatible successor, separate institutional succession / migration governance would be required. Such a transition could not be described as ordinary compatible refinement merely because a test harness can compare the two systems.
+
+---
+
 # Conformance Authority Boundary
 
 Conformance may:
@@ -653,6 +678,8 @@ general open-gate mathematics
 formal optimized-algorithm proof obligations
 complete Reference Vector inventory
 final top-level FSF Specification identifier
+formal Specification version-succession rules
+incompatible-transition / migration governance if ever required
 cross-version compatibility matrix
 deprecation policy
 minimum independent-implementation count
@@ -716,7 +743,10 @@ When maintaining the Conformance directory:
 21. do not allow Conformance to invent unresolved mathematics;
 22. do not allow a declaration to exceed the evidence;
 23. do not treat reproducibility as canonical authority;
-24. do not allow testing infrastructure to become the source of spatial truth.
+24. do not allow testing infrastructure to become the source of spatial truth;
+25. preserve the distinction among mathematical identity, representation identity, format identity, and Specification identity;
+26. require lossless deterministic correspondence where cross-version or cross-representation compatibility is claimed;
+27. do not allow Conformance to authorize incompatible succession or migration.
 
 ---
 
@@ -735,6 +765,7 @@ VALIDATION — EXECUTABLE FOR SOLVED CORE
 EXACTNESS — EXECUTABLE FOR SOLVED CORE
 FSF-CJSON-1.0 — TESTABLE
 VERSION-COMPATIBILITY BASELINE — DEFINED
+MATHEMATICAL / REPRESENTATION / FORMAT / SPECIFICATION IDENTITY SEPARATION — DEFINED
 INDEPENDENT IMPLEMENTATION PROOF SURFACE — DEFINED
 FAILURE CONDITIONS — CONCRETE FOR SOLVED CORE
 REPORT / DECLARATION EVIDENCE MODEL — CANDIDATE STRUCTURE DEFINED
@@ -743,6 +774,8 @@ OPEN SPECIFICATION MATHEMATICS — OUTSIDE CANONICAL CONFORMANCE
 FINAL TEST CORPUS — NOT YET COMPLETE
 FINAL STATUS / ERROR VOCABULARIES — OPEN
 FINAL REPORT / DECLARATION SCHEMAS — OPEN
+FINAL SPECIFICATION IDENTITY / VERSION SUCCESSION GOVERNANCE — OPEN
+INCOMPATIBLE-TRANSITION / MIGRATION GOVERNANCE — OPEN IF EVER REQUIRED
 CANONICAL ADOPTION — NOT YET PERFORMED
 ```
 
