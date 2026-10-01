@@ -81,6 +81,17 @@ deterministic canonical output
 
 Therefore the Mandatory Core can now be defined concretely enough for executable Conformance work.
 
+Day #126 lineage reconciliation also makes the identity boundary explicit:
+
+```text
+mathematical identity
+≠ representation identity
+≠ format identity
+≠ Specification identity
+```
+
+Mandatory Core proof may compare governed representations, formats, or Specification versions, but compatibility requires lossless, deterministic correspondence to the same normalized mathematical object.
+
 ---
 
 ## Candidate Mandatory Core Scope
@@ -309,6 +320,8 @@ Compatible future representational growth may expand capability.
 
 It may not migrate an existing place.
 
+> **Representations may evolve. Canonical place may not drift.**
+
 ---
 
 ## Required Normative Interchange
@@ -353,6 +366,14 @@ where applicable.
 The final top-level FSF Specification identifier syntax remains open.
 
 Conformance must not invent it.
+
+Specification identity governs interpretation and proof scope.
+
+It does **not** become the spatial identity of the Point, Segment, SCPE, or Survey location represented.
+
+The same applies to representation identity and format identity.
+
+Where compatibility is claimed across governed versions or representations, the correspondence must be lossless, deterministic, and meaning-preserving.
 
 ---
 
@@ -399,6 +420,7 @@ The Mandatory Core shall not claim canonical support for unresolved Specificatio
 Current exclusions include:
 
 ```text
+Survey Domain numerical half-span H
 general Boolean / composite output closure
 general union result closure
 general intersection-result closure
@@ -529,6 +551,8 @@ complete test inventory
 test-to-Specification traceability
 test-to-Requirements traceability
 formal conformance declaration syntax
+final FSF Specification identity / version-succession governance
+incompatible-transition / migration governance if ever required
 complexity/resource-limit policy
 provisional implementation policy, if retained
 optional future profiles
@@ -564,6 +588,7 @@ ECEM — REQUIRED
 FSF-CJSON-1.0 — REQUIRED FOR CURRENT SERIALIZATION PROFILE
 NO SILENT SNAPPING — REQUIRED
 INDEPENDENT REPRODUCIBILITY — REQUIRED
+MATHEMATICAL / REPRESENTATION / FORMAT / SPECIFICATION IDENTITY SEPARATION — REQUIRED
 
 OPEN SPECIFICATION MATHEMATICS — EXCLUDED FROM CANONICAL CONFORMANCE
 FINAL TEST INVENTORY — OPEN
