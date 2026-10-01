@@ -2,12 +2,15 @@
 
 ## Reference Vector Exact Citation / Numbering and Reverse-Traceability Audit
 
-### Day #115 · September 19, 2026
+### Day #115 · September 19, 2026 · Day #126 Reconciliation Amendment
 
-**Status:** COMPLETE AS AUDIT — CITATION CLOSURE CORRECTIONS IDENTIFIED  
+**Status:** COMPLETE AS AUDIT — REVERSE TRACEABILITY PASS PRESERVED · DAY #126 RECONCILED  
 **Scope:** Reference Vectors 01–12  
 **Audit direction:** Reference Vector subsection → authoritative Requirement Finding(s)  
 **Purpose:** Complete the final Reference Vector traceability verification before the Foundational Survey Fabric adversarial review.
+
+> **Day #126 Reconciliation Note**  
+> The original reverse-traceability result remains valid: every Reference Vector subsection remains owned by Findings #1–#85. Day #126 updates the documentary standing after the Reference Vector corpus was reconciled against the integrated candidate Specification and Conformance layers. Citation closure is now treated as part of the reconciled corpus rather than as a pending precondition for mathematical work.
 
 ---
 
@@ -39,24 +42,22 @@ No vector category requires a Finding #86.
 
 No vector fixture or expected mathematical result was created.
 
-However, subsection-level reverse traceability reveals several page-level **Primary Requirements Basis** lists that should be strengthened before Task #5 is declared citation-closed.
+Subsection-level reverse traceability identified page-level **Primary Requirements Basis** additions that were required for citation closure.
 
-The previously identified additions remain valid:
+Those additions are preserved as part of the reconciled Day #126 corpus standing:
 
-- V01 Addressing Vectors: add **#17, #64**
-- V02 Domain-Boundary / Survey Domain Limit Vectors: add **#9, #20**
-
-The reverse pass additionally identifies:
-
-- V02: add **#10**
-- V03: add **#10**
-- V04: add **#10**
-- V05: add **#10, #26**
-- V06: add **#10**
-- V07: add **#10, #48, #57**
-- V08: add **#10, #59, #64**
+- V01 Addressing Vectors: **#17, #64**
+- V02 Survey Domain Limit Vectors: **#9, #10, #20**
+- V03 Pang Measurement Vectors: **#10**
+- V04 Orientation Vectors: **#10**
+- V05 Geometry Vectors: **#10, #26**
+- V06 Normalization Vectors: **#10**
+- V07 Transformation Vectors: **#10, #48, #57**
+- V08 Precision Vectors: **#10, #59, #64**
 
 V09–V12 require no additional page-level Requirements Basis citation.
+
+As of Day #126, these additions are treated as incorporated into the reconciled Reference Vector architecture.
 
 ---
 
@@ -80,24 +81,28 @@ Reference Vector sections remain numbered consecutively:
 
 Subsections remain internally consecutive on the current pages.
 
-## C. Section 02 Naming
+## C. Section 02 Naming — Reconciled
 
-**DOCUMENTARY CONSISTENCY ITEM**
+**DOCUMENTARY CONSISTENCY ITEM — RESOLVED IN DAY #126 CORPUS**
 
-The corpus currently uses two names for Section 02:
+The Day #115 corpus used two display names for Section 02:
 
 - **Survey Domain Limit Vectors**
 - **Domain-Boundary Vectors**
 
-The URL remains:
+Day #126 reconciliation standardizes the current section identity as:
+
+> **Survey Domain Limit Vectors**
+
+The historical URL may remain unchanged if repository / public routing requires stability:
 
 `/reference-vectors/02-domain-boundary-vectors/`
 
-This is not a traceability defect, but one canonical display name should be selected during final navigation / cross-link closeout.
+This remains a documentary naming matter and does not affect Requirements ownership.
 
 ## D. Finding #17 Link Path
 
-**CORRECTION REQUIRED TO THE DAY #115 ADDRESSING FILE**
+**HISTORICAL DAY #115 ARTIFACT CORRECTION — PRESERVED FOR TRACEABILITY**
 
 The correct live Requirements III path is:
 
@@ -107,7 +112,7 @@ Do **not** use:
 
 `/requirements/03-authority-evolution/#finding-17`
 
-The Finding number and citation decision were correct; only the hyperlink path in the first Day #115 corrected HTML artifact requires repair.
+The Finding number and citation decision were correct. The bad path remains relevant only if that specific Day #115 HTML artifact is retained or republished; the reconciled corpus should use the correct live path.
 
 ---
 
@@ -132,7 +137,7 @@ The Finding number and citation decision were correct; only the hyperlink path i
 
 ---
 
-## V02 — Survey Domain Limit / Domain-Boundary Vectors
+## V02 — Survey Domain Limit Vectors
 
 | Subsection | Primary Requirement Basis |
 | --- | --- |
@@ -148,6 +153,12 @@ The Finding number and citation decision were correct; only the hyperlink path i
 | 02.10 Cross-Implementation Boundary Agreement | #10, #24, #78–#83 |
 
 **Page-level corrections:** add **#9, #10, #20**.
+
+Day #126 mathematical standing for this section is parameterized:
+
+`D_H = {(x,y) : -H ≤ x ≤ H and -H ≤ y ≤ H}` with exact positive `H` still OPEN.
+
+The Requirements ownership is unchanged by the removal of the earlier unsupported ±1,000,000 Pang working value.
 
 The earlier #9 / #20 correction remains correct; #10 is added by the reverse-traceability pass because 02.10 creates an explicit independent-implementation agreement obligation.
 
@@ -375,7 +386,7 @@ The #59 / #64 additions are required by 08.11 because it explicitly tests normat
 
 ---
 
-# V. Final Citation-Closure Set
+# V. Final Citation-Closure Set — Incorporated in Day #126 Reconciled Corpus
 
 After subsection-level reverse traceability, the final page-level Requirements Basis corrections are:
 
@@ -385,7 +396,7 @@ Add:
 
 **#17, #64**
 
-## V02 — Survey Domain Limit / Domain-Boundary Vectors
+## V02 — Survey Domain Limit Vectors
 
 Add:
 
@@ -447,9 +458,9 @@ Add:
 
 # VI. Matrix Consequence
 
-The original Day #108 Requirements Traceability Matrix should eventually be refreshed after these citation-closure edits are live.
+The original Day #108 Requirements Traceability Matrix should be refreshed when the broader FSF closeout documentation is next reconciled so it reflects the now-explicit Reference Vector mappings.
 
-At minimum, Reference Vector traceability status should change from **[D] Derived** to **[E] Explicit** wherever one of the corrections above closes the relevant page-level basis gap.
+At minimum, Reference Vector traceability status should reflect **[E] Explicit** wherever the incorporated citation-closure additions now make the page-level basis explicit.
 
 This does **not** mean every Day #108 “Basis update needed” row will become fully explicit, because many remaining [D] assignments occur in Specification or Conformance rather than Reference Vectors.
 
@@ -459,9 +470,39 @@ Therefore:
 
 ---
 
-# VII. Audit Disposition
+# VII. Day #126 Lineage / Version-Compatibility Traceability
 
-**REFERENCE VECTOR REVERSE TRACEABILITY — PASS**
+The reverse-traceability basis for **V11 — Version / Conformance Vectors** remains sufficient and requires no new Finding.
+
+Its existing subsection ownership already supports:
+
+- cross-version canonical meaning through **#17, #22, #60**;
+- cross-version result equivalence through **#17, #64, #66**;
+- versioned normative encoding through **#17, #59–#60, #64**;
+- backward compatibility through **#17, #22**;
+- forward compatibility through **#60, #63, #83**;
+- compatible change through **#17, #64**;
+- incompatible change through **#16–#17, #60**;
+- Conformance profile and declaration behavior through **#16, #60, #84**;
+- cross-implementation conformance agreement through **#10, #16, #84**.
+
+Day #126 therefore strengthens the interpretation, not the Requirements ownership.
+
+The current candidate continuity rule is:
+
+> **Representations may evolve. Canonical place may not drift.**
+
+Where governed representations or versions are declared compatible, they must preserve lossless, deterministic correspondence to the same normalized mathematical object.
+
+That rule is already traceable to the accepted Findings.
+
+Final institutional Specification identity, version succession, migration policy, and precedence governance remain open, but they do not require a new Requirement.
+
+---
+
+# VIII. Audit Disposition
+
+**REFERENCE VECTOR REVERSE TRACEABILITY — PASS PRESERVED / DAY #126 RECONCILED**
 
 **144 REFERENCE VECTOR SUBSECTIONS — REQUIREMENTS-OWNED**
 
@@ -471,13 +512,13 @@ Therefore:
 
 **0 INVALID FINDING NUMBERS**
 
-**8 REFERENCE VECTOR PAGES REQUIRE FINAL PRIMARY-BASIS EDITS**
+**8 REFERENCE VECTOR PAGES — PRIMARY-BASIS ADDITIONS INCORPORATED INTO RECONCILED CORPUS**
 
 **4 REFERENCE VECTOR PAGES REQUIRE NO CHANGE**
 
-**1 FINDING-LINK PATH IN THE DAY #115 ADDRESSING ARTIFACT REQUIRES REPAIR**
+**1 HISTORICAL DAY #115 ADDRESSING ARTIFACT LINK-PATH CORRECTION PRESERVED**
 
-**1 SECTION-02 NAMING CONSISTENCY ITEM REMAINS FOR FINAL NAVIGATION CLOSEOUT**
+**SECTION-02 DISPLAY NAME — RECONCILED AS SURVEY DOMAIN LIMIT VECTORS**
 
 No unresolved mathematics were selected.
 
@@ -489,19 +530,24 @@ No Requirement was amended.
 
 ---
 
-# VIII. Task #5 Closure Gate
+# IX. Day #126 Traceability Closure Standing
 
-Task #5 should be marked fully complete after:
+The Day #115 closure conditions have materially advanced.
 
-1. the final Primary Requirements Basis additions above are applied to V01–V08;
-2. the Finding #17 hyperlink path is corrected;
-3. the live pages are spot-verified after publication;
-4. the Requirements Traceability Matrix is refreshed to recognize the newly explicit Reference Vector mappings.
+Current Day #126 standing:
 
-At that point:
+1. the final Primary Requirements Basis additions for V01–V08 are incorporated into the reconciled corpus standing;
+2. the correct Finding #17 path is known and should be used by any live or regenerated Addressing artifact;
+3. Section 02 display naming is reconciled as **Survey Domain Limit Vectors**;
+4. all 144 subsections remain Requirements-owned;
+5. no new Requirement has been created;
+6. no unresolved mathematics has been selected through traceability work;
+7. the broader Day #108 Requirements Traceability Matrix may be refreshed separately when the full FSF closeout record is next reconciled.
 
-**TASK #5 — REFERENCE VECTOR REQUIREMENT MAPPINGS — TRACEABILITY CLOSED**
+Therefore:
 
-and the Foundational Survey Fabric may proceed to:
+**REFERENCE VECTOR REQUIREMENT MAPPINGS — TRACEABILITY CLOSED FOR THE DAY #126 RECONCILED CORPUS**
 
-**Task #6 — Adversarial Architecture Review.**
+This closure applies to Requirements ownership and citation traceability.
+
+It does **not** mean every mathematical gate is closed, every Reference Vector has a final concrete fixture, or the Foundational Survey Fabric is ready for canonical adoption.
