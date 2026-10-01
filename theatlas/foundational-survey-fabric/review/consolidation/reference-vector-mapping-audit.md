@@ -2,11 +2,14 @@
 
 ## Reference Vector Requirement Mapping Audit
 
-### Day #115 · September 19, 2026
+### Day #115 · September 19, 2026 · Day #126 Reconciliation Amendment
 
-**Status:** COMPLETE — PASS WITH TWO CITATION-STRENGTHENING CORRECTIONS  
+**Status:** COMPLETE — PASS PRESERVED · RECONCILED THROUGH DAY #126  
 **Scope:** Reference Vectors 01–12 · “Primary Requirements Basis” citations against Requirements Findings #1–#85  
 **Purpose:** Verify that every Reference Vector category is grounded in the accepted Requirements Framework without inventing test fixtures or prematurely selecting unresolved mathematics.
+
+> **Day #126 Reconciliation Note**  
+> The original Requirements-mapping audit remains valid. Day #126 does not change Findings #1–#85 or the underlying mapping logic. It updates the documentary standing after the twelve Reference Vector sections were reconciled against the integrated candidate Specification and Conformance framework. The corpus now contains executable, parameterized, and still-open portions rather than being uniformly future-facing.
 
 ---
 
@@ -43,15 +46,17 @@ No Reference Vector page relies upon a Requirement that contradicts its stated p
 
 No vector category was found to be unsupported by Findings #1–#85.
 
-Two pages should receive small citation-strengthening corrections:
+The original audit identified two citation-strengthening corrections:
 
 1. **Reference Vectors 01 — Addressing Vectors**
    - add **Finding #17 — Specification Evolution Without Spatial Mutation**
    - add **Finding #64 — One Meaning, Many Durable Expressions**
 
-2. **Reference Vectors 02 — Domain-Boundary Vectors**
+2. **Reference Vectors 02 — Survey Domain Limit Vectors**
    - add **Finding #9 — Precision by Extension**
    - add **Finding #20 — Extensible Precision**
+
+As of Day #126, those strengthened Requirements bases are treated as part of the reconciled Reference Vector architecture.
 
 One existing citation is broader than strictly necessary but remains defensible:
 
@@ -69,11 +74,11 @@ All other Primary Requirements Basis mappings may remain unchanged.
 
 ### Current Primary Requirements Basis
 
-**#7–#10, #20–#22, #30, #41–#42, #54, #57, #59, #70–#75, #78–#83**
+**#7–#10, #17, #20–#22, #30, #41–#42, #54, #57, #59, #64, #70–#75, #78–#83**
 
 ### Audit Result
 
-**PASS — STRENGTHEN CITATION SET**
+**PASS — CITATION SET STRENGTHENED IN RECONCILED CORPUS**
 
 The existing mapping correctly supports:
 
@@ -127,19 +132,19 @@ Finding #64 requires one canonical mathematical meaning across multiple durable 
 
 ### Disposition
 
-**CORRECT PAGE — ADD #17 AND #64**
+**CORRECT PAGE — #17 AND #64 NOW INCLUDED IN RECONCILED BASIS**
 
 ---
 
-## Reference Vectors 02 — Domain-Boundary Vectors
+## Reference Vectors 02 — Survey Domain Limit Vectors
 
 ### Current Primary Requirements Basis
 
-**#13, #19, #23, #29, #32, #39–#40, #48–#49, #57, #74–#76, #78–#83**
+**#9, #13, #19–#20, #23, #29, #32, #39–#40, #48–#49, #57, #74–#76, #78–#83**
 
 ### Audit Result
 
-**PASS — STRENGTHEN CITATION SET**
+**PASS — CITATION SET STRENGTHENED IN RECONCILED CORPUS**
 
 The existing mapping correctly supports:
 
@@ -182,7 +187,7 @@ Finding #20 requires additional exact precision within the existing finite canon
 
 ### Disposition
 
-**CORRECT PAGE — ADD #9 AND #20**
+**CORRECT PAGE — #9 AND #20 NOW INCLUDED IN RECONCILED BASIS**
 
 ---
 
@@ -550,41 +555,65 @@ Therefore no additional foundational-boundary Finding is required merely because
 
 ---
 
-# IV. Required Corrections
+# IV. Historical Citation Corrections and Day #126 Standing
 
-Only two Reference Vector pages require Primary Requirements Basis changes.
+The Day #115 audit identified two Primary Requirements Basis corrections.
+
+Both remain valid and are preserved for traceability.
 
 ## 01 — Addressing Vectors
 
-### Current
+### Day #115 Correction
 
-**#7–#10, #20–#22, #30, #41–#42, #54, #57, #59, #70–#75, and #78–#83**
+Add:
 
-### Replace With
+- **Finding #17 — Specification Evolution Without Spatial Mutation**
+- **Finding #64 — One Meaning, Many Durable Expressions**
 
-**#7–#10, #17, #20–#22, #30, #41–#42, #54, #57, #59, #64, #70–#75, and #78–#83**
+### Day #126 Standing
 
-### Reason
+The reconciled Addressing Vectors basis includes those Findings.
 
-- #17 directly governs compatible Specification evolution without changing address meaning.
-- #64 directly governs representation independence and semantic equivalence across durable forms.
+The strengthened mapping remains appropriate because the page now explicitly tests:
+
+- permanent meaning under compatible Specification evolution;
+- representation independence;
+- exact semantic equivalence across durable forms;
+- ECEM continuity;
+- version-preserved canonical place.
 
 ---
 
-## 02 — Domain-Boundary Vectors
+## 02 — Survey Domain Limit Vectors
 
-### Current
+### Day #115 Correction
 
-**#13, #19, #23, #29, #32, #39–#40, #48–#49, #57, #74–#76, and #78–#83**
+Add:
 
-### Replace With
+- **Finding #9 — Precision by Extension**
+- **Finding #20 — Extensible Precision**
 
-**#9, #13, #19–#20, #23, #29, #32, #39–#40, #48–#49, #57, #74–#76, and #78–#83**
+### Day #126 Standing
 
-### Reason
+The reconciled Survey Domain Limit Vectors basis includes those Findings.
 
-- #9 directly governs precision by extension without reinterpretation.
-- #20 directly governs extensible precision within the unchanged finite Survey Domain.
+The strengthened mapping remains appropriate because the page now tests the parameterized Survey Domain:
+
+```text
+D_H = {(x,y) : -H ≤ x ≤ H and -H ≤ y ≤ H}
+```
+
+with:
+
+```text
+H > 0
+H exact
+numerical H OPEN
+```
+
+Precision may increase within the same finite Domain without moving its boundary semantics or changing previously established place.
+
+The earlier ±1,000,000 Pang working half-span is not part of the Requirements mapping and is not canonical.
 
 ---
 
@@ -605,33 +634,24 @@ The following pages require no Requirements-basis correction:
 
 ---
 
-# VI. Additional Documentary Observation
+# VI. Documentary Naming Reconciliation
 
-The Reference Vector index currently labels Section 02:
+The original audit observed a naming difference between:
 
-**Survey Domain Limit Vectors**
+- **Survey Domain Limit Vectors**
+- **Domain-Boundary Vectors**
 
-while the Section 02 page identifies itself as:
+Day #126 reconciliation adopts:
 
-**Domain-Boundary Vectors**
+> **Reference Vectors 02 — Survey Domain Limit Vectors**
 
-This is not a Requirements-mapping defect.
+as the current section identity.
 
-It does not affect the audit result.
+“Domain boundary” remains valid descriptive language for the mathematical behavior under test, but the section title is normalized to the corpus naming used by the reconciled Reference Vectors index.
 
-However, for documentary consistency the index title and page title should eventually use one canonical name.
+This is a documentary consistency correction only.
 
-Recommended canonical page identity:
-
-**Domain-Boundary Vectors**
-
-with the descriptor:
-
-**Survey Domain Limits**
-
-because that is already the section page’s formal title structure.
-
-This may be corrected during final navigation / cross-link closeout rather than during the Requirements mapping itself.
+It does not change the Requirements mapping.
 
 ---
 
@@ -658,9 +678,38 @@ Therefore this audit does **not** recommend expanding the corpus beyond the exis
 
 ---
 
-# VIII. Audit Disposition
+# VIII. Day #126 Lineage / Version-Compatibility Observation
 
-**REFERENCE VECTOR REQUIREMENT MAPPING AUDIT — PASS WITH TWO DOCUMENTARY CORRECTIONS**
+The Day #115 Requirements mapping for **Reference Vectors 11 — Version / Conformance Vectors** remains correct.
+
+Its primary basis continues to include:
+
+- **Finding #10 — Independent Implementation**
+- **Findings #16–#17 — Authority / Compatible Evolution**
+- **Finding #22 — Permanent Canonical Meaning**
+- **Findings #59–#61 — Serialization / Version / Verification Boundaries**
+- **Findings #63–#64 — Independent Durable Representation**
+- **Findings #78–#85 — Computability / Conformance / Readiness**
+
+Subsequent Day #126 reconciliation strengthens the interpretation of those Findings without changing the citation set.
+
+The candidate continuity rule is now:
+
+> **Representations may evolve. Canonical place may not drift.**
+
+Where governed versions or representations are declared compatible, they must preserve lossless, deterministic correspondence to the same normalized mathematical object.
+
+This is already supported by the existing Requirements basis.
+
+No new Finding is required.
+
+Final Specification identity, formal version succession, migration policy, and incompatible-transition governance remain open institutional questions rather than missing Requirements.
+
+---
+
+# IX. Audit Disposition
+
+**REFERENCE VECTOR REQUIREMENT MAPPING AUDIT — PASS PRESERVED / DAY #126 RECONCILED**
 
 **12 VECTOR CATEGORIES — REQUIREMENTS-GROUNDED**
 
@@ -668,45 +717,42 @@ Therefore this audit does **not** recommend expanding the corpus beyond the exis
 
 **0 UNSUPPORTED VECTOR CATEGORIES**
 
-**2 PRIMARY REQUIREMENTS BASIS SETS TO STRENGTHEN**
+**2 PRIMARY REQUIREMENTS BASIS SETS — STRENGTHENED AND PRESERVED**
 
 - Addressing Vectors — add **#17 and #64**
-- Domain-Boundary Vectors — add **#9 and #20**
+- Survey Domain Limit Vectors — add **#9 and #20**
 
-**10 VECTOR PAGES — NO REQUIREMENTS-BASIS CHANGE**
+**10 VECTOR PAGES — NO REQUIREMENTS-BASIS CHANGE REQUIRED**
 
 **NO NEW VECTOR CATEGORY REQUIRED**
 
-**NO VECTOR FIXTURES CREATED**
+**DAY #115 AUDIT CREATED NO VECTOR FIXTURES; DAY #126 RECONCILIATION DOES NOT ALTER REQUIREMENTS OWNERSHIP**
 
-**NO EXPECTED RESULTS INVENTED**
+**NO REQUIREMENT OR EXPECTED RESULT INVENTED BY THIS AUDIT**
 
-**NO MATHEMATICS SELECTED**
+**NO MATHEMATICS SELECTED BY THIS REQUIREMENTS-MAPPING AUDIT**
 
 **NO FINDING #86 CREATED**
 
 ---
 
-# Day #115 Standing
+# X. Day #126 Reconciled Standing
 
-**TASK #5 — REFERENCE VECTOR REQUIREMENT MAPPING AUDIT — COMPLETE**
+**REFERENCE VECTOR REQUIREMENT MAPPING AUDIT — COMPLETE AND RECONCILED THROUGH DAY #126**
 
-Before the Foundational Survey Fabric closeout is final, the two citation corrections should be applied to their respective live Reference Vector pages.
+The original two citation corrections are now incorporated into the reconciled corpus standing.
 
-The next closeout task is:
+All twelve Reference Vector categories remain Requirements-grounded.
 
-**Task #6 — Adversarial Architecture Review**
+The current corpus rule is:
 
-That review should attack the completed Foundational Survey Fabric architecture for:
+```text
+Requirements establish the constraint basis.
+Specification defines the mathematics.
+Conformance defines proof obligations.
+Reference Vectors demonstrate expected results.
+```
 
-- contradictions;
-- unowned requirements;
-- hidden dependencies;
-- circularity;
-- premature mathematical commitments;
-- higher-layer leakage;
-- and anything that would prevent two independent implementations from eventually deriving the same canonical truth.
+Day #126 does not create new Requirements, alter Findings #1–#85, or use the Reference Vector corpus to resolve mathematics that the Specification leaves open.
 
-The objective is not to generate new requirements.
-
-The objective is to determine whether the architecture already established can survive deliberate attack.
+The Requirements-mapping audit therefore remains closed unless a future Reference Vector section introduces a materially new proof obligation or a governing Requirement itself is amended.
