@@ -4,7 +4,9 @@
 **Record Type:** Formal Mathematical Design Decision  
 **Creator Period:** Day #123 · September 27, 2026  
 **Subject:** Canonical Serialization and Interchange for Core FSF Geometry  
-**Status:** COMPLETE — MATHEMATICAL / REPRESENTATION DESIGN SELECTED  
+**Status:** COMPLETE — MATHEMATICAL / REPRESENTATION DESIGN SELECTED · AMENDED FOR SURVEY DOMAIN CAPACITY CORRECTION  
+**Original Decision:** Day #123 · September 27, 2026  
+**Current Amendment:** Day #126 · September 30, 2026  
 **Adoption Standing:** Selected for Specification development; not yet a formally adopted FSF Specification rule.
 
 ---
@@ -33,6 +35,9 @@ It serializes:
 - future compatible core geometry objects.
 
 The encoding SHALL preserve exact mathematical meaning without floating-point numbers, implementation-specific formatting, or ambiguous equivalent byte sequences.
+
+> **Day #126 Amendment — Survey Domain Serialization Correction**  
+> The original decision serialized the Survey Domain using the working ±1,000,000 Pang half-span inherited from FMD-04. Subsequent reconciliation determined that the numerical half-span lacked a source-derived capacity criterion. This decision is therefore amended so that **FSF-CJSON-1.0 preserves the Survey Domain structure without selecting the unresolved numerical capacity**. The candidate Domain remains a closed axis-aligned square centered at `(0,0)` and is represented parametrically by exact positive half-span `H`. Concrete canonical numerical Domain serialization cannot be final until FMD-04B selects `H`.
 
 ---
 
@@ -276,28 +281,42 @@ Example:
 
 ## 10. Survey Domain Serialization
 
-The selected canonical Survey Domain SHALL serialize as one explicit domain object:
+The candidate Survey Domain is parameterized as:
+
+```text
+D_H = {(x,y) : -H ≤ x ≤ H and -H ≤ y ≤ H}
+```
+
+where:
+
+```text
+H > 0
+H is an exact CRPC value
+```
+
+The canonical Survey Domain object SHALL therefore preserve the exact selected half-span once FMD-04B resolves `H`.
+
+Candidate structural form:
 
 ```json
 {
   "format":"FSF-CJSON-1.0",
-  "type":"fsf.survey-domain",
-  "x_max":{"d":"1","n":"1000000"},
-  "x_min":{"d":"1","n":"-1000000"},
-  "y_max":{"d":"1","n":"1000000"},
-  "y_min":{"d":"1","n":"-1000000"}
+  "half_span":{"d":"<positive-denominator>","n":"<positive-numerator>"},
+  "type":"fsf.survey-domain"
 }
 ```
 
-Canonical compact form:
+Canonical compact structural form:
 
 ```json
-{"format":"FSF-CJSON-1.0","type":"fsf.survey-domain","x_max":{"d":"1","n":"1000000"},"x_min":{"d":"1","n":"-1000000"},"y_max":{"d":"1","n":"1000000"},"y_min":{"d":"1","n":"-1000000"}}
+{"format":"FSF-CJSON-1.0","half_span":{"d":"<positive-denominator>","n":"<positive-numerator>"},"type":"fsf.survey-domain"}
 ```
 
-This object records the adopted mathematical bounds.
+The `half_span` value is semantically authoritative only after the governing Specification selects the numerical value of `H`.
 
-It does not imply the World equals the Domain.
+Until that selection occurs, this object shape is a **candidate serialization structure**, not a final canonical numerical Domain fixture.
+
+The Survey Domain remains distinct from The World and does not imply World membership.
 
 ---
 
@@ -368,11 +387,8 @@ For Survey Domain:
 
 ```text
 format
+half_span
 type
-x_max
-x_min
-y_max
-y_min
 ```
 
 No implementation may preserve arbitrary source key order when producing canonical output.
@@ -565,7 +581,11 @@ FSF-CJSON-1.0
 
 A future incompatible serialization change requires a new format identifier.
 
-A new format version SHALL NOT change the meaning of an already-established canonical place merely because its representation changes.
+A compatible future serialization change MAY add a governed alternate representation, field, wrapper, or transport mechanism only if exact canonical correspondence to the previously established mathematical object remains demonstrable.
+
+A new format version SHALL NOT move, renumber, reinterpret, or otherwise change the meaning of an already-established canonical place merely because its representation changes.
+
+Where two governed representations are declared compatible, there SHALL exist a lossless deterministic correspondence to the same normalized mathematical object.
 
 This preserves:
 
@@ -594,7 +614,7 @@ Other lossless representations MAY exist for:
 
 They are not canonical FSF serialization unless separately governed.
 
-They must map losslessly to the same normalized mathematical object.
+They must map losslessly and deterministically to the same normalized mathematical object, preserving canonical correspondence across representations.
 
 FSF-CJSON-1.0 is the primary canonical machine-readable representation selected here.
 
@@ -659,7 +679,7 @@ This preserves one owner for Survey mathematics.
 
 ## 31. Production World Geometry
 
-The final BitPangea World SCPE will therefore have a pipeline:
+The final BitPangea World SCPE will therefore have a pipeline once the required Survey Domain numerical capacity is available:
 
 ```text
 preferred normalized design silhouette
@@ -824,7 +844,8 @@ Future FSF serialization vectors SHALL include:
 
 - origin
 - fractional coordinates
-- Domain boundary coordinates
+- parameterized Domain boundary coordinates
+- final concrete numerical Domain boundary coordinates only after `H` is selected
 
 ### Segment
 
@@ -880,7 +901,7 @@ FSF-CJSON-1.0 satisfies the established FSF requirements for:
 - canonical normalization;
 - governed interchange.
 
-It remains compatible with the broader principle that future lossless representations may exist without redefining canonical mathematical meaning.
+It remains compatible with the broader principle that future lossless representations may exist without redefining canonical mathematical meaning. A later governed representation or format version may change encoding structure, but it SHALL preserve canonical mathematical correspondence to every previously established place and supported geometry unless an explicitly incompatible Specification transition says otherwise.
 
 No Requirement must be changed.
 
@@ -905,6 +926,7 @@ DUPLICATE KEYS — INVALID
 UNKNOWN FIELDS — INVALID
 SPECIFICATION INCORPORATION — PENDING
 SCHEMA / VALIDATOR — PENDING
+SURVEY DOMAIN NUMERICAL FIXTURE — PENDING FMD-04B
 CONFORMANCE / REFERENCE VECTORS — PENDING
 FORMAL ADOPTION — PENDING
 ```
@@ -939,7 +961,52 @@ unless the Specification explicitly says so.
 
 ---
 
-## 43. Standing
+## 43. Canonical Correspondence and Compatibility Continuity
+
+FSF-CJSON versioning SHALL preserve the distinction between:
+
+```text
+mathematical identity
+representation identity
+format identity
+Specification identity
+```
+
+A canonical Point, Segment, SCPE, or other supported mathematical object is not reidentified merely because its encoding version changes.
+
+For any pair of governed representations declared compatible:
+
+```text
+representation A
+→ normalize / interpret
+→ canonical mathematical object
+← normalize / interpret
+← representation B
+```
+
+the correspondence SHALL be:
+
+```text
+lossless
+deterministic
+meaning-preserving
+non-migrating
+independently reproducible
+```
+
+Forward or backward compatibility SHALL NOT be claimed merely because two formats can be parsed by the same implementation.
+
+Compatibility requires demonstrable preservation of the same canonical mathematical object.
+
+If a later format cannot preserve that correspondence exactly, the transition is incompatible and requires an explicit new version / migration rule rather than silent reinterpretation.
+
+This decision therefore preserves the lineage rule:
+
+> **Representations may evolve. Canonical place may not drift.**
+
+---
+
+## 44. Standing
 
 **PRIMARY CANONICAL SERIALIZATION — FSF-CJSON-1.0**
 
@@ -963,7 +1030,7 @@ unless the Specification explicitly says so.
 
 **FSF-B09 — DESIGN RESOLVED**
 
-**CLASS A SPATIAL GROUND BLOCKERS — DESIGN-LEVEL SOLUTIONS NOW SELECTED**
+**CLASS A CAPACITY-INDEPENDENT SPATIAL GROUND BLOCKERS — DESIGN-LEVEL SOLUTIONS NOW SELECTED**
 
 **PRECISION / REFINEMENT SEMANTICS — NEXT**
 
@@ -971,6 +1038,6 @@ unless the Specification explicitly says so.
 
 ---
 
-## 44. Governing Closing Statement
+## 45. Governing Closing Statement
 
 > **Canonical geometry is not merely exact in meaning; it must also settle into exact bytes. FSF-CJSON gives every supported Survey object one inspectable, deterministic machine representation without allowing parser behavior, floating point, or formatting preference to become spatial truth.**
