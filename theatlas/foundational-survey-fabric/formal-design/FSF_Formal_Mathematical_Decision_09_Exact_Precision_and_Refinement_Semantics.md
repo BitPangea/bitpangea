@@ -4,8 +4,12 @@
 **Record Type:** Formal Mathematical Design Decision  
 **Creator Period:** Day #123 · September 27, 2026  
 **Subject:** Exact Precision and Refinement Semantics  
-**Status:** COMPLETE — MATHEMATICAL DESIGN SELECTED  
-**Adoption Standing:** Selected for Specification development; not yet a formally adopted FSF Specification rule.
+**Status:** COMPLETE — MATHEMATICAL DESIGN SELECTED · AMENDED FOR DAY #126 LINEAGE / VERSION-COMPATIBILITY RECONCILIATION  
+**Adoption Standing:** Integrated into the candidate FSF Specification / Conformance / Reference Vector architecture; not yet canonically adopted.
+
+> **Day #126 Amendment — Lineage / Version-Compatibility Clarification**  
+> ECEM remains the selected candidate precision model. Subsequent integration confirms that compatible evolution may expand representational capability, serialization forms, or governed limits only where established canonical meaning is preserved exactly. Representation identity, format identity, Specification identity, and spatial identity remain distinct. Final institutional Specification identity, version succession, incompatible-transition / migration policy, and adoption authority remain separate governance questions.
+
 
 ---
 
@@ -183,6 +187,8 @@ Such extension enlarges what may be canonically expressed.
 
 It SHALL NOT alter what any previously valid reference means.
 
+Where compatibility is claimed across governed versions or representations, correspondence to the same normalized mathematical object SHALL be lossless and deterministic.
+
 ---
 
 ## 8. Monotonic Compatibility Rule
@@ -214,6 +220,20 @@ meaning_v(r) = meaning_(v+1)(r)
 ```
 
 This is the formal meaning of refinement without migration.
+
+The inclusion rule above governs **compatible capacity expansion**. It does not imply that every future Specification revision must be monotonic, nor does it define governance for an intentionally incompatible successor. Any incompatible transition would require explicit higher-level succession / migration governance and could not be described as ordinary compatible refinement.
+
+For compatibility analysis, the following identities remain distinct:
+
+```text
+mathematical identity
+≠ representation identity
+≠ format identity
+≠ Specification identity
+```
+
+Compatible change may alter the latter three only where the first remains invariant.
+
 
 ---
 
@@ -481,10 +501,12 @@ A canonical reference SHALL never be reused for a different Point.
 
 If a future representation becomes preferred, it must:
 
-- normalize to the same exact Point;
+- normalize losslessly and deterministically to the same exact Point where compatibility is claimed;
 - or receive a distinct reference if it denotes a different Point.
 
 Representation evolution cannot authorize semantic reassignment.
+
+> **Representations may evolve. Canonical place may not drift.**
 
 ---
 
@@ -760,9 +782,9 @@ MECHANISM — EXACT COORDINATE EXTENSION
 SUB-PANG PRECISION — CRPC FRACTIONS
 NAMED SUBUNITS — NOT REQUIRED
 HIERARCHICAL POINT REFINEMENT — REJECTED
-SPECIFICATION INCORPORATION — PENDING
-CONFORMANCE / REFERENCE VECTORS — PENDING
-FORMAL ADOPTION — PENDING
+SPECIFICATION INCORPORATION — INTEGRATED AT CANDIDATE LEVEL
+CONFORMANCE / REFERENCE VECTORS — RECONCILED FOR DEFINED CORE
+FORMAL ADOPTION — NOT YET PERFORMED
 ```
 
 ---
@@ -798,15 +820,17 @@ The following may still require later formal decisions but do not reopen canonic
 - exact derived-measure scalar types;
 - optional derived subdivision systems;
 - precision-conversion APIs;
-- richer composite geometry precision.
+- richer composite geometry precision;
+- final Specification identity and version-succession governance;
+- incompatible-transition / migration policy, if ever required.
 
 These are downstream formalization questions.
 
 ---
 
-## 40. Required Reference Vectors
+## 40. Reference Vector Standing
 
-Future FSF precision vectors SHALL test:
+The reconciled FSF Precision and Version / Conformance vectors now test the defined ECEM compatibility semantics. Required coverage includes:
 
 ### Exact Point Permanence
 
@@ -842,55 +866,89 @@ Future FSF precision vectors SHALL test:
 
 ## 41. Gate Consequence
 
-All Spatial Ground Class A blockers and both identified Class B blockers now have selected mathematical/design solutions:
+The later integration review refined the blocker standing.
+
+The current Day #126 blocker view is:
 
 ```text
 FSF-B01 — RESOLVED
 FSF-B02 — RESOLVED
 FSF-B03 — RESOLVED
-FSF-B04 — RESOLVED
+FSF-B04A — DOMAIN GEOMETRY / BOUNDARY — RESOLVED
+FSF-B04B — NUMERICAL DOMAIN CAPACITY H — OPEN
 FSF-B05 — RESOLVED
 FSF-B06 — RESOLVED
 FSF-B07 — RESOLVED
 FSF-B08 — RESOLVED
 FSF-B09 — RESOLVED
 FSF-B10 — RESOLVED
+FSF-B11 — CLOSED-SET / ARBITRARY DIFFERENCE COMPATIBILITY — OPEN
 ```
 
-Remaining general issue:
+The original FMD-09 conclusion that `FSF-B04` was wholly resolved is superseded. The candidate Survey Domain geometry is resolved as a closed axis-aligned square centered at `(0,0)`, but no source-derived criterion has yet selected the exact positive numerical half-span `H`.
+
+The Decisions 01–09 integration review has since been completed. Candidate Specification, Conformance, and Reference Vector work has also proceeded for the defined core. These later artifacts do not constitute canonical adoption.
+
+---
+
+## 42. Subsequent Integration Standing
+
+The recommended **FSF Candidate Mathematics Integration Review — Decisions 01–09** has since been completed.
+
+That review:
+
+1. combined the nine selected decisions;
+2. tested them against Findings #1–#85;
+3. reconciled cross-decision dependencies;
+4. identified still-open mathematics;
+5. distinguished capacity-independent candidate core behavior from unresolved gates;
+6. enabled executable candidate Conformance and Reference Vector work for the defined mathematics.
+
+The integrated candidate architecture therefore now exists.
+
+Remaining work is no longer to perform the initial Decisions 01–09 integration. It is to close the remaining formal gates, preserve compatibility semantics across future governed evolution, and withhold canonical adoption until the required institutional and proof conditions are satisfied.
+
+---
+
+## 43. Day #126 Compatibility / Lineage Consequence
+
+ECEM supplies the precision-side compatibility semantics for the integrated candidate FSF.
+
+A compatible successor MAY expand:
+
+- exact coordinate capacity;
+- governed complexity limits;
+- supported exact scalar forms;
+- supported exact geometry expressions;
+- or lossless normative representations.
+
+But compatibility requires that every previously supported canonical object continue to denote the same normalized mathematical object.
+
+Therefore:
 
 ```text
-FSF-B11 — Closed-set / arbitrary difference compatibility
+compatible evolution
+= expanded capability
++ preserved denotation
++ lossless deterministic correspondence
 ```
 
-remains outside the actual single-SCPE World-instance critical path.
+It does not mean:
 
-The next architectural task is therefore no longer another Spatial Ground dependency decision.
+```text
+compatible evolution
+= silent migration
+= renumbering
+= reinterpretation
+= approximate conversion
+= representation-defined place
+```
 
-It is to consolidate Decisions 01–09 into a coherent candidate FSF Specification profile and test that profile against the complete Requirements framework before any adoption.
-
----
-
-## 42. Recommended Next Step
-
-The next step SHOULD be:
-
-> **FSF Candidate Mathematics Integration Review — Decisions 01–09**
-
-That review should:
-
-1. combine the nine selected decisions;
-2. test them against Findings #1–#85;
-3. search for cross-decision contradiction;
-4. identify still-open mathematics that actually block implementation;
-5. distinguish production-critical from noncritical open questions;
-6. determine whether executable FSF Conformance and Reference Vectors may now begin.
-
-This is required before treating the selected mathematics as a coherent candidate Specification.
+Final institutional Specification identity, version identifiers, succession rules, incompatible-transition policy, migration governance, and canonical adoption authority remain separate from ECEM's mathematical continuity rule.
 
 ---
 
-## 43. Standing
+## 44. Standing
 
 **PRECISION MODEL — EXACT COORDINATE EXTENSION**
 
@@ -916,12 +974,18 @@ This is required before treating the selected mathematics as a coherent candidat
 
 **FSF-B10 — DESIGN RESOLVED**
 
-**FSF DECISIONS 01–09 — INTEGRATION REVIEW NEXT**
+**FSF DECISIONS 01–09 — INTEGRATION REVIEW COMPLETE**
+
+**SPECIFICATION / CONFORMANCE / REFERENCE VECTOR INTEGRATION — CANDIDATE-LEVEL COMPLETE FOR DEFINED CORE**
+
+**FINAL SPECIFICATION IDENTITY / VERSION SUCCESSION / MIGRATION GOVERNANCE — OPEN**
+
+**SURVEY DOMAIN NUMERICAL HALF-SPAN `H` — OPEN**
 
 **FORMAL SPECIFICATION ADOPTION — NOT YET PERFORMED**
 
 ---
 
-## 44. Governing Closing Statement
+## 45. Governing Closing Statement
 
 > **A canonical place does not become more exact when the Survey Fabric grows more capable. It was exact when first established. Refinement expands what can be expressed; it never moves what was already known.**
