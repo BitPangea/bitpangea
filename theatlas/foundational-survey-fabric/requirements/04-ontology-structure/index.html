@@ -116,6 +116,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 </p>
 </div>
 
+<div class="req-status">
+  <h3>Current Requirements Interpretation</h3>
+  <p>
+    These Requirements remain governing constraints. Subsequent FSF formal mathematical design has selected CRPC as the candidate exact coordinate model, ECEM as the candidate precision/refinement model, and a closed axis-aligned square centered at (0,0) as the candidate Survey Domain geometry. The numerical Survey Domain half-span remains open and is represented parametrically by exact positive H.
+  </p>
+</div>
+
 <blockquote>
   <span class="quote-label">Atlas Working Principle</span>
   The reference system is fundamental. The grid may be a way of expressing it.
@@ -140,8 +147,8 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="finding-number">Requirement Finding #20</div>
   <h2>Extensible Precision</h2>
   <p>The Foundational Survey Fabric should support additional exact spatial precision without requiring alteration of previously established canonical references or spatial truth.</p>
-  <p>The eventual mathematics may use hierarchical refinement, exact coordinate extension, symbolic subdivision, or another exact mechanism. No particular refinement structure should be treated as foundational merely because it is convenient to current implementations.</p>
-  <p>No arbitrary maximum precision should be imposed solely to satisfy foreseeable 2026 needs. Whether the final mathematics permits effectively unbounded refinement or defines a deliberately finite maximum precision should remain unresolved until mathematical design and conformance testing demonstrate what is required.</p>
+  <p>This Requirement originally preserved the precision mechanism as unresolved. Subsequent formal mathematical design has selected the <strong>Exact Coordinate Extension Model (ECEM)</strong> over <strong>Canonical Rational Pang Coordinates (CRPC)</strong> as the current candidate realization: additional exact precision expands representational capacity without creating mandatory hierarchical place states or changing established canonical meaning.</p>
+  <p>No arbitrary maximum precision should be imposed solely to satisfy foreseeable 2026 needs. Final governed complexity and representability limits remain a later Specification / Conformance question and must not be derived from implementation convenience.</p>
   <p>Additional precision should be usable where needed without requiring the entire Survey Domain to be materialized at that precision.</p>
   <div class="finding-principle"><span class="quote-label">Governing Principle</span>Preserve the ability to become more precise without prematurely choosing how precision must be structured.</div>
 </section>
@@ -166,7 +173,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 <section class="finding" id="finding-24">
   <div class="finding-number">Requirement Finding #24</div>
   <h2>Exact Foundational Mathematics</h2>
-  <p>Authoritative Foundational Survey Fabric mathematics should produce exact, deterministic spatial results rather than depend on implementation-specific numerical approximation. Rendering, visualization, simulation, navigation, and other higher-level systems may use approximate numerical methods where appropriate, but approximation must not determine canonical spatial meaning. The eventual mathematical representation may use integers, rational values, symbolic hierarchy, fixed-point methods, or another exact system; that implementation choice remains unresolved.</p>
+  <p>Authoritative Foundational Survey Fabric mathematics should produce exact, deterministic spatial results rather than depend on implementation-specific numerical approximation. Rendering, visualization, simulation, navigation, and other higher-level systems may use approximate numerical methods where appropriate, but approximation must not determine canonical spatial meaning. Subsequent formal mathematical design has selected <strong>CRPC — reduced rational Pang coordinates</strong> as the current candidate exact numeric representation for the solved core. This candidate selection does not alter the Requirement that canonical truth remain exact and implementation-independent.</p>
   <div class="finding-principle"><span class="quote-label">Governing Principle</span>Exact for truth. Approximate for experience.</div>
 </section>
 <section class="finding" id="finding-25">
@@ -228,7 +235,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 <div class="req-status">
   <h3>Section Standing</h3>
   <p>
-    Findings #18–#33 establish the Survey Fabric’s audited mathematical ontology and Survey Domain structure: no permanent cell ontology by default, a finite canonical Survey Domain, extensible precision without premature commitment to one refinement structure, self-resolving and non-reusable references, planar ground, exact mathematics, semantic separation of boundaries and containment, space without time, independence from higher-layer geometry and World membership, deterministic canonicalization, canonical extents, exact edge semantics, and one spatial mathematics capable of many exact spatial expressions.
+    Findings #18–#33 establish the Survey Fabric’s audited mathematical ontology and Survey Domain structure: no permanent cell ontology by default, a finite canonical Survey Domain, extensible precision, self-resolving and non-reusable references, planar ground, exact mathematics, semantic separation of boundaries and containment, space without time, independence from higher-layer geometry and World membership, deterministic canonicalization, canonical extents, exact edge semantics, and one spatial mathematics capable of many exact spatial expressions. Later formal mathematical design has selected CRPC, ECEM, and the candidate closed square Domain geometry while leaving numerical Domain capacity and several broader mathematical gates open.
   </p>
 </div>
 
