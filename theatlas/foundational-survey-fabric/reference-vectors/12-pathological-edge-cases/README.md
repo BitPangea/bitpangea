@@ -222,9 +222,13 @@ strict interior
 exact outside
 ```
 
-The numerical value of `H` remains open.
+The numerical value of `H` remains open under **FMD-04B — Numerical Survey Domain Capacity**.
 
-Therefore final numerical edge fixtures remain blocked.
+The closed-square geometry and boundary semantics are resolved under **FMD-04A — Survey Domain Geometry / Boundary**.
+
+The earlier ±1,000,000 Pang half-span is a superseded working candidate and shall not be used as an adversarial fixture value.
+
+Therefore final numerical edge fixtures remain blocked until FMD-04B closes.
 
 ---
 
@@ -351,7 +355,7 @@ to prove that hard input does not collapse the failure taxonomy.
 Stress should deliberately probe known open areas:
 
 ```text
-numerical Domain capacity H
+FMD-04B numerical Domain capacity H
 arbitrary exact rotation
 non-rational derived-scalar representation
 general Boolean result geometry
@@ -492,7 +496,7 @@ Section 12 can therefore move from abstract stress categories into executable ca
 Remaining Section 12 work includes:
 
 ```text
-final numerical Domain-edge stress after H selection
+final numerical Domain-edge stress after FMD-04B closure
 arbitrary exact rotation stress with canonical output
 non-rational derived-scalar stress with canonical output
 general Boolean result-geometry stress
@@ -536,7 +540,7 @@ TERMINATION STRESS — TESTABLE
 SPECIFICATION AMBIGUITY PROBES — TESTABLE
 HIGHER-LAYER LEAKAGE PROBES — TESTABLE
 
-FINAL NUMERICAL DOMAIN-EDGE STRESS — OPEN UNTIL H
+FINAL NUMERICAL DOMAIN-EDGE STRESS — OPEN UNTIL FMD-04B CLOSES
 ARBITRARY EXACT ROTATION STRESS — OPEN
 NON-RATIONAL DERIVED-SCALAR STRESS — OPEN
 GENERAL BOOLEAN RESULT-GEOMETRY STRESS — OPEN
