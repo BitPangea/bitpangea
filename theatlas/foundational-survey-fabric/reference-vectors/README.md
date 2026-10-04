@@ -142,9 +142,11 @@ H > 0
 H is exact CRPC
 ```
 
-The Domain shape and boundary semantics are candidate-defined.
+The Domain shape and boundary semantics are candidate-defined under **FMD-04A — Survey Domain Geometry / Boundary**.
 
-The numerical value of `H` remains open.
+The numerical value of `H` remains open under **FMD-04B — Numerical Survey Domain Capacity**.
+
+The earlier ±1,000,000 Pang half-span is a superseded working candidate and is not canonical.
 
 Therefore:
 
@@ -156,7 +158,7 @@ parameterized Domain vectors
     -> executable now
 
 concrete numerical edge fixtures
-    -> not final until H is selected
+    -> not final until FMD-04B resolves H
 ```
 
 ---
@@ -166,7 +168,7 @@ concrete numerical edge fixtures
 The major remaining mathematical dependencies include:
 
 ```text
-numerical Survey Domain half-span H
+FMD-04B numerical Survey Domain half-span H
 final angular unit
 arbitrary exact rotation
 exact rotated-coordinate result type
@@ -549,7 +551,7 @@ Reference Vectors may not:
 
 ```text
 invent missing mathematics
-select unresolved H
+select unresolved FMD-04B numerical H
 select an angular unit
 invent arbitrary-rotation closure
 invent non-rational result types
@@ -632,7 +634,7 @@ FSF-CJSON-1.0 TEST SURFACE — AVAILABLE
 CONFORMANCE TEST SURFACE — AVAILABLE
 ADVERSARIAL TEST SURFACE — AVAILABLE
 
-NUMERICAL DOMAIN H — OPEN
+FMD-04B NUMERICAL DOMAIN H — OPEN
 ARBITRARY EXACT ROTATION — OPEN
 NON-RATIONAL DERIVED-SCALAR MODEL — OPEN
 GENERAL BOOLEAN RESULT GEOMETRY — OPEN
