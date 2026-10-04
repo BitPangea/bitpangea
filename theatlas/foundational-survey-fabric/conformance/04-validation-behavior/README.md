@@ -185,6 +185,18 @@ only then higher-layer membership
 
 The Domain’s numerical capacity is governed by the applicable Specification state; Conformance does not independently select or alter it.
 
+Under the current candidate model:
+
+```text
+D_H = {(x,y) : -H ≤ x ≤ H and -H ≤ y ≤ H}
+```
+
+**FMD-04A — Survey Domain Geometry / Boundary** resolves the closed-square geometry and included boundary.
+
+**FMD-04B — Numerical Survey Domain Capacity** remains OPEN.
+
+The earlier ±1,000,000 Pang half-span is a superseded working candidate and is not a canonical Conformance limit.
+
 ---
 
 ## Point Validation
@@ -386,6 +398,7 @@ A capability that remains mathematically open in the Specification does not beco
 Examples include:
 
 ```text
+FMD-04B numerical Domain capacity for concrete edge limits
 general Boolean / composite output closure
 general union / intersection / difference result forms
 arbitrary exact rotation
@@ -457,7 +470,7 @@ invalid CRPC
 invalid Point
 invalid Segment
 invalid SCPE
-Domain failure
+parameterized Domain failure
 malformed FSF-CJSON
 semantic FSF-CJSON failure
 lossy representation
@@ -539,6 +552,7 @@ open mathematics
 The remaining Conformance design work includes:
 
 ```text
+FMD-04B numerical Domain capacity for final concrete edge judgments
 final machine-readable validation codes
 complete canonical error taxonomy
 parser error identifiers
@@ -570,6 +584,8 @@ VALID NONCANONICAL — DEFINED
 INVALID — DEFINED
 CRPC VALIDATION — EXECUTABLE
 POINT / SEGMENT / SCPE VALIDATION — EXECUTABLE
+DOMAIN VALIDATION — EXECUTABLE PARAMETRICALLY UNDER D_H
+FMD-04B NUMERICAL DOMAIN CAPACITY — OPEN
 NORMALIZATION ELIGIBILITY — EXECUTABLE
 ECEM SEMANTICS — VALIDATABLE
 FSF-CJSON-1.0 VALIDATION — EXECUTABLE
