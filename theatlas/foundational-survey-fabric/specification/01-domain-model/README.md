@@ -25,26 +25,33 @@ The Survey Domain establishes where canonical Survey reference is possible. It d
 
 The current integrated candidate selects one finite, closed, connected, two-dimensional Survey Domain.
 
-The Domain is an axis-aligned square centered on the permanent canonical origin:
+The Domain is an axis-aligned square centered on the permanent canonical origin and parameterized by one exact positive CRPC half-span:
 
 ```text
-D =
-[-1,000,000,+1,000,000]
+H > 0
+
+D_H =
+[-H,+H]
 ×
-[-1,000,000,+1,000,000]
-Pang
+[-H,+H]
 ```
 
 Therefore:
 
 ```text
-width  = 2,000,000 Pang
-height = 2,000,000 Pang
-area   = 4,000,000,000,000 square Pang
+width  = 2H Pang
+height = 2H Pang
+area   = 4H² square Pang
 origin = (0,0)
 ```
 
 The Domain boundary is included.
+
+**FMD-04A — geometry / boundary — is resolved at candidate level.**
+
+**FMD-04B — numerical half-span H — remains OPEN.**
+
+The earlier ±1,000,000 Pang value is a superseded working candidate and is not canonical.
 
 A candidate Point:
 
@@ -55,9 +62,9 @@ p = (x,y)
 is a valid Survey Point exactly when:
 
 ```text
--1,000,000 ≤ x ≤ +1,000,000
+-H ≤ x ≤ +H
 and
--1,000,000 ≤ y ≤ +1,000,000
+-H ≤ y ≤ +H
 ```
 
 with `x` and `y` expressed as valid normalized CRPC Pang coordinates.
@@ -110,17 +117,23 @@ The origin is mathematical only and carries no civic, cultural, geographic, poli
 
 ### FMD-04 — Survey Domain Geometry and Dimensions
 
-**Directly relevant — integrated as candidate Specification content.**
+**Directly relevant — partially integrated as candidate Specification content.**
 
-FMD-04 selects:
+FMD-04 now separates two questions:
 
-- one closed axis-aligned square;
-- exact bounds of ±1,000,000 Pang on both axes;
-- included Domain boundary;
-- exact width, height, and area;
-- separation between reference capacity and World-space.
+- **FMD-04A — geometry / boundary:** resolved as one closed axis-aligned square centered at `(0,0)`;
+- **FMD-04B — numerical Domain capacity:** open.
 
-This is the principal mathematical change from the pre-integration Specification 01, which previously left Domain geometry and numerical dimensions open.
+The parameterized candidate Domain is:
+
+```text
+D_H = [-H,+H] × [-H,+H]
+H > 0
+```
+
+Boundary inclusion, symmetry, and exact validity semantics are integrated here.
+
+The numerical value of `H` is not yet selected and shall not be inferred from the superseded ±1,000,000 Pang working candidate.
 
 ---
 
@@ -205,7 +218,7 @@ The following previously open matters are now filled by candidate mathematics:
 ```text
 exact coordinate mathematics  -> CRPC
 exact Domain geometry         -> closed axis-aligned square
-exact numerical bounds        -> ±1,000,000 Pang
+exact numerical bounds        -> parameterized as ±H; numerical H OPEN
 boundary inclusion            -> included
 origin relationship           -> midpoint of bounds, normalized to (0,0)
 Domain membership test        -> exact coordinate inequalities
@@ -230,10 +243,11 @@ The following original architectural rules remain intact:
 
 ## Remaining Open Matters
 
-Specification 01 itself no longer lacks production-critical Domain mathematics.
+Specification 01 has one remaining production-relevant Domain question: the numerical Survey Domain half-span `H`.
 
-However, the complete FSF Specification still has open work elsewhere, including:
+In addition, the complete FSF Specification still has open work elsewhere, including:
 
+- numerical Survey Domain half-span `H`;
 - canonical public address grammar;
 - canonical angular representation;
 - exact general distance scalar closure;
@@ -301,13 +315,14 @@ This `README.md` preserves the repository-facing mathematical summary, integrati
 ## Standing
 
 ```text
-SPECIFICATION 01 — CANDIDATE MATHEMATICS INTEGRATED
+SPECIFICATION 01 — CANDIDATE DOMAIN GEOMETRY INTEGRATED
 DOMAIN — FINITE CLOSED AXIS-ALIGNED SQUARE
 COORDINATES — CRPC
-BOUNDS — ±1,000,000 PANG
+BOUNDS — [-H,+H] × [-H,+H]
+NUMERICAL HALF-SPAN H — OPEN
 ORIGIN — (0,0)
 DOMAIN BOUNDARY — INCLUDED
-DOMAIN VALIDITY — EXACT
+DOMAIN VALIDITY — EXACT / PARAMETERIZED
 SURVEY DOMAIN = WORLD — FALSE
 MANDATORY GRID / SUBDIVISION — NONE
 PARENT / CHILD POINT SEMANTICS — NONE
