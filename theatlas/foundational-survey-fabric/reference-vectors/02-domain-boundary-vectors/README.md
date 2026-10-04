@@ -84,7 +84,11 @@ square
 centered at (0,0)
 ```
 
-The exact numerical value of `H` remains open.
+The exact numerical value of `H` remains open under **FMD-04B — Numerical Survey Domain Capacity**.
+
+The geometry and boundary semantics are resolved separately under **FMD-04A — Survey Domain Geometry / Boundary**.
+
+The earlier ±1,000,000 Pang half-span is a superseded working candidate and is not canonical.
 
 ---
 
@@ -272,13 +276,13 @@ parameterized interior / boundary / outside vectors
     -> testable now
 
 concrete numerical edge coordinates
-    -> blocked until H is selected
+    -> blocked until FMD-04B resolves H
 
 canonical just-inside / just-outside numeric fixtures
-    -> blocked until H is selected
+    -> blocked until FMD-04B resolves H
 ```
 
-No Reference Vector may select a convenient number for `H` merely to make the corpus easier to write.
+No Reference Vector may select a convenient number for `H` merely to make the corpus easier to write. Reference Vectors demonstrate the governing Specification; they do not close FMD-04B.
 
 ---
 
@@ -383,7 +387,7 @@ Accordingly, Section 02 can now support exact symbolic and parameterized Referen
 Remaining Section 02 work includes:
 
 ```text
-final numerical H
+FMD-04B numerical H
 final concrete edge coordinates
 final near-boundary numerical fixtures
 final vector identifiers
