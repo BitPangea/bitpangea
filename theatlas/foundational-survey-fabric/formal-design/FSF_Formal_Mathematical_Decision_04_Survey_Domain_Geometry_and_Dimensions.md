@@ -4,8 +4,17 @@
 **Record Type:** Formal Mathematical Design Decision  
 **Creator Period:** Day #122 · September 26, 2026  
 **Subject:** Exact Survey Domain Geometry and Dimensions  
-**Status:** COMPLETE — MATHEMATICAL DESIGN SELECTED  
-**Adoption Standing:** Selected for Specification development; not yet a formally adopted FSF Specification rule.
+**Status:** PARTIAL — DOMAIN GEOMETRY SELECTED · NUMERICAL CAPACITY OPEN  
+**Adoption Standing:** Domain geometry selected for Specification development; numerical half-span remains unresolved; not yet a formally adopted FSF Specification rule.
+
+> **Current Reconciliation Note**  
+> The original Day #122 record selected a numerical half-span of ±1,000,000 Pang without a source-derived capacity criterion sufficient to make that value canonical. Subsequent integration review therefore split the decision into:
+>
+> - **FMD-04A — Survey Domain geometry / boundary:** RESOLVED;
+> - **FMD-04B — numerical Survey Domain capacity:** OPEN.
+>
+> This record preserves the selected square geometry, axis alignment, origin relationship, closed boundary, and exact finite-domain semantics while reopening only the numerical half-span.
+
 
 ---
 
@@ -13,27 +22,26 @@
 
 The canonical Foundational Survey Fabric Domain SHALL be one **closed axis-aligned square** centered on the permanent Survey origin.
 
-Its exact canonical limits SHALL be:
+Its exact canonical limits SHALL be expressed using one positive exact CRPC half-span parameter:
 
 ```text
-x ∈ [-1,000,000 , +1,000,000] Pang
-y ∈ [-1,000,000 , +1,000,000] Pang
+H > 0
 ```
 
-Therefore:
+such that:
 
 ```text
-X = 1,000,000 Pang
-Y = 1,000,000 Pang
+x ∈ [-H,+H]
+y ∈ [-H,+H]
 ```
 
-and the canonical Survey Domain is:
+Therefore the candidate Survey Domain is:
 
 ```text
-D =
-[-1,000,000,+1,000,000]
+D_H =
+[-H,+H]
 ×
-[-1,000,000,+1,000,000]
+[-H,+H]
 ```
 
 in the CRPC coordinate system.
@@ -42,31 +50,33 @@ The Domain boundary is included.
 
 The Domain is therefore one exact, finite, closed, connected planar extent.
 
+**The numerical value of H is not selected by this decision and remains OPEN under FMD-04B.**
+
 ---
 
 ## 2. Canonical Dimensions
 
-The selected Domain has:
+For exact positive half-span `H`, the Domain has:
 
 ```text
-width  = 2,000,000 Pang
-height = 2,000,000 Pang
+width  = 2H Pang
+height = 2H Pang
 ```
 
 and exact area:
 
 ```text
-4,000,000,000,000 square Pang
+4H² square Pang
 ```
 
 The four extreme axis bounds are:
 
 ```text
-Panvel-most  = -1,000,000 Pang
-Panoris-most = +1,000,000 Pang
+Panvel-most  = -H
+Panoris-most = +H
 
-Panvath-most = -1,000,000 Pang
-Pankor-most  = +1,000,000 Pang
+Panvath-most = -H
+Pankor-most  = +H
 ```
 
 The permanent canonical origin remains:
@@ -74,6 +84,8 @@ The permanent canonical origin remains:
 ```text
 (0,0)
 ```
+
+These expressions are exact for any governing Specification value of `H`.
 
 ---
 
@@ -88,14 +100,16 @@ p = (x,y)
 belongs to the Survey Domain exactly when:
 
 ```text
--1,000,000 ≤ x ≤ +1,000,000
+-H ≤ x ≤ +H
 and
--1,000,000 ≤ y ≤ +1,000,000
+-H ≤ y ≤ +H
 ```
 
-with all values interpreted as exact CRPC Pang coordinates.
+with `H > 0` and all values interpreted as exact CRPC Pang coordinates.
 
 No tolerance is permitted.
+
+Until the governing Specification selects the numerical value of `H`, this definition is authoritative only in parameterized form.
 
 ---
 
@@ -105,19 +119,21 @@ The Survey Domain SHALL be closed.
 
 Therefore all four outer edges and all four corner points belong to valid Survey space.
 
-Examples:
+Parameterized examples:
 
 ```text
-(+1,000,000, 0)       valid
-(-1,000,000, 0)       valid
-(0, +1,000,000)       valid
-(0, -1,000,000)       valid
+(+H, 0) valid
+(-H, 0) valid
+(0, +H) valid
+(0, -H) valid
 
-(+1,000,000,+1,000,000) valid
-(-1,000,000,-1,000,000) valid
+(+H,+H) valid
+(-H,-H) valid
 ```
 
-A point exceeds the Domain if either coordinate lies strictly outside the permitted interval.
+A point exceeds the Domain if either coordinate lies strictly outside the interval `[-H,+H]`.
+
+Concrete numerical boundary fixtures remain conditional on the Specification's eventual selection of `H`.
 
 ---
 
@@ -173,48 +189,50 @@ Equal bounds therefore provide the cleaner neutral baseline.
 
 ---
 
-## 8. Why ±1,000,000 Pang
+## 8. Numerical Half-Span — FMD-04B OPEN
 
-The half-span:
+The original record selected:
 
 ```text
-1,000,000 Pang
+H = 1,000,000 Pang
 ```
 
-is selected because it is:
+because the value was exactly representable, human-readable, auditable, large, implementation-independent, and symbolically neutral.
 
-- exactly representable;
-- human-readable;
-- easily audited;
-- large enough to provide substantial World and non-World capacity;
-- independent of implementation word size;
-- free of required symbolic or cultural meaning.
+Those are useful qualities, but they do **not** establish a source-derived capacity criterion.
 
-The value is a mathematical capacity choice only.
+Accordingly, ±1,000,000 Pang is preserved only as a **superseded working candidate** and SHALL NOT be treated as canonical.
 
-It does not encode:
+FMD-04B must determine whether the governing Specification requires a numerical half-span and, if so, what criterion authorizes its selection.
 
-- Bitcoin supply;
-- a historical date;
-- a population;
-- a Parcel count;
-- a geographic scale claim;
-- a hidden symbolic message.
+A valid selection must not rely merely upon:
+
+- round-number convenience;
+- aesthetic preference;
+- unused capacity for its own sake;
+- implementation word size;
+- Bitcoin symbolism;
+- Parcel count symbolism;
+- an arbitrary engineering comfort margin.
+
+The numerical capacity question therefore remains OPEN.
 
 ---
 
 ## 9. Capacity Principle
 
-The Survey Domain is intentionally much larger than the minimum space necessary to hold the preferred BitPangea silhouette.
+The Survey Domain must provide sufficient finite canonical reference capacity for the World-space instance and any valid non-World Survey space required by the architecture.
 
-This allows:
+The Domain may provide:
 
-- meaningful non-World Survey capacity around The World;
-- future higher-layer reference outside current World-space where constitutionally permissible;
-- exact tests of World/non-World membership within valid Survey space;
-- future spatial architecture without forcing Domain expansion merely because The World occupies substantial area.
+- non-World Survey capacity around The World;
+- exact tests of World / non-World membership within valid Survey space;
+- future higher-layer reference where constitutionally permissible;
+- stable finite reference without runtime expansion.
 
 The unused portion of the Survey Domain has no automatic higher-layer meaning.
+
+The amount of required reserve capacity is **not yet established** and may not be used as an unstated justification for selecting `H`.
 
 ---
 
@@ -311,10 +329,10 @@ The square itself contains no holes.
 The four exact corner points are:
 
 ```text
-C_NE = (+1,000,000,+1,000,000)
-C_NW = (-1,000,000,+1,000,000)
-C_SW = (-1,000,000,-1,000,000)
-C_SE = (+1,000,000,-1,000,000)
+C_NE = (+H,+H)
+C_NW = (-H,+H)
+C_SW = (-H,-H)
+C_SE = (+H,-H)
 ```
 
 These names are formal directional labels only.
@@ -329,20 +347,20 @@ The Domain boundary consists of exactly four closed line segments:
 
 ```text
 B_N:
-y = +1,000,000
-x ∈ [-1,000,000,+1,000,000]
+y = +H
+x ∈ [-H,+H]
 
 B_S:
-y = -1,000,000
-x ∈ [-1,000,000,+1,000,000]
+y = -H
+x ∈ [-H,+H]
 
 B_E:
-x = +1,000,000
-y ∈ [-1,000,000,+1,000,000]
+x = +H
+y ∈ [-H,+H]
 
 B_W:
-x = -1,000,000
-y ∈ [-1,000,000,+1,000,000]
+x = -H
+y ∈ [-H,+H]
 ```
 
 Any shared corner belongs to both adjoining boundary segments but denotes one canonical position.
@@ -355,13 +373,13 @@ Because the Domain is a square:
 
 ```text
 A_D =
-2,000,000 × 2,000,000
+(2H) × (2H)
 ```
 
 therefore:
 
 ```text
-A_D = 4,000,000,000,000 square Pang
+A_D = 4H² square Pang
 ```
 
 This area is exact.
@@ -378,9 +396,9 @@ The Domain perimeter is exactly:
 
 ```text
 P_D =
-4 × 2,000,000
+4 × 2H
 =
-8,000,000 Pang
+8H Pang
 ```
 
 This is exact because all Domain edges are axis-aligned rational line segments.
@@ -455,19 +473,19 @@ Those structures may be mathematically derived later if useful, but the Domain i
 
 ## 23. CRPC Compatibility
 
-All Domain extrema are exact integers and therefore exact CRPC values:
+The Domain extrema SHALL be exact CRPC values once `H` is selected by the governing Specification:
 
 ```text
-±1,000,000 = ±1,000,000/1 Pang
+±H = exact CRPC values when H is selected as an exact CRPC scalar
 ```
 
-All corners and axis-boundary positions therefore remain exactly expressible within the selected coordinate scalar system.
+All corners and axis-boundary positions therefore remain exactly expressible within the selected coordinate scalar system, provided the selected `H` is itself an exact CRPC value.
 
 ---
 
 ## 24. Spatial Ground Compatibility
 
-The preferred BitPangea silhouette may now be placed inside a known finite canonical capacity.
+The preferred BitPangea silhouette may be placed inside the parameterized finite canonical capacity once the governing Specification selects `H`.
 
 Spatial Ground can select exact:
 
@@ -480,8 +498,8 @@ translation ty
 such that every transformed World boundary point satisfies:
 
 ```text
--1,000,000 < x_world < +1,000,000
--1,000,000 < y_world < +1,000,000
+-H < x_world < +H
+-H < y_world < +H
 ```
 
 with positive margin in every canonical direction.
@@ -490,15 +508,15 @@ Because the source design coordinates are rational and the production transform 
 
 ---
 
-## 25. Production Capacity Recommendation
+## 25. Production Capacity Relationship
 
-This FSF decision does not determine the final World scale.
+This FSF decision does not determine final World scale or final World placement.
 
-However, Spatial Ground SHOULD avoid using nearly all available Domain capacity.
+Spatial Ground SHALL NOT use desired World placement as an unreviewed mechanism for selecting the foundational Survey half-span.
 
-A prudent production placement should leave substantial non-World Survey capacity rather than maximizing World size merely because space exists.
+Once `H` is selected, Spatial Ground may choose an exact positive uniform scale and translation that preserve the required margin and all adopted membership constraints.
 
-The exact scale remains a Spatial Ground production decision.
+Whether a minimum or preferred reserve margin is itself required remains a separate dependency to be established rather than assumed.
 
 ---
 
@@ -509,9 +527,9 @@ Conceptually:
 ```text
 valid_position(x,y)
 =
-(-1,000,000 ≤ x ≤ +1,000,000)
+(-H ≤ x ≤ +H)
 AND
-(-1,000,000 ≤ y ≤ +1,000,000)
+(-H ≤ y ≤ +H)
 ```
 
 This function determines whether a coordinate position lies within the Survey Domain.
@@ -522,7 +540,7 @@ It does not determine World membership.
 
 ## 27. Domain Reference Vectors
 
-Future FSF Reference Vectors SHALL include at minimum:
+FSF Reference Vectors MAY proceed parametrically using `H` and SHALL include at minimum once the governing Specification selects a numerical half-span:
 
 ### Interior
 
@@ -537,19 +555,19 @@ Future FSF Reference Vectors SHALL include at minimum:
 ### Boundary
 
 ```text
-(+1,000,000,0)
-(-1,000,000,0)
-(0,+1,000,000)
-(0,-1,000,000)
+(+H,0)
+(-H,0)
+(0,+H)
+(0,-H)
 ```
 
 ### Corners
 
 ```text
-(+1,000,000,+1,000,000)
-(-1,000,000,+1,000,000)
-(-1,000,000,-1,000,000)
-(+1,000,000,-1,000,000)
+(+H,+H)
+(-H,+H)
+(-H,-H)
+(+H,-H)
 ```
 
 ### Immediately Outside
@@ -557,10 +575,10 @@ Future FSF Reference Vectors SHALL include at minimum:
 Using exact rational offsets:
 
 ```text
-(+1,000,000 + 1/2, 0)
-(-1,000,000 - 1/2, 0)
-(0, +1,000,000 + 1/2)
-(0, -1,000,000 - 1/2)
+(+H + 1/2, 0)
+(-H - 1/2, 0)
+(0, +H + 1/2)
+(0, -H - 1/2)
 ```
 
 The first three categories are valid Survey positions.
@@ -585,7 +603,7 @@ The final category is invalid.
 
 ## 29. Requirements Compatibility Judgment
 
-The selected Domain satisfies the established FSF requirements that:
+The selected Domain geometry satisfies the established FSF requirements that:
 
 - the Survey Domain be finite;
 - canonical ground be planar and two-dimensional;
@@ -602,65 +620,76 @@ No Requirement must be changed.
 
 ## 30. Gate Effect
 
-Spatial Ground blocker:
+The former single blocker:
 
 ```text
 FSF-B04 — Numerical Survey Domain Geometry
 ```
 
-is now:
+is now split:
 
 ```text
-MATHEMATICAL DESIGN — RESOLVED
+FSF-B04A — DOMAIN GEOMETRY / BOUNDARY
+STATUS — RESOLVED
 SHAPE — CLOSED AXIS-ALIGNED SQUARE
-HALF-SPAN — 1,000,000 PANG
-FULL WIDTH — 2,000,000 PANG
-FULL HEIGHT — 2,000,000 PANG
 ORIGIN — INTERIOR AT (0,0)
-SPECIFICATION INCORPORATION — PENDING
-CONFORMANCE / REFERENCE VECTORS — PENDING
-FORMAL ADOPTION — PENDING
+BOUNDARY — INCLUDED
+
+FSF-B04B — NUMERICAL DOMAIN CAPACITY
+STATUS — OPEN
+HALF-SPAN — H > 0
+NUMERICAL VALUE — NOT YET SELECTED
 ```
 
-Spatial Ground may now proceed to calculate an exact production placement once the FSF polygon / extent primitive and exact geometry predicates are settled.
+Current downstream standing:
+
+```text
+SPECIFICATION INCORPORATION — PARAMETERIZED AT CANDIDATE LEVEL
+CONFORMANCE — PARAMETERIZED / CAPACITY-INDEPENDENT CORE AVAILABLE
+REFERENCE VECTORS — PARAMETERIZED / CAPACITY-INDEPENDENT CORE AVAILABLE
+FORMAL ADOPTION — NOT YET PERFORMED
+```
+
+Spatial Ground may consume the resolved FSF geometry and parameterized Domain semantics, but concrete production placement and numerical Domain-edge proof cannot become final until FMD-04B is closed or a closure audit determines that another governed mechanism supplies the necessary capacity decision.
 
 ---
 
-## 31. Next Formal Mathematical Decision
+## 31. Current Formal Question
 
-The next decision SHALL address:
+The next unresolved question within this decision is:
 
-> **Canonical Primitive Geometry — Point, Segment, and Closed Polygonal Extent**
+> **FMD-04B — What source-derived criterion, if any, determines the exact numerical Survey Domain half-span `H`?**
 
-This decision must determine the smallest exact primitive set required to support:
+This inquiry must distinguish:
 
-- canonical positions;
-- finite line segments;
-- simple closed polygonal extents;
-- boundary inclusion;
-- interior;
-- polygon validity;
-- World-space FEBCM geometry.
+- minimum required capacity;
+- required non-World Survey reserve, if any;
+- World-placement dependencies that belong to Spatial Ground rather than FSF;
+- implementation convenience from canonical mathematical necessity;
+- future extensibility from unsupported over-provisioning;
+- symbolic or aesthetic number choice from authoritative spatial requirement.
 
-It should avoid introducing curves or richer geometry unless the Requirements demonstrably require them at the foundational level.
+No numerical value SHALL be selected until that criterion is demonstrated.
 
 ---
 
 ## 32. Standing
 
-**SURVEY DOMAIN SHAPE — CLOSED SQUARE**
+**SURVEY DOMAIN SHAPE — CLOSED AXIS-ALIGNED SQUARE**
 
-**DOMAIN X LIMITS — ±1,000,000 PANG**
+**DOMAIN X LIMITS — [-H,+H]**
 
-**DOMAIN Y LIMITS — ±1,000,000 PANG**
+**DOMAIN Y LIMITS — [-H,+H]**
 
-**WIDTH — 2,000,000 PANG**
+**HALF-SPAN H — EXACT POSITIVE CRPC VALUE · NUMERICAL VALUE OPEN**
 
-**HEIGHT — 2,000,000 PANG**
+**WIDTH — 2H PANG**
 
-**AREA — 4,000,000,000,000 SQUARE PANG**
+**HEIGHT — 2H PANG**
 
-**PERIMETER — 8,000,000 PANG**
+**AREA — 4H² SQUARE PANG**
+
+**PERIMETER — 8H PANG**
 
 **ORIGIN — (0,0), INTERIOR**
 
@@ -670,7 +699,11 @@ It should avoid introducing curves or richer geometry unless the Requirements de
 
 **WORLD EQUIVALENCE — REJECTED**
 
-**CANONICAL PRIMITIVE GEOMETRY — NEXT**
+**FMD-04A — COMPLETE**
+
+**FMD-04B — OPEN**
+
+**CANONICAL PRIMITIVE GEOMETRY — CANDIDATE RESOLVED ELSEWHERE**
 
 **FORMAL SPECIFICATION ADOPTION — NOT YET PERFORMED**
 
@@ -678,4 +711,4 @@ It should avoid introducing curves or richer geometry unless the Requirements de
 
 ## 33. Governing Closing Statement
 
-> **The Survey Domain is deliberately simple: one exact square, two million Pangs across, centered on a permanent zero-reference. It defines the finite space in which canonical reference is possible—not the shape, meaning, or extent of The World itself.**
+> **The Survey Domain is deliberately simple: one exact closed square centered on a permanent zero-reference. Its geometry is selected; its numerical capacity is not. The Domain defines the finite space in which canonical reference is possible—not the shape, meaning, or extent of The World itself.**
