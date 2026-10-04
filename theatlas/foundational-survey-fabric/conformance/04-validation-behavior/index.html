@@ -113,7 +113,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">04.0 · Integrated Specification Standing</div>
   <h2>Validation Is Now Executable for the Solved Core</h2>
   <p>
-    Specification Sections 01–07 now define deterministic candidate validity and normalization rules for the current Mandatory Core.
+    Specification Sections 01–07 now define deterministic candidate validity and normalization rules for the current Mandatory Core. Survey Domain validity is exact but remains parameterized by the governing half-span <strong>H</strong> until FMD-04B closes.
   </p>
   <p>
     Conformance may therefore test exact input classification, normalization eligibility, semantic preservation, invalidity, and canonical serialization behavior without relying on tolerance or implementation-specific guesswork.
@@ -174,13 +174,16 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">04.5 · Domain Validation</div>
   <h2>Reject Reference Outside the Governed Survey Domain</h2>
   <p>
-    A mathematically structured coordinate or geometry whose required spatial content falls outside the governed Survey Domain shall fail Domain validation according to the applicable Specification rules.
+    A mathematically structured coordinate or geometry whose required spatial content falls outside the governed Survey Domain shall fail Domain validation according to the applicable Specification rules. Under the current candidate model, the Domain is <strong>D<sub>H</sub> = {(x,y) : -H ≤ x ≤ H and -H ≤ y ≤ H}</strong>.
   </p>
   <p>
     It shall not be reinterpreted as Exterior, neighboring territory, alternate World-space, or another semantic category merely because its syntax can be parsed.
   </p>
   <p>
-    Survey validity is resolved before any higher-layer World-membership meaning is considered.
+    Survey validity is resolved before any higher-layer World-membership meaning is considered. <strong>FMD-04A</strong> supplies the closed-square geometry and boundary semantics; <strong>FMD-04B</strong> leaves the numerical value of <strong>H</strong> open. Conformance applies the governing value or parameterized rule; it does not select the capacity.
+  </p>
+  <p>
+    The earlier ±1,000,000 Pang half-span is a superseded working candidate and shall not be used by Conformance as a canonical Domain limit.
   </p>
 </section>
 
@@ -346,13 +349,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="status-card">
     <h3>Executable Validation Now Defined</h3>
     <p>
-      Canonical-valid / valid-noncanonical / invalid classification; CRPC validation; Point / Segment / SCPE validity; exact Domain validation; deterministic normalization; ECEM semantics; FSF-CJSON-1.0 structure; lossless/lossy distinction; no hidden repair; cross-implementation judgment identity.
+      Canonical-valid / valid-noncanonical / invalid classification; CRPC validation; Point / Segment / SCPE validity; exact parameterized Domain validation under D<sub>H</sub>; deterministic normalization; ECEM semantics; FSF-CJSON-1.0 structure; lossless/lossy distinction; no hidden repair; cross-implementation judgment identity.
     </p>
   </div>
   <div class="status-card">
     <h3>Still Open in Conformance</h3>
     <p>
-      Final machine-readable validation codes; complete error taxonomy; final parser error identifiers; cross-version mismatch policy; recoverable-versus-terminal diagnostic policy; canonical diagnostic text if ever required; and validation rules for Specification capabilities whose mathematics remain open.
+      FMD-04B numerical Domain capacity for final concrete edge judgments; final machine-readable validation codes; complete error taxonomy; final parser error identifiers; cross-version mismatch policy; recoverable-versus-terminal diagnostic policy; canonical diagnostic text if ever required; and validation rules for Specification capabilities whose mathematics remain open.
     </p>
   </div>
 </div>
