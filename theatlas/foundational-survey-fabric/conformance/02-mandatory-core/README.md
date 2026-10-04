@@ -102,6 +102,7 @@ The current candidate Mandatory Core includes at minimum:
 CRPC parsing and normalization
 canonical frame interpretation
 Point validation
+parameterized Survey Domain validation under D_H
 Segment validation
 SCPE validation
 exact Point equality
@@ -206,7 +207,7 @@ Examples of invalidity may include:
 
 - malformed CRPC;
 - invalid denominator form;
-- coordinate outside the governed Survey Domain;
+- coordinate outside the governed Survey Domain under the applicable parameterized or adopted Domain-capacity rule;
 - zero-length Segment;
 - invalid SCPE;
 - self-intersection;
@@ -417,10 +418,18 @@ It shall not require:
 
 The Mandatory Core shall not claim canonical support for unresolved Specification mathematics.
 
+For Survey Domain behavior, **FMD-04A — Survey Domain Geometry / Boundary** is candidate-resolved and may be tested parametrically through:
+
+```text
+D_H = {(x,y) : -H ≤ x ≤ H and -H ≤ y ≤ H}
+```
+
+**FMD-04B — Numerical Survey Domain Capacity** remains OPEN. The earlier ±1,000,000 Pang half-span is a superseded working candidate and shall not be used as a canonical Mandatory Core limit.
+
 Current exclusions include:
 
 ```text
-Survey Domain numerical half-span H
+FMD-04B numerical Survey Domain half-span H
 general Boolean / composite output closure
 general union result closure
 general intersection-result closure
@@ -546,6 +555,7 @@ open Specification capability
 The remaining Conformance design work includes:
 
 ```text
+FMD-04B numerical Survey Domain capacity for final concrete edge proof
 final canonical test identifiers
 complete test inventory
 test-to-Specification traceability
@@ -582,6 +592,8 @@ REQUIREMENTS FINDING #84 — DIRECTLY REALIZED
 CANDIDATE MANDATORY CORE — NOW EXPLICIT
 CRPC — REQUIRED
 POINT / SEGMENT / SCPE — REQUIRED
+PARAMETERIZED DOMAIN VALIDATION UNDER D_H — REQUIRED
+FMD-04B NUMERICAL DOMAIN CAPACITY — EXCLUDED UNTIL CLOSED
 CORE EXACT PREDICATES — REQUIRED
 NORMALIZATION — REQUIRED
 ECEM — REQUIRED
