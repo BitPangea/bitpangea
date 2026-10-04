@@ -100,7 +100,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   The candidate Specification now resolves the Domain's geometry and boundary form sufficiently to test it symbolically and parametrically: the Survey Domain is a closed, axis-aligned square centered at the canonical origin, represented as <strong>D<sub>H</sub> = {(x,y) : -H ≤ x ≤ H and -H ≤ y ≤ H}</strong>, where <strong>H</strong> is an exact positive CRPC value.
 </p>
 <p>
-  The remaining open question is numerical capacity: the canonical value of <strong>H</strong> has not yet been selected. Reference Vectors may therefore prove the exact boundary rules, inclusion semantics, origin behavior, and symbolic inside/on/outside classification, but they shall not invent a numerical half-span merely to complete the corpus.
+  The remaining open question is numerical capacity under <strong>FMD-04B</strong>: the canonical value of <strong>H</strong> has not yet been selected. <strong>FMD-04A</strong> has already resolved the square geometry and closed-boundary semantics. Reference Vectors may therefore prove the exact boundary rules, inclusion semantics, origin behavior, and symbolic inside/on/outside classification, but they shall not invent a numerical half-span merely to complete the corpus.
 </p>
 </div>
 
@@ -122,7 +122,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
     with <strong>H &gt; 0</strong> represented exactly in CRPC. The origin is <strong>(0,0)</strong>. The boundary is included because the Domain is closed.
   </p>
   <p>
-    The shape, closure, centering, axis alignment, and boundary semantics are therefore testable now. The numerical value of <strong>H</strong> remains an upstream Specification decision.
+    The shape, closure, centering, axis alignment, and boundary semantics are therefore testable now under <strong>FMD-04A</strong>. The numerical value of <strong>H</strong> remains open under <strong>FMD-04B</strong>.
   </p>
 </section>
 
@@ -252,10 +252,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <div class="spec-label">02.11 · Numerical H Dependency</div>
   <h2>Concrete Edge Fixtures Must Wait for Capacity Selection</h2>
   <p>
+    The earlier ±1,000,000 Pang half-span is a superseded working candidate and shall not be used as a canonical fixture value.
+  </p>
+  <p>
     The unresolved value of <strong>H</strong> prevents final publication of concrete numerical vectors such as “the eastern boundary is x = N Pang” or “this specific coordinate is one exact unit outside the Domain.”
   </p>
   <p>
-    Such examples become canonical only after the Specification selects the numerical Domain capacity through a justified mathematical decision. Until then, symbolic and parameterized fixtures are the correct Reference Vector form.
+    Such examples become canonical only after FMD-04B resolves the numerical Domain capacity through a justified mathematical decision and that result is incorporated into the governing Specification. Until then, symbolic and parameterized fixtures are the correct Reference Vector form.
   </p>
 </section>
 
@@ -292,7 +295,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
     The original page correctly deferred Survey Domain vectors while both geometry and boundary conventions were unresolved. That is no longer the current standing.
   </p>
   <p>
-    The candidate Specification now defines the Domain as a closed axis-aligned square centered at the origin, so exact symbolic and parameterized boundary behavior can be tested. What remains open is only the numerical capacity parameter <strong>H</strong>. Reference Vectors therefore may prove the rules now without inventing the missing number.
+    The candidate Specification now defines the Domain as a closed axis-aligned square centered at the origin, so exact symbolic and parameterized boundary behavior can be tested. What remains open in this section's Domain mathematics is the numerical capacity parameter <strong>H</strong> under FMD-04B. Reference Vectors therefore may prove the rules now without inventing the missing number.
   </p>
 </section>
 
