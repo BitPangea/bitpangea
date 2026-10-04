@@ -186,7 +186,11 @@ rounded
 repaired
 ```
 
-The numerical value of `H` remains open, so symbolic and parameterized negative cases are testable now while final concrete numerical edge cases remain pending.
+The numerical value of `H` remains open under **FMD-04B — Numerical Survey Domain Capacity**, so symbolic and parameterized negative cases are testable now while final concrete numerical edge cases remain pending.
+
+**FMD-04A — Survey Domain Geometry / Boundary** already supplies the closed-square geometry and boundary semantics.
+
+The earlier ±1,000,000 Pang half-span is a superseded working candidate and shall not be used as a canonical invalid-input fixture value.
 
 ---
 
@@ -411,7 +415,7 @@ Section 09 can therefore move from planned failure categories into executable ca
 Remaining Section 09 work includes:
 
 ```text
-final numerical H
+FMD-04B numerical H
 final numerical Domain-edge failures
 final globally frozen failure identifiers if not yet adopted
 final complexity ceilings
@@ -452,7 +456,7 @@ UNSUPPORTED VERSION / PROFILE — TESTABLE
 UNSUPPORTED OPERATION — TESTABLE
 INVALID / UNSUPPORTED SEPARATION — TESTABLE
 
-FINAL NUMERICAL DOMAIN-EDGE FIXTURES — OPEN UNTIL H
+FINAL NUMERICAL DOMAIN-EDGE FIXTURES — OPEN UNTIL FMD-04B CLOSES
 FINAL FAILURE IDENTIFIERS — OPEN IF NOT YET ADOPTED
 FINAL COMPLEXITY CEILINGS — OPEN
 FINAL CORPUS PACKAGING — OPEN
