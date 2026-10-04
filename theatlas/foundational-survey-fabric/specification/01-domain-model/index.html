@@ -237,7 +237,7 @@ h1{
   This section translates accepted Foundational Survey Fabric requirements into the specification rules for the Survey Domain and Ground Model. It preserves the Requirements-level commitments to a finite, connected, two-dimensional canonical reference domain while incorporating the candidate mathematical design selected through Formal Mathematical Decisions FMD-01 through FMD-09 where those decisions directly govern Domain semantics.
 </p>
 <p>
-  The integrated candidate now selects an exact mathematical Domain geometry, exact numerical bounds, exact boundary inclusion, and exact Domain-validity test. These mathematical selections remain <strong>candidate Specification content</strong> pending Conformance, Reference Vector testing, independent implementation, adversarial review, and formal adoption.
+  The integrated candidate now selects an exact mathematical Domain geometry, exact closed-boundary semantics, and an exact parameterized Domain-validity rule. Numerical Survey Domain capacity remains open under FMD-04B. These mathematical selections remain <strong>candidate Specification content</strong> pending closure of the remaining mathematical and institutional gates and formal adoption.
 </p>
 </div>
 
@@ -250,7 +250,7 @@ h1{
   <div class="spec-label">01.0 · Candidate Mathematics Integration</div>
   <h2>Selected Mathematics, Not Yet Adopted Canon</h2>
   <p>
-    This section now integrates the Domain-relevant results of the candidate FSF mathematical design. In particular, FMD-01 supplies exact reduced rational Pang coordinates; FMD-03 supplies the permanent origin rule; and FMD-04 supplies the candidate Domain geometry, numerical bounds, and closed-boundary convention.
+    This section now integrates the Domain-relevant results of the candidate FSF mathematical design. In particular, FMD-01 supplies exact reduced rational Pang coordinates; FMD-03 supplies the permanent origin rule; and FMD-04 supplies the candidate Domain geometry and closed-boundary convention while leaving numerical capacity open under FMD-04B.
   </p>
   <p>
     FMD-02, FMD-05 through FMD-08, and FMD-09 remain compatible with this section but primarily govern the frame, primitive geometry, predicates, normalization, serialization, and precision semantics specified elsewhere. Their relevant consequences are reflected here only where needed to define Domain validity and preserve the boundary between foundational reference capacity and higher-layer meaning.
@@ -298,18 +298,21 @@ h1{
 
 <section class="spec-card">
   <div class="spec-label">01.4 · Exact Domain Geometry and Limits</div>
-  <h2>Closed Square · Exact Pang Bounds</h2>
+  <h2>Closed Square · Parameterized Exact Pang Bounds</h2>
   <p>
-    Under the candidate mathematical design, the canonical Survey Domain is:
+    Under the candidate mathematical design, the canonical Survey Domain is expressed parametrically as:
   </p>
   <p>
-    <strong>D = [-1,000,000,+1,000,000] × [-1,000,000,+1,000,000] Pang</strong>
+    <strong>D<sub>H</sub> = [-H,+H] × [-H,+H]</strong>, with exact <strong>H &gt; 0</strong>.
   </p>
   <p>
-    The Domain therefore has an exact width of <strong>2,000,000 Pang</strong>, exact height of <strong>2,000,000 Pang</strong>, and exact area of <strong>4,000,000,000,000 square Pang</strong>. Its four boundary edges and four corner points are included in valid Survey space.
+    The Domain therefore has exact width <strong>2H Pang</strong>, exact height <strong>2H Pang</strong>, and exact area <strong>4H² square Pang</strong>. Its four boundary edges and four corner points are included in valid Survey space.
   </p>
   <p>
-    These limits determine where valid canonical Survey reference ends. They shall not themselves be treated as BitPangea’s World boundary, Extent expression, Verge, coastline, Exterior, or other cartographic feature. Beyond the canonical Survey Domain, there is no valid BitPangea Survey reference.
+    The square geometry and closed boundary are candidate-resolved. The numerical value of <strong>H</strong> remains OPEN under FMD-04B and shall not be inferred from the superseded ±1,000,000 Pang working candidate.
+  </p>
+  <p>
+    These limits determine where valid canonical Survey reference ends once H is selected. They shall not themselves be treated as BitPangea’s World boundary, Extent expression, Verge, coastline, Exterior, or other cartographic feature.
   </p>
 </section>
 
@@ -321,11 +324,15 @@ h1{
   </p>
   <p>
     The Point belongs to the Survey Domain exactly when:
-    <strong>-1,000,000 ≤ x ≤ +1,000,000</strong> and
-    <strong>-1,000,000 ≤ y ≤ +1,000,000</strong>.
+    <strong>-H ≤ x ≤ +H</strong> and
+    <strong>-H ≤ y ≤ +H</strong>,
+    for the governing exact positive half-span <strong>H</strong>.
   </p>
   <p>
     The comparison is exact. No tolerance, epsilon, snapping, rounding, or nearest-valid-position rule is permitted. A Point outside either bound is invalid as a canonical Survey Point rather than merely classified as non-World.
+  </p>
+  <p>
+    Until the governing Specification selects the numerical value of H, concrete numerical edge cases remain parameterized rather than canonically fixed.
   </p>
 </section>
 
@@ -355,7 +362,7 @@ h1{
   <div class="spec-label">01.8 · Center and Internal Partitions</div>
   <h2>Mathematical Origin Without Semantic Privilege</h2>
   <p>
-    The permanent canonical origin is <strong>(0,0)</strong>, selected as the midpoint of the Domain’s exact coordinate bounds. It is mathematically privileged as the zero-reference of the Survey frame and nothing more.
+    The permanent canonical origin is <strong>(0,0)</strong>, the midpoint of the symmetric parameterized Domain bounds <strong>[-H,+H]</strong> on both axes. It is mathematically privileged as the zero-reference of the Survey frame and nothing more.
   </p>
   <p>
     The Survey Domain shall not establish a privileged civic, cultural, geographic, political, economic, or institutional center. Internal sectors, quadrants, regions, zones, grids, or partitions used for indexing, computation, precision, or serialization shall likewise remain semantically neutral at the foundational level.
@@ -366,13 +373,13 @@ h1{
   <div class="status-card">
     <h3>Integrated Candidate Mathematics</h3>
     <p>
-      Finite two-dimensional Domain; one connected closed square; exact CRPC Pang bounds; permanent origin at (0,0); exact boundary inclusion; exact Domain-validity comparisons; separation of Survey validity from World membership; no mandatory grid alignment; no foundational semantic privilege for origin or internal partitions.
+      Finite two-dimensional Domain; one connected closed axis-aligned square; exact parameterized CRPC Pang bounds <strong>[-H,+H]</strong>; permanent origin at (0,0); exact boundary inclusion; exact parameterized Domain-validity comparisons; separation of Survey validity from World membership; no mandatory grid alignment; no foundational semantic privilege for origin or internal partitions.
     </p>
   </div>
   <div class="status-card">
     <h3>Still Outside This Section / Still Open</h3>
     <p>
-      Final canonical address grammar, angular representation, exact general distance and path-length scalar closure, arbitrary exact rotation and transformation closure, general Boolean/composition closure, operation-output closure, Specification identity details, governed complexity limits, and formal adoption remain outside this section or still unresolved at full-FSF scope.
+      Numerical Survey Domain half-span <strong>H</strong>; final canonical address grammar; angular representation; exact general distance and path-length scalar closure; arbitrary exact rotation and transformation closure; general Boolean/composition closure; operation-output closure; Specification identity details; governed complexity limits; and formal adoption remain outside this section or still unresolved at full-FSF scope.
     </p>
   </div>
 </div>
@@ -397,7 +404,7 @@ h1{
   <div class="spec-label">Candidate Integration Standing</div>
   <h2>Specification 01 Is Mathematically Ready for Core Prototype Use</h2>
   <p>
-    No contradiction was found between this integrated Domain model and FMD-01 through FMD-09. The Domain-relevant candidate mathematics are sufficiently exact to support prototype validation of canonical Points and the later placement of the selected Spatial Ground World SCPE.
+    No contradiction was found between this integrated Domain model and FMD-01 through FMD-09 after the FMD-04A / FMD-04B split. The Domain-relevant candidate mathematics are sufficiently exact to support parameterized validation of canonical Points and capacity-independent prototype work. Concrete numerical Domain-edge validation and final Spatial Ground placement remain dependent on closure of the numerical-capacity question or another formally governed capacity mechanism.
   </p>
   <p>
     This readiness does not constitute formal adoption. Canonical adoption remains contingent on Specification-wide integration, Conformance, Reference Vectors, independent implementation, adversarial testing, traceability, and the applicable adoption act.
@@ -415,7 +422,7 @@ h1{
   <a href="/theatlas/foundational-survey-fabric/specification/">Specification Index</a>
 </div>
 
-<div class="note">Foundational Survey Fabric · Specification 01 · Survey Domain and Ground Model · Candidate Mathematics Integrated</div>
+<div class="note">Foundational Survey Fabric · Specification 01 · Domain Geometry Integrated · Numerical Capacity Open</div>
 
 </article>
 </main>
