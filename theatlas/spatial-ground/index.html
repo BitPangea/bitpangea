@@ -113,7 +113,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 
   <div class="arch-card">
     <h3>Status</h3>
-    <p>The Spatial Ground Requirements are adopted and Gate A is complete. Spatial meaning, layer ownership, institutional authority, consolidation architecture, Gate 0 foundations, and Requirements adoption are closed. Candidate membership semantics and interchange architecture are sufficiently developed for Specification work, but Gate B remains closed until the upstream Foundational Survey Fabric handoff is formally sufficient.</p>
+    <p>The Spatial Ground Requirements are adopted, <strong>SG-SPEC-1.0</strong> is adopted, Gate B is complete, and <strong>SG-WORLD-SPACE-INSTANCE-0001</strong> is the adopted canonical World-space instance. Production Conformance and independent reconstruction have passed with zero cross-implementation mismatch.</p>
   </div>
 
   <div class="arch-card">
@@ -143,7 +143,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 </blockquote>
 
 <p>
-  <strong>Demonstrated dependency:</strong> Foundational Survey Fabric → Spatial Ground → General Spatial Interpretation. The Foundational Survey Fabric now provides an integrated candidate mathematical core; Spatial Ground consumes that canonical reference and mathematics without redefining them. This relationship states the demonstrated spatial dependency relevant to Spatial Ground and does not establish a universal ordering for every remaining Architecture domain.
+  <strong>Demonstrated dependency:</strong> Foundational Survey Fabric → Spatial Ground → General Spatial Interpretation. <strong>FSF-SPEC-1.0</strong> now supplies the adopted canonical Survey mathematics beneath Spatial Ground, and <strong>SG-WORLD-SPACE-INSTANCE-0001</strong> supplies the adopted canonical World-membership truth consumed by the next layer. This relationship states the demonstrated spatial dependency relevant to Spatial Ground and does not establish a universal ordering for every remaining Architecture domain.
 </p>
 
 
@@ -155,18 +155,18 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 
 <div class="arch-grid">
   <div class="arch-card">
-    <h3>Available From FSF</h3>
-    <p>The integrated candidate core includes <strong>CRPC</strong>, <strong>ECEM</strong>, Point / Segment / SCPE, exact predicates, deterministic normalization, the canonical frame, and <strong>FSF-CJSON-1.0</strong>.</p>
+    <h3>Adopted FSF Foundation</h3>
+    <p><strong>FSF-SPEC-1.0</strong> supplies CRPC, ECEM, Point / Segment / SCPE geometry, exact predicates, deterministic normalization, the canonical frame, <strong>FSF-CJSON-1.0</strong>, the canonical Survey Domain, and the governed production placement envelope.</p>
   </div>
 
   <div class="arch-card">
-    <h3>Still Open Upstream</h3>
-    <p>The numerical Survey Domain half-span <strong>H</strong>, selected extended measurement scalars, broader Boolean-result geometry, final complexity limits, and final Specification / adoption governance remain open.</p>
+    <h3>Canonical Survey Bounds</h3>
+    <p><strong>H = 1,000,000 Pang</strong>; <strong>D = [-1,000,000,+1,000,000]²</strong>; <strong>P = [-500,000,+500,000]²</strong>. Canonical World-space is proven strictly inside <strong>interior(P)</strong>, which lies strictly inside <strong>interior(D)</strong>.</p>
   </div>
 
   <div class="arch-card">
     <h3>Gate B Standing</h3>
-    <p><strong>Gate B is not open.</strong> Spatial Ground shall not convert candidate FSF mathematics into adopted Spatial Ground truth before the required upstream handoff is formally sufficient.</p>
+    <p><strong>Gate B is complete.</strong> Spatial Ground consumes the adopted FSF foundation without redefining it, and the canonical World-space production instance has passed final Conformance and reconstruction proof.</p>
   </div>
 </div>
 
@@ -196,6 +196,35 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
       <li>
         <a href="/theatlas/spatial-ground/governance/SG_Requirements_Adoption_Act.md">Requirements Adoption Act</a>
         <span>SG-ACT-REQ-2026-0001 — the recorded Atlas act that changed the Requirements from Candidate to Adopted.</span>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<h2>Specification and Canonical Instance</h2>
+
+<div class="record-panel">
+  <div class="record-primary">
+    <span class="record-kicker">Adopted Specification</span>
+    <a class="record-title" href="/theatlas/spatial-ground/specification/">SG-SPEC-1.0</a>
+    <span class="record-status">Adopted · Gate B Complete</span>
+    <p class="record-desc">The adopted Spatial Ground Specification governing canonical World-membership semantics, machine representation, and the production profile.</p>
+    <div class="path-note">/theatlas/spatial-ground/specification/</div>
+  </div>
+  <div class="record-primary">
+    <span class="record-kicker">Canonical World-Space Instance</span>
+    <span class="record-title">SG-WORLD-SPACE-INSTANCE-0001</span>
+    <span class="record-status">Adopted</span>
+    <p class="record-desc">The singular adopted World-space instance. Its production definition contains one <strong>fsf</strong> root referencing the canonical FSF World SCPE.</p>
+    <div class="path-note">/theatlas/spatial-ground/instance/production/SG_World_Ground_Definition_01.sg-cjson.json</div>
+    <ul class="record-list">
+      <li>
+        <a href="/theatlas/spatial-ground/governance/SG-ACT-INSTANCE-2026-0001.md">Canonical World-Space Instance Adoption Act</a>
+        <span>SG-ACT-INSTANCE-2026-0001 — the recorded Atlas act establishing the canonical Spatial Ground instance.</span>
+      </li>
+      <li>
+        <a href="/theatlas/spatial-ground/instance/production/SG_World_Production_Conformance_Reconstruction_Proof_01.json">Production Conformance / Reconstruction Proof</a>
+        <span>Final production proof: PASS across two independent reconstruction implementations with zero cross-implementation mismatch.</span>
       </li>
     </ul>
   </div>
@@ -241,15 +270,15 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 <h2>Canonical Scope</h2>
 
 <p>
-  Spatial Ground operates over canonical Survey space and preserves a single World-membership truth. The current candidate membership architecture is exact, total, two-valued, and deterministic over valid Survey meanings; invalid Survey input is rejected before World-membership evaluation. The canonical definition may use Survey geometry, topology, scale, precision, refinement, and other Survey-owned mathematics, but Spatial Ground does not redefine or duplicate those foundations.
+  Spatial Ground operates over canonical Survey space and preserves a single World-membership truth. Under <strong>SG-SPEC-1.0</strong>, membership is exact, total, two-valued, and deterministic over valid Survey meanings; invalid Survey input is rejected before World-membership evaluation. Spatial Ground may consume Survey geometry, topology, scale, precision, refinement, and other Survey-owned mathematics, but it does not redefine or duplicate those foundations.
 </p>
 
 <p>
-  World-space may coincide in extent with the Survey Domain but is never defined merely as the Survey Domain. Non-World-space is the relational complement of World-space within the operative Survey Domain and receives no independent intrinsic meaning from Spatial Ground.
+  Canonical World-space is strictly contained within the governed FSF production placement envelope and therefore does not coincide with the entire Survey Domain. Non-World-space is the relational complement of World-space within valid Survey space and receives no independent intrinsic meaning from Spatial Ground.
 </p>
 
 <p>
-  The present candidate World-space instance is intentionally minimal: one connected, closed, hole-free World region expressed through one primary FSF spatial-set definition. That instance remains subordinate to the final governing FSF mathematics and Spatial Ground Specification / adoption process.
+  The adopted World-space instance is intentionally minimal: one connected, closed, hole-free World region expressed through one primary canonical FSF SCPE and referenced through one <strong>fsf</strong> root in the production <strong>SG-CJSON 1.0</strong> Ground Definition. Unrestricted Boolean / composite-result closure remains outside the current production profile.
 </p>
 
 <p>
@@ -268,7 +297,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 
 <a class="return-link" href="/theatlas/">← Return to The Atlas</a>
 
-<div class="note">The Architecture · Spatial Ground · Requirements Adopted · Gate A Complete · Gate B Not Open</div>
+<div class="note">The Architecture · Spatial Ground · SG-SPEC-1.0 Adopted · Gate B Complete · Canonical World-Space Instance Adopted</div>
 
 </article>
 </main>
