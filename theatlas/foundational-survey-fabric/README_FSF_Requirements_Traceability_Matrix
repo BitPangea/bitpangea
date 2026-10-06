@@ -4,8 +4,8 @@
 
 **Institution:** The Atlas · Foundational Survey Fabric  
 **Artifact:** Requirements Traceability Matrix  
-**Current Review:** Day #123 · September 27, 2026  
-**Status:** Reviewed after FMD-01 through FMD-09 Specification integration
+**Current Standing:** Maintained under FSF-SPEC-1.0  
+**Status:** Active Requirements Traceability Matrix · Adopted Specification Context
 
 ---
 
@@ -49,48 +49,44 @@ N/A Intentionally outside that downstream framework
 
 ---
 
-## Day #123 Review Result
+## Current Review Result
 
-Specification Sections 01–07 have now completed their first candidate-mathematics integration pass against:
+**FSF-SPEC-1.0 is canonically adopted.**
 
-```text
-FMD-01 through FMD-09
-```
+That adoption establishes the governing FSF mathematics, but it does not automatically rewrite this matrix's documentation-level `E / D / N/A` markings.
 
-The substantive Specification content therefore changed materially.
-
-However, during that integration pass the existing **Requirements Basis** ranges at the bottom of each Specification section were preserved.
-
-That distinction matters.
-
-The matrix defines Specification explicitness using those Requirements Basis citations, not merely by whether the body text now contains a rule implementing the Requirement.
+The matrix defines Specification explicitness using the explicit **Requirements Basis** citations in downstream pages, not merely by whether the adopted Specification body substantively implements the Requirement.
 
 Therefore:
 
 ```text
-Specification section assignment validity
-    -> re-reviewed
+Specification architectural validity
+    -> governed by FSF-SPEC-1.0
 
 Specification E/D basis status
-    -> unchanged in this pass
+    -> preserved until dedicated basis-citation re-audit
 ```
 
-This is intentional and preserves audit discipline.
+This distinction is intentional and preserves audit discipline.
 
-A Requirement should not be promoted from `D` to `E` until the downstream Specification page actually cites it in its Requirements Basis.
+A Requirement should not be promoted from `D` to `E` until the downstream page explicitly cites it in its Requirements Basis.
 
 ---
 
 ## Current Matrix Standing
 
-The reviewed matrix retains:
+The matrix retains the last audited documentation counts:
 
 ```text
 85  Audited Findings
-28  Rows Fully Explicit in Current Basis Audit
-55  Rows Needing at Least One Explicit Basis Update
+28  Rows Fully Explicit in the Last Basis-Citation Audit
+55  Rows Flagged for at Least One Documentation Basis Update
 2   Specification N/A by Design
 ```
+
+These counts describe documentation explicitness.
+
+They do **not** mean that the adopted `FSF-SPEC-1.0` mathematics remain provisional.
 
 The two Specification-N/A findings remain:
 
@@ -103,9 +99,9 @@ Those findings govern Conformance/readiness rather than substantive Specificatio
 
 ---
 
-## Specification Integration Consequence
+## Specification Adoption Consequence
 
-The Day #123 Specification integration strengthens the architectural basis for many existing `D` mappings.
+Adoption of `FSF-SPEC-1.0` strengthens the authoritative architectural basis for many existing `D` mappings.
 
 Examples include Requirements concerning:
 
@@ -139,7 +135,7 @@ Matrix mapping may become E
 
 ## Recommended Next Traceability Cleanup
 
-The next traceability-specific action should be a **Specification Requirements Basis reconciliation** across Sections 01–07.
+The next traceability-specific action remains a **Specification Requirements Basis reconciliation** across Sections 01–07, followed by the equivalent Conformance basis review.
 
 That pass should:
 
@@ -150,31 +146,31 @@ That pass should:
 5. regenerate this matrix from the corrected basis citations;
 6. recalculate the fully-explicit / basis-update counts.
 
-This should be treated as documentation reconciliation.
+This is documentation reconciliation.
 
-It should **not** reopen the mathematics selected through FMD-01 through FMD-09.
+It must **not** reopen or revise the mathematics canonically adopted through `FSF-SPEC-1.0`.
 
 ---
 
 ## Conformance Standing
 
-Conformance traceability has not yet received the equivalent Day #123 integration reconciliation.
+Conformance remains subordinate to `FSF-SPEC-1.0`.
 
-Accordingly, Conformance `E` / `D` standing remains as previously audited.
+Its row-level `E / D` standing remains as previously audited until a dedicated Conformance Requirements Basis reconciliation is performed.
 
-When Conformance is updated against the integrated Specification core, its Requirements Basis should be reconciled and the matrix refreshed again.
+That future cleanup may improve documentary explicitness but must not alter Specification mathematics from below.
 
 ---
 
 ## Reference Vector Standing
 
-Reference Vector subsection reverse traceability was closed on Day #115.
+Reference Vector subsection reverse traceability is closed.
 
-All twelve Reference Vector sections were reverse-traced to Findings #1–#85.
+All twelve Reference Vector sections and all **144 Reference Vector subsections** have been reverse-traced to Findings #1–#85.
 
 That standing remains preserved.
 
-The Day #123 Specification integration does not reopen Reference Vector Requirements traceability merely because future executable vectors will need revision or expansion for the newly integrated mathematics.
+Reference Vectors demonstrate `FSF-SPEC-1.0`; they do not create or revise it.
 
 ---
 
@@ -219,17 +215,17 @@ If the repository already uses a different established traceability path, preser
 
 ```text
 REQUIREMENTS FINDINGS — 85
+FSF-SPEC-1.0 — CANONICALLY ADOPTED
 SPECIFICATION SECTIONS — 7
 CONFORMANCE FRAMEWORK — MAPPED
 REFERENCE VECTOR FRAMEWORK — REVERSE-TRACEABILITY CLOSED
 
-DAY #123 SPECIFICATION CONTENT REVIEW — COMPLETE
-SPECIFICATION SECTION ASSIGNMENTS — STILL VALID
-SPECIFICATION BASIS-CITATION EXPLICITNESS — NOT YET RECONCILED
-CONFORMANCE BASIS RECONCILIATION — NOT YET RE-RUN
-REFERENCE VECTOR TRACEABILITY — CLOSED FROM DAY #115
+SPECIFICATION SECTION ASSIGNMENTS — VALID
+SPECIFICATION BASIS-CITATION EXPLICITNESS — HISTORICAL AUDIT STATUS PRESERVED
+CONFORMANCE BASIS RECONCILIATION — STILL REQUIRES DEDICATED DOCUMENTATION REVIEW
+REFERENCE VECTOR TRACEABILITY — CLOSED
 
-NEXT TRACEABILITY TASK — SPECIFICATION REQUIREMENTS BASIS RECONCILIATION
+NEXT TRACEABILITY TASK — SPECIFICATION + CONFORMANCE REQUIREMENTS BASIS RECONCILIATION
 ```
 
 ---
