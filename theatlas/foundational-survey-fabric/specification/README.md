@@ -4,8 +4,8 @@
 
 **Institution:** The Atlas · Foundational Survey Fabric  
 **Specification:** Main Index / Integration Overview  
-**Status:** Candidate Core Integrated  
-**Canonical Adoption:** Not yet performed
+**Status:** CANONICALLY ADOPTED  
+**Canonical Adoption:** FSF-SPEC-1.0
 
 ---
 
@@ -39,27 +39,29 @@ The Specification defines the mathematics that satisfy those Requirements.
 
 ## Current Standing
 
-The seven Specification sections have completed their first integration pass against:
+**FSF-SPEC-1.0** is the canonically adopted Foundational Survey Fabric Specification.
 
-```text
-FMD-01 through FMD-09
-```
-
-The current candidate core now includes selected mathematics for:
+The adopted production baseline includes:
 
 - exact reduced rational Pang coordinates;
 - one canonical global frame;
 - permanent origin;
-- finite Survey Domain model;
+- `H = 1,000,000 Pang`;
+- `D = [-1,000,000,+1,000,000]²`;
+- governed production placement envelope `P = [-500,000,+500,000]²`;
 - Point / Segment / SCPE primitive geometry;
 - exact geometry predicates;
 - deterministic normalization;
-- FSF-CJSON-1.0 serialization;
+- `FSF-CJSON-1.0` canonical machine serialization;
 - Exact Coordinate Extension Model precision semantics.
 
-This is a **candidate integrated Specification core**.
+The governing placement relationship is:
 
-It is not yet canonically adopted.
+```text
+World-space ⊂ interior(P) ⊂ interior(D)
+```
+
+Broader capability outside this adopted production profile remains reserved unless later introduced through governed Specification evolution.
 
 ---
 
@@ -111,7 +113,23 @@ Defines:
 - separation of reference capacity from World-space;
 - foundational semantic neutrality.
 
-Candidate mathematics are integrated.
+The adopted Domain is the closed axis-aligned square:
+
+```text
+D = [-1,000,000,+1,000,000]² Pang
+```
+
+with governed half-span:
+
+```text
+H = 1,000,000 Pang
+```
+
+and governed production placement envelope:
+
+```text
+P = [-500,000,+500,000]² Pang
+```
 
 ---
 
@@ -135,14 +153,9 @@ Defines:
 - counterclockwise positive rotation;
 - area and measurement obligations.
 
-Frame mathematics are substantially integrated.
+The adopted production frame and measurement rules are established under `FSF-SPEC-1.0`.
 
-Still open include:
-
-- canonical angular unit / exact angle representation;
-- exact general distance scalar;
-- exact path/boundary-length scalar;
-- arbitrary rotation closure.
+Extended measurement or transformation capability not required by the adopted production profile remains reserved unless separately specified.
 
 ---
 
@@ -168,13 +181,9 @@ Defines:
 - no silent snapping;
 - compatibility without place migration.
 
-Still open:
+Canonical mathematical Point meaning is established independently of any optional public-facing address notation.
 
-```text
-public canonical address grammar
-human-readable / compact syntax
-final address-version syntax
-```
+Any future human-readable or compact address syntax must preserve the same canonical place and remain subordinate to `FSF-SPEC-1.0`.
 
 ---
 
@@ -209,13 +218,15 @@ Defines:
 - geometric equivalence;
 - canonical normalization.
 
-Still open:
+Outside the adopted production profile:
 
-- general composite geometry;
+- unrestricted composite-result geometry;
 - unrestricted Boolean-result forms;
 - hole-bearing composite geometry;
-- arbitrary exact transformation closure;
-- future curve primitives if ever justified.
+- arbitrary transformation capability not explicitly adopted;
+- future curve primitives if ever separately justified.
+
+These are reserved capabilities, not implicit extensions of `FSF-SPEC-1.0`.
 
 ---
 
@@ -241,17 +252,17 @@ Defines the current exact operational core for:
 - positive rational uniform scaling;
 - neutral conflict detection.
 
-Still open:
+Outside the adopted production profile:
 
 ```text
-union result closure
-intersection result closure
-difference result closure
-closed-set / difference compatibility
-general distance scalar closure
-general path-length closure
-arbitrary transformation result closure
+unrestricted union result closure
+unrestricted intersection result closure
+unrestricted difference result closure
+general arbitrary difference closure
+other extended operation-output forms not adopted by FSF-SPEC-1.0
 ```
+
+Conformance and Reference Vectors may test adopted operations and expose unsupported scope; they may not create additional operation closure.
 
 ---
 
@@ -263,7 +274,7 @@ Repository:
 specification/06-serialization-identity/
 ```
 
-Current primary canonical machine representation:
+Canonical machine serialization:
 
 ```text
 FSF-CJSON-1.0
@@ -282,12 +293,16 @@ Defines:
 - same normalized meaning → same canonical bytes;
 - versioning and compatibility principles.
 
-Still open:
+Specification identity and succession:
 
-- final top-level FSF Specification identifier;
-- complete compatibility declaration syntax;
-- future normative encoding precedence if additional encodings are adopted;
-- final adoption/version governance.
+```text
+FSF-SPEC-1.0
+FSF-SPEC-MAJOR.MINOR
+```
+
+Compatible changes preserve canonical place. An incompatible transition requires a new major version and separate governance.
+
+Future encodings, if ever adopted, must not create competing spatial truth.
 
 ---
 
@@ -309,18 +324,19 @@ Defines:
 - authoritative result conditions;
 - canonical output discipline;
 - implementation independence;
-- solved-core executable readiness.
+- adopted-profile executable readiness.
 
-The solved core is now ready for:
+The adopted production profile supports:
 
 ```text
-prototype validators
+validators
 Conformance
 Reference Vectors
 independent implementations
 cross-implementation comparison
 reconstruction testing
 adversarial testing
+production Spatial Ground dependency
 ```
 
 ---
@@ -341,13 +357,13 @@ FMD-08 — Canonical Serialization and Interchange
 FMD-09 — Exact Precision and Refinement Semantics
 ```
 
-These are candidate mathematical decisions.
+These decisions form the mathematical basis incorporated into the adopted production Specification.
 
-Their integration into the Specification does not itself constitute canonical adoption.
+Their authority within FSF now derives from adoption of `FSF-SPEC-1.0`, not merely from their earlier candidate status.
 
 ---
 
-# Candidate Core
+# Adopted Production Core
 
 The integrated production-critical core can be summarized as:
 
@@ -382,11 +398,11 @@ precision evolution
 
 ---
 
-# Preserved Formal-Design Gates
+# Adopted Profile and Reserved Capability
 
-The broader FSF Specification is not yet mathematically closed.
+The current production profile is mathematically closed for the capabilities it adopts.
 
-## Substantially Closed for the Current Core
+## Adopted Production Profile
 
 - finite valid canonical position representation;
 - extensible exact precision without migration;
@@ -394,21 +410,18 @@ The broader FSF Specification is not yet mathematically closed.
 - exact polygonal area;
 - deterministic normalization;
 - deterministic semantic equivalence;
-- canonical machine serialization for the current core.
+- canonical machine serialization;
+- canonical Survey Domain and governed production placement envelope;
+- `FSF-SPEC-1.0` identity and compatible succession discipline.
 
-## Still Open
+## Reserved Outside the Current Production Profile
 
-- exact canonical angular unit / angle representation;
-- exact general distance scalar;
-- exact path and boundary-length scalar;
-- arbitrary exact rotation/transformation closure;
-- general union/intersection/difference result closure;
-- closed-set / difference compatibility;
-- future composite geometry result types;
-- public canonical address grammar;
-- formal complexity limits;
-- complete canonical error taxonomy;
-- final top-level Specification identity and compatibility syntax.
+- unrestricted Boolean / composite-result closure;
+- general arbitrary difference closure;
+- extended operation-output forms not adopted by `FSF-SPEC-1.0`;
+- other future mathematics requiring explicit governed Specification evolution.
+
+Reserved capability does not make the adopted production profile incomplete.
 
 ---
 
@@ -418,7 +431,7 @@ The governing handoff remains:
 
 > **FSF supplies canonical spatial reference and mathematics. Spatial Ground adds canonical participation in The World.**
 
-The current candidate core is sufficient at design level for the selected Spatial Ground production path:
+The adopted FSF production profile supplies the canonical spatial mathematics used by Spatial Ground:
 
 ```text
 one connected
@@ -428,39 +441,37 @@ World-space region
 expressed as one FSF SCPE
 ```
 
-General Boolean composition remains outside that production-critical path.
+Spatial Ground has adopted its canonical World-space instance on that basis.
+
+Unrestricted Boolean composition remains outside the current production profile.
 
 ---
 
-# Executable Proof Sequence
+# Institutional Relationship After Adoption
 
-The next institutional stage is not another broad rewrite of the Specification.
-
-It is executable proof of the integrated candidate core:
+The governing relationship is:
 
 ```text
-Specification
+Requirements
+    ↓
+FSF-SPEC-1.0
     ↓
 Conformance
     ↓
 Reference Vectors
     ↓
-Independent Implementation
-    ↓
-Adversarial / Reconstruction Testing
-    ↓
-Integration Review
-    ↓
-Adoption Review
+Independent Implementation / Reconstruction
 ```
 
-Conformance may test the Specification.
+Conformance tests the adopted Specification.
 
-It may not invent missing mathematics.
+It does not create or revise Specification mathematics.
 
-Reference Vectors may demonstrate the Specification.
+Reference Vectors demonstrate the adopted Specification.
 
-They may not become an alternate Specification.
+They do not become an alternate Specification.
+
+Canonical adoption establishes authority; proof remains evidence of correct implementation.
 
 ---
 
@@ -497,7 +508,7 @@ theatlas/
             └── README.md
 ```
 
-Associated candidate format artifact:
+Associated canonical serialization schema:
 
 ```text
 fsf-cjson-1.0.schema.json
@@ -508,26 +519,24 @@ fsf-cjson-1.0.schema.json
 # Standing
 
 ```text
-FSF SPECIFICATION — FIRST CANDIDATE INTEGRATION PASS COMPLETE
+FSF-SPEC-1.0 — CANONICALLY ADOPTED
 
-SECTIONS 01–07 — FMD-01 THROUGH FMD-09 INTEGRATED
-PRODUCTION-CRITICAL CORE — MATHEMATICALLY COHERENT AT CANDIDATE LEVEL
-CORE PROTOTYPING — READY
-CORE CONFORMANCE WORK — READY
-CORE REFERENCE VECTOR WORK — READY
+SECTIONS 01–07 — GOVERNING SPECIFICATION STRUCTURE
+PRODUCTION PROFILE — MATHEMATICALLY CLOSED FOR ADOPTED CAPABILITY
+H = 1,000,000 PANG
+D = [-1,000,000,+1,000,000]²
+P = [-500,000,+500,000]²
+FSF-CJSON-1.0 — CANONICAL MACHINE SERIALIZATION
 
-COMPLETE FSF MATHEMATICS — NOT YET CLOSED
-GENERAL COMPOSITION — OPEN
-GENERAL DISTANCE / PATH-LENGTH SCALARS — OPEN
-ARBITRARY ROTATION CLOSURE — OPEN
-PUBLIC ADDRESS GRAMMAR — OPEN
-FORMAL COMPLEXITY LIMITS — OPEN
+CONFORMANCE — SUBORDINATE PROOF FRAMEWORK
+REFERENCE VECTORS — SUBORDINATE DEMONSTRATION FRAMEWORK
 
-CANONICAL ADOPTION — NOT YET PERFORMED
+UNRESTRICTED BOOLEAN / COMPOSITE-RESULT CLOSURE — RESERVED
+OTHER EXTENDED CAPABILITY — REQUIRES GOVERNED SPECIFICATION EVOLUTION
 ```
 
 ---
 
 ## Governing Closing Statement
 
-> **Requirements established the envelope. Candidate mathematics now give the production-critical Survey core exact form. The next obligation is proof: implement it, test it independently, attack it, and only then decide whether it has earned canonical adoption.**
+> **Requirements established the envelope. FSF-SPEC-1.0 gives the foundational Survey mathematics canonical form. Conformance proves implementations; Reference Vectors demonstrate expected results; compatible evolution must preserve place.**
