@@ -1,0 +1,57 @@
+{
+  "record": "SG-WORLD-PRODUCTION-PLACEMENT-CONTAINMENT-PROOF-01",
+  "status": "complete-pass",
+  "creator_period_day": 132,
+  "date": "2026-10-06",
+  "governing_spatial_ground_specification": "SG-SPEC-1.0",
+  "governing_fsf_specification": "FSF-SPEC-1.0",
+  "source_scpe": {
+    "filename": "SG_World_Production_SCPE_Normalized_01.json",
+    "sha256": "d0c34bc66d880dad8c6aab05c3461799897524d461055d21c2b1284542e16423"
+  },
+  "placement_envelope": {
+    "xmin": "-500000",
+    "xmax": "500000",
+    "ymin": "-500000",
+    "ymax": "500000",
+    "unit": "Pang",
+    "boundary_policy": "strict interior required"
+  },
+  "scpe_extrema": {
+    "xmin": "-450000",
+    "xmax": "450000",
+    "ymin": "-4230441/10",
+    "ymax": "4230441/10",
+    "unit": "Pang",
+    "attaining_source_vertices": {
+      "xmin": [
+        "V026"
+      ],
+      "xmax": [
+        "V110"
+      ],
+      "ymin": [
+        "V080"
+      ],
+      "ymax": [
+        "V001"
+      ]
+    }
+  },
+  "exact_margins": {
+    "left": "50000",
+    "right": "50000",
+    "bottom": "769559/10",
+    "top": "769559/10",
+    "minimum": "50000",
+    "unit": "Pang"
+  },
+  "proof_basis": [
+    "The production placement envelope interior is convex.",
+    "Every normalized SCPE vertex lies strictly inside the envelope.",
+    "Every SCPE boundary edge is the closed segment joining two strictly interior vertices, so every point on every edge lies strictly inside the convex envelope interior.",
+    "The SCPE interior is contained in the polygon's convex hull, which is contained in the convex placement-envelope interior because all vertices lie inside it.",
+    "Therefore the complete SCPE, boundary plus interior, lies strictly inside the production placement envelope."
+  ],
+  "result": "PASS"
+}
