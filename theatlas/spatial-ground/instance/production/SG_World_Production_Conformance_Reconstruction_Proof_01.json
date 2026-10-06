@@ -1,0 +1,41 @@
+{
+  "record": "SG-WORLD-PRODUCTION-CONFORMANCE-RECONSTRUCTION-PROOF-01",
+  "status": "PASS",
+  "creator_period_day": 132,
+  "date": "2026-10-06",
+  "governing_spatial_ground_specification": "SG-SPEC-1.0",
+  "governing_fsf_specification": "FSF-SPEC-1.0",
+  "ground_definition": "SG_World_Ground_Definition_01.sg-cjson.json",
+  "fsf_geometry": "SG_World_Production_SCPE_01.fsf-cjson.json",
+  "production_reference": "FSF_World_SCPE_Production_Reference_0001.json",
+  "implementations": [
+    "SG-PROD-RECON-PY-1.0",
+    "SG-PROD-RECON-JS-1.0"
+  ],
+  "cross_implementation_mismatch_count": 0,
+  "tests": {
+    "canonical_start_vertex": "WORLD",
+    "east_valid_nonworld": "NON_WORLD",
+    "first_edge_midpoint": "WORLD",
+    "invalid_survey": "INVALID_INPUT",
+    "north_valid_nonworld": "NON_WORLD",
+    "origin": "WORLD",
+    "valid_survey_outer_nonworld": "NON_WORLD"
+  },
+  "conformance": {
+    "canonical_artifact_linkage": "PASS",
+    "fsf_integrity_reference": "PASS",
+    "sg_cjson_structure": "PASS",
+    "fsf_cjson_structure": "PASS",
+    "validity_before_membership": "PASS",
+    "interior_membership": "PASS",
+    "boundary_membership": "PASS",
+    "non_world_membership": "PASS",
+    "survey_invalidity": "PASS",
+    "closed_world_space": "PASS",
+    "independent_reconstruction": "PASS",
+    "cross_implementation_identity": "PASS",
+    "offline_reconstruction_from_preserved_artifacts": "PASS"
+  },
+  "result": "PASS"
+}
