@@ -1,0 +1,45 @@
+{
+  "record": "SG-WORLD-PRODUCTION-PLACEMENT-01",
+  "status": "selected-production-placement",
+  "creator_period_day": 132,
+  "date": "2026-10-06",
+  "governing_fsf_specification": "FSF-SPEC-1.0",
+  "source_cycle": "SG_World_Space_Design_Cycle_128_FROZEN_01.json",
+  "transform": {
+    "type": "positive-uniform-scale-plus-translation",
+    "s": {
+      "numerator": "900000",
+      "denominator": "1",
+      "unit": "Pang/design-unit"
+    },
+    "tx": {
+      "numerator": "0",
+      "denominator": "1",
+      "unit": "Pang"
+    },
+    "ty": {
+      "numerator": "0",
+      "denominator": "1",
+      "unit": "Pang"
+    }
+  },
+  "placement_envelope": {
+    "xmin": "-500000",
+    "xmax": "500000",
+    "ymin": "-500000",
+    "ymax": "500000",
+    "unit": "Pang"
+  },
+  "transformed_bounding_box_exact": {
+    "xmin": "-450000",
+    "xmax": "450000",
+    "ymin": "-4230441/10",
+    "ymax": "4230441/10",
+    "unit": "Pang"
+  },
+  "minimum_envelope_reserve_exact": {
+    "x": "50000",
+    "y": "769559/10",
+    "unit": "Pang"
+  }
+}
