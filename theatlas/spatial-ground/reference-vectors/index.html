@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Reference Vectors | Spatial Ground | BitPangea</title>
+
+<link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/favicon.svg" rel="shortcut icon"/>
+<link href="/assets/css/bitpangea-framework.css" rel="stylesheet"/>
+<script defer src="/assets/js/bitpangea-framework.js"></script>
+
+<meta name="description" content="The Spatial Ground Reference Vector framework: exact, negative, adversarial, reconstruction, and dependency-boundary fixtures for testing canonical Ground behavior."/>
+<meta name="theme-color" content="#00c8d7"/>
+<meta name="robots" content="index,follow"/>
+<link rel="canonical" href="https://bitpangea.com/theatlas/spatial-ground/reference-vectors/"/>
+
+<meta property="og:title" content="Spatial Ground Reference Vectors | BitPangea"/>
+<meta property="og:description" content="Exact fixtures through which conforming implementations demonstrate the expected results of Spatial Ground semantics."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://bitpangea.com/theatlas/spatial-ground/reference-vectors/"/>
+<meta property="og:site_name" content="BitPangea"/>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;min-height:100%;background:#02050a;color:#fff;font-family:Arial,Helvetica,sans-serif}
+body{position:relative;line-height:1.75;overflow-x:hidden;background:#02050a}
+body::before{content:"";position:fixed;inset:0;background-image:linear-gradient(rgba(2,5,10,.78),rgba(2,5,10,.90)),url("/images/bitpangea.jpg");background-size:cover;background-position:center;background-repeat:no-repeat;z-index:-2;pointer-events:none}
+body::after{content:"";position:fixed;inset:0;background:radial-gradient(circle at 75% 12%,rgba(0,200,215,.10),transparent 34%),radial-gradient(circle at 18% 18%,rgba(212,169,56,.10),transparent 32%),linear-gradient(90deg,rgba(0,0,0,.60),rgba(0,0,0,.25),rgba(0,0,0,.64));z-index:-1;pointer-events:none}
+.page{width:100%;padding:150px 28px 90px}
+.container{max-width:1040px;margin:0 auto;padding:54px 58px 64px;background:rgba(0,0,0,.48);border:1px solid rgba(212,169,56,.16);box-shadow:0 0 60px rgba(0,0,0,.55);backdrop-filter:blur(4px)}
+.eyebrow{color:#00c8d7;letter-spacing:4px;text-transform:uppercase;font-size:12px;margin-bottom:20px}
+.arch-header{display:flex;align-items:center;gap:28px;margin-bottom:20px}
+.arch-mark{width:230px;height:230px;flex-shrink:0;opacity:.96}
+.arch-title{display:flex;flex-direction:column}
+h1{color:#fff;font-size:clamp(38px,6vw,66px);line-height:1.06;letter-spacing:5px;text-transform:uppercase;margin-bottom:14px;text-shadow:0 0 22px rgba(0,0,0,.9)}
+.subtitle{color:#d4a938;font-size:18px;letter-spacing:3px;text-transform:uppercase;margin-bottom:18px}
+.divider{width:64px;height:2px;background:#d4a938;margin:34px 0 42px;box-shadow:0 0 14px rgba(212,169,56,.65)}
+.arch-statement{font-size:28px;font-weight:500;color:#fff;margin-bottom:28px;text-shadow:0 0 18px rgba(212,169,56,.25)}
+p{margin-bottom:22px;color:#fff;font-size:17px;text-shadow:0 0 9px rgba(0,0,0,.9)}
+h2{margin-top:54px;margin-bottom:20px;color:#fff;font-size:28px;letter-spacing:4px;text-transform:uppercase;text-shadow:0 0 14px rgba(0,0,0,.9)}
+blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;background:rgba(0,0,0,.52);color:#fff;font-size:24px;line-height:1.45;letter-spacing:1px;box-shadow:0 0 28px rgba(0,0,0,.45)}
+.quote-label{display:block;color:#00c8d7;font-size:11px;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px}
+.req-intro{margin:34px 0 42px;padding:28px 30px;background:rgba(0,0,0,.34);border:1px solid rgba(212,169,56,.18)}
+.req-intro p:last-child{margin-bottom:0}
+.rv-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin:34px 0 10px}
+.rv-card{display:block;color:#fff;padding:26px 28px;border:1px solid rgba(212,169,56,.22);background:rgba(0,0,0,.34);box-shadow:0 0 22px rgba(0,0,0,.24);text-decoration:none}
+.rv-card:hover{border-color:rgba(0,200,215,.55);background:rgba(0,0,0,.48)}
+.rv-kicker{color:#00c8d7;font-size:11px;letter-spacing:3px;text-transform:uppercase;margin-bottom:10px}
+.rv-card h3{color:#d4a938;font-size:20px;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}
+.rv-card p{margin:0;color:rgba(255,255,255,.86);font-size:15px}
+.rv-code{margin-top:14px;font-family:Consolas,Monaco,monospace;color:#00c8d7;font-size:13px;overflow-wrap:anywhere}
+.rv-status{margin-top:36px;padding:26px 28px;border:1px solid rgba(0,200,215,.18);background:rgba(0,0,0,.30)}
+.rv-status h3{color:#d4a938;font-size:13px;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}
+.rv-status p{margin:0;font-size:15px;color:rgba(255,255,255,.86)}
+.section-nav{display:flex;flex-wrap:wrap;gap:12px;margin:34px 0 8px}
+.section-nav a,.section-nav a:visited{color:#d4a938;text-decoration:none;text-transform:uppercase;letter-spacing:2px;font-size:12px;padding:11px 14px;border:1px solid rgba(212,169,56,.24);background:rgba(0,0,0,.28)}
+.section-nav a:hover{color:#fff;text-shadow:0 0 12px rgba(212,169,56,.55)}
+.note{margin-top:58px;padding:18px 24px;border:1px solid rgba(212,169,56,.38);color:#d4a938;letter-spacing:2px;text-transform:uppercase;font-size:12px;display:inline-block;background:rgba(0,0,0,.35)}
+@media(max-width:768px){
+.page{padding:185px 16px 60px}.container{padding:36px 24px 46px}.arch-header{flex-direction:column;align-items:flex-start;gap:24px}.arch-mark{width:110px;height:110px}h1{letter-spacing:3px}.subtitle{font-size:16px}.arch-statement{font-size:19px}p{font-size:16px}blockquote{font-size:20px;padding:24px 26px}.rv-grid{grid-template-columns:1fr}.rv-card{padding:24px 22px}
+}
+</style>
+</head>
+
+<body data-bp-page="theatlas">
+<div id="bp-header"></div>
+
+<main class="page">
+<article class="container">
+
+<div class="eyebrow">The Atlas · The Architecture · Spatial Ground</div>
+
+<div class="arch-header">
+  <img src="/thearchitecture/architecture-globe.png" alt="The Architecture Emblem" class="arch-mark"/>
+  <div class="arch-title">
+    <h1>Reference<br/>Vectors</h1>
+    <div class="subtitle">Spatial Ground · Canonical Ground Test Corpus Framework</div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<p class="arch-statement">
+  Exact fixtures through which conforming implementations prove the expected results of defined Spatial Ground semantics.
+</p>
+
+<div class="req-intro">
+<p>
+  <strong>Spatial Ground Reference Vectors</strong> provide exact input-and-expected-result fixtures for validating Ground behavior across conforming implementations. They test SG-CJSON structure, canonicalization, FSF leaf validity, membership, equivalence, invalid input, hidden-state independence, reconstruction, independent implementation, and deliberately difficult dependency boundaries.
+</p>
+<p>
+  Reference Vectors do not define Spatial Ground semantics. They instantiate and test rules supplied by the Requirements, Specification, SG-CJSON, the Closed World-Space Convention, and Conformance.
+</p>
+</div>
+
+<blockquote>
+  <span class="quote-label">Reference Vector Question</span>
+  Given this exact Ground input and this exact declared FSF test meaning, what exact answer must every conforming implementation produce?
+</blockquote>
+
+<blockquote>
+  <span class="quote-label">Governing Rule</span>
+  Specification defines the rule. Reference Vectors prove the expected result.
+</blockquote>
+
+<h2>Corpus Standing</h2>
+
+<div class="rv-status">
+  <h3>SG-RV-1.0</h3>
+  <p>The attached source establishes <strong>SG-RV-1.0</strong> as the initial canonical Ground vector corpus. It uses the synthetic <strong>FSF-TEST-1.0</strong> profile to test Ground semantics without inventing production Survey geometry.</p>
+</div>
+
+<h2>Vector Status Classes</h2>
+
+<div class="rv-grid">
+  <div class="rv-card">
+    <div class="rv-kicker">Status</div>
+    <h3>NORMATIVE</h3>
+    <p>A valid input for which the governing rules determine one exact expected result.</p>
+  </div>
+
+  <div class="rv-card">
+    <div class="rv-kicker">Status</div>
+    <h3>NEGATIVE</h3>
+    <p>An invalid artifact or input for which one exact failure class is expected.</p>
+  </div>
+
+  <div class="rv-card">
+    <div class="rv-kicker">Status</div>
+    <h3>ADVERSARIAL</h3>
+    <p>A deliberately difficult case whose exact result is nevertheless determined.</p>
+  </div>
+
+  <div class="rv-card">
+    <div class="rv-kicker">Status</div>
+    <h3>BLOCKED_BY_FSF</h3>
+    <p>A case that must not receive a fabricated production answer until the required lower-layer FSF semantics are defined.</p>
+  </div>
+</div>
+
+<h2>Reference Vector Families</h2>
+
+<div class="rv-grid">
+  <div class="rv-card">
+    <div class="rv-kicker">Families 01–03</div>
+    <h3>Structure and Dependency</h3>
+    <p>SG-CJSON structure, canonicalization, and FSF leaf validity.</p>
+  </div>
+
+  <div class="rv-card">
+    <div class="rv-kicker">Families 04–06</div>
+    <h3>Membership and Limits</h3>
+    <p>Basic membership, Boolean composition in the source corpus, and exact limit behavior.</p>
+  </div>
+
+  <div class="rv-card">
+    <div class="rv-kicker">Families 07–09</div>
+    <h3>Equivalence and Repeatability</h3>
+    <p>Survey equivalence, invalid inputs, and hidden-state repeatability.</p>
+  </div>
+
+  <div class="rv-card">
+    <div class="rv-kicker">Families 10–12</div>
+    <h3>Reconstruction and Boundary Cases</h3>
+    <p>Reconstruction, independent implementation, and reserved FSF dependency exposure.</p>
+  </div>
+</div>
+
+<h2>Representative Vectors</h2>
+
+<div class="rv-grid">
+  <div class="rv-card">
+    <div class="rv-kicker">Membership</div>
+    <h3>SG-RV-001 / 002</h3>
+    <p>Basic WORLD and NON_WORLD membership under a declared synthetic FSF fixture.</p>
+  </div>
+
+  <div class="rv-card">
+    <div class="rv-kicker">Exact Limit</div>
+    <h3>SG-RV-003 / 004</h3>
+    <p>Tests exact outer-limit membership under the Closed World-Space Convention.</p>
+  </div>
+
+  <div class="rv-card">
+    <div class="rv-kicker">Input Validity</div>
+    <h3>SG-RV-013 / 014</h3>
+    <p>Confirms that invalid or unknown Survey input yields INVALID_INPUT rather than NON_WORLD.</p>
+  </div>
+
+  <div class="rv-card">
+    <div class="rv-kicker">Independent Meaning</div>
+    <h3>SG-RV-023</h3>
+    <p>Requires a clean implementation to reconstruct the expected membership mapping from the Specification, Ground Definition, test dependency semantics, and corpus alone.</p>
+  </div>
+</div>
+
+<h2>Synthetic FSF Test Profile</h2>
+
+<p>
+  The source corpus uses <strong>FSF-TEST-1.0</strong> as a deliberately synthetic test-only dependency. It is not production spatial truth and must not be treated as a BitPangea Survey specification.
+</p>
+
+<blockquote>
+  <span class="quote-label">Test Boundary</span>
+  No FSF-TEST identifier may appear in a canonical BitPangea World-space instance.
+</blockquote>
+
+<h2>SG-RV-024</h2>
+
+<div class="rv-status">
+  <h3>Reserved Boundary / Set-Class Dependency</h3>
+  <p><strong>SG-RV-024</strong> preserves a deliberately difficult hole-boundary case under non-regular set difference. The source corpus records it as <strong>BLOCKED_BY_FSF</strong>. The vector is intentionally retained because a Reference Vector may expose a missing or unresolved rule, but it may not invent the answer.</p>
+</div>
+
+<blockquote>
+  <span class="quote-label">Hard-Vector Principle</span>
+  The purpose of a hard vector is not to make the architecture look complete. It is to discover exactly where it is not.
+</blockquote>
+
+<h2>Cross-Implementation Rule</h2>
+
+<p>
+  For every executable NORMATIVE or ADVERSARIAL vector, conforming implementations must agree:
+</p>
+
+<blockquote>
+  <span class="quote-label">Canonical Agreement</span>
+  Result_A(vector) = Result_B(vector)
+</blockquote>
+
+<p>
+  A disagreement is evidence of an implementation, fixture, dependency, or Specification problem. It is not a second canon.
+</p>
+
+<h2>Primary Corpus Records</h2>
+
+<div class="rv-grid">
+  <a class="rv-card" href="/theatlas/spatial-ground/reference-vectors/Spatial_Ground_Reference_Vectors.md">
+    <div class="rv-kicker">Human-Readable Corpus</div>
+    <h3>Spatial Ground Reference Vectors</h3>
+    <p>The complete SG-RV-1.0 Reference Vector specification and vector inventory.</p>
+  </a>
+
+  <a class="rv-card" href="/theatlas/spatial-ground/reference-vectors/spatial-ground-reference-vectors-1.0.json">
+    <div class="rv-kicker">Machine-Readable Corpus</div>
+    <h3>SG-RV-1.0 JSON</h3>
+    <p>The machine-readable Reference Vector corpus for executable testing and cross-implementation comparison.</p>
+  </a>
+</div>
+
+<h2>Architectural Boundary</h2>
+
+<p>
+  Reference Vectors may prove, compare, reproduce, stress, expose ambiguity, and demonstrate exact expected results. They may not create World-space, redefine the Spatial Ground Specification, invent FSF mathematics, convert test precedent into canonical authority, or pull higher-layer meaning into Ground results.
+</p>
+
+<blockquote>
+  <span class="quote-label">Specification Principle</span>
+  Reference Vectors demonstrate the Specification. They do not create the Specification.
+</blockquote>
+
+<div class="section-nav">
+  <a href="/theatlas/spatial-ground/">← Spatial Ground</a>
+  <a href="/theatlas/spatial-ground/requirements/">Requirements</a>
+  <a href="/theatlas/spatial-ground/specification/">Specification</a>
+  <a href="/theatlas/spatial-ground/conformance/">Conformance</a>
+  <a href="/thearchitecture/">The Architecture</a>
+</div>
+
+<div class="note">Spatial Ground · Reference Vectors · SG-RV-1.0 · Canonical Ground Test Corpus Framework</div>
+
+</article>
+</main>
+
+<div id="bp-footer"></div>
+</body>
+</html>
