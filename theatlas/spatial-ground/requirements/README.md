@@ -2,14 +2,25 @@
 
 **BitPangea · The Atlas**  
 **Document Type:** Requirements  
-**Status:** Draft for Adoption Review  
-**Period:** Creator Period  
+**Status:** ADOPTED  
+**Institutional Standing:** Requirements Adopted · Gate A Complete · SG-SPEC-1.0 Adopted · Gate B Complete  
 **Architecture Basis:** Spatial Ground Architectural Resolution Passes #1–#4, including the source-reconciled amendments to Pass #3 and Pass #4  
 **Normative Scope:** Spatial Ground only
 
 ---
 
 ## 0. Status and Normative Convention
+
+Current institutional standing:
+
+```text
+Spatial Ground Requirements — ADOPTED
+Gate A — COMPLETE
+FSF-SPEC-1.0 — CANONICALLY ADOPTED
+SG-SPEC-1.0 — ADOPTED
+Gate B — COMPLETE
+SG-WORLD-SPACE-INSTANCE-0001 — ADOPTED
+```
 
 This document states the Requirements for **Spatial Ground**.
 
@@ -42,6 +53,18 @@ Spatial Ground is subordinate to the constitutional sources of BitPangea, includ
 - applicable Atlas shared architectural doctrine.
 
 Spatial Ground consumes Survey facts by reference. It does not acquire authority to redefine them.
+
+The adopted lower-layer dependency is:
+
+```text
+FSF-SPEC-1.0
+```
+
+with canonical machine serialization:
+
+```text
+FSF-CJSON-1.0
+```
 
 ---
 
@@ -128,11 +151,29 @@ The following constitutional truths are carried without being duplicated as sepa
 
 World-space **MUST** consist of canonical Survey space within the finite Survey Domain.
 
-World-space **MAY** coincide in extent with the entire Survey Domain, but World-space **MUST NOT** be defined merely as “the Survey Domain.”
+Under the adopted Foundational Survey Fabric production profile, canonical World-space **MUST** lie strictly inside the governed production placement envelope:
 
-If the Survey Domain later changes in a manner compatible with its own architecture, that change alone **MUST NOT** alter established World-space.
+```text
+P = [-500,000,+500,000]² Pang
+```
 
-Within the Survey Domain, non-World-space is the complement of World-space with respect to the canonical membership definition.
+and therefore:
+
+```text
+World-space ⊂ interior(P) ⊂ interior(D)
+```
+
+where the adopted canonical Survey Domain is:
+
+```text
+D = [-1,000,000,+1,000,000]² Pang
+```
+
+Canonical World-space **MUST NOT** coincide in extent with the entire Survey Domain and **MUST NOT** be defined merely as “the Survey Domain.”
+
+A compatible change in Survey representation or Specification lineage, by itself, **MUST NOT** alter established World-space.
+
+Within valid Survey space, non-World-space is the complement of World-space with respect to the canonical membership definition.
 
 Spatial Ground **MUST NOT** assign separate intrinsic meaning to non-World-space.
 
@@ -597,7 +638,7 @@ The following are deliberately stated as consequences or references rather than 
 
 ## 13. Out of Scope for These Requirements
 
-This document does not determine:
+This document does not itself determine:
 
 - the formal membership model;
 - the primary machine-readable representation;
@@ -612,25 +653,33 @@ This document does not determine:
 - Parcel Cadastre semantics;
 - higher-layer extent classifications;
 - visual or experiential World form;
-- the Creator's final choice of canonical World-space;
 - the authority or procedure for formal constitutional revision.
 
 Those subjects belong to the Specification, downstream frameworks, other Atlas domains, or upstream constitutional institutions as assigned by the adopted architecture.
 
+The fact that `SG-SPEC-1.0` and `SG-WORLD-SPACE-INSTANCE-0001` are now adopted does not move their content into this Requirements document; it demonstrates that later institutional stages have satisfied and instantiated this Requirements envelope.
+
 ---
 
-## 14. Adoption Readiness Note
+## 14. Adoption Standing
 
-These Requirements may be prepared for adoption once:
+These Requirements are **ADOPTED** and Gate A is complete.
 
-1. their constitutional-source traceability is assembled;
-2. the Spatial Ground drafting glossary and minimum Atlas shared architectural doctrine are available;
-3. the Adoption Act form and governance baseline exist;
-4. the consolidation map preserves the Finding-to-Requirement traceability.
+Their adoption did **not** by itself adopt the canonical World-space instance.
 
-Adoption of these Requirements does **not** adopt the canonical World-space instance.
+The later institutional sequence has now also completed:
 
-The canonical World-space instance remains a later Creator-period act following adoption of the Requirements, adoption of the Specification, conformance and reconstruction evidence, and the readiness gates established by the institutional architecture.
+```text
+FSF-SPEC-1.0 — CANONICALLY ADOPTED
+SG-SPEC-1.0 — ADOPTED
+Gate B — COMPLETE
+production Conformance / reconstruction — PASS
+SG-WORLD-SPACE-INSTANCE-0001 — ADOPTED
+```
+
+Those later acts remain institutionally distinct from Requirements adoption.
+
+The Requirements continue to state what must remain true; the Specification defines the formal model; Conformance proves implementations; the recorded Instance Adoption Act establishes which valid production definition is canonical.
 
 ---
 
@@ -653,4 +702,4 @@ The canonical World-space instance remains a later Creator-period act following 
 
 ---
 
-**End of Spatial Ground Requirements — Draft for Adoption Review**
+**End of Spatial Ground Requirements — ADOPTED**
