@@ -82,6 +82,181 @@ Status changes belong inside the governing records rather than being encoded thr
 
 ---
 
+## Governing Framework
+
+Spatial Ground is organized through four institutional framework layers:
+
+```text
+Requirements
+→ Specification
+→ Conformance
+→ Reference Vectors
+```
+
+Each layer has a distinct architectural role.
+
+### Framework 01 — Requirements
+
+Canonical public path:
+
+```text
+/theatlas/spatial-ground/requirements/
+```
+
+Primary normative artifact:
+
+```text
+/theatlas/spatial-ground/requirements/spatial-ground-requirements.md
+```
+
+Requirements state **what must remain true** of Spatial Ground.
+
+Current standing:
+
+```text
+Requirements — ADOPTED
+Gate A — COMPLETE
+```
+
+### Framework 02 — Specification
+
+Canonical public path:
+
+```text
+/theatlas/spatial-ground/specification/
+```
+
+Primary normative artifact:
+
+```text
+/theatlas/spatial-ground/specification/spatial-ground-specification.md
+```
+
+Canonical Specification identity:
+
+```text
+SG-SPEC-1.0
+```
+
+Specification defines **how Spatial Ground works**, including the Canonical Membership Predicate Model, SG-CJSON 1.0, deterministic membership evaluation, the FSF dependency contract, and the governed production profile.
+
+Current standing:
+
+```text
+SG-SPEC-1.0 — ADOPTED
+Gate B — COMPLETE
+```
+
+### Framework 03 — Conformance
+
+Canonical framework directory:
+
+```text
+/theatlas/spatial-ground/conformance/
+```
+
+Current principal artifact:
+
+```text
+/theatlas/spatial-ground/conformance/Spatial_Ground_Conformance.md
+```
+
+Conformance proves whether implementations correctly follow the adopted Specification.
+
+Conformance is subordinate to Requirements and Specification. It may test, diagnose, compare, and prove implementation behavior; it does not create missing Specification mathematics or canonical World-space authority.
+
+### Framework 04 — Reference Vectors
+
+Canonical framework directory:
+
+```text
+/theatlas/spatial-ground/reference-vectors/
+```
+
+Current principal artifacts:
+
+```text
+/theatlas/spatial-ground/reference-vectors/Spatial_Ground_Reference_Vectors.md
+/theatlas/spatial-ground/reference-vectors/spatial-ground-reference-vectors-1.0.json
+```
+
+Reference Vectors provide exact executable fixtures and expected results derived from the adopted Specification.
+
+> **Reference Vectors demonstrate the Specification. They do not create the Specification.**
+
+### Governing Sequence
+
+The framework sequence is:
+
+```text
+Requirements state what must be satisfied.
+Specification defines how Spatial Ground works.
+Conformance proves implementation compatibility.
+Reference Vectors demonstrate the Specification.
+```
+
+No downstream proof or documentation layer may create missing Specification mathematics, alter adopted Ground truth, or become an independent source of canonical World-space authority.
+
+---
+
+## Canonical Instance and Institutional Records
+
+The four-framework architecture governs Spatial Ground semantics and proof. Separate institutional records establish canonical status, preserve the adopted production instance, and retain governance history without becoming alternate sources of membership truth.
+
+### Requirements Adoption
+
+```text
+/theatlas/spatial-ground/governance/SG_Requirements_Adoption_Act.md
+```
+
+Canonical Act identity:
+
+```text
+SG-ACT-REQ-2026-0001
+```
+
+This Act placed the Spatial Ground Requirements into the Adopted state and completed Gate A.
+
+### Canonical World-Space Instance Adoption
+
+```text
+/theatlas/spatial-ground/governance/SG-ACT-INSTANCE-2026-0001.md
+```
+
+Canonical instance identity:
+
+```text
+SG-WORLD-SPACE-INSTANCE-0001
+```
+
+This Act establishes the singular adopted canonical World-space instance.
+
+### Production Ground Definition
+
+```text
+/theatlas/spatial-ground/instance/production/SG_World_Ground_Definition_01.sg-cjson.json
+```
+
+The adopted production definition contains one `fsf` root referencing the canonical FSF World SCPE.
+
+### Production Conformance / Reconstruction Proof
+
+```text
+/theatlas/spatial-ground/instance/production/SG_World_Production_Conformance_Reconstruction_Proof_01.json
+```
+
+Current production proof standing:
+
+```text
+PASS
+two independent reconstruction implementations
+zero cross-implementation mismatch
+```
+
+These records preserve adoption and proof. They do not replace the Requirements or Specification as normative semantic authorities.
+
+---
+
 ## Architectural Review Record
 
 The review record preserves the reasoning and evidence that produced the consolidated Spatial Ground architecture.
@@ -477,13 +652,25 @@ Current governing structure includes:
 ├── index.html
 ├── README.md
 ├── requirements/
+│   ├── index.html
+│   ├── README.md
 │   └── spatial-ground-requirements.md
 ├── specification/
-│   └── spatial-ground-specification.md
+│   ├── index.html
+│   ├── README.md
+│   ├── spatial-ground-specification.md
+│   └── ground-definition/
+├── conformance/
+│   └── Spatial_Ground_Conformance.md
+├── reference-vectors/
+│   ├── Spatial_Ground_Reference_Vectors.md
+│   └── spatial-ground-reference-vectors-1.0.json
 ├── governance/
 │   ├── SG_Requirements_Adoption_Act.md
 │   └── SG-ACT-INSTANCE-2026-0001.md
+├── implementation/
 ├── instance/
+│   ├── design/
 │   ├── production/
 │   │   ├── SG_World_Production_SCPE_01.fsf-cjson.json
 │   │   ├── FSF_World_SCPE_Production_Reference_0001.json
@@ -492,10 +679,13 @@ Current governing structure includes:
 │   │   └── SG_World_Space_Instance_0001_Adoption_Manifest.json
 │   └── verification/
 └── review/
-    ├── resolution/
+    ├── adoption/
     ├── consolidation/
-    └── adoption/
-        └── instance/
+    ├── dependency/
+    ├── gates/
+    ├── model/
+    ├── resolution/
+    └── testing/
 ```
 
 The exact filename of an adopted record should not change merely because its institutional status changes.
@@ -589,7 +779,12 @@ When maintaining this directory:
 31. preserve production Conformance / reconstruction evidence as proof rather than as the source of adoption authority;
 32. preserve `index,follow` unless the publication model is intentionally revised;
 33. keep canonical, Open Graph, description, theme-color, favicon, framework, and navigation references aligned with the page;
-34. apply the Atlas editorial rule: **Chronicle records when. Atlas records what.**
+34. expose the four governing framework layers from the Spatial Ground landing page: Requirements, Specification, Conformance, and Reference Vectors;
+35. preserve the sequence **Requirements → Specification → Conformance → Reference Vectors** without collapsing their institutional roles;
+36. preserve adoption acts and canonical-instance records as institutionally distinct from the four framework layers;
+37. maintain dedicated publication surfaces for framework directories where appropriate, using `index.html` for public presentation and `README.md` for repository-level documentation without displacing primary normative artifacts;
+38. preserve the active strict spatial handoff **Spatial Ground → General Spatial Interpretation**;
+39. apply the Atlas editorial rule: **Chronicle records when. Atlas records what.**
 
 ---
 
