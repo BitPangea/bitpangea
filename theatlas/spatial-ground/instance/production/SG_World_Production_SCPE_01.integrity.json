@@ -1,0 +1,9 @@
+{
+  "record": "SG-WORLD-PRODUCTION-FSF-CJSON-INTEGRITY-01",
+  "status": "integrity-evidence",
+  "algorithm": "SHA-256",
+  "target": "SG_World_Production_SCPE_01.fsf-cjson.json",
+  "canonical_byte_length": 10010,
+  "digest_hex": "013248a563f979c56bc34c7951cd542eb990e88c486d0bbbe8b2e9500ea54c54",
+  "note": "Integrity evidence over canonical UTF-8 FSF-CJSON bytes. The hash does not define geometry or spatial identity."
+}
