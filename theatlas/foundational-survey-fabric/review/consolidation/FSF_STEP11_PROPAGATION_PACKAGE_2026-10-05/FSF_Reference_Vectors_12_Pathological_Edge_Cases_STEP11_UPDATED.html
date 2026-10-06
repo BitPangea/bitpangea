@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pathological Edge Cases | Foundational Survey Fabric Reference Vectors | BitPangea</title>
+
+<link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/favicon.svg" rel="shortcut icon"/>
+<link href="/assets/css/bitpangea-framework.css" rel="stylesheet"/>
+<script defer src="/assets/js/bitpangea-framework.js"></script>
+
+<meta name="description" content="Pathological Edge Cases — Reference Vector Section 12 for the BitPangea Foundational Survey Fabric."/>
+<meta name="theme-color" content="#00c8d7"/>
+<meta name="robots" content="index,follow"/>
+<link rel="canonical" href="https://bitpangea.com/theatlas/foundational-survey-fabric/reference-vectors/12-pathological-edge-cases/"/>
+
+<meta property="og:title" content="Pathological Edge Cases | BitPangea"/>
+<meta property="og:description" content="Reference Vector Section 12 for the Foundational Survey Fabric."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://bitpangea.com/theatlas/foundational-survey-fabric/reference-vectors/12-pathological-edge-cases/"/>
+<meta property="og:site_name" content="BitPangea"/>
+
+<style>
+
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;min-height:100%;background:#02050a;color:#fff;font-family:Arial,Helvetica,sans-serif}
+body{position:relative;line-height:1.75;overflow-x:hidden;background:#02050a}
+body::before{content:"";position:fixed;inset:0;background-image:linear-gradient(rgba(2,5,10,.78),rgba(2,5,10,.90)),url("/images/bitpangea.jpg");background-size:cover;background-position:center;background-repeat:no-repeat;z-index:-2;pointer-events:none}
+body::after{content:"";position:fixed;inset:0;background:radial-gradient(circle at 75% 12%,rgba(0,200,215,.10),transparent 34%),radial-gradient(circle at 18% 18%,rgba(212,169,56,.10),transparent 32%),linear-gradient(90deg,rgba(0,0,0,.60),rgba(0,0,0,.25),rgba(0,0,0,.64));z-index:-1;pointer-events:none}
+.page{width:100%;padding:150px 28px 90px}
+.container{max-width:1040px;margin:0 auto;padding:54px 58px 64px;background:rgba(0,0,0,.48);border:1px solid rgba(212,169,56,.16);box-shadow:0 0 60px rgba(0,0,0,.55);backdrop-filter:blur(4px)}
+.eyebrow{color:#00c8d7;letter-spacing:4px;text-transform:uppercase;font-size:12px;margin-bottom:20px}
+.arch-header{display:flex;align-items:center;gap:28px;margin-bottom:20px}
+.arch-mark{width:230px;height:230px;flex-shrink:0;opacity:.96}
+.arch-title{display:flex;flex-direction:column}
+h1{color:#fff;font-size:clamp(32px,4.5vw,52px);line-height:1.02;letter-spacing:5px;text-transform:uppercase;margin-bottom:14px;text-shadow:0 0 22px rgba(0,0,0,.9)}
+.subtitle{color:#d4a938;font-size:18px;letter-spacing:3px;text-transform:uppercase;margin-bottom:18px}
+.divider{width:64px;height:2px;background:#d4a938;margin:34px 0 42px;box-shadow:0 0 14px rgba(212,169,56,.65)}
+.arch-statement{font-size:28px;font-weight:500;color:#fff;margin-bottom:28px;text-shadow:0 0 18px rgba(212,169,56,.25)}
+p{margin-bottom:22px;color:#fff;font-size:17px;text-shadow:0 0 9px rgba(0,0,0,.9)}
+h2{margin-top:54px;margin-bottom:20px;color:#fff;font-size:28px;letter-spacing:4px;text-transform:uppercase;text-shadow:0 0 14px rgba(0,0,0,.9)}
+blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;background:rgba(0,0,0,.52);color:#fff;font-size:24px;line-height:1.45;letter-spacing:1px;box-shadow:0 0 28px rgba(0,0,0,.45)}
+.quote-label{display:block;color:#00c8d7;font-size:11px;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px}
+.req-intro{margin:34px 0 42px;padding:28px 30px;background:rgba(0,0,0,.34);border:1px solid rgba(212,169,56,.18)}
+.req-intro p:last-child{margin-bottom:0}
+.spec-card{margin-top:28px;padding:30px 32px 28px;background:rgba(0,0,0,.34);border:1px solid rgba(212,169,56,.18);box-shadow:0 0 22px rgba(0,0,0,.24)}
+.spec-card h2{margin:0 0 18px;font-size:24px;letter-spacing:3px}
+.spec-label{color:#00c8d7;font-size:11px;letter-spacing:3px;text-transform:uppercase;margin-bottom:10px}
+.status-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:28px}
+.status-card{padding:24px;border:1px solid rgba(0,200,215,.18);background:rgba(0,0,0,.30)}
+.status-card h3{color:#d4a938;font-size:13px;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}
+.status-card p{margin:0;font-size:15px;color:rgba(255,255,255,.84)}
+.finding-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.finding-links a,.finding-links a:visited{color:#d4a938;text-decoration:none;border:1px solid rgba(212,169,56,.24);padding:8px 10px;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;background:rgba(0,0,0,.28)}
+.finding-links a:hover{color:#fff}
+.section-nav{display:flex;flex-wrap:wrap;gap:12px;margin:34px 0 8px}
+.section-nav a,.section-nav a:visited{color:#d4a938;text-decoration:none;text-transform:uppercase;letter-spacing:2px;font-size:12px;padding:11px 14px;border:1px solid rgba(212,169,56,.24);background:rgba(0,0,0,.28)}
+.section-nav a:hover{color:#fff;text-shadow:0 0 12px rgba(212,169,56,.55)}
+.note{margin-top:58px;padding:18px 24px;border:1px solid rgba(212,169,56,.38);color:#d4a938;letter-spacing:2px;text-transform:uppercase;font-size:12px;display:inline-block;background:rgba(0,0,0,.35)}
+@media(max-width:768px){
+  .page{padding:185px 16px 60px}.container{padding:36px 24px 46px}
+  .arch-header{flex-direction:column;align-items:flex-start;gap:24px}
+  .arch-mark{width:110px;height:110px}h1{letter-spacing:3px}
+  .subtitle{font-size:16px}.arch-statement{font-size:19px}p{font-size:16px}
+  blockquote{font-size:20px;padding:24px 26px}.status-grid{grid-template-columns:1fr}
+  .spec-card{padding:26px 22px 24px}.spec-card h2{font-size:21px}
+}
+
+</style>
+</head>
+
+<body data-bp-page="theatlas">
+<div id="bp-header"></div>
+
+<main class="page">
+<article class="container">
+
+<div class="eyebrow">The Atlas · The Architecture · Foundational Survey Fabric · Reference Vectors</div>
+
+<div class="arch-header">
+  <img src="/thearchitecture/architecture-globe.png" alt="The Architecture Emblem" class="arch-mark"/>
+  <div class="arch-title">
+    <h1>Pathological<br/>Edge Cases</h1>
+    <div class="subtitle">Reference Vector Section 12 · Adversarial Spatial Testing</div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<p class="arch-statement">
+  The adversarial canonical test set for exposing ambiguity, hidden assumptions, implementation shortcuts, and failures at the limits of exact Survey behavior.
+</p>
+
+<div class="req-intro">
+<p>
+  <strong>Pathological Edge Cases</strong> define adversarial Reference Vectors designed to expose ambiguity, hidden state, tolerance leakage, normalization instability, serialization drift, boundary mistakes, implementation shortcuts, and Specification gaps at the hardest edges of the current Foundational Survey Fabric candidate mathematics.
+</p>
+<p>
+  The original page correctly treated these cases as a future stress corpus while the mathematics and interchange model were broadly unresolved. That standing has changed substantially. CRPC, Point / Segment / SCPE geometry, exact predicates, deterministic normalization, ECEM, FSF-CJSON-1.0, restricted exact transformation, Conformance evidence, and invalid / unsupported separation now provide a concrete adversarial surface.
+</p>
+<p>
+  Pathological vectors shall stress only mathematics that the Specification actually defines. FMD-04B numerical Survey Domain capacity is now defined at <strong>H = 1,000,000 Pang</strong>. Vectors shall still not invent expected outputs for open questions such as arbitrary exact rotation, non-rational derived-scalar representation, or general Boolean result geometry.
+</p>
+</div>
+
+<blockquote>
+  <span class="quote-label">Reference Vector Question</span>
+  Given this exact input, what exact answer must every conforming implementation produce?
+</blockquote>
+
+<section class="spec-card">
+  <div class="spec-label">12.0 · Current Adversarial Model</div>
+  <h2>Stress Defined Mathematics; Expose Undefined Mathematics</h2>
+  <p>
+    Pathological testing has two legitimate outcomes:
+  </p>
+  <p>
+    <strong>defined behavior survives the hard case exactly</strong><br/>
+    or<br/>
+    <strong>the case reveals a genuine Specification gap, unsupported capability, or unresolved dependency</strong>.
+  </p>
+  <p>
+    It shall never force an implementation to fabricate canonical truth merely because a stress case demands an answer.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">12.1 · Exact Boundary-Contact Cases</div>
+  <h2>Touching at the Limit Must Not Become Overlap or Separation</h2>
+  <p>
+    Reference Vectors shall include exact endpoint contact, vertex contact, Point-on-Segment cases, SCPE boundary contact, and shared-edge conditions supported by the current geometry model.
+  </p>
+  <p>
+    Exact predicates shall determine contact. No epsilon, rendering tolerance, or floating proximity may alter the classification.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">12.2 · Adversarial Point Equality Cases</div>
+  <h2>Different Syntax Must Not Defeat Exact Equality</h2>
+  <p>
+    The corpus shall include mathematically equal CRPC coordinates supplied through different permitted rational forms and visually similar but mathematically distinct Points.
+  </p>
+  <p>
+    Equal Points shall normalize to equality. Near-but-distinct Points shall remain distinct.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">12.3 · Adversarial Segment Intersection Cases</div>
+  <h2>Near-Degenerate Intersections Must Still Classify Exactly</h2>
+  <p>
+    Reference Vectors shall stress proper crossing, endpoint contact, collinear overlap, collinear disjointness, nearly parallel Segments, and Points lying extremely close to but not on another Segment.
+  </p>
+  <p>
+    Exact orientation and range predicates shall control the result rather than numerical tolerance.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">12.4 · SCPE Simplicity Stress Cases</div>
+  <h2>Complex Polygon Boundaries Must Still Produce One Validity Judgment</h2>
+  <p>
+    The corpus shall include high-vertex-count SCPE candidates, near-self-intersections, exact vertex contacts, redundant collinear runs, reversed traversal, alternate starting vertices, and invalid nonadjacent crossings.
+  </p>
+  <p>
+    Conforming implementations shall reach the same SCPE validity and normalization result from the same exact input.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">12.5 · Normalization Fixed-Point Stress Cases</div>
+  <h2>Repeated Canonicalization Must Converge and Stop</h2>
+  <p>
+    Reference Vectors shall include SCPEs with multiple removable collinear middle vertices, alternate traversal, repeated accepted closure markers, reducible CRPC components, and other permitted representational redundancy.
+  </p>
+  <p>
+    Normalization shall converge deterministically to a fixed point and satisfy <strong>N(N(G)) = N(G)</strong>.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">12.6 · Extreme CRPC Cases</div>
+  <h2>Large and Fine Rational Values Must Remain Exact</h2>
+  <p>
+    The corpus shall include valid CRPC values with large numerators or denominators and exact sub-Pang quantities chosen to stress parsing, reduction, comparison, and arithmetic without leaving the supported mathematical model.
+  </p>
+  <p>
+    Finite exact representation shall remain finite, deterministic, and free from floating substitution.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">12.7 · Precision-Boundary Cases</div>
+  <h2>Nearness Must Not Become Identity</h2>
+  <p>
+    Reference Vectors shall place exact values on opposite sides of equality, containment, intersection, or boundary decisions while remaining arbitrarily close in display terms.
+  </p>
+  <p>
+    Distinct exact values shall remain distinct regardless of apparent visual coincidence.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">12.8 · Survey Domain Stress Cases</div>
+  <h2>Boundary Classification Must Survive the Hardest Parameterized Cases</h2>
+  <p>
+    Reference Vectors shall stress symbolic or parameterized Points at <strong>x = ±H</strong>, <strong>y = ±H</strong>, the four corners, strict interior, and exact outside conditions.
+  </p>
+  <p>
+    <strong>FMD-04A</strong> already resolves the closed-square geometry and boundary semantics. FMD-04B now resolves the numerical value at <strong>H = 1,000,000 Pang</strong>. Pathological Domain stress SHALL include the exact adopted boundaries, corners, exact rational just-inside cases, and exact rational just-outside cases.
+  </p>
+  <p>
+    The adopted canonical half-span is <strong>±1,000,000 Pang</strong>. The earlier use of the same magnitude remains superseded only as to its former rationale.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">12.9 · Point-in-SCPE Ray-Casting Stress Cases</div>
+  <h2>Vertex and Horizontal-Edge Cases Must Not Break Containment</h2>
+  <p>
+    The corpus shall include Points whose horizontal test ray passes through vertices, aligns with horizontal edges, meets exact boundary Points, or encounters multiple candidate crossings.
+  </p>
+  <p>
+    The half-open y convention and exact boundary test shall produce one deterministic INTERIOR, BOUNDARY, or EXTERIOR result.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">12.10 · Exact Area Stress Cases</div>
+  <h2>Large Coordinate Arithmetic Must Preserve Exact SCPE Area</h2>
+  <p>
+    Reference Vectors shall include valid SCPEs whose shoelace arithmetic stresses numerator size, cancellation, orientation reversal, and normalization.
+  </p>
+  <p>
+    Exact rational square-Pang area shall remain identical for semantically equivalent normalized geometry.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">12.11 · Transformation Chain Stress Cases</div>
+  <h2>Supported Exact Transformations Must Not Accumulate Drift</h2>
+  <p>
+    The corpus shall include long but finite chains of supported exact translations and positive uniform scales, including exact inverses and identity-producing compositions.
+  </p>
+  <p>
+    Arbitrary rotation, reflection as canonical placement, nonuniform scaling, and shear shall not be smuggled into the stress corpus as though they were already closed operations.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">12.12 · FSF-CJSON Canonicalization Stress Cases</div>
+  <h2>Large Valid Objects Must Still Produce Canonical Bytes</h2>
+  <p>
+    Reference Vectors shall include large but valid canonical Points, Segments, and SCPEs serialized through FSF-CJSON-1.0.
+  </p>
+  <p>
+    Canonical integer strings, object-key ordering, UTF-8 serialization, field rules, and canonical byte output shall remain deterministic under increased object size and representational complexity.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">12.13 · Parse / Normalize / Serialize Stress Cases</div>
+  <h2>Repeated Interchange Must Not Drift</h2>
+  <p>
+    The corpus shall repeatedly apply:
+  </p>
+  <p>
+    <strong>parse → validate → normalize → canonical serialize → parse</strong>
+  </p>
+  <p>
+    to supported complex fixtures and prove that the canonical object and canonical bytes stabilize rather than mutate across cycles.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">12.14 · Hidden-State Detection Cases</div>
+  <h2>Execution History May Affect Performance, Never Truth</h2>
+  <p>
+    Reference Vectors shall repeat identical cases under varied cache state, execution order, process lifetime, test ordering, and independent implementation history.
+  </p>
+  <p>
+    Canonical results, validity judgments, and required canonical bytes shall remain unchanged.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">12.15 · Unsupported / Invalid Separation Stress Cases</div>
+  <h2>Difficult Input Must Not Collapse Failure Taxonomy</h2>
+  <p>
+    The corpus shall include hard cases that are mathematically valid but unsupported, genuinely malformed or invalid, and supported but computationally demanding.
+  </p>
+  <p>
+    Conforming implementations shall preserve the distinction among <strong>VALID AND SUPPORTED</strong>, <strong>VALID BUT UNSUPPORTED</strong>, and <strong>INVALID</strong>.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">12.16 · Open-Mathematics Exposure Cases</div>
+  <h2>The Stress Corpus Must Reveal Rather Than Conceal Missing Closure</h2>
+  <p>
+    Reference Vectors shall deliberately probe operations that remain open, including arbitrary exact rotation, non-rational derived-scalar measurement, and general Boolean result geometry. Concrete numerical Domain-edge behavior is no longer open and SHALL be stressed directly.
+  </p>
+  <p>
+    The expected outcome is not an invented canonical result. It is a documented open dependency or unsupported state until the governing Specification closes the mathematics.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">12.17 · Termination Stress Cases</div>
+  <h2>Difficult Finite Input Must Still Terminate Deterministically</h2>
+  <p>
+    The corpus shall include finite but demanding inputs designed to stress parsing, CRPC reduction, normalization, exact predicates, SCPE validation, canonical serialization, and Conformance evaluation.
+  </p>
+  <p>
+    Where the profile requires support, the implementation shall terminate deterministically. Final quantitative complexity ceilings remain subject to the governing Specification and Conformance profile.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">12.18 · Specification Ambiguity Probes</div>
+  <h2>The Corpus Must Attack the Specification as Well as the Implementation</h2>
+  <p>
+    Adversarial vectors shall include cases specifically designed to expose underspecified predicate behavior, unclear profile obligations, contradictory normalization rules, representation ambiguity, hidden dependency, or higher-layer leakage.
+  </p>
+  <p>
+    If competent independent implementations disagree because the Specification itself does not determine one result, the vector has successfully exposed a Specification defect rather than an implementation variation.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">12.19 · Higher-Layer Leakage Cases</div>
+  <h2>FSF Stress Must Not Pull Parcel or World Meaning Into Geometry</h2>
+  <p>
+    Reference Vectors shall include geometrically difficult cases near World membership, Parcel-like boundaries, or other higher-layer concepts to prove that the FSF returns only canonical reference and mathematical truth.
+  </p>
+  <p>
+    Spatial Ground, GSI, Parcel Cadastre, governance, ownership, rights, and civilization semantics remain outside the FSF result.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">12.20 · Cross-Implementation Stress Agreement</div>
+  <h2>Independent Implementations Must Survive the Same Hard Cases</h2>
+  <p>
+    For every adversarial case whose governing mathematics is defined, independent conforming implementations shall return the same exact result, validity judgment, normalization result, canonical serialization, or governed unsupported classification.
+  </p>
+  <p>
+    Divergence under stress indicates implementation defect, Specification ambiguity, version/profile incompatibility, fixture defect, hidden state, unresolved mathematics, or higher-layer leakage requiring correction before adoption readiness can be argued.
+  </p>
+</section>
+
+<div class="status-grid">
+  <div class="status-card">
+    <h3>Executable Now</h3>
+    <p>
+      Boundary-contact stress; Point equality traps; Segment intersection stress; SCPE simplicity stress; normalization fixed-point cases; extreme CRPC; precision-boundary cases; parameterized Domain stress; Point-in-SCPE ray-casting stress; exact area stress; supported transformation chains; FSF-CJSON stress; repeated canonical round-trip; hidden-state detection; invalid / unsupported separation; termination stress; ambiguity probes; higher-layer leakage probes.
+    </p>
+  </div>
+  <div class="status-card">
+    <h3>Still Open or Conditional</h3>
+    <p>
+      arbitrary exact rotation stress with canonical output; non-rational derived-scalar stress with canonical output; general Boolean result-geometry stress; final quantitative complexity ceilings; final vector identifiers and corpus packaging.
+    </p>
+  </div>
+</div>
+
+<section class="spec-card">
+  <div class="spec-label">Reference Vector Integration Standing</div>
+  <h2>The Adversarial Corpus Can Now Be Built Around the Solved Core</h2>
+  <p>
+    The original page correctly reserved pathological testing until enough of the mathematics existed to make hard cases meaningful. That threshold has now been crossed for the candidate core.
+  </p>
+  <p>
+    Section 12 can therefore support adversarial fixtures across CRPC, exact predicates, SCPE validity and normalization, Domain classification, exact area, restricted transformations, FSF-CJSON, hidden-state independence, termination, and Conformance classification. Open mathematics remains visible as open rather than being papered over by stress-test expectations.
+  </p>
+</section>
+
+<section class="spec-card">
+  <div class="spec-label">Primary Requirements Basis</div>
+  <h2>Referenced Requirements</h2>
+  <p>
+    Pathological Edge Cases will derive especially from Requirements Findings #10, #24, #30, #32, #44–#50, #56–#59, #63–#66, #70–#75, and #78–#85.
+  </p>
+  <div class="finding-links">
+    <a href="/theatlas/foundational-survey-fabric/requirements/02-addressability-meaning-refinement/#finding-10">#10</a>
+    <a href="/theatlas/foundational-survey-fabric/requirements/04-ontology-structure/#finding-24">#24 · #30 · #32</a>
+    <a href="/theatlas/foundational-survey-fabric/requirements/06-geometry-topology-measurement-operations/#finding-44">#44–#50 · #56–#59</a>
+    <a href="/theatlas/foundational-survey-fabric/requirements/06-geometry-topology-measurement-operations/#finding-63">#63–#66 · #70–#75</a>
+    <a href="/theatlas/foundational-survey-fabric/requirements/07-knowability-computability-conformance/#finding-78">#78–#85</a>
+  </div>
+</section>
+
+<blockquote>
+  <span class="quote-label">Reference Vector Boundary</span>
+  Pathological Edge Cases do not weaken the architecture by finding difficult behavior. They strengthen it by refusing to preserve ambiguity, approximation, hidden dependency, or higher-Architecture-domain leakage as canonical truth. Surviving these cases is evidence for adoption readiness; the vectors themselves do not grant canonical standing.
+</blockquote>
+
+<div class="section-nav">
+  <a href="/theatlas/foundational-survey-fabric/reference-vectors/11-version-conformance-vectors/">← Reference Vectors 11</a>
+  <a href="/theatlas/foundational-survey-fabric/requirements/">Requirements Framework</a>
+  <a href="/theatlas/foundational-survey-fabric/specification/">Specification</a>
+  <a href="/theatlas/foundational-survey-fabric/conformance/">Conformance</a>
+  <a href="/theatlas/foundational-survey-fabric/reference-vectors/">Reference Vectors Index</a>
+</div>
+
+<div class="note">Foundational Survey Fabric · Reference Vectors 12 · Pathological Edge Cases · Adversarial Candidate Proof Profile</div>
+
+</article>
+</main>
+
+<div id="bp-footer"></div>
+</body>
+</html>
