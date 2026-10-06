@@ -43,6 +43,19 @@ h2{margin-top:54px;margin-bottom:20px;color:#fff;font-size:28px;letter-spacing:4
 .arch-card{border:1px solid rgba(212,169,56,.22);background:rgba(0,0,0,.30);padding:22px;min-height:145px}
 .arch-card h3{color:#d4a938;font-size:13px;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px}
 .arch-card p{font-size:15px;margin-bottom:0}
+.framework-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin:30px 0 10px}
+.framework-card{display:block;border:1px solid rgba(212,169,56,.22);background:rgba(0,0,0,.30);padding:24px;text-decoration:none;transition:border-color .2s ease,background .2s ease,transform .2s ease}
+.framework-card:hover{border-color:rgba(0,200,215,.55);background:rgba(0,0,0,.48);transform:translateY(-2px)}
+.framework-card .framework-label{display:block;color:#00c8d7;font-size:11px;letter-spacing:3px;text-transform:uppercase;margin-bottom:9px}
+.framework-card h3{color:#d4a938;font-size:19px;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}
+.framework-card p{font-size:15px;margin-bottom:0;color:#fff}
+.framework-sequence{margin-top:30px}
+.institution-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin:30px 0 10px}
+.institution-card{display:block;border:1px solid rgba(0,200,215,.20);background:rgba(0,0,0,.30);padding:24px;text-decoration:none}
+.institution-card:hover{border-color:rgba(212,169,56,.45);background:rgba(0,0,0,.48)}
+.institution-card .framework-label{display:block;color:#00c8d7;font-size:11px;letter-spacing:3px;text-transform:uppercase;margin-bottom:9px}
+.institution-card h3{color:#d4a938;font-size:19px;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}
+.institution-card p{font-size:15px;margin-bottom:0;color:#fff}
 blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;background:rgba(0,0,0,.52);color:#fff;font-size:24px;line-height:1.45;letter-spacing:1px;box-shadow:0 0 28px rgba(0,0,0,.45)}
 .quote-label{display:block;color:#00c8d7;font-size:11px;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px}
 .record-panel{margin:28px 0 10px;border:1px solid rgba(212,169,56,.22);background:rgba(0,0,0,.30)}
@@ -63,7 +76,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 .return-link{display:inline-block;margin-top:14px;color:#d4a938;text-decoration:none;text-transform:uppercase;letter-spacing:2px;font-size:12px}
 .return-link:hover{color:#fff;text-shadow:0 0 12px rgba(212,169,56,.5)}
 .note{margin-top:58px;padding:18px 24px;border:1px solid rgba(212,169,56,.38);color:#d4a938;letter-spacing:2px;text-transform:uppercase;font-size:12px;display:inline-block;background:rgba(0,0,0,.35)}
-@media(max-width:900px){.arch-grid{grid-template-columns:1fr}}
+@media(max-width:900px){.arch-grid,.framework-grid,.institution-grid{grid-template-columns:1fr}}
 @media(max-width:768px){.page{padding:185px 16px 60px}.container{padding:36px 24px 46px}.arch-header{flex-direction:column;align-items:flex-start;gap:24px}.arch-mark{width:110px;height:110px}h1{letter-spacing:3px}h2{font-size:23px;letter-spacing:3px}.subtitle{font-size:16px}.arch-statement{font-size:19px}p{font-size:16px}blockquote{font-size:20px;padding:24px 26px}.record-status{display:block;width:max-content;margin:8px 0 0}}
 </style>
 </head>
@@ -120,6 +133,75 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
     <h3>Authority</h3>
     <p>Constitutional truth constrains. The Creator designs within what remains open. A recorded Atlas Adoption Act makes a permissible definition canonical. Spatial Ground then preserves that adopted World-space without acquiring authority to redefine constitutional truth.</p>
   </div>
+</div>
+
+<h2>Governing Framework</h2>
+
+<p>
+  Spatial Ground is organized through four institutional framework layers. Each has a distinct role: <strong>Requirements</strong> state what must remain true; <strong>Specification</strong> defines the formal semantics and production rules; <strong>Conformance</strong> proves implementation compatibility; and <strong>Reference Vectors</strong> demonstrate the Specification through exact executable cases.
+</p>
+
+<div class="framework-grid">
+  <a class="framework-card" href="/theatlas/spatial-ground/requirements/">
+    <span class="framework-label">Framework 01</span>
+    <h3>Requirements</h3>
+    <p>States the governing obligations Spatial Ground must preserve, including exact membership, constitutional subordination, layer boundaries, permanence, and the FSF dependency contract.</p>
+  </a>
+
+  <a class="framework-card" href="/theatlas/spatial-ground/specification/">
+    <span class="framework-label">Framework 02</span>
+    <h3>Specification</h3>
+    <p>Defines the Canonical Membership Predicate Model, SG-CJSON 1.0, canonical evaluation semantics, the FSF dependency surface, and the adopted production profile under SG-SPEC-1.0.</p>
+  </a>
+
+  <a class="framework-card" href="/theatlas/spatial-ground/conformance/Spatial_Ground_Conformance.md">
+    <span class="framework-label">Framework 03</span>
+    <h3>Conformance</h3>
+    <p>Defines how independent implementations prove that they correctly follow SG-SPEC-1.0 without becoming a source of canonical World-space authority.</p>
+  </a>
+
+  <a class="framework-card" href="/theatlas/spatial-ground/reference-vectors/Spatial_Ground_Reference_Vectors.md">
+    <span class="framework-label">Framework 04</span>
+    <h3>Reference Vectors</h3>
+    <p>Provides exact executable fixtures and expected results that demonstrate SG-SPEC-1.0. Reference Vectors test the Specification; they do not create it.</p>
+  </a>
+</div>
+
+<blockquote class="framework-sequence">
+  <span class="quote-label">Architectural Sequence</span>
+  Requirements state what must be satisfied. Specification defines how Spatial Ground works. Conformance proves implementation compatibility. Reference Vectors demonstrate the Specification. None of the downstream proof layers may create missing Specification mathematics or canonical authority.
+</blockquote>
+
+<h2>Canonical Instance and Institutional Records</h2>
+
+<p>
+  The four-framework architecture governs Spatial Ground semantics and proof. Separate institutional records establish canonical status, preserve the adopted production instance, and retain the architectural review and governance history without becoming alternate sources of membership truth.
+</p>
+
+<div class="institution-grid">
+  <a class="institution-card" href="/theatlas/spatial-ground/governance/SG_Requirements_Adoption_Act.md">
+    <span class="framework-label">Governance</span>
+    <h3>Requirements Adoption Act</h3>
+    <p><strong>SG-ACT-REQ-2026-0001</strong> records the act that placed the Spatial Ground Requirements into the Adopted state and completed Gate A.</p>
+  </a>
+
+  <a class="institution-card" href="/theatlas/spatial-ground/governance/SG-ACT-INSTANCE-2026-0001.md">
+    <span class="framework-label">Governance</span>
+    <h3>Instance Adoption Act</h3>
+    <p><strong>SG-ACT-INSTANCE-2026-0001</strong> establishes <strong>SG-WORLD-SPACE-INSTANCE-0001</strong> as the singular canonical World-space instance.</p>
+  </a>
+
+  <a class="institution-card" href="/theatlas/spatial-ground/instance/production/SG_World_Ground_Definition_01.sg-cjson.json">
+    <span class="framework-label">Canonical Instance</span>
+    <h3>Production Ground Definition</h3>
+    <p>The adopted one-root SG-CJSON 1.0 Ground Definition that references the canonical FSF World SCPE and expresses canonical World membership.</p>
+  </a>
+
+  <a class="institution-card" href="/theatlas/spatial-ground/instance/production/SG_World_Production_Conformance_Reconstruction_Proof_01.json">
+    <span class="framework-label">Production Proof</span>
+    <h3>Conformance / Reconstruction Proof</h3>
+    <p>The final production proof recording PASS across two independent reconstruction implementations with zero cross-implementation mismatch.</p>
+  </a>
 </div>
 
 <h2>Purpose and Boundary</h2>
@@ -294,6 +376,12 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 <p>
   This narrow responsibility is intentional. Lower layers preserve smaller and more permanent truths; higher layers may add meaning without acquiring authority to alter the World membership beneath them. The same rule applies downward: Spatial Ground may not resolve open Survey mathematics merely because World-membership work would benefit from an answer.
 </p>
+
+<h2>Active Spatial Handoff</h2>
+
+<div class="spec-status" style="margin-top:28px;padding:26px 28px;border:1px solid rgba(0,200,215,.18);background:rgba(0,0,0,.30)">
+  <p style="margin:0"><strong>Spatial Ground → General Spatial Interpretation.</strong> The lower spatial foundation is now established: FSF supplies canonical Survey truth, Spatial Ground supplies adopted canonical World membership, and General Spatial Interpretation is the next strict spatial layer. Higher layers must consume the adopted Ground without redefining it.</p>
+</div>
 
 <a class="return-link" href="/theatlas/">← Return to The Atlas</a>
 
