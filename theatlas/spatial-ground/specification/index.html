@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Specification Framework | Spatial Ground | BitPangea</title>
+<link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/favicon.svg" rel="shortcut icon"/>
+<link href="/assets/css/bitpangea-framework.css" rel="stylesheet"/>
+<script defer src="/assets/js/bitpangea-framework.js"></script>
+<meta name="description" content="The adopted SG-SPEC-1.0 Spatial Ground Specification defining canonical World-membership semantics, the CMPM formal model, SG-CJSON 1.0, and the governed FSF dependency."/>
+<meta name="theme-color" content="#00c8d7"/>
+<meta name="robots" content="index,follow"/>
+<link rel="canonical" href="https://bitpangea.com/theatlas/spatial-ground/specification/"/>
+<meta property="og:title" content="Spatial Ground Specification | BitPangea"/>
+<meta property="og:description" content="The adopted SG-SPEC-1.0 specification for exact canonical World-space membership over inherited Foundational Survey Fabric semantics."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://bitpangea.com/theatlas/spatial-ground/specification/"/>
+<meta property="og:site_name" content="BitPangea"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;min-height:100%;background:#02050a;color:#fff;font-family:Arial,Helvetica,sans-serif}
+body{position:relative;line-height:1.75;overflow-x:hidden;background:#02050a}
+body::before{content:"";position:fixed;inset:0;background-image:linear-gradient(rgba(2,5,10,.78),rgba(2,5,10,.90)),url("/images/bitpangea.jpg");background-size:cover;background-position:center;background-repeat:no-repeat;z-index:-2;pointer-events:none}
+body::after{content:"";position:fixed;inset:0;background:radial-gradient(circle at 75% 12%,rgba(0,200,215,.10),transparent 34%),radial-gradient(circle at 18% 18%,rgba(212,169,56,.10),transparent 32%),linear-gradient(90deg,rgba(0,0,0,.60),rgba(0,0,0,.25),rgba(0,0,0,.64));z-index:-1;pointer-events:none}
+.page{width:100%;padding:150px 28px 90px}
+.container{max-width:1040px;margin:0 auto;padding:54px 58px 64px;background:rgba(0,0,0,.48);border:1px solid rgba(212,169,56,.16);box-shadow:0 0 60px rgba(0,0,0,.55);backdrop-filter:blur(4px)}
+.eyebrow{color:#00c8d7;letter-spacing:4px;text-transform:uppercase;font-size:12px;margin-bottom:20px}
+.arch-header{display:flex;align-items:center;gap:28px;margin-bottom:20px}
+.arch-mark{width:230px;height:230px;flex-shrink:0;opacity:.96}
+.arch-title{display:flex;flex-direction:column}
+h1{color:#fff;font-size:clamp(38px,6vw,66px);line-height:1.06;letter-spacing:5px;text-transform:uppercase;margin-bottom:14px;text-shadow:0 0 22px rgba(0,0,0,.9)}
+.subtitle{color:#d4a938;font-size:18px;letter-spacing:3px;text-transform:uppercase;margin-bottom:18px}
+.divider{width:64px;height:2px;background:#d4a938;margin:34px 0 42px;box-shadow:0 0 14px rgba(212,169,56,.65)}
+.arch-statement{font-size:28px;font-weight:500;color:#fff;margin-bottom:28px;text-shadow:0 0 18px rgba(212,169,56,.25)}
+p{margin-bottom:22px;color:#fff;font-size:17px;text-shadow:0 0 9px rgba(0,0,0,.9)}
+h2{margin-top:54px;margin-bottom:20px;color:#fff;font-size:28px;letter-spacing:4px;text-transform:uppercase;text-shadow:0 0 14px rgba(0,0,0,.9)}
+blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;background:rgba(0,0,0,.52);color:#fff;font-size:24px;line-height:1.45;letter-spacing:1px;box-shadow:0 0 28px rgba(0,0,0,.45)}
+.quote-label{display:block;color:#00c8d7;font-size:11px;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px}
+.spec-intro{margin:34px 0 42px;padding:28px 30px;background:rgba(0,0,0,.34);border:1px solid rgba(212,169,56,.18)}
+.spec-intro p:last-child{margin-bottom:0}
+.spec-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin:34px 0 10px}
+.spec-card{color:#fff;padding:26px 28px;border:1px solid rgba(212,169,56,.22);background:rgba(0,0,0,.34);box-shadow:0 0 22px rgba(0,0,0,.24)}
+.spec-card h3{color:#d4a938;font-size:15px;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px}
+.spec-card p{margin:0;color:rgba(255,255,255,.86);font-size:15px}
+.spec-code{margin-top:14px;font-family:Consolas,Monaco,monospace;color:#00c8d7;font-size:13px;overflow-wrap:anywhere}
+.spec-status{margin-top:36px;padding:26px 28px;border:1px solid rgba(0,200,215,.18);background:rgba(0,0,0,.30)}
+.spec-status h3{color:#d4a938;font-size:13px;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}
+.spec-status p{margin:0;font-size:15px;color:rgba(255,255,255,.86)}
+.section-nav{display:flex;flex-wrap:wrap;gap:12px;margin:34px 0 8px}
+.section-nav a,.section-nav a:visited{color:#d4a938;text-decoration:none;text-transform:uppercase;letter-spacing:2px;font-size:12px;padding:11px 14px;border:1px solid rgba(212,169,56,.24);background:rgba(0,0,0,.28)}
+.section-nav a:hover{color:#fff;text-shadow:0 0 12px rgba(212,169,56,.55)}
+.note{margin-top:58px;padding:18px 24px;border:1px solid rgba(212,169,56,.38);color:#d4a938;letter-spacing:2px;text-transform:uppercase;font-size:12px;display:inline-block;background:rgba(0,0,0,.35)}
+@media(max-width:768px){
+.page{padding:185px 16px 60px}.container{padding:36px 24px 46px}.arch-header{flex-direction:column;align-items:flex-start;gap:24px}.arch-mark{width:110px;height:110px}h1{letter-spacing:3px}.subtitle{font-size:16px}.arch-statement{font-size:19px}p{font-size:16px}blockquote{font-size:20px;padding:24px 26px}.spec-grid{grid-template-columns:1fr}.spec-card{padding:24px 22px}
+}
+</style>
+</head>
+<body data-bp-page="theatlas">
+<div id="bp-header"></div>
+<main class="page">
+<article class="container">
+
+<div class="eyebrow">The Atlas · The Architecture · Spatial Ground</div>
+
+<div class="arch-header">
+  <img src="/thearchitecture/architecture-globe.png" alt="The Architecture Emblem" class="arch-mark"/>
+  <div class="arch-title">
+    <h1>Specification<br/>Framework</h1>
+    <div class="subtitle">Spatial Ground · SG-SPEC-1.0 Adopted</div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<p class="arch-statement">
+  The adopted formal rules by which valid canonical Survey space receives one exact Spatial Ground membership result.
+</p>
+
+<div class="spec-intro">
+<p>
+  The <strong>Spatial Ground Specification</strong> defines how the adopted Spatial Ground Requirements are satisfied through the <strong>Canonical Membership Predicate Model (CMPM)</strong>. It governs World-membership semantics, input validity, the Foundational Survey Fabric dependency contract, canonical definition rules, deterministic evaluation, representation independence, reconstruction, and the machine-readable Ground Definition profile.
+</p>
+<p>
+  The primary normative artifact is <strong>SG-SPEC-1.0</strong>. This page explains that Specification; it does not become an independent source of Spatial Ground semantics.
+</p>
+</div>
+
+<blockquote>
+  <span class="quote-label">Governing Layer Relation</span>
+  FSF supplies canonical spatial reference and mathematics. Spatial Ground adds canonical participation in The World.
+</blockquote>
+
+<h2>Formal Model</h2>
+
+<div class="spec-grid">
+  <div class="spec-card">
+    <h3>Membership Predicate</h3>
+    <p>For every valid canonical Survey location, the adopted Ground Definition yields exactly one canonical result: WORLD or NON_WORLD.</p>
+    <div class="spec-code">M_D : S → {WORLD, NON_WORLD}</div>
+  </div>
+
+  <div class="spec-card">
+    <h3>Canonical World-Space</h3>
+    <p>World-space is the semantic set induced by the governing Ground Definition, not a separately authored registry or higher-layer interpretation.</p>
+    <div class="spec-code">W_D = { x ∈ S | M_D(x) = WORLD }</div>
+  </div>
+
+  <div class="spec-card">
+    <h3>Input Validity</h3>
+    <p>FSF validity and canonicalization occur before Ground membership evaluation. Invalid Survey input is rejected and is not interpreted as NON_WORLD.</p>
+  </div>
+
+  <div class="spec-card">
+    <h3>Implementation Independence</h3>
+    <p>No implementation is canonical. Independent conforming implementations must produce identical canonical results for identical canonical inputs.</p>
+  </div>
+</div>
+
+<h2>Adopted FSF Dependency</h2>
+
+<div class="spec-grid">
+  <div class="spec-card">
+    <h3>Survey Authority</h3>
+    <p><strong>FSF-SPEC-1.0</strong> supplies canonical reference, frame, coordinates, Pang measure, Point / Segment / SCPE geometry, exact predicates, deterministic normalization, refinement semantics, and compatible lineage.</p>
+  </div>
+
+  <div class="spec-card">
+    <h3>Canonical Bounds</h3>
+    <p><strong>H = 1,000,000 Pang</strong>; <strong>S = [-1,000,000,+1,000,000]²</strong>; <strong>P = [-500,000,+500,000]²</strong>.</p>
+    <div class="spec-code">World-space ⊂ interior(P) ⊂ interior(S)</div>
+  </div>
+</div>
+
+<blockquote>
+  <span class="quote-label">Dependency Rule</span>
+  Spatial Ground may consume what the Survey Fabric has canonically established. It may not complete the Survey Fabric from above.
+</blockquote>
+
+<h2>Canonical Representation</h2>
+
+<div class="spec-grid">
+  <div class="spec-card">
+    <h3>Ground Definition</h3>
+    <p>The canonical machine-readable Ground Definition representation is <strong>SG-CJSON 1.0</strong>. The selected production profile uses one primary FSF spatial-set definition through one <strong>fsf</strong> root.</p>
+  </div>
+
+  <div class="spec-card">
+    <h3>Geometry Interchange</h3>
+    <p>Canonical exact Survey geometry remains governed by <strong>FSF-CJSON-1.0</strong>. Spatial Ground references that geometry rather than duplicating it into a competing Ground-owned grammar.</p>
+  </div>
+
+  <div class="spec-card">
+    <h3>Production Profile</h3>
+    <p>Unrestricted Boolean / composite-result closure remains outside the current production profile. Historical synthetic operators do not expand the adopted FSF capability surface.</p>
+  </div>
+
+  <div class="spec-card">
+    <h3>Primary Normative Artifact</h3>
+    <p>The adopted Specification remains the authority for Spatial Ground semantics.</p>
+    <div class="spec-code">/theatlas/spatial-ground/specification/spatial-ground-specification.md</div>
+  </div>
+</div>
+
+<h2>Specification Boundary</h2>
+
+<p>
+  Spatial Ground introduces canonical World-membership meaning only. It does not define Parcel identity, Parcel eligibility, ownership, rights, Regions, terrain, visual World Form, settlement, economics, culture, experience, or any other higher-layer meaning.
+</p>
+
+<p>
+  Conformance proves implementation compatibility with the adopted Specification. Reference Vectors demonstrate the Specification. Neither may create missing Specification mathematics or independent canonical authority.
+</p>
+
+<blockquote>
+  <span class="quote-label">Specification Principle</span>
+  Reference Vectors demonstrate the Specification. They do not create the Specification.
+</blockquote>
+
+<h2>Institutional Standing</h2>
+
+<div class="spec-status">
+  <h3>Current Standing</h3>
+  <p><strong>SG-SPEC-1.0 is adopted and Gate B is complete.</strong> The later canonical instance-adoption sequence established <strong>SG-WORLD-SPACE-INSTANCE-0001</strong>. Production Conformance and independent reconstruction passed with zero cross-implementation mismatch. Specification adoption and instance adoption remain institutionally distinct.</p>
+</div>
+
+<div class="spec-status">
+  <h3>Canonical Production Chain</h3>
+  <p><strong>FSF-SPEC-1.0 → canonical FSF SCPE → FSF-CJSON-1.0 → FSF-WORLD-SCPE-0001 → one-root SG-CJSON 1.0 Ground Definition → SG-WORLD-SPACE-INSTANCE-0001.</strong></p>
+</div>
+
+<h2>Governing Records</h2>
+
+<div class="spec-grid">
+  <div class="spec-card">
+    <h3>Adopted Specification</h3>
+    <p><a href="/theatlas/spatial-ground/specification/spatial-ground-specification.md" style="color:#d4a938;text-decoration:none;font-weight:700;">Spatial Ground Specification — SG-SPEC-1.0</a></p>
+  </div>
+
+  <div class="spec-card">
+    <h3>Adoption Act</h3>
+    <p><a href="/theatlas/spatial-ground/review/adoption/SG-ACT-SPEC-2026-0001.md" style="color:#d4a938;text-decoration:none;font-weight:700;">SG-ACT-SPEC-2026-0001</a></p>
+  </div>
+
+  <div class="spec-card">
+    <h3>Gate B Closure</h3>
+    <p><a href="/theatlas/spatial-ground/review/adoption/SG_Gate_B_Closure_Record_Day132.md" style="color:#d4a938;text-decoration:none;font-weight:700;">Gate B Closure Record</a></p>
+  </div>
+
+  <div class="spec-card">
+    <h3>Spatial Ground</h3>
+    <p><a href="/theatlas/spatial-ground/" style="color:#d4a938;text-decoration:none;font-weight:700;">Return to Spatial Ground</a></p>
+  </div>
+</div>
+
+<div class="section-nav">
+  <a href="/theatlas/spatial-ground/">← Spatial Ground</a>
+  <a href="/theatlas/spatial-ground/requirements/">Requirements</a>
+  <a href="/theatlas/foundational-survey-fabric/">Foundational Survey Fabric</a>
+  <a href="/thearchitecture/">The Architecture</a>
+</div>
+
+<div class="note">Spatial Ground · SG-SPEC-1.0 Adopted · Gate B Complete · Canonical World-Space Instance Adopted</div>
+
+</article>
+</main>
+<div id="bp-footer"></div>
+</body>
+</html>
