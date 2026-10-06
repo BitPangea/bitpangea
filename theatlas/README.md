@@ -198,9 +198,9 @@ Status does not determine dependency position, presentation order, or working pr
 
 The permanent spatial reference architecture beneath BitPangea.
 
-Its architectural responsibility is institutionally established.
+Its architectural responsibility and production mathematical baseline are established.
 
-Its exact mathematical realization remains deliberately unresolved.
+**FSF-SPEC-1.0** is the canonically adopted Foundational Survey Fabric Specification. It supplies the exact foundational Survey reference and mathematics consumed by Spatial Ground.
 
 The Foundational Survey Fabric establishes canonical reference.
 
@@ -212,11 +212,13 @@ Path:
 /theatlas/foundational-survey-fabric/
 ```
 
-### Spatial Ground — Provisional
+### Spatial Ground — Established
 
 The Architecture domain immediately above the Foundational Survey Fabric in the demonstrated spatial dependency.
 
-Its purpose is to establish the enduring relationship between canonical Survey space and BitPangea World-space.
+**SG-SPEC-1.0** is adopted, Gate B is complete, and **SG-WORLD-SPACE-INSTANCE-0001** is the adopted canonical World-space instance.
+
+Spatial Ground establishes and preserves which valid canonical Survey space participates in The World. Its adopted production definition contains one `fsf` root referencing the canonical FSF World SCPE; it does not duplicate Survey mathematics.
 
 Path:
 
@@ -305,20 +307,33 @@ Path:
 
 ## Current Spatial Handoff
 
-The current demonstrated architectural handoff is:
+The demonstrated strict spatial dependency remains:
 
 ```text
 Foundational Survey Fabric
 → Spatial Ground
+→ General Spatial Interpretation
+→ Parcel Cadastre
 ```
 
-The Foundational Survey Fabric is sufficiently established to act as a stable dependency beneath Spatial Ground.
+The lower two layers are now canonically established:
 
-Its unresolved mathematics do not need to be selected before Spatial Ground architectural inquiry proceeds.
+```text
+FSF-SPEC-1.0
+→ SG-SPEC-1.0
+→ SG-WORLD-SPACE-INSTANCE-0001
+```
+
+The active architectural handoff therefore proceeds from:
+
+```text
+Spatial Ground
+→ General Spatial Interpretation
+```
 
 The handoff principle is:
 
-> **Foundational Survey Fabric establishes canonical reference. Spatial Ground establishes the enduring relationship between canonical Survey space and BitPangea World-space.**
+> **FSF supplies canonical spatial reference and mathematics. Spatial Ground adds canonical participation in The World. General Spatial Interpretation must consume that adopted Ground without redefining it.**
 
 ---
 
@@ -351,7 +366,7 @@ Reference Vectors
 
 The governing principle remains:
 
-> **Requirements before mathematics.**
+> **Requirements establishes what must be satisfied. Specification defines the mathematics. Conformance proves implementation. Reference Vectors demonstrate expected results.**
 
 ---
 
@@ -809,8 +824,8 @@ When adding or revising files within The Atlas:
 11. preserve the demonstrated dependency **FSF → Spatial Ground → GSI → Parcel Cadastre**;
 12. do not infer one universal dependency stack across all nine domains;
 13. preserve Established / Provisional / Reserved status independently of order or priority;
-14. preserve the FSF → Spatial Ground handoff;
-15. preserve unresolved Survey mathematics without prematurely selecting implementation;
+14. preserve the adopted FSF → Spatial Ground foundation and the active Spatial Ground → General Spatial Interpretation handoff;
+15. preserve **FSF-SPEC-1.0** as the adopted foundational Survey specification and **SG-WORLD-SPACE-INSTANCE-0001** as the adopted canonical World-space instance;
 16. preserve Survey Domain ≠ World;
 17. preserve Survey units ≠ Parcels;
 18. preserve Parcel identity as distinct from ownership and rights;
@@ -884,7 +899,11 @@ The Atlas preserves the following standing principles:
 
 **Current demonstrated spatial dependency: Foundational Survey Fabric → Spatial Ground → General Spatial Interpretation → Parcel Cadastre**
 
-**Current spatial handoff: Foundational Survey Fabric → Spatial Ground**
+**Current spatial handoff: Spatial Ground → General Spatial Interpretation**
+
+**Foundational Survey Fabric: FSF-SPEC-1.0 canonically adopted**
+
+**Spatial Ground: SG-SPEC-1.0 adopted · SG-WORLD-SPACE-INSTANCE-0001 adopted**
 
 ---
 
