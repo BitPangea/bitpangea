@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Conformance | Spatial Ground | BitPangea</title>
+<link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/favicon.svg" rel="shortcut icon"/>
+<link href="/assets/css/bitpangea-framework.css" rel="stylesheet"/>
+<script defer src="/assets/js/bitpangea-framework.js"></script>
+
+<meta name="description" content="The Spatial Ground conformance framework for proving exact, deterministic implementation of SG-SPEC-1.0 and reproducible canonical World-membership behavior."/>
+<meta name="theme-color" content="#00c8d7"/>
+<meta name="robots" content="index,follow"/>
+<link rel="canonical" href="https://bitpangea.com/theatlas/spatial-ground/conformance/"/>
+
+<meta property="og:title" content="Spatial Ground Conformance | BitPangea"/>
+<meta property="og:description" content="The implementation-proof framework through which software demonstrates fidelity to the adopted Spatial Ground Specification."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://bitpangea.com/theatlas/spatial-ground/conformance/"/>
+<meta property="og:site_name" content="BitPangea"/>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;min-height:100%;background:#02050a;color:#fff;font-family:Arial,Helvetica,sans-serif}
+body{position:relative;line-height:1.75;overflow-x:hidden;background:#02050a}
+body::before{content:"";position:fixed;inset:0;background-image:linear-gradient(rgba(2,5,10,.78),rgba(2,5,10,.90)),url("/images/bitpangea.jpg");background-size:cover;background-position:center;background-repeat:no-repeat;z-index:-2;pointer-events:none}
+body::after{content:"";position:fixed;inset:0;background:radial-gradient(circle at 75% 12%,rgba(0,200,215,.10),transparent 34%),radial-gradient(circle at 18% 18%,rgba(212,169,56,.10),transparent 32%),linear-gradient(90deg,rgba(0,0,0,.60),rgba(0,0,0,.25),rgba(0,0,0,.64));z-index:-1;pointer-events:none}
+.page{width:100%;padding:150px 28px 90px}
+.container{max-width:1040px;margin:0 auto;padding:54px 58px 64px;background:rgba(0,0,0,.48);border:1px solid rgba(212,169,56,.16);box-shadow:0 0 60px rgba(0,0,0,.55);backdrop-filter:blur(4px)}
+.eyebrow{color:#00c8d7;letter-spacing:4px;text-transform:uppercase;font-size:12px;margin-bottom:20px}
+.arch-header{display:flex;align-items:center;gap:28px;margin-bottom:20px}
+.arch-mark{width:230px;height:230px;flex-shrink:0;opacity:.96}
+.arch-title{display:flex;flex-direction:column}
+h1{color:#fff;font-size:clamp(38px,6vw,66px);line-height:1.06;letter-spacing:5px;text-transform:uppercase;margin-bottom:14px;text-shadow:0 0 22px rgba(0,0,0,.9)}
+.subtitle{color:#d4a938;font-size:18px;letter-spacing:3px;text-transform:uppercase;margin-bottom:18px}
+.divider{width:64px;height:2px;background:#d4a938;margin:34px 0 42px;box-shadow:0 0 14px rgba(212,169,56,.65)}
+.arch-statement{font-size:28px;font-weight:500;color:#fff;margin-bottom:28px;text-shadow:0 0 18px rgba(212,169,56,.25)}
+p{margin-bottom:22px;color:#fff;font-size:17px;text-shadow:0 0 9px rgba(0,0,0,.9)}
+h2{margin-top:54px;margin-bottom:20px;color:#fff;font-size:28px;letter-spacing:4px;text-transform:uppercase;text-shadow:0 0 14px rgba(0,0,0,.9)}
+blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;background:rgba(0,0,0,.52);color:#fff;font-size:24px;line-height:1.45;letter-spacing:1px;box-shadow:0 0 28px rgba(0,0,0,.45)}
+.quote-label{display:block;color:#00c8d7;font-size:11px;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px}
+.req-intro{margin:34px 0 42px;padding:28px 30px;background:rgba(0,0,0,.34);border:1px solid rgba(212,169,56,.18)}
+.req-intro p:last-child{margin-bottom:0}
+.conf-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin:34px 0 10px}
+.conf-card{display:block;color:#fff;padding:26px 28px;border:1px solid rgba(212,169,56,.22);background:rgba(0,0,0,.34);box-shadow:0 0 22px rgba(0,0,0,.24);text-decoration:none}
+.conf-card:hover{border-color:rgba(0,200,215,.55);background:rgba(0,0,0,.48)}
+.conf-kicker{color:#00c8d7;font-size:11px;letter-spacing:3px;text-transform:uppercase;margin-bottom:10px}
+.conf-card h3{color:#d4a938;font-size:20px;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}
+.conf-card p{margin:0;color:rgba(255,255,255,.86);font-size:15px}
+.conf-code{margin-top:14px;font-family:Consolas,Monaco,monospace;color:#00c8d7;font-size:13px;overflow-wrap:anywhere}
+.conf-status{margin-top:36px;padding:26px 28px;border:1px solid rgba(0,200,215,.18);background:rgba(0,0,0,.30)}
+.conf-status h3{color:#d4a938;font-size:13px;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}
+.conf-status p{margin:0;font-size:15px;color:rgba(255,255,255,.86)}
+.section-nav{display:flex;flex-wrap:wrap;gap:12px;margin:34px 0 8px}
+.section-nav a,.section-nav a:visited{color:#d4a938;text-decoration:none;text-transform:uppercase;letter-spacing:2px;font-size:12px;padding:11px 14px;border:1px solid rgba(212,169,56,.24);background:rgba(0,0,0,.28)}
+.section-nav a:hover{color:#fff;text-shadow:0 0 12px rgba(212,169,56,.55)}
+.note{margin-top:58px;padding:18px 24px;border:1px solid rgba(212,169,56,.38);color:#d4a938;letter-spacing:2px;text-transform:uppercase;font-size:12px;display:inline-block;background:rgba(0,0,0,.35)}
+@media(max-width:768px){
+.page{padding:185px 16px 60px}.container{padding:36px 24px 46px}.arch-header{flex-direction:column;align-items:flex-start;gap:24px}.arch-mark{width:110px;height:110px}h1{letter-spacing:3px}.subtitle{font-size:16px}.arch-statement{font-size:19px}p{font-size:16px}blockquote{font-size:20px;padding:24px 26px}.conf-grid{grid-template-columns:1fr}.conf-card{padding:24px 22px}
+}
+</style>
+</head>
+
+<body data-bp-page="theatlas">
+<div id="bp-header"></div>
+
+<main class="page">
+<article class="container">
+
+<div class="eyebrow">The Atlas · The Architecture · Spatial Ground</div>
+
+<div class="arch-header">
+  <img src="/thearchitecture/architecture-globe.png" alt="The Architecture Emblem" class="arch-mark"/>
+  <div class="arch-title">
+    <h1>Conformance</h1>
+    <div class="subtitle">Spatial Ground · Implementation Proof Framework</div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<p class="arch-statement">
+  The framework through which software proves that it produces the same exact Ground truth required by SG-SPEC-1.0.
+</p>
+
+<div class="req-intro">
+<p>
+  <strong>Spatial Ground Conformance</strong> defines how an implementation, validator, canonical Ground Definition, or derived artifact demonstrates fidelity to the adopted Spatial Ground Specification. It translates the formal membership model into observable proof: structural validity, deterministic canonicalization, exact membership, invalid-input separation, canonical result equivalence, hidden-state independence, reconstruction, and independent reproducibility.
+</p>
+<p>
+  Conformance verifies. It does not legislate. It cannot create World-space, redefine the Spatial Ground Specification, resolve missing FSF mathematics through test precedent, or override the adopted canonical Ground Definition.
+</p>
+</div>
+
+<blockquote>
+  <span class="quote-label">Governing Rule</span>
+  Specification defines truth. Conformance proves implementation fidelity to that truth.
+</blockquote>
+
+<h2>Current Standing</h2>
+
+<div class="conf-status">
+  <h3>Production Result</h3>
+  <p><strong>Production Conformance / Reconstruction — PASS.</strong> Two independent reconstruction implementations reproduced the adopted production behavior with <strong>zero cross-implementation mismatch</strong>. The governing Specification is <strong>SG-SPEC-1.0</strong>, Gate B is complete, and <strong>SG-WORLD-SPACE-INSTANCE-0001</strong> is the adopted canonical World-space instance.</p>
+</div>
+
+<h2>Conformance Classes</h2>
+
+<div class="conf-grid">
+  <div class="conf-card">
+    <div class="conf-kicker">SG-C1</div>
+    <h3>Definition Validator</h3>
+    <p>Validates SG-CJSON structure, dependency declarations, canonicalization, permitted constructs, and exclusion of prohibited Ground semantics.</p>
+  </div>
+
+  <div class="conf-card">
+    <div class="conf-kicker">SG-C2</div>
+    <h3>Membership Evaluator</h3>
+    <p>Adds exact membership evaluation, FSF input validation, invalid-input separation, and deterministic termination.</p>
+  </div>
+
+  <div class="conf-card">
+    <div class="conf-kicker">SG-C3</div>
+    <h3>Full Semantic Validator</h3>
+    <p>Adds semantic equivalence, refinement behavior, canonical-limit tests, FSF dependency compatibility, and applicable constitutional instance checks.</p>
+  </div>
+
+  <div class="conf-card">
+    <div class="conf-kicker">SG-C4</div>
+    <h3>Independent Reimplementation</h3>
+    <p>Requires an independently developed implementation to reproduce the same canonical outputs from the same public normative inputs.</p>
+  </div>
+</div>
+
+<h2>Mandatory Proof Surface</h2>
+
+<div class="conf-grid">
+  <div class="conf-card">
+    <div class="conf-kicker">Validity</div>
+    <h3>Definition Validation</h3>
+    <p>Valid Ground Definitions must be accepted; malformed, unsupported, nondeterministic, dependency-defective, or semantically prohibited definitions must be rejected.</p>
+  </div>
+
+  <div class="conf-card">
+    <div class="conf-kicker">Membership</div>
+    <h3>Exact Two-Valued Result</h3>
+    <p>Every valid canonical Survey input must resolve to exactly WORLD or NON_WORLD. Invalid Survey input remains outside the membership vocabulary.</p>
+    <div class="conf-code">M_D(x) ∈ {WORLD, NON_WORLD}</div>
+  </div>
+
+  <div class="conf-card">
+    <div class="conf-kicker">Determinism</div>
+    <h3>Canonical Result Equivalence</h3>
+    <p>Independent conforming implementations must return identical canonical membership results for identical canonical inputs.</p>
+    <div class="conf-code">M_D^A(x) = M_D^B(x)</div>
+  </div>
+
+  <div class="conf-card">
+    <div class="conf-kicker">Independence</div>
+    <h3>Hidden-State Prohibition</h3>
+    <p>Membership may not vary with caches, clocks, locale, network state, user identity, ownership state, deployment environment, or other mutable hidden conditions.</p>
+  </div>
+</div>
+
+<h2>Test Architecture</h2>
+
+<p>
+  The Conformance framework includes exact test families for interior World locations, exterior non-World locations, canonical-limit contact, equivalent and non-equivalent Survey references, invalid Survey input, representation traps, transformation traps, hidden-state traps, supported refinement behavior, constitutional instance conditions, adversarial inputs, reconstruction, and independent implementation agreement.
+</p>
+
+<blockquote>
+  <span class="quote-label">Many Implementations · One Truth</span>
+  If independent implementations disagree, the architecture has discovered a problem—not a second canon.
+</blockquote>
+
+<h2>Reference Vector Relationship</h2>
+
+<p>
+  Reference Vectors provide exact executable fixtures. Conformance defines the proof obligations and conditions for passing them. The relationship is:
+</p>
+
+<blockquote>
+  <span class="quote-label">Proof Sequence</span>
+  Specification → Conformance → Reference Vectors
+</blockquote>
+
+<p>
+  Reference Vectors may expose defects or unsupported dependencies, but they may not create semantics absent from the Specification.
+</p>
+
+<blockquote>
+  <span class="quote-label">Specification Principle</span>
+  Reference Vectors demonstrate the Specification. They do not create the Specification.
+</blockquote>
+
+<h2>Production Conformance / Reconstruction</h2>
+
+<div class="conf-grid">
+  <a class="conf-card" href="/theatlas/spatial-ground/instance/production/SG_World_Production_Conformance_Reconstruction_Proof_01.json">
+    <div class="conf-kicker">Production Proof</div>
+    <h3>Reconstruction Evidence</h3>
+    <p>Final adopted-instance proof across two independent reconstruction implementations with zero cross-implementation mismatch.</p>
+    <div class="conf-code">PASS · 0 mismatch</div>
+  </a>
+
+  <a class="conf-card" href="/theatlas/spatial-ground/conformance/Spatial_Ground_Conformance.md">
+    <div class="conf-kicker">Conformance Record</div>
+    <h3>Spatial Ground Conformance</h3>
+    <p>The detailed Conformance architecture defining classes, mandatory behavior, validation, failure conditions, reconstruction, and independent implementation requirements.</p>
+  </a>
+</div>
+
+<div class="conf-status">
+  <h3>Demonstrated Production Membership</h3>
+  <p><strong>WORLD:</strong> origin; canonical start vertex; first boundary-edge midpoint. <strong>NON_WORLD:</strong> (490000,0), (0,490000), (750000,0). <strong>INVALID_INPUT:</strong> (1000001,0).</p>
+</div>
+
+<h2>Authority Boundary</h2>
+
+<p>
+  Conformance may validate implementation behavior, compare canonical outputs, verify exactness and canonicalization, preserve evidence, report failure, and support independent reconstruction. It may not redefine Requirements, invent missing Specification mathematics, create competing canonical World-space truth, redefine FSF mathematics, adopt the Specification, or establish the canonical World-space instance.
+</p>
+
+<blockquote>
+  <span class="quote-label">Conformance Boundary</span>
+  A validator may detect Ground truth. It may not create Ground truth.
+</blockquote>
+
+<div class="section-nav">
+  <a href="/theatlas/spatial-ground/">← Spatial Ground</a>
+  <a href="/theatlas/spatial-ground/requirements/">Requirements</a>
+  <a href="/theatlas/spatial-ground/specification/">Specification</a>
+  <a href="/theatlas/spatial-ground/reference-vectors/">Reference Vectors</a>
+  <a href="/thearchitecture/">The Architecture</a>
+</div>
+
+<div class="note">Spatial Ground · Conformance · SG-SPEC-1.0 · Production Conformance / Reconstruction PASS</div>
+
+</article>
+</main>
+
+<div id="bp-footer"></div>
+</body>
+</html>
