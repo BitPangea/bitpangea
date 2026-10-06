@@ -5,7 +5,7 @@
 **BitPangea · The Atlas · Foundational Survey Fabric**  
 **Scope:** Requirements Findings #1–#85  
 **Canonical Page:** https://bitpangea.com/theatlas/foundational-survey-fabric/requirements/  
-**Status:** REQUIREMENTS FRAMEWORK — AUDITED / CURRENT / RECONCILED THROUGH DAY #126
+**Status:** REQUIREMENTS FRAMEWORK — AUDITED / CURRENT / GOVERNING
 
 ---
 
@@ -163,21 +163,24 @@ Defines:
 
 ---
 
-## Current Candidate Mathematical Standing
+## Adopted Mathematical Standing
 
-Later formal work has selected a coherent candidate core inside this Requirements envelope.
+The adopted Specification operates inside this Requirements envelope.
 
-Current candidate architecture includes:
+The current production baseline includes:
 
 ```text
+FSF-SPEC-1.0
+→ canonically adopted Foundational Survey Fabric Specification
+
 CRPC
-→ exact rational Pang coordinates
+→ exact reduced rational Pang coordinates
 
 ECEM
-→ exact precision by coordinate extension
+→ exact compatible precision / refinement semantics
 
 Point / Segment / SCPE
-→ current primitive geometry core
+→ adopted primitive geometry core for the production profile
 
 exact rational predicates
 → no epsilon / no tolerance-based truth
@@ -186,25 +189,33 @@ deterministic normalization
 → canonical convergence
 
 FSF-CJSON-1.0
-→ primary canonical machine representation
+→ canonical machine serialization
 
 right-handed frame
 counterclockwise positive rotation
 ```
 
-Survey Domain candidate geometry:
+The canonical Survey Domain is:
 
 ```text
-D_H = {(x,y) : -H ≤ x ≤ H and -H ≤ y ≤ H}
+H = 1,000,000 Pang
+
+D = [-1,000,000,+1,000,000]²
 ```
 
-where `H` is exact and positive.
+The governed production placement envelope is:
 
-The Domain geometry / boundary are candidate-resolved.
+```text
+P = [-500,000,+500,000]²
+```
 
-The numerical value of `H` remains OPEN.
+with the required relationship:
 
-The earlier ±1,000,000 Pang working value is noncanonical.
+```text
+World-space ⊂ interior(P) ⊂ interior(D)
+```
+
+`H = 1,000,000 Pang` is a governed foundational design constant.
 
 ---
 
@@ -237,16 +248,19 @@ It does not prescribe the higher layer's internal design unless that structure i
 
 ---
 
-## Current Solved / Open Distinction
+## Adopted / Reserved Distinction
 
-### Candidate-Resolved Core
+### Adopted Production Core
 
 ```text
+FSF-SPEC-1.0
 CRPC
 canonical origin (0,0)
 canonical axes / handedness
 counterclockwise positive rotation
-closed square Survey Domain geometry
+H = 1,000,000 Pang
+D = [-1,000,000,+1,000,000]²
+P = [-500,000,+500,000]²
 Point / Segment / SCPE
 exact core predicates
 deterministic normalization
@@ -256,25 +270,17 @@ ECEM
 representation / lineage continuity semantics
 ```
 
-### Major Open Gates
+### Reserved / Outside Current Production Profile
 
 ```text
-Survey Domain numerical half-span H
-final canonical address syntax / grammar
-final exact angular unit
-general Euclidean distance scalar closure
-general path / boundary-length closure
-arbitrary exact rotation
-general Boolean / composite result geometry
-operation-domain / output closure
-final Specification identity / version succession / migration governance
-final complexity / parser limits
-general closed-set / arbitrary difference compatibility
+unrestricted Boolean / composite-result closure
+general arbitrary difference closure
+other extended mathematics not adopted by FSF-SPEC-1.0
 ```
 
-These open items remain Specification-level questions.
+Reserved capability is not missing canonical truth for the current production profile.
 
-They may not be filled by Conformance, Reference Vectors, or implementation convenience.
+It may not be filled by Conformance, Reference Vectors, or implementation convenience.
 
 ---
 
@@ -299,22 +305,18 @@ This preserves Requirements ownership and prevents test artifacts from inventing
 
 ## Documentation Standing
 
-The Requirements Framework itself remains valid.
+The Requirements Framework remains valid and governing.
 
 Findings #1–#85 do not need reopening.
-
-However, the Requirements index page required a current-state update because its previous standing still described the FSF mathematics as deliberately unresolved and not ready for mathematical implementation.
-
-That statement is now stale.
 
 The current standing is:
 
 - Requirements Integrity Audit complete;
 - Findings #1–#85 preserved;
-- candidate core mathematics integrated;
-- executable candidate proof work permitted;
-- remaining formal gates preserved;
-- full canonical mathematical adoption not yet permitted.
+- FSF-SPEC-1.0 canonically adopted;
+- FSF-CJSON-1.0 established for the adopted production profile;
+- Conformance and Reference Vectors remain subordinate to Requirements and Specification;
+- broader capability outside the adopted production profile remains reserved unless later specified through governed evolution.
 
 ---
 
@@ -329,10 +331,10 @@ Use this directory for:
 
 Do not use it to:
 
-- adopt candidate mathematics;
+- redefine adopted Specification mathematics;
 - define implementation-specific behavior;
 - invent Reference Vector expected results;
-- declare canonical adoption;
+- create canonical authority independently of valid adoption;
 - or move higher-layer responsibilities into FSF.
 
 If downstream work conflicts with the Requirements, reconcile the downstream work first.
@@ -345,14 +347,12 @@ If downstream work conflicts with the Requirements, reconcile the downstream wor
 
 **REQUIREMENTS INTEGRITY AUDIT — COMPLETE**
 
-**CANDIDATE CORE MATHEMATICS — INTEGRATED**
+**FSF-SPEC-1.0 — CANONICALLY ADOPTED**
 
-**EXECUTABLE CANDIDATE PROOF WORK — PERMITTED**
+**FSF-CJSON-1.0 — CANONICAL MACHINE SERIALIZATION**
 
-**REMAINING FORMAL GATES — OPEN**
+**ADOPTED PRODUCTION CORE — ESTABLISHED**
 
-**FULL CANONICAL FSF ADOPTION — NOT YET PERMITTED**
+**RESERVED CAPABILITY — OUTSIDE CURRENT PRODUCTION PROFILE**
 
-**INDEX.HTML — UPDATED**
-
-**README.md — CREATED**
+**REQUIREMENTS REMAIN GOVERNING**
