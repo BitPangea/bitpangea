@@ -1,0 +1,33 @@
+{
+  "record": "SG-WORLD-SPACE-INSTANCE-0001",
+  "record_state": "adopted",
+  "adoption_act": "SG-ACT-INSTANCE-2026-0001",
+  "adoption_date": "2026-10-06",
+  "creator_period_day": "132",
+  "governing_spatial_ground_specification": "SG-SPEC-1.0",
+  "governing_fsf_specification": "FSF-SPEC-1.0",
+  "ground_definition": {
+    "filename": "SG_World_Ground_Definition_01.sg-cjson.json",
+    "sha256": "40fd371aa7239495f7c939f4c2b6ae9e50cdbaaa2282fe1b237bfa7bf7df2aca"
+  },
+  "fsf_geometry_reference": {
+    "identifier": "FSF-WORLD-SCPE-0001",
+    "reference_record": "FSF_World_SCPE_Production_Reference_0001.json",
+    "reference_record_sha256": "8d4c8cf83d7e0f77da663628a54798e4a1ffb3124786673ece7014a10f45e88b",
+    "geometry_artifact": "SG_World_Production_SCPE_01.fsf-cjson.json",
+    "geometry_sha256": "013248a563f979c56bc34c7951cd542eb990e88c486d0bbbe8b2e9500ea54c54"
+  },
+  "conformance_reconstruction_proof": {
+    "filename": "SG_World_Production_Conformance_Reconstruction_Proof_01.json",
+    "sha256": "aae1afc5697f83a712681c83badde414815a518220971c7d75bf50a5f876eab2",
+    "result": "PASS",
+    "cross_implementation_mismatch_count": 0
+  },
+  "world_membership": {
+    "interior": "WORLD",
+    "boundary": "WORLD",
+    "valid_exterior": "NON_WORLD",
+    "survey_invalid": "INVALID_INPUT before Ground membership"
+  },
+  "standing": "CANONICAL WORLD-SPACE INSTANCE ADOPTED"
+}
