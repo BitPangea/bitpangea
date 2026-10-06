@@ -1,0 +1,12 @@
+{
+  "record": "FSF-WORLD-SCPE-0001",
+  "status": "production-fsf-region-reference",
+  "governing_specification": "FSF-SPEC-1.0",
+  "serialization": "FSF-CJSON-1.0",
+  "artifact": "SG_World_Production_SCPE_01.fsf-cjson.json",
+  "integrity": {
+    "algorithm": "SHA-256",
+    "digest_hex": "013248a563f979c56bc34c7951cd542eb990e88c486d0bbbe8b2e9500ea54c54"
+  },
+  "semantic_note": "This record supplies a durable production reference to one canonical FSF geometry artifact. The reference identifier does not create a new FSF coordinate, place, primitive, or public address grammar."
+}
