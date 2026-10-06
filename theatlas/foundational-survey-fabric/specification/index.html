@@ -16,7 +16,7 @@
 <link rel="canonical" href="https://bitpangea.com/theatlas/foundational-survey-fabric/specification/"/>
 
 <meta property="og:title" content="Foundational Survey Fabric Specification | BitPangea"/>
-<meta property="og:description" content="The formal specification structure through which the Foundational Survey Fabric will define exactly how canonical BitPangea spatial reference works."/>
+<meta property="og:description" content="FSF-SPEC-1.0, the canonically adopted formal mathematical specification for BitPangea’s Foundational Survey Fabric."/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://bitpangea.com/theatlas/foundational-survey-fabric/specification/"/>
 <meta property="og:site_name" content="BitPangea"/>
@@ -229,7 +229,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 <div class="divider"></div>
 
 <p class="arch-statement">
-  The formal structure through which BitPangea will define precisely how the Foundational Survey Fabric works.
+  The canonically adopted formal mathematical structure through which BitPangea’s Foundational Survey Fabric works.
 </p>
 
 <div class="req-intro">
@@ -237,10 +237,10 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   The <strong>Foundational Survey Fabric Specification</strong> is the formal mathematical layer beneath implementation. It translates the accepted Requirements into exact definitions for domain, frame, measurement, addressing, precision, geometry, operations, serialization, and computability.
 </p>
 <p>
-  The seven Specification sections have now completed their first integration pass against Formal Mathematical Decisions <strong>FMD-01 through FMD-09</strong>. The production-critical core now possesses selected candidate mathematics for exact coordinates, canonical frame and origin, core polygonal geometry, exact predicates, normalization, machine serialization, and precision/refinement semantics.
+  <strong>FSF-SPEC-1.0</strong> is the canonically adopted Foundational Survey Fabric Specification. It establishes the current production mathematical baseline for exact coordinates, canonical frame and origin, Survey Domain, core polygonal geometry, exact predicates, normalization, machine serialization, precision/refinement semantics, and governed production placement.
 </p>
 <p>
-  The complete Foundational Survey Fabric Specification is <strong>not yet mathematically closed or canonically adopted</strong>. General composition/output closure, exact general distance and path-length scalar representation, arbitrary rotation/transformation closure, public address grammar, formal complexity limits, and other explicitly preserved gates remain open.
+  Adoption does not imply that every conceivable future geometric or measurement capability belongs to the current production profile. Broader Boolean / composite-result closure and other extended capability remain reserved unless later introduced through governed Specification evolution.
 </p>
 </div>
 
@@ -256,69 +256,69 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 <a class="spec-index-card" href="/theatlas/foundational-survey-fabric/specification/01-domain-model/">
   <div class="spec-index-number">Specification 01</div>
   <h2>Survey Domain and Ground Model</h2>
-  <p>Defines the finite canonical Survey Domain, two-dimensional planar ground model, exact Domain validity, connectedness, and the distinction between reference capacity and World-space. Candidate Domain mathematics are integrated.</p>
+  <p>Defines the finite canonical Survey Domain, two-dimensional planar ground model, exact Domain validity, connectedness, and the distinction between reference capacity and World-space. The adopted Domain is <strong>D = [-1,000,000,+1,000,000]²</strong> Pang.</p>
   <span class="spec-index-range">Domain · Ground · Limits · Connectedness →</span>
 </a>
 <a class="spec-index-card" href="/theatlas/foundational-survey-fabric/specification/02-frame-measurement/">
   <div class="spec-index-number">Specification 02</div>
   <h2>Canonical Frame and Measurement</h2>
-  <p>Defines Pang, square Pang, exact coordinates, canonical directions, origin, global frame, handedness, positive rotation, area, and measurement obligations. The frame core is integrated; angular and general distance/length closure remain open.</p>
+  <p>Defines Pang, square Pang, exact coordinates, canonical directions, origin, global frame, handedness, positive rotation, area, and measurement obligations for the adopted production profile. Extended measurement capability outside that profile remains separately governed.</p>
   <span class="spec-index-range">Frame · Pang · Orientation · Measure →</span>
 </a>
 <a class="spec-index-card" href="/theatlas/foundational-survey-fabric/specification/03-addressing-refinement/">
   <div class="spec-index-number">Specification 03</div>
   <h2>Canonical Addressing and Precision</h2>
-  <p>Defines exact canonical Point meaning, CRPC-based reference, ECEM precision extension, normalization, and compatibility without parent/child or coarse/fine Point semantics. Public address grammar remains open.</p>
+  <p>Defines exact canonical Point meaning, CRPC-based reference, ECEM precision extension, normalization, and compatibility without parent/child or coarse/fine Point semantics. Canonical mathematical meaning remains independent of any optional public-facing address notation.</p>
   <span class="spec-index-range">Addressing · Precision · Extension · Normalization →</span>
 </a>
 <a class="spec-index-card" href="/theatlas/foundational-survey-fabric/specification/04-expressions-geometry/">
   <div class="spec-index-number">Specification 04</div>
   <h2>Spatial Expressions and Geometry</h2>
-  <p>Defines the Point / Segment / SCPE core, exact boundaries, predicates, polygon validity, connectedness, containment, normalization, and geometric equivalence. General composite geometry remains open.</p>
+  <p>Defines the adopted Point / Segment / SCPE core, exact boundaries, predicates, polygon validity, connectedness, containment, normalization, and geometric equivalence. Unrestricted composite-result geometry remains outside the current production profile.</p>
   <span class="spec-index-range">Positions · Extents · Geometry · Predicates →</span>
 </a>
 <a class="spec-index-card" href="/theatlas/foundational-survey-fabric/specification/05-operations/">
   <div class="spec-index-number">Specification 05</div>
   <h2>Canonical Operations</h2>
-  <p>Defines exact comparison, ordering, normalization, validity, precision conversion, conflict detection, and the operation-output discipline. General union/intersection/difference result closure remains open.</p>
+  <p>Defines exact comparison, ordering, normalization, validity, precision conversion, conflict detection, and the operation-output discipline. Unrestricted union / intersection / difference result closure is not part of the adopted production profile unless explicitly specified.</p>
   <span class="spec-index-range">Operations · Comparison · Composition · Conversion →</span>
 </a>
 <a class="spec-index-card" href="/theatlas/foundational-survey-fabric/specification/06-serialization-identity/">
   <div class="spec-index-number">Specification 06</div>
   <h2>Serialization and Specification Identity</h2>
-  <p>Defines FSF-CJSON-1.0 as the current primary canonical machine representation, together with deterministic encoding, versioning, compatibility, and preservation of one mathematical truth across durable forms.</p>
+  <p>Defines <strong>FSF-CJSON-1.0</strong> as the canonical machine serialization, together with deterministic encoding, Specification identity, versioning, compatibility, and preservation of one mathematical truth across durable forms.</p>
   <span class="spec-index-range">Serialization · Identity · Versioning · Interchange →</span>
 </a>
 <a class="spec-index-card" href="/theatlas/foundational-survey-fabric/specification/07-computability-rules/">
   <div class="spec-index-number">Specification 07</div>
   <h2>Computability Rules</h2>
-  <p>Defines finite exact representation, deterministic validation, normalization, termination, authoritative output, implementation independence, and the boundary between the computable solved core and still-open mathematics.</p>
+  <p>Defines finite exact representation, deterministic validation, normalization, termination, authoritative output, implementation independence, and the boundary between adopted production capability and reserved capability.</p>
   <span class="spec-index-range">Exactness · Termination · Validity · Authority →</span>
 </a>
 </div>
 
 <div class="specification-map">
 <p>
-  Together, these seven sections now contain the first integrated candidate core of the Foundational Survey Fabric Specification. The Requirements remain the governing envelope; FMD-01 through FMD-09 provide the selected candidate mathematics now incorporated into the appropriate Specification sections.
+  Together, these seven sections form the adopted <strong>FSF-SPEC-1.0</strong> production Specification. The Requirements remain the governing envelope; the incorporated Formal Mathematical Decisions provide the exact mathematical basis for the adopted profile.
 </p>
 <p>
-  The integrated core is sufficiently deterministic to enter executable prototype, Conformance, Reference Vector, independent-implementation, reconstruction, and adversarial testing for the solved profile. This does not constitute canonical adoption. Each candidate rule remains subject to Specification-wide traceability, successful executable proof, resolution or explicit scoping of material open gates, and the applicable adoption act.
+  The adopted Survey Domain is <strong>D = [-1,000,000,+1,000,000]²</strong> Pang, with governed half-span <strong>H = 1,000,000 Pang</strong>. The governed production placement envelope is <strong>P = [-500,000,+500,000]²</strong> Pang, preserving the relationship <strong>World-space ⊂ interior(P) ⊂ interior(D)</strong>.
 </p>
 <p>
-  The preserved formal-design gates remain visible. Exact canonical location and extensible precision are substantially closed for the current core. Exact polygonal area and deterministic semantic equivalence are substantially closed for the selected primitive profile. Exact general distance/path-length scalar closure, arbitrary rotation/transformation closure, and general operation-domain/output closure remain open. Public canonical address grammar, governed complexity limits, and full Specification identity/governance details also remain unfinished.
+  <strong>FSF-CJSON-1.0</strong> is the canonical machine serialization. Compatible Specification evolution follows <strong>FSF-SPEC-MAJOR.MINOR</strong>: compatible changes preserve canonical place, while incompatible transitions require a new major version and separate governance. Broader capability outside the adopted production profile remains reserved rather than silently inferred.
 </p>
 </div>
 
 <div class="req-status">
-  <h3>Candidate Integration Standing</h3>
+  <h3>Canonical Specification Standing</h3>
   <p>
-    <strong>FMD-01 through FMD-09 have been integrated across Specification Sections 01–07 at candidate-design level.</strong> The solved core is ready for executable proof. The complete FSF Specification is not yet mathematically closed, and no canonical Specification adoption is asserted by this integration pass.
+    <strong>FSF-SPEC-1.0 is canonically adopted.</strong> Requirements remain authoritative over what the Specification must satisfy; Conformance proves implementations against the Specification; Reference Vectors demonstrate expected Specification behavior. Neither Conformance nor Reference Vectors may create missing mathematics.
   </p>
 </div>
 
 <blockquote>
-  <span class="quote-label">Integrated Core Principle</span>
-  Exact mathematics first. Canonical proof next. Adoption only after the candidate survives both.
+  <span class="quote-label">Specification Identity Principle</span>
+  Version the standard. Do not version the place.
 </blockquote>
 
 <blockquote>
@@ -337,7 +337,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <a href="/thearchitecture/">The Architecture</a>
 </div>
 
-<div class="note">Foundational Survey Fabric · Specification · Candidate Core Integrated · Formal Adoption Pending</div>
+<div class="note">Foundational Survey Fabric · Specification · FSF-SPEC-1.0 Canonically Adopted</div>
 
 </article>
 </main>
