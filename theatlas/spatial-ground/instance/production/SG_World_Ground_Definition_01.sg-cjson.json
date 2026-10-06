@@ -1,0 +1,1 @@
+{"expression":{"op":"fsf","value":"FSF-WORLD-SCPE-0001"},"format":"SG-CJSON-1.0","fsf":{"lineage":"FSF-SPEC","specification":"FSF-SPEC-1.0"},"limit_convention":"closed-world-space","model":"CMPM-1.0","specification":"SG-SPEC-1.0","type":"bitpangea.spatial-ground.definition"}
