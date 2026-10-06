@@ -242,7 +242,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   Reference Vectors do not select Survey mathematics. The Requirements establish what must be satisfied. The Specification defines the mathematics that satisfies those requirements. Conformance defines how an implementation proves compatibility. Reference Vectors provide canonical examples, negative cases, adversarial cases, and machine-verifiable expected results derived from that already-defined mathematics.
 </p>
 <p>
-  All twelve Reference Vector sections have now been reconciled against the integrated candidate Specification and Conformance architecture. The corpus is no longer uniformly blocked on future mathematics: substantial portions are executable now, while a smaller set of dependencies remains explicitly open.
+  All twelve Reference Vector sections are reconciled against the canonically adopted <strong>FSF-SPEC-1.0</strong> and the established Conformance architecture. The corpus demonstrates behavior defined by that Specification and preserves explicit boundaries around capabilities outside the adopted production profile.
 </p>
 </div>
 
@@ -254,24 +254,24 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 <h2>Current Corpus Standing</h2>
 
 <div class="req-status">
-  <h3>Integrated Candidate Reference Vector Architecture</h3>
+  <h3>Reference Vector Standing</h3>
   <p>
-    The twelve-section framework now distinguishes three classes of work: <strong>executable now</strong>, <strong>parameterized or conditional</strong>, and <strong>still open because the Specification has not yet closed the mathematics</strong>. Reference Vectors shall advance only within those boundaries.
+    The twelve-section framework demonstrates the adopted FSF production profile through exact executable, negative, compatibility, and adversarial fixtures. Capability outside <strong>FSF-SPEC-1.0</strong> remains explicitly unsupported or reserved rather than being invented by the test corpus.
   </p>
 </div>
 
 <div class="requirements-map">
 <p>
-  <strong>Executable candidate core:</strong> CRPC exact coordinates and arithmetic; canonical Point / Segment / SCPE geometry; exact predicates; deterministic normalization; ECEM meaning preservation; exact SCPE area; canonical orientation frame; restricted exact transformation through translation and positive uniform scale; FSF-CJSON-1.0 canonical interchange; invalid / unsupported separation; Conformance evidence and compatibility testing; and adversarial stress across those defined behaviors.
+  <strong>Adopted executable profile:</strong> CRPC exact coordinates and arithmetic; canonical Point / Segment / SCPE geometry; exact predicates; deterministic normalization; ECEM meaning preservation; exact SCPE area; canonical orientation frame; adopted exact transformation behavior; <strong>FSF-CJSON-1.0</strong> canonical interchange; invalid / unsupported separation; Conformance evidence and compatibility testing; and adversarial stress across those defined behaviors.
 </p>
 <p>
-  <strong>Parameterized or conditional:</strong> Survey Domain boundary behavior using <strong>D<sub>H</sub> = {(x,y) : -H ≤ x ≤ H and -H ≤ y ≤ H}</strong>. <strong>FMD-04A</strong> resolves the closed-square geometry and boundary semantics; <strong>FMD-04B</strong> leaves the numerical half-span <strong>H</strong> open. Domain-edge fixtures may therefore be expressed symbolically or parametrically until FMD-04B closes.
+  <strong>Canonical Survey Domain:</strong> <strong>H = 1,000,000 Pang</strong> and <strong>D = [-1,000,000,+1,000,000]²</strong>. Domain-edge and corner fixtures may now use exact canonical numerical values rather than parameterized placeholders.
 </p>
 <p>
-  The earlier ±1,000,000 Pang half-span is a superseded working candidate and shall not be used as a canonical Reference Vector value.
+  <strong>Governed production placement envelope:</strong> <strong>P = [-500,000,+500,000]²</strong> Pang, with the required relationship <strong>World-space ⊂ interior(P) ⊂ interior(D)</strong>.
 </p>
 <p>
-  <strong>Still open:</strong> <strong>FMD-04B numerical Survey Domain capacity H</strong>; final angular unit; arbitrary exact rotation and its result coordinate class; exact non-rational derived-scalar representation for some distances and lengths; general Boolean / composite result geometry; final complexity ceilings; and final corpus identifiers, packaging, and canonical adoption.
+  <strong>Reserved outside the current production profile:</strong> unrestricted Boolean / composite-result closure and other extended mathematics not adopted by <strong>FSF-SPEC-1.0</strong>. Reference Vectors may demonstrate unsupported boundaries but may not create new Specification behavior.
 </p>
 </div>
 
@@ -289,8 +289,8 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 <a class="spec-index-card" href="/theatlas/foundational-survey-fabric/reference-vectors/02-domain-boundary-vectors/">
   <div class="spec-index-number">Reference Vectors 02</div>
   <h2>Survey Domain Limit Vectors</h2>
-  <p>Tests the FMD-04A closed-square Survey Domain parametrically through H, including origin, interior, boundary, corners, outside classification, ECEM stability, and separation from World membership while FMD-04B numerical capacity remains open.</p>
-  <span class="spec-index-range">Origin · D_H · Closed Boundary · Validity →</span>
+  <p>Tests the adopted closed-square Survey Domain <strong>D = [-1,000,000,+1,000,000]²</strong>, including origin, interior, boundary, corners, outside classification, ECEM stability, and separation from World membership.</p>
+  <span class="spec-index-range">Origin · Canonical Domain · Closed Boundary · Validity →</span>
 </a>
 
 <a class="spec-index-card" href="/theatlas/foundational-survey-fabric/reference-vectors/03-pang-measurement-vectors/">
@@ -367,13 +367,13 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 
 <div class="specification-map">
 <p>
-  Together, these twelve sections define the integrated candidate Reference Vector architecture for the Foundational Survey Fabric. The corpus now covers exact reference, Domain classification, Pang-based mathematics, orientation, geometry, normalization, transformation, precision, invalid-input handling, canonical interchange, version / Conformance behavior, and adversarial stress.
+  Together, these twelve sections define the Reference Vector architecture for the adopted Foundational Survey Fabric production profile. The corpus covers exact reference, canonical Domain classification, Pang-based mathematics, orientation, geometry, normalization, transformation, precision, invalid-input handling, canonical interchange, version / Conformance behavior, and adversarial stress.
 </p>
 <p>
-  The corpus remains subordinate to Requirements, Specification, and Conformance. It may prove, expose, compare, reproduce, and stress behavior that the Specification actually defines. It may not invent spatial truth, choose unresolved mathematics, fill missing result types, redefine canonical authority, or allow higher Architecture domains to leak into FSF outcomes.
+  The corpus remains subordinate to Requirements, <strong>FSF-SPEC-1.0</strong>, and Conformance. It may prove, expose, compare, reproduce, and stress behavior that the Specification defines. It may not invent spatial truth, create unsupported result types, redefine canonical authority, or allow higher Architecture domains to leak into FSF outcomes.
 </p>
 <p>
-  The correct standing is therefore not “the corpus is blocked until all mathematics are complete.” The correct standing is: <strong>build executable vectors for the solved core; use symbolic or parameterized vectors where the governing mathematics is parameterized; and leave unresolved mathematics visibly open until the Specification closes it.</strong> Reference Vectors may demonstrate FMD-04A and parameterized D<sub>H</sub> behavior, but they may not close FMD-04B.
+  The governing development rule is now straightforward: <strong>build exact executable vectors for adopted behavior; classify non-adopted behavior as unsupported or reserved; and never use a fixture to manufacture new Specification mathematics.</strong>
 </p>
 </div>
 
@@ -384,7 +384,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
 
 <blockquote>
   <span class="quote-label">Reference Vector Standing</span>
-  Requirements ownership and reverse traceability remain closed across all twelve sections. The integrated candidate corpus now advances wherever the Specification supplies exact mathematics, remains parameterized where the mathematics is parameterized, and stays explicitly open where the Specification has not yet selected one canonical answer.
+  Requirements ownership and reverse traceability remain closed across all twelve sections. The corpus now demonstrates the adopted <strong>FSF-SPEC-1.0</strong> production profile, including the canonical Survey Domain and canonical serialization, while preserving explicit unsupported / reserved boundaries beyond that profile.
 </blockquote>
 
 <div class="section-nav">
@@ -395,7 +395,7 @@ blockquote{margin:36px 0;padding:30px 36px;border-left:3px solid #d4a938;backgro
   <a href="/thearchitecture/">The Architecture</a>
 </div>
 
-<div class="note">Foundational Survey Fabric · Reference Vectors · Integrated Candidate Test Corpus Framework</div>
+<div class="note">Foundational Survey Fabric · Reference Vectors · FSF-SPEC-1.0 Test Corpus Framework</div>
 
 </article>
 </main>
