@@ -5,7 +5,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Requirements Traceability Matrix | Foundational Survey Fabric | BitPangea</title>
-<meta content="Requirements Traceability Matrix for Foundational Survey Fabric Findings #1–#85, reviewed on Day #123 after FMD-01 through FMD-09 Specification integration." name="description"/>
+<meta content="Requirements Traceability Matrix for Foundational Survey Fabric Findings #1–#85 under the adopted FSF-SPEC-1.0 architecture." name="description"/>
 <style>
 *{box-sizing:border-box}
 html,body{margin:0;background:#02050a;color:#fff;font-family:Arial,Helvetica,sans-serif}
@@ -49,20 +49,21 @@ tr.explicit-row td:first-child{border-left:3px solid rgba(0,200,215,.45)}
 <main class="page">
 <div class="eyebrow">The Atlas · The Architecture · Foundational Survey Fabric</div>
 <h1>Requirements Traceability Matrix</h1>
-<div class="subtitle">Day #123 Specification Integration Review · Findings #1–#85</div>
+<div class="subtitle">Findings #1–#85 · Adopted FSF-SPEC-1.0 Architecture</div>
 <div class="intro">
 <p>This matrix traces every audited Requirement to its downstream Specification section(s), Conformance section(s), and Reference Vector category/categories. It distinguishes what the current audited downstream Requirements Basis sections explicitly cite from traceability assignments that are architecturally supported but not yet explicit in those basis citations.</p>
-<p><strong>Day #123 review:</strong> Specification Sections 01–07 have completed their first candidate-mathematics integration pass against FMD-01 through FMD-09. The section assignments in this matrix remain architecturally valid. However, the integrated Specification pages preserved their existing Requirements Basis ranges during that pass, so the matrix does <strong>not</strong> promote derived Specification mappings to explicit merely because the new body text now implements them. Conformance traceability remains at its prior audit standing. Reference Vector subsection reverse traceability remains closed from Day #115.</p>
+<p><strong>Current standing:</strong> <strong>FSF-SPEC-1.0 is canonically adopted</strong>, and the matrix remains the audit bridge from Requirements into Specification, Conformance, and Reference Vectors. The row-level <strong>E / D / N/A</strong> markings remain documentation-traceability findings from the last explicit basis-citation audit; they are not silently promoted merely because the governing Specification is now adopted. Reference Vector subsection reverse traceability remains closed, while any remaining Specification or Conformance basis-citation cleanup must be handled as documentation reconciliation rather than as a reopening of adopted mathematics.</p>
 </div>
 <blockquote>
 <strong>Traceability rule:</strong> Every Requirement must have a downstream home. Every downstream obligation must be traceable back to an authoritative Requirement. A missing citation is a documentation-level traceability gap until proved otherwise—not automatically an architectural defect.
 </blockquote>
 <div class="summary">
 <div class="card"><strong>85</strong><span>Audited Findings</span></div>
-<div class="card"><strong>28</strong><span>Rows Fully Explicit in Current Basis Audit</span></div>
-<div class="card"><strong>55</strong><span>Rows Needing ≥1 Explicit Basis Update</span></div>
+<div class="card"><strong>28</strong><span>Fully Explicit in Last Basis-Citation Audit</span></div>
+<div class="card"><strong>55</strong><span>Rows Flagged for Documentation Basis Update</span></div>
 <div class="card"><strong>2</strong><span>Specification N/A by Design</span></div>
 </div>
+<div class="note"><strong>Architectural standing.</strong> The traceability counts above are preserved from the last explicit basis-citation audit and should not be read as evidence that FSF mathematics remain provisional. <strong>FSF-SPEC-1.0 is canonically adopted.</strong> This matrix continues to distinguish architectural satisfaction from documentary explicitness.</div>
 <div class="legend">
 <span class="tag explicit">E</span> Explicitly named/ranged in the current audited downstream page's Requirements Basis.
 <span class="tag derived">D</span> Derived traceability assignment; supported by the audited requirement and downstream section scope, but not yet explicitly cited there.
@@ -773,7 +774,7 @@ tr.explicit-row td:first-child{border-left:3px solid rgba(0,200,215,.45)}
 </tbody>
 </table>
 </div>
-<div class="note"><strong>Day #123 Specification integration review.</strong> The FMD-01 through FMD-09 integration materially changed the substantive content of Specification Sections 01–07, but it did not rewrite their Requirements Basis citation ranges. Because this matrix defines <span class="tag explicit">E</span> by explicit Requirements Basis citation, the existing Specification [E]/[D] row statuses remain unchanged in this review. This is intentional: implementation of a Requirement in body text and explicit traceability citation are related but distinct documentation obligations. The next traceability-cleanup pass may update the seven Specification Requirements Basis sections and then promote supported Specification mappings from <span class="tag derived">D</span> to <span class="tag explicit">E</span>.</div><div class="note"><strong>Day #115 Reference Vector closure.</strong> All 144 Reference Vector subsections have been reverse-traced to Findings #1–#85. The citation-closure edits for V01–V08 are reflected here; V09–V12 required no additional Requirements-basis changes. No new Requirement was created and no mathematical choice was selected.</div><div class="note"><strong>Scope note.</strong> This remains a page/section-level Requirements Traceability Matrix. Day #115 completed subsection-level reverse traceability for all twelve Reference Vector sections and closed the Reference Vector citation mappings reflected in this column. Specification section assignments were re-reviewed on Day #123 against the integrated Specification content, but explicitness remains governed by the unchanged Requirements Basis citations; Conformance subsection-level reverse traceability has not been re-audited and retains its prior [E]/[D] standing. Accordingly, the Foundational Survey Fabric Reference Vector framework is traceability-closed, while the matrix as a whole still identifies any remaining Specification or Conformance basis updates separately.</div>
+<div class="note"><strong>Specification basis-citation standing.</strong> The adopted <strong>FSF-SPEC-1.0</strong> materially establishes the governing mathematics, but this matrix defines <span class="tag explicit">E</span> by explicit Requirements Basis citation. Existing Specification <strong>E / D</strong> row statuses therefore remain unchanged until a dedicated basis-citation reconciliation is performed. This is intentional: substantive satisfaction of a Requirement and explicit documentary traceability are related but distinct obligations.</div><div class="note"><strong>Reference Vector traceability.</strong> All 144 Reference Vector subsections have been reverse-traced to Findings #1–#85. That traceability remains closed. Reference Vectors demonstrate the adopted Specification; they do not create it.</div><div class="note"><strong>Scope note.</strong> This remains a page/section-level Requirements Traceability Matrix. Specification and Conformance basis-citation explicitness should be re-audited only through a dedicated documentation reconciliation. Until then, historical <strong>E / D</strong> markings are preserved rather than guessed forward from adoption. The matrix may identify documentation-maintenance work without implying that <strong>FSF-SPEC-1.0</strong> itself is provisional.</div>
 </main>
 <script>
 const search = document.getElementById('search');
