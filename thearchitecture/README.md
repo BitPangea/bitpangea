@@ -175,22 +175,33 @@ No equivalent universal strict chain has been established for the remaining five
 
 ## Current Spatial Handoff
 
-The current spatial handoff is:
+The demonstrated strict spatial dependency remains:
 
 ```text
 Foundational Survey Fabric
 → Spatial Ground
+→ General Spatial Interpretation
+→ Parcel Cadastre
 ```
 
-The Foundational Survey Fabric is institutionally established and serves as the stable architectural dependency beneath Spatial Ground.
+The lower two layers are now canonically established:
 
-Its exact mathematical realization remains deliberately unresolved.
+```text
+FSF-SPEC-1.0
+→ SG-SPEC-1.0
+→ SG-WORLD-SPACE-INSTANCE-0001
+```
 
-That unresolved mathematics does **not** prevent Spatial Ground architectural inquiry from proceeding.
+The active architectural handoff is therefore:
+
+```text
+Spatial Ground
+→ General Spatial Interpretation
+```
 
 The current handoff principle is:
 
-> **Foundational Survey Fabric establishes canonical reference. Spatial Ground establishes the enduring relationship between canonical Survey space and BitPangea World-space.**
+> **FSF supplies canonical spatial reference and mathematics. Spatial Ground adds canonical participation in The World. General Spatial Interpretation must consume that adopted Ground without redefining it.**
 
 ---
 
@@ -231,9 +242,9 @@ It owns:
 - exact spatial meaning;
 - deterministic reference semantics.
 
-Its architectural responsibility is institutionally established.
+Its architectural responsibility and production mathematical baseline are established.
 
-Its final mathematical realization remains deliberately unresolved.
+**FSF-SPEC-1.0** is canonically adopted and supplies the exact foundational Survey mathematics consumed by Spatial Ground.
 
 Path:
 
@@ -245,11 +256,13 @@ Path:
 
 ### Spatial Ground
 
-**Status:** Provisional
+**Status:** Established
 
 The domain immediately above the Foundational Survey Fabric in the demonstrated spatial dependency.
 
-Its purpose is to establish the enduring relationship between canonical Survey space and usable BitPangea World-space.
+**SG-SPEC-1.0** is adopted, Gate B is complete, and **SG-WORLD-SPACE-INSTANCE-0001** is the adopted canonical World-space instance.
+
+Spatial Ground determines which valid canonical Survey space participates in The World while inheriting exact Survey mathematics from **FSF-SPEC-1.0**.
 
 It must not silently become:
 
@@ -268,9 +281,11 @@ Path:
 
 ### General Spatial Interpretation
 
-**Status:** Provisional
+**Status:** Provisional — Current Spatial Handoff
 
-The shared spatial interpretation Architecture through which higher spatial entities can reference canonical BitPangea space without becoming part of the Foundational Survey Fabric.
+The next strict spatial layer above adopted Spatial Ground.
+
+It will establish the shared spatial interpretation Architecture through which higher spatial entities can reference canonical BitPangea World-space without redefining the Foundational Survey Fabric or canonical Ground beneath them.
 
 Its internal responsibilities remain under architectural development.
 
@@ -718,25 +733,26 @@ When maintaining this directory:
 9. do not invent strict dependency among Identity / Rights / Control, Persistence / Provenance, Interoperability, World Runtime, and Experience Architecture unless later architectural inquiry establishes it;
 10. preserve the status model **Established / Provisional / Reserved**;
 11. preserve Foundational Survey Fabric as **Established**;
-12. preserve Spatial Ground, General Spatial Interpretation, Parcel Cadastre, Identity / Rights / Control, Persistence / Provenance, Interoperability, and Experience Architecture as **Provisional**;
-13. preserve World Runtime as **Reserved**;
-14. preserve the current spatial handoff from Foundational Survey Fabric to Spatial Ground;
-15. preserve unresolved FSF mathematics without treating them as a blocker to Spatial Ground architectural inquiry;
-16. preserve exactly **21,000,000 Parcels** whenever the canonical count is referenced;
-17. preserve the Architecture Boundary Rule;
-18. preserve **Reference does not transfer authority**;
-19. preserve **Extend upward. Do not rewrite downward.**
-20. preserve permanent place as independent of ownership;
-21. preserve canonical spatial truth as independent of Runtime;
-22. preserve Runtime as independent of any single implementation;
-23. preserve Experience Architecture as replaceable and non-authoritative;
-24. preserve Architecture as belonging under The Atlas rather than The Codex;
-25. preserve **Foundation constrains → Codex defines → Atlas designs → Implementation realizes**;
-26. preserve the Atlas Working Principle concerning deeper permanence and higher evolutionary freedom;
-27. preserve Builders and civilization as operating above Architecture rather than becoming Architecture domains;
-28. preserve implementation replaceability;
-29. keep domain links synchronized with the corresponding `/theatlas/` paths;
-30. keep metadata, Open Graph, structured data, and public navigation aligned with the institutional Architecture model.
+12. preserve Spatial Ground as **Established**;
+13. preserve General Spatial Interpretation, Parcel Cadastre, Identity / Rights / Control, Persistence / Provenance, Interoperability, and Experience Architecture as **Provisional**;
+14. preserve World Runtime as **Reserved**;
+15. preserve the adopted FSF → Spatial Ground foundation and the active Spatial Ground → General Spatial Interpretation handoff;
+16. preserve **FSF-SPEC-1.0** as the adopted foundational Survey specification and **SG-WORLD-SPACE-INSTANCE-0001** as the adopted canonical World-space instance;
+17. preserve exactly **21,000,000 Parcels** whenever the canonical count is referenced;
+18. preserve the Architecture Boundary Rule;
+19. preserve **Reference does not transfer authority**;
+20. preserve **Extend upward. Do not rewrite downward.**
+21. preserve permanent place as independent of ownership;
+22. preserve canonical spatial truth as independent of Runtime;
+23. preserve Runtime as independent of any single implementation;
+24. preserve Experience Architecture as replaceable and non-authoritative;
+25. preserve Architecture as belonging under The Atlas rather than The Codex;
+26. preserve **Foundation constrains → Codex defines → Atlas designs → Implementation realizes**;
+27. preserve the Atlas Working Principle concerning deeper permanence and higher evolutionary freedom;
+28. preserve Builders and civilization as operating above Architecture rather than becoming Architecture domains;
+29. preserve implementation replaceability;
+30. keep domain links synchronized with the corresponding `/theatlas/` paths;
+31. keep metadata, Open Graph, structured data, and public navigation aligned with the institutional Architecture model.
 
 ---
 
@@ -768,7 +784,11 @@ The Architecture index is governed by the following standing principles:
 
 **Current demonstrated strict dependency: Foundational Survey Fabric → Spatial Ground → General Spatial Interpretation → Parcel Cadastre**
 
-**Current spatial handoff: Foundational Survey Fabric → Spatial Ground**
+**Current spatial handoff: Spatial Ground → General Spatial Interpretation**
+
+**Foundational Survey Fabric: FSF-SPEC-1.0 canonically adopted**
+
+**Spatial Ground: SG-SPEC-1.0 adopted · SG-WORLD-SPACE-INSTANCE-0001 adopted**
 
 ---
 
