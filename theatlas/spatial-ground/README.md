@@ -4,7 +4,7 @@
 
 **The Atlas · The Architecture**  
 **Domain:** Spatial Ground  
-**Current Requirement Status:** Draft for Adoption Review
+**Institutional Status:** Requirements Adopted · SG-SPEC-1.0 Adopted · Canonical World-Space Instance Adopted
 
 This directory contains the canonical Atlas home for **Spatial Ground**, the architecture that canonically expresses and preserves which canonical Survey space is BitPangea World-space.
 
@@ -44,9 +44,9 @@ index,follow
 
 ---
 
-## Governing Record
+## Governing Records
 
-The Spatial Ground Requirements are the normative record being prepared for adoption.
+The Spatial Ground Requirements are adopted and remain the governing Requirements record.
 
 Canonical repository path:
 
@@ -54,13 +54,25 @@ Canonical repository path:
 /theatlas/spatial-ground/requirements/spatial-ground-requirements.md
 ```
 
-Current institutional status:
+The adopted Spatial Ground Specification is:
 
 ```text
-Draft for Adoption Review
+SG-SPEC-1.0
 ```
 
-The filename and canonical path should remain stable when the Requirements are adopted. Status changes belong inside the record rather than in the artifact name.
+The adopted canonical World-space instance is:
+
+```text
+SG-WORLD-SPACE-INSTANCE-0001
+```
+
+under Adoption Act:
+
+```text
+SG-ACT-INSTANCE-2026-0001
+```
+
+Status changes belong inside the governing records rather than being encoded through unstable filenames.
 
 ### Governing Record Link
 
@@ -181,8 +193,8 @@ It does not originate the constitutional existence of The World, and it does not
 World-space:
 
 - lies within the finite Survey Domain;
-- may coincide in extent with the Survey Domain;
-- is never defined merely as the Survey Domain;
+- lies strictly inside the governed FSF production placement envelope;
+- does not coincide with the entire Survey Domain;
 - is non-empty;
 - is singular;
 - is connected;
@@ -345,24 +357,71 @@ Higher layers may **not** infer from Spatial Ground:
 
 ---
 
+## Canonical Production Profile
+
+Spatial Ground consumes the adopted FSF production geometry rather than duplicating it.
+
+The production chain is:
+
+```text
+FSF-SPEC-1.0
+→ canonical FSF SCPE
+→ FSF-CJSON-1.0
+→ FSF-WORLD-SCPE-0001
+→ one-root SG-CJSON 1.0 Ground Definition
+→ SG-WORLD-SPACE-INSTANCE-0001
+```
+
+The adopted FSF bounds are:
+
+```text
+H = 1,000,000 Pang
+D = [-1,000,000,+1,000,000]²
+P = [-500,000,+500,000]²
+```
+
+and canonical World-space satisfies:
+
+```text
+World-space ⊂ interior(P) ⊂ interior(D)
+```
+
+The production Ground Definition contains exactly one `fsf` root.
+
+Unrestricted Boolean / composite-result closure remains outside the current production profile.
+
+---
+
 ## Institutional Standing
 
-Spatial Ground is no longer a provisional architectural idea.
+Spatial Ground is an established Architecture domain.
 
 Its:
 
 - spatial meaning;
 - layer ownership;
 - institutional authority;
-- consolidation architecture
+- consolidation architecture;
+- Requirements;
+- formal membership model;
+- canonical production representation;
+- production Conformance;
+- canonical World-space instance
 
-have been resolved through the preserved architectural record.
+are now established through the preserved architectural and adoption record.
 
-The Requirements are drafted and in **Adoption Review**.
+Current standing:
 
-The formal membership model remains intentionally deferred to the future Spatial Ground Specification.
+```text
+Requirements — ADOPTED
+Gate A — COMPLETE
+SG-SPEC-1.0 — ADOPTED
+Gate B — COMPLETE
+SG-WORLD-SPACE-INSTANCE-0001 — ADOPTED
+production Conformance / reconstruction — PASS
+```
 
-The eventual canonical World-space instance remains a later adoption act and is not created merely by adopting the Requirements.
+The active strict spatial handoff now proceeds upward to **General Spatial Interpretation**.
 
 ---
 
@@ -386,7 +445,7 @@ Derived consequences and framework interfaces are marked as such and do not crea
 
 Spatial Ground Requirements state **what must be true**.
 
-The following downstream records must not invent new Spatial Ground obligations:
+The following subordinate or downstream records must not invent obligations or alter adopted Spatial Ground truth:
 
 - Specification;
 - Conformance;
@@ -411,7 +470,7 @@ Examples include:
 
 ## Repository Structure
 
-Recommended structure:
+Current governing structure includes:
 
 ```text
 /theatlas/spatial-ground/
@@ -419,15 +478,24 @@ Recommended structure:
 ├── README.md
 ├── requirements/
 │   └── spatial-ground-requirements.md
+├── specification/
+│   └── spatial-ground-specification.md
+├── governance/
+│   ├── SG_Requirements_Adoption_Act.md
+│   └── SG-ACT-INSTANCE-2026-0001.md
+├── instance/
+│   ├── production/
+│   │   ├── SG_World_Production_SCPE_01.fsf-cjson.json
+│   │   ├── FSF_World_SCPE_Production_Reference_0001.json
+│   │   ├── SG_World_Ground_Definition_01.sg-cjson.json
+│   │   ├── SG_World_Production_Conformance_Reconstruction_Proof_01.json
+│   │   └── SG_World_Space_Instance_0001_Adoption_Manifest.json
+│   └── verification/
 └── review/
     ├── resolution/
-    │   ├── SG_Architectural_Resolution_Pass1_Spatial_Meaning.md
-    │   ├── SG_Architectural_Resolution_Pass2_Layer_Ownership.md
-    │   ├── SG_Architectural_Resolution_Pass3_Institutional_Authority.md
-    │   └── SG_Architectural_Resolution_Pass4_Consolidation_Architectural_Resolution.md
-    └── consolidation/
-        ├── SG_Corpus_Level_Classification_Report.md
-        └── SG_Classification_Master_F0001-2100.csv
+    ├── consolidation/
+    └── adoption/
+        └── instance/
 ```
 
 The exact filename of an adopted record should not change merely because its institutional status changes.
@@ -510,14 +578,18 @@ When maintaining this directory:
 20. do not infer a universal Architecture ordering from that dependency;
 21. preserve the Requirements at `/theatlas/spatial-ground/requirements/spatial-ground-requirements.md`;
 22. preserve the resolution and consolidation links listed in this README;
-23. present the Requirements as the normative record and the review files as architectural reasoning and evidence;
+23. present Requirements, SG-SPEC-1.0, and the adopted canonical instance as distinct governing records, while review files remain architectural reasoning and evidence;
 24. do not present the Classification Master as peer normative authority;
 25. preserve the amended Pass #3 distinction: no Ground or Atlas authority may alter established World-space, while formal constitutional revision remains upstream and outside Spatial Ground;
 26. preserve Extent as constitutional scope that constrains Ground without independently determining exact membership;
-27. do not begin Specification work by inventing unresolved Foundational Survey Fabric semantics;
-28. preserve `index,follow` unless the publication model is intentionally revised;
-29. keep canonical, Open Graph, description, theme-color, favicon, framework, and navigation references aligned with the page;
-30. apply the Atlas editorial rule: **Chronicle records when. Atlas records what.**
+27. preserve FSF-SPEC-1.0 as the adopted upstream mathematical authority and do not redefine it from Spatial Ground;
+28. preserve **SG-SPEC-1.0** as the adopted Spatial Ground Specification;
+29. preserve **SG-WORLD-SPACE-INSTANCE-0001** as the singular adopted canonical World-space instance;
+30. preserve the one-root production profile and the distinction between canonical FSF geometry and SG membership expression;
+31. preserve production Conformance / reconstruction evidence as proof rather than as the source of adoption authority;
+32. preserve `index,follow` unless the publication model is intentionally revised;
+33. keep canonical, Open Graph, description, theme-color, favicon, framework, and navigation references aligned with the page;
+34. apply the Atlas editorial rule: **Chronicle records when. Atlas records what.**
 
 ---
 
@@ -525,9 +597,12 @@ When maintaining this directory:
 
 **The Atlas**  
 **The Architecture**  
-**Spatial Ground**  
-**Requirements Drafted — Adoption Review**  
-**Formal Membership Model Deferred to Specification**
+**Spatial Ground — ESTABLISHED**  
+**Requirements — ADOPTED**  
+**SG-SPEC-1.0 — ADOPTED**  
+**Gate B — COMPLETE**  
+**SG-WORLD-SPACE-INSTANCE-0001 — ADOPTED**  
+**Production Conformance / Reconstruction — PASS**
 
 ---
 
