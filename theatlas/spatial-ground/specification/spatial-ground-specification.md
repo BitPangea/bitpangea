@@ -3,7 +3,7 @@
 **BitPangea · The Atlas · Spatial Ground**  
 **Document Type:** Specification  
 **Creator Period:** Day #122 · September 26, 2026 · Reconciled Day #132 · October 6, 2026  
-**Status:** DRAFT FOR GATE B ADOPTION REVIEW — RECONCILED TO FSF-SPEC-1.0  
+**Status:** ADOPTED — SG-SPEC-1.0 · GATE B COMPLETE  
 **Normative Scope:** Spatial Ground only  
 **Formal Model:** Canonical Membership Predicate Model (CMPM)  
 **Requirements Basis:** Adopted Spatial Ground Requirements  
@@ -16,8 +16,8 @@
 
 ## 0. Status and Normative Convention
 
-> **Day #132 Reconciliation Note**  
-> This draft has been reconciled to the canonical upstream `FSF-SPEC-1.0`, the Day #131 production placement rule, the selected SG-CJSON 1.0 representation, and the Day #132 SG-RV-024 re-evaluation. It remains a draft pending the Gate B Adoption Review and does not itself adopt the canonical World-space instance.
+> **Day #132 Adoption Note**  
+> This Specification was reconciled to `FSF-SPEC-1.0`, the Day #131 production placement rule, SG-CJSON 1.0, and the Day #132 SG-RV-024 re-evaluation; it then passed the Gate B Adoption Review and was formally adopted as `SG-SPEC-1.0`. This adoption does not adopt the canonical World-space instance.
 
 
 This document specifies **how Spatial Ground works**.
@@ -454,7 +454,7 @@ The human-readable rendering SHALL NOT become an independent authority.
 
 ## 7.2 Primary Specification Form
 
-This adopted Specification SHALL be the primary normative source for Ground semantics.
+`SG-SPEC-1.0` is the primary normative source for Spatial Ground semantics.
 
 README files, HTML pages, diagrams, implementation notes, tutorials, and examples are supporting documentation unless explicitly incorporated.
 
@@ -1150,7 +1150,7 @@ This does not itself adopt the Specification.
 
 # 29. Reconciled Standing
 
-**SPATIAL GROUND SPECIFICATION — DRAFT FOR GATE B ADOPTION REVIEW**
+**SPATIAL GROUND SPECIFICATION — ADOPTED AS SG-SPEC-1.0**
 
 **RECONCILED TO — FSF-SPEC-1.0**
 
@@ -1178,13 +1178,55 @@ This does not itself adopt the Specification.
 
 **CANONICAL WORLD-SPACE INSTANCE — NOT YET ADOPTED**
 
-**GATE B — OPEN**
+**GATE B — COMPLETE**
 
-**NEXT — GATE B ADOPTION REVIEW**
+**NEXT — CANONICAL WORLD-SPACE INSTANCE ADOPTION SEQUENCE**
 
 ---
 
-# 30. Governing Closing Statements
+
+# 30. Specification Identity and Adoption Standing
+
+The canonical Spatial Ground Specification identifier is:
+
+```text
+SG-SPEC-1.0
+```
+
+The governing dependency relationship is:
+
+```text
+FSF-SPEC-1.0
+    ↓
+SG-SPEC-1.0
+```
+
+The canonical machine-readable Ground representation is:
+
+```text
+SG-CJSON 1.0
+```
+
+Specification adoption establishes the governing Spatial Ground rules.
+
+It does **not** identify or adopt the final canonical World-space instance.
+
+The instance remains a separate Creator-period adoption act.
+
+Gate standing:
+
+```text
+Gate 0 — CLOSED
+Gate A — COMPLETE
+Gate B — COMPLETE
+Spatial Ground Requirements — ADOPTED
+Spatial Ground Specification — ADOPTED AS SG-SPEC-1.0
+Canonical World-space instance — NOT YET ADOPTED
+```
+
+---
+
+# 31. Governing Closing Statements
 
 > **Spatial Ground does not define where space is. FSF does. Spatial Ground defines whether valid canonical Survey space participates in The World.**
 
