@@ -5,8 +5,8 @@
 **The Atlas · The Architecture · Foundational Survey Fabric**  
 **Layer:** Reference Vectors  
 **Coverage:** Sections 01–12  
-**Status:** Integrated Candidate Test Corpus Framework  
-**Canonical Adoption:** Not yet performed
+**Status:** Established Test Corpus Framework · Adopted Production Profile  
+**Governing Specification:** FSF-SPEC-1.0 — CANONICALLY ADOPTED
 
 This directory contains the **Foundational Survey Fabric Reference Vector framework** for BitPangea.
 
@@ -81,23 +81,23 @@ The governing rule is:
 
 ## Current Standing
 
-All twelve Reference Vector sections have been reconciled against the current integrated candidate Specification and Conformance architecture.
+All twelve Reference Vector sections are reconciled against the canonically adopted **FSF-SPEC-1.0** and the established Conformance architecture.
 
-The corpus is no longer uniformly blocked.
-
-It now contains three classes of work:
+The corpus demonstrates the adopted production profile through:
 
 ```text
-EXECUTABLE NOW
-PARAMETERIZED / CONDITIONAL
-STILL OPEN
+EXACT EXECUTABLE VECTORS
+NEGATIVE / INVALID VECTORS
+COMPATIBILITY VECTORS
+ADVERSARIAL VECTORS
+UNSUPPORTED / RESERVED-BOUNDARY VECTORS
 ```
 
 ---
 
-## Executable Candidate Core
+## Adopted Executable Profile
 
-The currently testable core includes:
+The adopted production profile includes:
 
 ```text
 CRPC exact rational coordinates
@@ -127,61 +127,49 @@ adversarial stress testing
 
 ---
 
-## Parameterized / Conditional Mathematics
+## Canonical Survey Domain
 
-The Survey Domain geometry is currently modeled as:
+The adopted Survey Domain is:
 
 ```text
-D_H = {(x,y) : -H ≤ x ≤ H and -H ≤ y ≤ H}
+H = 1,000,000 Pang
+
+D = [-1,000,000,+1,000,000]²
+```
+
+The governed production placement envelope is:
+
+```text
+P = [-500,000,+500,000]²
 ```
 
 with:
 
 ```text
-H > 0
-H is exact CRPC
+World-space ⊂ interior(P) ⊂ interior(D)
 ```
 
-The Domain shape and boundary semantics are candidate-defined under **FMD-04A — Survey Domain Geometry / Boundary**.
+Reference Vectors may therefore use exact canonical numerical Domain-edge and corner fixtures.
 
-The numerical value of `H` remains open under **FMD-04B — Numerical Survey Domain Capacity**.
-
-The earlier ±1,000,000 Pang half-span is a superseded working candidate and is not canonical.
-
-Therefore:
-
-```text
-symbolic Domain vectors
-    -> executable now
-
-parameterized Domain vectors
-    -> executable now
-
-concrete numerical edge fixtures
-    -> not final until FMD-04B resolves H
-```
+The numerical value `H = 1,000,000 Pang` is a governed foundational design constant.
 
 ---
 
-## Still Open
+## Reserved Outside the Current Production Profile
 
-The major remaining mathematical dependencies include:
+The adopted Reference Vector corpus must preserve explicit boundaries around capabilities not adopted by **FSF-SPEC-1.0**.
+
+Examples include:
 
 ```text
-FMD-04B numerical Survey Domain half-span H
-final angular unit
-arbitrary exact rotation
-exact rotated-coordinate result type
-non-rational derived-scalar representation
-general Euclidean distance result model
-general path-length result model
-general geometric boundary-length result model
-general Boolean / composite result geometry
-final quantitative complexity ceilings
-final corpus identifiers
-final packaging
-canonical adoption
+unrestricted Boolean / composite-result closure
+general arbitrary difference closure
+other extended mathematical capability not adopted by FSF-SPEC-1.0
 ```
+
+Reference Vectors may test that such behavior is unsupported or outside profile.
+
+They may not create canonical semantics for it.
 
 ---
 
@@ -215,7 +203,7 @@ Tests:
 
 ```text
 origin
-D_H
+canonical Survey Domain D
 interior
 closed boundary
 corners
@@ -551,9 +539,9 @@ Reference Vectors may not:
 
 ```text
 invent missing mathematics
-select unresolved FMD-04B numerical H
-select an angular unit
-invent arbitrary-rotation closure
+override the adopted canonical Survey Domain
+invent non-adopted measurement semantics
+invent non-adopted transformation closure
 invent non-rational result types
 invent general Boolean result geometry
 override the Specification
@@ -603,20 +591,22 @@ Traceability does not imply that every future fixture is already canonical.
 
 ## Corpus Development Rule
 
-The correct development rule is:
+The governing development rule is:
 
 ```text
-if mathematics is defined:
+if behavior is adopted by FSF-SPEC-1.0:
     build exact executable vectors
 
-if mathematics is parameterized:
-    build symbolic / parameterized vectors
+if behavior is valid but outside the adopted profile:
+    classify it explicitly as unsupported / reserved
 
-if mathematics is unresolved:
-    preserve the dependency as OPEN
+if future capability is not specified:
+    do not invent canonical expected results
 ```
 
-Do not convert an unresolved Specification question into a Reference Vector answer.
+Reference Vectors demonstrate the Specification.
+
+They do not create the Specification.
 
 ---
 
@@ -626,21 +616,22 @@ Do not convert an unresolved Specification question into a Reference Vector answ
 FOUNDATIONAL SURVEY FABRIC — REFERENCE VECTORS
 
 SECTIONS 01–12 — RECONCILED
+GOVERNING SPECIFICATION — FSF-SPEC-1.0 CANONICALLY ADOPTED
 
-EXECUTABLE CANDIDATE CORE — AVAILABLE
-PARAMETERIZED DOMAIN MODEL — AVAILABLE
+ADOPTED EXECUTABLE PROFILE — AVAILABLE
+CANONICAL SURVEY DOMAIN VECTORS — AVAILABLE
 REQUIREMENTS TRACEABILITY — CLOSED
 FSF-CJSON-1.0 TEST SURFACE — AVAILABLE
 CONFORMANCE TEST SURFACE — AVAILABLE
 ADVERSARIAL TEST SURFACE — AVAILABLE
 
-FMD-04B NUMERICAL DOMAIN H — OPEN
-ARBITRARY EXACT ROTATION — OPEN
-NON-RATIONAL DERIVED-SCALAR MODEL — OPEN
-GENERAL BOOLEAN RESULT GEOMETRY — OPEN
-FINAL COMPLEXITY CEILINGS — OPEN
-FINAL CORPUS IDENTIFIERS / PACKAGING — OPEN
-CANONICAL ADOPTION — NOT YET PERFORMED
+H = 1,000,000 PANG — ADOPTED
+D = [-1,000,000,+1,000,000]² — ADOPTED
+P = [-500,000,+500,000]² — GOVERNED PRODUCTION ENVELOPE
+
+UNRESTRICTED BOOLEAN / COMPOSITE-RESULT CLOSURE — RESERVED
+OTHER NON-ADOPTED CAPABILITY — UNSUPPORTED / RESERVED
+REFERENCE VECTORS — SUBORDINATE TO FSF-SPEC-1.0
 ```
 
 ---
