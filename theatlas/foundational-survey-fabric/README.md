@@ -63,16 +63,17 @@ It establishes canonical reference beneath higher architectural domains without 
 
 ## Institutional Standing
 
-The source identifies the Foundational Survey Fabric as:
+The Foundational Survey Fabric is now institutionally and mathematically established for its adopted production profile:
 
 ```text
-Institutionally established
-Mathematics deliberately unresolved
-Ready to support Spatial Ground inquiry
-Not yet ready for mathematical implementation
+Established Architecture domain
+FSF-SPEC-1.0 — canonically adopted
+FSF-CJSON-1.0 — canonical machine serialization
+Survey Domain — D = [-1,000,000,+1,000,000]² Pang
+Production placement envelope — P = [-500,000,+500,000]² Pang
 ```
 
-Its standing reflects a completed architectural closeout while preserving unresolved formal mathematics for later specification work.
+Broader capabilities outside the adopted production profile remain reserved unless later introduced through governed Specification evolution.
 
 ---
 
@@ -169,7 +170,7 @@ Role:
 
 > **Defines the categories and proof obligations for canonical examples, negative cases, and adversarial tests.**
 
-The source further states that the actual vector corpus will be established only after the governing mathematics are specified.
+Reference Vectors demonstrate behavior defined by the governing Specification. They do not create Specification mathematics or canonical authority.
 
 ---
 
@@ -199,23 +200,11 @@ Its purpose is to:
 - prove that every Requirement has a downstream home;
 - expose downstream obligations that lack an authoritative Requirements basis.
 
-The source reports:
+The matrix covers all **85 audited Findings** across the four-framework lineage.
 
-```text
-85  Audited Findings
-28  Fully Explicit Today
-55  Need ≥1 Basis Update
-2   Specification N/A by Design
-```
+Findings **#84** and **#85** remain Specification N/A by design where they govern Conformance and readiness rather than mathematical Specification content.
 
-The two Specification N/A findings are:
-
-```text
-#84
-#85
-```
-
-because they govern Conformance and readiness rather than mathematical Specification content.
+Historical counts describing which downstream pages still needed documentary basis updates should not be treated as current architectural standing unless the matrix itself is re-audited and intentionally updated.
 
 ---
 
@@ -274,23 +263,16 @@ This link should remain synchronized with the governing traceability record.
 
 ## Purpose of This Space
 
-The source states that the Foundational Survey Fabric exists so BitPangea can preserve place across changing:
+The Foundational Survey Fabric exists so BitPangea can preserve place across changing:
 
 - implementations;
 - technologies;
 - interfaces;
 - civilizational systems.
 
-It provides the institutionally established reference architecture upon which **Spatial Ground** may establish enduring World-space.
+It now provides the canonically adopted Survey foundation consumed by **Spatial Ground**. Spatial Ground references FSF truth to establish World membership without duplicating or redefining Survey mathematics.
 
-Higher spatial systems may then define:
-
-- interpretation;
-- Parcel truth;
-- geometry;
-- relationship
-
-without rewriting the foundation beneath them.
+Higher spatial systems may then define interpretation, Parcel truth, and higher spatial relationships without rewriting the foundation beneath them.
 
 ---
 
@@ -340,11 +322,23 @@ These statements define the downward/upward architectural boundary of the domain
 
 ## Current Standing
 
-The source closes with:
+The current architectural standing is:
 
-> **Foundational Survey Fabric institutionally established; mathematics deliberately unresolved. Reference Vector traceability closed. Adversarial Architecture Review passed. Ready to support Spatial Ground inquiry, but not yet ready for mathematical implementation.**
+> **Foundational Survey Fabric established. FSF-SPEC-1.0 canonically adopted. FSF-CJSON-1.0 established. Canonical Survey Domain and production placement envelope established. Conformance and Reference Vector frameworks remain subordinate to the adopted Specification.**
 
-This is the current architectural standing of the domain and should remain synchronized with the Atlas record.
+The adopted numerical framework is:
+
+```text
+H = 1,000,000 Pang
+
+D = [-1,000,000,+1,000,000]²
+
+P = [-500,000,+500,000]²
+
+World-space ⊂ interior(P) ⊂ interior(D)
+```
+
+The numerical value of `H` is a governed foundational design constant. Broader capabilities outside the adopted production profile remain reserved rather than implied.
 
 ---
 
@@ -410,22 +404,23 @@ When maintaining this directory:
 10. preserve the role statement for each framework;
 11. preserve the architectural sequence exactly as stated;
 12. preserve the Requirements Traceability Matrix role;
-13. preserve the reported traceability counts **85 / 28 / 55 / 2** unless the source itself is intentionally updated;
+13. preserve coverage of all **85 audited Findings** and avoid treating historical documentary-maintenance counts as current unless the matrix is re-audited;
 14. preserve the Specification N/A treatment for Findings #84 and #85;
 15. preserve the Explicit / Derived distinction;
 16. preserve the statement that Reference Vector traceability is closed;
 17. preserve the count of **144 Reference Vector subsections**;
 18. preserve the traceability matrix link;
-19. preserve the source’s current standing that mathematics remain deliberately unresolved;
-20. preserve **Survey first. Build later.**
-21. preserve **The Survey Fabric knows space, not the things in space.**
-22. preserve **Protect the boundary. Do not design the layer above from the layer below.**
-23. preserve the authority sentence exactly as stated;
-24. preserve `index,follow` unless the publication model is intentionally revised;
-25. keep canonical, Open Graph, description, theme-color, favicon, framework, and emblem references aligned with the page;
-26. do not prematurely specify unresolved mathematics;
-27. do not expand the Survey Fabric into Parcel, ownership, infrastructure, governance, rendering, or experience responsibilities;
-28. do not silently rewrite historical or audited traceability counts without updating the source records that justify them.
+19. preserve **FSF-SPEC-1.0** as the canonically adopted production Specification and **FSF-CJSON-1.0** as the canonical machine serialization;
+20. preserve the canonical Survey Domain `D = [-1,000,000,+1,000,000]²` and governed production placement envelope `P = [-500,000,+500,000]²`;
+21. preserve **Survey first. Build later.**
+22. preserve **The Survey Fabric knows space, not the things in space.**
+23. preserve **Protect the boundary. Do not design the layer above from the layer below.**
+24. preserve the authority sentence exactly as stated;
+25. preserve `index,follow` unless the publication model is intentionally revised;
+26. keep canonical, Open Graph, description, theme-color, favicon, framework, and emblem references aligned with the page;
+27. do not allow Conformance, Reference Vectors, or implementation convenience to invent capability outside the adopted Specification;
+28. do not expand the Survey Fabric into Parcel, ownership, infrastructure, governance, rendering, or experience responsibilities;
+29. do not silently rewrite historical or audited traceability counts without updating the source records that justify them.
 
 ---
 
@@ -439,7 +434,9 @@ When maintaining this directory:
 
 **Established Domain**
 
-**Mathematics Deliberately Unresolved**
+**FSF-SPEC-1.0 Canonically Adopted**
+
+**FSF-CJSON-1.0 Canonical Serialization**
 
 ---
 
