@@ -5,8 +5,8 @@
 **The Atlas · The Architecture · Foundational Survey Fabric**  
 **Layer:** Conformance  
 **Scope:** Implementation Proof Framework  
-**Status:** Institutionally Established · Candidate Executable Core Integrated  
-**Canonical Adoption:** Not yet performed
+**Status:** Institutionally Established · Adopted Production Profile Executable  
+**Governing Specification:** FSF-SPEC-1.0 — CANONICALLY ADOPTED
 
 This directory contains the **Foundational Survey Fabric Conformance** framework for BitPangea.
 
@@ -72,11 +72,11 @@ It verifies implementation behavior against them.
 
 ## Current Standing
 
-The Conformance framework is institutionally established as the proof architecture subordinate to the Requirements and Specification.
+The Conformance framework is institutionally established as the implementation-proof architecture subordinate to the Requirements and the canonically adopted **FSF-SPEC-1.0**.
 
-The first integrated candidate pass through Conformance Sections 01–10 now defines a substantially executable proof surface for the solved candidate core.
+Conformance Sections 01–10 define an executable proof surface for the adopted production profile.
 
-That solved core presently includes:
+That production profile includes:
 
 ```text
 CRPC exact coordinate representation
@@ -95,11 +95,11 @@ explicit failure conditions
 formal evidence and declaration structure
 ```
 
-This does **not** mean the entire Foundational Survey Fabric has been canonically adopted or that every mathematical gate is closed.
+**FSF-SPEC-1.0 is canonically adopted.**
 
-Conformance applies only where the governing Specification defines canonical behavior.
+Conformance applies only where that governing Specification defines canonical behavior.
 
-Day #126 lineage reconciliation further distinguishes:
+The framework distinguishes:
 
 ```text
 mathematical identity
@@ -131,7 +131,7 @@ Defines how capability may be organized into Conformance classes or profiles wit
 Current standing:
 
 ```text
-candidate Mandatory Core scope — testable
+adopted Mandatory Core scope — testable
 optional future class taxonomy — open
 open Specification mathematics — outside canonical Conformance
 ```
@@ -150,9 +150,9 @@ Canonical path:
 /theatlas/foundational-survey-fabric/conformance/02-mandatory-core/
 ```
 
-Defines the minimum canonical behavior an implementation must prove before claiming compatibility with the current candidate Mandatory Core profile.
+Defines the minimum canonical behavior an implementation must prove before claiming compatibility with the adopted Mandatory Core profile.
 
-Current candidate Mandatory Core includes:
+Adopted Mandatory Core includes:
 
 ```text
 CRPC
@@ -207,7 +207,7 @@ Canonical path:
 
 Defines deterministic classification and handling of foundational input.
 
-Current candidate validity model:
+Canonical validity model:
 
 ```text
 CANONICAL VALID
@@ -279,7 +279,7 @@ Canonical path:
 
 Defines canonical machine-interchange compatibility.
 
-Current candidate canonical format:
+Canonical format:
 
 ```text
 FSF-CJSON-1.0
@@ -359,7 +359,7 @@ Canonical path:
 
 Defines the requirement that canonical truth remain independently implementable and reproducible without privileged code, vendor infrastructure, proprietary dependency, or hidden institutional knowledge.
 
-The current candidate independent proof surface includes:
+The adopted independent proof surface includes:
 
 ```text
 CRPC
@@ -394,7 +394,7 @@ Canonical path:
 
 Defines the conditions that defeat or limit a Conformance claim.
 
-Current candidate failure surface includes:
+Current failure surface includes:
 
 ```text
 canonical-result mismatch
@@ -415,7 +415,7 @@ nontermination
 claim misrepresentation
 ```
 
-Candidate disposition concepts include:
+Disposition concepts include:
 
 ```text
 PASS
@@ -454,7 +454,7 @@ Conformance Declaration
     -> summarizes the claim supported by that evidence
 ```
 
-Current candidate evidence model includes:
+The evidence model includes:
 
 ```text
 implementation identity
@@ -486,9 +486,9 @@ A declaration does not create compatibility by assertion.
 
 ---
 
-# Current Candidate Conformance Core
+# Adopted Conformance Core
 
-The current integrated candidate Conformance framework can directly test:
+The adopted Conformance framework can directly test:
 
 ```text
 CRPC parsing and normalization
@@ -521,27 +521,24 @@ explicit failure reporting
 
 ---
 
-# Open-Gate Boundary
+# Production-Profile Boundary
 
-Conformance does not close unresolved Specification mathematics.
+Conformance does not create capability outside the adopted Specification.
 
-Current examples include:
+Reserved examples include:
 
 ```text
-general Boolean / composite output closure
-general union result closure
-general intersection-result closure
-general difference-result closure
-closed-set / difference compatibility
-arbitrary exact rotation closure
-general exact distance scalar
-general path / boundary-length scalar
-future geometry not yet selected
+unrestricted Boolean / composite output closure
+unrestricted union result closure
+unrestricted intersection result closure
+unrestricted difference result closure
+general arbitrary difference closure
+other future geometry or operations not adopted by FSF-SPEC-1.0
 ```
 
 An implementation may experiment with such behavior.
 
-It may not claim canonical Conformance until the Specification defines the governing semantics.
+It may not claim canonical Conformance for those capabilities unless a governed FSF Specification explicitly adopts them.
 
 ---
 
@@ -567,9 +564,9 @@ Reference Vectors
 instantiate exact executable cases
 ```
 
-The solved candidate core is now sufficiently deterministic for meaningful Reference Vector creation and execution in supported areas.
+The adopted production profile is sufficiently deterministic for meaningful Reference Vector creation and execution.
 
-Open mathematical gates must not be prematurely encoded as canonical expected results.
+Reserved capability must not be prematurely encoded as canonical expected behavior.
 
 ---
 
@@ -608,7 +605,9 @@ Conformance can test whether two governed versions or representations satisfy de
 
 It cannot itself authorize an intentionally incompatible transition.
 
-If BitPangea ever adopts an incompatible successor, separate institutional succession / migration governance would be required. Such a transition could not be described as ordinary compatible refinement merely because a test harness can compare the two systems.
+Compatible evolution follows **FSF-SPEC-MAJOR.MINOR** and must preserve canonical place.
+
+If BitPangea ever adopts an incompatible successor, it requires a new major Specification version and separate institutional succession / migration governance. Such a transition cannot be described as ordinary compatible refinement merely because a test harness can compare the two systems.
 
 ---
 
@@ -664,41 +663,32 @@ It does not replace them.
 
 ---
 
-# Still Open
+# Conformance Framework Maintenance
 
-The first candidate integration pass does not complete every Conformance institution or operational procedure.
+The governing FSF Specification is adopted, while some Conformance-operational details may continue to mature without changing canonical Survey truth.
 
-Still open across the framework are:
+Examples include:
 
 ```text
-final conformance-class identifiers
-final machine-readable validation codes
-complete canonical error taxonomy
-general open-gate mathematics
-formal optimized-algorithm proof obligations
-complete Reference Vector inventory
-final top-level FSF Specification identifier
-formal Specification version-succession rules
-incompatible-transition / migration governance if ever required
-cross-version compatibility matrix
+machine-readable validation / failure codes
+optimized-algorithm proof obligations
+cross-version compatibility matrices
 deprecation policy
-minimum independent-implementation count
-formal evaluator-independence rules
+evaluator-independence rules
 implementation-separation criteria
-final failure-code taxonomy
-severity model
 retest / remediation procedure
-final Conformance Report schema
-final Conformance Declaration schema
-final canonical status vocabulary
-formal test-run identifier syntax
+Conformance Report schema
+Conformance Declaration schema
+test-run identifier syntax
 evidence-retention policy
 publication process
 certification / registry role if separately authorized
 declaration withdrawal / supersession lifecycle
 ```
 
-These should be resolved only where the governing Specification and institutional architecture justify them.
+These are Conformance-governance and evidence-management matters.
+
+They must not be used to revise `FSF-SPEC-1.0` mathematics from below.
 
 ---
 
@@ -730,17 +720,17 @@ When maintaining the Conformance directory:
 8. preserve exact result equivalence;
 9. preserve deterministic validation;
 10. preserve exactness and no-silent-snapping;
-11. preserve FSF-CJSON-1.0 as the current candidate canonical serialization profile;
+11. preserve FSF-CJSON-1.0 as the canonical serialization profile for FSF-SPEC-1.0;
 12. preserve compatible evolution without moving place;
 13. preserve independent implementation as a substantive proof obligation;
 14. preserve explicit failure conditions;
 15. preserve proof before declaration;
-16. preserve open-gate boundaries;
+16. preserve adopted-profile / reserved-capability boundaries;
 17. preserve the distinction between Specification ambiguity and implementation failure;
 18. preserve the distinction between unsupported capability and Mandatory Core failure;
 19. preserve Reference Vectors as proof rather than Specification;
 20. preserve Conformance as subordinate to Requirements and Specification;
-21. do not allow Conformance to invent unresolved mathematics;
+21. do not allow Conformance to invent capability outside the adopted Specification;
 22. do not allow a declaration to exceed the evidence;
 23. do not treat reproducibility as canonical authority;
 24. do not allow testing infrastructure to become the source of spatial truth;
@@ -758,25 +748,22 @@ FOUNDATIONAL SURVEY FABRIC
 CONFORMANCE
 
 IMPLEMENTATION PROOF FRAMEWORK — ESTABLISHED
-SECTIONS 01–10 — FIRST CANDIDATE INTEGRATION PASS COMPLETE
+GOVERNING SPECIFICATION — FSF-SPEC-1.0 CANONICALLY ADOPTED
+SECTIONS 01–10 — ACTIVE PROOF ARCHITECTURE
 
-CANDIDATE MANDATORY CORE — EXECUTABLE
-VALIDATION — EXECUTABLE FOR SOLVED CORE
-EXACTNESS — EXECUTABLE FOR SOLVED CORE
-FSF-CJSON-1.0 — TESTABLE
+MANDATORY CORE — EXECUTABLE
+VALIDATION — EXECUTABLE
+EXACTNESS — EXECUTABLE
+FSF-CJSON-1.0 — CANONICAL / TESTABLE
 VERSION-COMPATIBILITY BASELINE — DEFINED
 MATHEMATICAL / REPRESENTATION / FORMAT / SPECIFICATION IDENTITY SEPARATION — DEFINED
 INDEPENDENT IMPLEMENTATION PROOF SURFACE — DEFINED
-FAILURE CONDITIONS — CONCRETE FOR SOLVED CORE
-REPORT / DECLARATION EVIDENCE MODEL — CANDIDATE STRUCTURE DEFINED
+FAILURE CONDITIONS — DEFINED FOR ADOPTED PROFILE
+REPORT / DECLARATION EVIDENCE MODEL — ESTABLISHED
 
-OPEN SPECIFICATION MATHEMATICS — OUTSIDE CANONICAL CONFORMANCE
-FINAL TEST CORPUS — NOT YET COMPLETE
-FINAL STATUS / ERROR VOCABULARIES — OPEN
-FINAL REPORT / DECLARATION SCHEMAS — OPEN
-FINAL SPECIFICATION IDENTITY / VERSION SUCCESSION GOVERNANCE — OPEN
-INCOMPATIBLE-TRANSITION / MIGRATION GOVERNANCE — OPEN IF EVER REQUIRED
-CANONICAL ADOPTION — NOT YET PERFORMED
+RESERVED CAPABILITY — OUTSIDE CURRENT PRODUCTION PROFILE
+CONFORMANCE OPERATIONAL SCHEMAS / VOCABULARIES — MAY CONTINUE TO MATURE
+CONFORMANCE — SUBORDINATE TO REQUIREMENTS AND FSF-SPEC-1.0
 ```
 
 ---
