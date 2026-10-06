@@ -1,0 +1,16 @@
+{
+  "implementation": "SG-PROD-RECON-JS-1.0",
+  "result": "PASS",
+  "tests": {
+    "origin": "WORLD",
+    "canonical_start_vertex": "WORLD",
+    "first_edge_midpoint": "WORLD",
+    "east_valid_nonworld": "NON_WORLD",
+    "north_valid_nonworld": "NON_WORLD",
+    "valid_survey_outer_nonworld": "NON_WORLD",
+    "invalid_survey": "INVALID_INPUT"
+  },
+  "vertex_count": 128,
+  "fsf_sha256": "013248a563f979c56bc34c7951cd542eb990e88c486d0bbbe8b2e9500ea54c54",
+  "sg_sha256": "40fd371aa7239495f7c939f4c2b6ae9e50cdbaaa2282fe1b237bfa7bf7df2aca"
+}
