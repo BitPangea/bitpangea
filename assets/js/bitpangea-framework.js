@@ -10,34 +10,29 @@
   }
 
   function bpSetActiveNav() {
+    const page = document.body.dataset.bpPage;
+    const activeLink = document.querySelector(`.bp-nav a[data-nav="${page}"]`);
 
-  const page = document.body.dataset.bpPage;
+    if (!activeLink) return;
 
-  console.log("BP Page:", page);
+    activeLink.classList.add("active");
+    activeLink.setAttribute("aria-current", "page");
+  }
 
-  const activeLink = document.querySelector(`.bp-nav a[data-nav="${page}"]`);
-
-  console.log("Found link:", activeLink);
-
-  if (!activeLink) return;
-
-  activeLink.classList.add("active");
-  activeLink.setAttribute("aria-current", "page");
-
-  console.log("Active applied.");
-}
-  
   async function bpInit() {
     try {
       await bpLoadInclude("bp-header", "/assets/includes/bitpangea-header.html");
-      await bpLoadInclude("bp-footer", "/assets/includes/bitpangea-footer.html");
-
-      bpSetActiveNav();
-
-      console.log("BitPangea Framework v1.0 loaded");
     } catch (error) {
-      console.error("BitPangea Framework load error:", error);
+      console.error("BitPangea header load error:", error);
     }
+
+    try {
+      await bpLoadInclude("bp-footer", "/assets/includes/bitpangea-footer.html");
+    } catch (error) {
+      console.error("BitPangea footer load error:", error);
+    }
+
+    bpSetActiveNav();
   }
 
   document.addEventListener("DOMContentLoaded", bpInit);
