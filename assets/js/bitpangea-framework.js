@@ -32,6 +32,9 @@
       console.error("BitPangea footer load error:", error);
     }
 
+    const main = document.querySelector("main");
+    if (main && !main.id) main.id = "main-content";
+
     bpSetActiveNav();
   }
 
