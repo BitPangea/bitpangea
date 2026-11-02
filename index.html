@@ -490,6 +490,12 @@ h1 .smaller {
         font-size: 16px;
       }
 
+      @media (max-width: 390px) {
+        .page { padding-top: 220px; }
+        h1 { font-size: clamp(28px, 8vw, 34px); letter-spacing: 2px; }
+        h1 .smaller { font-size: 0.62em; letter-spacing: 1px; }
+      }
+
       .rules {
         grid-template-columns: 1fr;
       }
