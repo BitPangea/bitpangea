@@ -189,6 +189,23 @@ Provides:
     line-height:1.72;
 }
 
+.bp-skip-link {
+    position: fixed;
+    top: -100px;
+    left: 16px;
+    z-index: 6000;
+    padding: 12px 16px;
+    background: #02050a;
+    color: #d4a938;
+    border: 2px solid #d4a938;
+    text-decoration: none;
+}
+.bp-skip-link:focus,
+.bp-skip-link:focus-visible {
+    top: 12px;
+}
+#main-content { scroll-margin-top: 16px; }
+
 /* ==========================================================
    04. Global Header
    ========================================================== */
