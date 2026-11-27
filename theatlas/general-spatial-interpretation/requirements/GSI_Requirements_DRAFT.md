@@ -2,7 +2,7 @@
 
 **BitPangea · The Atlas**
 **Date:** November 26, 2026
-**Revision:** R0
+**Revision:** R1
 **Status:** DRAFT — not adopted
 
 ## Governing head
@@ -25,6 +25,8 @@
 - **GSI-AUTH-04 — Relationship separation.** Geometric predicates shall not independently establish constitutional Parcel Adjacency or other higher-domain meaning.
 - **GSI-AUTH-05 — Capability restraint.** Unsupported upstream capabilities shall not be silently assumed or independently redefined.
 
+- **GSI-AUTH-06 — Dependency qualification.** Each admitted operation and input combination shall have a demonstrated exact dependency path; unresolved upstream gaps shall be explicitly excluded or referred to the responsible authority.
+
 ## Interpretation and evaluation requirements
 
 - **GSI-EVAL-01 — Explicit scope.** Govern admitted geometry types, operations, input combinations and result semantics.
@@ -33,12 +35,19 @@
 - **GSI-EVAL-04 — Boundary fidelity.** Preserve inherited boundary semantics, including the inclusion of the canonical World limit.
 - **GSI-EVAL-05 — Context identification.** Successful interpretations shall identify applicable governing rules and input meanings sufficiently for independent reproduction.
 
+- **GSI-EVAL-06 — Context isolation.** Synthetic or candidate Ground contexts shall be explicitly distinguished from the adopted canonical World-space; their results shall not claim canonical World standing.
+
 ## Preservation and verification requirements
 
 - **GSI-PRES-01 — Derived result discipline.** Computed results, caches and indexes shall not override authoritative inputs or rules.
 - **GSI-PRES-02 — Justified persistence.** Do not mandate permanent result storage without a demonstrated requirement; preserved evidence must identify its governing context.
+- **GSI-PRES-03 — Semantic succession.** Changes to interpretation rules shall identify their governing version and preserve the recoverability of historical meaning where preservation is required; no silent retroactive reinterpretation of authoritative inputs is permitted.
 - **GSI-CONF-01 — Independent agreement.** Conformance shall test exactness, validity, equivalence, boundary behavior, outcome distinctions and independent agreement.
 - **GSI-CONF-02 — Specification precedence.** Conformance and Reference Vectors shall test governed semantics, not create missing rules.
+
+## Internal review disposition
+
+R1 strengthens dependency qualification, context isolation and semantic succession. The 23 draft requirements remain subject to constitutional and independent architectural review. No mathematical proof, external review or adoption is claimed.
 
 ## Qualification gates
 
