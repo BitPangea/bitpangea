@@ -2,7 +2,7 @@
 
 **BitPangea · The Atlas**
 **Date:** November 26, 2026
-**Revision:** R1
+**Revision:** R2
 **Status:** DRAFT — not adopted
 
 ## Governing head
@@ -22,10 +22,13 @@
 - **GSI-AUTH-01 — Constitutional subordination.** Preserve One World, 21 million Parcels, No Expansion and No Duplication; GSI shall not establish or revise constitutional truths.
 - **GSI-AUTH-02 — Membership preservation.** Point membership remains exactly WORLD or NON_WORLD; higher extent classifications are derived, not additional Ground values.
 - **GSI-AUTH-03 — Entity separation.** Geometric equivalence shall not establish entity identity; entity geometry associations and cadastral assignments remain with their responsible authorities.
-- **GSI-AUTH-04 — Relationship separation.** Geometric predicates shall not independently establish constitutional Parcel Adjacency or other higher-domain meaning.
+- **GSI-AUTH-04 — Relationship separation.** Geometric predicates shall not independently establish or redefine any adopted constitutional concept, including Parcel Boundary, Coordinate, Adjacency, Contiguity, Distance and Direction. Generic geometric contact or connectedness shall not alone establish constitutional Adjacency or Contiguity.
 - **GSI-AUTH-05 — Capability restraint.** Unsupported upstream capabilities shall not be silently assumed or independently redefined.
 
 - **GSI-AUTH-06 — Dependency qualification.** Each admitted operation and input combination shall have a demonstrated exact dependency path; unresolved upstream gaps shall be explicitly excluded or referred to the responsible authority.
+
+- **GSI-AUTH-07 — World closure.** Valid Survey expressions outside canonical World-space may be evaluated as Survey geometry but shall not thereby acquire constitutional World structure, Parcel standing or independent World identity.
+- **GSI-AUTH-08 — Recognized World Properties.** Preserve The Extent, The Region and The Cluster as adopted constitutional concepts. Technical scope exclusions shall not deny their recognition; implementation choices shall not impose new constitutional thresholds, geometries or Parcel counts.
 
 ## Interpretation and evaluation requirements
 
@@ -47,7 +50,7 @@
 
 ## Internal review disposition
 
-R1 strengthens dependency qualification, context isolation and semantic succession. The 23 draft requirements remain subject to constitutional and independent architectural review. No mathematical proof, external review or adoption is claimed.
+R1 strengthens dependency qualification, context isolation and semantic succession. R2 strengthens AUTH-04 and adds AUTH-07/08 following the targeted constitutional definition assessment. The 25 draft requirements remain subject to constitutional and independent architectural review. No mathematical proof, external review or adoption is claimed.
 
 ## Qualification gates
 
@@ -65,5 +68,7 @@ Requirements → Specification → Conformance → Reference Vectors. Review and
 - [Authority, computation and persistence](../review/GSI_Authority_Computation_Persistence.md)
 - [Evaluation contract](../review/GSI_Evaluation_Contract.md)
 - [Mathematical dependency assessment](../review/GSI_Mathematical_Dependency_Assessment.md)
+
+Additional review basis: [Constitutional compatibility](../review/GSI_Constitutional_Compatibility_Review.md), [Constitutional clause assessment](../review/GSI_Constitutional_Clause_Assessment.md), and [R1 traceability](../review/GSI_Requirements_R1_Traceability.md). R1 traceability requires reconciliation against R2 before adoption.
 
 Reference first. Interpret above.
