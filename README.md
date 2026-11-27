@@ -192,7 +192,7 @@ Within The Atlas, **The Architecture** is the institutional catalog of the endur
 It currently recognizes nine architectural domains:
 
 1. **Foundational Survey Fabric** — Established
-2. **Spatial Ground** — Provisional
+2. **Spatial Ground** — Established · SG-SPEC-1.0 and canonical World-space instance adopted
 3. **General Spatial Interpretation** — Provisional
 4. **Parcel Cadastre** — Provisional
 5. **Identity / Rights / Control** — Provisional
@@ -209,7 +209,7 @@ The demonstrated spatial dependency is:
 
 The remaining architectural relationships are resolved only where dependency is actually demonstrated.
 
-The **Foundational Survey Fabric** is institutionally established while its exact mathematics remain deliberately unresolved. It is ready to support Spatial Ground inquiry, but not yet ready for mathematical implementation.
+The **Foundational Survey Fabric** is institutionally and mathematically established for its adopted production profile under **FSF-SPEC-1.0**, with **FSF-CJSON-1.0** as its canonical machine serialization. **Spatial Ground** consumes that foundation under **SG-SPEC-1.0**, with **SG-WORLD-SPACE-INSTANCE-0001** adopted as the canonical World-space instance. Broader capabilities outside the adopted production profile remain reserved. The active architectural handoff is **General Spatial Interpretation**, which remains provisional.
 
 ---
 
